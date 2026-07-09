@@ -23,10 +23,17 @@
       "file": "categories/space.json"
     },
     {
+      "key": "art",
+      "name": "Art",
+      "deckCount": 1,
+      "rev": "34a332e01143",
+      "file": "categories/art.json"
+    },
+    {
       "key": "cinema",
       "name": "Cinema",
-      "deckCount": 1,
-      "rev": "e8d3614bcdc3",
+      "deckCount": 2,
+      "rev": "d62c47f0a09b",
       "file": "categories/cinema.json"
     },
     {
@@ -87,7 +94,8 @@
       "title": "Silver Screen",
       "description": "For people who know the director before the trailer ends.",
       "deckKeys": [
-        "best-picture-winners"
+        "best-picture-winners",
+        "who-directed-it"
       ]
     }
   ],
@@ -106,6 +114,11 @@
       "key": "country-silhouettes",
       "version": 1,
       "file": "decks/country-silhouettes.json"
+    },
+    {
+      "key": "famous-paintings",
+      "version": 1,
+      "file": "decks/famous-paintings.json"
     },
     {
       "key": "flags-of-the-world",
@@ -146,6 +159,11 @@
       "key": "us-states",
       "version": 1,
       "file": "decks/us-states.json"
+    },
+    {
+      "key": "who-directed-it",
+      "version": 1,
+      "file": "decks/who-directed-it.json"
     },
     {
       "key": "world-capitals",

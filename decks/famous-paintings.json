@@ -1,0 +1,1303 @@
+{
+  "key": "famous-paintings",
+  "version": 1,
+  "name": "Masterpieces: Who Painted It?",
+  "description": "99 of the most famous paintings in Western and world art history, from the Mona Lisa to the Qingming scroll. See the work, name the artist; details give title, year, and movement.",
+  "category": "Art",
+  "topics": [
+    "art",
+    "paintings",
+    "art-history"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Starry%20Night%20-%20Google%20Art%20Project.jpg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "mona-lisa",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Leonardo da Vinci",
+        "extra": "Mona Lisa (c. 1503-1506), High Renaissance. Louvre, Paris; the world's most famous portrait.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Mona%20Lisa%2C%20by%20Leonardo%20da%20Vinci%2C%20from%20C2RMF%20retouched.jpg?width=640"
+      },
+      "tags": [
+        "art::renaissance"
+      ]
+    },
+    {
+      "key": "starry-night",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Vincent van Gogh",
+        "extra": "The Starry Night (1889), Post-Impressionism. Painted from his asylum window at Saint-Remy.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Starry%20Night%20-%20Google%20Art%20Project.jpg?width=640"
+      },
+      "tags": [
+        "art::post-impressionism"
+      ]
+    },
+    {
+      "key": "the-scream",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Edvard Munch",
+        "extra": "The Scream (1893), Expressionism. Munch described hearing an infinite scream passing through nature.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Edvard%20Munch%2C%201893%2C%20The%20Scream%2C%20oil%2C%20tempera%20and%20pastel%20on%20cardboard%2C%2091%20x%2073%20cm%2C%20National%20Gallery%20of%20Norway.jpg?width=640"
+      },
+      "tags": [
+        "art::expressionism"
+      ]
+    },
+    {
+      "key": "girl-with-a-pearl-earring",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Johannes Vermeer",
+        "extra": "Girl with a Pearl Earring (c. 1665), Dutch Golden Age. Often called the Mona Lisa of the North; Mauritshuis, The Hague.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/1665%20Girl%20with%20a%20Pearl%20Earring.jpg?width=640"
+      },
+      "tags": [
+        "art::dutch-golden-age"
+      ]
+    },
+    {
+      "key": "the-last-supper",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Leonardo da Vinci",
+        "extra": "The Last Supper (c. 1495-1498), High Renaissance. Mural in the refectory of Santa Maria delle Grazie, Milan.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Last%20Supper%20-%20Leonardo%20Da%20Vinci%20-%20High%20Resolution%2032x16.jpg?width=640"
+      },
+      "tags": [
+        "art::renaissance"
+      ]
+    },
+    {
+      "key": "the-creation-of-adam",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Michelangelo",
+        "extra": "The Creation of Adam (c. 1512), High Renaissance. Fresco on the ceiling of the Sistine Chapel.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Michelangelo%20-%20Creation%20of%20Adam%20%28cropped%29.jpg?width=640"
+      },
+      "tags": [
+        "art::renaissance"
+      ]
+    },
+    {
+      "key": "the-birth-of-venus",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Sandro Botticelli",
+        "extra": "The Birth of Venus (c. 1485), Early Renaissance. Venus arrives at the shore on a scallop shell; Uffizi, Florence.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Sandro%20Botticelli%20-%20La%20nascita%20di%20Venere%20-%20Google%20Art%20Project%20-%20edited.jpg?width=640"
+      },
+      "tags": [
+        "art::renaissance"
+      ]
+    },
+    {
+      "key": "the-great-wave-off-kanagawa",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Katsushika Hokusai",
+        "extra": "The Great Wave off Kanagawa (c. 1831), ukiyo-e. Woodblock print from Thirty-six Views of Mount Fuji.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Tsunami%20by%20hokusai%2019th%20century.jpg?width=640"
+      },
+      "tags": [
+        "art::ukiyo-e"
+      ]
+    },
+    {
+      "key": "american-gothic",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Grant Wood",
+        "extra": "American Gothic (1930), Regionalism. The models were the artist's sister and his dentist.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Grant%20Wood%20-%20American%20Gothic%20-%20Google%20Art%20Project.jpg?width=640"
+      },
+      "tags": [
+        "art::regionalism"
+      ]
+    },
+    {
+      "key": "the-kiss",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Gustav Klimt",
+        "extra": "The Kiss (1907-1908), Vienna Secession. The high point of Klimt's gold leaf Golden Phase.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Kiss%20-%20Gustav%20Klimt%20-%20Google%20Cultural%20Institute.jpg?width=640"
+      },
+      "tags": [
+        "art::art-nouveau"
+      ]
+    },
+    {
+      "key": "whistlers-mother",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "James McNeill Whistler",
+        "extra": "Arrangement in Grey and Black No. 1 (1871), Realism. Popularly known as Whistler's Mother.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Whistlers%20Mother%20high%20res.jpg?width=640"
+      },
+      "tags": [
+        "art::realism"
+      ]
+    },
+    {
+      "key": "las-meninas",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Diego Velazquez",
+        "extra": "Las Meninas (1656), Baroque. The painter included himself at his easel; Prado, Madrid.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Las%20Meninas%2C%20by%20Diego%20Vel%C3%A1zquez%2C%20from%20Prado%20in%20Google%20Earth.jpg?width=640"
+      },
+      "tags": [
+        "art::baroque"
+      ]
+    },
+    {
+      "key": "the-night-watch",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Rembrandt van Rijn",
+        "extra": "The Night Watch (1642), Dutch Golden Age. Militia group portrait; Rijksmuseum, Amsterdam.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20ronda%20de%20noche%2C%20por%20Rembrandt%20van%20Rijn.jpg?width=640"
+      },
+      "tags": [
+        "art::dutch-golden-age"
+      ]
+    },
+    {
+      "key": "impression-sunrise",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Claude Monet",
+        "extra": "Impression, Sunrise (1872), Impressionism. Its title gave the Impressionist movement its name.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20Impression%2C%20Sunrise.jpg?width=640"
+      },
+      "tags": [
+        "art::impressionism"
+      ]
+    },
+    {
+      "key": "a-sunday-on-la-grande-jatte",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Georges Seurat",
+        "extra": "A Sunday Afternoon on the Island of La Grande Jatte (1884-1886), Neo-Impressionism. The defining work of pointillism.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20Sunday%20on%20La%20Grande%20Jatte%2C%20Georges%20Seurat%2C%201884.jpg?width=640"
+      },
+      "tags": [
+        "art::neo-impressionism"
+      ]
+    },
+    {
+      "key": "the-garden-of-earthly-delights",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Hieronymus Bosch",
+        "extra": "The Garden of Earthly Delights (c. 1490-1510), Northern Renaissance. Triptych moving from Eden to a nightmarish hell.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Garden%20of%20earthly%20delights.jpg?width=640"
+      },
+      "tags": [
+        "art::northern-renaissance"
+      ]
+    },
+    {
+      "key": "liberty-leading-the-people",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Eugene Delacroix",
+        "extra": "Liberty Leading the People (1830), Romanticism. Commemorates the July Revolution of 1830 in Paris.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Libert%C3%A9%20guidant%20le%20peuple%20-%20Eug%C3%A8ne%20Delacroix%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20RF%20129%20-%20apr%C3%A8s%20restauration%202024.jpg?width=640"
+      },
+      "tags": [
+        "art::romanticism"
+      ]
+    },
+    {
+      "key": "wanderer-above-the-sea-of-fog",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Caspar David Friedrich",
+        "extra": "Wanderer above the Sea of Fog (c. 1818), Romanticism. The defining image of the Romantic sublime.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Caspar%20David%20Friedrich%20-%20Wanderer%20above%20the%20Sea%20of%20Fog.jpeg?width=640"
+      },
+      "tags": [
+        "art::romanticism"
+      ]
+    },
+    {
+      "key": "the-school-of-athens",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Raphael",
+        "extra": "The School of Athens (1509-1511), High Renaissance. Vatican fresco with Plato and Aristotle at its center.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/%22The%20School%20of%20Athens%22%20by%20Raffaello%20Sanzio%20da%20Urbino.jpg?width=640"
+      },
+      "tags": [
+        "art::renaissance"
+      ]
+    },
+    {
+      "key": "sunflowers",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Vincent van Gogh",
+        "extra": "Sunflowers (1888), Post-Impressionism. Painted in Arles to decorate the room awaiting Gauguin.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20Willem%20van%20Gogh%20127.jpg?width=640"
+      },
+      "tags": [
+        "art::post-impressionism"
+      ]
+    },
+    {
+      "key": "cafe-terrace-at-night",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Vincent van Gogh",
+        "extra": "Café Terrace at Night (1888), Post-Impressionism. A night scene painted entirely without black.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Terrace%20of%20a%20Caf%C3%A9%20at%20Night%20%28Place%20du%20Forum%29%201888.jpg?width=640"
+      },
+      "tags": [
+        "art::post-impressionism"
+      ]
+    },
+    {
+      "key": "the-arnolfini-portrait",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Jan van Eyck",
+        "extra": "The Arnolfini Portrait (1434), Early Netherlandish. The convex mirror reflects the entire scene in miniature.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Arnolfini%20portrait%20%281434%29.jpg?width=640"
+      },
+      "tags": [
+        "art::northern-renaissance"
+      ]
+    },
+    {
+      "key": "the-milkmaid",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Johannes Vermeer",
+        "extra": "The Milkmaid (c. 1658), Dutch Golden Age. Rijksmuseum, Amsterdam.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Johannes%20Vermeer%20-%20Het%20melkmeisje%20-%20Google%20Art%20Project.png?width=640"
+      },
+      "tags": [
+        "art::dutch-golden-age"
+      ]
+    },
+    {
+      "key": "the-third-of-may-1808",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Francisco Goya",
+        "extra": "The Third of May 1808 (1814), Romanticism. French troops execute Madrid civilians after an uprising.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/El%20Tres%20de%20Mayo%2C%20by%20Francisco%20de%20Goya%2C%20from%20Prado%20thin%20black%20margin.jpg?width=640"
+      },
+      "tags": [
+        "art::romanticism"
+      ]
+    },
+    {
+      "key": "olympia",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Edouard Manet",
+        "extra": "Olympia (1863), Realism. Its frank gaze scandalized the Paris Salon of 1865.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Edouard%20Manet%20-%20Olympia%20-%20Google%20Art%20ProjectFXD.jpg?width=640"
+      },
+      "tags": [
+        "art::realism"
+      ]
+    },
+    {
+      "key": "luncheon-of-the-boating-party",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Pierre-Auguste Renoir",
+        "extra": "Luncheon of the Boating Party (1881), Impressionism. Friends of the artist at a restaurant terrace on the Seine.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre-Auguste%20Renoir%20-%20Luncheon%20of%20the%20Boating%20Party%20-%20Google%20Art%20Project.jpg?width=640"
+      },
+      "tags": [
+        "art::impressionism"
+      ]
+    },
+    {
+      "key": "the-water-lily-pond",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Claude Monet",
+        "extra": "Bridge over a Pond of Water Lilies (1899), Impressionism. From the water garden the artist built at Giverny.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bridge%20over%20a%20Pond%20of%20Water%20Lilies%20MET%20DT1854.jpg?width=640"
+      },
+      "tags": [
+        "art::impressionism"
+      ]
+    },
+    {
+      "key": "self-portrait-van-gogh",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Vincent van Gogh",
+        "extra": "Self-Portrait (1889), Post-Impressionism. Painted at Saint-Remy; Musée d'Orsay, Paris.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20Self-Portrait%20-%20Google%20Art%20Project%20%28454045%29.jpg?width=640"
+      },
+      "tags": [
+        "art::post-impressionism"
+      ]
+    },
+    {
+      "key": "the-raft-of-the-medusa",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Theodore Gericault",
+        "extra": "The Raft of the Medusa (1818-1819), Romanticism. Survivors of the wrecked French frigate Méduse.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/JEAN%20LOUIS%20TH%C3%89ODORE%20G%C3%89RICAULT%20-%20La%20Balsa%20de%20la%20Medusa%20%28Museo%20del%20Louvre%2C%201818-19%29.jpg?width=640"
+      },
+      "tags": [
+        "art::romanticism"
+      ]
+    },
+    {
+      "key": "primavera",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Sandro Botticelli",
+        "extra": "Primavera (c. 1482), Early Renaissance. Allegory of spring with Venus, Flora, and the Three Graces.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Botticelli-primavera.jpg?width=640"
+      },
+      "tags": [
+        "art::renaissance"
+      ]
+    },
+    {
+      "key": "napoleon-crossing-the-alps",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Jacques-Louis David",
+        "extra": "Napoleon Crossing the Alps (1801), Neoclassicism. In reality Napoleon made the crossing on a mule.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20-%20Napoleon%20crossing%20the%20Alps%20-%20Malmaison2.jpg?width=640"
+      },
+      "tags": [
+        "art::neoclassicism"
+      ]
+    },
+    {
+      "key": "the-death-of-marat",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Jacques-Louis David",
+        "extra": "The Death of Marat (1793), Neoclassicism. The revolutionary journalist stabbed in his bath by Charlotte Corday.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Death%20of%20Marat%20by%20David.jpg?width=640"
+      },
+      "tags": [
+        "art::neoclassicism"
+      ]
+    },
+    {
+      "key": "saturn-devouring-his-son",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Francisco Goya",
+        "extra": "Saturn Devouring His Son (c. 1819-1823), Romanticism. One of the Black Paintings from the walls of Goya's house.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Francisco%20de%20Goya%2C%20Saturno%20devorando%20a%20su%20hijo%20%281819-1823%29.jpg?width=640"
+      },
+      "tags": [
+        "art::romanticism"
+      ]
+    },
+    {
+      "key": "the-gleaners",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Jean-Francois Millet",
+        "extra": "The Gleaners (1857), Realism. Peasant women gathering leftover grain after the harvest.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Fran%C3%A7ois%20Millet%20-%20Gleaners%20-%20Google%20Art%20Project%202.jpg?width=640"
+      },
+      "tags": [
+        "art::realism"
+      ]
+    },
+    {
+      "key": "the-hay-wain",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "John Constable",
+        "extra": "The Hay Wain (1821), Romanticism. A cart crossing the River Stour in Suffolk.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Constable%20-%20The%20Hay%20Wain%20%281821%29.jpg?width=640"
+      },
+      "tags": [
+        "art::romanticism"
+      ]
+    },
+    {
+      "key": "the-fighting-temeraire",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "J. M. W. Turner",
+        "extra": "The Fighting Temeraire (1839), Romanticism. A veteran of Trafalgar towed away to be scrapped.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Fighting%20Temeraire%2C%20JMW%20Turner%2C%20National%20Gallery.jpg?width=640"
+      },
+      "tags": [
+        "art::romanticism"
+      ]
+    },
+    {
+      "key": "ophelia",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "John Everett Millais",
+        "extra": "Ophelia (1851-1852), Pre-Raphaelite. Model Elizabeth Siddal posed in a bathtub for months.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Everett%20Millais%20-%20Ophelia%20-%20Google%20Art%20Project.jpg?width=640"
+      },
+      "tags": [
+        "art::pre-raphaelite"
+      ]
+    },
+    {
+      "key": "the-lady-of-shalott",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "John William Waterhouse",
+        "extra": "The Lady of Shalott (1888), Pre-Raphaelite style. Based on Tennyson's poem of the cursed weaver.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20William%20Waterhouse%20-%20The%20Lady%20of%20Shalott%20-%20Google%20Art%20Project%20edit.jpg?width=640"
+      },
+      "tags": [
+        "art::pre-raphaelite"
+      ]
+    },
+    {
+      "key": "washington-crossing-the-delaware",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Emanuel Leutze",
+        "extra": "Washington Crossing the Delaware (1851), history painting. The 1776 surprise attack on Trenton, painted in Dusseldorf.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Washington%20Crossing%20the%20Delaware%20by%20Emanuel%20Leutze%2C%20MMA-NYC%2C%201851.jpg?width=640"
+      },
+      "tags": [
+        "art::history-painting"
+      ]
+    },
+    {
+      "key": "the-sleeping-gypsy",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Henri Rousseau",
+        "extra": "The Sleeping Gypsy (1897), Naive art. A lion sniffs at a sleeping traveler under a full moon.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Boh%C3%A9mienne%20endormie.jpg?width=640"
+      },
+      "tags": [
+        "art::naive-art"
+      ]
+    },
+    {
+      "key": "where-do-we-come-from",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Paul Gauguin",
+        "extra": "Where Do We Come From? What Are We? Where Are We Going? (1897-1898), Post-Impressionism. Painted in Tahiti as Gauguin's testament.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Gauguin%20-%20Where%20Do%20We%20Come%20From%3F%20What%20Are%20We%3F%20Where%20Are%20We%20Going%3F%20%281897-98%29.jpg?width=640"
+      },
+      "tags": [
+        "art::post-impressionism"
+      ]
+    },
+    {
+      "key": "the-card-players",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Paul Cezanne",
+        "extra": "The Card Players (1890s), Post-Impressionism. One of a series of five versions.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Les%20Joueurs%20de%20cartes%2C%20par%20Paul%20C%C3%A9zanne.jpg?width=640"
+      },
+      "tags": [
+        "art::post-impressionism"
+      ]
+    },
+    {
+      "key": "at-the-moulin-rouge",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Henri de Toulouse-Lautrec",
+        "extra": "At the Moulin Rouge (1892-1895), Post-Impressionism. Montmartre nightlife; the artist appears in the background.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Henri%20de%20Toulouse-Lautrec%2C%20At%20the%20Moulin%20Rouge.jpg?width=640"
+      },
+      "tags": [
+        "art::post-impressionism"
+      ]
+    },
+    {
+      "key": "a-bar-at-the-folies-bergere",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Edouard Manet",
+        "extra": "A Bar at the Folies-Bergère (1882), Impressionism. The artist's last major work; note the puzzling mirror reflection.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/%22Un%20Bar%20aux%20Folies-Berg%C3%A8re%22%20by%20%C3%89douard%20Manet%20%281882%29.jpg?width=640"
+      },
+      "tags": [
+        "art::impressionism"
+      ]
+    },
+    {
+      "key": "bal-du-moulin-de-la-galette",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Pierre-Auguste Renoir",
+        "extra": "Bal du moulin de la Galette (1876), Impressionism. Sunday afternoon dancing in Montmartre.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Renoir%2C%20Pierre-Auguste%20-%20Dance%20at%20Le%20Moulin%20de%20la%20Galette%2C%201876.jpg?width=640"
+      },
+      "tags": [
+        "art::impressionism"
+      ]
+    },
+    {
+      "key": "the-dance-class",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Edgar Degas",
+        "extra": "The Dance Class (1874), Impressionism. Ballet master Jules Perrot leads the class.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Edgar%20Degas%20-%20La%20Classe%20de%20danse.jpg?width=640"
+      },
+      "tags": [
+        "art::impressionism"
+      ]
+    },
+    {
+      "key": "the-anatomy-lesson-of-dr-nicolaes-tulp",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Rembrandt van Rijn",
+        "extra": "The Anatomy Lesson of Dr. Nicolaes Tulp (1632), Dutch Golden Age. The commission that made the young Rembrandt's name.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20-%20The%20Anatomy%20Lesson%20of%20Dr%20Nicolaes%20Tulp.jpg?width=640"
+      },
+      "tags": [
+        "art::dutch-golden-age"
+      ]
+    },
+    {
+      "key": "venus-of-urbino",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Titian",
+        "extra": "Venus of Urbino (1538), Venetian Renaissance. Uffizi, Florence.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Tiziano%20-%20Venere%20di%20Urbino%20-%20Google%20Art%20Project.jpg?width=640"
+      },
+      "tags": [
+        "art::renaissance"
+      ]
+    },
+    {
+      "key": "sistine-madonna",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Raphael",
+        "extra": "Sistine Madonna (c. 1512-1513), High Renaissance. The two bored cherubs at its base became famous on their own.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/RAFAEL%20-%20Madonna%20Sixtina%20%28Gem%C3%A4ldegalerie%20Alter%20Meister%2C%20Dresden%2C%201513-14.%20%C3%93leo%20sobre%20lienzo%2C%20265%20x%20196%20cm%29.jpg?width=640"
+      },
+      "tags": [
+        "art::renaissance"
+      ]
+    },
+    {
+      "key": "the-last-judgment",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Michelangelo",
+        "extra": "The Last Judgment (1536-1541), High Renaissance. Fresco covering the altar wall of the Sistine Chapel.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Last%20Judgement%20%28Michelangelo%29.jpg?width=640"
+      },
+      "tags": [
+        "art::renaissance"
+      ]
+    },
+    {
+      "key": "the-tower-of-babel",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Pieter Bruegel the Elder",
+        "extra": "The Tower of Babel (1563), Northern Renaissance. Modeled partly on the Colosseum; Vienna.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Pieter%20Bruegel%20the%20Elder%20-%20The%20Tower%20of%20Babel%20%28Vienna%29%20-%20Google%20Art%20Project%20-%20edited.jpg?width=640"
+      },
+      "tags": [
+        "art::northern-renaissance"
+      ]
+    },
+    {
+      "key": "hunters-in-the-snow",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Pieter Bruegel the Elder",
+        "extra": "The Hunters in the Snow (1565), Northern Renaissance. From a series depicting the months of the year.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Pieter%20Bruegel%20the%20Elder%20-%20Hunters%20in%20the%20Snow%20%28Winter%29%20-%20Google%20Art%20Project.jpg?width=640"
+      },
+      "tags": [
+        "art::northern-renaissance"
+      ]
+    },
+    {
+      "key": "the-ambassadors",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Hans Holbein the Younger",
+        "extra": "The Ambassadors (1533), Northern Renaissance. The smear across the floor is an anamorphic skull.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Hans%20Holbein%20the%20Younger%20-%20The%20Ambassadors%20-%20Google%20Art%20Project.jpg?width=640"
+      },
+      "tags": [
+        "art::northern-renaissance"
+      ]
+    },
+    {
+      "key": "lady-with-an-ermine",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Leonardo da Vinci",
+        "extra": "Lady with an Ermine (c. 1489-1491), High Renaissance. Portrait of Cecilia Gallerani; Krakow.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Lady%20with%20an%20Ermine%20-%20Leonardo%20da%20Vinci%20%28adjusted%20levels%29.jpg?width=640"
+      },
+      "tags": [
+        "art::renaissance"
+      ]
+    },
+    {
+      "key": "the-calling-of-saint-matthew",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Caravaggio",
+        "extra": "The Calling of Saint Matthew (1599-1600), Baroque. A shaft of light picks Matthew out of the tax office.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Caravaggio%2C%20Michelangelo%20Merisi%20da%20-%20The%20Calling%20of%20Saint%20Matthew%20-%201599-1600%20%28hi%20res%29.jpg?width=640"
+      },
+      "tags": [
+        "art::baroque"
+      ]
+    },
+    {
+      "key": "judith-slaying-holofernes",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Artemisia Gentileschi",
+        "extra": "Judith Slaying Holofernes (c. 1614-1620), Baroque. Gentileschi's unflinching take on the biblical scene.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Judit%20decapitando%20a%20Holofernes%2C%20por%20Artemisia%20Gentileschi.jpg?width=640"
+      },
+      "tags": [
+        "art::baroque"
+      ]
+    },
+    {
+      "key": "portrait-of-innocent-x",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Diego Velazquez",
+        "extra": "Portrait of Innocent X (1650), Baroque. Later the basis for Francis Bacon's screaming popes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Retrato%20del%20Papa%20Inocencio%20X.%20Roma%2C%20by%20Diego%20Vel%C3%A1zquez.jpg?width=640"
+      },
+      "tags": [
+        "art::baroque"
+      ]
+    },
+    {
+      "key": "the-return-of-the-prodigal-son",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Rembrandt van Rijn",
+        "extra": "The Return of the Prodigal Son (c. 1668), Dutch Golden Age. A late masterpiece; Hermitage, Saint Petersburg.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Rembrandt%20Harmensz%20van%20Rijn%20-%20Return%20of%20the%20Prodigal%20Son%20-%20Google%20Art%20Project.jpg?width=640"
+      },
+      "tags": [
+        "art::dutch-golden-age"
+      ]
+    },
+    {
+      "key": "the-goldfinch",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Carel Fabritius",
+        "extra": "The Goldfinch (1654), Dutch Golden Age. The painter died that year in the Delft gunpowder explosion.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Fabritius-vink.jpg?width=640"
+      },
+      "tags": [
+        "art::dutch-golden-age"
+      ]
+    },
+    {
+      "key": "laughing-cavalier",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Frans Hals",
+        "extra": "Laughing Cavalier (1624), Dutch Golden Age. Wallace Collection, London; he is neither laughing nor a cavalier.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Cavalier%20soldier%20Hals-1624x.jpg?width=640"
+      },
+      "tags": [
+        "art::dutch-golden-age"
+      ]
+    },
+    {
+      "key": "view-of-delft",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Johannes Vermeer",
+        "extra": "View of Delft (c. 1660-1661), Dutch Golden Age. Proust called it the most beautiful painting in the world.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Vermeer-view-of-delft.jpg?width=640"
+      },
+      "tags": [
+        "art::dutch-golden-age"
+      ]
+    },
+    {
+      "key": "the-swing",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Jean-Honore Fragonard",
+        "extra": "The Swing (1767), Rococo. A hidden admirer watches from the bushes below.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Swing%20%28P430%29.jpg?width=640"
+      },
+      "tags": [
+        "art::rococo"
+      ]
+    },
+    {
+      "key": "the-blue-boy",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Thomas Gainsborough",
+        "extra": "The Blue Boy (c. 1770), British portraiture. An homage to Van Dyck; Huntington Library, California.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Blue%20Boy.jpg?width=640"
+      },
+      "tags": [
+        "art::rococo"
+      ]
+    },
+    {
+      "key": "the-nightmare",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Henry Fuseli",
+        "extra": "The Nightmare (1781), Romanticism. An incubus crouches on a sleeping woman.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Heinrich%20F%C3%BCssli%20-%20The%20Nightmare%2055.5.A-d1-2019-04-15.jpg?width=640"
+      },
+      "tags": [
+        "art::romanticism"
+      ]
+    },
+    {
+      "key": "la-grande-odalisque",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Jean-Auguste-Dominique Ingres",
+        "extra": "La Grande Odalisque (1814), Neoclassicism. Criticized for the anatomically impossible elongated back.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20grande%20odalisque%20-%20Jean-Auguste%20Dominique%20Ingres%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20RF%201158.jpg?width=640"
+      },
+      "tags": [
+        "art::neoclassicism"
+      ]
+    },
+    {
+      "key": "oath-of-the-horatii",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Jacques-Louis David",
+        "extra": "Oath of the Horatii (1784), Neoclassicism. Three brothers swear to defend Rome.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Serment%20des%20Horaces%20-%20Jacques-Louis%20David%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20INV%203692%20%3B%20MR%201432.jpg?width=640"
+      },
+      "tags": [
+        "art::neoclassicism"
+      ]
+    },
+    {
+      "key": "rain-steam-and-speed",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "J. M. W. Turner",
+        "extra": "Rain, Steam and Speed (1844), Romanticism. A Great Western Railway train crosses the Maidenhead bridge.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Turner%20-%20Rain%2C%20Steam%20and%20Speed%20-%20National%20Gallery%20file.jpg?width=640"
+      },
+      "tags": [
+        "art::romanticism"
+      ]
+    },
+    {
+      "key": "the-ninth-wave",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Ivan Aivazovsky",
+        "extra": "The Ninth Wave (1850), Romanticism. Shipwreck survivors cling to wreckage at sunrise.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Hovhannes%20Aivazovsky%20-%20The%20Ninth%20Wave%20-%20Google%20Art%20Project.jpg?width=640"
+      },
+      "tags": [
+        "art::romanticism"
+      ]
+    },
+    {
+      "key": "the-kiss-hayez",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Francesco Hayez",
+        "extra": "The Kiss (1859), Italian Romanticism. Became a symbol of the Risorgimento.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/El%20Beso%20%28Pinacoteca%20de%20Brera%2C%20Mil%C3%A1n%2C%201859%29.jpg?width=640"
+      },
+      "tags": [
+        "art::romanticism"
+      ]
+    },
+    {
+      "key": "a-burial-at-ornans",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Gustave Courbet",
+        "extra": "A Burial at Ornans (1849-1850), Realism. An ordinary village funeral painted at heroic scale.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Gustave%20Courbet%20-%20A%20Burial%20at%20Ornans%20-%20Google%20Art%20Project%202.jpg?width=640"
+      },
+      "tags": [
+        "art::realism"
+      ]
+    },
+    {
+      "key": "barge-haulers-on-the-volga",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Ilya Repin",
+        "extra": "Barge Haulers on the Volga (1870-1873), Realism. Eleven laborers drag a barge upstream.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Ilia%20Efimovich%20Repin%20%281844-1930%29%20-%20Volga%20Boatmen%20%281870-1873%29.jpg?width=640"
+      },
+      "tags": [
+        "art::realism"
+      ]
+    },
+    {
+      "key": "morning-in-a-pine-forest",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Ivan Shishkin",
+        "extra": "Morning in a Pine Forest (1889), Realism. The bears were painted by Konstantin Savitsky.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Utro%20v%20sosnovom%20lesu.jpg?width=640"
+      },
+      "tags": [
+        "art::realism"
+      ]
+    },
+    {
+      "key": "isle-of-the-dead",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Arnold Bocklin",
+        "extra": "Isle of the Dead (1880), Symbolism. A shrouded figure is rowed toward a sepulchral island.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Arnold%20B%C3%B6cklin%20-%20Die%20Toteninsel%20I%20%28Basel%2C%20Kunstmuseum%29.jpg?width=640"
+      },
+      "tags": [
+        "art::symbolism"
+      ]
+    },
+    {
+      "key": "flaming-june",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Frederic Leighton",
+        "extra": "Flaming June (1895), Victorian Academic art. Rediscovered in the 1960s; Museo de Arte de Ponce, Puerto Rico.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Flaming%20June%2C%20by%20Frederic%20Lord%20Leighton%20%281830-1896%29.jpg?width=640"
+      },
+      "tags": [
+        "art::academic-art"
+      ]
+    },
+    {
+      "key": "portrait-of-madame-x",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "John Singer Sargent",
+        "extra": "Portrait of Madame X (1884), society portraiture. The fallen shoulder strap scandalized the Paris Salon.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Madame%20X%20%28Madame%20Pierre%20Gautreau%29%2C%20John%20Singer%20Sargent%2C%201884%20%28unfree%20frame%20crop%29.jpg?width=640"
+      },
+      "tags": [
+        "art::realism"
+      ]
+    },
+    {
+      "key": "the-gulf-stream",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Winslow Homer",
+        "extra": "The Gulf Stream (1899), Realism. A lone sailor adrift among sharks.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Winslow%20Homer%20-%20The%20Gulf%20Stream%20-%20Metropolitan%20Museum%20of%20Art.jpg?width=640"
+      },
+      "tags": [
+        "art::realism"
+      ]
+    },
+    {
+      "key": "paris-street-rainy-day",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Gustave Caillebotte",
+        "extra": "Paris Street; Rainy Day (1877), Impressionism. Haussmann's new Paris in the rain.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Gustave%20Caillebotte%20-%20Paris%20Street%3B%20Rainy%20Day%20-%20Google%20Art%20Project.jpg?width=640"
+      },
+      "tags": [
+        "art::impressionism"
+      ]
+    },
+    {
+      "key": "woman-with-a-parasol",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Claude Monet",
+        "extra": "Woman with a Parasol (1875), Impressionism. Camille Monet and son Jean on a breezy hillside.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Woman%20with%20a%20Parasol%20-%20Madame%20Monet%20and%20Her%20Son%20-%20Google%20Art%20Project.jpg?width=640"
+      },
+      "tags": [
+        "art::impressionism"
+      ]
+    },
+    {
+      "key": "the-childs-bath",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Mary Cassatt",
+        "extra": "The Child's Bath (1893), Impressionism. Composition influenced by Japanese prints.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Mary%20Cassatt%20-%20The%20Child%27s%20Bath%20-%20Google%20Art%20Project.jpg?width=640"
+      },
+      "tags": [
+        "art::impressionism"
+      ]
+    },
+    {
+      "key": "the-cradle",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Berthe Morisot",
+        "extra": "The Cradle (1872), Impressionism. Shown at the first Impressionist exhibition in 1874.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Berthe%20Morisot%20008.jpg?width=640"
+      },
+      "tags": [
+        "art::impressionism"
+      ]
+    },
+    {
+      "key": "the-basket-of-apples",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Paul Cezanne",
+        "extra": "The Basket of Apples (c. 1893), Post-Impressionism. Its deliberately tilted perspective anticipated Cubism.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul%20C%C3%A9zanne%20-%20The%20Basket%20of%20Apples%20-%201926.252%20-%20Art%20Institute%20of%20Chicago.jpg?width=640"
+      },
+      "tags": [
+        "art::post-impressionism"
+      ]
+    },
+    {
+      "key": "the-yellow-christ",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Paul Gauguin",
+        "extra": "The Yellow Christ (1889), Post-Impressionism. Key work of Cloisonnism, painted in Brittany.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul%20Gauguin%20-%20The%20Yellow%20Christ%20%28Le%20Christ%20jaune%29%201889.jpg?width=640"
+      },
+      "tags": [
+        "art::post-impressionism"
+      ]
+    },
+    {
+      "key": "the-potato-eaters",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Vincent van Gogh",
+        "extra": "The Potato Eaters (1885), early realist period. Painted in Nuenen before his palette brightened in Paris.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/De%20aardappeleters%20-%20s0005V1962%20-%20Van%20Gogh%20Museum.jpg?width=640"
+      },
+      "tags": [
+        "art::realism"
+      ]
+    },
+    {
+      "key": "bedroom-in-arles",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Vincent van Gogh",
+        "extra": "Bedroom in Arles (1888), Post-Impressionism. His room in the Yellow House; three versions exist.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Vincent%20van%20Gogh%20-%20De%20slaapkamer%20-%20Google%20Art%20Project.jpg?width=640"
+      },
+      "tags": [
+        "art::post-impressionism"
+      ]
+    },
+    {
+      "key": "irises",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Vincent van Gogh",
+        "extra": "Irises (1889), Post-Impressionism. Painted in the asylum garden at Saint-Remy; Getty Museum.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Irises-Vincent%20van%20Gogh.jpg?width=640"
+      },
+      "tags": [
+        "art::post-impressionism"
+      ]
+    },
+    {
+      "key": "wheatfield-with-crows",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Vincent van Gogh",
+        "extra": "Wheatfield with Crows (1890), Post-Impressionism. One of his final paintings at Auvers.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Korenveld%20met%20kraaien%20-%20s0149V1962%20-%20Van%20Gogh%20Museum.jpg?width=640"
+      },
+      "tags": [
+        "art::post-impressionism"
+      ]
+    },
+    {
+      "key": "tiger-in-a-tropical-storm",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Henri Rousseau",
+        "extra": "Tiger in a Tropical Storm (Surprised!) (1891), Naive art. The artist's first jungle painting.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Surprised-Rousseau.jpg?width=640"
+      },
+      "tags": [
+        "art::naive-art"
+      ]
+    },
+    {
+      "key": "portrait-of-adele-bloch-bauer-i",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Gustav Klimt",
+        "extra": "Portrait of Adele Bloch-Bauer I (1907), Vienna Secession. The Woman in Gold, restituted to the family's heirs in 2006.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Klimt%20046.jpg?width=640"
+      },
+      "tags": [
+        "art::art-nouveau"
+      ]
+    },
+    {
+      "key": "composition-vii",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Wassily Kandinsky",
+        "extra": "Composition VII (1913), abstract art. Kandinsky called it the most complex work he ever painted.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Composition%20VII%20-%20Wassily%20Kandinsky%2C%20GAC.jpg?width=640"
+      },
+      "tags": [
+        "art::abstract"
+      ]
+    },
+    {
+      "key": "black-square",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Kazimir Malevich",
+        "extra": "Black Square (1915), Suprematism. First shown hung across a corner, like a Russian icon.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Kazimir%20Malevich%2C%201915%2C%20Black%20Suprematic%20Square%2C%20oil%20on%20linen%20canvas%2C%2079.5%20x%2079.5%20cm%2C%20Tretyakov%20Gallery%2C%20Moscow.jpg?width=640"
+      },
+      "tags": [
+        "art::suprematism"
+      ]
+    },
+    {
+      "key": "composition-with-red-blue-and-yellow",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Piet Mondrian",
+        "extra": "Composition with Red, Blue and Yellow (1930), De Stijl. Neoplasticism reduced to primaries and grid lines.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Piet%20Mondriaan%2C%201930%20-%20Mondrian%20Composition%20II%20in%20Red%2C%20Blue%2C%20and%20Yellow.jpg?width=640"
+      },
+      "tags": [
+        "art::de-stijl"
+      ]
+    },
+    {
+      "key": "dance-matisse",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Henri Matisse",
+        "extra": "Dance (1910), Fauvist modernism. Hermitage, Saint Petersburg.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Matissedance.jpg?width=640"
+      },
+      "tags": [
+        "art::fauvism"
+      ]
+    },
+    {
+      "key": "self-portrait-with-physalis",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Egon Schiele",
+        "extra": "Self-Portrait with Physalis (1912), Expressionism. Leopold Museum, Vienna.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Egon%20Schiele%20-%20Self-Portrait%20with%20Physalis%20-%20Google%20Art%20Project.jpg?width=640"
+      },
+      "tags": [
+        "art::expressionism"
+      ]
+    },
+    {
+      "key": "along-the-river-during-the-qingming-festival",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Zhang Zeduan",
+        "extra": "Along the River During the Qingming Festival (early 12th century), Song dynasty handscroll. Panorama of daily life in the capital Bianjing.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Along%20the%20River%20During%20the%20Qingming%20Festival%20%28detail%20of%20original%29.jpg?width=640"
+      },
+      "tags": [
+        "art::chinese-art"
+      ]
+    },
+    {
+      "key": "self-portrait-at-twenty-eight",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Albrecht Durer",
+        "extra": "Self-Portrait at Twenty-Eight (1500), Northern Renaissance. A strikingly Christ-like frontal pose.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/D%C3%BCrer%20Alte%20Pinakothek.jpg?width=640"
+      },
+      "tags": [
+        "art::northern-renaissance"
+      ]
+    },
+    {
+      "key": "young-hare",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Albrecht Durer",
+        "extra": "Young Hare (1502), Northern Renaissance. A watercolor of astonishing precision; Albertina, Vienna.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Albrecht%20D%C3%BCrer%20-%20Hare%2C%201502%20-%20Google%20Art%20Project.jpg?width=640"
+      },
+      "tags": [
+        "art::northern-renaissance"
+      ]
+    },
+    {
+      "key": "view-of-toledo",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "El Greco",
+        "extra": "View of Toledo (c. 1596-1600), Mannerism. One of the first pure landscapes in Spanish art.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/El%20Greco%20View%20of%20Toledo.jpg?width=640"
+      },
+      "tags": [
+        "art::mannerism"
+      ]
+    },
+    {
+      "key": "the-burial-of-the-count-of-orgaz",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "El Greco",
+        "extra": "The Burial of the Count of Orgaz (1586), Mannerism. Church of Santo Tome, Toledo.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/El%20Greco%20-%20The%20Burial%20of%20the%20Count%20of%20Orgaz.JPG?width=640"
+      },
+      "tags": [
+        "art::mannerism"
+      ]
+    },
+    {
+      "key": "the-descent-from-the-cross",
+      "model": "basic",
+      "fields": {
+        "front": "Who painted this?",
+        "back": "Peter Paul Rubens",
+        "extra": "The Descent from the Cross (1612-1614), Flemish Baroque. Central panel of the triptych in Antwerp Cathedral.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Paul%20Rubens%20-%20Descent%20from%20the%20Cross%20%28Antwerp%20Cathedral%29.jpg?width=640"
+      },
+      "tags": [
+        "art::baroque"
+      ]
+    }
+  ]
+}

@@ -14,6 +14,18 @@
         "film-history"
       ],
       "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Clapperboard.jpg?width=640"
+    },
+    {
+      "key": "who-directed-it",
+      "name": "Who Directed It?",
+      "description": "See a famous film, name its director: 129 essentials from Citizen Kane and Casablanca to Parasite and Everything Everywhere All at Once. Spans Hollywood classics, New Hollywood, modern blockbusters, world cinema, and animation.",
+      "cardCount": 129,
+      "topics": [
+        "movies",
+        "directors",
+        "film-history"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bolex%20H16%20Reflex.jpg?width=640"
     }
   ]
 }

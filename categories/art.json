@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "key": "art",
+  "name": "Art",
+  "decks": [
+    {
+      "key": "famous-paintings",
+      "name": "Masterpieces: Who Painted It?",
+      "description": "99 of the most famous paintings in Western and world art history, from the Mona Lisa to the Qingming scroll. See the work, name the artist; details give title, year, and movement.",
+      "cardCount": 99,
+      "topics": [
+        "art",
+        "paintings",
+        "art-history"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Starry%20Night%20-%20Google%20Art%20Project.jpg?width=640"
+    }
+  ]
+}

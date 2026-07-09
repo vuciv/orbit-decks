@@ -1,0 +1,1306 @@
+{
+  "key": "who-directed-it",
+  "version": 1,
+  "name": "Who Directed It?",
+  "description": "See a famous film, name its director: 129 essentials from Citizen Kane and Casablanca to Parasite and Everything Everywhere All at Once. Spans Hollywood classics, New Hollywood, modern blockbusters, world cinema, and animation.",
+  "category": "Cinema",
+  "topics": [
+    "movies",
+    "directors",
+    "film-history"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bolex%20H16%20Reflex.jpg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "the-godfather",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Godfather (1972)?",
+        "back": "Francis Ford Coppola",
+        "extra": "New Hollywood landmark. Coppola also directed The Conversation and Apocalypse Now."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "star-wars",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Star Wars (1977)?",
+        "back": "George Lucas",
+        "extra": "Launched the biggest franchise in film history. Lucas also directed American Graffiti and THX 1138."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "pulp-fiction",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Pulp Fiction (1994)?",
+        "back": "Quentin Tarantino",
+        "extra": "Won the Palme d'Or in 1994. Tarantino also directed Reservoir Dogs and Kill Bill."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "titanic",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Titanic (1997)?",
+        "back": "James Cameron",
+        "extra": "Won 11 Oscars including Best Director. Cameron also directed The Terminator and Avatar."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "jaws",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Jaws (1975)?",
+        "back": "Steven Spielberg",
+        "extra": "Effectively invented the summer blockbuster. Spielberg also directed E.T. and Raiders of the Lost Ark."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "the-dark-knight",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Dark Knight (2008)?",
+        "back": "Christopher Nolan",
+        "extra": "Center of Nolan's Batman trilogy. He also directed Inception and Oppenheimer."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "jurassic-park",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Jurassic Park (1993)?",
+        "back": "Steven Spielberg",
+        "extra": "Released the same year as his Schindler's List. Spielberg also directed Jaws."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "the-shawshank-redemption",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Shawshank Redemption (1994)?",
+        "back": "Frank Darabont",
+        "extra": "Adapted from a Stephen King novella. Darabont also directed The Green Mile."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "forrest-gump",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Forrest Gump (1994)?",
+        "back": "Robert Zemeckis",
+        "extra": "Won Zemeckis the Best Director Oscar. He also directed Back to the Future and Cast Away."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "the-matrix",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Matrix (1999)?",
+        "back": "The Wachowskis",
+        "extra": "Directed by Lana and Lilly Wachowski, credited on release as the Wachowski Brothers. They also directed Speed Racer and Cloud Atlas."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "back-to-the-future",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Back to the Future (1985)?",
+        "back": "Robert Zemeckis",
+        "extra": "Produced by Steven Spielberg. Zemeckis also directed Who Framed Roger Rabbit and Forrest Gump."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "et-the-extra-terrestrial",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed E.T. the Extra-Terrestrial (1982)?",
+        "back": "Steven Spielberg",
+        "extra": "Spielberg also directed Close Encounters of the Third Kind and Jurassic Park."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "inception",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Inception (2010)?",
+        "back": "Christopher Nolan",
+        "extra": "Original heist thriller set inside dreams. Nolan also directed Memento and Interstellar."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "avatar",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Avatar (2009)?",
+        "back": "James Cameron",
+        "extra": "Highest grossing film of all time. Cameron also directed Titanic and Aliens."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "the-fellowship-of-the-ring",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Lord of the Rings: The Fellowship of the Ring (2001)?",
+        "back": "Peter Jackson",
+        "extra": "Shot back to back with its sequels in Jackson's native New Zealand. He also directed King Kong (2005)."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "psycho",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Psycho (1960)?",
+        "back": "Alfred Hitchcock",
+        "extra": "The master of suspense. Hitchcock also directed Vertigo, Rear Window, and The Birds."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "the-wizard-of-oz",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Wizard of Oz (1939)?",
+        "back": "Victor Fleming",
+        "extra": "Fleming took over mid-production and received sole credit. He also directed Gone with the Wind the same year."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "casablanca",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Casablanca (1942)?",
+        "back": "Michael Curtiz",
+        "extra": "Hungarian-born Hollywood craftsman. Curtiz also directed The Adventures of Robin Hood and White Christmas."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "citizen-kane",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Citizen Kane (1941)?",
+        "back": "Orson Welles",
+        "extra": "Welles co-wrote, directed, and starred at age 25. He also directed Touch of Evil."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "gone-with-the-wind",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Gone with the Wind (1939)?",
+        "back": "Victor Fleming",
+        "extra": "Fleming replaced George Cukor early in production. He also directed The Wizard of Oz the same year."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "2001-a-space-odyssey",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed 2001: A Space Odyssey (1968)?",
+        "back": "Stanley Kubrick",
+        "extra": "Co-written with Arthur C. Clarke. Kubrick also directed Dr. Strangelove and A Clockwork Orange."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "the-shining",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Shining (1980)?",
+        "back": "Stanley Kubrick",
+        "extra": "Adapted from Stephen King, who famously disliked it. Kubrick also directed 2001: A Space Odyssey and Full Metal Jacket."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "schindlers-list",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Schindler's List (1993)?",
+        "back": "Steven Spielberg",
+        "extra": "Won Spielberg his first Best Director Oscar. He also directed Saving Private Ryan."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "goodfellas",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Goodfellas (1990)?",
+        "back": "Martin Scorsese",
+        "extra": "Scorsese also directed Taxi Driver, Raging Bull, and The Departed."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "taxi-driver",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Taxi Driver (1976)?",
+        "back": "Martin Scorsese",
+        "extra": "Won the Palme d'Or in 1976. Scorsese also directed Raging Bull and Goodfellas."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "apocalypse-now",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Apocalypse Now (1979)?",
+        "back": "Francis Ford Coppola",
+        "extra": "Vietnam epic loosely based on Heart of Darkness. Coppola also directed The Godfather films."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "the-godfather-part-ii",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Godfather Part II (1974)?",
+        "back": "Francis Ford Coppola",
+        "extra": "First sequel to win Best Picture. Coppola also directed The Conversation the same year."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "alien",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Alien (1979)?",
+        "back": "Ridley Scott",
+        "extra": "Scott also directed Blade Runner and Gladiator."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "blade-runner",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Blade Runner (1982)?",
+        "back": "Ridley Scott",
+        "extra": "Adapted from Philip K. Dick. Scott also directed Alien and The Martian."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "raiders-of-the-lost-ark",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Raiders of the Lost Ark (1981)?",
+        "back": "Steven Spielberg",
+        "extra": "First Indiana Jones film, created with George Lucas. Spielberg also directed Jaws and E.T."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "the-silence-of-the-lambs",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Silence of the Lambs (1991)?",
+        "back": "Jonathan Demme",
+        "extra": "Swept the top five Oscars. Demme also directed Philadelphia."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "fight-club",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Fight Club (1999)?",
+        "back": "David Fincher",
+        "extra": "Adapted from Chuck Palahniuk. Fincher also directed Se7en and Zodiac."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "terminator-2-judgment-day",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Terminator 2: Judgment Day (1991)?",
+        "back": "James Cameron",
+        "extra": "Cameron also directed The Terminator, Aliens, and Titanic."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "die-hard",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Die Hard (1988)?",
+        "back": "John McTiernan",
+        "extra": "McTiernan also directed Predator and The Hunt for Red October."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "gladiator",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Gladiator (2000)?",
+        "back": "Ridley Scott",
+        "extra": "Won Best Picture. Scott also directed Alien, Blade Runner, and Thelma and Louise."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "the-empire-strikes-back",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Empire Strikes Back (1980)?",
+        "back": "Irvin Kershner",
+        "extra": "George Lucas handed the sequel to Kershner, his former USC film school teacher, while producing and writing the story."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "rocky",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Rocky (1976)?",
+        "back": "John G. Avildsen",
+        "extra": "Won Best Picture and earned Avildsen the Best Director Oscar. He also directed The Karate Kid."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "parasite",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Parasite (2019)?",
+        "back": "Bong Joon-ho",
+        "extra": "First non-English-language film to win Best Picture. Bong also directed Memories of Murder and Snowpiercer."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "spirited-away",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Spirited Away (2001)?",
+        "back": "Hayao Miyazaki",
+        "extra": "Studio Ghibli feature that won the Best Animated Feature Oscar. Miyazaki also directed Princess Mononoke and Howl's Moving Castle."
+      },
+      "tags": ["cinema::animation"]
+    },
+    {
+      "key": "toy-story",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Toy Story (1995)?",
+        "back": "John Lasseter",
+        "extra": "First fully computer-animated feature film, made at Pixar. Lasseter also directed A Bug's Life."
+      },
+      "tags": ["cinema::animation"]
+    },
+    {
+      "key": "the-lion-king",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Lion King (1994)?",
+        "back": "Roger Allers and Rob Minkoff",
+        "extra": "Disney Renaissance musical. Minkoff later directed Stuart Little."
+      },
+      "tags": ["cinema::animation"]
+    },
+    {
+      "key": "vertigo",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Vertigo (1958)?",
+        "back": "Alfred Hitchcock",
+        "extra": "Topped the 2012 Sight and Sound critics poll. Hitchcock also directed Psycho and Notorious."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "rear-window",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Rear Window (1954)?",
+        "back": "Alfred Hitchcock",
+        "extra": "Hitchcock also directed Dial M for Murder and To Catch a Thief, both with Grace Kelly."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "north-by-northwest",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed North by Northwest (1959)?",
+        "back": "Alfred Hitchcock",
+        "extra": "Crop duster chase and Mount Rushmore finale. Hitchcock also directed The 39 Steps."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "a-clockwork-orange",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed A Clockwork Orange (1971)?",
+        "back": "Stanley Kubrick",
+        "extra": "Kubrick withdrew it from British release for decades. He also directed Barry Lyndon."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "dr-strangelove",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Dr. Strangelove (1964)?",
+        "back": "Stanley Kubrick",
+        "extra": "Cold War satire starring Peter Sellers in three roles. Kubrick also directed Paths of Glory and Lolita."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "one-flew-over-the-cuckoos-nest",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed One Flew Over the Cuckoo's Nest (1975)?",
+        "back": "Miloš Forman",
+        "extra": "Swept the Big Five Oscars. Czech émigré Forman also directed Amadeus."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "the-exorcist",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Exorcist (1973)?",
+        "back": "William Friedkin",
+        "extra": "Friedkin also directed The French Connection, which won him the Best Director Oscar."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "chinatown",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Chinatown (1974)?",
+        "back": "Roman Polanski",
+        "extra": "Neo-noir written by Robert Towne. Polanski also directed Rosemary's Baby and The Pianist."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "the-graduate",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Graduate (1967)?",
+        "back": "Mike Nichols",
+        "extra": "Won Nichols the Best Director Oscar. He also directed Who's Afraid of Virginia Woolf?"
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "annie-hall",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Annie Hall (1977)?",
+        "back": "Woody Allen",
+        "extra": "Won Best Picture over Star Wars. Allen also directed Manhattan and Midnight in Paris."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "the-deer-hunter",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Deer Hunter (1978)?",
+        "back": "Michael Cimino",
+        "extra": "Won Best Picture and Best Director. Cimino's follow-up Heaven's Gate famously sank United Artists."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "raging-bull",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Raging Bull (1980)?",
+        "back": "Martin Scorsese",
+        "extra": "Black and white boxing biopic. Scorsese also directed Taxi Driver and The King of Comedy."
+      },
+      "tags": ["cinema::new-hollywood"]
+    },
+    {
+      "key": "the-social-network",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Social Network (2010)?",
+        "back": "David Fincher",
+        "extra": "Written by Aaron Sorkin. Fincher also directed Fight Club and Gone Girl."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "no-country-for-old-men",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed No Country for Old Men (2007)?",
+        "back": "Joel and Ethan Coen",
+        "extra": "Won the brothers Best Picture and Best Director. They also directed The Big Lebowski."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "fargo",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Fargo (1996)?",
+        "back": "Joel and Ethan Coen",
+        "extra": "Both brothers directed, though the screen credit at the time named Joel alone. They also made No Country for Old Men."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "there-will-be-blood",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed There Will Be Blood (2007)?",
+        "back": "Paul Thomas Anderson",
+        "extra": "Oil epic starring Daniel Day-Lewis. Anderson also directed Boogie Nights and Magnolia."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "get-out",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Get Out (2017)?",
+        "back": "Jordan Peele",
+        "extra": "Peele's directing debut won him the Original Screenplay Oscar. He also directed Us and Nope."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "inglourious-basterds",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Inglourious Basterds (2009)?",
+        "back": "Quentin Tarantino",
+        "extra": "Tarantino also directed Pulp Fiction and Django Unchained."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "unforgiven",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Unforgiven (1992)?",
+        "back": "Clint Eastwood",
+        "extra": "Revisionist Western that won Eastwood Best Picture and Best Director. He also directed Million Dollar Baby."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "do-the-right-thing",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Do the Right Thing (1989)?",
+        "back": "Spike Lee",
+        "extra": "One hot day in Bed-Stuy, Brooklyn. Lee also directed Malcolm X and BlacKkKlansman."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "moonlight",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Moonlight (2016)?",
+        "back": "Barry Jenkins",
+        "extra": "Best Picture winner. Jenkins also directed If Beale Street Could Talk."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "12-years-a-slave",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed 12 Years a Slave (2013)?",
+        "back": "Steve McQueen",
+        "extra": "Best Picture winner from the British artist turned director. McQueen also directed Hunger and Shame."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "black-panther",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Black Panther (2018)?",
+        "back": "Ryan Coogler",
+        "extra": "Coogler also directed Fruitvale Station and Creed."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "eternal-sunshine-of-the-spotless-mind",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Eternal Sunshine of the Spotless Mind (2004)?",
+        "back": "Michel Gondry",
+        "extra": "French music video visionary, written with Charlie Kaufman. Gondry also directed The Science of Sleep."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "whiplash",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Whiplash (2014)?",
+        "back": "Damien Chazelle",
+        "extra": "Chazelle also directed La La Land, which made him the youngest Best Director winner ever."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "the-grand-budapest-hotel",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Grand Budapest Hotel (2014)?",
+        "back": "Wes Anderson",
+        "extra": "Anderson also directed Rushmore, The Royal Tenenbaums, and Moonrise Kingdom."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "mad-max-fury-road",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Mad Max: Fury Road (2015)?",
+        "back": "George Miller",
+        "extra": "Miller created Mad Max in 1979 and also directed Babe: Pig in the City and Happy Feet."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "dune",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Dune (2021)?",
+        "back": "Denis Villeneuve",
+        "extra": "French-Canadian director. Villeneuve also directed Arrival and Blade Runner 2049."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "oppenheimer",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Oppenheimer (2023)?",
+        "back": "Christopher Nolan",
+        "extra": "Won Nolan his first Best Director Oscar. He also directed The Dark Knight trilogy."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "everything-everywhere-all-at-once",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Everything Everywhere All at Once (2022)?",
+        "back": "Daniel Kwan and Daniel Scheinert",
+        "extra": "The directing duo known as Daniels swept the 2023 Oscars. They also made Swiss Army Man."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "harry-potter-and-the-sorcerers-stone",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Harry Potter and the Sorcerer's Stone (2001)?",
+        "back": "Chris Columbus",
+        "extra": "Columbus also directed Home Alone and Mrs. Doubtfire."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "birdman",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Birdman (2014)?",
+        "back": "Alejandro González Iñárritu",
+        "extra": "Won Best Picture and Best Director. Iñárritu also directed The Revenant and Amores Perros."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "the-hurt-locker",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Hurt Locker (2008)?",
+        "back": "Kathryn Bigelow",
+        "extra": "Bigelow became the first woman to win the Best Director Oscar. She also directed Point Break and Zero Dark Thirty."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "lost-in-translation",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Lost in Translation (2003)?",
+        "back": "Sofia Coppola",
+        "extra": "Won Coppola the Original Screenplay Oscar. She also directed The Virgin Suicides and Marie Antoinette."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "lady-bird",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Lady Bird (2017)?",
+        "back": "Greta Gerwig",
+        "extra": "Gerwig's solo directing debut. She also directed Little Women and Barbie."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "barbie",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Barbie (2023)?",
+        "back": "Greta Gerwig",
+        "extra": "Highest grossing film of 2023. Gerwig also directed Lady Bird and Little Women."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "wonder-woman",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Wonder Woman (2017)?",
+        "back": "Patty Jenkins",
+        "extra": "Jenkins also directed Monster, which won Charlize Theron a Best Actress Oscar."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "selma",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Selma (2014)?",
+        "back": "Ava DuVernay",
+        "extra": "Martin Luther King Jr. drama. DuVernay also directed the documentary 13th."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "american-psycho",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed American Psycho (2000)?",
+        "back": "Mary Harron",
+        "extra": "Adapted from Bret Easton Ellis. Harron also directed I Shot Andy Warhol."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "nomadland",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Nomadland (2020)?",
+        "back": "Chloé Zhao",
+        "extra": "Won Zhao the Best Director Oscar. She also directed The Rider."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "the-piano",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Piano (1993)?",
+        "back": "Jane Campion",
+        "extra": "Palme d'Or winner. Campion later won the Best Director Oscar for The Power of the Dog."
+      },
+      "tags": ["cinema::modern"]
+    },
+    {
+      "key": "singin-in-the-rain",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Singin' in the Rain (1952)?",
+        "back": "Gene Kelly and Stanley Donen",
+        "extra": "Star Kelly co-directed with Donen; the pair also made On the Town together."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "some-like-it-hot",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Some Like It Hot (1959)?",
+        "back": "Billy Wilder",
+        "extra": "Wilder also directed Sunset Boulevard and The Apartment."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "sunset-boulevard",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Sunset Boulevard (1950)?",
+        "back": "Billy Wilder",
+        "extra": "Hollywood noir about a faded silent star. Wilder also directed Double Indemnity."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "its-a-wonderful-life",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed It's a Wonderful Life (1946)?",
+        "back": "Frank Capra",
+        "extra": "Capra also directed Mr. Smith Goes to Washington and It Happened One Night."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "12-angry-men",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed 12 Angry Men (1957)?",
+        "back": "Sidney Lumet",
+        "extra": "Lumet's feature debut. He also directed Dog Day Afternoon and Network."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "lawrence-of-arabia",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Lawrence of Arabia (1962)?",
+        "back": "David Lean",
+        "extra": "British epic specialist. Lean also directed The Bridge on the River Kwai and Doctor Zhivago."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "ben-hur",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Ben-Hur (1959)?",
+        "back": "William Wyler",
+        "extra": "Won a record 11 Oscars. Wyler also directed Roman Holiday and The Best Years of Our Lives."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "the-searchers",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Searchers (1956)?",
+        "back": "John Ford",
+        "extra": "Western master with a record four Best Director Oscars. Ford also directed Stagecoach and The Grapes of Wrath."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "high-noon",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed High Noon (1952)?",
+        "back": "Fred Zinnemann",
+        "extra": "Real-time Western. Zinnemann also directed From Here to Eternity and A Man for All Seasons."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "on-the-waterfront",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed On the Waterfront (1954)?",
+        "back": "Elia Kazan",
+        "extra": "Kazan also directed A Streetcar Named Desire and East of Eden."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "the-third-man",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Third Man (1949)?",
+        "back": "Carol Reed",
+        "extra": "British noir set in postwar Vienna. Reed also directed Oliver!"
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "modern-times",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Modern Times (1936)?",
+        "back": "Charlie Chaplin",
+        "extra": "Chaplin wrote, directed, scored, and starred. He also directed City Lights and The Great Dictator."
+      },
+      "tags": ["cinema::classic"]
+    },
+    {
+      "key": "seven-samurai",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Seven Samurai (1954)?",
+        "back": "Akira Kurosawa",
+        "extra": "Towering figure of Japanese cinema. Kurosawa also directed Rashomon, Ikiru, and Ran."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "rashomon",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Rashomon (1950)?",
+        "back": "Akira Kurosawa",
+        "extra": "Its Venice festival prize introduced Japanese cinema to the West. Kurosawa also directed Seven Samurai."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "tokyo-story",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Tokyo Story (1953)?",
+        "back": "Yasujirō Ozu",
+        "extra": "Japanese master of the quiet family drama. Ozu also directed Late Spring."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "amelie",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Amélie (2001)?",
+        "back": "Jean-Pierre Jeunet",
+        "extra": "Whimsical Montmartre fable. Jeunet also directed Delicatessen and A Very Long Engagement."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "city-of-god",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed City of God (2002)?",
+        "back": "Fernando Meirelles",
+        "extra": "Brazilian favela epic, co-directed by Kátia Lund. Meirelles also directed The Constant Gardener."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "pans-labyrinth",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Pan's Labyrinth (2006)?",
+        "back": "Guillermo del Toro",
+        "extra": "Spanish-language dark fantasy from the Mexican director. Del Toro also directed The Shape of Water."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "crouching-tiger-hidden-dragon",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Crouching Tiger, Hidden Dragon (2000)?",
+        "back": "Ang Lee",
+        "extra": "Taiwanese director. Lee won Best Director Oscars for Brokeback Mountain and Life of Pi."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "oldboy",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Oldboy (2003)?",
+        "back": "Park Chan-wook",
+        "extra": "Korean revenge thriller that won the Grand Prix at Cannes. Park also directed The Handmaiden."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "in-the-mood-for-love",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed In the Mood for Love (2000)?",
+        "back": "Wong Kar-wai",
+        "extra": "Hong Kong master of longing. Wong also directed Chungking Express and Happy Together."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "roma",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Roma (2018)?",
+        "back": "Alfonso Cuarón",
+        "extra": "Black and white memoir of 1970s Mexico City. Cuarón also directed Children of Men and Gravity."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "amores-perros",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Amores Perros (2000)?",
+        "back": "Alejandro González Iñárritu",
+        "extra": "The Mexican debut that launched Iñárritu. He also directed Birdman and The Revenant."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "all-about-my-mother",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed All About My Mother (1999)?",
+        "back": "Pedro Almodóvar",
+        "extra": "Spanish melodrama master. Almodóvar also directed Talk to Her and Volver."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "life-is-beautiful",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Life Is Beautiful (1997)?",
+        "back": "Roberto Benigni",
+        "extra": "Benigni directed and starred, winning the Best Actor Oscar."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "cinema-paradiso",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Cinema Paradiso (1988)?",
+        "back": "Giuseppe Tornatore",
+        "extra": "Italian love letter to moviegoing that won the Foreign Language Oscar. Tornatore also directed Malèna."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "the-good-the-bad-and-the-ugly",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Good, the Bad and the Ugly (1966)?",
+        "back": "Sergio Leone",
+        "extra": "Spaghetti Western maestro. Leone also directed Once Upon a Time in the West."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "bicycle-thieves",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Bicycle Thieves (1948)?",
+        "back": "Vittorio De Sica",
+        "extra": "Italian neorealist landmark. De Sica also directed Umberto D. and Shoeshine."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "eight-and-a-half",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed 8½ (1963)?",
+        "back": "Federico Fellini",
+        "extra": "Italian master of the surreal. Fellini also directed La Dolce Vita and Amarcord."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "breathless",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Breathless (1960)?",
+        "back": "Jean-Luc Godard",
+        "extra": "French New Wave manifesto. Godard also directed Contempt and Pierrot le Fou."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "the-400-blows",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The 400 Blows (1959)?",
+        "back": "François Truffaut",
+        "extra": "French New Wave. Truffaut also directed Jules and Jim and Day for Night."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "cleo-from-5-to-7",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Cléo from 5 to 7 (1962)?",
+        "back": "Agnès Varda",
+        "extra": "Godmother of the French New Wave. Varda also directed Vagabond and Faces Places."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "persona",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Persona (1966)?",
+        "back": "Ingmar Bergman",
+        "extra": "Swedish master. Bergman also directed The Seventh Seal and Fanny and Alexander."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "the-seventh-seal",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Seventh Seal (1957)?",
+        "back": "Ingmar Bergman",
+        "extra": "A knight plays chess with Death. Bergman also directed Persona and Wild Strawberries."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "metropolis",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Metropolis (1927)?",
+        "back": "Fritz Lang",
+        "extra": "German Expressionist epic. Lang also directed M before fleeing to Hollywood."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "battleship-potemkin",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Battleship Potemkin (1925)?",
+        "back": "Sergei Eisenstein",
+        "extra": "Soviet montage pioneer, famous for the Odessa Steps sequence. Eisenstein also directed October."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "stalker",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Stalker (1979)?",
+        "back": "Andrei Tarkovsky",
+        "extra": "Soviet master of the metaphysical. Tarkovsky also directed Solaris and Mirror."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "three-colours-blue",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Three Colours: Blue (1993)?",
+        "back": "Krzysztof Kieślowski",
+        "extra": "First film of the Polish director's Three Colours trilogy. Kieślowski also made Dekalog and The Double Life of Veronique."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "a-separation",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed A Separation (2011)?",
+        "back": "Asghar Farhadi",
+        "extra": "First Iranian film to win the Foreign Language Oscar. Farhadi also directed The Salesman."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "pather-panchali",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Pather Panchali (1955)?",
+        "back": "Satyajit Ray",
+        "extra": "Opens the Apu Trilogy from India's most celebrated director. Ray also directed The Music Room."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "portrait-of-a-lady-on-fire",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Portrait of a Lady on Fire (2019)?",
+        "back": "Céline Sciamma",
+        "extra": "French period romance that won Best Screenplay at Cannes. Sciamma also directed Girlhood."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "the-lives-of-others",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Lives of Others (2006)?",
+        "back": "Florian Henckel von Donnersmarck",
+        "extra": "Stasi surveillance drama that won the Foreign Language Oscar. It was Donnersmarck's debut feature."
+      },
+      "tags": ["cinema::world"]
+    },
+    {
+      "key": "up",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Up (2009)?",
+        "back": "Pete Docter",
+        "extra": "Pixar adventure co-directed by Bob Peterson. Docter also directed Monsters, Inc. and Inside Out."
+      },
+      "tags": ["cinema::animation"]
+    },
+    {
+      "key": "the-incredibles",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed The Incredibles (2004)?",
+        "back": "Brad Bird",
+        "extra": "Bird also directed The Iron Giant and Ratatouille."
+      },
+      "tags": ["cinema::animation"]
+    },
+    {
+      "key": "my-neighbor-totoro",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed My Neighbor Totoro (1988)?",
+        "back": "Hayao Miyazaki",
+        "extra": "Studio Ghibli icon whose title creature became the studio logo. Miyazaki also directed Spirited Away."
+      },
+      "tags": ["cinema::animation"]
+    },
+    {
+      "key": "akira",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Akira (1988)?",
+        "back": "Katsuhiro Ōtomo",
+        "extra": "Cyberpunk anime landmark. Ōtomo adapted his own manga and also directed Steamboy."
+      },
+      "tags": ["cinema::animation"]
+    },
+    {
+      "key": "grave-of-the-fireflies",
+      "model": "basic",
+      "fields": {
+        "front": "Who directed Grave of the Fireflies (1988)?",
+        "back": "Isao Takahata",
+        "extra": "Studio Ghibli war tragedy. Takahata also directed The Tale of the Princess Kaguya."
+      },
+      "tags": ["cinema::animation"]
+    }
+  ]
+}
