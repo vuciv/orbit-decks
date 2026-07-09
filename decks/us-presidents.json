@@ -1,0 +1,601 @@
+{
+  "key": "us-presidents",
+  "version": 1,
+  "name": "US Presidents",
+  "description": "All 45 people who have served as President of the United States, in chronological order from Washington onward, with official portraits, terms, parties, and one memorable fact each.",
+  "category": "History",
+  "topics": [
+    "history",
+    "usa",
+    "presidents"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Gilbert%20Stuart%20Williamstown%20Portrait%20of%20George%20Washington.jpg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "george-washington",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "George Washington",
+        "extra": "1st president, 1789-1797, no party. The only president ever elected unanimously by the Electoral College, and he did it twice.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Gilbert%20Stuart%20Williamstown%20Portrait%20of%20George%20Washington.jpg?width=640"
+      },
+      "tags": [
+        "presidents::founding"
+      ]
+    },
+    {
+      "key": "john-adams",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "John Adams",
+        "extra": "2nd president, 1797-1801, Federalist. The first president to live in the White House.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Adams%20Portrait.jpg?width=640"
+      },
+      "tags": [
+        "presidents::founding"
+      ]
+    },
+    {
+      "key": "thomas-jefferson",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Thomas Jefferson",
+        "extra": "3rd president, 1801-1809, Democratic-Republican. Author of the Declaration of Independence who doubled the nation's size with the Louisiana Purchase.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Official%20Presidential%20portrait%20of%20Thomas%20Jefferson%20(by%20Rembrandt%20Peale,%201800).jpg?width=640"
+      },
+      "tags": [
+        "presidents::founding"
+      ]
+    },
+    {
+      "key": "james-madison",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "James Madison",
+        "extra": "4th president, 1809-1817, Democratic-Republican. Known as the Father of the Constitution, he fled the capital when the British burned the White House in 1814.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/James%20Madison.jpg?width=640"
+      },
+      "tags": [
+        "presidents::founding"
+      ]
+    },
+    {
+      "key": "james-monroe",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "James Monroe",
+        "extra": "5th president, 1817-1825, Democratic-Republican. His Monroe Doctrine of 1823 warned European powers against colonizing the Americas.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/James%20Monroe%20White%20House%20portrait%201819%20(cropped)(2).jpg?width=640"
+      },
+      "tags": [
+        "presidents::founding"
+      ]
+    },
+    {
+      "key": "john-quincy-adams",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "John Quincy Adams",
+        "extra": "6th president, 1825-1829, Democratic-Republican (later National Republican). Son of John Adams, he won the presidency in the House of Representatives after no candidate secured an electoral majority in 1824.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/JQA%20Photo%20Crop%20(cropped).jpg?width=640"
+      },
+      "tags": [
+        "presidents::antebellum"
+      ]
+    },
+    {
+      "key": "andrew-jackson",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Andrew Jackson",
+        "extra": "7th president, 1829-1837, Democrat. The first Democratic president, he survived the first assassination attempt on a sitting president when both pistols misfired.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrew%20jackson%20head%20(cropped).jpg?width=640"
+      },
+      "tags": [
+        "presidents::antebellum"
+      ]
+    },
+    {
+      "key": "martin-van-buren",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Martin Van Buren",
+        "extra": "8th president, 1837-1841, Democrat. The first president born a US citizen, and the only one whose first language was not English (he grew up speaking Dutch).",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Martin%20Van%20Buren%20by%20Mathew%20Brady%20c1855-58-(4).jpg?width=640"
+      },
+      "tags": [
+        "presidents::antebellum"
+      ]
+    },
+    {
+      "key": "william-henry-harrison",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "William Henry Harrison",
+        "extra": "9th president, 1841, Whig. Died 31 days into office, the shortest presidency in American history.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/William%20Henry%20Harrison%20crop.jpg?width=640"
+      },
+      "tags": [
+        "presidents::antebellum"
+      ]
+    },
+    {
+      "key": "john-tyler",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "John Tyler",
+        "extra": "10th president, 1841-1845, Whig (expelled from the party). The first vice president to succeed on a president's death, which earned him the nickname His Accidency.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Tyler,%20John,%20by%20Healy%20(1842,%20NPG%202019%2013)%20(cropped).jpg?width=640"
+      },
+      "tags": [
+        "presidents::antebellum"
+      ]
+    },
+    {
+      "key": "james-k-polk",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "James K. Polk",
+        "extra": "11th president, 1845-1849, Democrat. Stretched the country to the Pacific through the Mexican-American War and the Oregon Treaty, then kept his pledge to serve only one term.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Polk%20crop.jpg?width=640"
+      },
+      "tags": [
+        "presidents::antebellum"
+      ]
+    },
+    {
+      "key": "zachary-taylor",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Zachary Taylor",
+        "extra": "12th president, 1849-1850, Whig. A career general nicknamed Old Rough and Ready, he died just 16 months into his term.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Zachary%20Taylor%20restored%20and%20cropped%20(3.5x4.5%20cropped)%20(2).jpg?width=640"
+      },
+      "tags": [
+        "presidents::antebellum"
+      ]
+    },
+    {
+      "key": "millard-fillmore",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Millard Fillmore",
+        "extra": "13th president, 1850-1853, Whig. The last Whig president, he signed the Compromise of 1850 trying to hold the Union together.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Millard%20Fillmore%20Better%20Crop%20(cropped).jpg?width=640"
+      },
+      "tags": [
+        "presidents::antebellum"
+      ]
+    },
+    {
+      "key": "franklin-pierce",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Franklin Pierce",
+        "extra": "14th president, 1853-1857, Democrat. Signed the Kansas-Nebraska Act, which reignited the national fight over slavery.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Mathew%20Brady%20-%20Franklin%20Pierce%20-%20alternate%20crop%20(cropped)(2).jpg?width=640"
+      },
+      "tags": [
+        "presidents::antebellum"
+      ]
+    },
+    {
+      "key": "james-buchanan",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "James Buchanan",
+        "extra": "15th president, 1857-1861, Democrat. The only president who never married; seven states seceded in his final months in office.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/James%20Buchanan.jpg?width=640"
+      },
+      "tags": [
+        "presidents::antebellum"
+      ]
+    },
+    {
+      "key": "abraham-lincoln",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Abraham Lincoln",
+        "extra": "16th president, 1861-1865, Republican. Preserved the Union through the Civil War and issued the Emancipation Proclamation before becoming the first president assassinated.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Abraham%20Lincoln%201863%20Portrait%20(3x4%20cropped).jpg?width=640"
+      },
+      "tags": [
+        "presidents::civil-war-gilded"
+      ]
+    },
+    {
+      "key": "andrew-johnson",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Andrew Johnson",
+        "extra": "17th president, 1865-1869, Democrat (elected on the National Union ticket). The first president to be impeached; the Senate acquitted him by a single vote.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrew%20Johnson%20photo%20portrait%20head%20and%20shoulders,%20c1870-1880-Edit1.jpg?width=640"
+      },
+      "tags": [
+        "presidents::civil-war-gilded"
+      ]
+    },
+    {
+      "key": "ulysses-s-grant",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Ulysses S. Grant",
+        "extra": "18th president, 1869-1877, Republican. The commanding general who won the Civil War for the Union before winning the White House.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Ulysses%20S.%20Grant%201870-1880%20(cropped).jpg?width=640"
+      },
+      "tags": [
+        "presidents::civil-war-gilded"
+      ]
+    },
+    {
+      "key": "rutherford-b-hayes",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Rutherford B. Hayes",
+        "extra": "19th president, 1877-1881, Republican. Won the disputed 1876 election by one electoral vote, and the deal that settled it ended Reconstruction.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/President%20Rutherford%20Hayes%201870%20-%201880%20Restored.jpg?width=640"
+      },
+      "tags": [
+        "presidents::civil-war-gilded"
+      ]
+    },
+    {
+      "key": "james-a-garfield",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "James A. Garfield",
+        "extra": "20th president, 1881, Republican. Shot by a disgruntled office seeker four months into his term and died that September.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/James%20Abram%20Garfield,%20photo%20portrait%20seated.jpg?width=640"
+      },
+      "tags": [
+        "presidents::civil-war-gilded"
+      ]
+    },
+    {
+      "key": "chester-a-arthur",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Chester A. Arthur",
+        "extra": "21st president, 1881-1885, Republican. Signed the Pendleton Act, creating the merit-based federal civil service.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Chester%20A.%20Arthur%20by%20Abraham%20Bogardus%20(cropped)%20(2).jpg?width=640"
+      },
+      "tags": [
+        "presidents::civil-war-gilded"
+      ]
+    },
+    {
+      "key": "grover-cleveland",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Grover Cleveland",
+        "extra": "22nd and 24th president, 1885-1889 and 1893-1897, Democrat. The first president to serve non-consecutive terms.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/StephenGroverCleveland.jpg?width=640"
+      },
+      "tags": [
+        "presidents::civil-war-gilded"
+      ]
+    },
+    {
+      "key": "benjamin-harrison",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Benjamin Harrison",
+        "extra": "23rd president, 1889-1893, Republican. Grandson of William Henry Harrison; electricity was installed in the White House during his term.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Pach%20Brothers%20-%20Benjamin%20Harrison%20(cropped)%20(cropped).jpg?width=640"
+      },
+      "tags": [
+        "presidents::civil-war-gilded"
+      ]
+    },
+    {
+      "key": "william-mckinley",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "William McKinley",
+        "extra": "25th president, 1897-1901, Republican. Led the nation to victory in the Spanish-American War before being assassinated by an anarchist in 1901.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/McKinley%20(cropped).jpg?width=640"
+      },
+      "tags": [
+        "presidents::civil-war-gilded"
+      ]
+    },
+    {
+      "key": "theodore-roosevelt",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Theodore Roosevelt",
+        "extra": "26th president, 1901-1909, Republican. The youngest person ever to become president, at 42, and the first American to win a Nobel Peace Prize.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Theodore%20Roosevelt%20by%20the%20Pach%20Bros%20(4x5%20cropped)%20(2).jpg?width=640"
+      },
+      "tags": [
+        "presidents::progressive-wars"
+      ]
+    },
+    {
+      "key": "william-howard-taft",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "William Howard Taft",
+        "extra": "27th president, 1909-1913, Republican. Later became Chief Justice of the United States, the only person to head two branches of government.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/William%20Howard%20Taft%20by%20Pach%20Brothers%20(3x4%20ropped)%20(cropped).jpg?width=640"
+      },
+      "tags": [
+        "presidents::progressive-wars"
+      ]
+    },
+    {
+      "key": "woodrow-wilson",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Woodrow Wilson",
+        "extra": "28th president, 1913-1921, Democrat. Led the United States through World War I and championed the League of Nations.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/President%20Woodrow%20Wilson%20Harris%20%26%20Ewing%20(3x4%20cropped%20b).jpg?width=640"
+      },
+      "tags": [
+        "presidents::progressive-wars"
+      ]
+    },
+    {
+      "key": "warren-g-harding",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Warren G. Harding",
+        "extra": "29th president, 1921-1923, Republican. Died in office as the Teapot Dome bribery scandal was engulfing his administration.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Warren%20G.%20Harding%201920s%20portrait%20(3x4%20cropped)%20(cropped).jpg?width=640"
+      },
+      "tags": [
+        "presidents::progressive-wars"
+      ]
+    },
+    {
+      "key": "calvin-coolidge",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Calvin Coolidge",
+        "extra": "30th president, 1923-1929, Republican. Silent Cal was sworn in by his own father, a notary public, by kerosene lamplight after Harding's death.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/President%20Calvin%20Coolidge,%201924%20portrait%20photograph%20(3x4%20cropped%202).jpeg?width=640"
+      },
+      "tags": [
+        "presidents::progressive-wars"
+      ]
+    },
+    {
+      "key": "herbert-hoover",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Herbert Hoover",
+        "extra": "31st president, 1929-1933, Republican. The stock market crashed seven months into his term, ushering in the Great Depression.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/President%20Hoover%20portrait.jpg?width=640"
+      },
+      "tags": [
+        "presidents::progressive-wars"
+      ]
+    },
+    {
+      "key": "franklin-d-roosevelt",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Franklin D. Roosevelt",
+        "extra": "32nd president, 1933-1945, Democrat. The only president elected four times, he led the country through the Great Depression and World War II.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/FDR-1944-Campaign-Portrait%20(3x4%20retouched,%20cropped).jpg?width=640"
+      },
+      "tags": [
+        "presidents::progressive-wars"
+      ]
+    },
+    {
+      "key": "harry-s-truman",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Harry S. Truman",
+        "extra": "33rd president, 1945-1953, Democrat. Ordered the atomic bombings of Japan and kept a desk sign reading \"The buck stops here\".",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/TRUMAN%2058-766-06%20(cropped).jpg?width=640"
+      },
+      "tags": [
+        "presidents::progressive-wars"
+      ]
+    },
+    {
+      "key": "dwight-d-eisenhower",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Dwight D. Eisenhower",
+        "extra": "34th president, 1953-1961, Republican. Supreme Allied Commander in Europe during World War II, he later launched the Interstate Highway System.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Dwight%20D.%20Eisenhower,%20official%20photo%20portrait,%20May%2029,%201959%20(cropped)(3).jpg?width=640"
+      },
+      "tags": [
+        "presidents::cold-war"
+      ]
+    },
+    {
+      "key": "john-f-kennedy",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "John F. Kennedy",
+        "extra": "35th president, 1961-1963, Democrat. The youngest person ever elected president, he was assassinated in Dallas in November 1963.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20F.%20Kennedy,%20White%20House%20color%20photo%20portrait.jpg?width=640"
+      },
+      "tags": [
+        "presidents::cold-war"
+      ]
+    },
+    {
+      "key": "lyndon-b-johnson",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Lyndon B. Johnson",
+        "extra": "36th president, 1963-1969, Democrat. Signed the Civil Rights Act of 1964 and the Voting Rights Act of 1965.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyndon%20B.%20Johnson,%20photo%20portrait,%20color%20(3x4%20cropped)(2).jpg?width=640"
+      },
+      "tags": [
+        "presidents::cold-war"
+      ]
+    },
+    {
+      "key": "richard-nixon",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Richard Nixon",
+        "extra": "37th president, 1969-1974, Republican. The only president to resign from office, stepping down over the Watergate scandal.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20Nixon%20presidential%20portrait%20(1).jpg?width=640"
+      },
+      "tags": [
+        "presidents::cold-war"
+      ]
+    },
+    {
+      "key": "gerald-ford",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Gerald Ford",
+        "extra": "38th president, 1974-1977, Republican. The only president never elected president or vice president; he pardoned Nixon a month into the job.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerald%20Ford%20presidential%20portrait%20(cropped).jpg?width=640"
+      },
+      "tags": [
+        "presidents::cold-war"
+      ]
+    },
+    {
+      "key": "jimmy-carter",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Jimmy Carter",
+        "extra": "39th president, 1977-1981, Democrat. Brokered the Camp David Accords between Egypt and Israel, and lived to 100, longer than any other president.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Jimmy%20Carter%20Official%20Portrait2%20(3x4%20cropped).jpg?width=640"
+      },
+      "tags": [
+        "presidents::cold-war"
+      ]
+    },
+    {
+      "key": "ronald-reagan",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Ronald Reagan",
+        "extra": "40th president, 1981-1989, Republican. A former Hollywood actor who stood at the Berlin Wall and demanded, \"Tear down this wall\".",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Official%20Portrait%20of%20President%20Reagan%201981.jpg?width=640"
+      },
+      "tags": [
+        "presidents::cold-war"
+      ]
+    },
+    {
+      "key": "george-h-w-bush",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "George H. W. Bush",
+        "extra": "41st president, 1989-1993, Republican. A former CIA director who led the international coalition that won the 1991 Gulf War.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/George%20H.%20W.%20Bush%20presidential%20portrait%20(cropped)%20(2).jpg?width=640"
+      },
+      "tags": [
+        "presidents::cold-war"
+      ]
+    },
+    {
+      "key": "bill-clinton",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Bill Clinton",
+        "extra": "42nd president, 1993-2001, Democrat. Presided over the longest economic expansion in US history; the second president impeached, and acquitted.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bill%20Clinton%20(cropped%204).jpg?width=640"
+      },
+      "tags": [
+        "presidents::modern"
+      ]
+    },
+    {
+      "key": "george-w-bush",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "George W. Bush",
+        "extra": "43rd president, 2001-2009, Republican. Son of George H. W. Bush, he led the nation's response to the September 11 attacks.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/George-W-Bush%20(cropped%202).jpeg?width=640"
+      },
+      "tags": [
+        "presidents::modern"
+      ]
+    },
+    {
+      "key": "barack-obama",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Barack Obama",
+        "extra": "44th president, 2009-2017, Democrat. The first African American president; signed the Affordable Care Act.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/President%20Barack%20Obama.jpg?width=640"
+      },
+      "tags": [
+        "presidents::modern"
+      ]
+    },
+    {
+      "key": "donald-trump",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Donald Trump",
+        "extra": "45th and 47th president, 2017-2021 and 2025-present, Republican. The second president to serve non-consecutive terms, after Grover Cleveland.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Official%20Presidential%20Portrait%20of%20President%20Donald%20J.%20Trump%20(2025)%20(cropped)(2).jpg?width=640"
+      },
+      "tags": [
+        "presidents::modern"
+      ]
+    },
+    {
+      "key": "joe-biden",
+      "model": "basic",
+      "fields": {
+        "front": "Who is this president?",
+        "back": "Joe Biden",
+        "extra": "46th president, 2021-2025, Democrat. The oldest person to assume the presidency, at 78, after serving eight years as Obama's vice president.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Joe%20Biden%20presidential%20portrait.jpg?width=640"
+      },
+      "tags": [
+        "presidents::modern"
+      ]
+    }
+  ]
+}

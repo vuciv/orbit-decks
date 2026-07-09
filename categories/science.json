@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "key": "science",
+  "name": "Science",
+  "decks": [
+    {
+      "key": "periodic-table",
+      "name": "The Periodic Table",
+      "description": "All 118 elements, from hydrogen to oganesson. See the symbol, type the element name. Extras cover atomic numbers, element categories, and the Latin and German roots behind the odd symbols like Au, W, and Na.",
+      "cardCount": 118,
+      "topics": [
+        "chemistry",
+        "elements",
+        "science"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Simple%20Periodic%20Table%20Chart-en.svg?width=640"
+    }
+  ]
+}

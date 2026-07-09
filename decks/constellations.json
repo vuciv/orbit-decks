@@ -1,0 +1,1173 @@
+{
+  "key": "constellations",
+  "version": 1,
+  "name": "The 88 Constellations",
+  "description": "All 88 constellations officially recognized by the IAU, each shown on its standard IAU chart. Learn the Latin name, the English meaning, a signature star or deep-sky object, and when and where to spot it.",
+  "category": "Space",
+  "topics": [
+    "astronomy",
+    "constellations",
+    "night-sky"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Orion%20IAU.svg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "orion",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Orion",
+        "extra": "The Hunter. Rigel is its brightest star, with the red supergiant Betelgeuse and the Orion Nebula (M42) hanging below the three-star Belt. Best seen: January evenings from both hemispheres.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Orion%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "ursa-major",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Ursa Major",
+        "extra": "The Great Bear. Contains the Big Dipper asterism; its brightest star is Alioth, and Mizar with Alcor is a famous naked-eye double. Best seen: northern hemisphere, April evenings; circumpolar from mid-northern latitudes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Ursa%20Major%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "cassiopeia",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Cassiopeia",
+        "extra": "The Seated Queen. Its five brightest stars, led by Schedar, form an unmistakable W shape. Best seen: northern hemisphere, November evenings; circumpolar from mid-northern latitudes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Cassiopeia%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "scorpius",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Scorpius",
+        "extra": "The Scorpion. The red supergiant Antares marks its heart; a zodiac constellation. Best seen: southern hemisphere, July evenings; low in the south from mid-northern latitudes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Scorpius%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::zodiac",
+        "space::southern"
+      ]
+    },
+    {
+      "key": "crux",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Crux",
+        "extra": "The Southern Cross. The smallest of the 88 constellations; its brightest star is Acrux, and it borders the dark Coalsack Nebula and the Jewel Box cluster. Best seen: southern hemisphere, May evenings; circumpolar from mid-southern latitudes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Crux%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "leo",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Leo",
+        "extra": "The Lion. Regulus marks the lion's heart at the base of the Sickle asterism; a zodiac constellation. Best seen: northern hemisphere, April evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Leo%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::zodiac",
+        "space::northern"
+      ]
+    },
+    {
+      "key": "taurus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Taurus",
+        "extra": "The Bull. The orange giant Aldebaran marks the bull's eye, near the Pleiades (M45) and Hyades star clusters; a zodiac constellation. Best seen: northern hemisphere, January evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Taurus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::zodiac",
+        "space::northern"
+      ]
+    },
+    {
+      "key": "gemini",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Gemini",
+        "extra": "The Twins. Pollux (the brighter) and Castor mark the twins' heads; a zodiac constellation. Best seen: northern hemisphere, February evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Gemini%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::zodiac",
+        "space::northern"
+      ]
+    },
+    {
+      "key": "cygnus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Cygnus",
+        "extra": "The Swan. Deneb marks the tail and anchors the Northern Cross asterism; Albireo is a famous gold-and-blue double star. Best seen: northern hemisphere, September evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Cygnus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "ursa-minor",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Ursa Minor",
+        "extra": "The Little Bear. Polaris, the North Star, sits at the tip of its tail, the end of the Little Dipper's handle. Best seen: northern hemisphere, circumpolar all year; highest in June.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Ursa%20Minor%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "canis-major",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Canis Major",
+        "extra": "The Greater Dog. Contains Sirius, the brightest star in the night sky. Best seen: February evenings, favoring the southern hemisphere but easy from the north.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Canis%20Major%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "lyra",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Lyra",
+        "extra": "The Lyre. Brilliant Vega anchors the Summer Triangle; the constellation also holds the Ring Nebula (M57). Best seen: northern hemisphere, August evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyra%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "aquila",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Aquila",
+        "extra": "The Eagle. Altair, flanked by two fainter stars, forms the southern corner of the Summer Triangle. Best seen: northern hemisphere, September evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Aquila%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "pegasus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Pegasus",
+        "extra": "The Winged Horse. The Great Square of Pegasus dominates autumn skies; its brightest star is Enif, and it hosts the globular cluster M15. Best seen: northern hemisphere, October evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Pegasus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "andromeda",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Andromeda",
+        "extra": "The Chained Princess. Home to the Andromeda Galaxy (M31), the nearest large spiral galaxy; its brightest star is Alpheratz. Best seen: northern hemisphere, November evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Andromeda%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "sagittarius",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Sagittarius",
+        "extra": "The Archer. Its Teapot asterism points toward the center of the Milky Way; brightest star Kaus Australis; rich in nebulae such as the Lagoon (M8). A zodiac constellation. Best seen: southern hemisphere, August evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Sagittarius%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::zodiac",
+        "space::southern"
+      ]
+    },
+    {
+      "key": "perseus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Perseus",
+        "extra": "The Hero. Its brightest star is Mirfak; Algol, the Demon Star, is the prototype eclipsing binary, and the Double Cluster lies on the Cassiopeia border. Best seen: northern hemisphere, December evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Perseus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "bootes",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Boötes",
+        "extra": "The Herdsman. Kite-shaped, anchored by Arcturus, the brightest star in the northern celestial hemisphere. Best seen: northern hemisphere, June evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bo%C3%B6tes%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "auriga",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Auriga",
+        "extra": "The Charioteer. A bright pentagon anchored by golden Capella, the sixth brightest star in the night sky. Best seen: northern hemisphere, February evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Auriga%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "canis-minor",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Canis Minor",
+        "extra": "The Lesser Dog. Essentially two stars, led by Procyon, the eighth brightest star in the night sky. Best seen: northern hemisphere, March evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Canis%20Minor%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "aries",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Aries",
+        "extra": "The Ram. A compact zodiac constellation whose brightest star is the orange giant Hamal. Best seen: northern hemisphere, December evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Aries%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::zodiac",
+        "space::northern"
+      ]
+    },
+    {
+      "key": "cancer",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Cancer",
+        "extra": "The Crab. The faintest zodiac constellation; its highlight is the Beehive Cluster (M44), and its brightest star is Tarf. Best seen: northern hemisphere, March evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Cancer%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::zodiac",
+        "space::northern"
+      ]
+    },
+    {
+      "key": "virgo",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Virgo",
+        "extra": "The Maiden. The second largest constellation; blue-white Spica is its brightest star, and it hosts the Virgo galaxy cluster. A zodiac constellation. Best seen: May evenings from both hemispheres.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Virgo%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::zodiac",
+        "space::southern"
+      ]
+    },
+    {
+      "key": "libra",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Libra",
+        "extra": "The Scales. The only zodiac constellation depicting an object; its brightest stars, Zubeneschamali and Zubenelgenubi, were once seen as the scorpion's claws. Best seen: June evenings, favoring the southern hemisphere.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Libra%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::zodiac",
+        "space::southern"
+      ]
+    },
+    {
+      "key": "capricornus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Capricornus",
+        "extra": "The Sea Goat. A faint, roughly triangular zodiac constellation; its brightest star is Deneb Algedi, and it contains the globular cluster M30. Best seen: southern hemisphere, September evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Capricornus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::zodiac",
+        "space::southern"
+      ]
+    },
+    {
+      "key": "aquarius",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Aquarius",
+        "extra": "The Water Bearer. A zodiac constellation; its brightest star is Sadalsuud, and it contains the Helix Nebula, one of the closest planetary nebulae. Best seen: October evenings, favoring the southern hemisphere.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Aquarius%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::zodiac",
+        "space::southern"
+      ]
+    },
+    {
+      "key": "pisces",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Pisces",
+        "extra": "The Fishes. Two fish tied by cords that knot at the star Alrescha; the Circlet asterism marks the western fish. A zodiac constellation. Best seen: northern hemisphere, November evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Pisces%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::zodiac",
+        "space::northern"
+      ]
+    },
+    {
+      "key": "ophiuchus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Ophiuchus",
+        "extra": "The Serpent Bearer. Its brightest star is Rasalhague, and it hosts Barnard's Star. The sun crosses it each December, making it the informal 13th zodiac constellation, though it is not one of the twelve traditional signs. Best seen: July evenings from both hemispheres.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Ophiuchus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::zodiac",
+        "space::southern"
+      ]
+    },
+    {
+      "key": "draco",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Draco",
+        "extra": "The Dragon. Winds between the two Dippers; its brightest star is Eltanin, and Thuban was the pole star around 2700 BC. Best seen: northern hemisphere, July evenings; circumpolar from mid-northern latitudes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Draco%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "cepheus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Cepheus",
+        "extra": "The King. House-shaped; its brightest star is Alderamin, Delta Cephei is the prototype Cepheid variable, and Mu Cephei (the Garnet Star) is one of the reddest naked-eye stars. Best seen: northern hemisphere, October evenings; circumpolar from mid-northern latitudes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Cepheus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "hercules",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Hercules",
+        "extra": "The Strongman (the hero Heracles). Its Keystone asterism holds M13, the Great Globular Cluster; its brightest star is Kornephoros. Best seen: northern hemisphere, July evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Hercules%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "corona-borealis",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Corona Borealis",
+        "extra": "The Northern Crown. A small arc of stars led by Alphecca (also called Gemma); hosts the recurrent nova T Coronae Borealis, the Blaze Star. Best seen: northern hemisphere, July evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Corona%20Borealis%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "hydra",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Hydra",
+        "extra": "The Water Snake. The largest of the 88 constellations, stretching more than 100 degrees; its brightest star is Alphard, the Solitary One. Best seen: March and April evenings, favoring the southern hemisphere.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Hydra%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "centaurus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Centaurus",
+        "extra": "The Centaur. Contains Alpha Centauri, the nearest star system to the sun, and Omega Centauri, the largest globular cluster of the Milky Way. Best seen: southern hemisphere, May evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Centaurus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "carina",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Carina",
+        "extra": "The Keel (of the ship Argo). Canopus is the second brightest star in the night sky; the constellation also hosts the Carina Nebula and the unstable star Eta Carinae. Best seen: southern hemisphere, March evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Carina%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "vela",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Vela",
+        "extra": "The Sails (of the ship Argo). Its brightest star, Gamma Velorum, is the nearest Wolf-Rayet star; it also contains the Vela supernova remnant. Best seen: southern hemisphere, March evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Vela%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "puppis",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Puppis",
+        "extra": "The Stern (of the ship Argo). Its brightest star is the hot supergiant Naos (Zeta Puppis); rich in open clusters such as M46 and M47. Best seen: southern hemisphere, February evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Puppis%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "eridanus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Eridanus",
+        "extra": "The River. The sixth largest constellation, winding from near Orion's foot to brilliant Achernar deep in the southern sky. Best seen: December and January evenings, favoring the southern hemisphere.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Eridanus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "cetus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Cetus",
+        "extra": "The Sea Monster (often called the Whale). Home to Mira, the prototype long-period variable star; its brightest star is Diphda. Best seen: November evenings, favoring the southern hemisphere.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Cetus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "delphinus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Delphinus",
+        "extra": "The Dolphin. A compact diamond of stars nicknamed Job's Coffin; its brightest star is Rotanev. Best seen: northern hemisphere, September evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Delphinus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "lepus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Lepus",
+        "extra": "The Hare. Crouches at Orion's feet; its brightest star is Arneb, and it contains the globular cluster M79. Best seen: February evenings, favoring the southern hemisphere but easy from the north.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Lepus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "corvus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Corvus",
+        "extra": "The Crow. A compact quadrilateral; its brightest star is Gienah, and the colliding Antennae Galaxies lie on its border. Best seen: May evenings, favoring the southern hemisphere.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Corvus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "crater",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Crater",
+        "extra": "The Cup. A faint goblet resting on Hydra's back; its brightest star is Delta Crateris at magnitude 3.6. Best seen: April evenings, favoring the southern hemisphere.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Crater%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "piscis-austrinus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Piscis Austrinus",
+        "extra": "The Southern Fish. Its brightest star, Fomalhaut, the loneliest bright star of autumn skies, hosts a famous debris disk. Best seen: October evenings, favoring the southern hemisphere.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Piscis%20Austrinus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "serpens",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Serpens",
+        "extra": "The Serpent. The only constellation split into two parts, Serpens Caput (the head) and Serpens Cauda (the tail), separated by Ophiuchus; its brightest star is Unukalhai, and Cauda holds the Eagle Nebula (M16). Best seen: July evenings from both hemispheres.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Serpens%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "monoceros",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Monoceros",
+        "extra": "The Unicorn. A faint constellation inside the Winter Triangle; hosts the Rosette Nebula and the fine triple star Beta Monocerotis. Best seen: February evenings from both hemispheres.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Monoceros%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "camelopardalis",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Camelopardalis",
+        "extra": "The Giraffe. A large but very faint far-northern constellation; its best-known feature is Kemble's Cascade, a chain of faint stars. Best seen: northern hemisphere, February evenings; circumpolar from mid-northern latitudes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Camelopardalis%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "canes-venatici",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Canes Venatici",
+        "extra": "The Hunting Dogs. Its brightest star is Cor Caroli (Charles's Heart); hosts the Whirlpool Galaxy (M51) and the globular cluster M3. Best seen: northern hemisphere, May evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Canes%20Venatici%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "coma-berenices",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Coma Berenices",
+        "extra": "Berenice's Hair. Named for a real Egyptian queen who sacrificed her hair; contains the naked-eye Coma star cluster and the Black Eye Galaxy (M64). Best seen: northern hemisphere, May evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Coma%20Berenices%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "leo-minor",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Leo Minor",
+        "extra": "The Lesser Lion. A faint sliver between Leo and Ursa Major; its brightest star is Praecipua. Best seen: northern hemisphere, April evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Leo%20Minor%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "lynx",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Lynx",
+        "extra": "The Lynx. Named by Hevelius, who joked that you need the eyes of a lynx to see it; its brightest star is Alpha Lyncis, and it hosts NGC 2419, the Intergalactic Wanderer globular cluster. Best seen: northern hemisphere, March evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Lynx%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "lacerta",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Lacerta",
+        "extra": "The Lizard. A faint zigzag sometimes called Little Cassiopeia; its brightest star is Alpha Lacertae, and it gave its name to BL Lacertae objects (blazars). Best seen: northern hemisphere, October evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Lacerta%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "sagitta",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Sagitta",
+        "extra": "The Arrow. The third smallest constellation; its brightest star is Gamma Sagittae, and it contains the loose globular cluster M71. Best seen: northern hemisphere, September evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Sagitta%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "vulpecula",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Vulpecula",
+        "extra": "The Little Fox. Home of the Dumbbell Nebula (M27), the first planetary nebula ever discovered, and of the first known pulsar; also hosts the Coathanger asterism. Best seen: northern hemisphere, September evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Vulpecula%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "equuleus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Equuleus",
+        "extra": "The Little Horse (the Foal). The second smallest constellation; its brightest star is Kitalpha. Best seen: northern hemisphere, September evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Equuleus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "triangulum",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Triangulum",
+        "extra": "The Triangle. Contains the Triangulum Galaxy (M33), the third largest galaxy in the Local Group; its brightest star is Beta Trianguli. Best seen: northern hemisphere, December evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Triangulum%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::northern"
+      ]
+    },
+    {
+      "key": "scutum",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Scutum",
+        "extra": "The Shield. Created by Hevelius to honor King John III Sobieski of Poland; contains the Wild Duck Cluster (M11) and the bright Scutum star cloud. Best seen: August evenings, favoring the southern hemisphere.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Scutum%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "grus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Grus",
+        "extra": "The Crane. Its brightest star is Alnair; the interacting galaxies of the Grus Quartet lie here. Best seen: southern hemisphere, October evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Grus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "phoenix",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Phoenix",
+        "extra": "The Phoenix. The largest of the twelve southern constellations introduced from Keyser and de Houtman's observations; its brightest star is Ankaa. Best seen: southern hemisphere, November evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Phoenix%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "pavo",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Pavo",
+        "extra": "The Peacock. Its brightest star was named Peacock in the 1930s for Royal Air Force navigation almanacs; hosts the fine globular cluster NGC 6752. Best seen: southern hemisphere, September evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Pavo%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "tucana",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Tucana",
+        "extra": "The Toucan. Hosts the Small Magellanic Cloud and 47 Tucanae, the second brightest globular cluster; its brightest star is Alpha Tucanae. Best seen: southern hemisphere, November evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Tucana%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "dorado",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Dorado",
+        "extra": "The Dolphinfish (mahi-mahi). Contains most of the Large Magellanic Cloud, including the Tarantula Nebula; its brightest star is Alpha Doradus. Best seen: southern hemisphere, January evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Dorado%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "columba",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Columba",
+        "extra": "The Dove. Represents Noah's dove; its brightest star is Phact, and it hosts the runaway star Mu Columbae. Best seen: southern hemisphere, February evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Columba%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "lupus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Lupus",
+        "extra": "The Wolf. An ancient constellation, originally a wild beast impaled by Centaurus; its brightest star is Alpha Lupi, and it was the site of SN 1006, the brightest supernova in recorded history. Best seen: southern hemisphere, June evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Lupus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "ara",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Ara",
+        "extra": "The Altar. In myth, the altar on which the gods swore their oath before fighting the Titans; its brightest star is Beta Arae, and it hosts NGC 6397, one of the closest globular clusters. Best seen: southern hemisphere, July evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Ara%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "corona-australis",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Corona Australis",
+        "extra": "The Southern Crown. A faint arc just south of Sagittarius; its brightest star is Meridiana (Alpha Coronae Australis), near a nearby star-forming region around R Coronae Australis. Best seen: southern hemisphere, August evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Corona%20Australis%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "triangulum-australe",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Triangulum Australe",
+        "extra": "The Southern Triangle. Its three main stars are nicknamed the Three Patriarchs; the brightest is the orange giant Atria. Best seen: southern hemisphere, July evenings; circumpolar from mid-southern latitudes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Triangulum%20Australe%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "musca",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Musca",
+        "extra": "The Fly. The only official constellation depicting an insect; its brightest star is Alpha Muscae, and it lies just south of Crux near the Coalsack. Best seen: southern hemisphere, May evenings; circumpolar from mid-southern latitudes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Musca%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "circinus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Circinus",
+        "extra": "The Drawing Compass. A narrow wedge beside Alpha Centauri; its brightest star is Alpha Circini, and it hosts the Circinus Galaxy, one of the nearest active galaxies. Best seen: southern hemisphere, June evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Circinus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "norma",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Norma",
+        "extra": "The Carpenter's Square. A small constellation in a rich Milky Way field; its brightest star is Gamma2 Normae, and the Great Attractor lies in its direction. Best seen: southern hemisphere, July evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Norma%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "telescopium",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Telescopium",
+        "extra": "The Telescope. One of Lacaille's scientific-instrument constellations; its brightest star is Alpha Telescopii. Best seen: southern hemisphere, August evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Telescopium%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "microscopium",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Microscopium",
+        "extra": "The Microscope. A faint Lacaille constellation; its brightest star is Gamma Microscopii, and AU Microscopii hosts a well-studied debris disk. Best seen: southern hemisphere, September evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Microscopium%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "indus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Indus",
+        "extra": "The Indian. Its brightest star is Alpha Indi, called The Persian; Epsilon Indi is one of the nearest sunlike stars. Best seen: southern hemisphere, September evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Indus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "octans",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Octans",
+        "extra": "The Octant. Contains the south celestial pole; Sigma Octantis (Polaris Australis) is the faint southern pole star, and the brightest star is Nu Octantis. Best seen: southern hemisphere, circumpolar all year; highest in October.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Octans%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "apus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Apus",
+        "extra": "The Bird-of-Paradise. A faint far-southern constellation; its brightest star is Alpha Apodis. Best seen: southern hemisphere, July evenings; circumpolar from mid-southern latitudes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Apus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "chamaeleon",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Chamaeleon",
+        "extra": "The Chameleon. A small constellation near the south celestial pole; its brightest star is Alpha Chamaeleontis, and it contains nearby star-forming dark clouds. Best seen: southern hemisphere, April evenings; circumpolar from mid-southern latitudes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Chamaeleon%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "volans",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Volans",
+        "extra": "The Flying Fish. A compact far-southern constellation; its brightest star is Beta Volantis, and it hosts the Meathook Galaxy (NGC 2442). Best seen: southern hemisphere, March evenings; circumpolar from mid-southern latitudes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Volans%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "mensa",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Mensa",
+        "extra": "The Table Mountain. Named by Lacaille after Table Mountain in South Africa; the faintest of all 88 constellations, its brightest star Alpha Mensae is only magnitude 5.1, and part of the Large Magellanic Cloud spills into it. Best seen: southern hemisphere, January evenings; circumpolar from mid-southern latitudes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Mensa%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "hydrus",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Hydrus",
+        "extra": "The Lesser Water Snake (the male counterpart of Hydra). Lies between the Magellanic Clouds; its brightest star is Beta Hydri, a nearby sunlike star and the closest reasonably bright star to the south celestial pole. Best seen: southern hemisphere, December evenings; circumpolar from mid-southern latitudes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Hydrus%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "reticulum",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Reticulum",
+        "extra": "The Reticle. Commemorates the crosshair eyepiece Lacaille used to measure star positions; its brightest star is Alpha Reticuli, and Zeta Reticuli is a nearby sunlike double. Best seen: southern hemisphere, January evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Reticulum%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "horologium",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Horologium",
+        "extra": "The Pendulum Clock. A faint Lacaille constellation; its brightest star is Alpha Horologii, and R Horologii is a Mira variable with one of the largest brightness ranges known. Best seen: southern hemisphere, December evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Horologium%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "pictor",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Pictor",
+        "extra": "The Painter's Easel. Its brightest star is Alpha Pictoris; Beta Pictoris is famous for its edge-on debris disk and directly imaged exoplanet. Best seen: southern hemisphere, February evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Pictor%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "caelum",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Caelum",
+        "extra": "The Chisel. A Lacaille creation and one of the smallest, faintest constellations; its brightest star, Alpha Caeli, is only magnitude 4.4. Best seen: southern hemisphere, January evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Caelum%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "fornax",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Fornax",
+        "extra": "The Furnace. Named by Lacaille for a chemist's furnace; hosts the Fornax galaxy cluster and the Fornax dwarf galaxy; its brightest star is Alpha Fornacis. Best seen: southern hemisphere, December evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Fornax%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "sculptor",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Sculptor",
+        "extra": "The Sculptor's Studio. Contains the south galactic pole and the bright Sculptor Galaxy (NGC 253); its brightest star, Alpha Sculptoris, is only magnitude 4.3. Best seen: southern hemisphere, November evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Sculptor%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "antlia",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Antlia",
+        "extra": "The Air Pump. Named by Lacaille for the vacuum pump; a faint constellation whose brightest star is Alpha Antliae, and home of the Antlia dwarf galaxy. Best seen: southern hemisphere, April evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Antlia%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "pyxis",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Pyxis",
+        "extra": "The Mariner's Compass. A faint constellation in the region of the old ship Argo; its brightest star is Alpha Pyxidis, and T Pyxidis is a famous recurrent nova. Best seen: southern hemisphere, March evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyxis%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    },
+    {
+      "key": "sextans",
+      "model": "basic",
+      "fields": {
+        "front": "Which constellation is this?",
+        "back": "Sextans",
+        "extra": "The Sextant. A very faint Hevelius constellation straddling the celestial equator; its brightest star, Alpha Sextantis, is only magnitude 4.5, and it hosts the Spindle Galaxy (NGC 3115). Best seen: April evenings from both hemispheres.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Sextans%20IAU.svg?width=640"
+      },
+      "tags": [
+        "space::southern"
+      ]
+    }
+  ]
+}

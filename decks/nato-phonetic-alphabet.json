@@ -1,0 +1,448 @@
+{
+  "key": "nato-phonetic-alphabet",
+  "version": 1,
+  "name": "NATO Phonetic Alphabet",
+  "description": "The ICAO/NATO spelling alphabet from Alfa to Zulu, plus the ten digit pronunciations used in radio voice procedure, with official ICAO pronunciations.",
+  "category": "Codes & Signals",
+  "topics": [
+    "nato",
+    "radio",
+    "codes"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/FAA%20Phonetic%20and%20Morse%20Chart2.svg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "a",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter A?",
+        "answer": "Alfa",
+        "extra": "Pronounced AL-FAH. Commonly spelled Alpha, but the official ICAO spelling is Alfa, chosen deliberately so non-English speakers pronounce the f sound correctly."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "b",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter B?",
+        "answer": "Bravo",
+        "extra": "Pronounced BRAH-VOH."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "c",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter C?",
+        "answer": "Charlie",
+        "extra": "Pronounced CHAR-LEE."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "d",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter D?",
+        "answer": "Delta",
+        "extra": "Pronounced DELL-TAH."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "e",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter E?",
+        "answer": "Echo",
+        "extra": "Pronounced ECK-OH."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "f",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter F?",
+        "answer": "Foxtrot",
+        "extra": "Pronounced FOKS-TROT."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "g",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter G?",
+        "answer": "Golf",
+        "extra": "Pronounced GOLF."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "h",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter H?",
+        "answer": "Hotel",
+        "extra": "Pronounced HOH-TELL."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "i",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter I?",
+        "answer": "India",
+        "extra": "Pronounced IN-DEE-AH."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "j",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter J?",
+        "answer": "Juliett",
+        "extra": "Pronounced JEW-LEE-ETT. Commonly spelled Juliet, but the official spelling is Juliett with two t's, chosen deliberately so French speakers do not treat the final t as silent."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "k",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter K?",
+        "answer": "Kilo",
+        "extra": "Pronounced KEY-LOH."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "l",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter L?",
+        "answer": "Lima",
+        "extra": "Pronounced LEE-MAH."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "m",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter M?",
+        "answer": "Mike",
+        "extra": "Pronounced MIKE."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "n",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter N?",
+        "answer": "November",
+        "extra": "Pronounced NO-VEM-BER."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "o",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter O?",
+        "answer": "Oscar",
+        "extra": "Pronounced OSS-CAH."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "p",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter P?",
+        "answer": "Papa",
+        "extra": "Pronounced PAH-PAH, with the stress on the second syllable."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "q",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter Q?",
+        "answer": "Quebec",
+        "extra": "Pronounced KEH-BECK."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "r",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter R?",
+        "answer": "Romeo",
+        "extra": "Pronounced ROW-ME-OH."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "s",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter S?",
+        "answer": "Sierra",
+        "extra": "Pronounced SEE-AIR-RAH."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "t",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter T?",
+        "answer": "Tango",
+        "extra": "Pronounced TANG-GO."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "u",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter U?",
+        "answer": "Uniform",
+        "extra": "Pronounced YOU-NEE-FORM."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "v",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter V?",
+        "answer": "Victor",
+        "extra": "Pronounced VIK-TAH."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "w",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter W?",
+        "answer": "Whiskey",
+        "extra": "Pronounced WISS-KEY."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "x",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter X?",
+        "answer": "X-ray",
+        "extra": "Pronounced ECKS-RAY."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "y",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter Y?",
+        "answer": "Yankee",
+        "extra": "Pronounced YANG-KEY."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "z",
+      "model": "typed",
+      "fields": {
+        "front": "NATO code word for the letter Z?",
+        "answer": "Zulu",
+        "extra": "Pronounced ZOO-LOO."
+      },
+      "tags": [
+        "codes::nato-letters"
+      ]
+    },
+    {
+      "key": "digit-0",
+      "model": "basic",
+      "fields": {
+        "front": "How do you say the digit 0 in radio voice procedure?",
+        "back": "Zero",
+        "extra": "Always Zero, never oh, which over the air can be mistaken for the letter O."
+      },
+      "tags": [
+        "codes::nato-digits"
+      ]
+    },
+    {
+      "key": "digit-1",
+      "model": "basic",
+      "fields": {
+        "front": "How do you say the digit 1 in radio voice procedure?",
+        "back": "Wun",
+        "extra": "Written Wun in voice procedure guides to show that the final n must be sounded clearly."
+      },
+      "tags": [
+        "codes::nato-digits"
+      ]
+    },
+    {
+      "key": "digit-2",
+      "model": "basic",
+      "fields": {
+        "front": "How do you say the digit 2 in radio voice procedure?",
+        "back": "Too",
+        "extra": "Written Too to show the long, stressed oo sound that carries over a noisy channel."
+      },
+      "tags": [
+        "codes::nato-digits"
+      ]
+    },
+    {
+      "key": "digit-3",
+      "model": "basic",
+      "fields": {
+        "front": "How do you say the digit 3 in radio voice procedure?",
+        "back": "Tree",
+        "extra": "Tree replaces the th sound, which many non-native English speakers find difficult and which blurs over static."
+      },
+      "tags": [
+        "codes::nato-digits"
+      ]
+    },
+    {
+      "key": "digit-4",
+      "model": "basic",
+      "fields": {
+        "front": "How do you say the digit 4 in radio voice procedure?",
+        "back": "Fower",
+        "extra": "Fower (rhymes with power) stretches four to two syllables so it is not heard as the word for."
+      },
+      "tags": [
+        "codes::nato-digits"
+      ]
+    },
+    {
+      "key": "digit-5",
+      "model": "basic",
+      "fields": {
+        "front": "How do you say the digit 5 in radio voice procedure?",
+        "back": "Fife",
+        "extra": "Fife hardens the ending of five so it is not confused with fire over a weak signal."
+      },
+      "tags": [
+        "codes::nato-digits"
+      ]
+    },
+    {
+      "key": "digit-6",
+      "model": "basic",
+      "fields": {
+        "front": "How do you say the digit 6 in radio voice procedure?",
+        "back": "Six",
+        "extra": "Six is already distinct from every other digit, so it is spoken normally."
+      },
+      "tags": [
+        "codes::nato-digits"
+      ]
+    },
+    {
+      "key": "digit-7",
+      "model": "basic",
+      "fields": {
+        "front": "How do you say the digit 7 in radio voice procedure?",
+        "back": "Seven",
+        "extra": "Seven is spoken normally; its two syllables are rarely confused with any other digit."
+      },
+      "tags": [
+        "codes::nato-digits"
+      ]
+    },
+    {
+      "key": "digit-8",
+      "model": "basic",
+      "fields": {
+        "front": "How do you say the digit 8 in radio voice procedure?",
+        "back": "Ait",
+        "extra": "Ait drops the soft gh ending of eight so the digit stays short and crisp over noise."
+      },
+      "tags": [
+        "codes::nato-digits"
+      ]
+    },
+    {
+      "key": "digit-9",
+      "model": "basic",
+      "fields": {
+        "front": "How do you say the digit 9 in radio voice procedure?",
+        "back": "Niner",
+        "extra": "Niner avoids confusion with the German nein and with five over static."
+      },
+      "tags": [
+        "codes::nato-digits"
+      ]
+    }
+  ]
+}

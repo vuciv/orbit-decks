@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "key": "space",
+  "name": "Space",
+  "decks": [
+    {
+      "key": "constellations",
+      "name": "The 88 Constellations",
+      "description": "All 88 constellations officially recognized by the IAU, each shown on its standard IAU chart. Learn the Latin name, the English meaning, a signature star or deep-sky object, and when and where to spot it.",
+      "cardCount": 88,
+      "topics": [
+        "astronomy",
+        "constellations",
+        "night-sky"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Orion%20IAU.svg?width=640"
+    }
+  ]
+}

@@ -1,0 +1,1432 @@
+{
+  "key": "periodic-table",
+  "version": 1,
+  "name": "The Periodic Table",
+  "description": "All 118 elements, from hydrogen to oganesson. See the symbol, type the element name. Extras cover atomic numbers, element categories, and the Latin and German roots behind the odd symbols like Au, W, and Na.",
+  "category": "Science",
+  "topics": [
+    "chemistry",
+    "elements",
+    "science"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Simple%20Periodic%20Table%20Chart-en.svg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "h",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol H?",
+        "answer": "Hydrogen",
+        "extra": "Atomic number 1. Nonmetal. The lightest and most abundant element in the universe."
+      },
+      "tags": [
+        "elements::nonmetal"
+      ]
+    },
+    {
+      "key": "he",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol He?",
+        "answer": "Helium",
+        "extra": "Atomic number 2. Noble gas. Named for helios, the Greek sun; detected in the Sun's spectrum before being found on Earth."
+      },
+      "tags": [
+        "elements::noble-gas"
+      ]
+    },
+    {
+      "key": "li",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Li?",
+        "answer": "Lithium",
+        "extra": "Atomic number 3. Alkali metal. The lightest metal; powers rechargeable batteries."
+      },
+      "tags": [
+        "elements::alkali-metal"
+      ]
+    },
+    {
+      "key": "be",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Be?",
+        "answer": "Beryllium",
+        "extra": "Atomic number 4. Alkaline earth metal. Found in the gemstones beryl and emerald."
+      },
+      "tags": [
+        "elements::alkaline-earth"
+      ]
+    },
+    {
+      "key": "b",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol B?",
+        "answer": "Boron",
+        "extra": "Atomic number 5. Metalloid. Named from borax; used in heat-resistant borosilicate glass."
+      },
+      "tags": [
+        "elements::metalloid"
+      ]
+    },
+    {
+      "key": "c",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol C?",
+        "answer": "Carbon",
+        "extra": "Atomic number 6. Nonmetal. The backbone of all organic chemistry; from Latin carbo, meaning charcoal."
+      },
+      "tags": [
+        "elements::nonmetal"
+      ]
+    },
+    {
+      "key": "n",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol N?",
+        "answer": "Nitrogen",
+        "extra": "Atomic number 7. Nonmetal. Makes up about 78 percent of Earth's atmosphere."
+      },
+      "tags": [
+        "elements::nonmetal"
+      ]
+    },
+    {
+      "key": "o",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol O?",
+        "answer": "Oxygen",
+        "extra": "Atomic number 8. Nonmetal. The most abundant element in Earth's crust."
+      },
+      "tags": [
+        "elements::nonmetal"
+      ]
+    },
+    {
+      "key": "f",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol F?",
+        "answer": "Fluorine",
+        "extra": "Atomic number 9. Halogen. The most reactive and most electronegative element."
+      },
+      "tags": [
+        "elements::halogen"
+      ]
+    },
+    {
+      "key": "ne",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Ne?",
+        "answer": "Neon",
+        "extra": "Atomic number 10. Noble gas. From Greek neos, meaning new; glows red-orange in signs."
+      },
+      "tags": [
+        "elements::noble-gas"
+      ]
+    },
+    {
+      "key": "na",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Na?",
+        "answer": "Sodium",
+        "extra": "Atomic number 11. Alkali metal. Na from Latin natrium; the metal explodes on contact with water."
+      },
+      "tags": [
+        "elements::alkali-metal"
+      ]
+    },
+    {
+      "key": "mg",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Mg?",
+        "answer": "Magnesium",
+        "extra": "Atomic number 12. Alkaline earth metal. Sits at the center of chlorophyll; burns with a brilliant white light."
+      },
+      "tags": [
+        "elements::alkaline-earth"
+      ]
+    },
+    {
+      "key": "al",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Al?",
+        "answer": "Aluminum",
+        "extra": "Atomic number 13. Post-transition metal. IUPAC spelling is aluminium. The most abundant metal in Earth's crust."
+      },
+      "tags": [
+        "elements::post-transition"
+      ]
+    },
+    {
+      "key": "si",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Si?",
+        "answer": "Silicon",
+        "extra": "Atomic number 14. Metalloid. From Latin silex, meaning flint; the basis of computer chips."
+      },
+      "tags": [
+        "elements::metalloid"
+      ]
+    },
+    {
+      "key": "p",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol P?",
+        "answer": "Phosphorus",
+        "extra": "Atomic number 15. Nonmetal. From Greek for light-bearer; discovered in 1669 by boiling down urine."
+      },
+      "tags": [
+        "elements::nonmetal"
+      ]
+    },
+    {
+      "key": "s",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol S?",
+        "answer": "Sulfur",
+        "extra": "Atomic number 16. Nonmetal. Also spelled sulphur in British English; the brimstone of antiquity."
+      },
+      "tags": [
+        "elements::nonmetal"
+      ]
+    },
+    {
+      "key": "cl",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Cl?",
+        "answer": "Chlorine",
+        "extra": "Atomic number 17. Halogen. From Greek chloros, yellow-green; keeps swimming pools clean."
+      },
+      "tags": [
+        "elements::halogen"
+      ]
+    },
+    {
+      "key": "ar",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Ar?",
+        "answer": "Argon",
+        "extra": "Atomic number 18. Noble gas. From Greek argos, meaning lazy; nearly 1 percent of the atmosphere."
+      },
+      "tags": [
+        "elements::noble-gas"
+      ]
+    },
+    {
+      "key": "k",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol K?",
+        "answer": "Potassium",
+        "extra": "Atomic number 19. Alkali metal. K from Latin kalium; bananas are famously rich in it."
+      },
+      "tags": [
+        "elements::alkali-metal"
+      ]
+    },
+    {
+      "key": "ca",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Ca?",
+        "answer": "Calcium",
+        "extra": "Atomic number 20. Alkaline earth metal. From Latin calx, meaning lime; builds bones and teeth."
+      },
+      "tags": [
+        "elements::alkaline-earth"
+      ]
+    },
+    {
+      "key": "sc",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Sc?",
+        "answer": "Scandium",
+        "extra": "Atomic number 21. Transition metal. Named for Scandinavia; one of the elements Mendeleev predicted in advance."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "ti",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Ti?",
+        "answer": "Titanium",
+        "extra": "Atomic number 22. Transition metal. Named after the Titans of Greek myth; strong, light, and corrosion resistant."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "v",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol V?",
+        "answer": "Vanadium",
+        "extra": "Atomic number 23. Transition metal. Named for Vanadis, a name of the Norse goddess Freyja."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "cr",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Cr?",
+        "answer": "Chromium",
+        "extra": "Atomic number 24. Transition metal. From Greek chroma, meaning color; its compounds are vividly colored."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "mn",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Mn?",
+        "answer": "Manganese",
+        "extra": "Atomic number 25. Transition metal. Essential to steelmaking; often confused with magnesium."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "fe",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Fe?",
+        "answer": "Iron",
+        "extra": "Atomic number 26. Transition metal. Fe from Latin ferrum; the core of our planet and of hemoglobin."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "co",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Co?",
+        "answer": "Cobalt",
+        "extra": "Atomic number 27. Transition metal. From German kobold, a goblin blamed by miners for troublesome ore."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "ni",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Ni?",
+        "answer": "Nickel",
+        "extra": "Atomic number 28. Transition metal. From German Kupfernickel, devil's copper; found in US five-cent coins."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "cu",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Cu?",
+        "answer": "Copper",
+        "extra": "Atomic number 29. Transition metal. Cu from Latin cuprum, named for the island of Cyprus."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "zn",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Zn?",
+        "answer": "Zinc",
+        "extra": "Atomic number 30. Transition metal. Alloyed with copper to make brass; galvanizes steel against rust."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "ga",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Ga?",
+        "answer": "Gallium",
+        "extra": "Atomic number 31. Post-transition metal. Melts in the palm of your hand at about 30 C; named for Gaul, ancient France."
+      },
+      "tags": [
+        "elements::post-transition"
+      ]
+    },
+    {
+      "key": "ge",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Ge?",
+        "answer": "Germanium",
+        "extra": "Atomic number 32. Metalloid. Named for Germany; Mendeleev predicted it as eka-silicon before its discovery."
+      },
+      "tags": [
+        "elements::metalloid"
+      ]
+    },
+    {
+      "key": "as",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol As?",
+        "answer": "Arsenic",
+        "extra": "Atomic number 33. Metalloid. The classic poison of history and detective fiction."
+      },
+      "tags": [
+        "elements::metalloid"
+      ]
+    },
+    {
+      "key": "se",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Se?",
+        "answer": "Selenium",
+        "extra": "Atomic number 34. Nonmetal. From Greek selene, the Moon; used in photocopiers."
+      },
+      "tags": [
+        "elements::nonmetal"
+      ]
+    },
+    {
+      "key": "br",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Br?",
+        "answer": "Bromine",
+        "extra": "Atomic number 35. Halogen. One of only two elements liquid at room temperature; from Greek bromos, stench."
+      },
+      "tags": [
+        "elements::halogen"
+      ]
+    },
+    {
+      "key": "kr",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Kr?",
+        "answer": "Krypton",
+        "extra": "Atomic number 36. Noble gas. From Greek kryptos, meaning hidden."
+      },
+      "tags": [
+        "elements::noble-gas"
+      ]
+    },
+    {
+      "key": "rb",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Rb?",
+        "answer": "Rubidium",
+        "extra": "Atomic number 37. Alkali metal. From Latin rubidus, deep red, for the color of its spectral lines."
+      },
+      "tags": [
+        "elements::alkali-metal"
+      ]
+    },
+    {
+      "key": "sr",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Sr?",
+        "answer": "Strontium",
+        "extra": "Atomic number 38. Alkaline earth metal. Named after the village of Strontian in Scotland; colors fireworks red."
+      },
+      "tags": [
+        "elements::alkaline-earth"
+      ]
+    },
+    {
+      "key": "y",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Y?",
+        "answer": "Yttrium",
+        "extra": "Atomic number 39. Transition metal. The first of four elements named after the Swedish village of Ytterby."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "zr",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Zr?",
+        "answer": "Zirconium",
+        "extra": "Atomic number 40. Transition metal. From the gemstone zircon; clads nuclear fuel rods."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "nb",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Nb?",
+        "answer": "Niobium",
+        "extra": "Atomic number 41. Transition metal. Named for Niobe, daughter of Tantalus; sits directly above tantalum."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "mo",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Mo?",
+        "answer": "Molybdenum",
+        "extra": "Atomic number 42. Transition metal. From Greek molybdos, meaning lead, because its ore was mistaken for lead ore."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "tc",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Tc?",
+        "answer": "Technetium",
+        "extra": "Atomic number 43. Transition metal. The first artificially made element; from Greek technetos, artificial."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "ru",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Ru?",
+        "answer": "Ruthenium",
+        "extra": "Atomic number 44. Transition metal. From Ruthenia, a Latin name for Russia."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "rh",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Rh?",
+        "answer": "Rhodium",
+        "extra": "Atomic number 45. Transition metal. From Greek rhodon, rose; a key metal in catalytic converters."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "pd",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Pd?",
+        "answer": "Palladium",
+        "extra": "Atomic number 46. Transition metal. Named after the asteroid Pallas."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "ag",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Ag?",
+        "answer": "Silver",
+        "extra": "Atomic number 47. Transition metal. Ag from Latin argentum, which also gave Argentina its name."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "cd",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Cd?",
+        "answer": "Cadmium",
+        "extra": "Atomic number 48. Transition metal. A toxic metal once common in rechargeable NiCd batteries."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "in",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol In?",
+        "answer": "Indium",
+        "extra": "Atomic number 49. Post-transition metal. Named for the bright indigo line in its spectrum."
+      },
+      "tags": [
+        "elements::post-transition"
+      ]
+    },
+    {
+      "key": "sn",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Sn?",
+        "answer": "Tin",
+        "extra": "Atomic number 50. Post-transition metal. Sn from Latin stannum; alloyed with copper to make bronze."
+      },
+      "tags": [
+        "elements::post-transition"
+      ]
+    },
+    {
+      "key": "sb",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Sb?",
+        "answer": "Antimony",
+        "extra": "Atomic number 51. Metalloid. Sb from Latin stibium, an ancient eye cosmetic."
+      },
+      "tags": [
+        "elements::metalloid"
+      ]
+    },
+    {
+      "key": "te",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Te?",
+        "answer": "Tellurium",
+        "extra": "Atomic number 52. Metalloid. From Latin tellus, meaning Earth."
+      },
+      "tags": [
+        "elements::metalloid"
+      ]
+    },
+    {
+      "key": "i",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol I?",
+        "answer": "Iodine",
+        "extra": "Atomic number 53. Halogen. From Greek iodes, violet, for the color of its vapor."
+      },
+      "tags": [
+        "elements::halogen"
+      ]
+    },
+    {
+      "key": "xe",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Xe?",
+        "answer": "Xenon",
+        "extra": "Atomic number 54. Noble gas. From Greek xenos, stranger; used in ion engines and camera flashes."
+      },
+      "tags": [
+        "elements::noble-gas"
+      ]
+    },
+    {
+      "key": "cs",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Cs?",
+        "answer": "Cesium",
+        "extra": "Atomic number 55. Alkali metal. IUPAC spelling is caesium. Its atomic vibrations define the second."
+      },
+      "tags": [
+        "elements::alkali-metal"
+      ]
+    },
+    {
+      "key": "ba",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Ba?",
+        "answer": "Barium",
+        "extra": "Atomic number 56. Alkaline earth metal. From Greek barys, heavy; swallowed as a contrast agent for X-rays."
+      },
+      "tags": [
+        "elements::alkaline-earth"
+      ]
+    },
+    {
+      "key": "la",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol La?",
+        "answer": "Lanthanum",
+        "extra": "Atomic number 57. Lanthanide. From Greek lanthanein, to lie hidden; gives the lanthanides their name."
+      },
+      "tags": [
+        "elements::lanthanide"
+      ]
+    },
+    {
+      "key": "ce",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Ce?",
+        "answer": "Cerium",
+        "extra": "Atomic number 58. Lanthanide. Named after the dwarf planet Ceres; sparks in lighter flints."
+      },
+      "tags": [
+        "elements::lanthanide"
+      ]
+    },
+    {
+      "key": "pr",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Pr?",
+        "answer": "Praseodymium",
+        "extra": "Atomic number 59. Lanthanide. From Greek prasios didymos, meaning green twin."
+      },
+      "tags": [
+        "elements::lanthanide"
+      ]
+    },
+    {
+      "key": "nd",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Nd?",
+        "answer": "Neodymium",
+        "extra": "Atomic number 60. Lanthanide. From Greek neos didymos, new twin; makes the strongest permanent magnets."
+      },
+      "tags": [
+        "elements::lanthanide"
+      ]
+    },
+    {
+      "key": "pm",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Pm?",
+        "answer": "Promethium",
+        "extra": "Atomic number 61. Lanthanide. Named for Prometheus; it has no stable isotopes."
+      },
+      "tags": [
+        "elements::lanthanide"
+      ]
+    },
+    {
+      "key": "sm",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Sm?",
+        "answer": "Samarium",
+        "extra": "Atomic number 62. Lanthanide. Named for the mineral samarskite, honoring mining engineer Vasili Samarsky."
+      },
+      "tags": [
+        "elements::lanthanide"
+      ]
+    },
+    {
+      "key": "eu",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Eu?",
+        "answer": "Europium",
+        "extra": "Atomic number 63. Lanthanide. Named for Europe; its red glow helps authenticate euro banknotes."
+      },
+      "tags": [
+        "elements::lanthanide"
+      ]
+    },
+    {
+      "key": "gd",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Gd?",
+        "answer": "Gadolinium",
+        "extra": "Atomic number 64. Lanthanide. Named for chemist Johan Gadolin; used as an MRI contrast agent."
+      },
+      "tags": [
+        "elements::lanthanide"
+      ]
+    },
+    {
+      "key": "tb",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Tb?",
+        "answer": "Terbium",
+        "extra": "Atomic number 65. Lanthanide. The second of four elements named after the village of Ytterby."
+      },
+      "tags": [
+        "elements::lanthanide"
+      ]
+    },
+    {
+      "key": "dy",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Dy?",
+        "answer": "Dysprosium",
+        "extra": "Atomic number 66. Lanthanide. From Greek dysprositos, meaning hard to get."
+      },
+      "tags": [
+        "elements::lanthanide"
+      ]
+    },
+    {
+      "key": "ho",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Ho?",
+        "answer": "Holmium",
+        "extra": "Atomic number 67. Lanthanide. From Holmia, the Latin name for Stockholm."
+      },
+      "tags": [
+        "elements::lanthanide"
+      ]
+    },
+    {
+      "key": "er",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Er?",
+        "answer": "Erbium",
+        "extra": "Atomic number 68. Lanthanide. A third Ytterby element; amplifies light signals in fiber optic cables."
+      },
+      "tags": [
+        "elements::lanthanide"
+      ]
+    },
+    {
+      "key": "tm",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Tm?",
+        "answer": "Thulium",
+        "extra": "Atomic number 69. Lanthanide. Named for Thule, a mythical land of the far north."
+      },
+      "tags": [
+        "elements::lanthanide"
+      ]
+    },
+    {
+      "key": "yb",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Yb?",
+        "answer": "Ytterbium",
+        "extra": "Atomic number 70. Lanthanide. The fourth element named after the Swedish village of Ytterby."
+      },
+      "tags": [
+        "elements::lanthanide"
+      ]
+    },
+    {
+      "key": "lu",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Lu?",
+        "answer": "Lutetium",
+        "extra": "Atomic number 71. Lanthanide. From Lutetia, the Latin name for Paris."
+      },
+      "tags": [
+        "elements::lanthanide"
+      ]
+    },
+    {
+      "key": "hf",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Hf?",
+        "answer": "Hafnium",
+        "extra": "Atomic number 72. Transition metal. From Hafnia, the Latin name for Copenhagen, where it was discovered."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "ta",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Ta?",
+        "answer": "Tantalum",
+        "extra": "Atomic number 73. Transition metal. Named for Tantalus of Greek myth; vital for the capacitors in phones."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "w",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol W?",
+        "answer": "Tungsten",
+        "extra": "Atomic number 74. Transition metal. W from German Wolfram; it has the highest melting point of any metal."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "re",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Re?",
+        "answer": "Rhenium",
+        "extra": "Atomic number 75. Transition metal. Named for the river Rhine; the last stable element to be discovered, in 1925."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "os",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Os?",
+        "answer": "Osmium",
+        "extra": "Atomic number 76. Transition metal. The densest naturally occurring element; from Greek osme, smell."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "ir",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Ir?",
+        "answer": "Iridium",
+        "extra": "Atomic number 77. Transition metal. Named for Iris, goddess of the rainbow; marks the asteroid impact layer that ended the dinosaurs."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "pt",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Pt?",
+        "answer": "Platinum",
+        "extra": "Atomic number 78. Transition metal. From Spanish platina, meaning little silver."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "au",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Au?",
+        "answer": "Gold",
+        "extra": "Atomic number 79. Transition metal. Au from Latin aurum; so unreactive it is found in nature as pure nuggets."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "hg",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Hg?",
+        "answer": "Mercury",
+        "extra": "Atomic number 80. Transition metal. Hg from Greek hydrargyrum, water-silver; the only metal liquid at room temperature."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "tl",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Tl?",
+        "answer": "Thallium",
+        "extra": "Atomic number 81. Post-transition metal. From Greek thallos, a green shoot; a notorious slow-acting poison."
+      },
+      "tags": [
+        "elements::post-transition"
+      ]
+    },
+    {
+      "key": "pb",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Pb?",
+        "answer": "Lead",
+        "extra": "Atomic number 82. Post-transition metal. Pb from Latin plumbum, the root of the word plumbing."
+      },
+      "tags": [
+        "elements::post-transition"
+      ]
+    },
+    {
+      "key": "bi",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Bi?",
+        "answer": "Bismuth",
+        "extra": "Atomic number 83. Post-transition metal. Grows rainbow-tinted staircase crystals; the heaviest element with a nearly stable isotope."
+      },
+      "tags": [
+        "elements::post-transition"
+      ]
+    },
+    {
+      "key": "po",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Po?",
+        "answer": "Polonium",
+        "extra": "Atomic number 84. Post-transition metal. Named for Poland by Marie Curie; intensely radioactive."
+      },
+      "tags": [
+        "elements::post-transition"
+      ]
+    },
+    {
+      "key": "at",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol At?",
+        "answer": "Astatine",
+        "extra": "Atomic number 85. Halogen. From Greek astatos, unstable; the rarest naturally occurring element."
+      },
+      "tags": [
+        "elements::halogen"
+      ]
+    },
+    {
+      "key": "rn",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Rn?",
+        "answer": "Radon",
+        "extra": "Atomic number 86. Noble gas. A radioactive gas that can seep from the ground into basements."
+      },
+      "tags": [
+        "elements::noble-gas"
+      ]
+    },
+    {
+      "key": "fr",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Fr?",
+        "answer": "Francium",
+        "extra": "Atomic number 87. Alkali metal. Named for France by Marguerite Perey; vanishingly rare and radioactive."
+      },
+      "tags": [
+        "elements::alkali-metal"
+      ]
+    },
+    {
+      "key": "ra",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Ra?",
+        "answer": "Radium",
+        "extra": "Atomic number 88. Alkaline earth metal. Discovered by Marie and Pierre Curie; once used in glow-in-the-dark paint."
+      },
+      "tags": [
+        "elements::alkaline-earth"
+      ]
+    },
+    {
+      "key": "ac",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Ac?",
+        "answer": "Actinium",
+        "extra": "Atomic number 89. Actinide. From Greek aktis, a ray; gives the actinides their name."
+      },
+      "tags": [
+        "elements::actinide"
+      ]
+    },
+    {
+      "key": "th",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Th?",
+        "answer": "Thorium",
+        "extra": "Atomic number 90. Actinide. Named after the Norse god Thor; a potential nuclear fuel."
+      },
+      "tags": [
+        "elements::actinide"
+      ]
+    },
+    {
+      "key": "pa",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Pa?",
+        "answer": "Protactinium",
+        "extra": "Atomic number 91. Actinide. Its name means before actinium, because it decays into actinium."
+      },
+      "tags": [
+        "elements::actinide"
+      ]
+    },
+    {
+      "key": "u",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol U?",
+        "answer": "Uranium",
+        "extra": "Atomic number 92. Actinide. Named after the planet Uranus; fuels nuclear reactors."
+      },
+      "tags": [
+        "elements::actinide"
+      ]
+    },
+    {
+      "key": "np",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Np?",
+        "answer": "Neptunium",
+        "extra": "Atomic number 93. Actinide. Named after Neptune, the planet beyond Uranus."
+      },
+      "tags": [
+        "elements::actinide"
+      ]
+    },
+    {
+      "key": "pu",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Pu?",
+        "answer": "Plutonium",
+        "extra": "Atomic number 94. Actinide. Named after Pluto; its heat powers deep space probes like Voyager."
+      },
+      "tags": [
+        "elements::actinide"
+      ]
+    },
+    {
+      "key": "am",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Am?",
+        "answer": "Americium",
+        "extra": "Atomic number 95. Actinide. Named for the Americas; found in household smoke detectors."
+      },
+      "tags": [
+        "elements::actinide"
+      ]
+    },
+    {
+      "key": "cm",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Cm?",
+        "answer": "Curium",
+        "extra": "Atomic number 96. Actinide. Named in honor of Marie and Pierre Curie."
+      },
+      "tags": [
+        "elements::actinide"
+      ]
+    },
+    {
+      "key": "bk",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Bk?",
+        "answer": "Berkelium",
+        "extra": "Atomic number 97. Actinide. Named after Berkeley, California, where it was first made."
+      },
+      "tags": [
+        "elements::actinide"
+      ]
+    },
+    {
+      "key": "cf",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Cf?",
+        "answer": "Californium",
+        "extra": "Atomic number 98. Actinide. Named for California; used as a portable neutron source."
+      },
+      "tags": [
+        "elements::actinide"
+      ]
+    },
+    {
+      "key": "es",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Es?",
+        "answer": "Einsteinium",
+        "extra": "Atomic number 99. Actinide. Named for Albert Einstein; first found in debris from a hydrogen bomb test."
+      },
+      "tags": [
+        "elements::actinide"
+      ]
+    },
+    {
+      "key": "fm",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Fm?",
+        "answer": "Fermium",
+        "extra": "Atomic number 100. Actinide. Named for physicist Enrico Fermi."
+      },
+      "tags": [
+        "elements::actinide"
+      ]
+    },
+    {
+      "key": "md",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Md?",
+        "answer": "Mendelevium",
+        "extra": "Atomic number 101. Actinide. Named for Dmitri Mendeleev, creator of the periodic table."
+      },
+      "tags": [
+        "elements::actinide"
+      ]
+    },
+    {
+      "key": "no",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol No?",
+        "answer": "Nobelium",
+        "extra": "Atomic number 102. Actinide. Named for Alfred Nobel."
+      },
+      "tags": [
+        "elements::actinide"
+      ]
+    },
+    {
+      "key": "lr",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Lr?",
+        "answer": "Lawrencium",
+        "extra": "Atomic number 103. Actinide. Named for Ernest Lawrence, inventor of the cyclotron."
+      },
+      "tags": [
+        "elements::actinide"
+      ]
+    },
+    {
+      "key": "rf",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Rf?",
+        "answer": "Rutherfordium",
+        "extra": "Atomic number 104. Transition metal. Named for Ernest Rutherford, father of nuclear physics."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "db",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Db?",
+        "answer": "Dubnium",
+        "extra": "Atomic number 105. Transition metal. Named after Dubna, the Russian science town."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "sg",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Sg?",
+        "answer": "Seaborgium",
+        "extra": "Atomic number 106. Transition metal. Named for Glenn Seaborg while he was still alive."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "bh",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Bh?",
+        "answer": "Bohrium",
+        "extra": "Atomic number 107. Transition metal. Named for Niels Bohr."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "hs",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Hs?",
+        "answer": "Hassium",
+        "extra": "Atomic number 108. Transition metal. From Hassia, the Latin name of the German state of Hesse."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "mt",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Mt?",
+        "answer": "Meitnerium",
+        "extra": "Atomic number 109. Transition metal. Named for physicist Lise Meitner."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "ds",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Ds?",
+        "answer": "Darmstadtium",
+        "extra": "Atomic number 110. Transition metal. Named after Darmstadt, Germany, home of the GSI laboratory."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "rg",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Rg?",
+        "answer": "Roentgenium",
+        "extra": "Atomic number 111. Transition metal. Named for Wilhelm Roentgen, discoverer of X-rays."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "cn",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Cn?",
+        "answer": "Copernicium",
+        "extra": "Atomic number 112. Transition metal. Named for astronomer Nicolaus Copernicus."
+      },
+      "tags": [
+        "elements::transition-metal"
+      ]
+    },
+    {
+      "key": "nh",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Nh?",
+        "answer": "Nihonium",
+        "extra": "Atomic number 113. Post-transition metal. From Nihon, a Japanese name for Japan; the first element discovered in Asia. Named in 2016."
+      },
+      "tags": [
+        "elements::post-transition"
+      ]
+    },
+    {
+      "key": "fl",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Fl?",
+        "answer": "Flerovium",
+        "extra": "Atomic number 114. Post-transition metal. Named for the Flerov Laboratory of Nuclear Reactions in Dubna."
+      },
+      "tags": [
+        "elements::post-transition"
+      ]
+    },
+    {
+      "key": "mc",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Mc?",
+        "answer": "Moscovium",
+        "extra": "Atomic number 115. Post-transition metal. Named for the Moscow region in 2016."
+      },
+      "tags": [
+        "elements::post-transition"
+      ]
+    },
+    {
+      "key": "lv",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Lv?",
+        "answer": "Livermorium",
+        "extra": "Atomic number 116. Post-transition metal. Named for the Lawrence Livermore National Laboratory."
+      },
+      "tags": [
+        "elements::post-transition"
+      ]
+    },
+    {
+      "key": "ts",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Ts?",
+        "answer": "Tennessine",
+        "extra": "Atomic number 117. Halogen. Named for Tennessee in 2016, honoring Oak Ridge National Laboratory."
+      },
+      "tags": [
+        "elements::halogen"
+      ]
+    },
+    {
+      "key": "og",
+      "model": "typed",
+      "fields": {
+        "front": "Which element has the symbol Og?",
+        "answer": "Oganesson",
+        "extra": "Atomic number 118. Noble gas. Named in 2016 for Yuri Oganessian, one of only two elements named after a living person."
+      },
+      "tags": [
+        "elements::noble-gas"
+      ]
+    }
+  ]
+}

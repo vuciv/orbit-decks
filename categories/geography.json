@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 2,
+  "key": "geography",
+  "name": "Geography",
+  "decks": [
+    {
+      "key": "flags-of-the-world",
+      "name": "Flags of the World",
+      "description": "All 197 national flags: every UN member and observer state, plus Kosovo and Taiwan, with notes on the lookalike pairs.",
+      "cardCount": 197,
+      "topics": [
+        "geography",
+        "flags",
+        "countries"
+      ],
+      "coverImage": "https://flagcdn.com/w640/un.png"
+    },
+    {
+      "key": "us-states",
+      "name": "The 50 States",
+      "description": "All 50 US states by shape and location on the map. Capitals and nicknames ride along on the back of every card.",
+      "cardCount": 50,
+      "topics": [
+        "geography",
+        "usa",
+        "states"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Texas%20in%20United%20States.svg?width=640"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 2,
+  "key": "codes-signals",
+  "name": "Codes & Signals",
+  "decks": [
+    {
+      "key": "morse-code",
+      "name": "Morse Code",
+      "description": "Every letter A-Z and digit 0-9 in International Morse Code, ordered from the shortest codes to the longest. See the code, type the character.",
+      "cardCount": 36,
+      "topics": [
+        "morse",
+        "codes",
+        "radio"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/International%20Morse%20Code.svg?width=640"
+    },
+    {
+      "key": "nato-phonetic-alphabet",
+      "name": "NATO Phonetic Alphabet",
+      "description": "The ICAO/NATO spelling alphabet from Alfa to Zulu, plus the ten digit pronunciations used in radio voice procedure, with official ICAO pronunciations.",
+      "cardCount": 36,
+      "topics": [
+        "nato",
+        "radio",
+        "codes"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/FAA%20Phonetic%20and%20Morse%20Chart2.svg?width=640"
+    }
+  ]
+}

@@ -4,6 +4,12 @@
   "name": "Flags of the World",
   "description": "All 197 national flags: every UN member and observer state, plus Kosovo and Taiwan, with notes on the lookalike pairs.",
   "category": "Geography",
+  "topics": [
+    "geography",
+    "flags",
+    "countries"
+  ],
+  "coverImage": "https://flagcdn.com/w640/un.png",
   "ttsLang": null,
   "notes": [
     {

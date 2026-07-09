@@ -1,0 +1,666 @@
+{
+  "key": "us-states",
+  "version": 1,
+  "name": "The 50 States",
+  "description": "All 50 US states by shape and location on the map. Capitals and nicknames ride along on the back of every card.",
+  "category": "Geography",
+  "topics": [
+    "geography",
+    "usa",
+    "states"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Texas%20in%20United%20States.svg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "texas",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Texas",
+        "extra": "Capital: Austin. The Lone Star State, the largest of the lower 48.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Texas%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::south"
+      ]
+    },
+    {
+      "key": "california",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "California",
+        "extra": "Capital: Sacramento. The Golden State, the most populous state.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/California%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::west"
+      ]
+    },
+    {
+      "key": "florida",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Florida",
+        "extra": "Capital: Tallahassee. The Sunshine State, the big peninsula pointing toward Cuba.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Florida%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::south"
+      ]
+    },
+    {
+      "key": "alaska",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Alaska",
+        "extra": "Capital: Juneau. The Last Frontier, by far the largest state.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Alaska%20in%20United%20States%20(US50).svg?width=640"
+      },
+      "tags": [
+        "usa::west"
+      ]
+    },
+    {
+      "key": "hawaii",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Hawaii",
+        "extra": "Capital: Honolulu. The Aloha State, the only island state.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Hawaii%20in%20United%20States%20(zoom)%20(US50).svg?width=640"
+      },
+      "tags": [
+        "usa::west"
+      ]
+    },
+    {
+      "key": "michigan",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Michigan",
+        "extra": "Capital: Lansing. The Great Lakes State, two peninsulas, one shaped like a mitten.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Michigan%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::midwest"
+      ]
+    },
+    {
+      "key": "louisiana",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Louisiana",
+        "extra": "Capital: Baton Rouge. The Pelican State, shaped like a boot at the mouth of the Mississippi.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Louisiana%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::south"
+      ]
+    },
+    {
+      "key": "oklahoma",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Oklahoma",
+        "extra": "Capital: Oklahoma City. The Sooner State, the one with the long skinny western panhandle.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Oklahoma%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::south"
+      ]
+    },
+    {
+      "key": "idaho",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Idaho",
+        "extra": "Capital: Boise. The Gem State, famous for potatoes, with a tall northern panhandle.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Idaho%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::west"
+      ]
+    },
+    {
+      "key": "maryland",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Maryland",
+        "extra": "Capital: Annapolis. The Old Line State, nearly split in two by the Chesapeake Bay.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Maryland%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::south"
+      ]
+    },
+    {
+      "key": "west-virginia",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "West Virginia",
+        "extra": "Capital: Charleston. The Mountain State, with two panhandles poking north and east.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/West%20Virginia%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::south"
+      ]
+    },
+    {
+      "key": "tennessee",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Tennessee",
+        "extra": "Capital: Nashville. The Volunteer State, a long parallelogram touching eight other states.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Tennessee%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::south"
+      ]
+    },
+    {
+      "key": "virginia",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Virginia",
+        "extra": "Capital: Richmond. Old Dominion, birthplace of eight US presidents.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Virginia%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::south"
+      ]
+    },
+    {
+      "key": "new-york",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "New York",
+        "extra": "Capital: Albany (not New York City). The Empire State.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/New%20York%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::northeast"
+      ]
+    },
+    {
+      "key": "massachusetts",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Massachusetts",
+        "extra": "Capital: Boston. The Bay State, with the hooked arm of Cape Cod.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Massachusetts%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::northeast"
+      ]
+    },
+    {
+      "key": "maine",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Maine",
+        "extra": "Capital: Augusta. The Pine Tree State, the only state that borders exactly one other state.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Maine%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::northeast"
+      ]
+    },
+    {
+      "key": "new-jersey",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "New Jersey",
+        "extra": "Capital: Trenton. The Garden State, the most densely populated state.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/New%20Jersey%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::northeast"
+      ]
+    },
+    {
+      "key": "minnesota",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Minnesota",
+        "extra": "Capital: St. Paul. Land of 10,000 Lakes, and its Northwest Angle is the northernmost point of the lower 48.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Minnesota%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::midwest"
+      ]
+    },
+    {
+      "key": "washington",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Washington",
+        "extra": "Capital: Olympia (not Seattle). The Evergreen State, tucked into the far northwest corner.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Washington%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::west"
+      ]
+    },
+    {
+      "key": "nevada",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Nevada",
+        "extra": "Capital: Carson City (not Las Vegas). The Silver State, the wedge leaning against California.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Nevada%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::west"
+      ]
+    },
+    {
+      "key": "utah",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Utah",
+        "extra": "Capital: Salt Lake City. The Beehive State, a rectangle with a notch cut from its northeast corner.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Utah%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::west"
+      ]
+    },
+    {
+      "key": "colorado",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Colorado",
+        "extra": "Capital: Denver. The Centennial State. Of the two rectangle states, Colorado is the southern one, sitting on the highest Rockies.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Colorado%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::west"
+      ]
+    },
+    {
+      "key": "wyoming",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Wyoming",
+        "extra": "Capital: Cheyenne. The Equality State, the least populous state. The other rectangle, directly north of Colorado and touching Montana.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Wyoming%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::west"
+      ]
+    },
+    {
+      "key": "arizona",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Arizona",
+        "extra": "Capital: Phoenix. The Grand Canyon State, the southwest corner of the Four Corners.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Arizona%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::west"
+      ]
+    },
+    {
+      "key": "new-mexico",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "New Mexico",
+        "extra": "Capital: Santa Fe (not Albuquerque), the oldest state capital in the US. Land of Enchantment.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/New%20Mexico%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::west"
+      ]
+    },
+    {
+      "key": "oregon",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Oregon",
+        "extra": "Capital: Salem (not Portland). The Beaver State, between Washington and California.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Oregon%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::west"
+      ]
+    },
+    {
+      "key": "montana",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Montana",
+        "extra": "Capital: Helena. Big Sky Country, the wide state along the Canadian border.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Montana%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::west"
+      ]
+    },
+    {
+      "key": "north-dakota",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "North Dakota",
+        "extra": "Capital: Bismarck. The Peace Garden State, the Dakota on the Canadian border.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/North%20Dakota%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::midwest"
+      ]
+    },
+    {
+      "key": "south-dakota",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "South Dakota",
+        "extra": "Capital: Pierre. The Mount Rushmore State, the southern Dakota.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/South%20Dakota%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::midwest"
+      ]
+    },
+    {
+      "key": "nebraska",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Nebraska",
+        "extra": "Capital: Lincoln. The Cornhusker State, the only state with a one-house legislature.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Nebraska%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::midwest"
+      ]
+    },
+    {
+      "key": "kansas",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Kansas",
+        "extra": "Capital: Topeka (not Wichita). The Sunflower State, holding the geographic center of the lower 48.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Kansas%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::midwest"
+      ]
+    },
+    {
+      "key": "missouri",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Missouri",
+        "extra": "Capital: Jefferson City (not St. Louis or Kansas City). The Show-Me State.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Missouri%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::midwest"
+      ]
+    },
+    {
+      "key": "iowa",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Iowa",
+        "extra": "Capital: Des Moines. The Hawkeye State, framed by the Mississippi and Missouri rivers.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Iowa%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::midwest"
+      ]
+    },
+    {
+      "key": "illinois",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Illinois",
+        "extra": "Capital: Springfield (not Chicago). The Prairie State, also known as the Land of Lincoln.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Illinois%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::midwest"
+      ]
+    },
+    {
+      "key": "indiana",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Indiana",
+        "extra": "Capital: Indianapolis. The Hoosier State, home of the Indy 500.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Indiana%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::midwest"
+      ]
+    },
+    {
+      "key": "ohio",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Ohio",
+        "extra": "Capital: Columbus. The Buckeye State, birthplace of seven US presidents.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Ohio%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::midwest"
+      ]
+    },
+    {
+      "key": "wisconsin",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Wisconsin",
+        "extra": "Capital: Madison (not Milwaukee). America's Dairyland, the Badger State.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Wisconsin%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::midwest"
+      ]
+    },
+    {
+      "key": "kentucky",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Kentucky",
+        "extra": "Capital: Frankfort (not Louisville). The Bluegrass State, home of the Kentucky Derby.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Kentucky%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::south"
+      ]
+    },
+    {
+      "key": "arkansas",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Arkansas",
+        "extra": "Capital: Little Rock. The Natural State, home of the Ozarks.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Arkansas%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::south"
+      ]
+    },
+    {
+      "key": "mississippi",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Mississippi",
+        "extra": "Capital: Jackson. The Magnolia State, on the east bank of its namesake river.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Mississippi%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::south"
+      ]
+    },
+    {
+      "key": "alabama",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Alabama",
+        "extra": "Capital: Montgomery (not Birmingham). The Yellowhammer State, the heart of Dixie.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Alabama%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::south"
+      ]
+    },
+    {
+      "key": "georgia",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Georgia",
+        "extra": "Capital: Atlanta. The Peach State, the largest state east of the Mississippi.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Georgia%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::south"
+      ]
+    },
+    {
+      "key": "south-carolina",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "South Carolina",
+        "extra": "Capital: Columbia (not Charleston). The Palmetto State.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/South%20Carolina%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::south"
+      ]
+    },
+    {
+      "key": "north-carolina",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "North Carolina",
+        "extra": "Capital: Raleigh (not Charlotte). The Tar Heel State, site of the Wright brothers' first flight at Kitty Hawk.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/North%20Carolina%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::south"
+      ]
+    },
+    {
+      "key": "pennsylvania",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Pennsylvania",
+        "extra": "Capital: Harrisburg (not Philadelphia or Pittsburgh). The Keystone State.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Pennsylvania%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::northeast"
+      ]
+    },
+    {
+      "key": "vermont",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Vermont",
+        "extra": "Capital: Montpelier, the smallest state capital in the US. The Green Mountain State.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Vermont%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::northeast"
+      ]
+    },
+    {
+      "key": "new-hampshire",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "New Hampshire",
+        "extra": "Capital: Concord. The Granite State, motto Live Free or Die.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/New%20Hampshire%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::northeast"
+      ]
+    },
+    {
+      "key": "connecticut",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Connecticut",
+        "extra": "Capital: Hartford. The Constitution State.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Connecticut%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::northeast"
+      ]
+    },
+    {
+      "key": "rhode-island",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Rhode Island",
+        "extra": "Capital: Providence. The Ocean State, the smallest state.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Rhode%20Island%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::northeast"
+      ]
+    },
+    {
+      "key": "delaware",
+      "model": "basic",
+      "fields": {
+        "front": "Which state is highlighted?",
+        "back": "Delaware",
+        "extra": "Capital: Dover. The First State, first to ratify the Constitution in 1787.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Delaware%20in%20United%20States.svg?width=640"
+      },
+      "tags": [
+        "usa::south"
+      ]
+    }
+  ]
+}

@@ -1,14 +1,111 @@
 {
-  "schemaVersion": 1,
-  "decks": [
+  "schemaVersion": 2,
+  "categories": [
+    {
+      "key": "geography",
+      "name": "Geography",
+      "deckCount": 2,
+      "rev": "128a853b29b1",
+      "file": "categories/geography.json"
+    },
+    {
+      "key": "pop-culture",
+      "name": "Pop Culture",
+      "deckCount": 2,
+      "rev": "5f7888e5aa79",
+      "file": "categories/pop-culture.json"
+    },
+    {
+      "key": "space",
+      "name": "Space",
+      "deckCount": 1,
+      "rev": "728235baa363",
+      "file": "categories/space.json"
+    },
+    {
+      "key": "science",
+      "name": "Science",
+      "deckCount": 1,
+      "rev": "49dca33ef00a",
+      "file": "categories/science.json"
+    },
+    {
+      "key": "codes-signals",
+      "name": "Codes & Signals",
+      "deckCount": 2,
+      "rev": "70d125f5b1b5",
+      "file": "categories/codes-signals.json"
+    }
+  ],
+  "collections": [
+    {
+      "key": "getting-started",
+      "title": "Getting started",
+      "description": "Hand-picked first decks with instant visual payoff.",
+      "deckKeys": [
+        "kanto-pokedex",
+        "flags-of-the-world"
+      ]
+    },
+    {
+      "key": "know-the-world",
+      "title": "Know the world",
+      "description": "Flags, capitals, and shapes: build a mental map of Earth.",
+      "deckKeys": [
+        "flags-of-the-world",
+        "us-states"
+      ]
+    },
+    {
+      "key": "complete-the-pokedex",
+      "title": "Complete the Pokedex",
+      "description": "Name them all, one generation at a time.",
+      "deckKeys": [
+        "kanto-pokedex",
+        "johto-pokedex"
+      ]
+    }
+  ],
+  "syncIndex": [
+    {
+      "key": "constellations",
+      "version": 1,
+      "file": "decks/constellations.json"
+    },
     {
       "key": "flags-of-the-world",
       "version": 1,
-      "name": "Flags of the World",
-      "description": "All 197 national flags: every UN member and observer state, plus Kosovo and Taiwan, with notes on the lookalike pairs.",
-      "category": "Geography",
-      "cardCount": 197,
       "file": "decks/flags-of-the-world.json"
+    },
+    {
+      "key": "johto-pokedex",
+      "version": 1,
+      "file": "decks/johto-pokedex.json"
+    },
+    {
+      "key": "kanto-pokedex",
+      "version": 1,
+      "file": "decks/kanto-pokedex.json"
+    },
+    {
+      "key": "morse-code",
+      "version": 1,
+      "file": "decks/morse-code.json"
+    },
+    {
+      "key": "nato-phonetic-alphabet",
+      "version": 1,
+      "file": "decks/nato-phonetic-alphabet.json"
+    },
+    {
+      "key": "periodic-table",
+      "version": 1,
+      "file": "decks/periodic-table.json"
+    },
+    {
+      "key": "us-states",
+      "version": 1,
+      "file": "decks/us-states.json"
     }
   ]
 }

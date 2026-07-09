@@ -1,0 +1,448 @@
+{
+  "key": "morse-code",
+  "version": 1,
+  "name": "Morse Code",
+  "description": "Every letter A-Z and digit 0-9 in International Morse Code, ordered from the shortest codes to the longest. See the code, type the character.",
+  "category": "Codes & Signals",
+  "topics": [
+    "morse",
+    "codes",
+    "radio"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/International%20Morse%20Code.svg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "e",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is · in Morse code?",
+        "answer": "E",
+        "extra": "· = E. The single dit; Morse gave the most common English letter the shortest code."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "t",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is − in Morse code?",
+        "answer": "T",
+        "extra": "− = T. The single dah; the second most common letter gets the other one-signal code."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "a",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is ·− in Morse code?",
+        "answer": "A",
+        "extra": "·− = A. Dit dah; the exact reverse of N (−·)."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "i",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is ·· in Morse code?",
+        "answer": "I",
+        "extra": "·· = I. Two dits."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "m",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is −− in Morse code?",
+        "answer": "M",
+        "extra": "−− = M. Two dahs."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "n",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is −· in Morse code?",
+        "answer": "N",
+        "extra": "−· = N. Dah dit; the exact reverse of A (·−)."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "d",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is −·· in Morse code?",
+        "answer": "D",
+        "extra": "−·· = D. Dah dit dit; the reverse of U (··−)."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "g",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is −−· in Morse code?",
+        "answer": "G",
+        "extra": "−−· = G. Dah dah dit; the reverse of W (·−−)."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "k",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is −·− in Morse code?",
+        "answer": "K",
+        "extra": "−·− = K. Dah dit dah; sent alone it means over, an invitation to transmit."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "o",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is −−− in Morse code?",
+        "answer": "O",
+        "extra": "−−− = O. Three dahs; the middle of SOS (··· −−− ···)."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "r",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is ·−· in Morse code?",
+        "answer": "R",
+        "extra": "·−· = R. Dit dah dit; a lone R means roger, message received."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "s",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is ··· in Morse code?",
+        "answer": "S",
+        "extra": "··· = S. Three dits. SOS (··· −−− ···) was chosen as the distress signal because the pattern is unmistakable, not because it abbreviates anything."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "u",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is ··− in Morse code?",
+        "answer": "U",
+        "extra": "··− = U. Dit dit dah; the reverse of D (−··)."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "w",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is ·−− in Morse code?",
+        "answer": "W",
+        "extra": "·−− = W. Dit dah dah; the reverse of G (−−·)."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "b",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is −··· in Morse code?",
+        "answer": "B",
+        "extra": "−··· = B. Dah dit dit dit; the reverse of V (···−)."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "c",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is −·−· in Morse code?",
+        "answer": "C",
+        "extra": "−·−· = C. The rhythm of CO-ca CO-la: DAH di DAH di."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "f",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is ··−· in Morse code?",
+        "answer": "F",
+        "extra": "··−· = F. Dit dit dah dit; the reverse of L (·−··)."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "h",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is ···· in Morse code?",
+        "answer": "H",
+        "extra": "···· = H. Four dits."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "j",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is ·−−− in Morse code?",
+        "answer": "J",
+        "extra": "·−−− = J. Dit dah dah dah."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "l",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is ·−·· in Morse code?",
+        "answer": "L",
+        "extra": "·−·· = L. Dit dah dit dit; the reverse of F (··−·)."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "p",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is ·−−· in Morse code?",
+        "answer": "P",
+        "extra": "·−−· = P. Dit dah dah dit; a palindrome, it reads the same forwards and backwards."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "q",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is −−·− in Morse code?",
+        "answer": "Q",
+        "extra": "−−·− = Q. The rhythm of God SAVE the QUEEN: dah dah di dah."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "v",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is ···− in Morse code?",
+        "answer": "V",
+        "extra": "···− = V. The opening of Beethoven's Fifth, dit dit dit DAH; V for victory."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "x",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is −··− in Morse code?",
+        "answer": "X",
+        "extra": "−··− = X. Dah dit dit dah; a palindrome, it reads the same forwards and backwards."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "y",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is −·−− in Morse code?",
+        "answer": "Y",
+        "extra": "−·−− = Y. Dah dit dah dah; the reverse of Q (−−·−)."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "z",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is −−·· in Morse code?",
+        "answer": "Z",
+        "extra": "−−·· = Z. Dah dah dit dit; the reverse of M plus I."
+      },
+      "tags": [
+        "codes::morse-letters"
+      ]
+    },
+    {
+      "key": "1",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is ·−−−− in Morse code?",
+        "answer": "1",
+        "extra": "·−−−− = 1. Digits follow a pattern: one dit, then dahs to fill five signals."
+      },
+      "tags": [
+        "codes::morse-digits"
+      ]
+    },
+    {
+      "key": "2",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is ··−−− in Morse code?",
+        "answer": "2",
+        "extra": "··−−− = 2. Two dits, then dahs to fill five signals."
+      },
+      "tags": [
+        "codes::morse-digits"
+      ]
+    },
+    {
+      "key": "3",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is ···−− in Morse code?",
+        "answer": "3",
+        "extra": "···−− = 3. Three dits, two dahs."
+      },
+      "tags": [
+        "codes::morse-digits"
+      ]
+    },
+    {
+      "key": "4",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is ····− in Morse code?",
+        "answer": "4",
+        "extra": "····− = 4. Four dits, one dah."
+      },
+      "tags": [
+        "codes::morse-digits"
+      ]
+    },
+    {
+      "key": "5",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is ····· in Morse code?",
+        "answer": "5",
+        "extra": "····· = 5. Five dits."
+      },
+      "tags": [
+        "codes::morse-digits"
+      ]
+    },
+    {
+      "key": "6",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is −···· in Morse code?",
+        "answer": "6",
+        "extra": "−···· = 6. One dah, four dits; from 6 to 0 the dahs come first."
+      },
+      "tags": [
+        "codes::morse-digits"
+      ]
+    },
+    {
+      "key": "7",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is −−··· in Morse code?",
+        "answer": "7",
+        "extra": "−−··· = 7. Two dahs, three dits."
+      },
+      "tags": [
+        "codes::morse-digits"
+      ]
+    },
+    {
+      "key": "8",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is −−−·· in Morse code?",
+        "answer": "8",
+        "extra": "−−−·· = 8. Three dahs, two dits."
+      },
+      "tags": [
+        "codes::morse-digits"
+      ]
+    },
+    {
+      "key": "9",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is −−−−· in Morse code?",
+        "answer": "9",
+        "extra": "−−−−· = 9. Four dahs, one dit."
+      },
+      "tags": [
+        "codes::morse-digits"
+      ]
+    },
+    {
+      "key": "0",
+      "model": "typed",
+      "fields": {
+        "front": "Which character is −−−−− in Morse code?",
+        "answer": "0",
+        "extra": "−−−−− = 0. Five dahs."
+      },
+      "tags": [
+        "codes::morse-digits"
+      ]
+    }
+  ]
+}
