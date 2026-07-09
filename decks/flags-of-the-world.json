@@ -1,0 +1,2420 @@
+{
+  "key": "flags-of-the-world",
+  "version": 1,
+  "name": "Flags of the World",
+  "description": "All 197 national flags: every UN member and observer state, plus Kosovo and Taiwan, with notes on the lookalike pairs.",
+  "category": "Geography",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "fr",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "France",
+        "frontImage": "https://flagcdn.com/w640/fr.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "es",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Spain",
+        "frontImage": "https://flagcdn.com/w640/es.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "pt",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Portugal",
+        "frontImage": "https://flagcdn.com/w640/pt.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "it",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Italy",
+        "extra": "Mexico uses the same green-white-red, but darker shades with a coat of arms in the center.",
+        "frontImage": "https://flagcdn.com/w640/it.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "ie",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Ireland",
+        "extra": "Green, white, orange. Côte d'Ivoire uses the same colors in reverse order, orange at the hoist.",
+        "frontImage": "https://flagcdn.com/w640/ie.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "de",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Germany",
+        "frontImage": "https://flagcdn.com/w640/de.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "gb",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "The United Kingdom",
+        "extra": "The Union Jack combines the crosses of England, Scotland, and Ireland.",
+        "frontImage": "https://flagcdn.com/w640/gb.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "nl",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "The Netherlands",
+        "extra": "Luxembourg looks nearly identical; its blue stripe is noticeably lighter.",
+        "frontImage": "https://flagcdn.com/w640/nl.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "be",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Belgium",
+        "frontImage": "https://flagcdn.com/w640/be.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "ch",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Switzerland",
+        "extra": "One of only two square national flags, along with Vatican City.",
+        "frontImage": "https://flagcdn.com/w640/ch.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "at",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Austria",
+        "frontImage": "https://flagcdn.com/w640/at.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "pl",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Poland",
+        "extra": "White over red. Indonesia and Monaco are the other way around: red over white.",
+        "frontImage": "https://flagcdn.com/w640/pl.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "cz",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Czechia",
+        "frontImage": "https://flagcdn.com/w640/cz.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "gr",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Greece",
+        "frontImage": "https://flagcdn.com/w640/gr.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "no",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Norway",
+        "frontImage": "https://flagcdn.com/w640/no.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "se",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Sweden",
+        "frontImage": "https://flagcdn.com/w640/se.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "dk",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Denmark",
+        "extra": "The Dannebrog, often cited as the oldest national flag still in use.",
+        "frontImage": "https://flagcdn.com/w640/dk.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "fi",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Finland",
+        "frontImage": "https://flagcdn.com/w640/fi.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "is",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Iceland",
+        "frontImage": "https://flagcdn.com/w640/is.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "ua",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Ukraine",
+        "frontImage": "https://flagcdn.com/w640/ua.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "ro",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Romania",
+        "extra": "Chad's flag is nearly identical; Romania's blue is slightly lighter.",
+        "frontImage": "https://flagcdn.com/w640/ro.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "mc",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Monaco",
+        "extra": "Nearly identical to Indonesia; Monaco's flag has shorter proportions.",
+        "frontImage": "https://flagcdn.com/w640/mc.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "tr",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Turkey",
+        "frontImage": "https://flagcdn.com/w640/tr.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "cn",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "China",
+        "frontImage": "https://flagcdn.com/w640/cn.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "jp",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Japan",
+        "extra": "Bangladesh also centers a single disc: red on a green field.",
+        "frontImage": "https://flagcdn.com/w640/jp.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "kr",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "South Korea",
+        "frontImage": "https://flagcdn.com/w640/kr.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "in",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "India",
+        "frontImage": "https://flagcdn.com/w640/in.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "th",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Thailand",
+        "frontImage": "https://flagcdn.com/w640/th.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "vn",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Vietnam",
+        "frontImage": "https://flagcdn.com/w640/vn.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "id",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Indonesia",
+        "extra": "Red over white. Monaco is nearly identical, and Poland is the inverse.",
+        "frontImage": "https://flagcdn.com/w640/id.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "ph",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "The Philippines",
+        "extra": "Flown with the red stripe on top in wartime.",
+        "frontImage": "https://flagcdn.com/w640/ph.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "sa",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Saudi Arabia",
+        "frontImage": "https://flagcdn.com/w640/sa.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "il",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Israel",
+        "frontImage": "https://flagcdn.com/w640/il.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "eg",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Egypt",
+        "frontImage": "https://flagcdn.com/w640/eg.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "ng",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Nigeria",
+        "frontImage": "https://flagcdn.com/w640/ng.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "ke",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Kenya",
+        "frontImage": "https://flagcdn.com/w640/ke.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "za",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "South Africa",
+        "frontImage": "https://flagcdn.com/w640/za.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "ma",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Morocco",
+        "frontImage": "https://flagcdn.com/w640/ma.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "gh",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Ghana",
+        "extra": "The black star gives Ghana's national team its nickname, the Black Stars.",
+        "frontImage": "https://flagcdn.com/w640/gh.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "td",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Chad",
+        "extra": "Nearly identical to Romania; Chad's blue is slightly darker.",
+        "frontImage": "https://flagcdn.com/w640/td.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "ca",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Canada",
+        "frontImage": "https://flagcdn.com/w640/ca.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "us",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "The United States",
+        "frontImage": "https://flagcdn.com/w640/us.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "mx",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Mexico",
+        "extra": "Italy uses the same three colors, but brighter and without the coat of arms.",
+        "frontImage": "https://flagcdn.com/w640/mx.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "br",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Brazil",
+        "frontImage": "https://flagcdn.com/w640/br.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "ar",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Argentina",
+        "extra": "Uruguay shares the sky blue, white, and Sun of May.",
+        "frontImage": "https://flagcdn.com/w640/ar.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "co",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Colombia",
+        "extra": "Ecuador and Venezuela share the same tricolor; Ecuador adds a coat of arms, Venezuela adds stars.",
+        "frontImage": "https://flagcdn.com/w640/co.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "cl",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Chile",
+        "extra": "Often confused with the Texas state flag, whose blue band runs the full height.",
+        "frontImage": "https://flagcdn.com/w640/cl.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "jm",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Jamaica",
+        "extra": "The only national flag with none of red, white, or blue.",
+        "frontImage": "https://flagcdn.com/w640/jm.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "au",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Australia",
+        "extra": "New Zealand's flag is similar; Australia adds the large Commonwealth Star and shows white stars.",
+        "frontImage": "https://flagcdn.com/w640/au.png"
+      },
+      "tags": [
+        "geo::oceania"
+      ]
+    },
+    {
+      "key": "nz",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "New Zealand",
+        "extra": "Four red stars edged in white; no Commonwealth Star, unlike Australia.",
+        "frontImage": "https://flagcdn.com/w640/nz.png"
+      },
+      "tags": [
+        "geo::oceania"
+      ]
+    },
+    {
+      "key": "al",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Albania",
+        "frontImage": "https://flagcdn.com/w640/al.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "ad",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Andorra",
+        "frontImage": "https://flagcdn.com/w640/ad.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "by",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Belarus",
+        "frontImage": "https://flagcdn.com/w640/by.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "ba",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Bosnia and Herzegovina",
+        "frontImage": "https://flagcdn.com/w640/ba.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "bg",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Bulgaria",
+        "frontImage": "https://flagcdn.com/w640/bg.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "hr",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Croatia",
+        "frontImage": "https://flagcdn.com/w640/hr.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "ee",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Estonia",
+        "frontImage": "https://flagcdn.com/w640/ee.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "hu",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Hungary",
+        "frontImage": "https://flagcdn.com/w640/hu.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "xk",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Kosovo",
+        "frontImage": "https://flagcdn.com/w640/xk.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "lv",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Latvia",
+        "frontImage": "https://flagcdn.com/w640/lv.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "li",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Liechtenstein",
+        "extra": "Haiti's civil flag was once identical; Liechtenstein added the gold crown after the 1936 Olympics.",
+        "frontImage": "https://flagcdn.com/w640/li.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "lt",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Lithuania",
+        "frontImage": "https://flagcdn.com/w640/lt.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "lu",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Luxembourg",
+        "extra": "Nearly identical to the Netherlands; the blue stripe is lighter.",
+        "frontImage": "https://flagcdn.com/w640/lu.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "mt",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Malta",
+        "frontImage": "https://flagcdn.com/w640/mt.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "md",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Moldova",
+        "frontImage": "https://flagcdn.com/w640/md.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "me",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Montenegro",
+        "frontImage": "https://flagcdn.com/w640/me.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "mk",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "North Macedonia",
+        "frontImage": "https://flagcdn.com/w640/mk.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "ru",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Russia",
+        "extra": "White, blue, red horizontal. Slovakia and Slovenia use the same stripes plus a coat of arms.",
+        "frontImage": "https://flagcdn.com/w640/ru.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "sm",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "San Marino",
+        "frontImage": "https://flagcdn.com/w640/sm.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "rs",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Serbia",
+        "frontImage": "https://flagcdn.com/w640/rs.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "sk",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Slovakia",
+        "extra": "Russia's stripes with a double-cross shield toward the hoist.",
+        "frontImage": "https://flagcdn.com/w640/sk.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "si",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Slovenia",
+        "extra": "Russia's stripes with the Triglav coat of arms toward the hoist.",
+        "frontImage": "https://flagcdn.com/w640/si.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "va",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Vatican City",
+        "extra": "The other square national flag, along with Switzerland.",
+        "frontImage": "https://flagcdn.com/w640/va.png"
+      },
+      "tags": [
+        "geo::europe"
+      ]
+    },
+    {
+      "key": "af",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Afghanistan",
+        "frontImage": "https://flagcdn.com/w640/af.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "am",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Armenia",
+        "frontImage": "https://flagcdn.com/w640/am.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "az",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Azerbaijan",
+        "frontImage": "https://flagcdn.com/w640/az.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "bh",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Bahrain",
+        "extra": "Red with five white serrated points. Qatar is maroon with nine.",
+        "frontImage": "https://flagcdn.com/w640/bh.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "bd",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Bangladesh",
+        "extra": "A red disc on green, like Japan's on white; the disc sits slightly toward the hoist.",
+        "frontImage": "https://flagcdn.com/w640/bd.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "bt",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Bhutan",
+        "frontImage": "https://flagcdn.com/w640/bt.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "bn",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Brunei",
+        "frontImage": "https://flagcdn.com/w640/bn.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "kh",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Cambodia",
+        "extra": "The only national flag with a building: Angkor Wat.",
+        "frontImage": "https://flagcdn.com/w640/kh.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "cy",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Cyprus",
+        "extra": "One of the few flags showing a map of the country.",
+        "frontImage": "https://flagcdn.com/w640/cy.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "ge",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Georgia",
+        "frontImage": "https://flagcdn.com/w640/ge.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "ir",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Iran",
+        "frontImage": "https://flagcdn.com/w640/ir.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "iq",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Iraq",
+        "frontImage": "https://flagcdn.com/w640/iq.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "jo",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Jordan",
+        "extra": "Like the Palestinian flag with a white seven-pointed star in the chevron.",
+        "frontImage": "https://flagcdn.com/w640/jo.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "kz",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Kazakhstan",
+        "frontImage": "https://flagcdn.com/w640/kz.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "kw",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Kuwait",
+        "frontImage": "https://flagcdn.com/w640/kw.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "kg",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Kyrgyzstan",
+        "frontImage": "https://flagcdn.com/w640/kg.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "la",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Laos",
+        "frontImage": "https://flagcdn.com/w640/la.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "lb",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Lebanon",
+        "frontImage": "https://flagcdn.com/w640/lb.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "my",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Malaysia",
+        "extra": "Stripes like the US flag, with a crescent and star in the canton.",
+        "frontImage": "https://flagcdn.com/w640/my.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "mv",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "The Maldives",
+        "frontImage": "https://flagcdn.com/w640/mv.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "mn",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Mongolia",
+        "frontImage": "https://flagcdn.com/w640/mn.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "mm",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Myanmar",
+        "frontImage": "https://flagcdn.com/w640/mm.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "np",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Nepal",
+        "extra": "The only non-quadrilateral national flag: two stacked pennants.",
+        "frontImage": "https://flagcdn.com/w640/np.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "kp",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "North Korea",
+        "frontImage": "https://flagcdn.com/w640/kp.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "om",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Oman",
+        "frontImage": "https://flagcdn.com/w640/om.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "pk",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Pakistan",
+        "frontImage": "https://flagcdn.com/w640/pk.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "ps",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Palestine",
+        "frontImage": "https://flagcdn.com/w640/ps.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "qa",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Qatar",
+        "extra": "Maroon with nine white serrated points. Bahrain is brighter red with five.",
+        "frontImage": "https://flagcdn.com/w640/qa.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "sg",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Singapore",
+        "frontImage": "https://flagcdn.com/w640/sg.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "lk",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Sri Lanka",
+        "frontImage": "https://flagcdn.com/w640/lk.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "sy",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Syria",
+        "frontImage": "https://flagcdn.com/w640/sy.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "tw",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Taiwan",
+        "frontImage": "https://flagcdn.com/w640/tw.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "tj",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Tajikistan",
+        "frontImage": "https://flagcdn.com/w640/tj.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "tl",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Timor-Leste",
+        "frontImage": "https://flagcdn.com/w640/tl.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "tm",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Turkmenistan",
+        "frontImage": "https://flagcdn.com/w640/tm.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "ae",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "The United Arab Emirates",
+        "frontImage": "https://flagcdn.com/w640/ae.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "uz",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Uzbekistan",
+        "frontImage": "https://flagcdn.com/w640/uz.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "ye",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Yemen",
+        "frontImage": "https://flagcdn.com/w640/ye.png"
+      },
+      "tags": [
+        "geo::asia"
+      ]
+    },
+    {
+      "key": "dz",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Algeria",
+        "frontImage": "https://flagcdn.com/w640/dz.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "ao",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Angola",
+        "frontImage": "https://flagcdn.com/w640/ao.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "bj",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Benin",
+        "frontImage": "https://flagcdn.com/w640/bj.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "bw",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Botswana",
+        "frontImage": "https://flagcdn.com/w640/bw.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "bf",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Burkina Faso",
+        "frontImage": "https://flagcdn.com/w640/bf.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "bi",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Burundi",
+        "frontImage": "https://flagcdn.com/w640/bi.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "cv",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Cabo Verde",
+        "frontImage": "https://flagcdn.com/w640/cv.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "cm",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Cameroon",
+        "frontImage": "https://flagcdn.com/w640/cm.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "cf",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "The Central African Republic",
+        "frontImage": "https://flagcdn.com/w640/cf.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "km",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Comoros",
+        "frontImage": "https://flagcdn.com/w640/km.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "cg",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "The Republic of the Congo",
+        "frontImage": "https://flagcdn.com/w640/cg.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "cd",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "The Democratic Republic of the Congo",
+        "frontImage": "https://flagcdn.com/w640/cd.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "ci",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Côte d'Ivoire",
+        "extra": "Orange, white, green vertical. Ireland is the reverse, with green at the hoist.",
+        "frontImage": "https://flagcdn.com/w640/ci.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "dj",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Djibouti",
+        "frontImage": "https://flagcdn.com/w640/dj.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "gq",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Equatorial Guinea",
+        "frontImage": "https://flagcdn.com/w640/gq.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "er",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Eritrea",
+        "frontImage": "https://flagcdn.com/w640/er.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "sz",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Eswatini",
+        "frontImage": "https://flagcdn.com/w640/sz.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "et",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Ethiopia",
+        "frontImage": "https://flagcdn.com/w640/et.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "ga",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Gabon",
+        "frontImage": "https://flagcdn.com/w640/ga.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "gm",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "The Gambia",
+        "frontImage": "https://flagcdn.com/w640/gm.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "gn",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Guinea",
+        "extra": "Mali's colors in reverse: red at the hoist.",
+        "frontImage": "https://flagcdn.com/w640/gn.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "gw",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Guinea-Bissau",
+        "frontImage": "https://flagcdn.com/w640/gw.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "ls",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Lesotho",
+        "frontImage": "https://flagcdn.com/w640/ls.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "lr",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Liberia",
+        "extra": "One star and eleven stripes, modeled on the United States flag.",
+        "frontImage": "https://flagcdn.com/w640/lr.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "ly",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Libya",
+        "frontImage": "https://flagcdn.com/w640/ly.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "mg",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Madagascar",
+        "frontImage": "https://flagcdn.com/w640/mg.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "mw",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Malawi",
+        "frontImage": "https://flagcdn.com/w640/mw.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "ml",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Mali",
+        "extra": "Green, yellow, red vertical. Senegal adds a green star; Guinea reverses the colors.",
+        "frontImage": "https://flagcdn.com/w640/ml.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "mr",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Mauritania",
+        "frontImage": "https://flagcdn.com/w640/mr.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "mu",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Mauritius",
+        "frontImage": "https://flagcdn.com/w640/mu.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "mz",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Mozambique",
+        "extra": "The only national flag with a modern rifle on it.",
+        "frontImage": "https://flagcdn.com/w640/mz.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "na",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Namibia",
+        "frontImage": "https://flagcdn.com/w640/na.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "ne",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Niger",
+        "frontImage": "https://flagcdn.com/w640/ne.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "rw",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Rwanda",
+        "frontImage": "https://flagcdn.com/w640/rw.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "st",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "São Tomé and Príncipe",
+        "frontImage": "https://flagcdn.com/w640/st.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "sn",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Senegal",
+        "extra": "Like Mali with a green star in the center.",
+        "frontImage": "https://flagcdn.com/w640/sn.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "sc",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Seychelles",
+        "frontImage": "https://flagcdn.com/w640/sc.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "sl",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Sierra Leone",
+        "frontImage": "https://flagcdn.com/w640/sl.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "so",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Somalia",
+        "frontImage": "https://flagcdn.com/w640/so.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "ss",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "South Sudan",
+        "frontImage": "https://flagcdn.com/w640/ss.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "sd",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Sudan",
+        "frontImage": "https://flagcdn.com/w640/sd.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "tz",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Tanzania",
+        "frontImage": "https://flagcdn.com/w640/tz.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "tg",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Togo",
+        "frontImage": "https://flagcdn.com/w640/tg.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "tn",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Tunisia",
+        "frontImage": "https://flagcdn.com/w640/tn.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "ug",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Uganda",
+        "frontImage": "https://flagcdn.com/w640/ug.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "zm",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Zambia",
+        "frontImage": "https://flagcdn.com/w640/zm.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "zw",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Zimbabwe",
+        "frontImage": "https://flagcdn.com/w640/zw.png"
+      },
+      "tags": [
+        "geo::africa"
+      ]
+    },
+    {
+      "key": "ag",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Antigua and Barbuda",
+        "frontImage": "https://flagcdn.com/w640/ag.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "bs",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "The Bahamas",
+        "frontImage": "https://flagcdn.com/w640/bs.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "bb",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Barbados",
+        "frontImage": "https://flagcdn.com/w640/bb.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "bz",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Belize",
+        "frontImage": "https://flagcdn.com/w640/bz.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "bo",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Bolivia",
+        "frontImage": "https://flagcdn.com/w640/bo.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "cr",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Costa Rica",
+        "frontImage": "https://flagcdn.com/w640/cr.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "cu",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Cuba",
+        "frontImage": "https://flagcdn.com/w640/cu.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "dm",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Dominica",
+        "frontImage": "https://flagcdn.com/w640/dm.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "do",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "The Dominican Republic",
+        "frontImage": "https://flagcdn.com/w640/do.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "ec",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Ecuador",
+        "extra": "Colombia's tricolor with the national coat of arms in the center.",
+        "frontImage": "https://flagcdn.com/w640/ec.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "sv",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "El Salvador",
+        "frontImage": "https://flagcdn.com/w640/sv.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "gd",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Grenada",
+        "frontImage": "https://flagcdn.com/w640/gd.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "gt",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Guatemala",
+        "frontImage": "https://flagcdn.com/w640/gt.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "gy",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Guyana",
+        "frontImage": "https://flagcdn.com/w640/gy.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "ht",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Haiti",
+        "frontImage": "https://flagcdn.com/w640/ht.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "hn",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Honduras",
+        "frontImage": "https://flagcdn.com/w640/hn.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "ni",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Nicaragua",
+        "frontImage": "https://flagcdn.com/w640/ni.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "pa",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Panama",
+        "frontImage": "https://flagcdn.com/w640/pa.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "py",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Paraguay",
+        "extra": "The only national flag with different emblems on its two sides.",
+        "frontImage": "https://flagcdn.com/w640/py.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "pe",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Peru",
+        "frontImage": "https://flagcdn.com/w640/pe.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "kn",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Saint Kitts and Nevis",
+        "frontImage": "https://flagcdn.com/w640/kn.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "lc",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Saint Lucia",
+        "frontImage": "https://flagcdn.com/w640/lc.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "vc",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Saint Vincent and the Grenadines",
+        "frontImage": "https://flagcdn.com/w640/vc.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "sr",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Suriname",
+        "frontImage": "https://flagcdn.com/w640/sr.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "tt",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Trinidad and Tobago",
+        "frontImage": "https://flagcdn.com/w640/tt.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "uy",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Uruguay",
+        "extra": "Sun of May and sky-blue stripes, like Argentina.",
+        "frontImage": "https://flagcdn.com/w640/uy.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "ve",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Venezuela",
+        "extra": "Colombia's tricolor with an arc of eight stars.",
+        "frontImage": "https://flagcdn.com/w640/ve.png"
+      },
+      "tags": [
+        "geo::americas"
+      ]
+    },
+    {
+      "key": "fj",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Fiji",
+        "frontImage": "https://flagcdn.com/w640/fj.png"
+      },
+      "tags": [
+        "geo::oceania"
+      ]
+    },
+    {
+      "key": "ki",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Kiribati",
+        "frontImage": "https://flagcdn.com/w640/ki.png"
+      },
+      "tags": [
+        "geo::oceania"
+      ]
+    },
+    {
+      "key": "mh",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "The Marshall Islands",
+        "frontImage": "https://flagcdn.com/w640/mh.png"
+      },
+      "tags": [
+        "geo::oceania"
+      ]
+    },
+    {
+      "key": "fm",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Micronesia",
+        "frontImage": "https://flagcdn.com/w640/fm.png"
+      },
+      "tags": [
+        "geo::oceania"
+      ]
+    },
+    {
+      "key": "nr",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Nauru",
+        "frontImage": "https://flagcdn.com/w640/nr.png"
+      },
+      "tags": [
+        "geo::oceania"
+      ]
+    },
+    {
+      "key": "pw",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Palau",
+        "extra": "A yellow disc on blue, like Japan's design; the disc is the full moon, not the sun.",
+        "frontImage": "https://flagcdn.com/w640/pw.png"
+      },
+      "tags": [
+        "geo::oceania"
+      ]
+    },
+    {
+      "key": "pg",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Papua New Guinea",
+        "frontImage": "https://flagcdn.com/w640/pg.png"
+      },
+      "tags": [
+        "geo::oceania"
+      ]
+    },
+    {
+      "key": "ws",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Samoa",
+        "frontImage": "https://flagcdn.com/w640/ws.png"
+      },
+      "tags": [
+        "geo::oceania"
+      ]
+    },
+    {
+      "key": "sb",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "The Solomon Islands",
+        "frontImage": "https://flagcdn.com/w640/sb.png"
+      },
+      "tags": [
+        "geo::oceania"
+      ]
+    },
+    {
+      "key": "to",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Tonga",
+        "frontImage": "https://flagcdn.com/w640/to.png"
+      },
+      "tags": [
+        "geo::oceania"
+      ]
+    },
+    {
+      "key": "tv",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Tuvalu",
+        "frontImage": "https://flagcdn.com/w640/tv.png"
+      },
+      "tags": [
+        "geo::oceania"
+      ]
+    },
+    {
+      "key": "vu",
+      "model": "basic",
+      "fields": {
+        "front": "Which country's flag is this?",
+        "back": "Vanuatu",
+        "frontImage": "https://flagcdn.com/w640/vu.png"
+      },
+      "tags": [
+        "geo::oceania"
+      ]
+    }
+  ]
+}

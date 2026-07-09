@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "decks": [
+    {
+      "key": "flags-of-the-world",
+      "version": 1,
+      "name": "Flags of the World",
+      "description": "All 197 national flags: every UN member and observer state, plus Kosovo and Taiwan, with notes on the lookalike pairs.",
+      "category": "Geography",
+      "cardCount": 197,
+      "file": "decks/flags-of-the-world.json"
+    }
+  ]
+}
