@@ -5,7 +5,7 @@
       "key": "language",
       "name": "Language",
       "deckCount": 2,
-      "rev": "35e580f62fc9",
+      "rev": "ba7e6fb8b301",
       "file": "categories/language.json"
     },
     {
@@ -149,7 +149,7 @@
     },
     {
       "key": "essential-chinese",
-      "version": 1,
+      "version": 2,
       "file": "decks/essential-chinese.json"
     },
     {

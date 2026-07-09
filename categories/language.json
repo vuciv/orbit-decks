@@ -6,13 +6,14 @@
     {
       "key": "essential-chinese",
       "name": "Essential Chinese",
-      "description": "Your first steps in Mandarin: the complete 150-word HSK 1 vocabulary plus the survival phrases you need on day one, from greetings to haggling. Simplified characters on the front; pinyin and meaning on the back.",
-      "cardCount": 174,
+      "description": "Mandarin from absolute zero, structured the way spaced-repetition research says to learn a language: the tone and pinyin system first, then day-one survival phrases, then the highest-frequency words, then the grammar patterns that snap them together. Characters ride up front with tap-to-hear speech, pinyin and usage notes appear on every reveal, and the phrases you must be able to say are trained in both directions. Simplified characters. Keep new cards to 5-10 a day and say every answer out loud.",
+      "cardCount": 293,
       "topics": [
         "chinese",
         "mandarin",
         "language",
-        "hsk"
+        "beginner",
+        "pinyin"
       ],
       "coverImage": "https://flagcdn.com/w640/cn.png"
     },
