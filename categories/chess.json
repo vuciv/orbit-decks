@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "key": "chess",
+  "name": "Chess",
+  "decks": [
+    {
+      "key": "sicilian-defense",
+      "name": "The Sicilian Defense",
+      "description": "A club player's working map of the Sicilian: why 1...c5 works, the Open Sicilian trunk, the Najdorf, Dragon, Sveshnikov, and Classical variations, and how to meet the Alapin and Rossolimo anti-Sicilians. Lines, tabiyas, and the plans behind them.",
+      "cardCount": 105,
+      "topics": [
+        "chess",
+        "openings",
+        "sicilian"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F8%2F2p5%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett"
+    }
+  ]
+}

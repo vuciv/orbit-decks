@@ -37,6 +37,13 @@
       "file": "categories/cinema.json"
     },
     {
+      "key": "chess",
+      "name": "Chess",
+      "deckCount": 1,
+      "rev": "62bb4698b04d",
+      "file": "categories/chess.json"
+    },
+    {
       "key": "science",
       "name": "Science",
       "deckCount": 1,
@@ -97,6 +104,14 @@
         "best-picture-winners",
         "who-directed-it"
       ]
+    },
+    {
+      "key": "chess-openings",
+      "title": "Chess openings",
+      "description": "Book moves, plans, and traps, one opening at a time.",
+      "deckKeys": [
+        "sicilian-defense"
+      ]
     }
   ],
   "syncIndex": [
@@ -149,6 +164,11 @@
       "key": "periodic-table",
       "version": 1,
       "file": "decks/periodic-table.json"
+    },
+    {
+      "key": "sicilian-defense",
+      "version": 1,
+      "file": "decks/sicilian-defense.json"
     },
     {
       "key": "us-presidents",

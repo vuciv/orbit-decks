@@ -22,5 +22,11 @@
     "title": "Silver Screen",
     "description": "For people who know the director before the trailer ends.",
     "deckKeys": ["best-picture-winners", "who-directed-it"]
+  },
+  {
+    "key": "chess-openings",
+    "title": "Chess openings",
+    "description": "Book moves, plans, and traps, one opening at a time.",
+    "deckKeys": ["london-system", "sicilian-defense"]
   }
 ]

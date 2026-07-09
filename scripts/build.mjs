@@ -34,6 +34,7 @@ const CATEGORY_ORDER = [
   'Space',
   'Art',
   'Cinema',
+  'Chess',
   'Science',
   'History',
   'Codes & Signals',

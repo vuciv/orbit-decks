@@ -1,0 +1,632 @@
+{
+  "key": "sicilian-defense",
+  "version": 1,
+  "name": "The Sicilian Defense",
+  "description": "A club player's working map of the Sicilian: why 1...c5 works, the Open Sicilian trunk, the Najdorf, Dragon, Sveshnikov, and Classical variations, and how to meet the Alapin and Rossolimo anti-Sicilians. Lines, tabiyas, and the plans behind them.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "sicilian"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F8%2F2p5%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "why-c5",
+      "model": "cloze",
+      "fields": {
+        "text": "The Sicilian answers 1. e4 with {{c1::c5}}, an asymmetrical bid that fights for the {{c2::d4}} square with a wing pawn instead of mirroring White in the center.",
+        "extra": "Unlike 1...e5, the Sicilian unbalances the game from move one, which is why it has long been Black's most ambitious and highest-scoring reply to 1. e4."
+      },
+      "tags": [
+        "chess::structure"
+      ]
+    },
+    {
+      "key": "sicilian-answer-to-e4",
+      "model": "basic",
+      "fields": {
+        "front": "White opens 1. e4. Which pawn move begins the Sicilian Defense?",
+        "back": "c5",
+        "extra": "1...c5 fights for d4 from the wing and unbalances the position immediately, the most combative reply to 1. e4.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpppppppp%2F8%2F8%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20b%20KQkq%20-%200%201&color=black&theme=brown&piece=cburnett&lastMove=e2e4"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "sicilian-recognition",
+      "model": "basic",
+      "fields": {
+        "front": "Name this opening.",
+        "back": "The Sicilian Defense (1. e4 c5)",
+        "extra": "The defining position of the Sicilian. Black stakes a wing pawn against White's center and steers the game away from symmetrical 1...e5 territory.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F8%2F2p5%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett&lastMove=c7c5"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "open-sicilian-definition",
+      "model": "cloze",
+      "fields": {
+        "text": "The Open Sicilian arises after 1. e4 c5 2. Nf3 when White plays {{c1::3. d4}}; after 3...cxd4 {{c2::4. Nxd4}} the position opens and both sides get what they came for.",
+        "extra": "White gets free development and attacking chances; Black gets the superior pawn structure and the half-open c-file."
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "c-file-trade",
+      "model": "cloze",
+      "fields": {
+        "text": "After ...cxd4 Black has traded a wing pawn for a {{c1::center}} pawn, leaving Black with a central pawn majority and the half-open {{c2::c}}-file for counterplay.",
+        "extra": "This trade is the structural soul of the Sicilian: in most endgames Black's extra central pawn tells, so White must make the middlegame count."
+      },
+      "tags": [
+        "chess::structure"
+      ]
+    },
+    {
+      "key": "white-compensation",
+      "model": "cloze",
+      "fields": {
+        "text": "In the Open Sicilian White banks on a lead in {{c1::development}} and open lines for a {{c2::kingside}} attack, while Black banks on long-term structure and queenside counterplay.",
+        "extra": "The Sicilian is a trade of time for structure. If White's initiative fizzles, Black's position is simply better."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "d5-freeing-break",
+      "model": "cloze",
+      "fields": {
+        "text": "Black's classic freeing break in the Sicilian is {{c1::...d5}}; if Black achieves it under good conditions, the opening battle is usually won.",
+        "extra": "Much of White's play, from Nc3 to the Maroczy Bind's c4, exists purely to restrain this break."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "black-second-moves",
+      "model": "basic",
+      "fields": {
+        "front": "After 2. Nf3, name Black's three main second moves.",
+        "back": "2...d6, 2...Nc6, and 2...e6",
+        "extra": "2...d6 heads for the Najdorf and Dragon, 2...Nc6 for the Sveshnikov and Classical, and 2...e6 for the Taimanov and Kan families.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F8%2F2p5%2F4P3%2F5N2%2FPPPP1PPP%2FRNBQKB1R%20b%20KQkq%20-%201%202&color=black&theme=brown&piece=cburnett&lastMove=g1f3"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "open-sicilian-capture",
+      "model": "basic",
+      "fields": {
+        "front": "White offers the Open Sicilian with 3. d4. What is Black's move?",
+        "back": "cxd4",
+        "extra": "Take it: the capture trades a wing pawn for a center pawn and half-opens the c-file. Declining just lets White keep the big center.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F3p4%2F2p5%2F3PP3%2F5N2%2FPPP2PPP%2FRNBQKB1R%20b%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=d2d4"
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "open-sicilian-trunk",
+      "model": "sequence",
+      "fields": {
+        "title": "Open Sicilian, main trunk (2...d6 move order)",
+        "items": [
+          "1. e4 c5",
+          "2. Nf3 d6",
+          "3. d4 cxd4",
+          "4. Nxd4 Nf6",
+          "5. Nc3"
+        ],
+        "contextWindow": 2
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "open-trunk-crossroads",
+      "model": "basic",
+      "fields": {
+        "front": "The Open Sicilian crossroads after 5. Nc3. Which variations can Black choose between with the next move?",
+        "back": "5...a6 Najdorf, 5...g6 Dragon, 5...Nc6 Classical, 5...e6 Scheveningen",
+        "extra": "One position, four openings. Black's fifth move sets the character of the whole game.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp2pppp%2F3p1n2%2F8%2F3NP3%2F2N5%2FPPP2PPP%2FR1BQKB1R%20b%20KQkq%20-%202%205&color=black&theme=brown&piece=cburnett&lastMove=b1c3"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "structures-e6-vs-g6",
+      "model": "cloze",
+      "fields": {
+        "text": "With black pawns on d6 and {{c1::e6}} the setup is a Scheveningen small center; with d6 and {{c2::g6}} plus the bishop on g7 it is a Dragon formation.",
+        "extra": "The e6 structure keeps the position compact and flexible; the g6 structure trades some solidity for the g7 bishop's long-diagonal power."
+      },
+      "tags": [
+        "chess::structure"
+      ]
+    },
+    {
+      "key": "najdorf-signature",
+      "model": "basic",
+      "fields": {
+        "front": "You are Black and want the Najdorf. What is the signature move here?",
+        "back": "a6",
+        "extra": "5...a6 takes b5 from White's knights and bishop, preparing ...e5 and ...b5. The most popular chess opening position in history.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp2pppp%2F3p1n2%2F8%2F3NP3%2F2N5%2FPPP2PPP%2FR1BQKB1R%20b%20KQkq%20-%202%205&color=black&theme=brown&piece=cburnett&lastMove=b1c3"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "najdorf-recognition",
+      "model": "basic",
+      "fields": {
+        "front": "Which variation is this?",
+        "back": "The Najdorf Variation (5...a6)",
+        "extra": "The little pawn move to a6 defines the Najdorf, the lifetime weapon of Fischer and Kasparov.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2F1p2pppp%2Fp2p1n2%2F8%2F3NP3%2F2N5%2FPPP2PPP%2FR1BQKB1R%20w%20KQkq%20-%200%206&color=black&theme=brown&piece=cburnett&lastMove=a7a6"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "najdorf-a6-idea",
+      "model": "cloze",
+      "fields": {
+        "text": "The Najdorf's 5...a6 takes the {{c1::b5}} square away from White's knights and bishop, prepares {{c2::...e5}} without allowing a check, and gains time for the pawn storm {{c3::...b5}}.",
+        "extra": "A quiet-looking move with three points. That flexibility is why the Najdorf has been a world champion's weapon from Fischer to Kasparov."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "najdorf-english-attack-line",
+      "model": "sequence",
+      "fields": {
+        "title": "Najdorf Variation, English Attack",
+        "items": [
+          "1. e4 c5",
+          "2. Nf3 d6",
+          "3. d4 cxd4",
+          "4. Nxd4 Nf6",
+          "5. Nc3 a6",
+          "6. Be3 e5",
+          "7. Nb3 Be6",
+          "8. f3 Be7"
+        ],
+        "contextWindow": 2
+      },
+      "tags": [
+        "chess::variation",
+        "chess::setup"
+      ]
+    },
+    {
+      "key": "najdorf-vs-be2",
+      "model": "basic",
+      "fields": {
+        "front": "Najdorf: White plays the quiet 6. Be2 (Opocensky Variation). What is Black's main reply?",
+        "back": "e5",
+        "extra": "With b5 already covered by ...a6, Black grabs the center. The backward d6 pawn is hard to attack, and Black gets active play on e5 and the queenside.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2F1p2pppp%2Fp2p1n2%2F8%2F3NP3%2F2N5%2FPPP1BPPP%2FR1BQK2R%20b%20KQkq%20-%201%206&color=black&theme=brown&piece=cburnett&lastMove=f1e2"
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "najdorf-vs-bg5",
+      "model": "basic",
+      "fields": {
+        "front": "Najdorf: White plays the sharp 6. Bg5. What is Black's main reply?",
+        "back": "e6",
+        "extra": "6...e6 7. f4 is the old main line; the famous Poisoned Pawn arises after 7...Qb6, when Black grabs b2 and hangs on.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2F1p2pppp%2Fp2p1n2%2F6B1%2F3NP3%2F2N5%2FPPP2PPP%2FR2QKB1R%20b%20KQkq%20-%201%206&color=black&theme=brown&piece=cburnett&lastMove=c1g5"
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "najdorf-vs-bc4",
+      "model": "basic",
+      "fields": {
+        "front": "Najdorf: White plays Fischer's favorite 6. Bc4 (Fischer-Sozin Attack). What is Black's standard reply?",
+        "back": "e6",
+        "extra": "6...e6 blunts the bishop's a2-g8 diagonal. Black follows up with ...b5, ...Bb7, and pressure against e4.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2F1p2pppp%2Fp2p1n2%2F8%2F2BNP3%2F2N5%2FPPP2PPP%2FR1BQK2R%20b%20KQkq%20-%201%206&color=black&theme=brown&piece=cburnett&lastMove=f1c4"
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "english-attack-recognition",
+      "model": "basic",
+      "fields": {
+        "front": "Najdorf: White plays 6. Be3, intending f3, Qd2, and O-O-O. What is this system called?",
+        "back": "The English Attack",
+        "extra": "White castles long and storms the kingside with g4-g5; Black counters with ...e5, ...Be6, and queenside play. The modern main battleground of the Najdorf.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2F1p2pppp%2Fp2p1n2%2F8%2F3NP3%2F2N1B3%2FPPP2PPP%2FR2QKB1R%20b%20KQkq%20-%201%206&color=black&theme=brown&piece=cburnett&lastMove=c1e3"
+      },
+      "tags": [
+        "chess::setup"
+      ]
+    },
+    {
+      "key": "dragon-signature",
+      "model": "basic",
+      "fields": {
+        "front": "You are Black and want the Dragon. What is the signature move here?",
+        "back": "g6",
+        "extra": "5...g6 prepares the fianchetto: the bishop goes to g7 and rakes the long diagonal toward White's queenside.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp2pppp%2F3p1n2%2F8%2F3NP3%2F2N5%2FPPP2PPP%2FR1BQKB1R%20b%20KQkq%20-%202%205&color=black&theme=brown&piece=cburnett&lastMove=b1c3"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "dragon-recognition",
+      "model": "basic",
+      "fields": {
+        "front": "Which variation is this?",
+        "back": "The Dragon Variation (5...g6)",
+        "extra": "Named for the pawn structure's resemblance to the Draco constellation. Black's whole game revolves around the g7 bishop.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp2pp1p%2F3p1np1%2F8%2F3NP3%2F2N5%2FPPP2PPP%2FR1BQKB1R%20w%20KQkq%20-%200%206&color=black&theme=brown&piece=cburnett&lastMove=g7g6"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "dragon-bishop",
+      "model": "cloze",
+      "fields": {
+        "text": "The Dragon puts the bishop on {{c1::g7}}, where it breathes fire down the long {{c2::a1-h8}} diagonal at White's queenside.",
+        "extra": "Trading or blunting this bishop is White's core positional goal in every Dragon line; keeping it alive is Black's."
+      },
+      "tags": [
+        "chess::structure"
+      ]
+    },
+    {
+      "key": "dragon-yugoslav-attack-line",
+      "model": "sequence",
+      "fields": {
+        "title": "Dragon Variation, Yugoslav Attack",
+        "items": [
+          "1. e4 c5",
+          "2. Nf3 d6",
+          "3. d4 cxd4",
+          "4. Nxd4 Nf6",
+          "5. Nc3 g6",
+          "6. Be3 Bg7",
+          "7. f3 O-O",
+          "8. Qd2 Nc6",
+          "9. Bc4 Bd7"
+        ],
+        "contextWindow": 2
+      },
+      "tags": [
+        "chess::variation",
+        "chess::setup"
+      ]
+    },
+    {
+      "key": "yugoslav-recognition",
+      "model": "basic",
+      "fields": {
+        "front": "Against the Dragon, White has set up Be3, f3, Qd2, and Bc4, ready to castle long. Name this setup.",
+        "back": "The Yugoslav Attack",
+        "extra": "White's most critical anti-Dragon weapon: O-O-O, then h4-h5 to pry open the h-file while f3 secures e4 and g4.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fpp2ppbp%2F2np1np1%2F8%2F2BNP3%2F2N1BP2%2FPPPQ2PP%2FR3K2R%20b%20KQ%20-%204%209&color=black&theme=brown&piece=cburnett&lastMove=f1c4"
+      },
+      "tags": [
+        "chess::setup"
+      ]
+    },
+    {
+      "key": "yugoslav-race",
+      "model": "cloze",
+      "fields": {
+        "text": "The Yugoslav Attack is an opposite-side castling race: White castles {{c1::queenside}} and launches the h-pawn at Black's king, while Black storms down the half-open {{c2::c}}-file with ...Rc8 and exchange sacrifices on c3.",
+        "extra": "Both kings are targets and tempo counts double, which is why Dragon players must know their move orders cold."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "accelerated-dragon-recognition",
+      "model": "basic",
+      "fields": {
+        "front": "Black fianchettoes on move four, skipping ...d6. Which variation?",
+        "back": "The Accelerated Dragon (2...Nc6 and 4...g6)",
+        "extra": "By omitting ...d6, Black hopes to play ...d5 in one move and save a tempo on the normal Dragon. The drawback: White can clamp with 5. c4.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkbnr%2Fpp1ppp1p%2F2n3p1%2F8%2F3NP3%2F8%2FPPP2PPP%2FRNBQKB1R%20w%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=g7g6"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "maroczy-bind",
+      "model": "basic",
+      "fields": {
+        "front": "White meets the Accelerated Dragon with 5. c4. What is this pawn formation called?",
+        "back": "The Maroczy Bind",
+        "extra": "Pawns on c4 and e4 clamp the d5 square, denying Black the freeing break. Black stays solid but cramped and plays for exchanges and the ...b5 lever.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkbnr%2Fpp1ppp1p%2F2n3p1%2F8%2F2PNP3%2F8%2FPP3PPP%2FRNBQKB1R%20b%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=c2c4"
+      },
+      "tags": [
+        "chess::structure"
+      ]
+    },
+    {
+      "key": "maroczy-bind-idea",
+      "model": "cloze",
+      "fields": {
+        "text": "The Maroczy Bind places White pawns on {{c1::c4}} and e4 against the ...g6 Sicilians, clamping the {{c2::d5}} square so Black's freeing break never comes.",
+        "extra": "The bind is positional, not violent: White concedes nothing and squeezes. This is the strategic tax on the Accelerated Dragon's quick fianchetto."
+      },
+      "tags": [
+        "chess::structure"
+      ]
+    },
+    {
+      "key": "sveshnikov-signature",
+      "model": "basic",
+      "fields": {
+        "front": "Via 2...Nc6 you have reached this position, and you want the Sveshnikov. What is the signature move here?",
+        "back": "e5",
+        "extra": "5...e5 punches the d4 knight and stakes out the center immediately, accepting the d5 hole as the price of activity.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpp1ppppp%2F2n2n2%2F8%2F3NP3%2F2N5%2FPPP2PPP%2FR1BQKB1R%20b%20KQkq%20-%202%205&color=black&theme=brown&piece=cburnett&lastMove=b1c3"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "sveshnikov-recognition",
+      "model": "basic",
+      "fields": {
+        "front": "Which variation is this?",
+        "back": "The Sveshnikov Variation (5...e5)",
+        "extra": "Reached via 2...Nc6, not 2...d6. Once considered anti-positional for the d5 hole, now bedrock theory and a world championship main weapon.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpp1p1ppp%2F2n2n2%2F4p3%2F3NP3%2F2N5%2FPPP2PPP%2FR1BQKB1R%20w%20KQkq%20-%200%206&color=black&theme=brown&piece=cburnett&lastMove=e7e5"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "sveshnikov-tradeoff",
+      "model": "cloze",
+      "fields": {
+        "text": "The Sveshnikov's 5...e5 kicks the d4 knight and seizes the center, conceding a hole on {{c1::d5}} and a backward pawn on {{c2::d6}} in return for the bishop pair and active play.",
+        "extra": "Modern engines vindicate the activity: it was Carlsen's main defense in the 2018 world championship match."
+      },
+      "tags": [
+        "chess::structure"
+      ]
+    },
+    {
+      "key": "sveshnikov-main-line",
+      "model": "sequence",
+      "fields": {
+        "title": "Sveshnikov Variation, main line",
+        "items": [
+          "1. e4 c5",
+          "2. Nf3 Nc6",
+          "3. d4 cxd4",
+          "4. Nxd4 Nf6",
+          "5. Nc3 e5",
+          "6. Ndb5 d6",
+          "7. Bg5 a6",
+          "8. Na3 b5"
+        ],
+        "contextWindow": 2
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "sveshnikov-book-b5",
+      "model": "basic",
+      "fields": {
+        "front": "Sveshnikov: White's knight has just retreated to a3. What is Black's book move?",
+        "back": "b5",
+        "extra": "8...b5 shuts the a3 knight out of c4 and grabs queenside space. White's main tries are 9. Bxf6 and 9. Nd5.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2F1p3ppp%2Fp1np1n2%2F4p1B1%2F4P3%2FN1N5%2FPPP2PPP%2FR2QKB1R%20b%20KQkq%20-%201%208&color=black&theme=brown&piece=cburnett&lastMove=b5a3"
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "classical-recognition",
+      "model": "basic",
+      "fields": {
+        "front": "Which variation is this?",
+        "back": "The Classical Variation (5...Nc6)",
+        "extra": "Both knights on their natural squares, everything kept flexible. Black can still steer toward Scheveningen or Boleslavsky structures.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpp2pppp%2F2np1n2%2F8%2F3NP3%2F2N5%2FPPP2PPP%2FR1BQKB1R%20w%20KQkq%20-%203%206&color=black&theme=brown&piece=cburnett&lastMove=b8c6"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "richter-rauzer-recognition",
+      "model": "basic",
+      "fields": {
+        "front": "White answers the Classical with 6. Bg5, preparing Qd2 and O-O-O. Name this system.",
+        "back": "The Richter-Rauzer Attack",
+        "extra": "White's main try against the Classical: pressure on f6, long castling, and the threat of doubling Black's pawns at the right moment. Black's main reply is 6...e6.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpp2pppp%2F2np1n2%2F6B1%2F3NP3%2F2N5%2FPPP2PPP%2FR2QKB1R%20b%20KQkq%20-%204%206&color=black&theme=brown&piece=cburnett&lastMove=c1g5"
+      },
+      "tags": [
+        "chess::setup"
+      ]
+    },
+    {
+      "key": "classical-richter-rauzer-line",
+      "model": "sequence",
+      "fields": {
+        "title": "Classical Variation, Richter-Rauzer",
+        "items": [
+          "1. e4 c5",
+          "2. Nf3 d6",
+          "3. d4 cxd4",
+          "4. Nxd4 Nf6",
+          "5. Nc3 Nc6",
+          "6. Bg5 e6",
+          "7. Qd2 a6",
+          "8. O-O-O Bd7"
+        ],
+        "contextWindow": 2
+      },
+      "tags": [
+        "chess::variation",
+        "chess::setup"
+      ]
+    },
+    {
+      "key": "alapin-point",
+      "model": "cloze",
+      "fields": {
+        "text": "The Alapin's 2. c3 prepares {{c1::d4}} so White can recapture with a pawn and keep a full center, avoiding the {{c2::Open}} Sicilian altogether.",
+        "extra": "The cost is that c3 takes the best square from the b1 knight, which is exactly what Black's two main replies exploit."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "alapin-recognition",
+      "model": "basic",
+      "fields": {
+        "front": "Which Anti-Sicilian is this?",
+        "back": "The Alapin Variation (2. c3)",
+        "extra": "White intends d4 with a pawn recapture, dodging Open Sicilian theory. Respectable and popular at every level.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F8%2F2p5%2F4P3%2F2P5%2FPP1P1PPP%2FRNBQKBNR%20b%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett&lastMove=c2c3"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "alapin-reply",
+      "model": "basic",
+      "fields": {
+        "front": "How do you meet the Alapin's 2. c3?",
+        "back": "2...Nf6 (or 2...d5)",
+        "extra": "Both strike at e4 immediately. 2...Nf6 provokes 3. e5 Nd5, and 2...d5 3. exd5 Qxd5 is safe because c3 has taken the b1 knight's square, so the queen cannot be hit by Nc3.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F8%2F2p5%2F4P3%2F2P5%2FPP1P1PPP%2FRNBQKBNR%20b%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett&lastMove=c2c3"
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "alapin-main-line",
+      "model": "sequence",
+      "fields": {
+        "title": "Alapin Variation, 2...Nf6 main line",
+        "items": [
+          "1. e4 c5",
+          "2. c3 Nf6",
+          "3. e5 Nd5",
+          "4. d4 cxd4",
+          "5. Nf3 Nc6",
+          "6. cxd4 d6",
+          "7. Bc4 Nb6",
+          "8. Bb5 dxe5",
+          "9. Nxe5 Bd7"
+        ],
+        "contextWindow": 2
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "rossolimo-idea",
+      "model": "cloze",
+      "fields": {
+        "text": "The Rossolimo's 3. Bb5 develops with the threat of {{c1::Bxc6}}, doubling Black's pawns, and lets White castle at once instead of entering the {{c2::Sveshnikov}} and the rest of Open Sicilian theory.",
+        "extra": "A favorite of Carlsen and Caruana at the top level precisely because it denies Black the sharp preparation battles."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "rossolimo-recognition",
+      "model": "basic",
+      "fields": {
+        "front": "Which Anti-Sicilian is this?",
+        "back": "The Rossolimo Variation (3. Bb5 against 2...Nc6)",
+        "extra": "White develops with tempo and is ready to castle, threatening to inflict doubled pawns with Bxc6. The main way strong players dodge the Sveshnikov.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkbnr%2Fpp1ppppp%2F2n5%2F1Bp5%2F4P3%2F5N2%2FPPPP1PPP%2FRNBQK2R%20b%20KQkq%20-%203%203&color=black&theme=brown&piece=cburnett&lastMove=f1b5"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "rossolimo-reply",
+      "model": "basic",
+      "fields": {
+        "front": "How do you meet the Rossolimo's 3. Bb5?",
+        "back": "3...g6",
+        "extra": "The main line. Black accepts doubled pawns after Bxc6 dxc6 in exchange for the bishop pair and a dark-square grip. 3...e6 and 3...d6 are also fully respectable.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkbnr%2Fpp1ppppp%2F2n5%2F1Bp5%2F4P3%2F5N2%2FPPPP1PPP%2FRNBQK2R%20b%20KQkq%20-%203%203&color=black&theme=brown&piece=cburnett&lastMove=f1b5"
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "rossolimo-fianchetto-line",
+      "model": "sequence",
+      "fields": {
+        "title": "Rossolimo Variation, fianchetto main line",
+        "items": [
+          "1. e4 c5",
+          "2. Nf3 Nc6",
+          "3. Bb5 g6",
+          "4. Bxc6 dxc6",
+          "5. d3 Bg7",
+          "6. h3 Nf6",
+          "7. Nc3 O-O"
+        ],
+        "contextWindow": 2
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    }
+  ]
+}
