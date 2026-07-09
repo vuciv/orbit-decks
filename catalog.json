@@ -4,8 +4,8 @@
     {
       "key": "geography",
       "name": "Geography",
-      "deckCount": 3,
-      "rev": "c18f2ed53b32",
+      "deckCount": 4,
+      "rev": "b5a0122b7491",
       "file": "categories/geography.json"
     },
     {
@@ -21,6 +21,13 @@
       "deckCount": 1,
       "rev": "728235baa363",
       "file": "categories/space.json"
+    },
+    {
+      "key": "cinema",
+      "name": "Cinema",
+      "deckCount": 1,
+      "rev": "e8d3614bcdc3",
+      "file": "categories/cinema.json"
     },
     {
       "key": "science",
@@ -62,6 +69,7 @@
       "deckKeys": [
         "flags-of-the-world",
         "world-capitals",
+        "country-silhouettes",
         "us-states"
       ]
     },
@@ -73,13 +81,31 @@
         "kanto-pokedex",
         "johto-pokedex"
       ]
+    },
+    {
+      "key": "silver-screen",
+      "title": "Silver Screen",
+      "description": "For people who know the director before the trailer ends.",
+      "deckKeys": [
+        "best-picture-winners"
+      ]
     }
   ],
   "syncIndex": [
     {
+      "key": "best-picture-winners",
+      "version": 1,
+      "file": "decks/best-picture-winners.json"
+    },
+    {
       "key": "constellations",
       "version": 1,
       "file": "decks/constellations.json"
+    },
+    {
+      "key": "country-silhouettes",
+      "version": 1,
+      "file": "decks/country-silhouettes.json"
     },
     {
       "key": "flags-of-the-world",

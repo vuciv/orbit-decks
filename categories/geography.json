@@ -16,6 +16,18 @@
       "coverImage": "https://flagcdn.com/w640/un.png"
     },
     {
+      "key": "country-silhouettes",
+      "name": "Name That Country",
+      "description": "Identify countries from their silhouette and position on the globe: every UN member and observer state, plus Kosovo and Taiwan.",
+      "cardCount": 197,
+      "topics": [
+        "geography",
+        "maps",
+        "countries"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Italy%20%28orthographic%20projection%29.svg?width=640"
+    },
+    {
       "key": "us-states",
       "name": "The 50 States",
       "description": "All 50 US states by shape and location on the map. Capitals and nicknames ride along on the back of every card.",

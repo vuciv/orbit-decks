@@ -1,0 +1,1192 @@
+{
+  "key": "best-picture-winners",
+  "version": 1,
+  "name": "Best Picture Winners",
+  "description": "Every Academy Award Best Picture winner, from Wings at the first ceremony (1927/28) to One Battle After Another (2025). Each card pairs the film with its director and the story behind the win.",
+  "category": "Cinema",
+  "topics": [
+    "movies",
+    "oscars",
+    "film-history"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Clapperboard.jpg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "one-battle-after-another",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2025?",
+        "back": "One Battle After Another",
+        "extra": "Paul Thomas Anderson. Won six Oscars, giving Anderson his first wins after decades of nominations; beat Sinners, which had entered with a record 16 nominations."
+      },
+      "tags": [
+        "cinema::2020s"
+      ]
+    },
+    {
+      "key": "anora",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2024?",
+        "back": "Anora",
+        "extra": "Sean Baker. Baker personally collected four Oscars in one night (picture, director, editing, screenplay), a first for a single film."
+      },
+      "tags": [
+        "cinema::2020s"
+      ]
+    },
+    {
+      "key": "oppenheimer",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2023?",
+        "back": "Oppenheimer",
+        "extra": "Christopher Nolan. Won seven Oscars and beat Barbie, its rival in the Barbenheimer summer phenomenon."
+      },
+      "tags": [
+        "cinema::2020s"
+      ]
+    },
+    {
+      "key": "everything-everywhere-all-at-once",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2022?",
+        "back": "Everything Everywhere All at Once",
+        "extra": "Daniel Kwan and Daniel Scheinert. Won seven Oscars, and Michelle Yeoh became the first Asian winner of Best Actress."
+      },
+      "tags": [
+        "cinema::2020s"
+      ]
+    },
+    {
+      "key": "coda",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2021?",
+        "back": "CODA",
+        "extra": "Siân Heder. The first streaming film to win Best Picture (Apple TV+); it upset the heavy favorite, The Power of the Dog."
+      },
+      "tags": [
+        "cinema::2020s"
+      ]
+    },
+    {
+      "key": "nomadland",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2020?",
+        "back": "Nomadland",
+        "extra": "Chloé Zhao. Zhao became only the second woman, and the first woman of color, to win Best Director."
+      },
+      "tags": [
+        "cinema::2020s"
+      ]
+    },
+    {
+      "key": "parasite",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2019?",
+        "back": "Parasite",
+        "extra": "Bong Joon Ho. The first non-English-language film ever to win Best Picture; it beat 1917 and Once Upon a Time in Hollywood."
+      },
+      "tags": [
+        "cinema::2010s"
+      ]
+    },
+    {
+      "key": "green-book",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2018?",
+        "back": "Green Book",
+        "extra": "Peter Farrelly. A controversial upset over Roma and A Star Is Born."
+      },
+      "tags": [
+        "cinema::2010s"
+      ]
+    },
+    {
+      "key": "the-shape-of-water",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2017?",
+        "back": "The Shape of Water",
+        "extra": "Guillermo del Toro. A romance between a mute cleaner and an amphibian creature; it beat Get Out, Lady Bird, and Dunkirk."
+      },
+      "tags": [
+        "cinema::2010s"
+      ]
+    },
+    {
+      "key": "moonlight",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2016?",
+        "back": "Moonlight",
+        "extra": "Barry Jenkins. Announced only after the envelope mixup that first named La La Land as the winner."
+      },
+      "tags": [
+        "cinema::2010s"
+      ]
+    },
+    {
+      "key": "spotlight",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2015?",
+        "back": "Spotlight",
+        "extra": "Tom McCarthy. Beat The Revenant and Mad Max: Fury Road while winning only one other Oscar, for Original Screenplay."
+      },
+      "tags": [
+        "cinema::2010s"
+      ]
+    },
+    {
+      "key": "birdman",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2014?",
+        "back": "Birdman",
+        "extra": "Alejandro G. Iñárritu. Full title: Birdman or (The Unexpected Virtue of Ignorance). Edited to look like one continuous shot, it beat Boyhood."
+      },
+      "tags": [
+        "cinema::2010s"
+      ]
+    },
+    {
+      "key": "12-years-a-slave",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2013?",
+        "back": "12 Years a Slave",
+        "extra": "Steve McQueen. The first Best Picture winner from a Black director; it beat Gravity, which took seven Oscars that night."
+      },
+      "tags": [
+        "cinema::2010s"
+      ]
+    },
+    {
+      "key": "argo",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2012?",
+        "back": "Argo",
+        "extra": "Ben Affleck. Won even though Affleck was snubbed for Best Director; it beat Lincoln and Life of Pi."
+      },
+      "tags": [
+        "cinema::2010s"
+      ]
+    },
+    {
+      "key": "the-artist",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2011?",
+        "back": "The Artist",
+        "extra": "Michel Hazanavicius. The first nearly silent winner since Wings at the very first ceremony, and the first French production to win."
+      },
+      "tags": [
+        "cinema::2010s"
+      ]
+    },
+    {
+      "key": "the-kings-speech",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2010?",
+        "back": "The King's Speech",
+        "extra": "Tom Hooper. Beat The Social Network in one of the decade's most debated face-offs."
+      },
+      "tags": [
+        "cinema::2010s"
+      ]
+    },
+    {
+      "key": "the-hurt-locker",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2009?",
+        "back": "The Hurt Locker",
+        "extra": "Kathryn Bigelow. Bigelow became the first woman to win Best Director, beating Avatar, directed by her ex-husband James Cameron."
+      },
+      "tags": [
+        "cinema::2000s"
+      ]
+    },
+    {
+      "key": "slumdog-millionaire",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2008?",
+        "back": "Slumdog Millionaire",
+        "extra": "Danny Boyle. Won eight Oscars for a film that had nearly been released straight to DVD."
+      },
+      "tags": [
+        "cinema::2000s"
+      ]
+    },
+    {
+      "key": "no-country-for-old-men",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2007?",
+        "back": "No Country for Old Men",
+        "extra": "Joel Coen and Ethan Coen. Beat There Will Be Blood in a landmark year for American film."
+      },
+      "tags": [
+        "cinema::2000s"
+      ]
+    },
+    {
+      "key": "the-departed",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2006?",
+        "back": "The Departed",
+        "extra": "Martin Scorsese. Finally won Scorsese Best Director; it was also the first remake to win, based on Hong Kong's Infernal Affairs."
+      },
+      "tags": [
+        "cinema::2000s"
+      ]
+    },
+    {
+      "key": "crash",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2005?",
+        "back": "Crash",
+        "extra": "Paul Haggis. Famously upset the heavy favorite Brokeback Mountain."
+      },
+      "tags": [
+        "cinema::2000s"
+      ]
+    },
+    {
+      "key": "million-dollar-baby",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2004?",
+        "back": "Million Dollar Baby",
+        "extra": "Clint Eastwood. Eastwood's second Best Picture as director; it beat Scorsese's The Aviator."
+      },
+      "tags": [
+        "cinema::2000s"
+      ]
+    },
+    {
+      "key": "the-lord-of-the-rings-the-return-of-the-king",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2003?",
+        "back": "The Lord of the Rings: The Return of the King",
+        "extra": "Peter Jackson. Went 11 for 11, tying the record for most wins with Ben-Hur and Titanic; it was the first fantasy film to win."
+      },
+      "tags": [
+        "cinema::2000s"
+      ]
+    },
+    {
+      "key": "chicago",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2002?",
+        "back": "Chicago",
+        "extra": "Rob Marshall. The first musical to win since Oliver! in 1968; it beat The Pianist and Gangs of New York."
+      },
+      "tags": [
+        "cinema::2000s"
+      ]
+    },
+    {
+      "key": "a-beautiful-mind",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2001?",
+        "back": "A Beautiful Mind",
+        "extra": "Ron Howard. Beat Moulin Rouge! and The Fellowship of the Ring."
+      },
+      "tags": [
+        "cinema::2000s"
+      ]
+    },
+    {
+      "key": "gladiator",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 2000?",
+        "back": "Gladiator",
+        "extra": "Ridley Scott. Beat Crouching Tiger, Hidden Dragon and Traffic; Russell Crowe won Best Actor as Maximus."
+      },
+      "tags": [
+        "cinema::2000s"
+      ]
+    },
+    {
+      "key": "american-beauty",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1999?",
+        "back": "American Beauty",
+        "extra": "Sam Mendes. Won for Mendes's feature directing debut; it beat The Sixth Sense and The Green Mile."
+      },
+      "tags": [
+        "cinema::1990s"
+      ]
+    },
+    {
+      "key": "shakespeare-in-love",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1998?",
+        "back": "Shakespeare in Love",
+        "extra": "John Madden. Famously upset Saving Private Ryan after an aggressive Miramax awards campaign."
+      },
+      "tags": [
+        "cinema::1990s"
+      ]
+    },
+    {
+      "key": "titanic",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1997?",
+        "back": "Titanic",
+        "extra": "James Cameron. Won 11 Oscars, tying Ben-Hur's record, while reigning as the highest-grossing film ever made."
+      },
+      "tags": [
+        "cinema::1990s"
+      ]
+    },
+    {
+      "key": "the-english-patient",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1996?",
+        "back": "The English Patient",
+        "extra": "Anthony Minghella. Won nine Oscars; it beat Fargo and Jerry Maguire."
+      },
+      "tags": [
+        "cinema::1990s"
+      ]
+    },
+    {
+      "key": "braveheart",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1995?",
+        "back": "Braveheart",
+        "extra": "Mel Gibson. Beat Apollo 13 and the talking-pig fable Babe."
+      },
+      "tags": [
+        "cinema::1990s"
+      ]
+    },
+    {
+      "key": "forrest-gump",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1994?",
+        "back": "Forrest Gump",
+        "extra": "Robert Zemeckis. Beat Pulp Fiction and The Shawshank Redemption."
+      },
+      "tags": [
+        "cinema::1990s"
+      ]
+    },
+    {
+      "key": "schindlers-list",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1993?",
+        "back": "Schindler's List",
+        "extra": "Steven Spielberg. Spielberg's first Best Director win, for a black-and-white Holocaust drama that beat The Piano and The Fugitive."
+      },
+      "tags": [
+        "cinema::1990s"
+      ]
+    },
+    {
+      "key": "unforgiven",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1992?",
+        "back": "Unforgiven",
+        "extra": "Clint Eastwood. Only the third Western ever to win, after Cimarron and Dances with Wolves."
+      },
+      "tags": [
+        "cinema::1990s"
+      ]
+    },
+    {
+      "key": "the-silence-of-the-lambs",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1991?",
+        "back": "The Silence of the Lambs",
+        "extra": "Jonathan Demme. The only horror thriller to win Best Picture, and just the third film to sweep the Big Five awards."
+      },
+      "tags": [
+        "cinema::1990s"
+      ]
+    },
+    {
+      "key": "dances-with-wolves",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1990?",
+        "back": "Dances with Wolves",
+        "extra": "Kevin Costner. Costner's directing debut; it famously beat Goodfellas."
+      },
+      "tags": [
+        "cinema::1990s"
+      ]
+    },
+    {
+      "key": "driving-miss-daisy",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1989?",
+        "back": "Driving Miss Daisy",
+        "extra": "Bruce Beresford. Won without Beresford even being nominated for Best Director, the same year Do the Right Thing missed a Best Picture nod."
+      },
+      "tags": [
+        "cinema::1980s"
+      ]
+    },
+    {
+      "key": "rain-man",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1988?",
+        "back": "Rain Man",
+        "extra": "Barry Levinson. The year's highest-grossing film; Dustin Hoffman won Best Actor as Raymond Babbitt."
+      },
+      "tags": [
+        "cinema::1980s"
+      ]
+    },
+    {
+      "key": "the-last-emperor",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1987?",
+        "back": "The Last Emperor",
+        "extra": "Bernardo Bertolucci. Won all nine of its nominations; it was the first Western feature allowed to film inside Beijing's Forbidden City."
+      },
+      "tags": [
+        "cinema::1980s"
+      ]
+    },
+    {
+      "key": "platoon",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1986?",
+        "back": "Platoon",
+        "extra": "Oliver Stone. Drawn from Stone's own combat service in Vietnam; it beat Hannah and Her Sisters."
+      },
+      "tags": [
+        "cinema::1980s"
+      ]
+    },
+    {
+      "key": "out-of-africa",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1985?",
+        "back": "Out of Africa",
+        "extra": "Sydney Pollack. Beat The Color Purple, which went home empty-handed despite 11 nominations."
+      },
+      "tags": [
+        "cinema::1980s"
+      ]
+    },
+    {
+      "key": "amadeus",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1984?",
+        "back": "Amadeus",
+        "extra": "Milos Forman. Won eight Oscars; F. Murray Abraham's Salieri beat his own co-star Tom Hulce for Best Actor."
+      },
+      "tags": [
+        "cinema::1980s"
+      ]
+    },
+    {
+      "key": "terms-of-endearment",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1983?",
+        "back": "Terms of Endearment",
+        "extra": "James L. Brooks. Brooks personally won picture, director, and screenplay; it beat The Right Stuff."
+      },
+      "tags": [
+        "cinema::1980s"
+      ]
+    },
+    {
+      "key": "gandhi",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1982?",
+        "back": "Gandhi",
+        "extra": "Richard Attenborough. Beat E.T. and Tootsie; Ben Kingsley won Best Actor in the title role."
+      },
+      "tags": [
+        "cinema::1980s"
+      ]
+    },
+    {
+      "key": "chariots-of-fire",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1981?",
+        "back": "Chariots of Fire",
+        "extra": "Hugh Hudson. Upset Warren Beatty's Reds; its Vangelis synthesizer theme became iconic."
+      },
+      "tags": [
+        "cinema::1980s"
+      ]
+    },
+    {
+      "key": "ordinary-people",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1980?",
+        "back": "Ordinary People",
+        "extra": "Robert Redford. Redford's directing debut; it famously beat Raging Bull."
+      },
+      "tags": [
+        "cinema::1980s"
+      ]
+    },
+    {
+      "key": "kramer-vs-kramer",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1979?",
+        "back": "Kramer vs. Kramer",
+        "extra": "Robert Benton. Beat Apocalypse Now; Dustin Hoffman and Meryl Streep both won acting Oscars."
+      },
+      "tags": [
+        "cinema::1970s"
+      ]
+    },
+    {
+      "key": "the-deer-hunter",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1978?",
+        "back": "The Deer Hunter",
+        "extra": "Michael Cimino. Beat fellow Vietnam drama Coming Home; Christopher Walken won for its harrowing Russian roulette scenes."
+      },
+      "tags": [
+        "cinema::1970s"
+      ]
+    },
+    {
+      "key": "annie-hall",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1977?",
+        "back": "Annie Hall",
+        "extra": "Woody Allen. Famously beat Star Wars."
+      },
+      "tags": [
+        "cinema::1970s"
+      ]
+    },
+    {
+      "key": "rocky",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1976?",
+        "back": "Rocky",
+        "extra": "John G. Avildsen. Beat Taxi Driver, Network, and All the President's Men, one of the deepest fields in Oscar history."
+      },
+      "tags": [
+        "cinema::1970s"
+      ]
+    },
+    {
+      "key": "one-flew-over-the-cuckoos-nest",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1975?",
+        "back": "One Flew Over the Cuckoo's Nest",
+        "extra": "Milos Forman. The second film to sweep the Big Five (picture, director, actor, actress, screenplay); it beat Jaws."
+      },
+      "tags": [
+        "cinema::1970s"
+      ]
+    },
+    {
+      "key": "the-godfather-part-ii",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1974?",
+        "back": "The Godfather Part II",
+        "extra": "Francis Ford Coppola. The first sequel to win Best Picture; it beat Chinatown."
+      },
+      "tags": [
+        "cinema::1970s"
+      ]
+    },
+    {
+      "key": "the-sting",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1973?",
+        "back": "The Sting",
+        "extra": "George Roy Hill. The Paul Newman and Robert Redford con-man caper beat The Exorcist."
+      },
+      "tags": [
+        "cinema::1970s"
+      ]
+    },
+    {
+      "key": "the-godfather",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1972?",
+        "back": "The Godfather",
+        "extra": "Francis Ford Coppola. Marlon Brando refused his Best Actor Oscar; the film beat Cabaret, which won eight awards that same night."
+      },
+      "tags": [
+        "cinema::1970s"
+      ]
+    },
+    {
+      "key": "the-french-connection",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1971?",
+        "back": "The French Connection",
+        "extra": "William Friedkin. The first R-rated film to win Best Picture; it beat A Clockwork Orange."
+      },
+      "tags": [
+        "cinema::1970s"
+      ]
+    },
+    {
+      "key": "patton",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1970?",
+        "back": "Patton",
+        "extra": "Franklin J. Schaffner. George C. Scott refused his Best Actor Oscar, the first actor ever to do so; the film beat M*A*S*H."
+      },
+      "tags": [
+        "cinema::1970s"
+      ]
+    },
+    {
+      "key": "midnight-cowboy",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1969?",
+        "back": "Midnight Cowboy",
+        "extra": "John Schlesinger. The only X-rated film ever to win Best Picture."
+      },
+      "tags": [
+        "cinema::1960s"
+      ]
+    },
+    {
+      "key": "oliver",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1968?",
+        "back": "Oliver!",
+        "extra": "Carol Reed. The last G-rated winner; the musical triumphed the year 2001: A Space Odyssey was not even nominated for Best Picture."
+      },
+      "tags": [
+        "cinema::1960s"
+      ]
+    },
+    {
+      "key": "in-the-heat-of-the-night",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1967?",
+        "back": "In the Heat of the Night",
+        "extra": "Norman Jewison. The Sidney Poitier mystery beat The Graduate and Bonnie and Clyde."
+      },
+      "tags": [
+        "cinema::1960s"
+      ]
+    },
+    {
+      "key": "a-man-for-all-seasons",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1966?",
+        "back": "A Man for All Seasons",
+        "extra": "Fred Zinnemann. Paul Scofield won Best Actor as Sir Thomas More; the film beat Who's Afraid of Virginia Woolf?"
+      },
+      "tags": [
+        "cinema::1960s"
+      ]
+    },
+    {
+      "key": "the-sound-of-music",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1965?",
+        "back": "The Sound of Music",
+        "extra": "Robert Wise. Beat Doctor Zhivago and soon overtook Gone with the Wind as the highest-grossing film ever."
+      },
+      "tags": [
+        "cinema::1960s"
+      ]
+    },
+    {
+      "key": "my-fair-lady",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1964?",
+        "back": "My Fair Lady",
+        "extra": "George Cukor. Beat Mary Poppins; Audrey Hepburn's songs were secretly dubbed by Marni Nixon."
+      },
+      "tags": [
+        "cinema::1960s"
+      ]
+    },
+    {
+      "key": "tom-jones",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1963?",
+        "back": "Tom Jones",
+        "extra": "Tony Richardson. The bawdy British romp remains one of the few outright comedies ever to win."
+      },
+      "tags": [
+        "cinema::1960s"
+      ]
+    },
+    {
+      "key": "lawrence-of-arabia",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1962?",
+        "back": "Lawrence of Arabia",
+        "extra": "David Lean. Beat To Kill a Mockingbird; the desert epic has no women in speaking roles."
+      },
+      "tags": [
+        "cinema::1960s"
+      ]
+    },
+    {
+      "key": "west-side-story",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1961?",
+        "back": "West Side Story",
+        "extra": "Robert Wise and Jerome Robbins. The first co-directed winner; its 10 Oscars are still the record for a musical."
+      },
+      "tags": [
+        "cinema::1960s"
+      ]
+    },
+    {
+      "key": "the-apartment",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1960?",
+        "back": "The Apartment",
+        "extra": "Billy Wilder. Wilder took picture, director, and screenplay in a single night for the bittersweet office comedy."
+      },
+      "tags": [
+        "cinema::1960s"
+      ]
+    },
+    {
+      "key": "ben-hur",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1959?",
+        "back": "Ben-Hur",
+        "extra": "William Wyler. The first film to win 11 Oscars, a record later tied only by Titanic and The Return of the King."
+      },
+      "tags": [
+        "cinema::1950s"
+      ]
+    },
+    {
+      "key": "gigi",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1958?",
+        "back": "Gigi",
+        "extra": "Vincente Minnelli. Went nine for nine, a perfect sweep that was briefly the most wins by any film."
+      },
+      "tags": [
+        "cinema::1950s"
+      ]
+    },
+    {
+      "key": "the-bridge-on-the-river-kwai",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1957?",
+        "back": "The Bridge on the River Kwai",
+        "extra": "David Lean. Its blacklisted screenwriters went uncredited; the writing Oscar was accepted under the name of novelist Pierre Boulle, who barely spoke English."
+      },
+      "tags": [
+        "cinema::1950s"
+      ]
+    },
+    {
+      "key": "around-the-world-in-80-days",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1956?",
+        "back": "Around the World in 80 Days",
+        "extra": "Michael Anderson. Producer Mike Todd's star-stuffed travelogue beat Giant and The Ten Commandments."
+      },
+      "tags": [
+        "cinema::1950s"
+      ]
+    },
+    {
+      "key": "marty",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1955?",
+        "back": "Marty",
+        "extra": "Delbert Mann. The shortest Best Picture winner ever, and one of only two films (with Parasite) to win both the Oscar and the Palme d'Or."
+      },
+      "tags": [
+        "cinema::1950s"
+      ]
+    },
+    {
+      "key": "on-the-waterfront",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1954?",
+        "back": "On the Waterfront",
+        "extra": "Elia Kazan. Won eight Oscars; Marlon Brando's \"I coulda been a contender\" speech became legend."
+      },
+      "tags": [
+        "cinema::1950s"
+      ]
+    },
+    {
+      "key": "from-here-to-eternity",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1953?",
+        "back": "From Here to Eternity",
+        "extra": "Fred Zinnemann. Won eight Oscars, tying Gone with the Wind's record at the time."
+      },
+      "tags": [
+        "cinema::1950s"
+      ]
+    },
+    {
+      "key": "the-greatest-show-on-earth",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1952?",
+        "back": "The Greatest Show on Earth",
+        "extra": "Cecil B. DeMille. Beat High Noon and is routinely called the weakest winner ever; Singin' in the Rain was not even nominated."
+      },
+      "tags": [
+        "cinema::1950s"
+      ]
+    },
+    {
+      "key": "an-american-in-paris",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1951?",
+        "back": "An American in Paris",
+        "extra": "Vincente Minnelli. The Gershwin musical upset A Streetcar Named Desire and A Place in the Sun."
+      },
+      "tags": [
+        "cinema::1950s"
+      ]
+    },
+    {
+      "key": "all-about-eve",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1950?",
+        "back": "All About Eve",
+        "extra": "Joseph L. Mankiewicz. Its 14 nominations stood as the record for 75 years, tied by Titanic and La La Land before Sinners finally broke it."
+      },
+      "tags": [
+        "cinema::1950s"
+      ]
+    },
+    {
+      "key": "all-the-kings-men",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1949?",
+        "back": "All the King's Men",
+        "extra": "Robert Rossen. Broderick Crawford won Best Actor as Willie Stark, the demagogue modeled on Huey Long."
+      },
+      "tags": [
+        "cinema::1940s"
+      ]
+    },
+    {
+      "key": "hamlet",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1948?",
+        "back": "Hamlet",
+        "extra": "Laurence Olivier. The first British film to win; Olivier also took Best Actor, becoming the first person to direct himself to an acting Oscar."
+      },
+      "tags": [
+        "cinema::1940s"
+      ]
+    },
+    {
+      "key": "gentlemans-agreement",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1947?",
+        "back": "Gentleman's Agreement",
+        "extra": "Elia Kazan. Its exposé of polite American antisemitism beat Miracle on 34th Street and Great Expectations."
+      },
+      "tags": [
+        "cinema::1940s"
+      ]
+    },
+    {
+      "key": "the-best-years-of-our-lives",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1946?",
+        "back": "The Best Years of Our Lives",
+        "extra": "William Wyler. Beat It's a Wonderful Life; real WWII veteran and double amputee Harold Russell won two Oscars for the same role."
+      },
+      "tags": [
+        "cinema::1940s"
+      ]
+    },
+    {
+      "key": "the-lost-weekend",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1945?",
+        "back": "The Lost Weekend",
+        "extra": "Billy Wilder. The unflinching alcoholism drama also shared the top prize at the first Cannes Film Festival."
+      },
+      "tags": [
+        "cinema::1940s"
+      ]
+    },
+    {
+      "key": "going-my-way",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1944?",
+        "back": "Going My Way",
+        "extra": "Leo McCarey. Bing Crosby's singing priest beat the noir classic Double Indemnity."
+      },
+      "tags": [
+        "cinema::1940s"
+      ]
+    },
+    {
+      "key": "casablanca",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1943?",
+        "back": "Casablanca",
+        "extra": "Michael Curtiz. Made as just another studio picture, it beat For Whom the Bell Tolls and became perhaps the best-loved winner of all."
+      },
+      "tags": [
+        "cinema::1940s"
+      ]
+    },
+    {
+      "key": "mrs-miniver",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1942?",
+        "back": "Mrs. Miniver",
+        "extra": "William Wyler. The home-front drama was such potent wartime propaganda that Churchill reportedly called it worth a hundred battleships."
+      },
+      "tags": [
+        "cinema::1940s"
+      ]
+    },
+    {
+      "key": "how-green-was-my-valley",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1941?",
+        "back": "How Green Was My Valley",
+        "extra": "John Ford. Famously beat Citizen Kane."
+      },
+      "tags": [
+        "cinema::1940s"
+      ]
+    },
+    {
+      "key": "rebecca",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1940?",
+        "back": "Rebecca",
+        "extra": "Alfred Hitchcock. The only Hitchcock film to win Best Picture (he never won Best Director); it beat The Grapes of Wrath and The Philadelphia Story."
+      },
+      "tags": [
+        "cinema::1940s"
+      ]
+    },
+    {
+      "key": "gone-with-the-wind",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1939?",
+        "back": "Gone with the Wind",
+        "extra": "Victor Fleming. Beat The Wizard of Oz, Mr. Smith Goes to Washington, and Stagecoach in Hollywood's fabled year; Hattie McDaniel became the first Black Oscar winner."
+      },
+      "tags": [
+        "cinema::1930s"
+      ]
+    },
+    {
+      "key": "you-cant-take-it-with-you",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1938?",
+        "back": "You Can't Take It with You",
+        "extra": "Frank Capra. Capra's third Best Director win in five years; it beat Grand Illusion, the first foreign-language Best Picture nominee."
+      },
+      "tags": [
+        "cinema::1930s"
+      ]
+    },
+    {
+      "key": "the-life-of-emile-zola",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1937?",
+        "back": "The Life of Emile Zola",
+        "extra": "William Dieterle. The biopic centers on the Dreyfus affair, yet the word Jew is never spoken aloud in it."
+      },
+      "tags": [
+        "cinema::1930s"
+      ]
+    },
+    {
+      "key": "the-great-ziegfeld",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1936?",
+        "back": "The Great Ziegfeld",
+        "extra": "Robert Z. Leonard. The three-hour Broadway biopic; Luise Rainer won the first of her back-to-back Best Actress Oscars."
+      },
+      "tags": [
+        "cinema::1930s"
+      ]
+    },
+    {
+      "key": "mutiny-on-the-bounty",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1935?",
+        "back": "Mutiny on the Bounty",
+        "extra": "Frank Lloyd. The last film to win Best Picture and nothing else; its three Best Actor nominees prompted the creation of the supporting categories."
+      },
+      "tags": [
+        "cinema::1930s"
+      ]
+    },
+    {
+      "key": "it-happened-one-night",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1934?",
+        "back": "It Happened One Night",
+        "extra": "Frank Capra. The first film to sweep the Big Five: picture, director, actor, actress, and screenplay."
+      },
+      "tags": [
+        "cinema::1930s"
+      ]
+    },
+    {
+      "key": "cavalcade",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1932/33?",
+        "back": "Cavalcade",
+        "extra": "Frank Lloyd. The Noël Coward pageant of British life is often ranked among the most forgotten winners."
+      },
+      "tags": [
+        "cinema::1930s"
+      ]
+    },
+    {
+      "key": "grand-hotel",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1931/32?",
+        "back": "Grand Hotel",
+        "extra": "Edmund Goulding. The only Best Picture winner never nominated for any other Oscar; Garbo's \"I want to be alone\" comes from it."
+      },
+      "tags": [
+        "cinema::1930s"
+      ]
+    },
+    {
+      "key": "cimarron",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1930/31?",
+        "back": "Cimarron",
+        "extra": "Wesley Ruggles. The first Western to win; no other Western won until Dances with Wolves 59 years later."
+      },
+      "tags": [
+        "cinema::1930s"
+      ]
+    },
+    {
+      "key": "all-quiet-on-the-western-front",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1929/30?",
+        "back": "All Quiet on the Western Front",
+        "extra": "Lewis Milestone. The pacifist WWI epic was later banned in Germany by the Nazis."
+      },
+      "tags": [
+        "cinema::1930s"
+      ]
+    },
+    {
+      "key": "the-broadway-melody",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1928/29?",
+        "back": "The Broadway Melody",
+        "extra": "Harry Beaumont. The first sound film and the first musical to win Best Picture."
+      },
+      "tags": [
+        "cinema::1920s"
+      ]
+    },
+    {
+      "key": "wings",
+      "model": "basic",
+      "fields": {
+        "front": "Which film won the Best Picture Oscar for 1927/28?",
+        "back": "Wings",
+        "extra": "William A. Wellman. The only fully silent winner until The Artist; at that first ceremony Sunrise won a separate top award, Unique and Artistic Picture, never given again."
+      },
+      "tags": [
+        "cinema::1920s"
+      ]
+    }
+  ]
+}

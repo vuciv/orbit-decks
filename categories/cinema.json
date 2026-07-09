@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "key": "cinema",
+  "name": "Cinema",
+  "decks": [
+    {
+      "key": "best-picture-winners",
+      "name": "Best Picture Winners",
+      "description": "Every Academy Award Best Picture winner, from Wings at the first ceremony (1927/28) to One Battle After Another (2025). Each card pairs the film with its director and the story behind the win.",
+      "cardCount": 98,
+      "topics": [
+        "movies",
+        "oscars",
+        "film-history"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Clapperboard.jpg?width=640"
+    }
+  ]
+}
