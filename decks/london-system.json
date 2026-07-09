@@ -1,6 +1,6 @@
 {
   "key": "london-system",
-  "version": 2,
+  "version": 3,
   "name": "The London System",
   "description": "Learn to play the London System as White, one position at a time: the core setup against ...d5, the anti-fianchetto setup, the right answers to ...Qb6 and the poisoned b2-pawn, and classic attacking patterns like the Greek gift on h7. Every card shows a position; you supply the book move.",
   "category": "Chess",
@@ -20,7 +20,7 @@
         "answer": "d4",
         "answerUci": "d2d4",
         "orientation": "white",
-        "prompt": "You are White and want to open with the London System. What is your first move?",
+        "prompt": "You are White and want to play the London System. What is the book move?",
         "extra": "Everything in the London starts with 1.d4. White will then aim for the same solid setup (Bf4, e3, c3, Nf3, Nbd2) against almost any Black defense."
       },
       "tags": [
@@ -36,7 +36,7 @@
         "answerUci": "c1f4",
         "orientation": "white",
         "lastMove": "d7d5",
-        "prompt": "London System, after 1.d4 d5. White to move: what is the modern move-order choice?",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "Develop the dark-squared bishop OUTSIDE the pawn chain before playing e3. This solves the problem the Queen's Gambit bishop never solves, and 2.Bf4 (rather than 2.Nf3 first) keeps Black from steering the game elsewhere."
       },
       "tags": [
@@ -52,7 +52,7 @@
         "answerUci": "c1f4",
         "orientation": "white",
         "lastMove": "g8f6",
-        "prompt": "London System against 1...Nf6. White to move: which move keeps you in your system?",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "The London is a system opening: against 1...Nf6 White plays the same 2.Bf4 and only adjusts details later, such as Be2 instead of Bd3 if Black fianchettoes."
       },
       "tags": [
@@ -68,7 +68,7 @@
         "answerUci": "e2e3",
         "orientation": "white",
         "lastMove": "g8f6",
-        "prompt": "London main line after 2...Nf6. White to move: what comes next?",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "With the bishop already outside the chain, e3 builds the wall behind it and opens the f1-bishop's diagonal. The pawn triangle d4-e3 is the start of the London pyramid."
       },
       "tags": [
@@ -84,7 +84,7 @@
         "answerUci": "c2c3",
         "orientation": "white",
         "lastMove": "c7c5",
-        "prompt": "Black strikes at your center with 3...c5. White to move: what is the book reply?",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "c3 completes the London pyramid (d4-e3-c3). The d4-pawn stays rock solid, White never needs dxc5, and b4 is taken away from Black's knights, which protects the coming Bd3."
       },
       "tags": [
@@ -100,7 +100,7 @@
         "answerUci": "b1d2",
         "orientation": "white",
         "lastMove": "b8c6",
-        "prompt": "London main line after 4...Nc6. White to move: where does the queen's knight go?",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "The queen's knight belongs on d2: it covers e4 and c4 and leaves f3 free for the king's knight, whose dream square is e5."
       },
       "tags": [
@@ -116,7 +116,7 @@
         "answerUci": "g1f3",
         "orientation": "white",
         "lastMove": "e7e6",
-        "prompt": "London main line after 5...e6. White to move: complete the knight development.",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "The king's knight goes to f3, written Ngf3 because the d2-knight could reach f3 too. From f3 it eyes the thematic e5 outpost."
       },
       "tags": [
@@ -132,7 +132,7 @@
         "answerUci": "f4g3",
         "orientation": "white",
         "lastMove": "f8d6",
-        "prompt": "Black develops 6...Bd6, offering to trade your London bishop. White to move: best reply?",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "Sidestep with Bg3 and let Black decide. If Black ever takes with ...Bxg3, White recaptures hxg3 and gets a half-open h-file pointing at the castled king, so the trade only helps White."
       },
       "tags": [
@@ -148,7 +148,7 @@
         "answerUci": "f1d3",
         "orientation": "white",
         "lastMove": "e8g8",
-        "prompt": "Black castled with 7...O-O. White to move: finish your development.",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "From d3 the light-squared bishop points down the b1-h7 diagonal straight at Black's king. The setup is complete: castle next, then think about Ne5 and a kingside attack."
       },
       "tags": [
@@ -164,7 +164,7 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "lastMove": "d8e7",
-        "prompt": "The London setup is complete and Black played 8...Qe7. White to move: what now?",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "Tuck the king away first. With the structure finished, the thematic plan of Ne5, f4 and a kingside attack can start next move."
       },
       "tags": [
@@ -181,7 +181,7 @@
         "answerUci": "e2e3",
         "orientation": "white",
         "lastMove": "e7e6",
-        "prompt": "Black plays a quick 2...e6. White to move: how do you continue?",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "The same setup as always, which is the charm of the London. Note that ...e6 has already locked Black's c8-bishop behind its own pawns, a small concession for free."
       },
       "tags": [
@@ -197,7 +197,7 @@
         "answerUci": "h2g3",
         "orientation": "white",
         "lastMove": "d6g3",
-        "prompt": "Black exchanged bishops with 8...Bxg3. White to move: which way do you recapture?",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "Recapture with the h-pawn: the half-open h-file becomes a ready-made attacking lane for the rook. fxg3 would loosen e3 and give White's king airier cover for nothing."
       },
       "tags": [
@@ -213,7 +213,7 @@
         "answerUci": "e3d4",
         "orientation": "white",
         "lastMove": "c5d4",
-        "prompt": "Black releases the tension with 8...cxd4. White to move: which pawn takes back?",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "Recapture with the e-pawn so c3 keeps guarding d4, and the e-file half-opens for a rook. cxd4 instead would hand Black the b4-square to harass the d3-bishop."
       },
       "tags": [
@@ -229,7 +229,7 @@
         "answerUci": "f3e5",
         "orientation": "white",
         "lastMove": "b7b6",
-        "prompt": "Black plays the slow 8...b6, preparing ...Bb7. White to move: what is the thematic plan move?",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "The classic London jump: Ne5 is backed by the d4-pawn and the g3-bishop, and can be reinforced by f4 or Ndf3. A kingside attack with f4-f5 or a queen swing often follows."
       },
       "tags": [
@@ -245,7 +245,7 @@
         "answerUci": "d4e5",
         "orientation": "white",
         "lastMove": "c6e5",
-        "prompt": "Black just chopped your knight with 9...Nxe5. White to move: take back which way?",
+        "prompt": "You are White in the London System. Find the best move.",
         "extra": "dxe5 forks the d6-bishop and the f6-knight, so Black cannot save both cleanly. This pawn trick is exactly why Black must prepare any capture on e5 in the London."
       },
       "tags": [
@@ -261,7 +261,7 @@
         "answerUci": "d1b3",
         "orientation": "white",
         "lastMove": "d8b6",
-        "prompt": "Black hits b2 with 4...Qb6. White to move: what is the theory-approved answer?",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "Qb3 blocks the b-file with the queen herself, guarding b2 and offering a trade on White's terms. Do not grab on b6 voluntarily: let Black take and open the a-file for you."
       },
       "tags": [
@@ -277,7 +277,7 @@
         "answerUci": "a2b3",
         "orientation": "white",
         "lastMove": "b6b3",
-        "prompt": "Black traded queens with 5...Qxb3. White to move: recapture how?",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "Take with the a-pawn: the a1-rook suddenly sits on an open file and the b3-pawn grips c4. The doubled b-pawns are a strength here, not a weakness."
       },
       "tags": [
@@ -293,7 +293,7 @@
         "answerUci": "b3c2",
         "orientation": "white",
         "lastMove": "c5c4",
-        "prompt": "Instead of trading, Black gained space with 5...c4. White to move: where does the queen go?",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "Step back to a safe, useful square. With ...c4 the pressure on d4 is gone, so White will regroup and later strike at the queenside chain with b3, or in the center with e4."
       },
       "tags": [
@@ -309,7 +309,7 @@
         "answerUci": "e3d4",
         "orientation": "white",
         "lastMove": "c5d4",
-        "prompt": "Queens are off and Black played 6...cxd4. White to move: which recapture?",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "The recapture rule does not change: take with the e-pawn so c3 keeps supporting d4. With the open a-file and the c4-grip, White has the easier endgame to play."
       },
       "tags": [
@@ -325,7 +325,7 @@
         "answerUci": "e2e3",
         "orientation": "white",
         "lastMove": "c7c5",
-        "prompt": "Black hits the center immediately with 2...c5. White to move: how do you react?",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "Stay calm with e3: d4 is defended and dxc5 would only help Black develop. Know the key detail: if Black now tries 3...Qb6, White has the gambit answer 4.Nc3, since b2 is poisoned."
       },
       "tags": [
@@ -341,7 +341,7 @@
         "answerUci": "e3d4",
         "orientation": "white",
         "lastMove": "c5d4",
-        "prompt": "Black exchanged with 3...cxd4. White to move: take back with which pawn?",
+        "prompt": "You are White in the London System. What is the book move?",
         "extra": "exd4 keeps the strong d4-pawn and half-opens the e-file, while the London bishop already sits happily outside the chain. An easy, comfortable structure for White."
       },
       "tags": [
@@ -357,7 +357,7 @@
         "answerUci": "c2c4",
         "orientation": "white",
         "lastMove": "c8f5",
-        "prompt": "Black copies you with 2...Bf5. White to move: how do you punish the mirror?",
+        "prompt": "You are White in the London System. Find the best move.",
         "extra": "With the bishop gone from c8, Black's queenside is tender: c4 hits d5 at once, and Qb3 comes next against b7. Black cannot keep copying, White strikes first."
       },
       "tags": [
@@ -373,7 +373,7 @@
         "answerUci": "e2e3",
         "orientation": "white",
         "lastMove": "g7g6",
-        "prompt": "Black goes King's Indian style with 2...g6. White to move: how does the London continue?",
+        "prompt": "You are White in the London System vs the King's Indian setup. What is the book move?",
         "extra": "Same system, small adjustments: e3, Nf3, Be2 and h3 come next. Against the fianchetto the light-squared bishop will choose e2, and h3 will give the dark-squared bishop a home on h2."
       },
       "tags": [
@@ -389,7 +389,7 @@
         "answerUci": "g1f3",
         "orientation": "white",
         "lastMove": "f8g7",
-        "prompt": "Anti-King's Indian London after 3...Bg7. White to move: develop.",
+        "prompt": "You are White in the London System vs the King's Indian setup. What is the book move?",
         "extra": "Simple, flexible development. White keeps building the wall while Black commits; the knight also covers e5 and supports a later grip on the dark squares."
       },
       "tags": [
@@ -405,7 +405,7 @@
         "answerUci": "f1e2",
         "orientation": "white",
         "lastMove": "e8g8",
-        "prompt": "Black castled behind the fianchetto. White to move: where does the light-squared bishop belong?",
+        "prompt": "You are White in the London System vs the King's Indian setup. What is the book move?",
         "extra": "Against ...g6 the bishop goes to e2, not d3: the g6-pawn blunts the b1-h7 diagonal, so on d3 it would bite on granite. From e2 it supports the center and keeps f3 solid."
       },
       "tags": [
@@ -421,7 +421,7 @@
         "answerUci": "h2h3",
         "orientation": "white",
         "lastMove": "d7d6",
-        "prompt": "Anti-fianchetto London after 5...d6. White to move: what little move is essential here?",
+        "prompt": "You are White in the London System vs the King's Indian setup. What is the book move?",
         "extra": "h3 is not about g4: it prepares a bolt-hole on h2 so ...Nh5 can never win the London bishop. From h2 the bishop keeps its b8-h2 diagonal for the rest of the game."
       },
       "tags": [
@@ -437,7 +437,7 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "lastMove": "b8d7",
-        "prompt": "Black played 6...Nbd7, clearly preparing ...e5. White to move: what should you do first?",
+        "prompt": "You are White in the London System vs the King's Indian setup. What is the book move?",
         "extra": "Castle: the setup is done and the king comes first. White is fully ready for ...e5 and will answer it with dxe5 and Bh2, keeping the better structure."
       },
       "tags": [
@@ -453,7 +453,7 @@
         "answerUci": "c2c3",
         "orientation": "white",
         "lastMove": "d8e8",
-        "prompt": "Black lined up 7...Qe8, telegraphing ...e5. White to move: how do you prepare for it?",
+        "prompt": "You are White in the London System vs the King's Indian setup. What is the book move?",
         "extra": "Complete the pyramid with c3. When ...e5 lands, White trades dxe5 dxe5 and tucks the bishop on h2, where the fixed e5-pawn becomes a long-term target."
       },
       "tags": [
@@ -469,7 +469,7 @@
         "answerUci": "d4e5",
         "orientation": "white",
         "lastMove": "e7e5",
-        "prompt": "Black finally breaks with 8...e5. White to move: what is the clean solution?",
+        "prompt": "You are White in the London System vs the King's Indian setup. What is the book move?",
         "extra": "Trade at the right moment: after 9.dxe5 dxe5 the d-file opens and Black's e5-pawn sits on the h2-b8 diagonal as a target. Keeping the tension with 9.Bh2 first is also playable."
       },
       "tags": [
@@ -485,7 +485,7 @@
         "answerUci": "f4h2",
         "orientation": "white",
         "lastMove": "d6e5",
-        "prompt": "The center resolved after 9.dxe5 dxe5. White to move: where does the attacked bishop go?",
+        "prompt": "You are White in the London System vs the King's Indian setup. What is the book move?",
         "extra": "Into the pocket h3 built for it. From h2 the bishop keeps pressing the b8-h2 diagonal, and the fixed e5-pawn can be besieged later by Nbd2-c4 and queenside play."
       },
       "tags": [
@@ -501,7 +501,7 @@
         "answerUci": "f4h2",
         "orientation": "white",
         "lastMove": "f6h5",
-        "prompt": "Black lunges with 8...Nh5, hunting your bishop. White to move: how do you keep it?",
+        "prompt": "You are White in the London System vs the King's Indian setup. What is the book move?",
         "extra": "This is the whole point of h3: the bishop simply slides to h2 and keeps its diagonal, while the rim knight stands offside and will have to crawl back."
       },
       "tags": [
@@ -517,7 +517,7 @@
         "answerUci": "c2c3",
         "orientation": "white",
         "lastMove": "c7c5",
-        "prompt": "In the anti-fianchetto setup Black strikes with 6...c5. White to move: how do you hold the center?",
+        "prompt": "You are White in the London System vs the King's Indian setup. What is the book move?",
         "extra": "The familiar pyramid even here: c3 keeps d4 solid so White never has to release the central tension or worry about the long diagonal opening for the g7-bishop."
       },
       "tags": [
@@ -533,7 +533,7 @@
         "answerUci": "d1b3",
         "orientation": "white",
         "lastMove": "d8b6",
-        "prompt": "Fianchetto structure, and Black probes with 7...Qb6. White to move: what is the standard answer?",
+        "prompt": "You are White in the London System vs the King's Indian setup. What is the book move?",
         "extra": "The same medicine as always against ...Qb6: block the b-file, guard b2, and offer a queen trade that leaves White with the freer queenside. One rule covers every London structure."
       },
       "tags": [
@@ -549,7 +549,7 @@
         "answerUci": "b1c3",
         "orientation": "white",
         "lastMove": "d8b6",
-        "prompt": "Poisoned pawn alert: 2...c5 3.e3 Qb6 hits b2. White to move: what is the gambit reply?",
+        "prompt": "You are White in the Poisoned Pawn line of the London System. What is the book move?",
         "extra": "Ignore b2 and develop with threats: 4.Nc3 heads for b5. If Black grabs the pawn, the queen gets hunted; if Black declines, the knight is actively placed and White is simply better developed."
       },
       "tags": [
@@ -566,7 +566,7 @@
         "answerUci": "c3b5",
         "orientation": "white",
         "lastMove": "b6b2",
-        "prompt": "Black took the bait with 4...Qxb2. White to move: spring the trap.",
+        "prompt": "You are White in the Poisoned Pawn line. Find the best move.",
         "extra": "Nb5 threatens Nc7+, forking king and rook, and boxes the queen into the corner. Black's only real tries are ...Na6 to cover c7 or the desperate ...Qb4+, and both lead to misery."
       },
       "tags": [
@@ -583,7 +583,7 @@
         "answerUci": "d1d2",
         "orientation": "white",
         "lastMove": "b2b4",
-        "prompt": "Black bails out with the check 5...Qb4+. White to move: how do you deal with it?",
+        "prompt": "You are White in the Poisoned Pawn line. Find the best move.",
         "extra": "Block with the queen and force the trade; 6.c3 would drop the b5-knight to Qxb5. After ...Qxd2+ Kxd2 the Nc7+ fork is still in the air, and White regains the pawn with a huge lead in development."
       },
       "tags": [
@@ -600,7 +600,7 @@
         "answerUci": "a1b1",
         "orientation": "white",
         "lastMove": "b8a6",
-        "prompt": "Black covered the c7 fork with 5...Na6. White to move: keep the hunt going.",
+        "prompt": "You are White in the Poisoned Pawn line. Find the best move.",
         "extra": "Kick the queen with tempo. Her only flight squares are on the a-file, and the rook stands ready for the deflection Rxa6 once she settles back on b2."
       },
       "tags": [
@@ -617,7 +617,7 @@
         "answerUci": "b1a1",
         "orientation": "white",
         "lastMove": "b2a2",
-        "prompt": "The queen grabbed another pawn with 6...Qxa2. White to move: what now?",
+        "prompt": "You are White in the Poisoned Pawn line. Find the best move.",
         "extra": "Chase her again: after 7.Ra1 the queen must return to b2, since b3 is covered by the c2-pawn. Every move of the hunt develops White's initiative while Black's pieces sleep."
       },
       "tags": [
@@ -634,7 +634,7 @@
         "answerUci": "a1a6",
         "orientation": "white",
         "lastMove": "a2b2",
-        "prompt": "The queen sits on b2 again after 7...Qb2. White to move: find the shocking blow.",
+        "prompt": "You are White in the Poisoned Pawn line. Find the best move.",
         "extra": "Deflection: the a6-knight is the only defender of c7. After 8...bxa6 comes 9.Nc7+, forking king and rook; Black's greed on b2 ends up costing a piece."
       },
       "tags": [
@@ -651,7 +651,7 @@
         "answerUci": "b5c7",
         "orientation": "white",
         "lastMove": "b7a6",
-        "prompt": "Black recaptured with 8...bxa6. White to move: cash in.",
+        "prompt": "You are White in the Poisoned Pawn line. Find the best move.",
         "extra": "The fork the whole line was built around: the check hits e8 and a8 at once. After 9...Kd7 White plays 10.Nxa8, emerging a piece for two pawns up with Black's king stranded."
       },
       "tags": [
@@ -668,7 +668,7 @@
         "answerUci": "c7a8",
         "orientation": "white",
         "lastMove": "e8d7",
-        "prompt": "The king ran with 9...Kd7. White to move: complete the operation.",
+        "prompt": "You are White in the Poisoned Pawn line. Find the best move.",
         "extra": "Take the rook: White has won rook and knight for rook and two pawns. Black must burn several moves rounding up the cornered knight while White develops and targets the loose queenside."
       },
       "tags": [
@@ -685,7 +685,7 @@
         "answerUci": "d3h7",
         "orientation": "white",
         "lastMove": "f6h5",
-        "prompt": "Main-line London, and castled Black grabbed at your bishop with 8...Nh5. White to move: punish it.",
+        "prompt": "You are White in the London System. Find the best move.",
         "extra": "The Greek gift: ...Nh5 abandoned the defense of h7. With the d3-bishop, the f3-knight and the queen all pointing kingside, the sacrifice wins material back with a winning attack."
       },
       "tags": [
@@ -701,7 +701,6 @@
         "answerUci": "f3g5",
         "orientation": "white",
         "lastMove": "g8h7",
-        "prompt": "Black accepted with 9...Kxh7. White to move: follow up the sacrifice.",
         "extra": "The standard second wave: check before the king can organize. On g8 the king runs into Qxh5; if it steps to g6 instead, Qg4 keeps a winning attack against the exposed monarch."
       },
       "tags": [
@@ -717,7 +716,6 @@
         "answerUci": "d1h5",
         "orientation": "white",
         "lastMove": "h7g8",
-        "prompt": "The king retreated with 10...Kg8. White to move: bring in the heavy piece.",
         "extra": "Qxh5 scoops up the stranded knight and threatens Qh7 mate, protected by the g5-knight. The only defense 11...Re8, freeing f8 for the king, walks into 12.Qxf7+."
       },
       "tags": [
@@ -733,7 +731,6 @@
         "answerUci": "h5f7",
         "orientation": "white",
         "lastMove": "f8e8",
-        "prompt": "Black defended the mate with 11...Re8. White to move: keep the king in the net.",
         "extra": "The g5-knight guards f7, so the queen dives in. After 12...Kh8 13.Qh5+ Kg8 14.Qh7+ Kf8 15.Qh8+ Ke7 16.Qxg7 White has swept the kingside bare with the attack still running."
       },
       "tags": [

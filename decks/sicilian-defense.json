@@ -1,6 +1,6 @@
 {
   "key": "sicilian-defense",
-  "version": 3,
+  "version": 4,
   "name": "The Sicilian Defense",
   "description": "A club player's working map of the Sicilian, one position at a time: the Open Sicilian trunk move by move, the Najdorf, Dragon, Sveshnikov, and Classical variations, and how to meet the Alapin and Rossolimo anti-Sicilians. Every card shows a board from Black's side and asks for the best move and the plan behind it.",
   "category": "Chess",
@@ -21,7 +21,7 @@
         "answerUci": "c7c5",
         "orientation": "black",
         "lastMove": "e2e4",
-        "prompt": "White opens 1. e4. Which pawn move begins the Sicilian Defense?",
+        "prompt": "You are Black and want to play the Sicilian Defense. What is the book move?",
         "extra": "1...c5 fights for d4 from the wing and unbalances the position immediately, the most combative reply to 1. e4."
       },
       "tags": [
@@ -63,7 +63,7 @@
         "answerUci": "d7d6",
         "orientation": "black",
         "lastMove": "g1f3",
-        "prompt": "You are Black heading for a Najdorf or Dragon. White plays 2. Nf3. What do you play?",
+        "prompt": "You are Black, heading for a Najdorf or Dragon. What is the book move?",
         "extra": "2...d6 controls e5 so a later ...Nf6 cannot be chased by e4-e5, and keeps both 5...a6 (Najdorf) and 5...g6 (Dragon) available."
       },
       "tags": [
@@ -79,7 +79,7 @@
         "answerUci": "b8c6",
         "orientation": "black",
         "lastMove": "g1f3",
-        "prompt": "You are Black heading for a Sveshnikov or Classical. White plays 2. Nf3. What do you play?",
+        "prompt": "You are Black, heading for a Sveshnikov or Classical. What is the book move?",
         "extra": "2...Nc6 develops the knight to its best square and keeps ...e5 ideas in reserve. It is the move order that unlocks the Sveshnikov, at the cost of allowing the Rossolimo 3. Bb5."
       },
       "tags": [
@@ -95,7 +95,7 @@
         "answerUci": "c5d4",
         "orientation": "black",
         "lastMove": "d2d4",
-        "prompt": "White offers the Open Sicilian with 3. d4. What is Black's move?",
+        "prompt": "You are Black in the Open Sicilian. What is the book move?",
         "extra": "Take it: the capture trades a wing pawn for a center pawn and half-opens the c-file. Declining just lets White keep the big center."
       },
       "tags": [
@@ -111,7 +111,7 @@
         "answerUci": "g8f6",
         "orientation": "black",
         "lastMove": "f3d4",
-        "prompt": "Open Sicilian: White recaptures with 4. Nxd4. What is the best move?",
+        "prompt": "You are Black in the Open Sicilian. What is the book move?",
         "extra": "4...Nf6 develops with an attack on e4, forcing 5. Nc3 and denying White the c4 clamp (the Maroczy Bind). Almost every Sicilian runs through this move."
       },
       "tags": [
@@ -140,7 +140,7 @@
         "answerUci": "a7a6",
         "orientation": "black",
         "lastMove": "b1c3",
-        "prompt": "You are Black and want the Najdorf. What is the signature move here?",
+        "prompt": "You are Black and want the Najdorf. What is the book move?",
         "extra": "5...a6 takes b5 from White's knights and bishop, preparing ...e5 and ...b5. The most popular chess opening position in history."
       },
       "tags": [
@@ -169,7 +169,7 @@
         "answerUci": "e7e5",
         "orientation": "black",
         "lastMove": "f1e2",
-        "prompt": "Najdorf: White plays the quiet 6. Be2 (Opocensky Variation). What is Black's main reply?",
+        "prompt": "You are Black in the Najdorf, Opocensky Variation. What is the book move?",
         "extra": "With b5 already covered by ...a6, Black grabs the center. The backward d6 pawn is hard to attack, and Black gets active play on e5 and the queenside."
       },
       "tags": [
@@ -185,7 +185,7 @@
         "answerUci": "f8e7",
         "orientation": "black",
         "lastMove": "d4b3",
-        "prompt": "Najdorf, Opocensky: after 6. Be2 e5 the knight retreats 7. Nb3. What now?",
+        "prompt": "You are Black in the Najdorf, Opocensky Variation. What is the book move?",
         "extra": "Simple chess: ...Be7 and ...O-O first, then ...Be6 and ...Nbd7. The backward d6 pawn looks like a target but is almost impossible for White to get at."
       },
       "tags": [
@@ -201,7 +201,7 @@
         "answerUci": "e7e6",
         "orientation": "black",
         "lastMove": "c1g5",
-        "prompt": "Najdorf: White plays the sharp 6. Bg5. What is Black's main reply?",
+        "prompt": "You are Black in the Najdorf. What is the book move?",
         "extra": "6...e6 7. f4 is the old main line; the famous Poisoned Pawn arises after 7...Qb6, when Black grabs b2 and hangs on."
       },
       "tags": [
@@ -217,7 +217,7 @@
         "answerUci": "f8e7",
         "orientation": "black",
         "lastMove": "f2f4",
-        "prompt": "Najdorf, 6. Bg5 e6: White continues 7. f4. What is the classical move?",
+        "prompt": "You are Black in the Najdorf, choosing the classical line over the Poisoned Pawn. What is the book move?",
         "extra": "7...Be7 calmly takes the sting out of the pin and prepares ...Qc7, ...Nbd7, and ...b5. The wild alternative is the Poisoned Pawn, 7...Qb6 hitting b2."
       },
       "tags": [
@@ -233,7 +233,7 @@
         "answerUci": "e7e6",
         "orientation": "black",
         "lastMove": "f1c4",
-        "prompt": "Najdorf: White plays Fischer's favorite 6. Bc4 (Fischer-Sozin Attack). What is Black's standard reply?",
+        "prompt": "You are Black in the Najdorf, Fischer-Sozin Attack. What is the book move?",
         "extra": "6...e6 blunts the bishop's a2-g8 diagonal. Black follows up with ...b5, ...Bb7, and pressure against e4."
       },
       "tags": [
@@ -262,7 +262,7 @@
         "answerUci": "e7e5",
         "orientation": "black",
         "lastMove": "c1e3",
-        "prompt": "You are Black in the Najdorf. White starts the English Attack with 6. Be3. What is the best move?",
+        "prompt": "You are Black in the Najdorf, English Attack. What is the book move?",
         "extra": "6...e5 boots the d4 knight and claims the center before White's f3, Qd2, and O-O-O machine gets rolling. The d5 hole is the price; space and time are the payoff."
       },
       "tags": [
@@ -278,7 +278,7 @@
         "answerUci": "c8e6",
         "orientation": "black",
         "lastMove": "d4b3",
-        "prompt": "English Attack: after 6. Be3 e5 White retreats 7. Nb3. What do you play?",
+        "prompt": "You are Black in the Najdorf, English Attack. What is the book move?",
         "extra": "7...Be6 develops toward c4, supports a later ...d5 break, and clears the way for ...Nbd7 and ...b5. Black's play comes on the queenside, exactly where White's king is headed."
       },
       "tags": [
@@ -294,7 +294,7 @@
         "answerUci": "f8e7",
         "orientation": "black",
         "lastMove": "f2f3",
-        "prompt": "English Attack: White plays 8. f3, intending Qd2 and O-O-O. What is the classical continuation?",
+        "prompt": "You are Black in the Najdorf, English Attack. What is the book move?",
         "extra": "8...Be7 prepares ...O-O and ...Nbd7 while keeping ...d5 in reserve; the modern alternative is 8...h5, stopping g4 before it starts."
       },
       "tags": [
@@ -310,7 +310,7 @@
         "answerUci": "g7g6",
         "orientation": "black",
         "lastMove": "b1c3",
-        "prompt": "You are Black and want the Dragon. What is the signature move here?",
+        "prompt": "You are Black and want the Dragon. What is the book move?",
         "extra": "5...g6 prepares the fianchetto: the bishop goes to g7 and rakes the long diagonal toward White's queenside."
       },
       "tags": [
@@ -339,7 +339,7 @@
         "answerUci": "f8g7",
         "orientation": "black",
         "lastMove": "c1e3",
-        "prompt": "Dragon: White begins the Yugoslav setup with 6. Be3. What do you play?",
+        "prompt": "You are Black in the Dragon vs the Yugoslav Attack. What is the book move?",
         "extra": "Finish the fianchetto: the g7 bishop is the Dragon's reason for being, raking the a1-h8 diagonal at White's queenside. Everything Black does flows through this piece."
       },
       "tags": [
@@ -355,7 +355,7 @@
         "answerUci": "e8g8",
         "orientation": "black",
         "lastMove": "f2f3",
-        "prompt": "Dragon: after 6. Be3 Bg7 White plays 7. f3, guarding e4 and preparing g4. What now?",
+        "prompt": "You are Black in the Dragon vs the Yugoslav Attack. What is the book move?",
         "extra": "Castling into the coming pawn storm looks brave, but the king needs shelter and the rooks must connect; ...Nc6, ...Bd7, and ...Rc8 arrive in time to counterattack."
       },
       "tags": [
@@ -371,7 +371,7 @@
         "answerUci": "b8c6",
         "orientation": "black",
         "lastMove": "d1d2",
-        "prompt": "Yugoslav Attack: White plays 8. Qd2, ready to castle long. What is the best move?",
+        "prompt": "You are Black in the Dragon vs the Yugoslav Attack. What is the book move?",
         "extra": "8...Nc6 pressures d4 and prepares ...Bd7 and ...Rc8, so that every Black piece points at White's queenside before the h-pawn storm lands."
       },
       "tags": [
@@ -400,7 +400,7 @@
         "answerUci": "c8d7",
         "orientation": "black",
         "lastMove": "f1c4",
-        "prompt": "Yugoslav Attack: White plays 9. Bc4, eyeing f7 and clamping d5. What do you play?",
+        "prompt": "You are Black in the Dragon vs the Yugoslav Attack. What is the book move?",
         "extra": "9...Bd7 connects the rooks so ...Rc8 comes next; the standard regrouping ...Ne5-c4 then offers to trade off White's attacking pieces."
       },
       "tags": [
@@ -416,7 +416,7 @@
         "answerUci": "a8c8",
         "orientation": "black",
         "lastMove": "e1c1",
-        "prompt": "Yugoslav Attack: White castles 10. O-O-O. Where does the rook go?",
+        "prompt": "You are Black in the Dragon vs the Yugoslav Attack. What is the book move?",
         "extra": "The rook takes the half-open c-file, aiming at c3, where the thematic exchange sacrifice ...Rxc3 rips open White's king. The race is joined: ...Ne5-c4 versus h4-h5."
       },
       "tags": [
@@ -432,7 +432,7 @@
         "answerUci": "d6d5",
         "orientation": "black",
         "lastMove": "e1c1",
-        "prompt": "Yugoslav Attack: White castles at once with 9. O-O-O, skipping Bc4. What is Black's thematic strike?",
+        "prompt": "You are Black in the Dragon vs the Yugoslav Attack. What is the book move?",
         "extra": "With no bishop on c4 to watch d5, Black frees the game immediately: 9...d5 blasts open the center before White's kingside pawns move an inch."
       },
       "tags": [
@@ -474,7 +474,7 @@
         "answerUci": "g8f6",
         "orientation": "black",
         "lastMove": "c2c4",
-        "prompt": "Accelerated Dragon: White clamps down with 5. c4, the Maroczy Bind. How do you continue?",
+        "prompt": "You are Black in the Accelerated Dragon vs the Maroczy Bind. What is the book move?",
         "extra": "5...Nf6 develops with a hit on e4, forcing Nc3. Then Black stays patient: ...d6, ...Bg7, exchanges on d4, and the ...b5 lever to chip at the bind."
       },
       "tags": [
@@ -490,7 +490,7 @@
         "answerUci": "e7e5",
         "orientation": "black",
         "lastMove": "b1c3",
-        "prompt": "Via 2...Nc6 you have reached this position, and you want the Sveshnikov. What is the signature move here?",
+        "prompt": "You are Black and want the Sveshnikov. What is the book move?",
         "extra": "5...e5 punches the d4 knight and stakes out the center immediately, accepting the d5 hole as the price of activity."
       },
       "tags": [
@@ -519,7 +519,7 @@
         "answerUci": "d7d6",
         "orientation": "black",
         "lastMove": "d4b5",
-        "prompt": "Sveshnikov: White jumps 6. Ndb5, eyeing the hole on d6. What is the best move?",
+        "prompt": "You are Black in the Sveshnikov. What is the book move?",
         "extra": "6...d6 denies the knight its dream check on d6 and shores up e5. The b5 knight now bites on granite and will be driven to the rim with ...a6."
       },
       "tags": [
@@ -535,7 +535,7 @@
         "answerUci": "a7a6",
         "orientation": "black",
         "lastMove": "c1g5",
-        "prompt": "Sveshnikov: White pins with 7. Bg5. What do you play?",
+        "prompt": "You are Black in the Sveshnikov. What is the book move?",
         "extra": "7...a6 puts the question to the b5 knight, whose only retreat is the rim square a3. Black gains the tempo needed for ...b5 and full queenside expansion."
       },
       "tags": [
@@ -551,7 +551,7 @@
         "answerUci": "b7b5",
         "orientation": "black",
         "lastMove": "b5a3",
-        "prompt": "Sveshnikov: White's knight has just retreated to a3. What is Black's book move?",
+        "prompt": "You are Black in the Sveshnikov. What is the book move?",
         "extra": "8...b5 shuts the a3 knight out of c4 and grabs queenside space. White's main tries are 9. Bxf6 and 9. Nd5."
       },
       "tags": [
@@ -567,7 +567,7 @@
         "answerUci": "f8e7",
         "orientation": "black",
         "lastMove": "c3d5",
-        "prompt": "Sveshnikov main line: White plants a knight with 9. Nd5. What is Black's move?",
+        "prompt": "You are Black in the Sveshnikov. What is the book move?",
         "extra": "9...Be7 breaks the pin on the spot; after 10. Bxf6 Bxf6 Black holds the bishop pair, and the f6 bishop reroutes via g5 to fight for the dark squares."
       },
       "tags": [
@@ -583,7 +583,7 @@
         "answerUci": "g7f6",
         "orientation": "black",
         "lastMove": "g5f6",
-        "prompt": "Sveshnikov: White exchanges with 9. Bxf6. How do you recapture?",
+        "prompt": "You are Black in the Sveshnikov. What is the book move?",
         "extra": "Take with the pawn: 9...gxf6 keeps the fight for d5 alive because ...f5 comes next, hitting e4 and unbalancing the game. 10. Nd5 f5 is the great Sveshnikov tabiya."
       },
       "tags": [
@@ -599,7 +599,7 @@
         "answerUci": "b8c6",
         "orientation": "black",
         "lastMove": "b1c3",
-        "prompt": "You are Black and want the Classical Variation. What is the move here?",
+        "prompt": "You are Black and want the Classical Variation. What is the book move?",
         "extra": "5...Nc6 puts the second knight on its natural square and commits to nothing: Black can still choose ...e6, ...e5, or ...g6 structures depending on White's setup."
       },
       "tags": [
@@ -641,7 +641,7 @@
         "answerUci": "e7e6",
         "orientation": "black",
         "lastMove": "c1g5",
-        "prompt": "Richter-Rauzer: White has played 6. Bg5. What is Black's main reply?",
+        "prompt": "You are Black vs the Richter-Rauzer Attack. What is the book move?",
         "extra": "6...e6 builds the compact small center and prepares ...Be7 or the modern ...a6 and ...Bd7 scheme; Black waits to see White's plan before committing the king."
       },
       "tags": [
@@ -657,7 +657,7 @@
         "answerUci": "a7a6",
         "orientation": "black",
         "lastMove": "d1d2",
-        "prompt": "Richter-Rauzer: White plays 7. Qd2, heading for O-O-O. What is the modern move?",
+        "prompt": "You are Black vs the Richter-Rauzer Attack. What is the book move?",
         "extra": "7...a6 rules out Ndb5 and Bb5 tricks and prepares ...Bd7 and ...b5. In the Rauzer, Black often leaves the king in the center and attacks first."
       },
       "tags": [
@@ -673,7 +673,7 @@
         "answerUci": "c8d7",
         "orientation": "black",
         "lastMove": "e1c1",
-        "prompt": "Richter-Rauzer: White castles 8. O-O-O. What do you play?",
+        "prompt": "You are Black vs the Richter-Rauzer Attack. What is the book move?",
         "extra": "8...Bd7 completes the queenside plan: ...Rc8 and ...b5 follow, with pressure building against c3 and White's king."
       },
       "tags": [
@@ -715,7 +715,7 @@
         "answerUci": "f6d5",
         "orientation": "black",
         "lastMove": "e4e5",
-        "prompt": "Alapin: after 2. c3 Nf6, White pushes 3. e5. Where does the knight go?",
+        "prompt": "You are Black vs the Alapin. What is the book move?",
         "extra": "3...Nd5 is the whole point of 2...Nf6: with a pawn on c3, White has no Nc3 to challenge the knight, so it sits securely in the center."
       },
       "tags": [
@@ -731,7 +731,7 @@
         "answerUci": "c5d4",
         "orientation": "black",
         "lastMove": "d2d4",
-        "prompt": "Alapin: White builds the center with 4. d4. What is your move?",
+        "prompt": "You are Black vs the Alapin. What is the book move?",
         "extra": "Trade the wing pawn for the center pawn, Sicilian style. Black will gang up on the d4 and e5 pawns with ...Nc6 and ...d6 before White consolidates."
       },
       "tags": [
@@ -747,7 +747,7 @@
         "answerUci": "b8c6",
         "orientation": "black",
         "lastMove": "g1f3",
-        "prompt": "Alapin: White develops 5. Nf3, delaying the recapture on d4. What do you play?",
+        "prompt": "You are Black vs the Alapin. What is the book move?",
         "extra": "5...Nc6 keeps the pressure on d4 and adds a hit on e5. Develop first; the strike ...d6 against White's center comes next."
       },
       "tags": [
@@ -763,7 +763,7 @@
         "answerUci": "d7d6",
         "orientation": "black",
         "lastMove": "c3d4",
-        "prompt": "Alapin: White restores the center with 6. cxd4. How does Black hit back?",
+        "prompt": "You are Black vs the Alapin. What is the book move?",
         "extra": "6...d6 attacks the e5 spearhead at once; after it liquidates, White is left nursing an isolated or overextended d4 pawn for the rest of the game."
       },
       "tags": [
@@ -805,7 +805,7 @@
         "answerUci": "d7c6",
         "orientation": "black",
         "lastMove": "b5c6",
-        "prompt": "Rossolimo: White exchanges 4. Bxc6. How do you recapture?",
+        "prompt": "You are Black vs the Rossolimo. What is the book move?",
         "extra": "4...dxc6 recaptures toward the center, opens the c8 bishop, and hands Black the bishop pair as full payment for the doubled pawns."
       },
       "tags": [
@@ -821,7 +821,7 @@
         "answerUci": "f8g7",
         "orientation": "black",
         "lastMove": "d2d3",
-        "prompt": "Rossolimo: White plays the restrained 5. d3. What is the best move?",
+        "prompt": "You are Black vs the Rossolimo. What is the book move?",
         "extra": "Complete the fianchetto. With ...Nf6 or ...e5 to follow, Black's dark-square grip and two bishops give a comfortable, strategically rich game."
       },
       "tags": [
