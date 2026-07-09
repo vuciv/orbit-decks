@@ -1,0 +1,1986 @@
+{
+  "key": "world-capitals",
+  "version": 1,
+  "name": "World Capitals",
+  "description": "Type the capital city of all 197 countries: every UN member and observer state, plus Kosovo and Taiwan. Covers multi-capital countries and recent renames like Astana and Gitega.",
+  "category": "Geography",
+  "topics": [
+    "geography",
+    "capitals",
+    "countries"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World6.svg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "fr",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of France?",
+        "answer": "Paris",
+        "extra": "Also the largest city in France, on the Seine."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "es",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Spain?",
+        "answer": "Madrid",
+        "extra": "Not Barcelona."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "it",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Italy?",
+        "answer": "Rome",
+        "extra": "Surrounds Vatican City, which is a separate country."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "de",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Germany?",
+        "answer": "Berlin",
+        "extra": "Capital again since reunification in 1990; Bonn was West Germany's capital."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "gb",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of the United Kingdom?",
+        "answer": "London",
+        "extra": "Capital of both the UK and England."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "jp",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Japan?",
+        "answer": "Tokyo",
+        "extra": "Not Kyoto, the historical capital."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "us",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of the United States?",
+        "answer": "Washington",
+        "extra": "Washington, D.C. (District of Columbia). Not New York City."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "ca",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Canada?",
+        "answer": "Ottawa",
+        "extra": "Not Toronto, Montreal, or Vancouver."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "br",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Brazil?",
+        "answer": "Brasilia",
+        "extra": "Brasília, a purpose-built capital inaugurated in 1960. Not Rio de Janeiro or Sao Paulo."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "au",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Australia?",
+        "answer": "Canberra",
+        "extra": "Not Sydney or Melbourne; Canberra was purpose-built as a compromise between the two."
+      },
+      "tags": ["geo::oceania"]
+    },
+    {
+      "key": "cn",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of China?",
+        "answer": "Beijing",
+        "extra": "Means northern capital. Not Shanghai."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "in",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of India?",
+        "answer": "New Delhi",
+        "extra": "New Delhi is the official capital, a district within the larger city of Delhi."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "ru",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Russia?",
+        "answer": "Moscow",
+        "extra": "Not Saint Petersburg, the imperial capital until 1918."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "mx",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Mexico?",
+        "answer": "Mexico City",
+        "extra": "Spanish: Ciudad de México (CDMX)."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "eg",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Egypt?",
+        "answer": "Cairo",
+        "extra": "Largest city in the Arab world. A New Administrative Capital is being built east of Cairo."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "tr",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Turkey?",
+        "answer": "Ankara",
+        "extra": "Not Istanbul, the largest city and former Ottoman capital."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "gr",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Greece?",
+        "answer": "Athens",
+        "extra": "Named for the goddess Athena."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "nl",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of the Netherlands?",
+        "answer": "Amsterdam",
+        "extra": "Constitutional capital. The government, parliament, and king sit in The Hague."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "pt",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Portugal?",
+        "answer": "Lisbon",
+        "extra": "Portuguese: Lisboa."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "ch",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Switzerland?",
+        "answer": "Bern",
+        "extra": "Not Zurich or Geneva. Officially the federal city rather than the capital."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "ar",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Argentina?",
+        "answer": "Buenos Aires",
+        "extra": "Autonomous city on the Rio de la Plata."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "kr",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of South Korea?",
+        "answer": "Seoul",
+        "extra": "One of the largest metropolitan areas in the world."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "za",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of South Africa?",
+        "answer": "Pretoria",
+        "extra": "Executive capital. Cape Town is the legislative capital (parliament) and Bloemfontein the judicial capital."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "nz",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of New Zealand?",
+        "answer": "Wellington",
+        "extra": "Not Auckland, the largest city. Often cited as the world's southernmost capital."
+      },
+      "tags": ["geo::oceania"]
+    },
+    {
+      "key": "al",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Albania?",
+        "answer": "Tirana",
+        "extra": "Albanian: Tiranë."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "ad",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Andorra?",
+        "answer": "Andorra la Vella",
+        "extra": "Highest capital in Europe, in the Pyrenees."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "at",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Austria?",
+        "answer": "Vienna",
+        "extra": "German: Wien."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "by",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Belarus?",
+        "answer": "Minsk",
+        "extra": "On the Svislach River."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "be",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Belgium?",
+        "answer": "Brussels",
+        "extra": "Also the de facto capital of the European Union."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "ba",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Bosnia and Herzegovina?",
+        "answer": "Sarajevo",
+        "extra": "Hosted the 1984 Winter Olympics."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "bg",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Bulgaria?",
+        "answer": "Sofia",
+        "extra": "One of Europe's oldest cities, at the foot of Vitosha mountain."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "hr",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Croatia?",
+        "answer": "Zagreb",
+        "extra": "Not Split or Dubrovnik."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "cz",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of the Czech Republic (Czechia)?",
+        "answer": "Prague",
+        "extra": "Czech: Praha."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "dk",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Denmark?",
+        "answer": "Copenhagen",
+        "extra": "Danish: København."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "ee",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Estonia?",
+        "answer": "Tallinn",
+        "extra": "Double l and double n."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "fi",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Finland?",
+        "answer": "Helsinki",
+        "extra": "On the Gulf of Finland, across from Tallinn."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "hu",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Hungary?",
+        "answer": "Budapest",
+        "extra": "Buda and Pest, merged across the Danube in 1873. Not to be confused with Bucharest."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "is",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Iceland?",
+        "answer": "Reykjavik",
+        "extra": "Reykjavík. Northernmost capital of a sovereign state."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "ie",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Ireland?",
+        "answer": "Dublin",
+        "extra": "Irish: Baile Átha Cliath."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "xk",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Kosovo?",
+        "answer": "Pristina",
+        "extra": "Also spelled Prishtina (Albanian) or Priština (Serbian)."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "lv",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Latvia?",
+        "answer": "Riga",
+        "extra": "Largest city of the three Baltic states."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "li",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Liechtenstein?",
+        "answer": "Vaduz",
+        "extra": "On the Rhine, between Switzerland and Austria."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "lt",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Lithuania?",
+        "answer": "Vilnius",
+        "extra": "Not Kaunas, the interwar capital."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "lu",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Luxembourg?",
+        "answer": "Luxembourg",
+        "extra": "Luxembourg City; the capital shares the country's name."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "mt",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Malta?",
+        "answer": "Valletta",
+        "extra": "Double l and double t. One of the smallest capitals in the EU."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "md",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Moldova?",
+        "answer": "Chisinau",
+        "extra": "Chișinău."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "mc",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Monaco?",
+        "answer": "Monaco",
+        "extra": "City-state; Monaco-Ville is the old town district."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "me",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Montenegro?",
+        "answer": "Podgorica",
+        "extra": "Called Titograd in Yugoslav times."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "mk",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of North Macedonia?",
+        "answer": "Skopje",
+        "extra": "Birthplace of Mother Teresa."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "no",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Norway?",
+        "answer": "Oslo",
+        "extra": "Called Christiania until 1925."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "pl",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Poland?",
+        "answer": "Warsaw",
+        "extra": "Polish: Warszawa. Not Krakow, the former royal capital."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "ro",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Romania?",
+        "answer": "Bucharest",
+        "extra": "Romanian: București. Not to be confused with Budapest."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "sm",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of San Marino?",
+        "answer": "San Marino",
+        "extra": "The City of San Marino shares the country's name."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "rs",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Serbia?",
+        "answer": "Belgrade",
+        "extra": "Serbian: Beograd, meaning white city."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "sk",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Slovakia?",
+        "answer": "Bratislava",
+        "extra": "On the Danube, less than an hour from Vienna."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "si",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Slovenia?",
+        "answer": "Ljubljana",
+        "extra": "The j appears twice: Lju-blja-na."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "se",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Sweden?",
+        "answer": "Stockholm",
+        "extra": "Spread across 14 islands."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "ua",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Ukraine?",
+        "answer": "Kyiv",
+        "extra": "Preferred romanization; Kiev is the older Russian-derived spelling."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "va",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Vatican City?",
+        "answer": "Vatican City",
+        "extra": "A city-state; the country and its capital are one and the same. Smallest country in the world."
+      },
+      "tags": ["geo::europe"]
+    },
+    {
+      "key": "af",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Afghanistan?",
+        "answer": "Kabul",
+        "extra": "In a valley of the Hindu Kush."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "am",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Armenia?",
+        "answer": "Yerevan",
+        "extra": "One of the world's oldest continuously inhabited cities."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "az",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Azerbaijan?",
+        "answer": "Baku",
+        "extra": "Lowest-lying national capital, below sea level on the Caspian."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "bh",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Bahrain?",
+        "answer": "Manama",
+        "extra": "Not to be confused with Muscat or Doha, its Gulf neighbors."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "bd",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Bangladesh?",
+        "answer": "Dhaka",
+        "extra": "Formerly spelled Dacca."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "bt",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Bhutan?",
+        "answer": "Thimphu",
+        "extra": "One of the few capitals without traffic lights."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "bn",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Brunei?",
+        "answer": "Bandar Seri Begawan",
+        "extra": "Formerly known as Brunei Town."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "kh",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Cambodia?",
+        "answer": "Phnom Penh",
+        "extra": "At the confluence of the Mekong and Tonle Sap rivers."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "cy",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Cyprus?",
+        "answer": "Nicosia",
+        "extra": "The world's last divided capital, split by the UN buffer zone."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "ge",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Georgia?",
+        "answer": "Tbilisi",
+        "extra": "Formerly known as Tiflis."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "id",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Indonesia?",
+        "answer": "Jakarta",
+        "extra": "A new capital, Nusantara, is under construction on Borneo, but Jakarta remains the capital until the transfer is formalized."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "ir",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Iran?",
+        "answer": "Tehran",
+        "extra": "At the foot of the Alborz mountains."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "iq",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Iraq?",
+        "answer": "Baghdad",
+        "extra": "On the Tigris."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "il",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Israel?",
+        "answer": "Jerusalem",
+        "extra": "Proclaimed capital; international recognition is divided and most embassies are in Tel Aviv."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "jo",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Jordan?",
+        "answer": "Amman",
+        "extra": "Known as Philadelphia in Roman times."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "kz",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Kazakhstan?",
+        "answer": "Astana",
+        "extra": "Named Nur-Sultan from 2019 to 2022, then renamed back to Astana. Not Almaty, the former capital."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "kw",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Kuwait?",
+        "answer": "Kuwait City",
+        "extra": "The capital shares the country's name."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "kg",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Kyrgyzstan?",
+        "answer": "Bishkek",
+        "extra": "Called Frunze in Soviet times."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "la",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Laos?",
+        "answer": "Vientiane",
+        "extra": "On the Mekong, across from Thailand."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "lb",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Lebanon?",
+        "answer": "Beirut",
+        "extra": "Once called the Paris of the Middle East."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "my",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Malaysia?",
+        "answer": "Kuala Lumpur",
+        "extra": "Putrajaya is the federal administrative centre, but Kuala Lumpur remains the capital."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "mv",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of the Maldives?",
+        "answer": "Male",
+        "extra": "Malé. One of the most densely populated islands on earth."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "mn",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Mongolia?",
+        "answer": "Ulaanbaatar",
+        "extra": "Also written Ulan Bator. The coldest national capital in the world."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "mm",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Myanmar (Burma)?",
+        "answer": "Naypyidaw",
+        "extra": "Also written Nay Pyi Taw. Purpose-built capital since 2006; not Yangon (Rangoon), the former capital."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "np",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Nepal?",
+        "answer": "Kathmandu",
+        "extra": "Gateway to the Himalayas."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "kp",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of North Korea?",
+        "answer": "Pyongyang",
+        "extra": "On the Taedong River."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "om",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Oman?",
+        "answer": "Muscat",
+        "extra": "Not to be confused with Manama, Bahrain's capital."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "pk",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Pakistan?",
+        "answer": "Islamabad",
+        "extra": "Purpose-built in the 1960s. Not Karachi, the largest city and first capital."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "ps",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Palestine?",
+        "answer": "Ramallah",
+        "extra": "Administrative center of the Palestinian Authority; East Jerusalem is the proclaimed capital."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "ph",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of the Philippines?",
+        "answer": "Manila",
+        "extra": "Part of Metro Manila; Quezon City was the capital from 1948 to 1976."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "qa",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Qatar?",
+        "answer": "Doha",
+        "extra": "Hosted the 2022 FIFA World Cup final."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "sa",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Saudi Arabia?",
+        "answer": "Riyadh",
+        "extra": "Not Mecca or Jeddah."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "sg",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Singapore?",
+        "answer": "Singapore",
+        "extra": "A city-state; the country and its capital are the same."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "lk",
+      "model": "basic",
+      "fields": {
+        "front": "What is the capital of Sri Lanka?",
+        "back": "Sri Jayawardenepura Kotte",
+        "extra": "The official legislative capital, a suburb of Colombo. Colombo is the commercial capital and the answer often given, but it is not the official one."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "sy",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Syria?",
+        "answer": "Damascus",
+        "extra": "Often cited as the oldest continuously inhabited capital in the world."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "tw",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Taiwan?",
+        "answer": "Taipei",
+        "extra": "Home of the Taipei 101 tower."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "tj",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Tajikistan?",
+        "answer": "Dushanbe",
+        "extra": "Means Monday in Tajik, after its market day."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "th",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Thailand?",
+        "answer": "Bangkok",
+        "extra": "Thai: Krung Thep."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "tl",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Timor-Leste (East Timor)?",
+        "answer": "Dili",
+        "extra": "On the north coast of Timor island."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "tm",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Turkmenistan?",
+        "answer": "Ashgabat",
+        "extra": "Known for its white marble buildings."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "ae",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of the United Arab Emirates?",
+        "answer": "Abu Dhabi",
+        "extra": "Not Dubai, the largest city."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "uz",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Uzbekistan?",
+        "answer": "Tashkent",
+        "extra": "Largest city in Central Asia."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "vn",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Vietnam?",
+        "answer": "Hanoi",
+        "extra": "Not Ho Chi Minh City (Saigon), the largest city."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "ye",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Yemen?",
+        "answer": "Sanaa",
+        "extra": "Sana'a. Aden serves as the seat of the internationally recognized government during the civil war."
+      },
+      "tags": ["geo::asia"]
+    },
+    {
+      "key": "dz",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Algeria?",
+        "answer": "Algiers",
+        "extra": "French: Alger. The capital's name echoes the country's."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "ao",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Angola?",
+        "answer": "Luanda",
+        "extra": "Not to be confused with Lusaka, Zambia's capital."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "bj",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Benin?",
+        "answer": "Porto-Novo",
+        "extra": "Official capital; the government largely operates from Cotonou."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "bw",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Botswana?",
+        "answer": "Gaborone",
+        "extra": "Pronounced ha-bo-ro-neh."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "bf",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Burkina Faso?",
+        "answer": "Ouagadougou",
+        "extra": "Often shortened to Ouaga."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "bi",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Burundi?",
+        "answer": "Gitega",
+        "extra": "Capital since 2019, moved from Bujumbura, which remains the economic capital."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "cv",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Cabo Verde (Cape Verde)?",
+        "answer": "Praia",
+        "extra": "Means beach in Portuguese."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "cm",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Cameroon?",
+        "answer": "Yaounde",
+        "extra": "Yaoundé. Not Douala, the largest city."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "cf",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of the Central African Republic?",
+        "answer": "Bangui",
+        "extra": "On the Ubangi River."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "td",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Chad?",
+        "answer": "N'Djamena",
+        "extra": "Formerly Fort-Lamy."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "km",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of the Comoros?",
+        "answer": "Moroni",
+        "extra": "On the island of Grande Comore."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "cg",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of the Republic of the Congo?",
+        "answer": "Brazzaville",
+        "extra": "Faces Kinshasa across the Congo River, the world's closest pair of capitals."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "cd",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of the Democratic Republic of the Congo?",
+        "answer": "Kinshasa",
+        "extra": "Formerly Leopoldville. Faces Brazzaville across the Congo River."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "dj",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Djibouti?",
+        "answer": "Djibouti",
+        "extra": "Djibouti City; the capital shares the country's name."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "gq",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Equatorial Guinea?",
+        "answer": "Malabo",
+        "extra": "On the island of Bioko, not the mainland. A new capital, Ciudad de la Paz, is under construction."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "er",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Eritrea?",
+        "answer": "Asmara",
+        "extra": "Known for its Italian modernist architecture."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "sz",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Eswatini (formerly Swaziland)?",
+        "answer": "Mbabane",
+        "extra": "Administrative capital; Lobamba is the royal and legislative capital."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "et",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Ethiopia?",
+        "answer": "Addis Ababa",
+        "extra": "Headquarters of the African Union. Means new flower in Amharic."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "ga",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Gabon?",
+        "answer": "Libreville",
+        "extra": "Means free town in French, founded by freed slaves."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "gm",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of the Gambia?",
+        "answer": "Banjul",
+        "extra": "Formerly Bathurst, on an island at the mouth of the Gambia River."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "gh",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Ghana?",
+        "answer": "Accra",
+        "extra": "On the Gulf of Guinea."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "gn",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Guinea?",
+        "answer": "Conakry",
+        "extra": "Not to be confused with Bissau (Guinea-Bissau) or Malabo (Equatorial Guinea)."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "gw",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Guinea-Bissau?",
+        "answer": "Bissau",
+        "extra": "The capital appears in the country's name."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "ci",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Ivory Coast (Côte d'Ivoire)?",
+        "answer": "Yamoussoukro",
+        "extra": "Official capital since 1983. Abidjan remains the economic hub and de facto seat of government."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "ke",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Kenya?",
+        "answer": "Nairobi",
+        "extra": "Home to a national park within city limits."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "ls",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Lesotho?",
+        "answer": "Maseru",
+        "extra": "On the border with South Africa."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "lr",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Liberia?",
+        "answer": "Monrovia",
+        "extra": "Named after US President James Monroe."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "ly",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Libya?",
+        "answer": "Tripoli",
+        "extra": "Not to be confused with Tripoli, Lebanon."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "mg",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Madagascar?",
+        "answer": "Antananarivo",
+        "extra": "Often shortened to Tana."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "mw",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Malawi?",
+        "answer": "Lilongwe",
+        "extra": "Not Blantyre, the commercial center."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "ml",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Mali?",
+        "answer": "Bamako",
+        "extra": "On the Niger River. Not Timbuktu."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "mr",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Mauritania?",
+        "answer": "Nouakchott",
+        "extra": "One of the largest cities in the Sahara."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "mu",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Mauritius?",
+        "answer": "Port Louis",
+        "extra": "Named after King Louis XV of France."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "ma",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Morocco?",
+        "answer": "Rabat",
+        "extra": "Not Casablanca, the largest city, and not Marrakesh."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "mz",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Mozambique?",
+        "answer": "Maputo",
+        "extra": "Called Lourenço Marques until 1976."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "na",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Namibia?",
+        "answer": "Windhoek",
+        "extra": "German colonial name meaning windy corner."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "ne",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Niger?",
+        "answer": "Niamey",
+        "extra": "On the Niger River. Not to be confused with Abuja, Nigeria's capital."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "ng",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Nigeria?",
+        "answer": "Abuja",
+        "extra": "Purpose-built capital since 1991. Not Lagos, the largest city and former capital."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "rw",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Rwanda?",
+        "answer": "Kigali",
+        "extra": "Known as one of the cleanest cities in Africa."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "st",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Sao Tome and Principe?",
+        "answer": "Sao Tome",
+        "extra": "São Tomé. The capital shares the main island's name."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "sn",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Senegal?",
+        "answer": "Dakar",
+        "extra": "Westernmost capital on the African mainland."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "sc",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Seychelles?",
+        "answer": "Victoria",
+        "extra": "One of the smallest capitals in the world, on the island of Mahe."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "sl",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Sierra Leone?",
+        "answer": "Freetown",
+        "extra": "Founded as a settlement for freed slaves."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "so",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Somalia?",
+        "answer": "Mogadishu",
+        "extra": "On the Indian Ocean coast."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "ss",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of South Sudan?",
+        "answer": "Juba",
+        "extra": "On the White Nile. The world's newest capital of a UN member state."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "sd",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Sudan?",
+        "answer": "Khartoum",
+        "extra": "At the confluence of the Blue and White Nile."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "tz",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Tanzania?",
+        "answer": "Dodoma",
+        "extra": "Official capital since 1996. Not Dar es Salaam, the largest city and former capital."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "tg",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Togo?",
+        "answer": "Lome",
+        "extra": "Lomé."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "tn",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Tunisia?",
+        "answer": "Tunis",
+        "extra": "Near the ruins of ancient Carthage."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "ug",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Uganda?",
+        "answer": "Kampala",
+        "extra": "On the shores of Lake Victoria."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "zm",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Zambia?",
+        "answer": "Lusaka",
+        "extra": "Not to be confused with Luanda, Angola's capital."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "zw",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Zimbabwe?",
+        "answer": "Harare",
+        "extra": "Called Salisbury until 1982."
+      },
+      "tags": ["geo::africa"]
+    },
+    {
+      "key": "ag",
+      "model": "basic",
+      "fields": {
+        "front": "What is the capital of Antigua and Barbuda?",
+        "back": "Saint John's",
+        "extra": "Usually written St. John's. Not to be confused with St. John's, Newfoundland, or San Juan, Puerto Rico."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "bs",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of the Bahamas?",
+        "answer": "Nassau",
+        "extra": "On New Providence island."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "bb",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Barbados?",
+        "answer": "Bridgetown",
+        "extra": "A UNESCO World Heritage site."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "bz",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Belize?",
+        "answer": "Belmopan",
+        "extra": "Purpose-built inland after Hurricane Hattie hit Belize City in 1961. Not Belize City."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "bo",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Bolivia?",
+        "answer": "La Paz",
+        "extra": "Seat of government and the world's highest administrative capital. Sucre is the constitutional capital."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "cl",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Chile?",
+        "answer": "Santiago",
+        "extra": "Valparaiso hosts the national congress."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "co",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Colombia?",
+        "answer": "Bogota",
+        "extra": "Bogotá. High in the Andes at about 2,640 m."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "cr",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Costa Rica?",
+        "answer": "San Jose",
+        "extra": "San José. Not to be confused with San Jose, California, or San Juan, Puerto Rico."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "cu",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Cuba?",
+        "answer": "Havana",
+        "extra": "Spanish: La Habana."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "dm",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Dominica?",
+        "answer": "Roseau",
+        "extra": "Dominica is the island nation, distinct from the Dominican Republic."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "do",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of the Dominican Republic?",
+        "answer": "Santo Domingo",
+        "extra": "Oldest continuously inhabited European settlement in the Americas."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "ec",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Ecuador?",
+        "answer": "Quito",
+        "extra": "Second-highest capital in the world, after La Paz. Not Guayaquil, the largest city."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "sv",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of El Salvador?",
+        "answer": "San Salvador",
+        "extra": "The capital's name echoes the country's."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "gd",
+      "model": "basic",
+      "fields": {
+        "front": "What is the capital of Grenada?",
+        "back": "Saint George's",
+        "extra": "Usually written St. George's."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "gt",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Guatemala?",
+        "answer": "Guatemala City",
+        "extra": "The capital shares the country's name."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "gy",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Guyana?",
+        "answer": "Georgetown",
+        "extra": "Largely below sea level, protected by a seawall."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "ht",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Haiti?",
+        "answer": "Port-au-Prince",
+        "extra": "Hyphenated: Port-au-Prince."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "hn",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Honduras?",
+        "answer": "Tegucigalpa",
+        "extra": "Often shortened to Tegus."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "jm",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Jamaica?",
+        "answer": "Kingston",
+        "extra": "Not to be confused with Kingstown, capital of Saint Vincent and the Grenadines."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "ni",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Nicaragua?",
+        "answer": "Managua",
+        "extra": "On the shore of Lake Managua."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "pa",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Panama?",
+        "answer": "Panama City",
+        "extra": "At the Pacific entrance of the Panama Canal."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "py",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Paraguay?",
+        "answer": "Asuncion",
+        "extra": "Asunción. One of the oldest cities in South America."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "pe",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Peru?",
+        "answer": "Lima",
+        "extra": "Not Cusco, the old Inca capital."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "kn",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Saint Kitts and Nevis?",
+        "answer": "Basseterre",
+        "extra": "One word. Not to be confused with Basse-Terre, Guadeloupe."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "lc",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Saint Lucia?",
+        "answer": "Castries",
+        "extra": "Named after a French minister of the navy."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "vc",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Saint Vincent and the Grenadines?",
+        "answer": "Kingstown",
+        "extra": "With a w. Not Kingston, Jamaica."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "sr",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Suriname?",
+        "answer": "Paramaribo",
+        "extra": "A UNESCO-listed Dutch colonial old town."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "tt",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Trinidad and Tobago?",
+        "answer": "Port of Spain",
+        "extra": "Sometimes written Port-of-Spain."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "uy",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Uruguay?",
+        "answer": "Montevideo",
+        "extra": "Southernmost capital in the Americas."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "ve",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Venezuela?",
+        "answer": "Caracas",
+        "extra": "In a valley near the Caribbean coast."
+      },
+      "tags": ["geo::americas"]
+    },
+    {
+      "key": "fj",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Fiji?",
+        "answer": "Suva",
+        "extra": "On the island of Viti Levu."
+      },
+      "tags": ["geo::oceania"]
+    },
+    {
+      "key": "ki",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Kiribati?",
+        "answer": "Tarawa",
+        "extra": "Formally South Tarawa, on Tarawa atoll."
+      },
+      "tags": ["geo::oceania"]
+    },
+    {
+      "key": "mh",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of the Marshall Islands?",
+        "answer": "Majuro",
+        "extra": "An atoll as well as the capital city."
+      },
+      "tags": ["geo::oceania"]
+    },
+    {
+      "key": "fm",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Micronesia?",
+        "answer": "Palikir",
+        "extra": "On the island of Pohnpei."
+      },
+      "tags": ["geo::oceania"]
+    },
+    {
+      "key": "nr",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Nauru?",
+        "answer": "Yaren",
+        "extra": "Nauru has no official capital; Yaren is the de facto seat of government."
+      },
+      "tags": ["geo::oceania"]
+    },
+    {
+      "key": "pw",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Palau?",
+        "answer": "Ngerulmud",
+        "extra": "Least populous capital in the world; replaced Koror in 2006."
+      },
+      "tags": ["geo::oceania"]
+    },
+    {
+      "key": "pg",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Papua New Guinea?",
+        "answer": "Port Moresby",
+        "extra": "On the Gulf of Papua."
+      },
+      "tags": ["geo::oceania"]
+    },
+    {
+      "key": "ws",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Samoa?",
+        "answer": "Apia",
+        "extra": "On the island of Upolu."
+      },
+      "tags": ["geo::oceania"]
+    },
+    {
+      "key": "sb",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of the Solomon Islands?",
+        "answer": "Honiara",
+        "extra": "On Guadalcanal island."
+      },
+      "tags": ["geo::oceania"]
+    },
+    {
+      "key": "to",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Tonga?",
+        "answer": "Nuku'alofa",
+        "extra": "The apostrophe stands for the Tongan okina and is often omitted (Nukualofa)."
+      },
+      "tags": ["geo::oceania"]
+    },
+    {
+      "key": "tv",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Tuvalu?",
+        "answer": "Funafuti",
+        "extra": "An atoll; Vaiaku village hosts the government offices."
+      },
+      "tags": ["geo::oceania"]
+    },
+    {
+      "key": "vu",
+      "model": "typed",
+      "fields": {
+        "front": "What is the capital of Vanuatu?",
+        "answer": "Port Vila",
+        "extra": "Sometimes written Port-Vila, on the island of Efate."
+      },
+      "tags": ["geo::oceania"]
+    }
+  ]
+}

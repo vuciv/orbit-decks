@@ -26,6 +26,18 @@
         "states"
       ],
       "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Texas%20in%20United%20States.svg?width=640"
+    },
+    {
+      "key": "world-capitals",
+      "name": "World Capitals",
+      "description": "Type the capital city of all 197 countries: every UN member and observer state, plus Kosovo and Taiwan. Covers multi-capital countries and recent renames like Astana and Gitega.",
+      "cardCount": 197,
+      "topics": [
+        "geography",
+        "capitals",
+        "countries"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/BlankMap-World6.svg?width=640"
     }
   ]
 }

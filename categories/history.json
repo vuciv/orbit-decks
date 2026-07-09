@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "key": "history",
+  "name": "History",
+  "decks": [
+    {
+      "key": "us-presidents",
+      "name": "US Presidents",
+      "description": "All 45 people who have served as President of the United States, in chronological order from Washington onward, with official portraits, terms, parties, and one memorable fact each.",
+      "cardCount": 45,
+      "topics": [
+        "history",
+        "usa",
+        "presidents"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Gilbert%20Stuart%20Williamstown%20Portrait%20of%20George%20Washington.jpg?width=640"
+    }
+  ]
+}

@@ -4,8 +4,8 @@
     {
       "key": "geography",
       "name": "Geography",
-      "deckCount": 2,
-      "rev": "128a853b29b1",
+      "deckCount": 3,
+      "rev": "c18f2ed53b32",
       "file": "categories/geography.json"
     },
     {
@@ -30,6 +30,13 @@
       "file": "categories/science.json"
     },
     {
+      "key": "history",
+      "name": "History",
+      "deckCount": 1,
+      "rev": "6b37c1068aaa",
+      "file": "categories/history.json"
+    },
+    {
       "key": "codes-signals",
       "name": "Codes & Signals",
       "deckCount": 2,
@@ -44,7 +51,8 @@
       "description": "Hand-picked first decks with instant visual payoff.",
       "deckKeys": [
         "kanto-pokedex",
-        "flags-of-the-world"
+        "flags-of-the-world",
+        "world-capitals"
       ]
     },
     {
@@ -53,6 +61,7 @@
       "description": "Flags, capitals, and shapes: build a mental map of Earth.",
       "deckKeys": [
         "flags-of-the-world",
+        "world-capitals",
         "us-states"
       ]
     },
@@ -103,9 +112,19 @@
       "file": "decks/periodic-table.json"
     },
     {
+      "key": "us-presidents",
+      "version": 1,
+      "file": "decks/us-presidents.json"
+    },
+    {
       "key": "us-states",
       "version": 1,
       "file": "decks/us-states.json"
+    },
+    {
+      "key": "world-capitals",
+      "version": 1,
+      "file": "decks/world-capitals.json"
     }
   ]
 }
