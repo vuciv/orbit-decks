@@ -4,8 +4,8 @@
     {
       "key": "language",
       "name": "Language",
-      "deckCount": 1,
-      "rev": "9314e0a15fe5",
+      "deckCount": 2,
+      "rev": "35e580f62fc9",
       "file": "categories/language.json"
     },
     {
@@ -126,7 +126,8 @@
       "title": "Learn a language",
       "description": "The essential first thousand cards, with speech on every card.",
       "deckKeys": [
-        "essential-spanish"
+        "essential-spanish",
+        "essential-chinese"
       ]
     }
   ],
@@ -145,6 +146,11 @@
       "key": "country-silhouettes",
       "version": 1,
       "file": "decks/country-silhouettes.json"
+    },
+    {
+      "key": "essential-chinese",
+      "version": 1,
+      "file": "decks/essential-chinese.json"
     },
     {
       "key": "essential-spanish",

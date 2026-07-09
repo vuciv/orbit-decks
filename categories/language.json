@@ -4,6 +4,19 @@
   "name": "Language",
   "decks": [
     {
+      "key": "essential-chinese",
+      "name": "Essential Chinese",
+      "description": "Your first steps in Mandarin: the complete 150-word HSK 1 vocabulary plus the survival phrases you need on day one, from greetings to haggling. Simplified characters on the front; pinyin and meaning on the back.",
+      "cardCount": 174,
+      "topics": [
+        "chinese",
+        "mandarin",
+        "language",
+        "hsk"
+      ],
+      "coverImage": "https://flagcdn.com/w640/cn.png"
+    },
+    {
       "key": "essential-spanish",
       "name": "Essential Spanish",
       "description": "Your first weeks of Spanish, front-loaded for payoff: survival phrases you can use on day one, then the highest-frequency vocabulary (numbers, time words, question words, the 25 most useful verbs, family, food, places) trained in both directions, plus the ser, estar, and tener conjugations. Latin American Spanish by default.",
