@@ -29,6 +29,7 @@ const MODELS = ['basic', 'basic_reversed', 'cloze', 'typed', 'sequence', 'occlus
 const KEY_RE = /^[a-z0-9][a-z0-9-]*$/;
 // Root order is UI display order; unknown categories append alphabetically.
 const CATEGORY_ORDER = [
+  'Language',
   'Geography',
   'Pop Culture',
   'Space',

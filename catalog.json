@@ -2,6 +2,13 @@
   "schemaVersion": 2,
   "categories": [
     {
+      "key": "language",
+      "name": "Language",
+      "deckCount": 1,
+      "rev": "9314e0a15fe5",
+      "file": "categories/language.json"
+    },
+    {
       "key": "geography",
       "name": "Geography",
       "deckCount": 4,
@@ -39,8 +46,8 @@
     {
       "key": "chess",
       "name": "Chess",
-      "deckCount": 1,
-      "rev": "62bb4698b04d",
+      "deckCount": 2,
+      "rev": "3d1099f29739",
       "file": "categories/chess.json"
     },
     {
@@ -110,7 +117,16 @@
       "title": "Chess openings",
       "description": "Book moves, plans, and traps, one opening at a time.",
       "deckKeys": [
+        "london-system",
         "sicilian-defense"
+      ]
+    },
+    {
+      "key": "learn-a-language",
+      "title": "Learn a language",
+      "description": "The essential first thousand cards, with speech on every card.",
+      "deckKeys": [
+        "essential-spanish"
       ]
     }
   ],
@@ -129,6 +145,11 @@
       "key": "country-silhouettes",
       "version": 1,
       "file": "decks/country-silhouettes.json"
+    },
+    {
+      "key": "essential-spanish",
+      "version": 1,
+      "file": "decks/essential-spanish.json"
     },
     {
       "key": "famous-paintings",
@@ -151,6 +172,11 @@
       "file": "decks/kanto-pokedex.json"
     },
     {
+      "key": "london-system",
+      "version": 1,
+      "file": "decks/london-system.json"
+    },
+    {
       "key": "morse-code",
       "version": 1,
       "file": "decks/morse-code.json"
@@ -167,7 +193,7 @@
     },
     {
       "key": "sicilian-defense",
-      "version": 1,
+      "version": 2,
       "file": "decks/sicilian-defense.json"
     },
     {

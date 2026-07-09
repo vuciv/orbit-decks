@@ -1,0 +1,2537 @@
+{
+  "key": "essential-spanish",
+  "version": 1,
+  "name": "Essential Spanish",
+  "description": "Your first weeks of Spanish, front-loaded for payoff: survival phrases you can use on day one, then the highest-frequency vocabulary (numbers, time words, question words, the 25 most useful verbs, family, food, places) trained in both directions, plus the ser, estar, and tener conjugations. Latin American Spanish by default.",
+  "category": "Language",
+  "topics": [
+    "spanish",
+    "language",
+    "vocabulary"
+  ],
+  "coverImage": "https://flagcdn.com/w640/es.png",
+  "ttsLang": "es",
+  "notes": [
+    {
+      "key": "hola",
+      "model": "basic",
+      "fields": {
+        "front": "Hola",
+        "back": "Hello",
+        "extra": "Works in any situation, formal or informal, at any hour."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "buenos-dias",
+      "model": "basic",
+      "fields": {
+        "front": "Buenos días",
+        "back": "Good morning",
+        "extra": "Used until about noon. Note the plural: buenos días."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "buenas-tardes",
+      "model": "basic",
+      "fields": {
+        "front": "Buenas tardes",
+        "back": "Good afternoon",
+        "extra": "From noon until it gets dark."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "buenas-noches",
+      "model": "basic",
+      "fields": {
+        "front": "Buenas noches",
+        "back": "Good evening, good night",
+        "extra": "Both a greeting and a farewell after dark."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "adios",
+      "model": "basic",
+      "fields": {
+        "front": "Adiós",
+        "back": "Goodbye",
+        "extra": "Also common: hasta luego (see you later), hasta mañana (see you tomorrow), nos vemos (see you)."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "por-favor",
+      "model": "basic",
+      "fields": {
+        "front": "Por favor",
+        "back": "Please",
+        "extra": "Attach it to any request: dos tacos, por favor."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "gracias",
+      "model": "basic",
+      "fields": {
+        "front": "Gracias",
+        "back": "Thank you",
+        "extra": "Muchas gracias = thank you very much. The usual reply is de nada."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "de-nada",
+      "model": "basic",
+      "fields": {
+        "front": "De nada",
+        "back": "You're welcome",
+        "extra": "Literally, it is nothing. Also common in Latin America: con gusto (with pleasure)."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "si-por-favor",
+      "model": "basic",
+      "fields": {
+        "front": "Sí, por favor",
+        "back": "Yes, please",
+        "extra": "Sí (yes) carries a written accent; si without it means if."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "no-gracias",
+      "model": "basic",
+      "fields": {
+        "front": "No, gracias",
+        "back": "No, thank you",
+        "extra": "The polite way to refuse anything, anywhere."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "perdon",
+      "model": "basic",
+      "fields": {
+        "front": "Perdón",
+        "back": "Excuse me, sorry",
+        "extra": "For getting attention, light apologies, or passing through a crowd. Disculpe is a slightly more formal alternative."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "lo-siento",
+      "model": "basic",
+      "fields": {
+        "front": "Lo siento",
+        "back": "I'm sorry",
+        "extra": "For sympathy and real apologies; for small bumps and interruptions, perdón is enough."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "mucho-gusto",
+      "model": "basic",
+      "fields": {
+        "front": "Mucho gusto",
+        "back": "Nice to meet you",
+        "extra": "Said when meeting someone. The reply is igualmente (likewise)."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "me-llamo",
+      "model": "basic",
+      "fields": {
+        "front": "Me llamo...",
+        "back": "My name is...",
+        "extra": "Literally, I call myself: me llamo Ana. Also simply: soy Ana."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "como-te-llamas",
+      "model": "basic",
+      "fields": {
+        "front": "¿Cómo te llamas?",
+        "back": "What is your name?",
+        "extra": "Informal tú form. Formal: ¿cómo se llama usted?"
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "como-estas",
+      "model": "basic",
+      "fields": {
+        "front": "¿Cómo estás?",
+        "back": "How are you?",
+        "extra": "Informal. Formal: ¿cómo está usted? A typical reply: bien, gracias, ¿y tú?"
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "muy-bien-gracias",
+      "model": "basic",
+      "fields": {
+        "front": "Muy bien, gracias",
+        "back": "Very well, thank you",
+        "extra": "Follow with ¿y tú? (informal) or ¿y usted? (formal) to return the question."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "no-entiendo",
+      "model": "basic",
+      "fields": {
+        "front": "No entiendo",
+        "back": "I don't understand",
+        "extra": "Useful follow-ups: ¿puede repetir? (can you repeat?) and más despacio, por favor."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "habla-ingles",
+      "model": "basic",
+      "fields": {
+        "front": "¿Habla inglés?",
+        "back": "Do you speak English?",
+        "extra": "Formal usted form, right for strangers. To a friend: ¿hablas inglés?"
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "puede-repetir",
+      "model": "basic",
+      "fields": {
+        "front": "¿Puede repetir, por favor?",
+        "back": "Can you repeat that, please?",
+        "extra": "Even shorter in conversation: ¿cómo? (what was that?)."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "mas-despacio",
+      "model": "basic",
+      "fields": {
+        "front": "Más despacio, por favor",
+        "back": "Slower, please",
+        "extra": "Literally, more slowly. Deploy the moment a reply comes back too fast."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "como-se-dice",
+      "model": "basic",
+      "fields": {
+        "front": "¿Cómo se dice esto en español?",
+        "back": "How do you say this in Spanish?",
+        "extra": "Swap esto (this) for any English word: ¿cómo se dice ticket en español?"
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "cuanto-cuesta",
+      "model": "basic",
+      "fields": {
+        "front": "¿Cuánto cuesta?",
+        "back": "How much does it cost?",
+        "extra": "For several items: ¿cuánto cuestan? For the total: ¿cuánto es?"
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "quisiera-un-cafe",
+      "model": "basic",
+      "fields": {
+        "front": "Quisiera un café, por favor",
+        "back": "I would like a coffee, please",
+        "extra": "Quisiera is the polite form of quiero (I want). Also very common: me da un café, por favor."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "la-cuenta",
+      "model": "basic",
+      "fields": {
+        "front": "La cuenta, por favor",
+        "back": "The check, please",
+        "extra": "In most of Latin America and Spain the check comes only when you ask for it."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "donde-esta-el-bano",
+      "model": "basic",
+      "fields": {
+        "front": "¿Dónde está el baño?",
+        "back": "Where is the bathroom?",
+        "extra": "The single most useful question in the language. Replies often include a la derecha (on the right) or a la izquierda (on the left)."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "como-llego-al-centro",
+      "model": "basic",
+      "fields": {
+        "front": "¿Cómo llego al centro?",
+        "back": "How do I get downtown?",
+        "extra": "Swap al centro for anywhere: ¿cómo llego al aeropuerto? Note that a + el contracts to al."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "ayuda",
+      "model": "basic",
+      "fields": {
+        "front": "¡Ayuda!",
+        "back": "Help!",
+        "extra": "In a real emergency also ¡socorro! Calmer version: ¿me puede ayudar? (can you help me?)."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "necesito-un-medico",
+      "model": "basic",
+      "fields": {
+        "front": "Necesito un médico",
+        "back": "I need a doctor",
+        "extra": "Also: es una emergencia (it is an emergency), llame a una ambulancia (call an ambulance)."
+      },
+      "tags": [
+        "es::phrases"
+      ]
+    },
+    {
+      "key": "uno",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "uno",
+        "back": "one",
+        "extra": "Shortens to un before a masculine noun (un café); the feminine is una (una mesa)."
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "dos",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "dos",
+        "back": "two"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "tres",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "tres",
+        "back": "three"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "cuatro",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "cuatro",
+        "back": "four"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "cinco",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "cinco",
+        "back": "five"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "seis",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "seis",
+        "back": "six"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "siete",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "siete",
+        "back": "seven"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "ocho",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "ocho",
+        "back": "eight"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "nueve",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "nueve",
+        "back": "nine"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "diez",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "diez",
+        "back": "ten"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "once",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "once",
+        "back": "eleven"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "doce",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "doce",
+        "back": "twelve"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "trece",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "trece",
+        "back": "thirteen"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "catorce",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "catorce",
+        "back": "fourteen"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "quince",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "quince",
+        "back": "fifteen"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "dieciseis",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "dieciséis",
+        "back": "sixteen",
+        "extra": "16 to 19 are single words: dieciséis, diecisiete, dieciocho, diecinueve. Only dieciséis has a written accent."
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "diecisiete",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "diecisiete",
+        "back": "seventeen"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "dieciocho",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "dieciocho",
+        "back": "eighteen"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "diecinueve",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "diecinueve",
+        "back": "nineteen"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "veinte",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "veinte",
+        "back": "twenty",
+        "extra": "21 to 29 are single words: veintiuno, veintidós, veintitrés."
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "treinta",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "treinta",
+        "back": "thirty",
+        "extra": "From 31 on, join with y: treinta y uno, cuarenta y dos."
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "cuarenta",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "cuarenta",
+        "back": "forty"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "cincuenta",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "cincuenta",
+        "back": "fifty"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "sesenta",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "sesenta",
+        "back": "sixty"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "setenta",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "setenta",
+        "back": "seventy"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "ochenta",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "ochenta",
+        "back": "eighty"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "noventa",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "noventa",
+        "back": "ninety"
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "cien",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "cien",
+        "back": "one hundred",
+        "extra": "Exactly 100 is cien; 101 is ciento uno; 200 is doscientos; 1000 is mil."
+      },
+      "tags": [
+        "es::numbers"
+      ]
+    },
+    {
+      "key": "lunes",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "lunes",
+        "back": "Monday",
+        "extra": "Days are masculine and never capitalized. El lunes = on Monday; los lunes = every Monday."
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "martes",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "martes",
+        "back": "Tuesday"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "miercoles",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "miércoles",
+        "back": "Wednesday"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "jueves",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "jueves",
+        "back": "Thursday"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "viernes",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "viernes",
+        "back": "Friday"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "sabado",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "sábado",
+        "back": "Saturday",
+        "extra": "El fin de semana = the weekend."
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "domingo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "domingo",
+        "back": "Sunday"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "enero",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "enero",
+        "back": "January",
+        "extra": "Months are masculine and never capitalized: en enero = in January."
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "febrero",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "febrero",
+        "back": "February"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "marzo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "marzo",
+        "back": "March"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "abril",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "abril",
+        "back": "April"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "mayo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "mayo",
+        "back": "May"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "junio",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "junio",
+        "back": "June"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "julio",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "julio",
+        "back": "July"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "agosto",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "agosto",
+        "back": "August"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "septiembre",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "septiembre",
+        "back": "September"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "octubre",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "octubre",
+        "back": "October"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "noviembre",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "noviembre",
+        "back": "November"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "diciembre",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "diciembre",
+        "back": "December"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "hoy",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "hoy",
+        "back": "today"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "manana",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "mañana",
+        "back": "tomorrow",
+        "extra": "Also the morning: la mañana. Mañana por la mañana = tomorrow morning."
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "ayer",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "ayer",
+        "back": "yesterday"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "ahora",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "ahora",
+        "back": "now",
+        "extra": "In Mexico, ahorita can mean right now or in a little while; context decides."
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "siempre",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "siempre",
+        "back": "always"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "nunca",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "nunca",
+        "back": "never"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "el-dia",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el día",
+        "back": "the day",
+        "extra": "Masculine despite ending in -a: buenos días, todos los días (every day)."
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "la-semana",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la semana",
+        "back": "the week",
+        "extra": "La semana que viene = next week; la semana pasada = last week."
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "el-mes",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el mes",
+        "back": "the month"
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "el-ano",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el año",
+        "back": "the year",
+        "extra": "Age uses tener + años: tengo treinta años, I am thirty."
+      },
+      "tags": [
+        "es::time"
+      ]
+    },
+    {
+      "key": "que",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "¿qué?",
+        "back": "what?",
+        "extra": "¿Qué es esto? What is this?"
+      },
+      "tags": [
+        "es::question-words"
+      ]
+    },
+    {
+      "key": "quien",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "¿quién?",
+        "back": "who?",
+        "extra": "Plural quiénes: ¿quiénes son? Who are they?"
+      },
+      "tags": [
+        "es::question-words"
+      ]
+    },
+    {
+      "key": "donde",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "¿dónde?",
+        "back": "where?",
+        "extra": "¿De dónde eres? Where are you from?"
+      },
+      "tags": [
+        "es::question-words"
+      ]
+    },
+    {
+      "key": "cuando",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "¿cuándo?",
+        "back": "when?",
+        "extra": "Question words carry a written accent: ¿cuándo llegas? When do you arrive?"
+      },
+      "tags": [
+        "es::question-words"
+      ]
+    },
+    {
+      "key": "por-que",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "¿por qué?",
+        "back": "why?",
+        "extra": "Two words with an accent = why; porque (one word) = because."
+      },
+      "tags": [
+        "es::question-words"
+      ]
+    },
+    {
+      "key": "como",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "¿cómo?",
+        "back": "how?",
+        "extra": "On its own, ¿cómo? is a polite What was that?"
+      },
+      "tags": [
+        "es::question-words"
+      ]
+    },
+    {
+      "key": "cuanto",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "¿cuánto?",
+        "back": "how much?",
+        "extra": "How many is ¿cuántos / cuántas?: ¿cuántos años tienes? How old are you?"
+      },
+      "tags": [
+        "es::question-words"
+      ]
+    },
+    {
+      "key": "cual",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "¿cuál?",
+        "back": "which?",
+        "extra": "Also where English uses what: ¿cuál es tu nombre? What is your name?"
+      },
+      "tags": [
+        "es::question-words"
+      ]
+    },
+    {
+      "key": "yo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "yo",
+        "back": "I"
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "tu",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "tú",
+        "back": "you (informal, one person)",
+        "extra": "The accent matters: tú = you, tu = your."
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "usted",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "usted",
+        "back": "you (formal, one person)",
+        "extra": "Takes the same verb forms as él/ella: ¿cómo está usted? Abbreviated Ud."
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "el",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "él",
+        "back": "he",
+        "extra": "The accent matters: él = he, el = the."
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "ella",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "ella",
+        "back": "she"
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "nosotros",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "nosotros",
+        "back": "we",
+        "extra": "An all-female group says nosotras."
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "ellos",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "ellos",
+        "back": "they",
+        "extra": "An all-female group is ellas."
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "ustedes",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "ustedes",
+        "back": "you (plural)",
+        "extra": "In Latin America, ustedes is the only you-plural. Spain also uses the informal vosotros."
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "ser",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "ser",
+        "back": "to be (identity, traits)",
+        "extra": "Soy de Estados Unidos. I am from the United States."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "estar",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "estar",
+        "back": "to be (states, location)",
+        "extra": "Estoy cansado. I am tired. El hotel está aquí. The hotel is here."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "tener",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "tener",
+        "back": "to have",
+        "extra": "Tengo dos hermanos. I have two brothers. Age too: tengo treinta años."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "hacer",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "hacer",
+        "back": "to do, to make",
+        "extra": "¿Qué haces? What are you doing? Weather too: hace calor, it is hot."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "ir",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "ir",
+        "back": "to go",
+        "extra": "Voy al mercado. I am going to the market. Ir a + infinitive is the easy future: voy a comer."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "poder",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "poder",
+        "back": "to be able to, can",
+        "extra": "¿Puedo pagar con tarjeta? Can I pay by card?"
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "querer",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "querer",
+        "back": "to want",
+        "extra": "Quiero agua. I want water. The polite form is quisiera."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "decir",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "decir",
+        "back": "to say, to tell",
+        "extra": "¿Cómo se dice? How do you say it?"
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "hablar",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "hablar",
+        "back": "to speak",
+        "extra": "Hablo un poco de español. I speak a little Spanish."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "comer",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "comer",
+        "back": "to eat",
+        "extra": "¿Dónde podemos comer? Where can we eat?"
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "beber",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "beber",
+        "back": "to drink",
+        "extra": "In Latin America, tomar is more common: ¿quieres tomar algo? Do you want something to drink?"
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "ver",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "ver",
+        "back": "to see",
+        "extra": "Nos vemos. See you (literally, we see each other)."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "dar",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "dar",
+        "back": "to give",
+        "extra": "A common polite request in Latin America: ¿me da un café, por favor?"
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "saber",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "saber",
+        "back": "to know (facts, how to)",
+        "extra": "No sé. I don't know. Sé nadar. I know how to swim."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "conocer",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "conocer",
+        "back": "to know (people, places)",
+        "extra": "Conozco a María, pero no conozco la ciudad. I know María, but I don't know the city."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "venir",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "venir",
+        "back": "to come",
+        "extra": "¿Vienes conmigo? Are you coming with me?"
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "llegar",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "llegar",
+        "back": "to arrive",
+        "extra": "¿A qué hora llega el bus? What time does the bus arrive?"
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "salir",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "salir",
+        "back": "to leave, to go out",
+        "extra": "El tren sale a las ocho. The train leaves at eight."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "vivir",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "vivir",
+        "back": "to live",
+        "extra": "¿Dónde vives? Where do you live? Vivo en Chicago."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "trabajar",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "trabajar",
+        "back": "to work",
+        "extra": "Trabajo mañana. I work tomorrow."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "comprar",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "comprar",
+        "back": "to buy",
+        "extra": "Quiero comprar una tarjeta SIM. I want to buy a SIM card."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "pagar",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "pagar",
+        "back": "to pay",
+        "extra": "¿Dónde pago? Where do I pay? Pagar en efectivo = to pay in cash."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "necesitar",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "necesitar",
+        "back": "to need",
+        "extra": "Necesito ayuda. I need help."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "gustar",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "gustar",
+        "back": "to like (to please)",
+        "extra": "Me gusta el café. I like coffee (literally, coffee pleases me). Plural: me gustan los tacos."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "dormir",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "dormir",
+        "back": "to sleep",
+        "extra": "Necesito dormir. I need to sleep."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "la-familia",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la familia",
+        "back": "the family"
+      },
+      "tags": [
+        "es::family"
+      ]
+    },
+    {
+      "key": "la-madre",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la madre",
+        "back": "the mother",
+        "extra": "The everyday word is mamá: mi mamá."
+      },
+      "tags": [
+        "es::family"
+      ]
+    },
+    {
+      "key": "el-padre",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el padre",
+        "back": "the father",
+        "extra": "Everyday word: papá. Los padres = the parents; relatives are los parientes, a classic false friend."
+      },
+      "tags": [
+        "es::family"
+      ]
+    },
+    {
+      "key": "el-hermano",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el hermano",
+        "back": "the brother",
+        "extra": "Los hermanos = brothers, or siblings in general."
+      },
+      "tags": [
+        "es::family"
+      ]
+    },
+    {
+      "key": "la-hermana",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la hermana",
+        "back": "the sister"
+      },
+      "tags": [
+        "es::family"
+      ]
+    },
+    {
+      "key": "el-hijo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el hijo",
+        "back": "the son",
+        "extra": "Los hijos = children (sons and daughters)."
+      },
+      "tags": [
+        "es::family"
+      ]
+    },
+    {
+      "key": "la-hija",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la hija",
+        "back": "the daughter"
+      },
+      "tags": [
+        "es::family"
+      ]
+    },
+    {
+      "key": "el-esposo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el esposo",
+        "back": "the husband",
+        "extra": "La esposa = the wife. Also common: el marido (husband) and, in Spain, mi mujer (my wife)."
+      },
+      "tags": [
+        "es::family"
+      ]
+    },
+    {
+      "key": "el-abuelo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el abuelo",
+        "back": "the grandfather",
+        "extra": "Los abuelos = the grandparents."
+      },
+      "tags": [
+        "es::family"
+      ]
+    },
+    {
+      "key": "la-abuela",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la abuela",
+        "back": "the grandmother"
+      },
+      "tags": [
+        "es::family"
+      ]
+    },
+    {
+      "key": "el-amigo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el amigo",
+        "back": "the friend",
+        "extra": "La amiga = female friend. Mi mejor amigo = my best friend."
+      },
+      "tags": [
+        "es::family"
+      ]
+    },
+    {
+      "key": "la-comida",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la comida",
+        "back": "the food",
+        "extra": "Also the meal; in Mexico, la comida is the main midday meal."
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
+      "key": "el-agua",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el agua",
+        "back": "the water",
+        "extra": "Feminine noun that takes el in the singular: el agua fría, las aguas."
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
+      "key": "el-pan",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el pan",
+        "back": "the bread"
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
+      "key": "el-cafe",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el café",
+        "back": "the coffee",
+        "extra": "Un café con leche, por favor. A coffee with milk, please."
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
+      "key": "la-leche",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la leche",
+        "back": "the milk"
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
+      "key": "la-cerveza",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la cerveza",
+        "back": "the beer",
+        "extra": "Una cerveza, por favor."
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
+      "key": "el-vino",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el vino",
+        "back": "the wine",
+        "extra": "Red wine is vino tinto (not rojo); white is vino blanco."
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
+      "key": "el-jugo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el jugo",
+        "back": "the juice",
+        "extra": "Latin America says jugo; Spain says el zumo. Un jugo de naranja, an orange juice."
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
+      "key": "la-carne",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la carne",
+        "back": "the meat",
+        "extra": "Beef is carne de res in much of Latin America."
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
+      "key": "el-pollo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el pollo",
+        "back": "the chicken"
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
+      "key": "el-pescado",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el pescado",
+        "back": "the fish",
+        "extra": "Fish on a plate is pescado; the live animal is el pez."
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
+      "key": "el-arroz",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el arroz",
+        "back": "the rice"
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
+      "key": "el-huevo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el huevo",
+        "back": "the egg"
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
+      "key": "el-queso",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el queso",
+        "back": "the cheese"
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
+      "key": "la-fruta",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la fruta",
+        "back": "the fruit"
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
+      "key": "el-desayuno",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el desayuno",
+        "back": "the breakfast",
+        "extra": "Desayunar = to have breakfast."
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
+      "key": "el-almuerzo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el almuerzo",
+        "back": "the lunch",
+        "extra": "Lunch in Latin America; Spain usually calls the midday meal la comida."
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
+      "key": "la-cena",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la cena",
+        "back": "the dinner",
+        "extra": "Cenar = to have dinner."
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
+      "key": "la-casa",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la casa",
+        "back": "the house",
+        "extra": "En casa = at home: estoy en casa."
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "el-bano",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el baño",
+        "back": "the bathroom",
+        "extra": "In Spain public restrooms are often los servicios or el aseo."
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "la-calle",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la calle",
+        "back": "the street"
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "la-ciudad",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la ciudad",
+        "back": "the city",
+        "extra": "Nouns ending in -dad are feminine: la ciudad, la universidad."
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "el-hotel",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el hotel",
+        "back": "the hotel"
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "el-aeropuerto",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el aeropuerto",
+        "back": "the airport"
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "el-restaurante",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el restaurante",
+        "back": "the restaurant"
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "la-tienda",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la tienda",
+        "back": "the store, the shop"
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "el-mercado",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el mercado",
+        "back": "the market"
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "el-banco",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el banco",
+        "back": "the bank",
+        "extra": "Also a park bench."
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "el-hospital",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el hospital",
+        "back": "the hospital"
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "la-playa",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la playa",
+        "back": "the beach"
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "el-dinero",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el dinero",
+        "back": "the money",
+        "extra": "En efectivo = in cash; la tarjeta = the card."
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "el-coche",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el coche",
+        "back": "the car",
+        "extra": "Latin America commonly says el carro (Mexico also el auto); Spain says el coche."
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "el-telefono",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el teléfono",
+        "back": "the telephone",
+        "extra": "Cell phone: el celular in Latin America, el móvil in Spain."
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "el-pasaporte",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el pasaporte",
+        "back": "the passport"
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "la-salida",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la salida",
+        "back": "the exit",
+        "extra": "From salir (to leave). At the airport, la puerta de salida is the departure gate."
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "el-exito",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "el éxito",
+        "back": "the success",
+        "extra": "False friend: éxito means success, never exit. The exit is la salida."
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    },
+    {
+      "key": "bueno",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "bueno",
+        "back": "good",
+        "extra": "Feminine buena. Shortens before a masculine noun: un buen día."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "malo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "malo",
+        "back": "bad",
+        "extra": "Feminine mala. Shortens to mal: mal tiempo, bad weather."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "grande",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "grande",
+        "back": "big, large",
+        "extra": "Same form for both genders. Before a noun it shortens and shifts meaning: un gran hotel = a great hotel."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "pequeno",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "pequeño",
+        "back": "small",
+        "extra": "Feminine pequeña. Latin America often says chico/chica."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "nuevo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "nuevo",
+        "back": "new",
+        "extra": "Feminine nueva."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "viejo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "viejo",
+        "back": "old",
+        "extra": "Feminine vieja. For people, mayor is more polite."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "caliente",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "caliente",
+        "back": "hot",
+        "extra": "Same form both genders: agua caliente. To say you feel hot, use tengo calor (estoy caliente means aroused; avoid it)."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "frio",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "frío",
+        "back": "cold",
+        "extra": "Feminine fría. Weather: hace frío. Feeling cold: tengo frío."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "caro",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "caro",
+        "back": "expensive",
+        "extra": "Feminine cara. Es demasiado caro. It is too expensive."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "barato",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "barato",
+        "back": "cheap",
+        "extra": "Feminine barata. ¿Tiene algo más barato? Do you have anything cheaper?"
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "bonito",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "bonito",
+        "back": "pretty, nice",
+        "extra": "Feminine bonita. ¡Qué bonito! How nice!"
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "feliz",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "feliz",
+        "back": "happy",
+        "extra": "Same form both genders. ¡Feliz cumpleaños! Happy birthday!"
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "enfermo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "enfermo",
+        "back": "sick",
+        "extra": "Feminine enferma. Estoy enfermo. I am sick (with estar)."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "facil",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "fácil",
+        "back": "easy",
+        "extra": "Same form both genders; plural fáciles."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "dificil",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "difícil",
+        "back": "difficult",
+        "extra": "Same form both genders."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "embarazada",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "embarazada",
+        "back": "pregnant",
+        "extra": "False friend: embarazada means pregnant, not embarrassed. Embarrassed is avergonzado/avergonzada, or say qué vergüenza."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "actual",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "actual",
+        "back": "current",
+        "extra": "False friend: actual means current, not actual. El presidente actual = the current president. For real/actual, use verdadero."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "rojo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "rojo",
+        "back": "red",
+        "extra": "Feminine roja."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "azul",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "azul",
+        "back": "blue",
+        "extra": "Same form both genders; plural azules."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "verde",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "verde",
+        "back": "green",
+        "extra": "Same form both genders."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "amarillo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "amarillo",
+        "back": "yellow",
+        "extra": "Feminine amarilla."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "negro",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "negro",
+        "back": "black",
+        "extra": "Feminine negra."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "blanco",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "blanco",
+        "back": "white",
+        "extra": "Feminine blanca."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "gris",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "gris",
+        "back": "gray",
+        "extra": "Same form both genders."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "naranja",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "naranja",
+        "back": "orange (color)",
+        "extra": "Also the fruit: la naranja. As a color it does not change form."
+      },
+      "tags": [
+        "es::adjectives"
+      ]
+    },
+    {
+      "key": "y",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "y",
+        "back": "and",
+        "extra": "Becomes e before an i sound: padre e hijo."
+      },
+      "tags": [
+        "es::connectors"
+      ]
+    },
+    {
+      "key": "o",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "o",
+        "back": "or",
+        "extra": "Becomes u before an o sound: siete u ocho."
+      },
+      "tags": [
+        "es::connectors"
+      ]
+    },
+    {
+      "key": "pero",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "pero",
+        "back": "but",
+        "extra": "Quiero ir, pero no puedo. I want to go, but I can't."
+      },
+      "tags": [
+        "es::connectors"
+      ]
+    },
+    {
+      "key": "porque",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "porque",
+        "back": "because",
+        "extra": "One word, no accent = because. Two words with an accent, ¿por qué?, = why."
+      },
+      "tags": [
+        "es::connectors"
+      ]
+    },
+    {
+      "key": "si",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "si",
+        "back": "if",
+        "extra": "No accent = if; sí with an accent = yes. Si puedes, ven. If you can, come."
+      },
+      "tags": [
+        "es::connectors"
+      ]
+    },
+    {
+      "key": "tambien",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "también",
+        "back": "also, too",
+        "extra": "Yo también = me too. The negative is tampoco: yo tampoco, me neither."
+      },
+      "tags": [
+        "es::connectors"
+      ]
+    },
+    {
+      "key": "muy",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "muy",
+        "back": "very",
+        "extra": "Muy bien, muy caro."
+      },
+      "tags": [
+        "es::connectors"
+      ]
+    },
+    {
+      "key": "mas",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "más",
+        "back": "more",
+        "extra": "Más grande = bigger; el más grande = the biggest. The opposite is menos (less)."
+      },
+      "tags": [
+        "es::connectors"
+      ]
+    },
+    {
+      "key": "con",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "con",
+        "back": "with",
+        "extra": "Café con leche. With me and with you are irregular: conmigo, contigo."
+      },
+      "tags": [
+        "es::connectors"
+      ]
+    },
+    {
+      "key": "sin",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "sin",
+        "back": "without",
+        "extra": "Sin azúcar, por favor. Without sugar, please."
+      },
+      "tags": [
+        "es::connectors"
+      ]
+    },
+    {
+      "key": "para",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "para",
+        "back": "for, in order to",
+        "extra": "Para mí = for me. Compare por: gracias por todo, thanks for everything."
+      },
+      "tags": [
+        "es::connectors"
+      ]
+    },
+    {
+      "key": "todo",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "todo",
+        "back": "all, everything",
+        "extra": "Todo el día = all day; todos los días = every day."
+      },
+      "tags": [
+        "es::connectors"
+      ]
+    },
+    {
+      "key": "ser-present",
+      "model": "cloze",
+      "fields": {
+        "text": "ser (to be, permanent): yo {{c1::soy}}, tú {{c2::eres}}, él/ella/usted {{c3::es}}, nosotros {{c4::somos}}, ellos/ustedes {{c5::son}}",
+        "extra": "Ser for identity and traits; estar for states and locations. Spain adds an informal you-plural: vosotros sois."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "estar-present",
+      "model": "cloze",
+      "fields": {
+        "text": "estar (to be, states and location): yo {{c1::estoy}}, tú {{c2::estás}}, él/ella/usted {{c3::está}}, nosotros {{c4::estamos}}, ellos/ustedes {{c5::están}}",
+        "extra": "Estoy bien; estamos en el hotel. Spain adds vosotros estáis."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "tener-present",
+      "model": "cloze",
+      "fields": {
+        "text": "tener (to have): yo {{c1::tengo}}, tú {{c2::tienes}}, él/ella/usted {{c3::tiene}}, nosotros {{c4::tenemos}}, ellos/ustedes {{c5::tienen}}",
+        "extra": "Also for age and sensations: tengo treinta años, tengo hambre, tengo frío. Spain adds vosotros tenéis."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "ser-vs-estar",
+      "model": "cloze",
+      "fields": {
+        "text": "To be: use {{c1::ser}} for identity, origin, and traits (soy de Chicago, es alta); use {{c2::estar}} for feelings, states, and location (estoy cansado, el baño está allí)",
+        "extra": "A famous pair: es aburrido = he is boring; está aburrido = he is bored."
+      },
+      "tags": [
+        "es::verbs"
+      ]
+    },
+    {
+      "key": "noun-gender",
+      "model": "cloze",
+      "fields": {
+        "text": "Gender rules of thumb: nouns ending in -o are usually {{c1::masculine}} (el vino, el mercado); nouns ending in -a are usually {{c2::feminine}} (la casa, la playa); nouns ending in -ción or -dad are always {{c3::feminine}} (la estación, la ciudad)",
+        "extra": "Classic exceptions: el día, el mapa, and el problema are masculine; la mano is feminine."
+      },
+      "tags": [
+        "es::nouns"
+      ]
+    }
+  ]
+}

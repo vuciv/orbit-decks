@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "key": "language",
+  "name": "Language",
+  "decks": [
+    {
+      "key": "essential-spanish",
+      "name": "Essential Spanish",
+      "description": "Your first weeks of Spanish, front-loaded for payoff: survival phrases you can use on day one, then the highest-frequency vocabulary (numbers, time words, question words, the 25 most useful verbs, family, food, places) trained in both directions, plus the ser, estar, and tener conjugations. Latin American Spanish by default.",
+      "cardCount": 413,
+      "topics": [
+        "spanish",
+        "language",
+        "vocabulary"
+      ],
+      "coverImage": "https://flagcdn.com/w640/es.png"
+    }
+  ]
+}

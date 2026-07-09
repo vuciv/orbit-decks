@@ -4,10 +4,22 @@
   "name": "Chess",
   "decks": [
     {
+      "key": "london-system",
+      "name": "The London System",
+      "description": "Learn to play the London System as White, one position at a time: the core setup against ...d5, the anti-fianchetto setup, the right answers to ...Qb6 and the poisoned b2-pawn, and classic attacking patterns like the Greek gift on h7. Every card shows a position; you supply the book move.",
+      "cardCount": 45,
+      "topics": [
+        "chess",
+        "openings",
+        "london-system"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fpp3ppp%2F2nbpn2%2F2pp4%2F3P4%2F2PBPNB1%2FPP1N1PPP%2FR2QK2R%20b%20KQ%20-%205%208&color=white&theme=brown&piece=cburnett"
+    },
+    {
       "key": "sicilian-defense",
       "name": "The Sicilian Defense",
-      "description": "A club player's working map of the Sicilian: why 1...c5 works, the Open Sicilian trunk, the Najdorf, Dragon, Sveshnikov, and Classical variations, and how to meet the Alapin and Rossolimo anti-Sicilians. Lines, tabiyas, and the plans behind them.",
-      "cardCount": 105,
+      "description": "A club player's working map of the Sicilian, one position at a time: the Open Sicilian trunk move by move, the Najdorf, Dragon, Sveshnikov, and Classical variations, and how to meet the Alapin and Rossolimo anti-Sicilians. Every card shows a board from Black's side and asks for the best move and the plan behind it.",
+      "cardCount": 54,
       "topics": [
         "chess",
         "openings",

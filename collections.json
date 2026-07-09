@@ -28,5 +28,11 @@
     "title": "Chess openings",
     "description": "Book moves, plans, and traps, one opening at a time.",
     "deckKeys": ["london-system", "sicilian-defense"]
+  },
+  {
+    "key": "learn-a-language",
+    "title": "Learn a language",
+    "description": "The essential first thousand cards, with speech on every card.",
+    "deckKeys": ["essential-spanish", "essential-chinese"]
   }
 ]
