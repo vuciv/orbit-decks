@@ -179,7 +179,7 @@
     },
     {
       "key": "london-system",
-      "version": 1,
+      "version": 2,
       "file": "decks/london-system.json"
     },
     {
@@ -199,7 +199,7 @@
     },
     {
       "key": "sicilian-defense",
-      "version": 2,
+      "version": 3,
       "file": "decks/sicilian-defense.json"
     },
     {

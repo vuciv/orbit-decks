@@ -25,7 +25,8 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const errors = [];
 const fail = (msg) => errors.push(msg);
 
-const MODELS = ['basic', 'basic_reversed', 'cloze', 'typed', 'sequence', 'occlusion'];
+const MODELS = ['basic', 'basic_reversed', 'cloze', 'typed', 'sequence', 'occlusion', 'chess'];
+const UCI_RE = /^[a-h][1-8][a-h][1-8][qrbn]?$/;
 const KEY_RE = /^[a-z0-9][a-z0-9-]*$/;
 // Root order is UI display order; unknown categories append alphabetically.
 const CATEGORY_ORDER = [
@@ -75,6 +76,8 @@ function cardCountForNote(note) {
       return note.fields.items.length;
     case 'occlusion':
       return note.fields.masks.length;
+    case 'chess':
+      return 1;
     default:
       return 0;
   }
@@ -110,6 +113,22 @@ function validateFields(where, model, f) {
         fail(`${where}: contextWindow must be a number >= 0`);
       }
       break;
+    case 'chess': {
+      const fenBoard = typeof f.fen === 'string' ? f.fen.trim().split(/\s+/)[0] : '';
+      if (!fenBoard || fenBoard.split('/').length !== 8) fail(`${where}: bad fen`);
+      if (!isStr(f.answer)) fail(`${where}: needs answer (SAN)`);
+      if (typeof f.answerUci !== 'string' || !UCI_RE.test(f.answerUci)) {
+        fail(`${where}: answerUci must be UCI like c1f4`);
+      }
+      if (f.orientation !== 'white' && f.orientation !== 'black') {
+        fail(`${where}: orientation must be white or black`);
+      }
+      if (f.lastMove !== undefined && (typeof f.lastMove !== 'string' || !UCI_RE.test(f.lastMove))) {
+        fail(`${where}: bad lastMove`);
+      }
+      if (!optStr(f.prompt) || !optStr(f.extra)) fail(`${where}: bad prompt/extra`);
+      break;
+    }
     case 'occlusion':
       if (!isStr(f.imageUri) || !f.imageUri.startsWith('https://')) {
         fail(`${where}: imageUri must be an https URL`);

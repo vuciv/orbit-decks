@@ -1,6 +1,6 @@
 {
   "key": "sicilian-defense",
-  "version": 2,
+  "version": 3,
   "name": "The Sicilian Defense",
   "description": "A club player's working map of the Sicilian, one position at a time: the Open Sicilian trunk move by move, the Najdorf, Dragon, Sveshnikov, and Classical variations, and how to meet the Alapin and Rossolimo anti-Sicilians. Every card shows a board from Black's side and asks for the best move and the plan behind it.",
   "category": "Chess",
@@ -14,12 +14,15 @@
   "notes": [
     {
       "key": "sicilian-answer-to-e4",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "White opens 1. e4. Which pawn move begins the Sicilian Defense?",
-        "back": "c5",
-        "extra": "1...c5 fights for d4 from the wing and unbalances the position immediately, the most combative reply to 1. e4.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpppppppp%2F8%2F8%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20b%20KQkq%20-%200%201&color=black&theme=brown&piece=cburnett&lastMove=e2e4"
+        "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "lastMove": "e2e4",
+        "prompt": "White opens 1. e4. Which pawn move begins the Sicilian Defense?",
+        "extra": "1...c5 fights for d4 from the wing and unbalances the position immediately, the most combative reply to 1. e4."
       },
       "tags": [
         "chess::variation"
@@ -53,12 +56,15 @@
     },
     {
       "key": "second-move-d6",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "You are Black heading for a Najdorf or Dragon. White plays 2. Nf3. What do you play?",
-        "back": "d6",
-        "extra": "2...d6 controls e5 so a later ...Nf6 cannot be chased by e4-e5, and keeps both 5...a6 (Najdorf) and 5...g6 (Dragon) available.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F8%2F2p5%2F4P3%2F5N2%2FPPPP1PPP%2FRNBQKB1R%20b%20KQkq%20-%201%202&color=black&theme=brown&piece=cburnett&lastMove=g1f3"
+        "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black heading for a Najdorf or Dragon. White plays 2. Nf3. What do you play?",
+        "extra": "2...d6 controls e5 so a later ...Nf6 cannot be chased by e4-e5, and keeps both 5...a6 (Najdorf) and 5...g6 (Dragon) available."
       },
       "tags": [
         "chess::variation"
@@ -66,12 +72,15 @@
     },
     {
       "key": "second-move-nc6",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "You are Black heading for a Sveshnikov or Classical. White plays 2. Nf3. What do you play?",
-        "back": "Nc6",
-        "extra": "2...Nc6 develops the knight to its best square and keeps ...e5 ideas in reserve. It is the move order that unlocks the Sveshnikov, at the cost of allowing the Rossolimo 3. Bb5.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F8%2F2p5%2F4P3%2F5N2%2FPPPP1PPP%2FRNBQKB1R%20b%20KQkq%20-%201%202&color=black&theme=brown&piece=cburnett&lastMove=g1f3"
+        "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black heading for a Sveshnikov or Classical. White plays 2. Nf3. What do you play?",
+        "extra": "2...Nc6 develops the knight to its best square and keeps ...e5 ideas in reserve. It is the move order that unlocks the Sveshnikov, at the cost of allowing the Rossolimo 3. Bb5."
       },
       "tags": [
         "chess::variation"
@@ -79,12 +88,15 @@
     },
     {
       "key": "open-sicilian-capture",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "White offers the Open Sicilian with 3. d4. What is Black's move?",
-        "back": "cxd4",
-        "extra": "Take it: the capture trades a wing pawn for a center pawn and half-opens the c-file. Declining just lets White keep the big center.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F3p4%2F2p5%2F3PP3%2F5N2%2FPPP2PPP%2FRNBQKB1R%20b%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=d2d4"
+        "fen": "rnbqkbnr/pp2pppp/3p4/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3",
+        "answer": "cxd4",
+        "answerUci": "c5d4",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "White offers the Open Sicilian with 3. d4. What is Black's move?",
+        "extra": "Take it: the capture trades a wing pawn for a center pawn and half-opens the c-file. Declining just lets White keep the big center."
       },
       "tags": [
         "chess::plan"
@@ -92,12 +104,15 @@
     },
     {
       "key": "trunk-recapture-nf6",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Open Sicilian: White recaptures with 4. Nxd4. What is the best move?",
-        "back": "Nf6",
-        "extra": "4...Nf6 develops with an attack on e4, forcing 5. Nc3 and denying White the c4 clamp (the Maroczy Bind). Almost every Sicilian runs through this move.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F3p4%2F8%2F3NP3%2F8%2FPPP2PPP%2FRNBQKB1R%20b%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=f3d4"
+        "fen": "rnbqkbnr/pp2pppp/3p4/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 0 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "f3d4",
+        "prompt": "Open Sicilian: White recaptures with 4. Nxd4. What is the best move?",
+        "extra": "4...Nf6 develops with an attack on e4, forcing 5. Nc3 and denying White the c4 clamp (the Maroczy Bind). Almost every Sicilian runs through this move."
       },
       "tags": [
         "chess::plan"
@@ -118,12 +133,15 @@
     },
     {
       "key": "najdorf-signature",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "You are Black and want the Najdorf. What is the signature move here?",
-        "back": "a6",
-        "extra": "5...a6 takes b5 from White's knights and bishop, preparing ...e5 and ...b5. The most popular chess opening position in history.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp2pppp%2F3p1n2%2F8%2F3NP3%2F2N5%2FPPP2PPP%2FR1BQKB1R%20b%20KQkq%20-%202%205&color=black&theme=brown&piece=cburnett&lastMove=b1c3"
+        "fen": "rnbqkb1r/pp2pppp/3p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R b KQkq - 2 5",
+        "answer": "a6",
+        "answerUci": "a7a6",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black and want the Najdorf. What is the signature move here?",
+        "extra": "5...a6 takes b5 from White's knights and bishop, preparing ...e5 and ...b5. The most popular chess opening position in history."
       },
       "tags": [
         "chess::variation"
@@ -144,12 +162,15 @@
     },
     {
       "key": "najdorf-vs-be2",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Najdorf: White plays the quiet 6. Be2 (Opocensky Variation). What is Black's main reply?",
-        "back": "e5",
-        "extra": "With b5 already covered by ...a6, Black grabs the center. The backward d6 pawn is hard to attack, and Black gets active play on e5 and the queenside.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2F1p2pppp%2Fp2p1n2%2F8%2F3NP3%2F2N5%2FPPP1BPPP%2FR1BQK2R%20b%20KQkq%20-%201%206&color=black&theme=brown&piece=cburnett&lastMove=f1e2"
+        "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N5/PPP1BPPP/R1BQK2R b KQkq - 1 6",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "lastMove": "f1e2",
+        "prompt": "Najdorf: White plays the quiet 6. Be2 (Opocensky Variation). What is Black's main reply?",
+        "extra": "With b5 already covered by ...a6, Black grabs the center. The backward d6 pawn is hard to attack, and Black gets active play on e5 and the queenside."
       },
       "tags": [
         "chess::plan"
@@ -157,12 +178,15 @@
     },
     {
       "key": "najdorf-be2-develop",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Najdorf, Opocensky: after 6. Be2 e5 the knight retreats 7. Nb3. What now?",
-        "back": "Be7",
-        "extra": "Simple chess: ...Be7 and ...O-O first, then ...Be6 and ...Nbd7. The backward d6 pawn looks like a target but is almost impossible for White to get at.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2F1p3ppp%2Fp2p1n2%2F4p3%2F4P3%2F1NN5%2FPPP1BPPP%2FR1BQK2R%20b%20KQkq%20-%201%207&color=black&theme=brown&piece=cburnett&lastMove=d4b3"
+        "fen": "rnbqkb1r/1p3ppp/p2p1n2/4p3/4P3/1NN5/PPP1BPPP/R1BQK2R b KQkq - 1 7",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "lastMove": "d4b3",
+        "prompt": "Najdorf, Opocensky: after 6. Be2 e5 the knight retreats 7. Nb3. What now?",
+        "extra": "Simple chess: ...Be7 and ...O-O first, then ...Be6 and ...Nbd7. The backward d6 pawn looks like a target but is almost impossible for White to get at."
       },
       "tags": [
         "chess::plan"
@@ -170,12 +194,15 @@
     },
     {
       "key": "najdorf-vs-bg5",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Najdorf: White plays the sharp 6. Bg5. What is Black's main reply?",
-        "back": "e6",
-        "extra": "6...e6 7. f4 is the old main line; the famous Poisoned Pawn arises after 7...Qb6, when Black grabs b2 and hangs on.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2F1p2pppp%2Fp2p1n2%2F6B1%2F3NP3%2F2N5%2FPPP2PPP%2FR2QKB1R%20b%20KQkq%20-%201%206&color=black&theme=brown&piece=cburnett&lastMove=c1g5"
+        "fen": "rnbqkb1r/1p2pppp/p2p1n2/6B1/3NP3/2N5/PPP2PPP/R2QKB1R b KQkq - 1 6",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "c1g5",
+        "prompt": "Najdorf: White plays the sharp 6. Bg5. What is Black's main reply?",
+        "extra": "6...e6 7. f4 is the old main line; the famous Poisoned Pawn arises after 7...Qb6, when Black grabs b2 and hangs on."
       },
       "tags": [
         "chess::plan"
@@ -183,12 +210,15 @@
     },
     {
       "key": "najdorf-bg5-classical-be7",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Najdorf, 6. Bg5 e6: White continues 7. f4. What is the classical move?",
-        "back": "Be7",
-        "extra": "7...Be7 calmly takes the sting out of the pin and prepares ...Qc7, ...Nbd7, and ...b5. The wild alternative is the Poisoned Pawn, 7...Qb6 hitting b2.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2F1p3ppp%2Fp2ppn2%2F6B1%2F3NPP2%2F2N5%2FPPP3PP%2FR2QKB1R%20b%20KQkq%20-%200%207&color=black&theme=brown&piece=cburnett&lastMove=f2f4"
+        "fen": "rnbqkb1r/1p3ppp/p2ppn2/6B1/3NPP2/2N5/PPP3PP/R2QKB1R b KQkq - 0 7",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "lastMove": "f2f4",
+        "prompt": "Najdorf, 6. Bg5 e6: White continues 7. f4. What is the classical move?",
+        "extra": "7...Be7 calmly takes the sting out of the pin and prepares ...Qc7, ...Nbd7, and ...b5. The wild alternative is the Poisoned Pawn, 7...Qb6 hitting b2."
       },
       "tags": [
         "chess::plan"
@@ -196,12 +226,15 @@
     },
     {
       "key": "najdorf-vs-bc4",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Najdorf: White plays Fischer's favorite 6. Bc4 (Fischer-Sozin Attack). What is Black's standard reply?",
-        "back": "e6",
-        "extra": "6...e6 blunts the bishop's a2-g8 diagonal. Black follows up with ...b5, ...Bb7, and pressure against e4.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2F1p2pppp%2Fp2p1n2%2F8%2F2BNP3%2F2N5%2FPPP2PPP%2FR1BQK2R%20b%20KQkq%20-%201%206&color=black&theme=brown&piece=cburnett&lastMove=f1c4"
+        "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/2BNP3/2N5/PPP2PPP/R1BQK2R b KQkq - 1 6",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "f1c4",
+        "prompt": "Najdorf: White plays Fischer's favorite 6. Bc4 (Fischer-Sozin Attack). What is Black's standard reply?",
+        "extra": "6...e6 blunts the bishop's a2-g8 diagonal. Black follows up with ...b5, ...Bb7, and pressure against e4."
       },
       "tags": [
         "chess::plan"
@@ -222,12 +255,15 @@
     },
     {
       "key": "najdorf-vs-be3",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "You are Black in the Najdorf. White starts the English Attack with 6. Be3. What is the best move?",
-        "back": "e5",
-        "extra": "6...e5 boots the d4 knight and claims the center before White's f3, Qd2, and O-O-O machine gets rolling. The d5 hole is the price; space and time are the payoff.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2F1p2pppp%2Fp2p1n2%2F8%2F3NP3%2F2N1B3%2FPPP2PPP%2FR2QKB1R%20b%20KQkq%20-%201%206&color=black&theme=brown&piece=cburnett&lastMove=c1e3"
+        "fen": "rnbqkb1r/1p2pppp/p2p1n2/8/3NP3/2N1B3/PPP2PPP/R2QKB1R b KQkq - 1 6",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "lastMove": "c1e3",
+        "prompt": "You are Black in the Najdorf. White starts the English Attack with 6. Be3. What is the best move?",
+        "extra": "6...e5 boots the d4 knight and claims the center before White's f3, Qd2, and O-O-O machine gets rolling. The d5 hole is the price; space and time are the payoff."
       },
       "tags": [
         "chess::plan"
@@ -235,12 +271,15 @@
     },
     {
       "key": "najdorf-english-be6",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "English Attack: after 6. Be3 e5 White retreats 7. Nb3. What do you play?",
-        "back": "Be6",
-        "extra": "7...Be6 develops toward c4, supports a later ...d5 break, and clears the way for ...Nbd7 and ...b5. Black's play comes on the queenside, exactly where White's king is headed.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2F1p3ppp%2Fp2p1n2%2F4p3%2F4P3%2F1NN1B3%2FPPP2PPP%2FR2QKB1R%20b%20KQkq%20-%201%207&color=black&theme=brown&piece=cburnett&lastMove=d4b3"
+        "fen": "rnbqkb1r/1p3ppp/p2p1n2/4p3/4P3/1NN1B3/PPP2PPP/R2QKB1R b KQkq - 1 7",
+        "answer": "Be6",
+        "answerUci": "c8e6",
+        "orientation": "black",
+        "lastMove": "d4b3",
+        "prompt": "English Attack: after 6. Be3 e5 White retreats 7. Nb3. What do you play?",
+        "extra": "7...Be6 develops toward c4, supports a later ...d5 break, and clears the way for ...Nbd7 and ...b5. Black's play comes on the queenside, exactly where White's king is headed."
       },
       "tags": [
         "chess::plan"
@@ -248,12 +287,15 @@
     },
     {
       "key": "najdorf-english-be7",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "English Attack: White plays 8. f3, intending Qd2 and O-O-O. What is the classical continuation?",
-        "back": "Be7",
-        "extra": "8...Be7 prepares ...O-O and ...Nbd7 while keeping ...d5 in reserve; the modern alternative is 8...h5, stopping g4 before it starts.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rn1qkb1r%2F1p3ppp%2Fp2pbn2%2F4p3%2F4P3%2F1NN1BP2%2FPPP3PP%2FR2QKB1R%20b%20KQkq%20-%200%208&color=black&theme=brown&piece=cburnett&lastMove=f2f3"
+        "fen": "rn1qkb1r/1p3ppp/p2pbn2/4p3/4P3/1NN1BP2/PPP3PP/R2QKB1R b KQkq - 0 8",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "lastMove": "f2f3",
+        "prompt": "English Attack: White plays 8. f3, intending Qd2 and O-O-O. What is the classical continuation?",
+        "extra": "8...Be7 prepares ...O-O and ...Nbd7 while keeping ...d5 in reserve; the modern alternative is 8...h5, stopping g4 before it starts."
       },
       "tags": [
         "chess::plan"
@@ -261,12 +303,15 @@
     },
     {
       "key": "dragon-signature",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "You are Black and want the Dragon. What is the signature move here?",
-        "back": "g6",
-        "extra": "5...g6 prepares the fianchetto: the bishop goes to g7 and rakes the long diagonal toward White's queenside.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp2pppp%2F3p1n2%2F8%2F3NP3%2F2N5%2FPPP2PPP%2FR1BQKB1R%20b%20KQkq%20-%202%205&color=black&theme=brown&piece=cburnett&lastMove=b1c3"
+        "fen": "rnbqkb1r/pp2pppp/3p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R b KQkq - 2 5",
+        "answer": "g6",
+        "answerUci": "g7g6",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black and want the Dragon. What is the signature move here?",
+        "extra": "5...g6 prepares the fianchetto: the bishop goes to g7 and rakes the long diagonal toward White's queenside."
       },
       "tags": [
         "chess::variation"
@@ -287,12 +332,15 @@
     },
     {
       "key": "dragon-fianchetto",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Dragon: White begins the Yugoslav setup with 6. Be3. What do you play?",
-        "back": "Bg7",
-        "extra": "Finish the fianchetto: the g7 bishop is the Dragon's reason for being, raking the a1-h8 diagonal at White's queenside. Everything Black does flows through this piece.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp2pp1p%2F3p1np1%2F8%2F3NP3%2F2N1B3%2FPPP2PPP%2FR2QKB1R%20b%20KQkq%20-%201%206&color=black&theme=brown&piece=cburnett&lastMove=c1e3"
+        "fen": "rnbqkb1r/pp2pp1p/3p1np1/8/3NP3/2N1B3/PPP2PPP/R2QKB1R b KQkq - 1 6",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "lastMove": "c1e3",
+        "prompt": "Dragon: White begins the Yugoslav setup with 6. Be3. What do you play?",
+        "extra": "Finish the fianchetto: the g7 bishop is the Dragon's reason for being, raking the a1-h8 diagonal at White's queenside. Everything Black does flows through this piece."
       },
       "tags": [
         "chess::plan"
@@ -300,12 +348,15 @@
     },
     {
       "key": "dragon-castle",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Dragon: after 6. Be3 Bg7 White plays 7. f3, guarding e4 and preparing g4. What now?",
-        "back": "O-O",
-        "extra": "Castling into the coming pawn storm looks brave, but the king needs shelter and the rooks must connect; ...Nc6, ...Bd7, and ...Rc8 arrive in time to counterattack.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fpp2ppbp%2F3p1np1%2F8%2F3NP3%2F2N1BP2%2FPPP3PP%2FR2QKB1R%20b%20KQkq%20-%200%207&color=black&theme=brown&piece=cburnett&lastMove=f2f3"
+        "fen": "rnbqk2r/pp2ppbp/3p1np1/8/3NP3/2N1BP2/PPP3PP/R2QKB1R b KQkq - 0 7",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "lastMove": "f2f3",
+        "prompt": "Dragon: after 6. Be3 Bg7 White plays 7. f3, guarding e4 and preparing g4. What now?",
+        "extra": "Castling into the coming pawn storm looks brave, but the king needs shelter and the rooks must connect; ...Nc6, ...Bd7, and ...Rc8 arrive in time to counterattack."
       },
       "tags": [
         "chess::plan"
@@ -313,12 +364,15 @@
     },
     {
       "key": "dragon-develop-nc6",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Yugoslav Attack: White plays 8. Qd2, ready to castle long. What is the best move?",
-        "back": "Nc6",
-        "extra": "8...Nc6 pressures d4 and prepares ...Bd7 and ...Rc8, so that every Black piece points at White's queenside before the h-pawn storm lands.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbq1rk1%2Fpp2ppbp%2F3p1np1%2F8%2F3NP3%2F2N1BP2%2FPPPQ2PP%2FR3KB1R%20b%20KQ%20-%202%208&color=black&theme=brown&piece=cburnett&lastMove=d1d2"
+        "fen": "rnbq1rk1/pp2ppbp/3p1np1/8/3NP3/2N1BP2/PPPQ2PP/R3KB1R b KQ - 2 8",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "lastMove": "d1d2",
+        "prompt": "Yugoslav Attack: White plays 8. Qd2, ready to castle long. What is the best move?",
+        "extra": "8...Nc6 pressures d4 and prepares ...Bd7 and ...Rc8, so that every Black piece points at White's queenside before the h-pawn storm lands."
       },
       "tags": [
         "chess::plan"
@@ -339,12 +393,15 @@
     },
     {
       "key": "dragon-yugoslav-bd7",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Yugoslav Attack: White plays 9. Bc4, eyeing f7 and clamping d5. What do you play?",
-        "back": "Bd7",
-        "extra": "9...Bd7 connects the rooks so ...Rc8 comes next; the standard regrouping ...Ne5-c4 then offers to trade off White's attacking pieces.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fpp2ppbp%2F2np1np1%2F8%2F2BNP3%2F2N1BP2%2FPPPQ2PP%2FR3K2R%20b%20KQ%20-%204%209&color=black&theme=brown&piece=cburnett&lastMove=f1c4"
+        "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/2BNP3/2N1BP2/PPPQ2PP/R3K2R b KQ - 4 9",
+        "answer": "Bd7",
+        "answerUci": "c8d7",
+        "orientation": "black",
+        "lastMove": "f1c4",
+        "prompt": "Yugoslav Attack: White plays 9. Bc4, eyeing f7 and clamping d5. What do you play?",
+        "extra": "9...Bd7 connects the rooks so ...Rc8 comes next; the standard regrouping ...Ne5-c4 then offers to trade off White's attacking pieces."
       },
       "tags": [
         "chess::plan"
@@ -352,12 +409,15 @@
     },
     {
       "key": "dragon-yugoslav-rc8",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Yugoslav Attack: White castles 10. O-O-O. Where does the rook go?",
-        "back": "Rc8",
-        "extra": "The rook takes the half-open c-file, aiming at c3, where the thematic exchange sacrifice ...Rxc3 rips open White's king. The race is joined: ...Ne5-c4 versus h4-h5.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r2q1rk1%2Fpp1bppbp%2F2np1np1%2F8%2F2BNP3%2F2N1BP2%2FPPPQ2PP%2F2KR3R%20b%20-%20-%206%2010&color=black&theme=brown&piece=cburnett&lastMove=e1c1"
+        "fen": "r2q1rk1/pp1bppbp/2np1np1/8/2BNP3/2N1BP2/PPPQ2PP/2KR3R b - - 6 10",
+        "answer": "Rc8",
+        "answerUci": "a8c8",
+        "orientation": "black",
+        "lastMove": "e1c1",
+        "prompt": "Yugoslav Attack: White castles 10. O-O-O. Where does the rook go?",
+        "extra": "The rook takes the half-open c-file, aiming at c3, where the thematic exchange sacrifice ...Rxc3 rips open White's king. The race is joined: ...Ne5-c4 versus h4-h5."
       },
       "tags": [
         "chess::plan"
@@ -365,12 +425,15 @@
     },
     {
       "key": "dragon-yugoslav-d5",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Yugoslav Attack: White castles at once with 9. O-O-O, skipping Bc4. What is Black's thematic strike?",
-        "back": "d5",
-        "extra": "With no bishop on c4 to watch d5, Black frees the game immediately: 9...d5 blasts open the center before White's kingside pawns move an inch.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fpp2ppbp%2F2np1np1%2F8%2F3NP3%2F2N1BP2%2FPPPQ2PP%2F2KR1B1R%20b%20-%20-%204%209&color=black&theme=brown&piece=cburnett&lastMove=e1c1"
+        "fen": "r1bq1rk1/pp2ppbp/2np1np1/8/3NP3/2N1BP2/PPPQ2PP/2KR1B1R b - - 4 9",
+        "answer": "d5",
+        "answerUci": "d6d5",
+        "orientation": "black",
+        "lastMove": "e1c1",
+        "prompt": "Yugoslav Attack: White castles at once with 9. O-O-O, skipping Bc4. What is Black's thematic strike?",
+        "extra": "With no bishop on c4 to watch d5, Black frees the game immediately: 9...d5 blasts open the center before White's kingside pawns move an inch."
       },
       "tags": [
         "chess::plan"
@@ -404,12 +467,15 @@
     },
     {
       "key": "maroczy-reply",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Accelerated Dragon: White clamps down with 5. c4, the Maroczy Bind. How do you continue?",
-        "back": "Nf6",
-        "extra": "5...Nf6 develops with a hit on e4, forcing Nc3. Then Black stays patient: ...d6, ...Bg7, exchanges on d4, and the ...b5 lever to chip at the bind.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkbnr%2Fpp1ppp1p%2F2n3p1%2F8%2F2PNP3%2F8%2FPP3PPP%2FRNBQKB1R%20b%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=c2c4"
+        "fen": "r1bqkbnr/pp1ppp1p/2n3p1/8/2PNP3/8/PP3PPP/RNBQKB1R b KQkq - 0 5",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "Accelerated Dragon: White clamps down with 5. c4, the Maroczy Bind. How do you continue?",
+        "extra": "5...Nf6 develops with a hit on e4, forcing Nc3. Then Black stays patient: ...d6, ...Bg7, exchanges on d4, and the ...b5 lever to chip at the bind."
       },
       "tags": [
         "chess::plan"
@@ -417,12 +483,15 @@
     },
     {
       "key": "sveshnikov-signature",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Via 2...Nc6 you have reached this position, and you want the Sveshnikov. What is the signature move here?",
-        "back": "e5",
-        "extra": "5...e5 punches the d4 knight and stakes out the center immediately, accepting the d5 hole as the price of activity.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpp1ppppp%2F2n2n2%2F8%2F3NP3%2F2N5%2FPPP2PPP%2FR1BQKB1R%20b%20KQkq%20-%202%205&color=black&theme=brown&piece=cburnett&lastMove=b1c3"
+        "fen": "r1bqkb1r/pp1ppppp/2n2n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R b KQkq - 2 5",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "Via 2...Nc6 you have reached this position, and you want the Sveshnikov. What is the signature move here?",
+        "extra": "5...e5 punches the d4 knight and stakes out the center immediately, accepting the d5 hole as the price of activity."
       },
       "tags": [
         "chess::variation"
@@ -443,12 +512,15 @@
     },
     {
       "key": "sveshnikov-d6",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Sveshnikov: White jumps 6. Ndb5, eyeing the hole on d6. What is the best move?",
-        "back": "d6",
-        "extra": "6...d6 denies the knight its dream check on d6 and shores up e5. The b5 knight now bites on granite and will be driven to the rim with ...a6.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpp1p1ppp%2F2n2n2%2F1N2p3%2F4P3%2F2N5%2FPPP2PPP%2FR1BQKB1R%20b%20KQkq%20-%201%206&color=black&theme=brown&piece=cburnett&lastMove=d4b5"
+        "fen": "r1bqkb1r/pp1p1ppp/2n2n2/1N2p3/4P3/2N5/PPP2PPP/R1BQKB1R b KQkq - 1 6",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "lastMove": "d4b5",
+        "prompt": "Sveshnikov: White jumps 6. Ndb5, eyeing the hole on d6. What is the best move?",
+        "extra": "6...d6 denies the knight its dream check on d6 and shores up e5. The b5 knight now bites on granite and will be driven to the rim with ...a6."
       },
       "tags": [
         "chess::plan"
@@ -456,12 +528,15 @@
     },
     {
       "key": "sveshnikov-a6",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Sveshnikov: White pins with 7. Bg5. What do you play?",
-        "back": "a6",
-        "extra": "7...a6 puts the question to the b5 knight, whose only retreat is the rim square a3. Black gains the tempo needed for ...b5 and full queenside expansion.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpp3ppp%2F2np1n2%2F1N2p1B1%2F4P3%2F2N5%2FPPP2PPP%2FR2QKB1R%20b%20KQkq%20-%201%207&color=black&theme=brown&piece=cburnett&lastMove=c1g5"
+        "fen": "r1bqkb1r/pp3ppp/2np1n2/1N2p1B1/4P3/2N5/PPP2PPP/R2QKB1R b KQkq - 1 7",
+        "answer": "a6",
+        "answerUci": "a7a6",
+        "orientation": "black",
+        "lastMove": "c1g5",
+        "prompt": "Sveshnikov: White pins with 7. Bg5. What do you play?",
+        "extra": "7...a6 puts the question to the b5 knight, whose only retreat is the rim square a3. Black gains the tempo needed for ...b5 and full queenside expansion."
       },
       "tags": [
         "chess::plan"
@@ -469,12 +544,15 @@
     },
     {
       "key": "sveshnikov-book-b5",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Sveshnikov: White's knight has just retreated to a3. What is Black's book move?",
-        "back": "b5",
-        "extra": "8...b5 shuts the a3 knight out of c4 and grabs queenside space. White's main tries are 9. Bxf6 and 9. Nd5.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2F1p3ppp%2Fp1np1n2%2F4p1B1%2F4P3%2FN1N5%2FPPP2PPP%2FR2QKB1R%20b%20KQkq%20-%201%208&color=black&theme=brown&piece=cburnett&lastMove=b5a3"
+        "fen": "r1bqkb1r/1p3ppp/p1np1n2/4p1B1/4P3/N1N5/PPP2PPP/R2QKB1R b KQkq - 1 8",
+        "answer": "b5",
+        "answerUci": "b7b5",
+        "orientation": "black",
+        "lastMove": "b5a3",
+        "prompt": "Sveshnikov: White's knight has just retreated to a3. What is Black's book move?",
+        "extra": "8...b5 shuts the a3 knight out of c4 and grabs queenside space. White's main tries are 9. Bxf6 and 9. Nd5."
       },
       "tags": [
         "chess::plan"
@@ -482,12 +560,15 @@
     },
     {
       "key": "sveshnikov-be7",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Sveshnikov main line: White plants a knight with 9. Nd5. What is Black's move?",
-        "back": "Be7",
-        "extra": "9...Be7 breaks the pin on the spot; after 10. Bxf6 Bxf6 Black holds the bishop pair, and the f6 bishop reroutes via g5 to fight for the dark squares.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2F5ppp%2Fp1np1n2%2F1p1Np1B1%2F4P3%2FN7%2FPPP2PPP%2FR2QKB1R%20b%20KQkq%20-%201%209&color=black&theme=brown&piece=cburnett&lastMove=c3d5"
+        "fen": "r1bqkb1r/5ppp/p1np1n2/1p1Np1B1/4P3/N7/PPP2PPP/R2QKB1R b KQkq - 1 9",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "lastMove": "c3d5",
+        "prompt": "Sveshnikov main line: White plants a knight with 9. Nd5. What is Black's move?",
+        "extra": "9...Be7 breaks the pin on the spot; after 10. Bxf6 Bxf6 Black holds the bishop pair, and the f6 bishop reroutes via g5 to fight for the dark squares."
       },
       "tags": [
         "chess::plan"
@@ -495,12 +576,15 @@
     },
     {
       "key": "sveshnikov-gxf6",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Sveshnikov: White exchanges with 9. Bxf6. How do you recapture?",
-        "back": "gxf6",
-        "extra": "Take with the pawn: 9...gxf6 keeps the fight for d5 alive because ...f5 comes next, hitting e4 and unbalancing the game. 10. Nd5 f5 is the great Sveshnikov tabiya.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2F5ppp%2Fp1np1B2%2F1p2p3%2F4P3%2FN1N5%2FPPP2PPP%2FR2QKB1R%20b%20KQkq%20-%200%209&color=black&theme=brown&piece=cburnett&lastMove=g5f6"
+        "fen": "r1bqkb1r/5ppp/p1np1B2/1p2p3/4P3/N1N5/PPP2PPP/R2QKB1R b KQkq - 0 9",
+        "answer": "gxf6",
+        "answerUci": "g7f6",
+        "orientation": "black",
+        "lastMove": "g5f6",
+        "prompt": "Sveshnikov: White exchanges with 9. Bxf6. How do you recapture?",
+        "extra": "Take with the pawn: 9...gxf6 keeps the fight for d5 alive because ...f5 comes next, hitting e4 and unbalancing the game. 10. Nd5 f5 is the great Sveshnikov tabiya."
       },
       "tags": [
         "chess::plan"
@@ -508,12 +592,15 @@
     },
     {
       "key": "classical-signature",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "You are Black and want the Classical Variation. What is the move here?",
-        "back": "Nc6",
-        "extra": "5...Nc6 puts the second knight on its natural square and commits to nothing: Black can still choose ...e6, ...e5, or ...g6 structures depending on White's setup.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp2pppp%2F3p1n2%2F8%2F3NP3%2F2N5%2FPPP2PPP%2FR1BQKB1R%20b%20KQkq%20-%202%205&color=black&theme=brown&piece=cburnett&lastMove=b1c3"
+        "fen": "rnbqkb1r/pp2pppp/3p1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R b KQkq - 2 5",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black and want the Classical Variation. What is the move here?",
+        "extra": "5...Nc6 puts the second knight on its natural square and commits to nothing: Black can still choose ...e6, ...e5, or ...g6 structures depending on White's setup."
       },
       "tags": [
         "chess::variation"
@@ -547,12 +634,15 @@
     },
     {
       "key": "rauzer-e6",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Richter-Rauzer: White has played 6. Bg5. What is Black's main reply?",
-        "back": "e6",
-        "extra": "6...e6 builds the compact small center and prepares ...Be7 or the modern ...a6 and ...Bd7 scheme; Black waits to see White's plan before committing the king.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpp2pppp%2F2np1n2%2F6B1%2F3NP3%2F2N5%2FPPP2PPP%2FR2QKB1R%20b%20KQkq%20-%204%206&color=black&theme=brown&piece=cburnett&lastMove=c1g5"
+        "fen": "r1bqkb1r/pp2pppp/2np1n2/6B1/3NP3/2N5/PPP2PPP/R2QKB1R b KQkq - 4 6",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "c1g5",
+        "prompt": "Richter-Rauzer: White has played 6. Bg5. What is Black's main reply?",
+        "extra": "6...e6 builds the compact small center and prepares ...Be7 or the modern ...a6 and ...Bd7 scheme; Black waits to see White's plan before committing the king."
       },
       "tags": [
         "chess::plan"
@@ -560,12 +650,15 @@
     },
     {
       "key": "rauzer-a6",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Richter-Rauzer: White plays 7. Qd2, heading for O-O-O. What is the modern move?",
-        "back": "a6",
-        "extra": "7...a6 rules out Ndb5 and Bb5 tricks and prepares ...Bd7 and ...b5. In the Rauzer, Black often leaves the king in the center and attacks first.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpp3ppp%2F2nppn2%2F6B1%2F3NP3%2F2N5%2FPPPQ1PPP%2FR3KB1R%20b%20KQkq%20-%201%207&color=black&theme=brown&piece=cburnett&lastMove=d1d2"
+        "fen": "r1bqkb1r/pp3ppp/2nppn2/6B1/3NP3/2N5/PPPQ1PPP/R3KB1R b KQkq - 1 7",
+        "answer": "a6",
+        "answerUci": "a7a6",
+        "orientation": "black",
+        "lastMove": "d1d2",
+        "prompt": "Richter-Rauzer: White plays 7. Qd2, heading for O-O-O. What is the modern move?",
+        "extra": "7...a6 rules out Ndb5 and Bb5 tricks and prepares ...Bd7 and ...b5. In the Rauzer, Black often leaves the king in the center and attacks first."
       },
       "tags": [
         "chess::plan"
@@ -573,12 +666,15 @@
     },
     {
       "key": "rauzer-bd7",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Richter-Rauzer: White castles 8. O-O-O. What do you play?",
-        "back": "Bd7",
-        "extra": "8...Bd7 completes the queenside plan: ...Rc8 and ...b5 follow, with pressure building against c3 and White's king.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2F1p3ppp%2Fp1nppn2%2F6B1%2F3NP3%2F2N5%2FPPPQ1PPP%2F2KR1B1R%20b%20kq%20-%201%208&color=black&theme=brown&piece=cburnett&lastMove=e1c1"
+        "fen": "r1bqkb1r/1p3ppp/p1nppn2/6B1/3NP3/2N5/PPPQ1PPP/2KR1B1R b kq - 1 8",
+        "answer": "Bd7",
+        "answerUci": "c8d7",
+        "orientation": "black",
+        "lastMove": "e1c1",
+        "prompt": "Richter-Rauzer: White castles 8. O-O-O. What do you play?",
+        "extra": "8...Bd7 completes the queenside plan: ...Rc8 and ...b5 follow, with pressure building against c3 and White's king."
       },
       "tags": [
         "chess::plan"
@@ -612,12 +708,15 @@
     },
     {
       "key": "alapin-nd5",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Alapin: after 2. c3 Nf6, White pushes 3. e5. Where does the knight go?",
-        "back": "Nd5",
-        "extra": "3...Nd5 is the whole point of 2...Nf6: with a pawn on c3, White has no Nc3 to challenge the knight, so it sits securely in the center.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp1ppppp%2F5n2%2F2p1P3%2F8%2F2P5%2FPP1P1PPP%2FRNBQKBNR%20b%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=e4e5"
+        "fen": "rnbqkb1r/pp1ppppp/5n2/2p1P3/8/2P5/PP1P1PPP/RNBQKBNR b KQkq - 0 3",
+        "answer": "Nd5",
+        "answerUci": "f6d5",
+        "orientation": "black",
+        "lastMove": "e4e5",
+        "prompt": "Alapin: after 2. c3 Nf6, White pushes 3. e5. Where does the knight go?",
+        "extra": "3...Nd5 is the whole point of 2...Nf6: with a pawn on c3, White has no Nc3 to challenge the knight, so it sits securely in the center."
       },
       "tags": [
         "chess::plan"
@@ -625,12 +724,15 @@
     },
     {
       "key": "alapin-cxd4",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Alapin: White builds the center with 4. d4. What is your move?",
-        "back": "cxd4",
-        "extra": "Trade the wing pawn for the center pawn, Sicilian style. Black will gang up on the d4 and e5 pawns with ...Nc6 and ...d6 before White consolidates.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp1ppppp%2F8%2F2pnP3%2F3P4%2F2P5%2FPP3PPP%2FRNBQKBNR%20b%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=d2d4"
+        "fen": "rnbqkb1r/pp1ppppp/8/2pnP3/3P4/2P5/PP3PPP/RNBQKBNR b KQkq - 0 4",
+        "answer": "cxd4",
+        "answerUci": "c5d4",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "Alapin: White builds the center with 4. d4. What is your move?",
+        "extra": "Trade the wing pawn for the center pawn, Sicilian style. Black will gang up on the d4 and e5 pawns with ...Nc6 and ...d6 before White consolidates."
       },
       "tags": [
         "chess::plan"
@@ -638,12 +740,15 @@
     },
     {
       "key": "alapin-nc6",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Alapin: White develops 5. Nf3, delaying the recapture on d4. What do you play?",
-        "back": "Nc6",
-        "extra": "5...Nc6 keeps the pressure on d4 and adds a hit on e5. Develop first; the strike ...d6 against White's center comes next.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp1ppppp%2F8%2F3nP3%2F3p4%2F2P2N2%2FPP3PPP%2FRNBQKB1R%20b%20KQkq%20-%201%205&color=black&theme=brown&piece=cburnett&lastMove=g1f3"
+        "fen": "rnbqkb1r/pp1ppppp/8/3nP3/3p4/2P2N2/PP3PPP/RNBQKB1R b KQkq - 1 5",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "Alapin: White develops 5. Nf3, delaying the recapture on d4. What do you play?",
+        "extra": "5...Nc6 keeps the pressure on d4 and adds a hit on e5. Develop first; the strike ...d6 against White's center comes next."
       },
       "tags": [
         "chess::plan"
@@ -651,12 +756,15 @@
     },
     {
       "key": "alapin-d6",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Alapin: White restores the center with 6. cxd4. How does Black hit back?",
-        "back": "d6",
-        "extra": "6...d6 attacks the e5 spearhead at once; after it liquidates, White is left nursing an isolated or overextended d4 pawn for the rest of the game.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpp1ppppp%2F2n5%2F3nP3%2F3P4%2F5N2%2FPP3PPP%2FRNBQKB1R%20b%20KQkq%20-%200%206&color=black&theme=brown&piece=cburnett&lastMove=c3d4"
+        "fen": "r1bqkb1r/pp1ppppp/2n5/3nP3/3P4/5N2/PP3PPP/RNBQKB1R b KQkq - 0 6",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "lastMove": "c3d4",
+        "prompt": "Alapin: White restores the center with 6. cxd4. How does Black hit back?",
+        "extra": "6...d6 attacks the e5 spearhead at once; after it liquidates, White is left nursing an isolated or overextended d4 pawn for the rest of the game."
       },
       "tags": [
         "chess::plan"
@@ -690,12 +798,15 @@
     },
     {
       "key": "rossolimo-dxc6",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Rossolimo: White exchanges 4. Bxc6. How do you recapture?",
-        "back": "dxc6",
-        "extra": "4...dxc6 recaptures toward the center, opens the c8 bishop, and hands Black the bishop pair as full payment for the doubled pawns.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkbnr%2Fpp1ppp1p%2F2B3p1%2F2p5%2F4P3%2F5N2%2FPPPP1PPP%2FRNBQK2R%20b%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=b5c6"
+        "fen": "r1bqkbnr/pp1ppp1p/2B3p1/2p5/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+        "answer": "dxc6",
+        "answerUci": "d7c6",
+        "orientation": "black",
+        "lastMove": "b5c6",
+        "prompt": "Rossolimo: White exchanges 4. Bxc6. How do you recapture?",
+        "extra": "4...dxc6 recaptures toward the center, opens the c8 bishop, and hands Black the bishop pair as full payment for the doubled pawns."
       },
       "tags": [
         "chess::plan"
@@ -703,12 +814,15 @@
     },
     {
       "key": "rossolimo-bg7",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Rossolimo: White plays the restrained 5. d3. What is the best move?",
-        "back": "Bg7",
-        "extra": "Complete the fianchetto. With ...Nf6 or ...e5 to follow, Black's dark-square grip and two bishops give a comfortable, strategically rich game.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkbnr%2Fpp2pp1p%2F2p3p1%2F2p5%2F4P3%2F3P1N2%2FPPP2PPP%2FRNBQK2R%20b%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=d2d3"
+        "fen": "r1bqkbnr/pp2pp1p/2p3p1/2p5/4P3/3P1N2/PPP2PPP/RNBQK2R b KQkq - 0 5",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "lastMove": "d2d3",
+        "prompt": "Rossolimo: White plays the restrained 5. d3. What is the best move?",
+        "extra": "Complete the fianchetto. With ...Nf6 or ...e5 to follow, Black's dark-square grip and two bishops give a comfortable, strategically rich game."
       },
       "tags": [
         "chess::plan"

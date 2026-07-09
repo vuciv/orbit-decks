@@ -1,6 +1,6 @@
 {
   "key": "london-system",
-  "version": 1,
+  "version": 2,
   "name": "The London System",
   "description": "Learn to play the London System as White, one position at a time: the core setup against ...d5, the anti-fianchetto setup, the right answers to ...Qb6 and the poisoned b2-pawn, and classic attacking patterns like the Greek gift on h7. Every card shows a position; you supply the book move.",
   "category": "Chess",
@@ -14,12 +14,14 @@
   "notes": [
     {
       "key": "start-d4",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "You are White and want to open with the London System. What is your first move?",
-        "back": "d4",
-        "extra": "Everything in the London starts with 1.d4. White will then aim for the same solid setup (Bf4, e3, c3, Nf3, Nbd2) against almost any Black defense.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpppppppp%2F8%2F8%2F8%2F8%2FPPPPPPPP%2FRNBQKBNR%20w%20KQkq%20-%200%201&color=white&theme=brown&piece=cburnett"
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "prompt": "You are White and want to open with the London System. What is your first move?",
+        "extra": "Everything in the London starts with 1.d4. White will then aim for the same solid setup (Bf4, e3, c3, Nf3, Nbd2) against almost any Black defense."
       },
       "tags": [
         "chess::setup"
@@ -27,12 +29,15 @@
     },
     {
       "key": "main-2-bf4",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "London System, after 1.d4 d5. White to move: what is the modern move-order choice?",
-        "back": "Bf4",
-        "extra": "Develop the dark-squared bishop OUTSIDE the pawn chain before playing e3. This solves the problem the Queen's Gambit bishop never solves, and 2.Bf4 (rather than 2.Nf3 first) keeps Black from steering the game elsewhere.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fppp1pppp%2F8%2F3p4%2F3P4%2F8%2FPPP1PPPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=white&theme=brown&piece=cburnett&lastMove=d7d5"
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "Bf4",
+        "answerUci": "c1f4",
+        "orientation": "white",
+        "lastMove": "d7d5",
+        "prompt": "London System, after 1.d4 d5. White to move: what is the modern move-order choice?",
+        "extra": "Develop the dark-squared bishop OUTSIDE the pawn chain before playing e3. This solves the problem the Queen's Gambit bishop never solves, and 2.Bf4 (rather than 2.Nf3 first) keeps Black from steering the game elsewhere."
       },
       "tags": [
         "chess::setup"
@@ -40,12 +45,15 @@
     },
     {
       "key": "vs-nf6-bf4",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "London System against 1...Nf6. White to move: which move keeps you in your system?",
-        "back": "Bf4",
-        "extra": "The London is a system opening: against 1...Nf6 White plays the same 2.Bf4 and only adjusts details later, such as Be2 instead of Bd3 if Black fianchettoes.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpppppppp%2F5n2%2F8%2F3P4%2F8%2FPPP1PPPP%2FRNBQKBNR%20w%20KQkq%20-%201%202&color=white&theme=brown&piece=cburnett&lastMove=g8f6"
+        "fen": "rnbqkb1r/pppppppp/5n2/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 1 2",
+        "answer": "Bf4",
+        "answerUci": "c1f4",
+        "orientation": "white",
+        "lastMove": "g8f6",
+        "prompt": "London System against 1...Nf6. White to move: which move keeps you in your system?",
+        "extra": "The London is a system opening: against 1...Nf6 White plays the same 2.Bf4 and only adjusts details later, such as Be2 instead of Bd3 if Black fianchettoes."
       },
       "tags": [
         "chess::setup"
@@ -53,12 +61,15 @@
     },
     {
       "key": "main-3-e3",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "London main line after 2...Nf6. White to move: what comes next?",
-        "back": "e3",
-        "extra": "With the bishop already outside the chain, e3 builds the wall behind it and opens the f1-bishop's diagonal. The pawn triangle d4-e3 is the start of the London pyramid.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fppp1pppp%2F5n2%2F3p4%2F3P1B2%2F8%2FPPP1PPPP%2FRN1QKBNR%20w%20KQkq%20-%202%203&color=white&theme=brown&piece=cburnett&lastMove=g8f6"
+        "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P1B2/8/PPP1PPPP/RN1QKBNR w KQkq - 2 3",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "lastMove": "g8f6",
+        "prompt": "London main line after 2...Nf6. White to move: what comes next?",
+        "extra": "With the bishop already outside the chain, e3 builds the wall behind it and opens the f1-bishop's diagonal. The pawn triangle d4-e3 is the start of the London pyramid."
       },
       "tags": [
         "chess::setup"
@@ -66,12 +77,15 @@
     },
     {
       "key": "main-4-c3",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black strikes at your center with 3...c5. White to move: what is the book reply?",
-        "back": "c3",
-        "extra": "c3 completes the London pyramid (d4-e3-c3). The d4-pawn stays rock solid, White never needs dxc5, and b4 is taken away from Black's knights, which protects the coming Bd3.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp2pppp%2F5n2%2F2pp4%2F3P1B2%2F4P3%2FPPP2PPP%2FRN1QKBNR%20w%20KQkq%20-%200%204&color=white&theme=brown&piece=cburnett&lastMove=c7c5"
+        "fen": "rnbqkb1r/pp2pppp/5n2/2pp4/3P1B2/4P3/PPP2PPP/RN1QKBNR w KQkq - 0 4",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "lastMove": "c7c5",
+        "prompt": "Black strikes at your center with 3...c5. White to move: what is the book reply?",
+        "extra": "c3 completes the London pyramid (d4-e3-c3). The d4-pawn stays rock solid, White never needs dxc5, and b4 is taken away from Black's knights, which protects the coming Bd3."
       },
       "tags": [
         "chess::setup"
@@ -79,12 +93,15 @@
     },
     {
       "key": "main-5-nd2",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "London main line after 4...Nc6. White to move: where does the queen's knight go?",
-        "back": "Nd2",
-        "extra": "The queen's knight belongs on d2: it covers e4 and c4 and leaves f3 free for the king's knight, whose dream square is e5.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpp2pppp%2F2n2n2%2F2pp4%2F3P1B2%2F2P1P3%2FPP3PPP%2FRN1QKBNR%20w%20KQkq%20-%201%205&color=white&theme=brown&piece=cburnett&lastMove=b8c6"
+        "fen": "r1bqkb1r/pp2pppp/2n2n2/2pp4/3P1B2/2P1P3/PP3PPP/RN1QKBNR w KQkq - 1 5",
+        "answer": "Nd2",
+        "answerUci": "b1d2",
+        "orientation": "white",
+        "lastMove": "b8c6",
+        "prompt": "London main line after 4...Nc6. White to move: where does the queen's knight go?",
+        "extra": "The queen's knight belongs on d2: it covers e4 and c4 and leaves f3 free for the king's knight, whose dream square is e5."
       },
       "tags": [
         "chess::setup"
@@ -92,12 +109,15 @@
     },
     {
       "key": "main-6-ngf3",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "London main line after 5...e6. White to move: complete the knight development.",
-        "back": "Ngf3",
-        "extra": "The king's knight goes to f3, written Ngf3 because the d2-knight could reach f3 too. From f3 it eyes the thematic e5 outpost.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpp3ppp%2F2n1pn2%2F2pp4%2F3P1B2%2F2P1P3%2FPP1N1PPP%2FR2QKBNR%20w%20KQkq%20-%200%206&color=white&theme=brown&piece=cburnett&lastMove=e7e6"
+        "fen": "r1bqkb1r/pp3ppp/2n1pn2/2pp4/3P1B2/2P1P3/PP1N1PPP/R2QKBNR w KQkq - 0 6",
+        "answer": "Ngf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "lastMove": "e7e6",
+        "prompt": "London main line after 5...e6. White to move: complete the knight development.",
+        "extra": "The king's knight goes to f3, written Ngf3 because the d2-knight could reach f3 too. From f3 it eyes the thematic e5 outpost."
       },
       "tags": [
         "chess::setup"
@@ -105,12 +125,15 @@
     },
     {
       "key": "main-7-bg3",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black develops 6...Bd6, offering to trade your London bishop. White to move: best reply?",
-        "back": "Bg3",
-        "extra": "Sidestep with Bg3 and let Black decide. If Black ever takes with ...Bxg3, White recaptures hxg3 and gets a half-open h-file pointing at the castled king, so the trade only helps White.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqk2r%2Fpp3ppp%2F2nbpn2%2F2pp4%2F3P1B2%2F2P1PN2%2FPP1N1PPP%2FR2QKB1R%20w%20KQkq%20-%202%207&color=white&theme=brown&piece=cburnett&lastMove=f8d6"
+        "fen": "r1bqk2r/pp3ppp/2nbpn2/2pp4/3P1B2/2P1PN2/PP1N1PPP/R2QKB1R w KQkq - 2 7",
+        "answer": "Bg3",
+        "answerUci": "f4g3",
+        "orientation": "white",
+        "lastMove": "f8d6",
+        "prompt": "Black develops 6...Bd6, offering to trade your London bishop. White to move: best reply?",
+        "extra": "Sidestep with Bg3 and let Black decide. If Black ever takes with ...Bxg3, White recaptures hxg3 and gets a half-open h-file pointing at the castled king, so the trade only helps White."
       },
       "tags": [
         "chess::setup"
@@ -118,12 +141,15 @@
     },
     {
       "key": "main-8-bd3",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black castled with 7...O-O. White to move: finish your development.",
-        "back": "Bd3",
-        "extra": "From d3 the light-squared bishop points down the b1-h7 diagonal straight at Black's king. The setup is complete: castle next, then think about Ne5 and a kingside attack.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fpp3ppp%2F2nbpn2%2F2pp4%2F3P4%2F2P1PNB1%2FPP1N1PPP%2FR2QKB1R%20w%20KQ%20-%204%208&color=white&theme=brown&piece=cburnett&lastMove=e8g8"
+        "fen": "r1bq1rk1/pp3ppp/2nbpn2/2pp4/3P4/2P1PNB1/PP1N1PPP/R2QKB1R w KQ - 4 8",
+        "answer": "Bd3",
+        "answerUci": "f1d3",
+        "orientation": "white",
+        "lastMove": "e8g8",
+        "prompt": "Black castled with 7...O-O. White to move: finish your development.",
+        "extra": "From d3 the light-squared bishop points down the b1-h7 diagonal straight at Black's king. The setup is complete: castle next, then think about Ne5 and a kingside attack."
       },
       "tags": [
         "chess::setup"
@@ -131,12 +157,15 @@
     },
     {
       "key": "main-9-castle",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "The London setup is complete and Black played 8...Qe7. White to move: what now?",
-        "back": "O-O",
-        "extra": "Tuck the king away first. With the structure finished, the thematic plan of Ne5, f4 and a kingside attack can start next move.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1b2rk1%2Fpp2qppp%2F2nbpn2%2F2pp4%2F3P4%2F2PBPNB1%2FPP1N1PPP%2FR2QK2R%20w%20KQ%20-%206%209&color=white&theme=brown&piece=cburnett&lastMove=d8e7"
+        "fen": "r1b2rk1/pp2qppp/2nbpn2/2pp4/3P4/2PBPNB1/PP1N1PPP/R2QK2R w KQ - 6 9",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "d8e7",
+        "prompt": "The London setup is complete and Black played 8...Qe7. White to move: what now?",
+        "extra": "Tuck the king away first. With the structure finished, the thematic plan of Ne5, f4 and a kingside attack can start next move."
       },
       "tags": [
         "chess::setup",
@@ -145,12 +174,15 @@
     },
     {
       "key": "vs-e6-system",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black plays a quick 2...e6. White to move: how do you continue?",
-        "back": "e3",
-        "extra": "The same setup as always, which is the charm of the London. Note that ...e6 has already locked Black's c8-bishop behind its own pawns, a small concession for free.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fppp2ppp%2F4p3%2F3p4%2F3P1B2%2F8%2FPPP1PPPP%2FRN1QKBNR%20w%20KQkq%20-%200%203&color=white&theme=brown&piece=cburnett&lastMove=e7e6"
+        "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/3P1B2/8/PPP1PPPP/RN1QKBNR w KQkq - 0 3",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "lastMove": "e7e6",
+        "prompt": "Black plays a quick 2...e6. White to move: how do you continue?",
+        "extra": "The same setup as always, which is the charm of the London. Note that ...e6 has already locked Black's c8-bishop behind its own pawns, a small concession for free."
       },
       "tags": [
         "chess::setup"
@@ -158,12 +190,15 @@
     },
     {
       "key": "recapture-hxg3",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black exchanged bishops with 8...Bxg3. White to move: which way do you recapture?",
-        "back": "hxg3",
-        "extra": "Recapture with the h-pawn: the half-open h-file becomes a ready-made attacking lane for the rook. fxg3 would loosen e3 and give White's king airier cover for nothing.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fpp3ppp%2F2n1pn2%2F2pp4%2F3P4%2F2PBPNb1%2FPP1N1PPP%2FR2QK2R%20w%20KQ%20-%200%209&color=white&theme=brown&piece=cburnett&lastMove=d6g3"
+        "fen": "r1bq1rk1/pp3ppp/2n1pn2/2pp4/3P4/2PBPNb1/PP1N1PPP/R2QK2R w KQ - 0 9",
+        "answer": "hxg3",
+        "answerUci": "h2g3",
+        "orientation": "white",
+        "lastMove": "d6g3",
+        "prompt": "Black exchanged bishops with 8...Bxg3. White to move: which way do you recapture?",
+        "extra": "Recapture with the h-pawn: the half-open h-file becomes a ready-made attacking lane for the rook. fxg3 would loosen e3 and give White's king airier cover for nothing."
       },
       "tags": [
         "chess::plan"
@@ -171,12 +206,15 @@
     },
     {
       "key": "recapture-exd4",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black releases the tension with 8...cxd4. White to move: which pawn takes back?",
-        "back": "exd4",
-        "extra": "Recapture with the e-pawn so c3 keeps guarding d4, and the e-file half-opens for a rook. cxd4 instead would hand Black the b4-square to harass the d3-bishop.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fpp3ppp%2F2nbpn2%2F3p4%2F3p4%2F2PBPNB1%2FPP1N1PPP%2FR2QK2R%20w%20KQ%20-%200%209&color=white&theme=brown&piece=cburnett&lastMove=c5d4"
+        "fen": "r1bq1rk1/pp3ppp/2nbpn2/3p4/3p4/2PBPNB1/PP1N1PPP/R2QK2R w KQ - 0 9",
+        "answer": "exd4",
+        "answerUci": "e3d4",
+        "orientation": "white",
+        "lastMove": "c5d4",
+        "prompt": "Black releases the tension with 8...cxd4. White to move: which pawn takes back?",
+        "extra": "Recapture with the e-pawn so c3 keeps guarding d4, and the e-file half-opens for a rook. cxd4 instead would hand Black the b4-square to harass the d3-bishop."
       },
       "tags": [
         "chess::plan"
@@ -184,12 +222,15 @@
     },
     {
       "key": "plan-ne5",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black plays the slow 8...b6, preparing ...Bb7. White to move: what is the thematic plan move?",
-        "back": "Ne5",
-        "extra": "The classic London jump: Ne5 is backed by the d4-pawn and the g3-bishop, and can be reinforced by f4 or Ndf3. A kingside attack with f4-f5 or a queen swing often follows.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fp4ppp%2F1pnbpn2%2F2pp4%2F3P4%2F2PBPNB1%2FPP1N1PPP%2FR2QK2R%20w%20KQ%20-%200%209&color=white&theme=brown&piece=cburnett&lastMove=b7b6"
+        "fen": "r1bq1rk1/p4ppp/1pnbpn2/2pp4/3P4/2PBPNB1/PP1N1PPP/R2QK2R w KQ - 0 9",
+        "answer": "Ne5",
+        "answerUci": "f3e5",
+        "orientation": "white",
+        "lastMove": "b7b6",
+        "prompt": "Black plays the slow 8...b6, preparing ...Bb7. White to move: what is the thematic plan move?",
+        "extra": "The classic London jump: Ne5 is backed by the d4-pawn and the g3-bishop, and can be reinforced by f4 or Ndf3. A kingside attack with f4-f5 or a queen swing often follows."
       },
       "tags": [
         "chess::plan"
@@ -197,12 +238,15 @@
     },
     {
       "key": "e5-fork-trick",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black just chopped your knight with 9...Nxe5. White to move: take back which way?",
-        "back": "dxe5",
-        "extra": "dxe5 forks the d6-bishop and the f6-knight, so Black cannot save both cleanly. This pawn trick is exactly why Black must prepare any capture on e5 in the London.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fp4ppp%2F1p1bpn2%2F2ppn3%2F3P4%2F2PBP1B1%2FPP1N1PPP%2FR2QK2R%20w%20KQ%20-%200%2010&color=white&theme=brown&piece=cburnett&lastMove=c6e5"
+        "fen": "r1bq1rk1/p4ppp/1p1bpn2/2ppn3/3P4/2PBP1B1/PP1N1PPP/R2QK2R w KQ - 0 10",
+        "answer": "dxe5",
+        "answerUci": "d4e5",
+        "orientation": "white",
+        "lastMove": "c6e5",
+        "prompt": "Black just chopped your knight with 9...Nxe5. White to move: take back which way?",
+        "extra": "dxe5 forks the d6-bishop and the f6-knight, so Black cannot save both cleanly. This pawn trick is exactly why Black must prepare any capture on e5 in the London."
       },
       "tags": [
         "chess::plan"
@@ -210,12 +254,15 @@
     },
     {
       "key": "qb6-qb3",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black hits b2 with 4...Qb6. White to move: what is the theory-approved answer?",
-        "back": "Qb3",
-        "extra": "Qb3 blocks the b-file with the queen herself, guarding b2 and offering a trade on White's terms. Do not grab on b6 voluntarily: let Black take and open the a-file for you.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnb1kb1r%2Fpp2pppp%2F1q3n2%2F2pp4%2F3P1B2%2F2P1P3%2FPP3PPP%2FRN1QKBNR%20w%20KQkq%20-%201%205&color=white&theme=brown&piece=cburnett&lastMove=d8b6"
+        "fen": "rnb1kb1r/pp2pppp/1q3n2/2pp4/3P1B2/2P1P3/PP3PPP/RN1QKBNR w KQkq - 1 5",
+        "answer": "Qb3",
+        "answerUci": "d1b3",
+        "orientation": "white",
+        "lastMove": "d8b6",
+        "prompt": "Black hits b2 with 4...Qb6. White to move: what is the theory-approved answer?",
+        "extra": "Qb3 blocks the b-file with the queen herself, guarding b2 and offering a trade on White's terms. Do not grab on b6 voluntarily: let Black take and open the a-file for you."
       },
       "tags": [
         "chess::variation"
@@ -223,12 +270,15 @@
     },
     {
       "key": "qb6-axb3",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black traded queens with 5...Qxb3. White to move: recapture how?",
-        "back": "axb3",
-        "extra": "Take with the a-pawn: the a1-rook suddenly sits on an open file and the b3-pawn grips c4. The doubled b-pawns are a strength here, not a weakness.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnb1kb1r%2Fpp2pppp%2F5n2%2F2pp4%2F3P1B2%2F1qP1P3%2FPP3PPP%2FRN2KBNR%20w%20KQkq%20-%200%206&color=white&theme=brown&piece=cburnett&lastMove=b6b3"
+        "fen": "rnb1kb1r/pp2pppp/5n2/2pp4/3P1B2/1qP1P3/PP3PPP/RN2KBNR w KQkq - 0 6",
+        "answer": "axb3",
+        "answerUci": "a2b3",
+        "orientation": "white",
+        "lastMove": "b6b3",
+        "prompt": "Black traded queens with 5...Qxb3. White to move: recapture how?",
+        "extra": "Take with the a-pawn: the a1-rook suddenly sits on an open file and the b3-pawn grips c4. The doubled b-pawns are a strength here, not a weakness."
       },
       "tags": [
         "chess::variation"
@@ -236,12 +286,15 @@
     },
     {
       "key": "qb6-c4-qc2",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Instead of trading, Black gained space with 5...c4. White to move: where does the queen go?",
-        "back": "Qc2",
-        "extra": "Step back to a safe, useful square. With ...c4 the pressure on d4 is gone, so White will regroup and later strike at the queenside chain with b3, or in the center with e4.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnb1kb1r%2Fpp2pppp%2F1q3n2%2F3p4%2F2pP1B2%2F1QP1P3%2FPP3PPP%2FRN2KBNR%20w%20KQkq%20-%200%206&color=white&theme=brown&piece=cburnett&lastMove=c5c4"
+        "fen": "rnb1kb1r/pp2pppp/1q3n2/3p4/2pP1B2/1QP1P3/PP3PPP/RN2KBNR w KQkq - 0 6",
+        "answer": "Qc2",
+        "answerUci": "b3c2",
+        "orientation": "white",
+        "lastMove": "c5c4",
+        "prompt": "Instead of trading, Black gained space with 5...c4. White to move: where does the queen go?",
+        "extra": "Step back to a safe, useful square. With ...c4 the pressure on d4 is gone, so White will regroup and later strike at the queenside chain with b3, or in the center with e4."
       },
       "tags": [
         "chess::variation"
@@ -249,12 +302,15 @@
     },
     {
       "key": "qb6-exd4",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Queens are off and Black played 6...cxd4. White to move: which recapture?",
-        "back": "exd4",
-        "extra": "The recapture rule does not change: take with the e-pawn so c3 keeps supporting d4. With the open a-file and the c4-grip, White has the easier endgame to play.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnb1kb1r%2Fpp2pppp%2F5n2%2F3p4%2F3p1B2%2F1PP1P3%2F1P3PPP%2FRN2KBNR%20w%20KQkq%20-%200%207&color=white&theme=brown&piece=cburnett&lastMove=c5d4"
+        "fen": "rnb1kb1r/pp2pppp/5n2/3p4/3p1B2/1PP1P3/1P3PPP/RN2KBNR w KQkq - 0 7",
+        "answer": "exd4",
+        "answerUci": "e3d4",
+        "orientation": "white",
+        "lastMove": "c5d4",
+        "prompt": "Queens are off and Black played 6...cxd4. White to move: which recapture?",
+        "extra": "The recapture rule does not change: take with the e-pawn so c3 keeps supporting d4. With the open a-file and the c4-grip, White has the easier endgame to play."
       },
       "tags": [
         "chess::variation"
@@ -262,12 +318,15 @@
     },
     {
       "key": "early-c5-e3",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black hits the center immediately with 2...c5. White to move: how do you react?",
-        "back": "e3",
-        "extra": "Stay calm with e3: d4 is defended and dxc5 would only help Black develop. Know the key detail: if Black now tries 3...Qb6, White has the gambit answer 4.Nc3, since b2 is poisoned.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F8%2F2pp4%2F3P1B2%2F8%2FPPP1PPPP%2FRN1QKBNR%20w%20KQkq%20-%200%203&color=white&theme=brown&piece=cburnett&lastMove=c7c5"
+        "fen": "rnbqkbnr/pp2pppp/8/2pp4/3P1B2/8/PPP1PPPP/RN1QKBNR w KQkq - 0 3",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "lastMove": "c7c5",
+        "prompt": "Black hits the center immediately with 2...c5. White to move: how do you react?",
+        "extra": "Stay calm with e3: d4 is defended and dxc5 would only help Black develop. Know the key detail: if Black now tries 3...Qb6, White has the gambit answer 4.Nc3, since b2 is poisoned."
       },
       "tags": [
         "chess::variation"
@@ -275,12 +334,15 @@
     },
     {
       "key": "early-c5-exd4",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black exchanged with 3...cxd4. White to move: take back with which pawn?",
-        "back": "exd4",
-        "extra": "exd4 keeps the strong d4-pawn and half-opens the e-file, while the London bishop already sits happily outside the chain. An easy, comfortable structure for White.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F8%2F3p4%2F3p1B2%2F4P3%2FPPP2PPP%2FRN1QKBNR%20w%20KQkq%20-%200%204&color=white&theme=brown&piece=cburnett&lastMove=c5d4"
+        "fen": "rnbqkbnr/pp2pppp/8/3p4/3p1B2/4P3/PPP2PPP/RN1QKBNR w KQkq - 0 4",
+        "answer": "exd4",
+        "answerUci": "e3d4",
+        "orientation": "white",
+        "lastMove": "c5d4",
+        "prompt": "Black exchanged with 3...cxd4. White to move: take back with which pawn?",
+        "extra": "exd4 keeps the strong d4-pawn and half-opens the e-file, while the London bishop already sits happily outside the chain. An easy, comfortable structure for White."
       },
       "tags": [
         "chess::variation"
@@ -288,12 +350,15 @@
     },
     {
       "key": "copycat-c4",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black copies you with 2...Bf5. White to move: how do you punish the mirror?",
-        "back": "c4",
-        "extra": "With the bishop gone from c8, Black's queenside is tender: c4 hits d5 at once, and Qb3 comes next against b7. Black cannot keep copying, White strikes first.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rn1qkbnr%2Fppp1pppp%2F8%2F3p1b2%2F3P1B2%2F8%2FPPP1PPPP%2FRN1QKBNR%20w%20KQkq%20-%202%203&color=white&theme=brown&piece=cburnett&lastMove=c8f5"
+        "fen": "rn1qkbnr/ppp1pppp/8/3p1b2/3P1B2/8/PPP1PPPP/RN1QKBNR w KQkq - 2 3",
+        "answer": "c4",
+        "answerUci": "c2c4",
+        "orientation": "white",
+        "lastMove": "c8f5",
+        "prompt": "Black copies you with 2...Bf5. White to move: how do you punish the mirror?",
+        "extra": "With the bishop gone from c8, Black's queenside is tender: c4 hits d5 at once, and Qb3 comes next against b7. Black cannot keep copying, White strikes first."
       },
       "tags": [
         "chess::variation"
@@ -301,12 +366,15 @@
     },
     {
       "key": "kid-3-e3",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black goes King's Indian style with 2...g6. White to move: how does the London continue?",
-        "back": "e3",
-        "extra": "Same system, small adjustments: e3, Nf3, Be2 and h3 come next. Against the fianchetto the light-squared bishop will choose e2, and h3 will give the dark-squared bishop a home on h2.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpppppp1p%2F5np1%2F8%2F3P1B2%2F8%2FPPP1PPPP%2FRN1QKBNR%20w%20KQkq%20-%200%203&color=white&theme=brown&piece=cburnett&lastMove=g7g6"
+        "fen": "rnbqkb1r/pppppp1p/5np1/8/3P1B2/8/PPP1PPPP/RN1QKBNR w KQkq - 0 3",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "lastMove": "g7g6",
+        "prompt": "Black goes King's Indian style with 2...g6. White to move: how does the London continue?",
+        "extra": "Same system, small adjustments: e3, Nf3, Be2 and h3 come next. Against the fianchetto the light-squared bishop will choose e2, and h3 will give the dark-squared bishop a home on h2."
       },
       "tags": [
         "chess::variation"
@@ -314,12 +382,15 @@
     },
     {
       "key": "kid-4-nf3",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Anti-King's Indian London after 3...Bg7. White to move: develop.",
-        "back": "Nf3",
-        "extra": "Simple, flexible development. White keeps building the wall while Black commits; the knight also covers e5 and supports a later grip on the dark squares.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fppppppbp%2F5np1%2F8%2F3P1B2%2F4P3%2FPPP2PPP%2FRN1QKBNR%20w%20KQkq%20-%201%204&color=white&theme=brown&piece=cburnett&lastMove=f8g7"
+        "fen": "rnbqk2r/ppppppbp/5np1/8/3P1B2/4P3/PPP2PPP/RN1QKBNR w KQkq - 1 4",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "lastMove": "f8g7",
+        "prompt": "Anti-King's Indian London after 3...Bg7. White to move: develop.",
+        "extra": "Simple, flexible development. White keeps building the wall while Black commits; the knight also covers e5 and supports a later grip on the dark squares."
       },
       "tags": [
         "chess::variation"
@@ -327,12 +398,15 @@
     },
     {
       "key": "kid-5-be2",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black castled behind the fianchetto. White to move: where does the light-squared bishop belong?",
-        "back": "Be2",
-        "extra": "Against ...g6 the bishop goes to e2, not d3: the g6-pawn blunts the b1-h7 diagonal, so on d3 it would bite on granite. From e2 it supports the center and keeps f3 solid.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbq1rk1%2Fppppppbp%2F5np1%2F8%2F3P1B2%2F4PN2%2FPPP2PPP%2FRN1QKB1R%20w%20KQ%20-%203%205&color=white&theme=brown&piece=cburnett&lastMove=e8g8"
+        "fen": "rnbq1rk1/ppppppbp/5np1/8/3P1B2/4PN2/PPP2PPP/RN1QKB1R w KQ - 3 5",
+        "answer": "Be2",
+        "answerUci": "f1e2",
+        "orientation": "white",
+        "lastMove": "e8g8",
+        "prompt": "Black castled behind the fianchetto. White to move: where does the light-squared bishop belong?",
+        "extra": "Against ...g6 the bishop goes to e2, not d3: the g6-pawn blunts the b1-h7 diagonal, so on d3 it would bite on granite. From e2 it supports the center and keeps f3 solid."
       },
       "tags": [
         "chess::variation"
@@ -340,12 +414,15 @@
     },
     {
       "key": "kid-6-h3",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Anti-fianchetto London after 5...d6. White to move: what little move is essential here?",
-        "back": "h3",
-        "extra": "h3 is not about g4: it prepares a bolt-hole on h2 so ...Nh5 can never win the London bishop. From h2 the bishop keeps its b8-h2 diagonal for the rest of the game.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbq1rk1%2Fppp1ppbp%2F3p1np1%2F8%2F3P1B2%2F4PN2%2FPPP1BPPP%2FRN1QK2R%20w%20KQ%20-%200%206&color=white&theme=brown&piece=cburnett&lastMove=d7d6"
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/3P1B2/4PN2/PPP1BPPP/RN1QK2R w KQ - 0 6",
+        "answer": "h3",
+        "answerUci": "h2h3",
+        "orientation": "white",
+        "lastMove": "d7d6",
+        "prompt": "Anti-fianchetto London after 5...d6. White to move: what little move is essential here?",
+        "extra": "h3 is not about g4: it prepares a bolt-hole on h2 so ...Nh5 can never win the London bishop. From h2 the bishop keeps its b8-h2 diagonal for the rest of the game."
       },
       "tags": [
         "chess::variation"
@@ -353,12 +430,15 @@
     },
     {
       "key": "kid-7-castle",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black played 6...Nbd7, clearly preparing ...e5. White to move: what should you do first?",
-        "back": "O-O",
-        "extra": "Castle: the setup is done and the king comes first. White is fully ready for ...e5 and will answer it with dxe5 and Bh2, keeping the better structure.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fpppnppbp%2F3p1np1%2F8%2F3P1B2%2F4PN1P%2FPPP1BPP1%2FRN1QK2R%20w%20KQ%20-%201%207&color=white&theme=brown&piece=cburnett&lastMove=b8d7"
+        "fen": "r1bq1rk1/pppnppbp/3p1np1/8/3P1B2/4PN1P/PPP1BPP1/RN1QK2R w KQ - 1 7",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "b8d7",
+        "prompt": "Black played 6...Nbd7, clearly preparing ...e5. White to move: what should you do first?",
+        "extra": "Castle: the setup is done and the king comes first. White is fully ready for ...e5 and will answer it with dxe5 and Bh2, keeping the better structure."
       },
       "tags": [
         "chess::variation"
@@ -366,12 +446,15 @@
     },
     {
       "key": "kid-8-c3",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black lined up 7...Qe8, telegraphing ...e5. White to move: how do you prepare for it?",
-        "back": "c3",
-        "extra": "Complete the pyramid with c3. When ...e5 lands, White trades dxe5 dxe5 and tucks the bishop on h2, where the fixed e5-pawn becomes a long-term target.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1b1qrk1%2Fpppnppbp%2F3p1np1%2F8%2F3P1B2%2F4PN1P%2FPPP1BPP1%2FRN1Q1RK1%20w%20-%20-%203%208&color=white&theme=brown&piece=cburnett&lastMove=d8e8"
+        "fen": "r1b1qrk1/pppnppbp/3p1np1/8/3P1B2/4PN1P/PPP1BPP1/RN1Q1RK1 w - - 3 8",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "lastMove": "d8e8",
+        "prompt": "Black lined up 7...Qe8, telegraphing ...e5. White to move: how do you prepare for it?",
+        "extra": "Complete the pyramid with c3. When ...e5 lands, White trades dxe5 dxe5 and tucks the bishop on h2, where the fixed e5-pawn becomes a long-term target."
       },
       "tags": [
         "chess::variation"
@@ -379,12 +462,15 @@
     },
     {
       "key": "kid-9-dxe5",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black finally breaks with 8...e5. White to move: what is the clean solution?",
-        "back": "dxe5",
-        "extra": "Trade at the right moment: after 9.dxe5 dxe5 the d-file opens and Black's e5-pawn sits on the h2-b8 diagonal as a target. Keeping the tension with 9.Bh2 first is also playable.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1b1qrk1%2Fpppn1pbp%2F3p1np1%2F4p3%2F3P1B2%2F2P1PN1P%2FPP2BPP1%2FRN1Q1RK1%20w%20-%20-%200%209&color=white&theme=brown&piece=cburnett&lastMove=e7e5"
+        "fen": "r1b1qrk1/pppn1pbp/3p1np1/4p3/3P1B2/2P1PN1P/PP2BPP1/RN1Q1RK1 w - - 0 9",
+        "answer": "dxe5",
+        "answerUci": "d4e5",
+        "orientation": "white",
+        "lastMove": "e7e5",
+        "prompt": "Black finally breaks with 8...e5. White to move: what is the clean solution?",
+        "extra": "Trade at the right moment: after 9.dxe5 dxe5 the d-file opens and Black's e5-pawn sits on the h2-b8 diagonal as a target. Keeping the tension with 9.Bh2 first is also playable."
       },
       "tags": [
         "chess::variation"
@@ -392,12 +478,15 @@
     },
     {
       "key": "kid-10-bh2",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "The center resolved after 9.dxe5 dxe5. White to move: where does the attacked bishop go?",
-        "back": "Bh2",
-        "extra": "Into the pocket h3 built for it. From h2 the bishop keeps pressing the b8-h2 diagonal, and the fixed e5-pawn can be besieged later by Nbd2-c4 and queenside play.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1b1qrk1%2Fpppn1pbp%2F5np1%2F4p3%2F5B2%2F2P1PN1P%2FPP2BPP1%2FRN1Q1RK1%20w%20-%20-%200%2010&color=white&theme=brown&piece=cburnett&lastMove=d6e5"
+        "fen": "r1b1qrk1/pppn1pbp/5np1/4p3/5B2/2P1PN1P/PP2BPP1/RN1Q1RK1 w - - 0 10",
+        "answer": "Bh2",
+        "answerUci": "f4h2",
+        "orientation": "white",
+        "lastMove": "d6e5",
+        "prompt": "The center resolved after 9.dxe5 dxe5. White to move: where does the attacked bishop go?",
+        "extra": "Into the pocket h3 built for it. From h2 the bishop keeps pressing the b8-h2 diagonal, and the fixed e5-pawn can be besieged later by Nbd2-c4 and queenside play."
       },
       "tags": [
         "chess::variation"
@@ -405,12 +494,15 @@
     },
     {
       "key": "kid-nh5-bh2",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black lunges with 8...Nh5, hunting your bishop. White to move: how do you keep it?",
-        "back": "Bh2",
-        "extra": "This is the whole point of h3: the bishop simply slides to h2 and keeps its diagonal, while the rim knight stands offside and will have to crawl back.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1b1qrk1%2Fpppnppbp%2F3p2p1%2F7n%2F3P1B2%2F2P1PN1P%2FPP2BPP1%2FRN1Q1RK1%20w%20-%20-%201%209&color=white&theme=brown&piece=cburnett&lastMove=f6h5"
+        "fen": "r1b1qrk1/pppnppbp/3p2p1/7n/3P1B2/2P1PN1P/PP2BPP1/RN1Q1RK1 w - - 1 9",
+        "answer": "Bh2",
+        "answerUci": "f4h2",
+        "orientation": "white",
+        "lastMove": "f6h5",
+        "prompt": "Black lunges with 8...Nh5, hunting your bishop. White to move: how do you keep it?",
+        "extra": "This is the whole point of h3: the bishop simply slides to h2 and keeps its diagonal, while the rim knight stands offside and will have to crawl back."
       },
       "tags": [
         "chess::variation"
@@ -418,12 +510,15 @@
     },
     {
       "key": "kid-c5-c3",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "In the anti-fianchetto setup Black strikes with 6...c5. White to move: how do you hold the center?",
-        "back": "c3",
-        "extra": "The familiar pyramid even here: c3 keeps d4 solid so White never has to release the central tension or worry about the long diagonal opening for the g7-bishop.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbq1rk1%2Fpp2ppbp%2F3p1np1%2F2p5%2F3P1B2%2F4PN1P%2FPPP1BPP1%2FRN1QK2R%20w%20KQ%20-%200%207&color=white&theme=brown&piece=cburnett&lastMove=c7c5"
+        "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p5/3P1B2/4PN1P/PPP1BPP1/RN1QK2R w KQ - 0 7",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "lastMove": "c7c5",
+        "prompt": "In the anti-fianchetto setup Black strikes with 6...c5. White to move: how do you hold the center?",
+        "extra": "The familiar pyramid even here: c3 keeps d4 solid so White never has to release the central tension or worry about the long diagonal opening for the g7-bishop."
       },
       "tags": [
         "chess::variation"
@@ -431,12 +526,15 @@
     },
     {
       "key": "kid-qb6-qb3",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Fianchetto structure, and Black probes with 7...Qb6. White to move: what is the standard answer?",
-        "back": "Qb3",
-        "extra": "The same medicine as always against ...Qb6: block the b-file, guard b2, and offer a queen trade that leaves White with the freer queenside. One rule covers every London structure.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnb2rk1%2Fpp2ppbp%2F1q1p1np1%2F2p5%2F3P1B2%2F2P1PN1P%2FPP2BPP1%2FRN1QK2R%20w%20KQ%20-%201%208&color=white&theme=brown&piece=cburnett&lastMove=d8b6"
+        "fen": "rnb2rk1/pp2ppbp/1q1p1np1/2p5/3P1B2/2P1PN1P/PP2BPP1/RN1QK2R w KQ - 1 8",
+        "answer": "Qb3",
+        "answerUci": "d1b3",
+        "orientation": "white",
+        "lastMove": "d8b6",
+        "prompt": "Fianchetto structure, and Black probes with 7...Qb6. White to move: what is the standard answer?",
+        "extra": "The same medicine as always against ...Qb6: block the b-file, guard b2, and offer a queen trade that leaves White with the freer queenside. One rule covers every London structure."
       },
       "tags": [
         "chess::variation"
@@ -444,12 +542,15 @@
     },
     {
       "key": "pp-nc3",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Poisoned pawn alert: 2...c5 3.e3 Qb6 hits b2. White to move: what is the gambit reply?",
-        "back": "Nc3",
-        "extra": "Ignore b2 and develop with threats: 4.Nc3 heads for b5. If Black grabs the pawn, the queen gets hunted; if Black declines, the knight is actively placed and White is simply better developed.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnb1kbnr%2Fpp2pppp%2F1q6%2F2pp4%2F3P1B2%2F4P3%2FPPP2PPP%2FRN1QKBNR%20w%20KQkq%20-%201%204&color=white&theme=brown&piece=cburnett&lastMove=d8b6"
+        "fen": "rnb1kbnr/pp2pppp/1q6/2pp4/3P1B2/4P3/PPP2PPP/RN1QKBNR w KQkq - 1 4",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "lastMove": "d8b6",
+        "prompt": "Poisoned pawn alert: 2...c5 3.e3 Qb6 hits b2. White to move: what is the gambit reply?",
+        "extra": "Ignore b2 and develop with threats: 4.Nc3 heads for b5. If Black grabs the pawn, the queen gets hunted; if Black declines, the knight is actively placed and White is simply better developed."
       },
       "tags": [
         "chess::trap",
@@ -458,12 +559,15 @@
     },
     {
       "key": "pp-nb5",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black took the bait with 4...Qxb2. White to move: spring the trap.",
-        "back": "Nb5",
-        "extra": "Nb5 threatens Nc7+, forking king and rook, and boxes the queen into the corner. Black's only real tries are ...Na6 to cover c7 or the desperate ...Qb4+, and both lead to misery.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnb1kbnr%2Fpp2pppp%2F8%2F2pp4%2F3P1B2%2F2N1P3%2FPqP2PPP%2FR2QKBNR%20w%20KQkq%20-%200%205&color=white&theme=brown&piece=cburnett&lastMove=b6b2"
+        "fen": "rnb1kbnr/pp2pppp/8/2pp4/3P1B2/2N1P3/PqP2PPP/R2QKBNR w KQkq - 0 5",
+        "answer": "Nb5",
+        "answerUci": "c3b5",
+        "orientation": "white",
+        "lastMove": "b6b2",
+        "prompt": "Black took the bait with 4...Qxb2. White to move: spring the trap.",
+        "extra": "Nb5 threatens Nc7+, forking king and rook, and boxes the queen into the corner. Black's only real tries are ...Na6 to cover c7 or the desperate ...Qb4+, and both lead to misery."
       },
       "tags": [
         "chess::trap",
@@ -472,12 +576,15 @@
     },
     {
       "key": "pp-qb4-qd2",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black bails out with the check 5...Qb4+. White to move: how do you deal with it?",
-        "back": "Qd2",
-        "extra": "Block with the queen and force the trade; 6.c3 would drop the b5-knight to Qxb5. After ...Qxd2+ Kxd2 the Nc7+ fork is still in the air, and White regains the pawn with a huge lead in development.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnb1kbnr%2Fpp2pppp%2F8%2F1Npp4%2F1q1P1B2%2F4P3%2FP1P2PPP%2FR2QKBNR%20w%20KQkq%20-%202%206&color=white&theme=brown&piece=cburnett&lastMove=b2b4"
+        "fen": "rnb1kbnr/pp2pppp/8/1Npp4/1q1P1B2/4P3/P1P2PPP/R2QKBNR w KQkq - 2 6",
+        "answer": "Qd2",
+        "answerUci": "d1d2",
+        "orientation": "white",
+        "lastMove": "b2b4",
+        "prompt": "Black bails out with the check 5...Qb4+. White to move: how do you deal with it?",
+        "extra": "Block with the queen and force the trade; 6.c3 would drop the b5-knight to Qxb5. After ...Qxd2+ Kxd2 the Nc7+ fork is still in the air, and White regains the pawn with a huge lead in development."
       },
       "tags": [
         "chess::trap",
@@ -486,12 +593,15 @@
     },
     {
       "key": "pp-rb1",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black covered the c7 fork with 5...Na6. White to move: keep the hunt going.",
-        "back": "Rb1",
-        "extra": "Kick the queen with tempo. Her only flight squares are on the a-file, and the rook stands ready for the deflection Rxa6 once she settles back on b2.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1b1kbnr%2Fpp2pppp%2Fn7%2F1Npp4%2F3P1B2%2F4P3%2FPqP2PPP%2FR2QKBNR%20w%20KQkq%20-%202%206&color=white&theme=brown&piece=cburnett&lastMove=b8a6"
+        "fen": "r1b1kbnr/pp2pppp/n7/1Npp4/3P1B2/4P3/PqP2PPP/R2QKBNR w KQkq - 2 6",
+        "answer": "Rb1",
+        "answerUci": "a1b1",
+        "orientation": "white",
+        "lastMove": "b8a6",
+        "prompt": "Black covered the c7 fork with 5...Na6. White to move: keep the hunt going.",
+        "extra": "Kick the queen with tempo. Her only flight squares are on the a-file, and the rook stands ready for the deflection Rxa6 once she settles back on b2."
       },
       "tags": [
         "chess::trap",
@@ -500,12 +610,15 @@
     },
     {
       "key": "pp-ra1",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "The queen grabbed another pawn with 6...Qxa2. White to move: what now?",
-        "back": "Ra1",
-        "extra": "Chase her again: after 7.Ra1 the queen must return to b2, since b3 is covered by the c2-pawn. Every move of the hunt develops White's initiative while Black's pieces sleep.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1b1kbnr%2Fpp2pppp%2Fn7%2F1Npp4%2F3P1B2%2F4P3%2Fq1P2PPP%2F1R1QKBNR%20w%20Kkq%20-%200%207&color=white&theme=brown&piece=cburnett&lastMove=b2a2"
+        "fen": "r1b1kbnr/pp2pppp/n7/1Npp4/3P1B2/4P3/q1P2PPP/1R1QKBNR w Kkq - 0 7",
+        "answer": "Ra1",
+        "answerUci": "b1a1",
+        "orientation": "white",
+        "lastMove": "b2a2",
+        "prompt": "The queen grabbed another pawn with 6...Qxa2. White to move: what now?",
+        "extra": "Chase her again: after 7.Ra1 the queen must return to b2, since b3 is covered by the c2-pawn. Every move of the hunt develops White's initiative while Black's pieces sleep."
       },
       "tags": [
         "chess::trap",
@@ -514,12 +627,15 @@
     },
     {
       "key": "pp-rxa6",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "The queen sits on b2 again after 7...Qb2. White to move: find the shocking blow.",
-        "back": "Rxa6",
-        "extra": "Deflection: the a6-knight is the only defender of c7. After 8...bxa6 comes 9.Nc7+, forking king and rook; Black's greed on b2 ends up costing a piece.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1b1kbnr%2Fpp2pppp%2Fn7%2F1Npp4%2F3P1B2%2F4P3%2F1qP2PPP%2FR2QKBNR%20w%20Kkq%20-%202%208&color=white&theme=brown&piece=cburnett&lastMove=a2b2"
+        "fen": "r1b1kbnr/pp2pppp/n7/1Npp4/3P1B2/4P3/1qP2PPP/R2QKBNR w Kkq - 2 8",
+        "answer": "Rxa6",
+        "answerUci": "a1a6",
+        "orientation": "white",
+        "lastMove": "a2b2",
+        "prompt": "The queen sits on b2 again after 7...Qb2. White to move: find the shocking blow.",
+        "extra": "Deflection: the a6-knight is the only defender of c7. After 8...bxa6 comes 9.Nc7+, forking king and rook; Black's greed on b2 ends up costing a piece."
       },
       "tags": [
         "chess::trap",
@@ -528,12 +644,15 @@
     },
     {
       "key": "pp-nc7",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black recaptured with 8...bxa6. White to move: cash in.",
-        "back": "Nc7+",
-        "extra": "The fork the whole line was built around: the check hits e8 and a8 at once. After 9...Kd7 White plays 10.Nxa8, emerging a piece for two pawns up with Black's king stranded.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1b1kbnr%2Fp3pppp%2Fp7%2F1Npp4%2F3P1B2%2F4P3%2F1qP2PPP%2F3QKBNR%20w%20Kkq%20-%200%209&color=white&theme=brown&piece=cburnett&lastMove=b7a6"
+        "fen": "r1b1kbnr/p3pppp/p7/1Npp4/3P1B2/4P3/1qP2PPP/3QKBNR w Kkq - 0 9",
+        "answer": "Nc7+",
+        "answerUci": "b5c7",
+        "orientation": "white",
+        "lastMove": "b7a6",
+        "prompt": "Black recaptured with 8...bxa6. White to move: cash in.",
+        "extra": "The fork the whole line was built around: the check hits e8 and a8 at once. After 9...Kd7 White plays 10.Nxa8, emerging a piece for two pawns up with Black's king stranded."
       },
       "tags": [
         "chess::trap",
@@ -542,12 +661,15 @@
     },
     {
       "key": "pp-nxa8",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "The king ran with 9...Kd7. White to move: complete the operation.",
-        "back": "Nxa8",
-        "extra": "Take the rook: White has won rook and knight for rook and two pawns. Black must burn several moves rounding up the cornered knight while White develops and targets the loose queenside.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1b2bnr%2Fp1Nkpppp%2Fp7%2F2pp4%2F3P1B2%2F4P3%2F1qP2PPP%2F3QKBNR%20w%20K%20-%202%2010&color=white&theme=brown&piece=cburnett&lastMove=e8d7"
+        "fen": "r1b2bnr/p1Nkpppp/p7/2pp4/3P1B2/4P3/1qP2PPP/3QKBNR w K - 2 10",
+        "answer": "Nxa8",
+        "answerUci": "c7a8",
+        "orientation": "white",
+        "lastMove": "e8d7",
+        "prompt": "The king ran with 9...Kd7. White to move: complete the operation.",
+        "extra": "Take the rook: White has won rook and knight for rook and two pawns. Black must burn several moves rounding up the cornered knight while White develops and targets the loose queenside."
       },
       "tags": [
         "chess::trap",
@@ -556,12 +678,15 @@
     },
     {
       "key": "gg-bxh7",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Main-line London, and castled Black grabbed at your bishop with 8...Nh5. White to move: punish it.",
-        "back": "Bxh7+",
-        "extra": "The Greek gift: ...Nh5 abandoned the defense of h7. With the d3-bishop, the f3-knight and the queen all pointing kingside, the sacrifice wins material back with a winning attack.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fpp3ppp%2F2nbp3%2F2pp3n%2F3P4%2F2PBPNB1%2FPP1N1PPP%2FR2QK2R%20w%20KQ%20-%206%209&color=white&theme=brown&piece=cburnett&lastMove=f6h5"
+        "fen": "r1bq1rk1/pp3ppp/2nbp3/2pp3n/3P4/2PBPNB1/PP1N1PPP/R2QK2R w KQ - 6 9",
+        "answer": "Bxh7+",
+        "answerUci": "d3h7",
+        "orientation": "white",
+        "lastMove": "f6h5",
+        "prompt": "Main-line London, and castled Black grabbed at your bishop with 8...Nh5. White to move: punish it.",
+        "extra": "The Greek gift: ...Nh5 abandoned the defense of h7. With the d3-bishop, the f3-knight and the queen all pointing kingside, the sacrifice wins material back with a winning attack."
       },
       "tags": [
         "chess::trap"
@@ -569,12 +694,15 @@
     },
     {
       "key": "gg-ng5",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black accepted with 9...Kxh7. White to move: follow up the sacrifice.",
-        "back": "Ng5+",
-        "extra": "The standard second wave: check before the king can organize. On g8 the king runs into Qxh5; if it steps to g6 instead, Qg4 keeps a winning attack against the exposed monarch.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bq1r2%2Fpp3ppk%2F2nbp3%2F2pp3n%2F3P4%2F2P1PNB1%2FPP1N1PPP%2FR2QK2R%20w%20KQ%20-%200%2010&color=white&theme=brown&piece=cburnett&lastMove=g8h7"
+        "fen": "r1bq1r2/pp3ppk/2nbp3/2pp3n/3P4/2P1PNB1/PP1N1PPP/R2QK2R w KQ - 0 10",
+        "answer": "Ng5+",
+        "answerUci": "f3g5",
+        "orientation": "white",
+        "lastMove": "g8h7",
+        "prompt": "Black accepted with 9...Kxh7. White to move: follow up the sacrifice.",
+        "extra": "The standard second wave: check before the king can organize. On g8 the king runs into Qxh5; if it steps to g6 instead, Qg4 keeps a winning attack against the exposed monarch."
       },
       "tags": [
         "chess::trap"
@@ -582,12 +710,15 @@
     },
     {
       "key": "gg-qxh5",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "The king retreated with 10...Kg8. White to move: bring in the heavy piece.",
-        "back": "Qxh5",
-        "extra": "Qxh5 scoops up the stranded knight and threatens Qh7 mate, protected by the g5-knight. The only defense 11...Re8, freeing f8 for the king, walks into 12.Qxf7+.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fpp3pp1%2F2nbp3%2F2pp2Nn%2F3P4%2F2P1P1B1%2FPP1N1PPP%2FR2QK2R%20w%20KQ%20-%202%2011&color=white&theme=brown&piece=cburnett&lastMove=h7g8"
+        "fen": "r1bq1rk1/pp3pp1/2nbp3/2pp2Nn/3P4/2P1P1B1/PP1N1PPP/R2QK2R w KQ - 2 11",
+        "answer": "Qxh5",
+        "answerUci": "d1h5",
+        "orientation": "white",
+        "lastMove": "h7g8",
+        "prompt": "The king retreated with 10...Kg8. White to move: bring in the heavy piece.",
+        "extra": "Qxh5 scoops up the stranded knight and threatens Qh7 mate, protected by the g5-knight. The only defense 11...Re8, freeing f8 for the king, walks into 12.Qxf7+."
       },
       "tags": [
         "chess::trap"
@@ -595,12 +726,15 @@
     },
     {
       "key": "gg-qxf7",
-      "model": "basic",
+      "model": "chess",
       "fields": {
-        "front": "Black defended the mate with 11...Re8. White to move: keep the king in the net.",
-        "back": "Qxf7+",
-        "extra": "The g5-knight guards f7, so the queen dives in. After 12...Kh8 13.Qh5+ Kg8 14.Qh7+ Kf8 15.Qh8+ Ke7 16.Qxg7 White has swept the kingside bare with the attack still running.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqr1k1%2Fpp3pp1%2F2nbp3%2F2pp2NQ%2F3P4%2F2P1P1B1%2FPP1N1PPP%2FR3K2R%20w%20KQ%20-%201%2012&color=white&theme=brown&piece=cburnett&lastMove=f8e8"
+        "fen": "r1bqr1k1/pp3pp1/2nbp3/2pp2NQ/3P4/2P1P1B1/PP1N1PPP/R3K2R w KQ - 1 12",
+        "answer": "Qxf7+",
+        "answerUci": "h5f7",
+        "orientation": "white",
+        "lastMove": "f8e8",
+        "prompt": "Black defended the mate with 11...Re8. White to move: keep the king in the net.",
+        "extra": "The g5-knight guards f7, so the queen dives in. After 12...Kh8 13.Qh5+ Kg8 14.Qh7+ Kf8 15.Qh8+ Ke7 16.Qxg7 White has swept the kingside bare with the attack still running."
       },
       "tags": [
         "chess::trap"
