@@ -1,0 +1,1336 @@
+{
+  "key": "middle-earth-lore",
+  "version": 1,
+  "name": "Middle-earth Lore: Shire to Silmarillion",
+  "description": "Tolkien's legendarium in 132 cards, working backward through time: the War of the Ring, deep Third Age history, the forging of the Rings of Power and the fall of Numenor, and finally the First Age of the Silmarillion - the Valar, Feanor, Beren and Luthien, and the overthrow of Morgoth.",
+  "category": "Pop Culture",
+  "topics": [
+    "tolkien",
+    "lord-of-the-rings",
+    "fantasy"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/One%20Ring%20Blender%20Render.png?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "ring-inscription",
+      "model": "basic",
+      "fields": {
+        "front": "The fiery inscription on the One Ring is written in what language?",
+        "back": "The Black Speech of Mordor",
+        "extra": "The letters themselves are Tengwar, the Elvish script. Gandalf recites the verse aloud in Black Speech at the Council of Elrond, and the sky darkens."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "ring-verse",
+      "model": "basic",
+      "fields": {
+        "front": "In the Ring-verse, how many Rings of Power went to the Elves, the Dwarves, and Men?",
+        "back": "Three for the Elven-kings, Seven for the Dwarf-lords, Nine for Mortal Men - and One for the Dark Lord",
+        "extra": "Nineteen lesser rings plus the One. The fates of the Three, Seven, and Nine diverged sharply - later cards cover each."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "fellowship-members",
+      "model": "basic",
+      "fields": {
+        "front": "Name the nine members of the Fellowship of the Ring.",
+        "back": "Frodo, Sam, Merry, Pippin, Gandalf, Aragorn, Boromir, Legolas, and Gimli",
+        "extra": "Nine walkers set against the nine Ringwraiths. Four hobbits, two Men, a wizard, an elf, and a dwarf."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "frodo-bilbo-relation",
+      "model": "basic",
+      "fields": {
+        "front": "What is Frodo's family relationship to Bilbo?",
+        "back": "His cousin - Bilbo adopted him as his heir",
+        "extra": "Not his nephew, despite what Bilbo calls him. Frodo's parents, Drogo Baggins and Primula Brandybuck, drowned in a boating accident when he was twelve."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "gollum-name",
+      "model": "basic",
+      "fields": {
+        "front": "What was Gollum's name before he found the Ring, and what kind of creature was he?",
+        "back": "Smeagol, a hobbit of the river-folk (akin to the Stoors)",
+        "extra": "He lived near the Gladden Fields on the Anduin and kept the Ring for nearly 500 years under the Misty Mountains."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "deagol",
+      "model": "basic",
+      "fields": {
+        "front": "Who actually found the One Ring in the river Anduin - and what happened to him?",
+        "back": "Deagol, Smeagol's friend; Smeagol strangled him for it",
+        "extra": "It was Smeagol's birthday, and he demanded the Ring as a present. The murder was the Ring's first act of corruption in its long dormancy."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "sting",
+      "model": "basic",
+      "fields": {
+        "front": "What is the name of Frodo's sword, and what does it do near orcs?",
+        "back": "Sting - it glows blue when orcs are near",
+        "extra": "Bilbo found it in a troll-hoard and passed it to Frodo in Rivendell. It is an Elvish blade forged in Gondolin in the First Age."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "glamdring",
+      "model": "basic",
+      "fields": {
+        "front": "What is the name of Gandalf's sword?",
+        "back": "Glamdring, the Foe-hammer",
+        "extra": "Found in the same troll-hoard as Sting. It was forged in Gondolin and once borne by Turgon, the city's king - Gandalf carries a First Age royal blade."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "mithril-coat",
+      "model": "basic",
+      "fields": {
+        "front": "What hidden armor saves Frodo from a spear-thrust in Moria?",
+        "back": "His mithril coat, a gift from Bilbo",
+        "extra": "Originally given to Bilbo by Thorin from Smaug's hoard. Gandalf said its worth was greater than the value of the whole Shire."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "aragorn-heritage",
+      "model": "basic",
+      "fields": {
+        "front": "Aragorn is the heir of which ancient king, giving him a claim to Gondor's throne?",
+        "back": "Isildur",
+        "extra": "Aragorn son of Arathorn is Chieftain of the Dunedain of the North, descended from Isildur through the kings of Arnor in unbroken line."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "anduril",
+      "model": "basic",
+      "fields": {
+        "front": "What sword is reforged for Aragorn from the shards of Narsil, and what is it called?",
+        "back": "Anduril, the Flame of the West",
+        "extra": "Narsil broke under Elendil when he fell fighting Sauron; the elves of Rivendell reforged the shards for the War of the Ring."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "mount-doom",
+      "model": "basic",
+      "fields": {
+        "front": "What is the Elvish name of Mount Doom?",
+        "back": "Orodruin",
+        "extra": "Also called Amon Amarth ('Mount of Fate'). It is the only fire hot enough to unmake the One Ring, because the Ring was forged there."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "rivendell-name",
+      "model": "basic",
+      "fields": {
+        "front": "What is the Elvish name of Rivendell, and who is its master?",
+        "back": "Imladris, ruled by Elrond",
+        "extra": "The Last Homely House East of the Sea. Elrond is Half-elven, and his history stretches back to the First Age - much more on him later."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "lothlorien",
+      "model": "basic",
+      "fields": {
+        "front": "Who rule the golden wood of Lothlorien?",
+        "back": "Galadriel and Celeborn",
+        "extra": "Its capital is Caras Galadhon, built in the crowns of the mallorn trees. Galadriel is among the oldest and greatest elves left in Middle-earth."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "nazgul",
+      "model": "basic",
+      "fields": {
+        "front": "Who are the Nazgul?",
+        "back": "The nine Ringwraiths - mortal kings and sorcerers enslaved by the Nine Rings Sauron gave to Men",
+        "extra": "Nazgul is Black Speech for 'ring-wraith'. They are neither living nor dead, bound to the One Ring and to Sauron's will."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "witch-king",
+      "model": "basic",
+      "fields": {
+        "front": "The lord of the Nazgul once ruled a northern realm as what king?",
+        "back": "The Witch-king of Angmar",
+        "extra": "In the mid-Third Age his realm of Angmar destroyed the North-kingdom of Arnor - which is why Aragorn's people survived only as wandering Rangers."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "eowyn-witch-king",
+      "model": "basic",
+      "fields": {
+        "front": "Who kills the Witch-king at the Battle of the Pelennor Fields?",
+        "back": "Eowyn of Rohan, after Merry stabs him from behind",
+        "extra": "Answering the prophecy that 'not by the hand of man' would he fall: 'No living man am I! You look upon a woman.'"
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "merry-blade",
+      "model": "basic",
+      "fields": {
+        "front": "Why could Merry's sword wound the Witch-king when other weapons failed?",
+        "back": "It was a barrow-blade of Westernesse, forged in Arnor long ago for war against Angmar",
+        "extra": "Merry took it from the Barrow-downs. Tolkien: no other blade would have dealt that foe a wound so bitter, breaking the spell knitting his sinews."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "theoden",
+      "model": "basic",
+      "fields": {
+        "front": "Who is King of Rohan during the War of the Ring, and where is his hall?",
+        "back": "Theoden son of Thengel; his golden hall Meduseld stands in Edoras",
+        "extra": "Freed from Saruman's influence by Gandalf, he dies on the Pelennor Fields, crushed beneath his horse Snowmane."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "eomer-eowyn",
+      "model": "basic",
+      "fields": {
+        "front": "How are Eomer and Eowyn related to King Theoden?",
+        "back": "They are his sister's children - his nephew and niece",
+        "extra": "Children of Theodwyn and Eomund, adopted into Theoden's house after their parents died. Eomer becomes king after Theoden falls."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "helms-deep",
+      "model": "basic",
+      "fields": {
+        "front": "What is the name of the fortress defended at Helm's Deep, and who is the valley named after?",
+        "back": "The Hornburg, in the valley named for Helm Hammerhand",
+        "extra": "Helm was a legendary king of Rohan who, in a bitter winter siege, stalked his enemies alone in the snow. The horn blown before his wraith-like raids gave the Hornburg its name."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "saruman-isengard",
+      "model": "basic",
+      "fields": {
+        "front": "What is the name of Saruman's tower at Isengard?",
+        "back": "Orthanc",
+        "extra": "Built by the men of Gondor in the Second Age, not by Saruman - he was merely its keeper. Its unbreakable black stone survives the Ents' assault."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "palantir",
+      "model": "basic",
+      "fields": {
+        "front": "What are the palantiri?",
+        "back": "The seeing-stones: crystal globes that let their users see far off and communicate with other stones",
+        "extra": "Saruman and Denethor were both ensnared through them, because Sauron held one himself - the Ithil-stone taken at Minas Morgul."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "treebeard",
+      "model": "basic",
+      "fields": {
+        "front": "What is Treebeard, and what is the Elvish name for his kind?",
+        "back": "An Ent - the Onodrim, shepherds of the trees",
+        "extra": "Treebeard's own Elvish name is Fangorn, the same as his forest. Gandalf calls him the oldest living thing that still walks beneath the Sun in Middle-earth."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "boromir-faramir",
+      "model": "basic",
+      "fields": {
+        "front": "Boromir and Faramir are the sons of which ruler?",
+        "back": "Denethor II, Ruling Steward of Gondor",
+        "extra": "Boromir falls at Amon Hen defending Merry and Pippin from orc-arrows. Denethor rules Gondor but is not its king - a distinction covered soon."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "minas-tirith",
+      "model": "basic",
+      "fields": {
+        "front": "How is the city of Minas Tirith built?",
+        "back": "In seven walled levels carved into the mountain, crowned by the White Tower of Ecthelion",
+        "extra": "Each gate faces a different direction so no enemy can charge straight up. The Court of the Fountain at the top holds the White Tree."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "shelob",
+      "model": "basic",
+      "fields": {
+        "front": "What is Shelob, the monster of Cirith Ungol?",
+        "back": "A great spider - the last child of Ungoliant, an ancient darkness from before the First Age",
+        "extra": "Sam drives her off with Sting and the Phial of Galadriel. Her mother Ungoliant appears near the end of this deck."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "shadowfax",
+      "model": "basic",
+      "fields": {
+        "front": "What is special about Shadowfax, Gandalf's horse?",
+        "back": "He is lord of the Mearas, the greatest horses of Rohan, and bears no other rider",
+        "extra": "The Mearas descend from Felarof, tamed by Eorl the Young, and by tradition carried only the kings of the Mark."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "gwaihir",
+      "model": "basic",
+      "fields": {
+        "front": "Which great Eagle twice rescues Gandalf, and carries him from the peak after the Balrog fight?",
+        "back": "Gwaihir the Windlord",
+        "extra": "He also plucks Frodo and Sam from the slopes of Mount Doom. The Eagles are servants of Manwe, lord of the Valar - not a taxi service."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "legolas-gimli-fathers",
+      "model": "basic",
+      "fields": {
+        "front": "Who are the fathers of Legolas and Gimli?",
+        "back": "Legolas is son of Thranduil, Elvenking of Mirkwood; Gimli is son of Gloin of Thorin's company",
+        "extra": "Both fathers appear in The Hobbit: Thranduil imprisoned the dwarves, and Gloin was one of them - a feud their sons famously bury."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "barad-dur",
+      "model": "basic",
+      "fields": {
+        "front": "Why could Barad-dur never be wholly destroyed while the One Ring survived?",
+        "back": "Its foundations were made with the power of the Ring",
+        "extra": "After the Last Alliance razed the tower, the foundations endured, and Sauron rebuilt it. Only the Ring's destruction brought it down for good."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "grey-havens",
+      "model": "basic",
+      "fields": {
+        "front": "What is the Elvish name of the Grey Havens, and who is its shipwright lord?",
+        "back": "Mithlond, ruled by Cirdan the Shipwright",
+        "extra": "From here the elves sail west out of Middle-earth. Cirdan is among the oldest elves alive, ancient already when the First Age began."
+      },
+      "tags": ["lotr::war-of-the-ring"]
+    },
+    {
+      "key": "istari",
+      "model": "basic",
+      "fields": {
+        "front": "Name the five Istari (wizards) sent to Middle-earth.",
+        "back": "Saruman the White, Gandalf the Grey, Radagast the Brown, and the two Blue Wizards, Alatar and Pallando",
+        "extra": "They arrived around Third Age 1000. The Blue Wizards went into the far East and never return in the tales."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "istari-nature",
+      "model": "basic",
+      "fields": {
+        "front": "What kind of beings are the wizards, really?",
+        "back": "Maiar - angelic spirits clothed in the bodies of old men, sent to rally resistance to Sauron",
+        "extra": "They were forbidden to match Sauron's power with power or dominate the free peoples - the rule Saruman broke and Gandalf kept."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "gandalf-names",
+      "model": "basic",
+      "fields": {
+        "front": "What do the Elves call Gandalf, and what was his name in the West before he was sent to Middle-earth?",
+        "back": "The Elves call him Mithrandir ('Grey Pilgrim'); in Valinor he was the Maia Olorin",
+        "extra": "Also Tharkun to the Dwarves and Incanus in the South. 'Gandalf' is just his name among Men of the North."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "three-elven-rings",
+      "model": "basic",
+      "fields": {
+        "front": "Name the Three Elven Rings and their bearers during the War of the Ring.",
+        "back": "Narya (fire) borne by Gandalf, Nenya (water/adamant) by Galadriel, Vilya (air) by Elrond",
+        "extra": "Cirdan surrendered Narya to Gandalf on his arrival, seeing what he truly was. Vilya is accounted the mightiest of the Three."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "moria-names",
+      "model": "basic",
+      "fields": {
+        "front": "What do the Dwarves call the realm Men and Elves call Moria?",
+        "back": "Khazad-dum, the mansion of the Dwarves",
+        "extra": "Moria is Elvish for 'black chasm' - a name of dread given after its fall. It was the greatest dwarf-realm, founded by Durin the Deathless."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "durins-bane",
+      "model": "basic",
+      "fields": {
+        "front": "What is Durin's Bane, and how was it awakened?",
+        "back": "The Balrog of Moria, woken when the Dwarves mined too deep for mithril",
+        "extra": "It killed King Durin VI in Third Age 1980 and emptied Khazad-dum. Balrogs are corrupted Maiar of fire, servants of Morgoth from the First Age."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "gandalf-balrog-battle",
+      "model": "basic",
+      "fields": {
+        "front": "After falling with the Balrog in Moria, where did Gandalf finally slay it?",
+        "back": "On the peak of Zirakzigil, atop Durin's Tower, after fighting from the deepest tunnels up the Endless Stair",
+        "extra": "Gandalf died from the ordeal and was sent back 'until his task was done' - returning as Gandalf the White."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "mithril",
+      "model": "basic",
+      "fields": {
+        "front": "Where in Middle-earth could mithril be found?",
+        "back": "Only in Khazad-dum (Moria)",
+        "extra": "True-silver: light as a feather, hard as dragon-scales, never tarnishing. Its rarity made it priceless - and mining it woke the Balrog."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "isildur-death",
+      "model": "basic",
+      "fields": {
+        "front": "How did Isildur die, and how was the One Ring lost for an age?",
+        "back": "Orcs ambushed him at the Gladden Fields; the Ring slipped from his finger as he swam the Anduin, and he was shot",
+        "extra": "The Ring betrayed him to its own advantage - a pattern it repeats. It lay in the riverbed for roughly 2,500 years until Deagol found it."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "stewards-origin",
+      "model": "basic",
+      "fields": {
+        "front": "Why is Gondor ruled by Stewards instead of kings when the War of the Ring begins?",
+        "back": "The last king, Earnur, rode to Minas Morgul to answer the Witch-king's challenge and never returned",
+        "extra": "From Third Age 2050 the Stewards ruled 'until the king returns' - nearly a thousand years. Denethor II is the last Ruling Steward."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "minas-ithil-morgul",
+      "model": "basic",
+      "fields": {
+        "front": "What were Minas Morgul and Minas Tirith originally called?",
+        "back": "Minas Ithil (Tower of the Moon) and Minas Anor (Tower of the Sun)",
+        "extra": "When the Nazgul captured Minas Ithil in Third Age 2002 it became Minas Morgul, tower of sorcery; Minas Anor was renamed Minas Tirith, tower of guard."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "osgiliath",
+      "model": "basic",
+      "fields": {
+        "front": "What city was Gondor's original capital, straddling the Anduin?",
+        "back": "Osgiliath, the Citadel of the Stars",
+        "extra": "Ruined by plague and war long before the War of the Ring; by Frodo's day it is a contested crossing, not a city."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "argonath",
+      "model": "basic",
+      "fields": {
+        "front": "The Argonath, the giant river-gate statues on the Anduin, depict which two figures?",
+        "back": "Isildur and Anarion, the sons of Elendil",
+        "extra": "The Pillars of the Kings marked Gondor's ancient northern border. Aragorn passes between images of his own ancestors."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "eorl-oath",
+      "model": "basic",
+      "fields": {
+        "front": "How did the Rohirrim come to possess Rohan?",
+        "back": "Eorl the Young rode to Gondor's rescue at the Field of Celebrant, and the Steward Cirion granted his people the land of Calenardhon",
+        "extra": "The Oath of Eorl bound Rohan and Gondor in mutual aid forever - the oath Theoden answers when the beacons are lit."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "aragorn-names",
+      "model": "basic",
+      "fields": {
+        "front": "What was Aragorn called as a child in Rivendell, and under what name did he serve Rohan and Gondor in his youth?",
+        "back": "Estel ('Hope') as a child; Thorongil ('Eagle of the Star') in disguise",
+        "extra": "As king he takes the name Elessar ('Elfstone') and founds the house of Telcontar - 'Strider' rendered into high speech."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "arwen-lineage",
+      "model": "basic",
+      "fields": {
+        "front": "How is Arwen related to Elrond and to Galadriel?",
+        "back": "She is Elrond's daughter, and Galadriel's granddaughter through her mother Celebrian",
+        "extra": "Called Undomiel, the Evenstar of her people. Like her father she is Half-elven, and must choose between elven immortality and mortal life."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "dol-guldur",
+      "model": "basic",
+      "fields": {
+        "front": "Who was 'the Necromancer' of Dol Guldur in The Hobbit?",
+        "back": "Sauron, secretly regathering strength in southern Mirkwood",
+        "extra": "The White Council drove him out in the same year as Bilbo's quest - but he simply withdrew, openly declaring himself in Mordor soon after."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "white-council",
+      "model": "basic",
+      "fields": {
+        "front": "Who was chosen to lead the White Council, and whom did Galadriel want instead?",
+        "back": "Saruman led it; Galadriel wished for Gandalf",
+        "extra": "Gandalf refused all bonds and rank. Saruman's resentment of Gandalf, and his secret ring-lore studies, began his fall."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "mirkwood-greenwood",
+      "model": "basic",
+      "fields": {
+        "front": "What was Mirkwood called before the Shadow fell on it?",
+        "back": "Greenwood the Great",
+        "extra": "It darkened when Sauron settled at Dol Guldur. After the War of the Ring it is cleansed and renamed Eryn Lasgalen, the Wood of Greenleaves."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "smaug-death",
+      "model": "basic",
+      "fields": {
+        "front": "Who killed the dragon Smaug, and how?",
+        "back": "Bard the Bowman of Lake-town, with the Black Arrow through the bare patch in Smaug's jeweled underbelly",
+        "extra": "A thrush carried word of the weak spot Bilbo had discovered. Bard, a descendant of the lords of Dale, rebuilt that city as its king."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "seven-rings-fate",
+      "model": "basic",
+      "fields": {
+        "front": "What became of the Seven Rings given to the Dwarf-lords?",
+        "back": "Dragons devoured four; Sauron recovered the other three - but the Dwarves never became wraiths",
+        "extra": "Dwarves proved too tough to enslave; the rings only inflamed their gold-lust. The last, Thrain's, was taken from him in the dungeons of Dol Guldur."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "tom-bombadil",
+      "model": "basic",
+      "fields": {
+        "front": "What happens when Tom Bombadil puts on the One Ring?",
+        "back": "Nothing - it has no power over him, and he does not vanish",
+        "extra": "He calls himself Eldest, 'here before the river and the trees'. His wife is Goldberry, the River-daughter. Cut from every adaptation, to fans' eternal grief."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "glorfindel-ford",
+      "model": "basic",
+      "fields": {
+        "front": "In the book, which elf-lord rescues Frodo at the Ford of Bruinen (replaced by Arwen in the film)?",
+        "back": "Glorfindel",
+        "extra": "The flood itself was Elrond's doing. Glorfindel has one of the strangest histories of any elf in Middle-earth - his story resurfaces in the First Age cards."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "scouring-shire",
+      "model": "basic",
+      "fields": {
+        "front": "In the book, who is 'Sharkey', the ruffian boss the hobbits overthrow in the Scouring of the Shire?",
+        "back": "Saruman, petty and diminished, taking revenge on the hobbits",
+        "extra": "Wormtongue finally turns and kills him on Bag End's doorstep. The chapter was omitted entirely from the films."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "witch-king-arnor",
+      "model": "basic",
+      "fields": {
+        "front": "What happened to Arnor, the North-kingdom of the Dunedain?",
+        "back": "It split into three realms and was destroyed piecemeal by the Witch-king of Angmar",
+        "extra": "Its heirs survived as the Rangers of the North, chieftained by Aragorn's line, secretly guarding lands that forgot them - including the Shire."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "ring-bearers-sail",
+      "model": "basic",
+      "fields": {
+        "front": "Which mortals were granted passage over the Sea into the West?",
+        "back": "Bilbo and Frodo (with Gandalf, Elrond, and Galadriel); Sam years later; and Gimli, the only dwarf, sailing with Legolas",
+        "extra": "The three Ring-bearers went first. Passage brought healing, not immortality - mortals remain mortal even in the Undying Lands."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "entwives",
+      "model": "basic",
+      "fields": {
+        "front": "Why are there no Ent children?",
+        "back": "The Entwives were lost - their gardens were destroyed in the wars of the Second Age, and the Ents never found them again",
+        "extra": "Treebeard says the Ents loved the wild woods and the Entwives loved ordered gardens; they simply drifted apart, then the gardens became the Brown Lands."
+      },
+      "tags": ["lotr::third-age"]
+    },
+    {
+      "key": "numenor-gift",
+      "model": "basic",
+      "fields": {
+        "front": "What was Numenor, and why was it given to Men?",
+        "back": "A great island raised in the western sea, the Valar's reward to the Edain for fighting Morgoth in the First Age",
+        "extra": "Also called Westernesse, Andor ('Land of Gift'), and Elenna. Numenoreans were granted long life - thrice that of other men - but not immortality."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "elros-first-king",
+      "model": "basic",
+      "fields": {
+        "front": "Who was the first King of Numenor, and who was his twin brother?",
+        "back": "Elros Tar-Minyatur - twin brother of Elrond",
+        "extra": "Both Half-elven, the twins were given a choice: Elros chose mortality and lived 500 years; Elrond chose the Elves. Aragorn descends from Elros - making Elrond a distant ancestor-in-law."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "meneltarma",
+      "model": "basic",
+      "fields": {
+        "front": "What stood at the summit of the Meneltarma, the holy mountain at Numenor's center?",
+        "back": "The Hallow of Eru Iluvatar - an open sanctuary to the One, where no tool or weapon was ever brought",
+        "extra": "The only place of worship in Numenor, and the only place where the King spoke aloud there, three times a year."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "rings-forged-where",
+      "model": "basic",
+      "fields": {
+        "front": "Where were the Rings of Power forged, and by whom?",
+        "back": "In Eregion, by the elven-smiths of the Gwaith-i-Mirdan led by Celebrimbor",
+        "extra": "Eregion ('Hollin') lay near Moria's west-gate - elves and dwarves were friends there, a rarity. The Fellowship walks its ruins."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "annatar",
+      "model": "basic",
+      "fields": {
+        "front": "Under what fair disguise did Sauron deceive the elven-smiths of Eregion?",
+        "back": "As Annatar, 'Lord of Gifts', a beautiful emissary teaching ring-craft",
+        "extra": "Gil-galad and Elrond distrusted him and barred him from Lindon, but Celebrimbor's smiths welcomed his knowledge."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "celebrimbor-lineage",
+      "model": "basic",
+      "fields": {
+        "front": "Celebrimbor, forger of the Three Elven Rings, was the grandson of which infamous First Age elf?",
+        "back": "Feanor, maker of the Silmarils",
+        "extra": "The craft-obsession ran in the family - and so did the doom. Celebrimbor was slain when Sauron sacked Eregion, his body hung on a pole as a banner."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "one-ring-forging",
+      "model": "basic",
+      "fields": {
+        "front": "How did the Elves learn of Sauron's treachery the moment the One Ring was forged?",
+        "back": "The One was made to dominate the other Rings - the instant Sauron put it on, Celebrimbor and the elves perceived him and took off their rings",
+        "extra": "Sauron forged the One alone in the fires of Orodruin, pouring much of his own native power into it - his great strength and his fatal weakness."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "three-untouched",
+      "model": "basic",
+      "fields": {
+        "front": "Why were the Three Elven Rings safe to use after Sauron lost the One?",
+        "back": "Celebrimbor forged them alone - Sauron never touched them - though they were still bound to the One's power",
+        "extra": "While Sauron held the One they lay hidden and unused. If the One were destroyed, their power too would fade - the price Elrond and Galadriel knowingly accept."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "rivendell-founding",
+      "model": "basic",
+      "fields": {
+        "front": "During which war was Rivendell founded?",
+        "back": "The War of the Elves and Sauron - Elrond founded it as a refuge after Eregion was destroyed",
+        "extra": "Second Age 1697. Sauron overran Eregion and nearly conquered all Eriador before a Numenorean army crushed him - Numenor at the height of its power."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "nazgul-first-appear",
+      "model": "basic",
+      "fields": {
+        "front": "Which is the only Nazgul besides the Witch-king who is ever named?",
+        "back": "Khamul the Easterling, second of the Nine",
+        "extra": "He kept Dol Guldur after Sauron left it. The Nine first appeared around Second Age 2251, some thousand years after Men received their rings."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "ar-pharazon-sauron",
+      "model": "basic",
+      "fields": {
+        "front": "How did Sauron come to Numenor?",
+        "back": "King Ar-Pharazon landed with so vast an army that Sauron's forces deserted - so Sauron surrendered and was taken to Numenor as a hostage",
+        "extra": "Humiliation as strategy: within a few years the prisoner was the king's closest counselor. Ar-Pharazon was Numenor's 25th and last king."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "sauron-corrupts-numenor",
+      "model": "basic",
+      "fields": {
+        "front": "What religion did Sauron establish in Numenor?",
+        "back": "Worship of Melkor (Morgoth), with human sacrifice in a great temple - promising the king escape from death",
+        "extra": "The fear of death was Numenor's oldest wound; Sauron merely poisoned it. The white tree Nimloth was burned on the temple's first altar."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "nimloth-fruit",
+      "model": "basic",
+      "fields": {
+        "front": "How did the line of Gondor's White Tree survive the burning of Nimloth in Numenor?",
+        "back": "Isildur stole a fruit from the tree before it was destroyed, at great cost to himself",
+        "extra": "He crept past the guards and was nearly killed by his wounds. Nimloth's line descends from an image of Telperion, eldest of the Two Trees of Valinor."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "amandil-voyage",
+      "model": "basic",
+      "fields": {
+        "front": "What did Amandil, Elendil's father, attempt when Numenor turned to darkness?",
+        "back": "He sailed west to plead with the Valar, as Earendil once had - and was never heard from again",
+        "extra": "Leader of the Faithful, the party that stayed loyal to the Elves and the Valar. His counsel to Elendil: prepare ships and hold apart."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "downfall-numenor",
+      "model": "basic",
+      "fields": {
+        "front": "What happened when Ar-Pharazon's armada landed on the shores of the Undying Lands?",
+        "back": "The Valar laid down their guardianship and called on Eru, who drowned Numenor and removed the Undying Lands from the circles of the world",
+        "extra": "The world was bent into a round world; only elven-ships may still find the Straight Road west. Ar-Pharazon's host lies buried until the Last Battle."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "akallabeth",
+      "model": "basic",
+      "fields": {
+        "front": "What does 'Akallabeth' mean, and what is its famous Quenya equivalent?",
+        "back": "'The Downfallen' - in Quenya, Atalante",
+        "extra": "Tolkien's deliberate echo of Atlantis. The Akallabeth is the fourth part of The Silmarillion, telling Numenor's whole rise and ruin."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "faithful-escape",
+      "model": "basic",
+      "fields": {
+        "front": "Who escaped the Downfall of Numenor, and in how many ships?",
+        "back": "Elendil and his sons Isildur and Anarion, with the Faithful, in nine ships",
+        "extra": "Four for Elendil, three for Isildur, two for Anarion. They carried a seedling of Nimloth and the seven palantiri."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "arnor-gondor-founding",
+      "model": "basic",
+      "fields": {
+        "front": "What two kingdoms did the exiles of Numenor found in Middle-earth?",
+        "back": "Arnor in the north under Elendil, and Gondor in the south under Isildur and Anarion jointly",
+        "extra": "Elendil was High King over both. Every 'return of the king' plot thread in The Lord of the Rings traces back to this arrangement."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "palantiri-origin",
+      "model": "basic",
+      "fields": {
+        "front": "Who originally made the palantiri?",
+        "back": "Feanor, it is said, in the Undying Lands in the deeps of time",
+        "extra": "The Eldar gave them to the Faithful of Numenor; Elendil brought seven to Middle-earth. The master-stone remained in the West."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "last-alliance",
+      "model": "basic",
+      "fields": {
+        "front": "Who led the Last Alliance of Elves and Men against Sauron?",
+        "back": "Gil-galad, High King of the Elves, and Elendil, High King of the Dunedain",
+        "extra": "The greatest host mustered since the War of Wrath. Elrond was Gil-galad's herald; the opening battle of the film compresses this war."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "gil-galad",
+      "model": "basic",
+      "fields": {
+        "front": "What title did Gil-galad hold, and what was his famous weapon?",
+        "back": "Last High King of the Noldor in Middle-earth; his spear Aeglos ('Snow-point')",
+        "extra": "Sam recites part of 'The Fall of Gil-galad' on Weathertop. After his death the Noldor never appointed another High King."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "siege-barad-dur",
+      "model": "basic",
+      "fields": {
+        "front": "How long did the Last Alliance besiege Barad-dur, and which son of Elendil died there?",
+        "back": "Seven years; Anarion was slain by a stone cast from the tower",
+        "extra": "Before the siege came the Battle of Dagorlad, fought on the plain that became the Dead Marshes - the faces Frodo sees in the water."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "sauron-overthrown-sa",
+      "model": "basic",
+      "fields": {
+        "front": "Who finally brought Sauron down at the end of the Second Age - and at what cost?",
+        "back": "Gil-galad and Elendil overthrew him in single combat on the slopes of Orodruin, but both were killed",
+        "extra": "Narsil broke beneath Elendil as he fell. Isildur cut the Ring from Sauron's hand with the hilt-shard of his father's sword."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "isildur-keeps-ring",
+      "model": "basic",
+      "fields": {
+        "front": "Why did Isildur refuse to destroy the One Ring when Elrond and Cirdan urged it?",
+        "back": "He claimed it as weregild - a blood-price for his father and brother",
+        "extra": "'This I will have as weregild for my father, and my brother.' Two years later it betrayed him at the Gladden Fields."
+      },
+      "tags": ["lotr::second-age"]
+    },
+    {
+      "key": "silmarillion-meta",
+      "model": "basic",
+      "fields": {
+        "front": "Who edited and published The Silmarillion after J.R.R. Tolkien's death?",
+        "back": "His son Christopher Tolkien, in 1977 (assisted by Guy Gavriel Kay)",
+        "extra": "Tolkien worked on these legends from 1917 until his death in 1973 - they predate The Hobbit by two decades. Everything from here on comes from that deeper well."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "eru-iluvatar",
+      "model": "basic",
+      "fields": {
+        "front": "Who is the supreme creator in Tolkien's legendarium?",
+        "back": "Eru Iluvatar, the One",
+        "extra": "'Eru' means The One; 'Iluvatar' means Father of All. He alone possesses the Flame Imperishable, the power to give true independent life."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "ainulindale",
+      "model": "basic",
+      "fields": {
+        "front": "How was the world created in the Ainulindale?",
+        "back": "Eru and the Ainur sang it into being - the Music of the Ainur - and Eru gave the vision reality with the word 'Ea!'",
+        "extra": "Melkor wove discord into the Music to dominate it; Eru answered with new themes, declaring that even rebellion would ultimately serve his design."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "valar-maiar",
+      "model": "basic",
+      "fields": {
+        "front": "What is the difference between the Valar and the Maiar?",
+        "back": "Both are Ainur who entered the world; the Valar are the fourteen great powers, the Maiar their lesser kindred",
+        "extra": "Maiar include Sauron, the Balrogs, Melian, and the five wizards. Melkor was of Valar rank - and mightier than any - but is no longer counted among them."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "melkor-morgoth",
+      "model": "basic",
+      "fields": {
+        "front": "What do the names Melkor and Morgoth mean, and who gave him the second?",
+        "back": "Melkor is 'He who arises in Might'; Feanor renamed him Morgoth, 'Black Foe of the World'",
+        "extra": "The name was given after Melkor murdered Feanor's father and stole the Silmarils. The Elves never called him Melkor again."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "manwe",
+      "model": "basic",
+      "fields": {
+        "front": "Who is the Elder King, lord of the Valar, and what are his domains?",
+        "back": "Manwe, lord of winds and airs, dwelling on Taniquetil, the world's highest mountain",
+        "extra": "Melkor's brother 'in the mind of Eru'. The great Eagles are his servants - every eagle rescue in the books is a nudge from the Elder King."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "varda-elbereth",
+      "model": "basic",
+      "fields": {
+        "front": "Which Valie (queen of the Valar) kindled the stars, and what do the Elves call her?",
+        "back": "Varda, called Elbereth Gilthoniel by the Elves",
+        "extra": "Invoked in the hymn 'A Elbereth Gilthoniel' and in Sam's cry in Shelob's lair. Of all the Valar, Morgoth feared and hated her most."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "ulmo",
+      "model": "basic",
+      "fields": {
+        "front": "Which Vala, lord of waters, never abandoned the exiled Elves and Men of Middle-earth?",
+        "back": "Ulmo",
+        "extra": "He worked through rivers and sea-longing, guiding Turgon to Gondolin and sending Tuor there as his messenger. He dwells in the deeps and takes no spouse."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "aule-dwarves",
+      "model": "basic",
+      "fields": {
+        "front": "Which Vala created the Dwarves - and why did they survive his mistake?",
+        "back": "Aule the Smith made the Seven Fathers in secret; when Eru confronted him, Aule offered to destroy them, and Eru adopted them as his children",
+        "extra": "But they had to sleep until after the Elves, the Firstborn, awoke. Eldest of the Seven Fathers was Durin the Deathless, founder of Khazad-dum."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "yavanna-ents",
+      "model": "basic",
+      "fields": {
+        "front": "Who asked for the creation of the Ents, and why?",
+        "back": "Yavanna, Vala of growing things - to protect the trees from Aule's axe-wielding Dwarves and other dangers",
+        "extra": "Eru granted the Shepherds of the Trees in answer. Yavanna also sang the Two Trees of Valinor into life - her greatest work."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "mandos",
+      "model": "basic",
+      "fields": {
+        "front": "Where do the spirits of slain Elves go?",
+        "back": "The Halls of Mandos in Valinor, where they wait, and may in time be re-embodied",
+        "extra": "Mandos (properly Namo) is the Doomsman of the Valar. Men's spirits pass through his halls too - but depart the world to a fate unknown."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "nienna-gandalf",
+      "model": "basic",
+      "fields": {
+        "front": "From which Valie did Olorin - the future Gandalf - learn pity?",
+        "back": "Nienna, the lady of mourning, who grieves for every wound the world suffers",
+        "extra": "'Of her he learned pity and patience.' That schooling is why Gandalf spares Gollum - the pity on which the whole quest ultimately turns."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "two-trees",
+      "model": "basic",
+      "fields": {
+        "front": "Name the Two Trees of Valinor.",
+        "back": "Telperion the silver and Laurelin the gold",
+        "extra": "They waxed and waned in alternation, giving Valinor its light before Sun or Moon existed. Telperion was the elder - the White Tree of Gondor descends from his image."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "sun-moon-origin",
+      "model": "basic",
+      "fields": {
+        "front": "Where did the Sun and Moon come from?",
+        "back": "The last fruit of Laurelin became the Sun; the last flower of Telperion became the Moon",
+        "extra": "Salvaged after Morgoth and Ungoliant killed the Trees. The Moon rose first - so the Elves, who woke under stars, love moonlight and starlight best."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "ungoliant",
+      "model": "basic",
+      "fields": {
+        "front": "Who helped Morgoth destroy the Two Trees, and what was she?",
+        "back": "Ungoliant, a primeval spirit in great spider form who drank the Trees' light and poisoned them",
+        "extra": "Afterward she demanded the Silmarils too, and nearly killed Morgoth - his scream summoned the Balrogs to drive her off. Shelob is her last child."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "cuivienen",
+      "model": "basic",
+      "fields": {
+        "front": "Where did the Elves first awaken?",
+        "back": "At Cuivienen, the Water of Awakening, under starlight in the far east of Middle-earth",
+        "extra": "They named themselves the Quendi, 'those who speak with voices'. The Vala Orome found them; Melkor found some first - a darker thread taken up later."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "elf-sundering",
+      "model": "basic",
+      "fields": {
+        "front": "Name the three kindreds of the Eldar who set out on the Great Journey to Valinor.",
+        "back": "The Vanyar, the Noldor, and the Teleri",
+        "extra": "Those who refused the summons are the Avari, 'the Unwilling'. Teleri who lingered in Beleriand became the Sindar, the Grey Elves - Legolas's people are of that stock."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "feanor",
+      "model": "basic",
+      "fields": {
+        "front": "Who was Feanor, and what does his name mean?",
+        "back": "The greatest craftsman and most gifted of the Noldor, eldest son of King Finwe; his name means 'Spirit of Fire'",
+        "extra": "He made the Silmarils and the palantiri and devised the Tengwar script. Also proud, possessive, and ruinous - the engine of the First Age's tragedy."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "silmarils",
+      "model": "basic",
+      "fields": {
+        "front": "What are the Silmarils?",
+        "back": "Three jewels made by Feanor holding the blended light of the Two Trees - the only such light left after the Trees died",
+        "extra": "Varda hallowed them so that no evil or mortal flesh could touch them unburned. The entire First Age is 'the war for the Silmarils'."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "finwe-slain",
+      "model": "basic",
+      "fields": {
+        "front": "What double crime did Melkor commit at Formenos?",
+        "back": "He murdered Finwe, High King of the Noldor - the first slaying in the Blessed Realm - and stole the Silmarils",
+        "extra": "Finwe was Feanor's father. Morgoth set the jewels in his Iron Crown, and their touch burned his hands black forever."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "oath-of-feanor",
+      "model": "basic",
+      "fields": {
+        "front": "What did Feanor and his seven sons swear after the theft of the Silmarils?",
+        "back": "A terrible oath to pursue with vengeance anyone - Vala, demon, Elf, or Man - who withheld a Silmaril from them",
+        "extra": "Sworn by the name of Eru himself, it could never be revoked. The Oath drives nearly every catastrophe that follows, including elf-on-elf slaughter."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "kinslaying",
+      "model": "basic",
+      "fields": {
+        "front": "What was the first Kinslaying?",
+        "back": "The Noldor slew the Teleri at Alqualonde to seize their swan-ships for the pursuit of Morgoth",
+        "extra": "The Teleri refused to lend the ships. For this the Doom of Mandos was laid on the exiles: treason, ruin, and the Valar's ban."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "helcaraxe",
+      "model": "basic",
+      "fields": {
+        "front": "After Feanor burned the ships at Losgar, how did Fingolfin's host reach Middle-earth?",
+        "back": "They crossed the Helcaraxe, the Grinding Ice of the far north, on foot",
+        "extra": "Feanor stranded his half-brother's people out of spite. Many died on the ice - among the survivors was Galadriel, who made the crossing herself."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "feanor-death",
+      "model": "basic",
+      "fields": {
+        "front": "How did Feanor die?",
+        "back": "Mortally wounded by Gothmog, Lord of Balrogs, soon after reaching Middle-earth; his fiery spirit burned his body to ash as it fled",
+        "extra": "He died within sight of Angband, knowing his war was hopeless - and still bound his sons to the Oath with his last breath."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "beleriand",
+      "model": "basic",
+      "fields": {
+        "front": "In what land were the wars of the First Age fought, and where is it now?",
+        "back": "Beleriand, in the northwest of Middle-earth - it was broken and drowned beneath the sea at the age's end",
+        "extra": "Only fragments remain by Frodo's time, including Lindon and the Blue Mountains. The Shire sits on land that was east of Beleriand entirely."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "thingol-melian",
+      "model": "basic",
+      "fields": {
+        "front": "Who ruled the hidden kingdom of Doriath?",
+        "back": "Thingol, king of the Sindar, and Melian, a Maia - the only marriage of an Ainu and an Elf",
+        "extra": "Their realm was protected by the Girdle of Melian, an enchanted barrier, with its capital in the cave-city Menegroth, the Thousand Caves."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "fingolfin-duel",
+      "model": "basic",
+      "fields": {
+        "front": "Which High King of the Noldor rode alone to Angband and challenged Morgoth to single combat?",
+        "back": "Fingolfin - he wounded Morgoth seven times before being crushed by the great hammer Grond",
+        "extra": "Morgoth limped ever after, and Thorondor, King of Eagles, marred his face while rescuing the body. It is the only time Morgoth was fought hand to hand."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "maedhros-rescue",
+      "model": "basic",
+      "fields": {
+        "front": "How was Maedhros, eldest son of Feanor, rescued from Thangorodrim?",
+        "back": "Fingon climbed to him with Thorondor's help and cut off his hand to free him from the shackle",
+        "extra": "Morgoth had hung him from a cliff by the right wrist. The rescue healed the feud between the houses of Feanor and Fingolfin - for a while."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "beren-luthien-quest",
+      "model": "basic",
+      "fields": {
+        "front": "What bride-price did Thingol demand of the mortal Beren for his daughter Luthien's hand?",
+        "back": "A Silmaril, cut from Morgoth's own crown",
+        "extra": "Meant as an impossible death sentence - and they did it. Luthien sang Morgoth's whole court to sleep while Beren cut a Silmaril free."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "luthien",
+      "model": "basic",
+      "fields": {
+        "front": "Who was Luthien Tinuviel?",
+        "back": "Daughter of Thingol and Melian, accounted the most beautiful of all the Children of Iluvatar - and the mightiest, whose song overthrew both Sauron and Morgoth",
+        "extra": "Aragorn sings her lay on Weathertop, and Arwen is her image returned. Tolkien had 'Luthien' carved on his wife Edith's gravestone, and 'Beren' on his own."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "finrod-felagund",
+      "model": "basic",
+      "fields": {
+        "front": "Which elven king died in a werewolf's jaws to save Beren?",
+        "back": "Finrod Felagund, king of Nargothrond, Galadriel's brother",
+        "extra": "Captured after losing a duel of songs with Sauron, he broke his bonds and killed the wolf barehanded, fulfilling his oath to Beren's house."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "sauron-first-age",
+      "model": "basic",
+      "fields": {
+        "front": "What was Sauron in the First Age, before he became the Dark Lord?",
+        "back": "Morgoth's greatest lieutenant - called Gorthaur the Cruel, master of werewolves on the isle of Tol-in-Gaurhoth",
+        "extra": "Originally a Maia of Aule the Smith, which explains the ring-craft. Luthien and the hound Huan defeated him and took his isle."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "huan",
+      "model": "basic",
+      "fields": {
+        "front": "Who was Huan, and what fate was decreed for him?",
+        "back": "The great Hound of Valinor, permitted to speak three times, fated to die only before the mightiest wolf that would ever live",
+        "extra": "He defeated Sauron in wolf-shape, then met his doom slaying Carcharoth, the monstrous wolf of Angband - both prophecies fulfilled at once."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "carcharoth",
+      "model": "basic",
+      "fields": {
+        "front": "How did Beren lose his hand?",
+        "back": "The great wolf Carcharoth bit it off at Angband's gate - swallowing the Silmaril it held",
+        "extra": "The hallowed jewel burned the wolf mad from within. Beren was after called Erchamion, the One-handed; the Silmaril was cut from the wolf's belly as Beren lay dying."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "luthien-choice",
+      "model": "basic",
+      "fields": {
+        "front": "What did Luthien's song before Mandos achieve - something never done before or since?",
+        "back": "It moved Mandos to pity: Beren and Luthien were both returned to life, Luthien accepting mortality as the price",
+        "extra": "The first elf to truly die and leave the world. Every mortal-immortal love in the legendarium - Aragorn and Arwen above all - lives in this story's shadow."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "turin",
+      "model": "basic",
+      "fields": {
+        "front": "Who slew Glaurung, father of dragons - and what tragedy defined his life?",
+        "back": "Turin Turambar, cursed by Morgoth: he unknowingly married his own sister Nienor, and both took their own lives when the truth was revealed",
+        "extra": "He stabbed Glaurung from below with the black sword Gurthang. 'Turambar' means Master of Doom - the bitterest irony in Tolkien. His tale is The Children of Hurin."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "hurin",
+      "model": "basic",
+      "fields": {
+        "front": "What did Hurin cry as he held the rearguard alone at the Battle of Unnumbered Tears?",
+        "back": "'Aure entuluva!' - 'Day shall come again!' - once for each of the seventy trolls he slew",
+        "extra": "Captured alive, he was set in a chair on Thangorodrim, cursed to watch Morgoth's doom unfold on his children through the Dark Lord's own eyes."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "nirnaeth",
+      "model": "basic",
+      "fields": {
+        "front": "What is the Nirnaeth Arnoediad?",
+        "back": "The Battle of Unnumbered Tears - the catastrophic fifth battle of Beleriand, where the united Elves, Men, and Dwarves were destroyed by Morgoth",
+        "extra": "Lost partly through the treachery of Easterling allies. After it, Morgoth's victory in Beleriand was effectively total; only the hidden realms remained."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "gondolin",
+      "model": "basic",
+      "fields": {
+        "front": "What was Gondolin, and who founded it?",
+        "back": "The hidden city of King Turgon, built in a secret mountain-ringed vale at Ulmo's prompting - concealed from Morgoth for nearly 400 years",
+        "extra": "The greatest elven city of the age. Glamdring, Orcrist, and Sting were all forged there - which is why Third Age orcs still recognize the blades."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "maeglin",
+      "model": "basic",
+      "fields": {
+        "front": "Who betrayed Gondolin's location to Morgoth, and why?",
+        "back": "Maeglin, Turgon's nephew - captured and broken, but also lured by the promise of the city and of Idril, the king's daughter, whom he coveted",
+        "extra": "During the Fall he tried to seize Idril and her son; her husband Tuor threw him from the walls. Tolkien's archetypal traitor-from-within."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "glorfindel-balrog",
+      "model": "basic",
+      "fields": {
+        "front": "What did Glorfindel do during the escape from the Fall of Gondolin?",
+        "back": "He fought a Balrog on a mountain pass to save the refugees, killing it as they both fell into the abyss",
+        "extra": "Re-embodied in Valinor and sent back to Middle-earth, he is the same Glorfindel who faces the Nazgul at the Ford of Bruinen two ages later."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "earendil",
+      "model": "basic",
+      "fields": {
+        "front": "Who sailed to Valinor to plead for mercy for Elves and Men, and what became of him?",
+        "back": "Earendil the Mariner, with a Silmaril bound on his brow - the Valar set him in the sky, where he sails forever as the evening star",
+        "extra": "Son of Tuor and Idril of Gondolin, husband of Elwing, granddaughter of Beren and Luthien - both great lines meet in him. His ship is Vingilot."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "phial-galadriel-light",
+      "model": "basic",
+      "fields": {
+        "front": "What light shines in the Phial of Galadriel that Frodo carries into Shelob's lair?",
+        "back": "The light of Earendil's star - which is the light of a Silmaril, and through it the last light of the Two Trees of Valinor",
+        "extra": "The deck's longest thread: Two Trees to Silmaril to Earendil to Galadriel's mirror-water to a hobbit in a spider's den."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "war-of-wrath",
+      "model": "basic",
+      "fields": {
+        "front": "How did the First Age end?",
+        "back": "The War of Wrath: the host of the Valar answered Earendil's plea, destroyed Morgoth's armies, and thrust him through the Door of Night into the Void",
+        "extra": "The cataclysm broke and drowned Beleriand. Morgoth remains outside the world - prophecy says until the Last Battle."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "ancalagon",
+      "model": "basic",
+      "fields": {
+        "front": "Who was the greatest dragon that ever lived, and who slew him?",
+        "back": "Ancalagon the Black, first and mightiest of the winged dragons - slain by Earendil in the sky during the War of Wrath",
+        "extra": "His fall broke the towers of Thangorodrim. Gandalf's yardstick for the One Ring: not even Ancalagon's fire could have harmed it."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "silmarils-fate",
+      "model": "basic",
+      "fields": {
+        "front": "What was the final fate of the three Silmarils?",
+        "back": "One sails the sky with Earendil; Maedhros carried one into a fiery chasm; Maglor cast the last into the sea",
+        "extra": "The recovered jewels burned the last two sons of Feanor - the Oath had made them evil-doers, and the hallowed gems rejected them. One in air, one in earth, one in water."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "half-elven-choice",
+      "model": "basic",
+      "fields": {
+        "front": "What choice did the Valar grant the Half-elven, and how did Elrond and Elros choose?",
+        "back": "To belong either to the Elves or to Men: Elrond chose the Elves; his twin Elros chose mortality and founded Numenor",
+        "extra": "Elrond's children inherit the choice, delayed until his departure - the whole weight behind Arwen's decision to stay for Aragorn."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "orcs-origin",
+      "model": "basic",
+      "fields": {
+        "front": "According to The Silmarillion, where did the Orcs come from?",
+        "back": "They were bred by Melkor from Elves captured at Cuivienen, corrupted and ruined in mockery of the Children of Iluvatar",
+        "extra": "So the Silmarillion's wise hold - Tolkien himself kept revisiting the question and never settled it. Melkor cannot create, only corrupt."
+      },
+      "tags": ["lotr::first-age"]
+    },
+    {
+      "key": "utumno-angband",
+      "model": "basic",
+      "fields": {
+        "front": "Name Melkor's two great fortresses.",
+        "back": "Utumno, his first, destroyed when the Valar captured him; and Angband, his second, beneath the towers of Thangorodrim",
+        "extra": "Sauron commanded Angband during his master's captivity. Every later dark tower - Dol Guldur, Barad-dur - is an echo of these."
+      },
+      "tags": ["lotr::first-age"]
+    }
+  ]
+}

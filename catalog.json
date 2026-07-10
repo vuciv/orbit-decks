@@ -18,8 +18,8 @@
     {
       "key": "pop-culture",
       "name": "Pop Culture",
-      "deckCount": 2,
-      "rev": "5f7888e5aa79",
+      "deckCount": 3,
+      "rev": "7160a5cfa665",
       "file": "categories/pop-culture.json"
     },
     {
@@ -192,6 +192,11 @@
       "key": "london-system",
       "version": 3,
       "file": "decks/london-system.json"
+    },
+    {
+      "key": "middle-earth-lore",
+      "version": 1,
+      "file": "decks/middle-earth-lore.json"
     },
     {
       "key": "morse-code",

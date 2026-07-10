@@ -26,6 +26,18 @@
         "trivia"
       ],
       "coverImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+    },
+    {
+      "key": "middle-earth-lore",
+      "name": "Middle-earth Lore: Shire to Silmarillion",
+      "description": "Tolkien's legendarium in 132 cards, working backward through time: the War of the Ring, deep Third Age history, the forging of the Rings of Power and the fall of Numenor, and finally the First Age of the Silmarillion - the Valar, Feanor, Beren and Luthien, and the overthrow of Morgoth.",
+      "cardCount": 132,
+      "topics": [
+        "tolkien",
+        "lord-of-the-rings",
+        "fantasy"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/One%20Ring%20Blender%20Render.png?width=640"
     }
   ]
 }
