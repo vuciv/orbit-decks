@@ -1,0 +1,1166 @@
+{
+  "key": "geoguessr-meta",
+  "version": 1,
+  "name": "GeoGuessr Meta",
+  "description": "Read a round like a pro: driving side, stop signs, license plates, bollards, camera generations, Google car tells, scripts and alphabets, and the famous country metas, distilled from the community's Plonk It playbook.",
+  "category": "Geography",
+  "topics": [
+    "geoguessr",
+    "geography",
+    "street-view"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Google%20Street%20View%20car%20in%20Bern.jpg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "sun-hemisphere",
+      "model": "basic",
+      "fields": {
+        "front": "The sun sits clearly in the **northern** sky. Which hemisphere are you in?",
+        "back": "The Southern Hemisphere",
+        "extra": "Sun in the south means Northern Hemisphere. Between the tropics only trust the sun when it is clearly north or south; in summer months it can flip."
+      },
+      "tags": ["gg::basics"]
+    },
+    {
+      "key": "side-europe",
+      "model": "basic",
+      "fields": {
+        "front": "Which four European countries drive on the **left**?",
+        "back": "The United Kingdom, Ireland, Malta, and Cyprus",
+        "extra": "The Isle of Man and the Channel Islands drive left too. Mediterranean scrub vs Atlantic green tells the island pairs apart."
+      },
+      "tags": ["gg::basics"]
+    },
+    {
+      "key": "side-africa",
+      "model": "basic",
+      "fields": {
+        "front": "Which African countries with Street View drive on the **right**?",
+        "back": "Ghana, Nigeria, Senegal, Rwanda, Tunisia, and Egypt, plus Madagascar and Réunion",
+        "extra": "Southern and eastern Africa (South Africa, Botswana, Namibia, Lesotho, Eswatini, Kenya, Uganda, Tanzania) all drive on the left."
+      },
+      "tags": ["gg::basics"]
+    },
+    {
+      "key": "side-asia",
+      "model": "basic",
+      "fields": {
+        "front": "Which East and Southeast Asian countries with Street View drive on the **right**?",
+        "back": "South Korea, Taiwan, Cambodia, Vietnam, Laos, and the Philippines",
+        "extra": "Driving left: Japan, Hong Kong, Thailand, Malaysia, Singapore, Indonesia, and the whole Indian subcontinent (India, Sri Lanka, Bangladesh, Nepal, Bhutan, Pakistan)."
+      },
+      "tags": ["gg::basics"]
+    },
+    {
+      "key": "side-americas",
+      "model": "basic",
+      "fields": {
+        "front": "Where in the Americas do cars drive on the **left**?",
+        "back": "Suriname and Guyana on the mainland, plus Caribbean islands like Jamaica, the Bahamas, and the US Virgin Islands",
+        "extra": "The US Virgin Islands are the only left-driving part of the United States."
+      },
+      "tags": ["gg::basics"]
+    },
+    {
+      "key": "side-detect",
+      "model": "basic",
+      "fields": {
+        "front": "Empty road, no traffic. How do you still deduce the driving side?",
+        "back": "Traffic signs stand on the driving side; visible Google car parts (like the rear antenna) hang over your lane; on dirt roads the dust trail blows out behind the car; parked cars keep the steering wheel toward the centre line.",
+        "extra": "Exception: right-hand-drive Japanese imports are everywhere in eastern Russia."
+      },
+      "tags": ["gg::basics"]
+    },
+    {
+      "key": "stop-alto",
+      "model": "basic",
+      "fields": {
+        "front": "A stop sign reads **ALTO**. Where are you?",
+        "back": "Mexico or Central America (Guatemala, Costa Rica, Panama)",
+        "extra": "Panama's ALTO font is noticeably thicker than the others."
+      },
+      "tags": ["gg::signs"]
+    },
+    {
+      "key": "stop-pare",
+      "model": "basic",
+      "fields": {
+        "front": "A stop sign reads **PARE**. Where are you?",
+        "back": "South America, in both the Spanish- and Portuguese-speaking countries, plus the Dominican Republic and Puerto Rico",
+        "extra": "So a PARE in the Caribbean does not mean South America; check the architecture and plates."
+      },
+      "tags": ["gg::signs"]
+    },
+    {
+      "key": "stop-arret",
+      "model": "basic",
+      "fields": {
+        "front": "A stop sign reads **ARRÊT**. Where are you?",
+        "back": "Québec, Canada",
+        "extra": "Signs carrying both STOP and ARRÊT are most common in New Brunswick."
+      },
+      "tags": ["gg::signs"]
+    },
+    {
+      "key": "stop-dur",
+      "model": "basic",
+      "fields": {
+        "front": "A stop sign reads **DUR**. Where are you?",
+        "back": "Turkey",
+        "extra": "Unique to Turkey."
+      },
+      "tags": ["gg::signs"]
+    },
+    {
+      "key": "stop-berhenti",
+      "model": "basic",
+      "fields": {
+        "front": "A stop sign reads **BERHENTI**. Where are you?",
+        "back": "Malaysia",
+        "extra": "BERI LALUAN yield signs are equally unique to Malaysia."
+      },
+      "tags": ["gg::signs"]
+    },
+    {
+      "key": "stop-hand",
+      "model": "basic",
+      "fields": {
+        "front": "A stop sign shows a **white hand** instead of any word. Where are you?",
+        "back": "Israel",
+        "extra": "No word to read, so it works in every language."
+      },
+      "tags": ["gg::signs"]
+    },
+    {
+      "key": "stop-th-lo",
+      "model": "basic",
+      "fields": {
+        "front": "A stop sign is written in a loopy Southeast Asian script: Thailand or Laos?",
+        "back": "Count the characters: Thai stop signs have three, Lao stop signs have two.",
+        "extra": "Lao script is also curvier, with fewer straight lines than Thai."
+      },
+      "tags": ["gg::signs"]
+    },
+    {
+      "key": "plate-eu",
+      "model": "basic",
+      "fields": {
+        "front": "A long white plate with a **blue strip on the left** edge. What does it tell you?",
+        "back": "Standard European Union plate",
+        "extra": "The strip carries the EU stars above a country code; the plate alone narrows you to Europe, the details narrow the country."
+      },
+      "tags": ["gg::plates"]
+    },
+    {
+      "key": "plate-nl-lux",
+      "model": "basic",
+      "fields": {
+        "front": "Which two European countries use **yellow plates front and rear**?",
+        "back": "The Netherlands and Luxembourg",
+        "extra": "Luxembourg's are long and yellow with the blue EU strip. The UK is yellow at the rear only."
+      },
+      "tags": ["gg::plates"]
+    },
+    {
+      "key": "plate-uk",
+      "model": "basic",
+      "fields": {
+        "front": "White front plate, **yellow rear plate**. Which country?",
+        "back": "The United Kingdom",
+        "extra": "Rare pre-2009 French cars also have a yellow rear plate."
+      },
+      "tags": ["gg::plates"]
+    },
+    {
+      "key": "plate-fr-it",
+      "model": "basic",
+      "fields": {
+        "front": "France and Italy both put blue strips on their plates. What is the tell?",
+        "back": "Italy: two equally visible blue strips and a much shorter front plate. France: the left strip shows more than the right.",
+        "extra": "French rear plates were yellow before 2009; you may still meet them in old coverage."
+      },
+      "tags": ["gg::plates"]
+    },
+    {
+      "key": "plate-pt",
+      "model": "basic",
+      "fields": {
+        "front": "A plate has a blue strip on the left **and a yellow strip on the right**. Which country?",
+        "back": "Portugal",
+        "extra": "Unique to Portugal, but discontinued in 2020, so Generation 4 coverage increasingly shows blue-only plates."
+      },
+      "tags": ["gg::plates"]
+    },
+    {
+      "key": "plate-co",
+      "model": "basic",
+      "fields": {
+        "front": "Private cars have **yellow plates** in South America. Which country?",
+        "back": "Colombia",
+        "extra": "Colombian taxis are pastel yellow with white plates; Ecuadorian taxis look similar but carry orange plates."
+      },
+      "tags": ["gg::plates"]
+    },
+    {
+      "key": "plate-ar",
+      "model": "basic",
+      "fields": {
+        "front": "A blurred Latin American plate shows a **black dot** in the middle. Which country?",
+        "back": "Argentina",
+        "extra": "Argentina's other plate, white with a blue top bar, is shared with Brazil (Mercosur design)."
+      },
+      "tags": ["gg::plates"]
+    },
+    {
+      "key": "plate-id-my",
+      "model": "basic",
+      "fields": {
+        "front": "A black plate blurs into white sections: **three sections vs two**. Which countries?",
+        "back": "Three: Indonesia. Two: Malaysia.",
+        "extra": "Yellow plates on Indonesian roads mean commercial vehicles."
+      },
+      "tags": ["gg::plates"]
+    },
+    {
+      "key": "plate-la",
+      "model": "basic",
+      "fields": {
+        "front": "Short **yellow plates** on private cars in Southeast Asia. Which country?",
+        "back": "Laos",
+        "extra": "Thai private plates are white; Thailand saves yellow for commercial vehicles like taxis."
+      },
+      "tags": ["gg::plates"]
+    },
+    {
+      "key": "plate-lk",
+      "model": "basic",
+      "fields": {
+        "front": "Long white plate at the front, **short yellow plate at the rear**. Which country?",
+        "back": "Sri Lanka",
+        "extra": "Sri Lanka also has lowcam in its Generation 4 coverage, a second quick confirm."
+      },
+      "tags": ["gg::plates"]
+    },
+    {
+      "key": "plate-om",
+      "model": "basic",
+      "fields": {
+        "front": "Yellow private plates and **red commercial plates** in the Middle East. Which country?",
+        "back": "Oman",
+        "extra": "Oman also pairs yellow outer roadlines with white middle lines."
+      },
+      "tags": ["gg::plates"]
+    },
+    {
+      "key": "plate-alaska",
+      "model": "basic",
+      "fields": {
+        "front": "An **all-yellow** plate in the United States. Which state?",
+        "back": "Alaska",
+        "extra": "Front plates are required in Alaska; Generation 4 also shows a design with a big orange circle."
+      },
+      "tags": ["gg::plates"]
+    },
+    {
+      "key": "cam-gen2",
+      "model": "basic",
+      "fields": {
+        "front": "Low resolution, wide circular blurs at the bottom **and in the sky**. Which camera generation?",
+        "back": "Generation 2",
+        "extra": "Reading signs is often hard in Gen 2. The sky blur is what separates it from lowcam."
+      },
+      "tags": ["gg::camera"]
+    },
+    {
+      "key": "cam-gen3",
+      "model": "basic",
+      "fields": {
+        "front": "Decent resolution but **dull, unsaturated colours** and a greyish sky. Which camera generation?",
+        "back": "Generation 3",
+        "extra": "The sky looks grey even on sunny days."
+      },
+      "tags": ["gg::camera"]
+    },
+    {
+      "key": "cam-gen4",
+      "model": "basic",
+      "fields": {
+        "front": "Crisp, vibrant, slightly **oversaturated** image. Which camera generation?",
+        "back": "Generation 4",
+        "extra": "The default for most modern coverage."
+      },
+      "tags": ["gg::camera"]
+    },
+    {
+      "key": "cam-shitcam",
+      "model": "basic",
+      "fields": {
+        "front": "A low-res camera with one wide circular blur over the car, no sky blur. The community calls it 'shitcam'. Its main country?",
+        "back": "India",
+        "extra": "Also common in Nigeria, Cambodia, Lebanon, and Ecuador, and scattered across Europe since summer 2025."
+      },
+      "tags": ["gg::camera"]
+    },
+    {
+      "key": "cam-lowcam",
+      "model": "basic",
+      "fields": {
+        "front": "Which three countries use **only** a low-mounted camera (lowcam)?",
+        "back": "Japan, Switzerland, and Liechtenstein",
+        "extra": "Sri Lanka's Generation 4 is lowcam too. Confirm by looking down: the car blur is noticeably bigger. Uphill views can fake it, and Gen 2's circular blur mimics it."
+      },
+      "tags": ["gg::camera"]
+    },
+    {
+      "key": "cam-smallcam",
+      "model": "basic",
+      "fields": {
+        "front": "Gen 4 image quality, but the car blur is shaped like a **ladybug**: round with a small bump at the front. Which camera?",
+        "back": "Smallcam",
+        "extra": "Introduced late 2024 and mounted lower than regular Gen 4. Very widespread in the Balkans."
+      },
+      "tags": ["gg::camera"]
+    },
+    {
+      "key": "car-kenya",
+      "model": "basic",
+      "fields": {
+        "front": "A grey pickup truck with a **snorkel** in Generation 4. Which country?",
+        "back": "Kenya",
+        "extra": "Kenya and Mongolia are the only countries with a snorkel in Gen 4."
+      },
+      "tags": ["gg::car"]
+    },
+    {
+      "key": "car-mongolia",
+      "model": "basic",
+      "fields": {
+        "front": "A big pickup with roof racks, **red side mirrors**, sometimes a tent on top. Which country?",
+        "back": "Mongolia",
+        "extra": "All Mongolian coverage used this truck; tent colour and snorkel direction even narrow the region."
+      },
+      "tags": ["gg::car"]
+    },
+    {
+      "key": "car-ghana",
+      "model": "basic",
+      "fields": {
+        "front": "Gen 3 roof rack with **black tape** on the front bar and a red rectangle on the hood. Which country?",
+        "back": "Ghana",
+        "extra": "The famous 'Ghana tape'. Gen 4 Ghana is a grey or white pickup with a front antenna."
+      },
+      "tags": ["gg::car"]
+    },
+    {
+      "key": "car-nigeria",
+      "model": "basic",
+      "fields": {
+        "front": "A **police car** tails the Google car in nearly every round. Which country?",
+        "back": "Nigeria",
+        "extra": "The escort is usually white or black, following a visible Street View pickup."
+      },
+      "tags": ["gg::car"]
+    },
+    {
+      "key": "car-tunisia",
+      "model": "basic",
+      "fields": {
+        "front": "A civilian **follow car** shadows the Google car in North Africa. Which country?",
+        "back": "Tunisia",
+        "extra": "It can be ahead of you or far behind, so pan and zoom. The Google car itself is black with a thin antenna."
+      },
+      "tags": ["gg::car"]
+    },
+    {
+      "key": "car-senegal",
+      "model": "basic",
+      "fields": {
+        "front": "A Gen 3 car with a visible **right side mirror**. Which country?",
+        "back": "Senegal",
+        "extra": "Unique to Senegal; rifts in the sky are common in the same coverage."
+      },
+      "tags": ["gg::car"]
+    },
+    {
+      "key": "car-russia",
+      "model": "basic",
+      "fields": {
+        "front": "A black car with a **long antenna** across a huge northern country. Which one?",
+        "back": "Russia",
+        "extra": "Russian plates are plain white and often unblurred in Gen 3; the region code on the plate's right side pins the federal subject."
+      },
+      "tags": ["gg::car"]
+    },
+    {
+      "key": "car-argentina",
+      "model": "basic",
+      "fields": {
+        "front": "A Gen 3 **black car with its back visible**. Which Latin American country first?",
+        "back": "Argentina",
+        "extra": "All of Argentina's Gen 3 used this car; in Latin America it also appears in Uruguay and Peru."
+      },
+      "tags": ["gg::car"]
+    },
+    {
+      "key": "car-white-latam",
+      "model": "basic",
+      "fields": {
+        "front": "The Gen 3 'white car' in Latin America means which three countries?",
+        "back": "Bolivia, Chile, and Peru",
+        "extra": "Other white cars exist (Gen 4, or differently blurred Gen 3), so the meta refers to that specific unblurred Gen 3 car."
+      },
+      "tags": ["gg::car"]
+    },
+    {
+      "key": "car-kyrgyzstan",
+      "model": "basic",
+      "fields": {
+        "front": "Roof rack, visible mirrors, and **every round looks like late autumn or winter**. Which country?",
+        "back": "Kyrgyzstan",
+        "extra": "The whole country was driven in the winter months: bare trees, drab grass, snow on the ground."
+      },
+      "tags": ["gg::car"]
+    },
+    {
+      "key": "bollard-fr",
+      "model": "basic",
+      "fields": {
+        "front": "Round white bollard with a **pointed top** and a reflector band wrapped all the way around. Which country?",
+        "back": "France",
+        "extra": "A similar Scottish bollard has a blunt top. Rare French variants have a fully red top."
+      },
+      "tags": ["gg::bollards"]
+    },
+    {
+      "key": "bollard-de-lu",
+      "model": "basic",
+      "fields": {
+        "front": "Black-and-white wedge bollard with grey reflectors: Germany or Luxembourg?",
+        "back": "Count the bolts on the reflector: two means Germany, three means Luxembourg.",
+        "extra": "German reflectors turn orange next to intersections."
+      },
+      "tags": ["gg::bollards"]
+    },
+    {
+      "key": "bollard-es",
+      "model": "basic",
+      "fields": {
+        "front": "White wedge bollard with a **yellow-orange front reflector** and two white dots on the back. Which country?",
+        "back": "Spain",
+        "extra": "Germany's lookalike keeps a white or grey front reflector. Portugal's orange reflectors are noticeably darker than Spain's."
+      },
+      "tags": ["gg::bollards"]
+    },
+    {
+      "key": "bollard-at-si",
+      "model": "basic",
+      "fields": {
+        "front": "White bollard with a black top: **dark red** vs **bright red** front reflector?",
+        "back": "Dark red or grey: Austria. Bright red with a white back reflector: Slovenia (Montenegro is similar).",
+        "extra": "Austrian bollards often wear a small nipple-shaped black cap."
+      },
+      "tags": ["gg::bollards"]
+    },
+    {
+      "key": "bollard-is",
+      "model": "basic",
+      "fields": {
+        "front": "A **yellow bollard** with a white reflector on nearly every rural road. Which country?",
+        "back": "Iceland",
+        "extra": "Extremely common throughout the country and unique to it."
+      },
+      "tags": ["gg::bollards"]
+    },
+    {
+      "key": "bollard-mx",
+      "model": "basic",
+      "fields": {
+        "front": "Small cylindrical white bollard on a **black base**. Which country?",
+        "back": "Mexico",
+        "extra": "Unique to Mexico; a red band near the top usually means Nayarit."
+      },
+      "tags": ["gg::bollards"]
+    },
+    {
+      "key": "bollard-mn",
+      "model": "basic",
+      "fields": {
+        "front": "A white **bowling-pin shaped** bollard with two red stripes near the top. Which country?",
+        "back": "Mongolia",
+        "extra": "Completely unique to Mongolia."
+      },
+      "tags": ["gg::bollards"]
+    },
+    {
+      "key": "bollard-au-nz",
+      "model": "basic",
+      "fields": {
+        "front": "White bollard with a red front reflector: Australia or New Zealand?",
+        "back": "New Zealand's red reflector wraps around the sides; Australia's stops on the face, with a grey reflector on the back.",
+        "extra": "Black-and-white striped bollards mean Western Australia; black-and-yellow means Queensland."
+      },
+      "tags": ["gg::bollards"]
+    },
+    {
+      "key": "bollard-th",
+      "model": "basic",
+      "fields": {
+        "front": "Square bollard with a pointed top and **black-and-white stripes**. Which country?",
+        "back": "Thailand",
+        "extra": "Pairs with yellow middle lines to lock in Thailand fast."
+      },
+      "tags": ["gg::bollards"]
+    },
+    {
+      "key": "bollard-gr",
+      "model": "basic",
+      "fields": {
+        "front": "Wedge bollard with **almost-square reflectors**: red front, white back. Which country?",
+        "back": "Greece",
+        "extra": "The squarish reflector shape is the tell against the rest of the Balkans."
+      },
+      "tags": ["gg::bollards"]
+    },
+    {
+      "key": "bollard-vn",
+      "model": "basic",
+      "fields": {
+        "front": "A small square concrete bollard, white with a **solid red top**. Which country?",
+        "back": "Vietnam",
+        "extra": "Vietnamese sign posts are striped red-and-white, and its road signs have a yellow-orange background, unique in Southeast Asia."
+      },
+      "tags": ["gg::bollards"]
+    },
+    {
+      "key": "bollard-sk",
+      "model": "basic",
+      "fields": {
+        "front": "Wedge bollard with **double orange reflectors** on the front. Which country?",
+        "back": "Slovakia",
+        "extra": "The back carries a single white reflector. Slovakia's newer bollard copies Hungary's red-reflector wedge but is still rare."
+      },
+      "tags": ["gg::bollards"]
+    },
+    {
+      "key": "lines-nordic",
+      "model": "basic",
+      "fields": {
+        "front": "**Yellow centre lines** in the Nordics. Which country first?",
+        "back": "Norway",
+        "extra": "Norwegian yellow has an orange tinge, and smaller roads use long-dashed outer lines. Careful: older Finnish coverage also shows yellow centre lines, now being phased out."
+      },
+      "tags": ["gg::roadlines"]
+    },
+    {
+      "key": "lines-americas",
+      "model": "basic",
+      "fields": {
+        "front": "Yellow centre line with white outer lines. Which part of the world is this the default?",
+        "back": "The Americas",
+        "extra": "Canada leans single yellow, the US double yellow; a lean, not a law."
+      },
+      "tags": ["gg::roadlines"]
+    },
+    {
+      "key": "lines-th-my",
+      "model": "basic",
+      "fields": {
+        "front": "Thailand vs Malaysia from the road paint alone?",
+        "back": "Thailand paints yellow middle lines; Malaysia is all white, often double white centre lines, unique in Southeast Asia.",
+        "extra": "Driving side won't help: both drive on the left."
+      },
+      "tags": ["gg::roadlines"]
+    },
+    {
+      "key": "lines-mideast",
+      "model": "basic",
+      "fields": {
+        "front": "**Yellow outer lines** with white centre lines. Which region?",
+        "back": "The Middle East: Israel, Jordan, the UAE, and Oman",
+        "extra": "Botswana pairs yellow outer lines with an arid landscape too, but Botswana drives on the left and the Middle East on the right."
+      },
+      "tags": ["gg::roadlines"]
+    },
+    {
+      "key": "lines-kr",
+      "model": "basic",
+      "fields": {
+        "front": "Yellow middle lines with white outer lines in East Asia. Which country?",
+        "back": "South Korea",
+        "extra": "Japan's most common pattern is a dashed white middle line, though yellow exists there too. Hangul circles settle any doubt."
+      },
+      "tags": ["gg::roadlines"]
+    },
+    {
+      "key": "lines-ph",
+      "model": "basic",
+      "fields": {
+        "front": "Yellow and white centre lines painted **together**, on concrete slab roads. Which country?",
+        "back": "The Philippines",
+        "extra": "Almost every paved Philippine road is concrete slabs, and the combined yellow-white centre line is rare anywhere else in East Asia."
+      },
+      "tags": ["gg::roadlines"]
+    },
+    {
+      "key": "chevron-kh",
+      "model": "basic",
+      "fields": {
+        "front": "**Black chevrons with yellow arrows** in Southeast Asia. Which country?",
+        "back": "Cambodia",
+        "extra": "Every other Southeast Asian country flips it: yellow chevrons with black arrows."
+      },
+      "tags": ["gg::signs"]
+    },
+    {
+      "key": "chevron-sm",
+      "model": "basic",
+      "fields": {
+        "front": "The only country in the world with **yellow chevrons carrying burgundy-red arrows**?",
+        "back": "San Marino",
+        "extra": "A microstate-sized clue that instantly ends the round."
+      },
+      "tags": ["gg::signs"]
+    },
+    {
+      "key": "chevron-ch-at",
+      "model": "basic",
+      "fields": {
+        "front": "Chevrons: **black with white arrows** vs **red-and-white**?",
+        "back": "Black with white arrows: Switzerland. White-on-red or red-on-yellow: Austria.",
+        "extra": "Slovenia: red arrows on white. Serbia: black arrows on white. Czechia and Slovakia: red arrows on white."
+      },
+      "tags": ["gg::signs"]
+    },
+    {
+      "key": "sign-si-yellow",
+      "model": "basic",
+      "fields": {
+        "front": "Austria vs Slovenia in an alpine toss-up: which sign colour saves you?",
+        "back": "Slovenia uses yellow directional signs.",
+        "extra": "Bright red bollard reflectors also point to Slovenia over Austria's dark red."
+      },
+      "tags": ["gg::signs"]
+    },
+    {
+      "key": "sign-cz-sk",
+      "model": "basic",
+      "fields": {
+        "front": "Czechia vs Slovakia by their blue directional signs?",
+        "back": "Czech signs use large filled white arrows; Slovak signs use small white arrows.",
+        "extra": "Slovak sign borders sit right at the sign's edge, Czech borders are inset from it."
+      },
+      "tags": ["gg::signs"]
+    },
+    {
+      "key": "sign-ie-italic",
+      "model": "basic",
+      "fields": {
+        "front": "Bilingual signs where one language is written in *italics*. Which country?",
+        "back": "Ireland: Irish is italicised above the English",
+        "extra": "Works even when the place names look nothing alike."
+      },
+      "tags": ["gg::signs"]
+    },
+    {
+      "key": "lang-sv",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "Å together with **Ä and Ö**",
+        "back": "Swedish",
+        "extra": "Danish and Norwegian pair Å with Æ and Ø instead."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-da-no",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "Å together with **Æ and Ø**",
+        "back": "Danish or Norwegian",
+        "extra": "Splitting the two on letters alone is hard; lean on plates, bollards, and terrain (Norway is the mountainous one)."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-fi",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "Only Ä and Ö for accents, with **doubled vowels and consonants** everywhere (aa, ii, kk)",
+        "back": "Finnish",
+        "extra": "A Uralic language, so it looks nothing like Swedish or Norwegian."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-is",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "**Þ (thorn) and Ð (eth)**",
+        "back": "Icelandic",
+        "extra": "Faroese uses Ð and Ø but never Þ; Icelandic has Ö, never Ø."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-de",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "Ä, Ö, Ü and **ß**",
+        "back": "German",
+        "extra": "Germany and Austria; Switzerland writes ss instead of ß."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-nl",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "Doubled vowels (aa, ee, oo) and the digraph **ij**",
+        "back": "Dutch",
+        "extra": "The Netherlands and Belgium's Flanders. 'straat' means street."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-hu",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "**Ő and Ű**, double acute accents",
+        "back": "Hungarian",
+        "extra": "Unique to Hungarian; expect long words drowning in acutes and umlauts, unrelated to every neighbour."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-pl",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "**Ł** with a stroke, plus ą, ę, ż, ź, ś",
+        "back": "Polish",
+        "extra": "The struck-through Ł is unique to Polish."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-cs-sk",
+      "model": "basic",
+      "fields": {
+        "front": "Czech or Slovak: which special letters decide it?",
+        "back": "Ř, Ě, Ů mean Czech. Ľ, Ĺ, Ŕ, Ô, Ä mean Slovak.",
+        "extra": "Both share acute vowels (á, é, í), which South Slavic languages lack."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-ro",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "**Ă, Ș, Ț**: breve and comma hooks",
+        "back": "Romanian",
+        "extra": "A Romance language among Slavic neighbours; also uses Â and Î. Moldova reads the same."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-tr",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "**Dotless ı**, dotted capital İ, plus Ğ and Ş",
+        "back": "Turkish",
+        "extra": "The dotless ı is essentially unique to Turkish."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-balkan",
+      "model": "basic",
+      "fields": {
+        "front": "Latin-script signs show **Č, Ć, Đ, Š, Ž**. Which languages are in play?",
+        "back": "Croatian, Bosnian, Montenegrin, or Latin-script Serbian",
+        "extra": "Slovenian trims the set to Č, Š, Ž: no Ć or Đ."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-lv",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "Macron vowels **Ā, Ē, Ī** plus hooked consonants Ģ, Ķ, Ļ, Ņ",
+        "back": "Latvian",
+        "extra": "Macrons are the Baltic tell for Latvia."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-lt",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "Hooked vowels **Ą, Ę, Į, Ų** and dotted Ė",
+        "back": "Lithuanian",
+        "extra": "Place names love to end in -ai."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-et",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "**Õ** next to Ä, Ö, Ü",
+        "back": "Estonian",
+        "extra": "Finnish-looking, but Õ settles it. Despite geography it is unrelated to Latvian and Lithuanian."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-pt",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "**Ã and Õ** tildes, Ç, and endings like -ção",
+        "back": "Portuguese",
+        "extra": "Spanish restricts the tilde to Ñ and adds ¿ and ¡."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-es",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "**Ñ**, inverted ¿ and ¡",
+        "back": "Spanish",
+        "extra": "Shared by Spain and Spanish America; pair with plates and driving clues to pick the continent."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-fr",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "**Œ**, ç, and circumflex vowels (ê, â, ô)",
+        "back": "French",
+        "extra": "France, Wallonia, Romandy, Québec, and much of Africa; the Œ ligature is the strongest single tell."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-vi",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "Latin letters **stacked with multiple diacritics**, one-syllable words",
+        "back": "Vietnamese",
+        "extra": "More diacritics than any other language on Street View."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-eu",
+      "model": "basic",
+      "fields": {
+        "front": "Bilingual signs in Spain full of **K, X, and Z**, with no recognisable Romance words. Which language?",
+        "back": "Basque",
+        "extra": "The Basque Country in northern Spain and the French border region; a language isolate related to nothing."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "lang-cy",
+      "model": "basic",
+      "fields": {
+        "front": "Double **LL** everywhere, with W and Y working as vowels. Which language?",
+        "back": "Welsh",
+        "extra": "Bilingual signs put you in Wales."
+      },
+      "tags": ["gg::language"]
+    },
+    {
+      "key": "script-ko",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "Blocky syllables full of **circles**",
+        "back": "Korean (Hangul)",
+        "extra": "The circles set it apart from Chinese and Japanese instantly."
+      },
+      "tags": ["gg::scripts"]
+    },
+    {
+      "key": "script-ja",
+      "model": "basic",
+      "fields": {
+        "front": "Dense characters mixed with curvy simple ones like **の** and **し**. Which language?",
+        "back": "Japanese: hiragana and katakana alongside kanji",
+        "extra": "Characters only, with no curvy kana, means Chinese (Taiwan or Hong Kong on Street View)."
+      },
+      "tags": ["gg::scripts"]
+    },
+    {
+      "key": "script-th-lo-km",
+      "model": "basic",
+      "fields": {
+        "front": "Thai vs Lao vs Khmer script at a glance?",
+        "back": "Thai: loops with straight ascenders. Lao: same family but curvier, fewer straight lines. Khmer: the most intricate and pointed.",
+        "extra": "Countries: Thailand, Laos, Cambodia."
+      },
+      "tags": ["gg::scripts"]
+    },
+    {
+      "key": "script-uk-ru",
+      "model": "basic",
+      "fields": {
+        "front": "A Cyrillic sign: which letters split Ukrainian from Russian?",
+        "back": "І, Ї, Є, Ґ mean Ukrainian. Ы, Э, Ё mean Russian.",
+        "extra": "Belarusian keeps І but adds the unique Ў."
+      },
+      "tags": ["gg::scripts"]
+    },
+    {
+      "key": "script-sr-mk",
+      "model": "basic",
+      "fields": {
+        "front": "Cyrillic in the Balkans: **Ђ and Ћ** vs **Ѓ and Ќ**?",
+        "back": "Ђ and Ћ: Serbian. Ѓ and Ќ: Macedonian.",
+        "extra": "Љ, Њ, and Џ appear in both. Serbia mixes Latin and Cyrillic on its signage."
+      },
+      "tags": ["gg::scripts"]
+    },
+    {
+      "key": "script-el",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "**Σ, Δ, Λ, Ω** on signs",
+        "back": "Greek",
+        "extra": "Greece or Cyprus; lowercase Greek is softer and rounder than Cyrillic."
+      },
+      "tags": ["gg::scripts"]
+    },
+    {
+      "key": "script-devanagari",
+      "model": "basic",
+      "fields": {
+        "front": "A **horizontal bar runs along the top of every word**. Which scripts and countries?",
+        "back": "Devanagari or Bengali: India, Nepal, and Bangladesh",
+        "extra": "Bengali letterforms lean triangular under the bar; Devanagari strokes stay straighter."
+      },
+      "tags": ["gg::scripts"]
+    },
+    {
+      "key": "script-dz",
+      "model": "basic",
+      "fields": {
+        "front": "Tibetan-style lettering on mountain-road signage. Which country?",
+        "back": "Bhutan (Dzongkha)",
+        "extra": "On Street View these letters only appear in Bhutan."
+      },
+      "tags": ["gg::scripts"]
+    },
+    {
+      "key": "script-he-ar",
+      "model": "basic",
+      "fields": {
+        "front": "Hebrew vs Arabic in one look?",
+        "back": "Hebrew: boxy, disconnected letters. Arabic: flowing, connected script.",
+        "extra": "Urdu in Pakistan resembles Arabic but with softer, curvier fonts."
+      },
+      "tags": ["gg::scripts"]
+    },
+    {
+      "key": "word-baltics",
+      "model": "basic",
+      "fields": {
+        "front": "The street sign says **iela** vs **gatvė** vs **tänav**. Which country is each?",
+        "back": "iela: Latvia. gatvė: Lithuania. tänav: Estonia.",
+        "extra": "Abbreviations: g. in Lithuania, tn in Estonia. Estonian tee means road."
+      },
+      "tags": ["gg::words"]
+    },
+    {
+      "key": "word-romance",
+      "model": "basic",
+      "fields": {
+        "front": "Street words: **rue, calle, rua, via**?",
+        "back": "rue: French. calle: Spanish. rua: Portuguese. via: Italian.",
+        "extra": "Handy when the rest of the sign is just names."
+      },
+      "tags": ["gg::words"]
+    },
+    {
+      "key": "word-central",
+      "model": "basic",
+      "fields": {
+        "front": "Street words: **utca, ulica, sokak**?",
+        "back": "utca: Hungarian. ulica: Polish and South Slavic. sokak or cadde: Turkish.",
+        "extra": "utca is a strong Hungary tell since nothing nearby resembles Hungarian."
+      },
+      "tags": ["gg::words"]
+    },
+    {
+      "key": "word-nl-de",
+      "model": "basic",
+      "fields": {
+        "front": "Street words: **straat** vs **Straße**?",
+        "back": "straat: Dutch. Straße: German.",
+        "extra": "Switzerland writes Strasse with ss. A blue 'fietspad' sign is Dutch for bicycle path, not a street name."
+      },
+      "tags": ["gg::words"]
+    },
+    {
+      "key": "domain-ch",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "Internet domain **.ch**",
+        "back": "Switzerland",
+        "extra": "Confoederatio Helvetica, Latin for the Swiss Confederation. Not China, which is .cn."
+      },
+      "tags": ["gg::domains"]
+    },
+    {
+      "key": "domain-za",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "Internet domain **.za**",
+        "back": "South Africa",
+        "extra": "From Zuid-Afrika."
+      },
+      "tags": ["gg::domains"]
+    },
+    {
+      "key": "domain-ee-ie",
+      "model": "basic",
+      "fields": {
+        "front": "Domains **.ee** vs **.ie**?",
+        "back": ".ee: Estonia. .ie: Ireland.",
+        "extra": "Eesti is Estonia's own name for itself."
+      },
+      "tags": ["gg::domains"]
+    },
+    {
+      "key": "domain-at-au",
+      "model": "basic",
+      "fields": {
+        "front": "Domains **.at** vs **.au**?",
+        "back": ".at: Austria. .au: Australia.",
+        "extra": "Driving side breaks any tie: Austria right, Australia left."
+      },
+      "tags": ["gg::domains"]
+    },
+    {
+      "key": "domain-dk-de",
+      "model": "basic",
+      "fields": {
+        "front": "Domains **.dk** vs **.de**?",
+        "back": ".dk: Denmark. .de: Germany (Deutschland).",
+        "extra": "Æ and Ø on the same sign confirm Denmark."
+      },
+      "tags": ["gg::domains"]
+    },
+    {
+      "key": "domain-my-id",
+      "model": "basic",
+      "fields": {
+        "front": "Domains **.my** vs **.id**?",
+        "back": ".my: Malaysia. .id: Indonesia.",
+        "extra": "The languages look similar; plates (two vs three blur sections) and road lines split them."
+      },
+      "tags": ["gg::domains"]
+    },
+    {
+      "key": "domain-hr",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "Internet domain **.hr**",
+        "back": "Croatia",
+        "extra": "From Hrvatska, Croatia's own name for itself."
+      },
+      "tags": ["gg::domains"]
+    },
+    {
+      "key": "domain-si-sk-se",
+      "model": "basic",
+      "fields": {
+        "front": "Domains **.si** vs **.sk** vs **.se**?",
+        "back": ".si: Slovenia. .sk: Slovakia. .se: Sweden.",
+        "extra": "Slovenia and Slovakia trip everyone up; the yellow directional signs are Slovenia's."
+      },
+      "tags": ["gg::domains"]
+    },
+    {
+      "key": "tell-nl-bike",
+      "model": "basic",
+      "fields": {
+        "front": "**Reddish-pink bicycle lanes** flanking almost every road. Which country?",
+        "back": "The Netherlands",
+        "extra": "Cyclists everywhere confirm it, in a landscape flat to the horizon."
+      },
+      "tags": ["gg::tells"]
+    },
+    {
+      "key": "tell-br-soil",
+      "model": "basic",
+      "fields": {
+        "front": "**Deep red soil** along a tropical highway. Which country do you think of first?",
+        "back": "Brazil",
+        "extra": "Paraguay and Argentina's Misiones province share the red dirt, as do patches of Africa and Australia."
+      },
+      "tags": ["gg::tells"]
+    },
+    {
+      "key": "tell-pt-hunting",
+      "model": "basic",
+      "fields": {
+        "front": "A red diamond-shaped sign with a **white circle** in the countryside. Which country?",
+        "back": "Portugal",
+        "extra": "They mark hunting grounds and are a famous Portugal-only tell."
+      },
+      "tags": ["gg::tells"]
+    },
+    {
+      "key": "tell-ua-roads",
+      "model": "basic",
+      "fields": {
+        "front": "Brutally patched, crumbling asphalt in an Eastern European toss-up. Which way do you lean?",
+        "back": "Ukraine over Russia",
+        "extra": "Russian roads are generally kept somewhat better; confirm with the alphabet (І, Ї, Є mean Ukraine)."
+      },
+      "tags": ["gg::tells"]
+    },
+    {
+      "key": "tell-fr-poles",
+      "model": "basic",
+      "fields": {
+        "front": "Small **blue rectangular plates** mounted on utility poles. Which country?",
+        "back": "France",
+        "extra": "The community calls them stickers; they are unique to France."
+      },
+      "tags": ["gg::tells"]
+    },
+    {
+      "key": "tell-id-java",
+      "model": "basic",
+      "fields": {
+        "front": "An Indonesian round with **tiled roofs in patchy colours**. Which island?",
+        "back": "Java",
+        "extra": "The most useful single region tell in the world's fourth most populous country."
+      },
+      "tags": ["gg::tells"]
+    },
+    {
+      "key": "tell-ee-flowers",
+      "model": "basic",
+      "fields": {
+        "front": "White roadside flowers in a Baltic toss-up: real meta or fake meta?",
+        "back": "Semi-fake: the flowers grow across all the Baltics but are most common in Estonia, especially in Gen 3.",
+        "extra": "Use it as a tiebreaker, never as proof. Fake metas are clues the community spread that are not fully true."
+      },
+      "tags": ["gg::tells"]
+    },
+    {
+      "key": "concept-nmpz",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "The game mode **NMPZ**",
+        "back": "No Moving, Panning, or Zooming",
+        "extra": "One static view per round, so car metas and sky clues matter far less; the purist duel format."
+      },
+      "tags": ["gg::tells"]
+    }
+  ]
+}

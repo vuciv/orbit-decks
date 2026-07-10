@@ -11,8 +11,8 @@
     {
       "key": "geography",
       "name": "Geography",
-      "deckCount": 4,
-      "rev": "488e3cd0d1e2",
+      "deckCount": 5,
+      "rev": "003cb4f5d04d",
       "file": "categories/geography.json"
     },
     {
@@ -105,6 +105,7 @@
         "flags-of-the-world",
         "world-capitals",
         "country-silhouettes",
+        "geoguessr-meta",
         "us-states"
       ]
     },
@@ -213,6 +214,11 @@
       "key": "flags-of-the-world",
       "version": 1,
       "file": "decks/flags-of-the-world.json"
+    },
+    {
+      "key": "geoguessr-meta",
+      "version": 1,
+      "file": "decks/geoguessr-meta.json"
     },
     {
       "key": "johto-pokedex",
