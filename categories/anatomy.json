@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 2,
+  "key": "anatomy",
+  "name": "Anatomy",
+  "decks": [
+    {
+      "key": "bones-of-the-body",
+      "name": "Bones of the Human Body",
+      "description": "The major named bones of the human skeleton, from the skull and spine to the hands and feet. Read the description, type the bone; extras add location, landmarks, and how many bones make up each region.",
+      "cardCount": 46,
+      "topics": [
+        "anatomy",
+        "skeleton",
+        "bones",
+        "human-body"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Human%20skeleton%20front%20en.svg?width=640"
+    },
+    {
+      "key": "major-muscles",
+      "name": "Major Muscles and Their Actions",
+      "description": "The major skeletal muscles you can name and feel, grouped head to toe, with the main movement each one produces. Extras give location and a memorable role for muscles like the masseter, latissimus dorsi, and sartorius.",
+      "cardCount": 33,
+      "topics": [
+        "anatomy",
+        "muscles",
+        "human-body",
+        "fitness"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/1105%20Anterior%20and%20Posterior%20Views%20of%20Muscles.jpg?width=640"
+    },
+    {
+      "key": "cranial-nerves",
+      "name": "The 12 Cranial Nerves",
+      "description": "The 12 cranial nerves drilled both ways: number to name and name to number, plus what each one does and whether it is sensory, motor, or both. Includes the two classic medical-school mnemonics.",
+      "cardCount": 38,
+      "topics": [
+        "anatomy",
+        "neuroscience",
+        "cranial-nerves",
+        "medicine"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Brain_human_normal_inferior_view_with_labels_en.svg?width=640"
+    },
+    {
+      "key": "the-human-brain",
+      "name": "The Human Brain",
+      "description": "A tour of the brain's anatomy: the four lobes and what they do, the cerebellum and brainstem, the thalamus and hypothalamus, the limbic system, and the membranes and fluid that protect it all.",
+      "cardCount": 29,
+      "topics": [
+        "anatomy",
+        "neuroscience",
+        "brain",
+        "human-body"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Blausen%200111%20BrainLobes.png?width=640"
+    },
+    {
+      "key": "the-human-heart",
+      "name": "The Human Heart",
+      "description": "How the heart is built and how blood moves through it: the four chambers, the four valves, the great vessels, the conduction system, and the full path of circulation as a step-by-step sequence.",
+      "cardCount": 40,
+      "topics": [
+        "anatomy",
+        "cardiology",
+        "heart",
+        "human-body"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Diagram%20of%20the%20human%20heart%20(cropped).svg?width=640"
+    }
+  ]
+}

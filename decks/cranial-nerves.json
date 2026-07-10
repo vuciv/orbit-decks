@@ -1,0 +1,329 @@
+{
+  "key": "cranial-nerves",
+  "version": 1,
+  "name": "The 12 Cranial Nerves",
+  "description": "The 12 cranial nerves drilled both ways: number to name and name to number, plus what each one does and whether it is sensory, motor, or both. Includes the two classic medical-school mnemonics.",
+  "category": "Anatomy",
+  "topics": [
+    "anatomy",
+    "neuroscience",
+    "cranial-nerves",
+    "medicine"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Brain_human_normal_inferior_view_with_labels_en.svg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "cn1-name",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "CN I",
+        "back": "Olfactory nerve",
+        "extra": "Cranial nerve 1. Sensory. Carries the sense of smell."
+      },
+      "tags": [
+        "cranial-nerves::sensory"
+      ]
+    },
+    {
+      "key": "cn2-name",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "CN II",
+        "back": "Optic nerve",
+        "extra": "Cranial nerve 2. Sensory. Carries vision from the retina."
+      },
+      "tags": [
+        "cranial-nerves::sensory"
+      ]
+    },
+    {
+      "key": "cn3-name",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "CN III",
+        "back": "Oculomotor nerve",
+        "extra": "Cranial nerve 3. Motor. Moves the eye and eyelid, constricts the pupil, and focuses the lens."
+      },
+      "tags": [
+        "cranial-nerves::motor"
+      ]
+    },
+    {
+      "key": "cn4-name",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "CN IV",
+        "back": "Trochlear nerve",
+        "extra": "Cranial nerve 4. Motor. Rotates the eye downward and inward via the superior oblique muscle."
+      },
+      "tags": [
+        "cranial-nerves::motor"
+      ]
+    },
+    {
+      "key": "cn5-name",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "CN V",
+        "back": "Trigeminal nerve",
+        "extra": "Cranial nerve 5. Both. Provides sensation to the face and powers chewing."
+      },
+      "tags": [
+        "cranial-nerves::both"
+      ]
+    },
+    {
+      "key": "cn6-name",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "CN VI",
+        "back": "Abducens nerve",
+        "extra": "Cranial nerve 6. Motor. Turns the eye outward (abduction) via the lateral rectus muscle."
+      },
+      "tags": [
+        "cranial-nerves::motor"
+      ]
+    },
+    {
+      "key": "cn7-name",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "CN VII",
+        "back": "Facial nerve",
+        "extra": "Cranial nerve 7. Both. Controls facial expression, taste on the front of the tongue, and tears and saliva."
+      },
+      "tags": [
+        "cranial-nerves::both"
+      ]
+    },
+    {
+      "key": "cn8-name",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "CN VIII",
+        "back": "Vestibulocochlear nerve",
+        "extra": "Cranial nerve 8. Sensory. Carries hearing and balance."
+      },
+      "tags": [
+        "cranial-nerves::sensory"
+      ]
+    },
+    {
+      "key": "cn9-name",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "CN IX",
+        "back": "Glossopharyngeal nerve",
+        "extra": "Cranial nerve 9. Both. Handles taste and sensation at the back of the tongue, swallowing, and salivation."
+      },
+      "tags": [
+        "cranial-nerves::both"
+      ]
+    },
+    {
+      "key": "cn10-name",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "CN X",
+        "back": "Vagus nerve",
+        "extra": "Cranial nerve 10. Both. Provides parasympathetic control of the heart, lungs, and gut, plus voice and swallowing."
+      },
+      "tags": [
+        "cranial-nerves::both"
+      ]
+    },
+    {
+      "key": "cn11-name",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "CN XI",
+        "back": "Accessory nerve",
+        "extra": "Cranial nerve 11. Motor. Moves the head and shoulders via the sternocleidomastoid and trapezius muscles."
+      },
+      "tags": [
+        "cranial-nerves::motor"
+      ]
+    },
+    {
+      "key": "cn12-name",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "CN XII",
+        "back": "Hypoglossal nerve",
+        "extra": "Cranial nerve 12. Motor. Moves the tongue."
+      },
+      "tags": [
+        "cranial-nerves::motor"
+      ]
+    },
+    {
+      "key": "cn1-function",
+      "model": "basic",
+      "fields": {
+        "front": "What is the main job of the olfactory nerve (CN I)?",
+        "back": "Carries the sense of smell",
+        "extra": "Sensory nerve. The only cranial nerve that does not relay through the thalamus before reaching the cortex; its fibers pass through the cribriform plate of the ethmoid bone."
+      },
+      "tags": [
+        "cranial-nerves::sensory"
+      ]
+    },
+    {
+      "key": "cn2-function",
+      "model": "basic",
+      "fields": {
+        "front": "What is the main job of the optic nerve (CN II)?",
+        "back": "Carries vision from the retina",
+        "extra": "Sensory nerve. Really an outgrowth of the brain wrapped in meninges, not a true peripheral nerve; the two optic nerves cross at the optic chiasm."
+      },
+      "tags": [
+        "cranial-nerves::sensory"
+      ]
+    },
+    {
+      "key": "cn3-function",
+      "model": "basic",
+      "fields": {
+        "front": "What is the main job of the oculomotor nerve (CN III)?",
+        "back": "Moves the eye and eyelid, constricts the pupil, and focuses the lens",
+        "extra": "Motor nerve. Controls four of the six muscles that move the eye plus the muscle that raises the lid. Damage gives a 'down and out' eye, a drooping lid, and a blown pupil."
+      },
+      "tags": [
+        "cranial-nerves::motor"
+      ]
+    },
+    {
+      "key": "cn4-function",
+      "model": "basic",
+      "fields": {
+        "front": "What is the main job of the trochlear nerve (CN IV)?",
+        "back": "Rotates the eye downward and inward via the superior oblique muscle",
+        "extra": "Motor nerve. The thinnest cranial nerve and the only one to emerge from the back of the brainstem; palsy causes vertical double vision that is worst looking down (trouble on stairs)."
+      },
+      "tags": [
+        "cranial-nerves::motor"
+      ]
+    },
+    {
+      "key": "cn5-function",
+      "model": "basic",
+      "fields": {
+        "front": "What is the main job of the trigeminal nerve (CN V)?",
+        "back": "Provides sensation to the face and powers chewing",
+        "extra": "Mixed nerve (sensory and motor). The largest cranial nerve, with three divisions: ophthalmic (V1), maxillary (V2), and mandibular (V3). Only V3 carries the motor fibers to the muscles of mastication."
+      },
+      "tags": [
+        "cranial-nerves::both"
+      ]
+    },
+    {
+      "key": "cn6-function",
+      "model": "basic",
+      "fields": {
+        "front": "What is the main job of the abducens nerve (CN VI)?",
+        "back": "Turns the eye outward (abduction) via the lateral rectus muscle",
+        "extra": "Motor nerve. Has the longest course inside the skull, so it is often the first nerve squeezed by rising intracranial pressure; palsy causes horizontal double vision."
+      },
+      "tags": [
+        "cranial-nerves::motor"
+      ]
+    },
+    {
+      "key": "cn7-function",
+      "model": "basic",
+      "fields": {
+        "front": "What is the main job of the facial nerve (CN VII)?",
+        "back": "Controls facial expression, taste on the front of the tongue, and tears and saliva",
+        "extra": "Mixed nerve (sensory and motor). Motor to the muscles of facial expression; it also carries taste from the front two-thirds of the tongue and parasympathetics to the tear and salivary glands. Its paralysis is Bell's palsy."
+      },
+      "tags": [
+        "cranial-nerves::both"
+      ]
+    },
+    {
+      "key": "cn8-function",
+      "model": "basic",
+      "fields": {
+        "front": "What is the main job of the vestibulocochlear nerve (CN VIII)?",
+        "back": "Carries hearing and balance",
+        "extra": "Sensory nerve. Also called the auditory or acoustic nerve; the cochlear part carries hearing and the vestibular part carries balance. A tumor here (acoustic neuroma) causes hearing loss and vertigo."
+      },
+      "tags": [
+        "cranial-nerves::sensory"
+      ]
+    },
+    {
+      "key": "cn9-function",
+      "model": "basic",
+      "fields": {
+        "front": "What is the main job of the glossopharyngeal nerve (CN IX)?",
+        "back": "Handles taste and sensation at the back of the tongue, swallowing, and salivation",
+        "extra": "Mixed nerve (sensory and motor). Carries taste and sensation from the back third of the tongue, the sensing limb of the gag reflex, and parasympathetics to the parotid salivary gland."
+      },
+      "tags": [
+        "cranial-nerves::both"
+      ]
+    },
+    {
+      "key": "cn10-function",
+      "model": "basic",
+      "fields": {
+        "front": "What is the main job of the vagus nerve (CN X)?",
+        "back": "Provides parasympathetic control of the heart, lungs, and gut, plus voice and swallowing",
+        "extra": "Mixed nerve (sensory and motor). The longest cranial nerve; 'vagus' means wandering. It reaches nearly every organ in the chest and abdomen and drives 'rest and digest' responses."
+      },
+      "tags": [
+        "cranial-nerves::both"
+      ]
+    },
+    {
+      "key": "cn11-function",
+      "model": "basic",
+      "fields": {
+        "front": "What is the main job of the accessory nerve (CN XI)?",
+        "back": "Moves the head and shoulders via the sternocleidomastoid and trapezius muscles",
+        "extra": "Motor nerve. Also called the spinal accessory nerve because it arises largely from the upper spinal cord. Damage causes a drooping shoulder and weakness turning the head."
+      },
+      "tags": [
+        "cranial-nerves::motor"
+      ]
+    },
+    {
+      "key": "cn12-function",
+      "model": "basic",
+      "fields": {
+        "front": "What is the main job of the hypoglossal nerve (CN XII)?",
+        "back": "Moves the tongue",
+        "extra": "Motor nerve. Supplies almost all the tongue muscles; when it is damaged, the tongue deviates toward the injured side when stuck out."
+      },
+      "tags": [
+        "cranial-nerves::motor"
+      ]
+    },
+    {
+      "key": "mnemonic-names",
+      "model": "basic",
+      "fields": {
+        "front": "What is the classic mnemonic for the names of the 12 cranial nerves, in order?",
+        "back": "On Old Olympus' Towering Tops, A Finn And German Viewed Some Hops.",
+        "extra": "Olfactory, Optic, Oculomotor, Trochlear, Trigeminal, Abducens, Facial, Auditory (vestibulocochlear), Glossopharyngeal, Vagus, Accessory (spinal), Hypoglossal."
+      },
+      "tags": [
+        "cranial-nerves::mnemonic"
+      ]
+    },
+    {
+      "key": "mnemonic-type",
+      "model": "basic",
+      "fields": {
+        "front": "What is the mnemonic for whether each cranial nerve is Sensory, Motor, or Both, in order (I to XII)?",
+        "back": "Some Say Marry Money, But My Brother Says Big Brains Matter Most.",
+        "extra": "S S M M B M B S B B M M: Sensory (I, II), Motor (III, IV), Both (V), Motor (VI), Both (VII), Sensory (VIII), Both (IX, X), Motor (XI, XII)."
+      },
+      "tags": [
+        "cranial-nerves::mnemonic"
+      ]
+    }
+  ]
+}

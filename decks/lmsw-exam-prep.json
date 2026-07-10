@@ -1,0 +1,2619 @@
+{
+  "key": "lmsw-exam-prep",
+  "version": 1,
+  "name": "LMSW Exam Prep (ASWB Masters)",
+  "description": "Original study cards for the ASWB Masters exam, organized by the official 2026 blueprint (exams on or after August 3, 2026): Values and Ethics (35%), Assessment and Planning (33%), Intervention and Practice (32%). Covers the NASW Code of Ethics, human development and practice theories, DSM-5-TR diagnoses, psychotropic medications, abuse and neglect, interventions from CBT to community organizing, research, and supervision. Written from the public ASWB content outline; not affiliated with or endorsed by ASWB.",
+  "category": "Professional Exams",
+  "topics": [
+    "social-work",
+    "lmsw",
+    "aswb",
+    "ethics",
+    "psychology"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Jane%20Addams%20-%20Bain%20News%20Service.jpg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "exam-format",
+      "model": "basic",
+      "fields": {
+        "front": "How many questions are on the ASWB Masters (LMSW) exam, and how many count toward your score?",
+        "back": "122 multiple-choice questions; 110 are scored and 12 are unscored pretest questions",
+        "extra": "Four hours, computer-based at Pearson VUE, reported as pass/fail. This is the format for exams taken on or after August 3, 2026. Unanswered questions count as wrong, so always answer."
+      },
+      "tags": [
+        "lmsw::exam"
+      ]
+    },
+    {
+      "key": "exam-content-areas",
+      "model": "basic",
+      "fields": {
+        "front": "Name the three content areas of the ASWB Masters exam and their approximate weights (2026 blueprint).",
+        "back": "Values and Ethics (35%), Assessment and Planning (33%), Intervention and Practice (32%)",
+        "extra": "The 2026 blueprint replaced the old four-area outline for exams taken on or after August 3, 2026. Ethics is now the single largest slice - about 38 scored questions."
+      },
+      "tags": [
+        "lmsw::exam"
+      ]
+    },
+    {
+      "key": "exam-question-types",
+      "model": "basic",
+      "fields": {
+        "front": "What are the three cognitive levels of ASWB exam questions?",
+        "back": "Recall (facts and concepts), application (use knowledge in a situation), and reasoning (analyze a scenario and choose the best response)",
+        "extra": "The Masters exam leans on application and reasoning, so memorizing definitions alone is not enough - practice picking the best action in a vignette."
+      },
+      "tags": [
+        "lmsw::exam"
+      ]
+    },
+    {
+      "key": "exam-first-rule",
+      "model": "basic",
+      "fields": {
+        "front": "An exam question asks what the social worker should do FIRST. What is the classic ordering rule?",
+        "back": "Safety first, then assess, then intervene: address immediate danger, gather information before acting, and act before referring out",
+        "extra": "If an answer option assesses (asks, explores, evaluates) and another intervenes (refers, teaches, confronts), the assessing option usually wins unless safety is at stake."
+      },
+      "tags": [
+        "lmsw::exam"
+      ]
+    },
+    {
+      "key": "exam-least-restrictive",
+      "model": "basic",
+      "fields": {
+        "front": "When answer options range from outpatient support to hospitalization, which does the exam usually favor?",
+        "back": "The least restrictive option that still safely meets the client's needs",
+        "extra": "Same principle as real practice: community-based before residential, voluntary before involuntary - unless there is serious, imminent risk."
+      },
+      "tags": [
+        "lmsw::exam"
+      ]
+    },
+    {
+      "key": "nasw-core-values",
+      "model": "basic",
+      "fields": {
+        "front": "Name the six core values of the NASW Code of Ethics.",
+        "back": "Service, social justice, dignity and worth of the person, importance of human relationships, integrity, and competence",
+        "extra": "Each value pairs with an ethical principle, e.g. service pairs with helping people in need and addressing social problems."
+      },
+      "tags": [
+        "lmsw::ethics-principles"
+      ]
+    },
+    {
+      "key": "ethical-principles-screen",
+      "model": "sequence",
+      "fields": {
+        "title": "Ethical Principles Screen (Dolgoff, Loewenberg, and Harrington): the principles ranked from highest priority to lowest",
+        "items": [
+          "Protection of life",
+          "Equality and inequality",
+          "Autonomy and freedom",
+          "Least harm",
+          "Quality of life",
+          "Privacy and confidentiality",
+          "Truthfulness and full disclosure"
+        ],
+        "contextWindow": 1
+      },
+      "tags": [
+        "lmsw::ethics-principles"
+      ]
+    },
+    {
+      "key": "informed-consent-elements",
+      "model": "basic",
+      "fields": {
+        "front": "What must informed consent for services include?",
+        "back": "Purpose and nature of services, risks and benefits, reasonable alternatives, costs, limits of confidentiality, the time frame covered, and the right to refuse or withdraw",
+        "extra": "Consent must also be valid: given voluntarily, in clear and understandable language, by a client with capacity to consent."
+      },
+      "tags": [
+        "lmsw::ethics-principles"
+      ]
+    },
+    {
+      "key": "informed-consent-incapacity",
+      "model": "basic",
+      "fields": {
+        "front": "A client lacks the capacity to give informed consent. What should the social worker do?",
+        "back": "Get permission from an appropriate third party (guardian or proxy), still inform the client at their level of understanding, and seek their assent",
+        "extra": "Protect the client's interests and involve them as much as they are able - incapacity does not erase the duty to explain."
+      },
+      "tags": [
+        "lmsw::ethics-principles"
+      ]
+    },
+    {
+      "key": "confidentiality-vs-privilege",
+      "model": "basic",
+      "fields": {
+        "front": "Confidentiality vs privileged communication: what is the difference?",
+        "back": "Confidentiality is the ethical duty not to share client information; privileged communication is the legal protection against forced disclosure in court",
+        "extra": "Privilege belongs to the client, not the social worker - only the client can waive it. Whether it applies depends on state law."
+      },
+      "tags": [
+        "lmsw::ethics-principles"
+      ]
+    },
+    {
+      "key": "confidentiality-limits",
+      "model": "basic",
+      "fields": {
+        "front": "Name the classic exceptions to confidentiality.",
+        "back": "Serious, foreseeable, imminent danger to self or others; suspected abuse or neglect of a child or vulnerable adult; a court order; and client consent to release",
+        "extra": "Explain these limits at the start of services, not after a disclosure forces the issue. Disclose the least amount necessary for the purpose."
+      },
+      "tags": [
+        "lmsw::ethics-principles"
+      ]
+    },
+    {
+      "key": "hipaa-phi",
+      "model": "basic",
+      "fields": {
+        "front": "Under HIPAA, what is PHI and what is the 'minimum necessary' rule?",
+        "back": "PHI is individually identifiable health information in any form; disclose only the minimum necessary to accomplish the purpose",
+        "extra": "Psychotherapy notes kept separate from the chart get extra protection and need the client's specific authorization to release."
+      },
+      "tags": [
+        "lmsw::ethics-principles"
+      ]
+    },
+    {
+      "key": "tarasoff",
+      "model": "basic",
+      "fields": {
+        "front": "Which court case established a therapist's duty to protect an identifiable third party from a client's threatened violence?",
+        "back": "Tarasoff v. Regents of the University of California (1976)",
+        "extra": "The protective privilege ends where the public peril begins. Fulfilling the duty can mean warning the victim, notifying police, or hospitalizing the client - specifics vary by state."
+      },
+      "tags": [
+        "lmsw::ethics-principles"
+      ]
+    },
+    {
+      "key": "mandatory-reporting-standard",
+      "model": "basic",
+      "fields": {
+        "front": "How certain must you be before filing a child abuse report?",
+        "back": "Reasonable suspicion is enough - you report suspicions; you do not investigate or prove them",
+        "extra": "Good-faith reporters are immune from liability, and failing to report is the real legal exposure. Child protective services investigates, not the social worker."
+      },
+      "tags": [
+        "lmsw::ethics-principles"
+      ]
+    },
+    {
+      "key": "impaired-colleague",
+      "model": "basic",
+      "fields": {
+        "front": "You learn a colleague's substance use is impairing their practice. What is the first step?",
+        "back": "When feasible, speak with the colleague directly and help them seek remedial action",
+        "extra": "If they do not address it, act through appropriate channels (employer, licensing board). Protecting clients outweighs collegial loyalty."
+      },
+      "tags": [
+        "lmsw::ethics-principles"
+      ]
+    },
+    {
+      "key": "ethical-dilemma-process",
+      "model": "basic",
+      "fields": {
+        "front": "What is the general process for resolving an ethical dilemma?",
+        "back": "Identify the conflicting values and duties, consult the Code of Ethics and a supervisor or colleagues, weigh the options, choose the action that best protects the client, and document your reasoning",
+        "extra": "Exam answers that include consultation and documentation usually beat lone-wolf decisions."
+      },
+      "tags": [
+        "lmsw::ethics-principles"
+      ]
+    },
+    {
+      "key": "burnout-cf-vt",
+      "model": "basic",
+      "fields": {
+        "front": "Distinguish burnout, secondary traumatic stress (compassion fatigue), and vicarious trauma.",
+        "back": "Burnout: gradual exhaustion and cynicism from chronic work stress. Secondary traumatic stress: trauma-like symptoms from exposure to clients' trauma. Vicarious trauma: a cumulative inner shift in worldview from ongoing trauma work",
+        "extra": "Burnout can happen in any job; the other two are specific to hearing and absorbing others' trauma."
+      },
+      "tags": [
+        "lmsw::ethics-principles"
+      ]
+    },
+    {
+      "key": "self-care-ethics",
+      "model": "basic",
+      "fields": {
+        "front": "Why is social worker self-care an ethical issue rather than a personal preference?",
+        "back": "Unaddressed distress and impairment compromise client care - workers must monitor themselves and act before clients are affected",
+        "extra": "The 2021 revision of the NASW Code added explicit self-care language to its purpose section."
+      },
+      "tags": [
+        "lmsw::ethics-principles"
+      ]
+    },
+    {
+      "key": "maintaining-competence",
+      "model": "basic",
+      "fields": {
+        "front": "How do social workers ethically maintain competence?",
+        "back": "Continuing education, ongoing supervision and consultation, keeping current with the literature, and practicing only within areas of training and experience",
+        "extra": "Entering a new practice area requires appropriate study, training, and supervision first - good intentions are not competence."
+      },
+      "tags": [
+        "lmsw::ethics-principles"
+      ]
+    },
+    {
+      "key": "dual-relationships",
+      "model": "basic",
+      "fields": {
+        "front": "What is a dual (multiple) relationship, and when must it be avoided?",
+        "back": "Any additional relationship with a client beyond the professional one - social, business, or romantic; avoid it whenever there is a risk of exploitation or harm to the client",
+        "extra": "In small or rural communities some overlap is unavoidable; then the worker sets clear boundaries and carries full responsibility for managing them."
+      },
+      "tags": [
+        "lmsw::ethics-service"
+      ]
+    },
+    {
+      "key": "boundary-crossing-violation",
+      "model": "basic",
+      "fields": {
+        "front": "Boundary crossing vs boundary violation?",
+        "back": "A crossing is a deviation from strict professional practice that may be harmless or even helpful, like attending a client's graduation; a violation exploits or harms the client, like romantic involvement or a business deal",
+        "extra": "Ask whose needs the behavior serves: the client's (possible crossing) or the worker's (violation)."
+      },
+      "tags": [
+        "lmsw::ethics-service"
+      ]
+    },
+    {
+      "key": "self-disclosure",
+      "model": "basic",
+      "fields": {
+        "front": "When is social worker self-disclosure appropriate?",
+        "back": "Only when it is brief, purposeful, and for the client's benefit - never to meet the worker's own needs",
+        "extra": "Catching yourself disclosing in order to feel understood is a countertransference cue: take it to supervision."
+      },
+      "tags": [
+        "lmsw::ethics-service"
+      ]
+    },
+    {
+      "key": "client-gifts",
+      "model": "basic",
+      "fields": {
+        "front": "A client offers you a small handmade gift. What should you weigh before responding?",
+        "back": "The gift's meaning to the client, its monetary value, cultural norms, agency policy, and the effect of refusal on the relationship",
+        "extra": "A reflexive refusal can rupture rapport, especially across cultures - the exam rewards weighing context over rigid rules."
+      },
+      "tags": [
+        "lmsw::ethics-service"
+      ]
+    },
+    {
+      "key": "bartering",
+      "model": "basic",
+      "fields": {
+        "front": "What does the NASW Code say about bartering goods or services for payment?",
+        "back": "Avoid it in most cases; it is acceptable only in very limited circumstances where it is an accepted community practice, clearly negotiated, and initiated by the client without coercion",
+        "extra": "The worker who barters bears the full burden of showing it is not exploitative."
+      },
+      "tags": [
+        "lmsw::ethics-service"
+      ]
+    },
+    {
+      "key": "sexual-relationships",
+      "model": "basic",
+      "fields": {
+        "front": "What does the NASW Code say about sexual relationships with current or former clients?",
+        "back": "Prohibited with current clients under any circumstances; with former clients, social workers should not engage - anyone claiming an exception bears the full burden of proving no exploitation",
+        "extra": "Also prohibited with clients' relatives and close contacts when there is risk of exploitation or harm to the client."
+      },
+      "tags": [
+        "lmsw::ethics-service"
+      ]
+    },
+    {
+      "key": "self-determination-limit",
+      "model": "basic",
+      "fields": {
+        "front": "When may a social worker limit a client's right to self-determination?",
+        "back": "Only when, in the worker's professional judgment, the client's actions or potential actions pose a serious, foreseeable, and imminent risk to themselves or others",
+        "extra": "That three-word test - serious, foreseeable, imminent - is quoted straight from the Code and shows up on the exam."
+      },
+      "tags": [
+        "lmsw::ethics-service"
+      ]
+    },
+    {
+      "key": "termination-abandonment",
+      "model": "basic",
+      "fields": {
+        "front": "What does ethical termination of services require?",
+        "back": "Terminate when services are no longer required or no longer serve the client's needs; avoid abandonment by giving notice and arranging referral or transfer when the client still needs services",
+        "extra": "Abrupt termination of a client who still needs care is abandonment - the classic malpractice trap."
+      },
+      "tags": [
+        "lmsw::ethics-service"
+      ]
+    },
+    {
+      "key": "termination-nonpayment",
+      "model": "basic",
+      "fields": {
+        "front": "May a social worker terminate services because the client has not paid?",
+        "back": "Yes, if the financial arrangements were made clear, the client does not pose an imminent danger to self or others, and the consequences of nonpayment were discussed",
+        "extra": "All three conditions must hold - a suicidal client cannot be terminated over an unpaid bill."
+      },
+      "tags": [
+        "lmsw::ethics-service"
+      ]
+    },
+    {
+      "key": "documentation-ethics",
+      "model": "basic",
+      "fields": {
+        "front": "What are the ethics of client records?",
+        "back": "Document accurately and on time, include only what is directly relevant to service delivery, protect the records, and retain them as required",
+        "extra": "Never alter a record after the fact - corrections are added as new, dated, signed entries."
+      },
+      "tags": [
+        "lmsw::ethics-service"
+      ]
+    },
+    {
+      "key": "client-access-records",
+      "model": "basic",
+      "fields": {
+        "front": "Are clients entitled to see their own records?",
+        "back": "Yes - provide reasonable access; withhold only parts where there is compelling evidence access would cause serious harm, and document any request and refusal",
+        "extra": "Also protect third parties named in the record when granting access."
+      },
+      "tags": [
+        "lmsw::ethics-service"
+      ]
+    },
+    {
+      "key": "electronic-practice",
+      "model": "basic",
+      "fields": {
+        "front": "What extra obligations come with providing services electronically (telehealth)?",
+        "back": "Informed consent specific to remote services, assessing suitability, secure technology, competence with the medium, verifying identity and location, and complying with licensing law where the client is located",
+        "extra": "You generally must be authorized to practice in the client's jurisdiction at the time of service, not just your own."
+      },
+      "tags": [
+        "lmsw::ethics-service"
+      ]
+    },
+    {
+      "key": "supervision-ethics",
+      "model": "basic",
+      "fields": {
+        "front": "What are a supervisor's key ethical duties?",
+        "back": "Supervise only within areas of competence, maintain clear boundaries (no dual relationships with supervisees), evaluate fairly and respectfully, and share responsibility for the supervisee's client care",
+        "extra": "Supervisors can be held accountable for a supervisee's practice - which is why they must know the cases."
+      },
+      "tags": [
+        "lmsw::ethics-service"
+      ]
+    },
+    {
+      "key": "advance-directives",
+      "model": "basic",
+      "fields": {
+        "front": "What documents let clients direct their end-of-life care in advance?",
+        "back": "Advance directives: a living will (treatment wishes) and a durable power of attorney for health care or proxy (who decides when the client cannot)",
+        "extra": "The social work role is education and honoring self-determination - raising the topic early, not steering the choice."
+      },
+      "tags": [
+        "lmsw::ethics-service"
+      ]
+    },
+    {
+      "key": "responsible-billing",
+      "model": "basic",
+      "fields": {
+        "front": "What counts as responsible billing practice?",
+        "back": "Bill only for services actually provided, accurately representing who provided them and what was done - never misrepresent a service or provider to an insurer",
+        "extra": "Billing a supervisee's session under your own name to capture reimbursement is fraud, not paperwork."
+      },
+      "tags": [
+        "lmsw::ethics-service"
+      ]
+    },
+    {
+      "key": "cultural-competence-humility",
+      "model": "basic",
+      "fields": {
+        "front": "Cultural competence vs cultural humility?",
+        "back": "Competence: building knowledge and skills for working across cultures. Humility: a lifelong stance of self-reflection that treats the client as the expert on their own culture",
+        "extra": "The 2021 Code revision requires demonstrating cultural humility and frames cultural competence as ongoing action, including advocacy."
+      },
+      "tags": [
+        "lmsw::diversity"
+      ]
+    },
+    {
+      "key": "intersectionality",
+      "model": "basic",
+      "fields": {
+        "front": "What is intersectionality, and who coined the term?",
+        "back": "The way overlapping identities - race, gender, class, sexuality, disability - combine into distinct experiences of privilege and oppression; coined by Kimberle Crenshaw",
+        "extra": "A Black woman's experience is not 'racism plus sexism' added separately - the combination is its own position."
+      },
+      "tags": [
+        "lmsw::diversity"
+      ]
+    },
+    {
+      "key": "microaggressions",
+      "model": "basic",
+      "fields": {
+        "front": "What are microaggressions?",
+        "back": "Brief, everyday slights and indignities - intentional or not - that communicate hostile or demeaning messages to members of marginalized groups",
+        "extra": "Sue's three types: microassaults (deliberate), microinsults (rude/insensitive), microinvalidations (negating lived experience, e.g. 'I don't see color')."
+      },
+      "tags": [
+        "lmsw::diversity"
+      ]
+    },
+    {
+      "key": "implicit-bias",
+      "model": "basic",
+      "fields": {
+        "front": "What is implicit bias?",
+        "back": "Unconscious attitudes and stereotypes that shape judgments and behavior without the person's awareness",
+        "extra": "Countered by self-awareness, slowing down decisions, and supervision - good intentions alone do not remove it."
+      },
+      "tags": [
+        "lmsw::diversity"
+      ]
+    },
+    {
+      "key": "privilege",
+      "model": "basic",
+      "fields": {
+        "front": "What is privilege in the social justice sense?",
+        "back": "Unearned advantages that come with membership in a dominant group, usually invisible to those who hold them",
+        "extra": "Related exam terms: internalized superiority and internalized inferiority - absorbing society's messages about one's own group."
+      },
+      "tags": [
+        "lmsw::diversity"
+      ]
+    },
+    {
+      "key": "anti-oppressive-practice",
+      "model": "basic",
+      "fields": {
+        "front": "What defines anti-oppressive practice?",
+        "back": "Actively analyzing and challenging power imbalances at the personal, cultural, and structural levels - partnership and empowerment rather than merely being nonjudgmental",
+        "extra": "It treats problems as located in oppressive systems, not only in individuals - the macro edge of the person-in-environment lens."
+      },
+      "tags": [
+        "lmsw::diversity"
+      ]
+    },
+    {
+      "key": "restorative-justice",
+      "model": "basic",
+      "fields": {
+        "front": "What is restorative justice?",
+        "back": "Repairing harm by bringing together those harmed, those responsible, and the community - centering accountability and healing rather than punishment",
+        "extra": "Truth and reconciliation processes apply the same logic to historical and collective harms."
+      },
+      "tags": [
+        "lmsw::diversity"
+      ]
+    },
+    {
+      "key": "interpreters",
+      "model": "basic",
+      "fields": {
+        "front": "A client speaks limited English. Who should interpret?",
+        "back": "A trained professional interpreter - not the client's family members, and especially not children",
+        "extra": "Family interpreters compromise confidentiality and accuracy and distort family roles. A classic exam answer."
+      },
+      "tags": [
+        "lmsw::diversity"
+      ]
+    },
+    {
+      "key": "erikson-1-trust",
+      "model": "basic",
+      "fields": {
+        "front": "Erikson: what is the psychosocial crisis of infancy (birth to about 18 months), and what strength comes from resolving it?",
+        "back": "Trust vs. mistrust; the virtue of hope",
+        "extra": "Built through consistent, responsive caregiving. Stage 1 of 8."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "erikson-2-autonomy",
+      "model": "basic",
+      "fields": {
+        "front": "Erikson: what is the crisis of toddlerhood (about 18 months to 3 years), and its virtue?",
+        "back": "Autonomy vs. shame and doubt; the virtue of will",
+        "extra": "The 'me do it' era of toilet training and first independence. Stage 2 of 8."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "erikson-3-initiative",
+      "model": "basic",
+      "fields": {
+        "front": "Erikson: what is the crisis of the preschool years (about 3 to 5), and its virtue?",
+        "back": "Initiative vs. guilt; the virtue of purpose",
+        "extra": "Children plan, lead play, and try things; harsh control teaches guilt. Stage 3 of 8."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "erikson-4-industry",
+      "model": "basic",
+      "fields": {
+        "front": "Erikson: what is the crisis of school age (about 6 to 12), and its virtue?",
+        "back": "Industry vs. inferiority; the virtue of competence",
+        "extra": "Mastery of school and skills, measured against peers. Stage 4 of 8."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "erikson-5-identity",
+      "model": "basic",
+      "fields": {
+        "front": "Erikson: what is the crisis of adolescence, and its virtue?",
+        "back": "Identity vs. role confusion; the virtue of fidelity",
+        "extra": "The central task of adolescence is forming a coherent identity - trying on roles, values, and group belonging. Stage 5 of 8."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "erikson-6-intimacy",
+      "model": "basic",
+      "fields": {
+        "front": "Erikson: what is the crisis of young adulthood (about 18 to 40), and its virtue?",
+        "back": "Intimacy vs. isolation; the virtue of love",
+        "extra": "Forming deep committed bonds - which Erikson argued requires a settled identity first. Stage 6 of 8."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "erikson-7-generativity",
+      "model": "basic",
+      "fields": {
+        "front": "Erikson: what is the crisis of middle adulthood (about 40 to 65), and its virtue?",
+        "back": "Generativity vs. stagnation; the virtue of care",
+        "extra": "Contributing to the next generation through parenting, mentoring, and work. Stage 7 of 8."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "erikson-8-integrity",
+      "model": "basic",
+      "fields": {
+        "front": "Erikson: what is the crisis of late adulthood (65 and up), and its virtue?",
+        "back": "Integrity vs. despair; the virtue of wisdom",
+        "extra": "Looking back on a life as meaningful rather than a chain of regrets. Life review and reminiscence work build on this stage. Stage 8 of 8."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "piaget-sensorimotor",
+      "model": "basic",
+      "fields": {
+        "front": "Piaget: which stage covers birth to age 2, and what is its landmark achievement?",
+        "back": "Sensorimotor; object permanence - knowing things still exist when out of sight",
+        "extra": "Object permanence emerges around 8 months, which is also why separation anxiety appears then."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "piaget-preoperational",
+      "model": "basic",
+      "fields": {
+        "front": "Piaget: what characterizes the preoperational stage (about 2 to 7)?",
+        "back": "Symbolic and pretend play, rapid language growth, egocentrism, magical thinking - and no conservation yet",
+        "extra": "Egocentrism means the child cannot take another's perspective; it is developmental, not selfishness."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "piaget-concrete",
+      "model": "basic",
+      "fields": {
+        "front": "Piaget: what does a child gain in the concrete operational stage (about 7 to 11)?",
+        "back": "Conservation (quantity unchanged despite appearance), reversibility, and logical thinking about concrete things",
+        "extra": "The child now knows a tall thin glass holds the same water - but abstract hypotheticals are still out of reach."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "piaget-formal",
+      "model": "basic",
+      "fields": {
+        "front": "Piaget: what defines the formal operational stage (about 11 and up)?",
+        "back": "Abstract, hypothetical, and systematic reasoning - thinking about ideas, futures, and 'what ifs'",
+        "extra": "This capacity underlies adolescent idealism and debate - and not everyone uses it consistently in adulthood."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "freud-structures",
+      "model": "basic",
+      "fields": {
+        "front": "Freud: what do the id, ego, and superego each do?",
+        "back": "Id: instinctual drives on the pleasure principle. Ego: mediates between id and reality (reality principle). Superego: internalized morals and ideals",
+        "extra": "Defense mechanisms are the ego's tools for managing conflict among the three."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "freud-psychosexual",
+      "model": "sequence",
+      "fields": {
+        "title": "Freud's psychosexual stages, in order",
+        "items": [
+          "Oral (birth to 1)",
+          "Anal (1 to 3)",
+          "Phallic (3 to 6)",
+          "Latency (6 to puberty)",
+          "Genital (puberty on)"
+        ],
+        "contextWindow": 1
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "dm-repression",
+      "model": "basic",
+      "fields": {
+        "front": "Defense mechanism: unconsciously pushing painful memories or thoughts out of awareness.",
+        "back": "Repression",
+        "extra": "The foundational defense. Distinguish from suppression, which is a conscious decision to set something aside."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "dm-denial",
+      "model": "basic",
+      "fields": {
+        "front": "Defense mechanism: refusing to accept an obvious reality ('the biopsy must be wrong').",
+        "back": "Denial",
+        "extra": "Common in new grief, terminal diagnoses, and addiction - which is why confrontation alone rarely works."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "dm-projection",
+      "model": "basic",
+      "fields": {
+        "front": "Defense mechanism: attributing your own unacceptable feelings to someone else ('HE is the angry one').",
+        "back": "Projection",
+        "extra": "The feeling is real but relocated. Prominent in paranoid presentations."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "dm-displacement",
+      "model": "basic",
+      "fields": {
+        "front": "Defense mechanism: shifting feelings from their real target to a safer one (yelled at by the boss, kicks the dog).",
+        "back": "Displacement",
+        "extra": "The emotion keeps its character - anger stays anger - but changes address."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "dm-sublimation",
+      "model": "basic",
+      "fields": {
+        "front": "Defense mechanism: channeling an unacceptable impulse into a socially valued activity (aggression into boxing or surgery).",
+        "back": "Sublimation",
+        "extra": "Considered the most mature defense - the impulse is not just hidden, it is put to work."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "dm-reaction-formation",
+      "model": "basic",
+      "fields": {
+        "front": "Defense mechanism: behaving in the exact opposite of your true feeling (excessive sweetness toward someone you resent).",
+        "back": "Reaction formation",
+        "extra": "The tell is the excess - the display is louder than a genuine feeling would be."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "dm-rationalization",
+      "model": "basic",
+      "fields": {
+        "front": "Defense mechanism: inventing logical-sounding reasons for an uncomfortable truth ('I didn't want that job anyway').",
+        "back": "Rationalization",
+        "extra": "Aesop's sour grapes. The explanation is plausible; it just is not the real reason."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "dm-regression",
+      "model": "basic",
+      "fields": {
+        "front": "Defense mechanism: returning to behavior from an earlier developmental stage under stress (a new sibling arrives and a toilet-trained child starts bedwetting).",
+        "back": "Regression",
+        "extra": "Common and usually temporary in children under stress; also seen in hospitalized adults."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "dm-intellectualization",
+      "model": "basic",
+      "fields": {
+        "front": "Defense mechanism: retreating into abstract analysis to avoid feeling (reciting survival statistics instead of grieving a diagnosis).",
+        "back": "Intellectualization",
+        "extra": "The facts are accurate; their job is distance. Cousin of isolation of affect."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "dm-splitting",
+      "model": "basic",
+      "fields": {
+        "front": "Defense mechanism: seeing people as all good or all bad, with no middle ground.",
+        "back": "Splitting",
+        "extra": "Hallmark of borderline personality dynamics - the idealized worker can become the despised one overnight. Teams get split the same way."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "dm-undoing",
+      "model": "basic",
+      "fields": {
+        "front": "Defense mechanism: performing an act to symbolically cancel out an unacceptable thought or deed (lavish gifts after an affair).",
+        "back": "Undoing",
+        "extra": "Also the engine of many compulsive rituals - the act 'neutralizes' the thought."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "kohlberg-preconventional",
+      "model": "basic",
+      "fields": {
+        "front": "Kohlberg: what drives moral reasoning at the preconventional level?",
+        "back": "Avoiding punishment and serving self-interest ('what happens to me?')",
+        "extra": "Typical of young children. Stages: obedience/punishment, then instrumental exchange."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "kohlberg-conventional",
+      "model": "basic",
+      "fields": {
+        "front": "Kohlberg: what drives moral reasoning at the conventional level?",
+        "back": "Social approval ('good boy/good girl') and maintaining law and order",
+        "extra": "Where most adolescents and adults reason from - rules are right because they are the rules."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "kohlberg-postconventional",
+      "model": "basic",
+      "fields": {
+        "front": "Kohlberg: what drives moral reasoning at the postconventional level?",
+        "back": "Social contracts and universal ethical principles - laws can be wrong if they violate justice",
+        "extra": "Civil disobedience is the textbook illustration: breaking a law to honor a higher principle."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "attachment-secure",
+      "model": "basic",
+      "fields": {
+        "front": "In Ainsworth's Strange Situation, how does a securely attached infant behave?",
+        "back": "Distressed when the caregiver leaves, quickly comforted on reunion, and uses the caregiver as a secure base to explore",
+        "extra": "Grows from consistent, responsive caregiving - the majority pattern."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "attachment-avoidant-ambivalent",
+      "model": "basic",
+      "fields": {
+        "front": "Distinguish avoidant from ambivalent (resistant) attachment.",
+        "back": "Avoidant: ignores the caregiver's departure and return - has learned needs will not be met. Ambivalent: clings, is hard to soothe, and both seeks and resists comfort - from inconsistent caregiving",
+        "extra": "Avoidant tracks with dismissive care; ambivalent with unpredictable care."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "attachment-disorganized",
+      "model": "basic",
+      "fields": {
+        "front": "What is disorganized attachment, and what is it associated with?",
+        "back": "Contradictory, dazed, freezing behavior toward the caregiver - approach and fear at once; associated with maltreatment or frightening caregiving",
+        "extra": "Added by Main and Solomon after Ainsworth's original three patterns. The caregiver is both the source of comfort and the source of fear."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "kubler-ross",
+      "model": "sequence",
+      "fields": {
+        "title": "Kubler-Ross's five stages of grief, in the classic order",
+        "items": [
+          "Denial",
+          "Anger",
+          "Bargaining",
+          "Depression",
+          "Acceptance"
+        ],
+        "contextWindow": 1
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "grief-nonlinear",
+      "model": "basic",
+      "fields": {
+        "front": "Are the Kubler-Ross stages a fixed sequence that everyone passes through?",
+        "back": "No - grief is nonlinear; people skip, repeat, and reorder them, and current models treat them as common reactions rather than required steps",
+        "extra": "Exam questions reward normalizing a client's 'out of order' grief, not correcting it."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "maslow-hierarchy",
+      "model": "sequence",
+      "fields": {
+        "title": "Maslow's hierarchy of needs, from the base of the pyramid up",
+        "items": [
+          "Physiological",
+          "Safety",
+          "Love and belonging",
+          "Esteem",
+          "Self-actualization"
+        ],
+        "contextWindow": 1
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "maslow-application",
+      "model": "basic",
+      "fields": {
+        "front": "A client facing eviction this week wants to process childhood trauma. Per Maslow, where do you start?",
+        "back": "With the housing crisis - basic and safety needs come before higher-level therapeutic work",
+        "extra": "The classic FIRST-question logic: an insecure base makes insight work unusable."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "bronfenbrenner",
+      "model": "basic",
+      "fields": {
+        "front": "Name Bronfenbrenner's five ecological systems.",
+        "back": "Microsystem (immediate settings), mesosystem (links between them), exosystem (settings that affect the person indirectly), macrosystem (culture, laws, values), chronosystem (change over time)",
+        "extra": "A parent's stressful workplace affecting the child at home is the exosystem - the child never enters it, but it shapes their life."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "normal-aging",
+      "model": "basic",
+      "fields": {
+        "front": "What is typical versus atypical cognitive change in normal aging?",
+        "back": "Typical: slower processing and occasional word-finding pauses. Atypical: disorientation, personality change, or failing at familiar daily tasks - signs of possible neurocognitive disorder",
+        "extra": "Forgetting where the keys are is aging; forgetting what keys are for is not."
+      },
+      "tags": [
+        "lmsw::development"
+      ]
+    },
+    {
+      "key": "classical-vs-operant",
+      "model": "basic",
+      "fields": {
+        "front": "Classical vs operant conditioning?",
+        "back": "Classical (Pavlov): pairing stimuli so an involuntary response transfers to a new trigger. Operant (Skinner): consequences - reinforcement and punishment - shape voluntary behavior",
+        "extra": "Classical works on reflexes and emotions (phobias); operant works on chosen behavior (token economies)."
+      },
+      "tags": [
+        "lmsw::theories"
+      ]
+    },
+    {
+      "key": "reinforcement-types",
+      "model": "basic",
+      "fields": {
+        "front": "Positive vs negative reinforcement?",
+        "back": "Both INCREASE a behavior: positive reinforcement adds something desirable; negative reinforcement removes something aversive",
+        "extra": "Negative reinforcement is not punishment - punishment decreases behavior. Taking aspirin to end a headache is negative reinforcement."
+      },
+      "tags": [
+        "lmsw::theories"
+      ]
+    },
+    {
+      "key": "reinforcement-schedule",
+      "model": "basic",
+      "fields": {
+        "front": "Which reinforcement schedule makes a behavior hardest to extinguish?",
+        "back": "Variable ratio - reward after an unpredictable number of responses",
+        "extra": "The slot machine schedule. Explains why intermittently rewarded behavior (gambling, tantrums that sometimes work) is so persistent."
+      },
+      "tags": [
+        "lmsw::theories"
+      ]
+    },
+    {
+      "key": "bandura-social-learning",
+      "model": "basic",
+      "fields": {
+        "front": "What did Bandura's social learning theory add to behaviorism?",
+        "back": "Learning through observation and modeling, without direct reinforcement - plus self-efficacy, the belief in one's own capacity to succeed",
+        "extra": "The Bobo doll experiments: children imitated aggression they had merely watched."
+      },
+      "tags": [
+        "lmsw::theories"
+      ]
+    },
+    {
+      "key": "systems-homeostasis",
+      "model": "basic",
+      "fields": {
+        "front": "In systems theory, what is homeostasis?",
+        "back": "A system's pull toward its familiar equilibrium - even a dysfunctional one - resisting change to any part",
+        "extra": "Why a family may unconsciously undermine one member's recovery: the system is defending its old balance."
+      },
+      "tags": [
+        "lmsw::theories"
+      ]
+    },
+    {
+      "key": "entropy-negentropy",
+      "model": "basic",
+      "fields": {
+        "front": "Systems theory: entropy vs negentropy?",
+        "back": "Entropy: the drift toward disorder and decay in a closed system. Negentropy: growth and order fueled by energy and input from outside",
+        "extra": "Open systems exchange with their environment and can renew; closed systems seal themselves off and run down."
+      },
+      "tags": [
+        "lmsw::theories"
+      ]
+    },
+    {
+      "key": "equifinality",
+      "model": "basic",
+      "fields": {
+        "front": "Systems theory: what is equifinality?",
+        "back": "Many different paths can lead to the same end state",
+        "extra": "Its mirror is multifinality: the same starting point can lead to many different outcomes. Two abused children, two different adults."
+      },
+      "tags": [
+        "lmsw::theories"
+      ]
+    },
+    {
+      "key": "person-in-environment",
+      "model": "basic",
+      "fields": {
+        "front": "What does 'person-in-environment' mean, and why does it matter?",
+        "back": "The defining social work lens: behavior can only be understood in context - family, community, culture, institutions - not as isolated individual pathology",
+        "extra": "It is what distinguishes social work assessment from a purely medical or intrapsychic model."
+      },
+      "tags": [
+        "lmsw::theories"
+      ]
+    },
+    {
+      "key": "conflict-theory",
+      "model": "basic",
+      "fields": {
+        "front": "What is the core claim of conflict theory?",
+        "back": "Society is structured by competition over scarce resources, and groups in power arrange institutions to keep that power",
+        "extra": "Rooted in Marx; the theoretical backbone of structural and anti-oppressive social work."
+      },
+      "tags": [
+        "lmsw::theories"
+      ]
+    },
+    {
+      "key": "feminist-theory",
+      "model": "basic",
+      "fields": {
+        "front": "What does feminist theory contribute to social work practice?",
+        "back": "Analysis of gendered power ('the personal is political'), egalitarian worker-client relationships, and empowerment as the goal",
+        "extra": "Individual problems are read against social conditions - a battered woman's 'issue' is not her choice of partners."
+      },
+      "tags": [
+        "lmsw::theories"
+      ]
+    },
+    {
+      "key": "role-theory",
+      "model": "basic",
+      "fields": {
+        "front": "Role theory: role strain vs role conflict?",
+        "back": "Role strain: difficulty meeting the demands within one role. Role conflict: the demands of two roles clash (devoted employee vs caregiving daughter)",
+        "extra": "Also testable: role ambiguity (unclear expectations) and role reversal (child parenting the parent)."
+      },
+      "tags": [
+        "lmsw::theories"
+      ]
+    },
+    {
+      "key": "strengths-perspective",
+      "model": "basic",
+      "fields": {
+        "front": "What does the strengths perspective assume?",
+        "back": "Every person, family, and community has capacities and resources; assessment starts from what works and what the client wants, not from deficits",
+        "extra": "Associated with Saleebey. Resilience - adapting well despite adversity - is its core evidence."
+      },
+      "tags": [
+        "lmsw::theories"
+      ]
+    },
+    {
+      "key": "crisis-theory",
+      "model": "basic",
+      "fields": {
+        "front": "What does crisis theory say about a person in crisis?",
+        "back": "A precipitating event has overwhelmed their usual coping, causing temporary disequilibrium - crises are time-limited (roughly 4 to 6 weeks), and people in them are unusually open to help",
+        "extra": "It is the perception of the event, not the event itself, that makes a crisis. Danger and opportunity at once."
+      },
+      "tags": [
+        "lmsw::theories"
+      ]
+    },
+    {
+      "key": "biopsychosocial",
+      "model": "basic",
+      "fields": {
+        "front": "What does a biopsychosocial assessment cover?",
+        "back": "Biological factors (health, medications, substances), psychological factors (mental status, coping, history), and social factors (family, work, culture, environment) - the whole person in context",
+        "extra": "Many settings add a spiritual dimension: biopsychosocial-spiritual. It is the social work assessment model."
+      },
+      "tags": [
+        "lmsw::assessment"
+      ]
+    },
+    {
+      "key": "mse-components",
+      "model": "basic",
+      "fields": {
+        "front": "Name the major components of the mental status exam (MSE).",
+        "back": "Appearance, behavior, speech, mood, affect, thought process, thought content, perception, cognition and orientation, insight, and judgment",
+        "extra": "It is a snapshot of current functioning from observation and interview - not a history."
+      },
+      "tags": [
+        "lmsw::assessment"
+      ]
+    },
+    {
+      "key": "mood-vs-affect",
+      "model": "basic",
+      "fields": {
+        "front": "On the MSE, what is the difference between mood and affect?",
+        "back": "Mood is the emotion the client reports feeling (subjective); affect is the emotional expression you observe (objective)",
+        "extra": "Affect gets descriptors like flat, blunted, labile, congruent or incongruent with mood. 'Client reports feeling fine while tearful' is a mood-affect incongruence."
+      },
+      "tags": [
+        "lmsw::assessment"
+      ]
+    },
+    {
+      "key": "suicide-ask-directly",
+      "model": "basic",
+      "fields": {
+        "front": "Does asking a client directly about suicide put the idea in their head?",
+        "back": "No - direct asking does not increase risk; it is the standard of care and often brings relief",
+        "extra": "Ask plainly: 'Are you thinking about killing yourself?' Euphemisms invite euphemistic answers."
+      },
+      "tags": [
+        "lmsw::assessment"
+      ]
+    },
+    {
+      "key": "suicide-strongest-predictor",
+      "model": "basic",
+      "fields": {
+        "front": "What is the strongest single predictor of a future suicide attempt?",
+        "back": "A prior suicide attempt",
+        "extra": "Other major risk factors: access to lethal means, substance use, hopelessness, recent loss, social isolation, and recent psychiatric hospitalization."
+      },
+      "tags": [
+        "lmsw::assessment"
+      ]
+    },
+    {
+      "key": "suicide-triad",
+      "model": "basic",
+      "fields": {
+        "front": "A client endorses suicidal ideation. What do you assess next?",
+        "back": "Plan, means (and access to them), intent, and timeline - along with risk and protective factors",
+        "extra": "A specific plan plus available lethal means plus intent means act now: safety measures, means restriction, possible hospitalization."
+      },
+      "tags": [
+        "lmsw::assessment"
+      ]
+    },
+    {
+      "key": "safety-plan-vs-contract",
+      "model": "basic",
+      "fields": {
+        "front": "Safety plan vs no-suicide contract: which is supported by evidence?",
+        "back": "The safety plan - a written list of warning signs, coping steps, people and places for distraction, crisis contacts, and means restriction. No-suicide contracts have no evidence and no legal protection",
+        "extra": "Stanley and Brown's safety planning intervention is the standard. Contracts mostly reassure the clinician."
+      },
+      "tags": [
+        "lmsw::assessment"
+      ]
+    },
+    {
+      "key": "stages-of-change",
+      "model": "sequence",
+      "fields": {
+        "title": "Prochaska and DiClemente's stages of change, in order",
+        "items": [
+          "Precontemplation",
+          "Contemplation",
+          "Preparation",
+          "Action",
+          "Maintenance"
+        ],
+        "contextWindow": 1
+      },
+      "tags": [
+        "lmsw::assessment"
+      ]
+    },
+    {
+      "key": "stage-matching",
+      "model": "basic",
+      "fields": {
+        "front": "A client says 'I don't have a drinking problem.' What stage of change is this, and what approach fits?",
+        "back": "Precontemplation - build rapport and raise awareness (motivational interviewing); do not push action plans",
+        "extra": "Most 'resistance' is a stage mismatch: prescribing action to someone still in precontemplation. Relapse is a normal part of the cycle, not failure."
+      },
+      "tags": [
+        "lmsw::assessment"
+      ]
+    },
+    {
+      "key": "open-ended-questions",
+      "model": "basic",
+      "fields": {
+        "front": "Why prefer open-ended questions in assessment?",
+        "back": "They invite the client's own story and priorities instead of confirming the worker's assumptions",
+        "extra": "Closed questions still have a place: pinning down specifics like safety, symptoms, dates, and doses."
+      },
+      "tags": [
+        "lmsw::assessment"
+      ]
+    },
+    {
+      "key": "reflective-listening",
+      "model": "basic",
+      "fields": {
+        "front": "What is reflective listening?",
+        "back": "Restating the feeling and meaning behind the client's words ('It sounds like you feel trapped') to show understanding and check accuracy",
+        "extra": "Levels range from simple restatement to reflecting unspoken emotion. The workhorse of engagement and motivational interviewing."
+      },
+      "tags": [
+        "lmsw::assessment"
+      ]
+    },
+    {
+      "key": "clinical-confrontation",
+      "model": "basic",
+      "fields": {
+        "front": "What does 'confrontation' mean as a clinical technique?",
+        "back": "Respectfully pointing out discrepancies - between words and actions, or stated goals and current behavior - not arguing or accusing",
+        "extra": "'You say your family comes first, and you also say you haven't seen your kids in a month.' Timing matters: rapport first."
+      },
+      "tags": [
+        "lmsw::assessment"
+      ]
+    },
+    {
+      "key": "partializing",
+      "model": "basic",
+      "fields": {
+        "front": "What is partializing?",
+        "back": "Breaking an overwhelming problem into smaller, manageable pieces to address one at a time",
+        "extra": "Core skill of task-centered and crisis work - it converts paralysis into a first step."
+      },
+      "tags": [
+        "lmsw::assessment"
+      ]
+    },
+    {
+      "key": "universalization",
+      "model": "basic",
+      "fields": {
+        "front": "What is universalization?",
+        "back": "Normalizing - helping the client see their reaction is a common human response ('many people in your situation feel exactly this')",
+        "extra": "Reduces shame and isolation; overused, it can minimize the client's particular experience."
+      },
+      "tags": [
+        "lmsw::assessment"
+      ]
+    },
+    {
+      "key": "collateral-information",
+      "model": "basic",
+      "fields": {
+        "front": "What is collateral information in assessment?",
+        "back": "Information from sources beyond the client - family, schools, medical records, other providers - gathered with the client's consent",
+        "extra": "Essential with children, mandated clients, and cognitive impairment, where self-report alone is incomplete."
+      },
+      "tags": [
+        "lmsw::assessment"
+      ]
+    },
+    {
+      "key": "termination-readiness",
+      "model": "basic",
+      "fields": {
+        "front": "What indicates a client is clinically ready for termination?",
+        "back": "Treatment goals substantially met, gains stable over time, and the client using coping skills independently",
+        "extra": "Termination is planned from the first session, not sprung at the last - review progress, feelings about ending, and relapse plans."
+      },
+      "tags": [
+        "lmsw::assessment"
+      ]
+    },
+    {
+      "key": "dsm-what",
+      "model": "basic",
+      "fields": {
+        "front": "What is the DSM-5-TR?",
+        "back": "The American Psychiatric Association's Diagnostic and Statistical Manual of Mental Disorders, 5th edition, text revision (2022) - the standard US classification of mental disorders",
+        "extra": "DSM-5 dropped the old multiaxial system; severity ratings and specifiers replaced the axes."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "mdd-criteria",
+      "model": "basic",
+      "fields": {
+        "front": "What is the diagnostic core of major depressive disorder?",
+        "back": "Five or more symptoms during the same two-week period, at least one being depressed mood or loss of interest/pleasure (anhedonia)",
+        "extra": "The others: sleep and appetite changes, fatigue, psychomotor changes, worthlessness or guilt, poor concentration, thoughts of death. Mnemonic: SIG E CAPS."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "pdd-dysthymia",
+      "model": "basic",
+      "fields": {
+        "front": "Persistent depressive disorder (dysthymia): what is the duration requirement?",
+        "back": "Depressed mood more days than not for at least 2 years in adults (1 year in children and adolescents)",
+        "extra": "A chronic, lower-grade course. When major depressive episodes ride on top, it is informally called double depression."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "mania-vs-hypomania",
+      "model": "basic",
+      "fields": {
+        "front": "Mania vs hypomania: what separates them?",
+        "back": "Mania: at least 1 week of elevated or irritable mood with increased energy, causing marked impairment, hospitalization, or psychosis. Hypomania: at least 4 days, an observable change, but no marked impairment and no psychosis",
+        "extra": "Any psychotic feature makes the episode manic by definition, regardless of duration."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "bipolar-i-vs-ii",
+      "model": "basic",
+      "fields": {
+        "front": "Bipolar I vs Bipolar II?",
+        "back": "Bipolar I requires at least one manic episode (depression is common but not required). Bipolar II requires at least one hypomanic episode AND one major depressive episode, with no full mania ever",
+        "extra": "Cyclothymic disorder is the milder chronic cousin: 2 years of hypomanic and depressive symptoms that never meet full episode criteria."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "gad-criteria",
+      "model": "basic",
+      "fields": {
+        "front": "What is the diagnostic core of generalized anxiety disorder?",
+        "back": "Excessive, hard-to-control worry across multiple areas of life, more days than not for at least 6 months, with three or more associated symptoms (one in children)",
+        "extra": "The associated symptoms: restlessness, fatigue, poor concentration, irritability, muscle tension, sleep disturbance."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "panic-disorder",
+      "model": "basic",
+      "fields": {
+        "front": "What defines panic disorder beyond having panic attacks?",
+        "back": "Recurrent UNEXPECTED attacks plus at least a month of worry about further attacks or maladaptive behavior change (avoidance)",
+        "extra": "Attacks alone are not the disorder - the fear of them is. Agoraphobia is a separate diagnosis in DSM-5."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "phobia-social-anxiety",
+      "model": "basic",
+      "fields": {
+        "front": "Specific phobia and social anxiety disorder share what duration criterion, and what distinguishes social anxiety?",
+        "back": "Both require at least 6 months; social anxiety disorder centers on fear of negative evaluation by others",
+        "extra": "First-line treatment for both is exposure-based CBT."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "ocd-criteria",
+      "model": "basic",
+      "fields": {
+        "front": "OCD: obsessions vs compulsions?",
+        "back": "Obsessions are intrusive, unwanted thoughts, urges, or images that cause distress; compulsions are repetitive acts or mental rituals performed to neutralize that distress",
+        "extra": "Time-consuming (more than an hour a day) or impairing. First-line: exposure and response prevention. Hoarding and body dysmorphic disorder live in the same DSM chapter."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "ptsd-criteria",
+      "model": "basic",
+      "fields": {
+        "front": "PTSD: what are the four symptom clusters and the minimum duration?",
+        "back": "Intrusion (flashbacks, nightmares), avoidance, negative alterations in cognition and mood, and hyperarousal - lasting more than one month after trauma exposure",
+        "extra": "Exposure can be direct, witnessed, learned about (close others), or repeated occupational exposure to details."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "acute-stress",
+      "model": "basic",
+      "fields": {
+        "front": "PTSD-like symptoms two weeks after a trauma: what is the diagnosis?",
+        "back": "Acute stress disorder - the window is 3 days to 1 month after the trauma; past a month it becomes PTSD",
+        "extra": "Same symptom families as PTSD with a heavier dissociation emphasis."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "adjustment-disorder",
+      "model": "basic",
+      "fields": {
+        "front": "What is adjustment disorder?",
+        "back": "Marked distress out of proportion to an identifiable stressor, starting within 3 months of it and resolving within 6 months after the stressor ends",
+        "extra": "The stressor is an ordinary life event (divorce, job loss, diagnosis) - not the catastrophic Criterion A trauma of PTSD."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "schizophrenia-criteria",
+      "model": "basic",
+      "fields": {
+        "front": "Schizophrenia: what are the core symptom criteria?",
+        "back": "Two or more of: delusions, hallucinations, disorganized speech, grossly disorganized or catatonic behavior, negative symptoms - at least one from the first three - active for a month, with continuous signs for 6 months",
+        "extra": "Positive symptoms are additions (hallucinations, delusions); negative symptoms are deficits (flat affect, avolition, alogia) and respond less to medication."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "psychosis-timeline",
+      "model": "basic",
+      "fields": {
+        "front": "Brief psychotic disorder vs schizophreniform disorder vs schizophrenia: the timeline?",
+        "back": "Brief psychotic: 1 day to 1 month. Schizophreniform: 1 to 6 months. Schizophrenia: more than 6 months of continuous signs",
+        "extra": "Same symptom family, sorted by duration - a favorite exam discrimination."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "schizoaffective",
+      "model": "basic",
+      "fields": {
+        "front": "What distinguishes schizoaffective disorder from a mood disorder with psychotic features?",
+        "back": "In schizoaffective disorder there are at least 2 weeks of delusions or hallucinations WITHOUT a mood episode; in psychotic depression or bipolar, psychosis appears only during mood episodes",
+        "extra": "That two-week psychosis-without-mood window is the whole exam point."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "adhd-criteria",
+      "model": "basic",
+      "fields": {
+        "front": "ADHD: what are the age and setting requirements?",
+        "back": "Several symptoms present before age 12, occurring in two or more settings, with six or more symptoms of inattention and/or hyperactivity-impulsivity (five or more at age 17 and up)",
+        "extra": "Symptoms only at school and never anywhere else fails the two-setting rule - look for another explanation."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "autism-criteria",
+      "model": "basic",
+      "fields": {
+        "front": "What are the two core domains of autism spectrum disorder?",
+        "back": "Persistent deficits in social communication and interaction, AND restricted, repetitive patterns of behavior or interests - present from early development",
+        "extra": "DSM-5 folded Asperger's into the spectrum; severity is rated by support needs, and symptoms may not show until social demands exceed capacity."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "odd-vs-conduct",
+      "model": "basic",
+      "fields": {
+        "front": "Oppositional defiant disorder vs conduct disorder?",
+        "back": "ODD: at least 6 months of angry, irritable mood and argumentative defiance toward authority figures. Conduct disorder: violating the rights of others and major norms - aggression, destruction, deceit or theft, serious rule-breaking",
+        "extra": "ODD is defiance; CD is violation. CD is the more serious pattern and can precede antisocial personality disorder."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "aspd-requirement",
+      "model": "basic",
+      "fields": {
+        "front": "What is required before diagnosing antisocial personality disorder?",
+        "back": "The person must be at least 18, with evidence of conduct disorder beginning before age 15",
+        "extra": "Under 18, the diagnosis stays conduct disorder no matter how severe the behavior."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "sud-severity",
+      "model": "basic",
+      "fields": {
+        "front": "How is substance use disorder severity rated in DSM-5?",
+        "back": "By how many of the 11 criteria are met: 2-3 mild, 4-5 moderate, 6 or more severe",
+        "extra": "Criteria span impaired control, social impairment, risky use, and pharmacology (tolerance, withdrawal). Abuse vs dependence is gone - it is one disorder on a spectrum."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "tolerance-withdrawal",
+      "model": "basic",
+      "fields": {
+        "front": "Tolerance vs withdrawal?",
+        "back": "Tolerance: needing more of the substance for the same effect. Withdrawal: physical and psychological symptoms when use stops or drops",
+        "extra": "Tolerance and withdrawal on prescribed medication taken as directed do not by themselves count toward a use disorder."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "anorexia-vs-bulimia",
+      "model": "basic",
+      "fields": {
+        "front": "Anorexia nervosa vs bulimia nervosa: what is the key differentiator?",
+        "back": "Weight. Anorexia: restriction producing significantly low body weight, intense fear of gaining, distorted body image. Bulimia: weekly binge-purge cycles for 3 months at normal or above-normal weight",
+        "extra": "Anorexia has restricting and binge-purge subtypes, so purging alone does not decide - the low weight does. Anorexia has the highest mortality of any mental disorder."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "binge-eating-disorder",
+      "model": "basic",
+      "fields": {
+        "front": "What distinguishes binge-eating disorder from bulimia?",
+        "back": "Recurrent binges (weekly for 3 months) WITHOUT compensatory behaviors like purging, fasting, or overexercise",
+        "extra": "Binges involve loss of control, eating fast, past fullness, alone, with shame after."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "pd-clusters",
+      "model": "basic",
+      "fields": {
+        "front": "Name the three personality disorder clusters and their members.",
+        "back": "Cluster A, odd/eccentric: paranoid, schizoid, schizotypal. Cluster B, dramatic/erratic: antisocial, borderline, histrionic, narcissistic. Cluster C, anxious/fearful: avoidant, dependent, obsessive-compulsive",
+        "extra": "Mnemonic: weird (A), wild (B), worried (C)."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "bpd-hallmarks",
+      "model": "basic",
+      "fields": {
+        "front": "What are the hallmarks of borderline personality disorder, and what is the treatment of choice?",
+        "back": "Unstable relationships, self-image, and emotions; frantic efforts to avoid abandonment; impulsivity; recurrent self-harm. Treatment of choice: dialectical behavior therapy",
+        "extra": "Splitting (all good/all bad) is the signature defense - watch for it splitting treatment teams too."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "schizoid-vs-avoidant",
+      "model": "basic",
+      "fields": {
+        "front": "Schizoid vs avoidant personality disorder: both are socially isolated - what differs?",
+        "back": "Schizoid: genuinely indifferent, does not want relationships. Avoidant: longs for connection but avoids it out of fear of rejection and inadequacy",
+        "extra": "Same behavior, opposite motive - a classic exam discrimination."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "delirium-vs-dementia",
+      "model": "basic",
+      "fields": {
+        "front": "Delirium vs major neurocognitive disorder (dementia)?",
+        "back": "Delirium: acute onset, fluctuating attention and awareness, usually a medical cause, often reversible. Major neurocognitive disorder: gradual, progressive decline with clear consciousness",
+        "extra": "Sudden confusion in a hospitalized older adult means think delirium first - check infections and medications before assuming dementia."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "somatic-vs-illness-anxiety",
+      "model": "basic",
+      "fields": {
+        "front": "Somatic symptom disorder vs illness anxiety disorder?",
+        "back": "Somatic symptom disorder: distressing physical symptoms plus excessive thoughts, feelings, or behaviors about them. Illness anxiety disorder: preoccupation with having an illness despite minimal or no symptoms",
+        "extra": "One is consumed by the symptoms, the other by the idea of being sick."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "conversion-disorder",
+      "model": "basic",
+      "fields": {
+        "front": "What is conversion disorder (functional neurological symptom disorder)?",
+        "back": "Neurological symptoms - paralysis, blindness, nonepileptic seizures - that are incompatible with recognized neurological conditions",
+        "extra": "The symptoms are real, not faked. 'La belle indifference' (odd unconcern) may appear but is not diagnostic."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "factitious-vs-malingering",
+      "model": "basic",
+      "fields": {
+        "front": "Factitious disorder vs malingering?",
+        "back": "Factitious: deceptively producing illness to occupy the sick role itself, with no external reward. Malingering: faking for external gain (money, avoiding work or prosecution) - and it is not a mental disorder",
+        "extra": "Factitious disorder imposed on another: a caregiver induces or fabricates illness in a dependent - a form of abuse."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "did",
+      "model": "basic",
+      "fields": {
+        "front": "What is dissociative identity disorder, and what is it associated with?",
+        "back": "Two or more distinct personality states with gaps in memory for everyday events; strongly associated with severe, chronic early-childhood trauma",
+        "extra": "Related diagnoses: dissociative amnesia and depersonalization/derealization disorder."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "rad-vs-dsed",
+      "model": "basic",
+      "fields": {
+        "front": "Reactive attachment disorder vs disinhibited social engagement disorder?",
+        "back": "Both stem from grossly insufficient early care. RAD: emotionally withdrawn, rarely seeks or accepts comfort. DSED: indiscriminately overfamiliar, wanders off with strangers",
+        "extra": "Opposite surface behaviors, same root deprivation."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "separation-anxiety",
+      "model": "basic",
+      "fields": {
+        "front": "Separation anxiety disorder: duration requirement in children vs adults?",
+        "back": "At least 4 weeks in children and adolescents; at least 6 months in adults",
+        "extra": "Developmentally normal separation distress begins around 8 months and peaks in the second year - the disorder is excessive for developmental stage."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "enuresis-encopresis",
+      "model": "basic",
+      "fields": {
+        "front": "What are the minimum ages for diagnosing enuresis and encopresis?",
+        "back": "Enuresis (urine): age 5. Encopresis (feces): age 4",
+        "extra": "Rule out medical causes first. Sudden new onset in a previously trained child warrants asking about stressors and abuse."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "intellectual-disability",
+      "model": "basic",
+      "fields": {
+        "front": "How is the severity of intellectual disability determined in DSM-5?",
+        "back": "By adaptive functioning - conceptual, social, and practical - not by IQ score",
+        "extra": "Deficits in both intellectual and adaptive functioning, with onset in the developmental period."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "gender-dysphoria",
+      "model": "basic",
+      "fields": {
+        "front": "What is required for a diagnosis of gender dysphoria?",
+        "back": "Marked incongruence between experienced and assigned gender for at least 6 months, WITH clinically significant distress or impairment",
+        "extra": "A transgender identity is not a disorder - the distress is the diagnostic criterion, and affirming care targets that distress."
+      },
+      "tags": [
+        "lmsw::dsm"
+      ]
+    },
+    {
+      "key": "meds-ssri",
+      "model": "basic",
+      "fields": {
+        "front": "What is the first-line medication class for depression and most anxiety disorders?",
+        "back": "SSRIs - fluoxetine (Prozac), sertraline (Zoloft), escitalopram (Lexapro), paroxetine (Paxil)",
+        "extra": "Two to six weeks to full effect; sexual side effects are common; stopping abruptly causes discontinuation symptoms. SNRIs like venlafaxine (Effexor) and duloxetine (Cymbalta) are close cousins."
+      },
+      "tags": [
+        "lmsw::medications"
+      ]
+    },
+    {
+      "key": "meds-benzos",
+      "model": "basic",
+      "fields": {
+        "front": "What are benzodiazepines used for, and what is the major risk?",
+        "back": "Short-term relief of acute anxiety and panic - alprazolam (Xanax), lorazepam (Ativan), clonazepam (Klonopin), diazepam (Valium); the major risk is tolerance and dependence",
+        "extra": "Dangerous combined with alcohol or opioids; abrupt withdrawal can cause seizures. Not first-line for long-term anxiety treatment."
+      },
+      "tags": [
+        "lmsw::medications"
+      ]
+    },
+    {
+      "key": "meds-lithium",
+      "model": "basic",
+      "fields": {
+        "front": "What is lithium prescribed for, and what monitoring does it require?",
+        "back": "Bipolar disorder (the classic mood stabilizer); it requires regular blood levels plus kidney and thyroid monitoring because the therapeutic window is narrow",
+        "extra": "Toxicity signs: coarse tremor, vomiting, confusion, ataxia. Dehydration raises lithium levels - summer heat and stomach bugs matter."
+      },
+      "tags": [
+        "lmsw::medications"
+      ]
+    },
+    {
+      "key": "meds-anticonvulsants",
+      "model": "basic",
+      "fields": {
+        "front": "Which anticonvulsants double as mood stabilizers?",
+        "back": "Valproate (Depakote), lamotrigine (Lamictal), and carbamazepine (Tegretol)",
+        "extra": "Lamotrigine carries a serious rash warning (Stevens-Johnson syndrome) - any spreading rash means call the prescriber."
+      },
+      "tags": [
+        "lmsw::medications"
+      ]
+    },
+    {
+      "key": "meds-antipsychotics",
+      "model": "basic",
+      "fields": {
+        "front": "First- vs second-generation antipsychotics: signature side effects?",
+        "back": "First-generation (haloperidol, chlorpromazine): movement effects - extrapyramidal symptoms and tardive dyskinesia. Second-generation (risperidone, olanzapine, quetiapine, aripiprazole): metabolic effects - weight gain and diabetes risk",
+        "extra": "Tardive dyskinesia: involuntary lip smacking, grimacing, tongue movements from long-term use - can be irreversible, report immediately."
+      },
+      "tags": [
+        "lmsw::medications"
+      ]
+    },
+    {
+      "key": "meds-clozapine",
+      "model": "basic",
+      "fields": {
+        "front": "Why does clozapine require regular blood tests?",
+        "back": "Risk of agranulocytosis - a dangerous crash in white blood cells",
+        "extra": "Reserved for treatment-resistant schizophrenia; uniquely effective, but only with mandatory blood monitoring."
+      },
+      "tags": [
+        "lmsw::medications"
+      ]
+    },
+    {
+      "key": "meds-stimulants",
+      "model": "basic",
+      "fields": {
+        "front": "What are the first-line medications for ADHD?",
+        "back": "Stimulants - methylphenidate (Ritalin, Concerta) and amphetamine salts (Adderall)",
+        "extra": "Watch appetite suppression and sleep problems. Atomoxetine (Strattera) is the common nonstimulant alternative."
+      },
+      "tags": [
+        "lmsw::medications"
+      ]
+    },
+    {
+      "key": "meds-maoi",
+      "model": "basic",
+      "fields": {
+        "front": "What must clients taking MAOIs avoid, and why?",
+        "back": "Tyramine-rich foods - aged cheese, cured meats, tap beer, red wine - because the combination can trigger a hypertensive crisis",
+        "extra": "MAOIs (phenelzine, tranylcypromine) are older antidepressants with many food and drug interactions - the classic med-safety exam question."
+      },
+      "tags": [
+        "lmsw::medications"
+      ]
+    },
+    {
+      "key": "meds-mat",
+      "model": "basic",
+      "fields": {
+        "front": "Name the three FDA-approved medications for opioid use disorder.",
+        "back": "Methadone, buprenorphine (Suboxone), and naltrexone (Vivitrol)",
+        "extra": "Naloxone (Narcan) is different: it reverses an active overdose. For alcohol use disorder: naltrexone, acamprosate, disulfiram (Antabuse)."
+      },
+      "tags": [
+        "lmsw::medications"
+      ]
+    },
+    {
+      "key": "child-abuse-signs",
+      "model": "basic",
+      "fields": {
+        "front": "What physical signs suggest child abuse rather than accidental injury?",
+        "back": "Injuries in various stages of healing, patterned injuries (belt, cord, cigarette, immersion burns), and injuries inconsistent with the explanation or the child's developmental abilities",
+        "extra": "Behavioral flags: fear of the caregiver, flinching, vague or shifting explanations, regression."
+      },
+      "tags": [
+        "lmsw::abuse"
+      ]
+    },
+    {
+      "key": "neglect-most-common",
+      "model": "basic",
+      "fields": {
+        "front": "What is the most common form of child maltreatment?",
+        "back": "Neglect - failure to meet basic physical, medical, educational, or emotional needs",
+        "extra": "Signs: persistent hunger, poor hygiene, unmet medical needs, chronic school absence, lack of supervision."
+      },
+      "tags": [
+        "lmsw::abuse"
+      ]
+    },
+    {
+      "key": "elder-abuse",
+      "model": "basic",
+      "fields": {
+        "front": "Who most often perpetrates elder abuse, and what form is especially common?",
+        "back": "Family members - typically adult children or spouses/caregivers; financial exploitation is especially common",
+        "extra": "Screen the elder alone, without the caregiver present. Caregiver stress is a risk factor, not an excuse."
+      },
+      "tags": [
+        "lmsw::abuse"
+      ]
+    },
+    {
+      "key": "ipv-cycle",
+      "model": "basic",
+      "fields": {
+        "front": "What are the three phases of Walker's cycle of violence?",
+        "back": "Tension-building, acute battering, and honeymoon (contrition)",
+        "extra": "The honeymoon apologies and promises are what keep hope alive; over time the cycle typically shortens and intensifies."
+      },
+      "tags": [
+        "lmsw::abuse"
+      ]
+    },
+    {
+      "key": "ipv-leaving",
+      "model": "basic",
+      "fields": {
+        "front": "When is a survivor of intimate partner violence in the greatest danger?",
+        "back": "When leaving or shortly after leaving - separation is the highest-lethality period",
+        "extra": "The competent response is safety planning on the client's timeline, not 'just leave' advice."
+      },
+      "tags": [
+        "lmsw::abuse"
+      ]
+    },
+    {
+      "key": "abuser-relationship",
+      "model": "basic",
+      "fields": {
+        "front": "Are most perpetrators of abuse strangers to their victims?",
+        "back": "No - across child abuse, sexual abuse, and elder abuse, perpetrators are overwhelmingly people the victim knows and trusts",
+        "extra": "Grooming pattern: special attention and gifts, boundary erosion, then secrecy - trust is built first and weaponized."
+      },
+      "tags": [
+        "lmsw::abuse"
+      ]
+    },
+    {
+      "key": "planned-change",
+      "model": "sequence",
+      "fields": {
+        "title": "The generalist planned-change (helping) process, in order",
+        "items": [
+          "Engagement",
+          "Assessment",
+          "Planning",
+          "Intervention",
+          "Evaluation",
+          "Termination"
+        ],
+        "contextWindow": 1
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "start-where-client-is",
+      "model": "basic",
+      "fields": {
+        "front": "'Start where the client is' means what in practice?",
+        "back": "Work from the client's current understanding, readiness, and priorities - not from where you think they should be",
+        "extra": "Engagement and rapport precede everything else; a technically correct intervention at the wrong moment fails."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "sw-roles",
+      "model": "basic",
+      "fields": {
+        "front": "Broker vs advocate vs mediator: which social work role is which?",
+        "back": "Broker: connects clients to resources. Advocate: argues for the client's interests. Mediator: stays neutral between disputing parties",
+        "extra": "Other named roles: enabler/facilitator (helps clients use their own capacity), educator, and case manager."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "cbt-premise",
+      "model": "basic",
+      "fields": {
+        "front": "What is the core premise of cognitive behavioral therapy?",
+        "back": "Thoughts, feelings, and behaviors are linked - identifying and restructuring distorted automatic thoughts changes mood and behavior",
+        "extra": "Aaron Beck. Structured, present-focused, time-limited, with between-session homework."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "cognitive-distortions",
+      "model": "basic",
+      "fields": {
+        "front": "Name common cognitive distortions targeted in CBT.",
+        "back": "All-or-nothing thinking, catastrophizing, overgeneralization, mind reading, personalization, emotional reasoning, and 'should' statements",
+        "extra": "'I failed one exam, I fail everything' is overgeneralization; 'I feel worthless so I must be' is emotional reasoning."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "rebt-abc",
+      "model": "basic",
+      "fields": {
+        "front": "In Ellis's REBT, what does the ABC model stand for?",
+        "back": "Activating event, Belief, Consequence - the belief about the event, not the event itself, produces the emotional consequence",
+        "extra": "Therapy adds D and E: dispute the irrational belief, build a new effect."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "dbt-modules",
+      "model": "basic",
+      "fields": {
+        "front": "DBT: who developed it, for whom, and what are its four skill modules?",
+        "back": "Marsha Linehan, for borderline personality disorder and chronic self-harm. Modules: mindfulness, distress tolerance, emotion regulation, interpersonal effectiveness",
+        "extra": "The dialectic is acceptance AND change at once - validate the client as they are while building skills to change."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "motivational-interviewing",
+      "model": "basic",
+      "fields": {
+        "front": "What is motivational interviewing, and when is it the right tool?",
+        "back": "A collaborative, nonconfrontational style that resolves ambivalence by drawing out the client's own reasons for change - right for substance use and any client in precontemplation or contemplation",
+        "extra": "Miller and Rollnick. Roll with resistance, develop discrepancy, support self-efficacy - never argue for change."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "mi-oars",
+      "model": "basic",
+      "fields": {
+        "front": "What does OARS stand for in motivational interviewing?",
+        "back": "Open-ended questions, Affirmations, Reflective listening, Summaries",
+        "extra": "The core micro-skills used to evoke change talk."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "emdr",
+      "model": "basic",
+      "fields": {
+        "front": "What is EMDR, and what is it used for?",
+        "back": "Eye movement desensitization and reprocessing - the client holds a traumatic memory in mind during bilateral stimulation (eye movements, taps) to reprocess it; evidence-based for PTSD",
+        "extra": "Developed by Francine Shapiro."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "exposure-methods",
+      "model": "basic",
+      "fields": {
+        "front": "Systematic desensitization vs flooding?",
+        "back": "Both are exposure treatments: systematic desensitization climbs a graded fear hierarchy paired with relaxation; flooding is prolonged, full-intensity exposure at once",
+        "extra": "Exposure and response prevention (ERP) is the OCD version: face the trigger, block the ritual."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "tf-cbt",
+      "model": "basic",
+      "fields": {
+        "front": "What is TF-CBT?",
+        "back": "Trauma-focused cognitive behavioral therapy for children and adolescents, involving caregivers - coping skills first, then a gradual trauma narrative",
+        "extra": "The caregiver component is what distinguishes it - the parent learns to support the child's processing."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "person-centered",
+      "model": "basic",
+      "fields": {
+        "front": "What are Rogers's three core conditions of person-centered therapy?",
+        "back": "Unconditional positive regard, accurate empathy, and congruence (genuineness)",
+        "extra": "The premise: the relationship itself, not technique, is the mechanism of change."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "sfbt",
+      "model": "basic",
+      "fields": {
+        "front": "What are the signature techniques of solution-focused brief therapy?",
+        "back": "The miracle question, scaling questions, and exception-finding - building on what already works instead of analyzing the problem",
+        "extra": "de Shazer and Insoo Kim Berg. Future-focused, brief, assumes the client already has resources."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "narrative-externalization",
+      "model": "basic",
+      "fields": {
+        "front": "In narrative therapy, what is externalization?",
+        "back": "Separating the person from the problem - 'the anxiety pushes you around' rather than 'you are anxious' - so the client can re-author their story",
+        "extra": "White and Epston. The person is not the problem; the problem is the problem."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "task-centered",
+      "model": "basic",
+      "fields": {
+        "front": "What defines task-centered practice?",
+        "back": "Brief and structured (roughly 8 to 12 sessions), with client-chosen target problems and concrete tasks completed between sessions",
+        "extra": "Developed within social work by Reid and Epstein - one of the profession's own evidence-based models."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "crisis-intervention",
+      "model": "basic",
+      "fields": {
+        "front": "How does crisis intervention differ from ongoing therapy?",
+        "back": "It is brief, immediate, and directive: ensure safety, focus on the precipitating problem, mobilize supports, and restore pre-crisis functioning - not pursue personality change",
+        "extra": "Matches the crisis window itself (roughly 4 to 6 weeks). Insight work waits until stability returns."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "trauma-informed-care",
+      "model": "basic",
+      "fields": {
+        "front": "Name SAMHSA's six principles of trauma-informed care.",
+        "back": "Safety; trustworthiness and transparency; peer support; collaboration and mutuality; empowerment, voice, and choice; and cultural, historical, and gender awareness",
+        "extra": "The stance shift: ask 'what happened to you?' rather than 'what is wrong with you?' - and avoid practices that re-traumatize."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "harm-reduction",
+      "model": "basic",
+      "fields": {
+        "front": "What is harm reduction?",
+        "back": "Reducing the negative consequences of a behavior without requiring abstinence - needle exchanges, naloxone distribution, moderation goals, safer-use education",
+        "extra": "The operational form of meeting clients where they are; abstinence may come later or not at all."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "psychoeducation",
+      "model": "basic",
+      "fields": {
+        "front": "What is psychoeducation, and where is the evidence strongest?",
+        "back": "Teaching clients and families about a condition and its management; strong evidence in schizophrenia and bipolar disorder, where family psychoeducation reduces relapse",
+        "extra": "In families, it works partly by lowering expressed emotion - criticism and hostility that predict relapse."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "grief-dual-process",
+      "model": "basic",
+      "fields": {
+        "front": "What is the dual process model of grief?",
+        "back": "Healthy grieving oscillates between loss-oriented coping (feeling the grief) and restoration-oriented coping (rebuilding daily life)",
+        "extra": "Stroebe and Schut. The oscillation itself is healthy - constant immersion in either mode is the warning sign."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "hospice-vs-palliative",
+      "model": "basic",
+      "fields": {
+        "front": "Hospice vs palliative care?",
+        "back": "Palliative care is comfort-focused care available at any stage of serious illness, alongside curative treatment. Hospice is palliative care after curative treatment stops, typically with a prognosis of six months or less",
+        "extra": "All hospice is palliative; not all palliative care is hospice."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "grounding",
+      "model": "basic",
+      "fields": {
+        "front": "What is grounding, and when is it used?",
+        "back": "Techniques that anchor attention in the present - like naming 5 things you see, 4 you feel, 3 you hear - used for flashbacks, dissociation, and panic",
+        "extra": "A stabilization skill taught before trauma processing, not a substitute for it."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "involuntary-clients",
+      "model": "basic",
+      "fields": {
+        "front": "How do you engage an involuntary (mandated) client?",
+        "back": "Acknowledge the involuntary status openly, validate their feelings about being required to attend, find a goal the client actually wants, and maximize choice within the constraints",
+        "extra": "Be honest up front about the limits of confidentiality and what gets reported - trust cannot be built on a surprise."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "case-management",
+      "model": "basic",
+      "fields": {
+        "front": "What is case management?",
+        "back": "Coordinating services across providers: assessing needs, linking to resources, monitoring delivery, and advocating - managing the system around the client",
+        "extra": "The intervention of choice for complex, multi-system needs - serious mental illness, child welfare, homelessness."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "discharge-planning",
+      "model": "basic",
+      "fields": {
+        "front": "When does discharge planning begin?",
+        "back": "At intake or admission - not at the end of services",
+        "extra": "Aftercare, wraparound services, and warm handoffs are what make gains survive the transition; a discharge without follow-up is a relapse plan."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "interdisciplinary-team",
+      "model": "basic",
+      "fields": {
+        "front": "What is the social worker's distinct role on an interdisciplinary team?",
+        "back": "Bringing the person-in-environment and psychosocial perspective, advocating for the client's self-determination, and coordinating across systems",
+        "extra": "Care conferences, IEP meetings, co-therapy - the social worker often speaks for the context others overlook."
+      },
+      "tags": [
+        "lmsw::intervention"
+      ]
+    },
+    {
+      "key": "structural-family",
+      "model": "basic",
+      "fields": {
+        "front": "What are the key concepts of Minuchin's structural family therapy?",
+        "back": "Family subsystems, boundaries, and hierarchies - the therapist joins the family, maps its structure, and restructures dysfunctional patterns through enactments",
+        "extra": "A parentified child or a parent-child coalition against the other parent are structural problems: the hierarchy is inverted or breached."
+      },
+      "tags": [
+        "lmsw::family"
+      ]
+    },
+    {
+      "key": "enmeshed-vs-disengaged",
+      "model": "basic",
+      "fields": {
+        "front": "Enmeshed vs disengaged family boundaries?",
+        "back": "Enmeshed: diffuse boundaries, over-involvement, little autonomy. Disengaged: rigid boundaries, isolation, little support or responsiveness",
+        "extra": "Healthy families sit between the extremes: clear boundaries that still allow connection."
+      },
+      "tags": [
+        "lmsw::family"
+      ]
+    },
+    {
+      "key": "strategic-family",
+      "model": "basic",
+      "fields": {
+        "front": "What marks strategic family therapy (Haley)?",
+        "back": "The therapist designs directives - including paradoxical interventions like prescribing the symptom - to disrupt the interaction patterns that maintain the problem",
+        "extra": "Insight is not required; changing the sequence is the point."
+      },
+      "tags": [
+        "lmsw::family"
+      ]
+    },
+    {
+      "key": "bowen-differentiation",
+      "model": "basic",
+      "fields": {
+        "front": "What is Bowen's 'differentiation of self'?",
+        "back": "The capacity to hold your own thoughts and feelings while staying emotionally connected to the family - low differentiation means fusion and reactivity",
+        "extra": "Bowen's toolkit: multigenerational transmission, emotional cutoff, and the genogram to map it all."
+      },
+      "tags": [
+        "lmsw::family"
+      ]
+    },
+    {
+      "key": "triangulation",
+      "model": "basic",
+      "fields": {
+        "front": "What is triangulation in family systems?",
+        "back": "Two people in conflict pull in a third - often a child - to absorb or stabilize the tension",
+        "extra": "The child carrying messages between hostile parents is the textbook case. Bowen saw triangles as the basic unit of family emotional process."
+      },
+      "tags": [
+        "lmsw::family"
+      ]
+    },
+    {
+      "key": "genogram-vs-ecomap",
+      "model": "basic",
+      "fields": {
+        "front": "Genogram vs ecomap?",
+        "back": "Genogram: a map of three or more generations of family structure, relationships, and patterns. Ecomap: a map of the household's current connections to outside systems - work, school, church, services - with the strength or stress of each link",
+        "extra": "Genogram looks back through the family; ecomap looks out at the environment. Hartman developed the ecomap."
+      },
+      "tags": [
+        "lmsw::family"
+      ]
+    },
+    {
+      "key": "satir-stances",
+      "model": "basic",
+      "fields": {
+        "front": "What are Satir's four dysfunctional communication stances?",
+        "back": "Placating, blaming, super-reasonable (computing), and irrelevant (distracting) - versus the healthy stance, congruent leveling",
+        "extra": "Virginia Satir's experiential family therapy reads these stances as protections against low self-esteem."
+      },
+      "tags": [
+        "lmsw::family"
+      ]
+    },
+    {
+      "key": "tuckman-stages",
+      "model": "sequence",
+      "fields": {
+        "title": "Tuckman's stages of group development, in order",
+        "items": [
+          "Forming",
+          "Storming",
+          "Norming",
+          "Performing",
+          "Adjourning"
+        ],
+        "contextWindow": 1
+      },
+      "tags": [
+        "lmsw::group"
+      ]
+    },
+    {
+      "key": "storming-response",
+      "model": "basic",
+      "fields": {
+        "front": "Group members begin challenging the leader and each other. What stage is this, and what should the leader do?",
+        "back": "Storming - normalize the conflict and help the group work through it directly; it is a necessary passage to cohesion, not a failure",
+        "extra": "Suppressing the conflict stalls the group in polite superficiality."
+      },
+      "tags": [
+        "lmsw::group"
+      ]
+    },
+    {
+      "key": "open-vs-closed-groups",
+      "model": "basic",
+      "fields": {
+        "front": "Open vs closed groups?",
+        "back": "Open groups admit members on a rolling basis (12-step, drop-in) - constant renewal but less cohesion. Closed groups fix membership and duration - deeper trust, but attrition cannot be replaced",
+        "extra": "Choose by purpose: ongoing support favors open; intensive therapy favors closed."
+      },
+      "tags": [
+        "lmsw::group"
+      ]
+    },
+    {
+      "key": "task-vs-treatment-group",
+      "model": "basic",
+      "fields": {
+        "front": "Task group vs treatment group?",
+        "back": "A task group exists to produce something external - a decision, plan, or product (committees, case conferences). A treatment group serves its members' own needs - therapy, support, psychoeducation",
+        "extra": "The same facilitation skills apply, but success is measured outside vs inside the members."
+      },
+      "tags": [
+        "lmsw::group"
+      ]
+    },
+    {
+      "key": "yalom-universality",
+      "model": "basic",
+      "fields": {
+        "front": "What did Yalom call the healing discovery that 'I am not the only one'?",
+        "back": "Universality - one of his therapeutic factors of group therapy",
+        "extra": "Others include instillation of hope, altruism, cohesiveness, interpersonal learning, and catharsis."
+      },
+      "tags": [
+        "lmsw::group"
+      ]
+    },
+    {
+      "key": "group-confidentiality",
+      "model": "basic",
+      "fields": {
+        "front": "Can a group leader guarantee confidentiality in group therapy?",
+        "back": "No - the leader can require confidentiality of members but cannot guarantee they will honor it, and members must be told this limit up front",
+        "extra": "A classic exam point: the worker's own duty holds, but other members are not bound by the Code."
+      },
+      "tags": [
+        "lmsw::group"
+      ]
+    },
+    {
+      "key": "rothman-models",
+      "model": "basic",
+      "fields": {
+        "front": "What are Rothman's three models of community organization?",
+        "back": "Locality development: the community builds capacity and consensus together. Social planning: experts design data-driven solutions. Social action: organizing the disadvantaged to shift power",
+        "extra": "Alinsky-style organizing is social action; a United Way needs study is social planning; a neighborhood self-help project is locality development."
+      },
+      "tags": [
+        "lmsw::macro"
+      ]
+    },
+    {
+      "key": "case-vs-cause-advocacy",
+      "model": "basic",
+      "fields": {
+        "front": "Case advocacy vs cause advocacy?",
+        "back": "Case advocacy fights for one client's access or benefits; cause (class) advocacy works to change policies and systems for a whole population",
+        "extra": "Getting one family's denied benefits restored vs campaigning to change the eligibility rule."
+      },
+      "tags": [
+        "lmsw::macro"
+      ]
+    },
+    {
+      "key": "jane-addams",
+      "model": "basic",
+      "fields": {
+        "front": "Who founded Hull House, and why does she matter to social work?",
+        "back": "Jane Addams - founded Hull House in Chicago (1889), pioneered the settlement house movement, and won the Nobel Peace Prize (1931); the mother of macro social work",
+        "extra": "Settlement workers lived among the poor and pushed social reform - the movement that became community practice."
+      },
+      "tags": [
+        "lmsw::macro"
+      ]
+    },
+    {
+      "key": "mary-richmond",
+      "model": "basic",
+      "fields": {
+        "front": "Who wrote Social Diagnosis (1917), and what did it establish?",
+        "back": "Mary Richmond - the first systematic casework method, the foundation of micro and clinical social work",
+        "extra": "Richmond's Charity Organization Society tradition (casework) and Addams's settlement movement (reform) are the profession's two founding streams."
+      },
+      "tags": [
+        "lmsw::macro"
+      ]
+    },
+    {
+      "key": "single-subject-design",
+      "model": "basic",
+      "fields": {
+        "front": "What is a single-subject (AB) design?",
+        "back": "Practice evaluation using the client as their own control: A is the baseline measurement phase, B is the intervention phase - graph the change between them",
+        "extra": "An ABAB (withdrawal) design strengthens the causal claim. This is the standard tool for evaluating one's own practice."
+      },
+      "tags": [
+        "lmsw::research"
+      ]
+    },
+    {
+      "key": "reliability-vs-validity",
+      "model": "basic",
+      "fields": {
+        "front": "Reliability vs validity in measurement?",
+        "back": "Reliability is consistency of results; validity is whether the instrument measures what it claims to measure",
+        "extra": "A measure can be reliable without being valid - a scale that always reads 5 pounds heavy is consistent and wrong. It cannot be valid without being reliable."
+      },
+      "tags": [
+        "lmsw::research"
+      ]
+    },
+    {
+      "key": "formative-vs-summative",
+      "model": "basic",
+      "fields": {
+        "front": "Formative vs summative program evaluation?",
+        "back": "Formative: ongoing feedback to improve a program while it operates (process evaluation). Summative: an end-point judgment of outcomes and effectiveness",
+        "extra": "Related pair: cost-effectiveness compares cost per outcome; cost-benefit puts a dollar value on the outcomes themselves."
+      },
+      "tags": [
+        "lmsw::research"
+      ]
+    },
+    {
+      "key": "needs-assessment",
+      "model": "basic",
+      "fields": {
+        "front": "What is a needs assessment?",
+        "back": "Systematic data collection - surveys, focus groups, key informants, existing service data - to identify a community's unmet needs before designing a program",
+        "extra": "The exam-correct first step whenever an agency wants to launch a new program."
+      },
+      "tags": [
+        "lmsw::research"
+      ]
+    },
+    {
+      "key": "qual-vs-quant",
+      "model": "basic",
+      "fields": {
+        "front": "Qualitative vs quantitative research?",
+        "back": "Qualitative: words and meaning - interviews, focus groups, small samples, depth. Quantitative: numbers - standardized measurement, statistics, generalizability",
+        "extra": "In experiments, the independent variable is what you manipulate (the intervention); the dependent variable is the outcome you measure."
+      },
+      "tags": [
+        "lmsw::research"
+      ]
+    },
+    {
+      "key": "evidence-based-practice",
+      "model": "basic",
+      "fields": {
+        "front": "What is evidence-based practice as a process?",
+        "back": "Integrating the best available research evidence with clinical expertise AND client values and preferences",
+        "extra": "All three legs are required - research alone does not decide, and neither does experience alone."
+      },
+      "tags": [
+        "lmsw::research"
+      ]
+    },
+    {
+      "key": "kadushin-supervision",
+      "model": "basic",
+      "fields": {
+        "front": "What are Kadushin's three functions of supervision?",
+        "back": "Administrative (accountability and workload), educational (knowledge and skill development), and supportive (morale and preventing burnout)",
+        "extra": "Exam questions often describe one function and ask which it is - performance review is administrative, processing a hard case emotionally is supportive."
+      },
+      "tags": [
+        "lmsw::supervision"
+      ]
+    },
+    {
+      "key": "transference",
+      "model": "basic",
+      "fields": {
+        "front": "What is transference?",
+        "back": "The client unconsciously redirects feelings from past relationships onto the social worker - reacting to you as if you were a parent or other significant figure",
+        "extra": "Clinical material to notice and work with, not misbehavior to correct."
+      },
+      "tags": [
+        "lmsw::supervision"
+      ]
+    },
+    {
+      "key": "countertransference",
+      "model": "basic",
+      "fields": {
+        "front": "What is countertransference, and what should you do about it?",
+        "back": "The worker's own emotional reactions to the client rooted in the worker's history; recognize it and take it to supervision or consultation - do not act on it or unload it on the client",
+        "extra": "'Seek supervision' is the classic correct exam answer for any countertransference vignette."
+      },
+      "tags": [
+        "lmsw::supervision"
+      ]
+    },
+    {
+      "key": "parallel-process",
+      "model": "basic",
+      "fields": {
+        "front": "What is parallel process in supervision?",
+        "back": "Dynamics from the worker-client relationship unconsciously replay in the supervisor-worker relationship, and vice versa",
+        "extra": "A supervisee who suddenly feels helpless with a supervisor may be carrying in the client's helplessness - naming it is the intervention."
+      },
+      "tags": [
+        "lmsw::supervision"
+      ]
+    }
+  ]
+}

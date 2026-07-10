@@ -1,0 +1,569 @@
+{
+  "key": "bones-of-the-body",
+  "version": 1,
+  "name": "Bones of the Human Body",
+  "description": "The major named bones of the human skeleton, from the skull and spine to the hands and feet. Read the description, type the bone; extras add location, landmarks, and how many bones make up each region.",
+  "category": "Anatomy",
+  "topics": [
+    "anatomy",
+    "skeleton",
+    "bones",
+    "human-body"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Human%20skeleton%20front%20en.svg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "bone-frontal",
+      "model": "typed",
+      "fields": {
+        "front": "The bone that forms the forehead and the upper rim of the eye sockets.",
+        "answer": "Frontal",
+        "extra": "One of the eight cranial bones that enclose the brain."
+      },
+      "tags": [
+        "bones::skull"
+      ]
+    },
+    {
+      "key": "bone-parietal",
+      "model": "typed",
+      "fields": {
+        "front": "The paired bones forming most of the roof and upper sides of the skull.",
+        "answer": "Parietal",
+        "extra": "They meet at the top of the head along the sagittal suture."
+      },
+      "tags": [
+        "bones::skull"
+      ]
+    },
+    {
+      "key": "bone-temporal",
+      "model": "typed",
+      "fields": {
+        "front": "The paired bones at the lower sides of the skull that house the middle and inner ear.",
+        "answer": "Temporal",
+        "extra": "The mastoid process behind the ear is part of this bone."
+      },
+      "tags": [
+        "bones::skull"
+      ]
+    },
+    {
+      "key": "bone-occipital",
+      "model": "typed",
+      "fields": {
+        "front": "The bone at the back and base of the skull, pierced by the hole for the spinal cord.",
+        "answer": "Occipital",
+        "extra": "That hole is the foramen magnum."
+      },
+      "tags": [
+        "bones::skull"
+      ]
+    },
+    {
+      "key": "bone-sphenoid",
+      "model": "typed",
+      "fields": {
+        "front": "The butterfly-shaped bone spanning the base of the skull that cradles the pituitary gland.",
+        "answer": "Sphenoid",
+        "extra": "It touches every other cranial bone."
+      },
+      "tags": [
+        "bones::skull"
+      ]
+    },
+    {
+      "key": "bone-ethmoid",
+      "model": "typed",
+      "fields": {
+        "front": "The light, spongy bone between the eyes that forms part of the nasal cavity and eye sockets.",
+        "answer": "Ethmoid",
+        "extra": "Its cribriform plate lets the olfactory nerves through."
+      },
+      "tags": [
+        "bones::skull"
+      ]
+    },
+    {
+      "key": "bone-mandible",
+      "model": "typed",
+      "fields": {
+        "front": "The lower jaw, and the only bone of the skull that moves.",
+        "answer": "Mandible",
+        "extra": "The strongest and largest bone of the face."
+      },
+      "tags": [
+        "bones::face"
+      ]
+    },
+    {
+      "key": "bone-maxilla",
+      "model": "typed",
+      "fields": {
+        "front": "The paired bones of the upper jaw that also form the front of the hard palate.",
+        "answer": "Maxilla",
+        "extra": "They hold the upper teeth."
+      },
+      "tags": [
+        "bones::face"
+      ]
+    },
+    {
+      "key": "bone-zygomatic",
+      "model": "typed",
+      "fields": {
+        "front": "The cheekbone.",
+        "answer": "Zygomatic",
+        "extra": "It forms the prominence of the cheek and part of the eye socket."
+      },
+      "tags": [
+        "bones::face"
+      ]
+    },
+    {
+      "key": "bone-nasal",
+      "model": "typed",
+      "fields": {
+        "front": "The paired bones that form the bridge of the nose.",
+        "answer": "Nasal",
+        "extra": "The lower part of the nose is cartilage, not bone."
+      },
+      "tags": [
+        "bones::face"
+      ]
+    },
+    {
+      "key": "bone-lacrimal",
+      "model": "typed",
+      "fields": {
+        "front": "The smallest bones of the face, in the inner corner of each eye socket.",
+        "answer": "Lacrimal",
+        "extra": "They form part of the tear duct channel."
+      },
+      "tags": [
+        "bones::face"
+      ]
+    },
+    {
+      "key": "bone-vomer",
+      "model": "typed",
+      "fields": {
+        "front": "The thin flat bone that forms the lower part of the nasal septum.",
+        "answer": "Vomer",
+        "extra": "Its name means 'plowshare' from its shape."
+      },
+      "tags": [
+        "bones::face"
+      ]
+    },
+    {
+      "key": "bone-malleus",
+      "model": "typed",
+      "fields": {
+        "front": "The 'hammer', the outermost of the three middle-ear ossicles.",
+        "answer": "Malleus",
+        "extra": "It is attached to the eardrum."
+      },
+      "tags": [
+        "bones::ear"
+      ]
+    },
+    {
+      "key": "bone-incus",
+      "model": "typed",
+      "fields": {
+        "front": "The 'anvil', the middle of the three tiny ear bones.",
+        "answer": "Incus",
+        "extra": "It sits between the malleus and the stapes."
+      },
+      "tags": [
+        "bones::ear"
+      ]
+    },
+    {
+      "key": "bone-stapes",
+      "model": "typed",
+      "fields": {
+        "front": "The 'stirrup' of the middle ear, and the smallest bone in the human body.",
+        "answer": "Stapes",
+        "extra": "About 3 mm long; it passes vibrations to the inner ear."
+      },
+      "tags": [
+        "bones::ear"
+      ]
+    },
+    {
+      "key": "bone-hyoid",
+      "model": "typed",
+      "fields": {
+        "front": "The U-shaped throat bone that anchors the tongue and is the only bone not joined to any other bone.",
+        "answer": "Hyoid",
+        "extra": "It floats, held by muscles and ligaments in the neck."
+      },
+      "tags": [
+        "bones::neck"
+      ]
+    },
+    {
+      "key": "bone-atlas",
+      "model": "typed",
+      "fields": {
+        "front": "The first cervical vertebra (C1), which holds up the skull.",
+        "answer": "Atlas",
+        "extra": "Named for the Titan who held up the sky; it lets you nod 'yes'."
+      },
+      "tags": [
+        "bones::spine"
+      ]
+    },
+    {
+      "key": "bone-axis",
+      "model": "typed",
+      "fields": {
+        "front": "The second cervical vertebra (C2), whose peg lets the head rotate.",
+        "answer": "Axis",
+        "extra": "Its peg (the dens) lets you shake your head 'no'."
+      },
+      "tags": [
+        "bones::spine"
+      ]
+    },
+    {
+      "key": "bone-sacrum",
+      "model": "typed",
+      "fields": {
+        "front": "The triangular bone of five fused vertebrae at the base of the spine.",
+        "answer": "Sacrum",
+        "extra": "It wedges into the pelvis between the two hip bones."
+      },
+      "tags": [
+        "bones::spine"
+      ]
+    },
+    {
+      "key": "bone-coccyx",
+      "model": "typed",
+      "fields": {
+        "front": "The tailbone at the very bottom of the spine.",
+        "answer": "Coccyx",
+        "extra": "Three to five tiny fused vertebrae; the remnant of a tail."
+      },
+      "tags": [
+        "bones::spine"
+      ]
+    },
+    {
+      "key": "bone-sternum",
+      "model": "typed",
+      "fields": {
+        "front": "The flat breastbone at the front of the chest.",
+        "answer": "Sternum",
+        "extra": "The ribs and collarbones attach to it."
+      },
+      "tags": [
+        "bones::thorax"
+      ]
+    },
+    {
+      "key": "bone-rib",
+      "model": "typed",
+      "fields": {
+        "front": "Each curved bone of the chest cage (there are 12 pairs).",
+        "answer": "Rib",
+        "extra": "They protect the heart and lungs."
+      },
+      "tags": [
+        "bones::thorax"
+      ]
+    },
+    {
+      "key": "bone-clavicle",
+      "model": "typed",
+      "fields": {
+        "front": "The collarbone.",
+        "answer": "Clavicle",
+        "extra": "The most commonly broken bone in the body."
+      },
+      "tags": [
+        "bones::shoulder"
+      ]
+    },
+    {
+      "key": "bone-scapula",
+      "model": "typed",
+      "fields": {
+        "front": "The shoulder blade.",
+        "answer": "Scapula",
+        "extra": "A flat triangular bone that the arm and collarbone attach to."
+      },
+      "tags": [
+        "bones::shoulder"
+      ]
+    },
+    {
+      "key": "bone-humerus",
+      "model": "typed",
+      "fields": {
+        "front": "The single long bone of the upper arm.",
+        "answer": "Humerus",
+        "extra": "Its lower end forms the elbow with the radius and ulna."
+      },
+      "tags": [
+        "bones::arm"
+      ]
+    },
+    {
+      "key": "bone-radius",
+      "model": "typed",
+      "fields": {
+        "front": "The forearm bone on the thumb side.",
+        "answer": "Radius",
+        "extra": "It rotates around the ulna when you turn your palm."
+      },
+      "tags": [
+        "bones::arm"
+      ]
+    },
+    {
+      "key": "bone-ulna",
+      "model": "typed",
+      "fields": {
+        "front": "The forearm bone on the little-finger side that forms the point of the elbow.",
+        "answer": "Ulna",
+        "extra": "The bump of your elbow is its olecranon."
+      },
+      "tags": [
+        "bones::arm"
+      ]
+    },
+    {
+      "key": "bone-carpals",
+      "model": "typed",
+      "fields": {
+        "front": "The eight small bones of the wrist (their collective name).",
+        "answer": "Carpals",
+        "extra": "Arranged in two rows of four."
+      },
+      "tags": [
+        "bones::hand"
+      ]
+    },
+    {
+      "key": "bone-scaphoid",
+      "model": "typed",
+      "fields": {
+        "front": "The boat-shaped wrist bone most often broken in a fall onto an outstretched hand.",
+        "answer": "Scaphoid",
+        "extra": "A common and easily missed fracture."
+      },
+      "tags": [
+        "bones::hand"
+      ]
+    },
+    {
+      "key": "bone-metacarpals",
+      "model": "typed",
+      "fields": {
+        "front": "The five bones of the palm of the hand.",
+        "answer": "Metacarpals",
+        "extra": "Each connects a wrist bone to a finger."
+      },
+      "tags": [
+        "bones::hand"
+      ]
+    },
+    {
+      "key": "bone-phalanges",
+      "model": "typed",
+      "fields": {
+        "front": "The bones of the fingers and toes.",
+        "answer": "Phalanges",
+        "extra": "Fingers and most toes have three; the thumb and big toe have two."
+      },
+      "tags": [
+        "bones::hand"
+      ]
+    },
+    {
+      "key": "bone-ilium",
+      "model": "typed",
+      "fields": {
+        "front": "The large flared upper part of the hip bone (where you rest your hands on your hips).",
+        "answer": "Ilium",
+        "extra": "The broadest part of the pelvis."
+      },
+      "tags": [
+        "bones::pelvis"
+      ]
+    },
+    {
+      "key": "bone-ischium",
+      "model": "typed",
+      "fields": {
+        "front": "The lower rear part of the hip bone that you sit on.",
+        "answer": "Ischium",
+        "extra": "Its rounded base takes your weight when seated."
+      },
+      "tags": [
+        "bones::pelvis"
+      ]
+    },
+    {
+      "key": "bone-pubis",
+      "model": "typed",
+      "fields": {
+        "front": "The front part of the hip bone, where the two halves meet.",
+        "answer": "Pubis",
+        "extra": "The two pubic bones join at the pubic symphysis."
+      },
+      "tags": [
+        "bones::pelvis"
+      ]
+    },
+    {
+      "key": "bone-femur",
+      "model": "typed",
+      "fields": {
+        "front": "The thigh bone, and the longest and strongest bone in the body.",
+        "answer": "Femur",
+        "extra": "It bears the body's weight and can support many times it."
+      },
+      "tags": [
+        "bones::leg"
+      ]
+    },
+    {
+      "key": "bone-patella",
+      "model": "typed",
+      "fields": {
+        "front": "The kneecap.",
+        "answer": "Patella",
+        "extra": "A bone embedded in the tendon of the thigh muscle; it protects the knee joint."
+      },
+      "tags": [
+        "bones::leg"
+      ]
+    },
+    {
+      "key": "bone-tibia",
+      "model": "typed",
+      "fields": {
+        "front": "The shinbone, the larger and inner of the two lower-leg bones.",
+        "answer": "Tibia",
+        "extra": "It bears nearly all the weight below the knee."
+      },
+      "tags": [
+        "bones::leg"
+      ]
+    },
+    {
+      "key": "bone-fibula",
+      "model": "typed",
+      "fields": {
+        "front": "The thin outer bone of the lower leg.",
+        "answer": "Fibula",
+        "extra": "It carries little weight but anchors muscles and stabilizes the ankle."
+      },
+      "tags": [
+        "bones::leg"
+      ]
+    },
+    {
+      "key": "bone-tarsals",
+      "model": "typed",
+      "fields": {
+        "front": "The seven bones of the ankle and heel (their collective name).",
+        "answer": "Tarsals",
+        "extra": "They form the back of the foot and the arch."
+      },
+      "tags": [
+        "bones::foot"
+      ]
+    },
+    {
+      "key": "bone-talus",
+      "model": "typed",
+      "fields": {
+        "front": "The ankle bone that sits between the leg bones and the heel.",
+        "answer": "Talus",
+        "extra": "It transfers the body's weight to the foot."
+      },
+      "tags": [
+        "bones::foot"
+      ]
+    },
+    {
+      "key": "bone-calcaneus",
+      "model": "typed",
+      "fields": {
+        "front": "The heel bone, and the largest of the ankle bones.",
+        "answer": "Calcaneus",
+        "extra": "The Achilles tendon attaches to it."
+      },
+      "tags": [
+        "bones::foot"
+      ]
+    },
+    {
+      "key": "bone-metatarsals",
+      "model": "typed",
+      "fields": {
+        "front": "The five long bones that form the arch of the foot.",
+        "answer": "Metatarsals",
+        "extra": "They connect the ankle bones to the toes."
+      },
+      "tags": [
+        "bones::foot"
+      ]
+    },
+    {
+      "key": "bone-count-total",
+      "model": "typed",
+      "fields": {
+        "front": "How many bones are in the typical adult human body?",
+        "answer": "206",
+        "extra": "Babies are born with about 300; many fuse together during growth."
+      },
+      "tags": [
+        "bones::counts"
+      ]
+    },
+    {
+      "key": "bone-count-vertebrae",
+      "model": "typed",
+      "fields": {
+        "front": "How many vertebrae make up the adult spine, counting the fused ones?",
+        "answer": "33",
+        "extra": "7 neck, 12 chest, 5 lower back, 5 fused in the sacrum, and 4 fused in the coccyx."
+      },
+      "tags": [
+        "bones::counts"
+      ]
+    },
+    {
+      "key": "bone-count-cervical",
+      "model": "typed",
+      "fields": {
+        "front": "How many cervical (neck) vertebrae do humans have?",
+        "answer": "7",
+        "extra": "Nearly all mammals have seven, from mice to giraffes."
+      },
+      "tags": [
+        "bones::counts"
+      ]
+    },
+    {
+      "key": "bone-count-ribs",
+      "model": "typed",
+      "fields": {
+        "front": "How many pairs of ribs does a typical human have?",
+        "answer": "12",
+        "extra": "7 'true' pairs reach the sternum, 3 'false' pairs join by cartilage, and 2 'floating' pairs do not attach at the front."
+      },
+      "tags": [
+        "bones::counts"
+      ]
+    }
+  ]
+}

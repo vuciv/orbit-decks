@@ -58,6 +58,13 @@
       "file": "categories/science.json"
     },
     {
+      "key": "anatomy",
+      "name": "Anatomy",
+      "deckCount": 5,
+      "rev": "96994da9d5ed",
+      "file": "categories/anatomy.json"
+    },
+    {
       "key": "history",
       "name": "History",
       "deckCount": 3,
@@ -70,6 +77,13 @@
       "deckCount": 2,
       "rev": "70d125f5b1b5",
       "file": "categories/codes-signals.json"
+    },
+    {
+      "key": "professional-exams",
+      "name": "Professional Exams",
+      "deckCount": 1,
+      "rev": "b848b861f15e",
+      "file": "categories/professional-exams.json"
     }
   ],
   "collections": [
@@ -140,6 +154,18 @@
         "us-presidents",
         "us-states"
       ]
+    },
+    {
+      "key": "human-anatomy",
+      "title": "Human anatomy",
+      "description": "Learn the body system by system: bones, muscles, the heart, the brain, and the cranial nerves.",
+      "deckKeys": [
+        "bones-of-the-body",
+        "major-muscles",
+        "the-human-heart",
+        "the-human-brain",
+        "cranial-nerves"
+      ]
     }
   ],
   "syncIndex": [
@@ -147,6 +173,11 @@
       "key": "best-picture-winners",
       "version": 1,
       "file": "decks/best-picture-winners.json"
+    },
+    {
+      "key": "bones-of-the-body",
+      "version": 1,
+      "file": "decks/bones-of-the-body.json"
     },
     {
       "key": "constellations",
@@ -157,6 +188,11 @@
       "key": "country-silhouettes",
       "version": 2,
       "file": "decks/country-silhouettes.json"
+    },
+    {
+      "key": "cranial-nerves",
+      "version": 1,
+      "file": "decks/cranial-nerves.json"
     },
     {
       "key": "essential-chinese",
@@ -189,9 +225,19 @@
       "file": "decks/kanto-pokedex.json"
     },
     {
+      "key": "lmsw-exam-prep",
+      "version": 1,
+      "file": "decks/lmsw-exam-prep.json"
+    },
+    {
       "key": "london-system",
       "version": 3,
       "file": "decks/london-system.json"
+    },
+    {
+      "key": "major-muscles",
+      "version": 1,
+      "file": "decks/major-muscles.json"
     },
     {
       "key": "middle-earth-lore",
@@ -217,6 +263,16 @@
       "key": "sicilian-defense",
       "version": 4,
       "file": "decks/sicilian-defense.json"
+    },
+    {
+      "key": "the-human-brain",
+      "version": 1,
+      "file": "decks/the-human-brain.json"
+    },
+    {
+      "key": "the-human-heart",
+      "version": 1,
+      "file": "decks/the-human-heart.json"
     },
     {
       "key": "us-amendments",

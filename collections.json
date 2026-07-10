@@ -40,5 +40,11 @@
     "title": "American civics",
     "description": "The citizenship test, the amendments, the presidents, the states.",
     "deckKeys": ["us-citizenship-test", "us-amendments", "us-presidents", "us-states"]
+  },
+  {
+    "key": "human-anatomy",
+    "title": "Human anatomy",
+    "description": "Learn the body system by system: bones, muscles, the heart, the brain, and the cranial nerves.",
+    "deckKeys": ["bones-of-the-body", "major-muscles", "the-human-heart", "the-human-brain", "cranial-nerves"]
   }
 ]

@@ -1,0 +1,345 @@
+{
+  "key": "the-human-heart",
+  "version": 1,
+  "name": "The Human Heart",
+  "description": "How the heart is built and how blood moves through it: the four chambers, the four valves, the great vessels, the conduction system, and the full path of circulation as a step-by-step sequence.",
+  "category": "Anatomy",
+  "topics": [
+    "anatomy",
+    "cardiology",
+    "heart",
+    "human-body"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Diagram%20of%20the%20human%20heart%20(cropped).svg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "heart-ra",
+      "model": "basic",
+      "fields": {
+        "front": "Which heart chamber receives deoxygenated blood returning from the body?",
+        "back": "The right atrium",
+        "extra": "It fills from the superior and inferior vena cava, then passes blood to the right ventricle below it."
+      },
+      "tags": [
+        "heart::chambers"
+      ]
+    },
+    {
+      "key": "heart-rv",
+      "model": "basic",
+      "fields": {
+        "front": "Which chamber pumps deoxygenated blood toward the lungs?",
+        "back": "The right ventricle",
+        "extra": "It ejects blood through the pulmonary valve into the pulmonary arteries."
+      },
+      "tags": [
+        "heart::chambers"
+      ]
+    },
+    {
+      "key": "heart-la",
+      "model": "basic",
+      "fields": {
+        "front": "Which chamber receives oxygen-rich blood returning from the lungs?",
+        "back": "The left atrium",
+        "extra": "It fills from the four pulmonary veins."
+      },
+      "tags": [
+        "heart::chambers"
+      ]
+    },
+    {
+      "key": "heart-lv",
+      "model": "basic",
+      "fields": {
+        "front": "Which chamber pumps oxygen-rich blood out to the whole body?",
+        "back": "The left ventricle",
+        "extra": "It has the thickest, most muscular wall of the four chambers."
+      },
+      "tags": [
+        "heart::chambers"
+      ]
+    },
+    {
+      "key": "heart-thickest",
+      "model": "basic",
+      "fields": {
+        "front": "Which chamber has the thickest wall, and why?",
+        "back": "The left ventricle, because it must push blood to the entire body against high pressure",
+        "extra": "The right ventricle is thinner because the lungs are a low-pressure circuit right next door."
+      },
+      "tags": [
+        "heart::chambers"
+      ]
+    },
+    {
+      "key": "heart-tricuspid",
+      "model": "basic",
+      "fields": {
+        "front": "Which valve lies between the right atrium and the right ventricle?",
+        "back": "The tricuspid valve",
+        "extra": "An atrioventricular (AV) valve with three flaps. Memory aid: try (tricuspid) before you buy (bicuspid), so tricuspid is on the right."
+      },
+      "tags": [
+        "heart::valves"
+      ]
+    },
+    {
+      "key": "heart-pulmonary-valve",
+      "model": "basic",
+      "fields": {
+        "front": "Which valve guards the exit from the right ventricle toward the lungs?",
+        "back": "The pulmonary valve",
+        "extra": "A semilunar (half-moon) valve between the right ventricle and the pulmonary artery."
+      },
+      "tags": [
+        "heart::valves"
+      ]
+    },
+    {
+      "key": "heart-mitral",
+      "model": "basic",
+      "fields": {
+        "front": "Which valve lies between the left atrium and the left ventricle?",
+        "back": "The mitral (bicuspid) valve",
+        "extra": "The only AV valve with two flaps; named for its likeness to a bishop's mitre."
+      },
+      "tags": [
+        "heart::valves"
+      ]
+    },
+    {
+      "key": "heart-aortic",
+      "model": "basic",
+      "fields": {
+        "front": "Which valve guards the exit from the left ventricle into the aorta?",
+        "back": "The aortic valve",
+        "extra": "A semilunar valve; the coronary arteries branch off just above it."
+      },
+      "tags": [
+        "heart::valves"
+      ]
+    },
+    {
+      "key": "heart-valve-groups",
+      "model": "basic",
+      "fields": {
+        "front": "What are the two AV valves and the two semilunar valves?",
+        "back": "AV valves: tricuspid and mitral. Semilunar valves: pulmonary and aortic",
+        "extra": "AV valves sit between atria and ventricles; semilunar valves guard the arteries leaving the heart."
+      },
+      "tags": [
+        "heart::valves"
+      ]
+    },
+    {
+      "key": "heart-heart-sounds",
+      "model": "basic",
+      "fields": {
+        "front": "What makes the 'lub-dub' sound of a heartbeat?",
+        "back": "'Lub' is the two AV valves snapping shut; 'dub' is the two semilunar valves snapping shut",
+        "extra": "The sound is the valves closing, not blood or muscle moving."
+      },
+      "tags": [
+        "heart::valves"
+      ]
+    },
+    {
+      "key": "heart-vena-cava",
+      "model": "basic",
+      "fields": {
+        "front": "Which vessels return deoxygenated blood from the body to the heart?",
+        "back": "The superior and inferior vena cava",
+        "extra": "They empty into the right atrium; they are the body's largest veins."
+      },
+      "tags": [
+        "heart::vessels"
+      ]
+    },
+    {
+      "key": "heart-pulmonary-artery",
+      "model": "basic",
+      "fields": {
+        "front": "What is unusual about the blood in the pulmonary artery?",
+        "back": "It is the only artery that carries deoxygenated blood",
+        "extra": "Arteries are defined by carrying blood away from the heart, not by being oxygen-rich. This one runs from the right ventricle to the lungs."
+      },
+      "tags": [
+        "heart::vessels"
+      ]
+    },
+    {
+      "key": "heart-pulmonary-vein",
+      "model": "basic",
+      "fields": {
+        "front": "What is unusual about the blood in the pulmonary veins?",
+        "back": "They are the only veins that carry oxygen-rich blood",
+        "extra": "Four of them return freshly oxygenated blood from the lungs to the left atrium."
+      },
+      "tags": [
+        "heart::vessels"
+      ]
+    },
+    {
+      "key": "heart-aorta",
+      "model": "basic",
+      "fields": {
+        "front": "What is the largest artery in the body?",
+        "back": "The aorta",
+        "extra": "It carries oxygen-rich blood from the left ventricle and arches over the heart to supply the whole body."
+      },
+      "tags": [
+        "heart::vessels"
+      ]
+    },
+    {
+      "key": "heart-right-circuit",
+      "model": "basic",
+      "fields": {
+        "front": "Which side of the heart drives the pulmonary circulation, to and from the lungs?",
+        "back": "The right side",
+        "extra": "A short, low-pressure loop: right heart to lungs and back."
+      },
+      "tags": [
+        "heart::circulation"
+      ]
+    },
+    {
+      "key": "heart-left-circuit",
+      "model": "basic",
+      "fields": {
+        "front": "Which side of the heart drives the systemic circulation, to and from the body?",
+        "back": "The left side",
+        "extra": "A long, high-pressure loop: left heart to the whole body and back."
+      },
+      "tags": [
+        "heart::circulation"
+      ]
+    },
+    {
+      "key": "heart-septum",
+      "model": "basic",
+      "fields": {
+        "front": "What is the muscular wall that divides the left and right sides of the heart called?",
+        "back": "The septum",
+        "extra": "The interatrial septum divides the atria; the interventricular septum divides the ventricles. A hole in it is a 'hole in the heart'."
+      },
+      "tags": [
+        "heart::structure"
+      ]
+    },
+    {
+      "key": "heart-myocardium",
+      "model": "basic",
+      "fields": {
+        "front": "What is the thick muscular middle layer of the heart wall called?",
+        "back": "The myocardium",
+        "extra": "Cardiac muscle, sandwiched between the inner lining (endocardium) and outer layer (epicardium). It never tires."
+      },
+      "tags": [
+        "heart::structure"
+      ]
+    },
+    {
+      "key": "heart-pericardium",
+      "model": "basic",
+      "fields": {
+        "front": "What is the tough double-walled sac that surrounds the heart?",
+        "back": "The pericardium",
+        "extra": "It anchors the heart and holds a little fluid so it can beat without friction."
+      },
+      "tags": [
+        "heart::structure"
+      ]
+    },
+    {
+      "key": "heart-coronary",
+      "model": "basic",
+      "fields": {
+        "front": "What do the coronary arteries supply?",
+        "back": "The heart muscle's own blood supply",
+        "extra": "They branch from the aorta just above the aortic valve. A blockage starves the muscle and causes a heart attack."
+      },
+      "tags": [
+        "heart::structure"
+      ]
+    },
+    {
+      "key": "heart-sa-node",
+      "model": "basic",
+      "fields": {
+        "front": "What is the heart's natural pacemaker?",
+        "back": "The sinoatrial (SA) node",
+        "extra": "A patch of cells in the right atrium wall that fires the electrical signal setting the rhythm, about 60 to 100 beats per minute at rest."
+      },
+      "tags": [
+        "heart::conduction"
+      ]
+    },
+    {
+      "key": "heart-av-node",
+      "model": "basic",
+      "fields": {
+        "front": "What relays the electrical signal from the atria to the ventricles?",
+        "back": "The atrioventricular (AV) node",
+        "extra": "It briefly delays the signal so the atria finish emptying before the ventricles contract."
+      },
+      "tags": [
+        "heart::conduction"
+      ]
+    },
+    {
+      "key": "heart-size",
+      "model": "basic",
+      "fields": {
+        "front": "Roughly how big is the human heart?",
+        "back": "About the size of a clenched fist",
+        "extra": "It weighs around 250 to 350 grams in an adult."
+      },
+      "tags": [
+        "heart::facts"
+      ]
+    },
+    {
+      "key": "heart-beats",
+      "model": "basic",
+      "fields": {
+        "front": "About how many times does a human heart beat over an average lifetime?",
+        "back": "Roughly 2.5 to 3 billion times",
+        "extra": "At about 100,000 beats a day, it never rests."
+      },
+      "tags": [
+        "heart::facts"
+      ]
+    },
+    {
+      "key": "heart-blood-flow",
+      "model": "sequence",
+      "fields": {
+        "title": "Trace a drop of blood through the heart and lungs, starting from the body",
+        "items": [
+          "Body: deoxygenated blood returns",
+          "Superior and inferior vena cava",
+          "Right atrium",
+          "Tricuspid valve",
+          "Right ventricle",
+          "Pulmonary valve",
+          "Pulmonary arteries",
+          "Lungs: blood picks up oxygen",
+          "Pulmonary veins",
+          "Left atrium",
+          "Mitral valve",
+          "Left ventricle",
+          "Aortic valve",
+          "Aorta",
+          "Body: oxygen-rich blood is delivered"
+        ],
+        "contextWindow": 2
+      },
+      "tags": [
+        "heart::flow"
+      ]
+    }
+  ]
+}

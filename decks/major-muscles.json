@@ -1,0 +1,413 @@
+{
+  "key": "major-muscles",
+  "version": 1,
+  "name": "Major Muscles and Their Actions",
+  "description": "The major skeletal muscles you can name and feel, grouped head to toe, with the main movement each one produces. Extras give location and a memorable role for muscles like the masseter, latissimus dorsi, and sartorius.",
+  "category": "Anatomy",
+  "topics": [
+    "anatomy",
+    "muscles",
+    "human-body",
+    "fitness"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/1105%20Anterior%20and%20Posterior%20Views%20of%20Muscles.jpg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "muscle-masseter",
+      "model": "basic",
+      "fields": {
+        "front": "Which muscle clenches the jaw and is one of the strongest muscles by force?",
+        "back": "The masseter",
+        "extra": "One of the muscles of chewing; you can feel it bulge at the angle of the jaw when you bite down."
+      },
+      "tags": [
+        "muscles::head"
+      ]
+    },
+    {
+      "key": "muscle-temporalis",
+      "model": "basic",
+      "fields": {
+        "front": "Which fan-shaped muscle on the side of the head helps close the jaw?",
+        "back": "The temporalis",
+        "extra": "A chewing muscle that also draws the lower jaw backward."
+      },
+      "tags": [
+        "muscles::head"
+      ]
+    },
+    {
+      "key": "muscle-orbicularis-oculi",
+      "model": "basic",
+      "fields": {
+        "front": "Which ring of muscle around the eye closes the eyelids?",
+        "back": "The orbicularis oculi",
+        "extra": "It powers blinking, winking, and squinting."
+      },
+      "tags": [
+        "muscles::head"
+      ]
+    },
+    {
+      "key": "muscle-orbicularis-oris",
+      "model": "basic",
+      "fields": {
+        "front": "Which muscle purses the lips, used in whistling and kissing?",
+        "back": "The orbicularis oris",
+        "extra": "The ring of muscle encircling the mouth."
+      },
+      "tags": [
+        "muscles::head"
+      ]
+    },
+    {
+      "key": "muscle-zygomaticus",
+      "model": "basic",
+      "fields": {
+        "front": "Which muscle lifts the corners of the mouth into a smile?",
+        "back": "The zygomaticus major",
+        "extra": "It runs from the cheekbone to the corner of the mouth; the 'smiling muscle'."
+      },
+      "tags": [
+        "muscles::head"
+      ]
+    },
+    {
+      "key": "muscle-sternocleidomastoid",
+      "model": "basic",
+      "fields": {
+        "front": "Which paired neck muscle turns and bends the head?",
+        "back": "The sternocleidomastoid",
+        "extra": "Runs from the breastbone and collarbone to behind the ear; turning your head makes the opposite one stand out."
+      },
+      "tags": [
+        "muscles::head"
+      ]
+    },
+    {
+      "key": "muscle-trapezius",
+      "model": "basic",
+      "fields": {
+        "front": "Which large diamond-shaped upper-back muscle shrugs and steadies the shoulders?",
+        "back": "The trapezius",
+        "extra": "It raises, lowers, and pulls back the shoulder blades and extends the neck; it spans from the skull to the mid-back."
+      },
+      "tags": [
+        "muscles::shoulder"
+      ]
+    },
+    {
+      "key": "muscle-deltoid",
+      "model": "basic",
+      "fields": {
+        "front": "Which muscle caps the shoulder and lifts the arm out to the side?",
+        "back": "The deltoid",
+        "extra": "The main muscle that raises the arm sideways; a common site for injections."
+      },
+      "tags": [
+        "muscles::shoulder"
+      ]
+    },
+    {
+      "key": "muscle-latissimus-dorsi",
+      "model": "basic",
+      "fields": {
+        "front": "Which broad back muscle pulls the arm downward and backward?",
+        "back": "The latissimus dorsi",
+        "extra": "The 'swimmer's muscle'; key in pull-ups, rowing, and swimming."
+      },
+      "tags": [
+        "muscles::shoulder"
+      ]
+    },
+    {
+      "key": "muscle-pectoralis-major",
+      "model": "basic",
+      "fields": {
+        "front": "Which large chest muscle draws the arm across the body?",
+        "back": "The pectoralis major",
+        "extra": "The main muscle worked by push-ups and the bench press."
+      },
+      "tags": [
+        "muscles::shoulder"
+      ]
+    },
+    {
+      "key": "muscle-rhomboids",
+      "model": "basic",
+      "fields": {
+        "front": "Which muscles between the shoulder blades pull them toward the spine?",
+        "back": "The rhomboids",
+        "extra": "They square the shoulders; weakness leads to a slouched posture."
+      },
+      "tags": [
+        "muscles::shoulder"
+      ]
+    },
+    {
+      "key": "muscle-biceps-brachii",
+      "model": "basic",
+      "fields": {
+        "front": "Which upper-arm muscle bends the elbow and turns the palm up?",
+        "back": "The biceps brachii",
+        "extra": "It has two heads and bulges when you 'make a muscle'."
+      },
+      "tags": [
+        "muscles::arm"
+      ]
+    },
+    {
+      "key": "muscle-triceps-brachii",
+      "model": "basic",
+      "fields": {
+        "front": "Which muscle on the back of the upper arm straightens the elbow?",
+        "back": "The triceps brachii",
+        "extra": "It has three heads and opposes the biceps; it does the pushing work."
+      },
+      "tags": [
+        "muscles::arm"
+      ]
+    },
+    {
+      "key": "muscle-brachioradialis",
+      "model": "basic",
+      "fields": {
+        "front": "Which forearm muscle bends the elbow, especially with the thumb pointing up?",
+        "back": "The brachioradialis",
+        "extra": "Stands out during a hammer curl or when carrying with a neutral grip."
+      },
+      "tags": [
+        "muscles::arm"
+      ]
+    },
+    {
+      "key": "muscle-rectus-abdominis",
+      "model": "basic",
+      "fields": {
+        "front": "Which muscle bends the trunk forward and forms the 'six-pack'?",
+        "back": "The rectus abdominis",
+        "extra": "The six-pack look comes from bands of connective tissue crossing the muscle."
+      },
+      "tags": [
+        "muscles::core"
+      ]
+    },
+    {
+      "key": "muscle-obliques",
+      "model": "basic",
+      "fields": {
+        "front": "Which abdominal muscles let you twist and bend to the side?",
+        "back": "The external and internal obliques",
+        "extra": "They run diagonally along the sides of the abdomen."
+      },
+      "tags": [
+        "muscles::core"
+      ]
+    },
+    {
+      "key": "muscle-transversus-abdominis",
+      "model": "basic",
+      "fields": {
+        "front": "Which deep abdominal muscle wraps the waist like a natural corset?",
+        "back": "The transversus abdominis",
+        "extra": "The deepest belly muscle; it compresses the abdomen and braces the spine."
+      },
+      "tags": [
+        "muscles::core"
+      ]
+    },
+    {
+      "key": "muscle-erector-spinae",
+      "model": "basic",
+      "fields": {
+        "front": "Which group of muscles runs beside the spine to keep you upright?",
+        "back": "The erector spinae",
+        "extra": "A column on each side of the backbone; it straightens the back and holds posture."
+      },
+      "tags": [
+        "muscles::core"
+      ]
+    },
+    {
+      "key": "muscle-diaphragm",
+      "model": "basic",
+      "fields": {
+        "front": "Which dome-shaped muscle is the main muscle of breathing?",
+        "back": "The diaphragm",
+        "extra": "It flattens as it contracts to pull air into the lungs; it divides the chest from the abdomen."
+      },
+      "tags": [
+        "muscles::core"
+      ]
+    },
+    {
+      "key": "muscle-gluteus-maximus",
+      "model": "basic",
+      "fields": {
+        "front": "Which is the largest muscle in the body, driving hip extension?",
+        "back": "The gluteus maximus",
+        "extra": "The main muscle of the buttock; it powers standing up, climbing, and sprinting."
+      },
+      "tags": [
+        "muscles::hip"
+      ]
+    },
+    {
+      "key": "muscle-gluteus-medius",
+      "model": "basic",
+      "fields": {
+        "front": "Which hip muscle steadies the pelvis when you stand on one leg?",
+        "back": "The gluteus medius",
+        "extra": "If it is weak, the pelvis drops on the opposite side with each step."
+      },
+      "tags": [
+        "muscles::hip"
+      ]
+    },
+    {
+      "key": "muscle-iliopsoas",
+      "model": "basic",
+      "fields": {
+        "front": "Which deep muscle is the most powerful flexor of the hip?",
+        "back": "The iliopsoas",
+        "extra": "It lifts the thigh toward the trunk and links the lower spine and pelvis to the femur."
+      },
+      "tags": [
+        "muscles::hip"
+      ]
+    },
+    {
+      "key": "muscle-quadriceps",
+      "model": "basic",
+      "fields": {
+        "front": "Which four-part muscle group on the front of the thigh straightens the knee?",
+        "back": "The quadriceps femoris",
+        "extra": "The knee-jerk reflex tests it; it includes the rectus femoris and three vastus muscles."
+      },
+      "tags": [
+        "muscles::thigh"
+      ]
+    },
+    {
+      "key": "muscle-hamstrings",
+      "model": "basic",
+      "fields": {
+        "front": "Which muscle group at the back of the thigh bends the knee and extends the hip?",
+        "back": "The hamstrings",
+        "extra": "Three muscles; commonly pulled in sprinting and jumping."
+      },
+      "tags": [
+        "muscles::thigh"
+      ]
+    },
+    {
+      "key": "muscle-sartorius",
+      "model": "basic",
+      "fields": {
+        "front": "Which is the longest muscle in the body, crossing the thigh diagonally?",
+        "back": "The sartorius",
+        "extra": "It runs from the hip to the inner knee and helps you sit cross-legged (the 'tailor's muscle')."
+      },
+      "tags": [
+        "muscles::thigh"
+      ]
+    },
+    {
+      "key": "muscle-adductors",
+      "model": "basic",
+      "fields": {
+        "front": "Which inner-thigh muscles pull the legs together?",
+        "back": "The adductors",
+        "extra": "Important for squeezing the legs together, as in horseback riding and skating."
+      },
+      "tags": [
+        "muscles::thigh"
+      ]
+    },
+    {
+      "key": "muscle-gastrocnemius",
+      "model": "basic",
+      "fields": {
+        "front": "Which two-headed calf muscle lets you stand on tiptoe and push off when walking?",
+        "back": "The gastrocnemius",
+        "extra": "It forms the visible bulge of the calf and joins the Achilles tendon."
+      },
+      "tags": [
+        "muscles::leg"
+      ]
+    },
+    {
+      "key": "muscle-soleus",
+      "model": "basic",
+      "fields": {
+        "front": "Which deep calf muscle works with the gastrocnemius to point the foot and hold you upright?",
+        "back": "The soleus",
+        "extra": "It lies beneath the gastrocnemius and is vital for standing and walking."
+      },
+      "tags": [
+        "muscles::leg"
+      ]
+    },
+    {
+      "key": "muscle-tibialis-anterior",
+      "model": "basic",
+      "fields": {
+        "front": "Which shin muscle lifts the foot upward?",
+        "back": "The tibialis anterior",
+        "extra": "It runs down the front of the shin; if it fails, the foot drags ('foot drop')."
+      },
+      "tags": [
+        "muscles::leg"
+      ]
+    },
+    {
+      "key": "muscle-achilles",
+      "model": "basic",
+      "fields": {
+        "front": "What is the Achilles tendon, and what does it join?",
+        "back": "The strongest tendon in the body; it links the calf muscles to the heel bone",
+        "extra": "Not a muscle but a tendon. Rupturing it makes it impossible to push off with the toes."
+      },
+      "tags": [
+        "muscles::leg"
+      ]
+    },
+    {
+      "key": "muscle-count",
+      "model": "basic",
+      "fields": {
+        "front": "About how many skeletal muscles does the human body have?",
+        "back": "More than 600",
+        "extra": "Together they make up roughly 40% of body weight."
+      },
+      "tags": [
+        "muscles::facts"
+      ]
+    },
+    {
+      "key": "muscle-smallest",
+      "model": "basic",
+      "fields": {
+        "front": "What is the smallest skeletal muscle in the body?",
+        "back": "The stapedius, in the middle ear",
+        "extra": "About a millimeter long; it braces a tiny ear bone to dampen loud sounds."
+      },
+      "tags": [
+        "muscles::facts"
+      ]
+    },
+    {
+      "key": "muscle-busiest",
+      "model": "basic",
+      "fields": {
+        "front": "Which muscles are among the busiest, moving over 100,000 times a day?",
+        "back": "The muscles that move the eyes",
+        "extra": "They make constant tiny adjustments even when you think your gaze is still."
+      },
+      "tags": [
+        "muscles::facts"
+      ]
+    }
+  ]
+}

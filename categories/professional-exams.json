@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 2,
+  "key": "professional-exams",
+  "name": "Professional Exams",
+  "decks": [
+    {
+      "key": "lmsw-exam-prep",
+      "name": "LMSW Exam Prep (ASWB Masters)",
+      "description": "Original study cards for the ASWB Masters exam, organized by the official 2026 blueprint (exams on or after August 3, 2026): Values and Ethics (35%), Assessment and Planning (33%), Intervention and Practice (32%). Covers the NASW Code of Ethics, human development and practice theories, DSM-5-TR diagnoses, psychotropic medications, abuse and neglect, interventions from CBT to community organizing, research, and supervision. Written from the public ASWB content outline; not affiliated with or endorsed by ASWB.",
+      "cardCount": 244,
+      "topics": [
+        "social-work",
+        "lmsw",
+        "aswb",
+        "ethics",
+        "psychology"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Jane%20Addams%20-%20Bain%20News%20Service.jpg?width=640"
+    }
+  ]
+}

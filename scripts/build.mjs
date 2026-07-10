@@ -39,8 +39,10 @@ const CATEGORY_ORDER = [
   'Cinema',
   'Chess',
   'Science',
+  'Anatomy',
   'History',
   'Codes & Signals',
+  'Professional Exams',
 ];
 
 const isStr = (v) => typeof v === 'string' && v.trim().length > 0;

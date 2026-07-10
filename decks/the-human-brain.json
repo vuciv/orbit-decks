@@ -1,0 +1,365 @@
+{
+  "key": "the-human-brain",
+  "version": 1,
+  "name": "The Human Brain",
+  "description": "A tour of the brain's anatomy: the four lobes and what they do, the cerebellum and brainstem, the thalamus and hypothalamus, the limbic system, and the membranes and fluid that protect it all.",
+  "category": "Anatomy",
+  "topics": [
+    "anatomy",
+    "neuroscience",
+    "brain",
+    "human-body"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Blausen%200111%20BrainLobes.png?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "brain-frontal-lobe",
+      "model": "basic",
+      "fields": {
+        "front": "What does the frontal lobe do?",
+        "back": "Voluntary movement, planning, decision-making, and personality",
+        "extra": "It holds the primary motor cortex and Broca's area, and is the last brain region to fully mature (into the mid-twenties)."
+      },
+      "tags": [
+        "brain::lobes"
+      ]
+    },
+    {
+      "key": "brain-parietal-lobe",
+      "model": "basic",
+      "fields": {
+        "front": "What does the parietal lobe do?",
+        "back": "Processes touch, temperature, pain, and spatial awareness",
+        "extra": "It contains the primary somatosensory cortex; damage can make a person ignore one whole side of space."
+      },
+      "tags": [
+        "brain::lobes"
+      ]
+    },
+    {
+      "key": "brain-temporal-lobe",
+      "model": "basic",
+      "fields": {
+        "front": "What does the temporal lobe do?",
+        "back": "Hearing, memory, and understanding language",
+        "extra": "It holds the auditory cortex and Wernicke's area, and the hippocampus lies deep inside it."
+      },
+      "tags": [
+        "brain::lobes"
+      ]
+    },
+    {
+      "key": "brain-occipital-lobe",
+      "model": "basic",
+      "fields": {
+        "front": "What does the occipital lobe do?",
+        "back": "Processes vision",
+        "extra": "The primary visual cortex sits at the very back of the brain, farthest from the eyes."
+      },
+      "tags": [
+        "brain::lobes"
+      ]
+    },
+    {
+      "key": "brain-broca",
+      "model": "basic",
+      "fields": {
+        "front": "What does Broca's area do, and where is it?",
+        "back": "It produces speech; it sits in the frontal lobe",
+        "extra": "Damage causes Broca's aphasia: speech becomes slow and effortful, but understanding stays intact."
+      },
+      "tags": [
+        "brain::language"
+      ]
+    },
+    {
+      "key": "brain-wernicke",
+      "model": "basic",
+      "fields": {
+        "front": "What does Wernicke's area do, and where is it?",
+        "back": "It handles language comprehension; it sits in the temporal lobe",
+        "extra": "Damage causes Wernicke's aphasia: speech stays fluent but makes little sense, and comprehension is poor."
+      },
+      "tags": [
+        "brain::language"
+      ]
+    },
+    {
+      "key": "brain-cerebrum",
+      "model": "basic",
+      "fields": {
+        "front": "What is the largest part of the brain, seat of thought and voluntary action?",
+        "back": "The cerebrum",
+        "extra": "Split into two hemispheres and four lobes; its folded outer layer is the cerebral cortex."
+      },
+      "tags": [
+        "brain::structures"
+      ]
+    },
+    {
+      "key": "brain-cerebellum",
+      "model": "basic",
+      "fields": {
+        "front": "Which part of the brain coordinates movement, balance, and posture?",
+        "back": "The cerebellum",
+        "extra": "The 'little brain' at the lower back; it holds more than half of all the brain's neurons. Damage makes movement clumsy (ataxia)."
+      },
+      "tags": [
+        "brain::structures"
+      ]
+    },
+    {
+      "key": "brain-brainstem",
+      "model": "basic",
+      "fields": {
+        "front": "What are the three parts of the brainstem, from top to bottom?",
+        "back": "The midbrain, the pons, and the medulla oblongata",
+        "extra": "It links the brain to the spinal cord and runs many automatic body functions."
+      },
+      "tags": [
+        "brain::structures"
+      ]
+    },
+    {
+      "key": "brain-medulla",
+      "model": "basic",
+      "fields": {
+        "front": "Which part of the brainstem controls breathing, heart rate, and blood pressure?",
+        "back": "The medulla oblongata",
+        "extra": "It also drives reflexes like coughing, sneezing, swallowing, and vomiting. Damage here can be fatal."
+      },
+      "tags": [
+        "brain::structures"
+      ]
+    },
+    {
+      "key": "brain-pons",
+      "model": "basic",
+      "fields": {
+        "front": "What does the pons do?",
+        "back": "Bridges the cerebrum and cerebellum and helps control breathing",
+        "extra": "Its name means 'bridge'; it also carries the nuclei of several cranial nerves."
+      },
+      "tags": [
+        "brain::structures"
+      ]
+    },
+    {
+      "key": "brain-midbrain",
+      "model": "basic",
+      "fields": {
+        "front": "What does the midbrain help control?",
+        "back": "Eye movement and reflex responses to sights and sounds",
+        "extra": "The top part of the brainstem; it also helps regulate alertness."
+      },
+      "tags": [
+        "brain::structures"
+      ]
+    },
+    {
+      "key": "brain-thalamus",
+      "model": "basic",
+      "fields": {
+        "front": "Which structure is the brain's main sensory relay, routing signals up to the cortex?",
+        "back": "The thalamus",
+        "extra": "Almost all sensory input, except smell, passes through it on the way to the cortex."
+      },
+      "tags": [
+        "brain::diencephalon"
+      ]
+    },
+    {
+      "key": "brain-hypothalamus",
+      "model": "basic",
+      "fields": {
+        "front": "Which small structure runs hunger, thirst, body temperature, and links the nervous and hormonal systems?",
+        "back": "The hypothalamus",
+        "extra": "It keeps the body in balance (homeostasis) and controls the pituitary gland just below it."
+      },
+      "tags": [
+        "brain::diencephalon"
+      ]
+    },
+    {
+      "key": "brain-hippocampus",
+      "model": "basic",
+      "fields": {
+        "front": "Which structure is essential for forming new long-term memories?",
+        "back": "The hippocampus",
+        "extra": "Named for its seahorse shape; it is among the first regions damaged in Alzheimer's disease."
+      },
+      "tags": [
+        "brain::limbic"
+      ]
+    },
+    {
+      "key": "brain-amygdala",
+      "model": "basic",
+      "fields": {
+        "front": "Which almond-shaped structure processes fear and emotional memory?",
+        "back": "The amygdala",
+        "extra": "Part of the limbic system and central to the fight-or-flight response."
+      },
+      "tags": [
+        "brain::limbic"
+      ]
+    },
+    {
+      "key": "brain-corpus-callosum",
+      "model": "basic",
+      "fields": {
+        "front": "What thick band of fibers connects the brain's two hemispheres?",
+        "back": "The corpus callosum",
+        "extra": "About 200 million nerve fibers. Cutting it to treat severe epilepsy produces a 'split brain'."
+      },
+      "tags": [
+        "brain::connectivity"
+      ]
+    },
+    {
+      "key": "brain-hemispheres",
+      "model": "basic",
+      "fields": {
+        "front": "Which side of the body does each half of the brain control?",
+        "back": "The opposite side",
+        "extra": "The left hemisphere controls the right side of the body, and the right hemisphere controls the left."
+      },
+      "tags": [
+        "brain::connectivity"
+      ]
+    },
+    {
+      "key": "brain-basal-ganglia",
+      "model": "basic",
+      "fields": {
+        "front": "What do the basal ganglia help regulate?",
+        "back": "Smooth voluntary movement and habit learning",
+        "extra": "Their breakdown underlies the tremors of Parkinson's disease and the movements of Huntington's disease."
+      },
+      "tags": [
+        "brain::connectivity"
+      ]
+    },
+    {
+      "key": "brain-meninges",
+      "model": "basic",
+      "fields": {
+        "front": "What are the three protective membranes around the brain, from outside in?",
+        "back": "Dura mater, arachnoid mater, and pia mater",
+        "extra": "They run from the tough outer 'dura' to the delicate 'pia' hugging the brain. Bleeding between them causes subdural and subarachnoid hemorrhages."
+      },
+      "tags": [
+        "brain::protection"
+      ]
+    },
+    {
+      "key": "brain-csf",
+      "model": "basic",
+      "fields": {
+        "front": "What clear fluid cushions the brain and fills its inner cavities?",
+        "back": "Cerebrospinal fluid (CSF)",
+        "extra": "Made by the choroid plexus; the brain floats in it, which drastically cuts its effective weight."
+      },
+      "tags": [
+        "brain::protection"
+      ]
+    },
+    {
+      "key": "brain-ventricles",
+      "model": "basic",
+      "fields": {
+        "front": "What are the fluid-filled cavities inside the brain called?",
+        "back": "The ventricles",
+        "extra": "There are four; they make and circulate cerebrospinal fluid."
+      },
+      "tags": [
+        "brain::protection"
+      ]
+    },
+    {
+      "key": "brain-bbb",
+      "model": "basic",
+      "fields": {
+        "front": "What barrier shields the brain by tightly filtering what crosses from the blood?",
+        "back": "The blood-brain barrier",
+        "extra": "Formed by tightly sealed cells lining brain capillaries; it keeps out many toxins and germs, and also many drugs."
+      },
+      "tags": [
+        "brain::protection"
+      ]
+    },
+    {
+      "key": "brain-gray-white",
+      "model": "basic",
+      "fields": {
+        "front": "What is the difference between gray matter and white matter?",
+        "back": "Gray matter is nerve cell bodies; white matter is their myelin-coated wiring",
+        "extra": "Gray matter does the processing; white matter connects regions. Myelin gives white matter its pale color."
+      },
+      "tags": [
+        "brain::protection"
+      ]
+    },
+    {
+      "key": "brain-pituitary",
+      "model": "basic",
+      "fields": {
+        "front": "Which pea-sized gland is called the body's 'master gland'?",
+        "back": "The pituitary gland",
+        "extra": "It hangs below the hypothalamus and directs many of the body's other hormone glands."
+      },
+      "tags": [
+        "brain::glands"
+      ]
+    },
+    {
+      "key": "brain-pineal",
+      "model": "basic",
+      "fields": {
+        "front": "Which tiny gland makes melatonin and helps set the sleep-wake cycle?",
+        "back": "The pineal gland",
+        "extra": "Deep in the center of the brain; Descartes called it the 'seat of the soul'."
+      },
+      "tags": [
+        "brain::glands"
+      ]
+    },
+    {
+      "key": "brain-neurons",
+      "model": "basic",
+      "fields": {
+        "front": "About how many neurons does the human brain contain?",
+        "back": "Roughly 86 billion",
+        "extra": "Each can link to thousands of others, forming trillions of connections."
+      },
+      "tags": [
+        "brain::facts"
+      ]
+    },
+    {
+      "key": "brain-weight",
+      "model": "basic",
+      "fields": {
+        "front": "About how much does the adult human brain weigh?",
+        "back": "About 1.4 kilograms (3 pounds)",
+        "extra": "It is roughly 2% of body weight but uses around 20% of the body's energy."
+      },
+      "tags": [
+        "brain::facts"
+      ]
+    },
+    {
+      "key": "brain-folds",
+      "model": "basic",
+      "fields": {
+        "front": "Why is the surface of the brain so wrinkled?",
+        "back": "The folds pack far more cortex into the skull",
+        "extra": "Spread flat, the cortex would cover roughly two square feet. The ridges are gyri and the grooves are sulci."
+      },
+      "tags": [
+        "brain::facts"
+      ]
+    }
+  ]
+}
