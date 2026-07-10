@@ -1,8 +1,8 @@
 {
   "key": "country-silhouettes",
-  "version": 1,
+  "version": 2,
   "name": "Name That Country",
-  "description": "Identify countries from their silhouette and position on the globe: every UN member and observer state, plus Kosovo and Taiwan.",
+  "description": "Name every UN member and observer state, plus Kosovo and Taiwan, from its place on an interactive globe: spin, pinch to zoom, and learn where each country really sits.",
   "category": "Geography",
   "topics": [
     "geography",
@@ -14,12 +14,11 @@
   "notes": [
     {
       "key": "it",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Italy",
-        "extra": "Surrounds two enclave microstates, San Marino and Vatican City.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Italy%20%28orthographic%20projection%29.svg?width=640"
+        "country": "IT",
+        "answer": "Italy",
+        "extra": "Surrounds two enclave microstates, San Marino and Vatican City."
       },
       "tags": [
         "geo::europe"
@@ -27,12 +26,11 @@
     },
     {
       "key": "cl",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Chile",
-        "extra": "About 4300 km long but on average only 180 km wide.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Chile%20%28orthographic%20projection%29.svg?width=640"
+        "country": "CL",
+        "answer": "Chile",
+        "extra": "About 4300 km long but on average only 180 km wide."
       },
       "tags": [
         "geo::americas"
@@ -40,12 +38,11 @@
     },
     {
       "key": "jp",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Japan",
-        "extra": "Four main islands: Hokkaido, Honshu, Shikoku, Kyushu.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Japan%20%28orthographic%20projection%29.svg?width=640"
+        "country": "JP",
+        "answer": "Japan",
+        "extra": "Four main islands: Hokkaido, Honshu, Shikoku, Kyushu."
       },
       "tags": [
         "geo::asia"
@@ -53,11 +50,10 @@
     },
     {
       "key": "in",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "India",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/India%20%28orthographic%20projection%29.svg?width=640"
+        "country": "IN",
+        "answer": "India"
       },
       "tags": [
         "geo::asia"
@@ -65,12 +61,11 @@
     },
     {
       "key": "br",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Brazil",
-        "extra": "Covers nearly half of South America and borders every country on the continent except Chile and Ecuador.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Brazil%20%28orthographic%20projection%29.svg?width=640"
+        "country": "BR",
+        "answer": "Brazil",
+        "extra": "Covers nearly half of South America and borders every country on the continent except Chile and Ecuador."
       },
       "tags": [
         "geo::americas"
@@ -78,11 +73,10 @@
     },
     {
       "key": "au",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Australia",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Australia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "AU",
+        "answer": "Australia"
       },
       "tags": [
         "geo::oceania"
@@ -90,11 +84,10 @@
     },
     {
       "key": "us",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "The United States",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20States%20%28orthographic%20projection%29.svg?width=640"
+        "country": "US",
+        "answer": "The United States"
       },
       "tags": [
         "geo::americas"
@@ -102,12 +95,11 @@
     },
     {
       "key": "no",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Norway",
-        "extra": "Shares the Scandinavian Peninsula with Sweden; the jagged western edge is its fjord coast.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Norway%20%28orthographic%20projection%29.svg?width=640"
+        "country": "NO",
+        "answer": "Norway",
+        "extra": "Shares the Scandinavian Peninsula with Sweden; the jagged western edge is its fjord coast."
       },
       "tags": [
         "geo::europe"
@@ -115,12 +107,11 @@
     },
     {
       "key": "gr",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Greece",
-        "extra": "Fragmented southern tip of the Balkans with thousands of islands in the Aegean.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/EU-Greece%20%28orthographic%20projection%29.svg?width=640"
+        "country": "GR",
+        "answer": "Greece",
+        "extra": "Fragmented southern tip of the Balkans with thousands of islands in the Aegean."
       },
       "tags": [
         "geo::europe"
@@ -128,12 +119,11 @@
     },
     {
       "key": "hr",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Croatia",
-        "extra": "The crescent shape wraps around Bosnia and Herzegovina.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Croatia%20on%20the%20globe%20%28Europe%20centered%29.svg?width=640"
+        "country": "HR",
+        "answer": "Croatia",
+        "extra": "The crescent shape wraps around Bosnia and Herzegovina."
       },
       "tags": [
         "geo::europe"
@@ -141,12 +131,11 @@
     },
     {
       "key": "al",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Albania",
-        "extra": "On the Adriatic between Montenegro and Greece.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Albania%20%28orthographic%20projection%29.svg?width=640"
+        "country": "AL",
+        "answer": "Albania",
+        "extra": "On the Adriatic between Montenegro and Greece."
       },
       "tags": [
         "geo::europe"
@@ -154,12 +143,11 @@
     },
     {
       "key": "ad",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Andorra",
-        "extra": "Pyrenees microstate wedged between France and Spain.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Andorra%20on%20the%20globe%20%28Europe%20centered%29.svg?width=640"
+        "country": "AD",
+        "answer": "Andorra",
+        "extra": "Pyrenees microstate wedged between France and Spain."
       },
       "tags": [
         "geo::europe"
@@ -167,12 +155,11 @@
     },
     {
       "key": "at",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Austria",
-        "extra": "The long western tail reaches through the Alps toward Liechtenstein and Switzerland.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Austria%20%28orthographic%20projection%29.svg?width=640"
+        "country": "AT",
+        "answer": "Austria",
+        "extra": "The long western tail reaches through the Alps toward Liechtenstein and Switzerland."
       },
       "tags": [
         "geo::europe"
@@ -180,12 +167,11 @@
     },
     {
       "key": "by",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Belarus",
-        "extra": "Landlocked between Poland, Ukraine, Russia, and the Baltics.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Belarus%20%28orthographic%20projection%29.svg?width=640"
+        "country": "BY",
+        "answer": "Belarus",
+        "extra": "Landlocked between Poland, Ukraine, Russia, and the Baltics."
       },
       "tags": [
         "geo::europe"
@@ -193,12 +179,11 @@
     },
     {
       "key": "be",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Belgium",
-        "extra": "Between France and the Netherlands on the North Sea.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Belgium%20%28orthographic%20projection%29.svg?width=640"
+        "country": "BE",
+        "answer": "Belgium",
+        "extra": "Between France and the Netherlands on the North Sea."
       },
       "tags": [
         "geo::europe"
@@ -206,12 +191,11 @@
     },
     {
       "key": "ba",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Bosnia and Herzegovina",
-        "extra": "The wedge inside the crescent of Croatia; nearly landlocked except a 20 km coastline at Neum.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bosnia%20and%20Herzegovina%20%28orthographic%20projection%29.svg?width=640"
+        "country": "BA",
+        "answer": "Bosnia and Herzegovina",
+        "extra": "The wedge inside the crescent of Croatia; nearly landlocked except a 20 km coastline at Neum."
       },
       "tags": [
         "geo::europe"
@@ -219,12 +203,11 @@
     },
     {
       "key": "bg",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Bulgaria",
-        "extra": "On the western Black Sea coast, south of Romania across the Danube.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bulgaria%20%28orthographic%20projection%29.svg?width=640"
+        "country": "BG",
+        "answer": "Bulgaria",
+        "extra": "On the western Black Sea coast, south of Romania across the Danube."
       },
       "tags": [
         "geo::europe"
@@ -232,12 +215,11 @@
     },
     {
       "key": "cz",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Czechia",
-        "extra": "Landlocked, tucked between Germany, Poland, Austria, and Slovakia.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Czech%20Republic%20%28orthographic%20projection%29.svg?width=640"
+        "country": "CZ",
+        "answer": "Czechia",
+        "extra": "Landlocked, tucked between Germany, Poland, Austria, and Slovakia."
       },
       "tags": [
         "geo::europe"
@@ -245,12 +227,11 @@
     },
     {
       "key": "dk",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Denmark",
-        "extra": "The Jutland Peninsula plus islands, pointing up from Germany toward Norway and Sweden.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Denmark%20%28orthographic%20projection%29.svg?width=640"
+        "country": "DK",
+        "answer": "Denmark",
+        "extra": "The Jutland Peninsula plus islands, pointing up from Germany toward Norway and Sweden."
       },
       "tags": [
         "geo::europe"
@@ -258,12 +239,11 @@
     },
     {
       "key": "ee",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Estonia",
-        "extra": "Northernmost of the three Baltic states, just south of Finland.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Estonia%20on%20the%20globe%20%28Europe%20centered%29.svg?width=640"
+        "country": "EE",
+        "answer": "Estonia",
+        "extra": "Northernmost of the three Baltic states, just south of Finland."
       },
       "tags": [
         "geo::europe"
@@ -271,12 +251,11 @@
     },
     {
       "key": "fi",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Finland",
-        "extra": "Between Sweden and Russia; sometimes described as shaped like a one-armed maiden.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Finland%20%28orthographic%20projection%29.svg?width=640"
+        "country": "FI",
+        "answer": "Finland",
+        "extra": "Between Sweden and Russia; sometimes described as shaped like a one-armed maiden."
       },
       "tags": [
         "geo::europe"
@@ -284,12 +263,11 @@
     },
     {
       "key": "fr",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "France",
-        "extra": "Often called the Hexagon.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/France%20%28orthographic%20projection%29.svg?width=640"
+        "country": "FR",
+        "answer": "France",
+        "extra": "Often called the Hexagon."
       },
       "tags": [
         "geo::europe"
@@ -297,11 +275,10 @@
     },
     {
       "key": "de",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Germany",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Germany%20%28orthographic%20projection%29.svg?width=640"
+        "country": "DE",
+        "answer": "Germany"
       },
       "tags": [
         "geo::europe"
@@ -309,12 +286,11 @@
     },
     {
       "key": "hu",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Hungary",
-        "extra": "Landlocked in the Carpathian Basin; Lake Balaton is the notch in the west.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Hungary%20on%20the%20globe%20%28Europe%20centered%29.svg?width=640"
+        "country": "HU",
+        "answer": "Hungary",
+        "extra": "Landlocked in the Carpathian Basin; Lake Balaton is the notch in the west."
       },
       "tags": [
         "geo::europe"
@@ -322,12 +298,11 @@
     },
     {
       "key": "is",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Iceland",
-        "extra": "North Atlantic island just below the Arctic Circle.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Iceland%20%28orthographic%20projection%29.svg?width=640"
+        "country": "IS",
+        "answer": "Iceland",
+        "extra": "North Atlantic island just below the Arctic Circle."
       },
       "tags": [
         "geo::europe"
@@ -335,12 +310,11 @@
     },
     {
       "key": "ie",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Ireland",
-        "extra": "The highlighted area excludes Northern Ireland, which is part of the United Kingdom.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/EU-Ireland%20%28orthographic%20projection%29.svg?width=640"
+        "country": "IE",
+        "answer": "Ireland",
+        "extra": "The highlighted area excludes Northern Ireland, which is part of the United Kingdom."
       },
       "tags": [
         "geo::europe"
@@ -348,12 +322,11 @@
     },
     {
       "key": "xk",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Kosovo",
-        "extra": "Landlocked between Serbia, North Macedonia, Albania, and Montenegro; declared independence in 2008.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Kosovo%20%28orthographic%20projection%29.svg?width=640"
+        "country": "XK",
+        "answer": "Kosovo",
+        "extra": "Landlocked between Serbia, North Macedonia, Albania, and Montenegro; declared independence in 2008."
       },
       "tags": [
         "geo::europe"
@@ -361,12 +334,11 @@
     },
     {
       "key": "lv",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Latvia",
-        "extra": "Middle of the three Baltic states; the Gulf of Riga bites into its coast.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Latvia%20on%20the%20globe%20%28Europe%20centered%29.svg?width=640"
+        "country": "LV",
+        "answer": "Latvia",
+        "extra": "Middle of the three Baltic states; the Gulf of Riga bites into its coast."
       },
       "tags": [
         "geo::europe"
@@ -374,12 +346,11 @@
     },
     {
       "key": "li",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Liechtenstein",
-        "extra": "Alpine microstate between Switzerland and Austria; doubly landlocked.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Liechtenstein%20on%20the%20globe%20%28Europe%20centered%29.svg?width=640"
+        "country": "LI",
+        "answer": "Liechtenstein",
+        "extra": "Alpine microstate between Switzerland and Austria; doubly landlocked."
       },
       "tags": [
         "geo::europe"
@@ -387,12 +358,11 @@
     },
     {
       "key": "lt",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Lithuania",
-        "extra": "Southernmost of the three Baltic states, bordering Poland and the Kaliningrad exclave.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Lithuania%20on%20the%20globe%20%28Europe%20centered%29.svg?width=640"
+        "country": "LT",
+        "answer": "Lithuania",
+        "extra": "Southernmost of the three Baltic states, bordering Poland and the Kaliningrad exclave."
       },
       "tags": [
         "geo::europe"
@@ -400,12 +370,11 @@
     },
     {
       "key": "lu",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Luxembourg",
-        "extra": "Small wedge between Belgium, Germany, and France.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Luxembourg%20on%20the%20globe%20%28Europe%20centered%29.svg?width=640"
+        "country": "LU",
+        "answer": "Luxembourg",
+        "extra": "Small wedge between Belgium, Germany, and France."
       },
       "tags": [
         "geo::europe"
@@ -413,12 +382,11 @@
     },
     {
       "key": "mt",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Malta",
-        "extra": "Small island group south of Sicily.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Malta%20on%20the%20globe%20%28Europe%20centered%29.svg?width=640"
+        "country": "MT",
+        "answer": "Malta",
+        "extra": "Small island group south of Sicily."
       },
       "tags": [
         "geo::europe"
@@ -426,12 +394,11 @@
     },
     {
       "key": "md",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Moldova",
-        "extra": "Landlocked sliver between Romania and Ukraine.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Moldova%20on%20the%20globe%20%28Europe%20centered%29.svg?width=640"
+        "country": "MD",
+        "answer": "Moldova",
+        "extra": "Landlocked sliver between Romania and Ukraine."
       },
       "tags": [
         "geo::europe"
@@ -439,12 +406,11 @@
     },
     {
       "key": "mc",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Monaco",
-        "extra": "City-state on the French Riviera; second smallest country in the world.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Monaco%20on%20the%20globe%20%28Europe%20centered%29.svg?width=640"
+        "country": "MC",
+        "answer": "Monaco",
+        "extra": "City-state on the French Riviera; second smallest country in the world."
       },
       "tags": [
         "geo::europe"
@@ -452,12 +418,11 @@
     },
     {
       "key": "me",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Montenegro",
-        "extra": "Small Adriatic state between Croatia, Bosnia, Serbia, Kosovo, and Albania.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Montenegro%20%28orthographic%20projection%29.svg?width=640"
+        "country": "ME",
+        "answer": "Montenegro",
+        "extra": "Small Adriatic state between Croatia, Bosnia, Serbia, Kosovo, and Albania."
       },
       "tags": [
         "geo::europe"
@@ -465,12 +430,11 @@
     },
     {
       "key": "nl",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "The Netherlands",
-        "extra": "North Sea coast east of Britain; much of it below sea level.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Netherlands%20%28orthographic%20projection%29.svg?width=640"
+        "country": "NL",
+        "answer": "The Netherlands",
+        "extra": "North Sea coast east of Britain; much of it below sea level."
       },
       "tags": [
         "geo::europe"
@@ -478,12 +442,11 @@
     },
     {
       "key": "mk",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "North Macedonia",
-        "extra": "Landlocked Balkan state north of Greece; renamed from Macedonia in 2019.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/North%20Macedonia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "MK",
+        "answer": "North Macedonia",
+        "extra": "Landlocked Balkan state north of Greece; renamed from Macedonia in 2019."
       },
       "tags": [
         "geo::europe"
@@ -491,12 +454,11 @@
     },
     {
       "key": "pl",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Poland",
-        "extra": "Broad rectangle on the Baltic between Germany and the former USSR states.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Poland%20%28orthographic%20projection%29.svg?width=640"
+        "country": "PL",
+        "answer": "Poland",
+        "extra": "Broad rectangle on the Baltic between Germany and the former USSR states."
       },
       "tags": [
         "geo::europe"
@@ -504,12 +466,11 @@
     },
     {
       "key": "pt",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Portugal",
-        "extra": "The narrow Atlantic strip of Iberia, west of Spain.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Portugal%20%28orthographic%20projection%29.svg?width=640"
+        "country": "PT",
+        "answer": "Portugal",
+        "extra": "The narrow Atlantic strip of Iberia, west of Spain."
       },
       "tags": [
         "geo::europe"
@@ -517,12 +478,11 @@
     },
     {
       "key": "ro",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Romania",
-        "extra": "The Carpathians curl through it; the Danube delta is on its Black Sea coast.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Romania%20%28orthographic%20projection%29.svg?width=640"
+        "country": "RO",
+        "answer": "Romania",
+        "extra": "The Carpathians curl through it; the Danube delta is on its Black Sea coast."
       },
       "tags": [
         "geo::europe"
@@ -530,12 +490,11 @@
     },
     {
       "key": "ru",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Russia",
-        "extra": "Largest country on Earth, spanning eleven time zones.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Russia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "RU",
+        "answer": "Russia",
+        "extra": "Largest country on Earth, spanning eleven time zones."
       },
       "tags": [
         "geo::europe"
@@ -543,12 +502,11 @@
     },
     {
       "key": "sm",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "San Marino",
-        "extra": "Microstate entirely surrounded by Italy, near Rimini.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/San%20Marino%20on%20the%20globe%20%28Europe%20centered%29.svg?width=640"
+        "country": "SM",
+        "answer": "San Marino",
+        "extra": "Microstate entirely surrounded by Italy, near Rimini."
       },
       "tags": [
         "geo::europe"
@@ -556,12 +514,11 @@
     },
     {
       "key": "rs",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Serbia",
-        "extra": "Landlocked at the center of the Balkans; Belgrade sits at the Sava-Danube confluence.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Serbia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "RS",
+        "answer": "Serbia",
+        "extra": "Landlocked at the center of the Balkans; Belgrade sits at the Sava-Danube confluence."
       },
       "tags": [
         "geo::europe"
@@ -569,12 +526,11 @@
     },
     {
       "key": "sk",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Slovakia",
-        "extra": "The eastern half of former Czechoslovakia, north of Hungary.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Slovakia%20on%20the%20globe%20%28Europe%20centered%29.svg?width=640"
+        "country": "SK",
+        "answer": "Slovakia",
+        "extra": "The eastern half of former Czechoslovakia, north of Hungary."
       },
       "tags": [
         "geo::europe"
@@ -582,12 +538,11 @@
     },
     {
       "key": "si",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Slovenia",
-        "extra": "Chicken-shaped state between Italy, Austria, Hungary, and Croatia.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Slovenia%20on%20the%20globe%20%28Europe%20centered%29.svg?width=640"
+        "country": "SI",
+        "answer": "Slovenia",
+        "extra": "Chicken-shaped state between Italy, Austria, Hungary, and Croatia."
       },
       "tags": [
         "geo::europe"
@@ -595,12 +550,11 @@
     },
     {
       "key": "es",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Spain",
-        "extra": "Most of the Iberian Peninsula, with Portugal cut out of the west side.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Spain%20%28orthographic%20projection%29.svg?width=640"
+        "country": "ES",
+        "answer": "Spain",
+        "extra": "Most of the Iberian Peninsula, with Portugal cut out of the west side."
       },
       "tags": [
         "geo::europe"
@@ -608,12 +562,11 @@
     },
     {
       "key": "se",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Sweden",
-        "extra": "The eastern, Baltic-facing side of the Scandinavian Peninsula.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Sweden%20%28orthographic%20projection%29.svg?width=640"
+        "country": "SE",
+        "answer": "Sweden",
+        "extra": "The eastern, Baltic-facing side of the Scandinavian Peninsula."
       },
       "tags": [
         "geo::europe"
@@ -621,12 +574,11 @@
     },
     {
       "key": "ch",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Switzerland",
-        "extra": "Landlocked Alpine state; the notch in the south is Italy around Lake Lugano.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Switzerland%20%28orthographic%20projection%29.svg?width=640"
+        "country": "CH",
+        "answer": "Switzerland",
+        "extra": "Landlocked Alpine state; the notch in the south is Italy around Lake Lugano."
       },
       "tags": [
         "geo::europe"
@@ -634,12 +586,11 @@
     },
     {
       "key": "ua",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Ukraine",
-        "extra": "Largest country entirely within Europe; Crimea hangs into the Black Sea.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Ukraine%20%28orthographic%20projection%29.svg?width=640"
+        "country": "UA",
+        "answer": "Ukraine",
+        "extra": "Largest country entirely within Europe; Crimea hangs into the Black Sea."
       },
       "tags": [
         "geo::europe"
@@ -647,12 +598,11 @@
     },
     {
       "key": "gb",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "The United Kingdom",
-        "extra": "Great Britain plus Northern Ireland.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20Kingdom%20%28orthographic%20projection%29.svg?width=640"
+        "country": "GB",
+        "answer": "The United Kingdom",
+        "extra": "Great Britain plus Northern Ireland."
       },
       "tags": [
         "geo::europe"
@@ -660,12 +610,11 @@
     },
     {
       "key": "va",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Vatican City",
-        "extra": "Smallest country in the world, an enclave inside Rome.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Location%20of%20the%20Vatican%20City%20in%20Europe.svg?width=640"
+        "country": "VA",
+        "answer": "Vatican City",
+        "extra": "Smallest country in the world, an enclave inside Rome."
       },
       "tags": [
         "geo::europe"
@@ -673,12 +622,11 @@
     },
     {
       "key": "af",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Afghanistan",
-        "extra": "The thin Wakhan Corridor in the northeast reaches out to touch China.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Afghanistan%20%28orthographic%20projection%29.svg?width=640"
+        "country": "AF",
+        "answer": "Afghanistan",
+        "extra": "The thin Wakhan Corridor in the northeast reaches out to touch China."
       },
       "tags": [
         "geo::asia"
@@ -686,12 +634,11 @@
     },
     {
       "key": "am",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Armenia",
-        "extra": "Small landlocked Caucasus state west of Azerbaijan.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Armenia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "AM",
+        "answer": "Armenia",
+        "extra": "Small landlocked Caucasus state west of Azerbaijan."
       },
       "tags": [
         "geo::asia"
@@ -699,12 +646,11 @@
     },
     {
       "key": "az",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Azerbaijan",
-        "extra": "On the Caspian Sea; includes the Nakhchivan exclave separated by Armenia.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Azerbaijan%20%28orthographic%20projection%29.svg?width=640"
+        "country": "AZ",
+        "answer": "Azerbaijan",
+        "extra": "On the Caspian Sea; includes the Nakhchivan exclave separated by Armenia."
       },
       "tags": [
         "geo::asia"
@@ -712,12 +658,11 @@
     },
     {
       "key": "bh",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Bahrain",
-        "extra": "Island state in the Persian Gulf, connected to Saudi Arabia by a causeway.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bahrain%20on%20the%20globe%20%28Afro-Eurasia%20centered%29.svg?width=640"
+        "country": "BH",
+        "answer": "Bahrain",
+        "extra": "Island state in the Persian Gulf, connected to Saudi Arabia by a causeway."
       },
       "tags": [
         "geo::asia"
@@ -725,12 +670,11 @@
     },
     {
       "key": "bd",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Bangladesh",
-        "extra": "The Ganges delta, almost entirely surrounded by India.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bangladesh%20%28orthographic%20projection%29.svg?width=640"
+        "country": "BD",
+        "answer": "Bangladesh",
+        "extra": "The Ganges delta, almost entirely surrounded by India."
       },
       "tags": [
         "geo::asia"
@@ -738,12 +682,11 @@
     },
     {
       "key": "bt",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Bhutan",
-        "extra": "Himalayan kingdom sandwiched between China and India, east of Nepal.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bhutan%20%28orthographic%20projection%29.svg?width=640"
+        "country": "BT",
+        "answer": "Bhutan",
+        "extra": "Himalayan kingdom sandwiched between China and India, east of Nepal."
       },
       "tags": [
         "geo::asia"
@@ -751,12 +694,11 @@
     },
     {
       "key": "bn",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Brunei",
-        "extra": "Two small pieces on the north coast of Borneo, surrounded by Malaysia.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Brunei%20%28orthographic%20projection%29.svg?width=640"
+        "country": "BN",
+        "answer": "Brunei",
+        "extra": "Two small pieces on the north coast of Borneo, surrounded by Malaysia."
       },
       "tags": [
         "geo::asia"
@@ -764,12 +706,11 @@
     },
     {
       "key": "kh",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Cambodia",
-        "extra": "Between Thailand and Vietnam; the lake in the middle is the Tonle Sap.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Cambodia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "KH",
+        "answer": "Cambodia",
+        "extra": "Between Thailand and Vietnam; the lake in the middle is the Tonle Sap."
       },
       "tags": [
         "geo::asia"
@@ -777,12 +718,11 @@
     },
     {
       "key": "cn",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "China",
-        "extra": "The lighter green areas (including Taiwan) are claimed but not controlled by Beijing.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/China%20%28orthographic%20projection%29.svg?width=640"
+        "country": "CN",
+        "answer": "China",
+        "extra": "The lighter green areas (including Taiwan) are claimed but not controlled by Beijing."
       },
       "tags": [
         "geo::asia"
@@ -790,12 +730,11 @@
     },
     {
       "key": "cy",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Cyprus",
-        "extra": "Eastern Mediterranean island south of Turkey; the pan-handle points toward Syria.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Cyprus%20%28orthographic%20projection%29.svg?width=640"
+        "country": "CY",
+        "answer": "Cyprus",
+        "extra": "Eastern Mediterranean island south of Turkey; the pan-handle points toward Syria."
       },
       "tags": [
         "geo::asia"
@@ -803,12 +742,11 @@
     },
     {
       "key": "ge",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Georgia",
-        "extra": "Caucasus state on the Black Sea, between Russia and Turkey.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Georgia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "GE",
+        "answer": "Georgia",
+        "extra": "Caucasus state on the Black Sea, between Russia and Turkey."
       },
       "tags": [
         "geo::asia"
@@ -816,12 +754,11 @@
     },
     {
       "key": "id",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Indonesia",
-        "extra": "World's largest archipelago state, straddling the Equator across more than 17000 islands.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Indonesia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "ID",
+        "answer": "Indonesia",
+        "extra": "World's largest archipelago state, straddling the Equator across more than 17000 islands."
       },
       "tags": [
         "geo::asia"
@@ -829,12 +766,11 @@
     },
     {
       "key": "ir",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Iran",
-        "extra": "Between the Caspian Sea and the Persian Gulf.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Iran%20%28orthographic%20projection%29.svg?width=640"
+        "country": "IR",
+        "answer": "Iran",
+        "extra": "Between the Caspian Sea and the Persian Gulf."
       },
       "tags": [
         "geo::asia"
@@ -842,12 +778,11 @@
     },
     {
       "key": "iq",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Iraq",
-        "extra": "Mesopotamia; the Tigris and Euphrates meet near its short Gulf coastline.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Iraq%20%28orthographic%20projection%29.svg?width=640"
+        "country": "IQ",
+        "answer": "Iraq",
+        "extra": "Mesopotamia; the Tigris and Euphrates meet near its short Gulf coastline."
       },
       "tags": [
         "geo::asia"
@@ -855,12 +790,11 @@
     },
     {
       "key": "il",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Israel",
-        "extra": "Narrow Mediterranean strip tapering south to the Red Sea port of Eilat.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Israel%20%28orthographic%20projection%29.svg?width=640"
+        "country": "IL",
+        "answer": "Israel",
+        "extra": "Narrow Mediterranean strip tapering south to the Red Sea port of Eilat."
       },
       "tags": [
         "geo::asia"
@@ -868,12 +802,11 @@
     },
     {
       "key": "jo",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Jordan",
-        "extra": "Nearly landlocked; only a short Red Sea coast at Aqaba.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Jordan%20%28orthographic%20projection%29.svg?width=640"
+        "country": "JO",
+        "answer": "Jordan",
+        "extra": "Nearly landlocked; only a short Red Sea coast at Aqaba."
       },
       "tags": [
         "geo::asia"
@@ -881,12 +814,11 @@
     },
     {
       "key": "kz",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Kazakhstan",
-        "extra": "Largest landlocked country in the world.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Kazakhstan%20%28orthographic%20projection%29.svg?width=640"
+        "country": "KZ",
+        "answer": "Kazakhstan",
+        "extra": "Largest landlocked country in the world."
       },
       "tags": [
         "geo::asia"
@@ -894,12 +826,11 @@
     },
     {
       "key": "kw",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Kuwait",
-        "extra": "Small wedge at the head of the Persian Gulf, between Iraq and Saudi Arabia.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Kuwait%20on%20the%20globe%20%28Afro-Eurasia%20centered%29.svg?width=640"
+        "country": "KW",
+        "answer": "Kuwait",
+        "extra": "Small wedge at the head of the Persian Gulf, between Iraq and Saudi Arabia."
       },
       "tags": [
         "geo::asia"
@@ -907,12 +838,11 @@
     },
     {
       "key": "kg",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Kyrgyzstan",
-        "extra": "Mountainous Central Asian state east of Uzbekistan; mostly Tian Shan range.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Kyrgyzstan%20%28orthographic%20projection%29.svg?width=640"
+        "country": "KG",
+        "answer": "Kyrgyzstan",
+        "extra": "Mountainous Central Asian state east of Uzbekistan; mostly Tian Shan range."
       },
       "tags": [
         "geo::asia"
@@ -920,12 +850,11 @@
     },
     {
       "key": "la",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Laos",
-        "extra": "The only landlocked country in Southeast Asia, stretched along the Mekong.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Laos%20%28orthographic%20projection%29.svg?width=640"
+        "country": "LA",
+        "answer": "Laos",
+        "extra": "The only landlocked country in Southeast Asia, stretched along the Mekong."
       },
       "tags": [
         "geo::asia"
@@ -933,12 +862,11 @@
     },
     {
       "key": "lb",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Lebanon",
-        "extra": "Small Mediterranean strip north of Israel, west of Syria.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Lebanon%20%28orthographic%20projection%29.svg?width=640"
+        "country": "LB",
+        "answer": "Lebanon",
+        "extra": "Small Mediterranean strip north of Israel, west of Syria."
       },
       "tags": [
         "geo::asia"
@@ -946,12 +874,11 @@
     },
     {
       "key": "my",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Malaysia",
-        "extra": "Split in two: the peninsula below Thailand and the northern strip of Borneo.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Malaysia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "MY",
+        "answer": "Malaysia",
+        "extra": "Split in two: the peninsula below Thailand and the northern strip of Borneo."
       },
       "tags": [
         "geo::asia"
@@ -959,12 +886,11 @@
     },
     {
       "key": "mv",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "The Maldives",
-        "extra": "Chain of coral atolls southwest of India; lowest-lying country on Earth.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Maldives%20%28orthographic%20projection%29.svg?width=640"
+        "country": "MV",
+        "answer": "The Maldives",
+        "extra": "Chain of coral atolls southwest of India; lowest-lying country on Earth."
       },
       "tags": [
         "geo::asia"
@@ -972,12 +898,11 @@
     },
     {
       "key": "mn",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Mongolia",
-        "extra": "Landlocked between only two neighbors, Russia and China.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Mongolia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "MN",
+        "answer": "Mongolia",
+        "extra": "Landlocked between only two neighbors, Russia and China."
       },
       "tags": [
         "geo::asia"
@@ -985,12 +910,11 @@
     },
     {
       "key": "mm",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Myanmar",
-        "extra": "Kite shape with a long tail running down the Andaman coast; formerly Burma.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Myanmar%20%28orthographic%20projection%29.svg?width=640"
+        "country": "MM",
+        "answer": "Myanmar",
+        "extra": "Kite shape with a long tail running down the Andaman coast; formerly Burma."
       },
       "tags": [
         "geo::asia"
@@ -998,12 +922,11 @@
     },
     {
       "key": "np",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Nepal",
-        "extra": "Himalayan strip between India and China; home to Mount Everest.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Nepal%20%28orthographic%20projection%29.svg?width=640"
+        "country": "NP",
+        "answer": "Nepal",
+        "extra": "Himalayan strip between India and China; home to Mount Everest."
       },
       "tags": [
         "geo::asia"
@@ -1011,12 +934,11 @@
     },
     {
       "key": "kp",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "North Korea",
-        "extra": "The northern half of the Korean Peninsula, bordering China and briefly Russia.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/North%20Korea%20%28orthographic%20projection%29.svg?width=640"
+        "country": "KP",
+        "answer": "North Korea",
+        "extra": "The northern half of the Korean Peninsula, bordering China and briefly Russia."
       },
       "tags": [
         "geo::asia"
@@ -1024,12 +946,11 @@
     },
     {
       "key": "om",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Oman",
-        "extra": "Southeast corner of Arabia; a detached tip on the Strait of Hormuz is the Musandam exclave.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Oman%20%28orthographic%20projection%29.svg?width=640"
+        "country": "OM",
+        "answer": "Oman",
+        "extra": "Southeast corner of Arabia; a detached tip on the Strait of Hormuz is the Musandam exclave."
       },
       "tags": [
         "geo::asia"
@@ -1037,12 +958,11 @@
     },
     {
       "key": "pk",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Pakistan",
-        "extra": "The Indus valley, between Iran, Afghanistan, and India.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Pakistan%20%28orthographic%20projection%29.svg?width=640"
+        "country": "PK",
+        "answer": "Pakistan",
+        "extra": "The Indus valley, between Iran, Afghanistan, and India."
       },
       "tags": [
         "geo::asia"
@@ -1050,12 +970,11 @@
     },
     {
       "key": "ps",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Palestine",
-        "extra": "Two territories: the West Bank and the Gaza Strip.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/State%20of%20Palestine%20%28orthographic%20projection%29.svg?width=640"
+        "country": "PS",
+        "answer": "Palestine",
+        "extra": "Two territories: the West Bank and the Gaza Strip."
       },
       "tags": [
         "geo::asia"
@@ -1063,12 +982,11 @@
     },
     {
       "key": "ph",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "The Philippines",
-        "extra": "Archipelago of over 7000 islands; Luzon in the north, Mindanao in the south.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Philippines%20%28orthographic%20projection%29.svg?width=640"
+        "country": "PH",
+        "answer": "The Philippines",
+        "extra": "Archipelago of over 7000 islands; Luzon in the north, Mindanao in the south."
       },
       "tags": [
         "geo::asia"
@@ -1076,12 +994,11 @@
     },
     {
       "key": "qa",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Qatar",
-        "extra": "Thumb-shaped peninsula jutting north from Saudi Arabia into the Persian Gulf.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Qatar%20on%20the%20globe%20%28Afro-Eurasia%20centered%29.svg?width=640"
+        "country": "QA",
+        "answer": "Qatar",
+        "extra": "Thumb-shaped peninsula jutting north from Saudi Arabia into the Persian Gulf."
       },
       "tags": [
         "geo::asia"
@@ -1089,12 +1006,11 @@
     },
     {
       "key": "sa",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Saudi Arabia",
-        "extra": "Most of the Arabian Peninsula; the Empty Quarter desert fills its southeast.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Saudi%20Arabia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "SA",
+        "answer": "Saudi Arabia",
+        "extra": "Most of the Arabian Peninsula; the Empty Quarter desert fills its southeast."
       },
       "tags": [
         "geo::asia"
@@ -1102,12 +1018,11 @@
     },
     {
       "key": "sg",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Singapore",
-        "extra": "City-state on an island at the tip of the Malay Peninsula.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Singapore%20on%20the%20globe%20%28Southeast%20Asia%20centered%29.svg?width=640"
+        "country": "SG",
+        "answer": "Singapore",
+        "extra": "City-state on an island at the tip of the Malay Peninsula."
       },
       "tags": [
         "geo::asia"
@@ -1115,12 +1030,11 @@
     },
     {
       "key": "kr",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "South Korea",
-        "extra": "The southern half of the Korean Peninsula; Jeju Island lies off its south coast.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/South%20Korea%20%28orthographic%20projection%29.svg?width=640"
+        "country": "KR",
+        "answer": "South Korea",
+        "extra": "The southern half of the Korean Peninsula; Jeju Island lies off its south coast."
       },
       "tags": [
         "geo::asia"
@@ -1128,12 +1042,11 @@
     },
     {
       "key": "lk",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Sri Lanka",
-        "extra": "Teardrop island off the southeast tip of India.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Sri%20Lanka%20%28orthographic%20projection%29.svg?width=640"
+        "country": "LK",
+        "answer": "Sri Lanka",
+        "extra": "Teardrop island off the southeast tip of India."
       },
       "tags": [
         "geo::asia"
@@ -1141,12 +1054,11 @@
     },
     {
       "key": "sy",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Syria",
-        "extra": "Between Turkey and Iraq, with a short Mediterranean coast.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Syria%20%28orthographic%20projection%29.svg?width=640"
+        "country": "SY",
+        "answer": "Syria",
+        "extra": "Between Turkey and Iraq, with a short Mediterranean coast."
       },
       "tags": [
         "geo::asia"
@@ -1154,12 +1066,11 @@
     },
     {
       "key": "tw",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Taiwan",
-        "extra": "Sweet-potato-shaped island off the southeast coast of mainland China.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Taiwan%20%28orthographic%20projection%29.svg?width=640"
+        "country": "TW",
+        "answer": "Taiwan",
+        "extra": "Sweet-potato-shaped island off the southeast coast of mainland China."
       },
       "tags": [
         "geo::asia"
@@ -1167,12 +1078,11 @@
     },
     {
       "key": "tj",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Tajikistan",
-        "extra": "Mountainous Central Asian state; the Pamirs fill its eastern half.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Tajikistan%20%28orthographic%20projection%29.svg?width=640"
+        "country": "TJ",
+        "answer": "Tajikistan",
+        "extra": "Mountainous Central Asian state; the Pamirs fill its eastern half."
       },
       "tags": [
         "geo::asia"
@@ -1180,12 +1090,11 @@
     },
     {
       "key": "th",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Thailand",
-        "extra": "Often compared to an elephant's head, with the trunk running down the Malay Peninsula.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Thailand%20%28orthographic%20projection%29.svg?width=640"
+        "country": "TH",
+        "answer": "Thailand",
+        "extra": "Often compared to an elephant's head, with the trunk running down the Malay Peninsula."
       },
       "tags": [
         "geo::asia"
@@ -1193,12 +1102,11 @@
     },
     {
       "key": "tl",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Timor-Leste",
-        "extra": "Eastern half of Timor island, north of Australia; also called East Timor.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/East%20Timor%20%28orthographic%20projection%29.svg?width=640"
+        "country": "TL",
+        "answer": "Timor-Leste",
+        "extra": "Eastern half of Timor island, north of Australia; also called East Timor."
       },
       "tags": [
         "geo::asia"
@@ -1206,12 +1114,11 @@
     },
     {
       "key": "tr",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Turkey",
-        "extra": "The Anatolian Peninsula plus a small piece of Europe across the Bosporus.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Turkey%20%28orthographic%20projection%29.svg?width=640"
+        "country": "TR",
+        "answer": "Turkey",
+        "extra": "The Anatolian Peninsula plus a small piece of Europe across the Bosporus."
       },
       "tags": [
         "geo::asia"
@@ -1219,12 +1126,11 @@
     },
     {
       "key": "tm",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Turkmenistan",
-        "extra": "Mostly Karakum Desert, on the Caspian Sea north of Iran.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Turkmenistan%20%28orthographic%20projection%29.svg?width=640"
+        "country": "TM",
+        "answer": "Turkmenistan",
+        "extra": "Mostly Karakum Desert, on the Caspian Sea north of Iran."
       },
       "tags": [
         "geo::asia"
@@ -1232,12 +1138,11 @@
     },
     {
       "key": "ae",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "The United Arab Emirates",
-        "extra": "Seven emirates on the south shore of the Persian Gulf, between Saudi Arabia and Oman.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/United%20Arab%20Emirates%20%28orthographic%20projection%29.svg?width=640"
+        "country": "AE",
+        "answer": "The United Arab Emirates",
+        "extra": "Seven emirates on the south shore of the Persian Gulf, between Saudi Arabia and Oman."
       },
       "tags": [
         "geo::asia"
@@ -1245,12 +1150,11 @@
     },
     {
       "key": "uz",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Uzbekistan",
-        "extra": "One of only two doubly landlocked countries (with Liechtenstein).",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Uzbekistan%20%28orthographic%20projection%29.svg?width=640"
+        "country": "UZ",
+        "answer": "Uzbekistan",
+        "extra": "One of only two doubly landlocked countries (with Liechtenstein)."
       },
       "tags": [
         "geo::asia"
@@ -1258,12 +1162,11 @@
     },
     {
       "key": "vn",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Vietnam",
-        "extra": "S-shaped strip down the east side of Indochina.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Vietnam%20%28orthographic%20projection%29.svg?width=640"
+        "country": "VN",
+        "answer": "Vietnam",
+        "extra": "S-shaped strip down the east side of Indochina."
       },
       "tags": [
         "geo::asia"
@@ -1271,12 +1174,11 @@
     },
     {
       "key": "ye",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Yemen",
-        "extra": "Southwest corner of Arabia; the island far to its east is Socotra.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Yemen%20%28orthographic%20projection%29.svg?width=640"
+        "country": "YE",
+        "answer": "Yemen",
+        "extra": "Southwest corner of Arabia; the island far to its east is Socotra."
       },
       "tags": [
         "geo::asia"
@@ -1284,12 +1186,11 @@
     },
     {
       "key": "dz",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Algeria",
-        "extra": "Largest country in Africa.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Algeria%20%28orthographic%20projection%29.svg?width=640"
+        "country": "DZ",
+        "answer": "Algeria",
+        "extra": "Largest country in Africa."
       },
       "tags": [
         "geo::africa"
@@ -1297,12 +1198,11 @@
     },
     {
       "key": "ao",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Angola",
-        "extra": "The detached block to the north is the Cabinda exclave.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Angola%20%28orthographic%20projection%29.svg?width=640"
+        "country": "AO",
+        "answer": "Angola",
+        "extra": "The detached block to the north is the Cabinda exclave."
       },
       "tags": [
         "geo::africa"
@@ -1310,12 +1210,11 @@
     },
     {
       "key": "bj",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Benin",
-        "extra": "Narrow north-south strip between Togo and Nigeria.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Benin%20%28orthographic%20projection%29.svg?width=640"
+        "country": "BJ",
+        "answer": "Benin",
+        "extra": "Narrow north-south strip between Togo and Nigeria."
       },
       "tags": [
         "geo::africa"
@@ -1323,12 +1222,11 @@
     },
     {
       "key": "bw",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Botswana",
-        "extra": "Landlocked; mostly Kalahari, north of South Africa.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Botswana%20%28orthographic%20projection%29.svg?width=640"
+        "country": "BW",
+        "answer": "Botswana",
+        "extra": "Landlocked; mostly Kalahari, north of South Africa."
       },
       "tags": [
         "geo::africa"
@@ -1336,12 +1234,11 @@
     },
     {
       "key": "bf",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Burkina Faso",
-        "extra": "Landlocked in the Sahel, north of Ghana; formerly Upper Volta.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Burkina%20Faso%20%28orthographic%20projection%29.svg?width=640"
+        "country": "BF",
+        "answer": "Burkina Faso",
+        "extra": "Landlocked in the Sahel, north of Ghana; formerly Upper Volta."
       },
       "tags": [
         "geo::africa"
@@ -1349,12 +1246,11 @@
     },
     {
       "key": "bi",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Burundi",
-        "extra": "Small state at the north end of Lake Tanganyika, just south of Rwanda.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Burundi%20%28orthographic%20projection%29.svg?width=640"
+        "country": "BI",
+        "answer": "Burundi",
+        "extra": "Small state at the north end of Lake Tanganyika, just south of Rwanda."
       },
       "tags": [
         "geo::africa"
@@ -1362,12 +1258,11 @@
     },
     {
       "key": "cv",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Cabo Verde",
-        "extra": "Atlantic island group about 600 km off the coast of Senegal.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Cape%20Verde%20%28orthographic%20projection%29.svg?width=640"
+        "country": "CV",
+        "answer": "Cabo Verde",
+        "extra": "Atlantic island group about 600 km off the coast of Senegal."
       },
       "tags": [
         "geo::africa"
@@ -1375,12 +1270,11 @@
     },
     {
       "key": "cm",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Cameroon",
-        "extra": "Elongated triangle at the hinge of West and Central Africa, on the Gulf of Guinea.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Cameroon%20%28orthographic%20projection%29.svg?width=640"
+        "country": "CM",
+        "answer": "Cameroon",
+        "extra": "Elongated triangle at the hinge of West and Central Africa, on the Gulf of Guinea."
       },
       "tags": [
         "geo::africa"
@@ -1388,12 +1282,11 @@
     },
     {
       "key": "cf",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "The Central African Republic",
-        "extra": "Landlocked at almost the exact center of Africa.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Central%20African%20Republic%20%28orthographic%20projection%29.svg?width=640"
+        "country": "CF",
+        "answer": "The Central African Republic",
+        "extra": "Landlocked at almost the exact center of Africa."
       },
       "tags": [
         "geo::africa"
@@ -1401,12 +1294,11 @@
     },
     {
       "key": "td",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Chad",
-        "extra": "Landlocked; its shrinking namesake lake sits on the western border.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Chad%20%28orthographic%20projection%29.svg?width=640"
+        "country": "TD",
+        "answer": "Chad",
+        "extra": "Landlocked; its shrinking namesake lake sits on the western border."
       },
       "tags": [
         "geo::africa"
@@ -1414,12 +1306,11 @@
     },
     {
       "key": "km",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Comoros",
-        "extra": "Small volcanic islands between Mozambique and Madagascar.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Comoros%20%28orthographic%20projection%29.svg?width=640"
+        "country": "KM",
+        "answer": "Comoros",
+        "extra": "Small volcanic islands between Mozambique and Madagascar."
       },
       "tags": [
         "geo::africa"
@@ -1427,12 +1318,11 @@
     },
     {
       "key": "cg",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "The Republic of the Congo",
-        "extra": "The smaller Congo, west of the river; capital Brazzaville faces Kinshasa across the water.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Republic%20of%20the%20Congo%20%28orthographic%20projection%29.svg?width=640"
+        "country": "CG",
+        "answer": "The Republic of the Congo",
+        "extra": "The smaller Congo, west of the river; capital Brazzaville faces Kinshasa across the water."
       },
       "tags": [
         "geo::africa"
@@ -1440,12 +1330,11 @@
     },
     {
       "key": "cd",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "The Democratic Republic of the Congo",
-        "extra": "The larger Congo, second biggest country in Africa; formerly Zaire.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Democratic%20Republic%20of%20the%20Congo%20%28orthographic%20projection%29.svg?width=640"
+        "country": "CD",
+        "answer": "The Democratic Republic of the Congo",
+        "extra": "The larger Congo, second biggest country in Africa; formerly Zaire."
       },
       "tags": [
         "geo::africa"
@@ -1453,12 +1342,11 @@
     },
     {
       "key": "ci",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Côte d'Ivoire",
-        "extra": "On the Gulf of Guinea between Liberia and Ghana; also called Ivory Coast.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/C%C3%B4te%20d%27Ivoire%20%28orthographic%20projection%29.svg?width=640"
+        "country": "CI",
+        "answer": "Côte d'Ivoire",
+        "extra": "On the Gulf of Guinea between Liberia and Ghana; also called Ivory Coast."
       },
       "tags": [
         "geo::africa"
@@ -1466,12 +1354,11 @@
     },
     {
       "key": "dj",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Djibouti",
-        "extra": "Small state on the Bab-el-Mandeb strait, wedged between Eritrea, Ethiopia, and Somalia.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Djibouti%20%28orthographic%20projection%29.svg?width=640"
+        "country": "DJ",
+        "answer": "Djibouti",
+        "extra": "Small state on the Bab-el-Mandeb strait, wedged between Eritrea, Ethiopia, and Somalia."
       },
       "tags": [
         "geo::africa"
@@ -1479,12 +1366,11 @@
     },
     {
       "key": "eg",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Egypt",
-        "extra": "The Sinai Peninsula on the right connects it to Asia.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Egypt%20%28orthographic%20projection%29.svg?width=640"
+        "country": "EG",
+        "answer": "Egypt",
+        "extra": "The Sinai Peninsula on the right connects it to Asia."
       },
       "tags": [
         "geo::africa"
@@ -1492,12 +1378,11 @@
     },
     {
       "key": "gq",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Equatorial Guinea",
-        "extra": "A mainland block plus Bioko island, where the capital Malabo sits.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Equatorial%20Guinea%20%28orthographic%20projection%29.svg?width=640"
+        "country": "GQ",
+        "answer": "Equatorial Guinea",
+        "extra": "A mainland block plus Bioko island, where the capital Malabo sits."
       },
       "tags": [
         "geo::africa"
@@ -1505,12 +1390,11 @@
     },
     {
       "key": "er",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Eritrea",
-        "extra": "Long Red Sea coastline north of the Horn; independent from Ethiopia since 1993.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Eritrea%20%28orthographic%20projection%29.svg?width=640"
+        "country": "ER",
+        "answer": "Eritrea",
+        "extra": "Long Red Sea coastline north of the Horn; independent from Ethiopia since 1993."
       },
       "tags": [
         "geo::africa"
@@ -1518,12 +1402,11 @@
     },
     {
       "key": "sz",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Eswatini",
-        "extra": "Small kingdom nearly surrounded by South Africa; formerly Swaziland.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Eswatini%20%28orthographic%20projection%29.svg?width=640"
+        "country": "SZ",
+        "answer": "Eswatini",
+        "extra": "Small kingdom nearly surrounded by South Africa; formerly Swaziland."
       },
       "tags": [
         "geo::africa"
@@ -1531,12 +1414,11 @@
     },
     {
       "key": "et",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Ethiopia",
-        "extra": "Most populous landlocked country in the world, at the center of the Horn of Africa.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Ethiopia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "ET",
+        "answer": "Ethiopia",
+        "extra": "Most populous landlocked country in the world, at the center of the Horn of Africa."
       },
       "tags": [
         "geo::africa"
@@ -1544,12 +1426,11 @@
     },
     {
       "key": "ga",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Gabon",
-        "extra": "Straddles the Equator on the Atlantic, between Equatorial Guinea and Congo.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Gabon%20%28orthographic%20projection%29.svg?width=640"
+        "country": "GA",
+        "answer": "Gabon",
+        "extra": "Straddles the Equator on the Atlantic, between Equatorial Guinea and Congo."
       },
       "tags": [
         "geo::africa"
@@ -1557,12 +1438,11 @@
     },
     {
       "key": "gm",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "The Gambia",
-        "extra": "Sliver along the Gambia River, surrounded by Senegal; smallest mainland African country.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Gambia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "GM",
+        "answer": "The Gambia",
+        "extra": "Sliver along the Gambia River, surrounded by Senegal; smallest mainland African country."
       },
       "tags": [
         "geo::africa"
@@ -1570,12 +1450,11 @@
     },
     {
       "key": "gh",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Ghana",
-        "extra": "On the Gulf of Guinea; the long lake in the east is Volta, one of the largest reservoirs on Earth.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Ghana%20%28orthographic%20projection%29.svg?width=640"
+        "country": "GH",
+        "answer": "Ghana",
+        "extra": "On the Gulf of Guinea; the long lake in the east is Volta, one of the largest reservoirs on Earth."
       },
       "tags": [
         "geo::africa"
@@ -1583,12 +1462,11 @@
     },
     {
       "key": "gn",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Guinea",
-        "extra": "Croissant curving from the Atlantic inland, wrapping around Sierra Leone and Liberia.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Guinea%20%28orthographic%20projection%29.svg?width=640"
+        "country": "GN",
+        "answer": "Guinea",
+        "extra": "Croissant curving from the Atlantic inland, wrapping around Sierra Leone and Liberia."
       },
       "tags": [
         "geo::africa"
@@ -1596,12 +1474,11 @@
     },
     {
       "key": "gw",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Guinea-Bissau",
-        "extra": "Small Atlantic state between Senegal and Guinea, with the Bijagos islands offshore.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Guinea-Bissau%20%28orthographic%20projection%29.svg?width=640"
+        "country": "GW",
+        "answer": "Guinea-Bissau",
+        "extra": "Small Atlantic state between Senegal and Guinea, with the Bijagos islands offshore."
       },
       "tags": [
         "geo::africa"
@@ -1609,12 +1486,11 @@
     },
     {
       "key": "ke",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Kenya",
-        "extra": "On the Equator; Lake Turkana pokes down from its northern border.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Kenya%20%28orthographic%20projection%29.svg?width=640"
+        "country": "KE",
+        "answer": "Kenya",
+        "extra": "On the Equator; Lake Turkana pokes down from its northern border."
       },
       "tags": [
         "geo::africa"
@@ -1622,12 +1498,11 @@
     },
     {
       "key": "ls",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Lesotho",
-        "extra": "Entirely surrounded by South Africa; the country with the highest low point on Earth.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Lesotho%20%28orthographic%20projection%29.svg?width=640"
+        "country": "LS",
+        "answer": "Lesotho",
+        "extra": "Entirely surrounded by South Africa; the country with the highest low point on Earth."
       },
       "tags": [
         "geo::africa"
@@ -1635,12 +1510,11 @@
     },
     {
       "key": "lr",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Liberia",
-        "extra": "On the West African coast between Sierra Leone and Cote d'Ivoire.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Liberia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "LR",
+        "answer": "Liberia",
+        "extra": "On the West African coast between Sierra Leone and Cote d'Ivoire."
       },
       "tags": [
         "geo::africa"
@@ -1648,12 +1522,11 @@
     },
     {
       "key": "ly",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Libya",
-        "extra": "The Gulf of Sidra takes a bite out of its long Mediterranean coast.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Libya%20%28orthographic%20projection%29.svg?width=640"
+        "country": "LY",
+        "answer": "Libya",
+        "extra": "The Gulf of Sidra takes a bite out of its long Mediterranean coast."
       },
       "tags": [
         "geo::africa"
@@ -1661,12 +1534,11 @@
     },
     {
       "key": "mg",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Madagascar",
-        "extra": "Fourth largest island in the world, off the southeast coast of Africa.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Madagascar%20%28orthographic%20projection%29.svg?width=640"
+        "country": "MG",
+        "answer": "Madagascar",
+        "extra": "Fourth largest island in the world, off the southeast coast of Africa."
       },
       "tags": [
         "geo::africa"
@@ -1674,12 +1546,11 @@
     },
     {
       "key": "mw",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Malawi",
-        "extra": "Thin strip running along the western shore of its namesake lake.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Malawi%20%28orthographic%20projection%29.svg?width=640"
+        "country": "MW",
+        "answer": "Malawi",
+        "extra": "Thin strip running along the western shore of its namesake lake."
       },
       "tags": [
         "geo::africa"
@@ -1687,12 +1558,11 @@
     },
     {
       "key": "ml",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Mali",
-        "extra": "The Niger River bends through its middle; Timbuktu sits on that bend.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Mali%20%28orthographic%20projection%29.svg?width=640"
+        "country": "ML",
+        "answer": "Mali",
+        "extra": "The Niger River bends through its middle; Timbuktu sits on that bend."
       },
       "tags": [
         "geo::africa"
@@ -1700,12 +1570,11 @@
     },
     {
       "key": "mr",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Mauritania",
-        "extra": "Mostly Sahara, on the Atlantic between Western Sahara and Senegal.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Mauritania%20%28orthographic%20projection%29.svg?width=640"
+        "country": "MR",
+        "answer": "Mauritania",
+        "extra": "Mostly Sahara, on the Atlantic between Western Sahara and Senegal."
       },
       "tags": [
         "geo::africa"
@@ -1713,12 +1582,11 @@
     },
     {
       "key": "mu",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Mauritius",
-        "extra": "Indian Ocean island east of Madagascar; once home of the dodo.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Mauritius%20%28orthographic%20projection%29.svg?width=640"
+        "country": "MU",
+        "answer": "Mauritius",
+        "extra": "Indian Ocean island east of Madagascar; once home of the dodo."
       },
       "tags": [
         "geo::africa"
@@ -1726,12 +1594,11 @@
     },
     {
       "key": "ma",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Morocco",
-        "extra": "Northwest corner of Africa, across the Strait of Gibraltar from Spain.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Morocco%20%28orthographic%20projection%29.svg?width=640"
+        "country": "MA",
+        "answer": "Morocco",
+        "extra": "Northwest corner of Africa, across the Strait of Gibraltar from Spain."
       },
       "tags": [
         "geo::africa"
@@ -1739,12 +1606,11 @@
     },
     {
       "key": "mz",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Mozambique",
-        "extra": "Long Indian Ocean coastline facing Madagascar across its namesake channel.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Mozambique%20%28orthographic%20projection%29.svg?width=640"
+        "country": "MZ",
+        "answer": "Mozambique",
+        "extra": "Long Indian Ocean coastline facing Madagascar across its namesake channel."
       },
       "tags": [
         "geo::africa"
@@ -1752,12 +1618,11 @@
     },
     {
       "key": "na",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Namibia",
-        "extra": "The thin strip reaching east is the Caprivi Strip, aimed at the Zambezi.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Namibia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "NA",
+        "answer": "Namibia",
+        "extra": "The thin strip reaching east is the Caprivi Strip, aimed at the Zambezi."
       },
       "tags": [
         "geo::africa"
@@ -1765,12 +1630,11 @@
     },
     {
       "key": "ne",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Niger",
-        "extra": "Landlocked Sahel state north of Nigeria, its similarly named neighbor.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Niger%20%28orthographic%20projection%29.svg?width=640"
+        "country": "NE",
+        "answer": "Niger",
+        "extra": "Landlocked Sahel state north of Nigeria, its similarly named neighbor."
       },
       "tags": [
         "geo::africa"
@@ -1778,12 +1642,11 @@
     },
     {
       "key": "ng",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Nigeria",
-        "extra": "Most populous country in Africa, on the inner corner of the Gulf of Guinea.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Nigeria%20%28orthographic%20projection%29.svg?width=640"
+        "country": "NG",
+        "answer": "Nigeria",
+        "extra": "Most populous country in Africa, on the inner corner of the Gulf of Guinea."
       },
       "tags": [
         "geo::africa"
@@ -1791,12 +1654,11 @@
     },
     {
       "key": "rw",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Rwanda",
-        "extra": "Small, hilly, and just south of the Equator; Burundi is its twin to the south.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Rwanda%20%28orthographic%20projection%29.svg?width=640"
+        "country": "RW",
+        "answer": "Rwanda",
+        "extra": "Small, hilly, and just south of the Equator; Burundi is its twin to the south."
       },
       "tags": [
         "geo::africa"
@@ -1804,12 +1666,11 @@
     },
     {
       "key": "st",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "São Tomé and Príncipe",
-        "extra": "Two small volcanic islands in the Gulf of Guinea; second smallest African state.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%A3o%20Tom%C3%A9%20and%20Pr%C3%ADncipe%20%28orthographic%20projection%29.svg?width=640"
+        "country": "ST",
+        "answer": "São Tomé and Príncipe",
+        "extra": "Two small volcanic islands in the Gulf of Guinea; second smallest African state."
       },
       "tags": [
         "geo::africa"
@@ -1817,12 +1678,11 @@
     },
     {
       "key": "sn",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Senegal",
-        "extra": "Westernmost point of mainland Africa; The Gambia slices into it along the river.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Senegal%20%28orthographic%20projection%29.svg?width=640"
+        "country": "SN",
+        "answer": "Senegal",
+        "extra": "Westernmost point of mainland Africa; The Gambia slices into it along the river."
       },
       "tags": [
         "geo::africa"
@@ -1830,12 +1690,11 @@
     },
     {
       "key": "sc",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Seychelles",
-        "extra": "Scattered Indian Ocean islands northeast of Madagascar; smallest African country.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Seychelles%20%28orthographic%20projection%29.svg?width=640"
+        "country": "SC",
+        "answer": "Seychelles",
+        "extra": "Scattered Indian Ocean islands northeast of Madagascar; smallest African country."
       },
       "tags": [
         "geo::africa"
@@ -1843,12 +1702,11 @@
     },
     {
       "key": "sl",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Sierra Leone",
-        "extra": "Between Guinea and Liberia; the capital Freetown has one of the world's largest natural harbors.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Sierra%20Leone%20%28orthographic%20projection%29.svg?width=640"
+        "country": "SL",
+        "answer": "Sierra Leone",
+        "extra": "Between Guinea and Liberia; the capital Freetown has one of the world's largest natural harbors."
       },
       "tags": [
         "geo::africa"
@@ -1856,12 +1714,11 @@
     },
     {
       "key": "so",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Somalia",
-        "extra": "The Horn of Africa, wrapping around Ethiopia with the longest mainland coastline on the continent.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Somalia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "SO",
+        "answer": "Somalia",
+        "extra": "The Horn of Africa, wrapping around Ethiopia with the longest mainland coastline on the continent."
       },
       "tags": [
         "geo::africa"
@@ -1869,12 +1726,11 @@
     },
     {
       "key": "za",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "South Africa",
-        "extra": "The hole in the middle is Lesotho.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/South%20Africa%20%28orthographic%20projection%29.svg?width=640"
+        "country": "ZA",
+        "answer": "South Africa",
+        "extra": "The hole in the middle is Lesotho."
       },
       "tags": [
         "geo::africa"
@@ -1882,12 +1738,11 @@
     },
     {
       "key": "ss",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "South Sudan",
-        "extra": "The world's newest country, split from Sudan in 2011; the White Nile runs through it.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/South%20Sudan%20%28orthographic%20projection%29.svg?width=640"
+        "country": "SS",
+        "answer": "South Sudan",
+        "extra": "The world's newest country, split from Sudan in 2011; the White Nile runs through it."
       },
       "tags": [
         "geo::africa"
@@ -1895,12 +1750,11 @@
     },
     {
       "key": "sd",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Sudan",
-        "extra": "The northern of the two Sudans, on the Red Sea below Egypt; largest African country until 2011.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Sudan%20%28orthographic%20projection%29.svg?width=640"
+        "country": "SD",
+        "answer": "Sudan",
+        "extra": "The northern of the two Sudans, on the Red Sea below Egypt; largest African country until 2011."
       },
       "tags": [
         "geo::africa"
@@ -1908,12 +1762,11 @@
     },
     {
       "key": "tz",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Tanzania",
-        "extra": "Touches all three African Great Lakes: Victoria, Tanganyika, and Malawi.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Tanzania%20%28orthographic%20projection%29.svg?width=640"
+        "country": "TZ",
+        "answer": "Tanzania",
+        "extra": "Touches all three African Great Lakes: Victoria, Tanganyika, and Malawi."
       },
       "tags": [
         "geo::africa"
@@ -1921,12 +1774,11 @@
     },
     {
       "key": "tg",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Togo",
-        "extra": "Narrow strip between Ghana and Benin, only about 55 km of coastline.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Togo%20%28orthographic%20projection%29.svg?width=640"
+        "country": "TG",
+        "answer": "Togo",
+        "extra": "Narrow strip between Ghana and Benin, only about 55 km of coastline."
       },
       "tags": [
         "geo::africa"
@@ -1934,12 +1786,11 @@
     },
     {
       "key": "tn",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Tunisia",
-        "extra": "Northernmost country in Africa, pointing at Sicily.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Tunisia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "TN",
+        "answer": "Tunisia",
+        "extra": "Northernmost country in Africa, pointing at Sicily."
       },
       "tags": [
         "geo::africa"
@@ -1947,12 +1798,11 @@
     },
     {
       "key": "ug",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Uganda",
-        "extra": "Landlocked on the north shore of Lake Victoria.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Uganda%20%28orthographic%20projection%29.svg?width=640"
+        "country": "UG",
+        "answer": "Uganda",
+        "extra": "Landlocked on the north shore of Lake Victoria."
       },
       "tags": [
         "geo::africa"
@@ -1960,12 +1810,11 @@
     },
     {
       "key": "zm",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Zambia",
-        "extra": "Butterfly shape; Victoria Falls sits on its border with Zimbabwe.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Zambia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "ZM",
+        "answer": "Zambia",
+        "extra": "Butterfly shape; Victoria Falls sits on its border with Zimbabwe."
       },
       "tags": [
         "geo::africa"
@@ -1973,12 +1822,11 @@
     },
     {
       "key": "zw",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Zimbabwe",
-        "extra": "Landlocked between the Zambezi and Limpopo rivers.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Zimbabwe%20%28orthographic%20projection%29.svg?width=640"
+        "country": "ZW",
+        "answer": "Zimbabwe",
+        "extra": "Landlocked between the Zambezi and Limpopo rivers."
       },
       "tags": [
         "geo::africa"
@@ -1986,12 +1834,11 @@
     },
     {
       "key": "ag",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Antigua and Barbuda",
-        "extra": "Twin islands at the north end of the Lesser Antilles.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Antigua%20and%20Barbuda%20on%20the%20globe%20%28Americas%20centered%29.svg?width=640"
+        "country": "AG",
+        "answer": "Antigua and Barbuda",
+        "extra": "Twin islands at the north end of the Lesser Antilles."
       },
       "tags": [
         "geo::americas"
@@ -1999,12 +1846,11 @@
     },
     {
       "key": "ar",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Argentina",
-        "extra": "Tapers from the Pampas down to Tierra del Fuego.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Argentina%20%28orthographic%20projection%29.svg?width=640"
+        "country": "AR",
+        "answer": "Argentina",
+        "extra": "Tapers from the Pampas down to Tierra del Fuego."
       },
       "tags": [
         "geo::americas"
@@ -2012,12 +1858,11 @@
     },
     {
       "key": "bs",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "The Bahamas",
-        "extra": "Chain of about 700 islands starting just off Florida.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Bahamas%20on%20the%20globe%20%28Americas%20centered%29.svg?width=640"
+        "country": "BS",
+        "answer": "The Bahamas",
+        "extra": "Chain of about 700 islands starting just off Florida."
       },
       "tags": [
         "geo::americas"
@@ -2025,12 +1870,11 @@
     },
     {
       "key": "bb",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Barbados",
-        "extra": "Easternmost Caribbean island, sitting apart from the Antilles arc.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Barbados%20on%20the%20globe%20%28Americas%20centered%29.svg?width=640"
+        "country": "BB",
+        "answer": "Barbados",
+        "extra": "Easternmost Caribbean island, sitting apart from the Antilles arc."
       },
       "tags": [
         "geo::americas"
@@ -2038,12 +1882,11 @@
     },
     {
       "key": "bz",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Belize",
-        "extra": "Small Caribbean-coast state below the Yucatan, east of Guatemala.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Belize%20on%20the%20globe%20%28Americas%20centered%29.svg?width=640"
+        "country": "BZ",
+        "answer": "Belize",
+        "extra": "Small Caribbean-coast state below the Yucatan, east of Guatemala."
       },
       "tags": [
         "geo::americas"
@@ -2051,12 +1894,11 @@
     },
     {
       "key": "bo",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Bolivia",
-        "extra": "Landlocked since losing its coast to Chile in the 1880s; Lake Titicaca is on its border with Peru.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bolivia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "BO",
+        "answer": "Bolivia",
+        "extra": "Landlocked since losing its coast to Chile in the 1880s; Lake Titicaca is on its border with Peru."
       },
       "tags": [
         "geo::americas"
@@ -2064,12 +1906,11 @@
     },
     {
       "key": "ca",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Canada",
-        "extra": "Second largest country in the world; the huge bay in the middle is Hudson Bay.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Canada%20%28orthographic%20projection%29.svg?width=640"
+        "country": "CA",
+        "answer": "Canada",
+        "extra": "Second largest country in the world; the huge bay in the middle is Hudson Bay."
       },
       "tags": [
         "geo::americas"
@@ -2077,12 +1918,11 @@
     },
     {
       "key": "co",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Colombia",
-        "extra": "The only South American country with both Caribbean and Pacific coasts.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Colombia%20%28orthographic%20projection%29.svg?width=640"
+        "country": "CO",
+        "answer": "Colombia",
+        "extra": "The only South American country with both Caribbean and Pacific coasts."
       },
       "tags": [
         "geo::americas"
@@ -2090,12 +1930,11 @@
     },
     {
       "key": "cr",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Costa Rica",
-        "extra": "Between Nicaragua and Panama; famously abolished its army in 1948.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Costa%20Rica%20%28orthographic%20projection%29.svg?width=640"
+        "country": "CR",
+        "answer": "Costa Rica",
+        "extra": "Between Nicaragua and Panama; famously abolished its army in 1948."
       },
       "tags": [
         "geo::americas"
@@ -2103,12 +1942,11 @@
     },
     {
       "key": "cu",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Cuba",
-        "extra": "Long crocodile-shaped island, the largest in the Caribbean.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Cuba%20%28orthographic%20projection%29.svg?width=640"
+        "country": "CU",
+        "answer": "Cuba",
+        "extra": "Long crocodile-shaped island, the largest in the Caribbean."
       },
       "tags": [
         "geo::americas"
@@ -2116,12 +1954,11 @@
     },
     {
       "key": "dm",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Dominica",
-        "extra": "Mountainous Lesser Antilles island between Guadeloupe and Martinique; not the Dominican Republic.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Dominica%20on%20the%20globe%20%28Americas%20centered%29.svg?width=640"
+        "country": "DM",
+        "answer": "Dominica",
+        "extra": "Mountainous Lesser Antilles island between Guadeloupe and Martinique; not the Dominican Republic."
       },
       "tags": [
         "geo::americas"
@@ -2129,12 +1966,11 @@
     },
     {
       "key": "do",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "The Dominican Republic",
-        "extra": "Eastern two thirds of Hispaniola, shared with Haiti.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Dominican%20Republic%20%28orthographic%20projection%29.svg?width=640"
+        "country": "DO",
+        "answer": "The Dominican Republic",
+        "extra": "Eastern two thirds of Hispaniola, shared with Haiti."
       },
       "tags": [
         "geo::americas"
@@ -2142,12 +1978,11 @@
     },
     {
       "key": "ec",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Ecuador",
-        "extra": "Named for the Equator; the Galapagos Islands lie 1000 km offshore.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Ecuador%20%28orthographic%20projection%29.svg?width=640"
+        "country": "EC",
+        "answer": "Ecuador",
+        "extra": "Named for the Equator; the Galapagos Islands lie 1000 km offshore."
       },
       "tags": [
         "geo::americas"
@@ -2155,12 +1990,11 @@
     },
     {
       "key": "sv",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "El Salvador",
-        "extra": "Smallest Central American country and the only one without a Caribbean coast.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/El%20Salvador%20%28orthographic%20projection%29.svg?width=640"
+        "country": "SV",
+        "answer": "El Salvador",
+        "extra": "Smallest Central American country and the only one without a Caribbean coast."
       },
       "tags": [
         "geo::americas"
@@ -2168,12 +2002,11 @@
     },
     {
       "key": "gd",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Grenada",
-        "extra": "Spice Isle at the south end of the Lesser Antilles, just north of Trinidad.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Grenada%20on%20the%20globe%20%28Americas%20centered%29.svg?width=640"
+        "country": "GD",
+        "answer": "Grenada",
+        "extra": "Spice Isle at the south end of the Lesser Antilles, just north of Trinidad."
       },
       "tags": [
         "geo::americas"
@@ -2181,12 +2014,11 @@
     },
     {
       "key": "gt",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Guatemala",
-        "extra": "Just south of Mexico; the notch in its northeast is Belize.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Guatemala%20%28orthographic%20projection%29.svg?width=640"
+        "country": "GT",
+        "answer": "Guatemala",
+        "extra": "Just south of Mexico; the notch in its northeast is Belize."
       },
       "tags": [
         "geo::americas"
@@ -2194,12 +2026,11 @@
     },
     {
       "key": "gy",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Guyana",
-        "extra": "Westernmost of the three Guianas, between Venezuela and Suriname.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Guyana%20%28orthographic%20projection%29.svg?width=640"
+        "country": "GY",
+        "answer": "Guyana",
+        "extra": "Westernmost of the three Guianas, between Venezuela and Suriname."
       },
       "tags": [
         "geo::americas"
@@ -2207,12 +2038,11 @@
     },
     {
       "key": "ht",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Haiti",
-        "extra": "Western third of Hispaniola; the two peninsulas open like a crab claw toward Cuba.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Haiti%20%28orthographic%20projection%29.svg?width=640"
+        "country": "HT",
+        "answer": "Haiti",
+        "extra": "Western third of Hispaniola; the two peninsulas open like a crab claw toward Cuba."
       },
       "tags": [
         "geo::americas"
@@ -2220,12 +2050,11 @@
     },
     {
       "key": "hn",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Honduras",
-        "extra": "Wide Caribbean coast between Guatemala and Nicaragua.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Honduras%20%28orthographic%20projection%29.svg?width=640"
+        "country": "HN",
+        "answer": "Honduras",
+        "extra": "Wide Caribbean coast between Guatemala and Nicaragua."
       },
       "tags": [
         "geo::americas"
@@ -2233,12 +2062,11 @@
     },
     {
       "key": "jm",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Jamaica",
-        "extra": "South of Cuba, third largest Caribbean island.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Jamaica%20%28orthographic%20projection%29.svg?width=640"
+        "country": "JM",
+        "answer": "Jamaica",
+        "extra": "South of Cuba, third largest Caribbean island."
       },
       "tags": [
         "geo::americas"
@@ -2246,12 +2074,11 @@
     },
     {
       "key": "mx",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Mexico",
-        "extra": "The Baja California peninsula parallels its Pacific coast.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Mexico%20%28orthographic%20projection%29.svg?width=640"
+        "country": "MX",
+        "answer": "Mexico",
+        "extra": "The Baja California peninsula parallels its Pacific coast."
       },
       "tags": [
         "geo::americas"
@@ -2259,12 +2086,11 @@
     },
     {
       "key": "ni",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Nicaragua",
-        "extra": "Largest Central American country; the big lake near the Pacific side shares its name.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicaragua%20%28orthographic%20projection%29.svg?width=640"
+        "country": "NI",
+        "answer": "Nicaragua",
+        "extra": "Largest Central American country; the big lake near the Pacific side shares its name."
       },
       "tags": [
         "geo::americas"
@@ -2272,12 +2098,11 @@
     },
     {
       "key": "pa",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Panama",
-        "extra": "S-shaped isthmus connecting the Americas; runs east-west, not north-south.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Panama%20%28orthographic%20projection%29.svg?width=640"
+        "country": "PA",
+        "answer": "Panama",
+        "extra": "S-shaped isthmus connecting the Americas; runs east-west, not north-south."
       },
       "tags": [
         "geo::americas"
@@ -2285,12 +2110,11 @@
     },
     {
       "key": "py",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Paraguay",
-        "extra": "One of South America's two landlocked countries, split by its namesake river.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Paraguay%20%28orthographic%20projection%29.svg?width=640"
+        "country": "PY",
+        "answer": "Paraguay",
+        "extra": "One of South America's two landlocked countries, split by its namesake river."
       },
       "tags": [
         "geo::americas"
@@ -2298,12 +2122,11 @@
     },
     {
       "key": "pe",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Peru",
-        "extra": "Pacific coast of South America between Ecuador and Chile.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Peru%20%28orthographic%20projection%29.svg?width=640"
+        "country": "PE",
+        "answer": "Peru",
+        "extra": "Pacific coast of South America between Ecuador and Chile."
       },
       "tags": [
         "geo::americas"
@@ -2311,12 +2134,11 @@
     },
     {
       "key": "kn",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Saint Kitts and Nevis",
-        "extra": "Smallest country in the Americas, two islands in the northern Lesser Antilles.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Kitts%20and%20Nevis%20on%20the%20globe%20%28Americas%20centered%29.svg?width=640"
+        "country": "KN",
+        "answer": "Saint Kitts and Nevis",
+        "extra": "Smallest country in the Americas, two islands in the northern Lesser Antilles."
       },
       "tags": [
         "geo::americas"
@@ -2324,12 +2146,11 @@
     },
     {
       "key": "lc",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Saint Lucia",
-        "extra": "Lesser Antilles island between Martinique and Saint Vincent.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Lucia%20on%20the%20globe%20%28Americas%20centered%29.svg?width=640"
+        "country": "LC",
+        "answer": "Saint Lucia",
+        "extra": "Lesser Antilles island between Martinique and Saint Vincent."
       },
       "tags": [
         "geo::americas"
@@ -2337,12 +2158,11 @@
     },
     {
       "key": "vc",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Saint Vincent and the Grenadines",
-        "extra": "Main island plus a chain of Grenadines running toward Grenada.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Vincent%20and%20the%20Grenadines%20on%20the%20globe%20%28Americas%20centered%29.svg?width=640"
+        "country": "VC",
+        "answer": "Saint Vincent and the Grenadines",
+        "extra": "Main island plus a chain of Grenadines running toward Grenada."
       },
       "tags": [
         "geo::americas"
@@ -2350,12 +2170,11 @@
     },
     {
       "key": "sr",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Suriname",
-        "extra": "Smallest independent country in South America; middle of the three Guianas.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Suriname%20%28orthographic%20projection%29.svg?width=640"
+        "country": "SR",
+        "answer": "Suriname",
+        "extra": "Smallest independent country in South America; middle of the three Guianas."
       },
       "tags": [
         "geo::americas"
@@ -2363,12 +2182,11 @@
     },
     {
       "key": "tt",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Trinidad and Tobago",
-        "extra": "Two islands just off the Venezuelan coast.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Trinidad%20and%20Tobago%20%28orthographic%20projection%29.svg?width=640"
+        "country": "TT",
+        "answer": "Trinidad and Tobago",
+        "extra": "Two islands just off the Venezuelan coast."
       },
       "tags": [
         "geo::americas"
@@ -2376,12 +2194,11 @@
     },
     {
       "key": "uy",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Uruguay",
-        "extra": "Small wedge between Brazil and Argentina on the Rio de la Plata.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Uruguay%20%28orthographic%20projection%29.svg?width=640"
+        "country": "UY",
+        "answer": "Uruguay",
+        "extra": "Small wedge between Brazil and Argentina on the Rio de la Plata."
       },
       "tags": [
         "geo::americas"
@@ -2389,12 +2206,11 @@
     },
     {
       "key": "ve",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Venezuela",
-        "extra": "On the Caribbean coast of South America; Lake Maracaibo opens to the sea in its northwest.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Venezuela%20%28orthographic%20projection%29.svg?width=640"
+        "country": "VE",
+        "answer": "Venezuela",
+        "extra": "On the Caribbean coast of South America; Lake Maracaibo opens to the sea in its northwest."
       },
       "tags": [
         "geo::americas"
@@ -2402,12 +2218,11 @@
     },
     {
       "key": "fj",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Fiji",
-        "extra": "Two main islands, Viti Levu and Vanua Levu, plus hundreds more; the 180th meridian passes through it.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Fiji%20%28orthographic%20projection%29.svg?width=640"
+        "country": "FJ",
+        "answer": "Fiji",
+        "extra": "Two main islands, Viti Levu and Vanua Levu, plus hundreds more; the 180th meridian passes through it."
       },
       "tags": [
         "geo::oceania"
@@ -2415,12 +2230,11 @@
     },
     {
       "key": "ki",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Kiribati",
-        "extra": "Atolls scattered across all four hemispheres, straddling both the Equator and the antimeridian.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Kiribati%20on%20the%20globe%20%28small%20islands%20magnified%29%20%28Polynesia%20centered%29.svg?width=640"
+        "country": "KI",
+        "answer": "Kiribati",
+        "extra": "Atolls scattered across all four hemispheres, straddling both the Equator and the antimeridian."
       },
       "tags": [
         "geo::oceania"
@@ -2428,12 +2242,11 @@
     },
     {
       "key": "mh",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "The Marshall Islands",
-        "extra": "Two parallel chains of atolls in Micronesia, including Bikini.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Marshall%20Islands%20on%20the%20globe%20%28small%20islands%20magnified%29%20%28Polynesia%20centered%29.svg?width=640"
+        "country": "MH",
+        "answer": "The Marshall Islands",
+        "extra": "Two parallel chains of atolls in Micronesia, including Bikini."
       },
       "tags": [
         "geo::oceania"
@@ -2441,12 +2254,11 @@
     },
     {
       "key": "fm",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Micronesia",
-        "extra": "The Federated States: four island groups stretching across the Caroline Islands.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Micronesia%20on%20the%20globe%20%28small%20islands%20magnified%29%20%28Polynesia%20centered%29.svg?width=640"
+        "country": "FM",
+        "answer": "Micronesia",
+        "extra": "The Federated States: four island groups stretching across the Caroline Islands."
       },
       "tags": [
         "geo::oceania"
@@ -2454,12 +2266,11 @@
     },
     {
       "key": "nr",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Nauru",
-        "extra": "Smallest island country in the world, a single raised coral island near the Equator.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Nauru%20on%20the%20globe%20%28small%20islands%20magnified%29%20%28Polynesia%20centered%29.svg?width=640"
+        "country": "NR",
+        "answer": "Nauru",
+        "extra": "Smallest island country in the world, a single raised coral island near the Equator."
       },
       "tags": [
         "geo::oceania"
@@ -2467,12 +2278,11 @@
     },
     {
       "key": "nz",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "New Zealand",
-        "extra": "Two main islands separated by the Cook Strait.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/New%20Zealand%20%28orthographic%20projection%29.svg?width=640"
+        "country": "NZ",
+        "answer": "New Zealand",
+        "extra": "Two main islands separated by the Cook Strait."
       },
       "tags": [
         "geo::oceania"
@@ -2480,12 +2290,11 @@
     },
     {
       "key": "pw",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Palau",
-        "extra": "Western edge of Micronesia, east of the Philippines.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Palau%20on%20the%20globe%20%28small%20islands%20magnified%29%20%28Polynesia%20centered%29.svg?width=640"
+        "country": "PW",
+        "answer": "Palau",
+        "extra": "Western edge of Micronesia, east of the Philippines."
       },
       "tags": [
         "geo::oceania"
@@ -2493,12 +2302,11 @@
     },
     {
       "key": "pg",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Papua New Guinea",
-        "extra": "Eastern half of New Guinea plus the Bismarck Archipelago and Bougainville.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Papua%20New%20Guinea%20%28orthographic%20projection%29.svg?width=640"
+        "country": "PG",
+        "answer": "Papua New Guinea",
+        "extra": "Eastern half of New Guinea plus the Bismarck Archipelago and Bougainville."
       },
       "tags": [
         "geo::oceania"
@@ -2506,12 +2314,11 @@
     },
     {
       "key": "ws",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Samoa",
-        "extra": "The independent western islands; American Samoa lies just to the east.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Samoa%20on%20the%20globe%20%28small%20islands%20magnified%29%20%28Polynesia%20centered%29.svg?width=640"
+        "country": "WS",
+        "answer": "Samoa",
+        "extra": "The independent western islands; American Samoa lies just to the east."
       },
       "tags": [
         "geo::oceania"
@@ -2519,12 +2326,11 @@
     },
     {
       "key": "sb",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "The Solomon Islands",
-        "extra": "Double chain of islands east of Papua New Guinea, including Guadalcanal.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Solomon%20Islands%20on%20the%20globe%20%28Oceania%20centered%29.svg?width=640"
+        "country": "SB",
+        "answer": "The Solomon Islands",
+        "extra": "Double chain of islands east of Papua New Guinea, including Guadalcanal."
       },
       "tags": [
         "geo::oceania"
@@ -2532,12 +2338,11 @@
     },
     {
       "key": "to",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Tonga",
-        "extra": "The only remaining Pacific kingdom, south of Samoa.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Tonga%20on%20the%20globe%20%28small%20islands%20magnified%29%20%28Polynesia%20centered%29.svg?width=640"
+        "country": "TO",
+        "answer": "Tonga",
+        "extra": "The only remaining Pacific kingdom, south of Samoa."
       },
       "tags": [
         "geo::oceania"
@@ -2545,12 +2350,11 @@
     },
     {
       "key": "tv",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Tuvalu",
-        "extra": "Nine tiny atolls between Kiribati and Fiji; fourth smallest country.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Tuvalu%20on%20the%20globe%20%28small%20islands%20magnified%29%20%28Polynesia%20centered%29.svg?width=640"
+        "country": "TV",
+        "answer": "Tuvalu",
+        "extra": "Nine tiny atolls between Kiribati and Fiji; fourth smallest country."
       },
       "tags": [
         "geo::oceania"
@@ -2558,12 +2362,11 @@
     },
     {
       "key": "vu",
-      "model": "basic",
+      "model": "globe",
       "fields": {
-        "front": "Which country is highlighted?",
-        "back": "Vanuatu",
-        "extra": "Y-shaped chain of volcanic islands east of Australia, formerly the New Hebrides.",
-        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Vanuatu%20on%20the%20globe%20%28Oceania%20centered%29.svg?width=640"
+        "country": "VU",
+        "answer": "Vanuatu",
+        "extra": "Y-shaped chain of volcanic islands east of Australia, formerly the New Hebrides."
       },
       "tags": [
         "geo::oceania"

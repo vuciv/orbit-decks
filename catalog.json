@@ -12,7 +12,7 @@
       "key": "geography",
       "name": "Geography",
       "deckCount": 4,
-      "rev": "b5a0122b7491",
+      "rev": "488e3cd0d1e2",
       "file": "categories/geography.json"
     },
     {
@@ -155,7 +155,7 @@
     },
     {
       "key": "country-silhouettes",
-      "version": 1,
+      "version": 2,
       "file": "decks/country-silhouettes.json"
     },
     {

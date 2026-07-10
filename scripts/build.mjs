@@ -25,7 +25,8 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const errors = [];
 const fail = (msg) => errors.push(msg);
 
-const MODELS = ['basic', 'basic_reversed', 'cloze', 'typed', 'sequence', 'occlusion', 'chess'];
+const MODELS = ['basic', 'basic_reversed', 'cloze', 'typed', 'sequence', 'occlusion', 'chess', 'globe'];
+const COUNTRY_RE = /^[A-Z]{2}$/;
 const UCI_RE = /^[a-h][1-8][a-h][1-8][qrbn]?$/;
 const KEY_RE = /^[a-z0-9][a-z0-9-]*$/;
 // Root order is UI display order; unknown categories append alphabetically.
@@ -77,6 +78,7 @@ function cardCountForNote(note) {
     case 'occlusion':
       return note.fields.masks.length;
     case 'chess':
+    case 'globe':
       return 1;
     default:
       return 0;
@@ -129,6 +131,15 @@ function validateFields(where, model, f) {
       if (!optStr(f.prompt) || !optStr(f.extra)) fail(`${where}: bad prompt/extra`);
       break;
     }
+    case 'globe':
+      // Resolvability against the app's bundled world atlas is checked by
+      // orbit's scripts/check-packs.ts; shape only here.
+      if (typeof f.country !== 'string' || !COUNTRY_RE.test(f.country)) {
+        fail(`${where}: country must be an uppercase ISO 3166-1 alpha-2 code`);
+      }
+      if (!isStr(f.answer)) fail(`${where}: needs answer`);
+      if (!optStr(f.prompt) || !optStr(f.extra)) fail(`${where}: bad prompt/extra`);
+      break;
     case 'occlusion':
       if (!isStr(f.imageUri) || !f.imageUri.startsWith('https://')) {
         fail(`${where}: imageUri must be an https URL`);

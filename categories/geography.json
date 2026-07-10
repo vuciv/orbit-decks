@@ -18,7 +18,7 @@
     {
       "key": "country-silhouettes",
       "name": "Name That Country",
-      "description": "Identify countries from their silhouette and position on the globe: every UN member and observer state, plus Kosovo and Taiwan.",
+      "description": "Name every UN member and observer state, plus Kosovo and Taiwan, from its place on an interactive globe: spin, pinch to zoom, and learn where each country really sits.",
       "cardCount": 197,
       "topics": [
         "geography",
