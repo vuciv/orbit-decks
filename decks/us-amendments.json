@@ -1,0 +1,341 @@
+{
+  "key": "us-amendments",
+  "version": 1,
+  "name": "US Constitutional Amendments",
+  "description": "All 27 amendments to the US Constitution, drilled both ways: what each amendment does, and which amendment secures each right. Ratification year, confusable warnings, and one line of context on every card.",
+  "category": "History",
+  "topics": [
+    "history",
+    "usa",
+    "constitution",
+    "civics"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bill%20of%20Rights%20Pg1of1%20AC.jpg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "amendment-1",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "1st Amendment",
+        "back": "Freedom of religion, speech, press, assembly, and petition",
+        "extra": "Ratified 1791 (Bill of Rights). Five freedoms in one amendment; remember RAPPS: Religion, Assembly, Press, Petition, Speech."
+      },
+      "tags": [
+        "amendments::bill-of-rights"
+      ]
+    },
+    {
+      "key": "amendment-2",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "2nd Amendment",
+        "back": "The right to keep and bear arms",
+        "extra": "Ratified 1791 (Bill of Rights). Its text ties the right to \"a well regulated Militia,\" the source of two centuries of debate."
+      },
+      "tags": [
+        "amendments::bill-of-rights"
+      ]
+    },
+    {
+      "key": "amendment-3",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "3rd Amendment",
+        "back": "No quartering of soldiers in private homes without the owner's consent",
+        "extra": "Ratified 1791 (Bill of Rights). A direct response to the British Quartering Acts; almost never litigated since."
+      },
+      "tags": [
+        "amendments::bill-of-rights"
+      ]
+    },
+    {
+      "key": "amendment-4",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "4th Amendment",
+        "back": "No unreasonable searches and seizures; warrants require probable cause",
+        "extra": "Ratified 1791 (Bill of Rights). Source of the exclusionary rule: evidence from an illegal search is generally inadmissible."
+      },
+      "tags": [
+        "amendments::bill-of-rights"
+      ]
+    },
+    {
+      "key": "amendment-5",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "5th Amendment",
+        "back": "Grand jury indictment, no double jeopardy, no forced self-incrimination, due process, and just compensation for takings",
+        "extra": "Ratified 1791 (Bill of Rights). \"Pleading the Fifth\" means refusing to testify against yourself; the takings clause is the basis of eminent domain."
+      },
+      "tags": [
+        "amendments::bill-of-rights"
+      ]
+    },
+    {
+      "key": "amendment-6",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "6th Amendment",
+        "back": "Criminal trial rights: a speedy public trial by an impartial jury, notice of charges, confronting witnesses, and the assistance of counsel",
+        "extra": "Ratified 1791 (Bill of Rights). Basis of the court-appointed lawyer (Gideon v. Wainwright, 1963). The 6th covers criminal trials; the 7th covers civil ones."
+      },
+      "tags": [
+        "amendments::bill-of-rights"
+      ]
+    },
+    {
+      "key": "amendment-7",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "7th Amendment",
+        "back": "The right to a jury trial in federal civil cases",
+        "extra": "Ratified 1791 (Bill of Rights). Its $20 threshold is still in the text, unchanged since 1791."
+      },
+      "tags": [
+        "amendments::bill-of-rights"
+      ]
+    },
+    {
+      "key": "amendment-8",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "8th Amendment",
+        "back": "No excessive bail, excessive fines, or cruel and unusual punishment",
+        "extra": "Ratified 1791 (Bill of Rights). Central to modern litigation over the death penalty and prison conditions."
+      },
+      "tags": [
+        "amendments::bill-of-rights"
+      ]
+    },
+    {
+      "key": "amendment-9",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "9th Amendment",
+        "back": "Listing rights in the Constitution does not deny other rights retained by the people",
+        "extra": "Ratified 1791 (Bill of Rights). Confusable: the 9th is about unlisted RIGHTS kept by the people; the 10th is about unlisted POWERS kept by the states."
+      },
+      "tags": [
+        "amendments::bill-of-rights"
+      ]
+    },
+    {
+      "key": "amendment-10",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "10th Amendment",
+        "back": "Powers not delegated to the federal government are reserved to the states or the people",
+        "extra": "Ratified 1791 (Bill of Rights). The federalism amendment, invoked in every states'-rights argument since."
+      },
+      "tags": [
+        "amendments::bill-of-rights"
+      ]
+    },
+    {
+      "key": "amendment-11",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "11th Amendment",
+        "back": "States cannot be sued in federal court by citizens of another state or of a foreign country",
+        "extra": "Ratified 1795, the first amendment after the Bill of Rights. Overturned Chisholm v. Georgia (1793); the foundation of state sovereign immunity."
+      },
+      "tags": [
+        "amendments::early-republic"
+      ]
+    },
+    {
+      "key": "amendment-12",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "12th Amendment",
+        "back": "Electors cast separate votes for President and Vice President",
+        "extra": "Ratified 1804. Fixed the election of 1800, when Jefferson tied with his own running mate Aaron Burr and the House needed 36 ballots to break it."
+      },
+      "tags": [
+        "amendments::early-republic"
+      ]
+    },
+    {
+      "key": "amendment-13",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "13th Amendment",
+        "back": "Abolished slavery and involuntary servitude",
+        "extra": "Ratified 1865. First of the three Reconstruction Amendments (13-14-15: free, citizen, vote). Its exception clause still allows forced labor as punishment for crime."
+      },
+      "tags": [
+        "amendments::reconstruction"
+      ]
+    },
+    {
+      "key": "amendment-14",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "14th Amendment",
+        "back": "Birthright citizenship, due process, and equal protection of the laws, binding on the states",
+        "extra": "Ratified 1868. The most-litigated amendment; the vehicle through which most of the Bill of Rights was applied to the states."
+      },
+      "tags": [
+        "amendments::reconstruction"
+      ]
+    },
+    {
+      "key": "amendment-15",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "15th Amendment",
+        "back": "The right to vote cannot be denied based on race, color, or previous condition of servitude",
+        "extra": "Ratified 1870, the last Reconstruction Amendment. Voting confusables: 15th = race, 19th = sex, 24th = poll tax, 26th = age 18."
+      },
+      "tags": [
+        "amendments::reconstruction"
+      ]
+    },
+    {
+      "key": "amendment-16",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "16th Amendment",
+        "back": "Congress can levy a federal income tax",
+        "extra": "Ratified 1913. Overturned Pollock v. Farmers' Loan & Trust (1895), which had struck down a federal income tax."
+      },
+      "tags": [
+        "amendments::progressive-era"
+      ]
+    },
+    {
+      "key": "amendment-17",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "17th Amendment",
+        "back": "Direct election of US senators by the people",
+        "extra": "Ratified 1913. Before this, state legislatures chose senators. 16th and 17th passed the same year: tax and Senate."
+      },
+      "tags": [
+        "amendments::progressive-era"
+      ]
+    },
+    {
+      "key": "amendment-18",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "18th Amendment",
+        "back": "Prohibition: banned the manufacture, sale, and transport of alcohol",
+        "extra": "Ratified 1919. The only amendment ever repealed, by the 21st in 1933. Pair: 18 turns Prohibition on, 21 turns it off (drinking age joke: 21 legalizes)."
+      },
+      "tags": [
+        "amendments::progressive-era"
+      ]
+    },
+    {
+      "key": "amendment-19",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "19th Amendment",
+        "back": "The right to vote cannot be denied on account of sex",
+        "extra": "Ratified 1920. Women's suffrage, the culmination of the movement Susan B. Anthony led; she died 14 years too early to see it."
+      },
+      "tags": [
+        "amendments::progressive-era"
+      ]
+    },
+    {
+      "key": "amendment-20",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "20th Amendment",
+        "back": "Moved the presidential inauguration to January 20 and the start of Congress to January 3",
+        "extra": "Ratified 1933. The \"Lame Duck Amendment\": it shortened the four-month gap between election and taking office."
+      },
+      "tags": [
+        "amendments::modern"
+      ]
+    },
+    {
+      "key": "amendment-21",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "21st Amendment",
+        "back": "Repealed Prohibition (the 18th Amendment)",
+        "extra": "Ratified 1933. The only amendment ratified by state conventions rather than state legislatures."
+      },
+      "tags": [
+        "amendments::modern"
+      ]
+    },
+    {
+      "key": "amendment-22",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "22nd Amendment",
+        "back": "No person may be elected President more than twice",
+        "extra": "Ratified 1951, a reaction to Franklin Roosevelt's four terms. A VP who serves more than two years of someone else's term can be elected only once."
+      },
+      "tags": [
+        "amendments::modern"
+      ]
+    },
+    {
+      "key": "amendment-23",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "23rd Amendment",
+        "back": "Washington, DC gets electoral votes in presidential elections",
+        "extra": "Ratified 1961. DC gets no more electors than the least populous state, which works out to three."
+      },
+      "tags": [
+        "amendments::modern"
+      ]
+    },
+    {
+      "key": "amendment-24",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "24th Amendment",
+        "back": "Banned poll taxes in federal elections",
+        "extra": "Ratified 1964, at the height of the civil rights movement; poll taxes had been used to keep Black citizens from voting since Jim Crow."
+      },
+      "tags": [
+        "amendments::modern"
+      ]
+    },
+    {
+      "key": "amendment-25",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "25th Amendment",
+        "back": "Presidential succession and disability: the Vice President takes over, and vice-presidential vacancies are filled",
+        "extra": "Ratified 1967, prompted by JFK's assassination. Section 4 lets the VP and Cabinet declare the President unable to serve."
+      },
+      "tags": [
+        "amendments::modern"
+      ]
+    },
+    {
+      "key": "amendment-26",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "26th Amendment",
+        "back": "Lowered the voting age to 18",
+        "extra": "Ratified 1971 during the Vietnam War: \"old enough to fight, old enough to vote.\" Fastest ratification of any amendment, about 100 days."
+      },
+      "tags": [
+        "amendments::modern"
+      ]
+    },
+    {
+      "key": "amendment-27",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "27th Amendment",
+        "back": "Congressional pay changes take effect only after the next House election",
+        "extra": "Ratified 1992 but proposed in 1789: a 202-year wait, revived by a college student (Gregory Watson) whose term paper on it got a C."
+      },
+      "tags": [
+        "amendments::modern"
+      ]
+    }
+  ]
+}

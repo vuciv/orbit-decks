@@ -4,6 +4,32 @@
   "name": "History",
   "decks": [
     {
+      "key": "us-citizenship-test",
+      "name": "US Citizenship Test",
+      "description": "All 100 official civics questions from the USCIS naturalization test (2008 version, the one in use today), in official order with the official answers. The 20 questions on the shortened 65/20 test are tagged.",
+      "cardCount": 100,
+      "topics": [
+        "civics",
+        "usa",
+        "citizenship",
+        "history"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Statue%20of%20Liberty%207.jpg?width=640"
+    },
+    {
+      "key": "us-amendments",
+      "name": "US Constitutional Amendments",
+      "description": "All 27 amendments to the US Constitution, drilled both ways: what each amendment does, and which amendment secures each right. Ratification year, confusable warnings, and one line of context on every card.",
+      "cardCount": 54,
+      "topics": [
+        "history",
+        "usa",
+        "constitution",
+        "civics"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bill%20of%20Rights%20Pg1of1%20AC.jpg?width=640"
+    },
+    {
       "key": "us-presidents",
       "name": "US Presidents",
       "description": "All 45 people who have served as President of the United States, in chronological order from Washington onward, with official portraits, terms, parties, and one memorable fact each.",

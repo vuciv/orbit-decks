@@ -34,5 +34,11 @@
     "title": "Learn a language",
     "description": "The essential first thousand cards, with speech on every card.",
     "deckKeys": ["essential-spanish", "essential-chinese"]
+  },
+  {
+    "key": "american-civics",
+    "title": "American civics",
+    "description": "The citizenship test, the amendments, the presidents, the states.",
+    "deckKeys": ["us-citizenship-test", "us-amendments", "us-presidents", "us-states"]
   }
 ]

@@ -1,0 +1,1198 @@
+{
+  "key": "us-citizenship-test",
+  "version": 1,
+  "name": "US Citizenship Test",
+  "description": "All 100 official civics questions from the USCIS naturalization test (2008 version, the one in use today), in official order with the official answers. The 20 questions on the shortened 65/20 test are tagged.",
+  "category": "History",
+  "topics": [
+    "civics",
+    "usa",
+    "citizenship",
+    "history"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Statue%20of%20Liberty%207.jpg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "q01-supreme-law",
+      "model": "basic",
+      "fields": {
+        "front": "What is the supreme law of the land?",
+        "back": "The Constitution",
+        "extra": "Question 1 of 100. At the interview you are asked up to 10 of these and must answer 6 correctly."
+      },
+      "tags": [
+        "civics::principles"
+      ]
+    },
+    {
+      "key": "q02-what-constitution-does",
+      "model": "basic",
+      "fields": {
+        "front": "What does the Constitution do?",
+        "back": "Any one of: sets up the government; defines the government; protects basic rights of Americans"
+      },
+      "tags": [
+        "civics::principles"
+      ]
+    },
+    {
+      "key": "q03-we-the-people",
+      "model": "basic",
+      "fields": {
+        "front": "The idea of self-government is in the first three words of the Constitution. What are these words?",
+        "back": "We the People"
+      },
+      "tags": [
+        "civics::principles"
+      ]
+    },
+    {
+      "key": "q04-amendment",
+      "model": "basic",
+      "fields": {
+        "front": "What is an amendment?",
+        "back": "A change or addition to the Constitution"
+      },
+      "tags": [
+        "civics::principles"
+      ]
+    },
+    {
+      "key": "q05-bill-of-rights",
+      "model": "basic",
+      "fields": {
+        "front": "What do we call the first ten amendments to the Constitution?",
+        "back": "The Bill of Rights",
+        "extra": "Ratified together in 1791."
+      },
+      "tags": [
+        "civics::principles"
+      ]
+    },
+    {
+      "key": "q06-first-amendment-right",
+      "model": "basic",
+      "fields": {
+        "front": "What is one right or freedom from the First Amendment?",
+        "back": "Any one of: speech; religion; assembly; press; petition the government",
+        "extra": "Also on the shortened 65/20 test (age 65+, 20+ years a permanent resident)."
+      },
+      "tags": [
+        "civics::principles",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q07-how-many-amendments",
+      "model": "basic",
+      "fields": {
+        "front": "How many amendments does the Constitution have?",
+        "back": "Twenty-seven (27)",
+        "extra": "The 27th took 202 years to ratify: proposed 1789, ratified 1992."
+      },
+      "tags": [
+        "civics::principles"
+      ]
+    },
+    {
+      "key": "q08-declaration-did",
+      "model": "basic",
+      "fields": {
+        "front": "What did the Declaration of Independence do?",
+        "back": "Any one of: announced our independence from Great Britain; declared our independence; said that the United States is free"
+      },
+      "tags": [
+        "civics::principles"
+      ]
+    },
+    {
+      "key": "q09-declaration-rights",
+      "model": "basic",
+      "fields": {
+        "front": "What are two rights in the Declaration of Independence?",
+        "back": "Any two of: life; liberty; pursuit of happiness",
+        "extra": "Careful: these are from the Declaration, not the Constitution."
+      },
+      "tags": [
+        "civics::principles"
+      ]
+    },
+    {
+      "key": "q10-freedom-of-religion",
+      "model": "basic",
+      "fields": {
+        "front": "What is freedom of religion?",
+        "back": "You can practice any religion, or not practice a religion"
+      },
+      "tags": [
+        "civics::principles"
+      ]
+    },
+    {
+      "key": "q11-economic-system",
+      "model": "basic",
+      "fields": {
+        "front": "What is the economic system in the United States?",
+        "back": "Capitalist economy (market economy)",
+        "extra": "Also on the shortened 65/20 test (age 65+, 20+ years a permanent resident)."
+      },
+      "tags": [
+        "civics::principles",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q12-rule-of-law",
+      "model": "basic",
+      "fields": {
+        "front": "What is the \"rule of law\"?",
+        "back": "Any one of: everyone must follow the law; leaders must obey the law; government must obey the law; no one is above the law"
+      },
+      "tags": [
+        "civics::principles"
+      ]
+    },
+    {
+      "key": "q13-branch-of-government",
+      "model": "basic",
+      "fields": {
+        "front": "Name one branch or part of the government.",
+        "back": "Any one of: Congress (legislative); President (executive); the courts (judicial)",
+        "extra": "Also on the shortened 65/20 test (age 65+, 20+ years a permanent resident)."
+      },
+      "tags": [
+        "civics::system-of-government",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q14-checks-and-balances",
+      "model": "basic",
+      "fields": {
+        "front": "What stops one branch of government from becoming too powerful?",
+        "back": "Checks and balances (separation of powers)"
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q15-executive-branch",
+      "model": "basic",
+      "fields": {
+        "front": "Who is in charge of the executive branch?",
+        "back": "The President"
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q16-who-makes-federal-laws",
+      "model": "basic",
+      "fields": {
+        "front": "Who makes federal laws?",
+        "back": "Congress (the Senate and House of Representatives; the US or national legislature)"
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q17-two-parts-of-congress",
+      "model": "basic",
+      "fields": {
+        "front": "What are the two parts of the U.S. Congress?",
+        "back": "The Senate and the House of Representatives",
+        "extra": "Also on the shortened 65/20 test (age 65+, 20+ years a permanent resident)."
+      },
+      "tags": [
+        "civics::system-of-government",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q18-how-many-senators",
+      "model": "basic",
+      "fields": {
+        "front": "How many U.S. Senators are there?",
+        "back": "One hundred (100)",
+        "extra": "Two per state, 50 states."
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q19-senator-term",
+      "model": "basic",
+      "fields": {
+        "front": "We elect a U.S. Senator for how many years?",
+        "back": "Six (6)",
+        "extra": "Terms to keep straight: Senator 6, President 4, Representative 2."
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q20-your-senators",
+      "model": "basic",
+      "fields": {
+        "front": "Who is one of your state's U.S. Senators now?",
+        "back": "Answers vary by state; know both of your state's current senators",
+        "extra": "Find yours at senate.gov. District of Columbia and territory residents answer that DC (or the territory) has no U.S. Senators. Also on the shortened 65/20 test."
+      },
+      "tags": [
+        "civics::system-of-government",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q21-house-voting-members",
+      "model": "basic",
+      "fields": {
+        "front": "The House of Representatives has how many voting members?",
+        "back": "Four hundred thirty-five (435)"
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q22-representative-term",
+      "model": "basic",
+      "fields": {
+        "front": "We elect a U.S. Representative for how many years?",
+        "back": "Two (2)"
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q23-your-representative",
+      "model": "basic",
+      "fields": {
+        "front": "Name your U.S. Representative.",
+        "back": "Answers vary by district; know your current representative",
+        "extra": "Find yours at house.gov by ZIP code. Residents of territories with nonvoting delegates or resident commissioners may name that person."
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q24-senator-represents",
+      "model": "basic",
+      "fields": {
+        "front": "Who does a U.S. Senator represent?",
+        "back": "All people of the state",
+        "extra": "Contrast: a Representative serves only their district."
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q25-more-representatives",
+      "model": "basic",
+      "fields": {
+        "front": "Why do some states have more Representatives than other states?",
+        "back": "Because of the state's population (they have more people)"
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q26-president-term",
+      "model": "basic",
+      "fields": {
+        "front": "We elect a President for how many years?",
+        "back": "Four (4)"
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q27-vote-month",
+      "model": "basic",
+      "fields": {
+        "front": "In what month do we vote for President?",
+        "back": "November",
+        "extra": "Also on the shortened 65/20 test (age 65+, 20+ years a permanent resident)."
+      },
+      "tags": [
+        "civics::system-of-government",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q28-president-now",
+      "model": "basic",
+      "fields": {
+        "front": "What is the name of the President of the United States now?",
+        "back": "Donald Trump (as of mid-2026)",
+        "extra": "This answer changes with elections; always confirm the current president before your interview. Also on the shortened 65/20 test."
+      },
+      "tags": [
+        "civics::system-of-government",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q29-vice-president-now",
+      "model": "basic",
+      "fields": {
+        "front": "What is the name of the Vice President of the United States now?",
+        "back": "JD Vance (as of mid-2026)",
+        "extra": "This answer changes with elections; always confirm the current vice president before your interview."
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q30-president-cannot-serve",
+      "model": "basic",
+      "fields": {
+        "front": "If the President can no longer serve, who becomes President?",
+        "back": "The Vice President"
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q31-president-and-vp-cannot-serve",
+      "model": "basic",
+      "fields": {
+        "front": "If both the President and the Vice President can no longer serve, who becomes President?",
+        "back": "The Speaker of the House",
+        "extra": "Succession order: Vice President, then Speaker of the House."
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q32-commander-in-chief",
+      "model": "basic",
+      "fields": {
+        "front": "Who is the Commander in Chief of the military?",
+        "back": "The President"
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q33-signs-bills",
+      "model": "basic",
+      "fields": {
+        "front": "Who signs bills to become laws?",
+        "back": "The President"
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q34-vetoes-bills",
+      "model": "basic",
+      "fields": {
+        "front": "Who vetoes bills?",
+        "back": "The President",
+        "extra": "Questions 32-34 share the answer: the President signs, vetoes, and commands."
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q35-cabinet-does",
+      "model": "basic",
+      "fields": {
+        "front": "What does the President's Cabinet do?",
+        "back": "Advises the President"
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q36-cabinet-positions",
+      "model": "basic",
+      "fields": {
+        "front": "What are two Cabinet-level positions?",
+        "back": "Any two of the 15 department secretaries, the Attorney General, or the Vice President; for example, Secretary of State and Secretary of Defense",
+        "extra": "The departments: State, Treasury, Defense, Justice (Attorney General), Interior, Agriculture, Commerce, Labor, Health and Human Services, Housing and Urban Development, Transportation, Energy, Education, Veterans Affairs, Homeland Security."
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q37-judicial-branch",
+      "model": "basic",
+      "fields": {
+        "front": "What does the judicial branch do?",
+        "back": "Any one of: reviews laws; explains laws; resolves disputes (disagreements); decides if a law goes against the Constitution"
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q38-highest-court",
+      "model": "basic",
+      "fields": {
+        "front": "What is the highest court in the United States?",
+        "back": "The Supreme Court"
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q39-supreme-court-justices",
+      "model": "basic",
+      "fields": {
+        "front": "How many justices are on the Supreme Court?",
+        "back": "Nine (9)",
+        "extra": "One Chief Justice and eight Associate Justices. Set by statute, not the Constitution, so verify before your interview."
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q40-chief-justice",
+      "model": "basic",
+      "fields": {
+        "front": "Who is the Chief Justice of the United States now?",
+        "back": "John Roberts (John G. Roberts, Jr.)",
+        "extra": "Chief Justice since 2005. Confirm before your interview in case of a change."
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q41-federal-power",
+      "model": "basic",
+      "fields": {
+        "front": "Under our Constitution, some powers belong to the federal government. What is one power of the federal government?",
+        "back": "Any one of: to print money; to declare war; to create an army; to make treaties",
+        "extra": "Mnemonic: things one country does as a whole; money, war, army, treaties."
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q42-state-power",
+      "model": "basic",
+      "fields": {
+        "front": "Under our Constitution, some powers belong to the states. What is one power of the states?",
+        "back": "Any one of: provide schooling and education; provide protection (police); provide safety (fire departments); give a driver's license; approve zoning and land use",
+        "extra": "Mnemonic: local, everyday services; schools, police, fire, licenses, zoning."
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q43-your-governor",
+      "model": "basic",
+      "fields": {
+        "front": "Who is the Governor of your state now?",
+        "back": "Answers vary by state; know your current governor",
+        "extra": "District of Columbia residents answer that DC does not have a governor."
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q44-state-capital",
+      "model": "basic",
+      "fields": {
+        "front": "What is the capital of your state?",
+        "back": "Answers vary by state; know your state capital",
+        "extra": "District of Columbia residents answer that DC is not a state and does not have a capital. The US States deck covers all 50. Also on the shortened 65/20 test."
+      },
+      "tags": [
+        "civics::system-of-government",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q45-major-parties",
+      "model": "basic",
+      "fields": {
+        "front": "What are the two major political parties in the United States?",
+        "back": "Democratic and Republican",
+        "extra": "Also on the shortened 65/20 test (age 65+, 20+ years a permanent resident)."
+      },
+      "tags": [
+        "civics::system-of-government",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q46-president-party",
+      "model": "basic",
+      "fields": {
+        "front": "What is the political party of the President now?",
+        "back": "Republican (as of mid-2026)",
+        "extra": "This answer changes with elections; always confirm before your interview."
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q47-speaker-of-house",
+      "model": "basic",
+      "fields": {
+        "front": "What is the name of the Speaker of the House of Representatives now?",
+        "back": "Mike Johnson (as of mid-2026)",
+        "extra": "The Speaker can change at any time, not just at elections; always confirm before your interview."
+      },
+      "tags": [
+        "civics::system-of-government"
+      ]
+    },
+    {
+      "key": "q48-voting-amendments",
+      "model": "basic",
+      "fields": {
+        "front": "There are four amendments to the Constitution about who can vote. Describe one of them.",
+        "back": "Any one of: citizens eighteen (18) and older can vote; you don't have to pay a poll tax to vote; any citizen can vote (women and men); a male citizen of any race can vote",
+        "extra": "The four: 15th (race), 19th (sex), 24th (poll tax), 26th (age 18)."
+      },
+      "tags": [
+        "civics::rights-responsibilities"
+      ]
+    },
+    {
+      "key": "q49-citizen-responsibility",
+      "model": "basic",
+      "fields": {
+        "front": "What is one responsibility that is only for United States citizens?",
+        "back": "Serve on a jury, or vote in a federal election",
+        "extra": "Also on the shortened 65/20 test (age 65+, 20+ years a permanent resident)."
+      },
+      "tags": [
+        "civics::rights-responsibilities",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q50-citizen-right",
+      "model": "basic",
+      "fields": {
+        "front": "Name one right only for United States citizens.",
+        "back": "Vote in a federal election, or run for federal office",
+        "extra": "Q49 asks for a responsibility, Q50 for a right; voting in federal elections counts as both."
+      },
+      "tags": [
+        "civics::rights-responsibilities"
+      ]
+    },
+    {
+      "key": "q51-rights-of-everyone",
+      "model": "basic",
+      "fields": {
+        "front": "What are two rights of everyone living in the United States?",
+        "back": "Any two of: freedom of expression; freedom of speech; freedom of assembly; freedom to petition the government; freedom of religion; the right to bear arms",
+        "extra": "\"Everyone living in\" includes non-citizens; that is why voting is not on this list."
+      },
+      "tags": [
+        "civics::rights-responsibilities"
+      ]
+    },
+    {
+      "key": "q52-pledge-loyalty",
+      "model": "basic",
+      "fields": {
+        "front": "What do we show loyalty to when we say the Pledge of Allegiance?",
+        "back": "The United States (the flag)"
+      },
+      "tags": [
+        "civics::rights-responsibilities"
+      ]
+    },
+    {
+      "key": "q53-citizenship-promise",
+      "model": "basic",
+      "fields": {
+        "front": "What is one promise you make when you become a United States citizen?",
+        "back": "Any one of: give up loyalty to other countries; defend the Constitution and laws of the United States; obey the laws of the United States; serve in the U.S. military (if needed); serve (do important work for) the nation (if needed); be loyal to the United States",
+        "extra": "These come from the Oath of Allegiance taken at the naturalization ceremony."
+      },
+      "tags": [
+        "civics::rights-responsibilities"
+      ]
+    },
+    {
+      "key": "q54-voting-age",
+      "model": "basic",
+      "fields": {
+        "front": "How old do citizens have to be to vote for President?",
+        "back": "Eighteen (18) and older",
+        "extra": "Set by the 26th Amendment (1971). Also on the shortened 65/20 test."
+      },
+      "tags": [
+        "civics::rights-responsibilities",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q55-participate-democracy",
+      "model": "basic",
+      "fields": {
+        "front": "What are two ways that Americans can participate in their democracy?",
+        "back": "Any two of: vote; join a political party; help with a campaign; join a civic or community group; give an elected official your opinion; call Senators and Representatives; publicly support or oppose an issue or policy; run for office; write to a newspaper"
+      },
+      "tags": [
+        "civics::rights-responsibilities"
+      ]
+    },
+    {
+      "key": "q56-tax-day",
+      "model": "basic",
+      "fields": {
+        "front": "When is the last day you can send in federal income tax forms?",
+        "back": "April 15",
+        "extra": "Also on the shortened 65/20 test (age 65+, 20+ years a permanent resident)."
+      },
+      "tags": [
+        "civics::rights-responsibilities",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q57-selective-service",
+      "model": "basic",
+      "fields": {
+        "front": "When must all men register for the Selective Service?",
+        "back": "At age eighteen (18); between eighteen (18) and twenty-six (26)"
+      },
+      "tags": [
+        "civics::rights-responsibilities"
+      ]
+    },
+    {
+      "key": "q58-why-colonists-came",
+      "model": "basic",
+      "fields": {
+        "front": "What is one reason colonists came to America?",
+        "back": "Any one of: freedom; political liberty; religious freedom; economic opportunity; to practice their religion; to escape persecution"
+      },
+      "tags": [
+        "civics::colonial-independence"
+      ]
+    },
+    {
+      "key": "q59-before-europeans",
+      "model": "basic",
+      "fields": {
+        "front": "Who lived in America before the Europeans arrived?",
+        "back": "American Indians (Native Americans)"
+      },
+      "tags": [
+        "civics::colonial-independence"
+      ]
+    },
+    {
+      "key": "q60-sold-as-slaves",
+      "model": "basic",
+      "fields": {
+        "front": "What group of people was taken to America and sold as slaves?",
+        "back": "Africans (people from Africa)"
+      },
+      "tags": [
+        "civics::colonial-independence"
+      ]
+    },
+    {
+      "key": "q61-why-fight-british",
+      "model": "basic",
+      "fields": {
+        "front": "Why did the colonists fight the British?",
+        "back": "Any one of: because of high taxes (taxation without representation); because the British army stayed in their houses (boarding, quartering); because they didn't have self-government"
+      },
+      "tags": [
+        "civics::colonial-independence"
+      ]
+    },
+    {
+      "key": "q62-wrote-declaration",
+      "model": "basic",
+      "fields": {
+        "front": "Who wrote the Declaration of Independence?",
+        "back": "Thomas Jefferson",
+        "extra": "Confusable with Q67: Madison, Hamilton, and Jay wrote the Federalist Papers, not the Declaration."
+      },
+      "tags": [
+        "civics::colonial-independence"
+      ]
+    },
+    {
+      "key": "q63-declaration-adopted",
+      "model": "basic",
+      "fields": {
+        "front": "When was the Declaration of Independence adopted?",
+        "back": "July 4, 1776"
+      },
+      "tags": [
+        "civics::colonial-independence"
+      ]
+    },
+    {
+      "key": "q64-thirteen-states",
+      "model": "basic",
+      "fields": {
+        "front": "There were 13 original states. Name three.",
+        "back": "Any three of: New Hampshire, Massachusetts, Rhode Island, Connecticut, New York, New Jersey, Pennsylvania, Delaware, Maryland, Virginia, North Carolina, South Carolina, Georgia",
+        "extra": "The 13 stripes on the flag stand for these colonies (Q96)."
+      },
+      "tags": [
+        "civics::colonial-independence"
+      ]
+    },
+    {
+      "key": "q65-constitutional-convention",
+      "model": "basic",
+      "fields": {
+        "front": "What happened at the Constitutional Convention?",
+        "back": "The Constitution was written (the Founding Fathers wrote the Constitution)",
+        "extra": "Philadelphia, 1787."
+      },
+      "tags": [
+        "civics::colonial-independence"
+      ]
+    },
+    {
+      "key": "q66-constitution-written",
+      "model": "basic",
+      "fields": {
+        "front": "When was the Constitution written?",
+        "back": "1787",
+        "extra": "Two dates to keep straight: Declaration 1776, Constitution 1787."
+      },
+      "tags": [
+        "civics::colonial-independence"
+      ]
+    },
+    {
+      "key": "q67-federalist-papers",
+      "model": "basic",
+      "fields": {
+        "front": "The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers.",
+        "back": "Any one of: James Madison; Alexander Hamilton; John Jay; Publius",
+        "extra": "Publius was the shared pen name all three wrote under."
+      },
+      "tags": [
+        "civics::colonial-independence"
+      ]
+    },
+    {
+      "key": "q68-ben-franklin",
+      "model": "basic",
+      "fields": {
+        "front": "What is one thing Benjamin Franklin is famous for?",
+        "back": "Any one of: U.S. diplomat; oldest member of the Constitutional Convention; first Postmaster General of the United States; writer of \"Poor Richard's Almanac\"; started the first free libraries"
+      },
+      "tags": [
+        "civics::colonial-independence"
+      ]
+    },
+    {
+      "key": "q69-father-of-country",
+      "model": "basic",
+      "fields": {
+        "front": "Who is the \"Father of Our Country\"?",
+        "back": "George Washington"
+      },
+      "tags": [
+        "civics::colonial-independence"
+      ]
+    },
+    {
+      "key": "q70-first-president",
+      "model": "basic",
+      "fields": {
+        "front": "Who was the first President?",
+        "back": "George Washington",
+        "extra": "Q69 and Q70 share the answer. Also on the shortened 65/20 test."
+      },
+      "tags": [
+        "civics::colonial-independence",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q71-louisiana",
+      "model": "basic",
+      "fields": {
+        "front": "What territory did the United States buy from France in 1803?",
+        "back": "The Louisiana Territory (Louisiana)",
+        "extra": "The Louisiana Purchase doubled the size of the country under President Jefferson."
+      },
+      "tags": [
+        "civics::1800s"
+      ]
+    },
+    {
+      "key": "q72-war-1800s",
+      "model": "basic",
+      "fields": {
+        "front": "Name one war fought by the United States in the 1800s.",
+        "back": "Any one of: War of 1812; Mexican-American War; Civil War; Spanish-American War"
+      },
+      "tags": [
+        "civics::1800s"
+      ]
+    },
+    {
+      "key": "q73-north-south-war",
+      "model": "basic",
+      "fields": {
+        "front": "Name the U.S. war between the North and the South.",
+        "back": "The Civil War (the War between the States)",
+        "extra": "1861-1865."
+      },
+      "tags": [
+        "civics::1800s"
+      ]
+    },
+    {
+      "key": "q74-civil-war-problem",
+      "model": "basic",
+      "fields": {
+        "front": "Name one problem that led to the Civil War.",
+        "back": "Any one of: slavery; economic reasons; states' rights"
+      },
+      "tags": [
+        "civics::1800s"
+      ]
+    },
+    {
+      "key": "q75-lincoln",
+      "model": "basic",
+      "fields": {
+        "front": "What was one important thing that Abraham Lincoln did?",
+        "back": "Any one of: freed the slaves (Emancipation Proclamation); saved (or preserved) the Union; led the United States during the Civil War",
+        "extra": "Also on the shortened 65/20 test (age 65+, 20+ years a permanent resident)."
+      },
+      "tags": [
+        "civics::1800s",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q76-emancipation",
+      "model": "basic",
+      "fields": {
+        "front": "What did the Emancipation Proclamation do?",
+        "back": "Freed the slaves (freed slaves in the Confederacy, in the Confederate states, in most Southern states)",
+        "extra": "1863, during the Civil War; slavery ended everywhere with the 13th Amendment in 1865."
+      },
+      "tags": [
+        "civics::1800s"
+      ]
+    },
+    {
+      "key": "q77-susan-b-anthony",
+      "model": "basic",
+      "fields": {
+        "front": "What did Susan B. Anthony do?",
+        "back": "Fought for women's rights (fought for civil rights)",
+        "extra": "Leader of the women's suffrage movement, which won the vote with the 19th Amendment in 1920."
+      },
+      "tags": [
+        "civics::1800s"
+      ]
+    },
+    {
+      "key": "q78-war-1900s",
+      "model": "basic",
+      "fields": {
+        "front": "Name one war fought by the United States in the 1900s.",
+        "back": "Any one of: World War I; World War II; Korean War; Vietnam War; (Persian) Gulf War",
+        "extra": "Also on the shortened 65/20 test (age 65+, 20+ years a permanent resident)."
+      },
+      "tags": [
+        "civics::recent-history",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q79-wwi-president",
+      "model": "basic",
+      "fields": {
+        "front": "Who was President during World War I?",
+        "back": "Woodrow Wilson",
+        "extra": "Confusable with Q80: Wilson for WWI, Franklin Roosevelt for WWII."
+      },
+      "tags": [
+        "civics::recent-history"
+      ]
+    },
+    {
+      "key": "q80-depression-wwii-president",
+      "model": "basic",
+      "fields": {
+        "front": "Who was President during the Great Depression and World War II?",
+        "back": "Franklin Roosevelt",
+        "extra": "FDR, the only president elected four times; the reason for the 22nd Amendment's two-term limit."
+      },
+      "tags": [
+        "civics::recent-history"
+      ]
+    },
+    {
+      "key": "q81-wwii-enemies",
+      "model": "basic",
+      "fields": {
+        "front": "Who did the United States fight in World War II?",
+        "back": "Japan, Germany, and Italy",
+        "extra": "The three Axis powers; the test expects all three."
+      },
+      "tags": [
+        "civics::recent-history"
+      ]
+    },
+    {
+      "key": "q82-eisenhower",
+      "model": "basic",
+      "fields": {
+        "front": "Before he was President, Eisenhower was a general. What war was he in?",
+        "back": "World War II",
+        "extra": "He commanded the Allied invasion of Europe, including D-Day."
+      },
+      "tags": [
+        "civics::recent-history"
+      ]
+    },
+    {
+      "key": "q83-cold-war",
+      "model": "basic",
+      "fields": {
+        "front": "During the Cold War, what was the main concern of the United States?",
+        "back": "Communism"
+      },
+      "tags": [
+        "civics::recent-history"
+      ]
+    },
+    {
+      "key": "q84-civil-rights-movement",
+      "model": "basic",
+      "fields": {
+        "front": "What movement tried to end racial discrimination?",
+        "back": "The civil rights movement"
+      },
+      "tags": [
+        "civics::recent-history"
+      ]
+    },
+    {
+      "key": "q85-mlk",
+      "model": "basic",
+      "fields": {
+        "front": "What did Martin Luther King, Jr. do?",
+        "back": "Fought for civil rights (worked for equality for all Americans)",
+        "extra": "Also on the shortened 65/20 test (age 65+, 20+ years a permanent resident)."
+      },
+      "tags": [
+        "civics::recent-history",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q86-september-11",
+      "model": "basic",
+      "fields": {
+        "front": "What major event happened on September 11, 2001, in the United States?",
+        "back": "Terrorists attacked the United States"
+      },
+      "tags": [
+        "civics::recent-history"
+      ]
+    },
+    {
+      "key": "q87-indian-tribe",
+      "model": "basic",
+      "fields": {
+        "front": "Name one American Indian tribe in the United States.",
+        "back": "Any one of: Cherokee, Navajo, Sioux, Chippewa, Choctaw, Pueblo, Apache, Iroquois, Creek, Blackfeet, Seminole, Cheyenne, Arawak, Shawnee, Mohegan, Huron, Oneida, Lakota, Crow, Teton, Hopi, Inuit",
+        "extra": "Any federally recognized tribe is acceptable; these are the ones USCIS lists."
+      },
+      "tags": [
+        "civics::recent-history"
+      ]
+    },
+    {
+      "key": "q88-longest-rivers",
+      "model": "basic",
+      "fields": {
+        "front": "Name one of the two longest rivers in the United States.",
+        "back": "Missouri River or Mississippi River",
+        "extra": "The Missouri is slightly longer; both start with Miss- and meet near St. Louis."
+      },
+      "tags": [
+        "civics::geography"
+      ]
+    },
+    {
+      "key": "q89-west-coast-ocean",
+      "model": "basic",
+      "fields": {
+        "front": "What ocean is on the West Coast of the United States?",
+        "back": "Pacific Ocean"
+      },
+      "tags": [
+        "civics::geography"
+      ]
+    },
+    {
+      "key": "q90-east-coast-ocean",
+      "model": "basic",
+      "fields": {
+        "front": "What ocean is on the East Coast of the United States?",
+        "back": "Atlantic Ocean"
+      },
+      "tags": [
+        "civics::geography"
+      ]
+    },
+    {
+      "key": "q91-us-territory",
+      "model": "basic",
+      "fields": {
+        "front": "Name one U.S. territory.",
+        "back": "Any one of: Puerto Rico; U.S. Virgin Islands; American Samoa; Northern Mariana Islands; Guam"
+      },
+      "tags": [
+        "civics::geography"
+      ]
+    },
+    {
+      "key": "q92-borders-canada",
+      "model": "basic",
+      "fields": {
+        "front": "Name one state that borders Canada.",
+        "back": "Any one of: Maine, New Hampshire, Vermont, New York, Pennsylvania, Ohio, Michigan, Minnesota, North Dakota, Montana, Idaho, Washington, Alaska"
+      },
+      "tags": [
+        "civics::geography"
+      ]
+    },
+    {
+      "key": "q93-borders-mexico",
+      "model": "basic",
+      "fields": {
+        "front": "Name one state that borders Mexico.",
+        "back": "Any one of: California, Arizona, New Mexico, Texas",
+        "extra": "Just four, west to east: CA, AZ, NM, TX."
+      },
+      "tags": [
+        "civics::geography"
+      ]
+    },
+    {
+      "key": "q94-us-capital",
+      "model": "basic",
+      "fields": {
+        "front": "What is the capital of the United States?",
+        "back": "Washington, D.C.",
+        "extra": "Also on the shortened 65/20 test (age 65+, 20+ years a permanent resident)."
+      },
+      "tags": [
+        "civics::geography",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q95-statue-of-liberty",
+      "model": "basic",
+      "fields": {
+        "front": "Where is the Statue of Liberty?",
+        "back": "New York Harbor (Liberty Island)",
+        "extra": "USCIS also accepts New Jersey, near New York City, and on the Hudson River. Also on the shortened 65/20 test."
+      },
+      "tags": [
+        "civics::geography",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q96-thirteen-stripes",
+      "model": "basic",
+      "fields": {
+        "front": "Why does the flag have 13 stripes?",
+        "back": "Because there were 13 original colonies (the stripes represent the original colonies)"
+      },
+      "tags": [
+        "civics::symbols"
+      ]
+    },
+    {
+      "key": "q97-fifty-stars",
+      "model": "basic",
+      "fields": {
+        "front": "Why does the flag have 50 stars?",
+        "back": "Because there is one star for each state (there are 50 states)",
+        "extra": "Also on the shortened 65/20 test (age 65+, 20+ years a permanent resident)."
+      },
+      "tags": [
+        "civics::symbols",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q98-national-anthem",
+      "model": "basic",
+      "fields": {
+        "front": "What is the name of the national anthem?",
+        "back": "The Star-Spangled Banner",
+        "extra": "Written by Francis Scott Key during the War of 1812."
+      },
+      "tags": [
+        "civics::symbols"
+      ]
+    },
+    {
+      "key": "q99-independence-day",
+      "model": "basic",
+      "fields": {
+        "front": "When do we celebrate Independence Day?",
+        "back": "July 4",
+        "extra": "Also on the shortened 65/20 test (age 65+, 20+ years a permanent resident)."
+      },
+      "tags": [
+        "civics::holidays",
+        "civics::65-20"
+      ]
+    },
+    {
+      "key": "q100-national-holidays",
+      "model": "basic",
+      "fields": {
+        "front": "Name two national U.S. holidays.",
+        "back": "Any two of: New Year's Day; Martin Luther King, Jr. Day; Presidents' Day; Memorial Day; Juneteenth; Independence Day; Labor Day; Columbus Day; Veterans Day; Thanksgiving; Christmas",
+        "extra": "Juneteenth (June 19) became a federal holiday in 2021 and is on the official answer list."
+      },
+      "tags": [
+        "civics::holidays"
+      ]
+    }
+  ]
+}
