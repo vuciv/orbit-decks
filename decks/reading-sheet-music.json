@@ -1,0 +1,1222 @@
+{
+  "key": "reading-sheet-music",
+  "version": 1,
+  "name": "Reading Sheet Music",
+  "description": "Learn to read standard music notation from scratch: the staff and clefs, every note on the treble and bass staves, note values and rests, accidentals, key and time signatures, dynamics, articulation, tempo terms, and repeat navigation.",
+  "category": "Music",
+  "topics": [
+    "music",
+    "notation",
+    "music-theory"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/G-clef-stave-with-note-names.svg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "staff-lines",
+      "model": "typed",
+      "fields": {
+        "front": "How many lines does a standard musical staff have?",
+        "answer": "5",
+        "extra": "Five lines and four spaces. Each line and space is a different pitch, and higher on the staff always means higher in pitch."
+      },
+      "tags": ["music::staff-basics"]
+    },
+    {
+      "key": "ledger-lines",
+      "model": "basic",
+      "fields": {
+        "front": "What are these short lines above and below the staff called?",
+        "back": "Ledger lines",
+        "extra": "They extend the staff for notes too high or too low to fit on it. Middle C sits on a ledger line between the treble and bass staves.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-ledger-edited.png?width=640"
+      },
+      "tags": ["music::staff-basics"]
+    },
+    {
+      "key": "grand-staff",
+      "model": "basic",
+      "fields": {
+        "front": "Two staves joined at the left by a curly symbol: what is the symbol, and what is the pair called?",
+        "back": "The symbol is a **brace**; the joined treble and bass staves form the **grand staff**",
+        "extra": "Piano music is written on the grand staff: right hand on the treble staff, left hand on the bass staff.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Accolade.svg?width=640"
+      },
+      "tags": ["music::staff-basics"]
+    },
+    {
+      "key": "bar-line",
+      "model": "basic",
+      "fields": {
+        "front": "What does this single vertical line through the staff mark?",
+        "back": "A **bar line**: the boundary between measures (bars)",
+        "extra": "A measure holds the number of beats set by the time signature.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-bar.svg?width=640"
+      },
+      "tags": ["music::staff-basics"]
+    },
+    {
+      "key": "double-bar-line",
+      "model": "basic",
+      "fields": {
+        "front": "What do these two thin vertical lines mark?",
+        "back": "A **double bar line**: the end of a section",
+        "extra": "Two thin lines mark a section; a thin line followed by a thick one marks the end of the piece.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-doublebar.svg?width=640"
+      },
+      "tags": ["music::staff-basics"]
+    },
+    {
+      "key": "final-bar-line",
+      "model": "basic",
+      "fields": {
+        "front": "What does this thin line followed by a thick line mark?",
+        "back": "A **final bar line**: the end of the piece",
+        "extra": "Confusable: two thin lines only mark the end of a section.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-endbar.svg?width=640"
+      },
+      "tags": ["music::staff-basics"]
+    },
+    {
+      "key": "treble-clef",
+      "model": "basic",
+      "fields": {
+        "front": "Which clef is this?",
+        "back": "The **treble clef** (G clef)",
+        "extra": "Its curl circles the second line from the bottom, fixing that line as G4. Used for higher-pitched instruments, voices, and the pianist's right hand.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-GClef.svg?width=640"
+      },
+      "tags": ["music::clefs"]
+    },
+    {
+      "key": "bass-clef",
+      "model": "basic",
+      "fields": {
+        "front": "Which clef is this?",
+        "back": "The **bass clef** (F clef)",
+        "extra": "Its two dots straddle the fourth line from the bottom, fixing that line as F3. Used for lower-pitched instruments and the pianist's left hand.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-Fclef.svg?width=640"
+      },
+      "tags": ["music::clefs"]
+    },
+    {
+      "key": "alto-clef",
+      "model": "basic",
+      "fields": {
+        "front": "Which clef is this?",
+        "back": "The **alto clef** (a C clef)",
+        "extra": "Its center points at the middle line, fixing it as middle C. The viola's standard clef.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Alto-clef.svg?width=640"
+      },
+      "tags": ["music::clefs"]
+    },
+    {
+      "key": "middle-c-four-clefs",
+      "model": "basic",
+      "fields": {
+        "front": "The same pitch is written here in four different clefs. Which note is it?",
+        "back": "**Middle C** (C4, about 261.6 Hz)",
+        "extra": "Treble clef: first ledger line below the staff. Alto and tenor clefs: on the staff. Bass clef: first ledger line above the staff.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Middle%20C%20in%20four%20clefs.svg?width=640"
+      },
+      "tags": ["music::clefs"]
+    },
+    {
+      "key": "treble-lines-mnemonic",
+      "model": "cloze",
+      "fields": {
+        "text": "The treble staff lines, bottom to top, are {{c1::E, G, B, D, F}}, remembered as {{c2::Every Good Boy Does Fine}}.",
+        "extra": "That is E4, G4, B4, D5, F5. The spaces in between spell FACE."
+      },
+      "tags": ["music::treble-staff"]
+    },
+    {
+      "key": "treble-spaces-mnemonic",
+      "model": "cloze",
+      "fields": {
+        "text": "The treble staff spaces, bottom to top, spell the word {{c1::FACE}}.",
+        "extra": "That is F4, A4, C5, E5."
+      },
+      "tags": ["music::treble-staff"]
+    },
+    {
+      "key": "treble-line-1",
+      "model": "typed",
+      "fields": {
+        "front": "Treble staff: which note sits on the bottom line (line 1, counting up)?",
+        "answer": "E",
+        "extra": "E4: the *Every* in Every Good Boy Does Fine."
+      },
+      "tags": ["music::treble-staff"]
+    },
+    {
+      "key": "treble-line-2",
+      "model": "typed",
+      "fields": {
+        "front": "Treble staff: which note sits on line 2 (counting up from the bottom)?",
+        "answer": "G",
+        "extra": "G4: the line the treble clef's curl circles, which is why it is called the G clef."
+      },
+      "tags": ["music::treble-staff"]
+    },
+    {
+      "key": "treble-line-3",
+      "model": "typed",
+      "fields": {
+        "front": "Treble staff: which note sits on the middle line (line 3)?",
+        "answer": "B",
+        "extra": "B4: the *Boy* in Every Good Boy Does Fine."
+      },
+      "tags": ["music::treble-staff"]
+    },
+    {
+      "key": "treble-line-4",
+      "model": "typed",
+      "fields": {
+        "front": "Treble staff: which note sits on line 4 (counting up from the bottom)?",
+        "answer": "D",
+        "extra": "D5: the *Does* in Every Good Boy Does Fine."
+      },
+      "tags": ["music::treble-staff"]
+    },
+    {
+      "key": "treble-line-5",
+      "model": "typed",
+      "fields": {
+        "front": "Treble staff: which note sits on the top line (line 5)?",
+        "answer": "F",
+        "extra": "F5: the *Fine* in Every Good Boy Does Fine."
+      },
+      "tags": ["music::treble-staff"]
+    },
+    {
+      "key": "treble-space-1",
+      "model": "typed",
+      "fields": {
+        "front": "Treble staff: which note sits in the bottom space (space 1, counting up)?",
+        "answer": "F",
+        "extra": "F4: the F of FACE."
+      },
+      "tags": ["music::treble-staff"]
+    },
+    {
+      "key": "treble-space-2",
+      "model": "typed",
+      "fields": {
+        "front": "Treble staff: which note sits in space 2 (counting up from the bottom)?",
+        "answer": "A",
+        "extra": "A4: the A of FACE. Concert pitch A440."
+      },
+      "tags": ["music::treble-staff"]
+    },
+    {
+      "key": "treble-space-3",
+      "model": "typed",
+      "fields": {
+        "front": "Treble staff: which note sits in space 3 (counting up from the bottom)?",
+        "answer": "C",
+        "extra": "C5: the C of FACE, one octave above middle C."
+      },
+      "tags": ["music::treble-staff"]
+    },
+    {
+      "key": "treble-space-4",
+      "model": "typed",
+      "fields": {
+        "front": "Treble staff: which note sits in the top space (space 4)?",
+        "answer": "E",
+        "extra": "E5: the E of FACE."
+      },
+      "tags": ["music::treble-staff"]
+    },
+    {
+      "key": "treble-middle-c",
+      "model": "typed",
+      "fields": {
+        "front": "Treble staff: which note sits on the first ledger line below the staff?",
+        "answer": "C",
+        "extra": "Middle C (C4), one step below the bottom-line E's neighbor D, which hangs just under the staff."
+      },
+      "tags": ["music::treble-staff"]
+    },
+    {
+      "key": "bass-lines-mnemonic",
+      "model": "cloze",
+      "fields": {
+        "text": "The bass staff lines, bottom to top, are {{c1::G, B, D, F, A}}, remembered as {{c2::Good Boys Do Fine Always}}.",
+        "extra": "That is G2, B2, D3, F3, A3."
+      },
+      "tags": ["music::bass-staff"]
+    },
+    {
+      "key": "bass-spaces-mnemonic",
+      "model": "cloze",
+      "fields": {
+        "text": "The bass staff spaces, bottom to top, are {{c1::A, C, E, G}}, remembered as {{c2::All Cows Eat Grass}}.",
+        "extra": "That is A2, C3, E3, G3."
+      },
+      "tags": ["music::bass-staff"]
+    },
+    {
+      "key": "bass-line-1",
+      "model": "typed",
+      "fields": {
+        "front": "Bass staff: which note sits on the bottom line (line 1, counting up)?",
+        "answer": "G",
+        "extra": "G2: the *Good* in Good Boys Do Fine Always."
+      },
+      "tags": ["music::bass-staff"]
+    },
+    {
+      "key": "bass-line-2",
+      "model": "typed",
+      "fields": {
+        "front": "Bass staff: which note sits on line 2 (counting up from the bottom)?",
+        "answer": "B",
+        "extra": "B2: the *Boys* in Good Boys Do Fine Always."
+      },
+      "tags": ["music::bass-staff"]
+    },
+    {
+      "key": "bass-line-3",
+      "model": "typed",
+      "fields": {
+        "front": "Bass staff: which note sits on the middle line (line 3)?",
+        "answer": "D",
+        "extra": "D3: the *Do* in Good Boys Do Fine Always."
+      },
+      "tags": ["music::bass-staff"]
+    },
+    {
+      "key": "bass-line-4",
+      "model": "typed",
+      "fields": {
+        "front": "Bass staff: which note sits on line 4 (counting up from the bottom)?",
+        "answer": "F",
+        "extra": "F3: the line the bass clef's two dots straddle, which is why it is called the F clef."
+      },
+      "tags": ["music::bass-staff"]
+    },
+    {
+      "key": "bass-line-5",
+      "model": "typed",
+      "fields": {
+        "front": "Bass staff: which note sits on the top line (line 5)?",
+        "answer": "A",
+        "extra": "A3: the *Always* in Good Boys Do Fine Always."
+      },
+      "tags": ["music::bass-staff"]
+    },
+    {
+      "key": "bass-space-1",
+      "model": "typed",
+      "fields": {
+        "front": "Bass staff: which note sits in the bottom space (space 1, counting up)?",
+        "answer": "A",
+        "extra": "A2: the *All* in All Cows Eat Grass."
+      },
+      "tags": ["music::bass-staff"]
+    },
+    {
+      "key": "bass-space-2",
+      "model": "typed",
+      "fields": {
+        "front": "Bass staff: which note sits in space 2 (counting up from the bottom)?",
+        "answer": "C",
+        "extra": "C3: the *Cows* in All Cows Eat Grass, one octave below middle C."
+      },
+      "tags": ["music::bass-staff"]
+    },
+    {
+      "key": "bass-space-3",
+      "model": "typed",
+      "fields": {
+        "front": "Bass staff: which note sits in space 3 (counting up from the bottom)?",
+        "answer": "E",
+        "extra": "E3: the *Eat* in All Cows Eat Grass."
+      },
+      "tags": ["music::bass-staff"]
+    },
+    {
+      "key": "bass-space-4",
+      "model": "typed",
+      "fields": {
+        "front": "Bass staff: which note sits in the top space (space 4)?",
+        "answer": "G",
+        "extra": "G3: the *Grass* in All Cows Eat Grass."
+      },
+      "tags": ["music::bass-staff"]
+    },
+    {
+      "key": "bass-middle-c",
+      "model": "typed",
+      "fields": {
+        "front": "Bass staff: which note sits on the first ledger line above the staff?",
+        "answer": "C",
+        "extra": "Middle C (C4): the same note as the first ledger line below the treble staff. The two staves meet at middle C."
+      },
+      "tags": ["music::bass-staff"]
+    },
+    {
+      "key": "whole-note",
+      "model": "basic",
+      "fields": {
+        "front": "What note value is this, and how many beats does it get in 4/4 time?",
+        "back": "A **whole note**: 4 beats",
+        "extra": "Hollow oval with no stem. British name: semibreve.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-wholenote.svg?width=640"
+      },
+      "tags": ["music::note-values"]
+    },
+    {
+      "key": "half-note",
+      "model": "basic",
+      "fields": {
+        "front": "What note value is this, and how many beats does it get in 4/4 time?",
+        "back": "A **half note**: 2 beats",
+        "extra": "Hollow oval with a stem. British name: minim.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-halfnote.svg?width=640"
+      },
+      "tags": ["music::note-values"]
+    },
+    {
+      "key": "quarter-note",
+      "model": "basic",
+      "fields": {
+        "front": "What note value is this, and how many beats does it get in 4/4 time?",
+        "back": "A **quarter note**: 1 beat",
+        "extra": "Filled notehead with a stem. British name: crotchet.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-quarternote.svg?width=640"
+      },
+      "tags": ["music::note-values"]
+    },
+    {
+      "key": "eighth-note",
+      "model": "basic",
+      "fields": {
+        "front": "What note value is this, and how many beats does it get in 4/4 time?",
+        "back": "An **eighth note**: half a beat",
+        "extra": "Filled notehead with a stem and one flag. British name: quaver. Two eighth notes fill one beat.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-eighthnote.svg?width=640"
+      },
+      "tags": ["music::note-values"]
+    },
+    {
+      "key": "sixteenth-note",
+      "model": "basic",
+      "fields": {
+        "front": "What note value is this, and how many beats does it get in 4/4 time?",
+        "back": "A **sixteenth note**: a quarter of a beat",
+        "extra": "Two flags on the stem. British name: semiquaver. Four sixteenth notes fill one beat.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-sixteenthnote.svg?width=640"
+      },
+      "tags": ["music::note-values"]
+    },
+    {
+      "key": "note-value-halving",
+      "model": "cloze",
+      "fields": {
+        "text": "Each step down the chain whole, half, quarter, eighth, sixteenth {{c1::halves}} the note's duration.",
+        "extra": "So one whole note = 2 half notes = 4 quarter notes = 8 eighth notes = 16 sixteenth notes."
+      },
+      "tags": ["music::note-values"]
+    },
+    {
+      "key": "british-note-names",
+      "model": "cloze",
+      "fields": {
+        "text": "British note names: whole = {{c1::semibreve}}, half = {{c2::minim}}, quarter = {{c3::crotchet}}, eighth = {{c4::quaver}}, sixteenth = {{c5::semiquaver}}.",
+        "extra": "You will meet these in UK and Commonwealth method books and exam boards like ABRSM."
+      },
+      "tags": ["music::note-values"]
+    },
+    {
+      "key": "beam",
+      "model": "basic",
+      "fields": {
+        "front": "What is the thick bar joining these note stems, and what does it do to their value?",
+        "back": "A **beam**: it replaces the flags of eighth (or shorter) notes to group them by beat. The values are unchanged",
+        "extra": "One beam = eighth notes, two beams = sixteenth notes. Beaming exists purely to make the beat easier to see.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-beam.svg?width=640"
+      },
+      "tags": ["music::note-values"]
+    },
+    {
+      "key": "dotted-note",
+      "model": "basic",
+      "fields": {
+        "front": "What does the dot after this note do to its length?",
+        "back": "It adds **half the note's own value**: this dotted quarter note lasts 1 1/2 beats",
+        "extra": "Dotted half = 3 beats, dotted quarter = 1.5 beats, dotted eighth = 0.75 beats.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-dotnote.svg?width=640"
+      },
+      "tags": ["music::note-values"]
+    },
+    {
+      "key": "tie",
+      "model": "basic",
+      "fields": {
+        "front": "A curved line joins two notes of the **same pitch**. What is it, and how do you play it?",
+        "back": "A **tie**: play one unbroken note lasting the sum of both values",
+        "extra": "A quarter tied to a quarter sounds as one half note. Ties let a note cross a bar line. Confusable: the same curve over *different* pitches is a slur.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-legato.svg?width=640"
+      },
+      "tags": ["music::note-values"]
+    },
+    {
+      "key": "slur",
+      "model": "basic",
+      "fields": {
+        "front": "A curved line arches over notes of **different pitches**. What is it, and how do you play them?",
+        "back": "A **slur**: play the notes legato, smoothly connected without separation",
+        "extra": "Confusable: the same curve between two notes of the *same* pitch is a tie, which joins them into one note.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-legato.svg?width=640"
+      },
+      "tags": ["music::articulation"]
+    },
+    {
+      "key": "whole-rest",
+      "model": "basic",
+      "fields": {
+        "front": "What rest is this (it hangs below the line), and how long is it?",
+        "back": "A **whole rest**: 4 beats of silence in 4/4",
+        "extra": "It also stands for a full measure of rest in any time signature. Mnemonic: the whole rest is heavier, so it *hangs* below the line; the half rest *sits* on top.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-wholerest.svg?width=640"
+      },
+      "tags": ["music::rests"]
+    },
+    {
+      "key": "half-rest",
+      "model": "basic",
+      "fields": {
+        "front": "What rest is this (it sits on top of the line), and how long is it?",
+        "back": "A **half rest**: 2 beats of silence",
+        "extra": "Mnemonic: the half rest sits on the middle line like a hat; the heavier whole rest hangs below its line.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-halfrest.svg?width=640"
+      },
+      "tags": ["music::rests"]
+    },
+    {
+      "key": "quarter-rest",
+      "model": "basic",
+      "fields": {
+        "front": "What rest is this (shown in both its modern and old forms), and how long is it?",
+        "back": "A **quarter rest**: 1 beat of silence",
+        "extra": "The zigzag form is standard today; the mirrored-eighth-rest form appears in older editions.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Crochet2.svg?width=640"
+      },
+      "tags": ["music::rests"]
+    },
+    {
+      "key": "eighth-rest",
+      "model": "basic",
+      "fields": {
+        "front": "What rest is this, and how long is it?",
+        "back": "An **eighth rest**: half a beat of silence",
+        "extra": "One flag on the slanted stroke, matching the eighth note's one flag. The sixteenth rest has two.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-eighthrest.svg?width=640"
+      },
+      "tags": ["music::rests"]
+    },
+    {
+      "key": "sixteenth-rest",
+      "model": "basic",
+      "fields": {
+        "front": "What rest is this, and how long is it?",
+        "back": "A **sixteenth rest**: a quarter of a beat of silence",
+        "extra": "Two flags, matching the sixteenth note's two flags.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-sixteenthrest.svg?width=640"
+      },
+      "tags": ["music::rests"]
+    },
+    {
+      "key": "sharp",
+      "model": "basic",
+      "fields": {
+        "front": "What is this symbol, and what does it do to a note?",
+        "back": "A **sharp**: raises the note by a half step (semitone)",
+        "extra": "F sharp is the black key just above F on a piano.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-sharp.svg?width=640"
+      },
+      "tags": ["music::accidentals"]
+    },
+    {
+      "key": "flat",
+      "model": "basic",
+      "fields": {
+        "front": "What is this symbol, and what does it do to a note?",
+        "back": "A **flat**: lowers the note by a half step (semitone)",
+        "extra": "B flat is the black key just below B on a piano.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-flat.svg?width=640"
+      },
+      "tags": ["music::accidentals"]
+    },
+    {
+      "key": "natural",
+      "model": "basic",
+      "fields": {
+        "front": "What is this symbol, and what does it do to a note?",
+        "back": "A **natural**: cancels a sharp or flat, from the key signature or from earlier in the measure",
+        "extra": "The note returns to its unaltered (white-key) pitch.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-natural.svg?width=640"
+      },
+      "tags": ["music::accidentals"]
+    },
+    {
+      "key": "double-sharp",
+      "model": "basic",
+      "fields": {
+        "front": "What is this x-shaped symbol, and what does it do to a note?",
+        "back": "A **double sharp**: raises the note by a whole step (two semitones)",
+        "extra": "F double sharp sounds the same as G. Found mostly in sharp-heavy keys.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-doublesharp3.svg?width=640"
+      },
+      "tags": ["music::accidentals"]
+    },
+    {
+      "key": "double-flat",
+      "model": "basic",
+      "fields": {
+        "front": "What is this symbol, and what does it do to a note?",
+        "back": "A **double flat**: lowers the note by a whole step (two semitones)",
+        "extra": "B double flat sounds the same as A.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-doubleflat.svg?width=640"
+      },
+      "tags": ["music::accidentals"]
+    },
+    {
+      "key": "accidental-scope",
+      "model": "cloze",
+      "fields": {
+        "text": "An accidental written in front of a note applies to that note for the rest of the {{c1::measure}}, unless cancelled or tied across the bar line.",
+        "extra": "The next measure resets to the key signature. This is why courtesy accidentals are sometimes printed as reminders."
+      },
+      "tags": ["music::accidentals"]
+    },
+    {
+      "key": "order-of-sharps",
+      "model": "cloze",
+      "fields": {
+        "text": "Sharps always appear in key signatures in the order {{c1::F, C, G, D, A, E, B}}, remembered as {{c2::Father Charles Goes Down And Ends Battle}}.",
+        "extra": "Each new sharp key adds the next sharp in this fixed order."
+      },
+      "tags": ["music::key-signatures"]
+    },
+    {
+      "key": "order-of-flats",
+      "model": "cloze",
+      "fields": {
+        "text": "Flats always appear in key signatures in the order {{c1::B, E, A, D, G, C, F}}, remembered as {{c2::Battle Ends And Down Goes Charles's Father}}.",
+        "extra": "It is the exact reverse of the sharp order: BEAD plus GCF."
+      },
+      "tags": ["music::key-signatures"]
+    },
+    {
+      "key": "sharp-key-rule",
+      "model": "basic",
+      "fields": {
+        "front": "Quick trick: how do you name the major key from a sharp key signature?",
+        "back": "Go up a half step from the **last sharp**",
+        "extra": "One sharp: F sharp + half step = G major. Four sharps: last is D sharp, so E major."
+      },
+      "tags": ["music::key-signatures"]
+    },
+    {
+      "key": "flat-key-rule",
+      "model": "basic",
+      "fields": {
+        "front": "Quick trick: how do you name the major key from a flat key signature?",
+        "back": "The **second-to-last flat** names the key",
+        "extra": "Three flats (B, E, A): the second-to-last is E flat, so E flat major. The exception with no second-to-last flat is F major (one flat); memorize it."
+      },
+      "tags": ["music::key-signatures"]
+    },
+    {
+      "key": "relative-minor",
+      "model": "basic",
+      "fields": {
+        "front": "What is a relative minor, and how do you find it from a major key?",
+        "back": "The minor key that shares the same key signature; its tonic is **three half steps below** the major tonic",
+        "extra": "C major and A minor both have no sharps or flats. The key signature alone cannot tell you which of the two a piece is in."
+      },
+      "tags": ["music::key-signatures"]
+    },
+    {
+      "key": "keysig-c",
+      "model": "basic",
+      "fields": {
+        "front": "Which major key has this key signature?",
+        "back": "**C major** (relative minor: A minor)",
+        "extra": "No sharps or flats: all white keys on the piano.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Key%20Signature%20C%20major.jpg?width=640"
+      },
+      "tags": ["music::key-signatures"]
+    },
+    {
+      "key": "keysig-g",
+      "model": "basic",
+      "fields": {
+        "front": "Which major key has this key signature?",
+        "back": "**G major** (relative minor: E minor)",
+        "extra": "One sharp: F sharp. Last sharp F sharp + half step = G.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Key%20Signature%20G%20major.jpg?width=640"
+      },
+      "tags": ["music::key-signatures"]
+    },
+    {
+      "key": "keysig-d",
+      "model": "basic",
+      "fields": {
+        "front": "Which major key has this key signature?",
+        "back": "**D major** (relative minor: B minor)",
+        "extra": "Two sharps: F sharp and C sharp. Last sharp C sharp + half step = D.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Key%20Signature%20D%20major.jpg?width=640"
+      },
+      "tags": ["music::key-signatures"]
+    },
+    {
+      "key": "keysig-a",
+      "model": "basic",
+      "fields": {
+        "front": "Which major key has this key signature?",
+        "back": "**A major** (relative minor: F sharp minor)",
+        "extra": "Three sharps: F, C, and G sharp. Last sharp G sharp + half step = A.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Key%20Signature%20A%20major.jpg?width=640"
+      },
+      "tags": ["music::key-signatures"]
+    },
+    {
+      "key": "keysig-e",
+      "model": "basic",
+      "fields": {
+        "front": "Which major key has this key signature?",
+        "back": "**E major** (relative minor: C sharp minor)",
+        "extra": "Four sharps: F, C, G, and D sharp. Last sharp D sharp + half step = E.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Key%20Signature%20E%20major.jpg?width=640"
+      },
+      "tags": ["music::key-signatures"]
+    },
+    {
+      "key": "keysig-f",
+      "model": "basic",
+      "fields": {
+        "front": "Which major key has this key signature?",
+        "back": "**F major** (relative minor: D minor)",
+        "extra": "One flat: B flat. The one flat key you must memorize, since the second-to-last-flat trick needs at least two flats.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Key%20Signature%20F%20major.jpg?width=640"
+      },
+      "tags": ["music::key-signatures"]
+    },
+    {
+      "key": "keysig-b-flat",
+      "model": "basic",
+      "fields": {
+        "front": "Which major key has this key signature?",
+        "back": "**B flat major** (relative minor: G minor)",
+        "extra": "Two flats: B flat and E flat. The second-to-last flat, B flat, names the key.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Key%20Signature%20B-flat%20major.jpg?width=640"
+      },
+      "tags": ["music::key-signatures"]
+    },
+    {
+      "key": "keysig-e-flat",
+      "model": "basic",
+      "fields": {
+        "front": "Which major key has this key signature?",
+        "back": "**E flat major** (relative minor: C minor)",
+        "extra": "Three flats: B, E, and A flat. The second-to-last flat, E flat, names the key.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Key%20Signature%20E-flat%20major.jpg?width=640"
+      },
+      "tags": ["music::key-signatures"]
+    },
+    {
+      "key": "keysig-a-flat",
+      "model": "basic",
+      "fields": {
+        "front": "Which major key has this key signature?",
+        "back": "**A flat major** (relative minor: F minor)",
+        "extra": "Four flats: B, E, A, and D flat. The second-to-last flat, A flat, names the key.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Key%20Signature%20A-flat%20major.jpg?width=640"
+      },
+      "tags": ["music::key-signatures"]
+    },
+    {
+      "key": "time-sig-top",
+      "model": "basic",
+      "fields": {
+        "front": "In a time signature, what does the **top** number tell you?",
+        "back": "How many beats are in each measure",
+        "extra": "3/4 means three beats per measure; 4/4 means four."
+      },
+      "tags": ["music::time-signatures"]
+    },
+    {
+      "key": "time-sig-bottom",
+      "model": "basic",
+      "fields": {
+        "front": "In a time signature, what does the **bottom** number tell you?",
+        "back": "Which note value counts as one beat",
+        "extra": "4 = quarter note, 8 = eighth note, 2 = half note. So 6/8 means six eighth-note beats' worth per measure."
+      },
+      "tags": ["music::time-signatures"]
+    },
+    {
+      "key": "three-four",
+      "model": "basic",
+      "fields": {
+        "front": "Read this time signature: how is a measure counted?",
+        "back": "**3/4**: three quarter-note beats per measure",
+        "extra": "Waltz time: ONE two three, ONE two three.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-timesig.svg?width=640"
+      },
+      "tags": ["music::time-signatures"]
+    },
+    {
+      "key": "common-time",
+      "model": "basic",
+      "fields": {
+        "front": "What time signature does this C-shaped symbol stand for?",
+        "back": "**Common time**: 4/4",
+        "extra": "The C is not short for common; it survives from the broken circle of medieval mensural notation.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-commontime.svg?width=640"
+      },
+      "tags": ["music::time-signatures"]
+    },
+    {
+      "key": "cut-time",
+      "model": "basic",
+      "fields": {
+        "front": "What time signature does this symbol (a C with a vertical slash) stand for?",
+        "back": "**Cut time** (alla breve): 2/2, two half-note beats per measure",
+        "extra": "Common in marches and fast pieces: the same notes as 4/4 but felt in two.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-cuttime.svg?width=640"
+      },
+      "tags": ["music::time-signatures"]
+    },
+    {
+      "key": "six-eight",
+      "model": "basic",
+      "fields": {
+        "front": "How is 6/8 time actually felt, and how does it differ from 3/4?",
+        "back": "In two: each measure has **two dotted-quarter beats**, each splitting into three eighth notes (ONE-and-a TWO-and-a)",
+        "extra": "6/8 is compound duple; 3/4 is simple triple (three quarter beats). Same six eighth notes per measure, grouped 3+3 versus 2+2+2."
+      },
+      "tags": ["music::time-signatures"]
+    },
+    {
+      "key": "metronome-marking",
+      "model": "basic",
+      "fields": {
+        "front": "What does this marking tell the performer?",
+        "back": "The tempo: play **120 quarter notes per minute**",
+        "extra": "A metronome (BPM) marking. The note value shown is the beat unit; in 6/8 you will often see a dotted quarter instead.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-metronome.svg?width=640"
+      },
+      "tags": ["music::tempo"]
+    },
+    {
+      "key": "tempo-order",
+      "model": "sequence",
+      "fields": {
+        "title": "The standard Italian tempo terms, from slowest to fastest",
+        "items": [
+          "Grave",
+          "Largo",
+          "Adagio",
+          "Andante",
+          "Moderato",
+          "Allegro",
+          "Vivace",
+          "Presto",
+          "Prestissimo"
+        ],
+        "contextWindow": 1
+      },
+      "tags": ["music::tempo"]
+    },
+    {
+      "key": "largo",
+      "model": "basic",
+      "fields": {
+        "front": "What does the tempo marking **Largo** mean?",
+        "back": "Very slow and broad",
+        "extra": "Roughly 40-60 BPM. Italian for *wide*."
+      },
+      "tags": ["music::tempo"]
+    },
+    {
+      "key": "adagio",
+      "model": "basic",
+      "fields": {
+        "front": "What does the tempo marking **Adagio** mean?",
+        "back": "Slow, at ease",
+        "extra": "Roughly 66-76 BPM. Faster than largo, slower than andante."
+      },
+      "tags": ["music::tempo"]
+    },
+    {
+      "key": "andante",
+      "model": "basic",
+      "fields": {
+        "front": "What does the tempo marking **Andante** mean?",
+        "back": "At a walking pace, moderately slow",
+        "extra": "Roughly 76-108 BPM. From the Italian *andare*, to walk."
+      },
+      "tags": ["music::tempo"]
+    },
+    {
+      "key": "moderato",
+      "model": "basic",
+      "fields": {
+        "front": "What does the tempo marking **Moderato** mean?",
+        "back": "At a moderate speed",
+        "extra": "Roughly 108-120 BPM, between andante and allegro."
+      },
+      "tags": ["music::tempo"]
+    },
+    {
+      "key": "allegro",
+      "model": "basic",
+      "fields": {
+        "front": "What does the tempo marking **Allegro** mean?",
+        "back": "Fast and lively",
+        "extra": "Roughly 120-156 BPM. Italian for *cheerful*."
+      },
+      "tags": ["music::tempo"]
+    },
+    {
+      "key": "vivace",
+      "model": "basic",
+      "fields": {
+        "front": "What does the tempo marking **Vivace** mean?",
+        "back": "Very fast and spirited",
+        "extra": "Roughly 156-176 BPM, between allegro and presto. Italian for *lively*."
+      },
+      "tags": ["music::tempo"]
+    },
+    {
+      "key": "presto",
+      "model": "basic",
+      "fields": {
+        "front": "What does the tempo marking **Presto** mean?",
+        "back": "Very fast",
+        "extra": "Roughly 168-200 BPM. Prestissimo, even faster, is the top of the scale."
+      },
+      "tags": ["music::tempo"]
+    },
+    {
+      "key": "ritardando",
+      "model": "basic",
+      "fields": {
+        "front": "What does **rit.** (ritardando) tell you to do?",
+        "back": "Gradually slow down",
+        "extra": "Rallentando (rall.) means much the same. Confusable: ritenuto means immediately held back, not gradual."
+      },
+      "tags": ["music::tempo"]
+    },
+    {
+      "key": "accelerando",
+      "model": "basic",
+      "fields": {
+        "front": "What does **accel.** (accelerando) tell you to do?",
+        "back": "Gradually speed up",
+        "extra": "The opposite of ritardando."
+      },
+      "tags": ["music::tempo"]
+    },
+    {
+      "key": "a-tempo",
+      "model": "basic",
+      "fields": {
+        "front": "After a ritardando, the score says **a tempo**. What do you do?",
+        "back": "Return to the previous tempo",
+        "extra": "Literally *in time*: it cancels any accelerando or ritardando."
+      },
+      "tags": ["music::tempo"]
+    },
+    {
+      "key": "pianissimo",
+      "model": "basic",
+      "fields": {
+        "front": "What is this dynamic marking, and how loud is it?",
+        "back": "**pp** (pianissimo): very soft",
+        "extra": "Softer than p. Composers occasionally stack more, like ppp.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music%20dynamic%20pianissimo.svg?width=640"
+      },
+      "tags": ["music::dynamics"]
+    },
+    {
+      "key": "piano-dynamic",
+      "model": "basic",
+      "fields": {
+        "front": "What is this dynamic marking, and how loud is it?",
+        "back": "**p** (piano): soft",
+        "extra": "The instrument is named after the dynamic: the pianoforte could play both soft and loud.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music%20dynamic%20piano.svg?width=640"
+      },
+      "tags": ["music::dynamics"]
+    },
+    {
+      "key": "mezzo-piano",
+      "model": "basic",
+      "fields": {
+        "front": "What is this dynamic marking, and how loud is it?",
+        "back": "**mp** (mezzo piano): moderately soft",
+        "extra": "Mezzo means half or medium. Louder than p, softer than mf.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music%20dynamic%20mezzo%20piano.svg?width=640"
+      },
+      "tags": ["music::dynamics"]
+    },
+    {
+      "key": "mezzo-forte",
+      "model": "basic",
+      "fields": {
+        "front": "What is this dynamic marking, and how loud is it?",
+        "back": "**mf** (mezzo forte): moderately loud",
+        "extra": "The default middle ground of most music. Softer than f, louder than mp.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music%20dynamic%20mezzo%20forte.svg?width=640"
+      },
+      "tags": ["music::dynamics"]
+    },
+    {
+      "key": "forte",
+      "model": "basic",
+      "fields": {
+        "front": "What is this dynamic marking, and how loud is it?",
+        "back": "**f** (forte): loud",
+        "extra": "Italian for *strong*.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music%20dynamic%20forte.svg?width=640"
+      },
+      "tags": ["music::dynamics"]
+    },
+    {
+      "key": "fortissimo",
+      "model": "basic",
+      "fields": {
+        "front": "What is this dynamic marking, and how loud is it?",
+        "back": "**ff** (fortissimo): very loud",
+        "extra": "Louder than f. The full ladder, soft to loud: pp, p, mp, mf, f, ff.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music%20dynamic%20fortissimo.svg?width=640"
+      },
+      "tags": ["music::dynamics"]
+    },
+    {
+      "key": "crescendo",
+      "model": "basic",
+      "fields": {
+        "front": "What does this hairpin that opens to the right mean?",
+        "back": "**Crescendo**: gradually get louder",
+        "extra": "Also written cresc. Mnemonic: the shape grows from a point, like the volume.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-crescendo.svg?width=640"
+      },
+      "tags": ["music::dynamics"]
+    },
+    {
+      "key": "diminuendo",
+      "model": "basic",
+      "fields": {
+        "front": "What does this hairpin that closes to a point mean?",
+        "back": "**Diminuendo** (decrescendo): gradually get softer",
+        "extra": "Also written dim. or decresc. The mirror image of a crescendo.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-diminuendo.svg?width=640"
+      },
+      "tags": ["music::dynamics"]
+    },
+    {
+      "key": "sforzando",
+      "model": "basic",
+      "fields": {
+        "front": "What does this marking mean?",
+        "back": "**sfz** (sforzando): a sudden, forceful accent on that one note or chord",
+        "extra": "From Italian *sforzare*, to force. Related: fp (fortepiano) means loud, then instantly soft.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music%20expression%20sforzando%20sfz.svg?width=640"
+      },
+      "tags": ["music::dynamics"]
+    },
+    {
+      "key": "staccato",
+      "model": "basic",
+      "fields": {
+        "front": "What does the dot above or below this notehead mean?",
+        "back": "**Staccato**: play the note short and detached",
+        "extra": "Confusable: a dot *beside* a notehead lengthens it by half; a dot *above or below* shortens its sound.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-staccato.svg?width=640"
+      },
+      "tags": ["music::articulation"]
+    },
+    {
+      "key": "staccatissimo",
+      "model": "basic",
+      "fields": {
+        "front": "What does this wedge above the note mean?",
+        "back": "**Staccatissimo**: extremely short and detached",
+        "extra": "An exaggerated staccato.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-staccatissimo.svg?width=640"
+      },
+      "tags": ["music::articulation"]
+    },
+    {
+      "key": "accent",
+      "model": "basic",
+      "fields": {
+        "front": "What does this > symbol above the note mean?",
+        "back": "An **accent**: attack the note harder, with extra emphasis",
+        "extra": "Confusable: the vertical wedge ^ (marcato) is an even stronger accent.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-marcato.svg?width=640"
+      },
+      "tags": ["music::articulation"]
+    },
+    {
+      "key": "tenuto",
+      "model": "basic",
+      "fields": {
+        "front": "What does this horizontal line above or below the notehead mean?",
+        "back": "**Tenuto**: hold the note for its full value, with a slight lean on it",
+        "extra": "The opposite spirit of staccato: no daylight after the note.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-tenuto.svg?width=640"
+      },
+      "tags": ["music::articulation"]
+    },
+    {
+      "key": "fermata",
+      "model": "basic",
+      "fields": {
+        "front": "What does this arc with a dot above the note mean?",
+        "back": "A **fermata**: hold the note longer than its written value, at the performer's discretion",
+        "extra": "Nicknamed the bird's eye. On a bar line it marks a pause between sections.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-fermata.svg?width=640"
+      },
+      "tags": ["music::articulation"]
+    },
+    {
+      "key": "repeat-sign",
+      "model": "basic",
+      "fields": {
+        "front": "What do these two dots next to the double bar tell you?",
+        "back": "A **repeat sign**: go back and play the passage again",
+        "extra": "Dots facing left end the repeated passage; a mirrored sign with dots facing right marks where it begins. With no start sign, repeat from the beginning.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-repeat.svg?width=640"
+      },
+      "tags": ["music::navigation"]
+    },
+    {
+      "key": "volta-brackets",
+      "model": "basic",
+      "fields": {
+        "front": "What do these numbered brackets over the final measures of a repeated section mean?",
+        "back": "**First and second endings** (volta brackets): play ending 1, repeat the section, then skip ending 1 and play ending 2",
+        "extra": "From Italian *volta*, time: first time, second time.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-volte.svg?width=640"
+      },
+      "tags": ["music::navigation"]
+    },
+    {
+      "key": "da-capo",
+      "model": "basic",
+      "fields": {
+        "front": "What does **D.C.** (da capo) tell you to do?",
+        "back": "Go back to the very beginning of the piece",
+        "extra": "Italian for *from the head*. D.C. al Fine: from the beginning, stop at the word Fine.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-dacapo.svg?width=640"
+      },
+      "tags": ["music::navigation"]
+    },
+    {
+      "key": "dal-segno",
+      "model": "basic",
+      "fields": {
+        "front": "What does **D.S.** (dal segno) tell you to do?",
+        "back": "Go back to the segno sign (a stylized S with a slash and dots), not the beginning",
+        "extra": "Confusable with D.C., which returns to the very start. D.S. al Coda: from the sign, then jump to the coda at the To Coda mark.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-dalsegno.svg?width=640"
+      },
+      "tags": ["music::navigation"]
+    },
+    {
+      "key": "coda",
+      "model": "basic",
+      "fields": {
+        "front": "What is this crosshair-and-circle symbol called, and what is it for?",
+        "back": "A **coda** sign: it marks the tail section that ends the piece after a D.S. al Coda or D.C. al Coda jump",
+        "extra": "Italian for *tail*. You jump to it from the To Coda mark, never on the first pass.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Coda%20sign.svg?width=640"
+      },
+      "tags": ["music::navigation"]
+    },
+    {
+      "key": "dc-al-fine",
+      "model": "basic",
+      "fields": {
+        "front": "The score says **D.C. al Fine**. What is the road map?",
+        "back": "Return to the beginning and play until the word **Fine**, which is where the piece ends",
+        "extra": "Fine is Italian for *end*. Repeats inside the restated passage are normally not taken the second time."
+      },
+      "tags": ["music::navigation"]
+    },
+    {
+      "key": "grace-note",
+      "model": "basic",
+      "fields": {
+        "front": "What is this tiny note with a slash through its stem, and how is it played?",
+        "back": "An **acciaccatura** (crushed grace note): squeezed in as fast as possible just before the main note",
+        "extra": "Confusable: a small note *without* the slash is an appoggiatura, which takes a real share of the main note's time.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-acciaccatura.svg?width=640"
+      },
+      "tags": ["music::ornaments"]
+    },
+    {
+      "key": "trill",
+      "model": "basic",
+      "fields": {
+        "front": "What does this **tr** marking tell you to do?",
+        "back": "Play a **trill**: rapidly alternate between the written note and the note a step above it",
+        "extra": "Often extended with a wavy line showing how long the trill lasts.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-trill.svg?width=640"
+      },
+      "tags": ["music::ornaments"]
+    },
+    {
+      "key": "arpeggio-sign",
+      "model": "basic",
+      "fields": {
+        "front": "What does this wavy vertical line in front of a chord mean?",
+        "back": "**Arpeggiate** the chord: roll the notes one after another, normally from the bottom up, instead of together",
+        "extra": "From Italian *arpeggiare*, to play like a harp.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-arpeggio.svg?width=640"
+      },
+      "tags": ["music::ornaments"]
+    },
+    {
+      "key": "triplet",
+      "model": "basic",
+      "fields": {
+        "front": "What does the small 3 over this group of notes mean?",
+        "back": "A **triplet**: play three notes in the time normally taken by two of the same value",
+        "extra": "Three triplet eighth notes fill one quarter-note beat: count *tri-pl-et*.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-triplet.svg?width=640"
+      },
+      "tags": ["music::ornaments"]
+    },
+    {
+      "key": "glissando",
+      "model": "basic",
+      "fields": {
+        "front": "What does this line connecting two distant notes tell you to do?",
+        "back": "Play a **glissando**: slide continuously from the first pitch to the second",
+        "extra": "Abbreviated gliss. On piano it is a sweep across the keys; on trombone or strings, a true continuous slide.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Music-glissando.svg?width=640"
+      },
+      "tags": ["music::ornaments"]
+    },
+    {
+      "key": "octave-signs",
+      "model": "basic",
+      "fields": {
+        "front": "A dashed line labeled **8va** runs above a passage. How do you play it?",
+        "back": "An octave **higher** than written",
+        "extra": "8vb (or 8va below the staff) means an octave lower. Used to avoid towers of ledger lines."
+      },
+      "tags": ["music::ornaments"]
+    }
+  ]
+}

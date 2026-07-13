@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "key": "music",
+  "name": "Music",
+  "decks": [
+    {
+      "key": "reading-sheet-music",
+      "name": "Reading Sheet Music",
+      "description": "Learn to read standard music notation from scratch: the staff and clefs, every note on the treble and bass staves, note values and rests, accidentals, key and time signatures, dynamics, articulation, tempo terms, and repeat navigation.",
+      "cardCount": 131,
+      "topics": [
+        "music",
+        "notation",
+        "music-theory"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/G-clef-stave-with-note-names.svg?width=640"
+    }
+  ]
+}

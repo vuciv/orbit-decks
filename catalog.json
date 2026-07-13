@@ -37,6 +37,13 @@
       "file": "categories/art.json"
     },
     {
+      "key": "music",
+      "name": "Music",
+      "deckCount": 1,
+      "rev": "0e2d83627c84",
+      "file": "categories/music.json"
+    },
+    {
       "key": "cinema",
       "name": "Cinema",
       "deckCount": 2,
@@ -355,6 +362,11 @@
       "key": "queens-pawn-game",
       "version": 1,
       "file": "decks/queens-pawn-game.json"
+    },
+    {
+      "key": "reading-sheet-music",
+      "version": 1,
+      "file": "decks/reading-sheet-music.json"
     },
     {
       "key": "ruy-lopez",
