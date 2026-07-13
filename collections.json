@@ -3,19 +3,13 @@
     "key": "getting-started",
     "title": "Getting started",
     "description": "Hand-picked first decks with instant visual payoff.",
-    "deckKeys": ["kanto-pokedex", "flags-of-the-world", "world-capitals"]
+    "deckKeys": ["flags-of-the-world", "world-capitals"]
   },
   {
     "key": "know-the-world",
     "title": "Know the world",
     "description": "Flags, capitals, and shapes: build a mental map of Earth.",
     "deckKeys": ["flags-of-the-world", "world-capitals", "country-silhouettes", "geoguessr-meta", "us-states"]
-  },
-  {
-    "key": "complete-the-pokedex",
-    "title": "Complete the Pokedex",
-    "description": "Name them all, one generation at a time.",
-    "deckKeys": ["kanto-pokedex", "johto-pokedex"]
   },
   {
     "key": "silver-screen",

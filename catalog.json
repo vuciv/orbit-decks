@@ -18,8 +18,8 @@
     {
       "key": "pop-culture",
       "name": "Pop Culture",
-      "deckCount": 3,
-      "rev": "7160a5cfa665",
+      "deckCount": 1,
+      "rev": "193da4a5ff2b",
       "file": "categories/pop-culture.json"
     },
     {
@@ -92,7 +92,6 @@
       "title": "Getting started",
       "description": "Hand-picked first decks with instant visual payoff.",
       "deckKeys": [
-        "kanto-pokedex",
         "flags-of-the-world",
         "world-capitals"
       ]
@@ -107,15 +106,6 @@
         "country-silhouettes",
         "geoguessr-meta",
         "us-states"
-      ]
-    },
-    {
-      "key": "complete-the-pokedex",
-      "title": "Complete the Pokedex",
-      "description": "Name them all, one generation at a time.",
-      "deckKeys": [
-        "kanto-pokedex",
-        "johto-pokedex"
       ]
     },
     {
@@ -225,16 +215,6 @@
       "key": "geoguessr-meta",
       "version": 1,
       "file": "decks/geoguessr-meta.json"
-    },
-    {
-      "key": "johto-pokedex",
-      "version": 1,
-      "file": "decks/johto-pokedex.json"
-    },
-    {
-      "key": "kanto-pokedex",
-      "version": 1,
-      "file": "decks/kanto-pokedex.json"
     },
     {
       "key": "lmsw-exam-prep",

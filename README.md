@@ -78,8 +78,8 @@ single deck while authoring (safe concurrently):
 
 ## Relationship to the app repo
 
-The app bundles Flags of the World and the Kanto Pokedex in
-`src/db/starter-decks.ts` as its offline/first-run fallback; those two
-decks exist both there and here (`npx tsx scripts/export-catalog.ts` in
-the orbit repo regenerates their deck payloads). Every other deck lives
-only in this repo. The bundled copy does not need to stay in lockstep.
+The app bundles Flags of the World in `src/db/starter-decks.ts` as its
+offline/first-run fallback; that deck exists both there and here
+(`npx tsx scripts/export-catalog.ts` in the orbit repo regenerates its
+deck payload). Every other deck lives only in this repo. The bundled
+copy does not need to stay in lockstep.

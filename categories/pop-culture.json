@@ -4,30 +4,6 @@
   "name": "Pop Culture",
   "decks": [
     {
-      "key": "johto-pokedex",
-      "name": "Johto Pokédex: Generation II",
-      "description": "All 100 Pokémon of Generation II (#152 to #251), with official artwork. Name each one from its picture; answers include Pokédex number and type.",
-      "cardCount": 100,
-      "topics": [
-        "pokemon",
-        "games",
-        "trivia"
-      ],
-      "coverImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/249.png"
-    },
-    {
-      "key": "kanto-pokedex",
-      "name": "Kanto Pokédex: The Original 151",
-      "description": "All 151 Pokémon from the original Kanto Pokédex, with official artwork. Name each one from its picture; answers include Pokédex number and type.",
-      "cardCount": 151,
-      "topics": [
-        "pokemon",
-        "games",
-        "trivia"
-      ],
-      "coverImage": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
-    },
-    {
       "key": "middle-earth-lore",
       "name": "Middle-earth Lore: Shire to Silmarillion",
       "description": "Tolkien's legendarium in 132 cards, working backward through time: the War of the Ring, deep Third Age history, the forging of the Rings of Power and the fall of Numenor, and finally the First Age of the Silmarillion - the Valar, Feanor, Beren and Luthien, and the overthrow of Morgoth.",
