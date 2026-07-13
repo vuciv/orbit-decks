@@ -1,0 +1,336 @@
+{
+  "key": "ruy-lopez-marshall-attack",
+  "version": 1,
+  "name": "Ruy Lopez: Marshall Attack",
+  "description": "Line trainer for the Ruy Lopez: Marshall Attack, generated from the canonical opening database (lichess-org/chess-openings): 20 positions drilled book-move by book-move from Black's side across 8 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "ruy-lopez"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2F2p1bppp%2Fp1n2n2%2F1p1pp3%2F4P3%2F1BP2N2%2FPP1P1PPP%2FRNBQR1K1%20w%20-%20-%200%209&color=black&theme=brown&piece=cburnett&lastMove=d7d5",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "lastMove": "e2e4",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 **e5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 **Nc6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+        "answer": "a6",
+        "answerUci": "a7a6",
+        "orientation": "black",
+        "lastMove": "f1b5",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 **a6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/1ppp1ppp/p1n5/4p3/B3P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 1 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "b5a4",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 **Nf6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/1ppp1ppp/p1n2n2/4p3/B3P3/5N2/PPPP1PPP/RNBQ1RK1 b kq - 3 5",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "lastMove": "e1g1",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O **Be7**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/1pppbppp/p1n2n2/4p3/B3P3/5N2/PPPP1PPP/RNBQR1K1 b kq - 5 6",
+        "answer": "b5",
+        "answerUci": "b7b5",
+        "orientation": "black",
+        "lastMove": "f1e1",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 **b5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/2ppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPP1PPP/RNBQR1K1 b kq - 1 7",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "lastMove": "a4b3",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 **O-O**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/2ppbppp/p1n2n2/1p2p3/4P3/1BP2N2/PP1P1PPP/RNBQR1K1 b - - 0 8",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "lastMove": "c2c3",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 **d5** (Marshall Attack, C89)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3-exd5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/2p1bppp/p1n2n2/1p1Pp3/8/1BP2N2/PP1P1PPP/RNBQR1K1 b - - 0 9",
+        "answer": "Nxd5",
+        "answerUci": "f6d5",
+        "orientation": "black",
+        "lastMove": "e4d5",
+        "prompt": "You are Black in the Marshall Attack. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 **Nxd5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3-exd5-nxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/2p1bppp/p1n5/1p1nN3/8/1BP5/PP1P1PPP/RNBQR1K1 b - - 0 10",
+        "answer": "Nxe5",
+        "answerUci": "c6e5",
+        "orientation": "black",
+        "lastMove": "f3e5",
+        "prompt": "You are Black in the Marshall Attack. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 **Nxe5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3-exd5-nxe5-rxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/2p1bppp/p7/1p1nR3/8/1BP5/PP1P1PPP/RNBQ2K1 b - - 0 11",
+        "answer": "c6",
+        "answerUci": "c7c6",
+        "orientation": "black",
+        "lastMove": "e1e5",
+        "prompt": "You are Black in the Marshall Attack. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 **c6** (Modern Variation, C89)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3-exd5-nxe5-rxe5-bxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/4bppp/p1p5/1p1BR3/8/2P5/PP1P1PPP/RNBQ2K1 b - - 0 12",
+        "answer": "cxd5",
+        "answerUci": "c6d5",
+        "orientation": "black",
+        "lastMove": "b3d5",
+        "prompt": "You are Black in the Modern Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. Bxd5 **cxd5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3-exd5-nxe5-rxe5-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/4bppp/p1p5/1p1nR3/3P4/1BP5/PP3PPP/RNBQ2K1 b - - 0 12",
+        "answer": "Bd6",
+        "answerUci": "e7d6",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Main Line. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. d4 **Bd6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3-exd5-nxe5-rxe5-bxd5-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/4bppp/p7/1p1pR3/3P4/2P5/PP3PPP/RNBQ2K1 b - - 0 13",
+        "answer": "Bd6",
+        "answerUci": "e7d6",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Modern Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. Bxd5 cxd5 13. d4 **Bd6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3-exd5-nxe5-rxe5-d4-re1",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/5ppp/p1pb4/1p1n4/3P4/1BP5/PP3PPP/RNBQR1K1 b - - 2 13",
+        "answer": "Qh4",
+        "answerUci": "d8h4",
+        "orientation": "black",
+        "lastMove": "e5e1",
+        "prompt": "You are Black in the Main Line. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. d4 Bd6 13. Re1 **Qh4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3-exd5-nxe5-rxe5-d4-re1-g3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b2rk1/5ppp/p1pb4/1p1n4/3P3q/1BP3P1/PP3P1P/RNBQR1K1 b - - 0 14",
+        "answer": "Qh3",
+        "answerUci": "h4h3",
+        "orientation": "black",
+        "lastMove": "g2g3",
+        "prompt": "You are Black in the Main Line. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. d4 Bd6 13. Re1 Qh4 14. g3 **Qh3** (Modern Main Line, C89)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3-exd5-nxe5-rxe5-d4-re1-g3-be3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b2rk1/5ppp/p1pb4/1p1n4/3P4/1BP1B1Pq/PP3P1P/RN1QR1K1 b - - 2 15",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "lastMove": "c1e3",
+        "prompt": "You are Black in the Modern Main Line. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. d4 Bd6 13. Re1 Qh4 14. g3 Qh3 15. Be3 **Bg4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3-exd5-nxe5-rxe5-d4-re1-g3-be3-qd3",
+      "model": "chess",
+      "fields": {
+        "fen": "r4rk1/5ppp/p1pb4/1p1n4/3P2b1/1BPQB1Pq/PP3P1P/RN2R1K1 b - - 4 16",
+        "answer": "Rae8",
+        "answerUci": "a8e8",
+        "orientation": "black",
+        "lastMove": "d1d3",
+        "prompt": "You are Black in the Modern Main Line. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. d4 Bd6 13. Re1 Qh4 14. g3 Qh3 15. Be3 Bg4 16. Qd3 **Rae8**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3-exd5-nxe5-rxe5-d4-re1-g3-be3-qd3-nd2",
+      "model": "chess",
+      "fields": {
+        "fen": "4rrk1/5ppp/p1pb4/1p1n4/3P2b1/1BPQB1Pq/PP1N1P1P/R3R1K1 b - - 6 17",
+        "answer": "Re6",
+        "answerUci": "e8e6",
+        "orientation": "black",
+        "lastMove": "b1d2",
+        "prompt": "You are Black in the Modern Main Line. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. d4 Bd6 13. Re1 Qh4 14. g3 Qh3 15. Be3 Bg4 16. Qd3 Rae8 17. Nd2 **Re6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3-exd5-nxe5-rxe5-d4-re1-g3-be3-qd3-nd2-a4",
+      "model": "chess",
+      "fields": {
+        "fen": "5rk1/5ppp/p1pbr3/1p1n4/P2P2b1/1BPQB1Pq/1P1N1P1P/R3R1K1 b - - 0 18",
+        "answer": "Qh5",
+        "answerUci": "h3h5",
+        "orientation": "black",
+        "lastMove": "a2a4",
+        "prompt": "You are Black in the Modern Main Line. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. d4 Bd6 13. Re1 Qh4 14. g3 Qh3 15. Be3 Bg4 16. Qd3 Rae8 17. Nd2 Re6 18. a4 **Qh5** (Spassky Variation, C89)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

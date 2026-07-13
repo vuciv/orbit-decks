@@ -24,6 +24,7 @@ Usage:
 
 import argparse
 import io
+import random
 import json
 import re
 import unicodedata
@@ -64,6 +65,10 @@ def slugify(s):
 def slug_san(san):
     return re.sub(r"[^a-z0-9]", "",
                   san.replace("O-O-O", "ooo").replace("O-O", "oo").lower())
+
+
+def short_name(name):
+    return name.split(":")[-1].split(",")[-1].strip()
 
 
 def movetext(sans, bold_last=False):
@@ -111,7 +116,8 @@ def detect_side(family, root_entry):
     return chess.BLACK if board.turn == chess.WHITE else chess.WHITE
 
 
-def gen_deck(entries, family, side_override=None):
+def gen_deck(entries, family, display=None, side_override=None):
+    display = display or family
     trie, root_entry = build_trie(entries, family)
     side = (chess.WHITE if side_override == "white" else
             chess.BLACK if side_override == "black" else
@@ -119,7 +125,6 @@ def gen_deck(entries, family, side_override=None):
     if side is None:
         return None
     side_name = "White" if side == chess.WHITE else "Black"
-    strip = lambda n: n.replace(f"{family}: ", "").replace(family, "main line")
 
     cards, visited = [], set()
 
@@ -138,27 +143,15 @@ def gen_deck(entries, family, side_override=None):
                 return
             visited.add(pk)
             move = board.parse_san(bsan)
-            replies = []
-            movenum = len(sans) // 2 + 2 - (0 if side == chess.BLACK else 1)
-            for wsan, gc in sorted(child["children"].items(),
-                                   key=lambda kv: -kv[1]["weight"]):
-                label = f"{movenum}. {wsan}"
-                if side == chess.WHITE:
-                    label = f"{movenum}... {wsan}"
-                if gc["name"]:
-                    label += f" ({strip(gc['name'])})"
-                replies.append(label)
-            extra = f"Line: {movetext(sans + [bsan], bold_last=True)}."
+            extra = movetext(sans + [bsan], bold_last=True)
             if child["name"]:
-                extra += f" This is the {strip(child['name'])} ({child['eco']})."
-            if replies:
-                extra += " Covered replies: " + ", ".join(replies) + "."
+                extra += f" ({short_name(child['name'])}, {child['eco']})"
             opp_path = [s for i, s in enumerate(sans)
                         if (i % 2 == 0) == (side == chess.BLACK)]
             key = ("l-" + "-".join(slug_san(s) for s in opp_path)
                    if opp_path else "l-root")
             cards.append(dict(
-                key=key, model="chess",
+                depth=len(sans), key=key, model="chess",
                 fields=dict(
                     fen=board.fen(),
                     answer=re.sub(r"[+#]", "", bsan),
@@ -166,7 +159,7 @@ def gen_deck(entries, family, side_override=None):
                     orientation=side_name.lower(),
                     lastMove=board.move_stack[-1].uci() if board.move_stack else None,
                     prompt=f"You are {side_name} in the "
-                           f"{strip(opening) if opening else family}. "
+                           f"{short_name(opening) if opening else short_name(display)}. "
                            f"What is the book move?",
                     extra=extra,
                 ),
@@ -189,6 +182,12 @@ def gen_deck(entries, family, side_override=None):
     if not cards:
         return None
 
+    rnd = random.Random(slugify(display))
+    decorated = [(c["depth"], rnd.random(), c) for c in cards]
+    cards = [c for _, _, c in sorted(decorated, key=lambda t: t[:2])]
+    for c in cards:
+        del c["depth"]
+
     game = chess.pgn.read_game(io.StringIO(root_entry[2]))
     cover_board = game.end().board()
     cover_fen = quote(cover_board.fen(), safe="")
@@ -199,17 +198,17 @@ def gen_deck(entries, family, side_override=None):
 
     n_vars = trie["weight"]
     return side_name, dict(
-        key=slugify(family),
+        key=slugify(display),
         version=1,
-        name=f"The {family}" if not family.startswith(("The ", "A ")) else family,
+        name=f"The {display}" if display == family else display,
         description=(
-            f"Line trainer for the {family}, generated from the canonical "
+            f"Line trainer for the {display}, generated from the canonical "
             f"opening database (lichess-org/chess-openings): {len(cards)} "
             f"positions drilled book-move by book-move from {side_name}'s "
-            f"side across {n_vars} named variations. Each card shows the "
-            f"position from {side_name}'s side and asks for the book move; "
+            f"side across {n_vars} named variations. Cards are introduced "
+            f"shallow-to-deep, shuffled across lines within each depth; "
             f"the back gives the line so far, the variation name and ECO "
-            f"code, and the covered replies that continue it."),
+            f"code."),
         category="Chess",
         topics=["chess", "openings", slugify(family)],
         coverImage=cover,
@@ -218,45 +217,90 @@ def gen_deck(entries, family, side_override=None):
     )
 
 
+def sub_of(name):
+    if ":" not in name:
+        return None
+    return name.split(":", 1)[1].split(",")[0].strip()
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--tsv-dir", required=True)
-    ap.add_argument("--opening")
+    ap.add_argument("--opening", help='"Family" or "Family: Sub"')
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--side", choices=["white", "black"])
     ap.add_argument("--min-cards", type=int, default=20)
+    ap.add_argument("--split-over", type=int, default=40)
     ap.add_argument("--dry", action="store_true")
     args = ap.parse_args()
-
-    entries = load_entries(args.tsv_dir)
-    families = sorted({family_of(n) for _, n, _ in entries})
-    targets = [args.opening] if args.opening else families
     if not args.opening and not args.all and not args.dry:
         ap.error("pass --opening NAME, --all, or --dry")
 
-    covered = []
-    for p in (REPO / "decks").glob("*.json"):
-        covered.append(json.loads(p.read_text())["name"])
+    entries = load_entries(args.tsv_dir)
+    covered = [json.loads(p.read_text())["name"]
+               for p in (REPO / "decks").glob("*.json")]
 
     rows, written = [], 0
-    for fam in targets:
-        res = gen_deck(entries, fam, args.side if args.opening else None)
+
+    def emit(subset, family, display, forced=False):
+        nonlocal written
+        res = gen_deck(subset, family, display,
+                       args.side if args.opening else None)
         if res is None:
-            continue
+            return
         side, deck = res
         n = len(deck["notes"])
-        keep = n >= args.min_cards or bool(args.opening)
+        keep = n >= args.min_cards or forced
         path = REPO / "decks" / f"{deck['key']}.json"
-        exists = path.exists() or any(fam in name for name in covered)
-        rows.append((n, fam, side, "skip:exists" if exists else
-                     ("write" if keep else "skip:small")))
-        if args.dry or not keep or exists:
-            continue
-        path.write_text(json.dumps(deck, indent=2) + "\n")
-        written += 1
+        exists = path.exists()
+        action = "skip:exists" if exists else ("write" if keep else "skip:small")
+        rows.append((n, display, side, action))
+        if not args.dry and keep and not exists:
+            path.write_text(json.dumps(deck, indent=2) + "\n")
+            written += 1
 
-    for n, fam, side, action in sorted(rows, reverse=True):
-        print(f"{n:4d} cards  {side:5s}  {action:11s}  {fam}")
+    if args.opening:
+        if ":" in args.opening:
+            fam, sub = [x.strip() for x in args.opening.split(":", 1)]
+            subset = [e for e in entries
+                      if family_of(e[1]) == fam and sub_of(e[1]) == sub]
+            emit(subset, fam, f"{fam}: {sub}", forced=True)
+        else:
+            fam = args.opening
+            emit([e for e in entries if family_of(e[1]) == fam], fam, fam,
+                 forced=True)
+    else:
+        for fam in sorted({family_of(n) for _, n, _ in entries}):
+            if any(fam in name for name in covered):
+                rows.append((0, fam, "-", "skip:exists"))
+                continue
+            fam_entries = [e for e in entries if family_of(e[1]) == fam]
+            probe = gen_deck(fam_entries, fam)
+            if probe is None:
+                continue
+            n_full = len(probe[1]["notes"])
+            if n_full < args.min_cards:
+                rows.append((n_full, fam, probe[0], "skip:small"))
+                continue
+            if n_full <= args.split_over:
+                emit(fam_entries, fam, fam)
+                continue
+            subs = {}
+            for e in fam_entries:
+                subs.setdefault(sub_of(e[1]), []).append(e)
+            residual = list(subs.pop(None, []))
+            for sub, sub_entries in sorted(subs.items(),
+                                           key=lambda kv: -len(kv[1])):
+                probe = gen_deck(sub_entries, fam, f"{fam}: {sub}")
+                if probe and len(probe[1]["notes"]) >= args.min_cards:
+                    emit(sub_entries, fam, f"{fam}: {sub}")
+                else:
+                    residual.extend(sub_entries)
+            if residual:
+                emit(residual, fam, fam)
+
+    for n, name, side, action in sorted(rows, reverse=True):
+        print(f"{n:4d} cards  {side:5s}  {action:11s}  {name}")
     print(f"\n{written} deck(s) written. Run: node scripts/build.mjs")
 
 

@@ -1,8 +1,8 @@
 {
   "key": "tarrasch-defense",
-  "version": 1,
+  "version": 2,
   "name": "The Tarrasch Defense",
-  "description": "Line trainer for the Tarrasch Defense, generated from the canonical opening database (lichess-org/chess-openings): 25 positions drilled book-move by book-move from Black's side across 27 named variations. Each card shows the position from Black's side and asks for the book move; the back gives the line so far, the variation name and ECO code, and the covered replies that continue it.",
+  "description": "Line trainer for the Tarrasch Defense, generated from the canonical opening database (lichess-org/chess-openings): 25 positions drilled book-move by book-move from Black's side across 27 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -13,6 +13,22 @@
   "ttsLang": null,
   "notes": [
     {
+      "key": "l-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the Tarrasch Defense. What is the book move?",
+        "extra": "1. c4 **c5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-d4",
       "model": "chess",
       "fields": {
@@ -21,8 +37,24 @@
         "answerUci": "d7d5",
         "orientation": "black",
         "lastMove": "d2d4",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "Line: 1. d4 **d5**. Covered replies: 2. c4."
+        "prompt": "You are Black in the Tarrasch Defense. What is the book move?",
+        "extra": "1. d4 **d5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/8/2p5/2P5/5N2/PP1PPPPP/RNBQKB1R b KQkq - 1 2",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Tarrasch Defense. What is the book move?",
+        "extra": "1. c4 c5 2. Nf3 **Nc6**"
       },
       "tags": [
         "chess::line"
@@ -37,8 +69,8 @@
         "answerUci": "e7e6",
         "orientation": "black",
         "lastMove": "c2c4",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "Line: 1. d4 d5 2. c4 **e6**. Covered replies: 3. Nc3."
+        "prompt": "You are Black in the Tarrasch Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 **e6**"
       },
       "tags": [
         "chess::line"
@@ -53,8 +85,24 @@
         "answerUci": "c7c5",
         "orientation": "black",
         "lastMove": "b1c3",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "Line: 1. d4 d5 2. c4 e6 3. Nc3 **c5**. This is the main line (D32). Covered replies: 4. cxd5, 4. e3."
+        "prompt": "You are Black in the Tarrasch Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 **c5** (Tarrasch Defense, D32)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c4-nf3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppppp/2n5/2p5/2P5/2N2N2/PP1PPPPP/R1BQKB1R b KQkq - 3 3",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Tarrasch Defense. What is the book move?",
+        "extra": "1. c4 c5 2. Nf3 Nc6 3. Nc3 **Nf6**"
       },
       "tags": [
         "chess::line"
@@ -69,8 +117,72 @@
         "answerUci": "e6d5",
         "orientation": "black",
         "lastMove": "c4d5",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "Line: 1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 **exd5**. Covered replies: 5. Nf3 (Two Knights Variation), 5. e4 (Marshall Gambit), 5. dxc5."
+        "prompt": "You are Black in the Tarrasch Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 **exd5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp3ppp/4p3/2pp4/2PP4/2N1P3/PP3PPP/R1BQKBNR b KQkq - 0 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "e2e3",
+        "prompt": "You are Black in the Tarrasch Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c5 4. e3 **Nf6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c4-nf3-nc3-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp1ppppp/2n2n2/2p5/2P5/2N1PN2/PP1P1PPP/R1BQKB1R b KQkq - 0 4",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "e2e3",
+        "prompt": "You are Black in the Tarrasch Defense. What is the book move?",
+        "extra": "1. c4 c5 2. Nf3 Nc6 3. Nc3 Nf6 4. e3 **e6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/4pn2/2pp4/2PP4/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 2 5",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Tarrasch Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c5 4. e3 Nf6 5. Nf3 **Nc6** (Symmetrical Variation, D32)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c4-nf3-nc3-e3-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp1p1ppp/2n1pn2/2p5/2PP4/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 0 5",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Tarrasch Defense. What is the book move?",
+        "extra": "1. c4 c5 2. Nf3 Nc6 3. Nc3 Nf6 4. e3 e6 5. d4 **d5**"
       },
       "tags": [
         "chess::line"
@@ -86,135 +198,23 @@
         "orientation": "black",
         "lastMove": "g1f3",
         "prompt": "You are Black in the Two Knights Variation. What is the book move?",
-        "extra": "Line: 1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 **Nc6**. Covered replies: 6. g3 (Rubinstein System), 6. dxc5."
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 **Nc6**"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-d4-c4-nc3-cxd5-nf3-g3",
+      "key": "l-d4-c4-nc3-cxd5-dxc5",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkbnr/pp3ppp/2n5/2pp4/3P4/2N2NP1/PP2PP1P/R1BQKB1R b KQkq - 0 6",
-        "answer": "Nf6",
-        "answerUci": "g8f6",
-        "orientation": "black",
-        "lastMove": "g2g3",
-        "prompt": "You are Black in the Rubinstein System. What is the book move?",
-        "extra": "Line: 1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. g3 **Nf6**. This is the Prague Variation (D33). Covered replies: 7. Bg2."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nc3-cxd5-nf3-g3-bg2",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkb1r/pp3ppp/2n2n2/2pp4/3P4/2N2NP1/PP2PPBP/R1BQK2R b KQkq - 2 7",
-        "answer": "Be7",
-        "answerUci": "f8e7",
-        "orientation": "black",
-        "lastMove": "f1g2",
-        "prompt": "You are Black in the Prague Variation. What is the book move?",
-        "extra": "Line: 1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. g3 Nf6 7. Bg2 **Be7**. This is the Prague Variation, Main Line (D34). Covered replies: 8. O-O."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nc3-cxd5-nf3-g3-bg2-oo",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk2r/pp2bppp/2n2n2/2pp4/3P4/2N2NP1/PP2PPBP/R1BQ1RK1 b kq - 4 8",
-        "answer": "O-O",
-        "answerUci": "e8g8",
-        "orientation": "black",
-        "lastMove": "e1g1",
-        "prompt": "You are Black in the Prague Variation, Main Line. What is the book move?",
-        "extra": "Line: 1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. g3 Nf6 7. Bg2 Be7 8. O-O **O-O**. This is the Classical Variation (D34). Covered replies: 9. Bg5 (Classical Variation, Carlsbad Variation), 9. dxc5."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nc3-cxd5-nf3-g3-bg2-oo-bg5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/pp2bppp/2n2n2/2pp2B1/3P4/2N2NP1/PP2PPBP/R2Q1RK1 b - - 6 9",
-        "answer": "cxd4",
-        "answerUci": "c5d4",
-        "orientation": "black",
-        "lastMove": "c1g5",
-        "prompt": "You are Black in the Classical Variation, Carlsbad Variation. What is the book move?",
-        "extra": "Line: 1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. g3 Nf6 7. Bg2 Be7 8. O-O O-O 9. Bg5 **cxd4**. Covered replies: 10. Nxd4."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nc3-cxd5-nf3-g3-bg2-oo-bg5-nxd4",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/pp2bppp/2n2n2/3p2B1/3N4/2N3P1/PP2PPBP/R2Q1RK1 b - - 0 10",
-        "answer": "h6",
-        "answerUci": "h7h6",
-        "orientation": "black",
-        "lastMove": "f3d4",
-        "prompt": "You are Black in the Classical Variation, Carlsbad Variation. What is the book move?",
-        "extra": "Line: 1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. g3 Nf6 7. Bg2 Be7 8. O-O O-O 9. Bg5 cxd4 10. Nxd4 **h6**. Covered replies: 11. Be3."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nc3-cxd5-nf3-g3-bg2-oo-bg5-nxd4-be3",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/pp2bpp1/2n2n1p/3p4/3N4/2N1B1P1/PP2PPBP/R2Q1RK1 b - - 1 11",
-        "answer": "Re8",
-        "answerUci": "f8e8",
-        "orientation": "black",
-        "lastMove": "g5e3",
-        "prompt": "You are Black in the Classical Variation, Carlsbad Variation. What is the book move?",
-        "extra": "Line: 1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. g3 Nf6 7. Bg2 Be7 8. O-O O-O 9. Bg5 cxd4 10. Nxd4 h6 11. Be3 **Re8**. This is the Classical Variation, Main Line (D34). Covered replies: 12. Rc1."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nc3-cxd5-nf3-g3-bg2-oo-bg5-nxd4-be3-rc1",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqr1k1/pp2bpp1/2n2n1p/3p4/3N4/2N1B1P1/PP2PPBP/2RQ1RK1 b - - 3 12",
-        "answer": "Be6",
-        "answerUci": "c8e6",
-        "orientation": "black",
-        "lastMove": "a1c1",
-        "prompt": "You are Black in the Classical Variation, Main Line. What is the book move?",
-        "extra": "Line: 1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. g3 Nf6 7. Bg2 Be7 8. O-O O-O 9. Bg5 cxd4 10. Nxd4 h6 11. Be3 Re8 12. Rc1 **Be6**. This is the Classical Variation, Chandler Variation (D34)."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nc3-cxd5-nf3-g3-bg2-oo-dxc5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/pp2bppp/2n2n2/2Pp4/8/2N2NP1/PP2PPBP/R1BQ1RK1 b - - 0 9",
+        "fen": "rnbqkbnr/pp3ppp/8/2Pp4/8/2N5/PP2PPPP/R1BQKBNR b KQkq - 0 5",
         "answer": "d4",
         "answerUci": "d5d4",
         "orientation": "black",
         "lastMove": "d4c5",
-        "prompt": "You are Black in the Classical Variation. What is the book move?",
-        "extra": "Line: 1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. g3 Nf6 7. Bg2 Be7 8. O-O O-O 9. dxc5 **d4**. This is the Classical Variation, Classical Tarrasch Gambit (D34)."
+        "prompt": "You are Black in the Tarrasch Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. dxc5 **d4**"
       },
       "tags": [
         "chess::line"
@@ -230,7 +230,55 @@
         "orientation": "black",
         "lastMove": "d4c5",
         "prompt": "You are Black in the Two Knights Variation. What is the book move?",
-        "extra": "Line: 1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. dxc5 **d4**. Covered replies: 7. Na4."
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. dxc5 **d4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c4-nf3-nc3-e3-d4-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp3ppp/2n1pn2/2pP4/3P4/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 0 6",
+        "answer": "exd5",
+        "answerUci": "e6d5",
+        "orientation": "black",
+        "lastMove": "c4d5",
+        "prompt": "You are Black in the Tarrasch Defense. What is the book move?",
+        "extra": "1. c4 c5 2. Nf3 Nc6 3. Nc3 Nf6 4. e3 e6 5. d4 d5 6. cxd5 **exd5** (Symmetrical Variation, D32)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-dxc5-na4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp3ppp/8/2P5/N2p4/8/PP2PPPP/R1BQKBNR b KQkq - 1 6",
+        "answer": "b5",
+        "answerUci": "b7b5",
+        "orientation": "black",
+        "lastMove": "c3a4",
+        "prompt": "You are Black in the Tarrasch Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. dxc5 d4 6. Na4 **b5** (Tarrasch Gambit, D32)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-nf3-g3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp3ppp/2n5/2pp4/3P4/2N2NP1/PP2PP1P/R1BQKB1R b KQkq - 0 6",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "g2g3",
+        "prompt": "You are Black in the Rubinstein System. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. g3 **Nf6** (Prague Variation, D33)"
       },
       "tags": [
         "chess::line"
@@ -246,167 +294,119 @@
         "orientation": "black",
         "lastMove": "c3a4",
         "prompt": "You are Black in the Two Knights Variation. What is the book move?",
-        "extra": "Line: 1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. dxc5 d4 7. Na4 **b5**. This is the Gr\u00fcnfeld Gambit (D32)."
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. dxc5 d4 7. Na4 **b5** (Gr\u00fcnfeld Gambit, D32)"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-d4-c4-nc3-cxd5-dxc5",
+      "key": "l-d4-c4-nc3-cxd5-nf3-g3-bg2",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp3ppp/8/2Pp4/8/2N5/PP2PPPP/R1BQKBNR b KQkq - 0 5",
+        "fen": "r1bqkb1r/pp3ppp/2n2n2/2pp4/3P4/2N2NP1/PP2PPBP/R1BQK2R b KQkq - 2 7",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "lastMove": "f1g2",
+        "prompt": "You are Black in the Prague Variation. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. g3 Nf6 7. Bg2 **Be7** (Main Line, D34)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-nf3-g3-bg2-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pp2bppp/2n2n2/2pp4/3P4/2N2NP1/PP2PPBP/R1BQ1RK1 b kq - 4 8",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "lastMove": "e1g1",
+        "prompt": "You are Black in the Main Line. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. g3 Nf6 7. Bg2 Be7 8. O-O **O-O** (Classical Variation, D34)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-nf3-g3-bg2-oo-dxc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pp2bppp/2n2n2/2Pp4/8/2N2NP1/PP2PPBP/R1BQ1RK1 b - - 0 9",
         "answer": "d4",
         "answerUci": "d5d4",
         "orientation": "black",
         "lastMove": "d4c5",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "Line: 1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. dxc5 **d4**. Covered replies: 6. Na4."
+        "prompt": "You are Black in the Classical Variation. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. g3 Nf6 7. Bg2 Be7 8. O-O O-O 9. dxc5 **d4** (Classical Tarrasch Gambit, D34)"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-d4-c4-nc3-cxd5-dxc5-na4",
+      "key": "l-d4-c4-nc3-cxd5-nf3-g3-bg2-oo-bg5",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp3ppp/8/2P5/N2p4/8/PP2PPPP/R1BQKBNR b KQkq - 1 6",
-        "answer": "b5",
-        "answerUci": "b7b5",
+        "fen": "r1bq1rk1/pp2bppp/2n2n2/2pp2B1/3P4/2N2NP1/PP2PPBP/R2Q1RK1 b - - 6 9",
+        "answer": "cxd4",
+        "answerUci": "c5d4",
         "orientation": "black",
-        "lastMove": "c3a4",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "Line: 1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. dxc5 d4 6. Na4 **b5**. This is the Tarrasch Gambit (D32)."
+        "lastMove": "c1g5",
+        "prompt": "You are Black in the Carlsbad Variation. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. g3 Nf6 7. Bg2 Be7 8. O-O O-O 9. Bg5 **cxd4**"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-d4-c4-nc3-e3",
+      "key": "l-d4-c4-nc3-cxd5-nf3-g3-bg2-oo-bg5-nxd4",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp3ppp/4p3/2pp4/2PP4/2N1P3/PP3PPP/R1BQKBNR b KQkq - 0 4",
-        "answer": "Nf6",
-        "answerUci": "g8f6",
+        "fen": "r1bq1rk1/pp2bppp/2n2n2/3p2B1/3N4/2N3P1/PP2PPBP/R2Q1RK1 b - - 0 10",
+        "answer": "h6",
+        "answerUci": "h7h6",
         "orientation": "black",
-        "lastMove": "e2e3",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "Line: 1. d4 d5 2. c4 e6 3. Nc3 c5 4. e3 **Nf6**. Covered replies: 5. Nf3."
+        "lastMove": "f3d4",
+        "prompt": "You are Black in the Carlsbad Variation. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. g3 Nf6 7. Bg2 Be7 8. O-O O-O 9. Bg5 cxd4 10. Nxd4 **h6**"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-d4-c4-nc3-e3-nf3",
+      "key": "l-d4-c4-nc3-cxd5-nf3-g3-bg2-oo-bg5-nxd4-be3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/pp3ppp/4pn2/2pp4/2PP4/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 2 5",
-        "answer": "Nc6",
-        "answerUci": "b8c6",
+        "fen": "r1bq1rk1/pp2bpp1/2n2n1p/3p4/3N4/2N1B1P1/PP2PPBP/R2Q1RK1 b - - 1 11",
+        "answer": "Re8",
+        "answerUci": "f8e8",
         "orientation": "black",
-        "lastMove": "g1f3",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "Line: 1. d4 d5 2. c4 e6 3. Nc3 c5 4. e3 Nf6 5. Nf3 **Nc6**. This is the Symmetrical Variation (D32)."
+        "lastMove": "g5e3",
+        "prompt": "You are Black in the Carlsbad Variation. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. g3 Nf6 7. Bg2 Be7 8. O-O O-O 9. Bg5 cxd4 10. Nxd4 h6 11. Be3 **Re8** (Main Line, D34)"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-c4",
+      "key": "l-d4-c4-nc3-cxd5-nf3-g3-bg2-oo-bg5-nxd4-be3-rc1",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1",
-        "answer": "c5",
-        "answerUci": "c7c5",
+        "fen": "r1bqr1k1/pp2bpp1/2n2n1p/3p4/3N4/2N1B1P1/PP2PPBP/2RQ1RK1 b - - 3 12",
+        "answer": "Be6",
+        "answerUci": "c8e6",
         "orientation": "black",
-        "lastMove": "c2c4",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "Line: 1. c4 **c5**. Covered replies: 2. Nf3."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-c4-nf3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp1ppppp/8/2p5/2P5/5N2/PP1PPPPP/RNBQKB1R b KQkq - 1 2",
-        "answer": "Nc6",
-        "answerUci": "b8c6",
-        "orientation": "black",
-        "lastMove": "g1f3",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "Line: 1. c4 c5 2. Nf3 **Nc6**. Covered replies: 3. Nc3."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-c4-nf3-nc3",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkbnr/pp1ppppp/2n5/2p5/2P5/2N2N2/PP1PPPPP/R1BQKB1R b KQkq - 3 3",
-        "answer": "Nf6",
-        "answerUci": "g8f6",
-        "orientation": "black",
-        "lastMove": "b1c3",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "Line: 1. c4 c5 2. Nf3 Nc6 3. Nc3 **Nf6**. Covered replies: 4. e3."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-c4-nf3-nc3-e3",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkb1r/pp1ppppp/2n2n2/2p5/2P5/2N1PN2/PP1P1PPP/R1BQKB1R b KQkq - 0 4",
-        "answer": "e6",
-        "answerUci": "e7e6",
-        "orientation": "black",
-        "lastMove": "e2e3",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "Line: 1. c4 c5 2. Nf3 Nc6 3. Nc3 Nf6 4. e3 **e6**. Covered replies: 5. d4."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-c4-nf3-nc3-e3-d4",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkb1r/pp1p1ppp/2n1pn2/2p5/2PP4/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 0 5",
-        "answer": "d5",
-        "answerUci": "d7d5",
-        "orientation": "black",
-        "lastMove": "d2d4",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "Line: 1. c4 c5 2. Nf3 Nc6 3. Nc3 Nf6 4. e3 e6 5. d4 **d5**. Covered replies: 6. cxd5."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-c4-nf3-nc3-e3-d4-cxd5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkb1r/pp3ppp/2n1pn2/2pP4/3P4/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 0 6",
-        "answer": "exd5",
-        "answerUci": "e6d5",
-        "orientation": "black",
-        "lastMove": "c4d5",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "Line: 1. c4 c5 2. Nf3 Nc6 3. Nc3 Nf6 4. e3 e6 5. d4 d5 6. cxd5 **exd5**. This is the Symmetrical Variation (D32)."
+        "lastMove": "a1c1",
+        "prompt": "You are Black in the Main Line. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c5 4. cxd5 exd5 5. Nf3 Nc6 6. g3 Nf6 7. Bg2 Be7 8. O-O O-O 9. Bg5 cxd4 10. Nxd4 h6 11. Be3 Re8 12. Rc1 **Be6** (Chandler Variation, D34)"
       },
       "tags": [
         "chess::line"

@@ -1,8 +1,8 @@
 {
   "key": "four-knights-game",
-  "version": 1,
+  "version": 2,
   "name": "The Four Knights Game",
-  "description": "Line trainer for the Four Knights Game, generated from the canonical opening database (lichess-org/chess-openings): 33 positions drilled book-move by book-move from White's side across 49 named variations. Each card shows the position from White's side and asks for the book move; the back gives the line so far, the variation name and ECO code, and the covered replies that continue it.",
+  "description": "Line trainer for the Four Knights Game, generated from the canonical opening database (lichess-org/chess-openings): 33 positions drilled book-move by book-move from White's side across 49 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -20,8 +20,8 @@
         "answer": "e4",
         "answerUci": "e2e4",
         "orientation": "white",
-        "prompt": "You are White in the main line. What is the book move?",
-        "extra": "Line: 1. **e4**. Covered replies: 1... e5."
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. **e4**"
       },
       "tags": [
         "chess::line"
@@ -36,8 +36,8 @@
         "answerUci": "g1f3",
         "orientation": "white",
         "lastMove": "e7e5",
-        "prompt": "You are White in the main line. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. **Nf3**. Covered replies: 2... Nc6, 2... Nf6."
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. **Nf3**"
       },
       "tags": [
         "chess::line"
@@ -52,8 +52,24 @@
         "answerUci": "b1c3",
         "orientation": "white",
         "lastMove": "b8c6",
-        "prompt": "You are White in the main line. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. **Nc3**. Covered replies: 3... Nf6 (main line)."
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. **Nc3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "lastMove": "g8f6",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nf6 3. **Nc3**"
       },
       "tags": [
         "chess::line"
@@ -68,8 +84,8 @@
         "answerUci": "f1b5",
         "orientation": "white",
         "lastMove": "g8f6",
-        "prompt": "You are White in the main line. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. **Bb5**. This is the Spanish Variation (C48). Covered replies: 4... Bb4 (Spanish Variation, Double Spanish), 4... Nd4 (Spanish Variation, Rubinstein Variation), 4... Bc5 (Spanish Variation, Classical Variation), 4... a6."
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. **Bb5** (Spanish Variation, C48)"
       },
       "tags": [
         "chess::line"
@@ -84,264 +100,8 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "lastMove": "f8b4",
-        "prompt": "You are White in the Spanish Variation, Double Spanish. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. **O-O**. Covered replies: 5... O-O."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-bb4-oo",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/pppp1ppp/2n2n2/1B2p3/1b2P3/2N2N2/PPPP1PPP/R1BQ1RK1 w - - 8 6",
-        "answer": "d3",
-        "answerUci": "d2d3",
-        "orientation": "white",
-        "lastMove": "e8g8",
-        "prompt": "You are White in the Spanish Variation, Double Spanish. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. **d3**. This is the Spanish Variation, Double Spanish (C49). Covered replies: 6... d6 (Spanish Variation, Symmetrical Variation), 6... Bxc3 (Spanish Variation), 6... Qe7."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-bb4-oo-d6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/ppp2ppp/2np1n2/1B2p3/1b2P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 7",
-        "answer": "Bg5",
-        "answerUci": "c1g5",
-        "orientation": "white",
-        "lastMove": "d7d6",
-        "prompt": "You are White in the Spanish Variation, Symmetrical Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 d6 7. **Bg5**. Covered replies: 7... Bxc3, 7... Ne7 (Spanish Variation, Symmetrical Variation)."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-bb4-oo-d6-bxc3",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/ppp2ppp/2np1n2/1B2p1B1/4P3/2bP1N2/PPP2PPP/R2Q1RK1 w - - 0 8",
-        "answer": "bxc3",
-        "answerUci": "b2c3",
-        "orientation": "white",
-        "lastMove": "b4c3",
-        "prompt": "You are White in the Spanish Variation, Symmetrical Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 d6 7. Bg5 Bxc3 8. **bxc3**. Covered replies: 8... Qe7 (Spanish Variation, Symmetrical Variation, Metger Unpin)."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-bb4-oo-d6-bxc3-qe7",
-      "model": "chess",
-      "fields": {
-        "fen": "r1b2rk1/ppp1qppp/2np1n2/1B2p1B1/4P3/2PP1N2/P1P2PPP/R2Q1RK1 w - - 1 9",
-        "answer": "Re1",
-        "answerUci": "f1e1",
-        "orientation": "white",
-        "lastMove": "d8e7",
-        "prompt": "You are White in the Spanish Variation, Symmetrical Variation, Metger Unpin. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 d6 7. Bg5 Bxc3 8. bxc3 Qe7 9. **Re1**. Covered replies: 9... Nd8."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-bb4-oo-d6-bxc3-qe7-nd8",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bn1rk1/ppp1qppp/3p1n2/1B2p1B1/4P3/2PP1N2/P1P2PPP/R2QR1K1 w - - 3 10",
-        "answer": "d4",
-        "answerUci": "d3d4",
-        "orientation": "white",
-        "lastMove": "c6d8",
-        "prompt": "You are White in the Spanish Variation, Symmetrical Variation, Metger Unpin. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 d6 7. Bg5 Bxc3 8. bxc3 Qe7 9. Re1 Nd8 10. **d4**. Covered replies: 10... Bg4 (Spanish Variation, Symmetrical Variation)."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-bb4-oo-d6-ne7",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/ppp1nppp/3p1n2/1B2p1B1/1b2P3/2NP1N2/PPP2PPP/R2Q1RK1 w - - 2 8",
-        "answer": "Nh4",
-        "answerUci": "f3h4",
-        "orientation": "white",
-        "lastMove": "c6e7",
-        "prompt": "You are White in the Spanish Variation, Symmetrical Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 d6 7. Bg5 Ne7 8. **Nh4**. Covered replies: 8... c6."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-bb4-oo-d6-ne7-c6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/pp2nppp/2pp1n2/1B2p1B1/1b2P2N/2NP4/PPP2PPP/R2Q1RK1 w - - 0 9",
-        "answer": "Bc4",
-        "answerUci": "b5c4",
-        "orientation": "white",
-        "lastMove": "c7c6",
-        "prompt": "You are White in the Spanish Variation, Symmetrical Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 d6 7. Bg5 Ne7 8. Nh4 c6 9. **Bc4**. Covered replies: 9... d5."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-bb4-oo-d6-ne7-c6-d5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/pp2nppp/2p2n2/3pp1B1/1bB1P2N/2NP4/PPP2PPP/R2Q1RK1 w - - 0 10",
-        "answer": "Bb3",
-        "answerUci": "c4b3",
-        "orientation": "white",
-        "lastMove": "d6d5",
-        "prompt": "You are White in the Spanish Variation, Symmetrical Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 d6 7. Bg5 Ne7 8. Nh4 c6 9. Bc4 d5 10. **Bb3**. Covered replies: 10... Qd6 (Spanish Variation, Symmetrical Variation, Blake Variation)."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-bb4-oo-bxc3",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/pppp1ppp/2n2n2/1B2p3/4P3/2bP1N2/PPP2PPP/R1BQ1RK1 w - - 0 7",
-        "answer": "bxc3",
-        "answerUci": "b2c3",
-        "orientation": "white",
-        "lastMove": "b4c3",
-        "prompt": "You are White in the Spanish Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 Bxc3 7. **bxc3**. Covered replies: 7... d6, 7... d5 (Spanish Variation, Svenonius Variation)."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-bb4-oo-bxc3-d6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/ppp2ppp/2np1n2/1B2p3/4P3/2PP1N2/P1P2PPP/R1BQ1RK1 w - - 0 8",
-        "answer": "Re1",
-        "answerUci": "f1e1",
-        "orientation": "white",
-        "lastMove": "d7d6",
-        "prompt": "You are White in the Spanish Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 Bxc3 7. bxc3 d6 8. **Re1**. This is the Spanish Variation, Janowski Variation (C49)."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-bb4-oo-qe7",
-      "model": "chess",
-      "fields": {
-        "fen": "r1b2rk1/ppppqppp/2n2n2/1B2p3/1b2P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 1 7",
-        "answer": "Ne2",
-        "answerUci": "c3e2",
-        "orientation": "white",
-        "lastMove": "d8e7",
-        "prompt": "You are White in the Spanish Variation, Double Spanish. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 Qe7 7. **Ne2**. Covered replies: 7... d5 (Spanish Variation, Alatortsev Variation)."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-nd4",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkb1r/pppp1ppp/5n2/1B2p3/3nP3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 6 5",
-        "answer": "Be2",
-        "answerUci": "b5e2",
-        "orientation": "white",
-        "lastMove": "c6d4",
-        "prompt": "You are White in the Spanish Variation, Rubinstein Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Nd4 5. **Be2**. This is the Spanish Variation, Rubinstein Variation (C48). Covered replies: 5... Nxf3+."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-nd4-nxf3",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkb1r/pppp1ppp/5n2/4p3/4P3/2N2n2/PPPPBPPP/R1BQK2R w KQkq - 0 6",
-        "answer": "Bxf3",
-        "answerUci": "e2f3",
-        "orientation": "white",
-        "lastMove": "d4f3",
-        "prompt": "You are White in the Spanish Variation, Rubinstein Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Nd4 5. Be2 Nxf3+ 6. **Bxf3**. Covered replies: 6... Bc5."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-nd4-nxf3-bc5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk2r/pppp1ppp/5n2/2b1p3/4P3/2N2B2/PPPP1PPP/R1BQK2R w KQkq - 1 7",
-        "answer": "O-O",
-        "answerUci": "e1g1",
-        "orientation": "white",
-        "lastMove": "f8c5",
-        "prompt": "You are White in the Spanish Variation, Rubinstein Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Nd4 5. Be2 Nxf3+ 6. Bxf3 Bc5 7. **O-O**. Covered replies: 7... O-O."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-nd4-nxf3-bc5-oo",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/pppp1ppp/5n2/2b1p3/4P3/2N2B2/PPPP1PPP/R1BQ1RK1 w - - 3 8",
-        "answer": "d3",
-        "answerUci": "d2d3",
-        "orientation": "white",
-        "lastMove": "e8g8",
-        "prompt": "You are White in the Spanish Variation, Rubinstein Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Nd4 5. Be2 Nxf3+ 6. Bxf3 Bc5 7. O-O O-O 8. **d3**. Covered replies: 8... d6."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-nd4-nxf3-bc5-oo-d6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/ppp2ppp/3p1n2/2b1p3/4P3/2NP1B2/PPP2PPP/R1BQ1RK1 w - - 0 9",
-        "answer": "Na4",
-        "answerUci": "c3a4",
-        "orientation": "white",
-        "lastMove": "d7d6",
-        "prompt": "You are White in the Spanish Variation, Rubinstein Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Nd4 5. Be2 Nxf3+ 6. Bxf3 Bc5 7. O-O O-O 8. d3 d6 9. **Na4**. Covered replies: 9... Bb6 (Spanish Variation, Rubinstein Variation, Mar\u00f3czy Variation)."
+        "prompt": "You are White in the Double Spanish. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. **O-O**"
       },
       "tags": [
         "chess::line"
@@ -356,72 +116,24 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "lastMove": "f8c5",
-        "prompt": "You are White in the Spanish Variation, Classical Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bc5 5. **O-O**. Covered replies: 5... O-O."
+        "prompt": "You are White in the Classical Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bc5 5. **O-O**"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nc6-nf6-bc5-oo",
+      "key": "l-e5-nc6-nf6-nd4",
       "model": "chess",
       "fields": {
-        "fen": "r1bq1rk1/pppp1ppp/2n2n2/1Bb1p3/4P3/2N2N2/PPPP1PPP/R1BQ1RK1 w - - 8 6",
-        "answer": "Nxe5",
-        "answerUci": "f3e5",
+        "fen": "r1bqkb1r/pppp1ppp/5n2/1B2p3/3nP3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 6 5",
+        "answer": "Be2",
+        "answerUci": "b5e2",
         "orientation": "white",
-        "lastMove": "e8g8",
-        "prompt": "You are White in the Spanish Variation, Classical Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bc5 5. O-O O-O 6. **Nxe5**. Covered replies: 6... Nxe5."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-bc5-oo-nxe5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/pppp1ppp/5n2/1Bb1n3/4P3/2N5/PPPP1PPP/R1BQ1RK1 w - - 0 7",
-        "answer": "d4",
-        "answerUci": "d2d4",
-        "orientation": "white",
-        "lastMove": "c6e5",
-        "prompt": "You are White in the Spanish Variation, Classical Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bc5 5. O-O O-O 6. Nxe5 Nxe5 7. **d4**. Covered replies: 7... Bd6."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-bc5-oo-nxe5-bd6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/pppp1ppp/3b1n2/1B2n3/3PP3/2N5/PPP2PPP/R1BQ1RK1 w - - 1 8",
-        "answer": "f4",
-        "answerUci": "f2f4",
-        "orientation": "white",
-        "lastMove": "c5d6",
-        "prompt": "You are White in the Spanish Variation, Classical Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bc5 5. O-O O-O 6. Nxe5 Nxe5 7. d4 Bd6 8. **f4**. Covered replies: 8... Nc6."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-bc5-oo-nxe5-bd6-nc6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/pppp1ppp/2nb1n2/1B6/3PPP2/2N5/PPP3PP/R1BQ1RK1 w - - 1 9",
-        "answer": "e5",
-        "answerUci": "e4e5",
-        "orientation": "white",
-        "lastMove": "e5c6",
-        "prompt": "You are White in the Spanish Variation, Classical Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bc5 5. O-O O-O 6. Nxe5 Nxe5 7. d4 Bd6 8. f4 Nc6 9. **e5**. Covered replies: 9... Bb4 (Spanish Variation, Bardeleben Variation)."
+        "lastMove": "c6d4",
+        "prompt": "You are White in the Rubinstein Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Nd4 5. **Be2** (Rubinstein Variation, C48)"
       },
       "tags": [
         "chess::line"
@@ -437,7 +149,55 @@
         "orientation": "white",
         "lastMove": "a7a6",
         "prompt": "You are White in the Spanish Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 a6 5. **Bxc6**. This is the Spanish Variation, Ranken Variation (C48). Covered replies: 5... dxc6."
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 a6 5. **Bxc6** (Ranken Variation, C48)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-nd4-nxf3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pppp1ppp/5n2/4p3/4P3/2N2n2/PPPPBPPP/R1BQK2R w KQkq - 0 6",
+        "answer": "Bxf3",
+        "answerUci": "e2f3",
+        "orientation": "white",
+        "lastMove": "d4f3",
+        "prompt": "You are White in the Rubinstein Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Nd4 5. Be2 Nxf3+ 6. **Bxf3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bb4-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppp1ppp/2n2n2/1B2p3/1b2P3/2N2N2/PPPP1PPP/R1BQ1RK1 w - - 8 6",
+        "answer": "d3",
+        "answerUci": "d2d3",
+        "orientation": "white",
+        "lastMove": "e8g8",
+        "prompt": "You are White in the Double Spanish. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. **d3** (Double Spanish, C49)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppp1ppp/2n2n2/1Bb1p3/4P3/2N2N2/PPPP1PPP/R1BQ1RK1 w - - 8 6",
+        "answer": "Nxe5",
+        "answerUci": "f3e5",
+        "orientation": "white",
+        "lastMove": "e8g8",
+        "prompt": "You are White in the Classical Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bc5 5. O-O O-O 6. **Nxe5**"
       },
       "tags": [
         "chess::line"
@@ -452,8 +212,88 @@
         "answerUci": "f3e5",
         "orientation": "white",
         "lastMove": "d7c6",
-        "prompt": "You are White in the Spanish Variation, Ranken Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 a6 5. Bxc6 dxc6 6. **Nxe5**. Covered replies: 6... Nxe4."
+        "prompt": "You are White in the Ranken Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 a6 5. Bxc6 dxc6 6. **Nxe5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-nd4-nxf3-bc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/5n2/2b1p3/4P3/2N2B2/PPPP1PPP/R1BQK2R w KQkq - 1 7",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "f8c5",
+        "prompt": "You are White in the Rubinstein Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Nd4 5. Be2 Nxf3+ 6. Bxf3 Bc5 7. **O-O**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bb4-oo-bxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppp1ppp/2n2n2/1B2p3/4P3/2bP1N2/PPP2PPP/R1BQ1RK1 w - - 0 7",
+        "answer": "bxc3",
+        "answerUci": "b2c3",
+        "orientation": "white",
+        "lastMove": "b4c3",
+        "prompt": "You are White in the Spanish Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 Bxc3 7. **bxc3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-oo-nxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppp1ppp/5n2/1Bb1n3/4P3/2N5/PPPP1PPP/R1BQ1RK1 w - - 0 7",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "c6e5",
+        "prompt": "You are White in the Classical Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bc5 5. O-O O-O 6. Nxe5 Nxe5 7. **d4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bb4-oo-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp2ppp/2np1n2/1B2p3/1b2P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 0 7",
+        "answer": "Bg5",
+        "answerUci": "c1g5",
+        "orientation": "white",
+        "lastMove": "d7d6",
+        "prompt": "You are White in the Symmetrical Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 d6 7. **Bg5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bb4-oo-qe7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b2rk1/ppppqppp/2n2n2/1B2p3/1b2P3/2NP1N2/PPP2PPP/R1BQ1RK1 w - - 1 7",
+        "answer": "Ne2",
+        "answerUci": "c3e2",
+        "orientation": "white",
+        "lastMove": "d8e7",
+        "prompt": "You are White in the Double Spanish. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 Qe7 7. **Ne2**"
       },
       "tags": [
         "chess::line"
@@ -468,8 +308,8 @@
         "answerUci": "c3e4",
         "orientation": "white",
         "lastMove": "f6e4",
-        "prompt": "You are White in the Spanish Variation, Ranken Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 a6 5. Bxc6 dxc6 6. Nxe5 Nxe4 7. **Nxe4**. Covered replies: 7... Qd4."
+        "prompt": "You are White in the Ranken Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 a6 5. Bxc6 dxc6 6. Nxe5 Nxe4 7. **Nxe4**"
       },
       "tags": [
         "chess::line"
@@ -484,8 +324,136 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "lastMove": "d8d4",
-        "prompt": "You are White in the Spanish Variation, Ranken Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 a6 5. Bxc6 dxc6 6. Nxe5 Nxe4 7. Nxe4 Qd4 8. **O-O**. Covered replies: 8... Qxe5."
+        "prompt": "You are White in the Ranken Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 a6 5. Bxc6 dxc6 6. Nxe5 Nxe4 7. Nxe4 Qd4 8. **O-O**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bb4-oo-bxc3-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp2ppp/2np1n2/1B2p3/4P3/2PP1N2/P1P2PPP/R1BQ1RK1 w - - 0 8",
+        "answer": "Re1",
+        "answerUci": "f1e1",
+        "orientation": "white",
+        "lastMove": "d7d6",
+        "prompt": "You are White in the Spanish Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 Bxc3 7. bxc3 d6 8. **Re1** (Janowski Variation, C49)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bb4-oo-d6-bxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp2ppp/2np1n2/1B2p1B1/4P3/2bP1N2/PPP2PPP/R2Q1RK1 w - - 0 8",
+        "answer": "bxc3",
+        "answerUci": "b2c3",
+        "orientation": "white",
+        "lastMove": "b4c3",
+        "prompt": "You are White in the Symmetrical Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 d6 7. Bg5 Bxc3 8. **bxc3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bb4-oo-d6-ne7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp1nppp/3p1n2/1B2p1B1/1b2P3/2NP1N2/PPP2PPP/R2Q1RK1 w - - 2 8",
+        "answer": "Nh4",
+        "answerUci": "f3h4",
+        "orientation": "white",
+        "lastMove": "c6e7",
+        "prompt": "You are White in the Symmetrical Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 d6 7. Bg5 Ne7 8. **Nh4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-nd4-nxf3-bc5-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppp1ppp/5n2/2b1p3/4P3/2N2B2/PPPP1PPP/R1BQ1RK1 w - - 3 8",
+        "answer": "d3",
+        "answerUci": "d2d3",
+        "orientation": "white",
+        "lastMove": "e8g8",
+        "prompt": "You are White in the Rubinstein Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Nd4 5. Be2 Nxf3+ 6. Bxf3 Bc5 7. O-O O-O 8. **d3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-oo-nxe5-bd6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppp1ppp/3b1n2/1B2n3/3PP3/2N5/PPP2PPP/R1BQ1RK1 w - - 1 8",
+        "answer": "f4",
+        "answerUci": "f2f4",
+        "orientation": "white",
+        "lastMove": "c5d6",
+        "prompt": "You are White in the Classical Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bc5 5. O-O O-O 6. Nxe5 Nxe5 7. d4 Bd6 8. **f4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-nd4-nxf3-bc5-oo-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp2ppp/3p1n2/2b1p3/4P3/2NP1B2/PPP2PPP/R1BQ1RK1 w - - 0 9",
+        "answer": "Na4",
+        "answerUci": "c3a4",
+        "orientation": "white",
+        "lastMove": "d7d6",
+        "prompt": "You are White in the Rubinstein Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Nd4 5. Be2 Nxf3+ 6. Bxf3 Bc5 7. O-O O-O 8. d3 d6 9. **Na4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bb4-oo-d6-ne7-c6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pp2nppp/2pp1n2/1B2p1B1/1b2P2N/2NP4/PPP2PPP/R2Q1RK1 w - - 0 9",
+        "answer": "Bc4",
+        "answerUci": "b5c4",
+        "orientation": "white",
+        "lastMove": "c7c6",
+        "prompt": "You are White in the Symmetrical Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 d6 7. Bg5 Ne7 8. Nh4 c6 9. **Bc4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-oo-nxe5-bd6-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppp1ppp/2nb1n2/1B6/3PPP2/2N5/PPP3PP/R1BQ1RK1 w - - 1 9",
+        "answer": "e5",
+        "answerUci": "e4e5",
+        "orientation": "white",
+        "lastMove": "e5c6",
+        "prompt": "You are White in the Classical Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bc5 5. O-O O-O 6. Nxe5 Nxe5 7. d4 Bd6 8. f4 Nc6 9. **e5**"
       },
       "tags": [
         "chess::line"
@@ -500,8 +468,40 @@
         "answerUci": "f1e1",
         "orientation": "white",
         "lastMove": "d4e5",
-        "prompt": "You are White in the Spanish Variation, Ranken Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 a6 5. Bxc6 dxc6 6. Nxe5 Nxe4 7. Nxe4 Qd4 8. O-O Qxe5 9. **Re1**. Covered replies: 9... Be6."
+        "prompt": "You are White in the Ranken Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 a6 5. Bxc6 dxc6 6. Nxe5 Nxe4 7. Nxe4 Qd4 8. O-O Qxe5 9. **Re1**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bb4-oo-d6-bxc3-qe7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b2rk1/ppp1qppp/2np1n2/1B2p1B1/4P3/2PP1N2/P1P2PPP/R2Q1RK1 w - - 1 9",
+        "answer": "Re1",
+        "answerUci": "f1e1",
+        "orientation": "white",
+        "lastMove": "d8e7",
+        "prompt": "You are White in the Metger Unpin. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 d6 7. Bg5 Bxc3 8. bxc3 Qe7 9. **Re1**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bb4-oo-d6-ne7-c6-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pp2nppp/2p2n2/3pp1B1/1bB1P2N/2NP4/PPP2PPP/R2Q1RK1 w - - 0 10",
+        "answer": "Bb3",
+        "answerUci": "c4b3",
+        "orientation": "white",
+        "lastMove": "d6d5",
+        "prompt": "You are White in the Symmetrical Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 d6 7. Bg5 Ne7 8. Nh4 c6 9. Bc4 d5 10. **Bb3**"
       },
       "tags": [
         "chess::line"
@@ -516,24 +516,24 @@
         "answerUci": "d2d4",
         "orientation": "white",
         "lastMove": "c8e6",
-        "prompt": "You are White in the Spanish Variation, Ranken Variation. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 a6 5. Bxc6 dxc6 6. Nxe5 Nxe4 7. Nxe4 Qd4 8. O-O Qxe5 9. Re1 Be6 10. **d4**. Covered replies: 10... Qd5 (Spanish Variation, Spielmann Variation)."
+        "prompt": "You are White in the Ranken Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 a6 5. Bxc6 dxc6 6. Nxe5 Nxe4 7. Nxe4 Qd4 8. O-O Qxe5 9. Re1 Be6 10. **d4**"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nf6",
+      "key": "l-e5-nc6-nf6-bb4-oo-d6-bxc3-qe7-nd8",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
-        "answer": "Nc3",
-        "answerUci": "b1c3",
+        "fen": "r1bn1rk1/ppp1qppp/3p1n2/1B2p1B1/4P3/2PP1N2/P1P2PPP/R2QR1K1 w - - 3 10",
+        "answer": "d4",
+        "answerUci": "d3d4",
         "orientation": "white",
-        "lastMove": "g8f6",
-        "prompt": "You are White in the main line. What is the book move?",
-        "extra": "Line: 1. e4 e5 2. Nf3 Nf6 3. **Nc3**. Covered replies: 3... Nc6."
+        "lastMove": "c6d8",
+        "prompt": "You are White in the Metger Unpin. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. Bb5 Bb4 5. O-O O-O 6. d3 d6 7. Bg5 Bxc3 8. bxc3 Qe7 9. Re1 Nd8 10. **d4**"
       },
       "tags": [
         "chess::line"

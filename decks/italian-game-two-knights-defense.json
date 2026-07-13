@@ -1,0 +1,415 @@
+{
+  "key": "italian-game-two-knights-defense",
+  "version": 1,
+  "name": "Italian Game: Two Knights Defense",
+  "description": "Line trainer for the Italian Game: Two Knights Defense, generated from the canonical opening database (lichess-org/chess-openings): 25 positions drilled book-move by book-move from White's side across 46 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "italian-game"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpppp1ppp%2F2n2n2%2F4p3%2F2B1P3%2F5N2%2FPPPP1PPP%2FRNBQK2R%20w%20KQkq%20-%204%204&color=white&theme=brown&piece=cburnett&lastMove=g8f6",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-root",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "answer": "e4",
+        "answerUci": "e2e4",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. **e4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "lastMove": "e7e5",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. **Nf3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+        "answer": "Bc4",
+        "answerUci": "f1c4",
+        "orientation": "white",
+        "lastMove": "b8c6",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. **Bc4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+        "answer": "Ng5",
+        "answerUci": "f3g5",
+        "orientation": "white",
+        "lastMove": "g8f6",
+        "prompt": "You are White in the Two Knights Defense. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. **Ng5** (Knight Attack, C57)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p1N1/2B1P3/8/PPPP1PPP/RNBQK2R w KQkq - 6 5",
+        "answer": "Bxf7",
+        "answerUci": "c4f7",
+        "orientation": "white",
+        "lastMove": "f8c5",
+        "prompt": "You are White in the Traxler Counterattack. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 Bc5 5. **Bxf7+** (Bishop Sacrifice Line, C57)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/2n2n2/3pp1N1/2B1P3/8/PPPP1PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "exd5",
+        "answerUci": "e4d5",
+        "orientation": "white",
+        "lastMove": "d7d5",
+        "prompt": "You are White in the Normal Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. **exd5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-na5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/5n2/n2Pp1N1/2B5/8/PPPP1PPP/RNBQK2R w KQkq - 1 6",
+        "answer": "Bb5",
+        "answerUci": "c4b5",
+        "orientation": "white",
+        "lastMove": "c6a5",
+        "prompt": "You are White in the Polerio Defense. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. **Bb5+** (Bishop Check Line, C58)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/5n2/3Pp1N1/2Bn4/8/PPPP1PPP/RNBQK2R w KQkq - 1 6",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "lastMove": "c6d4",
+        "prompt": "You are White in the Fritz Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nd4 6. **c3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-ke7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq3r/ppppkBpp/2n2n2/2b1p1N1/4P3/8/PPPP1PPP/RNBQK2R w KQ - 1 6",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "e8e7",
+        "prompt": "You are White in the Bishop Sacrifice Line. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 Bc5 5. Bxf7+ Ke7 6. **d4** (Trencianske-Teplice Gambit, C57)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-b5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p1p2ppp/2n2n2/1p1Pp1N1/2B5/8/PPPP1PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "Bf1",
+        "answerUci": "c4f1",
+        "orientation": "white",
+        "lastMove": "b7b5",
+        "prompt": "You are White in the Ulvestad Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 b5 6. **Bf1**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/2n5/3np1N1/2B5/8/PPPP1PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "Nxf7",
+        "answerUci": "g5f7",
+        "orientation": "white",
+        "lastMove": "f6d5",
+        "prompt": "You are White in the Normal Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. **Nxf7** (Fried Liver Attack, C57)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-b5-h6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p1p2pp1/2n2n1p/1p1Pp1N1/8/8/PPPP1PPP/RNBQKB1R w KQkq - 0 7",
+        "answer": "Nxf7",
+        "answerUci": "g5f7",
+        "orientation": "white",
+        "lastMove": "h7h6",
+        "prompt": "You are White in the Ulvestad Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 b5 6. Bf1 h6 7. **Nxf7** (Kurkin Gambit, C57)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nd4-b5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p1p2ppp/5n2/1p1Pp1N1/2Bn4/2P5/PP1P1PPP/RNBQK2R w KQkq - 0 7",
+        "answer": "Bf1",
+        "answerUci": "c4f1",
+        "orientation": "white",
+        "lastMove": "b7b5",
+        "prompt": "You are White in the Fritz Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nd4 6. c3 b5 7. **Bf1**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nxd5-kxf7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1b1r/ppp2kpp/2n5/3np3/2B5/8/PPPP1PPP/RNBQK2R w KQ - 0 7",
+        "answer": "Qf3",
+        "answerUci": "d1f3",
+        "orientation": "white",
+        "lastMove": "e8f7",
+        "prompt": "You are White in the Fried Liver Attack. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. **Qf3+**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-na5-c6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp3ppp/2p2n2/nB1Pp1N1/8/8/PPPP1PPP/RNBQK2R w KQkq - 0 7",
+        "answer": "dxc6",
+        "answerUci": "d5c6",
+        "orientation": "white",
+        "lastMove": "c7c6",
+        "prompt": "You are White in the Bishop Check Line. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. **dxc6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-na5-c6-bxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p4ppp/2p2n2/nB2p1N1/8/8/PPPP1PPP/RNBQK2R w KQkq - 0 8",
+        "answer": "Be2",
+        "answerUci": "b5e2",
+        "orientation": "white",
+        "lastMove": "b7c6",
+        "prompt": "You are White in the Bishop Check Line. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. **Be2** (Two Knights Defense, C58)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nxd5-kxf7-ke6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1b1r/ppp3pp/2n1k3/3np3/2B5/5Q2/PPPP1PPP/RNB1K2R w KQ - 2 8",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "lastMove": "f7e6",
+        "prompt": "You are White in the Fried Liver Attack. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6 8. **Nc3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nd4-b5-nxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p1p2ppp/8/1p1np1N1/3n4/2P5/PP1P1PPP/RNBQKB1R w KQkq - 0 8",
+        "answer": "Ne4",
+        "answerUci": "g5e4",
+        "orientation": "white",
+        "lastMove": "f6d5",
+        "prompt": "You are White in the Fritz Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nd4 6. c3 b5 7. Bf1 Nxd5 8. **Ne4** (Gruber Variation, C57)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nxd5-kxf7-ke6-nb4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1b1r/ppp3pp/4k3/3np3/1nB5/2N2Q2/PPPP1PPP/R1B1K2R w KQ - 4 9",
+        "answer": "Qe4",
+        "answerUci": "f3e4",
+        "orientation": "white",
+        "lastMove": "c6b4",
+        "prompt": "You are White in the Fried Liver Attack. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6 8. Nc3 Nb4 9. **Qe4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-na5-c6-bxc6-h6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p4pp1/2p2n1p/n3p1N1/8/8/PPPPBPPP/RNBQK2R w KQkq - 0 9",
+        "answer": "Nf3",
+        "answerUci": "g5f3",
+        "orientation": "white",
+        "lastMove": "h7h6",
+        "prompt": "You are White in the Suhle Defense. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. **Nf3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nxd5-kxf7-ke6-nb4-c6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1b1r/pp4pp/2p1k3/3np3/1nB1Q3/2N5/PPPP1PPP/R1B1K2R w KQ - 0 10",
+        "answer": "a3",
+        "answerUci": "a2a3",
+        "orientation": "white",
+        "lastMove": "c7c6",
+        "prompt": "You are White in the Fried Liver Attack. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6 8. Nc3 Nb4 9. Qe4 c6 10. **a3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-na5-c6-bxc6-h6-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p4pp1/2p2n1p/n7/4p3/5N2/PPPPBPPP/RNBQK2R w KQkq - 0 10",
+        "answer": "Ne5",
+        "answerUci": "f3e5",
+        "orientation": "white",
+        "lastMove": "e5e4",
+        "prompt": "You are White in the Suhle Defense. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. Nf3 e4 10. **Ne5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nxd5-kxf7-ke6-nb4-c6-na6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1b1r/pp4pp/n1p1k3/3np3/2B1Q3/P1N5/1PPP1PPP/R1B1K2R w KQ - 1 11",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "b4a6",
+        "prompt": "You are White in the Fried Liver Attack. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6 8. Nc3 Nb4 9. Qe4 c6 10. a3 Na6 11. **d4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-na5-c6-bxc6-h6-e4-bd6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/p4pp1/2pb1n1p/n3N3/4p3/8/PPPPBPPP/RNBQK2R w KQkq - 2 11",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "f8d6",
+        "prompt": "You are White in the Suhle Defense. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. Nf3 e4 10. Ne5 Bd6 11. **d4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-na5-c6-bxc6-h6-e4-bd6-qc7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k2r/p1q2pp1/2pb1n1p/n3N3/3Pp3/8/PPP1BPPP/RNBQK2R w KQkq - 1 12",
+        "answer": "Bd2",
+        "answerUci": "c1d2",
+        "orientation": "white",
+        "lastMove": "d8c7",
+        "prompt": "You are White in the Suhle Defense. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. Nf3 e4 10. Ne5 Bd6 11. d4 Qc7 12. **Bd2** (Knorre Variation, C59)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}
