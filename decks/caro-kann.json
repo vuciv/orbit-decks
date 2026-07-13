@@ -1,0 +1,756 @@
+{
+  "key": "caro-kann",
+  "version": 1,
+  "name": "The Caro-Kann Defense",
+  "description": "A club player's working map of the Caro-Kann, lines and the reasons behind them: why 1...c6 works, the Advance, Classical, Exchange, Panov, and Fantasy variations move by move, the pawn breaks and structures that explain every choice, and the famous smothered-mate trap. Move cards show the board from Black's side and ask for the book move; theory cards drill the why.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "caro-kann"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F2p5%2F8%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "caro-answer-to-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "c6",
+        "answerUci": "c7c6",
+        "orientation": "black",
+        "lastMove": "e2e4",
+        "prompt": "You are Black and want to play the Caro-Kann. What is the book move?",
+        "extra": "1...c6 prepares 2...d5, challenging e4 with a pawn that is defended the moment it lands. Structure first, counterplay later: the Caro-Kann philosophy in one move."
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "caro-recognition",
+      "model": "basic",
+      "fields": {
+        "front": "Name this opening.",
+        "back": "The Caro-Kann Defense (1. e4 c6)",
+        "extra": "Named for Horatio Caro and Marcus Kann, who analyzed 1...c6 in the 1880s. The quiet pawn move announces a center fight on Black's terms: ...d5 arrives next, fully supported.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F2p5%2F8%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett&lastMove=c7c6"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "why-c6",
+      "model": "basic",
+      "fields": {
+        "front": "What is the point of 1...c6? Why not fight for the center some other way?",
+        "back": "It supports 2...d5: Black challenges e4 with a protected pawn, without shutting in the c8 bishop",
+        "extra": "After 2. d4 d5 White must immediately declare a plan: push e5, trade on d5, or defend e4. Black learns White's intentions by move three and develops accordingly.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F2p5%2F8%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett&lastMove=c7c6"
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "point-of-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Caro-Kann. What is the book move?",
+        "extra": "The whole point of 1...c6. The d5 pawn attacks e4 and is already defended, so White must push, trade, or guard it, and each choice defines a different variation."
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "caro-vs-french",
+      "model": "basic",
+      "fields": {
+        "front": "The French also meets e4 with a supported ...d5. What does the Caro-Kann do better, and what does it give up?",
+        "back": "Better: the c8 bishop gets out before ...e6. Cost: a tempo on ...c6, the b8 knight's best square, and a slower ...c5",
+        "extra": "In the French the light-squared bishop is walled in from move one; the Caro-Kann develops it to f5 or g4 and only then builds the ...e6 wall. In exchange, ...c6 develops nothing, takes c6 from the b8 knight, and means the later ...c5 break moves the pawn twice.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F2p5%2F3p4%2F3PP3%2F8%2FPPP2PPP%2FRNBQKBNR%20w%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=d7d5"
+      },
+      "tags": [
+        "chess::structure"
+      ]
+    },
+    {
+      "key": "white-third-move-crossroads",
+      "model": "basic",
+      "fields": {
+        "front": "After 1. e4 c6 2. d4 d5, name White's four main tries.",
+        "back": "3. e5 (Advance), 3. Nc3 or 3. Nd2 (main line), 3. exd5 (Exchange, or 4. c4 Panov), and 3. f3 (Fantasy)",
+        "extra": "One position, four different games: a space battle against a pawn chain, a piece game after 3...dxe4, a symmetrical structure fight, or a big-center gamble. Black's setups change, but the assets stay the same: the free c8 bishop, the sound structure, and the ...c5 break.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F2p5%2F3p4%2F3PP3%2F8%2FPPP2PPP%2FRNBQKBNR%20w%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=d7d5"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "advance-signature-bf5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/2p5/3pP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
+        "answer": "Bf5",
+        "answerUci": "c8f5",
+        "orientation": "black",
+        "lastMove": "e4e5",
+        "prompt": "You are Black in the Caro-Kann, Advance Variation. What is the book move?",
+        "extra": "The move the opening was built around: the bishop reaches its best diagonal before ...e6 would close the door. In the Advance French this bishop spends the game behind its own pawns; here it develops with a clear conscience."
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "advance-recognition",
+      "model": "basic",
+      "fields": {
+        "front": "Which variation is this?",
+        "back": "The Advance Variation (3. e5)",
+        "extra": "White grabs space with a French-style pawn chain. Black is cramped but has no weaknesses and a ready-made plan: ...Bf5 outside the wall, then ...e6 and the ...c5 strike at the base.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F2p5%2F3pP3%2F3P4%2F8%2FPPP2PPP%2FRNBQKBNR%20b%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=e4e5"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "advance-e6",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P4/5N2/PPP2PPP/RNBQKB1R b KQkq - 2 4",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Advance Variation. What is the book move?",
+        "extra": "Now the wall goes up at no cost, because the bishop already lives outside it. Black's next jobs: hit the chain's base with ...c5 and develop while White decides how to hold the extra space."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "advance-short-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp3ppp/2p1p3/3pPb2/3P4/5N2/PPP1BPPP/RNBQK2R b KQkq - 1 5",
+        "answer": "c5",
+        "answerUci": "c6c5",
+        "orientation": "black",
+        "lastMove": "f1e2",
+        "prompt": "You are Black in the Advance, Short System. What is the book move?",
+        "extra": "Chain logic: e5 is the head, d4 is the base, and bases are what you attack. 5...c5 pulls the lever; ...Nc6 and ...Qb6 pile onto d4 next, and White's pieces get tied to its defense."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "advance-breaks",
+      "model": "basic",
+      "fields": {
+        "front": "Advance Variation: where are Black's two pawn breaks, and why exactly those squares?",
+        "back": "...c5 attacks the chain's base at d4; ...f6 attacks its head at e5",
+        "extra": "A pawn chain cannot be attacked head-on, only undermined. ...c5 comes early and is the main plan; ...f6 is the second wave for later, once e5 has fewer defenders. Textbook chain strategy, the same grammar as the French.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rn1qkbnr%2Fpp3ppp%2F2p1p3%2F3pPb2%2F3P4%2F5N2%2FPPP2PPP%2FRNBQKB1R%20w%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=e7e6"
+      },
+      "tags": [
+        "chess::structure"
+      ]
+    },
+    {
+      "key": "advance-vs-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P4/2N5/PPP2PPP/R1BQKBNR b KQkq - 2 4",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Advance Variation. What is the book move?",
+        "extra": "4. Nc3 signals the violent plan: g4 and a kingside pawn storm. Black completes the wall anyway; the storm looks scary, but every pawn lunge leaves squares behind, and Black's play flows through the center."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "advance-bayonet-bg6",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp3ppp/2p1p3/3pPb2/3P2P1/2N5/PPP2P1P/R1BQKBNR b KQkq - 0 5",
+        "answer": "Bg6",
+        "answerUci": "f5g6",
+        "orientation": "black",
+        "lastMove": "g2g4",
+        "prompt": "You are Black in the Advance, Bayonet Attack (5. g4). What is the book move?",
+        "extra": "The bishop stays on its diagonal and out of the pawns' reach. The recipe against a flank attack never changes: strike the center, so 6...c5 comes next, and ...h5 later helps pry White's kingside open."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "advance-vs-h4",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P3P/8/PPP2PP1/RNBQKBNR b KQkq - 0 4",
+        "answer": "h5",
+        "answerUci": "h7h5",
+        "orientation": "black",
+        "lastMove": "h2h4",
+        "prompt": "You are Black in the Advance Variation. What is the book move?",
+        "extra": "The point of 4. h4 is h5 and then g4: with g6 covered by the pawn, the bishop would run out of squares. 4...h5 freezes the pawn on h4, where it stays a target, and the bishop keeps its escape route."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "classical-dxe4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR b KQkq - 1 3",
+        "answer": "dxe4",
+        "answerUci": "d5e4",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Caro-Kann. What is the book move?",
+        "extra": "The capture pulls White's knight to a square where it can be hit: 4...Bf5, or 4...Nd7 and 5...Ngf6, develop while gaining time on it. Black trades one center pawn for another, so nothing structural is conceded."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "classical-signature-bf5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4",
+        "answer": "Bf5",
+        "answerUci": "c8f5",
+        "orientation": "black",
+        "lastMove": "c3e4",
+        "prompt": "You are Black and want the Classical Variation. What is the book move?",
+        "extra": "The bishop the Caro-Kann exists to free comes out with tempo. White's chasing moves will look like an initiative; Black's answers keep the bishop active, keep the structure clean, and give back nothing."
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "classical-recognition",
+      "model": "basic",
+      "fields": {
+        "front": "Which variation is this?",
+        "back": "The Classical Variation (4...Bf5)",
+        "extra": "The old main line, beloved by Capablanca and Karpov. Black's next ten moves can look forced and passive; in fact each one preserves the two assets that decide the endgame: the active bishop and the flawless structure.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rn1qkbnr%2Fpp2pppp%2F2p5%2F5b2%2F3PN3%2F8%2FPPP2PPP%2FR1BQKBNR%20w%20KQkq%20-%201%205&color=black&theme=brown&piece=cburnett&lastMove=c8f5"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "classical-bg6",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2pppp/2p5/5b2/3P4/6N1/PPP2PPP/R1BQKBNR b KQkq - 2 5",
+        "answer": "Bg6",
+        "answerUci": "f5g6",
+        "orientation": "black",
+        "lastMove": "e4g3",
+        "prompt": "You are Black in the Classical Variation. What is the book move?",
+        "extra": "The only retreat that keeps the bishop working on the b1-h7 diagonal. It stands ready to trade itself for White's light-squared bishop, the piece any kingside attack would be built around."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "classical-h6",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2pppp/2p3b1/8/3P3P/6N1/PPP2PP1/R1BQKBNR b KQkq - 0 6",
+        "answer": "h6",
+        "answerUci": "h7h6",
+        "orientation": "black",
+        "lastMove": "h2h4",
+        "prompt": "You are Black in the Classical Variation. What is the book move?",
+        "extra": "Not cosmetic: the g3 knight covers f5 and e4, so when h5 comes the bishop's only refuge is h7, and 6...h6 clears that square in advance. Skip it and h4-h5 embarrasses the bishop at once."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "classical-nd7",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2ppp1/2p3bp/8/3P3P/5NN1/PPP2PP1/R1BQKB1R b KQkq - 1 7",
+        "answer": "Nd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Classical Variation. What is the book move?",
+        "extra": "The Caro habit: arrange the pieces so no exchange hurts. 7...Nd7 prepares ...Ngf6, when Nxf6 is met by ...Nxf6 and the pawn front never moves. It also covers e5 against knight hops."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "classical-bh7",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/pp1nppp1/2p3bp/7P/3P4/5NN1/PPP2PP1/R1BQKB1R b KQkq - 0 8",
+        "answer": "Bh7",
+        "answerUci": "g6h7",
+        "orientation": "black",
+        "lastMove": "h4h5",
+        "prompt": "You are Black in the Classical Variation. What is the book move?",
+        "extra": "Into the nook prepared by 6...h6. The bishop still owns b1-h7, and White's far-advanced h5 pawn can become a real target once the queens come off."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "classical-bxd3",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/pp1npppb/2p4p/7P/3P4/3B1NN1/PPP2PP1/R1BQK2R b KQkq - 2 9",
+        "answer": "Bxd3",
+        "answerUci": "h7d3",
+        "orientation": "black",
+        "lastMove": "f1d3",
+        "prompt": "You are Black in the Classical Variation. What is the book move?",
+        "extra": "Take without hesitation: Bd3 was the attacking piece, pointed at Black's future king position. The long maneuver ...Bf5-g6-h7 ends by removing White's best piece, a fine deal in a position with no open lines to punish the spent tempi."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "classical-e6",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/pp1nppp1/2p4p/7P/3P4/3Q1NN1/PPP2PP1/R1B1K2R b KQkq - 0 10",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "d1d3",
+        "prompt": "You are Black in the Classical Variation. What is the book move?",
+        "extra": "Bishop business finished, the wall goes up. Count Black's camp: not a single pawn is weak. That intact structure is the asset Black intends to still hold in the endgame, and it is why the Classical has never been refuted."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "classical-ngf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/pp1n1pp1/2p1p2p/7P/3P1B2/3Q1NN1/PPP2PP1/R3K2R b KQkq - 1 11",
+        "answer": "Ngf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "c1f4",
+        "prompt": "You are Black in the Classical Variation. What is the book move?",
+        "extra": "Developed on Black's terms: if White trades with Nxf6, the d7 knight recaptures and the pawns never move. White's space means little when there is nothing to attack."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "classical-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkb1r/pp1n1pp1/2p1pn1p/7P/3P1B2/3Q1NN1/PPP2PP1/2KR3R b kq - 3 12",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "lastMove": "e1c1",
+        "prompt": "You are Black in the Classical Variation. What is the book move?",
+        "extra": "Quiet and flexible. Castling short is safer than it looks, because White's own h5 pawn has closed the h-file; ...Qc7 with ...O-O-O is the other sound scheme. Both are main theory."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "classical-plan",
+      "model": "basic",
+      "fields": {
+        "front": "Classical main line: development is done. What is Black's middlegame plan?",
+        "back": "Castle (short is safe: h5 has closed the h-file), play ...Qc7 and ...Rd8, then free the game with the ...c5 break and welcome trades",
+        "extra": "Space fades as pieces trade, structure does not. Black absorbs, exchanges a pair or two, and times ...c5 to open the position exactly when it favors the healthier pawns. That rhythm, absorb then counter, is the Caro-Kann's signature.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r2qk2r%2Fpp1nbpp1%2F2p1pn1p%2F7P%2F3P1B2%2F3Q1NN1%2FPPP2PP1%2F2KR3R%20w%20kq%20-%204%2013&color=black&theme=brown&piece=cburnett&lastMove=f8e7"
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "karpov-recognition",
+      "model": "basic",
+      "fields": {
+        "front": "Which variation is this?",
+        "back": "The Karpov Variation (4...Nd7)",
+        "extra": "Karpov's pet move order: prepare ...Ngf6 so the recapture on f6 keeps the pawns intact, while dodging the heavy 4...Bf5 theory. Sound and quiet, but White has one venomous try every Karpov player must know: 5. Qe2.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkbnr%2Fpp1npppp%2F2p5%2F8%2F3PN3%2F8%2FPPP2PPP%2FR1BQKBNR%20w%20KQkq%20-%201%205&color=black&theme=brown&piece=cburnett&lastMove=b8d7"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "karpov-trap-qe2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1npppp/2p5/8/3PN3/8/PPP1QPPP/R1B1KBNR b KQkq - 2 5",
+        "answer": "Ndf6",
+        "answerUci": "d7f6",
+        "orientation": "black",
+        "lastMove": "d1e2",
+        "prompt": "You are Black in the Karpov Variation. White's 5. Qe2 sets a famous trap. What is the safe move?",
+        "extra": "The natural 5...Ngf6?? loses on the spot to 6. Nd6 mate: the e7 pawn is pinned by the queen and every escape square is filled by Black's own army. 5...Ndf6 develops the other knight, hits the e4 knight, and sidesteps the most famous smothered mate in opening theory."
+      },
+      "tags": [
+        "chess::trap"
+      ]
+    },
+    {
+      "key": "recapture-schools",
+      "model": "basic",
+      "fields": {
+        "front": "After 4...Nf6 5. Nxf6+, Black chooses a recapture. Name both variations and their characters.",
+        "back": "5...exf6: the Tartakower, solid and quick to develop. 5...gxf6: the Bronstein-Larsen, double-edged with a half-open g-file",
+        "extra": "One decision, two different games: ...exf6 frees the f8 bishop and accepts a quiet game with a sturdy king, while ...gxf6 keeps the e7 pawn pointing at the center and uses the g-file for attack, at real structural cost. Both are respectable; the choice is stylistic.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp2pppp%2F2p2N2%2F8%2F3P4%2F8%2FPPP2PPP%2FR1BQKBNR%20b%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=e4f6"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "exchange-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/2p5/3P4/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
+        "answer": "cxd5",
+        "answerUci": "c6d5",
+        "orientation": "black",
+        "lastMove": "e4d5",
+        "prompt": "You are Black in the Exchange Variation. What is the book move?",
+        "extra": "Recapture with the pawn: Black keeps a healthy stake on d5 and half-opens the c-file, Black's file for the rest of the game. 3...Qxd5? would invite 4. Nc3 with tempo, exactly what 1...c6 was designed to avoid."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "exchange-recognition",
+      "model": "basic",
+      "fields": {
+        "front": "Which variation is this?",
+        "back": "The Exchange Variation (3. exd5 cxd5, here with Fischer's 4. Bd3)",
+        "extra": "4. Bd3 seizes the b1-h7 diagonal first, so the Caro bishop never reaches f5 (4...Bf5?? now loses a piece to 5. Bxf5). Black switches plans: ...Nc6 and ...Bg4, heading for a Carlsbad structure with colors reversed.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F8%2F3p4%2F3P4%2F3B4%2FPPP2PPP%2FRNBQK1NR%20b%20KQkq%20-%201%204&color=black&theme=brown&piece=cburnett&lastMove=f1d3"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "exchange-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/8/3p4/3P4/3B4/PPP2PPP/RNBQK1NR b KQkq - 1 4",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "lastMove": "f1d3",
+        "prompt": "You are Black in the Exchange Variation. What is the book move?",
+        "extra": "Pressure on d4 provokes 5. c3, and only then does Black choose the bishop's diagonal. Queenside pieces first, ...e6 last: Caro manners survive the change of structure."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "exchange-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp2pppp/2n5/3p4/3P4/2PB4/PP3PPP/RNBQK1NR b KQkq - 0 5",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "c2c3",
+        "prompt": "You are Black in the Exchange Variation. What is the book move?",
+        "extra": "Natural development toward the standard setup: ...Nc6, ...Nf6, ...Bg4, then ...e6 and ...Bd6. The structure is balanced, and Black's half-open c-file gives ready-made rook play."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "exchange-bg4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp2pppp/2n2n2/3p4/3P1B2/2PB4/PP3PPP/RN1QK1NR b KQkq - 2 6",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "lastMove": "c1f4",
+        "prompt": "You are Black in the Exchange Variation. What is the book move?",
+        "extra": "Out before ...e6 shuts the door, as always. The critical try 7. Qb3 is answered by 7...Qd7 (or 7...Na5 8. Qa4+ Bd7), when the b7 pawn is poisoned: after Qxb7 the queen gets hunted by ...Rb8."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "exchange-plan",
+      "model": "basic",
+      "fields": {
+        "front": "Exchange Variation: what structure arises, and what are Black's plans?",
+        "back": "A Carlsbad structure with colors reversed: Black owns the half-open c-file, can run a minority attack with ...b5-b4, or prepare the ...e5 break",
+        "extra": "The mirror of the Queen's Gambit Exchange, with Black playing the minority-attack side. ...b5-b4 aims to leave White a backward pawn on the open c-file; if White drifts in the center, ...e5 frees everything at once. Quiet-looking, full of plans.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r2qkb1r%2Fpp2pppp%2F2n2n2%2F3p4%2F3P1Bb1%2F2PB4%2FPP3PPP%2FRN1QK1NR%20w%20KQkq%20-%203%207&color=black&theme=brown&piece=cburnett&lastMove=c8g4"
+      },
+      "tags": [
+        "chess::structure"
+      ]
+    },
+    {
+      "key": "panov-recognition",
+      "model": "basic",
+      "fields": {
+        "front": "Which variation is this?",
+        "back": "The Panov-Botvinnik Attack (4. c4)",
+        "extra": "White turns the solid Caro into an open, piece-active fight and usually accepts an isolated queen's pawn to do it. Expect Queen's Gambit and Nimzo-Indian flavors: this is the one Caro branch where concrete theory matters most.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F8%2F3p4%2F2PP4%2F8%2FPP3PPP%2FRNBQKBNR%20b%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=c2c4"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "panov-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/8/3p4/2PP4/8/PP3PPP/RNBQKBNR b KQkq - 0 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black vs the Panov-Botvinnik Attack. What is the book move?",
+        "extra": "Develop and defend d5 in one move. Black is happy to see cxd5 Nxd5, when the knight sits well in the center and White's isolated-pawn story begins."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "panov-e6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/5n2/3p4/2PP4/2N5/PP3PPP/R1BQKBNR b KQkq - 2 5",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black vs the Panov-Botvinnik Attack. What is the book move?",
+        "extra": "The wall returns because this structure demands it: against the Panov, holding the d5 square outweighs the bishop's diagonal. ...Bb4 or ...Be7 comes next, then quick castling; isolated-pawn positions punish slow kings."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "panov-bb4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/4pn2/3p4/2PP4/2N2N2/PP3PPP/R1BQKB1R b KQkq - 1 6",
+        "answer": "Bb4",
+        "answerUci": "f8b4",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black vs the Panov-Botvinnik Attack. What is the book move?",
+        "extra": "A Nimzo-Indian move in Caro clothing: the pin neutralizes the knight pressing on d5. After 7. cxd5 Nxd5 the isolani appears on d4 and Black's plan writes itself: blockade it, trade pieces, and collect it in the ending."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "iqp-theory",
+      "model": "basic",
+      "fields": {
+        "front": "Panov positions often leave White an isolated queen's pawn. What does each side want?",
+        "back": "White wants a middlegame: the e5 outpost, open lines, and attacking chances the pawn buys. Black wants trades and an endgame, where the isolani is simply weak",
+        "extra": "The guideline that decides these games: each traded pair of pieces makes the isolani weaker and the d5 blockade stronger. A knight parked on d5 in an ending is the Panov defender's dream picture.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fpp3ppp%2F4pn2%2F3p4%2F1bPP4%2F2N2N2%2FPP3PPP%2FR1BQKB1R%20w%20KQkq%20-%202%207&color=black&theme=brown&piece=cburnett&lastMove=f8b4"
+      },
+      "tags": [
+        "chess::structure"
+      ]
+    },
+    {
+      "key": "fantasy-recognition",
+      "model": "basic",
+      "fields": {
+        "front": "Which variation is this?",
+        "back": "The Fantasy Variation (3. f3)",
+        "extra": "White props up e4 to keep the full center, at the cost of the g1 knight's best square and the e1-h4 diagonal. Tricky and underrated: Black should not try to refute it, just develop soundly and let f3 be a small liability.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F2p5%2F3p4%2F3PP3%2F5P2%2FPPP3PP%2FRNBQKBNR%20b%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=f2f3"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "fantasy-e6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/5P2/PPP3PP/RNBQKBNR b KQkq - 0 3",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "f2f3",
+        "prompt": "You are Black vs the Fantasy Variation. What is the book move?",
+        "extra": "The calm answer: reinforce d5 and ask what f3 accomplished. The principled alternative is 3...dxe4 4. fxe4 e5, striking before White consolidates; both are established, but 3...e6 needs far less memory."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "caro-reflex-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 2",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Caro-Kann and White plays 2. Nc3. What is the book move?",
+        "extra": "The Caro reflex: whatever White's second move, ...d5 is nearly always right, because 1...c6 exists to support it. Here White usually continues 3. Nf3, the Two Knights Variation, or trades on d5."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "two-knights-bg4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/2N2N2/PPPP1PPP/R1BQKB1R b KQkq - 1 3",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black vs the Two Knights Variation. What is the book move?",
+        "extra": "3...Bg4 pins the knight so White cannot achieve d4 under good conditions. After 4. h3 Bxf3 5. Qxf3 e6, Black concedes the bishop pair but builds a structure the two bishops can never crack open: ...Nf6, ...Nbd7, and a calm, cramp-free game."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "accelerated-panov-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/2p5/8/2P1P3/8/PP1P1PPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the Caro-Kann and White plays 2. c4. What is the book move?",
+        "extra": "Claim the center anyway. After 3. exd5 cxd5 4. cxd5 the pawn cannot be held: 4...Nf6 (better than 4...Qxd5?!, which invites 5. Nc3) regains it comfortably, with 5. Nc3 Nxd5 to follow."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "kia-vs-caro",
+      "model": "basic",
+      "fields": {
+        "front": "White plays the modest 2. d3, heading for a King's Indian Attack. How does Black respond?",
+        "back": "Take the full center: 2...d5, and after 3. Nd2, 3...e5",
+        "extra": "White's restraint is Black's invitation: the pawn pair on d5 and e5 is everything 1...c6 could hope for. Develop with ...Bd6 and ...Nf6, castle, and Black stands comfortably in the center from move three.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F2p5%2F8%2F4P3%2F3P4%2FPPP2PPP%2FRNBQKBNR%20b%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett&lastMove=d2d3"
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "caro-breaks",
+      "model": "basic",
+      "fields": {
+        "front": "Across the whole Caro-Kann, which pawn breaks carry Black's counterplay?",
+        "back": "...c5 nearly always; ...e5 in the main lines, or ...f6 against the Advance chain",
+        "extra": "A sound but cramped position needs levers, and Black's are always the same. Prepare them fully before pulling: broken open too early, the game favors White's lead in development; too late, and Black suffocates.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F2p5%2F3p4%2F3PP3%2F8%2FPPP2PPP%2FRNBQKBNR%20w%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=d7d5"
+      },
+      "tags": [
+        "chess::structure"
+      ]
+    },
+    {
+      "key": "caro-endgame",
+      "model": "basic",
+      "fields": {
+        "front": "Why does the Caro-Kann have such a strong endgame reputation?",
+        "back": "Black comes out with zero pawn weaknesses and the light-squared bishop developed or traded, while White's space-gaining pawn advances become targets",
+        "extra": "Space matters less with every trade; structure matters more. The h4-h5 lunge of the Classical is the emblem: a middlegame weapon that turns into an endgame weakness. Caro players trade pieces with a clear conscience.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r2qk2r%2Fpp1nbpp1%2F2p1pn1p%2F7P%2F3P1B2%2F3Q1NN1%2FPPP2PP1%2F2KR3R%20w%20kq%20-%204%2013&color=black&theme=brown&piece=cburnett&lastMove=f8e7"
+      },
+      "tags": [
+        "chess::structure"
+      ]
+    },
+    {
+      "key": "caro-champions",
+      "model": "basic",
+      "fields": {
+        "front": "Which world champions used the Caro-Kann as a main defense?",
+        "back": "Capablanca, Botvinnik, Petrosian, and Karpov",
+        "extra": "The opening fits a style: clarity, patience, and technique. Botvinnik trusted it in world championship matches, and the 4...Nd7 line carries Karpov's name.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F2p5%2F8%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett&lastMove=c7c6"
+      },
+      "tags": [
+        "chess::variation"
+      ]
+    },
+    {
+      "key": "caro-tradeoffs",
+      "model": "basic",
+      "fields": {
+        "front": "The honest ledger: what does White get against the Caro-Kann, and what does Black get?",
+        "back": "White: extra space and freer development. Black: a weakness-free structure, a solved light-squared bishop, and plans that survive into the endgame",
+        "extra": "The bet behind 1...c6: advantages of time and space fade as pieces leave the board, while structural advantages compound. Absorb the pressure, break with ...c5 or ...e5 at the right moment, and let the pawns do the arguing.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=rn1qkbnr%2Fpp2pppp%2F2p5%2F5b2%2F3PN3%2F8%2FPPP2PPP%2FR1BQKBNR%20w%20KQkq%20-%201%205&color=black&theme=brown&piece=cburnett&lastMove=c8f5"
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    }
+  ]
+}

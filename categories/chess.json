@@ -4,6 +4,18 @@
   "name": "Chess",
   "decks": [
     {
+      "key": "caro-kann",
+      "name": "The Caro-Kann Defense",
+      "description": "A club player's working map of the Caro-Kann, lines and the reasons behind them: why 1...c6 works, the Advance, Classical, Exchange, Panov, and Fantasy variations move by move, the pawn breaks and structures that explain every choice, and the famous smothered-mate trap. Move cards show the board from Black's side and ask for the book move; theory cards drill the why.",
+      "cardCount": 50,
+      "topics": [
+        "chess",
+        "openings",
+        "caro-kann"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F2p5%2F8%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett"
+    },
+    {
       "key": "london-system",
       "name": "The London System",
       "description": "Learn to play the London System as White, one position at a time: the core setup against ...d5, the anti-fianchetto setup, the right answers to ...Qb6 and the poisoned b2-pawn, and classic attacking patterns like the Greek gift on h7. Every card shows a position; you supply the book move.",

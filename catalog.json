@@ -46,8 +46,8 @@
     {
       "key": "chess",
       "name": "Chess",
-      "deckCount": 2,
-      "rev": "3d1099f29739",
+      "deckCount": 3,
+      "rev": "273f1582f660",
       "file": "categories/chess.json"
     },
     {
@@ -133,7 +133,8 @@
       "description": "Book moves, plans, and traps, one opening at a time.",
       "deckKeys": [
         "london-system",
-        "sicilian-defense"
+        "sicilian-defense",
+        "caro-kann"
       ]
     },
     {
@@ -179,6 +180,11 @@
       "key": "bones-of-the-body",
       "version": 1,
       "file": "decks/bones-of-the-body.json"
+    },
+    {
+      "key": "caro-kann",
+      "version": 1,
+      "file": "decks/caro-kann.json"
     },
     {
       "key": "constellations",
