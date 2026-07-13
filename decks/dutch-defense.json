@@ -1,0 +1,400 @@
+{
+  "key": "dutch-defense",
+  "version": 1,
+  "name": "The Dutch Defense",
+  "description": "Line trainer for the Dutch Defense, generated from the canonical opening database (lichess-org/chess-openings): 24 positions drilled book-move by book-move from Black's side across 69 named variations. Each card shows the position from Black's side and asks for the book move; the back gives the line so far, the variation name and ECO code, and the covered replies that continue it.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "dutch-defense"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fppppp1pp%2F8%2F5p2%2F3P4%2F8%2FPPP1PPPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett&lastMove=f7f5",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "f5",
+        "answerUci": "f7f5",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. d4 **f5**. This is the main line (A80). Covered replies: 2. c4 (main line), 2. e4 (Staunton Gambit), 2. g3 (Fianchetto Attack), 2. Qd3 (Alapin Variation), 2. g4 (Krejcik Gambit), 2. Nc3 (Raphael Variation), 2. Nf3, 2. h3 (Korchnoi Attack), 2. Bg5 (Hopton Attack), 2. Bf4."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppppp1pp/8/5p2/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. c4 **Nf6**. This is the Normal Variation (A84). Covered replies: 3. g3 (Fianchetto Variation), 3. Nc3 (Queen's Knight Variation)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-g3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppppp1pp/5n2/5p2/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "g2g3",
+        "prompt": "You are Black in the Fianchetto Variation. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. c4 Nf6 3. g3 **e6**. Covered replies: 4. Bg2 (Classical Variation)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-g3-bg2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppp2pp/4pn2/5p2/2PP4/6P1/PP2PPBP/RNBQK1NR b KQkq - 1 4",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "lastMove": "f1g2",
+        "prompt": "You are Black in the Classical Variation. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 **Be7**. This is the Classical Variation (A91). Covered replies: 5. Nf3, 5. Nh3 (Classical Variation, Blackburne Attack)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-g3-bg2-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppppb1pp/4pn2/5p2/2PP4/5NP1/PP2PPBP/RNBQK2R b KQkq - 3 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Classical Variation. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 **O-O**. This is the Classical Variation (A92). Covered replies: 6. O-O."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-g3-bg2-nf3-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppppb1pp/4pn2/5p2/2PP4/5NP1/PP2PPBP/RNBQ1RK1 b - - 5 6",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "lastMove": "e1g1",
+        "prompt": "You are Black in the Classical Variation. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O **d6**. This is the Classical Variation (A96). Covered replies: 7. Nc3."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-g3-bg2-nf3-oo-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1b1pp/3ppn2/5p2/2PP4/2N2NP1/PP2PPBP/R1BQ1RK1 b - - 1 7",
+        "answer": "Qe8",
+        "answerUci": "d8e8",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Classical Variation. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O d6 7. Nc3 **Qe8**. This is the Classical Variation, Ilyin-Zhenevsky Variation (A97). Covered replies: 8. Re1 (Classical Variation, Ilyin-Zhenevsky Variation, Winter Variation), 8. Qc2 (Classical Variation, Ilyin-Zhenevsky Variation, Alatortsev-Lisitsyn Line), 8. b3 (Classical Variation, Ilyin-Zhenevsky Variation, Modern Main Line)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppppp1pp/5n2/5p2/2PP4/2N5/PP2PPPP/R1BQKBNR b KQkq - 2 3",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Queen's Knight Variation. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. c4 Nf6 3. Nc3 **d6**. Covered replies: 4. Nf3."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1p1pp/3p1n2/5p2/2PP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 1 4",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Queen's Knight Variation. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. c4 Nf6 3. Nc3 d6 4. Nf3 **Nc6**. This is the Krause Variation (A84)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppppp1pp/8/5p2/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "fxe4",
+        "answerUci": "f5e4",
+        "orientation": "black",
+        "lastMove": "e2e4",
+        "prompt": "You are Black in the Staunton Gambit. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. e4 **fxe4**. This is the Staunton Gambit Accepted (A82). Covered replies: 3. Nc3, 3. Nd2 (Staunton Gambit, American Attack)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-e4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppppp1pp/8/8/3Pp3/2N5/PPP2PPP/R1BQKBNR b KQkq - 1 3",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Staunton Gambit Accepted. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. e4 fxe4 3. Nc3 **Nf6**. Covered replies: 4. Bg5 (Staunton Gambit), 4. f3 (Blackmar's Second Gambit), 4. g4 (Staunton Gambit, Tartakower Variation)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-e4-nc3-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppppp1pp/5n2/6B1/3Pp3/2N5/PPP2PPP/R2QKBNR b KQkq - 3 4",
+        "answer": "g6",
+        "answerUci": "g7g6",
+        "orientation": "black",
+        "lastMove": "c1g5",
+        "prompt": "You are Black in the Staunton Gambit. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. e4 fxe4 3. Nc3 Nf6 4. Bg5 **g6**. Covered replies: 5. h4 (Staunton Gambit, Alekhine Variation), 5. f3 (Staunton Gambit, Lasker Variation)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-g3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppppp1pp/8/5p2/3P4/6P1/PPP1PP1P/RNBQKBNR b KQkq - 0 2",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "g2g3",
+        "prompt": "You are Black in the Fianchetto Attack. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. g3 **Nf6**. Covered replies: 3. Bg2."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-g3-bg2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppppp1pp/5n2/5p2/3P4/6P1/PPP1PPBP/RNBQK1NR b KQkq - 2 3",
+        "answer": "g6",
+        "answerUci": "g7g6",
+        "orientation": "black",
+        "lastMove": "f1g2",
+        "prompt": "You are Black in the Fianchetto Attack. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. g3 Nf6 3. Bg2 **g6**. This is the Semi-Leningrad Variation (A81). Covered replies: 4. Nf3."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-g3-bg2-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppppp2p/5np1/5p2/3P4/5NP1/PPP1PPBP/RNBQK2R b KQkq - 1 4",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Semi-Leningrad Variation. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. g3 Nf6 3. Bg2 g6 4. Nf3 **Bg7**. Covered replies: 5. O-O."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-g3-bg2-nf3-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppppp1bp/5np1/5p2/3P4/5NP1/PPP1PPBP/RNBQ1RK1 b kq - 3 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "lastMove": "e1g1",
+        "prompt": "You are Black in the Semi-Leningrad Variation. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. g3 Nf6 3. Bg2 g6 4. Nf3 Bg7 5. O-O **O-O**. Covered replies: 6. c4."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-g3-bg2-nf3-oo-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppppp1bp/5np1/5p2/2PP4/5NP1/PP2PPBP/RNBQ1RK1 b - - 0 6",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the Semi-Leningrad Variation. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. g3 Nf6 3. Bg2 g6 4. Nf3 Bg7 5. O-O O-O 6. c4 **d6**. Covered replies: 7. Nc3."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-g3-bg2-nf3-oo-c4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1p1bp/3p1np1/5p2/2PP4/2N2NP1/PP2PPBP/R1BQ1RK1 b - - 1 7",
+        "answer": "c6",
+        "answerUci": "c7c6",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Semi-Leningrad Variation. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. g3 Nf6 3. Bg2 g6 4. Nf3 Bg7 5. O-O O-O 6. c4 d6 7. Nc3 **c6**. This is the Leningrad Variation, Warsaw Variation (A88)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-qd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppppp1pp/8/5p2/3P4/3Q4/PPP1PPPP/RNB1KBNR b KQkq - 1 2",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "d1d3",
+        "prompt": "You are Black in the Alapin Variation. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. Qd3 **e6**. Covered replies: 3. g4 (Manhattan Gambit, Anti-Classical Line)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-g4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppppp1pp/8/5p2/3P2P1/8/PPP1PP1P/RNBQKBNR b KQkq - 0 2",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "lastMove": "g2g4",
+        "prompt": "You are Black in the Krejcik Gambit. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. g4 **e5**. This is the Hevendehl Gambit (A80)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppppp1pp/8/5p2/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 1 2",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Raphael Variation. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. Nc3 **d5**. Covered replies: 3. e4 (Kingfisher Gambit)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppppp1pp/8/5p2/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 1 2",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. Nf3 **Nf6**. Covered replies: 3. c3 (Barcza Variation)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-h3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppppp1pp/8/5p2/3P4/7P/PPP1PPP1/RNBQKBNR b KQkq - 0 2",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "h2h3",
+        "prompt": "You are Black in the Korchnoi Attack. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. h3 **Nf6**. Covered replies: 3. g4 (Janzen-Korchnoi Gambit)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-bf4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppppp1pp/8/5p2/3P1B2/8/PPP1PPPP/RN1QKBNR b KQkq - 1 2",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "c1f4",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. d4 f5 2. Bf4 **e6**. Covered replies: 3. g4 (Senechaud Gambit)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

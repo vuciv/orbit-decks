@@ -1,0 +1,1071 @@
+{
+  "key": "english-opening",
+  "version": 1,
+  "name": "The English Opening",
+  "description": "Line trainer for the English Opening, generated from the canonical opening database (lichess-org/chess-openings): 66 positions drilled book-move by book-move from White's side across 175 named variations. Each card shows the position from White's side and asks for the book move; the back gives the line so far, the variation name and ECO code, and the covered replies that continue it.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "english-opening"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpppppppp%2F8%2F8%2F2P5%2F8%2FPP1PPPPP%2FRNBQKBNR%20b%20KQkq%20-%200%201&color=white&theme=brown&piece=cburnett&lastMove=c2c4",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-root",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "answer": "c4",
+        "answerUci": "c2c4",
+        "orientation": "white",
+        "prompt": "You are White in the main line. What is the book move?",
+        "extra": "Line: 1. **c4**. This is the main line (A10). Covered replies: 1... e5 (King's English Variation), 1... e6 (Agincourt Defense), 1... Nf6 (Anglo-Indian Defense), 1... c5 (Symmetrical Variation), 1... f5 (Anglo-Dutch Defense), 1... d5 (Anglo-Scandinavian Defense), 1... g6 (Great Snake Variation), 1... g5 (Myers Defense), 1... Nc6 (Anglo-Lithuanian Variation), 1... b5 (Jaenisch Gambit), 1... c6 (Caro-Kann Defensive System)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "lastMove": "e7e5",
+        "prompt": "You are White in the King's English Variation. What is the book move?",
+        "extra": "Line: 1. c4 e5 2. **Nc3**. This is the King's English Variation, Reversed Sicilian (A21). Covered replies: 2... Nf6 (King's English Variation, Two Knights Variation), 2... Nc6 (King's English Variation, Reversed Closed Sicilian), 2... d6, 2... Bb4 (King's English Variation, Kramnik-Shirov Counterattack)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR w KQkq - 2 3",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "lastMove": "g8f6",
+        "prompt": "You are White in the King's English Variation, Two Knights Variation. What is the book move?",
+        "extra": "Line: 1. c4 e5 2. Nc3 Nf6 3. **Nf3**. Covered replies: 3... Nc6 (King's English Variation, Four Knights Variation), 3... e4."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2P5/2N2N2/PP1PPPPP/R1BQKB1R w KQkq - 4 4",
+        "answer": "g3",
+        "answerUci": "g2g3",
+        "orientation": "white",
+        "lastMove": "b8c6",
+        "prompt": "You are White in the King's English Variation, Four Knights Variation. What is the book move?",
+        "extra": "Line: 1. c4 e5 2. Nc3 Nf6 3. Nf3 Nc6 4. **g3**. This is the King's English Variation, Four Knights Variation, Fianchetto Line (A29). Covered replies: 4... Bc5, 4... Bb4 (King's English Variation, Four Knights Variation, Fianchetto Line), 4... d5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-nc6-bc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2P5/2N2NP1/PP1PPP1P/R1BQKB1R w KQkq - 1 5",
+        "answer": "d3",
+        "answerUci": "d2d3",
+        "orientation": "white",
+        "lastMove": "f8c5",
+        "prompt": "You are White in the King's English Variation, Four Knights Variation, Fianchetto Line. What is the book move?",
+        "extra": "Line: 1. c4 e5 2. Nc3 Nf6 3. Nf3 Nc6 4. g3 Bc5 5. **d3**. Covered replies: 5... d6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-nc6-bc5-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2P5/2NP1NP1/PP2PP1P/R1BQKB1R w KQkq - 0 6",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
+        "orientation": "white",
+        "lastMove": "d7d6",
+        "prompt": "You are White in the King's English Variation, Four Knights Variation, Fianchetto Line. What is the book move?",
+        "extra": "Line: 1. c4 e5 2. Nc3 Nf6 3. Nf3 Nc6 4. g3 Bc5 5. d3 d6 6. **Bg2**. This is the King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6 (A29). Covered replies: 6... O-O, 6... a6 (King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6, a6), 6... h6 (King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6, h6)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-nc6-bc5-d6-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2P5/2NP1NP1/PP2PPBP/R1BQK2R w KQ - 2 7",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "e8g8",
+        "prompt": "You are White in the King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6. What is the book move?",
+        "extra": "Line: 1. c4 e5 2. Nc3 Nf6 3. Nf3 Nc6 4. g3 Bc5 5. d3 d6 6. Bg2 O-O 7. **O-O**. This is the King's English Variation, Four Knights Variation, Fianchetto Line, with .. d6 (A29)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-nc6-bb4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/4p3/1bP5/2N2NP1/PP1PPP1P/R1BQKB1R w KQkq - 1 5",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
+        "orientation": "white",
+        "lastMove": "f8b4",
+        "prompt": "You are White in the King's English Variation, Four Knights Variation, Fianchetto Line. What is the book move?",
+        "extra": "Line: 1. c4 e5 2. Nc3 Nf6 3. Nf3 Nc6 4. g3 Bb4 5. **Bg2**. Covered replies: 5... Bxc3."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-nc6-bb4-bxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/4p3/2P5/2b2NP1/PP1PPPBP/R1BQK2R w KQkq - 0 6",
+        "answer": "dxc3",
+        "answerUci": "d2c3",
+        "orientation": "white",
+        "lastMove": "b4c3",
+        "prompt": "You are White in the King's English Variation, Four Knights Variation, Fianchetto Line. What is the book move?",
+        "extra": "Line: 1. c4 e5 2. Nc3 Nf6 3. Nf3 Nc6 4. g3 Bb4 5. Bg2 Bxc3 6. **dxc3**. Covered replies: 6... d6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-nc6-bb4-bxc3-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2ppp/2np1n2/4p3/2P5/2P2NP1/PP2PPBP/R1BQK2R w KQkq - 0 7",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "d7d6",
+        "prompt": "You are White in the King's English Variation, Four Knights Variation, Fianchetto Line. What is the book move?",
+        "extra": "Line: 1. c4 e5 2. Nc3 Nf6 3. Nf3 Nc6 4. g3 Bb4 5. Bg2 Bxc3 6. dxc3 d6 7. **O-O**. Covered replies: 7... O-O (King's English Variation, Four Knights Variation, Fianchetto Line)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-nc6-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/2n2n2/3pp3/2P5/2N2NP1/PP1PPP1P/R1BQKB1R w KQkq - 0 5",
+        "answer": "cxd5",
+        "answerUci": "c4d5",
+        "orientation": "white",
+        "lastMove": "d7d5",
+        "prompt": "You are White in the King's English Variation, Four Knights Variation, Fianchetto Line. What is the book move?",
+        "extra": "Line: 1. c4 e5 2. Nc3 Nf6 3. Nf3 Nc6 4. g3 d5 5. **cxd5**. Covered replies: 5... Nxd5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-nc6-d5-nxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/2n5/3np3/8/2N2NP1/PP1PPP1P/R1BQKB1R w KQkq - 0 6",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
+        "orientation": "white",
+        "lastMove": "f6d5",
+        "prompt": "You are White in the King's English Variation, Four Knights Variation, Fianchetto Line. What is the book move?",
+        "extra": "Line: 1. c4 e5 2. Nc3 Nf6 3. Nf3 Nc6 4. g3 d5 5. cxd5 Nxd5 6. **Bg2**. Covered replies: 6... Bc5 (King's English Variation, Four Knights Variation, Fianchetto Line, with Bc5), 6... Nb6 (King's English Variation, Four Knights Variation, Fianchetto Line, with Nb6)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppp1ppp/5n2/8/2P1p3/2N2N2/PP1PPPPP/R1BQKB1R w KQkq - 0 4",
+        "answer": "Ng5",
+        "answerUci": "f3g5",
+        "orientation": "white",
+        "lastMove": "e5e4",
+        "prompt": "You are White in the King's English Variation, Two Knights Variation. What is the book move?",
+        "extra": "Line: 1. c4 e5 2. Nc3 Nf6 3. Nf3 e4 4. **Ng5**. Covered replies: 4... c6 (King's English Variation, Adhiban Gambit), 4... b5 (King's English Variation, Bellon Gambit), 4... Ng4 (King's English, Erbenheimer Gambit)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR w KQkq - 2 3",
+        "answer": "g3",
+        "answerUci": "g2g3",
+        "orientation": "white",
+        "lastMove": "b8c6",
+        "prompt": "You are White in the King's English Variation, Reversed Closed Sicilian. What is the book move?",
+        "extra": "Line: 1. c4 e5 2. Nc3 Nc6 3. **g3**. Covered replies: 3... g6, 3... d6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-g6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1p1p/2n3p1/4p3/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
+        "orientation": "white",
+        "lastMove": "g7g6",
+        "prompt": "You are White in the King's English Variation, Reversed Closed Sicilian. What is the book move?",
+        "extra": "Line: 1. c4 e5 2. Nc3 Nc6 3. g3 g6 4. **Bg2**. Covered replies: 4... Bg7 (King's English Variation, Taimanov Variation)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-g6-bg7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1pbp/2n3p1/4p3/2P5/2N3P1/PP1PPPBP/R1BQK1NR w KQkq - 2 5",
+        "answer": "d3",
+        "answerUci": "d2d3",
+        "orientation": "white",
+        "lastMove": "f8g7",
+        "prompt": "You are White in the King's English Variation, Taimanov Variation. What is the book move?",
+        "extra": "Line: 1. c4 e5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. **d3**. This is the King's English Variation, Closed System (A25). Covered replies: 5... d6 (King's English Variation, Closed System, Full Symmetry)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-g6-bg7-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppp2pbp/2np2p1/4p3/2P5/2NP2P1/PP2PPBP/R1BQK1NR w KQkq - 0 6",
+        "answer": "e4",
+        "answerUci": "e2e4",
+        "orientation": "white",
+        "lastMove": "d7d6",
+        "prompt": "You are White in the King's English Variation, Closed System, Full Symmetry. What is the book move?",
+        "extra": "Line: 1. c4 e5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. d3 d6 6. **e4**. This is the King's English Variation, Botvinnik System (A26)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/ppp2ppp/2np4/4p3/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
+        "orientation": "white",
+        "lastMove": "d7d6",
+        "prompt": "You are White in the King's English Variation, Reversed Closed Sicilian. What is the book move?",
+        "extra": "Line: 1. c4 e5 2. Nc3 Nc6 3. g3 d6 4. **Bg2**. Covered replies: 4... Be6 (King's English Variation, Troger Defense)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp2ppp/3p4/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR w KQkq - 0 3",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "lastMove": "d7d6",
+        "prompt": "You are White in the King's English Variation, Reversed Sicilian. What is the book move?",
+        "extra": "Line: 1. c4 e5 2. Nc3 d6 3. **Nf3**. This is the King's English Variation (A21). Covered replies: 3... Bg4 (King's English Variation, Smyslov Defense)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppp1ppp/4p3/8/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "lastMove": "e7e6",
+        "prompt": "You are White in the Agincourt Defense. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. **Nf3**. This is the Agincourt Defense (A13). Covered replies: 2... d5 (Agincourt Defense), 2... Nf6, 2... c5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/2P5/5N2/PP1PPPPP/RNBQKB1R w KQkq - 0 3",
+        "answer": "g3",
+        "answerUci": "g2g3",
+        "orientation": "white",
+        "lastMove": "d7d5",
+        "prompt": "You are White in the Agincourt Defense. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 d5 3. **g3**. Covered replies: 3... Nf6 (Neo-Catalan), 3... b6, 3... c5 (Agincourt Defense, Catalan Defense), 3... c6 (Agincourt Defense, Kurajica Defense)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-d5-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2P5/5NP1/PP1PPP1P/RNBQKB1R w KQkq - 1 4",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
+        "orientation": "white",
+        "lastMove": "g8f6",
+        "prompt": "You are White in the Neo-Catalan. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 d5 3. g3 Nf6 4. **Bg2**. Covered replies: 4... Be7 (Neo-Catalan Declined), 4... Bd6 (Agincourt Defense, Bogoljubow Defense), 4... c5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-d5-nf6-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1bppp/4pn2/3p4/2P5/5NP1/PP1PPPBP/RNBQK2R w KQkq - 3 5",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "f8e7",
+        "prompt": "You are White in the Neo-Catalan Declined. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 d5 3. g3 Nf6 4. Bg2 Be7 5. **O-O**. This is the Agincourt Defense, Neo-Catalan Declined (A14). Covered replies: 5... c5, 5... O-O."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-d5-nf6-be7-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2bppp/4pn2/2pp4/2P5/5NP1/PP1PPPBP/RNBQ1RK1 w kq - 0 6",
+        "answer": "cxd5",
+        "answerUci": "c4d5",
+        "orientation": "white",
+        "lastMove": "c7c5",
+        "prompt": "You are White in the Agincourt Defense, Neo-Catalan Declined. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 d5 3. g3 Nf6 4. Bg2 Be7 5. O-O c5 6. **cxd5**. Covered replies: 6... Nxd5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-d5-nf6-be7-c5-nxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2bppp/4p3/2pn4/8/5NP1/PP1PPPBP/RNBQ1RK1 w kq - 0 7",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "lastMove": "f6d5",
+        "prompt": "You are White in the Agincourt Defense, Neo-Catalan Declined. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 d5 3. g3 Nf6 4. Bg2 Be7 5. O-O c5 6. cxd5 Nxd5 7. **Nc3**. Covered replies: 7... Nc6 (Agincourt Defense, Keres Defense)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-d5-nf6-be7-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1bppp/4pn2/3p4/2P5/5NP1/PP1PPPBP/RNBQ1RK1 w - - 5 6",
+        "answer": "b3",
+        "answerUci": "b2b3",
+        "orientation": "white",
+        "lastMove": "e8g8",
+        "prompt": "You are White in the Agincourt Defense, Neo-Catalan Declined. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 d5 3. g3 Nf6 4. Bg2 Be7 5. O-O O-O 6. **b3**. This is the Agincourt Defense, Neo-Catalan Declined (A14)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-d5-nf6-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/4pn2/2pp4/2P5/5NP1/PP1PPPBP/RNBQK2R w KQkq - 0 5",
+        "answer": "b3",
+        "answerUci": "b2b3",
+        "orientation": "white",
+        "lastMove": "c7c5",
+        "prompt": "You are White in the Neo-Catalan. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 d5 3. g3 Nf6 4. Bg2 c5 5. **b3**. Covered replies: 5... Nc6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-d5-nf6-c5-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp3ppp/2n1pn2/2pp4/2P5/1P3NP1/P2PPPBP/RNBQK2R w KQkq - 1 6",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "b8c6",
+        "prompt": "You are White in the Neo-Catalan. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 d5 3. g3 Nf6 4. Bg2 c5 5. b3 Nc6 6. **O-O**. Covered replies: 6... Be7 (Agincourt Defense, Tarrasch Defense)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-d5-b6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/p1p2ppp/1p2p3/3p4/2P5/5NP1/PP1PPP1P/RNBQKB1R w KQkq - 0 4",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
+        "orientation": "white",
+        "lastMove": "b7b6",
+        "prompt": "You are White in the Agincourt Defense. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 d5 3. g3 b6 4. **Bg2**. Covered replies: 4... Bb7."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-d5-b6-bb7",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pbp2ppp/1p2p3/3p4/2P5/5NP1/PP1PPPBP/RNBQK2R w KQkq - 2 5",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "c8b7",
+        "prompt": "You are White in the Agincourt Defense. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 d5 3. g3 b6 4. Bg2 Bb7 5. **O-O**. This is the Agincourt Defense, Catalan Defense (A13)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2P5/5N2/PP1PPPPP/RNBQKB1R w KQkq - 2 3",
+        "answer": "g3",
+        "answerUci": "g2g3",
+        "orientation": "white",
+        "lastMove": "g8f6",
+        "prompt": "You are White in the Agincourt Defense. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 Nf6 3. **g3**. Covered replies: 3... d5, 3... b6, 3... a6 (Anglo-Indian Defense, Romanishin Variation)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-nf6-b6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/p1pp1ppp/1p2pn2/8/2P5/5NP1/PP1PPP1P/RNBQKB1R w KQkq - 0 4",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
+        "orientation": "white",
+        "lastMove": "b7b6",
+        "prompt": "You are White in the Agincourt Defense. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 Nf6 3. g3 b6 4. **Bg2**. Covered replies: 4... Bb7 (Anglo-Indian Defense, Queen's Indian Formation)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1p1ppp/4p3/2p5/2P5/5N2/PP1PPPPP/RNBQKB1R w KQkq - 0 3",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "lastMove": "c7c5",
+        "prompt": "You are White in the Agincourt Defense. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 c5 3. **Nc3**. Covered replies: 3... Nf6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp1p1ppp/4pn2/2p5/2P5/2N2N2/PP1PPPPP/R1BQKB1R w KQkq - 2 4",
+        "answer": "g3",
+        "answerUci": "g2g3",
+        "orientation": "white",
+        "lastMove": "g8f6",
+        "prompt": "You are White in the Agincourt Defense. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 c5 3. Nc3 Nf6 4. **g3**. Covered replies: 4... b6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5-nf6-b6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/p2p1ppp/1p2pn2/2p5/2P5/2N2NP1/PP1PPP1P/R1BQKB1R w KQkq - 0 5",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
+        "orientation": "white",
+        "lastMove": "b7b6",
+        "prompt": "You are White in the Agincourt Defense. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 c5 3. Nc3 Nf6 4. g3 b6 5. **Bg2**. Covered replies: 5... Bb7."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5-nf6-b6-bb7",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pb1p1ppp/1p2pn2/2p5/2P5/2N2NP1/PP1PPPBP/R1BQK2R w KQkq - 2 6",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "c8b7",
+        "prompt": "You are White in the Agincourt Defense. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 c5 3. Nc3 Nf6 4. g3 b6 5. Bg2 Bb7 6. **O-O**. Covered replies: 6... Be7."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5-nf6-b6-bb7-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qk2r/pb1pbppp/1p2pn2/2p5/2P5/2N2NP1/PP1PPPBP/R1BQ1RK1 w kq - 4 7",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "f8e7",
+        "prompt": "You are White in the Agincourt Defense. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 c5 3. Nc3 Nf6 4. g3 b6 5. Bg2 Bb7 6. O-O Be7 7. **d4**. Covered replies: 7... cxd4."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5-nf6-b6-bb7-be7-cxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qk2r/pb1pbppp/1p2pn2/8/2Pp4/2N2NP1/PP2PPBP/R1BQ1RK1 w kq - 0 8",
+        "answer": "Qxd4",
+        "answerUci": "d1d4",
+        "orientation": "white",
+        "lastMove": "c5d4",
+        "prompt": "You are White in the Agincourt Defense. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 c5 3. Nc3 Nf6 4. g3 b6 5. Bg2 Bb7 6. O-O Be7 7. d4 cxd4 8. **Qxd4**. Covered replies: 8... d6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5-nf6-b6-bb7-be7-cxd4-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qk2r/pb2bppp/1p1ppn2/8/2PQ4/2N2NP1/PP2PPBP/R1B2RK1 w kq - 0 9",
+        "answer": "Rd1",
+        "answerUci": "f1d1",
+        "orientation": "white",
+        "lastMove": "d7d6",
+        "prompt": "You are White in the Agincourt Defense. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 c5 3. Nc3 Nf6 4. g3 b6 5. Bg2 Bb7 6. O-O Be7 7. d4 cxd4 8. Qxd4 d6 9. **Rd1**. Covered replies: 9... a6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5-nf6-b6-bb7-be7-cxd4-d6-a6",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qk2r/1b2bppp/pp1ppn2/8/2PQ4/2N2NP1/PP2PPBP/R1BR2K1 w kq - 0 10",
+        "answer": "b3",
+        "answerUci": "b2b3",
+        "orientation": "white",
+        "lastMove": "a7a6",
+        "prompt": "You are White in the Agincourt Defense. What is the book move?",
+        "extra": "Line: 1. c4 e6 2. Nf3 c5 3. Nc3 Nf6 4. g3 b6 5. Bg2 Bb7 6. O-O Be7 7. d4 cxd4 8. Qxd4 d6 9. Rd1 a6 10. **b3**. Covered replies: 10... Nbd7 (Symmetrical, Hedgehog, Flexible Formation)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppppp/5n2/8/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 1 2",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "lastMove": "g8f6",
+        "prompt": "You are White in the Anglo-Indian Defense. What is the book move?",
+        "extra": "Line: 1. c4 Nf6 2. **Nf3**. This is the Anglo-Indian Defense, King's Knight Variation (A15). Covered replies: 2... g6 (Anglo-Indian Defense, King's Indian Formation), 2... d5 (Anglo-Indian Defense, Scandinavian Defense), 2... c5, 2... e6, 2... d6 (Anglo-Indian Defense, Old Indian Formation), 2... b6 (Anglo-Indian Defense, Queen's Indian Formation)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-g6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppp1p/5np1/8/2P5/5N2/PP1PPPPP/RNBQKB1R w KQkq - 0 3",
+        "answer": "g3",
+        "answerUci": "g2g3",
+        "orientation": "white",
+        "lastMove": "g7g6",
+        "prompt": "You are White in the Anglo-Indian Defense, King's Indian Formation. What is the book move?",
+        "extra": "Line: 1. c4 Nf6 2. Nf3 g6 3. **g3**. Covered replies: 3... d5 (Anglo-Indian Defense, Gr\u00fcnfeld Formation), 3... b6, 3... c6 (Anglo-Indian Defense, Slav Formation), 3... Bg7."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-g6-b6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/p1pppp1p/1p3np1/8/2P5/5NP1/PP1PPP1P/RNBQKB1R w KQkq - 0 4",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
+        "orientation": "white",
+        "lastMove": "b7b6",
+        "prompt": "You are White in the Anglo-Indian Defense, King's Indian Formation. What is the book move?",
+        "extra": "Line: 1. c4 Nf6 2. Nf3 g6 3. g3 b6 4. **Bg2**. Covered replies: 4... Bb7 (Anglo-Indian Defense, King's Indian Formation, Double Fianchetto)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-g6-bg7",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppppppbp/5np1/8/2P5/5NP1/PP1PPP1P/RNBQKB1R w KQkq - 1 4",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
+        "orientation": "white",
+        "lastMove": "f8g7",
+        "prompt": "You are White in the Anglo-Indian Defense, King's Indian Formation. What is the book move?",
+        "extra": "Line: 1. c4 Nf6 2. Nf3 g6 3. g3 Bg7 4. **Bg2**. Covered replies: 4... O-O."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-g6-bg7-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppppppbp/5np1/8/2P5/5NP1/PP1PPPBP/RNBQK2R w KQ - 3 5",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "e8g8",
+        "prompt": "You are White in the Anglo-Indian Defense, King's Indian Formation. What is the book move?",
+        "extra": "Line: 1. c4 Nf6 2. Nf3 g6 3. g3 Bg7 4. Bg2 O-O 5. **O-O**. Covered replies: 5... c5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-g6-bg7-oo-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp1pppbp/5np1/2p5/2P5/5NP1/PP1PPPBP/RNBQ1RK1 w - - 0 6",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "lastMove": "c7c5",
+        "prompt": "You are White in the Anglo-Indian Defense, King's Indian Formation. What is the book move?",
+        "extra": "Line: 1. c4 Nf6 2. Nf3 g6 3. g3 Bg7 4. Bg2 O-O 5. O-O c5 6. **Nc3**. Covered replies: 6... Nc6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-g6-bg7-oo-c5-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pp1pppbp/2n2np1/2p5/2P5/2N2NP1/PP1PPPBP/R1BQ1RK1 w - - 2 7",
+        "answer": "d3",
+        "answerUci": "d2d3",
+        "orientation": "white",
+        "lastMove": "b8c6",
+        "prompt": "You are White in the Anglo-Indian Defense, King's Indian Formation. What is the book move?",
+        "extra": "Line: 1. c4 Nf6 2. Nf3 g6 3. g3 Bg7 4. Bg2 O-O 5. O-O c5 6. Nc3 Nc6 7. **d3**. This is the Symmetrical Variation, Duchamp Variation (A38)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/2P5/5N2/PP1PPPPP/RNBQKB1R w KQkq - 0 3",
+        "answer": "cxd5",
+        "answerUci": "c4d5",
+        "orientation": "white",
+        "lastMove": "d7d5",
+        "prompt": "You are White in the Anglo-Indian Defense, Scandinavian Defense. What is the book move?",
+        "extra": "Line: 1. c4 Nf6 2. Nf3 d5 3. **cxd5**. Covered replies: 3... Nxd5 (Anglo-Indian Defense, Scandinavian Defense, Exchange Variation)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp1ppppp/5n2/2p5/2P5/5N2/PP1PPPPP/RNBQKB1R w KQkq - 0 3",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "lastMove": "c7c5",
+        "prompt": "You are White in the Anglo-Indian Defense, King's Knight Variation. What is the book move?",
+        "extra": "Line: 1. c4 Nf6 2. Nf3 c5 3. **Nc3**. Covered replies: 3... Nc6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-c5-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp1ppppp/2n2n2/2p5/2P5/2N2N2/PP1PPPPP/R1BQKB1R w KQkq - 2 4",
+        "answer": "g3",
+        "answerUci": "g2g3",
+        "orientation": "white",
+        "lastMove": "b8c6",
+        "prompt": "You are White in the Anglo-Indian Defense, King's Knight Variation. What is the book move?",
+        "extra": "Line: 1. c4 Nf6 2. Nf3 c5 3. Nc3 Nc6 4. **g3**. Covered replies: 4... g6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-c5-nc6-g6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp1ppp1p/2n2np1/2p5/2P5/2N2NP1/PP1PPP1P/R1BQKB1R w KQkq - 0 5",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
+        "orientation": "white",
+        "lastMove": "g7g6",
+        "prompt": "You are White in the Anglo-Indian Defense, King's Knight Variation. What is the book move?",
+        "extra": "Line: 1. c4 Nf6 2. Nf3 c5 3. Nc3 Nc6 4. g3 g6 5. **Bg2**. Covered replies: 5... Bg7 (Symmetrical Variation, Full Symmetry Line)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-c5-nc6-g6-bg7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pp1pppbp/2n2np1/2p5/2P5/2N2NP1/PP1PPPBP/R1BQK2R w KQkq - 2 6",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "f8g7",
+        "prompt": "You are White in the Symmetrical Variation, Full Symmetry Line. What is the book move?",
+        "extra": "Line: 1. c4 Nf6 2. Nf3 c5 3. Nc3 Nc6 4. g3 g6 5. Bg2 Bg7 6. **O-O**. Covered replies: 6... O-O."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/8/2p5/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "lastMove": "c7c5",
+        "prompt": "You are White in the Symmetrical Variation. What is the book move?",
+        "extra": "Line: 1. c4 c5 2. **Nc3**. This is the Symmetrical Variation, Normal Variation (A34). Covered replies: 2... Nc6 (Symmetrical Variation, Two Knights Variation), 2... Nf6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c5-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppppp/2n5/2p5/2P5/2N5/PP1PPPPP/R1BQKBNR w KQkq - 2 3",
+        "answer": "g3",
+        "answerUci": "g2g3",
+        "orientation": "white",
+        "lastMove": "b8c6",
+        "prompt": "You are White in the Symmetrical Variation, Two Knights Variation. What is the book move?",
+        "extra": "Line: 1. c4 c5 2. Nc3 Nc6 3. **g3**. This is the Symmetrical Variation, Two Knights, Fianchetto Variation (A36). Covered replies: 3... g6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c5-nc6-g6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppp1p/2n3p1/2p5/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
+        "orientation": "white",
+        "lastMove": "g7g6",
+        "prompt": "You are White in the Symmetrical Variation, Two Knights, Fianchetto Variation. What is the book move?",
+        "extra": "Line: 1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. **Bg2**. Covered replies: 4... Bg7."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c5-nc6-g6-bg7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pp1pppbp/2n3p1/2p5/2P5/2N3P1/PP1PPPBP/R1BQK1NR w KQkq - 2 5",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "lastMove": "f8g7",
+        "prompt": "You are White in the Symmetrical Variation, Two Knights, Fianchetto Variation. What is the book move?",
+        "extra": "Line: 1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. **Nf3**. This is the Symmetrical Variation, Three Knights, Fianchetto Variation (A37). Covered replies: 5... e5 (Symmetrical Variation, Botvinnik System Reversed, with Nf3), 5... Nf6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c5-nc6-g6-bg7-e5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pp1p1pbp/2n3p1/2p1p3/2P5/2N2NP1/PP1PPPBP/R1BQK2R w KQkq - 0 6",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "e7e5",
+        "prompt": "You are White in the Symmetrical Variation, Botvinnik System Reversed, with Nf3. What is the book move?",
+        "extra": "Line: 1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. Nf3 e5 6. **O-O**. Covered replies: 6... Nge7 (Symmetrical Variation, Botvinnik System Reversed, with Nf3), 6... d6 (Symmetrical Variation, Botvinnik System Reversed, with Nf3)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c5-nc6-g6-bg7-e5-nge7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pp1pnpbp/2n3p1/2p1p3/2P5/2N2NP1/PP1PPPBP/R1BQ1RK1 w kq - 2 7",
+        "answer": "d3",
+        "answerUci": "d2d3",
+        "orientation": "white",
+        "lastMove": "g8e7",
+        "prompt": "You are White in the Symmetrical Variation, Botvinnik System Reversed, with Nf3. What is the book move?",
+        "extra": "Line: 1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. Nf3 e5 6. O-O Nge7 7. **d3**. This is the Symmetrical Variation, Botvinnik System Reversed, with Nf3 (A37). Covered replies: 7... d6 (Symmetrical Variation, Botvinnik System Reversed, with Nf3)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c5-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp1ppppp/5n2/2p5/2P5/2N5/PP1PPPPP/R1BQKBNR w KQkq - 2 3",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "lastMove": "g8f6",
+        "prompt": "You are White in the Symmetrical Variation, Normal Variation. What is the book move?",
+        "extra": "Line: 1. c4 c5 2. Nc3 Nf6 3. **Nf3**. This is the Symmetrical Variation, Three Knights Variation (A34). Covered replies: 3... e5 (Symmetrical Variation)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-f5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppppp1pp/8/5p2/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "lastMove": "f7f5",
+        "prompt": "You are White in the Anglo-Dutch Defense. What is the book move?",
+        "extra": "Line: 1. c4 f5 2. **Nc3**. Covered replies: 2... Nf6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-f5-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppppp1pp/5n2/5p2/2P5/2N5/PP1PPPPP/R1BQKBNR w KQkq - 2 3",
+        "answer": "e4",
+        "answerUci": "e2e4",
+        "orientation": "white",
+        "lastMove": "g8f6",
+        "prompt": "You are White in the Anglo-Dutch Defense. What is the book move?",
+        "extra": "Line: 1. c4 f5 2. Nc3 Nf6 3. **e4**. This is the Anglo-Dutch Variation, Ferenc Gambit (A10). Covered replies: 3... fxe4."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-f5-nf6-fxe4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppppp1pp/5n2/8/2P1p3/2N5/PP1P1PPP/R1BQKBNR w KQkq - 0 4",
+        "answer": "g4",
+        "answerUci": "g2g4",
+        "orientation": "white",
+        "lastMove": "f5e4",
+        "prompt": "You are White in the Anglo-Dutch Variation, Ferenc Gambit. What is the book move?",
+        "extra": "Line: 1. c4 f5 2. Nc3 Nf6 3. e4 fxe4 4. **g4**. This is the Porcupine Variation (A10)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "cxd5",
+        "answerUci": "c4d5",
+        "orientation": "white",
+        "lastMove": "d7d5",
+        "prompt": "You are White in the Anglo-Scandinavian Defense. What is the book move?",
+        "extra": "Line: 1. c4 d5 2. **cxd5**. Covered replies: 2... e6 (Anglo-Scandinavian Defense, L\u00f6hn Gambit), 2... Qxd5, 2... Nf6 (Anglo-Scandinavian Defense, Schulz Gambit)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-qxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/ppp1pppp/8/3q4/8/8/PP1PPPPP/RNBQKBNR w KQkq - 0 3",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "lastMove": "d8d5",
+        "prompt": "You are White in the Anglo-Scandinavian Defense. What is the book move?",
+        "extra": "Line: 1. c4 d5 2. cxd5 Qxd5 3. **Nc3**. Covered replies: 3... Qa5 (Anglo-Scandinavian Defense, Malvinas Variation)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-g6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppp1p/6p1/8/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "e4",
+        "answerUci": "e2e4",
+        "orientation": "white",
+        "lastMove": "g7g6",
+        "prompt": "You are White in the Great Snake Variation. What is the book move?",
+        "extra": "Line: 1. c4 g6 2. **e4**. Covered replies: 2... e5 (Adorjan Defense)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-g5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppp1p/8/6p1/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "g7g5",
+        "prompt": "You are White in the Myers Defense. What is the book move?",
+        "extra": "Line: 1. c4 g5 2. **d4**. Covered replies: 2... Bg7 (Myers Gambit), 2... e5 (Zilbermints Gambit)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

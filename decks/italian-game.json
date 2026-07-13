@@ -1,0 +1,943 @@
+{
+  "key": "italian-game",
+  "version": 1,
+  "name": "The Italian Game",
+  "description": "Line trainer for the Italian Game, generated from the canonical opening database (lichess-org/chess-openings): 58 positions drilled book-move by book-move from White's side across 184 named variations. Each card shows the position from White's side and asks for the book move; the back gives the line so far, the variation name and ECO code, and the covered replies that continue it.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "italian-game"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkbnr%2Fpppp1ppp%2F2n5%2F4p3%2F2B1P3%2F5N2%2FPPPP1PPP%2FRNBQK2R%20b%20KQkq%20-%203%203&color=white&theme=brown&piece=cburnett&lastMove=f1c4",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-root",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "answer": "e4",
+        "answerUci": "e2e4",
+        "orientation": "white",
+        "prompt": "You are White in the main line. What is the book move?",
+        "extra": "Line: 1. **e4**. Covered replies: 1... e5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "lastMove": "e7e5",
+        "prompt": "You are White in the main line. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. **Nf3**. Covered replies: 2... Nc6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+        "answer": "Bc4",
+        "answerUci": "f1c4",
+        "orientation": "white",
+        "lastMove": "b8c6",
+        "prompt": "You are White in the main line. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. **Bc4**. This is the main line (C50). Covered replies: 3... Bc5 (Giuoco Piano), 3... Nf6 (Two Knights Defense), 3... Be7 (Hungarian Defense), 3... h6 (Anti-Fried Liver Defense), 3... Nd4 (Blackburne-Kosti\u0107 Gambit), 3... d6 (Paris Defense), 3... f5 (Rousseau Gambit)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+        "answer": "b4",
+        "answerUci": "b2b4",
+        "orientation": "white",
+        "lastMove": "f8c5",
+        "prompt": "You are White in the Giuoco Piano. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. **b4**. This is the Evans Gambit (C51). Covered replies: 4... Bxb4 (Evans Gambit Accepted), 4... Bb6 (Evans Gambit Declined), 4... b5 (Evans Gambit, Fontaine Countergambit), 4... d5 (Evans Gambit, Hein Countergambit)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bxb4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1ppp/2n5/4p3/1bB1P3/5N2/P1PP1PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "lastMove": "c5b4",
+        "prompt": "You are White in the Evans Gambit Accepted. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. **c3**. Covered replies: 5... Ba5 (Evans Gambit, Main Line), 5... Bc5 (Evans Gambit, McDonnell Defense), 5... Be7 (Evans Gambit, Anderssen Variation), 5... Bf8 (Evans Gambit, Mayet Defense), 5... Bd6 (Evans Gambit, Stone-Ware Variation)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bxb4-ba5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1ppp/2n5/b3p3/2B1P3/2P2N2/P2P1PPP/RNBQK2R w KQkq - 1 6",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "b4a5",
+        "prompt": "You are White in the Evans Gambit, Main Line. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. **d4**. Covered replies: 6... exd4 (Evans Gambit, Pierce Defense), 6... d6 (Evans Gambit, Bronstein Defense), 6... Nf6 (Evans Gambit, Laroche Variation), 6... b5 (Evans Gambit, Leonhardt Countergambit)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bxb4-ba5-exd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1ppp/2n5/b7/2BpP3/2P2N2/P4PPP/RNBQK2R w KQkq - 0 7",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "e5d4",
+        "prompt": "You are White in the Evans Gambit, Pierce Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. **O-O**. Covered replies: 7... dxc3 (Evans Gambit, Compromised Defense), 7... d6, 7... d3 (Evans Gambit, Dufresne Defense), 7... b5 (Evans Gambit, Johner Defense), 7... Nge7 (Evans Gambit, Mieses Defense)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bxb4-ba5-exd4-dxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1ppp/2n5/b7/2B1P3/2p2N2/P4PPP/RNBQ1RK1 w kq - 0 8",
+        "answer": "Qb3",
+        "answerUci": "d1b3",
+        "orientation": "white",
+        "lastMove": "d4c3",
+        "prompt": "You are White in the Evans Gambit, Compromised Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O dxc3 8. **Qb3**. Covered replies: 8... Qf6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bxb4-ba5-exd4-dxc3-qf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppp1ppp/2n2q2/b7/2B1P3/1Qp2N2/P4PPP/RNB2RK1 w kq - 2 9",
+        "answer": "e5",
+        "answerUci": "e4e5",
+        "orientation": "white",
+        "lastMove": "d8f6",
+        "prompt": "You are White in the Evans Gambit, Compromised Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O dxc3 8. Qb3 Qf6 9. **e5**. Covered replies: 9... Qg6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bxb4-ba5-exd4-dxc3-qf6-qg6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppp1ppp/2n3q1/b3P3/2B5/1Qp2N2/P4PPP/RNB2RK1 w kq - 1 10",
+        "answer": "Nxc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "lastMove": "f6g6",
+        "prompt": "You are White in the Evans Gambit, Compromised Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O dxc3 8. Qb3 Qf6 9. e5 Qg6 10. **Nxc3**. Covered replies: 10... Nge7."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bxb4-ba5-exd4-dxc3-qf6-qg6-nge7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k2r/ppppnppp/2n3q1/b3P3/2B5/1QN2N2/P4PPP/R1B2RK1 w kq - 1 11",
+        "answer": "Ba3",
+        "answerUci": "c1a3",
+        "orientation": "white",
+        "lastMove": "g8e7",
+        "prompt": "You are White in the Evans Gambit, Compromised Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O dxc3 8. Qb3 Qf6 9. e5 Qg6 10. Nxc3 Nge7 11. **Ba3**. This is the Evans Gambit, Compromised Defense, Main Line (C52)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bxb4-ba5-exd4-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppp2ppp/2np4/b7/2BpP3/2P2N2/P4PPP/RNBQ1RK1 w kq - 0 8",
+        "answer": "cxd4",
+        "answerUci": "c3d4",
+        "orientation": "white",
+        "lastMove": "d7d6",
+        "prompt": "You are White in the Evans Gambit, Pierce Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O d6 8. **cxd4**. Covered replies: 8... Bb6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bxb4-ba5-exd4-d6-bb6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppp2ppp/1bnp4/8/2BPP3/5N2/P4PPP/RNBQ1RK1 w kq - 1 9",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "lastMove": "a5b6",
+        "prompt": "You are White in the Evans Gambit, Pierce Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O d6 8. cxd4 Bb6 9. **Nc3**. This is the Evans Gambit, Morphy Attack (C51)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bxb4-ba5-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppp2ppp/2np4/b3p3/2BPP3/2P2N2/P4PPP/RNBQK2R w KQkq - 0 7",
+        "answer": "Qb3",
+        "answerUci": "d1b3",
+        "orientation": "white",
+        "lastMove": "d7d6",
+        "prompt": "You are White in the Evans Gambit, Bronstein Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. **Qb3**. This is the Evans Gambit, Tartakower Attack (C52). Covered replies: 7... Qd7."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bxb4-ba5-d6-qd7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppq1ppp/2np4/b3p3/2BPP3/1QP2N2/P4PPP/RNB1K2R w KQkq - 2 8",
+        "answer": "dxe5",
+        "answerUci": "d4e5",
+        "orientation": "white",
+        "lastMove": "d8d7",
+        "prompt": "You are White in the Evans Gambit, Tartakower Attack. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. Qb3 Qd7 8. **dxe5**. Covered replies: 8... dxe5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bxb4-ba5-d6-qd7-dxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppq1ppp/2n5/b3p3/2B1P3/1QP2N2/P4PPP/RNB1K2R w KQkq - 0 9",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "d6e5",
+        "prompt": "You are White in the Evans Gambit, Tartakower Attack. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. Qb3 Qd7 8. dxe5 dxe5 9. **O-O**. Covered replies: 9... Bb6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bxb4-ba5-d6-qd7-dxe5-bb6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppq1ppp/1bn5/4p3/2B1P3/1QP2N2/P4PPP/RNB2RK1 w kq - 2 10",
+        "answer": "Ba3",
+        "answerUci": "c1a3",
+        "orientation": "white",
+        "lastMove": "a5b6",
+        "prompt": "You are White in the Evans Gambit, Tartakower Attack. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. Qb3 Qd7 8. dxe5 dxe5 9. O-O Bb6 10. **Ba3**. Covered replies: 10... Na5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bxb4-ba5-d6-qd7-dxe5-bb6-na5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppq1ppp/1b6/n3p3/2B1P3/BQP2N2/P4PPP/RN3RK1 w kq - 4 11",
+        "answer": "Nxe5",
+        "answerUci": "f3e5",
+        "orientation": "white",
+        "lastMove": "c6a5",
+        "prompt": "You are White in the Evans Gambit, Tartakower Attack. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. Qb3 Qd7 8. dxe5 dxe5 9. O-O Bb6 10. Ba3 Na5 11. **Nxe5**. This is the Evans Gambit, Levenfish Variation (C52)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bxb4-bc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/2P2N2/P2P1PPP/RNBQK2R w KQkq - 1 6",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "b4c5",
+        "prompt": "You are White in the Evans Gambit, McDonnell Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. **d4**. Covered replies: 6... exd4."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bxb4-bc5-exd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1ppp/2n5/2b5/2BpP3/2P2N2/P4PPP/RNBQK2R w KQkq - 0 7",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "e5d4",
+        "prompt": "You are White in the Evans Gambit, McDonnell Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. d4 exd4 7. **O-O**. Covered replies: 7... d6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bxb4-bc5-exd4-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppp2ppp/2np4/2b5/2BpP3/2P2N2/P4PPP/RNBQ1RK1 w kq - 0 8",
+        "answer": "cxd4",
+        "answerUci": "c3d4",
+        "orientation": "white",
+        "lastMove": "d7d6",
+        "prompt": "You are White in the Evans Gambit, McDonnell Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. d4 exd4 7. O-O d6 8. **cxd4**. Covered replies: 8... Bb6 (Evans Gambit, McDonnell Defense, Main Line)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bxb4-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppppbppp/2n5/4p3/2B1P3/2P2N2/P2P1PPP/RNBQK2R w KQkq - 1 6",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "b4e7",
+        "prompt": "You are White in the Evans Gambit, Anderssen Variation. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Be7 6. **d4**. Covered replies: 6... Na5 (Evans Gambit, Anderssen Variation, Cordel Line)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1ppp/1bn5/4p3/1PB1P3/5N2/P1PP1PPP/RNBQK2R w KQkq - 1 5",
+        "answer": "b5",
+        "answerUci": "b4b5",
+        "orientation": "white",
+        "lastMove": "c5b6",
+        "prompt": "You are White in the Evans Gambit Declined. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. **b5**. Covered replies: 5... Na5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1ppp/1b6/nP2p3/2B1P3/5N2/P1PP1PPP/RNBQK2R w KQkq - 1 6",
+        "answer": "Nxe5",
+        "answerUci": "f3e5",
+        "orientation": "white",
+        "lastMove": "c6a5",
+        "prompt": "You are White in the Evans Gambit Declined. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. **Nxe5**. Covered replies: 6... Qg5 (Evans Gambit Declined, Hirschbach Variation), 6... Nh6 (Evans Gambit Declined, Lange Variation)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5-qg5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppp1ppp/1b6/nP2N1q1/2B1P3/8/P1PP1PPP/RNBQK2R w KQkq - 1 7",
+        "answer": "Qf3",
+        "answerUci": "d1f3",
+        "orientation": "white",
+        "lastMove": "d8g5",
+        "prompt": "You are White in the Evans Gambit Declined, Hirschbach Variation. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Qg5 7. **Qf3**. Covered replies: 7... Qxe5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5-qg5-qxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppp1ppp/1b6/nP2q3/2B1P3/5Q2/P1PP1PPP/RNB1K2R w KQkq - 0 8",
+        "answer": "Qxf7",
+        "answerUci": "f3f7",
+        "orientation": "white",
+        "lastMove": "g5e5",
+        "prompt": "You are White in the Evans Gambit Declined, Hirschbach Variation. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Qg5 7. Qf3 Qxe5 8. **Qxf7+**. Covered replies: 8... Kd8."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5-qg5-qxe5-kd8",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bk2nr/pppp1Qpp/1b6/nP2q3/2B1P3/8/P1PP1PPP/RNB1K2R w KQ - 1 9",
+        "answer": "Bb2",
+        "answerUci": "c1b2",
+        "orientation": "white",
+        "lastMove": "e8d8",
+        "prompt": "You are White in the Evans Gambit Declined, Hirschbach Variation. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Qg5 7. Qf3 Qxe5 8. Qxf7+ Kd8 9. **Bb2**. This is the Evans Gambit Declined, Hicken Variation (C51)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5-nh6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/1b5n/nP2N3/2B1P3/8/P1PP1PPP/RNBQK2R w KQkq - 1 7",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "g8h6",
+        "prompt": "You are White in the Evans Gambit Declined, Lange Variation. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Nh6 7. **d4**. Covered replies: 7... d6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5-nh6-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2ppp/1b1p3n/nP2N3/2BPP3/8/P1P2PPP/RNBQK2R w KQkq - 0 8",
+        "answer": "Bxh6",
+        "answerUci": "c1h6",
+        "orientation": "white",
+        "lastMove": "d7d6",
+        "prompt": "You are White in the Evans Gambit Declined, Lange Variation. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Nh6 7. d4 d6 8. **Bxh6**. Covered replies: 8... dxe5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5-nh6-d6-dxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2ppp/1b5B/nP2p3/2BPP3/8/P1P2PPP/RN1QK2R w KQkq - 0 9",
+        "answer": "Bxg7",
+        "answerUci": "h6g7",
+        "orientation": "white",
+        "lastMove": "d6e5",
+        "prompt": "You are White in the Evans Gambit Declined, Lange Variation. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Nh6 7. d4 d6 8. Bxh6 dxe5 9. **Bxg7**. Covered replies: 9... Rg8."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5-nh6-d6-dxe5-rg8",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1r1/ppp2pBp/1b6/nP2p3/2BPP3/8/P1P2PPP/RN1QK2R w KQq - 1 10",
+        "answer": "Bxf7",
+        "answerUci": "c4f7",
+        "orientation": "white",
+        "lastMove": "h8g8",
+        "prompt": "You are White in the Evans Gambit Declined, Lange Variation. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Nh6 7. d4 d6 8. Bxh6 dxe5 9. Bxg7 Rg8 10. **Bxf7+**. Covered replies: 10... Kxf7."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5-nh6-d6-dxe5-rg8-kxf7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq2r1/ppp2kBp/1b6/nP2p3/3PP3/8/P1P2PPP/RN1QK2R w KQ - 0 11",
+        "answer": "Bxe5",
+        "answerUci": "g7e5",
+        "orientation": "white",
+        "lastMove": "e8f7",
+        "prompt": "You are White in the Evans Gambit Declined, Lange Variation. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Nh6 7. d4 d6 8. Bxh6 dxe5 9. Bxg7 Rg8 10. Bxf7+ Kxf7 11. **Bxe5**. Covered replies: 11... Qg5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5-nh6-d6-dxe5-rg8-kxf7-qg5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b3r1/ppp2k1p/1b6/nP2B1q1/3PP3/8/P1P2PPP/RN1QK2R w KQ - 1 12",
+        "answer": "Nd2",
+        "answerUci": "b1d2",
+        "orientation": "white",
+        "lastMove": "d8g5",
+        "prompt": "You are White in the Evans Gambit Declined, Lange Variation. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Nh6 7. d4 d6 8. Bxh6 dxe5 9. Bxg7 Rg8 10. Bxf7+ Kxf7 11. Bxe5 Qg5 12. **Nd2**. This is the Evans Gambit Declined, Pavlov Variation (C51)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+        "answer": "Ng5",
+        "answerUci": "f3g5",
+        "orientation": "white",
+        "lastMove": "g8f6",
+        "prompt": "You are White in the Two Knights Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. **Ng5**. This is the Two Knights Defense, Knight Attack (C57). Covered replies: 4... d5 (Two Knights Defense, Knight Attack, Normal Variation), 4... Bc5 (Two Knights Defense, Traxler Counterattack), 4... Nxe4 (Two Knights Defense, Ponziani-Steinitz Gambit)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/2n2n2/3pp1N1/2B1P3/8/PPPP1PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "exd5",
+        "answerUci": "e4d5",
+        "orientation": "white",
+        "lastMove": "d7d5",
+        "prompt": "You are White in the Two Knights Defense, Knight Attack, Normal Variation. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. **exd5**. Covered replies: 5... Na5 (Two Knights Defense, Polerio Defense), 5... Nxd5, 5... Nd4 (Two Knights Defense, Fritz Variation), 5... b5 (Two Knights Defense, Ulvestad Variation), 5... Nb4 (Two Knights Defense, Kloss Gambit)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-na5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/5n2/n2Pp1N1/2B5/8/PPPP1PPP/RNBQK2R w KQkq - 1 6",
+        "answer": "Bb5",
+        "answerUci": "c4b5",
+        "orientation": "white",
+        "lastMove": "c6a5",
+        "prompt": "You are White in the Two Knights Defense, Polerio Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. **Bb5+**. This is the Two Knights Defense, Polerio Defense, Bishop Check Line (C58). Covered replies: 6... c6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-na5-c6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp3ppp/2p2n2/nB1Pp1N1/8/8/PPPP1PPP/RNBQK2R w KQkq - 0 7",
+        "answer": "dxc6",
+        "answerUci": "d5c6",
+        "orientation": "white",
+        "lastMove": "c7c6",
+        "prompt": "You are White in the Two Knights Defense, Polerio Defense, Bishop Check Line. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. **dxc6**. Covered replies: 7... bxc6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-na5-c6-bxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p4ppp/2p2n2/nB2p1N1/8/8/PPPP1PPP/RNBQK2R w KQkq - 0 8",
+        "answer": "Be2",
+        "answerUci": "b5e2",
+        "orientation": "white",
+        "lastMove": "b7c6",
+        "prompt": "You are White in the Two Knights Defense, Polerio Defense, Bishop Check Line. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. **Be2**. This is the Two Knights Defense (C58). Covered replies: 8... h6 (Two Knights Defense, Polerio Defense, Suhle Defense)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-na5-c6-bxc6-h6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p4pp1/2p2n1p/n3p1N1/8/8/PPPPBPPP/RNBQK2R w KQkq - 0 9",
+        "answer": "Nf3",
+        "answerUci": "g5f3",
+        "orientation": "white",
+        "lastMove": "h7h6",
+        "prompt": "You are White in the Two Knights Defense, Polerio Defense, Suhle Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. **Nf3**. Covered replies: 9... e4."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-na5-c6-bxc6-h6-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p4pp1/2p2n1p/n7/4p3/5N2/PPPPBPPP/RNBQK2R w KQkq - 0 10",
+        "answer": "Ne5",
+        "answerUci": "f3e5",
+        "orientation": "white",
+        "lastMove": "e5e4",
+        "prompt": "You are White in the Two Knights Defense, Polerio Defense, Suhle Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. Nf3 e4 10. **Ne5**. Covered replies: 10... Bd6, 10... Qc7 (Two Knights Defense, Polerio Defense, G\u00f6ring Variation)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-na5-c6-bxc6-h6-e4-bd6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/p4pp1/2pb1n1p/n3N3/4p3/8/PPPPBPPP/RNBQK2R w KQkq - 2 11",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "f8d6",
+        "prompt": "You are White in the Two Knights Defense, Polerio Defense, Suhle Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. Nf3 e4 10. Ne5 Bd6 11. **d4**. Covered replies: 11... Qc7."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-na5-c6-bxc6-h6-e4-bd6-qc7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k2r/p1q2pp1/2pb1n1p/n3N3/3Pp3/8/PPP1BPPP/RNBQK2R w KQkq - 1 12",
+        "answer": "Bd2",
+        "answerUci": "c1d2",
+        "orientation": "white",
+        "lastMove": "d8c7",
+        "prompt": "You are White in the Two Knights Defense, Polerio Defense, Suhle Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. Nf3 e4 10. Ne5 Bd6 11. d4 Qc7 12. **Bd2**. This is the Two Knights Defense, Knorre Variation (C59)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/2n5/3np1N1/2B5/8/PPPP1PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "Nxf7",
+        "answerUci": "g5f7",
+        "orientation": "white",
+        "lastMove": "f6d5",
+        "prompt": "You are White in the Two Knights Defense, Knight Attack, Normal Variation. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. **Nxf7**. This is the Two Knights Defense, Fried Liver Attack (C57). Covered replies: 6... Kxf7."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nxd5-kxf7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1b1r/ppp2kpp/2n5/3np3/2B5/8/PPPP1PPP/RNBQK2R w KQ - 0 7",
+        "answer": "Qf3",
+        "answerUci": "d1f3",
+        "orientation": "white",
+        "lastMove": "e8f7",
+        "prompt": "You are White in the Two Knights Defense, Fried Liver Attack. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. **Qf3+**. Covered replies: 7... Ke6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nxd5-kxf7-ke6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1b1r/ppp3pp/2n1k3/3np3/2B5/5Q2/PPPP1PPP/RNB1K2R w KQ - 2 8",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "lastMove": "f7e6",
+        "prompt": "You are White in the Two Knights Defense, Fried Liver Attack. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6 8. **Nc3**. Covered replies: 8... Nb4."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nxd5-kxf7-ke6-nb4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1b1r/ppp3pp/4k3/3np3/1nB5/2N2Q2/PPPP1PPP/R1B1K2R w KQ - 4 9",
+        "answer": "Qe4",
+        "answerUci": "f3e4",
+        "orientation": "white",
+        "lastMove": "c6b4",
+        "prompt": "You are White in the Two Knights Defense, Fried Liver Attack. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6 8. Nc3 Nb4 9. **Qe4**. Covered replies: 9... c6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nxd5-kxf7-ke6-nb4-c6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1b1r/pp4pp/2p1k3/3np3/1nB1Q3/2N5/PPPP1PPP/R1B1K2R w KQ - 0 10",
+        "answer": "a3",
+        "answerUci": "a2a3",
+        "orientation": "white",
+        "lastMove": "c7c6",
+        "prompt": "You are White in the Two Knights Defense, Fried Liver Attack. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6 8. Nc3 Nb4 9. Qe4 c6 10. **a3**. Covered replies: 10... Na6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nxd5-kxf7-ke6-nb4-c6-na6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1b1r/pp4pp/n1p1k3/3np3/2B1Q3/P1N5/1PPP1PPP/R1B1K2R w KQ - 1 11",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "b4a6",
+        "prompt": "You are White in the Two Knights Defense, Fried Liver Attack. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6 8. Nc3 Nb4 9. Qe4 c6 10. a3 Na6 11. **d4**. Covered replies: 11... Nc7 (Two Knights Defense, Fegatello Attack, Leonhardt Variation)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/5n2/3Pp1N1/2Bn4/8/PPPP1PPP/RNBQK2R w KQkq - 1 6",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "lastMove": "c6d4",
+        "prompt": "You are White in the Two Knights Defense, Fritz Variation. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nd4 6. **c3**. Covered replies: 6... b5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nd4-b5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p1p2ppp/5n2/1p1Pp1N1/2Bn4/2P5/PP1P1PPP/RNBQK2R w KQkq - 0 7",
+        "answer": "Bf1",
+        "answerUci": "c4f1",
+        "orientation": "white",
+        "lastMove": "b7b5",
+        "prompt": "You are White in the Two Knights Defense, Fritz Variation. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nd4 6. c3 b5 7. **Bf1**. Covered replies: 7... Nxd5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nd4-b5-nxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p1p2ppp/8/1p1np1N1/3n4/2P5/PP1P1PPP/RNBQKB1R w KQkq - 0 8",
+        "answer": "Ne4",
+        "answerUci": "g5e4",
+        "orientation": "white",
+        "lastMove": "f6d5",
+        "prompt": "You are White in the Two Knights Defense, Fritz Variation. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nd4 6. c3 b5 7. Bf1 Nxd5 8. **Ne4**. This is the Two Knights Defense, Fritz, Gruber Variation (C57)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-b5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p1p2ppp/2n2n2/1p1Pp1N1/2B5/8/PPPP1PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "Bf1",
+        "answerUci": "c4f1",
+        "orientation": "white",
+        "lastMove": "b7b5",
+        "prompt": "You are White in the Two Knights Defense, Ulvestad Variation. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 b5 6. **Bf1**. Covered replies: 6... h6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-b5-h6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p1p2pp1/2n2n1p/1p1Pp1N1/8/8/PPPP1PPP/RNBQKB1R w KQkq - 0 7",
+        "answer": "Nxf7",
+        "answerUci": "g5f7",
+        "orientation": "white",
+        "lastMove": "h7h6",
+        "prompt": "You are White in the Two Knights Defense, Ulvestad Variation. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 b5 6. Bf1 h6 7. **Nxf7**. This is the Two Knights Defense, Ulvestad Variation, Kurkin Gambit (C57)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p1N1/2B1P3/8/PPPP1PPP/RNBQK2R w KQkq - 6 5",
+        "answer": "Bxf7",
+        "answerUci": "c4f7",
+        "orientation": "white",
+        "lastMove": "f8c5",
+        "prompt": "You are White in the Two Knights Defense, Traxler Counterattack. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 Bc5 5. **Bxf7+**. This is the Two Knights Defense, Traxler Counterattack, Bishop Sacrifice Line (C57). Covered replies: 5... Ke7."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-ke7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq3r/ppppkBpp/2n2n2/2b1p1N1/4P3/8/PPPP1PPP/RNBQK2R w KQ - 1 6",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "e8e7",
+        "prompt": "You are White in the Two Knights Defense, Traxler Counterattack, Bishop Sacrifice Line. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 Bc5 5. Bxf7+ Ke7 6. **d4**. This is the Two Knights Defense, Traxler Variation, Trencianske-Teplice Gambit (C57)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppppbppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "f8e7",
+        "prompt": "You are White in the Hungarian Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. **d4**. Covered replies: 4... exd4."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-be7-exd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppppbppp/2n5/8/2BpP3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "lastMove": "e5d4",
+        "prompt": "You are White in the Hungarian Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4 5. **c3**. Covered replies: 5... Nf6."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-be7-exd4-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppppbppp/2n2n2/8/2BpP3/2P2N2/PP3PPP/RNBQK2R w KQkq - 1 6",
+        "answer": "e5",
+        "answerUci": "e4e5",
+        "orientation": "white",
+        "lastMove": "g8f6",
+        "prompt": "You are White in the Hungarian Defense. What is the book move?",
+        "extra": "Line: 1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4 5. c3 Nf6 6. **e5**. Covered replies: 6... Ne4 (Hungarian Defense, Tartakower Variation)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

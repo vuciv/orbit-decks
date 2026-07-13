@@ -46,8 +46,8 @@
     {
       "key": "chess",
       "name": "Chess",
-      "deckCount": 3,
-      "rev": "273f1582f660",
+      "deckCount": 29,
+      "rev": "a7d169e6b497",
       "file": "categories/chess.json"
     },
     {
@@ -162,9 +162,19 @@
   ],
   "syncIndex": [
     {
+      "key": "alekhine-defense",
+      "version": 1,
+      "file": "decks/alekhine-defense.json"
+    },
+    {
       "key": "best-picture-winners",
       "version": 1,
       "file": "decks/best-picture-winners.json"
+    },
+    {
+      "key": "bishops-opening",
+      "version": 1,
+      "file": "decks/bishops-opening.json"
     },
     {
       "key": "bones-of-the-body",
@@ -173,8 +183,13 @@
     },
     {
       "key": "caro-kann",
-      "version": 1,
+      "version": 2,
       "file": "decks/caro-kann.json"
+    },
+    {
+      "key": "catalan-opening",
+      "version": 1,
+      "file": "decks/catalan-opening.json"
     },
     {
       "key": "constellations",
@@ -190,6 +205,16 @@
       "key": "cranial-nerves",
       "version": 1,
       "file": "decks/cranial-nerves.json"
+    },
+    {
+      "key": "dutch-defense",
+      "version": 1,
+      "file": "decks/dutch-defense.json"
+    },
+    {
+      "key": "english-opening",
+      "version": 1,
+      "file": "decks/english-opening.json"
     },
     {
       "key": "essential-chinese",
@@ -212,9 +237,49 @@
       "file": "decks/flags-of-the-world.json"
     },
     {
+      "key": "four-knights-game",
+      "version": 1,
+      "file": "decks/four-knights-game.json"
+    },
+    {
+      "key": "french-defense",
+      "version": 1,
+      "file": "decks/french-defense.json"
+    },
+    {
       "key": "geoguessr-meta",
       "version": 1,
       "file": "decks/geoguessr-meta.json"
+    },
+    {
+      "key": "grunfeld-defense",
+      "version": 1,
+      "file": "decks/grunfeld-defense.json"
+    },
+    {
+      "key": "italian-game",
+      "version": 1,
+      "file": "decks/italian-game.json"
+    },
+    {
+      "key": "kings-gambit-accepted",
+      "version": 1,
+      "file": "decks/kings-gambit-accepted.json"
+    },
+    {
+      "key": "kings-gambit-declined",
+      "version": 1,
+      "file": "decks/kings-gambit-declined.json"
+    },
+    {
+      "key": "kings-indian-attack",
+      "version": 1,
+      "file": "decks/kings-indian-attack.json"
+    },
+    {
+      "key": "kings-indian-defense",
+      "version": 1,
+      "file": "decks/kings-indian-defense.json"
     },
     {
       "key": "lmsw-exam-prep",
@@ -237,6 +302,11 @@
       "file": "decks/middle-earth-lore.json"
     },
     {
+      "key": "modern-defense",
+      "version": 1,
+      "file": "decks/modern-defense.json"
+    },
+    {
       "key": "morse-code",
       "version": 1,
       "file": "decks/morse-code.json"
@@ -247,14 +317,74 @@
       "file": "decks/nato-phonetic-alphabet.json"
     },
     {
+      "key": "neo-grunfeld-defense",
+      "version": 1,
+      "file": "decks/neo-grunfeld-defense.json"
+    },
+    {
+      "key": "nimzo-indian-defense",
+      "version": 1,
+      "file": "decks/nimzo-indian-defense.json"
+    },
+    {
       "key": "periodic-table",
       "version": 1,
       "file": "decks/periodic-table.json"
     },
     {
+      "key": "pterodactyl-defense",
+      "version": 1,
+      "file": "decks/pterodactyl-defense.json"
+    },
+    {
+      "key": "queens-gambit-accepted",
+      "version": 1,
+      "file": "decks/queens-gambit-accepted.json"
+    },
+    {
+      "key": "queens-gambit-declined",
+      "version": 1,
+      "file": "decks/queens-gambit-declined.json"
+    },
+    {
+      "key": "queens-indian-defense",
+      "version": 1,
+      "file": "decks/queens-indian-defense.json"
+    },
+    {
+      "key": "queens-pawn-game",
+      "version": 1,
+      "file": "decks/queens-pawn-game.json"
+    },
+    {
+      "key": "ruy-lopez",
+      "version": 1,
+      "file": "decks/ruy-lopez.json"
+    },
+    {
+      "key": "scotch-game",
+      "version": 1,
+      "file": "decks/scotch-game.json"
+    },
+    {
+      "key": "semi-slav-defense",
+      "version": 1,
+      "file": "decks/semi-slav-defense.json"
+    },
+    {
       "key": "sicilian-defense",
       "version": 4,
       "file": "decks/sicilian-defense.json"
+    },
+    {
+      "key": "slav-defense",
+      "version": 1,
+      "file": "decks/slav-defense.json"
+    },
+    {
+      "key": "tarrasch-defense",
+      "version": 1,
+      "file": "decks/tarrasch-defense.json"
     },
     {
       "key": "the-human-brain",

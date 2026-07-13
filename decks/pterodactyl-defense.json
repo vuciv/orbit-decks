@@ -1,0 +1,656 @@
+{
+  "key": "pterodactyl-defense",
+  "version": 1,
+  "name": "The Pterodactyl Defense",
+  "description": "Line trainer for the Pterodactyl Defense, generated from the canonical opening database (lichess-org/chess-openings): 40 positions drilled book-move by book-move from Black's side across 33 named variations. Each card shows the position from Black's side and asks for the book move; the back gives the line so far, the variation name and ECO code, and the covered replies that continue it.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "pterodactyl-defense"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnb1k1nr%2Fpp2ppbp%2F3p2p1%2Fq1p5%2F2PPP3%2F2N2N2%2FPP3PPP%2FR1BQKB1R%20w%20KQkq%20-%200%206&color=black&theme=brown&piece=cburnett&lastMove=d7d6",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "g6",
+        "answerUci": "g7g6",
+        "orientation": "black",
+        "lastMove": "e2e4",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 **g6**. Covered replies: 2. d4, 2. Nc3, 2. Nf3."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppp1p/6p1/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 **Bg7**. Covered replies: 3. Nc3, 3. c4, 3. f4, 3. g3, 3. Nf3."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppppppbp/6p1/8/3PP3/2N5/PPP2PPP/R1BQKBNR b KQkq - 2 3",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. Nc3 **c5**. Covered replies: 4. dxc5, 4. Nf3, 4. Be3 (Eastern, Anhanguera), 4. d5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-dxc5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1pppbp/6p1/2P5/4P3/2N5/PPP2PPP/R1BQKBNR b KQkq - 0 4",
+        "answer": "Bxc3",
+        "answerUci": "g7c3",
+        "orientation": "black",
+        "lastMove": "d4c5",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. Nc3 c5 4. dxc5 **Bxc3+**. Covered replies: 5. bxc3."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-dxc5-bxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1ppp1p/6p1/2P5/4P3/2P5/P1P2PPP/R1BQKBNR b KQkq - 0 5",
+        "answer": "Qa5",
+        "answerUci": "d8a5",
+        "orientation": "black",
+        "lastMove": "b2c3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. Nc3 c5 4. dxc5 Bxc3+ 5. bxc3 **Qa5**. This is the Eastern, Pteranodon (B06)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1pppbp/6p1/2p5/3PP3/2N2N2/PPP2PPP/R1BQKB1R b KQkq - 1 4",
+        "answer": "Qa5",
+        "answerUci": "d8a5",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. Nc3 c5 4. Nf3 **Qa5**. Covered replies: 5. Be2, 5. Bc4 (Sicilian, Siroccopteryx)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nf3-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1k1nr/pp1pppbp/6p1/q1p5/3PP3/2N2N2/PPP1BPPP/R1BQK2R b KQkq - 3 5",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "lastMove": "f1e2",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. Nc3 c5 4. Nf3 Qa5 5. Be2 **d6**. This is the Sicilian, Quetzalcoatlus (B06)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1pppbp/6p1/2pP4/4P3/2N5/PPP2PPP/R1BQKBNR b KQkq - 0 4",
+        "answer": "Bxc3",
+        "answerUci": "g7c3",
+        "orientation": "black",
+        "lastMove": "d4d5",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. Nc3 c5 4. d5 **Bxc3+**. Covered replies: 5. bxc3."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-d5-bxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1ppp1p/6p1/2pP4/4P3/2P5/P1P2PPP/R1BQKBNR b KQkq - 0 5",
+        "answer": "Qa5",
+        "answerUci": "d8a5",
+        "orientation": "black",
+        "lastMove": "b2c3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. Nc3 c5 4. d5 Bxc3+ 5. bxc3 **Qa5**. This is the Eastern, Benoni Pteranodon (B06)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppppppbp/6p1/8/2PPP3/8/PP3PPP/RNBQKBNR b KQkq - 0 3",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. c4 **c5**. Covered replies: 4. Nc3, 4. d5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1pppbp/6p1/2p5/2PPP3/2N5/PP3PPP/R1BQKBNR b KQkq - 1 4",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. c4 c5 4. Nc3 **d6**. Covered replies: 5. Be3, 5. dxc5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c4-nc3-be3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp2ppbp/3p2p1/2p5/2PPP3/2N1B3/PP3PPP/R2QKBNR b KQkq - 1 5",
+        "answer": "Qa5",
+        "answerUci": "d8a5",
+        "orientation": "black",
+        "lastMove": "c1e3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. c4 c5 4. Nc3 d6 5. Be3 **Qa5**. This is the Central, Anhanguera (B06)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c4-nc3-dxc5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp2ppbp/3p2p1/2P5/2P1P3/2N5/PP3PPP/R1BQKBNR b KQkq - 0 5",
+        "answer": "Qa5",
+        "answerUci": "d8a5",
+        "orientation": "black",
+        "lastMove": "d4c5",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. c4 c5 4. Nc3 d6 5. dxc5 **Qa5**. This is the Central, Quetzalcoatlus Gambit (B06)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c4-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1pppbp/6p1/2pP4/2P1P3/8/PP3PPP/RNBQKBNR b KQkq - 0 4",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "lastMove": "d4d5",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. c4 c5 4. d5 **d6**. Covered replies: 5. Nc3."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c4-d5-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp2ppbp/3p2p1/2pP4/2P1P3/2N5/PP3PPP/R1BQKBNR b KQkq - 1 5",
+        "answer": "Qa5",
+        "answerUci": "d8a5",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. c4 c5 4. d5 d6 5. Nc3 **Qa5**. This is the Central, Benoni Quetzalcoatlus (B06)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-f4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppppppbp/6p1/8/3PPP2/8/PPP3PP/RNBQKBNR b KQkq - 0 3",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "lastMove": "f2f4",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. f4 **c5**. Covered replies: 4. Nf3, 4. c3."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-f4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1pppbp/6p1/2p5/3PPP2/5N2/PPP3PP/RNBQKB1R b KQkq - 1 4",
+        "answer": "Qa5",
+        "answerUci": "d8a5",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. f4 c5 4. Nf3 **Qa5+**. This is the Austrian, Austriadactylus Western (B06)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-f4-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1pppbp/6p1/2p5/3PPP2/2P5/PP4PP/RNBQKBNR b KQkq - 0 4",
+        "answer": "Qa5",
+        "answerUci": "d8a5",
+        "orientation": "black",
+        "lastMove": "c2c3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. f4 c5 4. c3 **Qa5**. This is the Austrian, Pteranodon (B06)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-g3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppppppbp/6p1/8/3PP3/6P1/PPP2P1P/RNBQKBNR b KQkq - 0 3",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "lastMove": "g2g3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. g3 **c5**. Covered replies: 4. Nf3, 4. dxc5."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-g3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1pppbp/6p1/2p5/3PP3/5NP1/PPP2P1P/RNBQKB1R b KQkq - 1 4",
+        "answer": "Qa5",
+        "answerUci": "d8a5",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. g3 c5 4. Nf3 **Qa5+**. This is the Fianchetto, King Pterodactyl (B06)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-g3-dxc5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1pppbp/6p1/2P5/4P3/6P1/PPP2P1P/RNBQKBNR b KQkq - 0 4",
+        "answer": "Qa5",
+        "answerUci": "d8a5",
+        "orientation": "black",
+        "lastMove": "d4c5",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. g3 c5 4. dxc5 **Qa5+**. This is the Fianchetto, Rhamphorhynchus (B06)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppppppbp/6p1/8/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 2 3",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. Nf3 **c5**. Covered replies: 4. Be3."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nf3-be3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1pppbp/6p1/2p5/3PP3/4BN2/PPP2PPP/RN1QKB1R b KQkq - 1 4",
+        "answer": "Qa5",
+        "answerUci": "d8a5",
+        "orientation": "black",
+        "lastMove": "c1e3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. d4 Bg7 3. Nf3 c5 4. Be3 **Qa5+**. This is the Western, Anhanguera (B06)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppp1p/6p1/8/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 2",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. Nc3 **Bg7**. Covered replies: 3. f4."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-f4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppppppbp/6p1/8/4PP2/2N5/PPPP2PP/R1BQKBNR b KQkq - 0 3",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "lastMove": "f2f4",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. Nc3 Bg7 3. f4 **c5**. Covered replies: 4. Nf3."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-f4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1pppbp/6p1/2p5/4PP2/2N2N2/PPPP2PP/R1BQKB1R b KQkq - 1 4",
+        "answer": "Qa5",
+        "answerUci": "d8a5",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. Nc3 Bg7 3. f4 c5 4. Nf3 **Qa5**. This is the Austrian, Grand Prix Pterodactyl (B06)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppp1p/6p1/8/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. e4 g6 2. Nf3 **Bg7**. Covered replies: 3. d4."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "g6",
+        "answerUci": "g7g6",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. d4 **g6**. Covered replies: 2. c4, 2. Nf3, 2. e4, 2. Nc3."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppp1p/6p1/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. d4 g6 2. c4 **Bg7**. Covered replies: 3. Nc3, 3. e4."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppppppbp/6p1/8/2PP4/2N5/PP2PPPP/R1BQKBNR b KQkq - 2 3",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. d4 g6 2. c4 Bg7 3. Nc3 **c5**. Covered replies: 4. d5, 4. e3 (Queen Pterodactyl, Quiet Line)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1pppbp/6p1/2pP4/2P5/2N5/PP2PPPP/R1BQKBNR b KQkq - 0 4",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "lastMove": "d4d5",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. d4 g6 2. c4 Bg7 3. Nc3 c5 4. d5 **d6**. Covered replies: 5. e4."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppp1p/6p1/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 1 2",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. d4 g6 2. Nf3 **Bg7**. Covered replies: 3. g3."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-nf3-g3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppppppbp/6p1/8/3P4/5NP1/PPP1PP1P/RNBQKB1R b KQkq - 0 3",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "lastMove": "g2g3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. d4 g6 2. Nf3 Bg7 3. g3 **c5**. Covered replies: 4. Bg2."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-nf3-g3-bg2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1pppbp/6p1/2p5/3P4/5NP1/PPP1PPBP/RNBQK2R b KQkq - 1 4",
+        "answer": "Qa5",
+        "answerUci": "d8a5",
+        "orientation": "black",
+        "lastMove": "f1g2",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. d4 g6 2. Nf3 Bg7 3. g3 c5 4. Bg2 **Qa5+**. This is the Fianchetto, Queen Pterodactyl (A40)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppp1p/6p1/8/3P4/2N5/PPP1PPPP/R1BQKBNR b KQkq - 1 2",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. d4 g6 2. Nc3 **Bg7**. Covered replies: 3. e4."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. Nf3 **c5**. Covered replies: 2. c4."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf3-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/8/2p5/2P5/5N2/PP1PPPPP/RNBQKB1R b KQkq - 0 2",
+        "answer": "g6",
+        "answerUci": "g7g6",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. Nf3 c5 2. c4 **g6**. Covered replies: 3. d4."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf3-c4-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppp1p/6p1/2p5/2PP4/5N2/PP2PPPP/RNBQKB1R b KQkq - 0 3",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. Nf3 c5 2. c4 g6 3. d4 **Bg7**. Covered replies: 4. e4."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf3-c4-d4-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1pppbp/6p1/2p5/2PPP3/5N2/PP3PPP/RNBQKB1R b KQkq - 0 4",
+        "answer": "Qa5",
+        "answerUci": "d8a5",
+        "orientation": "black",
+        "lastMove": "e2e4",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. Nf3 c5 2. c4 g6 3. d4 Bg7 4. e4 **Qa5+**. Covered replies: 5. Nc3."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf3-c4-d4-e4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1k1nr/pp1pppbp/6p1/q1p5/2PPP3/2N2N2/PP3PPP/R1BQKB1R b KQkq - 2 5",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the main line. What is the book move?",
+        "extra": "Line: 1. Nf3 c5 2. c4 g6 3. d4 Bg7 4. e4 Qa5+ 5. Nc3 **d6**. This is the main line (A42)."
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}
