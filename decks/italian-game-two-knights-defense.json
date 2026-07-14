@@ -13,6 +13,19 @@
   "ttsLang": null,
   "notes": [
     {
+      "key": "idea",
+      "model": "basic",
+      "fields": {
+        "front": "What is the idea of 4. Ng5 against the Two Knights Defense?",
+        "back": "3...Nf6 counterattacks e4 instead of defending e5, so White strikes f7 immediately: Black must gambit a pawn (5...Na5, 5...Nd4, 5...b5) or suffer the Fried Liver after 5...Nxd5",
+        "extra": "The one opening where White plays a caveman move and theory backs him up. Black gets real compensation only in the Polerio (5...Na5); everything else is White consolidating extra material.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpppp1ppp%2F2n2n2%2F4p3%2F2B1P3%2F5N2%2FPPPP1PPP%2FRNBQK2R%20w%20KQkq%20-%204%204&color=white&theme=brown&piece=cburnett&lastMove=g8f6"
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
       "key": "l-root",
       "model": "chess",
       "fields": {
@@ -21,7 +34,7 @@
         "answerUci": "e2e4",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. **e4**"
+        "extra": "1. **e4**. Claims the center and opens the f1 bishop's diagonal, the piece the whole opening is built around."
       },
       "tags": [
         "chess::line"
@@ -37,7 +50,7 @@
         "orientation": "white",
         "lastMove": "e7e5",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. **Nf3**"
+        "extra": "1. e4 e5 2. **Nf3**. Develops with a threat: e5 must be defended before Black does anything else."
       },
       "tags": [
         "chess::line"
@@ -53,7 +66,7 @@
         "orientation": "white",
         "lastMove": "b8c6",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. **Bc4**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. **Bc4**. The Italian bishop: it points at f7, the one square only the king defends."
       },
       "tags": [
         "chess::line"
@@ -69,7 +82,7 @@
         "orientation": "white",
         "lastMove": "g8f6",
         "prompt": "You are White in the Two Knights Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. **Ng5** (Knight Attack, C57)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. **Ng5** (Knight Attack, C57). The most testing reply: two pieces hit f7, and Black has no clean defense, only counter-gambits."
       },
       "tags": [
         "chess::line"
@@ -85,7 +98,7 @@
         "orientation": "white",
         "lastMove": "f8c5",
         "prompt": "You are White in the Traxler Counterattack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 Bc5 5. **Bxf7+** (Bishop Sacrifice Line, C57)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 Bc5 5. **Bxf7+** (Bishop Sacrifice Line, C57). Against the Traxler, take with the bishop: White grabs a pawn and dodges the ...Bxf2+ madness."
       },
       "tags": [
         "chess::line"
@@ -101,7 +114,7 @@
         "orientation": "white",
         "lastMove": "d7d5",
         "prompt": "You are White in the Normal Variation. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. **exd5**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. **exd5**. Take: recapturing with the knight walks into the Fried Liver, so Black must find a gambit instead."
       },
       "tags": [
         "chess::line"
@@ -117,7 +130,7 @@
         "orientation": "white",
         "lastMove": "c6a5",
         "prompt": "You are White in the Polerio Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. **Bb5+** (Bishop Check Line, C58)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. **Bb5+** (Bishop Check Line, C58). The check buys time to keep the gambit pawn; White will retreat and consolidate a clean pawn up."
       },
       "tags": [
         "chess::line"
@@ -133,7 +146,7 @@
         "orientation": "white",
         "lastMove": "c6d4",
         "prompt": "You are White in the Fritz Variation. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nd4 6. **c3**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nd4 6. **c3**. Calmly question the knight; White keeps the extra pawn and defuses the Fritz tricks."
       },
       "tags": [
         "chess::line"
@@ -149,7 +162,7 @@
         "orientation": "white",
         "lastMove": "e8e7",
         "prompt": "You are White in the Bishop Sacrifice Line. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 Bc5 5. Bxf7+ Ke7 6. **d4** (Trencianske-Teplice Gambit, C57)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 Bc5 5. Bxf7+ Ke7 6. **d4** (Trencianske-Teplice Gambit, C57). Open fire on the stranded king: material comes second when the king lives on e7."
       },
       "tags": [
         "chess::line"
@@ -165,7 +178,7 @@
         "orientation": "white",
         "lastMove": "b7b5",
         "prompt": "You are White in the Ulvestad Variation. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 b5 6. **Bf1**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 b5 6. **Bf1**. The famous only-move: from home the bishop still eyes b5, and every Black trick misfires."
       },
       "tags": [
         "chess::line"
@@ -181,7 +194,7 @@
         "orientation": "white",
         "lastMove": "f6d5",
         "prompt": "You are White in the Normal Variation. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. **Nxf7** (Fried Liver Attack, C57)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. **Nxf7** (Fried Liver Attack, C57). The Fried Liver: the fork drags the king into the open, where queen and bishop hunt it for the piece."
       },
       "tags": [
         "chess::line"
@@ -197,7 +210,7 @@
         "orientation": "white",
         "lastMove": "h7h6",
         "prompt": "You are White in the Ulvestad Variation. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 b5 6. Bf1 h6 7. **Nxf7** (Kurkin Gambit, C57)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 b5 6. Bf1 h6 7. **Nxf7** (Kurkin Gambit, C57). The point of 6. Bf1: the raid on f7 still works, and ...h6 did nothing for Black's king."
       },
       "tags": [
         "chess::line"
@@ -213,7 +226,7 @@
         "orientation": "white",
         "lastMove": "b7b5",
         "prompt": "You are White in the Fritz Variation. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nd4 6. c3 b5 7. **Bf1**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nd4 6. c3 b5 7. **Bf1**. Same medicine as the Ulvestad: retreat home, keep everything guarded, stay a pawn up."
       },
       "tags": [
         "chess::line"
@@ -229,7 +242,7 @@
         "orientation": "white",
         "lastMove": "e8f7",
         "prompt": "You are White in the Fried Liver Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. **Qf3+**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. **Qf3+**. Check plus a second hit on the pinned d5 knight: the king must march to e6 to hold the piece."
       },
       "tags": [
         "chess::line"
@@ -245,7 +258,7 @@
         "orientation": "white",
         "lastMove": "c7c6",
         "prompt": "You are White in the Bishop Check Line. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. **dxc6**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. **dxc6**. Bank the pawns; Black gets tempi as rent, and White's task is to consolidate."
       },
       "tags": [
         "chess::line"
@@ -261,7 +274,7 @@
         "orientation": "white",
         "lastMove": "b7c6",
         "prompt": "You are White in the Bishop Check Line. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. **Be2** (Two Knights Defense, C58)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. **Be2** (Two Knights Defense, C58). Tuck the bishop and weather the storm: White is a clean pawn up if the pieces untangle."
       },
       "tags": [
         "chess::line"
@@ -277,7 +290,7 @@
         "orientation": "white",
         "lastMove": "f7e6",
         "prompt": "You are White in the Fried Liver Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6 8. **Nc3**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6 8. **Nc3**. Every piece joins: the knight adds a third hitter on d5 and readies d4 to rip the center open."
       },
       "tags": [
         "chess::line"
@@ -293,7 +306,7 @@
         "orientation": "white",
         "lastMove": "f6d5",
         "prompt": "You are White in the Fritz Variation. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nd4 6. c3 b5 7. Bf1 Nxd5 8. **Ne4** (Gruber Variation, C57)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nd4 6. c3 b5 7. Bf1 Nxd5 8. **Ne4** (Gruber Variation, C57). Sidestep with the knight while Black's queenside hangs loose; White stays material up."
       },
       "tags": [
         "chess::line"
@@ -309,7 +322,7 @@
         "orientation": "white",
         "lastMove": "c6b4",
         "prompt": "You are White in the Fried Liver Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6 8. Nc3 Nb4 9. **Qe4**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6 8. Nc3 Nb4 9. **Qe4**. Stay central: the queen keeps hitting d5 and covers the c2 fork, so the attack rolls on."
       },
       "tags": [
         "chess::line"
@@ -325,7 +338,7 @@
         "orientation": "white",
         "lastMove": "h7h6",
         "prompt": "You are White in the Suhle Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. **Nf3**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. **Nf3**. Retreat with a plan: f3 wants e5, and Black's ...e4 push only sends it there."
       },
       "tags": [
         "chess::line"
@@ -341,7 +354,7 @@
         "orientation": "white",
         "lastMove": "c7c6",
         "prompt": "You are White in the Fried Liver Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6 8. Nc3 Nb4 9. Qe4 c6 10. **a3**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6 8. Nc3 Nb4 9. Qe4 c6 10. **a3**. Poke the loose knight first; Black's counterplay runs out one tempo short."
       },
       "tags": [
         "chess::line"
@@ -357,7 +370,7 @@
         "orientation": "white",
         "lastMove": "e5e4",
         "prompt": "You are White in the Suhle Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. Nf3 e4 10. **Ne5**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. Nf3 e4 10. **Ne5**. Into the hole Black just dug: from e5 the knight hits c6 and f7 and cannot be evicted by pawns."
       },
       "tags": [
         "chess::line"
@@ -373,7 +386,7 @@
         "orientation": "white",
         "lastMove": "b4a6",
         "prompt": "You are White in the Fried Liver Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6 8. Nc3 Nb4 9. Qe4 c6 10. a3 Na6 11. **d4**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Nxd5 6. Nxf7 Kxf7 7. Qf3+ Ke6 8. Nc3 Nb4 9. Qe4 c6 10. a3 Na6 11. **d4**. With the king still on e6, open the center: every new line is a nail."
       },
       "tags": [
         "chess::line"
@@ -389,7 +402,7 @@
         "orientation": "white",
         "lastMove": "f8d6",
         "prompt": "You are White in the Suhle Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. Nf3 e4 10. Ne5 Bd6 11. **d4**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. Nf3 e4 10. Ne5 Bd6 11. **d4**. Cement the e5 knight with the pawn chain; Black's initiative needs constant fuel and this rations it."
       },
       "tags": [
         "chess::line"
@@ -405,7 +418,7 @@
         "orientation": "white",
         "lastMove": "d8c7",
         "prompt": "You are White in the Suhle Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. Nf3 e4 10. Ne5 Bd6 11. d4 Qc7 12. **Bd2** (Knorre Variation, C59)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. Ng5 d5 5. exd5 Na5 6. Bb5+ c6 7. dxc6 bxc6 8. Be2 h6 9. Nf3 e4 10. Ne5 Bd6 11. d4 Qc7 12. **Bd2** (Knorre Variation, C59). Quietly completes development; the extra pawn is White's story once the pieces coordinate."
       },
       "tags": [
         "chess::line"

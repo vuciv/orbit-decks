@@ -13,6 +13,19 @@
   "ttsLang": null,
   "notes": [
     {
+      "key": "idea",
+      "model": "basic",
+      "fields": {
+        "front": "What is the idea of the Evans Gambit?",
+        "back": "4. b4 sacrifices a wing pawn to gain time on the bishop and build the full c3/d4 center; the tempi become open lines and an attack on f7 before Black finishes developing",
+        "extra": "Every bishop retreat answers a threat, and every threat buys White a developing move. Decline it and White gets the center for free; accept it and hang on.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqk1nr%2Fpppp1ppp%2F2n5%2F2b1p3%2F1PB1P3%2F5N2%2FP1PP1PPP%2FRNBQK2R%20b%20KQkq%20-%200%204&color=white&theme=brown&piece=cburnett&lastMove=b2b4"
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
       "key": "l-root",
       "model": "chess",
       "fields": {
@@ -21,7 +34,7 @@
         "answerUci": "e2e4",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. **e4**"
+        "extra": "1. **e4**. Claims the center and opens the f1 bishop's diagonal, the piece the whole opening is built around."
       },
       "tags": [
         "chess::line"
@@ -37,7 +50,7 @@
         "orientation": "white",
         "lastMove": "e7e5",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. **Nf3**"
+        "extra": "1. e4 e5 2. **Nf3**. Develops with a threat: e5 must be defended before Black does anything else."
       },
       "tags": [
         "chess::line"
@@ -53,7 +66,7 @@
         "orientation": "white",
         "lastMove": "b8c6",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. **Bc4**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. **Bc4**. The Italian bishop: it points at f7, the one square only the king defends."
       },
       "tags": [
         "chess::line"
@@ -69,7 +82,7 @@
         "orientation": "white",
         "lastMove": "f8c5",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. **b4** (Evans Gambit, C51)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. **b4** (Evans Gambit, C51). Gambits the wing pawn to hit the bishop: whatever it plays, White gets c3 and d4 with tempo and a huge center."
       },
       "tags": [
         "chess::line"
@@ -85,7 +98,7 @@
         "orientation": "white",
         "lastMove": "c5b4",
         "prompt": "You are White in the Evans Gambit. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. **c3**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. **c3**. The point: the bishop is hit again and d4 comes next; Black's extra pawn costs him the clock."
       },
       "tags": [
         "chess::line"
@@ -101,7 +114,7 @@
         "orientation": "white",
         "lastMove": "b4e7",
         "prompt": "You are White in the Anderssen Variation. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Be7 6. **d4**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Be7 6. **d4**. The center arrives on schedule; against the modest retreat White simply owns more board."
       },
       "tags": [
         "chess::line"
@@ -117,7 +130,7 @@
         "orientation": "white",
         "lastMove": "b4c5",
         "prompt": "You are White in the McDonnell Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. **d4**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. **d4**. Hit the bishop a third time; every tempo it burns becomes a White developing move."
       },
       "tags": [
         "chess::line"
@@ -133,7 +146,7 @@
         "orientation": "white",
         "lastMove": "b4a5",
         "prompt": "You are White in the Main Line. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. **d4**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. **d4**. The main tabiya: from a5 the bishop pins c3, so White plays around it with Qb3 and O-O."
       },
       "tags": [
         "chess::line"
@@ -149,7 +162,7 @@
         "orientation": "white",
         "lastMove": "e5d4",
         "prompt": "You are White in the McDonnell Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. d4 exd4 7. **O-O**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. d4 exd4 7. **O-O**. Development over pawns, always: the king tucks in, Re1 looms, and Black's greed leaves his king at home."
       },
       "tags": [
         "chess::line"
@@ -165,7 +178,7 @@
         "orientation": "white",
         "lastMove": "e5d4",
         "prompt": "You are White in the Pierce Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. **O-O**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. **O-O**. Development over pawns, always: cxd4 can wait, the attack cannot."
       },
       "tags": [
         "chess::line"
@@ -181,7 +194,7 @@
         "orientation": "white",
         "lastMove": "d7d6",
         "prompt": "You are White in the Bronstein Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. **Qb3** (Tartakower Attack, C52)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. **Qb3** (Tartakower Attack, C52). Hits f7 while the a5 bishop watches from offside; Black's defense ties itself in knots."
       },
       "tags": [
         "chess::line"
@@ -197,7 +210,7 @@
         "orientation": "white",
         "lastMove": "d8d7",
         "prompt": "You are White in the Tartakower Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. Qb3 Qd7 8. **dxe5**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. Qb3 Qd7 8. **dxe5**. Clear d4 and open lines: with ...Qd7 blocking the c8 bishop, Black's game is gummed up."
       },
       "tags": [
         "chess::line"
@@ -213,7 +226,7 @@
         "orientation": "white",
         "lastMove": "d7d6",
         "prompt": "You are White in the McDonnell Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. d4 exd4 7. O-O d6 8. **cxd4**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Bc5 6. d4 exd4 7. O-O d6 8. **cxd4**. Rebuild the pair: one gambit pawn for this center and these open lines is a bargain."
       },
       "tags": [
         "chess::line"
@@ -229,7 +242,7 @@
         "orientation": "white",
         "lastMove": "d7d6",
         "prompt": "You are White in the Pierce Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O d6 8. **cxd4**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O d6 8. **cxd4**. Rebuild the pair: one gambit pawn for this center and these open lines is a bargain."
       },
       "tags": [
         "chess::line"
@@ -245,7 +258,7 @@
         "orientation": "white",
         "lastMove": "d4c3",
         "prompt": "You are White in the Compromised Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O dxc3 8. **Qb3**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O dxc3 8. **Qb3**. Two pawns down, all in: the queen joins the f7 battery and Black must find only-moves already."
       },
       "tags": [
         "chess::line"
@@ -261,7 +274,7 @@
         "orientation": "white",
         "lastMove": "a5b6",
         "prompt": "You are White in the Pierce Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O d6 8. cxd4 Bb6 9. **Nc3** (Morphy Attack, C51)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O d6 8. cxd4 Bb6 9. **Nc3** (Morphy Attack, C51). Full mobilization: the center pawns and both knights give White lasting initiative for the pawn."
       },
       "tags": [
         "chess::line"
@@ -277,7 +290,7 @@
         "orientation": "white",
         "lastMove": "d8f6",
         "prompt": "You are White in the Compromised Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O dxc3 8. Qb3 Qf6 9. **e5**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O dxc3 8. Qb3 Qf6 9. **e5**. Harass the defender: e5 hits the queen that holds f7 together."
       },
       "tags": [
         "chess::line"
@@ -293,7 +306,7 @@
         "orientation": "white",
         "lastMove": "d6e5",
         "prompt": "You are White in the Tartakower Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. Qb3 Qd7 8. dxe5 dxe5 9. **O-O**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. Qb3 Qd7 8. dxe5 dxe5 9. **O-O**. King safe first; Black's position is one big traffic jam and the pawn means little."
       },
       "tags": [
         "chess::line"
@@ -309,7 +322,7 @@
         "orientation": "white",
         "lastMove": "f6g6",
         "prompt": "You are White in the Compromised Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O dxc3 8. Qb3 Qf6 9. e5 Qg6 10. **Nxc3**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O dxc3 8. Qb3 Qf6 9. e5 Qg6 10. **Nxc3**. Regain a pawn by developing; the score is one pawn for total mobilization."
       },
       "tags": [
         "chess::line"
@@ -325,7 +338,7 @@
         "orientation": "white",
         "lastMove": "a5b6",
         "prompt": "You are White in the Tartakower Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. Qb3 Qd7 8. dxe5 dxe5 9. O-O Bb6 10. **Ba3**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. Qb3 Qd7 8. dxe5 dxe5 9. O-O Bb6 10. **Ba3**. Claims the a3-f8 diagonal: Black may never castle."
       },
       "tags": [
         "chess::line"
@@ -341,7 +354,7 @@
         "orientation": "white",
         "lastMove": "c6a5",
         "prompt": "You are White in the Tartakower Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. Qb3 Qd7 8. dxe5 dxe5 9. O-O Bb6 10. Ba3 Na5 11. **Nxe5** (Levenfish Variation, C52)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 d6 7. Qb3 Qd7 8. dxe5 dxe5 9. O-O Bb6 10. Ba3 Na5 11. **Nxe5** (Levenfish Variation, C52). The in-between grab: after ...Nxb3, Nxd7 keeps the trades level and the initiative White's."
       },
       "tags": [
         "chess::line"
@@ -357,7 +370,7 @@
         "orientation": "white",
         "lastMove": "g8e7",
         "prompt": "You are White in the Compromised Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O dxc3 8. Qb3 Qf6 9. e5 Qg6 10. Nxc3 Nge7 11. **Ba3** (Main Line, C52)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bxb4 5. c3 Ba5 6. d4 exd4 7. O-O dxc3 8. Qb3 Qf6 9. e5 Qg6 10. Nxc3 Nge7 11. **Ba3** (Main Line, C52). The clamp again: a3-f8 keeps the king central while White's rooks come to the open files."
       },
       "tags": [
         "chess::line"

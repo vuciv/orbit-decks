@@ -55,7 +55,7 @@
       "key": "italian-game-evans-gambit",
       "name": "Italian Game: Evans Gambit",
       "description": "Line trainer for the Italian Game: Evans Gambit, generated from the canonical opening database (lichess-org/chess-openings): 22 positions drilled book-move by book-move from White's side across 41 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 22,
+      "cardCount": 23,
       "topics": [
         "chess",
         "openings",
@@ -67,7 +67,7 @@
       "key": "italian-game-giuoco-piano",
       "name": "Italian Game: Giuoco Piano",
       "description": "Line trainer for the Italian Game: Giuoco Piano, generated from the canonical opening database (lichess-org/chess-openings): 21 positions drilled book-move by book-move from White's side across 10 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 21,
+      "cardCount": 22,
       "topics": [
         "chess",
         "openings",
@@ -79,7 +79,7 @@
       "key": "italian-game-two-knights-defense",
       "name": "Italian Game: Two Knights Defense",
       "description": "Line trainer for the Italian Game: Two Knights Defense, generated from the canonical opening database (lichess-org/chess-openings): 25 positions drilled book-move by book-move from White's side across 46 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 25,
+      "cardCount": 26,
       "topics": [
         "chess",
         "openings",
@@ -235,7 +235,7 @@
       "key": "italian-game",
       "name": "The Italian Game",
       "description": "Line trainer for the Italian Game, generated from the canonical opening database (lichess-org/chess-openings): 28 positions drilled book-move by book-move from White's side across 87 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 28,
+      "cardCount": 29,
       "topics": [
         "chess",
         "openings",

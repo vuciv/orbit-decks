@@ -762,7 +762,7 @@
         "orientation": "black",
         "lastMove": "f1c4",
         "prompt": "You are Black in the Hillbilly Attack. What is the book move?",
-        "extra": "1. e4 c6 2. Bc4 **d5**"
+        "extra": "1. e4 c6 2. Bc4 **d5**. Grabs the center with tempo: the pawn shuts the bishop's diagonal and it must soon move again."
       },
       "tags": [
         "chess::line"
@@ -778,7 +778,7 @@
         "orientation": "black",
         "lastMove": "g2g4",
         "prompt": "You are Black in the Spike Variation. What is the book move?",
-        "extra": "1. e4 c6 2. g4 **d5**"
+        "extra": "1. e4 c6 2. g4 **d5**. The center answer to flank play; g4 only loosened White's king."
       },
       "tags": [
         "chess::line"
@@ -794,7 +794,7 @@
         "orientation": "black",
         "lastMove": "b2b4",
         "prompt": "You are Black in the Labahn Attack. What is the book move?",
-        "extra": "1. e4 c6 2. b4 **d5**"
+        "extra": "1. e4 c6 2. b4 **d5**. Flank pawns do not fight for e4 or d5, so Black takes the center for free."
       },
       "tags": [
         "chess::line"
@@ -810,7 +810,7 @@
         "orientation": "black",
         "lastMove": "g1f3",
         "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "1. e4 c6 2. Nf3 **d5**"
+        "extra": "1. e4 c6 2. Nf3 **d5**. The prepared strike: d5 arrives fully protected, and exd5 cxd5 keeps a healthy center pawn."
       },
       "tags": [
         "chess::line"
@@ -826,7 +826,7 @@
         "orientation": "black",
         "lastMove": "d2d3",
         "prompt": "You are Black in the Breyer Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d3 **d5**"
+        "extra": "1. e4 c6 2. d3 **d5**. White declined the center; claim all of it."
       },
       "tags": [
         "chess::line"
@@ -842,7 +842,7 @@
         "orientation": "black",
         "lastMove": "g1f3",
         "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. Nf3 **dxe4**"
+        "extra": "1. e4 c6 2. d4 d5 3. Nf3 **dxe4**. Takes a pawn the knight must burn time (4. Ng5) to regain, conceding the center meanwhile."
       },
       "tags": [
         "chess::line"
@@ -858,7 +858,7 @@
         "orientation": "black",
         "lastMove": "e4d5",
         "prompt": "You are Black in the Accelerated Panov Attack. What is the book move?",
-        "extra": "1. e4 c6 2. c4 d5 3. exd5 **cxd5**"
+        "extra": "1. e4 c6 2. c4 d5 3. exd5 **cxd5**. Recapture with the c-pawn: center stake, half-open c-file, and the queen stays home."
       },
       "tags": [
         "chess::line"
@@ -874,7 +874,7 @@
         "orientation": "black",
         "lastMove": "b1c3",
         "prompt": "You are Black in the Spike Variation. What is the book move?",
-        "extra": "1. e4 c6 2. g4 d5 3. Nc3 **dxe4**"
+        "extra": "1. e4 c6 2. g4 d5 3. Nc3 **dxe4**. Wins a pawn either way: the capture opens the c8 bishop's diagonal straight at the loose g4 pawn."
       },
       "tags": [
         "chess::line"
@@ -890,7 +890,7 @@
         "orientation": "black",
         "lastMove": "b1d2",
         "prompt": "You are Black in the Modern Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. Nd2 **dxe4**"
+        "extra": "1. e4 c6 2. d4 d5 3. Nd2 **dxe4**. Same treatment as 3. Nc3: capture, and the recapture parks a knight that ...Bf5 develops against with tempo."
       },
       "tags": [
         "chess::line"
@@ -906,7 +906,7 @@
         "orientation": "black",
         "lastMove": "e4d5",
         "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "1. e4 c6 2. Nf3 d5 3. exd5 **cxd5**"
+        "extra": "1. e4 c6 2. Nf3 d5 3. exd5 **cxd5**. The c-pawn recapture rule: healthy center pawn and the c-file for Black's rooks."
       },
       "tags": [
         "chess::line"
@@ -922,7 +922,7 @@
         "orientation": "black",
         "lastMove": "d2d3",
         "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "1. e4 c6 2. Nc3 d5 3. d3 **dxe4**"
+        "extra": "1. e4 c6 2. Nc3 d5 3. d3 **dxe4**. Takes the free central trade; White's timid d3 left nothing to attack."
       },
       "tags": [
         "chess::line"
@@ -938,7 +938,7 @@
         "orientation": "black",
         "lastMove": "d2d3",
         "prompt": "You are Black in the Endgame Offer. What is the book move?",
-        "extra": "1. e4 c6 2. Nf3 d5 3. d3 **dxe4**"
+        "extra": "1. e4 c6 2. Nf3 d5 3. d3 **dxe4**. Starts the trade whose point is 4. dxe4 Qxd1+ 5. Kxd1, stripping White of castling."
       },
       "tags": [
         "chess::line"
@@ -954,7 +954,7 @@
         "orientation": "black",
         "lastMove": "f1d3",
         "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. Bd3 **Nf6**"
+        "extra": "1. e4 c6 2. d4 d5 3. Bd3 **Nf6**. Develops while adding a hit on e4; White's early bishop is now tied to defending it."
       },
       "tags": [
         "chess::line"
@@ -970,7 +970,7 @@
         "orientation": "black",
         "lastMove": "c4d5",
         "prompt": "You are Black in the Accelerated Panov Attack. What is the book move?",
-        "extra": "1. e4 c6 2. c4 d5 3. cxd5 **cxd5**"
+        "extra": "1. e4 c6 2. c4 d5 3. cxd5 **cxd5**. Keep the recapture symmetrical; 4. exd5 Nf6 regains the pawn comfortably."
       },
       "tags": [
         "chess::line"
@@ -986,7 +986,7 @@
         "orientation": "black",
         "lastMove": "c4b3",
         "prompt": "You are Black in the Hillbilly Attack. What is the book move?",
-        "extra": "1. e4 c6 2. Bc4 d5 3. Bb3 **dxe4**"
+        "extra": "1. e4 c6 2. Bc4 d5 3. Bb3 **dxe4**. Pockets the e4 pawn cleanly; even 4. Qh5 regains nothing after ...g6."
       },
       "tags": [
         "chess::line"
@@ -1002,7 +1002,7 @@
         "orientation": "black",
         "lastMove": "b1d2",
         "prompt": "You are Black in the Breyer Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d3 d5 3. Nd2 **g6**"
+        "extra": "1. e4 c6 2. d3 d5 3. Nd2 **g6**. Against the King's Indian Attack setup, the fianchetto is the sturdiest shell: the g7 bishop watches d4 and e5 all game."
       },
       "tags": [
         "chess::line"
@@ -1018,7 +1018,7 @@
         "orientation": "black",
         "lastMove": "h2h3",
         "prompt": "You are Black in the Mindeno Variation. What is the book move?",
-        "extra": "1. e4 c6 2. Nc3 d5 3. Nf3 Bg4 4. h3 **Bxf3** (Exchange Line, B11)"
+        "extra": "1. e4 c6 2. Nc3 d5 3. Nf3 Bg4 4. h3 **Bxf3** (Exchange Line, B11). Concede the bishop before it gets kicked around; Qxf3 leaves the queen biting on granite while the e6/d5 wall goes up."
       },
       "tags": [
         "chess::line"
@@ -1034,7 +1034,7 @@
         "orientation": "black",
         "lastMove": "g1f3",
         "prompt": "You are Black in the Exchange Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Nf3 **Nc6** (Exchange Variation, B13)"
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Nf3 **Nc6** (Exchange Variation, B13). Develops against d4; with the knight already committed to f3, ...Bg4 comes next as a real pin."
       },
       "tags": [
         "chess::line"
@@ -1050,7 +1050,7 @@
         "orientation": "black",
         "lastMove": "g1f3",
         "prompt": "You are Black in the Breyer Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d3 d5 3. Nd2 g6 4. Ngf3 **Bg7**"
+        "extra": "1. e4 c6 2. d3 d5 3. Nd2 g6 4. Ngf3 **Bg7**. Completes the fianchetto; the bishop's grip on e5 and d4 makes White's usual space plans awkward."
       },
       "tags": [
         "chess::line"
@@ -1066,7 +1066,7 @@
         "orientation": "black",
         "lastMove": "e4e5",
         "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. Bd3 Nf6 4. e5 **Nfd7**"
+        "extra": "1. e4 c6 2. d4 d5 3. Bd3 Nf6 4. e5 **Nfd7**. Tucks in to strike the new chain: ...c5 and ...Nc6 hit d4 while White's bishop watches from the wrong square."
       },
       "tags": [
         "chess::line"
@@ -1082,7 +1082,7 @@
         "orientation": "black",
         "lastMove": "c4d5",
         "prompt": "You are Black in the Accelerated Panov Attack. What is the book move?",
-        "extra": "1. e4 c6 2. c4 d5 3. exd5 cxd5 4. cxd5 **Nf6** (Modern Variation, B10)"
+        "extra": "1. e4 c6 2. c4 d5 3. exd5 cxd5 4. cxd5 **Nf6** (Modern Variation, B10). No rush with the queen: the knight regains d5 while developing; ...Qxd5 would invite Nc3 with tempo."
       },
       "tags": [
         "chess::line"
@@ -1098,7 +1098,7 @@
         "orientation": "black",
         "lastMove": "c2c3",
         "prompt": "You are Black in the Advance Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. c3 **e6**"
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. c3 **e6**. With the bishop already outside the chain, the wall costs nothing; ...c5 hits the propped base next."
       },
       "tags": [
         "chess::line"
@@ -1114,7 +1114,7 @@
         "orientation": "black",
         "lastMove": "d3e4",
         "prompt": "You are Black in the Endgame Offer. What is the book move?",
-        "extra": "1. e4 c6 2. Nf3 d5 3. d3 dxe4 4. dxe4 **Qxd1+**"
+        "extra": "1. e4 c6 2. Nf3 d5 3. d3 dxe4 4. dxe4 **Qxd1+**. The point of the exchange: 5. Kxd1 is forced and White's king loses castling for an equal ending."
       },
       "tags": [
         "chess::line"
@@ -1130,7 +1130,7 @@
         "orientation": "black",
         "lastMove": "g2g3",
         "prompt": "You are Black in the Breyer Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d3 d5 3. Nd2 g6 4. Ngf3 Bg7 5. g3 **e5**"
+        "extra": "1. e4 c6 2. d3 d5 3. Nd2 g6 4. Ngf3 Bg7 5. g3 **e5**. Stakes the full center d3 conceded; e5 is tactically safe since Nxe5 Bxe5 costs White a piece for a pawn."
       },
       "tags": [
         "chess::line"
@@ -1146,7 +1146,7 @@
         "orientation": "black",
         "lastMove": "e4g5",
         "prompt": "You are Black in the Classical Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng5 **Bg6**"
+        "extra": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng5 **Bg6**. The only retreat keeping the bishop on the b1-h7 diagonal; the knight raid gets pushed back with gain of time."
       },
       "tags": [
         "chess::line"
@@ -1162,7 +1162,7 @@
         "orientation": "black",
         "lastMove": "g1f3",
         "prompt": "You are Black in the Classical Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng5 Bg6 6. N1f3 **h6**"
+        "extra": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng5 Bg6 6. N1f3 **h6**. Puts the question: the raider must retreat or lunge into e6, and calm development meets both."
       },
       "tags": [
         "chess::line"
@@ -1178,7 +1178,7 @@
         "orientation": "black",
         "lastMove": "g1e2",
         "prompt": "You are Black in the Van der Wiel Attack. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nc3 e6 5. g4 Bg6 6. Nge2 **c5**"
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nc3 e6 5. g4 Bg6 6. Nge2 **c5**. The classic recipe: White storms the wing, so Black opens the center where the king still lives."
       },
       "tags": [
         "chess::line"
@@ -1194,7 +1194,7 @@
         "orientation": "black",
         "lastMove": "f1g2",
         "prompt": "You are Black in the Breyer Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d3 d5 3. Nd2 g6 4. Ngf3 Bg7 5. g3 e5 6. Bg2 **Ne7**"
+        "extra": "1. e4 c6 2. d3 d5 3. Nd2 g6 4. Ngf3 Bg7 5. g3 e5 6. Bg2 **Ne7**. Flexible: guards d5, keeps the long diagonal closed, and prepares ...O-O."
       },
       "tags": [
         "chess::line"
@@ -1210,7 +1210,7 @@
         "orientation": "black",
         "lastMove": "e1g1",
         "prompt": "You are Black in the Breyer Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d3 d5 3. Nd2 g6 4. Ngf3 Bg7 5. g3 e5 6. Bg2 Ne7 7. O-O **O-O**"
+        "extra": "1. e4 c6 2. d3 d5 3. Nd2 g6 4. Ngf3 Bg7 5. g3 e5 6. Bg2 Ne7 7. O-O **O-O**. Both kings tucked, but Black owns more center, so the middlegame plans are his to choose."
       },
       "tags": [
         "chess::line"
@@ -1226,7 +1226,7 @@
         "orientation": "black",
         "lastMove": "c1d2",
         "prompt": "You are Black in the Spassky Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. h4 h6 7. Nf3 Nd7 8. h5 Bh7 9. Bd3 Bxd3 10. Qxd3 e6 11. Bd2 **Ngf6**"
+        "extra": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. h4 h6 7. Nf3 Nd7 8. h5 Bh7 9. Bd3 Bxd3 10. Qxd3 e6 11. Bd2 **Ngf6**. The recapture rule: ...Ngf6 so that any Nxf6 is met by ...Nxf6, keeping the pawn front untouched."
       },
       "tags": [
         "chess::line"
@@ -1242,7 +1242,7 @@
         "orientation": "black",
         "lastMove": "e1c1",
         "prompt": "You are Black in the Spassky Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. h4 h6 7. Nf3 Nd7 8. h5 Bh7 9. Bd3 Bxd3 10. Qxd3 e6 11. Bd2 Ngf6 12. O-O-O **Be7** (Lobron System, B19)"
+        "extra": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. h4 h6 7. Nf3 Nd7 8. h5 Bh7 9. Bd3 Bxd3 10. Qxd3 e6 11. Bd2 Ngf6 12. O-O-O **Be7** (Lobron System, B19). Modest and complete: castle short next behind the closed h-file, then free the game with ...c5."
       },
       "tags": [
         "chess::line"

@@ -13,6 +13,19 @@
   "ttsLang": null,
   "notes": [
     {
+      "key": "idea",
+      "model": "basic",
+      "fields": {
+        "front": "What is the idea of the Giuoco Piano?",
+        "back": "The 'quiet game': c3 prepares d4 to build the full center patiently; the middlegame argument is whether White lands d4 under good conditions while both sides castle",
+        "extra": "Quiet does not mean harmless: the Greco gambit lines (6...Bb4+ 7. Nc3) show the fire under the surface. White's compass is always the d4 break and the f7 diagonal.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqk1nr%2Fpppp1ppp%2F2n5%2F2b1p3%2F2B1P3%2F5N2%2FPPPP1PPP%2FRNBQK2R%20w%20KQkq%20-%204%204&color=white&theme=brown&piece=cburnett&lastMove=f8c5"
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
       "key": "l-root",
       "model": "chess",
       "fields": {
@@ -21,7 +34,7 @@
         "answerUci": "e2e4",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. **e4**"
+        "extra": "1. **e4**. Claims the center and opens the f1 bishop's diagonal, the piece the whole opening is built around."
       },
       "tags": [
         "chess::line"
@@ -37,7 +50,7 @@
         "orientation": "white",
         "lastMove": "e7e5",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. **Nf3**"
+        "extra": "1. e4 e5 2. **Nf3**. Develops with a threat: e5 must be defended before Black does anything else."
       },
       "tags": [
         "chess::line"
@@ -53,7 +66,7 @@
         "orientation": "white",
         "lastMove": "b8c6",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. **Bc4**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. **Bc4**. The Italian bishop: it points at f7, the one square only the king defends."
       },
       "tags": [
         "chess::line"
@@ -69,7 +82,7 @@
         "orientation": "white",
         "lastMove": "g8f6",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. **O-O**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. **O-O**. The quiet handling: castle first and keep every central break in reserve."
       },
       "tags": [
         "chess::line"
@@ -85,7 +98,7 @@
         "orientation": "white",
         "lastMove": "f8c5",
         "prompt": "You are White in the Giuoco Piano. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. **c3**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. **c3**. Prepares d4: the knight's square goes to the pawn because the center is worth more."
       },
       "tags": [
         "chess::line"
@@ -101,7 +114,7 @@
         "orientation": "white",
         "lastMove": "f8c5",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. **d4**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. **d4**. The freeing break, played before Black castles; every recapture helps White develop."
       },
       "tags": [
         "chess::line"
@@ -117,7 +130,7 @@
         "orientation": "white",
         "lastMove": "g8f6",
         "prompt": "You are White in the Giuoco Piano. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. **d4**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. **d4**. The point of c3: the full pawn center arrives while both White pieces still aim kingside."
       },
       "tags": [
         "chess::line"
@@ -133,7 +146,7 @@
         "orientation": "white",
         "lastMove": "c5d4",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. d4 Bxd4 6. **Nxd4**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. d4 Bxd4 6. **Nxd4**. Take back and invite ...Nxd4: the coming Bg5 pin makes Black's knight raid look loose."
       },
       "tags": [
         "chess::line"
@@ -149,7 +162,7 @@
         "orientation": "white",
         "lastMove": "e5d4",
         "prompt": "You are White in the Giuoco Piano. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. **cxd4**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. **cxd4**. Recaptures into the classical big center; Black's ...Bb4+ is met by the Greco gambit 7. Nc3."
       },
       "tags": [
         "chess::line"
@@ -165,7 +178,7 @@
         "orientation": "white",
         "lastMove": "c6d4",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. d4 Bxd4 6. Nxd4 Nxd4 7. **Bg5**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. d4 Bxd4 6. Nxd4 Nxd4 7. **Bg5**. Pin first, collect later: with f6 pinned, the stray d4 knight becomes the target."
       },
       "tags": [
         "chess::line"
@@ -181,7 +194,7 @@
         "orientation": "white",
         "lastMove": "c5b4",
         "prompt": "You are White in the Giuoco Piano. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. **Nc3** (Greco's Attack, C54)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. **Nc3** (Greco's Attack, C54). The gambit: White offers e4 to finish development; accepting walks into the Moeller attack down the e-file."
       },
       "tags": [
         "chess::line"
@@ -197,7 +210,7 @@
         "orientation": "white",
         "lastMove": "d7d6",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. d4 Bxd4 6. Nxd4 Nxd4 7. Bg5 d6 8. **f4**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. d4 Bxd4 6. Nxd4 Nxd4 7. Bg5 d6 8. **f4**. Open the f-file against the pinned kingside; e5 cannot hold."
       },
       "tags": [
         "chess::line"
@@ -213,7 +226,7 @@
         "orientation": "white",
         "lastMove": "h7h6",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. d4 Bxd4 6. Nxd4 Nxd4 7. Bg5 h6 8. **Bh4**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. d4 Bxd4 6. Nxd4 Nxd4 7. Bg5 h6 8. **Bh4**. Keep the pin: ...g5 would loosen Black's king beyond repair, and White will encourage it."
       },
       "tags": [
         "chess::line"
@@ -229,7 +242,7 @@
         "orientation": "white",
         "lastMove": "f6e4",
         "prompt": "You are White in the Greco's Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. **O-O**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. **O-O**. Safety before recapture: d5 and Re1 are coming, and the e4 knight will not survive the initiative."
       },
       "tags": [
         "chess::line"
@@ -245,7 +258,7 @@
         "orientation": "white",
         "lastMove": "g7g5",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. d4 Bxd4 6. Nxd4 Nxd4 7. Bg5 h6 8. Bh4 g5 9. **f4** (Rosentreter Variation, C54)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. d4 Bxd4 6. Nxd4 Nxd4 7. Bg5 h6 8. Bh4 g5 9. **f4** (Rosentreter Variation, C54). Meet ...g5 with the lever: the pawns in front of Black's king become targets before he ever castles."
       },
       "tags": [
         "chess::line"
@@ -261,7 +274,7 @@
         "orientation": "white",
         "lastMove": "d8e7",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. d4 Bxd4 6. Nxd4 Nxd4 7. Bg5 d6 8. f4 Qe7 9. **fxe5**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. d4 Bxd4 6. Nxd4 Nxd4 7. Bg5 d6 8. f4 Qe7 9. **fxe5**. Open the f-file for the rook already sitting on it; ...dxe5 walks into the next wave."
       },
       "tags": [
         "chess::line"
@@ -277,7 +290,7 @@
         "orientation": "white",
         "lastMove": "b4c3",
         "prompt": "You are White in the Greco's Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. **bxc3**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. **bxc3**. Take toward the center: the half-open b-file and big pawn duo outweigh the doubled c-pawns."
       },
       "tags": [
         "chess::line"
@@ -293,7 +306,7 @@
         "orientation": "white",
         "lastMove": "e4c3",
         "prompt": "You are White in the Greco's Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 9. **bxc3**"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 9. **bxc3**. Take toward the center: the half-open b-file and big pawn duo outweigh the doubled c-pawns."
       },
       "tags": [
         "chess::line"
@@ -309,7 +322,7 @@
         "orientation": "white",
         "lastMove": "b4c3",
         "prompt": "You are White in the Greco's Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 9. bxc3 Bxc3 10. **Ba3** (Aitken Variation, C54)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 9. bxc3 Bxc3 10. **Ba3** (Aitken Variation, C54). The dark-square clamp: Black wins a second pawn but may never castle."
       },
       "tags": [
         "chess::line"
@@ -325,7 +338,7 @@
         "orientation": "white",
         "lastMove": "d6e5",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. d4 Bxd4 6. Nxd4 Nxd4 7. Bg5 d6 8. f4 Qe7 9. fxe5 dxe5 10. **Nc3** (Holzhausen Attack, C54)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. O-O Bc5 5. d4 Bxd4 6. Nxd4 Nxd4 7. Bg5 d6 8. f4 Qe7 9. fxe5 dxe5 10. **Nc3** (Holzhausen Attack, C54). Bring the last minor piece: with the f-file open and f6 pinned, threats outrun material."
       },
       "tags": [
         "chess::line"
@@ -341,7 +354,7 @@
         "orientation": "white",
         "lastMove": "d7d5",
         "prompt": "You are White in the Greco's Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. bxc3 d5 10. **Ba3** (Steinitz Variation, C54)"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. bxc3 d5 10. **Ba3** (Steinitz Variation, C54). Ignore d5: the a3-f8 clamp on the king matters more than any pawn."
       },
       "tags": [
         "chess::line"
