@@ -43,6 +43,7 @@ const CATEGORY_ORDER = [
   'Anatomy',
   'History',
   'Codes & Signals',
+  'Programming',
   'Professional Exams',
 ];
 

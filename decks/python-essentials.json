@@ -1,0 +1,1156 @@
+{
+  "key": "python-essentials",
+  "version": 1,
+  "name": "Python Essentials",
+  "description": "The Python you use every day: built-ins, strings, lists, dicts, comprehensions, functions, exceptions, classes, and the standard library, plus the classic gotchas that trip people up in interviews and code review.",
+  "category": "Programming",
+  "topics": [
+    "python",
+    "programming",
+    "coding"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Python-logo-notext.svg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "len",
+      "model": "typed",
+      "fields": {
+        "front": "Which built-in function returns the number of items in a string, list, or dict?",
+        "answer": "len",
+        "extra": "`len('hello')` is 5. Works on anything that defines `__len__`."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "print-sep",
+      "model": "basic",
+      "fields": {
+        "front": "What does `print('a', 'b', 'c', sep='-')` output?",
+        "back": "`a-b-c`",
+        "extra": "`sep` joins the arguments (default is a space); `end=''` suppresses the trailing newline."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "range-exclusive",
+      "model": "basic",
+      "fields": {
+        "front": "What does `list(range(5))` evaluate to?",
+        "back": "`[0, 1, 2, 3, 4]`",
+        "extra": "`range` starts at 0 and stops *before* the stop value, which is why `range(len(lst))` fits a list exactly."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "range-step",
+      "model": "basic",
+      "fields": {
+        "front": "What does `list(range(2, 10, 3))` evaluate to?",
+        "back": "`[2, 5, 8]`",
+        "extra": "Arguments are start, stop, step. The next value, 11, is past the stop, so it is excluded."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "int-cast",
+      "model": "basic",
+      "fields": {
+        "front": "How do you turn the string `'42'` into a number you can do math with?",
+        "back": "`int('42')`, or `float('42')` for a decimal",
+        "extra": "`int('4.2')` raises ValueError: go through `float` first if the text may contain a decimal point."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "input-str",
+      "model": "basic",
+      "fields": {
+        "front": "What type does `input()` always return, even if the user types 7?",
+        "back": "`str`",
+        "extra": "Convert it yourself: `n = int(input())`."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "true-div",
+      "model": "basic",
+      "fields": {
+        "front": "What does `7 / 2` evaluate to?",
+        "back": "`3.5`",
+        "extra": "`/` always returns a float; even `4 / 2` is `2.0`."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "floor-div",
+      "model": "basic",
+      "fields": {
+        "front": "What does `7 // 2` evaluate to?",
+        "back": "`3`",
+        "extra": "`//` is floor division: it rounds down, so `-7 // 2` is `-4`, not `-3`."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "modulo",
+      "model": "basic",
+      "fields": {
+        "front": "What does `7 % 3` evaluate to?",
+        "back": "`1`",
+        "extra": "The result takes the sign of the divisor: `-7 % 3` is `2`. Handy for wrap-around indexing."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "power",
+      "model": "basic",
+      "fields": {
+        "front": "Which operator is exponentiation in Python?",
+        "back": "`**`, as in `2 ** 10` = `1024`",
+        "extra": "`^` is bitwise XOR, a classic trap: `2 ^ 10` is `8`."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "type-func",
+      "model": "typed",
+      "fields": {
+        "front": "Which built-in tells you the class of any object?",
+        "answer": "type",
+        "extra": "`type(3.14)` is `<class 'float'>`. For checks, prefer `isinstance`."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "isinstance",
+      "model": "typed",
+      "fields": {
+        "front": "Which built-in checks whether an object is an instance of a class, accepting subclasses too?",
+        "answer": "isinstance",
+        "extra": "`isinstance(x, (int, float))` accepts a tuple of types. Prefer it over `type(x) == int`."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "bool-int",
+      "model": "basic",
+      "fields": {
+        "front": "What does `True + True` evaluate to?",
+        "back": "`2`",
+        "extra": "`bool` is a subclass of `int`: `True == 1` and `False == 0`, so `sum(flags)` counts the `True`s."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "falsy-values",
+      "model": "basic",
+      "fields": {
+        "front": "Which values are falsy in Python?",
+        "back": "`False`, `None`, zeros (`0`, `0.0`), and empty containers (`''`, `[]`, `()`, `{}`, `set()`)",
+        "extra": "Everything else is truthy, including `'False'`, `[0]`, and negative numbers."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "truthiness-idiom",
+      "model": "basic",
+      "fields": {
+        "front": "What is the idiomatic way to test that the list `items` is not empty?",
+        "back": "`if items:`",
+        "extra": "Empty containers are falsy, so `len(items) > 0` is redundant."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "none-check",
+      "model": "basic",
+      "fields": {
+        "front": "What is the correct way to test whether `x` is `None`?",
+        "back": "`x is None`",
+        "extra": "There is exactly one `None` object, so identity is the right test; `== None` can be fooled by a custom `__eq__`."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "is-vs-eq",
+      "model": "basic",
+      "fields": {
+        "front": "What is the difference between `is` and `==`?",
+        "back": "`is` asks whether two names point to the same object; `==` asks whether values are equal",
+        "extra": "Reserve `is` for `None`; two equal lists are `==` but not `is`."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "chained-compare",
+      "model": "basic",
+      "fields": {
+        "front": "What does `1 < 2 < 3` evaluate to?",
+        "back": "`True`",
+        "extra": "Comparisons chain: `a < b < c` means `a < b and b < c`, with `b` evaluated only once."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "round-half",
+      "model": "basic",
+      "fields": {
+        "front": "What does `round(2.5)` evaluate to?",
+        "back": "`2`",
+        "extra": "Python rounds halves to the nearest *even* number (banker's rounding), so `round(3.5)` is `4`."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "divmod",
+      "model": "basic",
+      "fields": {
+        "front": "What does `divmod(17, 5)` evaluate to?",
+        "back": "`(3, 2)`",
+        "extra": "Quotient and remainder together: `(17 // 5, 17 % 5)`. Great for converting seconds to minutes and seconds."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "ord-chr",
+      "model": "basic",
+      "fields": {
+        "front": "What do `ord('A')` and `chr(65)` evaluate to?",
+        "back": "`65` and `'A'`",
+        "extra": "`ord` gives a character's Unicode code point; `chr` is the inverse. Lowercase `'a'` is 32 higher, at 97."
+      },
+      "tags": ["python::basics"]
+    },
+    {
+      "key": "break-continue",
+      "model": "basic",
+      "fields": {
+        "front": "In a loop, what is the difference between `break` and `continue`?",
+        "back": "`break` exits the loop entirely; `continue` skips straight to the next iteration",
+        "extra": "In nested loops, both apply only to the innermost loop."
+      },
+      "tags": ["python::control-flow"]
+    },
+    {
+      "key": "for-else",
+      "model": "basic",
+      "fields": {
+        "front": "When does the `else` clause attached to a `for` loop run?",
+        "back": "Only when the loop finishes without hitting `break`",
+        "extra": "Search idiom: `break` when found; the `else` block handles the not-found case."
+      },
+      "tags": ["python::control-flow"]
+    },
+    {
+      "key": "ternary",
+      "model": "basic",
+      "fields": {
+        "front": "How do you write a one-line conditional expression choosing between 'even' and 'odd'?",
+        "back": "`'even' if n % 2 == 0 else 'odd'`",
+        "extra": "The condition sits in the middle, unlike the C-style `cond ? a : b`."
+      },
+      "tags": ["python::control-flow"]
+    },
+    {
+      "key": "walrus",
+      "model": "basic",
+      "fields": {
+        "front": "What does the walrus operator `:=` do (Python 3.8+)?",
+        "back": "Assigns a value and returns it, inside an expression",
+        "extra": "`if (m := re.search(pat, s)):` binds and tests in one step, avoiding a duplicate call."
+      },
+      "tags": ["python::control-flow"]
+    },
+    {
+      "key": "str-immutable",
+      "model": "basic",
+      "fields": {
+        "front": "What happens if you try `s = 'hello'` then `s[0] = 'H'`?",
+        "back": "`TypeError`: strings are immutable",
+        "extra": "Build a new string instead: `'H' + s[1:]`, or `s.capitalize()`."
+      },
+      "tags": ["python::strings"]
+    },
+    {
+      "key": "split",
+      "model": "basic",
+      "fields": {
+        "front": "What does `'a,b,c'.split(',')` evaluate to?",
+        "back": "`['a', 'b', 'c']`",
+        "extra": "The inverse of `','.join(...)`."
+      },
+      "tags": ["python::strings"]
+    },
+    {
+      "key": "split-noargs",
+      "model": "basic",
+      "fields": {
+        "front": "How does `s.split()` with no arguments differ from `s.split(' ')`?",
+        "back": "No arguments: splits on any run of whitespace and drops empty strings",
+        "extra": "`' a  b '.split()` is `['a', 'b']`, but `' a  b '.split(' ')` is `['', 'a', '', 'b', '']`."
+      },
+      "tags": ["python::strings"]
+    },
+    {
+      "key": "join",
+      "model": "typed",
+      "fields": {
+        "front": "Which string method glues a list of strings together with a separator?",
+        "answer": "join",
+        "extra": "Called on the separator: `', '.join(names)`. Every item must already be a string."
+      },
+      "tags": ["python::strings"]
+    },
+    {
+      "key": "strip",
+      "model": "typed",
+      "fields": {
+        "front": "Which string method removes whitespace from both ends of a string?",
+        "answer": "strip",
+        "extra": "`lstrip`/`rstrip` trim one side; `strip('.,!')` strips those characters instead of whitespace."
+      },
+      "tags": ["python::strings"]
+    },
+    {
+      "key": "f-string",
+      "model": "basic",
+      "fields": {
+        "front": "What is the modern syntax for putting the variable `name` inside a string?",
+        "back": "`f'Hello, {name}'`",
+        "extra": "The braces accept any expression: `f'{price * qty}'`."
+      },
+      "tags": ["python::strings"]
+    },
+    {
+      "key": "f-string-format",
+      "model": "basic",
+      "fields": {
+        "front": "In an f-string, how do you show `pi` with exactly 2 decimal places?",
+        "back": "`f'{pi:.2f}'`",
+        "extra": "After the colon: `:,` adds thousands separators, `:>10` right-aligns in 10 characters, `:.0%` shows a percentage."
+      },
+      "tags": ["python::strings"]
+    },
+    {
+      "key": "replace",
+      "model": "basic",
+      "fields": {
+        "front": "What does `'aaa'.replace('a', 'b')` evaluate to?",
+        "back": "`'bbb'`",
+        "extra": "Replaces every occurrence unless you cap it: `'aaa'.replace('a', 'b', 1)` is `'baa'`. Returns a new string."
+      },
+      "tags": ["python::strings"]
+    },
+    {
+      "key": "find-vs-index",
+      "model": "basic",
+      "fields": {
+        "front": "How do `s.find(sub)` and `s.index(sub)` differ when the substring is missing?",
+        "back": "`find` returns `-1`; `index` raises `ValueError`",
+        "extra": "For a plain yes/no test, use `sub in s`."
+      },
+      "tags": ["python::strings"]
+    },
+    {
+      "key": "startswith",
+      "model": "typed",
+      "fields": {
+        "front": "Which string method tests whether a string begins with a given prefix?",
+        "answer": "startswith",
+        "extra": "Accepts a tuple of options: `url.startswith(('http://', 'https://'))`. Its mirror is `endswith`."
+      },
+      "tags": ["python::strings"]
+    },
+    {
+      "key": "in-substring",
+      "model": "basic",
+      "fields": {
+        "front": "How do you check whether `'ell'` appears inside `'hello'`?",
+        "back": "`'ell' in 'hello'`",
+        "extra": "The `in` operator also tests list items, set members, and dict keys."
+      },
+      "tags": ["python::strings"]
+    },
+    {
+      "key": "str-repeat",
+      "model": "basic",
+      "fields": {
+        "front": "What does `'ab' * 3` evaluate to?",
+        "back": "`'ababab'`",
+        "extra": "Repetition works on any sequence: `[0] * 5` and `'-' * 40` are common."
+      },
+      "tags": ["python::strings"]
+    },
+    {
+      "key": "casefold-lower",
+      "model": "basic",
+      "fields": {
+        "front": "How do you compare two strings while ignoring case?",
+        "back": "`a.lower() == b.lower()`, or `casefold()` for full Unicode correctness",
+        "extra": "`casefold` handles cases `lower` misses, like German ß becoming ss."
+      },
+      "tags": ["python::strings"]
+    },
+    {
+      "key": "negative-index",
+      "model": "basic",
+      "fields": {
+        "front": "What does `lst[-1]` give you?",
+        "back": "The last item",
+        "extra": "Negative indexes count from the end: `lst[-2]` is second from last."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "slice-basics",
+      "model": "basic",
+      "fields": {
+        "front": "What does `[10, 20, 30, 40, 50][1:3]` evaluate to?",
+        "back": "`[20, 30]`",
+        "extra": "A slice includes the start index and excludes the stop, so `[1:3]` is exactly 2 items."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "slice-defaults",
+      "model": "basic",
+      "fields": {
+        "front": "What do `lst[:3]` and `lst[3:]` mean?",
+        "back": "The first three items; everything from index 3 to the end",
+        "extra": "Together they split a list cleanly: `lst[:i] + lst[i:]` equals `lst`."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "slice-step",
+      "model": "basic",
+      "fields": {
+        "front": "What does `'abcdef'[::2]` evaluate to?",
+        "back": "`'ace'`",
+        "extra": "The third slice slot is the step; `[1::2]` takes the odd positions instead."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "slice-reverse",
+      "model": "basic",
+      "fields": {
+        "front": "What does `lst[::-1]` evaluate to?",
+        "back": "A reversed *copy* of the list",
+        "extra": "Works on strings too: `'stressed'[::-1]` is `'desserts'`. `lst.reverse()` flips in place and returns `None`."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "slice-safe",
+      "model": "basic",
+      "fields": {
+        "front": "What does `'abc'[10:20]` evaluate to?",
+        "back": "`''`: out-of-range slices are clipped, never an error",
+        "extra": "Indexing is stricter: `'abc'[10]` raises IndexError."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "append-vs-extend",
+      "model": "basic",
+      "fields": {
+        "front": "Starting from `a = [1, 2]`, how do `a.append([3, 4])` and `a.extend([3, 4])` differ?",
+        "back": "`append` nests: `[1, 2, [3, 4]]`; `extend` flattens one level: `[1, 2, 3, 4]`",
+        "extra": "`a += [3, 4]` behaves like `extend`."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "pop",
+      "model": "basic",
+      "fields": {
+        "front": "What does `lst.pop()` do?",
+        "back": "Removes *and returns* the last item",
+        "extra": "`pop(0)` takes the first item but shifts everything after it; use `collections.deque` for queues."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "remove",
+      "model": "basic",
+      "fields": {
+        "front": "What does `lst.remove(x)` remove?",
+        "back": "Only the first occurrence of the value `x`",
+        "extra": "Raises ValueError if `x` is absent. `del lst[i]` removes by position instead."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "index-method",
+      "model": "basic",
+      "fields": {
+        "front": "What does `[10, 20, 30].index(20)` evaluate to?",
+        "back": "`1`",
+        "extra": "Raises ValueError when the value is missing, so guard with `if x in lst:` first."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "sorted-vs-sort",
+      "model": "basic",
+      "fields": {
+        "front": "What is the difference between `sorted(lst)` and `lst.sort()`?",
+        "back": "`sorted` returns a new list and accepts any iterable; `.sort()` sorts the list in place and returns `None`",
+        "extra": "`x = lst.sort()` silently making `x` equal `None` is a classic bug."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "sort-key",
+      "model": "basic",
+      "fields": {
+        "front": "How do you sort the list `words` by length, longest first?",
+        "back": "`words.sort(key=len, reverse=True)`",
+        "extra": "Any one-argument function can be the key: `key=str.lower` gives case-insensitive order."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "sort-stable",
+      "model": "basic",
+      "fields": {
+        "front": "Python's sort is *stable*. What does that mean?",
+        "back": "Items that compare equal keep their original relative order",
+        "extra": "So sorting by a secondary key first, then the primary key, yields multi-level ordering."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "min-max-key",
+      "model": "basic",
+      "fields": {
+        "front": "How do you find the longest string in the list `words`?",
+        "back": "`max(words, key=len)`",
+        "extra": "`min` and `max` accept the same `key` functions as `sort`."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "list-alias",
+      "model": "basic",
+      "fields": {
+        "front": "After `a = [1, 2]`, `b = a`, `b.append(3)`, what is `a`?",
+        "back": "`[1, 2, 3]`: assignment copies the reference, not the list",
+        "extra": "Make a real copy with `a.copy()`, `list(a)`, or `a[:]`."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "shallow-copy",
+      "model": "basic",
+      "fields": {
+        "front": "Why can `b = a.copy()` still let changes bleed between the two lists?",
+        "back": "It is a shallow copy: nested objects inside are still shared",
+        "extra": "`copy.deepcopy(a)` copies all the way down."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "list-mult-trap",
+      "model": "basic",
+      "fields": {
+        "front": "Why is `grid = [[0] * 3] * 2` a trap?",
+        "back": "The outer `* 2` repeats the *same* inner list, so `grid[0][0] = 1` changes both rows",
+        "extra": "Build independent rows with `[[0] * 3 for _ in range(2)]`."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "tuple-single",
+      "model": "basic",
+      "fields": {
+        "front": "How do you write a tuple with exactly one item?",
+        "back": "`(1,)`: the comma makes the tuple",
+        "extra": "`(1)` is just the number 1 in parentheses."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "unpack-swap",
+      "model": "basic",
+      "fields": {
+        "front": "How do you swap `a` and `b` without a temporary variable?",
+        "back": "`a, b = b, a`",
+        "extra": "The right side is packed into a tuple before any assignment happens."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "star-unpack",
+      "model": "basic",
+      "fields": {
+        "front": "After `first, *rest = [1, 2, 3, 4]`, what are `first` and `rest`?",
+        "back": "`first` is `1`; `rest` is `[2, 3, 4]`",
+        "extra": "The starred name always becomes a list; `a, *mid, z = ...` works too."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "iterate-and-modify",
+      "model": "basic",
+      "fields": {
+        "front": "Why shouldn't you remove items from a list while looping over it?",
+        "back": "Deleting shifts the remaining items, so the loop skips elements",
+        "extra": "Loop over a copy (`for x in lst[:]`) or build the survivors with a comprehension."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "mutable-immutable",
+      "model": "basic",
+      "fields": {
+        "front": "Which built-in types are immutable, and which are mutable?",
+        "back": "Immutable: `int`, `float`, `str`, `tuple`, `frozenset`. Mutable: `list`, `dict`, `set`",
+        "extra": "Only immutable (hashable) values can be dict keys or set members."
+      },
+      "tags": ["python::lists"]
+    },
+    {
+      "key": "dict-get",
+      "model": "basic",
+      "fields": {
+        "front": "How do you read key `k` from dict `d` without risking a KeyError?",
+        "back": "`d.get(k)`, or `d.get(k, default)`",
+        "extra": "`d[k]` raises KeyError on a missing key; `get` returns `None` or your fallback."
+      },
+      "tags": ["python::dicts-sets"]
+    },
+    {
+      "key": "dict-in",
+      "model": "basic",
+      "fields": {
+        "front": "What does `'a' in {'a': 1, 'b': 2}` test?",
+        "back": "Key membership (`True` here)",
+        "extra": "Values need `1 in d.values()`; pairs need `('a', 1) in d.items()`."
+      },
+      "tags": ["python::dicts-sets"]
+    },
+    {
+      "key": "dict-iterate",
+      "model": "basic",
+      "fields": {
+        "front": "How do you loop over a dict's keys and values together?",
+        "back": "`for k, v in d.items():`",
+        "extra": "Plain `for k in d:` yields keys only."
+      },
+      "tags": ["python::dicts-sets"]
+    },
+    {
+      "key": "dict-order",
+      "model": "basic",
+      "fields": {
+        "front": "In what order does a dict iterate its entries (Python 3.7+)?",
+        "back": "Insertion order, guaranteed by the language",
+        "extra": "Need sorted keys instead? `for k in sorted(d):`."
+      },
+      "tags": ["python::dicts-sets"]
+    },
+    {
+      "key": "dict-merge",
+      "model": "basic",
+      "fields": {
+        "front": "How do you merge dicts `a` and `b` into a new dict, with `b` winning ties?",
+        "back": "`a | b` (3.9+) or `{**a, **b}`",
+        "extra": "In place: `a.update(b)` or `a |= b`."
+      },
+      "tags": ["python::dicts-sets"]
+    },
+    {
+      "key": "setdefault",
+      "model": "typed",
+      "fields": {
+        "front": "Which dict method returns the value for a key, first inserting a default if the key is missing?",
+        "answer": "setdefault",
+        "extra": "`d.setdefault(k, []).append(x)` groups without pre-checking; `collections.defaultdict` scales better."
+      },
+      "tags": ["python::dicts-sets"]
+    },
+    {
+      "key": "dict-pop",
+      "model": "basic",
+      "fields": {
+        "front": "What does `d.pop(k, None)` do?",
+        "back": "Removes key `k` and returns its value, or `None` if it was missing",
+        "extra": "Without a default, `pop` raises KeyError on missing keys."
+      },
+      "tags": ["python::dicts-sets"]
+    },
+    {
+      "key": "dict-keys-hashable",
+      "model": "basic",
+      "fields": {
+        "front": "Why can't a list be a dict key?",
+        "back": "Keys must be hashable; lists are mutable and unhashable",
+        "extra": "Use a tuple: `d[(row, col)] = value` is a common grid pattern."
+      },
+      "tags": ["python::dicts-sets"]
+    },
+    {
+      "key": "empty-set",
+      "model": "basic",
+      "fields": {
+        "front": "How do you write an empty set?",
+        "back": "`set()`: the literal `{}` is an empty *dict*",
+        "extra": "Non-empty set literals are fine: `{1, 2, 3}`."
+      },
+      "tags": ["python::dicts-sets"]
+    },
+    {
+      "key": "set-dedupe",
+      "model": "basic",
+      "fields": {
+        "front": "What is the fastest way to drop duplicates from a list when order doesn't matter?",
+        "back": "`list(set(lst))`",
+        "extra": "To keep first-seen order: `list(dict.fromkeys(lst))`."
+      },
+      "tags": ["python::dicts-sets"]
+    },
+    {
+      "key": "set-ops",
+      "model": "basic",
+      "fields": {
+        "front": "For sets `a` and `b`, what are `a & b`, `a | b`, and `a - b`?",
+        "back": "Intersection, union, and difference",
+        "extra": "`a ^ b` is symmetric difference: items in exactly one of the two."
+      },
+      "tags": ["python::dicts-sets"]
+    },
+    {
+      "key": "set-membership",
+      "model": "basic",
+      "fields": {
+        "front": "Why is `x in big_set` much faster than `x in big_list`?",
+        "back": "Sets are hash tables: membership is O(1) on average, versus O(n) for a list",
+        "extra": "The same applies to dict key lookups."
+      },
+      "tags": ["python::dicts-sets"]
+    },
+    {
+      "key": "list-comp",
+      "model": "basic",
+      "fields": {
+        "front": "What does `[x * x for x in range(4)]` evaluate to?",
+        "back": "`[0, 1, 4, 9]`",
+        "extra": "A comprehension is a `for` loop and `append` collapsed into one expression."
+      },
+      "tags": ["python::comprehensions"]
+    },
+    {
+      "key": "list-comp-if",
+      "model": "basic",
+      "fields": {
+        "front": "In a comprehension, how do you keep only the even numbers of `nums`?",
+        "back": "`[x for x in nums if x % 2 == 0]`",
+        "extra": "A trailing `if` filters; `x if cond else y` *before* the `for` transforms every item instead."
+      },
+      "tags": ["python::comprehensions"]
+    },
+    {
+      "key": "dict-comp",
+      "model": "basic",
+      "fields": {
+        "front": "How do you build a dict mapping each word to its length?",
+        "back": "`{w: len(w) for w in words}`",
+        "extra": "Set comprehensions look the same without the colon: `{len(w) for w in words}`."
+      },
+      "tags": ["python::comprehensions"]
+    },
+    {
+      "key": "genexpr",
+      "model": "basic",
+      "fields": {
+        "front": "How does `(x * x for x in nums)` differ from `[x * x for x in nums]`?",
+        "back": "Parentheses build a lazy generator that yields one value at a time; brackets build the whole list in memory",
+        "extra": "Feed generators straight to consumers: `sum(x * x for x in nums)` needs no extra brackets."
+      },
+      "tags": ["python::comprehensions"]
+    },
+    {
+      "key": "enumerate",
+      "model": "typed",
+      "fields": {
+        "front": "Which built-in gives you `(index, item)` pairs while looping?",
+        "answer": "enumerate",
+        "extra": "`for i, x in enumerate(items, start=1):` shifts the count to start at 1."
+      },
+      "tags": ["python::comprehensions"]
+    },
+    {
+      "key": "zip",
+      "model": "typed",
+      "fields": {
+        "front": "Which built-in walks two lists in parallel, pairing items by position?",
+        "answer": "zip",
+        "extra": "`for name, score in zip(names, scores):`. Unzip with `zip(*pairs)`."
+      },
+      "tags": ["python::comprehensions"]
+    },
+    {
+      "key": "zip-shortest",
+      "model": "basic",
+      "fields": {
+        "front": "What does `list(zip([1, 2, 3], 'ab'))` evaluate to?",
+        "back": "`[(1, 'a'), (2, 'b')]`",
+        "extra": "`zip` stops at the shortest input; `zip(..., strict=True)` (3.10+) raises on a length mismatch instead."
+      },
+      "tags": ["python::comprehensions"]
+    },
+    {
+      "key": "any-all",
+      "model": "basic",
+      "fields": {
+        "front": "What do `any([])` and `all([])` return?",
+        "back": "`any([])` is `False`; `all([])` is `True`",
+        "extra": "`all` is vacuously true on empty input: no element failed. Both pair well with generators: `any(x < 0 for x in nums)`."
+      },
+      "tags": ["python::comprehensions"]
+    },
+    {
+      "key": "return-none",
+      "model": "basic",
+      "fields": {
+        "front": "What does a function with no `return` statement return?",
+        "back": "`None`",
+        "extra": "So does a bare `return`. `print(x)` also returns `None`, a frequent confusion."
+      },
+      "tags": ["python::functions"]
+    },
+    {
+      "key": "default-args",
+      "model": "basic",
+      "fields": {
+        "front": "Why is `def add(item, bucket=[])` a famous bug?",
+        "back": "The default list is created once, at definition time, and shared by every call",
+        "extra": "Idiom: default to `None`, then `if bucket is None: bucket = []` inside."
+      },
+      "tags": ["python::functions"]
+    },
+    {
+      "key": "args-kwargs",
+      "model": "basic",
+      "fields": {
+        "front": "Inside `def f(*args, **kwargs)`, what are `args` and `kwargs`?",
+        "back": "`args` is a tuple of extra positional arguments; `kwargs` is a dict of extra keyword arguments",
+        "extra": "The names are convention; the stars do the collecting."
+      },
+      "tags": ["python::functions"]
+    },
+    {
+      "key": "star-call",
+      "model": "basic",
+      "fields": {
+        "front": "Given `pair = (3, 4)`, what does calling `f(*pair)` do?",
+        "back": "Unpacks the tuple into separate arguments: `f(3, 4)`",
+        "extra": "`f(**opts)` unpacks a dict into keyword arguments."
+      },
+      "tags": ["python::functions"]
+    },
+    {
+      "key": "keyword-only",
+      "model": "basic",
+      "fields": {
+        "front": "What does a bare `*` in `def f(a, *, verbose=False)` enforce?",
+        "back": "Everything after it must be passed by keyword: `f(1, verbose=True)`",
+        "extra": "A bare `/` (3.8+) makes the parameters before it positional-only."
+      },
+      "tags": ["python::functions"]
+    },
+    {
+      "key": "lambda",
+      "model": "basic",
+      "fields": {
+        "front": "Write an anonymous function that doubles its input.",
+        "back": "`lambda x: x * 2`",
+        "extra": "One expression only, no statements; if it needs a name, use `def`."
+      },
+      "tags": ["python::functions"]
+    },
+    {
+      "key": "global-nonlocal",
+      "model": "basic",
+      "fields": {
+        "front": "When do you need `global x` inside a function?",
+        "back": "Only when you *assign* to a module-level variable; reading it needs nothing",
+        "extra": "`nonlocal x` is the equivalent for a variable in an enclosing function."
+      },
+      "tags": ["python::functions"]
+    },
+    {
+      "key": "docstring",
+      "model": "basic",
+      "fields": {
+        "front": "How do you document a function so `help()` can find it?",
+        "back": "A string literal as the very first statement of the body",
+        "extra": "Also available as `f.__doc__`. Triple quotes allow multiple lines."
+      },
+      "tags": ["python::functions"]
+    },
+    {
+      "key": "type-hints",
+      "model": "basic",
+      "fields": {
+        "front": "How do you annotate a function that takes a `str` and returns an `int`?",
+        "back": "`def parse(s: str) -> int:`",
+        "extra": "Hints are not enforced at runtime; checkers like mypy and pyright use them."
+      },
+      "tags": ["python::functions"]
+    },
+    {
+      "key": "try-except",
+      "model": "basic",
+      "fields": {
+        "front": "What is the syntax for attempting `int(s)` and recovering from bad input?",
+        "back": "`try:` the conversion, then `except ValueError:` the fallback",
+        "extra": "Catch the *specific* exception; a bare `except:` also swallows typos and Ctrl-C."
+      },
+      "tags": ["python::errors"]
+    },
+    {
+      "key": "except-multiple",
+      "model": "basic",
+      "fields": {
+        "front": "How do you handle TypeError and ValueError with the same block?",
+        "back": "`except (TypeError, ValueError):`",
+        "extra": "The parentheses are required; separate `except` clauses also work when the handling differs."
+      },
+      "tags": ["python::errors"]
+    },
+    {
+      "key": "except-as",
+      "model": "basic",
+      "fields": {
+        "front": "How do you get at the exception object when you catch it?",
+        "back": "`except ValueError as e:`",
+        "extra": "`str(e)` is the message. The name `e` only exists inside the block."
+      },
+      "tags": ["python::errors"]
+    },
+    {
+      "key": "try-else",
+      "model": "basic",
+      "fields": {
+        "front": "In `try/except/else`, when does the `else` block run?",
+        "back": "Only if the `try` block raised nothing",
+        "extra": "Put the success-path code there so its own errors are not caught by accident."
+      },
+      "tags": ["python::errors"]
+    },
+    {
+      "key": "finally",
+      "model": "basic",
+      "fields": {
+        "front": "When does a `finally` block execute?",
+        "back": "Always: after success, after an exception, even after a `return`",
+        "extra": "That is what makes it right for cleanup, though `with` is usually cleaner."
+      },
+      "tags": ["python::errors"]
+    },
+    {
+      "key": "raise",
+      "model": "basic",
+      "fields": {
+        "front": "How do you raise your own error with a message?",
+        "back": "`raise ValueError('expected a positive number')`",
+        "extra": "Inside an `except` block, a bare `raise` re-raises the same exception unchanged."
+      },
+      "tags": ["python::errors"]
+    },
+    {
+      "key": "custom-exception",
+      "model": "basic",
+      "fields": {
+        "front": "How do you define your own exception type?",
+        "back": "`class ParseError(Exception): pass`",
+        "extra": "Inherit from `Exception`, not `BaseException`, so ordinary handlers can catch it."
+      },
+      "tags": ["python::errors"]
+    },
+    {
+      "key": "with-open",
+      "model": "basic",
+      "fields": {
+        "front": "Why is `with open(path) as f:` better than `f = open(path)`?",
+        "back": "The file closes automatically when the block exits, even if an exception occurs",
+        "extra": "`with` works with any context manager: locks, database connections, temporary directories."
+      },
+      "tags": ["python::errors"]
+    },
+    {
+      "key": "eafp",
+      "model": "basic",
+      "fields": {
+        "front": "What does the Python idiom EAFP mean?",
+        "back": "Easier to Ask Forgiveness than Permission: just try the operation and catch the exception",
+        "extra": "The opposite style, look-before-you-leap `if` checks, can race; EAFP is considered more Pythonic."
+      },
+      "tags": ["python::errors"]
+    },
+    {
+      "key": "init",
+      "model": "basic",
+      "fields": {
+        "front": "Which special method sets up a new object's attributes when the class is called?",
+        "back": "`__init__(self, ...)`",
+        "extra": "`p = Point(2, 3)` allocates the object, then runs `__init__` with those arguments."
+      },
+      "tags": ["python::oop"]
+    },
+    {
+      "key": "self",
+      "model": "basic",
+      "fields": {
+        "front": "What is `self` in a method definition?",
+        "back": "The instance the method was called on; Python passes it automatically",
+        "extra": "`p.move(1)` is really `Point.move(p, 1)`. The name is convention, not a keyword."
+      },
+      "tags": ["python::oop"]
+    },
+    {
+      "key": "repr-str",
+      "model": "basic",
+      "fields": {
+        "front": "What is the difference between `__repr__` and `__str__`?",
+        "back": "`__repr__` is the unambiguous developer view (REPL, containers); `__str__` is the friendly one `print` uses",
+        "extra": "Define `__repr__` first: `str` falls back to it if `__str__` is missing."
+      },
+      "tags": ["python::oop"]
+    },
+    {
+      "key": "dunder-len-eq",
+      "model": "basic",
+      "fields": {
+        "front": "What must a class define so `len(obj)` and `obj == other` work?",
+        "back": "`__len__` and `__eq__`",
+        "extra": "Most syntax maps to dunders: `+` calls `__add__`, `in` calls `__contains__`, `[]` calls `__getitem__`."
+      },
+      "tags": ["python::oop"]
+    },
+    {
+      "key": "property",
+      "model": "basic",
+      "fields": {
+        "front": "Which decorator lets `circle.area` compute a value without parentheses?",
+        "back": "`@property`",
+        "extra": "Pair with `@area.setter` to validate assignment; without one, the attribute is read-only."
+      },
+      "tags": ["python::oop"]
+    },
+    {
+      "key": "classmethod-staticmethod",
+      "model": "basic",
+      "fields": {
+        "front": "How do `@classmethod` and `@staticmethod` differ?",
+        "back": "A classmethod receives the class as `cls`; a staticmethod receives nothing extra",
+        "extra": "Classmethods shine as alternate constructors: `Date.from_iso('2024-01-31')`."
+      },
+      "tags": ["python::oop"]
+    },
+    {
+      "key": "super",
+      "model": "basic",
+      "fields": {
+        "front": "How does a subclass run its parent's `__init__` and then add its own setup?",
+        "back": "Call `super().__init__(...)` inside its own `__init__`",
+        "extra": "Skipping it means the parent's attributes are never created."
+      },
+      "tags": ["python::oop"]
+    },
+    {
+      "key": "inheritance-syntax",
+      "model": "basic",
+      "fields": {
+        "front": "How do you declare that `Dog` inherits from `Animal`?",
+        "back": "`class Dog(Animal):`",
+        "extra": "Test with `issubclass(Dog, Animal)` or `isinstance(rex, Animal)`."
+      },
+      "tags": ["python::oop"]
+    },
+    {
+      "key": "main-guard",
+      "model": "basic",
+      "fields": {
+        "front": "What does `if __name__ == '__main__':` accomplish?",
+        "back": "Its block runs only when the file is executed directly, not when imported",
+        "extra": "Keeps imports side-effect free while still letting the module run as a script."
+      },
+      "tags": ["python::oop"]
+    },
+    {
+      "key": "counter",
+      "model": "basic",
+      "fields": {
+        "front": "What does `Counter('banana').most_common(1)` evaluate to?",
+        "back": "`[('a', 3)]`",
+        "extra": "`collections.Counter` tallies any iterable and is a dict subclass: `c['a']` is `3`."
+      },
+      "tags": ["python::stdlib"]
+    },
+    {
+      "key": "defaultdict",
+      "model": "basic",
+      "fields": {
+        "front": "Which class lets you write `groups[key].append(x)` with no key check?",
+        "back": "`collections.defaultdict(list)`",
+        "extra": "The factory runs on first access to a missing key; `defaultdict(int)` starts counts at 0."
+      },
+      "tags": ["python::stdlib"]
+    },
+    {
+      "key": "itertools",
+      "model": "typed",
+      "fields": {
+        "front": "Which standard-library module provides `combinations`, `permutations`, and `product`?",
+        "answer": "itertools",
+        "extra": "Also `chain` to concatenate iterables and `count` for an infinite counter."
+      },
+      "tags": ["python::stdlib"]
+    },
+    {
+      "key": "json",
+      "model": "basic",
+      "fields": {
+        "front": "Which two functions convert between Python objects and JSON text?",
+        "back": "`json.dumps(obj)` to a string; `json.loads(text)` back to Python",
+        "extra": "`dump` and `load` (no s) work directly on file objects."
+      },
+      "tags": ["python::stdlib"]
+    },
+    {
+      "key": "pathlib",
+      "model": "basic",
+      "fields": {
+        "front": "What is the modern one-liner to read a whole text file?",
+        "back": "`Path(p).read_text()` from `pathlib`",
+        "extra": "`Path` joins with `/`: `Path.home() / 'notes.txt'`, and `write_text` is the mirror."
+      },
+      "tags": ["python::stdlib"]
+    },
+    {
+      "key": "random-choice",
+      "model": "basic",
+      "fields": {
+        "front": "How do you pick one random element from a list?",
+        "back": "`random.choice(lst)`",
+        "extra": "`random.sample(lst, k)` picks k distinct items; `random.shuffle(lst)` reorders in place."
+      },
+      "tags": ["python::stdlib"]
+    },
+    {
+      "key": "math-isclose",
+      "model": "basic",
+      "fields": {
+        "front": "What does `0.1 + 0.2 == 0.3` evaluate to, and what should you use instead?",
+        "back": "`False`; compare with `math.isclose(0.1 + 0.2, 0.3)`",
+        "extra": "Binary floats cannot store 0.1 exactly; never test floats with `==`."
+      },
+      "tags": ["python::stdlib"]
+    }
+  ]
+}

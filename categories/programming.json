@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 2,
+  "key": "programming",
+  "name": "Programming",
+  "decks": [
+    {
+      "key": "python-essentials",
+      "name": "Python Essentials",
+      "description": "The Python you use every day: built-ins, strings, lists, dicts, comprehensions, functions, exceptions, classes, and the standard library, plus the classic gotchas that trip people up in interviews and code review.",
+      "cardCount": 114,
+      "topics": [
+        "python",
+        "programming",
+        "coding"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Python-logo-notext.svg?width=640"
+    }
+  ]
+}

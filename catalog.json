@@ -86,6 +86,13 @@
       "file": "categories/codes-signals.json"
     },
     {
+      "key": "programming",
+      "name": "Programming",
+      "deckCount": 1,
+      "rev": "aef90f634e96",
+      "file": "categories/programming.json"
+    },
+    {
       "key": "professional-exams",
       "name": "Professional Exams",
       "deckCount": 1,
@@ -383,6 +390,11 @@
       "key": "pterodactyl-defense",
       "version": 2,
       "file": "decks/pterodactyl-defense.json"
+    },
+    {
+      "key": "python-essentials",
+      "version": 1,
+      "file": "decks/python-essentials.json"
     },
     {
       "key": "queens-gambit-accepted",
