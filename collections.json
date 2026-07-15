@@ -27,7 +27,7 @@
     "key": "learn-a-language",
     "title": "Learn a language",
     "description": "The essential first thousand cards, with speech on every card.",
-    "deckKeys": ["essential-spanish", "essential-chinese"]
+    "deckKeys": ["essential-spanish", "essential-chinese", "essential-farsi"]
   },
   {
     "key": "american-civics",

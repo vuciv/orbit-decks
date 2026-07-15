@@ -18,6 +18,20 @@
       "coverImage": "https://flagcdn.com/w640/cn.png"
     },
     {
+      "key": "essential-farsi",
+      "name": "Essential Farsi",
+      "description": "The 1,000 most common Farsi words in frequency order, so every session is spent on words you will actually meet. Iranian Persian: script plus pronunciation on the front, meaning on the reveal, and the notes carry what textbooks bury: present stems for every verb, the spoken-Tehrani forms (mikhaham becomes mikham), and a real example phrase. A short primer on the sounds, the script, and the grammar glue (ezafe, ra, mi-) comes first so the words have somewhere to live. Keep new cards to 10-20 a day and say every answer out loud.",
+      "cardCount": 1017,
+      "topics": [
+        "farsi",
+        "persian",
+        "language",
+        "vocabulary",
+        "beginner"
+      ],
+      "coverImage": "https://flagcdn.com/w640/ir.png"
+    },
+    {
       "key": "essential-spanish",
       "name": "Essential Spanish",
       "description": "Your first weeks of Spanish, front-loaded for payoff: survival phrases you can use on day one, then the highest-frequency vocabulary (numbers, time words, question words, the 25 most useful verbs, family, food, places) trained in both directions, plus the ser, estar, and tener conjugations. Latin American Spanish by default.",

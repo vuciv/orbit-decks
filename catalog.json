@@ -4,8 +4,8 @@
     {
       "key": "language",
       "name": "Language",
-      "deckCount": 2,
-      "rev": "ba7e6fb8b301",
+      "deckCount": 3,
+      "rev": "10c7577bdf5b",
       "file": "categories/language.json"
     },
     {
@@ -140,7 +140,8 @@
       "description": "The essential first thousand cards, with speech on every card.",
       "deckKeys": [
         "essential-spanish",
-        "essential-chinese"
+        "essential-chinese",
+        "essential-farsi"
       ]
     },
     {
@@ -237,6 +238,11 @@
       "key": "essential-chinese",
       "version": 2,
       "file": "decks/essential-chinese.json"
+    },
+    {
+      "key": "essential-farsi",
+      "version": 1,
+      "file": "decks/essential-farsi.json"
     },
     {
       "key": "essential-spanish",
