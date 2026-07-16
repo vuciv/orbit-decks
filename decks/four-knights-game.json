@@ -1,8 +1,8 @@
 {
   "key": "four-knights-game",
-  "version": 3,
+  "version": 4,
   "name": "The Four Knights Game as White",
-  "description": "A White repertoire for the Four Knights Game, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 17 positions.",
+  "description": "A White repertoire for the Four Knights Game, drilled one position at a time: every card is a position with exactly one book move to find. Built from 5,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 47 positions.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -68,7 +68,7 @@
         "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the Four Knights Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. **d4** (Scotch Variation, C47) [Black plays Nf6 here 47% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. **d4** (Scotch Variation, C47) [Black plays Nf6 here 46% of the time]",
         "lastMove": "g8f6"
       },
       "tags": [
@@ -84,7 +84,7 @@
         "answerUci": "f3d4",
         "orientation": "white",
         "prompt": "You are White in the Four Knights Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. **Nxd4** [Black plays exd4 here 90% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. **Nxd4** [Black plays exd4 here 84% of the time]",
         "lastMove": "e5d4"
       },
       "tags": [
@@ -96,11 +96,11 @@
       "model": "chess",
       "fields": {
         "fen": "r1bqk2r/pppp1ppp/2n2n2/4p3/1b1PP3/2N2N2/PPP2PPP/R1BQKB1R w KQkq - 1 5",
-        "answer": "Nxe5",
-        "answerUci": "f3e5",
+        "answer": "d5",
+        "answerUci": "d4d5",
         "orientation": "white",
         "prompt": "You are White in the Four Knights Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 Bb4 5. **Nxe5** (Krause Gambit, C47) [Black plays Bb4 here 6% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 Bb4 5. **d5** [Black plays Bb4 here 8% of the time]",
         "lastMove": "f8b4"
       },
       "tags": [
@@ -116,7 +116,7 @@
         "answerUci": "d4c6",
         "orientation": "white",
         "prompt": "You are White in the Four Knights Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. **Nxc6** [Black plays Bb4 here 48% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. **Nxc6** [Black plays Bb4 here 46% of the time]",
         "lastMove": "f8b4"
       },
       "tags": [
@@ -132,7 +132,7 @@
         "answerUci": "d1d4",
         "orientation": "white",
         "prompt": "You are White in the Four Knights Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Nxd4 6. **Qxd4** [Black plays Nxd4 here 26% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Nxd4 6. **Qxd4** [Black plays Nxd4 here 25% of the time]",
         "lastMove": "c6d4"
       },
       "tags": [
@@ -148,8 +148,56 @@
         "answerUci": "c1e3",
         "orientation": "white",
         "prompt": "You are White in the Four Knights Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bc5 6. **Be3** [Black plays Bc5 here 20% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bc5 6. **Be3** [Black plays Bc5 here 19% of the time]",
         "lastMove": "f8c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/2np1n2/8/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+        "answer": "Nxc6",
+        "answerUci": "d4c6",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 d6 6. **Nxc6** [Black plays d6 here 6% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bb4-ne7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppppnppp/5n2/3Pp3/1b2P3/2N2N2/PPP2PPP/R1BQKB1R w KQkq - 1 6",
+        "answer": "Bd3",
+        "answerUci": "f1d3",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 Bb4 5. d5 Ne7 6. **Bd3** [Black plays Ne7 here 54% of the time]",
+        "lastMove": "c6e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bb4-bxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/3Pp3/4P3/2b2N2/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+        "answer": "bxc3",
+        "answerUci": "b2c3",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 Bb4 5. d5 Bxc3+ 6. **bxc3** [Black plays Bxc3+ here 22% of the time]",
+        "lastMove": "b4c3"
       },
       "tags": [
         "chess::line"
@@ -164,7 +212,39 @@
         "answerUci": "f1d3",
         "orientation": "white",
         "prompt": "You are White in the Four Knights Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 bxc6 7. **Bd3** [Black plays bxc6 here 97% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 bxc6 7. **Bd3** [Black plays bxc6 here 89% of the time]",
+        "lastMove": "b7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-nxd4-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/3p1n2/8/3QP3/2N5/PPP2PPP/R1B1KB1R w KQkq - 0 7",
+        "answer": "Bg5",
+        "answerUci": "c1g5",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 d6 7. **Bg5** [Black plays d6 here 52% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-d6-bxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p1p2ppp/2pp1n2/8/4P3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 7",
+        "answer": "Bd3",
+        "answerUci": "f1d3",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 d6 6. Nxc6 bxc6 7. **Bd3** [Black plays bxc6 here 100% of the time]",
         "lastMove": "b7c6"
       },
       "tags": [
@@ -180,7 +260,7 @@
         "answerUci": "e3d4",
         "orientation": "white",
         "prompt": "You are White in the Four Knights Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bc5 6. Be3 Nxd4 7. **Bxd4** [Black plays Nxd4 here 100% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bc5 6. Be3 Nxd4 7. **Bxd4** [Black plays Nxd4 here 33% of the time]",
         "lastMove": "c6d4"
       },
       "tags": [
@@ -188,16 +268,128 @@
       ]
     },
     {
-      "key": "l-e5-nc6-nf6-exd4-nxd4-d6",
+      "key": "l-e5-nc6-nf6-exd4-bc5-bb6",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkb1r/ppp2ppp/3p1n2/8/3QP3/2N5/PPP2PPP/R1B1KB1R w KQkq - 0 7",
+        "fen": "r1bqk2r/pppp1ppp/1bn2n2/8/3NP3/2N1B3/PPP2PPP/R2QKB1R w KQkq - 3 7",
+        "answer": "Nxc6",
+        "answerUci": "d4c6",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bc5 6. Be3 Bb6 7. **Nxc6** [Black plays Bb6 here 32% of the time]",
+        "lastMove": "c5b6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-nxd4-b6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p1pp1ppp/1p3n2/8/3QP3/2N5/PPP2PPP/R1B1KB1R w KQkq - 0 7",
         "answer": "Bg5",
         "answerUci": "c1g5",
         "orientation": "white",
         "prompt": "You are White in the Four Knights Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 d6 7. **Bg5** [Black plays d6 here 62% of the time]",
-        "lastMove": "d7d6"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 b6 7. **Bg5** [Black plays b6 here 16% of the time]",
+        "lastMove": "b7b6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-nxd4-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp1p1ppp/5n2/2p5/3QP3/2N5/PPP2PPP/R1B1KB1R w KQkq - 0 7",
+        "answer": "Qd1",
+        "answerUci": "d4d1",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 c5 7. **Qd1** [Black plays c5 here 16% of the time]",
+        "lastMove": "c7c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-bb4-bxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/2N2n2/8/4P3/2b5/PPP2PPP/R1BQKB1R w KQkq - 0 7",
+        "answer": "bxc3",
+        "answerUci": "b2c3",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 Bxc3+ 7. **bxc3** [Black plays Bxc3+ here 8% of the time]",
+        "lastMove": "b4c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-nxd4-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppppbppp/5n2/8/3QP3/2N5/PPP2PPP/R1B1KB1R w KQkq - 1 7",
+        "answer": "e5",
+        "answerUci": "e4e5",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 Be7 7. **e5** [Black plays Be7 here 13% of the time]",
+        "lastMove": "f8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-bc5-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppp1ppp/2n2n2/2b5/3NP3/2N1B3/PPP2PPP/R2QKB1R w KQ - 3 7",
+        "answer": "Nxc6",
+        "answerUci": "d4c6",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bc5 6. Be3 O-O 7. **Nxc6** [Black plays O-O here 13% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-bc5-bxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/8/3bP3/2N1B3/PPP2PPP/R2QKB1R w KQkq - 0 7",
+        "answer": "Bxd4",
+        "answerUci": "e3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bc5 6. Be3 Bxd4 7. **Bxd4** [Black plays Bxd4 here 13% of the time]",
+        "lastMove": "c5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bb4-bxc3-ne7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppppnppp/5n2/3Pp3/4P3/2P2N2/P1P2PPP/R1BQKB1R w KQkq - 1 7",
+        "answer": "Bd3",
+        "answerUci": "f1d3",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 Bb4 5. d5 Bxc3+ 6. bxc3 Ne7 7. **Bd3** [Black plays Ne7 here 100% of the time]",
+        "lastMove": "c6e7"
       },
       "tags": [
         "chess::line"
@@ -212,7 +404,7 @@
         "answerUci": "e4d5",
         "orientation": "white",
         "prompt": "You are White in the Four Knights Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 bxc6 7. Bd3 d5 8. **exd5** [Black plays d5 here 57% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 bxc6 7. Bd3 d5 8. **exd5** [Black plays d5 here 52% of the time]",
         "lastMove": "d7d5"
       },
       "tags": [
@@ -228,7 +420,7 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Four Knights Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 bxc6 7. Bd3 O-O 8. **O-O** [Black plays O-O here 43% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 bxc6 7. Bd3 O-O 8. **O-O** [Black plays O-O here 39% of the time]",
         "lastMove": "e8g8"
       },
       "tags": [
@@ -252,6 +444,118 @@
       ]
     },
     {
+      "key": "l-e5-nc6-nf6-exd4-d6-bxc6-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/p1p1bppp/2pp1n2/8/4P3/2NB4/PPP2PPP/R1BQK2R w KQkq - 2 8",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 d6 6. Nxc6 bxc6 7. Bd3 Be7 8. **O-O** [Black plays Be7 here 100% of the time]",
+        "lastMove": "f8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-bc5-nxd4-bxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/5n2/8/3bP3/2N5/PPP2PPP/R2QKB1R w KQkq - 0 8",
+        "answer": "Qxd4",
+        "answerUci": "d1d4",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bc5 6. Be3 Nxd4 7. Bxd4 Bxd4 8. **Qxd4** [Black plays Bxd4 here 100% of the time]",
+        "lastMove": "c5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-bb4-bxc3-bxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/p1pp1ppp/2p2n2/8/4P3/2P5/P1P2PPP/R1BQKB1R w KQkq - 0 8",
+        "answer": "Bd3",
+        "answerUci": "f1d3",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 Bxc3+ 7. bxc3 bxc6 8. **Bd3** [Black plays bxc6 here 84% of the time]",
+        "lastMove": "b7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-bc5-oo-bxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/p1pp1ppp/2p2n2/2b5/4P3/2N1B3/PPP2PPP/R2QKB1R w KQ - 0 8",
+        "answer": "Bxc5",
+        "answerUci": "e3c5",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bc5 6. Be3 O-O 7. Nxc6 bxc6 8. **Bxc5** [Black plays bxc6 here 100% of the time]",
+        "lastMove": "b7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-bc5-bxd4-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppp1ppp/2n2n2/8/3BP3/2N5/PPP2PPP/R2QKB1R w KQ - 1 8",
+        "answer": "Bc4",
+        "answerUci": "f1c4",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bc5 6. Be3 Bxd4 7. Bxd4 O-O 8. **Bc4** [Black plays O-O here 41% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-bc5-bxd4-nxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/5n2/8/3nP3/2N5/PPP2PPP/R2QKB1R w KQkq - 0 8",
+        "answer": "Qxd4",
+        "answerUci": "d1d4",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bc5 6. Be3 Bxd4 7. Bxd4 Nxd4 8. **Qxd4** [Black plays Nxd4 here 37% of the time]",
+        "lastMove": "c6d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-bb4-bxc3-dxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2ppp/2p2n2/8/4P3/2P5/P1P2PPP/R1BQKB1R w KQkq - 0 8",
+        "answer": "Qxd8",
+        "answerUci": "d1d8",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 Bxc3+ 7. bxc3 dxc6 8. **Qxd8+** [Black plays dxc6 here 16% of the time]",
+        "lastMove": "d7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e5-nc6-nf6-exd4-bb4-bxc6-d5-cxd5",
       "model": "chess",
       "fields": {
@@ -260,8 +564,136 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Four Knights Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 bxc6 7. Bd3 d5 8. exd5 cxd5 9. **O-O** [Black plays cxd5 here 100% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 bxc6 7. Bd3 d5 8. exd5 cxd5 9. **O-O** [Black plays cxd5 here 86% of the time]",
         "lastMove": "c6d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-nxd4-d6-be7-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp1bppp/3p1n2/6B1/3QP3/2N5/PPP2PPP/2KR1B1R w - - 4 9",
+        "answer": "e5",
+        "answerUci": "e4e5",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 d6 7. Bg5 Be7 8. O-O-O O-O 9. **e5** [Black plays O-O here 77% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-bb4-bxc6-oo-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/p1p2ppp/2p2n2/3p4/1b2P3/2NB4/PPP2PPP/R1BQ1RK1 w - - 0 9",
+        "answer": "exd5",
+        "answerUci": "e4d5",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 bxc6 7. Bd3 O-O 8. O-O d5 9. **exd5** (Main Line, C47) [Black plays d5 here 53% of the time]",
+        "lastMove": "d7d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-bb4-bxc6-oo-re8",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqr1k1/p1pp1ppp/2p2n2/8/1b2P3/2NB4/PPP2PPP/R1BQ1RK1 w - - 4 9",
+        "answer": "Bg5",
+        "answerUci": "c1g5",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 bxc6 7. Bd3 O-O 8. O-O Re8 9. **Bg5** [Black plays Re8 here 34% of the time]",
+        "lastMove": "f8e8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-bc5-nxd4-bxd4-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppp1ppp/5n2/8/3QP3/2N5/PPP2PPP/R3KB1R w KQ - 1 9",
+        "answer": "O-O-O",
+        "answerUci": "e1c1",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bc5 6. Be3 Nxd4 7. Bxd4 Bxd4 8. Qxd4 O-O 9. **O-O-O** [Black plays O-O here 69% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-bb4-bxc6-d5-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/p1p2ppp/2p2n2/3P4/1b6/2NB4/PPP2PPP/R1BQK2R w KQ - 1 9",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 bxc6 7. Bd3 d5 8. exd5 O-O 9. **O-O** (Main Line, C47) [Black plays O-O here 14% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-bb4-bxc3-bxc6-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/p1pp1ppp/2p2n2/8/4P3/2PB4/P1P2PPP/R1BQK2R w KQ - 2 9",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 Bxc3+ 7. bxc3 bxc6 8. Bd3 O-O 9. **O-O** [Black plays O-O here 100% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-bc5-nxd4-bxd4-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2ppp/3p1n2/8/3QP3/2N5/PPP2PPP/R3KB1R w KQkq - 0 9",
+        "answer": "O-O-O",
+        "answerUci": "e1c1",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bc5 6. Be3 Nxd4 7. Bxd4 Bxd4 8. Qxd4 d6 9. **O-O-O** [Black plays d6 here 31% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-nxd4-d6-be7-h6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp1bpp1/3p1n1p/6B1/3QP3/2N5/PPP2PPP/2KR1B1R w kq - 0 9",
+        "answer": "Bh4",
+        "answerUci": "g5h4",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 d6 7. Bg5 Be7 8. O-O-O h6 9. **Bh4** [Black plays h6 here 14% of the time]",
+        "lastMove": "h7h6"
       },
       "tags": [
         "chess::line"
@@ -278,6 +710,54 @@
         "prompt": "You are White in the Four Knights Game. What is the book move?",
         "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 bxc6 7. Bd3 d5 8. exd5 cxd5 9. O-O O-O 10. **Bg5** [Black plays O-O here 100% of the time]",
         "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-nxd4-d6-be7-oo-dxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp1bppp/5n2/4p1B1/3Q4/2N5/PPP2PPP/2KR1B1R w - - 0 10",
+        "answer": "Qxe5",
+        "answerUci": "d4e5",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 d6 7. Bg5 Be7 8. O-O-O O-O 9. e5 dxe5 10. **Qxe5** [Black plays dxe5 here 100% of the time]",
+        "lastMove": "d6e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-bb4-bxc6-d5-cxd5-oo-c6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/p4ppp/2p2n2/3p2B1/1b6/2NB4/PPP2PPP/R2Q1RK1 w - - 0 11",
+        "answer": "Qf3",
+        "answerUci": "d1f3",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Bb4 6. Nxc6 bxc6 7. Bd3 d5 8. exd5 cxd5 9. O-O O-O 10. Bg5 c6 11. **Qf3** [Black plays c6 here 100% of the time]",
+        "lastMove": "c7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-nxd4-d6-be7-oo-dxe5-bd6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp2ppp/3b1n2/4Q1B1/8/2N5/PPP2PPP/2KR1B1R w - - 1 11",
+        "answer": "Bxf6",
+        "answerUci": "g5f6",
+        "orientation": "white",
+        "prompt": "You are White in the Four Knights Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Nc3 Nf6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 d6 7. Bg5 Be7 8. O-O-O O-O 9. e5 dxe5 10. Qxe5 Bd6 11. **Bxf6** [Black plays Bd6 here 67% of the time]",
+        "lastMove": "e7d6"
       },
       "tags": [
         "chess::line"

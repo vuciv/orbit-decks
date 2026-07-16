@@ -1,8 +1,8 @@
 {
   "key": "kings-indian-defense",
-  "version": 3,
+  "version": 4,
   "name": "The King's Indian Defense as Black",
-  "description": "A Black repertoire for the King's Indian Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 37 positions.",
+  "description": "A Black repertoire for the King's Indian Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 5,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 85 positions.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -53,7 +53,7 @@
         "answerUci": "f8g7",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 **Bg7** [White plays Nc3 here 81% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 **Bg7** [White plays Nc3 here 80% of the time]",
         "lastMove": "b1c3"
       },
       "tags": [
@@ -69,7 +69,7 @@
         "answerUci": "d7d6",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 **d6** (Normal Variation, E70) [White plays e4 here 67% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 **d6** (Normal Variation, E70) [White plays e4 here 65% of the time]",
         "lastMove": "e2e4"
       },
       "tags": [
@@ -85,7 +85,7 @@
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 **O-O** [White plays Nf3 here 17% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 **O-O** [White plays Nf3 here 18% of the time]",
         "lastMove": "g1f3"
       },
       "tags": [
@@ -109,6 +109,22 @@
       ]
     },
     {
+      "key": "l-d4-c4-nc3-bf4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppppppbp/5np1/8/2PP1B2/2N5/PP2PPPP/R2QKBNR b KQkq - 3 4",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Bf4 **d6** [White plays Bf4 here 4% of the time]",
+        "lastMove": "c1f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-d4-c4-nc3-e4-nf3",
       "model": "chess",
       "fields": {
@@ -117,7 +133,7 @@
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 **O-O** [White plays Nf3 here 29% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 **O-O** [White plays Nf3 here 27% of the time]",
         "lastMove": "g1f3"
       },
       "tags": [
@@ -149,7 +165,7 @@
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 **O-O** (Normal Defense, E81) [White plays f3 here 17% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 **O-O** (Normal Defense, E81) [White plays f3 here 16% of the time]",
         "lastMove": "f2f3"
       },
       "tags": [
@@ -165,7 +181,7 @@
         "answerUci": "d7d6",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O 5. e4 **d6** [White plays e4 here 52% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O 5. e4 **d6** [White plays e4 here 50% of the time]",
         "lastMove": "e2e4"
       },
       "tags": [
@@ -181,24 +197,8 @@
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Be2 **O-O** [White plays Be2 here 10% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Be2 **O-O** [White plays Be2 here 11% of the time]",
         "lastMove": "f1e2"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nc3-e4-h3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N4P/PP3PP1/R1BQKBNR b KQkq - 0 5",
-        "answer": "O-O",
-        "answerUci": "e8g8",
-        "orientation": "black",
-        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. h3 **O-O** [White plays h3 here 10% of the time]",
-        "lastMove": "h2h3"
       },
       "tags": [
         "chess::line"
@@ -221,6 +221,22 @@
       ]
     },
     {
+      "key": "l-d4-c4-nc3-e4-h3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N4P/PP3PP1/R1BQKBNR b KQkq - 0 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. h3 **O-O** [White plays h3 here 10% of the time]",
+        "lastMove": "h2h3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-d4-c4-nc3-nf3-bg5",
       "model": "chess",
       "fields": {
@@ -229,8 +245,24 @@
         "answerUci": "d7d6",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O 5. Bg5 **d6** [White plays Bg5 here 23% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O 5. Bg5 **d6** [White plays Bg5 here 20% of the time]",
         "lastMove": "c1g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bf4-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PP1B2/2N1P3/PP3PPP/R2QKBNR b KQkq - 0 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Bf4 d6 5. e3 **O-O** [White plays e3 here 56% of the time]",
+        "lastMove": "e2e3"
       },
       "tags": [
         "chess::line"
@@ -245,7 +277,7 @@
         "answerUci": "d7d6",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Bg5 O-O 5. e3 **d6** [White plays e3 here 33% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Bg5 O-O 5. e3 **d6** [White plays e3 here 35% of the time]",
         "lastMove": "e2e3"
       },
       "tags": [
@@ -261,8 +293,24 @@
         "answerUci": "d7d6",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O 5. Bf4 **d6** [White plays Bf4 here 12% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O 5. Bf4 **d6** [White plays Bf4 here 11% of the time]",
         "lastMove": "c1f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-g3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppppppbp/5np1/8/2PP4/2N2NP1/PP2PP1P/R1BQKB1R b KQ - 0 5",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O 5. g3 **d6** [White plays g3 here 9% of the time]",
+        "lastMove": "g2g3"
       },
       "tags": [
         "chess::line"
@@ -285,16 +333,64 @@
       ]
     },
     {
-      "key": "l-d4-c4-nc3-nf3-e3",
+      "key": "l-d4-c4-nc3-bf4-nf3",
       "model": "chess",
       "fields": {
-        "fen": "rnbq1rk1/ppppppbp/5np1/8/2PP4/2N1PN2/PP3PPP/R1BQKB1R b KQ - 0 5",
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PP1B2/2N2N2/PP2PPPP/R2QKB1R b KQkq - 1 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Bf4 d6 5. Nf3 **O-O** [White plays Nf3 here 22% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-qd2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppppppbp/5np1/6B1/2PP4/2N5/PP1QPPPP/R3KBNR b KQ - 5 5",
         "answer": "d6",
         "answerUci": "d7d6",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O 5. e3 **d6** [White plays e3 here 5% of the time]",
-        "lastMove": "e2e3"
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Bg5 O-O 5. Qd2 **d6** [White plays Qd2 here 13% of the time]",
+        "lastMove": "d1d2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bf4-h3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PP1B2/2N4P/PP2PPP1/R2QKBNR b KQkq - 0 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Bf4 d6 5. h3 **O-O** [White plays h3 here 9% of the time]",
+        "lastMove": "h2h3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bf4-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPPB2/2N5/PP3PPP/R2QKBNR b KQkq - 0 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Bf4 d6 5. e4 **O-O** [White plays e4 here 7% of the time]",
+        "lastMove": "e2e4"
       },
       "tags": [
         "chess::line"
@@ -309,7 +405,7 @@
         "answerUci": "e7e5",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 **e5** (Orthodox Variation, E92) [White plays Be2 here 70% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 **e5** (Orthodox Variation, E92) [White plays Be2 here 57% of the time]",
         "lastMove": "f1e2"
       },
       "tags": [
@@ -325,7 +421,7 @@
         "answerUci": "c7c5",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Nf3 **c5** [White plays Nf3 here 86% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Nf3 **c5** [White plays Nf3 here 80% of the time]",
         "lastMove": "g1f3"
       },
       "tags": [
@@ -341,7 +437,7 @@
         "answerUci": "e7e5",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 O-O 6. Be3 **e5** (Orthodox Variation, E85) [White plays Be3 here 92% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 O-O 6. Be3 **e5** (Orthodox Variation, E85) [White plays Be3 here 89% of the time]",
         "lastMove": "c1e3"
       },
       "tags": [
@@ -357,24 +453,8 @@
         "answerUci": "e7e5",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Bd3 O-O 6. Nge2 **e5** [White plays Nge2 here 100% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Bd3 O-O 6. Nge2 **e5** [White plays Nge2 here 69% of the time]",
         "lastMove": "g1e2"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nc3-nf3-bg5-e3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PP4/2N1PN2/PP3PPP/R2QKB1R b KQ - 0 6",
-        "answer": "Nbd7",
-        "answerUci": "b8d7",
-        "orientation": "black",
-        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O 5. Bg5 d6 6. e3 **Nbd7** [White plays e3 here 100% of the time]",
-        "lastMove": "e2e3"
       },
       "tags": [
         "chess::line"
@@ -389,8 +469,40 @@
         "answerUci": "b8d7",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Bd3 **Nbd7** [White plays Bd3 here 17% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Bd3 **Nbd7** [White plays Bd3 here 22% of the time]",
         "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bg5-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PP4/2N1PN2/PP3PPP/R2QKB1R b KQ - 0 6",
+        "answer": "Nbd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O 5. Bg5 d6 6. e3 **Nbd7** [White plays e3 here 75% of the time]",
+        "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-h3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N1P/PP3PP1/R1BQKB1R b KQ - 0 6",
+        "answer": "Nbd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. h3 **Nbd7** [White plays h3 here 14% of the time]",
+        "lastMove": "h2h3"
       },
       "tags": [
         "chess::line"
@@ -405,7 +517,7 @@
         "answerUci": "e7e5",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. h3 O-O 6. Be3 **e5** [White plays Be3 here 32% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. h3 O-O 6. Be3 **e5** [White plays Be3 here 29% of the time]",
         "lastMove": "c1e3"
       },
       "tags": [
@@ -421,7 +533,7 @@
         "answerUci": "e7e5",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Be2 O-O 6. Be3 **e5** [White plays Be3 here 27% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Be2 O-O 6. Be3 **e5** [White plays Be3 here 24% of the time]",
         "lastMove": "c1e3"
       },
       "tags": [
@@ -437,24 +549,8 @@
         "answerUci": "h7h6",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Be2 O-O 6. Bg5 **h6** (Flexible Defense, E73) [White plays Bg5 here 27% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Be2 O-O 6. Bg5 **h6** (Flexible Defense, E73) [White plays Bg5 here 23% of the time]",
         "lastMove": "c1g5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nc3-e4-nf3-h3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N1P/PP3PP1/R1BQKB1R b KQ - 0 6",
-        "answer": "Nbd7",
-        "answerUci": "b8d7",
-        "orientation": "black",
-        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. h3 **Nbd7** [White plays h3 here 9% of the time]",
-        "lastMove": "h2h3"
       },
       "tags": [
         "chess::line"
@@ -477,6 +573,38 @@
       ]
     },
     {
+      "key": "l-d4-c4-nc3-nf3-g3-bg2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PP4/2N2NP1/PP2PPBP/R1BQK2R b KQ - 1 6",
+        "answer": "Nbd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O 5. g3 d6 6. Bg2 **Nbd7** (Debrecen Defense, E67) [White plays Bg2 here 100% of the time]",
+        "lastMove": "f1g2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bf4-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PP1B2/2N1PN2/PP3PPP/R2QKB1R b KQ - 0 6",
+        "answer": "Nbd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O 5. Bf4 d6 6. e3 **Nbd7** [White plays e3 here 77% of the time]",
+        "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-d4-c4-nc3-e4-be2-h4",
       "model": "chess",
       "fields": {
@@ -485,8 +613,168 @@
         "answerUci": "h7h5",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Be2 O-O 6. h4 **h5** [White plays h4 here 18% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Be2 O-O 6. h4 **h5** [White plays h4 here 16% of the time]",
         "lastMove": "h2h4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-qd2-bh6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1npB/8/2PP4/2N5/PP1QPPPP/R3KBNR b KQ - 1 6",
+        "answer": "Nbd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Bg5 O-O 5. Qd2 d6 6. Bh6 **Nbd7** [White plays Bh6 here 100% of the time]",
+        "lastMove": "g5h6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bg5-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2N2/PP3PPP/R2QKB1R b KQ - 0 6",
+        "answer": "h6",
+        "answerUci": "h7h6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O 5. Bg5 d6 6. e4 **h6** [White plays e4 here 17% of the time]",
+        "lastMove": "e2e4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-f3-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N2P2/PP4PP/R2QKBNR b KQ - 2 6",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 O-O 6. Bg5 **c5** [White plays Bg5 here 5% of the time]",
+        "lastMove": "c1g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-h3-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPP3/2N4P/PP3PP1/R2QKBNR b KQ - 2 6",
+        "answer": "h6",
+        "answerUci": "h7h6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. h3 O-O 6. Bg5 **h6** [White plays Bg5 here 7% of the time]",
+        "lastMove": "c1g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-bd3-h3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2NB3P/PP3PP1/R1BQK1NR b KQ - 0 6",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Bd3 O-O 6. h3 **Nc6** [White plays h3 here 7% of the time]",
+        "lastMove": "h2h3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-e4-f4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/6B1/2PPPP2/2N5/PP4PP/R2QKBNR b KQ - 0 6",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Bg5 O-O 5. e4 d6 6. f4 **c5** [White plays f4 here 31% of the time]",
+        "lastMove": "f2f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-bd3-be3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2NBB3/PP3PPP/R2QK1NR b KQ - 3 6",
+        "answer": "Nbd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Bd3 O-O 6. Be3 **Nbd7** [White plays Be3 here 5% of the time]",
+        "lastMove": "c1e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bf4-e3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PP1B2/2NBP3/PP3PPP/R2QK1NR b KQ - 2 6",
+        "answer": "Nbd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Bf4 d6 5. e3 O-O 6. Bd3 **Nbd7** [White plays Bd3 here 14% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-h3-f4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPPP2/2N4P/PP4P1/R1BQKBNR b KQ - 0 6",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. h3 O-O 6. f4 **c5** [White plays f4 here 5% of the time]",
+        "lastMove": "f2f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bf4-h3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PP1B2/2N2N1P/PP2PPP1/R2QKB1R b KQ - 0 6",
+        "answer": "Nbd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O 5. Bf4 d6 6. h3 **Nbd7** [White plays h3 here 12% of the time]",
+        "lastMove": "h2h3"
       },
       "tags": [
         "chess::line"
@@ -501,7 +789,23 @@
         "answerUci": "e7e6",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Nf3 c5 7. d5 **e6** [White plays d5 here 100% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Nf3 c5 7. d5 **e6** [White plays d5 here 86% of the time]",
+        "lastMove": "d4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-f3-be3-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp2pbp/3p1np1/3Pp3/2P1P3/2N1BP2/PP4PP/R2QKBNR b KQ - 0 7",
+        "answer": "c6",
+        "answerUci": "c7c6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 O-O 6. Be3 e5 7. d5 **c6** (Closed Variation, E88) [White plays d5 here 73% of the time]",
         "lastMove": "d4d5"
       },
       "tags": [
@@ -525,6 +829,38 @@
       ]
     },
     {
+      "key": "l-d4-c4-nc3-e4-bd3-nge2-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp2pbp/3p1np1/3Pp3/2P1P3/2NB4/PP2NPPP/R1BQK2R b KQ - 0 7",
+        "answer": "a5",
+        "answerUci": "a7a5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Bd3 O-O 6. Nge2 e5 7. d5 **a5** [White plays d5 here 100% of the time]",
+        "lastMove": "d4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-bd3-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppnppbp/3p1np1/8/2PPP3/2NB1N2/PP3PPP/R1BQ1RK1 b - - 5 7",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Bd3 Nbd7 7. O-O **e5** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-d4-c4-nc3-e4-nf3-be2-d5",
       "model": "chess",
       "fields": {
@@ -533,7 +869,7 @@
         "answerUci": "a7a5",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. d5 **a5** (Stein Defense, E92) [White plays d5 here 33% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. d5 **a5** (Stein Defense, E92) [White plays d5 here 29% of the time]",
         "lastMove": "d4d5"
       },
       "tags": [
@@ -541,16 +877,80 @@
       ]
     },
     {
-      "key": "l-d4-c4-nc3-e4-nf3-be2-dxe5",
+      "key": "l-d4-c4-nc3-e4-f3-be3-nge2",
       "model": "chess",
       "fields": {
-        "fen": "rnbq1rk1/ppp2pbp/3p1np1/4P3/2P1P3/2N2N2/PP2BPPP/R1BQK2R b KQ - 0 7",
-        "answer": "dxe5",
-        "answerUci": "d6e5",
+        "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N1BP2/PP2N1PP/R2QKB1R b KQ - 1 7",
+        "answer": "c6",
+        "answerUci": "c7c6",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. dxe5 **dxe5** [White plays dxe5 here 17% of the time]",
-        "lastMove": "d4e5"
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f3 O-O 6. Be3 e5 7. Nge2 **c6** (S\u00e4misch Variation, E86) [White plays Nge2 here 23% of the time]",
+        "lastMove": "g1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-h3-be3-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp2pbp/3p1np1/3Pp3/2P1P3/2N1B2P/PP3PP1/R2QKBNR b KQ - 0 7",
+        "answer": "a5",
+        "answerUci": "a7a5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. h3 O-O 6. Be3 e5 7. d5 **a5** [White plays d5 here 100% of the time]",
+        "lastMove": "d4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bg5-e3-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppnppbp/3p1np1/6B1/2PP4/2N1PN2/PP2BPPP/R2QK2R b KQ - 2 7",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O 5. Bg5 d6 6. e3 Nbd7 7. Be2 **c5** [White plays Be2 here 69% of the time]",
+        "lastMove": "f1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-be2-be3-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp2pbp/3p1np1/3Pp3/2P1P3/2N1B3/PP2BPPP/R2QK1NR b KQ - 0 7",
+        "answer": "a5",
+        "answerUci": "a7a5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Be2 O-O 6. Be3 e5 7. d5 **a5** [White plays d5 here 100% of the time]",
+        "lastMove": "d4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-be2-bg5-be3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppb1/3p1npp/8/2PPP3/2N1B3/PP2BPPP/R2QK1NR b KQ - 1 7",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Be2 O-O 6. Bg5 h6 7. Be3 **e5** [White plays Be3 here 100% of the time]",
+        "lastMove": "g5e3"
       },
       "tags": [
         "chess::line"
@@ -573,6 +973,70 @@
       ]
     },
     {
+      "key": "l-d4-c4-nc3-nf3-g3-bg2-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppnppbp/3p1np1/8/2PP4/2N2NP1/PP2PPBP/R1BQ1RK1 b - - 3 7",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O 5. g3 d6 6. Bg2 Nbd7 7. O-O **e5** (Classical Fianchetto, E67) [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-be2-dxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp2pbp/3p1np1/4P3/2P1P3/2N2N2/PP2BPPP/R1BQK2R b KQ - 0 7",
+        "answer": "dxe5",
+        "answerUci": "d6e5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. dxe5 **dxe5** [White plays dxe5 here 12% of the time]",
+        "lastMove": "d4e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-h3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppnppbp/3p1np1/8/2PPP3/2NB1N1P/PP3PP1/R1BQK2R b KQ - 2 7",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. h3 Nbd7 7. Bd3 **e5** [White plays Bd3 here 44% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-h3-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppnppbp/3p1np1/8/2PPP3/2N2N1P/PP2BPP1/R1BQK2R b KQ - 2 7",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. h3 Nbd7 7. Be2 **e5** [White plays Be2 here 31% of the time]",
+        "lastMove": "f1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-d4-c4-nc3-e4-nf3-be2-oo-d5",
       "model": "chess",
       "fields": {
@@ -589,6 +1053,38 @@
       ]
     },
     {
+      "key": "l-d4-c4-nc3-e4-bd3-nge2-d5-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/1pp2pbp/3p1np1/p2Pp3/2P1P3/2NB4/PP2NPPP/R1BQ1RK1 b - - 1 8",
+        "answer": "Na6",
+        "answerUci": "b8a6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Bd3 O-O 6. Nge2 e5 7. d5 a5 8. O-O **Na6** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-bd3-oo-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppn1pbp/3p1np1/3Pp3/2P1P3/2NB1N2/PP3PPP/R1BQ1RK1 b - - 0 8",
+        "answer": "Nc5",
+        "answerUci": "d7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Bd3 Nbd7 7. O-O e5 8. d5 **Nc5** [White plays d5 here 100% of the time]",
+        "lastMove": "d4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-d4-c4-nc3-e4-f4-nf3-d5-be2",
       "model": "chess",
       "fields": {
@@ -597,8 +1093,280 @@
         "answerUci": "e6d5",
         "orientation": "black",
         "prompt": "You are Black in the King's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Nf3 c5 7. d5 e6 8. Be2 **exd5** [White plays Be2 here 50% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Nf3 c5 7. d5 e6 8. Be2 **exd5** [White plays Be2 here 45% of the time]",
         "lastMove": "f1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-f4-nf3-d5-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp3pbp/3ppnp1/2pP4/2P1PP2/2NB1N2/PP4PP/R1BQK2R b KQ - 1 8",
+        "answer": "exd5",
+        "answerUci": "e6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Nf3 c5 7. d5 e6 8. Bd3 **exd5** [White plays Bd3 here 36% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-be2-d5-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/1pp2pbp/3p1np1/p2Pp3/2P1P3/2N2N2/PP2BPPP/R1BQ1RK1 b - - 1 8",
+        "answer": "Na6",
+        "answerUci": "b8a6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. d5 a5 8. O-O **Na6** [White plays O-O here 75% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-be2-be3-d5-g4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/1pp2pbp/3p1np1/p2Pp3/2P1P1P1/2N1B3/PP2BP1P/R2QK1NR b KQ - 0 8",
+        "answer": "Na6",
+        "answerUci": "b8a6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Be2 O-O 6. Be3 e5 7. d5 a5 8. g4 **Na6** [White plays g4 here 100% of the time]",
+        "lastMove": "g2g4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-f4-e5-fxe5-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pppnppbp/6p1/4P3/2PP4/2N2N2/PP4PP/R1BQKB1R b KQ - 2 8",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. e5 dxe5 7. fxe5 Nfd7 8. Nf3 **c5** [White plays Nf3 here 100% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-be2-dxe5-qxd8",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbQ1rk1/ppp2pbp/5np1/4p3/2P1P3/2N2N2/PP2BPPP/R1B1K2R b KQ - 0 8",
+        "answer": "Rxd8",
+        "answerUci": "f8d8",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. dxe5 dxe5 8. Qxd8 **Rxd8** [White plays Qxd8 here 100% of the time]",
+        "lastMove": "d1d8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-g3-bg2-oo-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppn1pbp/3p1np1/4p3/2PPP3/2N2NP1/PP3PBP/R1BQ1RK1 b - - 0 8",
+        "answer": "exd4",
+        "answerUci": "e5d4",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. Nf3 O-O 5. g3 d6 6. Bg2 Nbd7 7. O-O e5 8. e4 **exd4** [White plays e4 here 72% of the time]",
+        "lastMove": "e2e4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-bd3-nge2-d5-oo-a3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/1pp2pbp/n2p1np1/p2Pp3/2P1P3/P1NB4/1P2NPPP/R1BQ1RK1 b - - 0 9",
+        "answer": "Nc5",
+        "answerUci": "a6c5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Bd3 O-O 6. Nge2 e5 7. d5 a5 8. O-O Na6 9. a3 **Nc5** [White plays a3 here 100% of the time]",
+        "lastMove": "a2a3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-f4-nf3-d5-bd3-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp3pbp/3p1np1/2pP4/4PP2/2NB1N2/PP4PP/R1BQK2R b KQ - 0 9",
+        "answer": "Re8",
+        "answerUci": "f8e8",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Nf3 c5 7. d5 e6 8. Bd3 exd5 9. cxd5 **Re8** [White plays cxd5 here 100% of the time]",
+        "lastMove": "c4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-be2-oo-d5-ne1",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp1npbp/3p1np1/3Pp3/2P1P3/2N5/PP2BPPP/R1BQNRK1 b - - 2 9",
+        "answer": "Nd7",
+        "answerUci": "f6d7",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O Nc6 8. d5 Ne7 9. Ne1 **Nd7** [White plays Ne1 here 51% of the time]",
+        "lastMove": "f3e1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-be2-oo-d5-b4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp1npbp/3p1np1/3Pp3/1PP1P3/2N2N2/P3BPPP/R1BQ1RK1 b - - 0 9",
+        "answer": "Nh5",
+        "answerUci": "f6h5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O Nc6 8. d5 Ne7 9. b4 **Nh5** [White plays b4 here 49% of the time]",
+        "lastMove": "b2b4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-f4-nf3-d5-be2-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp3pbp/3p1np1/2pP4/4PP2/2N2N2/PP2B1PP/R1BQK2R b KQ - 0 9",
+        "answer": "Re8",
+        "answerUci": "f8e8",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Nf3 c5 7. d5 e6 8. Be2 exd5 9. cxd5 **Re8** [White plays cxd5 here 50% of the time]",
+        "lastMove": "c4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-f4-nf3-d5-be2-exd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp3pbp/3p1np1/2pP4/2P2P2/2N2N2/PP2B1PP/R1BQK2R b KQ - 0 9",
+        "answer": "Re8",
+        "answerUci": "f8e8",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Nf3 c5 7. d5 e6 8. Be2 exd5 9. exd5 **Re8** [White plays exd5 here 50% of the time]",
+        "lastMove": "e4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-be2-dxe5-qxd8-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbr2k1/ppp2pbp/5np1/4p1B1/2P1P3/2N2N2/PP2BPPP/R3K2R b KQ - 1 9",
+        "answer": "Re8",
+        "answerUci": "d8e8",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. dxe5 dxe5 8. Qxd8 Rxd8 9. Bg5 **Re8** [White plays Bg5 here 100% of the time]",
+        "lastMove": "c1g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-f4-nf3-d5-bd3-cxd5-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqr1k1/pp3pbp/3p1np1/2pP4/4PP2/2NB1N2/PP4PP/R1BQ1RK1 b - - 2 10",
+        "answer": "a6",
+        "answerUci": "a7a6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Nf3 c5 7. d5 e6 8. Bd3 exd5 9. cxd5 Re8 10. O-O **a6** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-be2-oo-d5-ne1-be3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppnnpbp/3p2p1/3Pp3/2P1P3/2N1B3/PP2BPPP/R2QNRK1 b - - 4 10",
+        "answer": "f5",
+        "answerUci": "f7f5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O Nc6 8. d5 Ne7 9. Ne1 Nd7 10. Be3 **f5** [White plays Be3 here 100% of the time]",
+        "lastMove": "c1e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-be2-oo-d5-ne1-be3-f3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppnn1bp/3p2p1/3Ppp2/2P1P3/2N1BP2/PP2B1PP/R2QNRK1 b - - 0 11",
+        "answer": "f4",
+        "answerUci": "f5f4",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O Nc6 8. d5 Ne7 9. Ne1 Nd7 10. Be3 f5 11. f3 **f4** [White plays f3 here 100% of the time]",
+        "lastMove": "f2f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-be2-oo-d5-ne1-be3-f3-bf2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppnn1bp/3p2p1/3Pp3/2P1Pp2/2N2P2/PP2BBPP/R2QNRK1 b - - 1 12",
+        "answer": "g5",
+        "answerUci": "g6g5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. O-O Nc6 8. d5 Ne7 9. Ne1 Nd7 10. Be3 f5 11. f3 f4 12. Bf2 **g5** [White plays Bf2 here 100% of the time]",
+        "lastMove": "e3f2"
       },
       "tags": [
         "chess::line"

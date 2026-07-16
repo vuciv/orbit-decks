@@ -1,8 +1,8 @@
 {
   "key": "grunfeld-defense",
-  "version": 3,
+  "version": 4,
   "name": "The Gr\u00fcnfeld Defense as Black",
-  "description": "A Black repertoire for the Gr\u00fcnfeld Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 27 positions.",
+  "description": "A Black repertoire for the Gr\u00fcnfeld Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 5,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 76 positions.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -53,7 +53,7 @@
         "answerUci": "d7d5",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 **d5** (Gr\u00fcnfeld Defense, D80) [White plays Nc3 here 81% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 **d5** (Gr\u00fcnfeld Defense, D80) [White plays Nc3 here 80% of the time]",
         "lastMove": "b1c3"
       },
       "tags": [
@@ -69,7 +69,7 @@
         "answerUci": "f6d5",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 **Nxd5** (Exchange Variation, D85) [White plays cxd5 here 44% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 **Nxd5** (Exchange Variation, D85) [White plays cxd5 here 43% of the time]",
         "lastMove": "c4d5"
       },
       "tags": [
@@ -85,7 +85,7 @@
         "answerUci": "f8g7",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 **Bg7** (Three Knights Variation, D90) [White plays Nf3 here 24% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 **Bg7** (Three Knights Variation, D90) [White plays Nf3 here 23% of the time]",
         "lastMove": "g1f3"
       },
       "tags": [
@@ -101,7 +101,7 @@
         "answerUci": "f6e4",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bg5 **Ne4** [White plays Bg5 here 12% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bg5 **Ne4** [White plays Bg5 here 11% of the time]",
         "lastMove": "c1g5"
       },
       "tags": [
@@ -117,7 +117,7 @@
         "answerUci": "f8g7",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. e3 **Bg7** [White plays e3 here 9% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. e3 **Bg7** [White plays e3 here 10% of the time]",
         "lastMove": "e2e3"
       },
       "tags": [
@@ -133,7 +133,7 @@
         "answerUci": "f8g7",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bf4 **Bg7** [White plays Bf4 here 5% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bf4 **Bg7** [White plays Bf4 here 6% of the time]",
         "lastMove": "c1f4"
       },
       "tags": [
@@ -149,7 +149,7 @@
         "answerUci": "d5c3",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 **Nxc3** [White plays e4 here 86% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 **Nxc3** [White plays e4 here 84% of the time]",
         "lastMove": "e2e4"
       },
       "tags": [
@@ -165,24 +165,8 @@
         "answerUci": "d5e4",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bg5 Ne4 5. Nxe4 **dxe4** [White plays Nxe4 here 100% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bg5 Ne4 5. Nxe4 **dxe4** [White plays Nxe4 here 68% of the time]",
         "lastMove": "c3e4"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nc3-nf3-cxd5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/5np1/3P4/3P4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 0 5",
-        "answer": "Nxd5",
-        "answerUci": "f6d5",
-        "orientation": "black",
-        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. cxd5 **Nxd5** [White plays cxd5 here 26% of the time]",
-        "lastMove": "c4d5"
       },
       "tags": [
         "chess::line"
@@ -197,8 +181,24 @@
         "answerUci": "f6e4",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bg5 **Ne4** [White plays Bg5 here 25% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bg5 **Ne4** [White plays Bg5 here 28% of the time]",
         "lastMove": "c1g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/5np1/3P4/3P4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 0 5",
+        "answer": "Nxd5",
+        "answerUci": "f6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. cxd5 **Nxd5** [White plays cxd5 here 24% of the time]",
+        "lastMove": "c4d5"
       },
       "tags": [
         "chess::line"
@@ -213,7 +213,7 @@
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bf4 Bg7 5. e3 **O-O** (Gr\u00fcnfeld Gambit, D83) [White plays e3 here 100% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bf4 Bg7 5. e3 **O-O** (Gr\u00fcnfeld Gambit, D83) [White plays e3 here 80% of the time]",
         "lastMove": "e2e3"
       },
       "tags": [
@@ -245,7 +245,7 @@
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bf4 **O-O** [White plays Bf4 here 17% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bf4 **O-O** [White plays Bf4 here 16% of the time]",
         "lastMove": "c1f4"
       },
       "tags": [
@@ -269,6 +269,38 @@
       ]
     },
     {
+      "key": "l-d4-c4-nc3-bg5-bh4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1pp1p/6p1/3p4/2PPn2B/2N5/PP2PPPP/R2QKBNR b KQkq - 3 5",
+        "answer": "Nxc3",
+        "answerUci": "e4c3",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bg5 Ne4 5. Bh4 **Nxc3** [White plays Bh4 here 16% of the time]",
+        "lastMove": "g5h4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-bd2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1pp1p/6p1/3n4/3P4/2N5/PP1BPPPP/R2QKBNR b KQkq - 1 5",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. Bd2 **Bg7** [White plays Bd2 here 4% of the time]",
+        "lastMove": "c1d2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-d4-c4-nc3-nf3-qb3",
       "model": "chess",
       "fields": {
@@ -277,8 +309,88 @@
         "answerUci": "d5c4",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 **dxc4** [White plays Qb3 here 8% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 **dxc4** [White plays Qb3 here 7% of the time]",
         "lastMove": "d1b3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-bf4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1pp1p/6p1/3p4/2PPnB2/2N5/PP2PPPP/R2QKBNR b KQkq - 3 5",
+        "answer": "Nxc3",
+        "answerUci": "e4c3",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bg5 Ne4 5. Bf4 **Nxc3** [White plays Bf4 here 11% of the time]",
+        "lastMove": "g5f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e3-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/5np1/3P4/3P4/2N1P3/PP3PPP/R1BQKBNR b KQkq - 0 5",
+        "answer": "Nxd5",
+        "answerUci": "f6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. e3 Bg7 5. cxd5 **Nxd5** [White plays cxd5 here 10% of the time]",
+        "lastMove": "c4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/5np1/3p4/2PP4/2NBP3/PP3PPP/R1BQK1NR b KQkq - 2 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. e3 Bg7 5. Bd3 **O-O** [White plays Bd3 here 6% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bf4-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/5np1/2Pp4/3P1B2/2N5/PP2PPPP/R2QKBNR b KQkq - 0 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bf4 Bg7 5. c5 **O-O** [White plays c5 here 10% of the time]",
+        "lastMove": "c4c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e3-h3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/5np1/3p4/2PP4/2N1P2P/PP3PP1/R1BQKBNR b KQkq - 0 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. e3 Bg7 5. h3 **O-O** [White plays h3 here 5% of the time]",
+        "lastMove": "h2h3"
       },
       "tags": [
         "chess::line"
@@ -341,8 +453,216 @@
         "answerUci": "d5c3",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. Nf3 Bg7 6. e4 **Nxc3** [White plays e4 here 100% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. Nf3 Bg7 6. e4 **Nxc3** [White plays e4 here 90% of the time]",
         "lastMove": "e2e4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-bh4-bxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1pp1p/6p1/3p4/2PP3B/2P5/P3PPPP/R2QKBNR b KQkq - 0 6",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bg5 Ne4 5. Bh4 Nxc3 6. bxc3 **Bg7** [White plays bxc3 here 100% of the time]",
+        "lastMove": "b2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bg5-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/6p1/3P2B1/3Pn3/2N2N2/PP2PPPP/R2QKB1R b KQkq - 0 6",
+        "answer": "Nxg5",
+        "answerUci": "e4g5",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bg5 Ne4 6. cxd5 **Nxg5** [White plays cxd5 here 27% of the time]",
+        "lastMove": "c4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-bd2-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/6p1/3n4/3PP3/2N5/PP1B1PPP/R2QKBNR b KQkq - 0 6",
+        "answer": "Nxc3",
+        "answerUci": "d5c3",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. Bd2 Bg7 6. e4 **Nxc3** [White plays e4 here 100% of the time]",
+        "lastMove": "e2e4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-e3-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/5np1/3p4/2PP4/2N1PN2/PP2BPPP/R1BQK2R b KQ - 2 6",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. e3 O-O 6. Be2 **c5** [White plays Be2 here 37% of the time]",
+        "lastMove": "f1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-qb3-qxc4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/5np1/8/2QP4/2N2N2/PP2PPPP/R1B1KB1R b KQkq - 0 6",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 **O-O** [White plays Qxc4 here 100% of the time]",
+        "lastMove": "b3c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bg5-bh4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/6p1/3p4/2PPn2B/2N2N2/PP2PPPP/R2QKB1R b KQkq - 5 6",
+        "answer": "Nxc3",
+        "answerUci": "e4c3",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bg5 Ne4 6. Bh4 **Nxc3** [White plays Bh4 here 23% of the time]",
+        "lastMove": "g5h4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bg5-bf4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/6p1/3p4/2PPnB2/2N2N2/PP2PPPP/R2QKB1R b KQkq - 5 6",
+        "answer": "Nxc3",
+        "answerUci": "e4c3",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bg5 Ne4 6. Bf4 **Nxc3** [White plays Bf4 here 22% of the time]",
+        "lastMove": "g5f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-e3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/5np1/3p4/2PP4/2NBPN2/PP3PPP/R1BQK2R b KQ - 2 6",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. e3 O-O 6. Bd3 **c5** [White plays Bd3 here 29% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-bf4-bxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1pp1p/6p1/3p4/2PP1B2/2P5/P3PPPP/R2QKBNR b KQkq - 0 6",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bg5 Ne4 5. Bf4 Nxc3 6. bxc3 **Bg7** [White plays bxc3 here 100% of the time]",
+        "lastMove": "b2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-e3-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/5np1/3P4/3P4/2N1PN2/PP3PPP/R1BQKB1R b KQ - 0 6",
+        "answer": "Nxd5",
+        "answerUci": "f6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. e3 O-O 6. cxd5 **Nxd5** [White plays cxd5 here 26% of the time]",
+        "lastMove": "c4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bg5-nxe4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/6p1/3p2B1/2PPN3/5N2/PP2PPPP/R2QKB1R b KQkq - 0 6",
+        "answer": "dxe4",
+        "answerUci": "d5e4",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bg5 Ne4 6. Nxe4 **dxe4** [White plays Nxe4 here 18% of the time]",
+        "lastMove": "c3e4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e3-cxd5-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/6p1/3n4/2BP4/2N1P3/PP3PPP/R1BQK1NR b KQkq - 1 6",
+        "answer": "Nxc3",
+        "answerUci": "d5c3",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. e3 Bg7 5. cxd5 Nxd5 6. Bc4 **Nxc3** [White plays Bc4 here 100% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bg5-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/6p1/3p2B1/2PPn3/2N1PN2/PP3PPP/R2QKB1R b KQkq - 0 6",
+        "answer": "Nxg5",
+        "answerUci": "e4g5",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bg5 Ne4 6. e3 **Nxg5** [White plays e3 here 11% of the time]",
+        "lastMove": "e2e3"
       },
       "tags": [
         "chess::line"
@@ -357,7 +677,7 @@
         "answerUci": "c7c5",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 **c5** [White plays Bc4 here 37% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 **c5** [White plays Bc4 here 33% of the time]",
         "lastMove": "f1c4"
       },
       "tags": [
@@ -373,7 +693,7 @@
         "answerUci": "c7c5",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 **c5** (Modern Exchange Variation, D85) [White plays Nf3 here 32% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 **c5** (Modern Exchange Variation, D85) [White plays Nf3 here 31% of the time]",
         "lastMove": "g1f3"
       },
       "tags": [
@@ -389,8 +709,88 @@
         "answerUci": "c7c5",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Be3 **c5** [White plays Be3 here 16% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Be3 **c5** [White plays Be3 here 13% of the time]",
         "lastMove": "c1e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-nxe4-e3-ne2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/6p1/6B1/2PPp3/4P3/PP2NPPP/R2QKB1R b KQkq - 2 7",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bg5 Ne4 5. Nxe4 dxe4 6. e3 Bg7 7. Ne2 **c5** [White plays Ne2 here 52% of the time]",
+        "lastMove": "g1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-bh4-bxc3-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/6p1/3p4/2PP3B/2P1P3/P4PPP/R2QKBNR b KQkq - 0 7",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Bg5 Ne4 5. Bh4 Nxc3 6. bxc3 Bg7 7. e3 **c5** [White plays e3 here 100% of the time]",
+        "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bg5-cxd5-nxg5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/6p1/3P2N1/3P4/2N5/PP2PPPP/R2QKB1R b KQkq - 0 7",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bg5 Ne4 6. cxd5 Nxg5 7. Nxg5 **e6** [White plays Nxg5 here 100% of the time]",
+        "lastMove": "f3g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-bd2-e4-bxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/6p1/8/3PP3/2B5/PP3PPP/R2QKBNR b KQkq - 0 7",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. Bd2 Bg7 6. e4 Nxc3 7. Bxc3 **c5** [White plays Bxc3 here 100% of the time]",
+        "lastMove": "d2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bf4-e3-dxc5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2ppbp/5np1/2Pp4/2P2B2/2N1PN2/PP3PPP/R2QKB1R b KQ - 0 7",
+        "answer": "Qa5",
+        "answerUci": "d8a5",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bf4 O-O 6. e3 c5 7. dxc5 **Qa5** [White plays dxc5 here 45% of the time]",
+        "lastMove": "d4c5"
       },
       "tags": [
         "chess::line"
@@ -405,8 +805,120 @@
         "answerUci": "c7c5",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. f4 **c5** [White plays f4 here 6% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. f4 **c5** [White plays f4 here 5% of the time]",
         "lastMove": "f2f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-e3-be2-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2ppbp/5np1/2pp4/2PP4/2N1PN2/PP2BPPP/R1BQ1RK1 b - - 1 7",
+        "answer": "cxd4",
+        "answerUci": "c5d4",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. e3 O-O 6. Be2 c5 7. O-O **cxd4** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/6p1/8/3PP3/2PB4/P4PPP/R1BQK1NR b KQkq - 2 7",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bd3 **c5** [White plays Bd3 here 4% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-qb3-qxc4-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/5np1/8/2QPP3/2N2N2/PP3PPP/R1B1KB1R b KQ - 0 7",
+        "answer": "a6",
+        "answerUci": "a7a6",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 O-O 7. e4 **a6** (Hungarian Variation, D97) [White plays e4 here 100% of the time]",
+        "lastMove": "e2e4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-e5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/6p1/4P3/3P4/2P5/P4PPP/R1BQKBNR b KQkq - 0 7",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. e5 **c5** [White plays e5 here 3% of the time]",
+        "lastMove": "e4e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-e3-cxd5-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/6p1/3n4/2BP4/2N1PN2/PP3PPP/R1BQK2R b KQ - 1 7",
+        "answer": "Nxc3",
+        "answerUci": "d5c3",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. e3 O-O 6. cxd5 Nxd5 7. Bc4 **Nxc3** [White plays Bc4 here 100% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/6p1/1B6/3PP3/2P5/P4PPP/R1BQK1NR b KQkq - 2 7",
+        "answer": "Bd7",
+        "answerUci": "c8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bb5+ **Bd7** [White plays Bb5+ here 3% of the time]",
+        "lastMove": "f1b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bf4-e3-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2ppbp/5np1/2pP4/3P1B2/2N1PN2/PP3PPP/R2QKB1R b KQ - 0 7",
+        "answer": "Nxd5",
+        "answerUci": "f6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bf4 O-O 6. e3 c5 7. cxd5 **Nxd5** [White plays cxd5 here 25% of the time]",
+        "lastMove": "c4d5"
       },
       "tags": [
         "chess::line"
@@ -417,12 +929,188 @@
       "model": "chess",
       "fields": {
         "fen": "rnbqk2r/pp2ppbp/6p1/2p5/2BPP3/2P5/P3NPPP/R1BQK2R b KQkq - 1 8",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 **O-O** (Spassky Variation, D87) [White plays Ne2 here 77% of the time]",
+        "lastMove": "g1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-nf3-be3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2ppbp/6p1/2p5/3PP3/2P1BN2/P4PPP/R2QKB1R b KQkq - 1 8",
         "answer": "Nc6",
         "answerUci": "b8c6",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 **Nc6** [White plays Ne2 here 80% of the time]",
-        "lastMove": "g1e2"
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5 8. Be3 **Nc6** [White plays Be3 here 44% of the time]",
+        "lastMove": "c1e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-bc4-be3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2ppbp/6p1/2p5/2BPP3/2P1B3/P4PPP/R2QK1NR b KQkq - 1 8",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Be3 **Nc6** [White plays Be3 here 17% of the time]",
+        "lastMove": "c1e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-nf3-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2ppbp/6p1/1Bp5/3PP3/2P2N2/P4PPP/R1BQK2R b KQkq - 1 8",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5 8. Bb5+ **Nc6** [White plays Bb5+ here 18% of the time]",
+        "lastMove": "f1b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-bd2-e4-bxc3-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2ppbp/6p1/2pP4/4P3/2B5/PP3PPP/R2QKBNR b KQkq - 0 8",
+        "answer": "Bxc3",
+        "answerUci": "g7c3",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. Bd2 Bg7 6. e4 Nxc3 7. Bxc3 c5 8. d5 **Bxc3+** [White plays d5 here 100% of the time]",
+        "lastMove": "d4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-nf3-rb1",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2ppbp/6p1/2p5/3PP3/2P2N2/P4PPP/1RBQKB1R b Kkq - 1 8",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5 8. Rb1 **O-O** [White plays Rb1 here 11% of the time]",
+        "lastMove": "a1b1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-e3-cxd5-bc4-bxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/6p1/8/2BP4/2P1PN2/P4PPP/R1BQK2R b KQ - 0 8",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. e3 O-O 6. cxd5 Nxd5 7. Bc4 Nxc3 8. bxc3 **c5** [White plays bxc3 here 100% of the time]",
+        "lastMove": "b2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-nf3-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2ppbp/6p1/2p5/3PP3/2P2N2/P3BPPP/R1BQK2R b KQkq - 1 8",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5 8. Be2 **Nc6** [White plays Be2 here 9% of the time]",
+        "lastMove": "f1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-nf3-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2ppbp/6p1/2p5/2BPP3/2P2N2/P4PPP/R1BQK2R b KQkq - 1 8",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5 8. Bc4 **O-O** [White plays Bc4 here 9% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bf4-e3-cxd5-nxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2ppbp/6p1/2pN4/3P1B2/4PN2/PP3PPP/R2QKB1R b KQ - 0 8",
+        "answer": "Qxd5",
+        "answerUci": "d8d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Bf4 O-O 6. e3 c5 7. cxd5 Nxd5 8. Nxd5 **Qxd5** [White plays Nxd5 here 100% of the time]",
+        "lastMove": "c3d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-be3-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2ppbp/6p1/1Bp5/3PP3/2P1B3/P4PPP/R2QK1NR b KQkq - 1 8",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Be3 c5 8. Bb5+ **Nc6** [White plays Bb5+ here 18% of the time]",
+        "lastMove": "f1b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-bc4-ne2-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2ppbp/6p1/2p5/2BPP3/2P5/P3NPPP/R1BQ1RK1 b - - 3 9",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 O-O 9. O-O **Nc6** [White plays O-O here 70% of the time]",
+        "lastMove": "e1g1"
       },
       "tags": [
         "chess::line"
@@ -432,13 +1120,109 @@
       "key": "l-d4-c4-nc3-cxd5-e4-bxc3-bc4-ne2-be3",
       "model": "chess",
       "fields": {
+        "fen": "rnbq1rk1/pp2ppbp/6p1/2p5/2BPP3/2P1B3/P3NPPP/R2QK2R b KQ - 3 9",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 O-O 9. Be3 **Nc6** [White plays Be3 here 30% of the time]",
+        "lastMove": "c1e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-bc4-be3-ne2",
+      "model": "chess",
+      "fields": {
         "fen": "r1bqk2r/pp2ppbp/2n3p1/2p5/2BPP3/2P1B3/P3NPPP/R2QK2R b KQkq - 3 9",
         "answer": "O-O",
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 Nc6 9. Be3 **O-O** [White plays Be3 here 100% of the time]",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Be3 Nc6 9. Ne2 **O-O** [White plays Ne2 here 100% of the time]",
+        "lastMove": "g1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-nf3-bb5-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pp2ppbp/2n3p1/1Bp5/3PP3/2P2N2/P4PPP/R1BQ1RK1 b kq - 3 9",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5 8. Bb5+ Nc6 9. O-O **O-O** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-bd2-e4-bxc3-d5-bxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2pp1p/6p1/2pP4/4P3/2P5/P4PPP/R2QKBNR b KQkq - 0 9",
+        "answer": "Qa5",
+        "answerUci": "d8a5",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. Bd2 Bg7 6. e4 Nxc3 7. Bxc3 c5 8. d5 Bxc3+ 9. bxc3 **Qa5** [White plays bxc3 here 100% of the time]",
+        "lastMove": "b2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-bc4-ne2-oo-be3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pp2ppbp/2n3p1/2p5/2BPP3/2P1B3/P3NPPP/R2Q1RK1 b - - 5 10",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 O-O 9. O-O Nc6 10. Be3 **Bg4** [White plays Be3 here 100% of the time]",
         "lastMove": "c1e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-nf3-bb5-oo-bxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pp2ppbp/2B3p1/2p5/3PP3/2P2N2/P4PPP/R1BQ1RK1 b - - 0 10",
+        "answer": "bxc6",
+        "answerUci": "b7c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Nf3 c5 8. Bb5+ Nc6 9. O-O O-O 10. Bxc6 **bxc6** [White plays Bxc6 here 100% of the time]",
+        "lastMove": "b5c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-bc4-ne2-oo-be3-f3",
+      "model": "chess",
+      "fields": {
+        "fen": "r2q1rk1/pp2ppbp/2n3p1/2p5/2BPP1b1/2P1BP2/P3N1PP/R2Q1RK1 b - - 0 11",
+        "answer": "Na5",
+        "answerUci": "c6a5",
+        "orientation": "black",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 Bg7 7. Bc4 c5 8. Ne2 O-O 9. O-O Nc6 10. Be3 Bg4 11. f3 **Na5** [White plays f3 here 100% of the time]",
+        "lastMove": "f2f3"
       },
       "tags": [
         "chess::line"

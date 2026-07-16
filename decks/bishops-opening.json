@@ -1,8 +1,8 @@
 {
   "key": "bishops-opening",
-  "version": 3,
+  "version": 4,
   "name": "The Bishop's Opening as White",
-  "description": "A White repertoire for the Bishop's Opening, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
+  "description": "A White repertoire for the Bishop's Opening, drilled one position at a time: every card is a position with exactly one book move to find. Built from 5,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -84,7 +84,7 @@
         "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Bc5 3. **d4** (Lewis Gambit, C23) [Black plays Bc5 here 11% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Bc5 3. **d4** (Lewis Gambit, C23) [Black plays Bc5 here 12% of the time]",
         "lastMove": "f8c5"
       },
       "tags": [
@@ -148,7 +148,7 @@
         "answerUci": "g1f3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Bc5 4. **Nf3** [Black plays Bc5 here 36% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Bc5 4. **Nf3** [Black plays Bc5 here 35% of the time]",
         "lastMove": "f8c5"
       },
       "tags": [
@@ -164,7 +164,7 @@
         "answerUci": "c4f7",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 exd4 4. **Bxf7+** [Black plays exd4 here 58% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 exd4 4. **Bxf7+** [Black plays exd4 here 57% of the time]",
         "lastMove": "e5d4"
       },
       "tags": [
@@ -196,7 +196,7 @@
         "answerUci": "g1f3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 Bxd4 4. **Nf3** [Black plays Bxd4 here 42% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 Bxd4 4. **Nf3** [Black plays Bxd4 here 43% of the time]",
         "lastMove": "c5d4"
       },
       "tags": [
@@ -212,7 +212,7 @@
         "answerUci": "g1f3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 c6 4. **Nf3** [Black plays c6 here 14% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 c6 4. **Nf3** [Black plays c6 here 15% of the time]",
         "lastMove": "c7c6"
       },
       "tags": [
@@ -244,24 +244,8 @@
         "answerUci": "g1f3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 h6 4. **Nf3** [Black plays h6 here 11% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 h6 4. **Nf3** [Black plays h6 here 10% of the time]",
         "lastMove": "h7h6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-d6-be7",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk1nr/ppp1bppp/3p4/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 2 4",
-        "answer": "d4",
-        "answerUci": "d2d4",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Be7 4. **d4** [Black plays Be7 here 27% of the time]",
-        "lastMove": "f8e7"
       },
       "tags": [
         "chess::line"
@@ -278,6 +262,22 @@
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
         "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 d5 4. **exd5** [Black plays d5 here 9% of the time]",
         "lastMove": "d7d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-d6-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppp1bppp/3p4/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 2 4",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Be7 4. **d4** [Black plays Be7 here 27% of the time]",
+        "lastMove": "f8e7"
       },
       "tags": [
         "chess::line"
@@ -388,40 +388,8 @@
         "answerUci": "d2d3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Nf6 4. **d3** [Black plays Nf6 here 7% of the time]",
+        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Nf6 4. **d3** [Black plays Nf6 here 8% of the time]",
         "lastMove": "g8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-d6-c6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp3ppp/2pp4/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
-        "answer": "d4",
-        "answerUci": "d2d4",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 c6 4. **d4** [Black plays c6 here 4% of the time]",
-        "lastMove": "c7c6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-d6-f5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/ppp3pp/3p4/4pp2/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
-        "answer": "d3",
-        "answerUci": "d2d3",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 f5 4. **d3** [Black plays f5 here 3% of the time]",
-        "lastMove": "f7f5"
       },
       "tags": [
         "chess::line"
@@ -436,7 +404,7 @@
         "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. **d4** [Black plays Nf6 here 53% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. **d4** [Black plays Nf6 here 52% of the time]",
         "lastMove": "g8f6"
       },
       "tags": [
@@ -448,11 +416,11 @@
       "model": "chess",
       "fields": {
         "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 1 5",
-        "answer": "c3",
-        "answerUci": "c2c3",
+        "answer": "O-O",
+        "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Bc5 5. **c3** [Black plays Bc5 here 57% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Bc5 5. **O-O** [Black plays Bc5 here 54% of the time]",
         "lastMove": "f8c5"
       },
       "tags": [
@@ -468,40 +436,8 @@
         "answerUci": "h2h3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Bc5 4. Nf3 d6 5. **h3** [Black plays d6 here 56% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Bc5 4. Nf3 d6 5. **h3** [Black plays d6 here 44% of the time]",
         "lastMove": "d7d6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-bc5-bxd4-nc6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/pppp1ppp/2n5/4p3/2BbP3/5N2/PPP2PPP/RNBQK2R w KQkq - 2 5",
-        "answer": "Nxd4",
-        "answerUci": "f3d4",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 Bxd4 4. Nf3 Nc6 5. **Nxd4** [Black plays Nc6 here 100% of the time]",
-        "lastMove": "b8c6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nf6-c6-d5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp3ppp/2p2n2/3pp3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
-        "answer": "exd5",
-        "answerUci": "e4d5",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 c6 4. Nf3 d5 5. **exd5** [Black plays d5 here 100% of the time]",
-        "lastMove": "d7d5"
       },
       "tags": [
         "chess::line"
@@ -516,7 +452,7 @@
         "answerUci": "d1h5",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 exd4 4. Bxf7+ Kxf7 5. **Qh5+** [Black plays Kxf7 here 70% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 exd4 4. Bxf7+ Kxf7 5. **Qh5+** [Black plays Kxf7 here 72% of the time]",
         "lastMove": "e8f7"
       },
       "tags": [
@@ -540,6 +476,38 @@
       ]
     },
     {
+      "key": "l-e5-nf6-c6-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/2p2n2/3pp3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "exd5",
+        "answerUci": "e4d5",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 c6 4. Nf3 d5 5. **exd5** [Black plays d5 here 86% of the time]",
+        "lastMove": "d7d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-bc5-bxd4-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1ppp/2n5/4p3/2BbP3/5N2/PPP2PPP/RNBQK2R w KQkq - 2 5",
+        "answer": "Nxd4",
+        "answerUci": "f3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 Bxd4 4. Nf3 Nc6 5. **Nxd4** [Black plays Nc6 here 71% of the time]",
+        "lastMove": "b8c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e5-nc6-h6-exd4",
       "model": "chess",
       "fields": {
@@ -548,24 +516,8 @@
         "answerUci": "f3d4",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 h6 4. d4 exd4 5. **Nxd4** [Black plays exd4 here 86% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 h6 4. d4 exd4 5. **Nxd4** [Black plays exd4 here 82% of the time]",
         "lastMove": "e5d4"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nf6-nc6-bc5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP4/PPP2PPP/R1BQK1NR w KQkq - 3 5",
-        "answer": "f4",
-        "answerUci": "f2f4",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Nc6 4. Nc3 Bc5 5. **f4** [Black plays Bc5 here 48% of the time]",
-        "lastMove": "f8c5"
       },
       "tags": [
         "chess::line"
@@ -580,8 +532,24 @@
         "answerUci": "g1f3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 d5 4. exd5 Nxd5 5. **Nf3** [Black plays Nxd5 here 100% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 d5 4. exd5 Nxd5 5. **Nf3** [Black plays Nxd5 here 95% of the time]",
         "lastMove": "f6d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-nc6-bc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/2NP4/PPP2PPP/R1BQK1NR w KQkq - 3 5",
+        "answer": "f4",
+        "answerUci": "f2f4",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Nc6 4. Nc3 Bc5 5. **f4** [Black plays Bc5 here 42% of the time]",
+        "lastMove": "f8c5"
       },
       "tags": [
         "chess::line"
@@ -596,24 +564,8 @@
         "answerUci": "f3d4",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Be7 4. d4 exd4 5. **Nxd4** [Black plays exd4 here 91% of the time]",
+        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Be7 4. d4 exd4 5. **Nxd4** [Black plays exd4 here 86% of the time]",
         "lastMove": "e5d4"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nf6-be7-d6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/ppp1bppp/3p1n2/4p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
-        "answer": "Nc3",
-        "answerUci": "b1c3",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Be7 4. Nf3 d6 5. **Nc3** [Black plays d6 here 100% of the time]",
-        "lastMove": "d7d6"
       },
       "tags": [
         "chess::line"
@@ -630,6 +582,38 @@
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
         "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Be7 5. **O-O** [Black plays Be7 here 16% of the time]",
         "lastMove": "f8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-bc5-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pppp1ppp/5n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQ - 3 5",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Bc5 4. Nf3 O-O 5. **O-O** [Black plays O-O here 16% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-bc5-exd4-kf8",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1knr/pppp1Bpp/8/2b5/3pP3/8/PPP2PPP/RNBQK1NR w KQ - 1 5",
+        "answer": "Bb3",
+        "answerUci": "f7b3",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 exd4 4. Bxf7+ Kf8 5. **Bb3** [Black plays Kf8 here 28% of the time]",
+        "lastMove": "e8f8"
       },
       "tags": [
         "chess::line"
@@ -660,23 +644,7 @@
         "answerUci": "f3d4",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 h6 4. d4 exd4 5. **Nxd4** [Black plays exd4 here 74% of the time]",
-        "lastMove": "e5d4"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-d6-exd4",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkbnr/ppp2ppp/2np4/8/2BpP3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
-        "answer": "Nxd4",
-        "answerUci": "f3d4",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 d6 4. d4 exd4 5. **Nxd4** [Black plays exd4 here 60% of the time]",
+        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 h6 4. d4 exd4 5. **Nxd4** [Black plays exd4 here 70% of the time]",
         "lastMove": "e5d4"
       },
       "tags": [
@@ -692,7 +660,23 @@
         "answerUci": "f3d4",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Be7 4. d4 exd4 5. **Nxd4** [Black plays exd4 here 71% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Be7 4. d4 exd4 5. **Nxd4** [Black plays exd4 here 70% of the time]",
+        "lastMove": "e5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-exd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/ppp2ppp/2np4/8/2BpP3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "Nxd4",
+        "answerUci": "f3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 d6 4. d4 exd4 5. **Nxd4** [Black plays exd4 here 50% of the time]",
         "lastMove": "e5d4"
       },
       "tags": [
@@ -716,15 +700,15 @@
       ]
     },
     {
-      "key": "l-e5-nf6-h6-d6",
+      "key": "l-e5-nf6-be7-d6",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/ppp2pp1/3p1n1p/4p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
-        "answer": "Nc3",
-        "answerUci": "b1c3",
+        "fen": "rnbqk2r/ppp1bppp/3p1n2/4p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "h3",
+        "answerUci": "h2h3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 h6 4. Nf3 d6 5. **Nc3** [Black plays d6 here 33% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Be7 4. Nf3 d6 5. **h3** [Black plays d6 here 55% of the time]",
         "lastMove": "d7d6"
       },
       "tags": [
@@ -732,16 +716,32 @@
       ]
     },
     {
-      "key": "l-e5-nc6-d6-bg4",
+      "key": "l-e5-nc6-nf6-d5",
       "model": "chess",
       "fields": {
-        "fen": "r2qkbnr/ppp2ppp/2np4/4p3/2BPP1b1/5N2/PPP2PPP/RNBQK2R w KQkq - 1 5",
-        "answer": "dxe5",
-        "answerUci": "d4e5",
+        "fen": "r1bqkb1r/ppp2ppp/2n2n2/3pp3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "exd5",
+        "answerUci": "e4d5",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 d6 4. d4 Bg4 5. **dxe5** [Black plays Bg4 here 36% of the time]",
-        "lastMove": "c8g4"
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 d5 5. **exd5** [Black plays d5 here 8% of the time]",
+        "lastMove": "d7d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-h6-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp2pp1/3p1n1p/4p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "h3",
+        "answerUci": "h2h3",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 h6 4. Nf3 d6 5. **h3** [Black plays d6 here 27% of the time]",
+        "lastMove": "d7d6"
       },
       "tags": [
         "chess::line"
@@ -764,22 +764,6 @@
       ]
     },
     {
-      "key": "l-e5-nc6-nf6-d5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkb1r/ppp2ppp/2n2n2/3pp3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
-        "answer": "exd5",
-        "answerUci": "e4d5",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 d5 5. **exd5** [Black plays d5 here 7% of the time]",
-        "lastMove": "d7d5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
       "key": "l-e5-d6-bg4-bh5",
       "model": "chess",
       "fields": {
@@ -788,8 +772,40 @@
         "answerUci": "g2g4",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Bg4 4. h3 Bh5 5. **g4** [Black plays Bh5 here 56% of the time]",
+        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Bg4 4. h3 Bh5 5. **g4** [Black plays Bh5 here 55% of the time]",
         "lastMove": "g4h5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-bc5-ng4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pppp1ppp/8/2b1p3/2B1P1n1/3P1N2/PPP2PPP/RNBQK2R w KQkq - 3 5",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Bc5 4. Nf3 Ng4 5. **O-O** [Black plays Ng4 here 7% of the time]",
+        "lastMove": "f6g4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-bg4",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/ppp2ppp/2np4/4p3/2BPP1b1/5N2/PPP2PPP/RNBQK2R w KQkq - 1 5",
+        "answer": "dxe5",
+        "answerUci": "d4e5",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 d6 4. d4 Bg4 5. **dxe5** [Black plays Bg4 here 31% of the time]",
+        "lastMove": "c8g4"
       },
       "tags": [
         "chess::line"
@@ -804,7 +820,7 @@
         "answerUci": "f2f4",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Nc6 4. Nc3 h6 5. **f4** [Black plays h6 here 13% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Nc6 4. Nc3 h6 5. **f4** [Black plays h6 here 12% of the time]",
         "lastMove": "h7h6"
       },
       "tags": [
@@ -820,7 +836,7 @@
         "answerUci": "d1f3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Bg4 4. h3 Bxf3 5. **Qxf3** [Black plays Bxf3 here 44% of the time]",
+        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Bg4 4. h3 Bxf3 5. **Qxf3** [Black plays Bxf3 here 45% of the time]",
         "lastMove": "g4f3"
       },
       "tags": [
@@ -836,7 +852,7 @@
         "answerUci": "f2f4",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Nc6 4. Nc3 Be7 5. **f4** [Black plays Be7 here 10% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Nc6 4. Nc3 Be7 5. **f4** [Black plays Be7 here 11% of the time]",
         "lastMove": "f8e7"
       },
       "tags": [
@@ -844,16 +860,16 @@
       ]
     },
     {
-      "key": "l-e5-nc6-be7-d6",
+      "key": "l-e5-nf6-bc5-h6",
       "model": "chess",
       "fields": {
-        "fen": "r1bqk1nr/ppp1bppp/2np4/4p3/2BPP3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
-        "answer": "dxe5",
-        "answerUci": "d4e5",
+        "fen": "rnbqk2r/pppp1pp1/5n1p/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "O-O",
+        "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Be7 4. d4 d6 5. **dxe5** [Black plays d6 here 29% of the time]",
-        "lastMove": "d7d6"
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Bc5 4. Nf3 h6 5. **O-O** [Black plays h6 here 5% of the time]",
+        "lastMove": "h7h6"
       },
       "tags": [
         "chess::line"
@@ -876,22 +892,6 @@
       ]
     },
     {
-      "key": "l-e5-nc6-h6-d6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkbnr/ppp2pp1/2np3p/4p3/2BPP3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
-        "answer": "dxe5",
-        "answerUci": "d4e5",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 h6 4. d4 d6 5. **dxe5** [Black plays d6 here 7% of the time]",
-        "lastMove": "d7d6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
       "key": "l-e5-nc6-bc5-nf6-exd4",
       "model": "chess",
       "fields": {
@@ -900,7 +900,7 @@
         "answerUci": "c3d4",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. **cxd4** [Black plays exd4 here 99% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. **cxd4** [Black plays exd4 here 98% of the time]",
         "lastMove": "e5d4"
       },
       "tags": [
@@ -908,16 +908,16 @@
       ]
     },
     {
-      "key": "l-e5-bc5-bxd4-nc6-nxd4",
+      "key": "l-e5-nc6-bc5-d6-exd4",
       "model": "chess",
       "fields": {
-        "fen": "r1bqk1nr/pppp1ppp/8/4p3/2BnP3/8/PPP2PPP/RNBQK2R w KQkq - 0 6",
-        "answer": "O-O",
-        "answerUci": "e1g1",
+        "fen": "r1bqk1nr/ppp2ppp/2np4/2b5/2BpP3/2P2N2/PP3PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "cxd4",
+        "answerUci": "c3d4",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 Bxd4 4. Nf3 Nc6 5. Nxd4 Nxd4 6. **O-O** [Black plays Nxd4 here 100% of the time]",
-        "lastMove": "c6d4"
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 d6 5. d4 exd4 6. **cxd4** [Black plays exd4 here 96% of the time]",
+        "lastMove": "e5d4"
       },
       "tags": [
         "chess::line"
@@ -948,7 +948,7 @@
         "answerUci": "h5c5",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 exd4 4. Bxf7+ Kxf7 5. Qh5+ g6 6. **Qxc5** [Black plays g6 here 100% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 exd4 4. Bxf7+ Kxf7 5. Qh5+ g6 6. **Qxc5** [Black plays g6 here 78% of the time]",
         "lastMove": "g7g6"
       },
       "tags": [
@@ -956,16 +956,32 @@
       ]
     },
     {
-      "key": "l-e5-nc6-bc5-d6-exd4",
+      "key": "l-e5-bc5-bxd4-nc6-nxd4",
       "model": "chess",
       "fields": {
-        "fen": "r1bqk1nr/ppp2ppp/2np4/2b5/2BpP3/2P2N2/PP3PPP/RNBQK2R w KQkq - 0 6",
-        "answer": "cxd4",
-        "answerUci": "c3d4",
+        "fen": "r1bqk1nr/pppp1ppp/8/4p3/2BnP3/8/PPP2PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "O-O",
+        "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 d6 5. d4 exd4 6. **cxd4** [Black plays exd4 here 95% of the time]",
-        "lastMove": "e5d4"
+        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 Bxd4 4. Nf3 Nc6 5. Nxd4 Nxd4 6. **O-O** [Black plays Nxd4 here 93% of the time]",
+        "lastMove": "c6d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-bc5-d6-h6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp2pp1/3p1n1p/2b1p3/2B1P3/3P1N1P/PPP2PP1/RNBQK2R w KQkq - 0 6",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Bc5 4. Nf3 d6 5. h3 h6 6. **O-O** [Black plays h6 here 54% of the time]",
+        "lastMove": "h7h6"
       },
       "tags": [
         "chess::line"
@@ -975,12 +991,12 @@
       "key": "l-e5-nc6-nf6-bc5-d6",
       "model": "chess",
       "fields": {
-        "fen": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQK2R w KQkq - 0 6",
-        "answer": "O-O",
-        "answerUci": "e1g1",
+        "fen": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQ1RK1 w kq - 0 6",
+        "answer": "h3",
+        "answerUci": "h2h3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Bc5 5. c3 d6 6. **O-O** [Black plays d6 here 41% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Bc5 5. O-O d6 6. **h3** [Black plays d6 here 40% of the time]",
         "lastMove": "d7d6"
       },
       "tags": [
@@ -996,8 +1012,24 @@
         "answerUci": "b1c3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Be7 4. d4 exd4 5. Nxd4 Nf6 6. **Nc3** [Black plays Nf6 here 100% of the time]",
+        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Be7 4. d4 exd4 5. Nxd4 Nf6 6. **Nc3** [Black plays Nf6 here 91% of the time]",
         "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppp1ppp/2n2n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQ1RK1 w - - 3 6",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Bc5 5. O-O O-O 6. **c3** [Black plays O-O here 32% of the time]",
+        "lastMove": "e8g8"
       },
       "tags": [
         "chess::line"
@@ -1012,7 +1044,7 @@
         "answerUci": "g1f3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Nc6 4. Nc3 Bc5 5. f4 d6 6. **Nf3** [Black plays d6 here 82% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Nc6 4. Nc3 Bc5 5. f4 d6 6. **Nf3** [Black plays d6 here 73% of the time]",
         "lastMove": "d7d6"
       },
       "tags": [
@@ -1020,31 +1052,31 @@
       ]
     },
     {
-      "key": "l-e5-nf6-be7-d6-oo",
+      "key": "l-e5-nc6-nf6-bc5-h6",
       "model": "chess",
       "fields": {
-        "fen": "rnbq1rk1/ppp1bppp/3p1n2/4p3/2B1P3/2NP1N2/PPP2PPP/R1BQK2R w KQ - 2 6",
-        "answer": "h3",
-        "answerUci": "h2h3",
+        "fen": "r1bqk2r/pppp1pp1/2n2n1p/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQ1RK1 w kq - 0 6",
+        "answer": "c3",
+        "answerUci": "c2c3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Be7 4. Nf3 d6 5. Nc3 O-O 6. **h3** [Black plays O-O here 88% of the time]",
-        "lastMove": "e8g8"
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Bc5 5. O-O h6 6. **c3** [Black plays h6 here 24% of the time]",
+        "lastMove": "h7h6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nc6-nf6-bc5-oo",
+      "key": "l-e5-nf6-bc5-d6-oo",
       "model": "chess",
       "fields": {
-        "fen": "r1bq1rk1/pppp1ppp/2n2n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQK2R w KQ - 1 6",
+        "fen": "rnbq1rk1/ppp2ppp/3p1n2/2b1p3/2B1P3/3P1N1P/PPP2PP1/RNBQK2R w KQ - 1 6",
         "answer": "O-O",
         "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Bc5 5. c3 O-O 6. **O-O** [Black plays O-O here 25% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Bc5 4. Nf3 d6 5. h3 O-O 6. **O-O** [Black plays O-O here 30% of the time]",
         "lastMove": "e8g8"
       },
       "tags": [
@@ -1060,24 +1092,8 @@
         "answerUci": "c2c3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Be7 5. O-O O-O 6. **c3** [Black plays O-O here 75% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Be7 5. O-O O-O 6. **c3** [Black plays O-O here 69% of the time]",
         "lastMove": "e8g8"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-bc5-h6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk2r/pppp1pp1/2n2n1p/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQK2R w KQkq - 0 6",
-        "answer": "O-O",
-        "answerUci": "e1g1",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Bc5 5. c3 h6 6. **O-O** [Black plays h6 here 21% of the time]",
-        "lastMove": "h7h6"
       },
       "tags": [
         "chess::line"
@@ -1092,8 +1108,24 @@
         "answerUci": "d1d4",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 h6 4. d4 exd4 5. Nxd4 Nxd4 6. **Qxd4** [Black plays Nxd4 here 46% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 h6 4. d4 exd4 5. Nxd4 Nxd4 6. **Qxd4** [Black plays Nxd4 here 43% of the time]",
         "lastMove": "c6d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-bc5-exd4-kxf7-kf8",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1knr/pppp2pp/8/2b4Q/3pP3/8/PPP2PPP/RNB1K1NR w KQ - 2 6",
+        "answer": "Qxc5",
+        "answerUci": "h5c5",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 exd4 4. Bxf7+ Kxf7 5. Qh5+ Kf8 6. **Qxc5+** [Black plays Kf8 here 22% of the time]",
+        "lastMove": "f7f8"
       },
       "tags": [
         "chess::line"
@@ -1108,56 +1140,8 @@
         "answerUci": "b1c3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 h6 4. d4 exd4 5. Nxd4 Nf6 6. **Nc3** [Black plays Nf6 here 71% of the time]",
+        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 h6 4. d4 exd4 5. Nxd4 Nf6 6. **Nc3** [Black plays Nf6 here 58% of the time]",
         "lastMove": "g8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nf6-nc6-bb4-d5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk2r/ppp2ppp/2n2n2/3pp3/1bB1P3/2NP4/PPP1NPPP/R1BQK2R w KQkq - 0 6",
-        "answer": "exd5",
-        "answerUci": "e4d5",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Nc6 4. Nc3 Bb4 5. Ne2 d5 6. **exd5** [Black plays d5 here 100% of the time]",
-        "lastMove": "d7d5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-d6-bg4-nxe5",
-      "model": "chess",
-      "fields": {
-        "fen": "r2qkbnr/ppp2ppp/3p4/4n3/2B1P1b1/5N2/PPP2PPP/RNBQK2R w KQkq - 0 6",
-        "answer": "Be2",
-        "answerUci": "c4e2",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 d6 4. d4 Bg4 5. dxe5 Nxe5 6. **Be2** [Black plays Nxe5 here 100% of the time]",
-        "lastMove": "c6e5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-d6-be6-fxe6-exd4",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkbnr/ppp3pp/3pp3/8/3pP3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 6",
-        "answer": "Nxd4",
-        "answerUci": "f3d4",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Be6 4. Bxe6 fxe6 5. d4 exd4 6. **Nxd4** [Black plays exd4 here 100% of the time]",
-        "lastMove": "e5d4"
       },
       "tags": [
         "chess::line"
@@ -1172,8 +1156,40 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 d5 5. exd5 Nxd5 6. **O-O** [Black plays Nxd5 here 100% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 d5 5. exd5 Nxd5 6. **O-O** [Black plays Nxd5 here 96% of the time]",
         "lastMove": "f6d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-be7-d6-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1bppp/3p1n2/4p3/2B1P3/3P1N1P/PPP2PP1/RNBQK2R w KQ - 1 6",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Be7 4. Nf3 d6 5. h3 O-O 6. **O-O** [Black plays O-O here 84% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-bc5-d6-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2B1P3/3P1N1P/PPP2PP1/RNBQK2R w KQkq - 1 6",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Bc5 4. Nf3 d6 5. h3 Nc6 6. **O-O** [Black plays Nc6 here 17% of the time]",
+        "lastMove": "b8c6"
       },
       "tags": [
         "chess::line"
@@ -1196,6 +1212,70 @@
       ]
     },
     {
+      "key": "l-e5-nc6-nf6-h6-bc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1pp1/2n2n1p/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQK2R w KQkq - 1 6",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 h6 5. c3 Bc5 6. **O-O** [Black plays Bc5 here 46% of the time]",
+        "lastMove": "f8c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-d6-be6-fxe6-exd4",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/ppp3pp/3pp3/8/3pP3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "Nxd4",
+        "answerUci": "f3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Be6 4. Bxe6 fxe6 5. d4 exd4 6. **Nxd4** [Black plays exd4 here 88% of the time]",
+        "lastMove": "e5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-h6-d6-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1bpp1/3p1n1p/4p3/2B1P3/3P1N1P/PPP2PP1/RNBQK2R w KQkq - 1 6",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 h6 4. Nf3 d6 5. h3 Be7 6. **Nc3** [Black plays Be7 here 75% of the time]",
+        "lastMove": "f8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-bg4-nxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/ppp2ppp/3p4/4n3/2B1P1b1/5N2/PPP2PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "Be2",
+        "answerUci": "c4e2",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 d6 4. d4 Bg4 5. dxe5 Nxe5 6. **Be2** [Black plays Nxe5 here 87% of the time]",
+        "lastMove": "c6e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e5-nc6-d6-exd4-nxd4",
       "model": "chess",
       "fields": {
@@ -1204,24 +1284,8 @@
         "answerUci": "d1d4",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 d6 4. d4 exd4 5. Nxd4 Nxd4 6. **Qxd4** [Black plays Nxd4 here 55% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 d6 4. d4 exd4 5. Nxd4 Nxd4 6. **Qxd4** [Black plays Nxd4 here 51% of the time]",
         "lastMove": "c6d4"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nf6-nc6-be7-d6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk2r/ppp1bppp/2np1n2/4p3/2B1PP2/2NP4/PPP3PP/R1BQK1NR w KQkq - 0 6",
-        "answer": "Nf3",
-        "answerUci": "g1f3",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Nc6 4. Nc3 Be7 5. f4 d6 6. **Nf3** [Black plays d6 here 100% of the time]",
-        "lastMove": "d7d6"
       },
       "tags": [
         "chess::line"
@@ -1244,256 +1308,16 @@
       ]
     },
     {
-      "key": "l-e5-nc6-be7-exd4-d6",
+      "key": "l-e5-nf6-d5-nxd5-bg4",
       "model": "chess",
       "fields": {
-        "fen": "r1bqk1nr/ppp1bppp/2np4/8/2BNP3/8/PPP2PPP/RNBQK2R w KQkq - 0 6",
-        "answer": "Nxc6",
-        "answerUci": "d4c6",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Be7 4. d4 exd4 5. Nxd4 d6 6. **Nxc6** [Black plays d6 here 36% of the time]",
-        "lastMove": "d7d6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-be7-d6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk2r/ppp1bppp/2np1n2/4p3/2B1P3/3P1N2/PPP2PPP/RNBQ1RK1 w kq - 0 6",
+        "fen": "rn1qkb1r/ppp2ppp/8/3np3/2B3b1/3P1N2/PPP2PPP/RNBQK2R w KQkq - 2 6",
         "answer": "h3",
         "answerUci": "h2h3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Be7 5. O-O d6 6. **h3** [Black plays d6 here 25% of the time]",
-        "lastMove": "d7d6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-h6-exd4-bc5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/pppp1pp1/2n4p/2b5/2BNP3/8/PPP2PPP/RNBQK2R w KQkq - 1 6",
-        "answer": "Nxc6",
-        "answerUci": "d4c6",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 h6 4. d4 exd4 5. Nxd4 Bc5 6. **Nxc6** [Black plays Bc5 here 15% of the time]",
-        "lastMove": "f8c5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-d6-bg4-bxf3-nf6",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkb1r/ppp2ppp/3p1n2/4p3/2B1P3/5Q1P/PPPP1PP1/RNB1K2R w KQkq - 1 6",
-        "answer": "d3",
-        "answerUci": "d2d3",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Bg4 4. h3 Bxf3 5. Qxf3 Nf6 6. **d3** [Black plays Nf6 here 67% of the time]",
-        "lastMove": "g8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-h6-exd4-ne5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkbnr/pppp1pp1/7p/4n3/2BNP3/8/PPP2PPP/RNBQK2R w KQkq - 1 6",
-        "answer": "Bb3",
-        "answerUci": "c4b3",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 h6 4. d4 exd4 5. Nxd4 Ne5 6. **Bb3** [Black plays Ne5 here 14% of the time]",
-        "lastMove": "c6e5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-be7-exd4-nxd4",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/ppppbppp/8/8/2BnP3/8/PPP2PPP/RNBQK2R w KQkq - 0 6",
-        "answer": "Qxd4",
-        "answerUci": "d1d4",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Be7 4. d4 exd4 5. Nxd4 Nxd4 6. **Qxd4** [Black plays Nxd4 here 28% of the time]",
-        "lastMove": "c6d4"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-be7-exd4-nf6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk2r/ppppbppp/2n2n2/8/2BNP3/8/PPP2PPP/RNBQK2R w KQkq - 1 6",
-        "answer": "Nc3",
-        "answerUci": "b1c3",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Be7 4. d4 exd4 5. Nxd4 Nf6 6. **Nc3** [Black plays Nf6 here 24% of the time]",
-        "lastMove": "g8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-d6-exd4-nf6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkb1r/ppp2ppp/2np1n2/8/2BNP3/8/PPP2PPP/RNBQK2R w KQkq - 1 6",
-        "answer": "Nc3",
-        "answerUci": "b1c3",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 d6 4. d4 exd4 5. Nxd4 Nf6 6. **Nc3** [Black plays Nf6 here 21% of the time]",
-        "lastMove": "g8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-be7-d6-dxe5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/ppp1bppp/2n5/4p3/2B1P3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 6",
-        "answer": "Qxd8",
-        "answerUci": "d1d8",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Be7 4. d4 d6 5. dxe5 dxe5 6. **Qxd8+** [Black plays dxe5 here 52% of the time]",
-        "lastMove": "d6e5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-be7-d6-nxe5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/ppp1bppp/3p4/4n3/2B1P3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 6",
-        "answer": "Nxe5",
-        "answerUci": "f3e5",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Be7 4. d4 d6 5. dxe5 Nxe5 6. **Nxe5** [Black plays Nxe5 here 48% of the time]",
-        "lastMove": "c6e5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-h6-exd4-qf6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1b1kbnr/pppp1pp1/2n2q1p/8/2BNP3/8/PPP2PPP/RNBQK2R w KQkq - 1 6",
-        "answer": "Nxc6",
-        "answerUci": "d4c6",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 h6 4. d4 exd4 5. Nxd4 Qf6 6. **Nxc6** [Black plays Qf6 here 8% of the time]",
-        "lastMove": "d8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-h6-exd4-d6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkbnr/ppp2pp1/2np3p/8/2BNP3/8/PPP2PPP/RNBQK2R w KQkq - 0 6",
-        "answer": "Nxc6",
-        "answerUci": "d4c6",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 h6 4. d4 exd4 5. Nxd4 d6 6. **Nxc6** [Black plays d6 here 8% of the time]",
-        "lastMove": "d7d6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-d6-bg4-bxf3-qf6",
-      "model": "chess",
-      "fields": {
-        "fen": "rn2kbnr/ppp2ppp/3p1q2/4p3/2B1P3/5Q1P/PPPP1PP1/RNB1K2R w KQkq - 1 6",
-        "answer": "Qb3",
-        "answerUci": "f3b3",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Bg4 4. h3 Bxf3 5. Qxf3 Qf6 6. **Qb3** [Black plays Qf6 here 33% of the time]",
-        "lastMove": "d8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-d6-exd4-ne5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkbnr/ppp2ppp/3p4/4n3/2BNP3/8/PPP2PPP/RNBQK2R w KQkq - 1 6",
-        "answer": "Bb3",
-        "answerUci": "c4b3",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 d6 4. d4 exd4 5. Nxd4 Ne5 6. **Bb3** [Black plays Ne5 here 14% of the time]",
-        "lastMove": "c6e5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-h6-d5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkb1r/ppp2pp1/2n2n1p/3pp3/2B1P3/2PP1N2/PP3PPP/RNBQK2R w KQkq - 0 6",
-        "answer": "exd5",
-        "answerUci": "e4d5",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 h6 5. c3 d5 6. **exd5** [Black plays d5 here 11% of the time]",
-        "lastMove": "d7d5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-be7-exd4-ne5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/ppppbppp/8/4n3/2BNP3/8/PPP2PPP/RNBQK2R w KQkq - 1 6",
-        "answer": "Bb3",
-        "answerUci": "c4b3",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Be7 4. d4 exd4 5. Nxd4 Ne5 6. **Bb3** [Black plays Ne5 here 13% of the time]",
-        "lastMove": "c6e5"
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 d5 4. exd5 Nxd5 5. Nf3 Bg4 6. **h3** [Black plays Bg4 here 20% of the time]",
+        "lastMove": "c8g4"
       },
       "tags": [
         "chess::line"
@@ -1508,7 +1332,7 @@
         "answerUci": "b1c3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. **Nc3** [Black plays Bb4+ here 94% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. **Nc3** [Black plays Bb4+ here 93% of the time]",
         "lastMove": "c5b4"
       },
       "tags": [
@@ -1516,16 +1340,32 @@
       ]
     },
     {
-      "key": "l-e5-d6-be7-exd4-nf6-oo",
+      "key": "l-e5-nf6-c6-d5-cxd5-nc6",
       "model": "chess",
       "fields": {
-        "fen": "rnbq1rk1/ppp1bppp/3p1n2/8/2BNP3/2N5/PPP2PPP/R1BQK2R w KQ - 3 7",
+        "fen": "r1bqkb1r/pp3ppp/2n2n2/3pp3/8/1B1P1N2/PPP2PPP/RNBQK2R w KQkq - 2 7",
         "answer": "O-O",
         "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Be7 4. d4 exd4 5. Nxd4 Nf6 6. Nc3 O-O 7. **O-O** [Black plays O-O here 100% of the time]",
-        "lastMove": "e8g8"
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 c6 4. Nf3 d5 5. exd5 cxd5 6. Bb3 Nc6 7. **O-O** [Black plays Nc6 here 100% of the time]",
+        "lastMove": "b8c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-bc5-bxd4-nc6-nxd4-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/5n2/4p3/2BnP3/8/PPP2PPP/RNBQ1RK1 w kq - 2 7",
+        "answer": "Bg5",
+        "answerUci": "c1g5",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 Bxd4 4. Nf3 Nc6 5. Nxd4 Nxd4 6. O-O Nf6 7. **Bg5** [Black plays Nf6 here 71% of the time]",
+        "lastMove": "g8f6"
       },
       "tags": [
         "chess::line"
@@ -1548,6 +1388,22 @@
       ]
     },
     {
+      "key": "l-e5-bc5-exd4-kxf7-g6-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq2nr/pppp1k1p/2n3p1/2Q5/3pP3/8/PPP2PPP/RNB1K1NR w KQ - 1 7",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 exd4 4. Bxf7+ Kxf7 5. Qh5+ g6 6. Qxc5 Nc6 7. **Nf3** [Black plays Nc6 here 51% of the time]",
+        "lastMove": "b8c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e5-nc6-bc5-d6-exd4-bb4",
       "model": "chess",
       "fields": {
@@ -1564,6 +1420,118 @@
       ]
     },
     {
+      "key": "l-e5-d6-be7-exd4-nf6-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1bppp/3p1n2/8/2BNP3/2N5/PPP2PPP/R1BQK2R w KQ - 3 7",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Be7 4. d4 exd4 5. Nxd4 Nf6 6. Nc3 O-O 7. **O-O** [Black plays O-O here 82% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-d6-h6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2pp1/2np1n1p/2b1p3/2B1P3/3P1N1P/PPP2PP1/RNBQ1RK1 w kq - 0 7",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Bc5 5. O-O d6 6. h3 h6 7. **c3** [Black plays h6 here 51% of the time]",
+        "lastMove": "h7h6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-nc6-bc5-d6-bg4",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qk2r/ppp2ppp/2np1n2/2b1p3/2B1PPb1/2NP1N2/PPP3PP/R1BQK2R w KQkq - 2 7",
+        "answer": "Na4",
+        "answerUci": "c3a4",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Nc6 4. Nc3 Bc5 5. f4 d6 6. Nf3 Bg4 7. **Na4** [Black plays Bg4 here 71% of the time]",
+        "lastMove": "c8g4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-bc5-bxd4-nc6-nxd4-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppp2ppp/3p4/4p3/2BnP3/8/PPP2PPP/RNBQ1RK1 w kq - 0 7",
+        "answer": "f4",
+        "answerUci": "f2f4",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 Bxd4 4. Nf3 Nc6 5. Nxd4 Nxd4 6. O-O d6 7. **f4** [Black plays d6 here 29% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-h6-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2pp1/2np1n1p/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 w kq - 0 7",
+        "answer": "h3",
+        "answerUci": "h2h3",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Bc5 5. O-O h6 6. c3 d6 7. **h3** [Black plays d6 here 56% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-oo-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp2ppp/2np1n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 w - - 0 7",
+        "answer": "h3",
+        "answerUci": "h2h3",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Bc5 5. O-O O-O 6. c3 d6 7. **h3** [Black plays d6 here 41% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-bc5-exd4-kxf7-g6-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq2nr/ppp2k1p/3p2p1/2Q5/3pP3/8/PPP2PPP/RNB1K1NR w KQ - 0 7",
+        "answer": "Qxd4",
+        "answerUci": "c5d4",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 exd4 4. Bxf7+ Kxf7 5. Qh5+ g6 6. Qxc5 d6 7. **Qxd4** [Black plays d6 here 23% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e5-d6-h6-exd4-nf6-be7",
       "model": "chess",
       "fields": {
@@ -1572,7 +1540,7 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 h6 4. d4 exd4 5. Nxd4 Nf6 6. Nc3 Be7 7. **O-O** [Black plays Be7 here 100% of the time]",
+        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 h6 4. d4 exd4 5. Nxd4 Nf6 6. Nc3 Be7 7. **O-O** [Black plays Be7 here 89% of the time]",
         "lastMove": "f8e7"
       },
       "tags": [
@@ -1580,15 +1548,15 @@
       ]
     },
     {
-      "key": "l-e5-nc6-h6-exd4-nxd4-d6",
+      "key": "l-e5-nc6-nf6-be7-oo-d6",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkbnr/ppp2pp1/3p3p/8/2BQP3/8/PPP2PPP/RNB1K2R w KQkq - 0 7",
-        "answer": "Nc3",
-        "answerUci": "b1c3",
+        "fen": "r1bq1rk1/ppp1bppp/2np1n2/4p3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 w - - 0 7",
+        "answer": "h3",
+        "answerUci": "h2h3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 h6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 d6 7. **Nc3** [Black plays d6 here 52% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Be7 5. O-O O-O 6. c3 d6 7. **h3** [Black plays d6 here 60% of the time]",
         "lastMove": "d7d6"
       },
       "tags": [
@@ -1596,160 +1564,32 @@
       ]
     },
     {
-      "key": "l-e5-d6-be6-fxe6-exd4-e5",
+      "key": "l-e5-bc5-exd4-kxf7-kf8-d6",
       "model": "chess",
       "fields": {
-        "fen": "rn1qkbnr/ppp3pp/3p4/4p3/3NP3/8/PPP2PPP/RNBQK2R w KQkq - 0 7",
-        "answer": "Nf5",
-        "answerUci": "d4f5",
+        "fen": "rnbq1knr/ppp3pp/3p4/2Q5/3pP3/8/PPP2PPP/RNB1K1NR w KQ - 0 7",
+        "answer": "Qxd4",
+        "answerUci": "c5d4",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Be6 4. Bxe6 fxe6 5. d4 exd4 6. Nxd4 e5 7. **Nf5** [Black plays e5 here 66% of the time]",
-        "lastMove": "e6e5"
+        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 exd4 4. Bxf7+ Kxf7 5. Qh5+ Kf8 6. Qxc5+ d6 7. **Qxd4** [Black plays d6 here 67% of the time]",
+        "lastMove": "d7d6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nc6-h6-exd4-bc5-bxc6",
+      "key": "l-e5-nc6-nf6-bc5-d6-be6",
       "model": "chess",
       "fields": {
-        "fen": "r1bqk1nr/p1pp1pp1/2p4p/2b5/2B1P3/8/PPP2PPP/RNBQK2R w KQkq - 0 7",
-        "answer": "O-O",
-        "answerUci": "e1g1",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 h6 4. d4 exd4 5. Nxd4 Bc5 6. Nxc6 bxc6 7. **O-O** [Black plays bxc6 here 100% of the time]",
-        "lastMove": "b7c6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-d6-exd4-nxd4-nf6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkb1r/ppp2ppp/3p1n2/8/2BQP3/8/PPP2PPP/RNB1K2R w KQkq - 1 7",
-        "answer": "Nc3",
-        "answerUci": "b1c3",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 d6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 Nf6 7. **Nc3** [Black plays Nf6 here 56% of the time]",
-        "lastMove": "g8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-bc5-oo-d5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/ppp2ppp/2n2n2/2bpp3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 w - - 0 7",
-        "answer": "exd5",
-        "answerUci": "e4d5",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Bc5 5. c3 O-O 6. O-O d5 7. **exd5** [Black plays d5 here 26% of the time]",
-        "lastMove": "d7d5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-be7-oo-d5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/ppp1bppp/2n2n2/3pp3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 w - - 0 7",
-        "answer": "exd5",
-        "answerUci": "e4d5",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Be7 5. O-O O-O 6. c3 d5 7. **exd5** [Black plays d5 here 30% of the time]",
-        "lastMove": "d7d5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-bc5-h6-exd4-bb4",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/pppp1pp1/2n4p/8/1bBPP3/5N2/PP3PPP/RNBQK2R w KQkq - 1 7",
-        "answer": "Nc3",
-        "answerUci": "b1c3",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 h6 5. d4 exd4 6. cxd4 Bb4+ 7. **Nc3** [Black plays Bb4+ here 61% of the time]",
-        "lastMove": "c5b4"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-h6-exd4-nxd4-qf6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1b1kbnr/pppp1pp1/5q1p/8/2BQP3/8/PPP2PPP/RNB1K2R w KQkq - 1 7",
-        "answer": "e5",
-        "answerUci": "e4e5",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 h6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 Qf6 7. **e5** [Black plays Qf6 here 21% of the time]",
-        "lastMove": "d8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-be7-d6-nxe5-dxe5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/ppp1bppp/8/4p3/2B1P3/8/PPP2PPP/RNBQK2R w KQkq - 0 7",
-        "answer": "Qxd8",
-        "answerUci": "d1d8",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Be7 4. d4 d6 5. dxe5 Nxe5 6. Nxe5 dxe5 7. **Qxd8+** [Black plays dxe5 here 100% of the time]",
-        "lastMove": "d6e5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-d6-exd4-nxd4-be6",
-      "model": "chess",
-      "fields": {
-        "fen": "r2qkbnr/ppp2ppp/3pb3/8/2BQP3/8/PPP2PPP/RNB1K2R w KQkq - 1 7",
+        "fen": "r2qk2r/ppp2ppp/2npbn2/2b1p3/2B1P3/3P1N1P/PPP2PP1/RNBQ1RK1 w kq - 1 7",
         "answer": "Bxe6",
         "answerUci": "c4e6",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 d6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 Be6 7. **Bxe6** [Black plays Be6 here 29% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Bc5 5. O-O d6 6. h3 Be6 7. **Bxe6** [Black plays Be6 here 23% of the time]",
         "lastMove": "c8e6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-d5-nxd5-bc5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk2r/ppp2ppp/2n5/2bnp3/2B5/3P1N2/PPP2PPP/RNBQ1RK1 w kq - 2 7",
-        "answer": "Re1",
-        "answerUci": "f1e1",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 d5 5. exd5 Nxd5 6. O-O Bc5 7. **Re1** [Black plays Bc5 here 22% of the time]",
-        "lastMove": "f8c5"
       },
       "tags": [
         "chess::line"
@@ -1772,6 +1612,86 @@
       ]
     },
     {
+      "key": "l-e5-bc5-exd4-kxf7-g6-nc6-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq2nr/ppp2k1p/2np2p1/2Q5/3pP3/5N2/PPP2PPP/RNB1K2R w KQ - 0 8",
+        "answer": "Qd5",
+        "answerUci": "c5d5",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 exd4 4. Bxf7+ Kxf7 5. Qh5+ g6 6. Qxc5 Nc6 7. Nf3 d6 8. **Qd5+** [Black plays d6 here 100% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-d6-exd4-bb6-bg4",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qk1nr/ppp2ppp/1bnp4/8/2BPP1b1/5N2/PP3PPP/RNBQ1RK1 w kq - 3 8",
+        "answer": "Be3",
+        "answerUci": "c1e3",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 d6 5. d4 exd4 6. cxd4 Bb6 7. O-O Bg4 8. **Be3** [Black plays Bg4 here 56% of the time]",
+        "lastMove": "c8g4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-bc5-bxd4-nc6-nxd4-nf6-h6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1pp1/5n1p/4p1B1/2BnP3/8/PPP2PPP/RN1Q1RK1 w kq - 0 8",
+        "answer": "Bh4",
+        "answerUci": "g5h4",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 Bxd4 4. Nf3 Nc6 5. Nxd4 Nxd4 6. O-O Nf6 7. Bg5 h6 8. **Bh4** [Black plays h6 here 52% of the time]",
+        "lastMove": "h7h6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-nc6-bc5-d6-bg4-nd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qk2r/ppp2ppp/3p1n2/2b1p3/N1BnPPb1/3P1N2/PPP3PP/R1BQK2R w KQkq - 4 8",
+        "answer": "Nxc5",
+        "answerUci": "a4c5",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nf6 3. d3 Nc6 4. Nc3 Bc5 5. f4 d6 6. Nf3 Bg4 7. Na4 Nd4 8. **Nxc5** [Black plays Nd4 here 68% of the time]",
+        "lastMove": "c6d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-d6-h6-exd4-nf6-be7-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1bpp1/3p1n1p/8/2BNP3/2N5/PPP2PPP/R1BQ1RK1 w - - 5 8",
+        "answer": "Re1",
+        "answerUci": "f1e1",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 h6 4. d4 exd4 5. Nxd4 Nf6 6. Nc3 Be7 7. O-O O-O 8. **Re1** [Black plays O-O here 100% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e5-nc6-bc5-d6-exd4-bb4-bg4",
       "model": "chess",
       "fields": {
@@ -1780,7 +1700,7 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 d6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Bg4 8. **O-O** [Black plays Bg4 here 43% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 d6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Bg4 8. **O-O** [Black plays Bg4 here 42% of the time]",
         "lastMove": "c8g4"
       },
       "tags": [
@@ -1792,12 +1712,44 @@
       "model": "chess",
       "fields": {
         "fen": "r1bq1rk1/pppp1ppp/2n2n2/8/1bBPP3/2N2N2/PP3PPP/R1BQK2R w KQ - 3 8",
-        "answer": "O-O",
-        "answerUci": "e1g1",
+        "answer": "e5",
+        "answerUci": "e4e5",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 O-O 8. **O-O** [Black plays O-O here 11% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 O-O 8. **e5** [Black plays O-O here 11% of the time]",
         "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-d6-be7-exd4-nf6-oo-a6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/1pp1bppp/p2p1n2/8/2BNP3/2N5/PPP2PPP/R1BQ1RK1 w - - 0 8",
+        "answer": "a4",
+        "answerUci": "a2a4",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 d6 3. Nf3 Be7 4. d4 exd4 5. Nxd4 Nf6 6. Nc3 O-O 7. O-O a6 8. **a4** [Black plays a6 here 34% of the time]",
+        "lastMove": "a7a6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-d6-be6-fxe6",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qk2r/ppp3pp/2nppn2/2b1p3/4P3/3P1N1P/PPP2PP1/RNBQ1RK1 w kq - 0 8",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Nf6 4. d3 Bc5 5. O-O d6 6. h3 Be6 7. Bxe6 fxe6 8. **Nc3** [Black plays fxe6 here 100% of the time]",
+        "lastMove": "f7e6"
       },
       "tags": [
         "chess::line"
@@ -1820,54 +1772,6 @@
       ]
     },
     {
-      "key": "l-e5-nc6-bc5-nf6-exd4-bb4-d5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk2r/ppp2ppp/2n2n2/3p4/1bBPP3/2N2N2/PP3PPP/R1BQK2R w KQkq - 0 8",
-        "answer": "exd5",
-        "answerUci": "e4d5",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 d5 8. **exd5** [Black plays d5 here 6% of the time]",
-        "lastMove": "d7d5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-bc5-d6-exd4-bb4-nf6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk2r/ppp2ppp/2np1n2/8/1bBPP3/2N2N2/PP3PPP/R1BQK2R w KQkq - 3 8",
-        "answer": "O-O",
-        "answerUci": "e1g1",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 d6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nf6 8. **O-O** [Black plays Nf6 here 22% of the time]",
-        "lastMove": "g8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-bc5-d6-exd4-bb4-bxc3",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/ppp2ppp/2np4/8/2BPP3/2b2N2/PP3PPP/R1BQK2R w KQkq - 0 8",
-        "answer": "bxc3",
-        "answerUci": "b2c3",
-        "orientation": "white",
-        "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 d6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Bxc3+ 8. **bxc3** [Black plays Bxc3+ here 20% of the time]",
-        "lastMove": "b4c3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
       "key": "l-e5-nc6-bc5-nf6-exd4-bb4-nxe4-bxc3",
       "model": "chess",
       "fields": {
@@ -1876,7 +1780,7 @@
         "answerUci": "b2c3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. **bxc3** [Black plays Bxc3 here 62% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. **bxc3** [Black plays Bxc3 here 59% of the time]",
         "lastMove": "b4c3"
       },
       "tags": [
@@ -1892,8 +1796,24 @@
         "answerUci": "b2c3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 9. **bxc3** [Black plays Nxc3 here 38% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 9. **bxc3** [Black plays Nxc3 here 35% of the time]",
         "lastMove": "e4c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-bc5-bxd4-nc6-nxd4-nf6-h6-g5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1p2/5n1p/4p1p1/2BnP2B/8/PPP2PPP/RN1Q1RK1 w kq - 0 9",
+        "answer": "f4",
+        "answerUci": "f2f4",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Bc5 3. d4 Bxd4 4. Nf3 Nc6 5. Nxd4 Nxd4 6. O-O Nf6 7. Bg5 h6 8. Bh4 g5 9. **f4** [Black plays g5 here 62% of the time]",
+        "lastMove": "g7g5"
       },
       "tags": [
         "chess::line"
@@ -1908,7 +1828,7 @@
         "answerUci": "c4d3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. bxc3 d5 10. **Bd3** [Black plays d5 here 79% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. bxc3 d5 10. **Bd3** [Black plays d5 here 71% of the time]",
         "lastMove": "d7d5"
       },
       "tags": [
@@ -1924,8 +1844,88 @@
         "answerUci": "c1a3",
         "orientation": "white",
         "prompt": "You are White in the Bishop's Opening. What is the book move?",
-        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 9. bxc3 Bxc3 10. **Ba3** [Black plays Bxc3 here 74% of the time]",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 9. bxc3 Bxc3 10. **Ba3** [Black plays Bxc3 here 72% of the time]",
         "lastMove": "b4c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nf6-exd4-bb4-nxe4-bxc3-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppp1ppp/2n5/8/2BPn3/2P2N2/P4PPP/R1BQ1RK1 w - - 1 10",
+        "answer": "Qd3",
+        "answerUci": "d1d3",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. bxc3 O-O 10. **Qd3** [Black plays O-O here 27% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nf6-exd4-bb4-nxe4-bxc3-d5-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp2ppp/2n5/3p4/3Pn3/2PB1N2/P4PPP/R1BQ1RK1 w - - 2 11",
+        "answer": "Qc2",
+        "answerUci": "d1c2",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. bxc3 d5 10. Bd3 O-O 11. **Qc2** [Black plays O-O here 100% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nf6-exd4-bb4-nxe4-bxc3-oo-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp2ppp/2n5/3p4/2BPn3/2PQ1N2/P4PPP/R1B2RK1 w - - 0 11",
+        "answer": "Bb3",
+        "answerUci": "c4b3",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. bxc3 O-O 10. Qd3 d5 11. **Bb3** [Black plays d5 here 100% of the time]",
+        "lastMove": "d7d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nf6-exd4-bb4-nxe4-nxc3-bxc3-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2ppp/2np4/8/2BP4/B1b2N2/P4PPP/R2Q1RK1 w kq - 0 11",
+        "answer": "Rc1",
+        "answerUci": "a1c1",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 9. bxc3 Bxc3 10. Ba3 d6 11. **Rc1** [Black plays d6 here 58% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nf6-exd4-bb4-nxe4-nxc3-bxc3-d6-ba5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2ppp/2np4/b7/2BP4/B4N2/P4PPP/2RQ1RK1 w kq - 2 12",
+        "answer": "Qa4",
+        "answerUci": "d1a4",
+        "orientation": "white",
+        "prompt": "You are White in the Bishop's Opening. What is the book move?",
+        "extra": "1. e4 e5 2. Bc4 Nc6 3. Nf3 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 9. bxc3 Bxc3 10. Ba3 d6 11. Rc1 Ba5 12. **Qa4** [Black plays Ba5 here 100% of the time]",
+        "lastMove": "c3a5"
       },
       "tags": [
         "chess::line"

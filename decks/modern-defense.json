@@ -1,8 +1,8 @@
 {
   "key": "modern-defense",
-  "version": 3,
+  "version": 4,
   "name": "The Modern Defense as Black",
-  "description": "A Black repertoire for the Modern Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 95 positions.",
+  "description": "A Black repertoire for the Modern Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 5,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -165,7 +165,7 @@
         "answerUci": "d7d6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. c3 **d6** [White plays c3 here 11% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. c3 **d6** [White plays c3 here 10% of the time]",
         "lastMove": "c2c3"
       },
       "tags": [
@@ -197,7 +197,7 @@
         "answerUci": "e7e6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. Nf3 Bg7 3. Bc4 **e6** [White plays Bc4 here 21% of the time]",
+        "extra": "1. e4 g6 2. Nf3 Bg7 3. Bc4 **e6** [White plays Bc4 here 20% of the time]",
         "lastMove": "f1c4"
       },
       "tags": [
@@ -229,7 +229,7 @@
         "answerUci": "d7d6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. f4 Bg7 3. Nf3 **d6** [White plays Nf3 here 69% of the time]",
+        "extra": "1. e4 g6 2. f4 Bg7 3. Nf3 **d6** [White plays Nf3 here 68% of the time]",
         "lastMove": "g1f3"
       },
       "tags": [
@@ -277,7 +277,7 @@
         "answerUci": "e7e6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. Bc4 Bg7 3. Qf3 **e6** [White plays Qf3 here 19% of the time]",
+        "extra": "1. e4 g6 2. Bc4 Bg7 3. Qf3 **e6** [White plays Qf3 here 20% of the time]",
         "lastMove": "d1f3"
       },
       "tags": [
@@ -309,24 +309,8 @@
         "answerUci": "d7d6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. Nf3 Bg7 3. c3 **d6** [White plays c3 here 5% of the time]",
+        "extra": "1. e4 g6 2. Nf3 Bg7 3. c3 **d6** [White plays c3 here 6% of the time]",
         "lastMove": "c2c3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-bc4-d4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk1nr/ppppppbp/6p1/8/2BPP3/8/PPP2PPP/RNBQK1NR b KQkq - 0 3",
-        "answer": "e6",
-        "answerUci": "e7e6",
-        "orientation": "black",
-        "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. Bc4 Bg7 3. d4 **e6** [White plays d4 here 13% of the time]",
-        "lastMove": "d2d4"
       },
       "tags": [
         "chess::line"
@@ -349,16 +333,16 @@
       ]
     },
     {
-      "key": "l-e4-bc4-c3",
+      "key": "l-e4-bc4-d4",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk1nr/ppppppbp/6p1/8/2B1P3/2P5/PP1P1PPP/RNBQK1NR b KQkq - 0 3",
-        "answer": "e6",
-        "answerUci": "e7e6",
+        "fen": "rnbqk1nr/ppppppbp/6p1/8/2BPP3/8/PPP2PPP/RNBQK1NR b KQkq - 0 3",
+        "answer": "d6",
+        "answerUci": "d7d6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. Bc4 Bg7 3. c3 **e6** [White plays c3 here 11% of the time]",
-        "lastMove": "c2c3"
+        "extra": "1. e4 g6 2. Bc4 Bg7 3. d4 **d6** [White plays d4 here 12% of the time]",
+        "lastMove": "d2d4"
       },
       "tags": [
         "chess::line"
@@ -373,7 +357,7 @@
         "answerUci": "d7d6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. Nc3 Bg7 3. f4 **d6** [White plays f4 here 11% of the time]",
+        "extra": "1. e4 g6 2. Nc3 Bg7 3. f4 **d6** [White plays f4 here 12% of the time]",
         "lastMove": "f2f4"
       },
       "tags": [
@@ -381,16 +365,16 @@
       ]
     },
     {
-      "key": "l-e4-nc3-d3",
+      "key": "l-e4-bc4-c3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk1nr/ppppppbp/6p1/8/4P3/2NP4/PPP2PPP/R1BQKBNR b KQkq - 0 3",
-        "answer": "d6",
-        "answerUci": "d7d6",
+        "fen": "rnbqk1nr/ppppppbp/6p1/8/2B1P3/2P5/PP1P1PPP/RNBQK1NR b KQkq - 0 3",
+        "answer": "e6",
+        "answerUci": "e7e6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. Nc3 Bg7 3. d3 **d6** [White plays d3 here 8% of the time]",
-        "lastMove": "d2d3"
+        "extra": "1. e4 g6 2. Bc4 Bg7 3. c3 **e6** [White plays c3 here 10% of the time]",
+        "lastMove": "c2c3"
       },
       "tags": [
         "chess::line"
@@ -405,8 +389,24 @@
         "answerUci": "d7d6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. f4 Bg7 3. e5 **d6** [White plays e5 here 7% of the time]",
+        "extra": "1. e4 g6 2. f4 Bg7 3. e5 **d6** [White plays e5 here 8% of the time]",
         "lastMove": "e4e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-d3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppppppbp/6p1/8/4P3/2NP4/PPP2PPP/R1BQKBNR b KQkq - 0 3",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. Nc3 Bg7 3. d3 **d6** [White plays d3 here 7% of the time]",
+        "lastMove": "d2d3"
       },
       "tags": [
         "chess::line"
@@ -421,7 +421,7 @@
         "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 **Nf6** [White plays Nc3 here 28% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 **Nf6** [White plays Nc3 here 27% of the time]",
         "lastMove": "b1c3"
       },
       "tags": [
@@ -437,24 +437,8 @@
         "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. f4 d6 4. Nf3 **Nf6** [White plays Nf3 here 100% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. f4 d6 4. Nf3 **Nf6** [White plays Nf3 here 82% of the time]",
         "lastMove": "g1f3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d4-c4-d5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk1nr/pp1pppbp/6p1/2pP4/2P1P3/8/PP3PPP/RNBQKBNR b KQkq - 0 4",
-        "answer": "d6",
-        "answerUci": "d7d6",
-        "orientation": "black",
-        "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. c4 c5 4. d5 **d6** [White plays d5 here 100% of the time]",
-        "lastMove": "d4d5"
       },
       "tags": [
         "chess::line"
@@ -469,7 +453,7 @@
         "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Bc4 **Nf6** [White plays Bc4 here 22% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Bc4 **Nf6** [White plays Bc4 here 21% of the time]",
         "lastMove": "f1c4"
       },
       "tags": [
@@ -485,8 +469,24 @@
         "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Be3 **Nf6** [White plays Be3 here 41% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Be3 **Nf6** [White plays Be3 here 37% of the time]",
         "lastMove": "c1e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c4-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1pppbp/6p1/2pP4/2P1P3/8/PP3PPP/RNBQKBNR b KQkq - 0 4",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. c4 c5 4. d5 **d6** [White plays d5 here 75% of the time]",
+        "lastMove": "d4d5"
       },
       "tags": [
         "chess::line"
@@ -501,7 +501,7 @@
         "answerUci": "d6e5",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. e5 d6 4. f4 **dxe5** [White plays f4 here 63% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. e5 d6 4. f4 **dxe5** [White plays f4 here 55% of the time]",
         "lastMove": "f2f4"
       },
       "tags": [
@@ -517,24 +517,8 @@
         "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Be3 **Nf6** [White plays Be3 here 13% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Be3 **Nf6** [White plays Be3 here 12% of the time]",
         "lastMove": "c1e3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-nf3-bc4-d4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk1nr/pppp1pbp/4p1p1/8/2BPP3/5N2/PPP2PPP/RNBQK2R b KQkq - 0 4",
-        "answer": "Ne7",
-        "answerUci": "g8e7",
-        "orientation": "black",
-        "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. Nf3 Bg7 3. Bc4 e6 4. d4 **Ne7** [White plays d4 here 40% of the time]",
-        "lastMove": "d2d4"
       },
       "tags": [
         "chess::line"
@@ -557,38 +541,6 @@
       ]
     },
     {
-      "key": "l-e4-d4-c3-bd3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/3PP3/2PB4/PP3PPP/RNBQK1NR b KQkq - 1 4",
-        "answer": "Nf6",
-        "answerUci": "g8f6",
-        "orientation": "black",
-        "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. c3 d6 4. Bd3 **Nf6** [White plays Bd3 here 30% of the time]",
-        "lastMove": "f1d3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-f4-nf3-bc4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/2B1PP2/5N2/PPPP2PP/RNBQK2R b KQkq - 1 4",
-        "answer": "Nf6",
-        "answerUci": "g8f6",
-        "orientation": "black",
-        "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. f4 Bg7 3. Nf3 d6 4. Bc4 **Nf6** [White plays Bc4 here 40% of the time]",
-        "lastMove": "f1c4"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
       "key": "l-e4-d4-nf3-c3",
       "model": "chess",
       "fields": {
@@ -597,7 +549,7 @@
         "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. c3 **Nf6** [White plays c3 here 9% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. c3 **Nf6** [White plays c3 here 10% of the time]",
         "lastMove": "c2c3"
       },
       "tags": [
@@ -605,15 +557,31 @@
       ]
     },
     {
-      "key": "l-e4-d4-be3-bd3",
+      "key": "l-e4-nf3-bc4-d4",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/3PP3/3BB3/PPP2PPP/RN1QK1NR b KQkq - 1 4",
+        "fen": "rnbqk1nr/pppp1pbp/4p1p1/8/2BPP3/5N2/PPP2PPP/RNBQK2R b KQkq - 0 4",
+        "answer": "Ne7",
+        "answerUci": "g8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. Nf3 Bg7 3. Bc4 e6 4. d4 **Ne7** [White plays d4 here 35% of the time]",
+        "lastMove": "d2d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/3PP3/2PB4/PP3PPP/RNBQK1NR b KQkq - 1 4",
         "answer": "Nf6",
         "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Be3 d6 4. Bd3 **Nf6** [White plays Bd3 here 27% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. c3 d6 4. Bd3 **Nf6** [White plays Bd3 here 28% of the time]",
         "lastMove": "f1d3"
       },
       "tags": [
@@ -637,6 +605,54 @@
       ]
     },
     {
+      "key": "l-e4-d4-c3-f4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/3PPP2/2P5/PP4PP/RNBQKBNR b KQkq - 0 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. c3 d6 4. f4 **Nf6** [White plays f4 here 25% of the time]",
+        "lastMove": "f2f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-be3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/3PP3/3BB3/PPP2PPP/RN1QK1NR b KQkq - 1 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Be3 d6 4. Bd3 **Nf6** [White plays Bd3 here 24% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/2B1PP2/5N2/PPPP2PP/RNBQK2R b KQkq - 1 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. f4 Bg7 3. Nf3 d6 4. Bc4 **Nf6** [White plays Bc4 here 33% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e4-d4-nc3-f4",
       "model": "chess",
       "fields": {
@@ -645,7 +661,7 @@
         "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. f4 **Nf6** [White plays f4 here 15% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. f4 **Nf6** [White plays f4 here 16% of the time]",
         "lastMove": "f2f4"
       },
       "tags": [
@@ -661,7 +677,7 @@
         "answerUci": "c7d6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. e5 d6 4. exd6 **cxd6** [White plays exd6 here 24% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. e5 d6 4. exd6 **cxd6** [White plays exd6 here 25% of the time]",
         "lastMove": "e5d6"
       },
       "tags": [
@@ -669,16 +685,32 @@
       ]
     },
     {
-      "key": "l-e4-d4-c3-f4",
+      "key": "l-e4-d4-nf3-h3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/3PPP2/2P5/PP4PP/RNBQKBNR b KQkq - 0 4",
+        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/3PP3/5N1P/PPP2PP1/RNBQKB1R b KQkq - 0 4",
         "answer": "Nf6",
         "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. c3 d6 4. f4 **Nf6** [White plays f4 here 21% of the time]",
-        "lastMove": "f2f4"
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. h3 **Nf6** [White plays h3 here 6% of the time]",
+        "lastMove": "h2h3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-be3-qd2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/3PP3/4B3/PPPQ1PPP/RN2KBNR b KQkq - 1 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Be3 d6 4. Qd2 **Nf6** [White plays Qd2 here 18% of the time]",
+        "lastMove": "d1d2"
       },
       "tags": [
         "chess::line"
@@ -701,48 +733,16 @@
       ]
     },
     {
-      "key": "l-e4-bc4-d3-nc3",
+      "key": "l-e4-d4-e5-nf3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk1nr/pppp1pbp/4p1p1/8/2B1P3/2NP4/PPP2PPP/R1BQK1NR b KQkq - 1 4",
-        "answer": "Ne7",
-        "answerUci": "g8e7",
+        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/4P3/3P4/5N2/PPP2PPP/RNBQKB1R b KQkq - 1 4",
+        "answer": "dxe5",
+        "answerUci": "d6e5",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. Bc4 Bg7 3. d3 e6 4. Nc3 **Ne7** [White plays Nc3 here 67% of the time]",
-        "lastMove": "b1c3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d4-be3-qd2",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/3PP3/4B3/PPPQ1PPP/RN2KBNR b KQkq - 1 4",
-        "answer": "Nf6",
-        "answerUci": "g8f6",
-        "orientation": "black",
-        "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Be3 d6 4. Qd2 **Nf6** [White plays Qd2 here 14% of the time]",
-        "lastMove": "d1d2"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-bc4-c3-d4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk1nr/pppp1pbp/4p1p1/8/2BPP3/2P5/PP3PPP/RNBQK1NR b KQkq - 0 4",
-        "answer": "Ne7",
-        "answerUci": "g8e7",
-        "orientation": "black",
-        "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. Bc4 Bg7 3. c3 e6 4. d4 **Ne7** [White plays d4 here 100% of the time]",
-        "lastMove": "d2d4"
+        "extra": "1. e4 g6 2. d4 Bg7 3. e5 d6 4. Nf3 **dxe5** [White plays Nf3 here 17% of the time]",
+        "lastMove": "g1f3"
       },
       "tags": [
         "chess::line"
@@ -765,6 +765,22 @@
       ]
     },
     {
+      "key": "l-e4-nc3-f4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/4PP2/2N2N2/PPPP2PP/R1BQKB1R b KQkq - 1 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. Nc3 Bg7 3. f4 d6 4. Nf3 **Nf6** [White plays Nf3 here 100% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e4-d4-nc3-bg5",
       "model": "chess",
       "fields": {
@@ -773,7 +789,7 @@
         "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Bg5 **Nf6** [White plays Bg5 here 9% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Bg5 **Nf6** [White plays Bg5 here 8% of the time]",
         "lastMove": "c1g5"
       },
       "tags": [
@@ -781,32 +797,16 @@
       ]
     },
     {
-      "key": "l-e4-d4-e5-nf3",
+      "key": "l-e4-bc4-c3-d4",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/4P3/3P4/5N2/PPP2PPP/RNBQKB1R b KQkq - 1 4",
-        "answer": "dxe5",
-        "answerUci": "d6e5",
-        "orientation": "black",
-        "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. e5 d6 4. Nf3 **dxe5** [White plays Nf3 here 14% of the time]",
-        "lastMove": "g1f3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-bc4-qf3-c3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk1nr/pppp1pbp/4p1p1/8/2B1P3/2P2Q2/PP1P1PPP/RNB1K1NR b KQkq - 0 4",
+        "fen": "rnbqk1nr/pppp1pbp/4p1p1/8/2BPP3/2P5/PP3PPP/RNBQK1NR b KQkq - 0 4",
         "answer": "Ne7",
         "answerUci": "g8e7",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. Bc4 Bg7 3. Qf3 e6 4. c3 **Ne7** [White plays c3 here 47% of the time]",
-        "lastMove": "c2c3"
+        "extra": "1. e4 g6 2. Bc4 Bg7 3. c3 e6 4. d4 **Ne7** [White plays d4 here 93% of the time]",
+        "lastMove": "d2d4"
       },
       "tags": [
         "chess::line"
@@ -821,8 +821,24 @@
         "answerUci": "g8e7",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. Nf3 Bg7 3. Bc4 e6 4. d3 **Ne7** [White plays d3 here 13% of the time]",
+        "extra": "1. e4 g6 2. Nf3 Bg7 3. Bc4 e6 4. d3 **Ne7** [White plays d3 here 15% of the time]",
         "lastMove": "d2d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1pppbp/6p1/2p5/2PPP3/5N2/PP3PPP/RNBQKB1R b KQkq - 1 4",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. c4 c5 4. Nf3 **d6** [White plays Nf3 here 17% of the time]",
+        "lastMove": "g1f3"
       },
       "tags": [
         "chess::line"
@@ -837,7 +853,7 @@
         "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. Nf3 Bg7 3. Nc3 d6 4. Bc4 **Nf6** [White plays Bc4 here 22% of the time]",
+        "extra": "1. e4 g6 2. Nf3 Bg7 3. Nc3 d6 4. Bc4 **Nf6** [White plays Bc4 here 25% of the time]",
         "lastMove": "f1c4"
       },
       "tags": [
@@ -853,8 +869,56 @@
         "answerUci": "g8e7",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. Nf3 Bg7 3. Bc4 e6 4. Nc3 **Ne7** [White plays Nc3 here 11% of the time]",
+        "extra": "1. e4 g6 2. Nf3 Bg7 3. Bc4 e6 4. Nc3 **Ne7** [White plays Nc3 here 12% of the time]",
         "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-bc4-qf3-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pppp1pbp/4p1p1/8/2B1P3/2P2Q2/PP1P1PPP/RNB1K1NR b KQkq - 0 4",
+        "answer": "Ne7",
+        "answerUci": "g8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. Bc4 Bg7 3. Qf3 e6 4. c3 **Ne7** [White plays c3 here 38% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-bc4-d3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pppp1pbp/4p1p1/8/2B1P3/2NP4/PPP2PPP/R1BQK1NR b KQkq - 1 4",
+        "answer": "Ne7",
+        "answerUci": "g8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. Bc4 Bg7 3. d3 e6 4. Nc3 **Ne7** [White plays Nc3 here 39% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-bf4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/3PPB2/2N5/PPP2PPP/R2QKBNR b KQkq - 1 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Bf4 **Nf6** [White plays Bf4 here 6% of the time]",
+        "lastMove": "c1f4"
       },
       "tags": [
         "chess::line"
@@ -869,7 +933,7 @@
         "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Be3 d6 4. c3 **Nf6** [White plays c3 here 6% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Be3 d6 4. c3 **Nf6** [White plays c3 here 8% of the time]",
         "lastMove": "c2c3"
       },
       "tags": [
@@ -877,32 +941,16 @@
       ]
     },
     {
-      "key": "l-e4-d4-c4-d5-nc3",
+      "key": "l-e4-d4-c3-bc4",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk1nr/pp2ppbp/3p2p1/2pP4/2P1P3/2N5/PP3PPP/R1BQKBNR b KQkq - 1 5",
+        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/2BPP3/2P5/PP3PPP/RNBQK1NR b KQkq - 1 4",
         "answer": "Nf6",
         "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. c4 c5 4. d5 d6 5. Nc3 **Nf6** [White plays Nc3 here 100% of the time]",
-        "lastMove": "b1c3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d4-f4-nf3-bd3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3PPP2/3B1N2/PPP3PP/RNBQK2R b KQkq - 3 5",
-        "answer": "O-O",
-        "answerUci": "e8g8",
-        "orientation": "black",
-        "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. f4 d6 4. Nf3 Nf6 5. Bd3 **O-O** [White plays Bd3 here 81% of the time]",
-        "lastMove": "f1d3"
+        "extra": "1. e4 g6 2. d4 Bg7 3. c3 d6 4. Bc4 **Nf6** [White plays Bc4 here 6% of the time]",
+        "lastMove": "f1c4"
       },
       "tags": [
         "chess::line"
@@ -925,16 +973,32 @@
       ]
     },
     {
-      "key": "l-e4-d4-nc3-be3-f3",
+      "key": "l-e4-d4-c4-d5-nc3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3PP3/2N1BP2/PPP3PP/R2QKBNR b KQkq - 0 5",
+        "fen": "rnbqk1nr/pp2ppbp/3p2p1/2pP4/2P1P3/2N5/PP3PPP/R1BQKBNR b KQkq - 1 5",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. c4 c5 4. d5 d6 5. Nc3 **Nf6** [White plays Nc3 here 86% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-f4-nf3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3PPP2/3B1N2/PPP3PP/RNBQK2R b KQkq - 3 5",
         "answer": "O-O",
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Be3 Nf6 5. f3 **O-O** [White plays f3 here 50% of the time]",
-        "lastMove": "f2f3"
+        "extra": "1. e4 g6 2. d4 Bg7 3. f4 d6 4. Nf3 Nf6 5. Bd3 **O-O** [White plays Bd3 here 58% of the time]",
+        "lastMove": "f1d3"
       },
       "tags": [
         "chess::line"
@@ -949,7 +1013,7 @@
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Be3 Nf6 5. Qd2 **O-O** [White plays Qd2 here 50% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Be3 Nf6 5. Qd2 **O-O** [White plays Qd2 here 44% of the time]",
         "lastMove": "d1d2"
       },
       "tags": [
@@ -965,7 +1029,7 @@
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. c4 Nf6 5. Nc3 **O-O** [White plays Nc3 here 100% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. c4 Nf6 5. Nc3 **O-O** [White plays Nc3 here 93% of the time]",
         "lastMove": "b1c3"
       },
       "tags": [
@@ -973,16 +1037,16 @@
       ]
     },
     {
-      "key": "l-e4-d4-nf3-bd3-oo",
+      "key": "l-e4-d4-nc3-be3-f3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3PP3/3B1N2/PPP2PPP/RNBQ1RK1 b kq - 3 5",
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3PP3/2N1BP2/PPP3PP/R2QKBNR b KQkq - 0 5",
         "answer": "O-O",
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Bd3 Nf6 5. O-O **O-O** [White plays O-O here 74% of the time]",
-        "lastMove": "e1g1"
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Be3 Nf6 5. f3 **O-O** [White plays f3 here 43% of the time]",
+        "lastMove": "f2f3"
       },
       "tags": [
         "chess::line"
@@ -997,7 +1061,23 @@
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 Nf6 5. Bd3 **O-O** [White plays Bd3 here 24% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 Nf6 5. Bd3 **O-O** [White plays Bd3 here 23% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nf3-be3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3PP3/3BBN2/PPP2PPP/RN1QK2R b KQkq - 3 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Be3 Nf6 5. Bd3 **O-O** [White plays Bd3 here 52% of the time]",
         "lastMove": "f1d3"
       },
       "tags": [
@@ -1013,8 +1093,40 @@
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. f4 Nf6 5. Nf3 **O-O** [White plays Nf3 here 80% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. f4 Nf6 5. Nf3 **O-O** [White plays Nf3 here 75% of the time]",
         "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nf3-bd3-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3PP3/3B1N2/PPP2PPP/RNBQ1RK1 b kq - 3 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Bd3 Nf6 5. O-O **O-O** [White plays O-O here 60% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-f4-nf3-e5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/4P3/3P1P2/5N2/PPP3PP/RNBQKB1R b KQkq - 0 5",
+        "answer": "dxe5",
+        "answerUci": "d6e5",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. f4 d6 4. Nf3 Nf6 5. e5 **dxe5** [White plays e5 here 25% of the time]",
+        "lastMove": "e4e5"
       },
       "tags": [
         "chess::line"
@@ -1037,6 +1149,22 @@
       ]
     },
     {
+      "key": "l-e4-f4-nf3-bc4-d3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2B1PP2/3P1N2/PPP3PP/RNBQK2R b KQkq - 0 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. f4 Bg7 3. Nf3 d6 4. Bc4 Nf6 5. d3 **O-O** [White plays d3 here 68% of the time]",
+        "lastMove": "d2d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e4-d4-nf3-nc3-be3",
       "model": "chess",
       "fields": {
@@ -1053,32 +1181,32 @@
       ]
     },
     {
-      "key": "l-e4-d4-f4-nf3-e5",
+      "key": "l-e4-d4-e5-exd6-nf3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/3p1np1/4P3/3P1P2/5N2/PPP3PP/RNBQKB1R b KQkq - 0 5",
-        "answer": "dxe5",
-        "answerUci": "d6e5",
+        "fen": "rnbqk1nr/pp2ppbp/3p2p1/8/3P4/5N2/PPP2PPP/RNBQKB1R b KQkq - 1 5",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. f4 d6 4. Nf3 Nf6 5. e5 **dxe5** [White plays e5 here 19% of the time]",
-        "lastMove": "e4e5"
+        "extra": "1. e4 g6 2. d4 Bg7 3. e5 d6 4. exd6 cxd6 5. Nf3 **Nf6** [White plays Nf3 here 60% of the time]",
+        "lastMove": "g1f3"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d4-e5-nf3-dxe5",
+      "key": "l-e4-nf3-bc4-d4-oo",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk1nr/ppp1ppbp/6p1/4P3/8/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 5",
-        "answer": "Qxd1",
-        "answerUci": "d8d1",
+        "fen": "rnbqk2r/ppppnpbp/4p1p1/8/2BPP3/5N2/PPP2PPP/RNBQ1RK1 b kq - 2 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. e5 d6 4. Nf3 dxe5 5. dxe5 **Qxd1+** [White plays dxe5 here 100% of the time]",
-        "lastMove": "d4e5"
+        "extra": "1. e4 g6 2. Nf3 Bg7 3. Bc4 e6 4. d4 Ne7 5. O-O **O-O** [White plays O-O here 44% of the time]",
+        "lastMove": "e1g1"
       },
       "tags": [
         "chess::line"
@@ -1093,7 +1221,7 @@
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 Nf6 5. Bg5 **O-O** [White plays Bg5 here 14% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 Nf6 5. Bg5 **O-O** [White plays Bg5 here 13% of the time]",
         "lastMove": "c1g5"
       },
       "tags": [
@@ -1101,16 +1229,112 @@
       ]
     },
     {
-      "key": "l-e4-d4-c3-bd3-f4",
+      "key": "l-e4-bc4-qf3-c3-d4",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3PPP2/2PB4/PP4PP/RNBQK1NR b KQkq - 0 5",
+        "fen": "rnbqk2r/ppppnpbp/4p1p1/8/2BPP3/2P2Q2/PP3PPP/RNB1K1NR b KQkq - 0 5",
         "answer": "O-O",
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. c3 d6 4. Bd3 Nf6 5. f4 **O-O** [White plays f4 here 34% of the time]",
-        "lastMove": "f2f4"
+        "extra": "1. e4 g6 2. Bc4 Bg7 3. Qf3 e6 4. c3 Ne7 5. d4 **O-O** [White plays d4 here 100% of the time]",
+        "lastMove": "d2d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-nf3-dxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppp1ppbp/6p1/4P3/8/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 5",
+        "answer": "Qxd1",
+        "answerUci": "d8d1",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. e5 d6 4. Nf3 dxe5 5. dxe5 **Qxd1+** [White plays dxe5 here 64% of the time]",
+        "lastMove": "d4e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c3-bd3-ne2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3PP3/2PB4/PP2NPPP/RNBQK2R b KQkq - 3 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. c3 d6 4. Bd3 Nf6 5. Ne2 **O-O** [White plays Ne2 here 33% of the time]",
+        "lastMove": "g1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-exd6-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp2ppbp/3p2p1/8/3P4/2P5/PP3PPP/RNBQKBNR b KQkq - 0 5",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. e5 d6 4. exd6 cxd6 5. c3 **Nf6** [White plays c3 here 40% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-be3-qd2-f3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3PP3/4BP2/PPPQ2PP/RN2KBNR b KQkq - 0 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Be3 d6 4. Qd2 Nf6 5. f3 **O-O** [White plays f3 here 49% of the time]",
+        "lastMove": "f2f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-d4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppppnpbp/4p1p1/8/2BPP3/2N2N2/PPP2PPP/R1BQK2R b KQkq - 2 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. Nf3 Bg7 3. Bc4 e6 4. d4 Ne7 5. Nc3 **O-O** [White plays Nc3 here 29% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-f4-nf3-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2B1PP2/2N2N2/PPPP2PP/R1BQK2R b KQkq - 3 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. Nc3 Bg7 3. f4 d6 4. Nf3 Nf6 5. Bc4 **O-O** [White plays Bc4 here 55% of the time]",
+        "lastMove": "f1c4"
       },
       "tags": [
         "chess::line"
@@ -1125,7 +1349,7 @@
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 Nf6 5. h3 **O-O** [White plays h3 here 9% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 Nf6 5. h3 **O-O** [White plays h3 here 8% of the time]",
         "lastMove": "h2h3"
       },
       "tags": [
@@ -1133,63 +1357,31 @@
       ]
     },
     {
-      "key": "l-e4-d4-nf3-nc3-be2",
+      "key": "l-e4-d4-c3-bd3-f4",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3PP3/2N2N2/PPP1BPPP/R1BQK2R b KQkq - 3 5",
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3PPP2/2PB4/PP4PP/RNBQK1NR b KQkq - 0 5",
         "answer": "O-O",
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 Nf6 5. Be2 **O-O** [White plays Be2 here 7% of the time]",
-        "lastMove": "f1e2"
+        "extra": "1. e4 g6 2. d4 Bg7 3. c3 d6 4. Bd3 Nf6 5. f4 **O-O** [White plays f4 here 22% of the time]",
+        "lastMove": "f2f4"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d4-nc3-bg5-e5",
+      "key": "l-e4-nf3-bc4-oo-c3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/3p1np1/4P1B1/3P4/2N5/PPP2PPP/R2QKBNR b KQkq - 0 5",
-        "answer": "dxe5",
-        "answerUci": "d6e5",
-        "orientation": "black",
-        "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Bg5 Nf6 5. e5 **dxe5** [White plays e5 here 41% of the time]",
-        "lastMove": "e4e5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d4-nc3-f4-e5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/3p1np1/4P3/3P1P2/2N5/PPP3PP/R1BQKBNR b KQkq - 0 5",
-        "answer": "dxe5",
-        "answerUci": "d6e5",
-        "orientation": "black",
-        "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. f4 Nf6 5. e5 **dxe5** [White plays e5 here 20% of the time]",
-        "lastMove": "e4e5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d4-nf3-bd3-c3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3PP3/2PB1N2/PP3PPP/RNBQK2R b KQkq - 0 5",
+        "fen": "rnbqk2r/ppppnpbp/4p1p1/8/2B1P3/2P2N2/PP1P1PPP/RNBQ1RK1 b kq - 0 5",
         "answer": "O-O",
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Bd3 Nf6 5. c3 **O-O** [White plays c3 here 15% of the time]",
+        "extra": "1. e4 g6 2. Nf3 Bg7 3. Bc4 e6 4. O-O Ne7 5. c3 **O-O** [White plays c3 here 37% of the time]",
         "lastMove": "c2c3"
       },
       "tags": [
@@ -1197,47 +1389,15 @@
       ]
     },
     {
-      "key": "l-e4-nf3-nc3-bc4-d3",
+      "key": "l-e4-d4-nc3-bf4-qd2",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2B1P3/2NP1N2/PPP2PPP/R1BQK2R b KQkq - 0 5",
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3PPB2/2N5/PPPQ1PPP/R3KBNR b KQkq - 3 5",
         "answer": "O-O",
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. Nf3 Bg7 3. Nc3 d6 4. Bc4 Nf6 5. d3 **O-O** [White plays d3 here 45% of the time]",
-        "lastMove": "d2d3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d4-nf3-bd3-h3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3PP3/3B1N1P/PPP2PP1/RNBQK2R b KQkq - 0 5",
-        "answer": "O-O",
-        "answerUci": "e8g8",
-        "orientation": "black",
-        "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Bd3 Nf6 5. h3 **O-O** [White plays h3 here 12% of the time]",
-        "lastMove": "h2h3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d4-nc3-bg5-qd2",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/3p1np1/6B1/3PP3/2N5/PPPQ1PPP/R3KBNR b KQkq - 3 5",
-        "answer": "O-O",
-        "answerUci": "e8g8",
-        "orientation": "black",
-        "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Bg5 Nf6 5. Qd2 **O-O** [White plays Qd2 here 22% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Bf4 Nf6 5. Qd2 **O-O** [White plays Qd2 here 70% of the time]",
         "lastMove": "d1d2"
       },
       "tags": [
@@ -1245,32 +1405,16 @@
       ]
     },
     {
-      "key": "l-e4-nf3-nc3-bc4-oo",
+      "key": "l-e4-d4-c3-f4-e5",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2B1P3/2N2N2/PPPP1PPP/R1BQ1RK1 b kq - 3 5",
-        "answer": "O-O",
-        "answerUci": "e8g8",
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/4P3/3P1P2/2P5/PP4PP/RNBQKBNR b KQkq - 0 5",
+        "answer": "dxe5",
+        "answerUci": "d6e5",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. Nf3 Bg7 3. Nc3 d6 4. Bc4 Nf6 5. O-O **O-O** [White plays O-O here 24% of the time]",
-        "lastMove": "e1g1"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d4-nc3-bg5-bxf6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/3p1Bp1/8/3PP3/2N5/PPP2PPP/R2QKBNR b KQkq - 0 5",
-        "answer": "Bxf6",
-        "answerUci": "g7f6",
-        "orientation": "black",
-        "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Bg5 Nf6 5. Bxf6 **Bxf6** [White plays Bxf6 here 6% of the time]",
-        "lastMove": "g5f6"
+        "extra": "1. e4 g6 2. d4 Bg7 3. c3 d6 4. f4 Nf6 5. e5 **dxe5** [White plays e5 here 24% of the time]",
+        "lastMove": "e4e5"
       },
       "tags": [
         "chess::line"
@@ -1285,8 +1429,24 @@
         "answerUci": "c8g4",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. e5 d6 4. f4 dxe5 5. fxe5 Nc6 6. Nf3 **Bg4** [White plays Nf3 here 100% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. e5 d6 4. f4 dxe5 5. fxe5 Nc6 6. Nf3 **Bg4** [White plays Nf3 here 70% of the time]",
         "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-f4-nf3-bd3-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/3PPP2/3B1N2/PPP3PP/RNBQ1RK1 b - - 5 6",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. f4 d6 4. Nf3 Nf6 5. Bd3 O-O 6. O-O **c5** [White plays O-O here 77% of the time]",
+        "lastMove": "e1g1"
       },
       "tags": [
         "chess::line"
@@ -1301,7 +1461,7 @@
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. c4 c5 4. d5 d6 5. Nc3 Nf6 6. Bd3 **O-O** [White plays Bd3 here 67% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. c4 c5 4. d5 d6 5. Nc3 Nf6 6. Bd3 **O-O** [White plays Bd3 here 42% of the time]",
         "lastMove": "f1d3"
       },
       "tags": [
@@ -1309,16 +1469,16 @@
       ]
     },
     {
-      "key": "l-e4-d4-c4-d5-nc3-f4",
+      "key": "l-e4-d4-f4-nf3-e5-fxe5",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/pp2ppbp/3p1np1/2pP4/2P1PP2/2N5/PP4PP/R1BQKBNR b KQkq - 0 6",
-        "answer": "O-O",
-        "answerUci": "e8g8",
+        "fen": "rnbqk2r/ppp1ppbp/5np1/4P3/3P4/5N2/PPP3PP/RNBQKB1R b KQkq - 0 6",
+        "answer": "Nd5",
+        "answerUci": "f6d5",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. c4 c5 4. d5 d6 5. Nc3 Nf6 6. f4 **O-O** [White plays f4 here 33% of the time]",
-        "lastMove": "f2f4"
+        "extra": "1. e4 g6 2. d4 Bg7 3. f4 d6 4. Nf3 Nf6 5. e5 dxe5 6. fxe5 **Nd5** [White plays fxe5 here 100% of the time]",
+        "lastMove": "f4e5"
       },
       "tags": [
         "chess::line"
@@ -1333,8 +1493,24 @@
         "answerUci": "e7e5",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. c4 Nf6 5. Nc3 O-O 6. Be2 **e5** [White plays Be2 here 70% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. c4 Nf6 5. Nc3 O-O 6. Be2 **e5** [White plays Be2 here 57% of the time]",
         "lastMove": "f1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c4-d5-nc3-f4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2ppbp/3p1np1/2pP4/2P1PP2/2N5/PP4PP/R1BQKBNR b KQkq - 0 6",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. c4 c5 4. d5 d6 5. Nc3 Nf6 6. f4 **O-O** [White plays f4 here 30% of the time]",
+        "lastMove": "f2f4"
       },
       "tags": [
         "chess::line"
@@ -1349,7 +1525,7 @@
         "answerUci": "f6e4",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 Nf6 5. Bc4 O-O 6. O-O **Nxe4** [White plays O-O here 100% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 Nf6 5. Bc4 O-O 6. O-O **Nxe4** [White plays O-O here 77% of the time]",
         "lastMove": "e1g1"
       },
       "tags": [
@@ -1357,63 +1533,127 @@
       ]
     },
     {
-      "key": "l-e4-d4-nc3-bg5-e5-dxe5",
+      "key": "l-e4-d4-nc3-be3-qd2-ooo",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/5np1/4P1B1/8/2N5/PPP2PPP/R2QKBNR b KQkq - 0 6",
-        "answer": "Qxd1",
-        "answerUci": "d8d1",
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/3PP3/2N1B3/PPPQ1PPP/2KR1BNR b - - 5 6",
+        "answer": "c6",
+        "answerUci": "c7c6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Bg5 Nf6 5. e5 dxe5 6. dxe5 **Qxd1+** [White plays dxe5 here 100% of the time]",
-        "lastMove": "d4e5"
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Be3 Nf6 5. Qd2 O-O 6. O-O-O **c6** [White plays O-O-O here 51% of the time]",
+        "lastMove": "e1c1"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d4-nc3-f4-e5-fxe5",
+      "key": "l-e4-d4-e5-f4-fxe5-c3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/5np1/4P3/3P4/2N5/PPP3PP/R1BQKBNR b KQkq - 0 6",
-        "answer": "Nd5",
-        "answerUci": "f6d5",
+        "fen": "r1bqk1nr/ppp1ppbp/2n3p1/4P3/3P4/2P5/PP4PP/RNBQKBNR b KQkq - 0 6",
+        "answer": "Bf5",
+        "answerUci": "c8f5",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. f4 Nf6 5. e5 dxe5 6. fxe5 **Nd5** [White plays fxe5 here 100% of the time]",
-        "lastMove": "f4e5"
+        "extra": "1. e4 g6 2. d4 Bg7 3. e5 d6 4. f4 dxe5 5. fxe5 Nc6 6. c3 **Bf5** [White plays c3 here 25% of the time]",
+        "lastMove": "c2c3"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d4-nc3-f4-nf3-e5",
+      "key": "l-e4-d4-e5-nf3-dxe5-kxd1",
       "model": "chess",
       "fields": {
-        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/4P3/3P1P2/2N2N2/PPP3PP/R1BQKB1R b KQ - 0 6",
-        "answer": "dxe5",
-        "answerUci": "d6e5",
+        "fen": "rnb1k1nr/ppp1ppbp/6p1/4P3/8/5N2/PPP2PPP/RNBK1B1R b kq - 0 6",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. f4 Nf6 5. Nf3 O-O 6. e5 **dxe5** [White plays e5 here 25% of the time]",
-        "lastMove": "e4e5"
+        "extra": "1. e4 g6 2. d4 Bg7 3. e5 d6 4. Nf3 dxe5 5. dxe5 Qxd1+ 6. Kxd1 **Nc6** [White plays Kxd1 here 100% of the time]",
+        "lastMove": "e1d1"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d4-nf3-c4-nc3-bd3",
+      "key": "l-e4-d4-c3-bd3-ne2-oo",
       "model": "chess",
       "fields": {
-        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2NB1N2/PP3PPP/R1BQK2R b KQ - 4 6",
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/3PP3/2PB4/PP2NPPP/RNBQ1RK1 b - - 5 6",
         "answer": "Nbd7",
         "answerUci": "b8d7",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. c4 Nf6 5. Nc3 O-O 6. Bd3 **Nbd7** [White plays Bd3 here 17% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. c3 d6 4. Bd3 Nf6 5. Ne2 O-O 6. O-O **Nbd7** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c4-d5-nc3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2ppbp/3p1np1/2pP4/2P1P3/2N2N2/PP3PPP/R1BQKB1R b KQkq - 3 6",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. c4 c5 4. d5 d6 5. Nc3 Nf6 6. Nf3 **O-O** [White plays Nf3 here 21% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-exd6-c3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2ppbp/3p1np1/8/3P4/2P2N2/PP3PPP/RNBQKB1R b KQkq - 2 6",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. e5 d6 4. exd6 cxd6 5. c3 Nf6 6. Nf3 **O-O** [White plays Nf3 here 100% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nf3-nc3-bd3-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/3PP3/2NB1N2/PPP2PPP/R1BQ1RK1 b - - 5 6",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 Nf6 5. Bd3 O-O 6. O-O **Bg4** [White plays O-O here 44% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-f4-nf3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/3PPP2/2NB1N2/PPP3PP/R1BQK2R b KQ - 4 6",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. f4 Nf6 5. Nf3 O-O 6. Bd3 **c5** [White plays Bd3 here 43% of the time]",
         "lastMove": "f1d3"
       },
       "tags": [
@@ -1421,16 +1661,144 @@
       ]
     },
     {
-      "key": "l-e4-d4-nf3-c4-nc3-h3",
+      "key": "l-e4-d4-nc3-be3-qd2-bh6",
       "model": "chess",
       "fields": {
-        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N1P/PP3PP1/R1BQKB1R b KQ - 0 6",
+        "fen": "rnbq1rk1/ppp1ppbp/3p1npB/8/3PP3/2N5/PPPQ1PPP/R3KBNR b KQ - 5 6",
         "answer": "Nbd7",
         "answerUci": "b8d7",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. c4 Nf6 5. Nc3 O-O 6. h3 **Nbd7** [White plays h3 here 9% of the time]",
-        "lastMove": "h2h3"
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Be3 Nf6 5. Qd2 O-O 6. Bh6 **Nbd7** [White plays Bh6 here 30% of the time]",
+        "lastMove": "e3h6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nf3-nc3-bd3-be3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/3PP3/2NBBN2/PPP2PPP/R2QK2R b KQ - 5 6",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 Nf6 5. Bd3 O-O 6. Be3 **Bg4** [White plays Be3 here 37% of the time]",
+        "lastMove": "c1e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c3-bd3-f4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/3PPP2/2PB1N2/PP4PP/RNBQK2R b KQ - 2 6",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. c3 d6 4. Bd3 Nf6 5. f4 O-O 6. Nf3 **Bg4** [White plays Nf3 here 100% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c3-f4-e5-fxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/5np1/4P3/3P4/2P5/PP4PP/RNBQKBNR b KQkq - 0 6",
+        "answer": "Nd5",
+        "answerUci": "f6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. c3 d6 4. f4 Nf6 5. e5 dxe5 6. fxe5 **Nd5** [White plays fxe5 here 100% of the time]",
+        "lastMove": "f4e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nf3-nc3-be3-qd2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/3PP3/2N1BN2/PPPQ1PPP/R3KB1R b KQ - 5 6",
+        "answer": "Ng4",
+        "answerUci": "f6g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 Nf6 5. Be3 O-O 6. Qd2 **Ng4** [White plays Qd2 here 38% of the time]",
+        "lastMove": "d1d2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-f4-nf3-bd3-oo-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2ppbp/3p1np1/2p5/3PPP2/2PB1N2/PP4PP/RNBQ1RK1 b - - 0 7",
+        "answer": "cxd4",
+        "answerUci": "c5d4",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. f4 d6 4. Nf3 Nf6 5. Bd3 O-O 6. O-O c5 7. c3 **cxd4** [White plays c3 here 100% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c4-d5-nc3-f4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2ppbp/3p1np1/2pP4/2P1PP2/2N2N2/PP4PP/R1BQKB1R b KQ - 2 7",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. c4 c5 4. d5 d6 5. Nc3 Nf6 6. f4 O-O 7. Nf3 **e6** [White plays Nf3 here 100% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c4-d5-nc3-bd3-nge2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2ppbp/3p1np1/2pP4/2P1P3/2NB4/PP2NPPP/R1BQK2R b KQ - 5 7",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. c4 c5 4. d5 d6 5. Nc3 Nf6 6. Bd3 O-O 7. Nge2 **e6** [White plays Nge2 here 68% of the time]",
+        "lastMove": "g1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-f4-nf3-e5-fxe5-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/6p1/3nP3/2PP4/5N2/PP4PP/RNBQKB1R b KQkq - 0 7",
+        "answer": "Nb6",
+        "answerUci": "d5b6",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. f4 d6 4. Nf3 Nf6 5. e5 dxe5 6. fxe5 Nd5 7. c4 **Nb6** [White plays c4 here 68% of the time]",
+        "lastMove": "c2c4"
       },
       "tags": [
         "chess::line"
@@ -1445,8 +1813,24 @@
         "answerUci": "d6d5",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 Nf6 5. Bc4 O-O 6. O-O Nxe4 7. Nxe4 **d5** [White plays Nxe4 here 100% of the time]",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 Nf6 5. Bc4 O-O 6. O-O Nxe4 7. Nxe4 **d5** [White plays Nxe4 here 83% of the time]",
         "lastMove": "c3e4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nf3-nc3-bd3-oo-h3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1q1rk1/ppp1ppbp/3p1np1/8/3PP1b1/2NB1N1P/PPP2PP1/R1BQ1RK1 b - - 0 7",
+        "answer": "Bxf3",
+        "answerUci": "g4f3",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 Nf6 5. Bd3 O-O 6. O-O Bg4 7. h3 **Bxf3** [White plays h3 here 100% of the time]",
+        "lastMove": "h2h3"
       },
       "tags": [
         "chess::line"
@@ -1469,48 +1853,32 @@
       ]
     },
     {
-      "key": "l-e4-d4-nf3-c4-nc3-be2-d5",
+      "key": "l-e4-d4-c4-d5-nc3-bd3-nge2-oo",
       "model": "chess",
       "fields": {
-        "fen": "rnbq1rk1/ppp2pbp/3p1np1/3Pp3/2P1P3/2N2N2/PP2BPPP/R1BQK2R b KQ - 0 7",
-        "answer": "a5",
-        "answerUci": "a7a5",
+        "fen": "rnbq1rk1/pp3pbp/3ppnp1/2pP4/2P1P3/2NB4/PP2NPPP/R1BQ1RK1 b - - 1 8",
+        "answer": "exd5",
+        "answerUci": "e6d5",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. c4 Nf6 5. Nc3 O-O 6. Be2 e5 7. d5 **a5** [White plays d5 here 33% of the time]",
-        "lastMove": "d4d5"
+        "extra": "1. e4 g6 2. d4 Bg7 3. c4 c5 4. d5 d6 5. Nc3 Nf6 6. Bd3 O-O 7. Nge2 e6 8. O-O **exd5** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d4-nc3-bg5-e5-dxe5-rxd1",
+      "key": "l-e4-d4-nf3-nc3-bd3-oo-h3-qxf3",
       "model": "chess",
       "fields": {
-        "fen": "rnb1k2r/ppp1ppbp/5np1/4P1B1/8/2N5/PPP2PPP/3RKBNR b Kkq - 0 7",
-        "answer": "Nfd7",
-        "answerUci": "f6d7",
+        "fen": "rn1q1rk1/ppp1ppbp/3p1np1/8/3PP3/2NB1Q1P/PPP2PP1/R1B2RK1 b - - 0 8",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
         "orientation": "black",
         "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nc3 d6 4. Bg5 Nf6 5. e5 dxe5 6. dxe5 Qxd1+ 7. Rxd1 **Nfd7** [White plays Rxd1 here 100% of the time]",
-        "lastMove": "a1d1"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d4-nf3-c4-nc3-be2-dxe5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbq1rk1/ppp2pbp/3p1np1/4P3/2P1P3/2N2N2/PP2BPPP/R1BQK2R b KQ - 0 7",
-        "answer": "dxe5",
-        "answerUci": "d6e5",
-        "orientation": "black",
-        "prompt": "You are Black in the Modern Defense. What is the book move?",
-        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. c4 Nf6 5. Nc3 O-O 6. Be2 e5 7. dxe5 **dxe5** [White plays dxe5 here 17% of the time]",
-        "lastMove": "d4e5"
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 Nf6 5. Bd3 O-O 6. O-O Bg4 7. h3 Bxf3 8. Qxf3 **Nc6** [White plays Qxf3 here 100% of the time]",
+        "lastMove": "d1f3"
       },
       "tags": [
         "chess::line"
@@ -1527,6 +1895,38 @@
         "prompt": "You are Black in the Modern Defense. What is the book move?",
         "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. c4 Nf6 5. Nc3 O-O 6. Be2 e5 7. O-O Nc6 8. d5 **Ne7** [White plays d5 here 100% of the time]",
         "lastMove": "d4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nf3-nc3-bc4-oo-nxe4-bxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/6p1/3B4/3PN3/5N2/PPP2PPP/R1BQ1RK1 b - - 0 8",
+        "answer": "Qxd5",
+        "answerUci": "d8d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. Nf3 d6 4. Nc3 Nf6 5. Bc4 O-O 6. O-O Nxe4 7. Nxe4 d5 8. Bxd5 **Qxd5** [White plays Bxd5 here 62% of the time]",
+        "lastMove": "c4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c4-d5-nc3-f4-nf3-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp3pbp/3ppnp1/2pP4/2P1PP2/2N2N2/PP2B1PP/R1BQK2R b KQ - 1 8",
+        "answer": "exd5",
+        "answerUci": "e6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Modern Defense. What is the book move?",
+        "extra": "1. e4 g6 2. d4 Bg7 3. c4 c5 4. d5 d6 5. Nc3 Nf6 6. f4 O-O 7. Nf3 e6 8. Be2 **exd5** [White plays Be2 here 45% of the time]",
+        "lastMove": "f1e2"
       },
       "tags": [
         "chess::line"

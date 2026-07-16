@@ -1,8 +1,8 @@
 {
   "key": "semi-slav-defense",
-  "version": 3,
+  "version": 4,
   "name": "The Semi-Slav Defense as Black",
-  "description": "A Black repertoire for the Semi-Slav Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 6 positions.",
+  "description": "A Black repertoire for the Semi-Slav Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 5,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 17 positions.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -69,7 +69,7 @@
         "answerUci": "e7e6",
         "orientation": "black",
         "prompt": "You are Black in the Semi-Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 **e6** (Semi-Slav Defense, D43) [White plays Nc3 here 62% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 **e6** (Semi-Slav Defense, D43) [White plays Nc3 here 56% of the time]",
         "lastMove": "b1c3"
       },
       "tags": [
@@ -81,11 +81,11 @@
       "model": "chess",
       "fields": {
         "fen": "rnbqkb1r/pp3ppp/2p1pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 1 5",
-        "answer": "dxc4",
-        "answerUci": "d5c4",
+        "answer": "h6",
+        "answerUci": "h7h6",
         "orientation": "black",
         "prompt": "You are Black in the Semi-Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 **dxc4** [White plays Bg5 here 76% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 **h6** [White plays Bg5 here 64% of the time]",
         "lastMove": "c1g5"
       },
       "tags": [
@@ -101,8 +101,184 @@
         "answerUci": "b8d7",
         "orientation": "black",
         "prompt": "You are Black in the Semi-Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 **Nbd7** (Normal Variation, D45) [White plays e3 here 15% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 **Nbd7** (Normal Variation, D45) [White plays e3 here 17% of the time]",
         "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-bf4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP1B2/2N2N2/PP2PPPP/R2QKB1R b KQkq - 1 5",
+        "answer": "Bd6",
+        "answerUci": "f8d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Semi-Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bf4 **Bd6** [White plays Bf4 here 9% of the time]",
+        "lastMove": "c1f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/2p1pn2/3P4/3P4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 0 5",
+        "answer": "exd5",
+        "answerUci": "e6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Semi-Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. cxd5 **exd5** [White plays cxd5 here 5% of the time]",
+        "lastMove": "c4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-bg5-bh4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3pp1/2p1pn1p/3p4/2PP3B/2N2N2/PP2PPPP/R2QKB1R b KQkq - 1 6",
+        "answer": "dxc4",
+        "answerUci": "d5c4",
+        "orientation": "black",
+        "prompt": "You are Black in the Semi-Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 h6 6. Bh4 **dxc4** [White plays Bh4 here 83% of the time]",
+        "lastMove": "g5h4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-e3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp1n1ppp/2p1pn2/3p4/2PP4/2NBPN2/PP3PPP/R1BQK2R b KQkq - 2 6",
+        "answer": "dxc4",
+        "answerUci": "d5c4",
+        "orientation": "black",
+        "prompt": "You are Black in the Semi-Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Bd3 **dxc4** [White plays Bd3 here 86% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-bg5-bxf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3pp1/2p1pB1p/3p4/2PP4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 0 6",
+        "answer": "Qxf6",
+        "answerUci": "d8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Semi-Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bg5 h6 6. Bxf6 **Qxf6** (Moscow Variation, D43) [White plays Bxf6 here 17% of the time]",
+        "lastMove": "g5f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-cxd5-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/2p2n2/3p2B1/3P4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 1 6",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Semi-Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. cxd5 exd5 6. Bg5 **Be7** [White plays Bg5 here 91% of the time]",
+        "lastMove": "c1g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-bf4-bxd6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp3ppp/2pBpn2/3p4/2PP4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 0 6",
+        "answer": "Qxd6",
+        "answerUci": "d8d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Semi-Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. Bf4 Bd6 6. Bxd6 **Qxd6** [White plays Bxd6 here 51% of the time]",
+        "lastMove": "f4d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-e3-qc2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp1n1ppp/2p1pn2/3p4/2PP4/2N1PN2/PPQ2PPP/R1B1KB1R b KQkq - 2 6",
+        "answer": "Bd6",
+        "answerUci": "f8d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Semi-Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Qc2 **Bd6** [White plays Qc2 here 8% of the time]",
+        "lastMove": "d1c2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-e3-bd3-bxc4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp1n1ppp/2p1pn2/8/2BP4/2N1PN2/PP3PPP/R1BQK2R b KQkq - 0 7",
+        "answer": "b5",
+        "answerUci": "b7b5",
+        "orientation": "black",
+        "prompt": "You are Black in the Semi-Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Bd3 dxc4 7. Bxc4 **b5** (Meran Variation, D47) [White plays Bxc4 here 100% of the time]",
+        "lastMove": "d3c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-cxd5-bg5-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2bppp/2p2n2/3p2B1/3P4/2N1PN2/PP3PPP/R2QKB1R b KQkq - 0 7",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Semi-Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. cxd5 exd5 6. Bg5 Be7 7. e3 **O-O** [White plays e3 here 100% of the time]",
+        "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-e3-bd3-bxc4-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p2n1ppp/2p1pn2/1p6/3P4/2NBPN2/PP3PPP/R1BQK2R b KQkq - 1 8",
+        "answer": "a6",
+        "answerUci": "a7a6",
+        "orientation": "black",
+        "prompt": "You are Black in the Semi-Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 e6 5. e3 Nbd7 6. Bd3 dxc4 7. Bxc4 b5 8. Bd3 **a6** (Meran Variation, D48) [White plays Bd3 here 100% of the time]",
+        "lastMove": "c4d3"
       },
       "tags": [
         "chess::line"

@@ -1,8 +1,8 @@
 {
   "key": "queens-gambit-declined",
-  "version": 3,
+  "version": 4,
   "name": "The Queen's Gambit Declined as Black",
-  "description": "A Black repertoire for the Queen's Gambit Declined, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 36 positions.",
+  "description": "A Black repertoire for the Queen's Gambit Declined, drilled one position at a time: every card is a position with exactly one book move to find. Built from 5,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 82 positions.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -85,7 +85,7 @@
         "answerUci": "e6d5",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. cxd5 **exd5** [White plays cxd5 here 7% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. cxd5 **exd5** [White plays cxd5 here 8% of the time]",
         "lastMove": "c4d5"
       },
       "tags": [
@@ -117,7 +117,7 @@
         "answerUci": "f8e7",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 **Be7** (Queen's Gambit Declined, D53) [White plays Bg5 here 33% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 **Be7** (Queen's Gambit Declined, D53) [White plays Bg5 here 32% of the time]",
         "lastMove": "c1g5"
       },
       "tags": [
@@ -133,7 +133,7 @@
         "answerUci": "f8e7",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 **Be7** [White plays Nf3 here 30% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 **Be7** [White plays Nf3 here 29% of the time]",
         "lastMove": "g1f3"
       },
       "tags": [
@@ -165,7 +165,7 @@
         "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 **Nf6** [White plays Nc3 here 75% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 **Nf6** [White plays Nc3 here 73% of the time]",
         "lastMove": "b1c3"
       },
       "tags": [
@@ -181,7 +181,7 @@
         "answerUci": "f8e7",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. g3 **Be7** [White plays g3 here 28% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. g3 **Be7** [White plays g3 here 27% of the time]",
         "lastMove": "g2g3"
       },
       "tags": [
@@ -245,7 +245,7 @@
         "answerUci": "c7c6",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. e3 **c6** [White plays e3 here 7% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. e3 **c6** [White plays e3 here 8% of the time]",
         "lastMove": "e2e3"
       },
       "tags": [
@@ -285,16 +285,32 @@
       ]
     },
     {
-      "key": "l-d4-c4-nc3-cxd5-e4",
+      "key": "l-d4-c4-e3-cxd5",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/ppp2ppp/4p3/3n4/3PP3/2N5/PP3PPP/R1BQKBNR b KQkq - 0 5",
-        "answer": "Nxc3",
-        "answerUci": "d5c3",
+        "fen": "rnbqkb1r/ppp2ppp/4pn2/3P4/3P4/4P3/PP3PPP/RNBQKBNR b KQkq - 0 4",
+        "answer": "exd5",
+        "answerUci": "e6d5",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 Nxd5 5. e4 **Nxc3** [White plays e4 here 95% of the time]",
-        "lastMove": "e2e4"
+        "extra": "1. d4 d5 2. c4 e6 3. e3 Nf6 4. cxd5 **exd5** [White plays cxd5 here 10% of the time]",
+        "lastMove": "c4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp2ppp/8/3p4/3P4/4P3/PP3PPP/RNBQKBNR b KQkq - 0 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. e3 **Nf6** [White plays e3 here 5% of the time]",
+        "lastMove": "e2e3"
       },
       "tags": [
         "chess::line"
@@ -317,6 +333,22 @@
       ]
     },
     {
+      "key": "l-d4-c4-nc3-cxd5-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp2ppp/4p3/3n4/3PP3/2N5/PP3PPP/R1BQKBNR b KQkq - 0 5",
+        "answer": "Nxc3",
+        "answerUci": "d5c3",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 Nxd5 5. e4 **Nxc3** [White plays e4 here 83% of the time]",
+        "lastMove": "e2e4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-d4-c4-nc3-bg5-nf3",
       "model": "chess",
       "fields": {
@@ -325,7 +357,7 @@
         "answerUci": "c7c6",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. Nf3 **c6** [White plays Nf3 here 32% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. Nf3 **c6** [White plays Nf3 here 31% of the time]",
         "lastMove": "g1f3"
       },
       "tags": [
@@ -341,7 +373,7 @@
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 Be7 5. Bf4 **O-O** [White plays Bf4 here 35% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 Be7 5. Bf4 **O-O** [White plays Bf4 here 32% of the time]",
         "lastMove": "c1f4"
       },
       "tags": [
@@ -373,7 +405,7 @@
         "answerUci": "f8e7",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 Nf6 5. Bg5 **Be7** [White plays Bg5 here 64% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 Nf6 5. Bg5 **Be7** [White plays Bg5 here 59% of the time]",
         "lastMove": "c1g5"
       },
       "tags": [
@@ -389,7 +421,7 @@
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 Be7 5. e3 **O-O** (Three Knights Variation, D37) [White plays e3 here 12% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 Be7 5. e3 **O-O** (Three Knights Variation, D37) [White plays e3 here 13% of the time]",
         "lastMove": "e2e3"
       },
       "tags": [
@@ -405,8 +437,24 @@
         "answerUci": "d8d6",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bf4 Bd6 5. Bxd6 **Qxd6** [White plays Bxd6 here 59% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bf4 Bd6 5. Bxd6 **Qxd6** [White plays Bxd6 here 39% of the time]",
         "lastMove": "f4d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp2ppp/4p3/3n4/3P4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 1 5",
+        "answer": "Bb4",
+        "answerUci": "f8b4",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 Nxd5 5. Nf3 **Bb4** [White plays Nf3 here 12% of the time]",
+        "lastMove": "g1f3"
       },
       "tags": [
         "chess::line"
@@ -421,24 +469,8 @@
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. Bg5 Be7 5. e3 **O-O** [White plays e3 here 63% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. Bg5 Be7 5. e3 **O-O** [White plays e3 here 57% of the time]",
         "lastMove": "e2e3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nc3-bg5-bxf6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/ppp1bppp/4pB2/3p4/2PP4/2N5/PP2PPPP/R2QKBNR b KQkq - 0 5",
-        "answer": "Bxf6",
-        "answerUci": "e7f6",
-        "orientation": "black",
-        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. Bxf6 **Bxf6** [White plays Bxf6 here 7% of the time]",
-        "lastMove": "g5f6"
       },
       "tags": [
         "chess::line"
@@ -453,8 +485,216 @@
         "answerUci": "c7c6",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 Nf6 5. Nf3 **c6** [White plays Nf3 here 21% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 Nf6 5. Nf3 **c6** [White plays Nf3 here 22% of the time]",
         "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-bxf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1bppp/4pB2/3p4/2PP4/2N5/PP2PPPP/R2QKBNR b KQkq - 0 5",
+        "answer": "Bxf6",
+        "answerUci": "e7f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. Bxf6 **Bxf6** [White plays Bxf6 here 6% of the time]",
+        "lastMove": "g5f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bf4-bg3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp2ppp/3bpn2/3p4/2PP4/2N3B1/PP2PPPP/R2QKBNR b KQkq - 5 5",
+        "answer": "Bxg3",
+        "answerUci": "d6g3",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bf4 Bd6 5. Bg3 **Bxg3** [White plays Bg3 here 33% of the time]",
+        "lastMove": "f4g3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-e3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP4/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 1 5",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. e3 c6 5. Nc3 **Be7** [White plays Nc3 here 69% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bf4-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp2ppp/3bpn2/3p2B1/2PP4/2N5/PP2PPPP/R2QKBNR b KQkq - 5 5",
+        "answer": "Be7",
+        "answerUci": "d6e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bf4 Bd6 5. Bg5 **Be7** (Queen's Gambit Declined, D53) [White plays Bg5 here 26% of the time]",
+        "lastMove": "f4g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-g3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1bppp/4pn2/3p4/2PP4/2N2NP1/PP2PP1P/R1BQKB1R b KQkq - 0 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 Be7 5. g3 **O-O** [White plays g3 here 5% of the time]",
+        "lastMove": "g2g3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-e3-a3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1bppp/4pn2/3p4/2PP4/P1N1P3/1P3PPP/R1BQKBNR b KQkq - 2 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. e3 Nf6 4. a3 Be7 5. Nc3 **O-O** [White plays Nc3 here 79% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1bppp/4pn2/3p4/2PP4/2NBP3/PP3PPP/R1BQK1NR b KQkq - 2 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. e3 Be7 5. Bd3 **O-O** [White plays Bd3 here 12% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-bf4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp2ppp/5n2/3p4/3P1B2/2N5/PP2PPPP/R2QKBNR b KQkq - 3 5",
+        "answer": "c6",
+        "answerUci": "c7c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 Nf6 5. Bf4 **c6** [White plays Bf4 here 6% of the time]",
+        "lastMove": "c1f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-g3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp2ppp/5n2/3p4/3P4/2N3P1/PP2PP1P/R1BQKBNR b KQkq - 0 5",
+        "answer": "c6",
+        "answerUci": "c7c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 Nf6 5. g3 **c6** [White plays g3 here 5% of the time]",
+        "lastMove": "g2g3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-e3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp2ppp/5n2/3p4/3P4/2N1P3/PP3PPP/R1BQKBNR b KQkq - 2 5",
+        "answer": "Bb4",
+        "answerUci": "f8b4",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. e3 Nf6 5. Nc3 **Bb4** [White plays Nc3 here 71% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-e3-a3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1bppp/4pn2/3p4/2PP4/P3PN2/1P3PPP/RNBQKB1R b KQkq - 2 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. e3 Nf6 4. a3 Be7 5. Nf3 **O-O** [White plays Nf3 here 21% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nf3-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp2ppp/5n2/3p2B1/3P4/5N2/PP2PPPP/RN1QKB1R b KQkq - 3 5",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nf3 Nf6 5. Bg5 **Be7** [White plays Bg5 here 13% of the time]",
+        "lastMove": "c1g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-e3-nbd2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP4/4PN2/PP1N1PPP/R1BQKB1R b KQkq - 1 5",
+        "answer": "g6",
+        "answerUci": "g7g6",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. e3 c6 5. Nbd2 **g6** (Spielmann Variation, D30) [White plays Nbd2 here 10% of the time]",
+        "lastMove": "b1d2"
       },
       "tags": [
         "chess::line"
@@ -485,7 +725,7 @@
         "answerUci": "h7h6",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 **h6** (Neo-Orthodox Variation, D55) [White plays Nf3 here 88% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 **h6** (Neo-Orthodox Variation, D55) [White plays Nf3 here 79% of the time]",
         "lastMove": "g1f3"
       },
       "tags": [
@@ -501,7 +741,7 @@
         "answerUci": "d5c4",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. Nf3 c6 6. e3 **dxc4** [White plays e3 here 100% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. Nf3 c6 6. e3 **dxc4** [White plays e3 here 97% of the time]",
         "lastMove": "e2e3"
       },
       "tags": [
@@ -517,7 +757,7 @@
         "answerUci": "c7c6",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 Be7 5. Bf4 O-O 6. e3 **c6** (Orthodox Defense, D37) [White plays e3 here 100% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 Be7 5. Bf4 O-O 6. e3 **c6** (Orthodox Defense, D37) [White plays e3 here 96% of the time]",
         "lastMove": "e2e3"
       },
       "tags": [
@@ -533,7 +773,7 @@
         "answerUci": "c7c6",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. g3 Be7 5. Bg2 O-O 6. O-O **c6** [White plays O-O here 100% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. g3 Be7 5. Bg2 O-O 6. O-O **c6** [White plays O-O here 99% of the time]",
         "lastMove": "e1g1"
       },
       "tags": [
@@ -549,8 +789,104 @@
         "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 Nf6 5. Bg5 Be7 6. e3 **O-O** [White plays e3 here 84% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 Nf6 5. Bg5 Be7 6. e3 **O-O** [White plays e3 here 78% of the time]",
         "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-e3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1bppp/4pn2/3p4/2PP4/2NBPN2/PP3PPP/R1BQK2R b KQ - 2 6",
+        "answer": "dxc4",
+        "answerUci": "d5c4",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 Be7 5. e3 O-O 6. Bd3 **dxc4** [White plays Bd3 here 72% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-nf3-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/2p2n2/3p2B1/3P4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 1 6",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 Nf6 5. Nf3 c6 6. Bg5 **Be7** [White plays Bg5 here 91% of the time]",
+        "lastMove": "c1g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bf4-bxd6-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1k2r/ppp2ppp/3qpn2/2Pp4/3P4/2N5/PP2PPPP/R2QKBNR b KQkq - 0 6",
+        "answer": "Qd8",
+        "answerUci": "d6d8",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bf4 Bd6 5. Bxd6 Qxd6 6. c5 **Qd8** [White plays c5 here 76% of the time]",
+        "lastMove": "c4c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-e3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1bppp/4pn2/3p2B1/2PP4/2NBP3/PP3PPP/R2QK1NR b KQ - 2 6",
+        "answer": "h6",
+        "answerUci": "h7h6",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Bd3 **h6** [White plays Bd3 here 10% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-e3-nc3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2bppp/2p1pn2/3p4/2PP4/2NBPN2/PP3PPP/R1BQK2R b KQkq - 3 6",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. e3 c6 5. Nc3 Be7 6. Bd3 **O-O** [White plays Bd3 here 100% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-g3-bg2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1bppp/4pn2/3p4/2PP4/2N2NP1/PP2PPBP/R1BQK2R b KQ - 2 6",
+        "answer": "c6",
+        "answerUci": "c7c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 Be7 5. g3 O-O 6. Bg2 **c6** [White plays Bg2 here 100% of the time]",
+        "lastMove": "f1g2"
       },
       "tags": [
         "chess::line"
@@ -565,7 +901,7 @@
         "answerUci": "e6d5",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. Bxf6 Bxf6 6. cxd5 **exd5** [White plays cxd5 here 40% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. Bxf6 Bxf6 6. cxd5 **exd5** [White plays cxd5 here 50% of the time]",
         "lastMove": "c4d5"
       },
       "tags": [
@@ -573,16 +909,416 @@
       ]
     },
     {
-      "key": "l-d4-c4-cxd5-nc3-bg5-e3-bd3",
+      "key": "l-d4-c4-nc3-bg5-e3-cxd5",
       "model": "chess",
       "fields": {
-        "fen": "rnbq1rk1/ppp1bppp/5n2/3p2B1/3P4/2NBP3/PP3PPP/R2QK1NR b KQ - 2 7",
+        "fen": "rnbq1rk1/ppp1bppp/4pn2/3P2B1/3P4/2N1P3/PP3PPP/R2QKBNR b KQ - 0 6",
+        "answer": "exd5",
+        "answerUci": "e6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. cxd5 **exd5** [White plays cxd5 here 5% of the time]",
+        "lastMove": "c4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-bxf6-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp2ppp/4pb2/3p4/2PP4/2N1P3/PP3PPP/R2QKBNR b KQkq - 0 6",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. Bxf6 Bxf6 6. e3 **O-O** [White plays e3 here 35% of the time]",
+        "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-bg5-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1bppp/5n2/3p2B1/3P4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 5 6",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 Nf6 5. Bg5 Be7 6. Nf3 **O-O** [White plays Nf3 here 11% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-bf4-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/2p2n2/3p4/3P1B2/2N1P3/PP3PPP/R2QKBNR b KQkq - 0 6",
+        "answer": "Bd6",
+        "answerUci": "f8d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 Nf6 5. Bf4 c6 6. e3 **Bd6** [White plays e3 here 100% of the time]",
+        "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-bg5-qc2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1bppp/5n2/3p2B1/3P4/2N5/PPQ1PPPP/R3KBNR b KQkq - 5 6",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 Nf6 5. Bg5 Be7 6. Qc2 **O-O** [White plays Qc2 here 9% of the time]",
+        "lastMove": "d1c2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-g3-bg2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/2p2n2/3p4/3P4/2N3P1/PP2PPBP/R1BQK1NR b KQkq - 1 6",
+        "answer": "Bd6",
+        "answerUci": "f8d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 Nf6 5. g3 c6 6. Bg2 **Bd6** [White plays Bg2 here 100% of the time]",
+        "lastMove": "f1g2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-e3-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1bppp/4pn2/3P4/3P4/2N1PN2/PP3PPP/R1BQKB1R b KQ - 0 6",
+        "answer": "exd5",
+        "answerUci": "e6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 Be7 5. e3 O-O 6. cxd5 **exd5** [White plays cxd5 here 11% of the time]",
+        "lastMove": "c4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-bxf6-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp2ppp/4pb2/3p4/2PP4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 1 6",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. Bxf6 Bxf6 6. Nf3 **O-O** [White plays Nf3 here 15% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/4p3/2p5/3PP3/2P2N2/P4PPP/R1BQKB1R b KQkq - 1 7",
+        "answer": "cxd4",
+        "answerUci": "c5d4",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 c5 7. Nf3 **cxd4** [White plays Nf3 here 91% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-e3-nf3-bh4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1bpp1/4pn1p/3p4/2PP3B/2N1PN2/PP3PPP/R2QKB1R b KQ - 1 7",
+        "answer": "Ne4",
+        "answerUci": "f6e4",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 h6 7. Bh4 **Ne4** (Lasker Defense, D56) [White plays Bh4 here 88% of the time]",
+        "lastMove": "g5h4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-g3-bg2-oo-qc2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2bppp/2p1pn2/3p4/2PP4/5NP1/PPQ1PPBP/RNB2RK1 b - - 1 7",
+        "answer": "Nbd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. g3 Be7 5. Bg2 O-O 6. O-O c6 7. Qc2 **Nbd7** [White plays Qc2 here 50% of the time]",
+        "lastMove": "d1c2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-nf3-bg5-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2bppp/2p2n2/3p2B1/3P4/2N1PN2/PP3PPP/R2QKB1R b KQkq - 0 7",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 Nf6 5. Nf3 c6 6. Bg5 Be7 7. e3 **O-O** [White plays e3 here 100% of the time]",
+        "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-e3-nc3-bd3-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2bppp/2p1pn2/3p4/2PP4/2NBPN2/PP3PPP/R1BQ1RK1 b - - 5 7",
+        "answer": "Nbd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. e3 c6 5. Nc3 Be7 6. Bd3 O-O 7. O-O **Nbd7** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-g3-bg2-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2bppp/2p1pn2/3p4/2PP4/2N2NP1/PP2PPBP/R1BQ1RK1 b - - 1 7",
+        "answer": "Nbd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Nf3 Be7 5. g3 O-O 6. Bg2 c6 7. O-O **Nbd7** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-e3-nf3-bxf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1bpp1/4pB1p/3p4/2PP4/2N1PN2/PP3PPP/R2QKB1R b KQ - 0 7",
+        "answer": "Bxf6",
+        "answerUci": "e7f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 h6 7. Bxf6 **Bxf6** [White plays Bxf6 here 10% of the time]",
+        "lastMove": "g5f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-g3-bg2-oo-nbd2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2bppp/2p1pn2/3p4/2PP4/5NP1/PP1NPPBP/R1BQ1RK1 b - - 1 7",
+        "answer": "Nbd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. g3 Be7 5. Bg2 O-O 6. O-O c6 7. Nbd2 **Nbd7** [White plays Nbd2 here 11% of the time]",
+        "lastMove": "b1d2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-bxf6-cxd5-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp2ppp/5b2/3p4/3P4/2N1P3/PP3PPP/R2QKBNR b KQkq - 0 7",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. Bxf6 Bxf6 6. cxd5 exd5 7. e3 **O-O** [White plays e3 here 84% of the time]",
+        "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-e3-cxd5-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1bppp/5n2/3p2B1/3P4/2NBP3/PP3PPP/R2QK1NR b KQ - 1 7",
         "answer": "c6",
         "answerUci": "c7c6",
         "orientation": "black",
         "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
-        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 Nf6 5. Bg5 Be7 6. e3 O-O 7. Bd3 **c6** [White plays Bd3 here 100% of the time]",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. cxd5 exd5 7. Bd3 **c6** [White plays Bd3 here 90% of the time]",
         "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-bg5-qc2-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1bppp/5n2/3p2B1/3P4/2N1P3/PPQ2PPP/R3KBNR b KQ - 0 7",
+        "answer": "h6",
+        "answerUci": "h7h6",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 Nf6 5. Bg5 Be7 6. Qc2 O-O 7. e3 **h6** [White plays e3 here 100% of the time]",
+        "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-g3-bg2-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp3ppp/2pb1n2/3p4/3P4/2N2NP1/PP2PPBP/R1BQK2R b KQkq - 3 7",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. cxd5 exd5 4. Nc3 Nf6 5. g3 c6 6. Bg2 Bd6 7. Nf3 **O-O** [White plays Nf3 here 100% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-bxf6-e3-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp2ppp/4pb2/3P4/3P4/2N1P3/PP3PPP/R2QKBNR b KQ - 0 7",
+        "answer": "exd5",
+        "answerUci": "e6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. Bxf6 Bxf6 6. e3 O-O 7. cxd5 **exd5** [White plays cxd5 here 35% of the time]",
+        "lastMove": "c4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-bxf6-cxd5-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp2ppp/5b2/3p4/3P4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 1 7",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. Bxf6 Bxf6 6. cxd5 exd5 7. Nf3 **O-O** [White plays Nf3 here 16% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-nf3-cxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/4p3/8/3PP3/5N2/P4PPP/R1BQKB1R b KQkq - 0 8",
+        "answer": "Bb4",
+        "answerUci": "f8b4",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 c5 7. Nf3 cxd4 8. cxd4 **Bb4+** [White plays cxd4 here 100% of the time]",
+        "lastMove": "c3d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-e3-cxd5-bd3-nge2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2bppp/2p2n2/3p2B1/3P4/2NBP3/PP2NPPP/R2QK2R b KQ - 1 8",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. cxd5 exd5 7. Bd3 c6 8. Nge2 **Bg4** [White plays Nge2 here 52% of the time]",
+        "lastMove": "g1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-bg5-e3-cxd5-bd3-qc2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2bppp/2p2n2/3p2B1/3P4/2NBP3/PPQ2PPP/R3K1NR b KQ - 1 8",
+        "answer": "h6",
+        "answerUci": "h7h6",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. cxd5 exd5 7. Bd3 c6 8. Qc2 **h6** [White plays Qc2 here 48% of the time]",
+        "lastMove": "d1c2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-cxd5-e4-bxc3-nf3-cxd4-bd2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp3ppp/4p3/8/1b1PP3/5N2/P2B1PPP/R2QKB1R b KQkq - 2 9",
+        "answer": "Qa5",
+        "answerUci": "d8a5",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Nf6 4. cxd5 Nxd5 5. e4 Nxc3 6. bxc3 c5 7. Nf3 cxd4 8. cxd4 Bb4+ 9. Bd2 **Qa5** (San Sebastian Variation, D41) [White plays Bd2 here 100% of the time]",
+        "lastMove": "c1d2"
       },
       "tags": [
         "chess::line"

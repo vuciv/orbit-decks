@@ -1,800 +1,44 @@
 {
   "key": "caro-kann",
-  "version": 3,
-  "name": "The Caro-Kann Defense",
-  "description": "A grinder's Caro-Kann: the original concept cards plus a line trainer built from the canonical opening database (lichess-org/chess-openings). Every named Caro-Kann variation, drilled book-move by book-move from Black's side: Advance, Classical, Exchange, Panov, Fantasy, Two Knights, and the offbeat sidelines. Line cards are introduced shallow-to-deep, shuffled across variations; each back shows the line so far with the variation name and ECO code.",
+  "version": 4,
+  "name": "The Caro-Kann Defense as Black",
+  "description": "A Black repertoire for the Caro-Kann Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 5,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
   "category": "Chess",
   "topics": [
     "chess",
     "openings",
-    "caro-kann"
+    "caro-kann-defense"
   ],
-  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F2p5%2F8%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett",
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F2p5%2F8%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett&lastMove=c7c6",
   "ttsLang": null,
   "notes": [
     {
-      "key": "caro-answer-to-e4",
+      "key": "l-e4",
       "model": "chess",
       "fields": {
         "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
         "answer": "c6",
         "answerUci": "c7c6",
         "orientation": "black",
-        "lastMove": "e2e4",
-        "prompt": "You are Black and want to play the Caro-Kann. What is the book move?",
-        "extra": "1...c6 prepares 2...d5, challenging e4 with a pawn that is defended the moment it lands. Structure first, counterplay later: the Caro-Kann philosophy in one move."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 **c6** (Caro-Kann Defense, B10) [White plays e4 here 59% of the time]",
+        "lastMove": "e2e4"
       },
       "tags": [
-        "chess::variation"
+        "chess::line"
       ]
     },
     {
-      "key": "caro-recognition",
-      "model": "basic",
-      "fields": {
-        "front": "Name this opening.",
-        "back": "The Caro-Kann Defense (1. e4 c6)",
-        "extra": "Named for Horatio Caro and Marcus Kann, who analyzed 1...c6 in the 1880s. The quiet pawn move announces a center fight on Black's terms: ...d5 arrives next, fully supported.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F2p5%2F8%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett&lastMove=c7c6"
-      },
-      "tags": [
-        "chess::variation"
-      ]
-    },
-    {
-      "key": "why-c6",
-      "model": "basic",
-      "fields": {
-        "front": "What is the point of 1...c6? Why not fight for the center some other way?",
-        "back": "It supports 2...d5: Black challenges e4 with a protected pawn, without shutting in the c8 bishop",
-        "extra": "After 2. d4 d5 White must immediately declare a plan: push e5, trade on d5, or defend e4. Black learns White's intentions by move three and develops accordingly.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F2p5%2F8%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett&lastMove=c7c6"
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "point-of-d5",
+      "key": "l-e4-d4",
       "model": "chess",
       "fields": {
         "fen": "rnbqkbnr/pp1ppppp/2p5/8/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
         "answer": "d5",
         "answerUci": "d7d5",
         "orientation": "black",
-        "lastMove": "d2d4",
-        "prompt": "You are Black in the Caro-Kann. What is the book move?",
-        "extra": "The whole point of 1...c6. The d5 pawn attacks e4 and is already defended, so White must push, trade, or guard it, and each choice defines a different variation."
-      },
-      "tags": [
-        "chess::variation"
-      ]
-    },
-    {
-      "key": "caro-vs-french",
-      "model": "basic",
-      "fields": {
-        "front": "The French also meets e4 with a supported ...d5. What does the Caro-Kann do better, and what does it give up?",
-        "back": "Better: the c8 bishop gets out before ...e6. Cost: a tempo on ...c6, the b8 knight's best square, and a slower ...c5",
-        "extra": "In the French the light-squared bishop is walled in from move one; the Caro-Kann develops it to f5 or g4 and only then builds the ...e6 wall. In exchange, ...c6 develops nothing, takes c6 from the b8 knight, and means the later ...c5 break moves the pawn twice.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F2p5%2F3p4%2F3PP3%2F8%2FPPP2PPP%2FRNBQKBNR%20w%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=d7d5"
-      },
-      "tags": [
-        "chess::structure"
-      ]
-    },
-    {
-      "key": "white-third-move-crossroads",
-      "model": "basic",
-      "fields": {
-        "front": "After 1. e4 c6 2. d4 d5, name White's four main tries.",
-        "back": "3. e5 (Advance), 3. Nc3 or 3. Nd2 (main line), 3. exd5 (Exchange, or 4. c4 Panov), and 3. f3 (Fantasy)",
-        "extra": "One position, four different games: a space battle against a pawn chain, a piece game after 3...dxe4, a symmetrical structure fight, or a big-center gamble. Black's setups change, but the assets stay the same: the free c8 bishop, the sound structure, and the ...c5 break.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F2p5%2F3p4%2F3PP3%2F8%2FPPP2PPP%2FRNBQKBNR%20w%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=d7d5"
-      },
-      "tags": [
-        "chess::variation"
-      ]
-    },
-    {
-      "key": "advance-signature-bf5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/3pP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
-        "answer": "Bf5",
-        "answerUci": "c8f5",
-        "orientation": "black",
-        "lastMove": "e4e5",
-        "prompt": "You are Black in the Caro-Kann, Advance Variation. What is the book move?",
-        "extra": "The move the opening was built around: the bishop reaches its best diagonal before ...e6 would close the door. In the Advance French this bishop spends the game behind its own pawns; here it develops with a clear conscience."
-      },
-      "tags": [
-        "chess::variation"
-      ]
-    },
-    {
-      "key": "advance-recognition",
-      "model": "basic",
-      "fields": {
-        "front": "Which variation is this?",
-        "back": "The Advance Variation (3. e5)",
-        "extra": "White grabs space with a French-style pawn chain. Black is cramped but has no weaknesses and a ready-made plan: ...Bf5 outside the wall, then ...e6 and the ...c5 strike at the base.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F2p5%2F3pP3%2F3P4%2F8%2FPPP2PPP%2FRNBQKBNR%20b%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=e4e5"
-      },
-      "tags": [
-        "chess::variation"
-      ]
-    },
-    {
-      "key": "advance-e6",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P4/5N2/PPP2PPP/RNBQKB1R b KQkq - 2 4",
-        "answer": "e6",
-        "answerUci": "e7e6",
-        "orientation": "black",
-        "lastMove": "g1f3",
-        "prompt": "You are Black in the Advance Variation. What is the book move?",
-        "extra": "Now the wall goes up at no cost, because the bishop already lives outside it. Black's next jobs: hit the chain's base with ...c5 and develop while White decides how to hold the extra space."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "advance-short-c5",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkbnr/pp3ppp/2p1p3/3pPb2/3P4/5N2/PPP1BPPP/RNBQK2R b KQkq - 1 5",
-        "answer": "c5",
-        "answerUci": "c6c5",
-        "orientation": "black",
-        "lastMove": "f1e2",
-        "prompt": "You are Black in the Advance, Short System. What is the book move?",
-        "extra": "Chain logic: e5 is the head, d4 is the base, and bases are what you attack. 5...c5 pulls the lever; ...Nc6 and ...Qb6 pile onto d4 next, and White's pieces get tied to its defense."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "advance-breaks",
-      "model": "basic",
-      "fields": {
-        "front": "Advance Variation: where are Black's two pawn breaks, and why exactly those squares?",
-        "back": "...c5 attacks the chain's base at d4; ...f6 attacks its head at e5",
-        "extra": "A pawn chain cannot be attacked head-on, only undermined. ...c5 comes early and is the main plan; ...f6 is the second wave for later, once e5 has fewer defenders. Textbook chain strategy, the same grammar as the French.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rn1qkbnr%2Fpp3ppp%2F2p1p3%2F3pPb2%2F3P4%2F5N2%2FPPP2PPP%2FRNBQKB1R%20w%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=e7e6"
-      },
-      "tags": [
-        "chess::structure"
-      ]
-    },
-    {
-      "key": "advance-vs-nc3",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P4/2N5/PPP2PPP/R1BQKBNR b KQkq - 2 4",
-        "answer": "e6",
-        "answerUci": "e7e6",
-        "orientation": "black",
-        "lastMove": "b1c3",
-        "prompt": "You are Black in the Advance Variation. What is the book move?",
-        "extra": "4. Nc3 signals the violent plan: g4 and a kingside pawn storm. Black completes the wall anyway; the storm looks scary, but every pawn lunge leaves squares behind, and Black's play flows through the center."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "advance-bayonet-bg6",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkbnr/pp3ppp/2p1p3/3pPb2/3P2P1/2N5/PPP2P1P/R1BQKBNR b KQkq - 0 5",
-        "answer": "Bg6",
-        "answerUci": "f5g6",
-        "orientation": "black",
-        "lastMove": "g2g4",
-        "prompt": "You are Black in the Advance, Bayonet Attack (5. g4). What is the book move?",
-        "extra": "The bishop stays on its diagonal and out of the pawns' reach. The recipe against a flank attack never changes: strike the center, so 6...c5 comes next, and ...h5 later helps pry White's kingside open."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "advance-vs-h4",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P3P/8/PPP2PP1/RNBQKBNR b KQkq - 0 4",
-        "answer": "h5",
-        "answerUci": "h7h5",
-        "orientation": "black",
-        "lastMove": "h2h4",
-        "prompt": "You are Black in the Advance Variation. What is the book move?",
-        "extra": "The point of 4. h4 is h5 and then g4: with g6 covered by the pawn, the bishop would run out of squares. 4...h5 freezes the pawn on h4, where it stays a target, and the bishop keeps its escape route."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "classical-dxe4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR b KQkq - 1 3",
-        "answer": "dxe4",
-        "answerUci": "d5e4",
-        "orientation": "black",
-        "lastMove": "b1c3",
-        "prompt": "You are Black in the Caro-Kann. What is the book move?",
-        "extra": "The capture pulls White's knight to a square where it can be hit: 4...Bf5, or 4...Nd7 and 5...Ngf6, develop while gaining time on it. Black trades one center pawn for another, so nothing structural is conceded."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "classical-signature-bf5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4",
-        "answer": "Bf5",
-        "answerUci": "c8f5",
-        "orientation": "black",
-        "lastMove": "c3e4",
-        "prompt": "You are Black and want the Classical Variation. What is the book move?",
-        "extra": "The bishop the Caro-Kann exists to free comes out with tempo. White's chasing moves will look like an initiative; Black's answers keep the bishop active, keep the structure clean, and give back nothing."
-      },
-      "tags": [
-        "chess::variation"
-      ]
-    },
-    {
-      "key": "classical-recognition",
-      "model": "basic",
-      "fields": {
-        "front": "Which variation is this?",
-        "back": "The Classical Variation (4...Bf5)",
-        "extra": "The old main line, beloved by Capablanca and Karpov. Black's next ten moves can look forced and passive; in fact each one preserves the two assets that decide the endgame: the active bishop and the flawless structure.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rn1qkbnr%2Fpp2pppp%2F2p5%2F5b2%2F3PN3%2F8%2FPPP2PPP%2FR1BQKBNR%20w%20KQkq%20-%201%205&color=black&theme=brown&piece=cburnett&lastMove=c8f5"
-      },
-      "tags": [
-        "chess::variation"
-      ]
-    },
-    {
-      "key": "classical-bg6",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkbnr/pp2pppp/2p5/5b2/3P4/6N1/PPP2PPP/R1BQKBNR b KQkq - 2 5",
-        "answer": "Bg6",
-        "answerUci": "f5g6",
-        "orientation": "black",
-        "lastMove": "e4g3",
-        "prompt": "You are Black in the Classical Variation. What is the book move?",
-        "extra": "The only retreat that keeps the bishop working on the b1-h7 diagonal. It stands ready to trade itself for White's light-squared bishop, the piece any kingside attack would be built around."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "classical-h6",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkbnr/pp2pppp/2p3b1/8/3P3P/6N1/PPP2PP1/R1BQKBNR b KQkq - 0 6",
-        "answer": "h6",
-        "answerUci": "h7h6",
-        "orientation": "black",
-        "lastMove": "h2h4",
-        "prompt": "You are Black in the Classical Variation. What is the book move?",
-        "extra": "Not cosmetic: the g3 knight covers f5 and e4, so when h5 comes the bishop's only refuge is h7, and 6...h6 clears that square in advance. Skip it and h4-h5 embarrasses the bishop at once."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "classical-nd7",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkbnr/pp2ppp1/2p3bp/8/3P3P/5NN1/PPP2PP1/R1BQKB1R b KQkq - 1 7",
-        "answer": "Nd7",
-        "answerUci": "b8d7",
-        "orientation": "black",
-        "lastMove": "g1f3",
-        "prompt": "You are Black in the Classical Variation. What is the book move?",
-        "extra": "The Caro habit: arrange the pieces so no exchange hurts. 7...Nd7 prepares ...Ngf6, when Nxf6 is met by ...Nxf6 and the pawn front never moves. It also covers e5 against knight hops."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "classical-bh7",
-      "model": "chess",
-      "fields": {
-        "fen": "r2qkbnr/pp1nppp1/2p3bp/7P/3P4/5NN1/PPP2PP1/R1BQKB1R b KQkq - 0 8",
-        "answer": "Bh7",
-        "answerUci": "g6h7",
-        "orientation": "black",
-        "lastMove": "h4h5",
-        "prompt": "You are Black in the Classical Variation. What is the book move?",
-        "extra": "Into the nook prepared by 6...h6. The bishop still owns b1-h7, and White's far-advanced h5 pawn can become a real target once the queens come off."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "classical-bxd3",
-      "model": "chess",
-      "fields": {
-        "fen": "r2qkbnr/pp1npppb/2p4p/7P/3P4/3B1NN1/PPP2PP1/R1BQK2R b KQkq - 2 9",
-        "answer": "Bxd3",
-        "answerUci": "h7d3",
-        "orientation": "black",
-        "lastMove": "f1d3",
-        "prompt": "You are Black in the Classical Variation. What is the book move?",
-        "extra": "Take without hesitation: Bd3 was the attacking piece, pointed at Black's future king position. The long maneuver ...Bf5-g6-h7 ends by removing White's best piece, a fine deal in a position with no open lines to punish the spent tempi."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "classical-e6",
-      "model": "chess",
-      "fields": {
-        "fen": "r2qkbnr/pp1nppp1/2p4p/7P/3P4/3Q1NN1/PPP2PP1/R1B1K2R b KQkq - 0 10",
-        "answer": "e6",
-        "answerUci": "e7e6",
-        "orientation": "black",
-        "lastMove": "d1d3",
-        "prompt": "You are Black in the Classical Variation. What is the book move?",
-        "extra": "Bishop business finished, the wall goes up. Count Black's camp: not a single pawn is weak. That intact structure is the asset Black intends to still hold in the endgame, and it is why the Classical has never been refuted."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "classical-ngf6",
-      "model": "chess",
-      "fields": {
-        "fen": "r2qkbnr/pp1n1pp1/2p1p2p/7P/3P1B2/3Q1NN1/PPP2PP1/R3K2R b KQkq - 1 11",
-        "answer": "Ngf6",
-        "answerUci": "g8f6",
-        "orientation": "black",
-        "lastMove": "c1f4",
-        "prompt": "You are Black in the Classical Variation. What is the book move?",
-        "extra": "Developed on Black's terms: if White trades with Nxf6, the d7 knight recaptures and the pawns never move. White's space means little when there is nothing to attack."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "classical-be7",
-      "model": "chess",
-      "fields": {
-        "fen": "r2qkb1r/pp1n1pp1/2p1pn1p/7P/3P1B2/3Q1NN1/PPP2PP1/2KR3R b kq - 3 12",
-        "answer": "Be7",
-        "answerUci": "f8e7",
-        "orientation": "black",
-        "lastMove": "e1c1",
-        "prompt": "You are Black in the Classical Variation. What is the book move?",
-        "extra": "Quiet and flexible. Castling short is safer than it looks, because White's own h5 pawn has closed the h-file; ...Qc7 with ...O-O-O is the other sound scheme. Both are main theory."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "classical-plan",
-      "model": "basic",
-      "fields": {
-        "front": "Classical main line: development is done. What is Black's middlegame plan?",
-        "back": "Castle (short is safe: h5 has closed the h-file), play ...Qc7 and ...Rd8, then free the game with the ...c5 break and welcome trades",
-        "extra": "Space fades as pieces trade, structure does not. Black absorbs, exchanges a pair or two, and times ...c5 to open the position exactly when it favors the healthier pawns. That rhythm, absorb then counter, is the Caro-Kann's signature.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r2qk2r%2Fpp1nbpp1%2F2p1pn1p%2F7P%2F3P1B2%2F3Q1NN1%2FPPP2PP1%2F2KR3R%20w%20kq%20-%204%2013&color=black&theme=brown&piece=cburnett&lastMove=f8e7"
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "karpov-recognition",
-      "model": "basic",
-      "fields": {
-        "front": "Which variation is this?",
-        "back": "The Karpov Variation (4...Nd7)",
-        "extra": "Karpov's pet move order: prepare ...Ngf6 so the recapture on f6 keeps the pawns intact, while dodging the heavy 4...Bf5 theory. Sound and quiet, but White has one venomous try every Karpov player must know: 5. Qe2.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bqkbnr%2Fpp1npppp%2F2p5%2F8%2F3PN3%2F8%2FPPP2PPP%2FR1BQKBNR%20w%20KQkq%20-%201%205&color=black&theme=brown&piece=cburnett&lastMove=b8d7"
-      },
-      "tags": [
-        "chess::variation"
-      ]
-    },
-    {
-      "key": "karpov-trap-qe2",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkbnr/pp1npppp/2p5/8/3PN3/8/PPP1QPPP/R1B1KBNR b KQkq - 2 5",
-        "answer": "Ndf6",
-        "answerUci": "d7f6",
-        "orientation": "black",
-        "lastMove": "d1e2",
-        "prompt": "You are Black in the Karpov Variation. White's 5. Qe2 sets a famous trap. What is the safe move?",
-        "extra": "The natural 5...Ngf6?? loses on the spot to 6. Nd6 mate: the e7 pawn is pinned by the queen and every escape square is filled by Black's own army. 5...Ndf6 develops the other knight, hits the e4 knight, and sidesteps the most famous smothered mate in opening theory."
-      },
-      "tags": [
-        "chess::trap"
-      ]
-    },
-    {
-      "key": "recapture-schools",
-      "model": "basic",
-      "fields": {
-        "front": "After 4...Nf6 5. Nxf6+, Black chooses a recapture. Name both variations and their characters.",
-        "back": "5...exf6: the Tartakower, solid and quick to develop. 5...gxf6: the Bronstein-Larsen, double-edged with a half-open g-file",
-        "extra": "One decision, two different games: ...exf6 frees the f8 bishop and accepts a quiet game with a sturdy king, while ...gxf6 keeps the e7 pawn pointing at the center and uses the g-file for attack, at real structural cost. Both are respectable; the choice is stylistic.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp2pppp%2F2p2N2%2F8%2F3P4%2F8%2FPPP2PPP%2FR1BQKBNR%20b%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=e4f6"
-      },
-      "tags": [
-        "chess::variation"
-      ]
-    },
-    {
-      "key": "exchange-cxd5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/3P4/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
-        "answer": "cxd5",
-        "answerUci": "c6d5",
-        "orientation": "black",
-        "lastMove": "e4d5",
-        "prompt": "You are Black in the Exchange Variation. What is the book move?",
-        "extra": "Recapture with the pawn: Black keeps a healthy stake on d5 and half-opens the c-file, Black's file for the rest of the game. 3...Qxd5? would invite 4. Nc3 with tempo, exactly what 1...c6 was designed to avoid."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "exchange-recognition",
-      "model": "basic",
-      "fields": {
-        "front": "Which variation is this?",
-        "back": "The Exchange Variation (3. exd5 cxd5, here with Fischer's 4. Bd3)",
-        "extra": "4. Bd3 seizes the b1-h7 diagonal first, so the Caro bishop never reaches f5 (4...Bf5?? now loses a piece to 5. Bxf5). Black switches plans: ...Nc6 and ...Bg4, heading for a Carlsbad structure with colors reversed.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F8%2F3p4%2F3P4%2F3B4%2FPPP2PPP%2FRNBQK1NR%20b%20KQkq%20-%201%204&color=black&theme=brown&piece=cburnett&lastMove=f1d3"
-      },
-      "tags": [
-        "chess::variation"
-      ]
-    },
-    {
-      "key": "exchange-nc6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp2pppp/8/3p4/3P4/3B4/PPP2PPP/RNBQK1NR b KQkq - 1 4",
-        "answer": "Nc6",
-        "answerUci": "b8c6",
-        "orientation": "black",
-        "lastMove": "f1d3",
-        "prompt": "You are Black in the Exchange Variation. What is the book move?",
-        "extra": "Pressure on d4 provokes 5. c3, and only then does Black choose the bishop's diagonal. Queenside pieces first, ...e6 last: Caro manners survive the change of structure."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "exchange-nf6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkbnr/pp2pppp/2n5/3p4/3P4/2PB4/PP3PPP/RNBQK1NR b KQkq - 0 5",
-        "answer": "Nf6",
-        "answerUci": "g8f6",
-        "orientation": "black",
-        "lastMove": "c2c3",
-        "prompt": "You are Black in the Exchange Variation. What is the book move?",
-        "extra": "Natural development toward the standard setup: ...Nc6, ...Nf6, ...Bg4, then ...e6 and ...Bd6. The structure is balanced, and Black's half-open c-file gives ready-made rook play."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "exchange-bg4",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkb1r/pp2pppp/2n2n2/3p4/3P1B2/2PB4/PP3PPP/RN1QK1NR b KQkq - 2 6",
-        "answer": "Bg4",
-        "answerUci": "c8g4",
-        "orientation": "black",
-        "lastMove": "c1f4",
-        "prompt": "You are Black in the Exchange Variation. What is the book move?",
-        "extra": "Out before ...e6 shuts the door, as always. The critical try 7. Qb3 is answered by 7...Qd7 (or 7...Na5 8. Qa4+ Bd7), when the b7 pawn is poisoned: after Qxb7 the queen gets hunted by ...Rb8."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "exchange-plan",
-      "model": "basic",
-      "fields": {
-        "front": "Exchange Variation: what structure arises, and what are Black's plans?",
-        "back": "A Carlsbad structure with colors reversed: Black owns the half-open c-file, can run a minority attack with ...b5-b4, or prepare the ...e5 break",
-        "extra": "The mirror of the Queen's Gambit Exchange, with Black playing the minority-attack side. ...b5-b4 aims to leave White a backward pawn on the open c-file; if White drifts in the center, ...e5 frees everything at once. Quiet-looking, full of plans.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r2qkb1r%2Fpp2pppp%2F2n2n2%2F3p4%2F3P1Bb1%2F2PB4%2FPP3PPP%2FRN1QK1NR%20w%20KQkq%20-%203%207&color=black&theme=brown&piece=cburnett&lastMove=c8g4"
-      },
-      "tags": [
-        "chess::structure"
-      ]
-    },
-    {
-      "key": "panov-recognition",
-      "model": "basic",
-      "fields": {
-        "front": "Which variation is this?",
-        "back": "The Panov-Botvinnik Attack (4. c4)",
-        "extra": "White turns the solid Caro into an open, piece-active fight and usually accepts an isolated queen's pawn to do it. Expect Queen's Gambit and Nimzo-Indian flavors: this is the one Caro branch where concrete theory matters most.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F8%2F3p4%2F2PP4%2F8%2FPP3PPP%2FRNBQKBNR%20b%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=c2c4"
-      },
-      "tags": [
-        "chess::variation"
-      ]
-    },
-    {
-      "key": "panov-nf6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp2pppp/8/3p4/2PP4/8/PP3PPP/RNBQKBNR b KQkq - 0 4",
-        "answer": "Nf6",
-        "answerUci": "g8f6",
-        "orientation": "black",
-        "lastMove": "c2c4",
-        "prompt": "You are Black vs the Panov-Botvinnik Attack. What is the book move?",
-        "extra": "Develop and defend d5 in one move. Black is happy to see cxd5 Nxd5, when the knight sits well in the center and White's isolated-pawn story begins."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "panov-e6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp2pppp/5n2/3p4/2PP4/2N5/PP3PPP/R1BQKBNR b KQkq - 2 5",
-        "answer": "e6",
-        "answerUci": "e7e6",
-        "orientation": "black",
-        "lastMove": "b1c3",
-        "prompt": "You are Black vs the Panov-Botvinnik Attack. What is the book move?",
-        "extra": "The wall returns because this structure demands it: against the Panov, holding the d5 square outweighs the bishop's diagonal. ...Bb4 or ...Be7 comes next, then quick castling; isolated-pawn positions punish slow kings."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "panov-bb4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp3ppp/4pn2/3p4/2PP4/2N2N2/PP3PPP/R1BQKB1R b KQkq - 1 6",
-        "answer": "Bb4",
-        "answerUci": "f8b4",
-        "orientation": "black",
-        "lastMove": "g1f3",
-        "prompt": "You are Black vs the Panov-Botvinnik Attack. What is the book move?",
-        "extra": "A Nimzo-Indian move in Caro clothing: the pin neutralizes the knight pressing on d5. After 7. cxd5 Nxd5 the isolani appears on d4 and Black's plan writes itself: blockade it, trade pieces, and collect it in the ending."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "iqp-theory",
-      "model": "basic",
-      "fields": {
-        "front": "Panov positions often leave White an isolated queen's pawn. What does each side want?",
-        "back": "White wants a middlegame: the e5 outpost, open lines, and attacking chances the pawn buys. Black wants trades and an endgame, where the isolani is simply weak",
-        "extra": "The guideline that decides these games: each traded pair of pieces makes the isolani weaker and the d5 blockade stronger. A knight parked on d5 in an ending is the Panov defender's dream picture.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fpp3ppp%2F4pn2%2F3p4%2F1bPP4%2F2N2N2%2FPP3PPP%2FR1BQKB1R%20w%20KQkq%20-%202%207&color=black&theme=brown&piece=cburnett&lastMove=f8b4"
-      },
-      "tags": [
-        "chess::structure"
-      ]
-    },
-    {
-      "key": "fantasy-recognition",
-      "model": "basic",
-      "fields": {
-        "front": "Which variation is this?",
-        "back": "The Fantasy Variation (3. f3)",
-        "extra": "White props up e4 to keep the full center, at the cost of the g1 knight's best square and the e1-h4 diagonal. Tricky and underrated: Black should not try to refute it, just develop soundly and let f3 be a small liability.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F2p5%2F3p4%2F3PP3%2F5P2%2FPPP3PP%2FRNBQKBNR%20b%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=f2f3"
-      },
-      "tags": [
-        "chess::variation"
-      ]
-    },
-    {
-      "key": "fantasy-e6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/5P2/PPP3PP/RNBQKBNR b KQkq - 0 3",
-        "answer": "e6",
-        "answerUci": "e7e6",
-        "orientation": "black",
-        "lastMove": "f2f3",
-        "prompt": "You are Black vs the Fantasy Variation. What is the book move?",
-        "extra": "The calm answer: reinforce d5 and ask what f3 accomplished. The principled alternative is 3...dxe4 4. fxe4 e5, striking before White consolidates; both are established, but 3...e6 needs far less memory."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "caro-reflex-d5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 2",
-        "answer": "d5",
-        "answerUci": "d7d5",
-        "orientation": "black",
-        "lastMove": "b1c3",
-        "prompt": "You are Black in the Caro-Kann and White plays 2. Nc3. What is the book move?",
-        "extra": "The Caro reflex: whatever White's second move, ...d5 is nearly always right, because 1...c6 exists to support it. Here White usually continues 3. Nf3, the Two Knights Variation, or trades on d5."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "two-knights-bg4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/2N2N2/PPPP1PPP/R1BQKB1R b KQkq - 1 3",
-        "answer": "Bg4",
-        "answerUci": "c8g4",
-        "orientation": "black",
-        "lastMove": "g1f3",
-        "prompt": "You are Black vs the Two Knights Variation. What is the book move?",
-        "extra": "3...Bg4 pins the knight so White cannot achieve d4 under good conditions. After 4. h3 Bxf3 5. Qxf3 e6, Black concedes the bishop pair but builds a structure the two bishops can never crack open: ...Nf6, ...Nbd7, and a calm, cramp-free game."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "accelerated-panov-d5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp1ppppp/2p5/8/2P1P3/8/PP1P1PPP/RNBQKBNR b KQkq - 0 2",
-        "answer": "d5",
-        "answerUci": "d7d5",
-        "orientation": "black",
-        "lastMove": "c2c4",
-        "prompt": "You are Black in the Caro-Kann and White plays 2. c4. What is the book move?",
-        "extra": "Claim the center anyway. After 3. exd5 cxd5 4. cxd5 the pawn cannot be held: 4...Nf6 (better than 4...Qxd5?!, which invites 5. Nc3) regains it comfortably, with 5. Nc3 Nxd5 to follow."
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "kia-vs-caro",
-      "model": "basic",
-      "fields": {
-        "front": "White plays the modest 2. d3, heading for a King's Indian Attack. How does Black respond?",
-        "back": "Take the full center: 2...d5, and after 3. Nd2, 3...e5",
-        "extra": "White's restraint is Black's invitation: the pawn pair on d5 and e5 is everything 1...c6 could hope for. Develop with ...Bd6 and ...Nf6, castle, and Black stands comfortably in the center from move three.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F2p5%2F8%2F4P3%2F3P4%2FPPP2PPP%2FRNBQKBNR%20b%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett&lastMove=d2d3"
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "caro-breaks",
-      "model": "basic",
-      "fields": {
-        "front": "Across the whole Caro-Kann, which pawn breaks carry Black's counterplay?",
-        "back": "...c5 nearly always; ...e5 in the main lines, or ...f6 against the Advance chain",
-        "extra": "A sound but cramped position needs levers, and Black's are always the same. Prepare them fully before pulling: broken open too early, the game favors White's lead in development; too late, and Black suffocates.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F2p5%2F3p4%2F3PP3%2F8%2FPPP2PPP%2FRNBQKBNR%20w%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=d7d5"
-      },
-      "tags": [
-        "chess::structure"
-      ]
-    },
-    {
-      "key": "caro-endgame",
-      "model": "basic",
-      "fields": {
-        "front": "Why does the Caro-Kann have such a strong endgame reputation?",
-        "back": "Black comes out with zero pawn weaknesses and the light-squared bishop developed or traded, while White's space-gaining pawn advances become targets",
-        "extra": "Space matters less with every trade; structure matters more. The h4-h5 lunge of the Classical is the emblem: a middlegame weapon that turns into an endgame weakness. Caro players trade pieces with a clear conscience.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=r2qk2r%2Fpp1nbpp1%2F2p1pn1p%2F7P%2F3P1B2%2F3Q1NN1%2FPPP2PP1%2F2KR3R%20w%20kq%20-%204%2013&color=black&theme=brown&piece=cburnett&lastMove=f8e7"
-      },
-      "tags": [
-        "chess::structure"
-      ]
-    },
-    {
-      "key": "caro-champions",
-      "model": "basic",
-      "fields": {
-        "front": "Which world champions used the Caro-Kann as a main defense?",
-        "back": "Capablanca, Botvinnik, Petrosian, and Karpov",
-        "extra": "The opening fits a style: clarity, patience, and technique. Botvinnik trusted it in world championship matches, and the 4...Nd7 line carries Karpov's name.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F2p5%2F8%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett&lastMove=c7c6"
-      },
-      "tags": [
-        "chess::variation"
-      ]
-    },
-    {
-      "key": "caro-tradeoffs",
-      "model": "basic",
-      "fields": {
-        "front": "The honest ledger: what does White get against the Caro-Kann, and what does Black get?",
-        "back": "White: extra space and freer development. Black: a weakness-free structure, a solved light-squared bishop, and plans that survive into the endgame",
-        "extra": "The bet behind 1...c6: advantages of time and space fade as pieces leave the board, while structural advantages compound. Absorb the pressure, break with ...c5 or ...e5 at the right moment, and let the pawns do the arguing.",
-        "frontImage": "https://lichess1.org/export/fen.gif?fen=rn1qkbnr%2Fpp2pppp%2F2p5%2F5b2%2F3PN3%2F8%2FPPP2PPP%2FR1BQKBNR%20w%20KQkq%20-%201%205&color=black&theme=brown&piece=cburnett&lastMove=c8f5"
-      },
-      "tags": [
-        "chess::plan"
-      ]
-    },
-    {
-      "key": "l-e4-bc4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp1ppppp/2p5/8/2B1P3/8/PPPP1PPP/RNBQK1NR b KQkq - 1 2",
-        "answer": "d5",
-        "answerUci": "d7d5",
-        "orientation": "black",
-        "lastMove": "f1c4",
-        "prompt": "You are Black in the Hillbilly Attack. What is the book move?",
-        "extra": "1. e4 c6 2. Bc4 **d5**. Grabs the center with tempo: the pawn shuts the bishop's diagonal and it must soon move again."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-g4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P1P1/8/PPPP1P1P/RNBQKBNR b KQkq - 0 2",
-        "answer": "d5",
-        "answerUci": "d7d5",
-        "orientation": "black",
-        "lastMove": "g2g4",
-        "prompt": "You are Black in the Spike Variation. What is the book move?",
-        "extra": "1. e4 c6 2. g4 **d5**. The center answer to flank play; g4 only loosened White's king."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-b4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp1ppppp/2p5/8/1P2P3/8/P1PP1PPP/RNBQKBNR b KQkq - 0 2",
-        "answer": "d5",
-        "answerUci": "d7d5",
-        "orientation": "black",
-        "lastMove": "b2b4",
-        "prompt": "You are Black in the Labahn Attack. What is the book move?",
-        "extra": "1. e4 c6 2. b4 **d5**. Flank pawns do not fight for e4 or d5, so Black takes the center for free."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 **d5** (Caro-Kann Defense, B12) [White plays d4 here 51% of the time]",
+        "lastMove": "d2d4"
       },
       "tags": [
         "chess::line"
@@ -808,89 +52,73 @@
         "answer": "d5",
         "answerUci": "d7d5",
         "orientation": "black",
-        "lastMove": "g1f3",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "1. e4 c6 2. Nf3 **d5**. The prepared strike: d5 arrives fully protected, and exd5 cxd5 keeps a healthy center pawn."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 **d5** [White plays Nf3 here 25% of the time]",
+        "lastMove": "g1f3"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d3",
+      "key": "l-e4-nc3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/3P4/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+        "fen": "rnbqkbnr/pp1ppppp/2p5/8/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 2",
         "answer": "d5",
         "answerUci": "d7d5",
         "orientation": "black",
-        "lastMove": "d2d3",
-        "prompt": "You are Black in the Breyer Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d3 **d5**. White declined the center; claim all of it."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nc3 **d5** (Caro-Kann Defense, B10) [White plays Nc3 here 7% of the time]",
+        "lastMove": "b1c3"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d4-nf3",
+      "key": "l-e4-bc4",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 1 3",
-        "answer": "dxe4",
-        "answerUci": "d5e4",
+        "fen": "rnbqkbnr/pp1ppppp/2p5/8/2B1P3/8/PPPP1PPP/RNBQK1NR b KQkq - 1 2",
+        "answer": "d5",
+        "answerUci": "d7d5",
         "orientation": "black",
-        "lastMove": "g1f3",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. Nf3 **dxe4**. Takes a pawn the knight must burn time (4. Ng5) to regain, conceding the center meanwhile."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Bc4 **d5** [White plays Bc4 here 5% of the time]",
+        "lastMove": "f1c4"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-c4-exd5",
+      "key": "l-e4-f4",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/3P4/2P5/8/PP1P1PPP/RNBQKBNR b KQkq - 0 3",
-        "answer": "cxd5",
-        "answerUci": "c6d5",
+        "fen": "rnbqkbnr/pp1ppppp/2p5/8/4PP2/8/PPPP2PP/RNBQKBNR b KQkq - 0 2",
+        "answer": "d5",
+        "answerUci": "d7d5",
         "orientation": "black",
-        "lastMove": "e4d5",
-        "prompt": "You are Black in the Accelerated Panov Attack. What is the book move?",
-        "extra": "1. e4 c6 2. c4 d5 3. exd5 **cxd5**. Recapture with the c-pawn: center stake, half-open c-file, and the queen stays home."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. f4 **d5** [White plays f4 here 5% of the time]",
+        "lastMove": "f2f4"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-g4-nc3",
+      "key": "l-e4-d4-e5",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P1P1/2N5/PPPP1P1P/R1BQKBNR b KQkq - 1 3",
-        "answer": "dxe4",
-        "answerUci": "d5e4",
+        "fen": "rnbqkbnr/pp2pppp/2p5/3pP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
+        "answer": "Bf5",
+        "answerUci": "c8f5",
         "orientation": "black",
-        "lastMove": "b1c3",
-        "prompt": "You are Black in the Spike Variation. What is the book move?",
-        "extra": "1. e4 c6 2. g4 d5 3. Nc3 **dxe4**. Wins a pawn either way: the capture opens the c8 bishop's diagonal straight at the loose g4 pawn."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d4-nd2",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPPN1PPP/R1BQKBNR b KQkq - 1 3",
-        "answer": "dxe4",
-        "answerUci": "d5e4",
-        "orientation": "black",
-        "lastMove": "b1d2",
-        "prompt": "You are Black in the Modern Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. Nd2 **dxe4**. Same treatment as 3. Nc3: capture, and the recapture parks a knight that ...Bf5 develops against with tempo."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 **Bf5** [White plays e5 here 35% of the time]",
+        "lastMove": "e4e5"
       },
       "tags": [
         "chess::line"
@@ -904,121 +132,169 @@
         "answer": "cxd5",
         "answerUci": "c6d5",
         "orientation": "black",
-        "lastMove": "e4d5",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "1. e4 c6 2. Nf3 d5 3. exd5 **cxd5**. The c-pawn recapture rule: healthy center pawn and the c-file for Black's rooks."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. exd5 **cxd5** [White plays exd5 here 65% of the time]",
+        "lastMove": "e4d5"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-nc3-d3",
+      "key": "l-e4-d4-exd5",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/2NP4/PPP2PPP/R1BQKBNR b KQkq - 0 3",
-        "answer": "dxe4",
-        "answerUci": "d5e4",
-        "orientation": "black",
-        "lastMove": "d2d3",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "1. e4 c6 2. Nc3 d5 3. d3 **dxe4**. Takes the free central trade; White's timid d3 left nothing to attack."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-nf3-d3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/3P1N2/PPP2PPP/RNBQKB1R b KQkq - 0 3",
-        "answer": "dxe4",
-        "answerUci": "d5e4",
-        "orientation": "black",
-        "lastMove": "d2d3",
-        "prompt": "You are Black in the Endgame Offer. What is the book move?",
-        "extra": "1. e4 c6 2. Nf3 d5 3. d3 **dxe4**. Starts the trade whose point is 4. dxe4 Qxd1+ 5. Kxd1, stripping White of castling."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d4-bd3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/3B4/PPP2PPP/RNBQK1NR b KQkq - 1 3",
-        "answer": "Nf6",
-        "answerUci": "g8f6",
-        "orientation": "black",
-        "lastMove": "f1d3",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. Bd3 **Nf6**. Develops while adding a hit on e4; White's early bishop is now tied to defending it."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-c4-cxd5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/3P4/4P3/8/PP1P1PPP/RNBQKBNR b KQkq - 0 3",
+        "fen": "rnbqkbnr/pp2pppp/2p5/3P4/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
         "answer": "cxd5",
         "answerUci": "c6d5",
         "orientation": "black",
-        "lastMove": "c4d5",
-        "prompt": "You are Black in the Accelerated Panov Attack. What is the book move?",
-        "extra": "1. e4 c6 2. c4 d5 3. cxd5 **cxd5**. Keep the recapture symmetrical; 4. exd5 Nf6 regains the pawn comfortably."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 **cxd5** (Exchange Variation, B13) [White plays exd5 here 31% of the time]",
+        "lastMove": "e4d5"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-bc4-bb3",
+      "key": "l-e4-d4-nc3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/1B6/PPPP1PPP/RNBQK1NR b KQkq - 1 3",
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/2N5/PPP2PPP/R1BQKBNR b KQkq - 1 3",
         "answer": "dxe4",
         "answerUci": "d5e4",
         "orientation": "black",
-        "lastMove": "c4b3",
-        "prompt": "You are Black in the Hillbilly Attack. What is the book move?",
-        "extra": "1. e4 c6 2. Bc4 d5 3. Bb3 **dxe4**. Pockets the e4 pawn cleanly; even 4. Qh5 regains nothing after ...g6."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 **dxe4** (Caro-Kann Defense, B15) [White plays Nc3 here 22% of the time]",
+        "lastMove": "b1c3"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d3-nd2",
+      "key": "l-e4-bc4-exd5",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/3P4/PPPN1PPP/R1BQKBNR b KQkq - 1 3",
-        "answer": "g6",
-        "answerUci": "g7g6",
+        "fen": "rnbqkbnr/pp2pppp/2p5/3P4/2B5/8/PPPP1PPP/RNBQK1NR b KQkq - 0 3",
+        "answer": "cxd5",
+        "answerUci": "c6d5",
         "orientation": "black",
-        "lastMove": "b1d2",
-        "prompt": "You are Black in the Breyer Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d3 d5 3. Nd2 **g6**. Against the King's Indian Attack setup, the fianchetto is the sturdiest shell: the g7 bishop watches d4 and e5 all game."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Bc4 d5 3. exd5 **cxd5** [White plays exd5 here 94% of the time]",
+        "lastMove": "e4d5"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-nc3-nf3-h3",
+      "key": "l-e4-nf3-e5",
       "model": "chess",
       "fields": {
-        "fen": "rn1qkbnr/pp2pppp/2p5/3p4/4P1b1/2N2N1P/PPPP1PP1/R1BQKB1R b KQkq - 0 4",
-        "answer": "Bxf3",
-        "answerUci": "g4f3",
+        "fen": "rnbqkbnr/pp2pppp/2p5/3pP3/8/5N2/PPPP1PPP/RNBQKB1R b KQkq - 0 3",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
         "orientation": "black",
-        "lastMove": "h2h3",
-        "prompt": "You are Black in the Mindeno Variation. What is the book move?",
-        "extra": "1. e4 c6 2. Nc3 d5 3. Nf3 Bg4 4. h3 **Bxf3** (Exchange Line, B11). Concede the bishop before it gets kicked around; Qxf3 leaves the queen biting on granite while the e6/d5 wall goes up."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. e5 **Bg4** [White plays e5 here 15% of the time]",
+        "lastMove": "e4e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/4P3/2N2N2/PPPP1PPP/R1BQKB1R b KQkq - 1 3",
+        "answer": "dxe4",
+        "answerUci": "d5e4",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. Nc3 **dxe4** [White plays Nc3 here 13% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-e5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/2p5/3pP3/5P2/8/PPPP2PP/RNBQKBNR b KQkq - 0 3",
+        "answer": "Bf5",
+        "answerUci": "c8f5",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. f4 d5 3. e5 **Bf5** [White plays e5 here 65% of the time]",
+        "lastMove": "e4e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-exd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/2p5/3P4/8/2N5/PPPP1PPP/R1BQKBNR b KQkq - 0 3",
+        "answer": "cxd5",
+        "answerUci": "c6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nc3 d5 3. exd5 **cxd5** [White plays exd5 here 42% of the time]",
+        "lastMove": "e4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nd2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPPN1PPP/R1BQKBNR b KQkq - 1 3",
+        "answer": "dxe4",
+        "answerUci": "d5e4",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nd2 **dxe4** [White plays Nd2 here 5% of the time]",
+        "lastMove": "b1d2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-exd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/2p5/3P4/5P2/8/PPPP2PP/RNBQKBNR b KQkq - 0 3",
+        "answer": "cxd5",
+        "answerUci": "c6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. f4 d5 3. exd5 **cxd5** [White plays exd5 here 25% of the time]",
+        "lastMove": "e4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/2p5/8/3PN3/8/PPP2PPP/R1BQKBNR b KQkq - 0 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 **Nf6** [White plays Nxe4 here 87% of the time]",
+        "lastMove": "c3e4"
       },
       "tags": [
         "chess::line"
@@ -1032,57 +308,201 @@
         "answer": "Nc6",
         "answerUci": "b8c6",
         "orientation": "black",
-        "lastMove": "g1f3",
-        "prompt": "You are Black in the Exchange Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Nf3 **Nc6** (Exchange Variation, B13). Develops against d4; with the knight already committed to f3, ...Bg4 comes next as a real pin."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Nf3 **Nc6** (Exchange Variation, B13) [White plays Nf3 here 29% of the time]",
+        "lastMove": "g1f3"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d3-nd2-ngf3",
+      "key": "l-e4-d4-e5-bd3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp2pp1p/2p3p1/3p4/4P3/3P1N2/PPPN1PPP/R1BQKB1R b KQkq - 1 4",
-        "answer": "Bg7",
-        "answerUci": "f8g7",
+        "fen": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P4/3B4/PPP2PPP/RNBQK1NR b KQkq - 2 4",
+        "answer": "Bxd3",
+        "answerUci": "f5d3",
         "orientation": "black",
-        "lastMove": "g1f3",
-        "prompt": "You are Black in the Breyer Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d3 d5 3. Nd2 g6 4. Ngf3 **Bg7**. Completes the fianchetto; the bishop's grip on e5 and d4 makes White's usual space plans awkward."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Bd3 **Bxd3** [White plays Bd3 here 23% of the time]",
+        "lastMove": "f1d3"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d4-bd3-e5",
+      "key": "l-e4-d4-exd5-bd3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/pp2pppp/2p2n2/3pP3/3P4/3B4/PPP2PPP/RNBQK1NR b KQkq - 0 4",
-        "answer": "Nfd7",
-        "answerUci": "f6d7",
+        "fen": "rnbqkbnr/pp2pppp/8/3p4/3P4/3B4/PPP2PPP/RNBQK1NR b KQkq - 1 4",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
         "orientation": "black",
-        "lastMove": "e4e5",
-        "prompt": "You are Black in the main line. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. Bd3 Nf6 4. e5 **Nfd7**. Tucks in to strike the new chain: ...c5 and ...Nc6 hit d4 while White's bishop watches from the wrong square."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Bd3 **Nc6** [White plays Bd3 here 26% of the time]",
+        "lastMove": "f1d3"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-c4-exd5-cxd5",
+      "key": "l-e4-d4-e5-nf3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp2pppp/8/3P4/8/8/PP1P1PPP/RNBQKBNR b KQkq - 0 4",
+        "fen": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P4/5N2/PPP2PPP/RNBQKB1R b KQkq - 2 4",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3 **e6** [White plays Nf3 here 22% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/8/3p4/2PP4/8/PP3PPP/RNBQKBNR b KQkq - 0 4",
         "answer": "Nf6",
         "answerUci": "g8f6",
         "orientation": "black",
-        "lastMove": "c4d5",
-        "prompt": "You are Black in the Accelerated Panov Attack. What is the book move?",
-        "extra": "1. e4 c6 2. c4 d5 3. exd5 cxd5 4. cxd5 **Nf6** (Modern Variation, B10). No rush with the queen: the knight regains d5 while developing; ...Qxd5 would invite Nc3 with tempo."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 **Nf6** [White plays c4 here 22% of the time]",
+        "lastMove": "c2c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-bc4-exd5-bb3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/8/3p4/8/1B6/PPPP1PPP/RNBQK1NR b KQkq - 1 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Bc4 d5 3. exd5 cxd5 4. Bb3 **Nf6** [White plays Bb3 here 75% of the time]",
+        "lastMove": "c4b3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-nc3-nxe4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/2p5/8/4N3/5N2/PPPP1PPP/R1BQKB1R b KQkq - 0 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. Nc3 dxe4 4. Nxe4 **Nf6** [White plays Nxe4 here 99% of the time]",
+        "lastMove": "c3e4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-e5-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2pppp/2p5/3pP3/3P2b1/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 4",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. e5 Bg4 4. d4 **e6** [White plays d4 here 72% of the time]",
+        "lastMove": "d2d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-h4",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P3P/8/PPP2PP1/RNBQKBNR b KQkq - 0 4",
+        "answer": "h5",
+        "answerUci": "h7h5",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. h4 **h5** [White plays h4 here 14% of the time]",
+        "lastMove": "h2h4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/8/3p4/3P4/2N5/PPP2PPP/R1BQKBNR b KQkq - 1 4",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Nc3 **Nc6** [White plays Nc3 here 12% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-e5-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2pppp/2p5/3pPb2/5P2/5N2/PPPP2PP/RNBQKB1R b KQkq - 2 4",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. f4 d5 3. e5 Bf5 4. Nf3 **e6** [White plays Nf3 here 57% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-f4",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P1P2/8/PPP3PP/RNBQKBNR b KQkq - 0 4",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. f4 **e6** [White plays f4 here 8% of the time]",
+        "lastMove": "f2f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-g4",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P2P1/8/PPP2P1P/RNBQKBNR b KQkq - 0 4",
+        "answer": "Bg6",
+        "answerUci": "f5g6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. g4 **Bg6** [White plays g4 here 8% of the time]",
+        "lastMove": "g2g4"
       },
       "tags": [
         "chess::line"
@@ -1096,153 +516,1417 @@
         "answer": "e6",
         "answerUci": "e7e6",
         "orientation": "black",
-        "lastMove": "c2c3",
-        "prompt": "You are Black in the Advance Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. c3 **e6**. With the bishop already outside the chain, the wall costs nothing; ...c5 hits the propped base next."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. c3 **e6** [White plays c3 here 8% of the time]",
+        "lastMove": "c2c3"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-nf3-d3-dxe4",
+      "key": "l-e4-d4-e5-nc3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/8/4P3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 4",
-        "answer": "Qxd1",
-        "answerUci": "d8d1",
+        "fen": "rn1qkbnr/pp2pppp/2p5/3pPb2/3P4/2N5/PPP2PPP/R1BQKBNR b KQkq - 2 4",
+        "answer": "e6",
+        "answerUci": "e7e6",
         "orientation": "black",
-        "lastMove": "d3e4",
-        "prompt": "You are Black in the Endgame Offer. What is the book move?",
-        "extra": "1. e4 c6 2. Nf3 d5 3. d3 dxe4 4. dxe4 **Qxd1+**. The point of the exchange: 5. Kxd1 is forced and White's king loses castling for an equal ending."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nc3 **e6** [White plays Nc3 here 6% of the time]",
+        "lastMove": "b1c3"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d3-nd2-ngf3-g3",
+      "key": "l-e4-bc4-exd5-bb5",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk1nr/pp2ppbp/2p3p1/3p4/4P3/3P1NP1/PPPN1P1P/R1BQKB1R b KQkq - 0 5",
-        "answer": "e5",
-        "answerUci": "e7e5",
+        "fen": "rnbqkbnr/pp2pppp/8/1B1p4/8/8/PPPP1PPP/RNBQK1NR b KQkq - 1 4",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
         "orientation": "black",
-        "lastMove": "g2g3",
-        "prompt": "You are Black in the Breyer Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d3 d5 3. Nd2 g6 4. Ngf3 Bg7 5. g3 **e5**. Stakes the full center d3 conceded; e5 is tactically safe since Nxe5 Bxe5 costs White a piece for a pawn."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Bc4 d5 3. exd5 cxd5 4. Bb5+ **Nc6** [White plays Bb5+ here 22% of the time]",
+        "lastMove": "c4b5"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d4-nd2-nxe4-ng5",
+      "key": "l-e4-d4-nc3-f3",
       "model": "chess",
       "fields": {
-        "fen": "rn1qkbnr/pp2pppp/2p5/5bN1/3P4/8/PPP2PPP/R1BQKBNR b KQkq - 2 5",
-        "answer": "Bg6",
-        "answerUci": "f5g6",
+        "fen": "rnbqkbnr/pp2pppp/2p5/8/3Pp3/2N2P2/PPP3PP/R1BQKBNR b KQkq - 0 4",
+        "answer": "exf3",
+        "answerUci": "e4f3",
         "orientation": "black",
-        "lastMove": "e4g5",
-        "prompt": "You are Black in the Classical Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng5 **Bg6**. The only retreat keeping the bishop on the b1-h7 diagonal; the knight raid gets pushed back with gain of time."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. f3 **exf3** [White plays f3 here 7% of the time]",
+        "lastMove": "f2f3"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d4-nd2-nxe4-ng5-n1f3",
+      "key": "l-e4-nf3-exd5-bb5",
       "model": "chess",
       "fields": {
-        "fen": "rn1qkbnr/pp2pppp/2p3b1/6N1/3P4/5N2/PPP2PPP/R1BQKB1R b KQkq - 4 6",
+        "fen": "rnbqkbnr/pp2pppp/8/1B1p4/8/5N2/PPPP1PPP/RNBQK2R b KQkq - 1 4",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. exd5 cxd5 4. Bb5+ **Nc6** [White plays Bb5+ here 5% of the time]",
+        "lastMove": "f1b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2pppp/2p5/3pPb2/2PP4/8/PP3PPP/RNBQKBNR b KQkq - 0 4",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. c4 **e6** [White plays c4 here 4% of the time]",
+        "lastMove": "c2c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-exd5-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/8/3p4/5P2/5N2/PPPP2PP/RNBQKB1R b KQkq - 1 4",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. f4 d5 3. exd5 cxd5 4. Nf3 **Nc6** [White plays Nf3 here 58% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/8/3p4/3P4/2P5/PP3PPP/RNBQKBNR b KQkq - 0 4",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c3 **Nc6** [White plays c3 here 4% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-e5-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2pppp/2p5/3pP3/6b1/5N2/PPPPBPPP/RNBQK2R b KQkq - 2 4",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. e5 Bg4 4. Be2 **e6** [White plays Be2 here 14% of the time]",
+        "lastMove": "f1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-nxf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/2p2N2/8/3P4/8/PPP2PPP/R1BQKBNR b KQkq - 0 5",
+        "answer": "exf6",
+        "answerUci": "e7f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ **exf6** (Tartakower Variation, B15) [White plays Nxf6+ here 55% of the time]",
+        "lastMove": "e4f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-bd3-qxd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2pppp/2p5/3pP3/3P4/3Q4/PPP2PPP/RNB1K1NR b KQkq - 0 5",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Bd3 Bxd3 5. Qxd3 **e6** [White plays Qxd3 here 97% of the time]",
+        "lastMove": "d1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-bd3-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp2pppp/2n5/3p4/3P4/2PB4/PP3PPP/RNBQK1NR b KQkq - 0 5",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Bd3 Nc6 5. c3 **Nf6** [White plays c3 here 80% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-c4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/5n2/3p4/2PP4/2N5/PP3PPP/R1BQKBNR b KQkq - 2 5",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. Nc3 **Nc6** (Modern Defense, B13) [White plays Nc3 here 70% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-ng5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/6N1/3P4/8/PPP2PPP/R1BQKBNR b KQkq - 2 5",
         "answer": "h6",
         "answerUci": "h7h6",
         "orientation": "black",
-        "lastMove": "g1f3",
-        "prompt": "You are Black in the Classical Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng5 Bg6 6. N1f3 **h6**. Puts the question: the raider must retreat or lunge into e6, and calm development meets both."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Ng5 **h6** [White plays Ng5 here 21% of the time]",
+        "lastMove": "e4g5"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d4-e5-nc3-g4-nge2",
+      "key": "l-e4-d4-nc3-nxe4-ng3",
       "model": "chess",
       "fields": {
-        "fen": "rn1qkbnr/pp3ppp/2p1p1b1/3pP3/3P2P1/2N5/PPP1NP1P/R1BQKB1R b KQkq - 2 6",
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/8/3P4/6N1/PPP2PPP/R1BQKBNR b KQkq - 2 5",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Ng3 **Bg4** [White plays Ng3 here 18% of the time]",
+        "lastMove": "e4g3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-nf3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp3ppp/2p1p3/3pPb2/3P4/3B1N2/PPP2PPP/RNBQK2R b KQkq - 1 5",
+        "answer": "Bxd3",
+        "answerUci": "f5d3",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3 e6 5. Bd3 **Bxd3** [White plays Bd3 here 37% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-h4-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2ppp1/2p5/3pPb1p/3P3P/3B4/PPP2PP1/RNBQK1NR b KQkq - 1 5",
+        "answer": "Bxd3",
+        "answerUci": "f5d3",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. h4 h5 5. Bd3 **Bxd3** [White plays Bd3 here 57% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-nc3-nxe4-qe2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/8/4N3/5N2/PPPPQPPP/R1B1KB1R b KQkq - 2 5",
+        "answer": "Nxe4",
+        "answerUci": "f6e4",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Qe2 **Nxe4** [White plays Qe2 here 41% of the time]",
+        "lastMove": "d1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-bc4-exd5-bb3-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/5n2/3p4/3P4/1B6/PPP2PPP/RNBQK1NR b KQkq - 0 5",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Bc4 d5 3. exd5 cxd5 4. Bb3 Nf6 5. d4 **Nc6** [White plays d4 here 38% of the time]",
+        "lastMove": "d2d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-g4-h4",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2pppp/2p3b1/3pP3/3P2PP/8/PPP2P2/RNBQKBNR b KQkq - 0 5",
+        "answer": "h5",
+        "answerUci": "h7h5",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. g4 Bg6 5. h4 **h5** [White plays h4 here 77% of the time]",
+        "lastMove": "h2h4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-e5-d4-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp3ppp/2p1p3/3pP3/3P2b1/5N2/PPP1BPPP/RNBQK2R b KQkq - 1 5",
         "answer": "c5",
         "answerUci": "c6c5",
         "orientation": "black",
-        "lastMove": "g1e2",
-        "prompt": "You are Black in the Van der Wiel Attack. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nc3 e6 5. g4 Bg6 6. Nge2 **c5**. The classic recipe: White storms the wing, so Black opens the center where the king still lives."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. e5 Bg4 4. d4 e6 5. Be2 **c5** [White plays Be2 here 38% of the time]",
+        "lastMove": "f1e2"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d3-nd2-ngf3-g3-bg2",
+      "key": "l-e4-d4-exd5-nf3-bb5",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk1nr/pp3pbp/2p3p1/3pp3/4P3/3P1NP1/PPPN1PBP/R1BQK2R b KQkq - 1 6",
-        "answer": "Ne7",
-        "answerUci": "g8e7",
+        "fen": "r1bqkbnr/pp2pppp/2n5/1B1p4/3P4/5N2/PPP2PPP/RNBQK2R b KQkq - 3 5",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
         "orientation": "black",
-        "lastMove": "f1g2",
-        "prompt": "You are Black in the Breyer Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d3 d5 3. Nd2 g6 4. Ngf3 Bg7 5. g3 e5 6. Bg2 **Ne7**. Flexible: guards d5, keeps the long diagonal closed, and prepares ...O-O."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Nf3 Nc6 5. Bb5 **Bg4** [White plays Bb5 here 23% of the time]",
+        "lastMove": "f1b5"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d3-nd2-ngf3-g3-bg2-oo",
+      "key": "l-e4-d4-e5-f4-nf3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/pp2npbp/2p3p1/3pp3/4P3/3P1NP1/PPPN1PBP/R1BQ1RK1 b kq - 3 7",
+        "fen": "rn1qkbnr/pp3ppp/2p1p3/3pPb2/3P1P2/5N2/PPP3PP/RNBQKB1R b KQkq - 1 5",
+        "answer": "c5",
+        "answerUci": "c6c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. f4 e6 5. Nf3 **c5** [White plays Nf3 here 66% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-nc3-nxe4-nxf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/2p2N2/8/8/5N2/PPPP1PPP/R1BQKB1R b KQkq - 0 5",
+        "answer": "exf6",
+        "answerUci": "e7f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ **exf6** [White plays Nxf6+ here 31% of the time]",
+        "lastMove": "e4f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-nf3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp2pppp/2n5/3p4/3P4/3B1N2/PPP2PPP/RNBQK2R b KQkq - 3 5",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Nf3 Nc6 5. Bd3 **Bg4** [White plays Bd3 here 19% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-f3-nxf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/2p5/8/3P4/2N2N2/PPP3PP/R1BQKB1R b KQkq - 0 5",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. f3 exf3 5. Nxf3 **Nf6** [White plays Nxf3 here 95% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-nf3-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp3ppp/2p1p3/3pPb2/3P4/5N2/PPP1BPPP/RNBQK2R b KQkq - 1 5",
+        "answer": "c5",
+        "answerUci": "c6c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Nf3 e6 5. Be2 **c5** [White plays Be2 here 19% of the time]",
+        "lastMove": "f1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-nf3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp2pppp/2n5/3p4/3P4/2N2N2/PPP2PPP/R1BQKB1R b KQkq - 3 5",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Nf3 Nc6 5. Nc3 **Bg4** [White plays Nc3 here 16% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-e5-d4-h3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp3ppp/2p1p3/3pP3/3P2b1/5N1P/PPP2PP1/RNBQKB1R b KQkq - 0 5",
+        "answer": "Bxf3",
+        "answerUci": "g4f3",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. e5 Bg4 4. d4 e6 5. h3 **Bxf3** [White plays h3 here 27% of the time]",
+        "lastMove": "h2h3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-nf3-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp2pppp/2n5/3p4/3P4/2P2N2/PP3PPP/RNBQKB1R b KQkq - 0 5",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Nf3 Nc6 5. c3 **Bg4** [White plays c3 here 14% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-bc4-exd5-bb3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/5n2/3p4/8/1B3N2/PPPP1PPP/RNBQK2R b KQkq - 3 5",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Bc4 d5 3. exd5 cxd5 4. Bb3 Nf6 5. Nf3 **Bg4** [White plays Nf3 here 18% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-nc3-nxe4-ng3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/8/8/5NN1/PPPP1PPP/R1BQKB1R b KQkq - 2 5",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Ng3 **Bg4** [White plays Ng3 here 19% of the time]",
+        "lastMove": "e4g3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-h4-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2ppp1/2p5/3pPbBp/3P3P/8/PPP2PP1/RN1QKBNR b KQkq - 1 5",
+        "answer": "Qb6",
+        "answerUci": "d8b6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. h4 h5 5. Bg5 **Qb6** [White plays Bg5 here 22% of the time]",
+        "lastMove": "c1g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-c4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/5n2/3p4/2PP4/5N2/PP3PPP/RNBQKB1R b KQkq - 2 5",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. c4 Nf6 5. Nf3 **Bg4** [White plays Nf3 here 15% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-nf3-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp2pppp/2n5/3p4/2PP4/5N2/PP3PPP/RNBQKB1R b KQkq - 0 5",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Nf3 Nc6 5. c4 **Nf6** [White plays c4 here 11% of the time]",
+        "lastMove": "c2c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-nxf6-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/2p2p2/8/3P4/5N2/PPP2PPP/R1BQKB1R b KQkq - 1 6",
+        "answer": "Bd6",
+        "answerUci": "f8d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 6. Nf3 **Bd6** [White plays Nf3 here 45% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-ng5-nxf7",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pNp1/2p2n1p/8/3P4/8/PPP2PPP/R1BQKBNR b KQkq - 0 6",
+        "answer": "Kxf7",
+        "answerUci": "e8f7",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Ng5 h6 6. Nxf7 **Kxf7** [White plays Nxf7 here 86% of the time]",
+        "lastMove": "g5f7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-bd3-qxd3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp3ppp/2p1p3/3pP3/3P4/3Q1N2/PPP2PPP/RNB1K2R b KQkq - 1 6",
+        "answer": "c5",
+        "answerUci": "c6c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Bd3 Bxd3 5. Qxd3 e6 6. Nf3 **c5** [White plays Nf3 here 39% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-nxf6-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/2p2p2/8/3P4/2P5/PP3PPP/R1BQKBNR b KQkq - 0 6",
+        "answer": "Bd6",
+        "answerUci": "f8d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 6. c3 **Bd6** [White plays c3 here 28% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-h4-bd3-qxd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2ppp1/2p5/3pP2p/3P3P/3Q4/PPP2PP1/RNB1K1NR b KQkq - 0 6",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. h4 h5 5. Bd3 Bxd3 6. Qxd3 **e6** [White plays Qxd3 here 97% of the time]",
+        "lastMove": "d1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-nc3-nxe4-qe2-qxe4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/2p5/8/4Q3/5N2/PPPP1PPP/R1B1KB1R b KQkq - 0 6",
+        "answer": "Nd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Qe2 Nxe4 6. Qxe4 **Nd7** [White plays Qxe4 here 100% of the time]",
+        "lastMove": "e2e4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-bd3-c3-h3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp2pppp/2n2n2/3p4/3P4/2PB3P/PP3PP1/RNBQK1NR b KQkq - 0 6",
+        "answer": "g6",
+        "answerUci": "g7g6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Bd3 Nc6 5. c3 Nf6 6. h3 **g6** [White plays h3 here 40% of the time]",
+        "lastMove": "h2h3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-bd3-c3-bf4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp2pppp/2n2n2/3p4/3P1B2/2PB4/PP3PPP/RN1QK1NR b KQkq - 2 6",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Bd3 Nc6 5. c3 Nf6 6. Bf4 **Bg4** [White plays Bf4 here 39% of the time]",
+        "lastMove": "c1f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-bd3-qxd3-f4",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp3ppp/2p1p3/3pP3/3P1P2/3Q4/PPP3PP/RNB1K1NR b KQkq - 0 6",
+        "answer": "c5",
+        "answerUci": "c6c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Bd3 Bxd3 5. Qxd3 e6 6. f4 **c5** [White plays f4 here 21% of the time]",
+        "lastMove": "f2f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-e5-d4-be2-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp3ppp/4p3/2ppP3/3P2b1/2P2N2/PP2BPPP/RNBQK2R b KQkq - 0 6",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. e5 Bg4 4. d4 e6 5. Be2 c5 6. c3 **Nc6** [White plays c3 here 75% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-bd3-qxd3-ne2",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp3ppp/2p1p3/3pP3/3P4/3Q4/PPP1NPPP/RNB1K2R b KQkq - 1 6",
+        "answer": "c5",
+        "answerUci": "c6c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Bd3 Bxd3 5. Qxd3 e6 6. Ne2 **c5** [White plays Ne2 here 19% of the time]",
+        "lastMove": "g1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-ng3-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2p2n2/8/3P2b1/6N1/PPP1BPPP/R1BQK1NR b KQkq - 4 6",
+        "answer": "Bxe2",
+        "answerUci": "g4e2",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Ng3 Bg4 6. Be2 **Bxe2** [White plays Be2 here 42% of the time]",
+        "lastMove": "f1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-e5-d4-h3-qxf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp3ppp/2p1p3/3pP3/3P4/5Q1P/PPP2PP1/RNB1KB1R b KQkq - 0 6",
+        "answer": "c5",
+        "answerUci": "c6c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. e5 Bg4 4. d4 e6 5. h3 Bxf3 6. Qxf3 **c5** [White plays Qxf3 here 98% of the time]",
+        "lastMove": "d1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-f4-nf3-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp3ppp/4p3/2ppPb2/3P1P2/2P2N2/PP4PP/RNBQKB1R b KQkq - 0 6",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. f4 e6 5. Nf3 c5 6. c3 **Nc6** [White plays c3 here 69% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-g4-h4-e6",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2ppp1/2p1P1b1/3p3p/3P2PP/8/PPP2P2/RNBQKBNR b KQkq - 0 6",
+        "answer": "fxe6",
+        "answerUci": "f7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. g4 Bg6 5. h4 h5 6. e6 **fxe6** [White plays e6 here 62% of the time]",
+        "lastMove": "e5e6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-nxf6-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/2p2p2/8/2BP4/8/PPP2PPP/R1BQK1NR b KQkq - 1 6",
+        "answer": "Bd6",
+        "answerUci": "f8d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 6. Bc4 **Bd6** [White plays Bc4 here 12% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-nf3-bd3-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/pp2pppp/2n5/3p4/3P2b1/2PB1N2/PP3PPP/RNBQK2R b KQkq - 0 6",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Nf3 Nc6 5. Bd3 Bg4 6. c3 **e6** [White plays c3 here 73% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-ng3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2p2n2/8/3P2b1/5NN1/PPP2PPP/R1BQKB1R b KQkq - 4 6",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Ng3 Bg4 6. Nf3 **e6** [White plays Nf3 here 32% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-h4-bg5-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn2kbnr/pp2ppp1/1qp5/3pPbBp/3P3P/3B4/PPP2PP1/RN1QK1NR b KQkq - 3 6",
+        "answer": "Bxd3",
+        "answerUci": "f5d3",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. h4 h5 5. Bg5 Qb6 6. Bd3 **Bxd3** [White plays Bd3 here 100% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-ng5-nxf7-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1b1r/pp2pkp1/2p2n1p/8/3P4/5N2/PPP2PPP/R1BQKB1R b KQ - 1 7",
+        "answer": "c5",
+        "answerUci": "c6c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Ng5 h6 6. Nxf7 Kxf7 7. Nf3 **c5** [White plays Nf3 here 84% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-nxf6-c3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp3ppp/2pb1p2/8/3P4/2PB4/PP3PPP/R1BQK1NR b KQkq - 2 7",
         "answer": "O-O",
         "answerUci": "e8g8",
         "orientation": "black",
-        "lastMove": "e1g1",
-        "prompt": "You are Black in the Breyer Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d3 d5 3. Nd2 g6 4. Ngf3 Bg7 5. g3 e5 6. Bg2 Ne7 7. O-O **O-O**. Both kings tucked, but Black owns more center, so the middlegame plans are his to choose."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 6. c3 Bd6 7. Bd3 **O-O** [White plays Bd3 here 90% of the time]",
+        "lastMove": "f1d3"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d4-nd2-nxe4-ng3-h4-nf3-h5-bd3-qxd3-bd2",
+      "key": "l-e4-nf3-nc3-nxe4-qe2-qxe4-bc4",
       "model": "chess",
       "fields": {
-        "fen": "r2qkbnr/pp1n1pp1/2p1p2p/7P/3P4/3Q1NN1/PPPB1PP1/R3K2R b KQkq - 1 11",
-        "answer": "Ngf6",
-        "answerUci": "g8f6",
+        "fen": "r1bqkb1r/pp1npppp/2p5/8/2B1Q3/5N2/PPPP1PPP/R1B1K2R b KQkq - 2 7",
+        "answer": "Nf6",
+        "answerUci": "d7f6",
         "orientation": "black",
-        "lastMove": "c1d2",
-        "prompt": "You are Black in the Spassky Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. h4 h6 7. Nf3 Nd7 8. h5 Bh7 9. Bd3 Bxd3 10. Qxd3 e6 11. Bd2 **Ngf6**. The recapture rule: ...Ngf6 so that any Nxf6 is met by ...Nxf6, keeping the pawn front untouched."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Qe2 Nxe4 6. Qxe4 Nd7 7. Bc4 **Nf6** [White plays Bc4 here 86% of the time]",
+        "lastMove": "f1c4"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e4-d4-nd2-nxe4-ng3-h4-nf3-h5-bd3-qxd3-bd2-ooo",
+      "key": "l-e4-d4-exd5-bd3-c3-h3-nf3",
       "model": "chess",
       "fields": {
-        "fen": "r2qkb1r/pp1n1pp1/2p1pn1p/7P/3P4/3Q1NN1/PPPB1PP1/2KR3R b kq - 3 12",
+        "fen": "r1bqkb1r/pp2pp1p/2n2np1/3p4/3P4/2PB1N1P/PP3PP1/RNBQK2R b KQkq - 1 7",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Bd3 Nc6 5. c3 Nf6 6. h3 g6 7. Nf3 **Bg7** [White plays Nf3 here 86% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-bd3-qxd3-nf3-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp3ppp/4p3/2ppP3/3P4/2PQ1N2/PP3PPP/RNB1K2R b KQkq - 0 7",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Bd3 Bxd3 5. Qxd3 e6 6. Nf3 c5 7. c3 **Nc6** [White plays c3 here 65% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-bd3-c3-bf4-qb3",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkb1r/pp2pppp/2n2n2/3p4/3P1Bb1/1QPB4/PP3PPP/RN2K1NR b KQkq - 4 7",
+        "answer": "Qb6",
+        "answerUci": "d8b6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Bd3 Nc6 5. c3 Nf6 6. Bf4 Bg4 7. Qb3 **Qb6** [White plays Qb3 here 76% of the time]",
+        "lastMove": "d1b3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-nxf6-nf3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp3ppp/2pb1p2/8/3P4/3B1N2/PPP2PPP/R1BQK2R b KQkq - 3 7",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 6. Nf3 Bd6 7. Bd3 **O-O** [White plays Bd3 here 39% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-bd3-qxd3-ne2-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp3ppp/4p3/2ppP3/3P4/2PQ4/PP2NPPP/RNB1K2R b KQkq - 0 7",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Bd3 Bxd3 5. Qxd3 e6 6. Ne2 c5 7. c3 **Nc6** [White plays c3 here 100% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-ng3-be2-n1xe2",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2p2n2/8/3P4/6N1/PPP1NPPP/R1BQK2R b KQkq - 0 7",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Ng3 Bg4 6. Be2 Bxe2 7. N1xe2 **e6** [White plays N1xe2 here 97% of the time]",
+        "lastMove": "g1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-bd3-qxd3-f4-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp3ppp/4p3/2ppP3/3P1P2/2PQ4/PP4PP/RNB1K1NR b KQkq - 0 7",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Bd3 Bxd3 5. Qxd3 e6 6. f4 c5 7. c3 **Nc6** [White plays c3 here 83% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-h4-bd3-qxd3-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp3pp1/2p1p3/3pP1Bp/3P3P/3Q4/PPP2PP1/RN2K1NR b KQkq - 1 7",
         "answer": "Be7",
         "answerUci": "f8e7",
         "orientation": "black",
-        "lastMove": "e1c1",
-        "prompt": "You are Black in the Spassky Variation. What is the book move?",
-        "extra": "1. e4 c6 2. d4 d5 3. Nd2 dxe4 4. Nxe4 Bf5 5. Ng3 Bg6 6. h4 h6 7. Nf3 Nd7 8. h5 Bh7 9. Bd3 Bxd3 10. Qxd3 e6 11. Bd2 Ngf6 12. O-O-O **Be7** (Lobron System, B19). Modest and complete: castle short next behind the closed h-file, then free the game with ...c5."
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. h4 h5 5. Bd3 Bxd3 6. Qxd3 e6 7. Bg5 **Be7** [White plays Bg5 here 47% of the time]",
+        "lastMove": "c1g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-g4-h4-e6-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2p1p1/2p1p1b1/3p3p/3P2PP/3B4/PPP2P2/RNBQK1NR b KQkq - 1 7",
+        "answer": "Bxd3",
+        "answerUci": "g6d3",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. g4 Bg6 5. h4 h5 6. e6 fxe6 7. Bd3 **Bxd3** [White plays Bd3 here 90% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-h4-bg5-bd3-qxd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn2kbnr/pp2ppp1/1qp5/3pP1Bp/3P3P/3Q4/PPP2PP1/RN2K1NR b KQkq - 0 7",
+        "answer": "Qxb2",
+        "answerUci": "b6b2",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. h4 h5 5. Bg5 Qb6 6. Bd3 Bxd3 7. Qxd3 **Qxb2** [White plays Qxd3 here 100% of the time]",
+        "lastMove": "d1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-h4-bd3-qxd3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp3pp1/2p1p3/3pP2p/3P3P/3Q1N2/PPP2PP1/RNB1K2R b KQkq - 1 7",
+        "answer": "c5",
+        "answerUci": "c6c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. h4 h5 5. Bd3 Bxd3 6. Qxd3 e6 7. Nf3 **c5** [White plays Nf3 here 38% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-e5-d4-h3-qxf3-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp3ppp/4p3/2ppP3/3P4/2P2Q1P/PP3PP1/RNB1KB1R b KQkq - 0 7",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. e5 Bg4 4. d4 e6 5. h3 Bxf3 6. Qxf3 c5 7. c3 **Nc6** [White plays c3 here 72% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-bd3-c3-h3-nf3-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pp2ppbp/2n2np1/3p4/3P4/2PB1N1P/PP3PP1/RNBQ1RK1 b kq - 3 8",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Bd3 Nc6 5. c3 Nf6 6. h3 g6 7. Nf3 Bg7 8. O-O **O-O** [White plays O-O here 95% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-nxf6-c3-bd3-qc2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp3ppp/2pb1p2/8/3P4/2PB4/PPQ2PPP/R1B1K1NR b KQ - 4 8",
+        "answer": "h6",
+        "answerUci": "h7h6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 6. c3 Bd6 7. Bd3 O-O 8. Qc2 **h6** (Perlis Line, B15) [White plays Qc2 here 61% of the time]",
+        "lastMove": "d1c2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-nc3-nxe4-qe2-qxe4-bc4-ne5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp2pppp/2p2n2/4N3/2B1Q3/8/PPPP1PPP/R1B1K2R b KQkq - 4 8",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Qe2 Nxe4 6. Qxe4 Nd7 7. Bc4 Nf6 8. Ne5 **e6** [White plays Ne5 here 69% of the time]",
+        "lastMove": "f3e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-nxf6-nf3-bd3-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp3ppp/2pb1p2/8/3P4/3B1N2/PPP2PPP/R1BQ1RK1 b - - 5 8",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 6. Nf3 Bd6 7. Bd3 O-O 8. O-O **Bg4** [White plays O-O here 80% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-bd3-qxd3-nf3-c3-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/pp3ppp/2n1p3/2ppP3/3P4/2PQ1N2/PP3PPP/RNB2RK1 b kq - 2 8",
+        "answer": "Qb6",
+        "answerUci": "d8b6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Bd3 Bxd3 5. Qxd3 e6 6. Nf3 c5 7. c3 Nc6 8. O-O **Qb6** [White plays O-O here 72% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-bd3-qxd3-f4-c3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/pp3ppp/2n1p3/2ppP3/3P1P2/2PQ1N2/PP4PP/RNB1K2R b KQkq - 2 8",
+        "answer": "Qb6",
+        "answerUci": "d8b6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. Bd3 Bxd3 5. Qxd3 e6 6. f4 c5 7. c3 Nc6 8. Nf3 **Qb6** [White plays Nf3 here 100% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-ng5-nxf7-nf3-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1b1r/pp2pkp1/5n1p/2p5/2BP4/5N2/PPP2PPP/R1BQK2R b KQ - 1 8",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Ng5 h6 6. Nxf7 Kxf7 7. Nf3 c5 8. Bc4+ **e6** [White plays Bc4+ here 45% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-h4-bd3-qxd3-bg5-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qk1nr/pp2bpp1/2p1p3/3pP1Bp/3P3P/3Q1N2/PPP2PP1/RN2K2R b KQkq - 3 8",
+        "answer": "Nd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. h4 h5 5. Bd3 Bxd3 6. Qxd3 e6 7. Bg5 Be7 8. Nf3 **Nd7** [White plays Nf3 here 100% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-g4-h4-e6-bd3-qxd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2p1p1/2p1p3/3p3p/3P2PP/3Q4/PPP2P2/RNB1K1NR b KQkq - 0 8",
+        "answer": "hxg4",
+        "answerUci": "h5g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. g4 Bg6 5. h4 h5 6. e6 fxe6 7. Bd3 Bxd3 8. Qxd3 **hxg4** [White plays Qxd3 here 100% of the time]",
+        "lastMove": "d1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-ng3-be2-n1xe2-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp3ppp/2p1pn2/8/3P4/6N1/PPP1NPPP/R1BQ1RK1 b kq - 1 8",
+        "answer": "Bd6",
+        "answerUci": "f8d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Ng3 Bg4 6. Be2 Bxe2 7. N1xe2 e6 8. O-O **Bd6** [White plays O-O here 74% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-bd3-c3-bf4-qb3-nd2",
+      "model": "chess",
+      "fields": {
+        "fen": "r3kb1r/pp2pppp/1qn2n2/3p4/3P1Bb1/1QPB4/PP1N1PPP/R3K1NR b KQkq - 6 8",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Bd3 Nc6 5. c3 Nf6 6. Bf4 Bg4 7. Qb3 Qb6 8. Nd2 **e6** [White plays Nd2 here 52% of the time]",
+        "lastMove": "b1d2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-nxf6-c3-bd3-qc2-ne2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp3pp1/2pb1p1p/8/3P4/2PB4/PPQ1NPPP/R1B1K2R b KQ - 1 9",
+        "answer": "Re8",
+        "answerUci": "f8e8",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 6. c3 Bd6 7. Bd3 O-O 8. Qc2 h6 9. Ne2 **Re8** [White plays Ne2 here 100% of the time]",
+        "lastMove": "g1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-nc3-nxe4-qe2-qxe4-bc4-ne5-qe2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp3ppp/2p1pn2/4N3/2B5/8/PPPPQPPP/R1B1K2R b KQkq - 1 9",
+        "answer": "Bd6",
+        "answerUci": "f8d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Qe2 Nxe4 6. Qxe4 Nd7 7. Bc4 Nf6 8. Ne5 e6 9. Qe2 **Bd6** [White plays Qe2 here 100% of the time]",
+        "lastMove": "e4e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-bd3-c3-h3-nf3-oo-re1",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pp2ppbp/2n2np1/3p4/3P4/2PB1N1P/PP3PP1/RNBQR1K1 b - - 5 9",
+        "answer": "Bf5",
+        "answerUci": "c8f5",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Bd3 Nc6 5. c3 Nf6 6. h3 g6 7. Nf3 Bg7 8. O-O O-O 9. Re1 **Bf5** [White plays Re1 here 72% of the time]",
+        "lastMove": "f1e1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-ng5-nxf7-nf3-bc4-ne5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1b1r/pp3kp1/4pn1p/2p1N3/2BP4/8/PPP2PPP/R1BQK2R b KQ - 1 9",
+        "answer": "Kg8",
+        "answerUci": "f7g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Ng5 h6 6. Nxf7 Kxf7 7. Nf3 c5 8. Bc4+ e6 9. Ne5+ **Kg8** [White plays Ne5+ here 100% of the time]",
+        "lastMove": "f3e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-e5-h4-bd3-qxd3-bg5-nf3-nbd2",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qk1nr/pp1nbpp1/2p1p3/3pP1Bp/3P3P/3Q1N2/PPPN1PP1/R3K2R b KQkq - 5 9",
+        "answer": "Qb6",
+        "answerUci": "d8b6",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. e5 Bf5 4. h4 h5 5. Bd3 Bxd3 6. Qxd3 e6 7. Bg5 Be7 8. Nf3 Nd7 9. Nbd2 **Qb6** [White plays Nbd2 here 100% of the time]",
+        "lastMove": "b1d2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nc3-nxe4-nxf6-nf3-bd3-oo-h3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1q1rk1/pp3ppp/2pb1p2/8/3P2b1/3B1N1P/PPP2PP1/R1BQ1RK1 b - - 0 9",
+        "answer": "Bh5",
+        "answerUci": "g4h5",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Nxf6+ exf6 6. Nf3 Bd6 7. Bd3 O-O 8. O-O Bg4 9. h3 **Bh5** [White plays h3 here 67% of the time]",
+        "lastMove": "h2h3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-bd3-c3-bf4-qb3-nd2-ngf3",
+      "model": "chess",
+      "fields": {
+        "fen": "r3kb1r/pp3ppp/1qn1pn2/3p4/3P1Bb1/1QPB1N2/PP1N1PPP/R3K2R b KQkq - 1 9",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Bd3 Nc6 5. c3 Nf6 6. Bf4 Bg4 7. Qb3 Qb6 8. Nd2 e6 9. Ngf3 **Be7** [White plays Ngf3 here 100% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-nc3-nxe4-qe2-qxe4-bc4-ne5-qe2-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pp3ppp/2pbpn2/4N3/2BP4/8/PPP1QPPP/R1B1K2R b KQkq - 0 10",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. Nf3 d5 3. Nc3 dxe4 4. Nxe4 Nf6 5. Qe2 Nxe4 6. Qxe4 Nd7 7. Bc4 Nf6 8. Ne5 e6 9. Qe2 Bd6 10. d4 **O-O** [White plays d4 here 100% of the time]",
+        "lastMove": "d2d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-exd5-bd3-c3-bf4-qb3-nd2-ngf3-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r3k2r/pp2bppp/1qn1pn2/3p4/3P1Bb1/1QPB1N2/PP1N1PPP/R4RK1 b kq - 3 10",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Caro-Kann Defense. What is the book move?",
+        "extra": "1. e4 c6 2. d4 d5 3. exd5 cxd5 4. Bd3 Nc6 5. c3 Nf6 6. Bf4 Bg4 7. Qb3 Qb6 8. Nd2 e6 9. Ngf3 Be7 10. O-O **O-O** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
       },
       "tags": [
         "chess::line"

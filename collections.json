@@ -3,42 +3,72 @@
     "key": "getting-started",
     "title": "Getting started",
     "description": "Hand-picked first decks with instant visual payoff.",
-    "deckKeys": ["flags-of-the-world", "world-capitals"]
+    "deckKeys": [
+      "flags-of-the-world",
+      "world-capitals"
+    ]
   },
   {
     "key": "know-the-world",
     "title": "Know the world",
     "description": "Flags, capitals, and shapes: build a mental map of Earth.",
-    "deckKeys": ["flags-of-the-world", "world-capitals", "country-silhouettes", "geoguessr-meta", "us-states"]
+    "deckKeys": [
+      "flags-of-the-world",
+      "world-capitals",
+      "country-silhouettes",
+      "geoguessr-meta",
+      "us-states"
+    ]
   },
   {
     "key": "silver-screen",
     "title": "Silver Screen",
     "description": "For people who know the director before the trailer ends.",
-    "deckKeys": ["best-picture-winners", "who-directed-it"]
+    "deckKeys": [
+      "best-picture-winners",
+      "who-directed-it"
+    ]
   },
   {
     "key": "chess-openings",
     "title": "Chess openings",
     "description": "Book moves, plans, and traps, one opening at a time.",
-    "deckKeys": ["london-system", "sicilian-defense", "caro-kann"]
+    "deckKeys": [
+      "queens-pawn-game",
+      "sicilian-defense",
+      "caro-kann"
+    ]
   },
   {
     "key": "learn-a-language",
     "title": "Learn a language",
     "description": "The essential first thousand cards, with speech on every card.",
-    "deckKeys": ["essential-spanish", "essential-chinese"]
+    "deckKeys": [
+      "essential-spanish",
+      "essential-chinese"
+    ]
   },
   {
     "key": "american-civics",
     "title": "American civics",
     "description": "The citizenship test, the amendments, the presidents, the states.",
-    "deckKeys": ["us-citizenship-test", "us-amendments", "us-presidents", "us-states"]
+    "deckKeys": [
+      "us-citizenship-test",
+      "us-amendments",
+      "us-presidents",
+      "us-states"
+    ]
   },
   {
     "key": "human-anatomy",
     "title": "Human anatomy",
     "description": "Learn the body system by system: bones, muscles, the heart, the brain, and the cranial nerves.",
-    "deckKeys": ["bones-of-the-body", "major-muscles", "the-human-heart", "the-human-brain", "cranial-nerves"]
+    "deckKeys": [
+      "bones-of-the-body",
+      "major-muscles",
+      "the-human-heart",
+      "the-human-brain",
+      "cranial-nerves"
+    ]
   }
 ]

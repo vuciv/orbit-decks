@@ -1,8 +1,8 @@
 {
   "key": "alekhine-defense",
-  "version": 3,
+  "version": 4,
   "name": "The Alekhine Defense as Black",
-  "description": "A Black repertoire for the Alekhine Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 79 positions.",
+  "description": "A Black repertoire for the Alekhine Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 5,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -101,7 +101,7 @@
         "answerUci": "d5b6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. c4 **Nb6** [White plays c4 here 38% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. c4 **Nb6** [White plays c4 here 37% of the time]",
         "lastMove": "c2c4"
       },
       "tags": [
@@ -117,7 +117,7 @@
         "answerUci": "c7c6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 **c6** (Geschev Gambit, B02) [White plays exd5 here 51% of the time]",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 **c6** (Geschev Gambit, B02) [White plays exd5 here 50% of the time]",
         "lastMove": "e4d5"
       },
       "tags": [
@@ -157,6 +157,22 @@
       ]
     },
     {
+      "key": "l-e4-e5-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppppp/8/3nP3/2B5/8/PPPP1PPP/RNBQK1NR b KQkq - 2 3",
+        "answer": "Nb6",
+        "answerUci": "d5b6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. Bc4 **Nb6** [White plays Bc4 here 5% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e4-d3-nf3",
       "model": "chess",
       "fields": {
@@ -165,8 +181,24 @@
         "answerUci": "b8c6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. d3 e5 3. Nf3 **Nc6** [White plays Nf3 here 29% of the time]",
+        "extra": "1. e4 Nf6 2. d3 e5 3. Nf3 **Nc6** [White plays Nf3 here 25% of the time]",
         "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/2NP4/PPP2PPP/R1BQKBNR b KQkq - 1 3",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. d3 e5 3. Nc3 **Nc6** [White plays Nc3 here 17% of the time]",
+        "lastMove": "b1c3"
       },
       "tags": [
         "chess::line"
@@ -181,56 +213,8 @@
         "answerUci": "e5f4",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. d3 e5 3. f4 **exf4** [White plays f4 here 19% of the time]",
+        "extra": "1. e4 Nf6 2. d3 e5 3. f4 **exf4** [White plays f4 here 16% of the time]",
         "lastMove": "f2f4"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d3-nc3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/2NP4/PPP2PPP/R1BQKBNR b KQkq - 1 3",
-        "answer": "Bc5",
-        "answerUci": "f8c5",
-        "orientation": "black",
-        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. d3 e5 3. Nc3 **Bc5** [White plays Nc3 here 18% of the time]",
-        "lastMove": "b1c3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d3-h3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/3P3P/PPP2PP1/RNBQKBNR b KQkq - 0 3",
-        "answer": "Bc5",
-        "answerUci": "f8c5",
-        "orientation": "black",
-        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. d3 e5 3. h3 **Bc5** [White plays h3 here 7% of the time]",
-        "lastMove": "h2h3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d3-c3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pppp1ppp/5n2/4p3/4P3/2PP4/PP3PPP/RNBQKBNR b KQkq - 0 3",
-        "answer": "d5",
-        "answerUci": "d7d5",
-        "orientation": "black",
-        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. d3 e5 3. c3 **d5** [White plays c3 here 7% of the time]",
-        "lastMove": "c2c3"
       },
       "tags": [
         "chess::line"
@@ -261,24 +245,8 @@
         "answerUci": "b8c6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. dxc6 **Nxc6** [White plays dxc6 here 80% of the time]",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. dxc6 **Nxc6** [White plays dxc6 here 77% of the time]",
         "lastMove": "d5c6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-nc3-e5-d4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pppnpppp/8/3pP3/3P4/2N5/PPP2PPP/R1BQKBNR b KQkq - 0 4",
-        "answer": "e6",
-        "answerUci": "e7e6",
-        "orientation": "black",
-        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 **e6** [White plays d4 here 82% of the time]",
-        "lastMove": "d2d4"
       },
       "tags": [
         "chess::line"
@@ -301,6 +269,22 @@
       ]
     },
     {
+      "key": "l-e4-nc3-e5-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppnpppp/8/3pP3/3P4/2N5/PPP2PPP/R1BQKBNR b KQkq - 0 4",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 **e6** [White plays d4 here 77% of the time]",
+        "lastMove": "d2d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e4-e5-d4-nf3",
       "model": "chess",
       "fields": {
@@ -309,24 +293,8 @@
         "answerUci": "c8g4",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. Nf3 **Bg4** (Main Line, B05) [White plays Nf3 here 22% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. Nf3 **Bg4** (Main Line, B05) [White plays Nf3 here 21% of the time]",
         "lastMove": "g1f3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-e5-d4-f4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/ppp1pppp/3p4/3nP3/3P1P2/8/PPP3PP/RNBQKBNR b KQkq - 0 4",
-        "answer": "dxe5",
-        "answerUci": "d6e5",
-        "orientation": "black",
-        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. f4 **dxe5** [White plays f4 here 14% of the time]",
-        "lastMove": "f2f4"
       },
       "tags": [
         "chess::line"
@@ -341,8 +309,24 @@
         "answerUci": "c7d6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. exd6 **cxd6** [White plays exd6 here 13% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. exd6 **cxd6** [White plays exd6 here 14% of the time]",
         "lastMove": "e5d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-f4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1pppp/3p4/3nP3/3P1P2/8/PPP3PP/RNBQKBNR b KQkq - 0 4",
+        "answer": "dxe5",
+        "answerUci": "d6e5",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. f4 **dxe5** [White plays f4 here 13% of the time]",
+        "lastMove": "f2f4"
       },
       "tags": [
         "chess::line"
@@ -359,6 +343,22 @@
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
         "extra": "1. e4 Nf6 2. e5 Nd5 3. c4 Nb6 4. c5 **Nd5** [White plays c5 here 15% of the time]",
         "lastMove": "c4c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-bc4-bb3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppppp/1n6/4P3/8/1B6/PPPP1PPP/RNBQK1NR b KQkq - 4 4",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. Bc4 Nb6 4. Bb3 **c5** [White plays Bb3 here 91% of the time]",
+        "lastMove": "c4b3"
       },
       "tags": [
         "chess::line"
@@ -389,7 +389,7 @@
         "answerUci": "a7a5",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. c4 Nb6 4. a4 **a5** [White plays a4 here 8% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. c4 Nb6 4. a4 **a5** [White plays a4 here 7% of the time]",
         "lastMove": "a2a4"
       },
       "tags": [
@@ -405,7 +405,7 @@
         "answerUci": "e7e6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. f4 **e6** [White plays f4 here 11% of the time]",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. f4 **e6** [White plays f4 here 10% of the time]",
         "lastMove": "f2f4"
       },
       "tags": [
@@ -421,7 +421,7 @@
         "answerUci": "c7d6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. Nf3 d6 4. exd6 **cxd6** [White plays exd6 here 32% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. Nf3 d6 4. exd6 **cxd6** [White plays exd6 here 30% of the time]",
         "lastMove": "e5d6"
       },
       "tags": [
@@ -461,6 +461,38 @@
       ]
     },
     {
+      "key": "l-e4-d3-f4-bxf4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppp1ppp/5n2/8/4PB2/3P4/PPP3PP/RN1QKBNR b KQkq - 0 4",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. d3 e5 3. f4 exf4 4. Bxf4 **d6** [White plays Bxf4 here 95% of the time]",
+        "lastMove": "c1f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-e5-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppnpppp/8/3pP3/8/2N2N2/PPPP1PPP/R1BQKB1R b KQkq - 2 4",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. Nf3 **e6** [White plays Nf3 here 6% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e4-e5-nf3-c4",
       "model": "chess",
       "fields": {
@@ -469,72 +501,8 @@
         "answerUci": "d5b6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. Nf3 d6 4. c4 **Nb6** [White plays c4 here 15% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. Nf3 d6 4. c4 **Nb6** [White plays c4 here 16% of the time]",
         "lastMove": "c2c4"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d3-nf3-be2",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/3P1N2/PPP1BPPP/RNBQK2R b KQkq - 3 4",
-        "answer": "Bc5",
-        "answerUci": "f8c5",
-        "orientation": "black",
-        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. d3 e5 3. Nf3 Nc6 4. Be2 **Bc5** [White plays Be2 here 37% of the time]",
-        "lastMove": "f1e2"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d3-nf3-nc3",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2NP1N2/PPP2PPP/R1BQKB1R b KQkq - 3 4",
-        "answer": "Bc5",
-        "answerUci": "f8c5",
-        "orientation": "black",
-        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. d3 e5 3. Nf3 Nc6 4. Nc3 **Bc5** [White plays Nc3 here 20% of the time]",
-        "lastMove": "b1c3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d3-nf3-bg5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p1B1/4P3/3P1N2/PPP2PPP/RN1QKB1R b KQkq - 3 4",
-        "answer": "Be7",
-        "answerUci": "f8e7",
-        "orientation": "black",
-        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. d3 e5 3. Nf3 Nc6 4. Bg5 **Be7** [White plays Bg5 here 15% of the time]",
-        "lastMove": "c1g5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d3-nf3-c3",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/4P3/2PP1N2/PP3PPP/RNBQKB1R b KQkq - 0 4",
-        "answer": "Bc5",
-        "answerUci": "f8c5",
-        "orientation": "black",
-        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. d3 e5 3. Nf3 Nc6 4. c3 **Bc5** [White plays c3 here 14% of the time]",
-        "lastMove": "c2c3"
       },
       "tags": [
         "chess::line"
@@ -549,7 +517,7 @@
         "answerUci": "e7e5",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. dxc6 Nxc6 5. Nf3 **e5** [White plays Nf3 here 67% of the time]",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. dxc6 Nxc6 5. Nf3 **e5** [White plays Nf3 here 57% of the time]",
         "lastMove": "g1f3"
       },
       "tags": [
@@ -565,7 +533,7 @@
         "answerUci": "c7c5",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. f4 **c5** [White plays f4 here 57% of the time]",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. f4 **c5** [White plays f4 here 52% of the time]",
         "lastMove": "f2f4"
       },
       "tags": [
@@ -597,7 +565,7 @@
         "answerUci": "d6e5",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. f4 **dxe5** [White plays f4 here 39% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. f4 **dxe5** [White plays f4 here 38% of the time]",
         "lastMove": "f2f4"
       },
       "tags": [
@@ -609,12 +577,28 @@
       "model": "chess",
       "fields": {
         "fen": "rnbqkb1r/ppp1pppp/8/3nP3/3P4/8/PPP3PP/RNBQKBNR b KQkq - 0 5",
-        "answer": "Nc6",
-        "answerUci": "b8c6",
+        "answer": "Bf5",
+        "answerUci": "c8f5",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. f4 dxe5 5. fxe5 **Nc6** [White plays fxe5 here 100% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. f4 dxe5 5. fxe5 **Bf5** [White plays fxe5 here 94% of the time]",
         "lastMove": "f4e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-exd5-dxc6-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp2pppp/2n2n2/1B6/8/2N5/PPPP1PPP/R1BQK1NR b KQkq - 1 5",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. dxc6 Nxc6 5. Bb5 **e5** [White plays Bb5 here 24% of the time]",
+        "lastMove": "f1b5"
       },
       "tags": [
         "chess::line"
@@ -629,7 +613,7 @@
         "answerUci": "c7c6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. Nf3 Bg4 5. Be2 **c6** (Flohr Variation, B05) [White plays Be2 here 65% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. Nf3 Bg4 5. Be2 **c6** (Flohr Variation, B05) [White plays Be2 here 53% of the time]",
         "lastMove": "f1e2"
       },
       "tags": [
@@ -645,7 +629,7 @@
         "answerUci": "c7c5",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nf3 **c5** [White plays Nf3 here 26% of the time]",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nf3 **c5** [White plays Nf3 here 25% of the time]",
         "lastMove": "g1f3"
       },
       "tags": [
@@ -653,32 +637,16 @@
       ]
     },
     {
-      "key": "l-e4-nc3-exd5-dxc6-bb5",
+      "key": "l-e4-e5-bc4-bb3-d3",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkb1r/pp2pppp/2n2n2/1B6/8/2N5/PPPP1PPP/R1BQK1NR b KQkq - 1 5",
-        "answer": "e5",
-        "answerUci": "e7e5",
+        "fen": "rnbqkb1r/pp1ppppp/1n6/2p1P3/8/1B1P4/PPP2PPP/RNBQK1NR b KQkq - 0 5",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. dxc6 Nxc6 5. Bb5 **e5** [White plays Bb5 here 23% of the time]",
-        "lastMove": "f1b5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-e5-d4-exd6-nf3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp2pppp/3p4/3n4/3P4/5N2/PPP2PPP/RNBQKB1R b KQkq - 1 5",
-        "answer": "g6",
-        "answerUci": "g7g6",
-        "orientation": "black",
-        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. exd6 cxd6 5. Nf3 **g6** [White plays Nf3 here 53% of the time]",
-        "lastMove": "g1f3"
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. Bc4 Nb6 4. Bb3 c5 5. d3 **Nc6** [White plays d3 here 62% of the time]",
+        "lastMove": "d2d3"
       },
       "tags": [
         "chess::line"
@@ -701,16 +669,16 @@
       ]
     },
     {
-      "key": "l-e4-e5-d4-exd6-c4",
+      "key": "l-e4-e5-d4-exd6-nf3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/pp2pppp/3p4/3n4/2PP4/8/PP3PPP/RNBQKBNR b KQkq - 0 5",
-        "answer": "Nb6",
-        "answerUci": "d5b6",
+        "fen": "rnbqkb1r/pp2pppp/3p4/3n4/3P4/5N2/PPP2PPP/RNBQKB1R b KQkq - 1 5",
+        "answer": "g6",
+        "answerUci": "g7g6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. exd6 cxd6 5. c4 **Nb6** [White plays c4 here 47% of the time]",
-        "lastMove": "c2c4"
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. exd6 cxd6 5. Nf3 **g6** [White plays Nf3 here 41% of the time]",
+        "lastMove": "g1f3"
       },
       "tags": [
         "chess::line"
@@ -725,23 +693,7 @@
         "answerUci": "c8g4",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. Nf3 **Bg4** [White plays Nf3 here 13% of the time]",
-        "lastMove": "g1f3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-nc3-exd5-d4-nf3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp2pppp/5n2/3p4/3P4/2N2N2/PPP2PPP/R1BQKB1R b KQkq - 1 5",
-        "answer": "Bg4",
-        "answerUci": "c8g4",
-        "orientation": "black",
-        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. d4 cxd5 5. Nf3 **Bg4** [White plays Nf3 here 58% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. Nf3 **Bg4** [White plays Nf3 here 12% of the time]",
         "lastMove": "g1f3"
       },
       "tags": [
@@ -757,8 +709,104 @@
         "answerUci": "c7c5",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nce2 **c5** [White plays Nce2 here 11% of the time]",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nce2 **c5** [White plays Nce2 here 13% of the time]",
         "lastMove": "c3e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-exd6-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/3p4/3n4/2PP4/8/PP3PPP/RNBQKBNR b KQkq - 0 5",
+        "answer": "Nb6",
+        "answerUci": "d5b6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. exd6 cxd6 5. c4 **Nb6** [White plays c4 here 37% of the time]",
+        "lastMove": "c2c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-exd5-d4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/5n2/3p4/3P4/2N2N2/PPP2PPP/R1BQKB1R b KQkq - 1 5",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. d4 cxd5 5. Nf3 **Bg4** [White plays Nf3 here 57% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-bc4-bb3-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp1ppppp/1n6/2p1P3/8/1BP5/PP1P1PPP/RNBQK1NR b KQkq - 0 5",
+        "answer": "c4",
+        "answerUci": "c5c4",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. Bc4 Nb6 4. Bb3 c5 5. c3 **c4** [White plays c3 here 38% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-e5-f4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppn1ppp/4p3/3pP3/5P2/2N2N2/PPPP2PP/R1BQKB1R b KQkq - 1 5",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. f4 e6 5. Nf3 **c5** [White plays Nf3 here 74% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-exd5-dxc6-d3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp2pppp/2n2n2/8/8/2NP4/PPP2PPP/R1BQKBNR b KQkq - 0 5",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. dxc6 Nxc6 5. d3 **e5** [White plays d3 here 8% of the time]",
+        "lastMove": "d2d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d3-f4-bxf4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp2ppp/3p1n2/8/4PB2/3P1N2/PPP3PP/RN1QKB1R b KQkq - 1 5",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. d3 e5 3. f4 exf4 4. Bxf4 d6 5. Nf3 **Be7** [White plays Nf3 here 100% of the time]",
+        "lastMove": "g1f3"
       },
       "tags": [
         "chess::line"
@@ -773,8 +821,104 @@
         "answerUci": "d5c3",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. c4 Nb6 4. c5 Nd5 5. Nc3 **Nxc3** [White plays Nc3 here 26% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. c4 Nb6 4. c5 Nd5 5. Nc3 **Nxc3** [White plays Nc3 here 27% of the time]",
         "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-nf3-bc4-bb3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1pppp/1n1p4/4P3/8/1B3N2/PPPP1PPP/RNBQK2R b KQkq - 3 5",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. Nf3 d6 4. Bc4 Nb6 5. Bb3 **Nc6** [White plays Bb3 here 64% of the time]",
+        "lastMove": "c4b3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-nf3-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/ppp1pppp/3p4/3nP3/2BP2b1/5N2/PPP2PPP/RNBQK2R b KQkq - 3 5",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. Nf3 Bg4 5. Bc4 **e6** [White plays Bc4 here 14% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-exd5-dxc6-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp2pppp/2n2n2/8/2B5/2N5/PPPP1PPP/R1BQK1NR b KQkq - 1 5",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. dxc6 Nxc6 5. Bc4 **e5** [White plays Bc4 here 6% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-nf3-exd6",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/ppp1pppp/3P4/3n4/3P2b1/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 5",
+        "answer": "exd6",
+        "answerUci": "e7d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. Nf3 Bg4 5. exd6 **exd6** [White plays exd6 here 12% of the time]",
+        "lastMove": "e5d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-nf3-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/ppp1pppp/3p4/3nP3/2PP2b1/5N2/PP3PPP/RNBQKB1R b KQkq - 0 5",
+        "answer": "Nb6",
+        "answerUci": "d5b6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. Nf3 Bg4 5. c4 **Nb6** [White plays c4 here 11% of the time]",
+        "lastMove": "c2c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-c4-a4-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/1ppppppp/1n6/p3P3/P1PP4/8/1P3PPP/RNBQKBNR b KQkq - 0 5",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. c4 Nb6 4. a4 a5 5. d4 **d6** [White plays d4 here 36% of the time]",
+        "lastMove": "d2d4"
       },
       "tags": [
         "chess::line"
@@ -789,8 +933,24 @@
         "answerUci": "d7d6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. c4 Nb6 4. c5 Nd5 5. d4 **d6** [White plays d4 here 19% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. c4 Nb6 4. c5 Nd5 5. d4 **d6** [White plays d4 here 18% of the time]",
         "lastMove": "d2d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-nf3-h3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/ppp1pppp/3p4/3nP3/3P2b1/5N1P/PPP2PP1/RNBQKB1R b KQkq - 0 5",
+        "answer": "Bh5",
+        "answerUci": "g4h5",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. Nf3 Bg4 5. h3 **Bh5** [White plays h3 here 10% of the time]",
+        "lastMove": "h2h3"
       },
       "tags": [
         "chess::line"
@@ -805,7 +965,7 @@
         "answerUci": "c7d6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. c4 Nb6 4. Nf3 d6 5. exd6 **cxd6** [White plays exd6 here 60% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. c4 Nb6 4. Nf3 d6 5. exd6 **cxd6** [White plays exd6 here 54% of the time]",
         "lastMove": "e5d6"
       },
       "tags": [
@@ -813,64 +973,16 @@
       ]
     },
     {
-      "key": "l-e4-nc3-exd5-d4-bg5",
+      "key": "l-e4-e5-nf3-exd6-bc4",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/pp2pppp/5n2/3p2B1/3P4/2N5/PPP2PPP/R2QKBNR b KQkq - 1 5",
-        "answer": "e6",
-        "answerUci": "e7e6",
+        "fen": "rnbqkb1r/pp2pppp/3p4/3n4/2B5/5N2/PPPP1PPP/RNBQK2R b KQkq - 1 5",
+        "answer": "Nb6",
+        "answerUci": "d5b6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. d4 cxd5 5. Bg5 **e6** [White plays Bg5 here 12% of the time]",
-        "lastMove": "c1g5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-nc3-exd5-d4-bd3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp2pppp/5n2/3p4/3P4/2NB4/PPP2PPP/R1BQK1NR b KQkq - 1 5",
-        "answer": "Nc6",
-        "answerUci": "b8c6",
-        "orientation": "black",
-        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. d4 cxd5 5. Bd3 **Nc6** [White plays Bd3 here 7% of the time]",
-        "lastMove": "f1d3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-nc3-exd5-d4-bf4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp2pppp/5n2/3p4/3P1B2/2N5/PPP2PPP/R2QKBNR b KQkq - 1 5",
-        "answer": "a6",
-        "answerUci": "a7a6",
-        "orientation": "black",
-        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. d4 cxd5 5. Bf4 **a6** [White plays Bf4 here 7% of the time]",
-        "lastMove": "c1f4"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-d3-nf3-c3-be2",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/4P3/2PP1N2/PP2BPPP/RNBQK2R b KQkq - 2 5",
-        "answer": "d6",
-        "answerUci": "d7d6",
-        "orientation": "black",
-        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. d3 e5 3. Nf3 Nc6 4. c3 Bc5 5. Be2 **d6** [White plays Be2 here 69% of the time]",
-        "lastMove": "f1e2"
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. Nf3 d6 4. exd6 cxd6 5. Bc4 **Nb6** [White plays Bc4 here 38% of the time]",
+        "lastMove": "f1c4"
       },
       "tags": [
         "chess::line"
@@ -885,7 +997,7 @@
         "answerUci": "b8c6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. f4 c5 6. Nf3 **Nc6** [White plays Nf3 here 95% of the time]",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. f4 c5 6. Nf3 **Nc6** [White plays Nf3 here 89% of the time]",
         "lastMove": "g1f3"
       },
       "tags": [
@@ -909,15 +1021,63 @@
       ]
     },
     {
+      "key": "l-e4-nc3-exd5-dxc6-nf3-d3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp3ppp/2n2n2/4p3/8/2NP1N2/PPP2PPP/R1BQKB1R b KQkq - 0 6",
+        "answer": "Bc5",
+        "answerUci": "f8c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. dxc6 Nxc6 5. Nf3 e5 6. d3 **Bc5** [White plays d3 here 43% of the time]",
+        "lastMove": "d2d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-exd5-dxc6-nf3-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp3ppp/2n2n2/1B2p3/8/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 1 6",
+        "answer": "Bd6",
+        "answerUci": "f8d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. dxc6 Nxc6 5. Nf3 e5 6. Bb5 **Bd6** [White plays Bb5 here 42% of the time]",
+        "lastMove": "f1b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-nf3-be2-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2pp4/3nP3/3P2b1/5N2/PPP1BPPP/RNBQ1RK1 b kq - 1 6",
+        "answer": "Bxf3",
+        "answerUci": "g4f3",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. Nf3 Bg4 5. Be2 c6 6. O-O **Bxf3** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e4-e5-d4-f4-fxe5-nf3",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkb1r/ppp1pppp/2n5/3nP3/3P4/5N2/PPP3PP/RNBQKB1R b KQkq - 2 6",
-        "answer": "Bg4",
-        "answerUci": "c8g4",
+        "fen": "rn1qkb1r/ppp1pppp/8/3nPb2/3P4/5N2/PPP3PP/RNBQKB1R b KQkq - 2 6",
+        "answer": "e6",
+        "answerUci": "e7e6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. f4 dxe5 5. fxe5 Nc6 6. Nf3 **Bg4** [White plays Nf3 here 100% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. f4 dxe5 5. fxe5 Bf5 6. Nf3 **e6** [White plays Nf3 here 73% of the time]",
         "lastMove": "g1f3"
       },
       "tags": [
@@ -933,7 +1093,7 @@
         "answerUci": "g7g6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nf3 **g6** [White plays Nf3 here 53% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nf3 **g6** [White plays Nf3 here 43% of the time]",
         "lastMove": "g1f3"
       },
       "tags": [
@@ -949,8 +1109,24 @@
         "answerUci": "g7g6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nc3 **g6** [White plays Nc3 here 47% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nc3 **g6** [White plays Nc3 here 41% of the time]",
         "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-exd5-dxc6-bb5-bxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp3ppp/2B2n2/4p3/8/2N5/PPPP1PPP/R1BQK1NR b KQkq - 0 6",
+        "answer": "bxc6",
+        "answerUci": "b7c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. dxc6 Nxc6 5. Bb5 e5 6. Bxc6+ **bxc6** [White plays Bxc6+ here 49% of the time]",
+        "lastMove": "b5c6"
       },
       "tags": [
         "chess::line"
@@ -973,6 +1149,54 @@
       ]
     },
     {
+      "key": "l-e4-e5-bc4-bb3-c3-bc2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp1ppppp/1n6/4P3/2p5/2P5/PPBP1PPP/RNBQK1NR b KQkq - 1 6",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. Bc4 Nb6 4. Bb3 c5 5. c3 c4 6. Bc2 **Nc6** [White plays Bc2 here 100% of the time]",
+        "lastMove": "b3c2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-exd5-dxc6-nf3-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp3ppp/2n2n2/4p3/2B5/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 1 6",
+        "answer": "Bc5",
+        "answerUci": "f8c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. dxc6 Nxc6 5. Nf3 e5 6. Bc4 **Bc5** [White plays Bc4 here 12% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-nf3-bc4-bxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/ppp2ppp/3pp3/3BP3/3P2b1/5N2/PPP2PPP/RNBQK2R b KQkq - 0 6",
+        "answer": "exd5",
+        "answerUci": "e6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. Nf3 Bg4 5. Bc4 e6 6. Bxd5 **exd5** [White plays Bxd5 here 100% of the time]",
+        "lastMove": "c4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e4-nc3-e5-d4-nf3-dxc5",
       "model": "chess",
       "fields": {
@@ -981,8 +1205,24 @@
         "answerUci": "f8c5",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nf3 c5 6. dxc5 **Bxc5** [White plays dxc5 here 35% of the time]",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nf3 c5 6. dxc5 **Bxc5** [White plays dxc5 here 26% of the time]",
         "lastMove": "d4c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-nf3-exd6-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/ppp2ppp/3p4/3n4/3P2b1/5N2/PPP1BPPP/RNBQK2R b KQkq - 1 6",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. Nf3 Bg4 5. exd6 exd6 6. Be2 **Be7** [White plays Be2 here 100% of the time]",
+        "lastMove": "f1e2"
       },
       "tags": [
         "chess::line"
@@ -997,40 +1237,8 @@
         "answerUci": "e7e6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. d4 cxd5 5. Nf3 Bg4 6. Be2 **e6** [White plays Be2 here 82% of the time]",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. d4 cxd5 5. Nf3 Bg4 6. Be2 **e6** [White plays Be2 here 50% of the time]",
         "lastMove": "f1e2"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-e5-c4-c5-bc4-bxd5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pppp1ppp/4p3/2PBP3/8/8/PP1P1PPP/RNBQK1NR b KQkq - 0 6",
-        "answer": "exd5",
-        "answerUci": "e6d5",
-        "orientation": "black",
-        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. c4 Nb6 4. c5 Nd5 5. Bc4 e6 6. Bxd5 **exd5** [White plays Bxd5 here 39% of the time]",
-        "lastMove": "c4d5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e4-e5-c4-c5-bc4-nc3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pppp1ppp/4p3/2PnP3/2B5/2N5/PP1P1PPP/R1BQK1NR b KQkq - 1 6",
-        "answer": "d6",
-        "answerUci": "d7d6",
-        "orientation": "black",
-        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. c4 Nb6 4. c5 Nd5 5. Bc4 e6 6. Nc3 **d6** (Mikenas Variation, B02) [White plays Nc3 here 34% of the time]",
-        "lastMove": "b1c3"
       },
       "tags": [
         "chess::line"
@@ -1045,8 +1253,40 @@
         "answerUci": "b8c6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nf3 c5 6. Be3 **Nc6** [White plays Be3 here 18% of the time]",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nf3 c5 6. Be3 **Nc6** [White plays Be3 here 22% of the time]",
         "lastMove": "c1e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4-nf3-exd6",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/ppp1pppp/1n1P4/8/2PP2b1/5N2/PP3PPP/RNBQKB1R b KQkq - 0 6",
+        "answer": "cxd6",
+        "answerUci": "c7d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. Nf3 Bg4 6. exd6 **cxd6** [White plays exd6 here 44% of the time]",
+        "lastMove": "e5d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-c4-c5-bc4-bxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppp1ppp/4p3/2PBP3/8/8/PP1P1PPP/RNBQK1NR b KQkq - 0 6",
+        "answer": "exd5",
+        "answerUci": "e6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. c4 Nb6 4. c5 Nd5 5. Bc4 e6 6. Bxd5 **exd5** [White plays Bxd5 here 35% of the time]",
+        "lastMove": "c4d5"
       },
       "tags": [
         "chess::line"
@@ -1061,7 +1301,7 @@
         "answerUci": "b8c6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nf3 c5 6. Bb5 **Nc6** [White plays Bb5 here 18% of the time]",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nf3 c5 6. Bb5 **Nc6** [White plays Bb5 here 21% of the time]",
         "lastMove": "f1b5"
       },
       "tags": [
@@ -1069,15 +1309,31 @@
       ]
     },
     {
-      "key": "l-e4-nc3-exd5-d4-nf3-bg5",
+      "key": "l-e4-e5-c4-c5-bc4-nc3",
       "model": "chess",
       "fields": {
-        "fen": "rn1qkb1r/pp2pppp/5n2/3p2B1/3P2b1/2N2N2/PPP2PPP/R2QKB1R b KQkq - 3 6",
-        "answer": "e6",
-        "answerUci": "e7e6",
+        "fen": "rnbqkb1r/pppp1ppp/4p3/2PnP3/2B5/2N5/PP1P1PPP/R1BQK1NR b KQkq - 1 6",
+        "answer": "d6",
+        "answerUci": "d7d6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. exd5 c6 4. d4 cxd5 5. Nf3 Bg4 6. Bg5 **e6** [White plays Bg5 here 11% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. c4 Nb6 4. c5 Nd5 5. Bc4 e6 6. Nc3 **d6** (Mikenas Variation, B02) [White plays Nc3 here 30% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-e5-d4-nf3-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp1n1ppp/4p3/2ppP1B1/3P4/2N2N2/PPP2PPP/R2QKB1R b KQkq - 1 6",
+        "answer": "Qb6",
+        "answerUci": "d8b6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nf3 c5 6. Bg5 **Qb6** [White plays Bg5 here 19% of the time]",
         "lastMove": "c1g5"
       },
       "tags": [
@@ -1093,7 +1349,7 @@
         "answerUci": "d8b6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. f4 c5 6. Nf3 Nc6 7. Be3 **Qb6** [White plays Be3 here 84% of the time]",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. f4 c5 6. Nf3 Nc6 7. Be3 **Qb6** [White plays Be3 here 81% of the time]",
         "lastMove": "c1e3"
       },
       "tags": [
@@ -1101,16 +1357,16 @@
       ]
     },
     {
-      "key": "l-e4-e5-d4-c4-exd6-nf3-nc3",
+      "key": "l-e4-e5-d4-nf3-be2-oo-bxf3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/pp2pp1p/1n1p2p1/8/2PP4/2N2N2/PP3PPP/R1BQKB1R b KQkq - 1 7",
-        "answer": "Bg7",
-        "answerUci": "f8g7",
+        "fen": "rn1qkb1r/pp2pppp/2pp4/3nP3/3P4/5B2/PPP2PPP/RNBQ1RK1 b kq - 0 7",
+        "answer": "dxe5",
+        "answerUci": "d6e5",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nf3 g6 7. Nc3 **Bg7** [White plays Nc3 here 100% of the time]",
-        "lastMove": "b1c3"
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. Nf3 Bg4 5. Be2 c6 6. O-O Bxf3 7. Bxf3 **dxe5** [White plays Bxf3 here 100% of the time]",
+        "lastMove": "e2f3"
       },
       "tags": [
         "chess::line"
@@ -1125,7 +1381,7 @@
         "answerUci": "c8g4",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. f4 dxe5 6. fxe5 Nc6 7. Nf3 **Bg4** [White plays Nf3 here 52% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. f4 dxe5 6. fxe5 Nc6 7. Nf3 **Bg4** [White plays Nf3 here 51% of the time]",
         "lastMove": "g1f3"
       },
       "tags": [
@@ -1149,6 +1405,38 @@
       ]
     },
     {
+      "key": "l-e4-e5-d4-c4-exd6-nf3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pp1p/1n1p2p1/8/2PP4/2N2N2/PP3PPP/R1BQKB1R b KQkq - 1 7",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nf3 g6 7. Nc3 **Bg7** [White plays Nc3 here 52% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-bc4-bb3-c3-bc2-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp1ppppp/1nn5/4P3/2p5/2P2N2/PPBP1PPP/RNBQK2R b KQkq - 3 7",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. Bc4 Nb6 4. Bb3 c5 5. c3 c4 6. Bc2 Nc6 7. Nf3 **d6** [White plays Nf3 here 100% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e4-e5-d4-c4-exd6-nc3-be3",
       "model": "chess",
       "fields": {
@@ -1157,7 +1445,7 @@
         "answerUci": "f8g7",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nc3 g6 7. Be3 **Bg7** [White plays Be3 here 57% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nc3 g6 7. Be3 **Bg7** [White plays Be3 here 42% of the time]",
         "lastMove": "c1e3"
       },
       "tags": [
@@ -1173,7 +1461,7 @@
         "answerUci": "b8c6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nf3 c5 6. dxc5 Bxc5 7. Bd3 **Nc6** [White plays Bd3 here 100% of the time]",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nf3 c5 6. dxc5 Bxc5 7. Bd3 **Nc6** [White plays Bd3 here 91% of the time]",
         "lastMove": "f1d3"
       },
       "tags": [
@@ -1181,16 +1469,32 @@
       ]
     },
     {
-      "key": "l-e4-nc3-e5-d4-nce2-c3-nf3",
+      "key": "l-e4-e5-d4-nf3-exd6-be2-oo",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkb1r/pp1n1ppp/2n1p3/2ppP3/3P4/2P2N2/PP2NPPP/R1BQKB1R b KQkq - 2 7",
-        "answer": "Qb6",
-        "answerUci": "d8b6",
+        "fen": "rn1qk2r/ppp1bppp/3p4/3n4/3P2b1/5N2/PPP1BPPP/RNBQ1RK1 b kq - 3 7",
+        "answer": "O-O",
+        "answerUci": "e8g8",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nce2 c5 6. c3 Nc6 7. Nf3 **Qb6** [White plays Nf3 here 63% of the time]",
-        "lastMove": "g1f3"
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. Nf3 Bg4 5. exd6 exd6 6. Be2 Be7 7. O-O **O-O** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4-nf3-exd6-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/1n1p4/8/2PP2b1/5N2/PP2BPPP/RNBQK2R b KQkq - 1 7",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. Nf3 Bg4 6. exd6 cxd6 7. Be2 **Nc6** [White plays Be2 here 100% of the time]",
+        "lastMove": "f1e2"
       },
       "tags": [
         "chess::line"
@@ -1213,6 +1517,54 @@
       ]
     },
     {
+      "key": "l-e4-nc3-e5-d4-nf3-be3-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp1n1ppp/2n1p3/1BppP3/3P4/2N1BN2/PPP2PPP/R2QK2R b KQkq - 3 7",
+        "answer": "Qb6",
+        "answerUci": "d8b6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nf3 c5 6. Be3 Nc6 7. Bb5 **Qb6** [White plays Bb5 here 91% of the time]",
+        "lastMove": "f1b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-e5-d4-nf3-bg5-dxc5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kb1r/pp1n1ppp/1q2p3/2PpP1B1/8/2N2N2/PPP2PPP/R2QKB1R b KQkq - 0 7",
+        "answer": "Bxc5",
+        "answerUci": "f8c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nf3 c5 6. Bg5 Qb6 7. dxc5 **Bxc5** [White plays dxc5 here 100% of the time]",
+        "lastMove": "d4c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-nf3-be2-oo-bxf3-dxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2p5/3nP3/8/5B2/PPP2PPP/RNBQ1RK1 b kq - 0 8",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. Nf3 Bg4 5. Be2 c6 6. O-O Bxf3 7. Bxf3 dxe5 8. dxe5 **e6** [White plays dxe5 here 100% of the time]",
+        "lastMove": "d4e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e4-nc3-e5-d4-f4-nf3-be3-na4",
       "model": "chess",
       "fields": {
@@ -1221,7 +1573,7 @@
         "answerUci": "b6a5",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. f4 c5 6. Nf3 Nc6 7. Be3 Qb6 8. Na4 **Qa5+** [White plays Na4 here 100% of the time]",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. f4 c5 6. Nf3 Nc6 7. Be3 Qb6 8. Na4 **Qa5+** [White plays Na4 here 68% of the time]",
         "lastMove": "c3a4"
       },
       "tags": [
@@ -1237,7 +1589,7 @@
         "answerUci": "e7e6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. f4 dxe5 6. fxe5 Nc6 7. Nf3 Bg4 8. Be3 **e6** [White plays Be3 here 100% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. f4 dxe5 6. fxe5 Nc6 7. Nf3 Bg4 8. Be3 **e6** [White plays Be3 here 89% of the time]",
         "lastMove": "c1e3"
       },
       "tags": [
@@ -1253,8 +1605,88 @@
         "answerUci": "e7e6",
         "orientation": "black",
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
-        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. f4 dxe5 6. fxe5 Nc6 7. Be3 Bf5 8. Nc3 **e6** [White plays Nc3 here 100% of the time]",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. f4 dxe5 6. fxe5 Nc6 7. Be3 Bf5 8. Nc3 **e6** [White plays Nc3 here 75% of the time]",
         "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4-exd6-nf3-nc3-be3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2ppbp/1n1p2p1/8/2PP4/2N1BN2/PP3PPP/R2QKB1R b KQkq - 3 8",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nf3 g6 7. Nc3 Bg7 8. Be3 **O-O** [White plays Be3 here 82% of the time]",
+        "lastMove": "c1e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4-exd6-nc3-be3-rc1",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2ppbp/1n1p2p1/8/2PP4/2N1B3/PP3PPP/2RQKBNR b Kkq - 3 8",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nc3 g6 7. Be3 Bg7 8. Rc1 **O-O** [White plays Rc1 here 85% of the time]",
+        "lastMove": "a1c1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-e5-d4-f4-nf3-be3-qd2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kb1r/pp1n1ppp/1qn1p3/2ppP3/3P1P2/2N1BN2/PPPQ2PP/R3KB1R b KQkq - 5 8",
+        "answer": "cxd4",
+        "answerUci": "c5d4",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. f4 c5 6. Nf3 Nc6 7. Be3 Qb6 8. Qd2 **cxd4** [White plays Qd2 here 16% of the time]",
+        "lastMove": "d1d2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-e5-d4-nf3-dxc5-bd3-bf4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pp1n1ppp/2n1p3/2bpP3/5B2/2NB1N2/PPP2PPP/R2QK2R b KQkq - 3 8",
+        "answer": "Qb6",
+        "answerUci": "d8b6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nf3 c5 6. dxc5 Bxc5 7. Bd3 Nc6 8. Bf4 **Qb6** [White plays Bf4 here 100% of the time]",
+        "lastMove": "c1f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-e5-d4-nf3-be3-bb5-bxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kb1r/pp1n1ppp/1qB1p3/2ppP3/3P4/2N1BN2/PPP2PPP/R2QK2R b KQkq - 0 8",
+        "answer": "bxc6",
+        "answerUci": "b7c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nf3 c5 6. Be3 Nc6 7. Bb5 Qb6 8. Bxc6 **bxc6** [White plays Bxc6 here 100% of the time]",
+        "lastMove": "b5c6"
       },
       "tags": [
         "chess::line"
@@ -1271,6 +1703,230 @@
         "prompt": "You are Black in the Alekhine Defense. What is the book move?",
         "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. f4 c5 6. Nf3 Nc6 7. Be3 Qb6 8. Na4 Qa5+ 9. c3 **cxd4** [White plays c3 here 100% of the time]",
         "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4-f4-fxe5-nf3-be3-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkb1r/ppp2ppp/1nn1p3/4P3/2PP2b1/4BN2/PP2B1PP/RN1QK2R b KQkq - 1 9",
+        "answer": "Bxf3",
+        "answerUci": "g4f3",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. f4 dxe5 6. fxe5 Nc6 7. Nf3 Bg4 8. Be3 e6 9. Be2 **Bxf3** [White plays Be2 here 59% of the time]",
+        "lastMove": "f1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4-f4-fxe5-be3-nc3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkb1r/ppp2ppp/1nn1p3/4Pb2/2PP4/2N1BN2/PP4PP/R2QKB1R b KQkq - 1 9",
+        "answer": "Qd7",
+        "answerUci": "d8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. f4 dxe5 6. fxe5 Nc6 7. Be3 Bf5 8. Nc3 e6 9. Nf3 **Qd7** [White plays Nf3 here 69% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4-f4-fxe5-nf3-be3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkb1r/ppp2ppp/1nn1p3/4P3/2PP2b1/2N1BN2/PP4PP/R2QKB1R b KQkq - 1 9",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. f4 dxe5 6. fxe5 Nc6 7. Nf3 Bg4 8. Be3 e6 9. Nc3 **Be7** [White plays Nc3 here 41% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4-exd6-nc3-be3-rc1-b3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2ppbp/1n1p2p1/8/2PP4/1PN1B3/P4PPP/2RQKBNR b K - 0 9",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nc3 g6 7. Be3 Bg7 8. Rc1 O-O 9. b3 **Nc6** [White plays b3 here 100% of the time]",
+        "lastMove": "b2b3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-e5-d4-f4-nf3-be3-qd2-nxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kb1r/pp1n1ppp/1qn1p3/3pP3/3N1P2/2N1B3/PPPQ2PP/R3KB1R b KQkq - 0 9",
+        "answer": "Qxb2",
+        "answerUci": "b6b2",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. f4 c5 6. Nf3 Nc6 7. Be3 Qb6 8. Qd2 cxd4 9. Nxd4 **Qxb2** [White plays Nxd4 here 100% of the time]",
+        "lastMove": "f3d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-e5-d4-nf3-dxc5-bd3-bf4-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k2r/pp1n1ppp/1qn1p3/2bpP3/5B2/2NB1N2/PPP2PPP/R2Q1RK1 b kq - 5 9",
+        "answer": "Qxb2",
+        "answerUci": "b6b2",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. Nf3 c5 6. dxc5 Bxc5 7. Bd3 Nc6 8. Bf4 Qb6 9. O-O **Qxb2** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-e5-d4-f4-nf3-be3-na4-c3-b4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kb1r/pp1n1ppp/2n1p3/q2pP3/NP1p1P2/2P1BN2/P5PP/R2QKB1R b KQkq - 0 10",
+        "answer": "Qc7",
+        "answerUci": "a5c7",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. f4 c5 6. Nf3 Nc6 7. Be3 Qb6 8. Na4 Qa5+ 9. c3 cxd4 10. b4 **Qc7** [White plays b4 here 69% of the time]",
+        "lastMove": "b2b4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-e5-d4-f4-nf3-be3-na4-c3-nxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kb1r/pp1n1ppp/2n1p3/q2pP3/N2N1P2/2P1B3/PP4PP/R2QKB1R b KQkq - 0 10",
+        "answer": "Nxd4",
+        "answerUci": "c6d4",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. f4 c5 6. Nf3 Nc6 7. Be3 Qb6 8. Na4 Qa5+ 9. c3 cxd4 10. Nxd4 **Nxd4** [White plays Nxd4 here 31% of the time]",
+        "lastMove": "f3d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4-f4-fxe5-nf3-be3-be2-bxf3",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkb1r/ppp2ppp/1nn1p3/4P3/2PP4/4BB2/PP4PP/RN1QK2R b KQkq - 0 10",
+        "answer": "Nxc4",
+        "answerUci": "b6c4",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. f4 dxe5 6. fxe5 Nc6 7. Nf3 Bg4 8. Be3 e6 9. Be2 Bxf3 10. Bxf3 **Nxc4** [White plays Bxf3 here 72% of the time]",
+        "lastMove": "e2f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-e5-d4-f4-nf3-be3-qd2-nxd4-rb1",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kb1r/pp1n1ppp/2n1p3/3pP3/3N1P2/2N1B3/PqPQ2PP/1R2KB1R b Kkq - 1 10",
+        "answer": "Qa3",
+        "answerUci": "b2a3",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. f4 c5 6. Nf3 Nc6 7. Be3 Qb6 8. Qd2 cxd4 9. Nxd4 Qxb2 10. Rb1 **Qa3** [White plays Rb1 here 100% of the time]",
+        "lastMove": "a1b1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-e5-d4-f4-nf3-be3-na4-c3-b4-nxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kb1r/ppqn1ppp/2n1p3/3pP3/NP1N1P2/2P1B3/P5PP/R2QKB1R b KQkq - 0 11",
+        "answer": "Nxd4",
+        "answerUci": "c6d4",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. f4 c5 6. Nf3 Nc6 7. Be3 Qb6 8. Na4 Qa5+ 9. c3 cxd4 10. b4 Qc7 11. Nxd4 **Nxd4** [White plays Nxd4 here 100% of the time]",
+        "lastMove": "f3d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-e5-d4-f4-nf3-be3-na4-c3-nxd4-bxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kb1r/pp1n1ppp/4p3/q2pP3/N2B1P2/2P5/PP4PP/R2QKB1R b KQkq - 0 11",
+        "answer": "b5",
+        "answerUci": "b7b5",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. f4 c5 6. Nf3 Nc6 7. Be3 Qb6 8. Na4 Qa5+ 9. c3 cxd4 10. Nxd4 Nxd4 11. Bxd4 **b5** [White plays Bxd4 here 100% of the time]",
+        "lastMove": "e3d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4-f4-fxe5-nf3-be3-be2-bxf3-bxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkb1r/ppp2ppp/2B1p3/4P3/2nP4/4B3/PP4PP/RN1QK2R b KQkq - 0 11",
+        "answer": "bxc6",
+        "answerUci": "b7c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. f4 dxe5 6. fxe5 Nc6 7. Nf3 Bg4 8. Be3 e6 9. Be2 Bxf3 10. Bxf3 Nxc4 11. Bxc6+ **bxc6** [White plays Bxc6+ here 100% of the time]",
+        "lastMove": "f3c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-e5-d4-f4-nf3-be3-na4-c3-b4-nxd4-bxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kb1r/ppqn1ppp/4p3/3pP3/NP1B1P2/2P5/P5PP/R2QKB1R b KQkq - 0 12",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. Nc3 d5 3. e5 Nfd7 4. d4 e6 5. f4 c5 6. Nf3 Nc6 7. Be3 Qb6 8. Na4 Qa5+ 9. c3 cxd4 10. b4 Qc7 11. Nxd4 Nxd4 12. Bxd4 **Be7** [White plays Bxd4 here 100% of the time]",
+        "lastMove": "e3d4"
       },
       "tags": [
         "chess::line"

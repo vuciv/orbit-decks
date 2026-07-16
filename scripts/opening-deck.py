@@ -389,6 +389,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--tsv-dir", required=True)
     ap.add_argument("--opening", help='"Family" or "Family: Variation"')
+    ap.add_argument("--opening-list",
+                    help="file of openings, one per line, same syntax as --opening")
     ap.add_argument("--via", help="force the repertoire through this named variation")
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--side", choices=["white", "black"])
@@ -413,8 +415,8 @@ def main():
                     help="regenerate existing decks (preserves idea cards, bumps version)")
     ap.add_argument("--dry", action="store_true")
     args = ap.parse_args()
-    if not args.opening and not args.all:
-        ap.error("pass --opening NAME or --all")
+    if not args.opening and not args.opening_list and not args.all:
+        ap.error("pass --opening NAME, --opening-list FILE, or --all")
 
     entries = load_entries(args.tsv_dir)
     explorer = (LocalStats(args.stats) if args.stats else
@@ -457,11 +459,19 @@ def main():
                 action = "dry:" + action
         rows.append((n, label, side, action))
 
+    targets = []
     if args.opening:
-        family, via = args.opening, args.via
-        if ":" in family and not via:
-            family, via = [x.strip() for x in family.split(":", 1)]
-        emit(family, via=via, forced=True)
+        targets.append(args.opening)
+    if args.opening_list:
+        targets += [ln.strip() for ln in
+                    Path(args.opening_list).read_text().splitlines()
+                    if ln.strip()]
+    if targets:
+        for t in targets:
+            family, via = t, args.via if t == args.opening else None
+            if ":" in family and not via:
+                family, via = [x.strip() for x in family.split(":", 1)]
+            emit(family, via=via, forced=True)
     else:
         for fam in sorted({family_of(n) for _, n, _ in entries}):
             emit(fam)

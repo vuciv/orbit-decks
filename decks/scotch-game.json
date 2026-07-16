@@ -1,8 +1,8 @@
 {
   "key": "scotch-game",
-  "version": 3,
+  "version": 4,
   "name": "The Scotch Game as White",
-  "description": "A White repertoire for the Scotch Game, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 58 positions.",
+  "description": "A White repertoire for the Scotch Game, drilled one position at a time: every card is a position with exactly one book move to find. Built from 5,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -68,7 +68,7 @@
         "answerUci": "f3d4",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. **Nxd4** (Scotch Game, C45) [Black plays exd4 here 87% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. **Nxd4** (Scotch Game, C45) [Black plays exd4 here 86% of the time]",
         "lastMove": "e5d4"
       },
       "tags": [
@@ -148,7 +148,7 @@
         "answerUci": "d4c6",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. **Nxc6** [Black plays Qf6 here 6% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. **Nxc6** [Black plays Qf6 here 7% of the time]",
         "lastMove": "d8f6"
       },
       "tags": [
@@ -196,7 +196,7 @@
         "answerUci": "e5d6",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 Bg4 5. **exd6** [Black plays Bg4 here 40% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 Bg4 5. **exd6** [Black plays Bg4 here 42% of the time]",
         "lastMove": "c8g4"
       },
       "tags": [
@@ -212,7 +212,7 @@
         "answerUci": "f3e5",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 Nxe5 5. **Nxe5** [Black plays Nxe5 here 33% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 Nxe5 5. **Nxe5** [Black plays Nxe5 here 32% of the time]",
         "lastMove": "c6e5"
       },
       "tags": [
@@ -228,7 +228,7 @@
         "answerUci": "d1d8",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 dxe5 5. **Qxd8+** [Black plays dxe5 here 27% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 dxe5 5. **Qxd8+** [Black plays dxe5 here 26% of the time]",
         "lastMove": "d6e5"
       },
       "tags": [
@@ -260,7 +260,7 @@
         "answerUci": "c2c3",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. **c3** [Black plays Qf6 here 46% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. **c3** [Black plays Qf6 here 45% of the time]",
         "lastMove": "d8f6"
       },
       "tags": [
@@ -276,7 +276,7 @@
         "answerUci": "f1d3",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 d6 6. **Bd3** (Ghulam-Kassim Variation, C45) [Black plays d6 here 40% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 d6 6. **Bd3** (Ghulam-Kassim Variation, C45) [Black plays d6 here 39% of the time]",
         "lastMove": "d7d6"
       },
       "tags": [
@@ -332,22 +332,6 @@
       ]
     },
     {
-      "key": "l-e5-nc6-exd4-bc5-nxd4",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/pppp1ppp/8/2b5/3nP3/4B3/PPP2PPP/RN1QKB1R w KQkq - 0 6",
-        "answer": "Bxd4",
-        "answerUci": "e3d4",
-        "orientation": "white",
-        "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Nxd4 6. **Bxd4** [Black plays Nxd4 here 14% of the time]",
-        "lastMove": "c6d4"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
       "key": "l-e5-nc6-exd4-nxd4-nf6",
       "model": "chess",
       "fields": {
@@ -380,6 +364,22 @@
       ]
     },
     {
+      "key": "l-e5-nc6-exd4-bc5-nxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1ppp/8/2b5/3nP3/4B3/PPP2PPP/RN1QKB1R w KQkq - 0 6",
+        "answer": "Bxd4",
+        "answerUci": "e3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Nxd4 6. **Bxd4** [Black plays Nxd4 here 13% of the time]",
+        "lastMove": "c6d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e5-nc6-exd4-qf6-qxc6",
       "model": "chess",
       "fields": {
@@ -388,7 +388,7 @@
         "answerUci": "b1c3",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. Nxc6 Qxc6 6. **Nc3** [Black plays Qxc6 here 51% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. Nxc6 Qxc6 6. **Nc3** [Black plays Qxc6 here 50% of the time]",
         "lastMove": "f6c6"
       },
       "tags": [
@@ -420,7 +420,7 @@
         "answerUci": "b1c3",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 b6 6. **Nc3** [Black plays b6 here 8% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 b6 6. **Nc3** [Black plays b6 here 9% of the time]",
         "lastMove": "b7b6"
       },
       "tags": [
@@ -436,7 +436,7 @@
         "answerUci": "f1e2",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 Bg4 5. exd6 Bxd6 6. **Be2** [Black plays Bxd6 here 100% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 Bg4 5. exd6 Bxd6 6. **Be2** [Black plays Bxd6 here 93% of the time]",
         "lastMove": "f8d6"
       },
       "tags": [
@@ -452,7 +452,7 @@
         "answerUci": "b1c3",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. Nxc6 dxc6 6. **Nc3** [Black plays dxc6 here 32% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. Nxc6 dxc6 6. **Nc3** [Black plays dxc6 here 31% of the time]",
         "lastMove": "d7c6"
       },
       "tags": [
@@ -484,7 +484,7 @@
         "answerUci": "f1b5",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 dxe5 5. Qxd8+ Kxd8 6. **Bb5** [Black plays Kxd8 here 83% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 dxe5 5. Qxd8+ Kxd8 6. **Bb5** [Black plays Kxd8 here 81% of the time]",
         "lastMove": "e8d8"
       },
       "tags": [
@@ -500,8 +500,24 @@
         "answerUci": "d1f3",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. Nxc6 Bc5 6. **Qf3** [Black plays Bc5 here 17% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. Nxc6 Bc5 6. **Qf3** [Black plays Bc5 here 18% of the time]",
         "lastMove": "f8c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b5/3NP3/4B3/PPP2PPP/RN1QKB1R w KQkq - 3 6",
+        "answer": "Nxc6",
+        "answerUci": "d4c6",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Nf6 6. **Nxc6** [Black plays Nf6 here 4% of the time]",
+        "lastMove": "g8f6"
       },
       "tags": [
         "chess::line"
@@ -516,7 +532,7 @@
         "answerUci": "c1e3",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Ne5 5. Nc3 Bc5 6. **Be3** [Black plays Bc5 here 34% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Ne5 5. Nc3 Bc5 6. **Be3** [Black plays Bc5 here 32% of the time]",
         "lastMove": "f8c5"
       },
       "tags": [
@@ -524,16 +540,48 @@
       ]
     },
     {
-      "key": "l-e5-nc6-d6-dxe5-nxd8",
+      "key": "l-e5-nc6-exd4-ne5-nf6",
       "model": "chess",
       "fields": {
-        "fen": "r1bnkbnr/ppp2ppp/8/4p3/4P3/5N2/PPP2PPP/RNB1KB1R w KQkq - 0 6",
-        "answer": "Nxe5",
-        "answerUci": "f3e5",
+        "fen": "r1bqkb1r/pppp1ppp/5n2/4n3/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 3 6",
+        "answer": "Bf4",
+        "answerUci": "c1f4",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 dxe5 5. Qxd8+ Nxd8 6. **Nxe5** [Black plays Nxd8 here 17% of the time]",
-        "lastMove": "c6d8"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Ne5 5. Nc3 Nf6 6. **Bf4** [Black plays Nf6 here 25% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-ne5-bb4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1ppp/8/4n3/1b1NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 3 6",
+        "answer": "Bd2",
+        "answerUci": "c1d2",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Ne5 5. Nc3 Bb4 6. **Bd2** [Black plays Bb4 here 20% of the time]",
+        "lastMove": "f8b4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-ne5-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/ppp2ppp/3p4/4n3/3NP3/2N5/PPP2PPP/R1BQKB1R w KQkq - 0 6",
+        "answer": "Be2",
+        "answerUci": "f1e2",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Ne5 5. Nc3 d6 6. **Be2** [Black plays d6 here 15% of the time]",
+        "lastMove": "d7d6"
       },
       "tags": [
         "chess::line"
@@ -548,8 +596,24 @@
         "answerUci": "f1b5",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 Nge7 7. **Bb5** (Paulsen Attack, C45) [Black plays Nge7 here 78% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 Nge7 7. **Bb5** (Paulsen Attack, C45) [Black plays Nge7 here 73% of the time]",
         "lastMove": "g8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nxd4-d6-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/3p1n2/8/3QP3/3B4/PPP2PPP/RNB1K2R w KQkq - 2 7",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 d6 6. Bd3 Nf6 7. **O-O** [Black plays Nf6 here 68% of the time]",
+        "lastMove": "g8f6"
       },
       "tags": [
         "chess::line"
@@ -564,7 +628,7 @@
         "answerUci": "d1e2",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nf6 5. Nxc6 bxc6 6. e5 Qe7 7. **Qe2** [Black plays Qe7 here 53% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nf6 5. Nxc6 bxc6 6. e5 Qe7 7. **Qe2** [Black plays Qe7 here 50% of the time]",
         "lastMove": "d8e7"
       },
       "tags": [
@@ -580,8 +644,56 @@
         "answerUci": "c2c4",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nf6 5. Nxc6 bxc6 6. e5 Nd5 7. **c4** [Black plays Nd5 here 47% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nf6 5. Nxc6 bxc6 6. e5 Nd5 7. **c4** [Black plays Nd5 here 48% of the time]",
         "lastMove": "f6d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-d6-bxc6-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p1p2ppp/2pp1n2/8/4P3/2N5/PPP2PPP/R1BQKB1R w KQkq - 2 7",
+        "answer": "Bd3",
+        "answerUci": "f1d3",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 d6 5. Nxc6 bxc6 6. Nc3 Nf6 7. **Bd3** [Black plays Nf6 here 70% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nxd4-d6-be6",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/ppp2ppp/3pb3/8/3QP3/3B4/PPP2PPP/RNB1K2R w KQkq - 2 7",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 d6 6. Bd3 Be6 7. **O-O** [Black plays Be6 here 32% of the time]",
+        "lastMove": "c8e6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nxd4-qf6-qb6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kbnr/pppp1ppp/1q6/4P3/3Q4/8/PPP2PPP/RNB1KB1R w KQkq - 1 7",
+        "answer": "Qxb6",
+        "answerUci": "d4b6",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 Qf6 6. e5 Qb6 7. **Qxb6** [Black plays Qb6 here 69% of the time]",
+        "lastMove": "f6b6"
       },
       "tags": [
         "chess::line"
@@ -604,22 +716,6 @@
       ]
     },
     {
-      "key": "l-e5-nc6-exd4-nxd4-qf6-qb6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1b1kbnr/pppp1ppp/1q6/4P3/3Q4/8/PPP2PPP/RNB1KB1R w KQkq - 1 7",
-        "answer": "Qxb6",
-        "answerUci": "d4b6",
-        "orientation": "white",
-        "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 Qf6 6. e5 Qb6 7. **Qxb6** [Black plays Qb6 here 67% of the time]",
-        "lastMove": "f6b6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
       "key": "l-e5-nc6-exd4-qf6-qxc6-bb4",
       "model": "chess",
       "fields": {
@@ -628,8 +724,24 @@
         "answerUci": "c1d2",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. Nxc6 Qxc6 6. Nc3 Bb4 7. **Bd2** [Black plays Bb4 here 100% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. Nxc6 Qxc6 6. Nc3 Bb4 7. **Bd2** [Black plays Bb4 here 96% of the time]",
         "lastMove": "f8b4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-bb6-nge7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppppnppp/1bn5/8/3NP3/2N1B3/PPP2PPP/R2QKB1R w KQkq - 5 7",
+        "answer": "Bc4",
+        "answerUci": "f1c4",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Bb6 6. Nc3 Nge7 7. **Bc4** [Black plays Nge7 here 40% of the time]",
+        "lastMove": "g8e7"
       },
       "tags": [
         "chess::line"
@@ -644,40 +756,8 @@
         "answerUci": "b1c3",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 c5 6. Qd1 d6 7. **Nc3** [Black plays d6 here 63% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 c5 6. Qd1 d6 7. **Nc3** [Black plays d6 here 48% of the time]",
         "lastMove": "d7d6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-d6-bg4-bxd6-qe7",
-      "model": "chess",
-      "fields": {
-        "fen": "r3k1nr/ppp1qppp/2nb4/8/4P1b1/5N2/PPP1BPPP/RNBQK2R w KQkq - 2 7",
-        "answer": "Nc3",
-        "answerUci": "b1c3",
-        "orientation": "white",
-        "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 Bg4 5. exd6 Bxd6 6. Be2 Qe7 7. **Nc3** [Black plays Qe7 here 100% of the time]",
-        "lastMove": "d8e7"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-exd4-bc5-bxd4-nxd4",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/pppp1ppp/8/8/3nP3/8/PPP2PPP/RN1QKB1R w KQkq - 0 7",
-        "answer": "Qxd4",
-        "answerUci": "d1d4",
-        "orientation": "white",
-        "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Bxd4 6. Bxd4 Nxd4 7. **Qxd4** [Black plays Nxd4 here 70% of the time]",
-        "lastMove": "c6d4"
       },
       "tags": [
         "chess::line"
@@ -716,6 +796,70 @@
       ]
     },
     {
+      "key": "l-e5-nc6-exd4-bc5-bxd4-nxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1ppp/8/8/3nP3/8/PPP2PPP/RN1QKB1R w KQkq - 0 7",
+        "answer": "Qxd4",
+        "answerUci": "d1d4",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Bxd4 6. Bxd4 Nxd4 7. **Qxd4** [Black plays Nxd4 here 65% of the time]",
+        "lastMove": "c6d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-bg4-bxd6-qe7",
+      "model": "chess",
+      "fields": {
+        "fen": "r3k1nr/ppp1qppp/2nb4/8/4P1b1/5N2/PPP1BPPP/RNBQK2R w KQkq - 2 7",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 Bg4 5. exd6 Bxd6 6. Be2 Qe7 7. **Nc3** [Black plays Qe7 here 77% of the time]",
+        "lastMove": "d8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-bb6-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppp2ppp/1bnp4/8/3NP3/2N1B3/PPP2PPP/R2QKB1R w KQkq - 0 7",
+        "answer": "Bb5",
+        "answerUci": "f1b5",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Bb6 6. Nc3 d6 7. **Bb5** [Black plays d6 here 32% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-d6-bxc6-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/p1p1bppp/2pp4/8/4P3/2N5/PPP2PPP/R1BQKB1R w KQkq - 2 7",
+        "answer": "Bc4",
+        "answerUci": "f1c4",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 d6 5. Nxc6 bxc6 6. Nc3 Be7 7. **Bc4** [Black plays Be7 here 26% of the time]",
+        "lastMove": "f8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e5-nc6-exd4-nxd4-b6-bb7",
       "model": "chess",
       "fields": {
@@ -724,8 +868,40 @@
         "answerUci": "c1f4",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 b6 6. Nc3 Bb7 7. **Bf4** [Black plays Bb7 here 60% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 b6 6. Nc3 Bb7 7. **Bf4** [Black plays Bb7 here 56% of the time]",
         "lastMove": "c8b7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-bb6-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/1bn2n2/8/3NP3/2N1B3/PPP2PPP/R2QKB1R w KQkq - 5 7",
+        "answer": "Nxc6",
+        "answerUci": "d4c6",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Bb6 6. Nc3 Nf6 7. **Nxc6** [Black plays Nf6 here 28% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-qf6-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/ppp2ppp/2np1q2/2b5/3NP3/2P1B3/PP3PPP/RN1QKB1R w KQkq - 0 7",
+        "answer": "Bc4",
+        "answerUci": "f1c4",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 d6 7. **Bc4** [Black plays d6 here 10% of the time]",
+        "lastMove": "d7d6"
       },
       "tags": [
         "chess::line"
@@ -740,7 +916,7 @@
         "answerUci": "f1c4",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 Nf6 6. e5 Ng8 7. **Bc4** [Black plays Ng8 here 33% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 Nf6 6. e5 Ng8 7. **Bc4** [Black plays Ng8 here 27% of the time]",
         "lastMove": "f6g8"
       },
       "tags": [
@@ -748,16 +924,304 @@
       ]
     },
     {
-      "key": "l-e5-nc6-exd4-qf6-bc5-qxf3",
+      "key": "l-e5-nc6-exd4-nxd4-c5-nf6",
       "model": "chess",
       "fields": {
-        "fen": "r1b1k1nr/pppp1ppp/2N5/2b5/4P3/5q2/PPP2PPP/RNB1KB1R w KQkq - 0 7",
-        "answer": "gxf3",
-        "answerUci": "g2f3",
+        "fen": "r1bqkb1r/pp1p1ppp/5n2/2p5/4P3/8/PPP2PPP/RNBQKB1R w KQkq - 2 7",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. Nxc6 Bc5 6. Qf3 Qxf3 7. **gxf3** [Black plays Qxf3 here 21% of the time]",
-        "lastMove": "f6f3"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 c5 6. Qd1 Nf6 7. **Nc3** [Black plays Nf6 here 26% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-ne5-bc5-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppp2ppp/3p4/2b1n3/3NP3/2N1B3/PPP2PPP/R2QKB1R w KQkq - 0 7",
+        "answer": "Be2",
+        "answerUci": "f1e2",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Ne5 5. Nc3 Bc5 6. Be3 d6 7. **Be2** [Black plays d6 here 100% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nxd4-nf6-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp1p1ppp/5n2/2p1P3/3Q4/8/PPP2PPP/RNB1KB1R w KQkq - 0 7",
+        "answer": "Qe3",
+        "answerUci": "d4e3",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 Nf6 6. e5 c5 7. **Qe3** [Black plays c5 here 21% of the time]",
+        "lastMove": "c7c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-qf6-dxc6-bc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/ppp2ppp/2p2q2/2b5/4P3/2N5/PPP2PPP/R1BQKB1R w KQkq - 2 7",
+        "answer": "Qe2",
+        "answerUci": "d1e2",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. Nxc6 dxc6 6. Nc3 Bc5 7. **Qe2** [Black plays Bc5 here 40% of the time]",
+        "lastMove": "f8c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-qf6-nxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppp1ppp/5q2/2b5/3nP3/2P1B3/PP3PPP/RN1QKB1R w KQkq - 0 7",
+        "answer": "cxd4",
+        "answerUci": "c3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 Nxd4 7. **cxd4** [Black plays Nxd4 here 6% of the time]",
+        "lastMove": "c6d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-bxd4-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/8/3BP3/8/PPP2PPP/RN1QKB1R w KQkq - 1 7",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Bxd4 6. Bxd4 Nf6 7. **Nc3** [Black plays Nf6 here 28% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nxd4-qf6-qg6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kbnr/pppp1ppp/6q1/4P3/3Q4/8/PPP2PPP/RNB1KB1R w KQkq - 1 7",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 Qf6 6. e5 Qg6 7. **Nc3** [Black plays Qg6 here 12% of the time]",
+        "lastMove": "f6g6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-nf6-bxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/p1pp1ppp/2p2n2/2b5/4P3/4B3/PPP2PPP/RN1QKB1R w KQkq - 0 7",
+        "answer": "Bxc5",
+        "answerUci": "e3c5",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Nf6 6. Nxc6 bxc6 7. **Bxc5** [Black plays bxc6 here 64% of the time]",
+        "lastMove": "b7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-qf6-bb6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppp1ppp/1bn2q2/8/3NP3/2P1B3/PP3PPP/RN1QKB1R w KQkq - 1 7",
+        "answer": "Bc4",
+        "answerUci": "f1c4",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 Bb6 7. **Bc4** [Black plays Bb6 here 5% of the time]",
+        "lastMove": "c5b6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-dxe5-kxd8-f6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bk1bnr/ppp3pp/2n2p2/1B2p3/4P3/5N2/PPP2PPP/RNB1K2R w KQ - 0 7",
+        "answer": "Bxc6",
+        "answerUci": "b5c6",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 dxe5 5. Qxd8+ Kxd8 6. Bb5 f6 7. **Bxc6** [Black plays f6 here 52% of the time]",
+        "lastMove": "f7f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-qf6-dxc6-bb4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/ppp2ppp/2p2q2/8/1b2P3/2N5/PPP2PPP/R1BQKB1R w KQkq - 2 7",
+        "answer": "Bd2",
+        "answerUci": "c1d2",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. Nxc6 dxc6 6. Nc3 Bb4 7. **Bd2** [Black plays Bb4 here 28% of the time]",
+        "lastMove": "f8b4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nxd4-b6-bc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/p1pp1ppp/1p6/2b5/3QP3/2N5/PPP2PPP/R1B1KB1R w KQkq - 2 7",
+        "answer": "Qxg7",
+        "answerUci": "d4g7",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 b6 6. Nc3 Bc5 7. **Qxg7** [Black plays Bc5 here 21% of the time]",
+        "lastMove": "f8c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nxd4-b6-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p1pp1ppp/1p3n2/8/3QP3/2N5/PPP2PPP/R1B1KB1R w KQkq - 2 7",
+        "answer": "Bg5",
+        "answerUci": "c1g5",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 b6 6. Nc3 Nf6 7. **Bg5** [Black plays Nf6 here 19% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nxd4-qf6-qc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kbnr/pppp1ppp/2q5/4P3/3Q4/8/PPP2PPP/RNB1KB1R w KQkq - 1 7",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 Qf6 6. e5 Qc6 7. **Nc3** [Black plays Qc6 here 9% of the time]",
+        "lastMove": "f6c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-qf6-bc5-dxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/ppp2ppp/2p2q2/2b5/4P3/5Q2/PPP2PPP/RNB1KB1R w KQkq - 0 7",
+        "answer": "Qxf6",
+        "answerUci": "f3f6",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. Nxc6 Bc5 6. Qf3 dxc6 7. **Qxf6** [Black plays dxc6 here 44% of the time]",
+        "lastMove": "d7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nxd4-qf6-qe6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kbnr/pppp1ppp/4q3/4P3/3Q4/8/PPP2PPP/RNB1KB1R w KQkq - 1 7",
+        "answer": "Bc4",
+        "answerUci": "f1c4",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 Qf6 6. e5 Qe6 7. **Bc4** [Black plays Qe6 here 9% of the time]",
+        "lastMove": "f6e6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-dxe5-kxd8-bd6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bk2nr/ppp2ppp/2nb4/1B2p3/4P3/5N2/PPP2PPP/RNB1K2R w KQ - 2 7",
+        "answer": "Bxc6",
+        "answerUci": "b5c6",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 dxe5 5. Qxd8+ Kxd8 6. Bb5 Bd6 7. **Bxc6** [Black plays Bd6 here 40% of the time]",
+        "lastMove": "f8d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-nf6-dxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2ppp/2p2n2/2b5/4P3/4B3/PPP2PPP/RN1QKB1R w KQkq - 0 7",
+        "answer": "Qxd8",
+        "answerUci": "d1d8",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Nf6 6. Nxc6 dxc6 7. **Qxd8+** [Black plays dxc6 here 36% of the time]",
+        "lastMove": "d7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nxd4-d6-nf6-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp1bppp/3p1n2/8/3QP3/3B4/PPP2PPP/RNB2RK1 w kq - 4 8",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 d6 6. Bd3 Nf6 7. O-O Be7 8. **Nc3** [Black plays Be7 here 100% of the time]",
+        "lastMove": "f8e7"
       },
       "tags": [
         "chess::line"
@@ -788,8 +1252,40 @@
         "answerUci": "f1d3",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nf6 5. Nxc6 bxc6 6. e5 Nd5 7. c4 Nb6 8. **Bd3** [Black plays Nb6 here 100% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nf6 5. Nxc6 bxc6 6. e5 Nd5 7. c4 Nb6 8. **Bd3** [Black plays Nb6 here 78% of the time]",
         "lastMove": "d5b6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-qf6-nge7-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b2rk1/ppppnppp/2n2q2/1Bb5/3NP3/2P1B3/PP3PPP/RN1QK2R w KQ - 3 8",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 Nge7 7. Bb5 O-O 8. **O-O** [Black plays O-O here 51% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-d6-bxc6-nf6-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/p1p1bppp/2pp1n2/8/4P3/2NB4/PPP2PPP/R1BQK2R w KQkq - 4 8",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 d6 5. Nxc6 bxc6 6. Nc3 Nf6 7. Bd3 Be7 8. **O-O** [Black plays Be7 here 100% of the time]",
+        "lastMove": "f8e7"
       },
       "tags": [
         "chess::line"
@@ -836,7 +1332,7 @@
         "answerUci": "e4e5",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Nxd4 6. Bxd4 Bxd4 7. Qxd4 Qf6 8. **e5** [Black plays Qf6 here 73% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Nxd4 6. Bxd4 Bxd4 7. Qxd4 Qf6 8. **e5** [Black plays Qf6 here 61% of the time]",
         "lastMove": "d8f6"
       },
       "tags": [
@@ -844,16 +1340,112 @@
       ]
     },
     {
-      "key": "l-e5-nc6-d6-nxe5-dxe5-kxd8-f6",
+      "key": "l-e5-nc6-exd4-bc5-bb6-nge7-oo",
       "model": "chess",
       "fields": {
-        "fen": "r1bk1bnr/ppp3pp/5p2/4p3/2B1P3/8/PPP2PPP/RNB1K2R w KQ - 0 8",
-        "answer": "Nc3",
-        "answerUci": "b1c3",
+        "fen": "r1bq1rk1/ppppnppp/1bn5/8/2BNP3/2N1B3/PPP2PPP/R2QK2R w KQ - 7 8",
+        "answer": "O-O",
+        "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 Nxe5 5. Nxe5 dxe5 6. Qxd8+ Kxd8 7. Bc4 f6 8. **Nc3** [Black plays f6 here 73% of the time]",
-        "lastMove": "f7f6"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Bb6 6. Nc3 Nge7 7. Bc4 O-O 8. **O-O** [Black plays O-O here 100% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-bg4-bxd6-qe7-ooo",
+      "model": "chess",
+      "fields": {
+        "fen": "2kr2nr/ppp1qppp/2nb4/8/4P1b1/2N2N2/PPP1BPPP/R1BQK2R w KQ - 4 8",
+        "answer": "Bd2",
+        "answerUci": "c1d2",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 Bg4 5. exd6 Bxd6 6. Be2 Qe7 7. Nc3 O-O-O 8. **Bd2** [Black plays O-O-O here 96% of the time]",
+        "lastMove": "e8c8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-d6-bxc6-be7-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/p1p1bppp/2pp1n2/8/2B1P3/2N5/PPP2PPP/R1BQK2R w KQkq - 4 8",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 d6 5. Nxc6 bxc6 6. Nc3 Be7 7. Bc4 Nf6 8. **O-O** [Black plays Nf6 here 100% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-qf6-nge7-bb6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k2r/ppppnppp/1bn2q2/1B6/3NP3/2P1B3/PP3PPP/RN1QK2R w KQkq - 3 8",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 Nge7 7. Bb5 Bb6 8. **O-O** [Black plays Bb6 here 17% of the time]",
+        "lastMove": "c5b6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-qf6-nge7-a6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k2r/1pppnppp/p1n2q2/1Bb5/3NP3/2P1B3/PP3PPP/RN1QK2R w KQkq - 0 8",
+        "answer": "Bxc6",
+        "answerUci": "b5c6",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 Nge7 7. Bb5 a6 8. **Bxc6** [Black plays a6 here 16% of the time]",
+        "lastMove": "a7a6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nxd4-nf6-qe7-ng8",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kbnr/ppppqppp/8/4P3/3Q4/8/PPP1BPPP/RNB1K2R w KQkq - 3 8",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 Nf6 6. e5 Qe7 7. Be2 Ng8 8. **O-O** [Black plays Ng8 here 78% of the time]",
+        "lastMove": "f6g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-qf6-d6-nge7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k2r/ppp1nppp/2np1q2/2b5/2BNP3/2P1B3/PP3PPP/RN1QK2R w KQkq - 2 8",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 d6 7. Bc4 Nge7 8. **O-O** [Black plays Nge7 here 100% of the time]",
+        "lastMove": "g8e7"
       },
       "tags": [
         "chess::line"
@@ -868,7 +1460,135 @@
         "answerUci": "e4e5",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Nxd4 6. Bxd4 Bxd4 7. Qxd4 Nf6 8. **e5** [Black plays Nf6 here 27% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Nxd4 6. Bxd4 Bxd4 7. Qxd4 Nf6 8. **e5** [Black plays Nf6 here 31% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-nxe5-dxe5-kxd8-f6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bk1bnr/ppp3pp/5p2/4p3/2B1P3/8/PPP2PPP/RNB1K2R w KQ - 0 8",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 Nxe5 5. Nxe5 dxe5 6. Qxd8+ Kxd8 7. Bc4 f6 8. **Nc3** [Black plays f6 here 61% of the time]",
+        "lastMove": "f7f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nf6-bxc6-nd5-bb4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/p1pp1ppp/2p5/3nP3/1bP5/8/PP3PPP/RNBQKB1R w KQkq - 1 8",
+        "answer": "Bd2",
+        "answerUci": "c1d2",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nf6 5. Nxc6 bxc6 6. e5 Nd5 7. c4 Bb4+ 8. **Bd2** [Black plays Bb4+ here 15% of the time]",
+        "lastMove": "f8b4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nxd4-b6-bb7-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkb1r/pbpp1ppp/1p3n2/8/3QPB2/2N5/PPP2PPP/R3KB1R w KQkq - 4 8",
+        "answer": "O-O-O",
+        "answerUci": "e1c1",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 b6 6. Nc3 Bb7 7. Bf4 Nf6 8. **O-O-O** [Black plays Nf6 here 64% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-qf6-nxd4-bb4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppp1ppp/5q2/8/1b1PP3/4B3/PP3PPP/RN1QKB1R w KQkq - 1 8",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 Nxd4 7. cxd4 Bb4+ 8. **Nc3** [Black plays Bb4+ here 100% of the time]",
+        "lastMove": "c5b4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-qf6-bb6-nge7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k2r/ppppnppp/1bn2q2/8/2BNP3/2P1B3/PP3PPP/RN1QK2R w KQkq - 3 8",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 Bb6 7. Bc4 Nge7 8. **O-O** [Black plays Nge7 here 100% of the time]",
+        "lastMove": "g8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nxd4-b6-bc5-qf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/p1pp1pQp/1p3q2/2b5/4P3/2N5/PPP2PPP/R1B1KB1R w KQkq - 1 8",
+        "answer": "Qxf6",
+        "answerUci": "g7f6",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 b6 6. Nc3 Bc5 7. Qxg7 Qf6 8. **Qxf6** [Black plays Qf6 here 100% of the time]",
+        "lastMove": "d8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nxd4-qf6-qc6-bc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppp1ppp/2q5/2b1P3/3Q4/2N5/PPP2PPP/R1B1KB1R w KQkq - 3 8",
+        "answer": "Qg4",
+        "answerUci": "d4g4",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 Qf6 6. e5 Qc6 7. Nc3 Bc5 8. **Qg4** [Black plays Bc5 here 100% of the time]",
+        "lastMove": "f8c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-qf6-bc5-dxc6-nxf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k2r/ppp2ppp/2p2n2/2b5/4P3/8/PPP2PPP/RNB1KB1R w KQkq - 0 8",
+        "answer": "Bd3",
+        "answerUci": "f1d3",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. Nxc6 Bc5 6. Qf3 dxc6 7. Qxf6 Nxf6 8. **Bd3** [Black plays Nxf6 here 100% of the time]",
         "lastMove": "g8f6"
       },
       "tags": [
@@ -884,7 +1604,23 @@
         "answerUci": "c4e6",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 Nxe5 5. Nxe5 dxe5 6. Qxd8+ Kxd8 7. Bc4 Be6 8. **Bxe6** [Black plays Be6 here 27% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 Nxe5 5. Nxe5 dxe5 6. Qxd8+ Kxd8 7. Bc4 Be6 8. **Bxe6** [Black plays Be6 here 25% of the time]",
+        "lastMove": "c8e6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-qf6-dxc6-bc5-be6",
+      "model": "chess",
+      "fields": {
+        "fen": "r3k1nr/ppp2ppp/2p1bq2/2b5/4P3/2N5/PPP1QPPP/R1B1KB1R w KQkq - 4 8",
+        "answer": "Be3",
+        "answerUci": "c1e3",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. Nxc6 dxc6 6. Nc3 Bc5 7. Qe2 Be6 8. **Be3** [Black plays Be6 here 52% of the time]",
         "lastMove": "c8e6"
       },
       "tags": [
@@ -908,6 +1644,70 @@
       ]
     },
     {
+      "key": "l-e5-nc6-exd4-qf6-qxc6-bb4-bxc3-qxe4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppp1ppp/8/8/4q3/2B5/PPP2PPP/R2QKB1R w KQkq - 0 9",
+        "answer": "Qe2",
+        "answerUci": "d1e2",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. Nxc6 Qxc6 6. Nc3 Bb4 7. Bd2 Bxc3 8. Bxc3 Qxe4+ 9. **Qe2** [Black plays Qxe4+ here 100% of the time]",
+        "lastMove": "c6e4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nxd4-qf6-qb6-axb6-bb4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/1ppp1ppp/1p6/4P3/1b6/2N5/PPP2PPP/R1B1KB1R w KQkq - 2 9",
+        "answer": "Bd2",
+        "answerUci": "c1d2",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 Qf6 6. e5 Qb6 7. Qxb6 axb6 8. Nc3 Bb4 9. **Bd2** [Black plays Bb4 here 70% of the time]",
+        "lastMove": "f8b4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nf6-bxc6-qe7-nd5-nb6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kb1r/p1ppqppp/1np5/4P3/2P5/8/PP2QPPP/RNB1KB1R w KQkq - 1 9",
+        "answer": "b3",
+        "answerUci": "b2b3",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nf6 5. Nxc6 bxc6 6. e5 Qe7 7. Qe2 Nd5 8. c4 Nb6 9. **b3** [Black plays Nb6 here 39% of the time]",
+        "lastMove": "d5b6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nf6-bxc6-nd5-nb6-bc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/p1pp1ppp/1np5/2b1P3/2P5/3B4/PP3PPP/RNBQK2R w KQkq - 3 9",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nf6 5. Nxc6 bxc6 6. e5 Nd5 7. c4 Nb6 8. Bd3 Bc5 9. **O-O** [Black plays Bc5 here 41% of the time]",
+        "lastMove": "f8c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e5-nc6-exd4-bc5-nxd4-bxd4-qf6-qb6",
       "model": "chess",
       "fields": {
@@ -916,7 +1716,7 @@
         "answerUci": "d4b6",
         "orientation": "white",
         "prompt": "You are White in the Scotch Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Nxd4 6. Bxd4 Bxd4 7. Qxd4 Qf6 8. e5 Qb6 9. **Qxb6** [Black plays Qb6 here 100% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Nxd4 6. Bxd4 Bxd4 7. Qxd4 Qf6 8. e5 Qb6 9. **Qxb6** [Black plays Qb6 here 63% of the time]",
         "lastMove": "f6b6"
       },
       "tags": [
@@ -934,6 +1734,198 @@
         "prompt": "You are White in the Scotch Game. What is the book move?",
         "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Nxd4 6. Bxd4 Bxd4 7. Qxd4 Nf6 8. e5 Qe7 9. **Be2** [Black plays Qe7 here 100% of the time]",
         "lastMove": "d8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-nxe5-dxe5-kxd8-f6-c6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bk1bnr/pp4pp/2p2p2/4p3/2B1P3/2N5/PPP2PPP/R1B1K2R w KQ - 0 9",
+        "answer": "Be3",
+        "answerUci": "c1e3",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 Nxe5 5. Nxe5 dxe5 6. Qxd8+ Kxd8 7. Bc4 f6 8. Nc3 c6 9. **Be3** [Black plays c6 here 100% of the time]",
+        "lastMove": "c7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nf6-bxc6-nd5-bb4-bxd2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/p1pp1ppp/2p5/3nP3/2P5/8/PP1b1PPP/RN1QKB1R w KQkq - 0 9",
+        "answer": "Qxd2",
+        "answerUci": "d1d2",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nf6 5. Nxc6 bxc6 6. e5 Nd5 7. c4 Bb4+ 8. Bd2 Bxd2+ 9. **Qxd2** [Black plays Bxd2+ here 100% of the time]",
+        "lastMove": "b4d2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-qf6-d6-nge7-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b2rk1/ppp1nppp/2np1q2/2b5/2BNP3/2P1B3/PP3PPP/RN1Q1RK1 w - - 4 9",
+        "answer": "Nxc6",
+        "answerUci": "d4c6",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 d6 7. Bc4 Nge7 8. O-O O-O 9. **Nxc6** [Black plays O-O here 74% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-bg4-bxd6-qe7-ooo-bxf3",
+      "model": "chess",
+      "fields": {
+        "fen": "2kr2nr/ppp1qppp/2nb4/8/4P3/2N2b2/PPPBBPPP/R2QK2R w KQ - 0 9",
+        "answer": "Bxf3",
+        "answerUci": "e2f3",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 Bg4 5. exd6 Bxd6 6. Be2 Qe7 7. Nc3 O-O-O 8. Bd2 Bxf3 9. **Bxf3** [Black plays Bxf3 here 32% of the time]",
+        "lastMove": "g4f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-nxd4-bxd4-qf6-qe6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppp1ppp/4q3/4P3/3Q4/8/PPP2PPP/RN2KB1R w KQkq - 1 9",
+        "answer": "Bc4",
+        "answerUci": "f1c4",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Nxd4 6. Bxd4 Bxd4 7. Qxd4 Qf6 8. e5 Qe6 9. **Bc4** [Black plays Qe6 here 22% of the time]",
+        "lastMove": "f6e6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-nxe5-dxe5-kxd8-be6-fxe6",
+      "model": "chess",
+      "fields": {
+        "fen": "r2k1bnr/ppp3pp/4p3/4p3/4P3/8/PPP2PPP/RNB1K2R w KQ - 0 9",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 d6 4. dxe5 Nxe5 5. Nxe5 dxe5 6. Qxd8+ Kxd8 7. Bc4 Be6 8. Bxe6 fxe6 9. **Nc3** [Black plays fxe6 here 100% of the time]",
+        "lastMove": "f7e6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nf6-bxc6-qe7-nd5-ba6-g6",
+      "model": "chess",
+      "fields": {
+        "fen": "r3kb1r/p1ppqp1p/b1p3p1/3nP3/2P5/1P6/P3QPPP/RNB1KB1R w KQkq - 0 10",
+        "answer": "Bb2",
+        "answerUci": "c1b2",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nf6 5. Nxc6 bxc6 6. e5 Qe7 7. Qe2 Nd5 8. c4 Ba6 9. b3 g6 10. **Bb2** [Black plays g6 here 100% of the time]",
+        "lastMove": "g7g6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-qf6-qxc6-bb4-bxc3-qxe4-qxe2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppp1ppp/8/8/8/2B5/PPP1qPPP/R3KB1R w KQkq - 0 10",
+        "answer": "Bxe2",
+        "answerUci": "f1e2",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Qf6 5. Nxc6 Qxc6 6. Nc3 Bb4 7. Bd2 Bxc3 8. Bxc3 Qxe4+ 9. Qe2 Qxe2+ 10. **Bxe2** [Black plays Qxe2+ here 100% of the time]",
+        "lastMove": "e4e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-nxd4-qf6-qb6-axb6-bb4-ne7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k2r/1pppnppp/1p6/4P3/1b6/2N5/PPPB1PPP/R3KB1R w KQkq - 4 10",
+        "answer": "a3",
+        "answerUci": "a2a3",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Nxd4 5. Qxd4 Qf6 6. e5 Qb6 7. Qxb6 axb6 8. Nc3 Bb4 9. Bd2 Ne7 10. **a3** [Black plays Ne7 here 100% of the time]",
+        "lastMove": "g8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-nxd4-bxd4-qf6-qb6-axb6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/1ppp1ppp/1p6/4P3/8/8/PPP2PPP/RN2KB1R w KQkq - 0 10",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Nxd4 6. Bxd4 Bxd4 7. Qxd4 Qf6 8. e5 Qb6 9. Qxb6 axb6 10. **Nc3** [Black plays axb6 here 100% of the time]",
+        "lastMove": "a7b6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-qf6-d6-nge7-oo-nxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b2rk1/ppp2ppp/2np1q2/2b5/2B1P3/2P1B3/PP3PPP/RN1Q1RK1 w - - 0 10",
+        "answer": "Bxc5",
+        "answerUci": "e3c5",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Qf6 6. c3 d6 7. Bc4 Nge7 8. O-O O-O 9. Nxc6 Nxc6 10. **Bxc5** [Black plays Nxc6 here 100% of the time]",
+        "lastMove": "e7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-bc5-nxd4-bxd4-nf6-qe7-ng8",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/ppppqppp/8/4P3/3Q4/8/PPP1BPPP/RN2K2R w KQkq - 3 10",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. Nxd4 Bc5 5. Be3 Nxd4 6. Bxd4 Bxd4 7. Qxd4 Nf6 8. e5 Qe7 9. Be2 Ng8 10. **Nc3** [Black plays Ng8 here 80% of the time]",
+        "lastMove": "f6g8"
       },
       "tags": [
         "chess::line"

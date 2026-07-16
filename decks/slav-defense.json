@@ -1,8 +1,8 @@
 {
   "key": "slav-defense",
-  "version": 3,
+  "version": 4,
   "name": "The Slav Defense as Black",
-  "description": "A Black repertoire for the Slav Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 29 positions.",
+  "description": "A Black repertoire for the Slav Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 5,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 89 positions.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -53,7 +53,7 @@
         "answerUci": "d5c4",
         "orientation": "black",
         "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nc3 **dxc4** (Slav Defense, D10) [White plays Nc3 here 56% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. Nc3 **dxc4** (Slav Defense, D10) [White plays Nc3 here 55% of the time]",
         "lastMove": "b1c3"
       },
       "tags": [
@@ -117,7 +117,7 @@
         "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nc3 dxc4 4. a4 **Nf6** [White plays a4 here 39% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. Nc3 dxc4 4. a4 **Nf6** [White plays a4 here 37% of the time]",
         "lastMove": "a2a4"
       },
       "tags": [
@@ -133,7 +133,7 @@
         "answerUci": "b7b5",
         "orientation": "black",
         "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nc3 dxc4 4. e4 **b5** [White plays e4 here 36% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. Nc3 dxc4 4. e4 **b5** [White plays e4 here 35% of the time]",
         "lastMove": "e2e4"
       },
       "tags": [
@@ -149,7 +149,7 @@
         "answerUci": "d5c4",
         "orientation": "black",
         "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 **dxc4** (Two Knights Attack, D15) [White plays Nc3 here 62% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 **dxc4** (Two Knights Attack, D15) [White plays Nc3 here 56% of the time]",
         "lastMove": "b1c3"
       },
       "tags": [
@@ -165,7 +165,7 @@
         "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nc3 **Nf6** [White plays Nc3 here 71% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nc3 **Nf6** [White plays Nc3 here 69% of the time]",
         "lastMove": "b1c3"
       },
       "tags": [
@@ -181,8 +181,24 @@
         "answerUci": "b7b5",
         "orientation": "black",
         "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nc3 dxc4 4. e3 **b5** [White plays e3 here 13% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. Nc3 dxc4 4. e3 **b5** [White plays e3 here 12% of the time]",
         "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/2p5/8/2pP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 1 4",
+        "answer": "b5",
+        "answerUci": "b7b5",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nc3 dxc4 4. Nf3 **b5** [White plays Nf3 here 11% of the time]",
+        "lastMove": "g1f3"
       },
       "tags": [
         "chess::line"
@@ -197,7 +213,7 @@
         "answerUci": "c8f5",
         "orientation": "black",
         "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. e3 Nf6 4. Nc3 **Bf5** [White plays Nc3 here 52% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. e3 Nf6 4. Nc3 **Bf5** [White plays Nc3 here 46% of the time]",
         "lastMove": "b1c3"
       },
       "tags": [
@@ -213,24 +229,8 @@
         "answerUci": "c8g4",
         "orientation": "black",
         "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. g3 **Bg4** [White plays g3 here 15% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. g3 **Bg4** [White plays g3 here 16% of the time]",
         "lastMove": "g2g3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-cxd5-nf3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp2pppp/8/3p4/3P4/5N2/PP2PPPP/RNBQKB1R b KQkq - 1 4",
-        "answer": "Nc6",
-        "answerUci": "b8c6",
-        "orientation": "black",
-        "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nf3 **Nc6** [White plays Nf3 here 14% of the time]",
-        "lastMove": "g1f3"
       },
       "tags": [
         "chess::line"
@@ -245,8 +245,24 @@
         "answerUci": "c8g4",
         "orientation": "black",
         "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 **Bg4** (Pin Defense, D11) [White plays e3 here 9% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 **Bg4** (Pin Defense, D11) [White plays e3 here 11% of the time]",
         "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/8/3p4/3P4/5N2/PP2PPPP/RNBQKB1R b KQkq - 1 4",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nf3 **Nc6** [White plays Nf3 here 15% of the time]",
+        "lastMove": "g1f3"
       },
       "tags": [
         "chess::line"
@@ -277,8 +293,104 @@
         "answerUci": "c6d5",
         "orientation": "black",
         "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. cxd5 **cxd5** (Exchange Variation, D13) [White plays cxd5 here 5% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. cxd5 **cxd5** (Exchange Variation, D13) [White plays cxd5 here 7% of the time]",
         "lastMove": "c4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/3p2B1/2PP4/5N2/PP2PPPP/RN1QKB1R b KQkq - 3 4",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Bg5 **e6** [White plays Bg5 here 4% of the time]",
+        "lastMove": "c1g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-e3-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/3P4/3P4/4P3/PP3PPP/RNBQKBNR b KQkq - 0 4",
+        "answer": "cxd5",
+        "answerUci": "c6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. e3 Nf6 4. cxd5 **cxd5** [White plays cxd5 here 7% of the time]",
+        "lastMove": "c4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-e3-a3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/P3P3/1P3PPP/RNBQKBNR b KQkq - 0 4",
+        "answer": "Bf5",
+        "answerUci": "c8f5",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. e3 Nf6 4. a3 **Bf5** [White plays a3 here 4% of the time]",
+        "lastMove": "a2a3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-a4-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/8/P1pPP3/2N5/1P3PPP/R1BQKBNR b KQkq - 0 5",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nc3 dxc4 4. a4 Nf6 5. e4 **e6** [White plays e4 here 69% of the time]",
+        "lastMove": "e2e4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-a4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/p3pppp/2p5/1p6/P1pPP3/2N5/1P3PPP/R1BQKBNR b KQkq - 0 5",
+        "answer": "Bd7",
+        "answerUci": "c8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nc3 dxc4 4. e4 b5 5. a4 **Bd7** [White plays a4 here 63% of the time]",
+        "lastMove": "a2a4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e3-a4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/p3pppp/2p5/1p6/P1pP4/2N1P3/1P3PPP/R1BQKBNR b KQkq - 0 5",
+        "answer": "b4",
+        "answerUci": "b5b4",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nc3 dxc4 4. e3 b5 5. a4 **b4** [White plays a4 here 93% of the time]",
+        "lastMove": "a2a4"
       },
       "tags": [
         "chess::line"
@@ -293,8 +405,40 @@
         "answerUci": "c8f5",
         "orientation": "black",
         "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 **Bf5** (Czech Variation, D17) [White plays a4 here 63% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 **Bf5** (Czech Variation, D17) [White plays a4 here 56% of the time]",
         "lastMove": "a2a4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-a4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/p3pppp/2p5/1p6/P1pP4/2N2N2/1P2PPPP/R1BQKB1R b KQkq - 0 5",
+        "answer": "b4",
+        "answerUci": "b5b4",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nc3 dxc4 4. Nf3 b5 5. a4 **b4** [White plays a4 here 79% of the time]",
+        "lastMove": "a2a4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/p3pppp/2p5/1p6/2pPP3/2N2N2/PP3PPP/R1BQKB1R b KQkq - 1 5",
+        "answer": "Bb7",
+        "answerUci": "c8b7",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nc3 dxc4 4. e4 b5 5. Nf3 **Bb7** [White plays Nf3 here 16% of the time]",
+        "lastMove": "g1f3"
       },
       "tags": [
         "chess::line"
@@ -309,7 +453,7 @@
         "answerUci": "b7b5",
         "orientation": "black",
         "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. e4 **b5** [White plays e4 here 37% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. e4 **b5** [White plays e4 here 27% of the time]",
         "lastMove": "e2e4"
       },
       "tags": [
@@ -325,8 +469,24 @@
         "answerUci": "e7e6",
         "orientation": "black",
         "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. g3 Bg4 5. Bg2 **e6** [White plays Bg2 here 100% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. g3 Bg4 5. Bg2 **e6** [White plays Bg2 here 85% of the time]",
         "lastMove": "f1g2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-a3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/p3pppp/2p5/1p6/2pPP3/P1N5/1P3PPP/R1BQKBNR b KQkq - 0 5",
+        "answer": "Bb7",
+        "answerUci": "c8b7",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nc3 dxc4 4. e4 b5 5. a3 **Bb7** [White plays a3 here 12% of the time]",
+        "lastMove": "a2a3"
       },
       "tags": [
         "chess::line"
@@ -341,7 +501,7 @@
         "answerUci": "e7e6",
         "orientation": "black",
         "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. e3 Nf6 4. Nc3 Bf5 5. Nf3 **e6** (Schallopp Defense, D12) [White plays Nf3 here 71% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. e3 Nf6 4. Nc3 Bf5 5. Nf3 **e6** (Schallopp Defense, D12) [White plays Nf3 here 62% of the time]",
         "lastMove": "g1f3"
       },
       "tags": [
@@ -357,7 +517,7 @@
         "answerUci": "b8c6",
         "orientation": "black",
         "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nc3 Nf6 5. Bf4 **Nc6** [White plays Bf4 here 26% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nc3 Nf6 5. Bf4 **Nc6** [White plays Bf4 here 24% of the time]",
         "lastMove": "c1f4"
       },
       "tags": [
@@ -381,6 +541,22 @@
       ]
     },
     {
+      "key": "l-d4-c4-cxd5-nf3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp2pppp/2n5/3p4/3P4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 3 5",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nf3 Nc6 5. Nc3 **Nf6** [White plays Nc3 here 68% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-d4-c4-nf3-cxd5-nc3",
       "model": "chess",
       "fields": {
@@ -389,7 +565,7 @@
         "answerUci": "b8c6",
         "orientation": "black",
         "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. cxd5 cxd5 5. Nc3 **Nc6** [White plays Nc3 here 100% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. cxd5 cxd5 5. Nc3 **Nc6** [White plays Nc3 here 86% of the time]",
         "lastMove": "b1c3"
       },
       "tags": [
@@ -397,16 +573,48 @@
       ]
     },
     {
-      "key": "l-d4-c4-e3-nc3-cxd5",
+      "key": "l-d4-c4-cxd5-bf4-e3",
       "model": "chess",
       "fields": {
-        "fen": "rn1qkb1r/pp2pppp/2p2n2/3P1b2/3P4/2N1P3/PP3PPP/R1BQKBNR b KQkq - 0 5",
-        "answer": "cxd5",
-        "answerUci": "c6d5",
+        "fen": "r1bqkbnr/pp2pppp/2n5/3p4/3P1B2/4P3/PP3PPP/RN1QKBNR b KQkq - 0 5",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. e3 Nf6 4. Nc3 Bf5 5. cxd5 **cxd5** [White plays cxd5 here 18% of the time]",
-        "lastMove": "c4d5"
+        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Bf4 Nc6 5. e3 **Nf6** [White plays e3 here 69% of the time]",
+        "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/8/2pP4/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 0 5",
+        "answer": "b5",
+        "answerUci": "b7b5",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. e3 **b5** [White plays e3 here 8% of the time]",
+        "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-e3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2p2n2/3p4/2PP2b1/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 2 5",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 Bg4 5. Nc3 **e6** [White plays Nc3 here 39% of the time]",
+        "lastMove": "b1c3"
       },
       "tags": [
         "chess::line"
@@ -429,6 +637,198 @@
       ]
     },
     {
+      "key": "l-d4-c4-nf3-e3-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2p2n2/3p4/2PP2b1/4PN2/PP2BPPP/RNBQK2R b KQkq - 2 5",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 Bg4 5. Be2 **e6** [White plays Be2 here 29% of the time]",
+        "lastMove": "f1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-e3-nc3-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2p2n2/3P1b2/3P4/2N1P3/PP3PPP/R1BQKBNR b KQkq - 0 5",
+        "answer": "cxd5",
+        "answerUci": "c6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. e3 Nf6 4. Nc3 Bf5 5. cxd5 **cxd5** [White plays cxd5 here 15% of the time]",
+        "lastMove": "c4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-bg5-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/2p1pn2/3p2B1/2PP4/4PN2/PP3PPP/RN1QKB1R b KQkq - 0 5",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Bg5 e6 5. e3 **Be7** [White plays e3 here 65% of the time]",
+        "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-e3-nc3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2p2n2/3p1b2/2PP4/2NBP3/PP3PPP/R1BQK1NR b KQkq - 4 5",
+        "answer": "Bxd3",
+        "answerUci": "f5d3",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. e3 Nf6 4. Nc3 Bf5 5. Bd3 **Bxd3** [White plays Bd3 here 14% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nf3-bf4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp2pppp/2n5/3p4/3P1B2/5N2/PP2PPPP/RN1QKB1R b KQkq - 3 5",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nf3 Nc6 5. Bf4 **Nf6** [White plays Bf4 here 21% of the time]",
+        "lastMove": "c1f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-e3-cxd5-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/5n2/3p4/3P4/2N1P3/PP3PPP/R1BQKBNR b KQkq - 1 5",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. e3 Nf6 4. cxd5 cxd5 5. Nc3 **Nc6** [White plays Nc3 here 67% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-bf4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp2pppp/2n5/3p4/3P1B2/2N5/PP2PPPP/R2QKBNR b KQkq - 3 5",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Bf4 Nc6 5. Nc3 **Nf6** [White plays Nc3 here 21% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-bg5-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/2p1pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 1 5",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Bg5 e6 5. Nc3 **Be7** [White plays Nc3 here 35% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-e3-h3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2p2n2/3p4/2PP2b1/4PN1P/PP3PP1/RNBQKB1R b KQkq - 0 5",
+        "answer": "Bh5",
+        "answerUci": "g4h5",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 Bg4 5. h3 **Bh5** [White plays h3 here 12% of the time]",
+        "lastMove": "h2h3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-e3-nbd2",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2p2n2/3p4/2PP2b1/4PN2/PP1N1PPP/R1BQKB1R b KQkq - 2 5",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 Bg4 5. Nbd2 **e6** [White plays Nbd2 here 10% of the time]",
+        "lastMove": "b1d2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-cxd5-bf4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/5n2/3p4/3P1B2/5N2/PP2PPPP/RN1QKB1R b KQkq - 1 5",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. cxd5 cxd5 5. Bf4 **Nc6** [White plays Bf4 here 8% of the time]",
+        "lastMove": "c1f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-a4-axb5",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/p2bpppp/2p5/1P6/2pPP3/2N5/1P3PPP/R1BQKBNR b KQkq - 0 6",
+        "answer": "cxb5",
+        "answerUci": "c6b5",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nc3 dxc4 4. e4 b5 5. a4 Bd7 6. axb5 **cxb5** [White plays axb5 here 93% of the time]",
+        "lastMove": "a4b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-d4-c4-nf3-nc3-a4-e3",
       "model": "chess",
       "fields": {
@@ -437,8 +837,136 @@
         "answerUci": "e7e6",
         "orientation": "black",
         "prompt": "You are Black in the Slav Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. e3 **e6** [White plays e3 here 100% of the time]",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. e3 **e6** [White plays e3 here 62% of the time]",
         "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-g3-bg2-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp3ppp/2p1pn2/3p4/2PP2b1/5NP1/PP2PPBP/RNBQ1RK1 b kq - 1 6",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. g3 Bg4 5. Bg2 e6 6. O-O **Be7** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-bf4-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp2pppp/2n2n2/3p4/3P1B2/2N1P3/PP3PPP/R2QKBNR b KQkq - 0 6",
+        "answer": "a6",
+        "answerUci": "a7a6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nc3 Nf6 5. Bf4 Nc6 6. e3 **a6** [White plays e3 here 93% of the time]",
+        "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-bg5-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/4pn2/3p2B1/3P4/2N1P3/PP3PPP/R2QKBNR b KQkq - 0 6",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nc3 Nf6 5. Bg5 e6 6. e3 **Be7** [White plays e3 here 72% of the time]",
+        "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-e4-e5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/p3pppp/2p2n2/1p2P3/2pP4/2N2N2/PP3PPP/R1BQKB1R b KQkq - 0 6",
+        "answer": "Nd5",
+        "answerUci": "f6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. e4 b5 6. e5 **Nd5** [White plays e5 here 44% of the time]",
+        "lastMove": "e4e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-a4-ne5",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2p2n2/4Nb2/P1pP4/2N5/1P2PPPP/R1BQKB1R b KQkq - 2 6",
+        "answer": "Nbd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. Ne5 **Nbd7** [White plays Ne5 here 20% of the time]",
+        "lastMove": "f3e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-e4-a4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/p3pppp/2p2n2/1p6/P1pPP3/2N2N2/1P3PPP/R1BQKB1R b KQkq - 0 6",
+        "answer": "b4",
+        "answerUci": "b5b4",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. e4 b5 6. a4 **b4** [White plays a4 here 37% of the time]",
+        "lastMove": "a2a4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-e3-nc3-nf3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp3ppp/2p1pn2/3p1b2/2PP4/2NBPN2/PP3PPP/R1BQK2R b KQkq - 1 6",
+        "answer": "Bxd3",
+        "answerUci": "f5d3",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. e3 Nf6 4. Nc3 Bf5 5. Nf3 e6 6. Bd3 **Bxd3** [White plays Bd3 here 47% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-e3-a4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/p3pppp/2p2n2/1p6/P1pP4/2N1PN2/1P3PPP/R1BQKB1R b KQkq - 0 6",
+        "answer": "b4",
+        "answerUci": "b5b4",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. e3 b5 6. a4 **b4** [White plays a4 here 100% of the time]",
+        "lastMove": "a2a4"
       },
       "tags": [
         "chess::line"
@@ -461,6 +989,230 @@
       ]
     },
     {
+      "key": "l-d4-c4-nf3-nc3-a4-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2p2n2/5bB1/P1pP4/2N2N2/1P2PPPP/R2QKB1R b KQkq - 2 6",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. Bg5 **e6** [White plays Bg5 here 12% of the time]",
+        "lastMove": "c1g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-e3-nc3-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp3ppp/2p1pn2/3p4/2PP2b1/2N1PN2/PP2BPPP/R1BQK2R b KQkq - 1 6",
+        "answer": "Nbd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 Bg4 5. Nc3 e6 6. Be2 **Nbd7** [White plays Be2 here 70% of the time]",
+        "lastMove": "f1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-cxd5-nc3-bf4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp2pppp/2n2n2/3p4/3P1B2/2N2N2/PP2PPPP/R2QKB1R b KQkq - 3 6",
+        "answer": "Bf5",
+        "answerUci": "c8f5",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. cxd5 cxd5 5. Nc3 Nc6 6. Bf4 **Bf5** (Symmetrical Line, D14) [White plays Bf4 here 51% of the time]",
+        "lastMove": "c1f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-e3-nc3-cxd5-qb3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/5n2/3p1b2/3P4/1QN1P3/PP3PPP/R1B1KBNR b KQkq - 1 6",
+        "answer": "Qd7",
+        "answerUci": "d8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. e3 Nf6 4. Nc3 Bf5 5. cxd5 cxd5 6. Qb3 **Qd7** [White plays Qb3 here 100% of the time]",
+        "lastMove": "d1b3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-bg5-e3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2bppp/2p1pn2/3p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R b KQkq - 2 6",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Bg5 e6 5. e3 Be7 6. Nc3 **O-O** [White plays Nc3 here 100% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-e3-nc3-bd3-qxd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2p2n2/3p4/2PP4/2NQP3/PP3PPP/R1B1K1NR b KQkq - 0 6",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. e3 Nf6 4. Nc3 Bf5 5. Bd3 Bxd3 6. Qxd3 **e6** [White plays Qxd3 here 100% of the time]",
+        "lastMove": "d1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-bg5-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/4pn2/3p2B1/3P4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 1 6",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nc3 Nf6 5. Bg5 e6 6. Nf3 **Be7** [White plays Nf3 here 24% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-cxd5-nc3-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp2pppp/2n2n2/3p2B1/3P4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 3 6",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. cxd5 cxd5 5. Nc3 Nc6 6. Bg5 **e6** [White plays Bg5 here 36% of the time]",
+        "lastMove": "c1g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-e3-nc3-nf3-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp3ppp/2p1pn2/3P1b2/3P4/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 0 6",
+        "answer": "exd5",
+        "answerUci": "e6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. e3 Nf6 4. Nc3 Bf5 5. Nf3 e6 6. cxd5 **exd5** [White plays cxd5 here 9% of the time]",
+        "lastMove": "c4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-e3-nc3-h3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp3ppp/2p1pn2/3p4/2PP2b1/2N1PN1P/PP3PP1/R1BQKB1R b KQkq - 0 6",
+        "answer": "Bh5",
+        "answerUci": "g4h5",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 Bg4 5. Nc3 e6 6. h3 **Bh5** [White plays h3 here 24% of the time]",
+        "lastMove": "h2h3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-e3-nc3-nf3-qb3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp3ppp/2p1pn2/3p1b2/2PP4/1QN1PN2/PP3PPP/R1B1KB1R b KQkq - 1 6",
+        "answer": "Qb6",
+        "answerUci": "d8b6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. e3 Nf6 4. Nc3 Bf5 5. Nf3 e6 6. Qb3 **Qb6** [White plays Qb3 here 8% of the time]",
+        "lastMove": "d1b3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-cxd5-bf4-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp2pppp/2n2n2/3p4/3P1B2/4PN2/PP3PPP/RN1QKB1R b KQkq - 0 6",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. cxd5 cxd5 5. Bf4 Nc6 6. e3 **Bg4** [White plays e3 here 100% of the time]",
+        "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-cxd5-nc3-g3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp2pppp/2n2n2/3p4/3P4/2N2NP1/PP2PP1P/R1BQKB1R b KQkq - 0 6",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. cxd5 cxd5 5. Nc3 Nc6 6. g3 **Bg4** [White plays g3 here 8% of the time]",
+        "lastMove": "g2g3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-a4-axb5-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/p2bpppp/8/1p6/2pPP3/2N2N2/1P3PPP/R1BQKB1R b KQkq - 1 7",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nc3 dxc4 4. e4 b5 5. a4 Bd7 6. axb5 cxb5 7. Nf3 **e6** [White plays Nf3 here 78% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-d4-c4-nf3-nc3-a4-e3-bxc4",
       "model": "chess",
       "fields": {
@@ -471,6 +1223,214 @@
         "prompt": "You are Black in the Slav Defense. What is the book move?",
         "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. e3 e6 7. Bxc4 **Bb4** [White plays Bxc4 here 100% of the time]",
         "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-bf4-e3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/1p2pppp/p1n2n2/3p4/3P1B2/2NBP3/PP3PPP/R2QK1NR b KQkq - 1 7",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nc3 Nf6 5. Bf4 Nc6 6. e3 a6 7. Bd3 **Bg4** [White plays Bd3 here 89% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-e4-e5-a4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/p3pppp/2p5/1p1nP3/P1pP4/2N2N2/1P3PPP/R1BQKB1R b KQkq - 0 7",
+        "answer": "Nxc3",
+        "answerUci": "d5c3",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. e4 b5 6. e5 Nd5 7. a4 **Nxc3** [White plays a4 here 100% of the time]",
+        "lastMove": "a2a4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-a4-ne5-nxc4",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkb1r/pp1npppp/2p2n2/5b2/P1NP4/2N5/1P2PPPP/R1BQKB1R b KQkq - 0 7",
+        "answer": "Qc7",
+        "answerUci": "d8c7",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. Ne5 Nbd7 7. Nxc4 **Qc7** [White plays Nxc4 here 100% of the time]",
+        "lastMove": "e5c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-bg5-e3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2bppp/4pn2/3p2B1/3P4/2NBP3/PP3PPP/R2QK1NR b KQkq - 2 7",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nc3 Nf6 5. Bg5 e6 6. e3 Be7 7. Bd3 **O-O** [White plays Bd3 here 51% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-bg5-e3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2bppp/4pn2/3p2B1/3P4/2N1PN2/PP3PPP/R2QKB1R b KQkq - 2 7",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nc3 Nf6 5. Bg5 e6 6. e3 Be7 7. Nf3 **O-O** [White plays Nf3 here 49% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-g3-bg2-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkb1r/pp2pppp/2n2n2/3p1b2/3P4/2N2NP1/PP2PPBP/R1BQK2R b KQkq - 4 7",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nc3 Nf6 5. g3 Nc6 6. Bg2 Bf5 7. Nf3 **e6** [White plays Nf3 here 60% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-cxd5-nc3-bg5-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp3ppp/2n1pn2/3p2B1/3P4/2N1PN2/PP3PPP/R2QKB1R b KQkq - 0 7",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. cxd5 cxd5 5. Nc3 Nc6 6. Bg5 e6 7. e3 **Be7** [White plays e3 here 100% of the time]",
+        "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-bg5-e3-nc3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2bppp/2p1pn2/3p2B1/2PP4/2NBPN2/PP3PPP/R2QK2R b KQ - 4 7",
+        "answer": "Nbd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Bg5 e6 5. e3 Be7 6. Nc3 O-O 7. Bd3 **Nbd7** [White plays Bd3 here 68% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-bf4-e3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/1p2pppp/p1n2n2/3p4/3P1B2/2N1PN2/PP3PPP/R2QKB1R b KQkq - 1 7",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nc3 Nf6 5. Bf4 Nc6 6. e3 a6 7. Nf3 **Bg4** [White plays Nf3 here 11% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-cxd5-nc3-g3-bg2-a3",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkb1r/pp2pppp/2n2n2/3p1b2/3P4/P1N3P1/1P2PPBP/R1BQK1NR b KQkq - 0 7",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. cxd5 cxd5 4. Nc3 Nf6 5. g3 Nc6 6. Bg2 Bf5 7. a3 **e6** [White plays a3 here 24% of the time]",
+        "lastMove": "a2a3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-bg5-e3-nc3-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2bppp/2p1pn2/3P2B1/3P4/2N1PN2/PP3PPP/R2QKB1R b KQ - 0 7",
+        "answer": "exd5",
+        "answerUci": "e6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Bg5 e6 5. e3 Be7 6. Nc3 O-O 7. cxd5 **exd5** [White plays cxd5 here 15% of the time]",
+        "lastMove": "c4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-bg5-e3-nc3-qc2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2bppp/2p1pn2/3p2B1/2PP4/2N1PN2/PPQ2PPP/R3KB1R b KQ - 4 7",
+        "answer": "Nbd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Bg5 e6 5. e3 Be7 6. Nc3 O-O 7. Qc2 **Nbd7** [White plays Qc2 here 5% of the time]",
+        "lastMove": "d1c2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-a4-e3-bxc4-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qk2r/pp3ppp/2p1pn2/5b2/PbBP4/2N1PN2/1P3PPP/R1BQ1RK1 b kq - 2 8",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4 5. a4 Bf5 6. e3 e6 7. Bxc4 Bb4 8. O-O **O-O** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
       },
       "tags": [
         "chess::line"

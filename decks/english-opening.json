@@ -1,8 +1,8 @@
 {
   "key": "english-opening",
-  "version": 3,
+  "version": 4,
   "name": "The English Opening as White",
-  "description": "A White repertoire for the English Opening, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
+  "description": "A White repertoire for the English Opening, drilled one position at a time: every card is a position with exactly one book move to find. Built from 5,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -92,22 +92,6 @@
       ]
     },
     {
-      "key": "l-c6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp1ppppp/2p5/8/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
-        "answer": "Nc3",
-        "answerUci": "b1c3",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 c6 2. **Nc3** [Black plays c6 here 7% of the time]",
-        "lastMove": "c7c6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
       "key": "l-d5",
       "model": "chess",
       "fields": {
@@ -118,6 +102,22 @@
         "prompt": "You are White in the English Opening. What is the book move?",
         "extra": "1. c4 d5 2. **cxd5** [Black plays d5 here 7% of the time]",
         "lastMove": "d7d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/2p5/8/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 c6 2. **Nc3** [Black plays c6 here 7% of the time]",
+        "lastMove": "c7c6"
       },
       "tags": [
         "chess::line"
@@ -180,7 +180,7 @@
         "answerUci": "g2g3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 c5 2. Nc3 Nc6 3. **g3** (Fianchetto Variation, A36) [Black plays Nc6 here 56% of the time]",
+        "extra": "1. c4 c5 2. Nc3 Nc6 3. **g3** (Fianchetto Variation, A36) [Black plays Nc6 here 55% of the time]",
         "lastMove": "b8c6"
       },
       "tags": [
@@ -196,7 +196,7 @@
         "answerUci": "c4d5",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e6 2. Nc3 d5 3. **cxd5** [Black plays d5 here 52% of the time]",
+        "extra": "1. c4 e6 2. Nc3 d5 3. **cxd5** [Black plays d5 here 50% of the time]",
         "lastMove": "d7d5"
       },
       "tags": [
@@ -212,7 +212,7 @@
         "answerUci": "c4d5",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 c6 2. Nc3 d5 3. **cxd5** [Black plays d5 here 79% of the time]",
+        "extra": "1. c4 c6 2. Nc3 d5 3. **cxd5** [Black plays d5 here 77% of the time]",
         "lastMove": "d7d5"
       },
       "tags": [
@@ -228,24 +228,8 @@
         "answerUci": "g2g3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 g6 2. Nc3 Bg7 3. **g3** [Black plays Bg7 here 96% of the time]",
+        "extra": "1. c4 g6 2. Nc3 Bg7 3. **g3** [Black plays Bg7 here 94% of the time]",
         "lastMove": "f8g7"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d5-qxd5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnb1kbnr/ppp1pppp/8/3q4/8/8/PP1PPPPP/RNBQKBNR w KQkq - 0 3",
-        "answer": "Nc3",
-        "answerUci": "b1c3",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 d5 2. cxd5 Qxd5 3. **Nc3** [Black plays Qxd5 here 75% of the time]",
-        "lastMove": "d8d5"
       },
       "tags": [
         "chess::line"
@@ -262,6 +246,22 @@
         "prompt": "You are White in the English Opening. What is the book move?",
         "extra": "1. c4 Nf6 2. Nc3 e6 3. **Nf3** [Black plays e6 here 27% of the time]",
         "lastMove": "e7e6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-qxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/ppp1pppp/8/3q4/8/8/PP1PPPPP/RNBQKBNR w KQkq - 0 3",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 d5 2. cxd5 Qxd5 3. **Nc3** [Black plays Qxd5 here 74% of the time]",
+        "lastMove": "d8d5"
       },
       "tags": [
         "chess::line"
@@ -292,7 +292,7 @@
         "answerUci": "g2g3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 Bc5 3. **g3** [Black plays Bc5 here 12% of the time]",
+        "extra": "1. c4 e5 2. Nc3 Bc5 3. **g3** [Black plays Bc5 here 11% of the time]",
         "lastMove": "f8c5"
       },
       "tags": [
@@ -348,6 +348,22 @@
       ]
     },
     {
+      "key": "l-e5-c6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1p1ppp/2p5/4p3/2P5/2N5/PP1PPPPP/R1BQKBNR w KQkq - 0 3",
+        "answer": "g3",
+        "answerUci": "g2g3",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 e5 2. Nc3 c6 3. **g3** [Black plays c6 here 5% of the time]",
+        "lastMove": "c7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-nf6-d5",
       "model": "chess",
       "fields": {
@@ -372,7 +388,7 @@
         "answerUci": "g2g3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 c5 2. Nc3 e6 3. **g3** [Black plays e6 here 12% of the time]",
+        "extra": "1. c4 c5 2. Nc3 e6 3. **g3** [Black plays e6 here 11% of the time]",
         "lastMove": "e7e6"
       },
       "tags": [
@@ -436,7 +452,7 @@
         "answerUci": "g2g3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 c5 2. Nc3 d6 3. **g3** [Black plays d6 here 8% of the time]",
+        "extra": "1. c4 c5 2. Nc3 d6 3. **g3** [Black plays d6 here 9% of the time]",
         "lastMove": "d7d6"
       },
       "tags": [
@@ -464,11 +480,11 @@
       "model": "chess",
       "fields": {
         "fen": "rnbqkbnr/pp1p1ppp/2p1p3/8/2P5/2N5/PP1PPPPP/R1BQKBNR w KQkq - 0 3",
-        "answer": "g3",
-        "answerUci": "g2g3",
+        "answer": "d4",
+        "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e6 2. Nc3 c6 3. **g3** [Black plays c6 here 6% of the time]",
+        "extra": "1. c4 e6 2. Nc3 c6 3. **d4** [Black plays c6 here 6% of the time]",
         "lastMove": "c7c6"
       },
       "tags": [
@@ -516,7 +532,7 @@
         "answerUci": "e2e4",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. **e4** (Anti-Anti-Gr\u00fcnfeld, A15) [Black plays Bg7 here 100% of the time]",
+        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. **e4** (Anti-Anti-Gr\u00fcnfeld, A15) [Black plays Bg7 here 91% of the time]",
         "lastMove": "f8g7"
       },
       "tags": [
@@ -532,7 +548,7 @@
         "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e6 2. Nc3 d5 3. cxd5 exd5 4. **d4** [Black plays exd5 here 100% of the time]",
+        "extra": "1. c4 e6 2. Nc3 d5 3. cxd5 exd5 4. **d4** [Black plays exd5 here 98% of the time]",
         "lastMove": "e6d5"
       },
       "tags": [
@@ -548,7 +564,7 @@
         "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 c6 2. Nc3 d5 3. cxd5 cxd5 4. **d4** [Black plays cxd5 here 100% of the time]",
+        "extra": "1. c4 c6 2. Nc3 d5 3. cxd5 cxd5 4. **d4** [Black plays cxd5 here 99% of the time]",
         "lastMove": "c6d5"
       },
       "tags": [
@@ -560,11 +576,11 @@
       "model": "chess",
       "fields": {
         "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2P5/2N2N2/PP1PPPPP/R1BQKB1R w KQkq - 0 4",
-        "answer": "d4",
-        "answerUci": "d2d4",
+        "answer": "cxd5",
+        "answerUci": "c4d5",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 e6 3. Nf3 d5 4. **d4** [Black plays d5 here 86% of the time]",
+        "extra": "1. c4 Nf6 2. Nc3 e6 3. Nf3 d5 4. **cxd5** [Black plays d5 here 57% of the time]",
         "lastMove": "d7d5"
       },
       "tags": [
@@ -580,7 +596,7 @@
         "answerUci": "g2g3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 d5 2. cxd5 Qxd5 3. Nc3 Qd8 4. **g3** [Black plays Qd8 here 58% of the time]",
+        "extra": "1. c4 d5 2. cxd5 Qxd5 3. Nc3 Qd8 4. **g3** [Black plays Qd8 here 57% of the time]",
         "lastMove": "d5d8"
       },
       "tags": [
@@ -596,7 +612,7 @@
         "answerUci": "f1g2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. **Bg2** [Black plays g6 here 44% of the time]",
+        "extra": "1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. **Bg2** [Black plays g6 here 43% of the time]",
         "lastMove": "g7g6"
       },
       "tags": [
@@ -612,7 +628,7 @@
         "answerUci": "c4d5",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 d5 4. **cxd5** [Black plays d5 here 22% of the time]",
+        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 d5 4. **cxd5** [Black plays d5 here 21% of the time]",
         "lastMove": "d7d5"
       },
       "tags": [
@@ -628,24 +644,8 @@
         "answerUci": "f1g2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 f5 3. g3 Nf6 4. **Bg2** [Black plays Nf6 here 100% of the time]",
+        "extra": "1. c4 e5 2. Nc3 f5 3. g3 Nf6 4. **Bg2** [Black plays Nf6 here 90% of the time]",
         "lastMove": "g8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nf6-bb4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/pppp1ppp/5n2/4p3/1bP5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 1 4",
-        "answer": "Bg2",
-        "answerUci": "f1g2",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 Bb4 4. **Bg2** [Black plays Bb4 here 19% of the time]",
-        "lastMove": "f8b4"
       },
       "tags": [
         "chess::line"
@@ -660,8 +660,24 @@
         "answerUci": "f1g2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 Bc5 4. **Bg2** [Black plays Bc5 here 19% of the time]",
+        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 Bc5 4. **Bg2** [Black plays Bc5 here 18% of the time]",
         "lastMove": "f8c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-bb4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pppp1ppp/5n2/4p3/1bP5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 1 4",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 Bb4 4. **Bg2** [Black plays Bb4 here 18% of the time]",
+        "lastMove": "f8b4"
       },
       "tags": [
         "chess::line"
@@ -676,7 +692,7 @@
         "answerUci": "f1g2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 c6 4. **Bg2** [Black plays c6 here 18% of the time]",
+        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 c6 4. **Bg2** [Black plays c6 here 17% of the time]",
         "lastMove": "c7c6"
       },
       "tags": [
@@ -692,7 +708,7 @@
         "answerUci": "f1g2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 g6 2. Nc3 Bg7 3. g3 Nf6 4. **Bg2** [Black plays Nf6 here 32% of the time]",
+        "extra": "1. c4 g6 2. Nc3 Bg7 3. g3 Nf6 4. **Bg2** [Black plays Nf6 here 29% of the time]",
         "lastMove": "g8f6"
       },
       "tags": [
@@ -708,24 +724,8 @@
         "answerUci": "g2g3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 d5 2. cxd5 Qxd5 3. Nc3 Qa5 4. **g3** [Black plays Qa5 here 32% of the time]",
+        "extra": "1. c4 d5 2. cxd5 Qxd5 3. Nc3 Qa5 4. **g3** [Black plays Qa5 here 29% of the time]",
         "lastMove": "d5a5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-g6-bg7-d6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
-        "answer": "Bg2",
-        "answerUci": "f1g2",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 g6 2. Nc3 Bg7 3. g3 d6 4. **Bg2** [Black plays d6 here 27% of the time]",
-        "lastMove": "d7d6"
       },
       "tags": [
         "chess::line"
@@ -748,15 +748,15 @@
       ]
     },
     {
-      "key": "l-e5-bc5-d6",
+      "key": "l-g6-bg7-d6",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk1nr/ppp2ppp/3p4/2b1p3/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
+        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
         "answer": "Bg2",
         "answerUci": "f1g2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 Bc5 3. g3 d6 4. **Bg2** [Black plays d6 here 42% of the time]",
+        "extra": "1. c4 g6 2. Nc3 Bg7 3. g3 d6 4. **Bg2** [Black plays d6 here 25% of the time]",
         "lastMove": "d7d6"
       },
       "tags": [
@@ -772,7 +772,7 @@
         "answerUci": "g2g3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 d5 3. cxd5 Nxd5 4. **g3** [Black plays Nxd5 here 95% of the time]",
+        "extra": "1. c4 Nf6 2. Nc3 d5 3. cxd5 Nxd5 4. **g3** [Black plays Nxd5 here 89% of the time]",
         "lastMove": "f6d5"
       },
       "tags": [
@@ -780,16 +780,16 @@
       ]
     },
     {
-      "key": "l-e5-bb4-bxc3",
+      "key": "l-e5-bc5-d6",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk1nr/pppp1ppp/8/4p3/2P5/2b3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
-        "answer": "bxc3",
-        "answerUci": "b2c3",
+        "fen": "rnbqk1nr/ppp2ppp/3p4/2b1p3/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 Bb4 3. g3 Bxc3 4. **bxc3** [Black plays Bxc3 here 76% of the time]",
-        "lastMove": "b4c3"
+        "extra": "1. c4 e5 2. Nc3 Bc5 3. g3 d6 4. **Bg2** [Black plays d6 here 38% of the time]",
+        "lastMove": "d7d6"
       },
       "tags": [
         "chess::line"
@@ -804,7 +804,7 @@
         "answerUci": "f1g2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 Nc6 3. g3 Bc5 4. **Bg2** [Black plays Bc5 here 24% of the time]",
+        "extra": "1. c4 e5 2. Nc3 Nc6 3. g3 Bc5 4. **Bg2** [Black plays Bc5 here 23% of the time]",
         "lastMove": "f8c5"
       },
       "tags": [
@@ -812,16 +812,16 @@
       ]
     },
     {
-      "key": "l-nf6-d6-g6",
+      "key": "l-e5-bb4-bxc3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/ppp1pp1p/3p1np1/8/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
-        "answer": "Bg2",
-        "answerUci": "f1g2",
+        "fen": "rnbqk1nr/pppp1ppp/8/4p3/2P5/2b3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
+        "answer": "bxc3",
+        "answerUci": "b2c3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 d6 3. g3 g6 4. **Bg2** [Black plays g6 here 82% of the time]",
-        "lastMove": "g7g6"
+        "extra": "1. c4 e5 2. Nc3 Bb4 3. g3 Bxc3 4. **bxc3** [Black plays Bxc3 here 61% of the time]",
+        "lastMove": "b4c3"
       },
       "tags": [
         "chess::line"
@@ -836,7 +836,7 @@
         "answerUci": "f1g2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 c5 2. Nc3 Nc6 3. g3 d6 4. **Bg2** [Black plays d6 here 15% of the time]",
+        "extra": "1. c4 c5 2. Nc3 Nc6 3. g3 d6 4. **Bg2** [Black plays d6 here 14% of the time]",
         "lastMove": "d7d6"
       },
       "tags": [
@@ -852,24 +852,8 @@
         "answerUci": "f1g2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 c5 2. Nc3 Nc6 3. g3 e6 4. **Bg2** [Black plays e6 here 15% of the time]",
+        "extra": "1. c4 c5 2. Nc3 Nc6 3. g3 e6 4. **Bg2** [Black plays e6 here 14% of the time]",
         "lastMove": "e7e6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-d6-f5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/ppp3pp/3p4/4pp2/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
-        "answer": "Bg2",
-        "answerUci": "f1g2",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 d6 3. g3 f5 4. **Bg2** [Black plays f5 here 29% of the time]",
-        "lastMove": "f7f5"
       },
       "tags": [
         "chess::line"
@@ -884,7 +868,7 @@
         "answerUci": "f1g2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 c5 2. Nc3 g6 3. g3 Bg7 4. **Bg2** [Black plays Bg7 here 100% of the time]",
+        "extra": "1. c4 c5 2. Nc3 g6 3. g3 Bg7 4. **Bg2** [Black plays Bg7 here 97% of the time]",
         "lastMove": "f8g7"
       },
       "tags": [
@@ -892,32 +876,16 @@
       ]
     },
     {
-      "key": "l-e5-d6-nf6",
+      "key": "l-nf6-e6-bb4",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/ppp2ppp/3p1n2/4p3/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 1 4",
-        "answer": "Bg2",
-        "answerUci": "f1g2",
+        "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bP5/2N2N2/PP1PPPPP/R1BQKB1R w KQkq - 2 4",
+        "answer": "g3",
+        "answerUci": "g2g3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 d6 3. g3 Nf6 4. **Bg2** [Black plays Nf6 here 27% of the time]",
-        "lastMove": "g8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-g6-bg7-e6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk1nr/pppp1pbp/4p1p1/8/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
-        "answer": "Bg2",
-        "answerUci": "f1g2",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 g6 2. Nc3 Bg7 3. g3 e6 4. **Bg2** [Black plays e6 here 13% of the time]",
-        "lastMove": "e7e6"
+        "extra": "1. c4 Nf6 2. Nc3 e6 3. Nf3 Bb4 4. **g3** [Black plays Bb4 here 15% of the time]",
+        "lastMove": "f8b4"
       },
       "tags": [
         "chess::line"
@@ -932,7 +900,7 @@
         "answerUci": "f1g2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 Nc6 3. g3 f5 4. **Bg2** [Black plays f5 here 15% of the time]",
+        "extra": "1. c4 e5 2. Nc3 Nc6 3. g3 f5 4. **Bg2** [Black plays f5 here 14% of the time]",
         "lastMove": "f7f5"
       },
       "tags": [
@@ -940,16 +908,16 @@
       ]
     },
     {
-      "key": "l-e6-c6-d5",
+      "key": "l-nf6-d6-g6",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp3ppp/2p1p3/3p4/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
-        "answer": "cxd5",
-        "answerUci": "c4d5",
+        "fen": "rnbqkb1r/ppp1pp1p/3p1np1/8/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e6 2. Nc3 c6 3. g3 d5 4. **cxd5** [Black plays d5 here 100% of the time]",
-        "lastMove": "d7d5"
+        "extra": "1. c4 Nf6 2. Nc3 d6 3. g3 g6 4. **Bg2** [Black plays g6 here 57% of the time]",
+        "lastMove": "g7g6"
       },
       "tags": [
         "chess::line"
@@ -972,80 +940,48 @@
       ]
     },
     {
-      "key": "l-e5-nc6-d6",
+      "key": "l-g6-bg7-e6",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkbnr/ppp2ppp/2np4/4p3/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
+        "fen": "rnbqk1nr/pppp1pbp/4p1p1/8/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
         "answer": "Bg2",
         "answerUci": "f1g2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 Nc6 3. g3 d6 4. **Bg2** [Black plays d6 here 12% of the time]",
-        "lastMove": "d7d6"
+        "extra": "1. c4 g6 2. Nc3 Bg7 3. g3 e6 4. **Bg2** [Black plays e6 here 12% of the time]",
+        "lastMove": "e7e6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-c6-nf6-d5",
+      "key": "l-e5-d6-f5",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/pp2pppp/2p2n2/3p4/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
+        "fen": "rnbqkbnr/ppp3pp/3p4/4pp2/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 e5 2. Nc3 d6 3. g3 f5 4. **Bg2** [Black plays f5 here 22% of the time]",
+        "lastMove": "f7f5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-c6-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp3ppp/2p5/3pp3/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 4",
         "answer": "cxd5",
         "answerUci": "c4d5",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 c6 2. Nc3 Nf6 3. g3 d5 4. **cxd5** [Black plays d5 here 100% of the time]",
+        "extra": "1. c4 e5 2. Nc3 c6 3. g3 d5 4. **cxd5** [Black plays d5 here 41% of the time]",
         "lastMove": "d7d5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e6-b6-bb7",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkbnr/pbpp1ppp/1p2p3/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 1 4",
-        "answer": "e4",
-        "answerUci": "e2e4",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e6 2. Nc3 b6 3. d4 Bb7 4. **e4** [Black plays Bb7 here 90% of the time]",
-        "lastMove": "c8b7"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf6-c5-nc6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkb1r/pp1ppppp/2n2n2/2p5/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 1 4",
-        "answer": "Bg2",
-        "answerUci": "f1g2",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 c5 3. g3 Nc6 4. **Bg2** [Black plays Nc6 here 42% of the time]",
-        "lastMove": "b8c6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-c5-d6-nf6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp2pppp/3p1n2/2p5/2P5/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 1 4",
-        "answer": "Bg2",
-        "answerUci": "f1g2",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 c5 2. Nc3 d6 3. g3 Nf6 4. **Bg2** [Black plays Nf6 here 52% of the time]",
-        "lastMove": "g8f6"
       },
       "tags": [
         "chess::line"
@@ -1060,7 +996,7 @@
         "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. **d4** [Black plays d6 here 100% of the time]",
+        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. **d4** [Black plays d6 here 87% of the time]",
         "lastMove": "d7d6"
       },
       "tags": [
@@ -1076,23 +1012,7 @@
         "answerUci": "c1g5",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e6 2. Nc3 d5 3. cxd5 exd5 4. d4 Nf6 5. **Bg5** [Black plays Nf6 here 72% of the time]",
-        "lastMove": "g8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-c6-d5-cxd5-nf6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp2pppp/5n2/3p4/3P4/2N5/PP2PPPP/R1BQKBNR w KQkq - 1 5",
-        "answer": "Nf3",
-        "answerUci": "g1f3",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 c6 2. Nc3 d5 3. cxd5 cxd5 4. d4 Nf6 5. **Nf3** [Black plays Nf6 here 51% of the time]",
+        "extra": "1. c4 e6 2. Nc3 d5 3. cxd5 exd5 4. d4 Nf6 5. **Bg5** [Black plays Nf6 here 62% of the time]",
         "lastMove": "g8f6"
       },
       "tags": [
@@ -1116,6 +1036,38 @@
       ]
     },
     {
+      "key": "l-c6-d5-cxd5-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/5n2/3p4/3P4/2N5/PP2PPPP/R1BQKBNR w KQkq - 1 5",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 c6 2. Nc3 d5 3. cxd5 cxd5 4. d4 Nf6 5. **Nf3** [Black plays Nf6 here 50% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-e6-d5-exd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp2ppp/5n2/3p4/8/2N2N2/PP1PPPPP/R1BQKB1R w KQkq - 0 5",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 Nf6 2. Nc3 e6 3. Nf3 d5 4. cxd5 exd5 5. **d4** [Black plays exd5 here 84% of the time]",
+        "lastMove": "e6d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e5-nf6-d5-nxd5",
       "model": "chess",
       "fields": {
@@ -1126,38 +1078,6 @@
         "prompt": "You are White in the English Opening. What is the book move?",
         "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 d5 4. cxd5 Nxd5 5. **Bg2** [Black plays Nxd5 here 100% of the time]",
         "lastMove": "f6d5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nf6-c6-d5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp3ppp/2p2n2/3pp3/2P5/2N3P1/PP1PPPBP/R1BQK1NR w KQkq - 0 5",
-        "answer": "cxd5",
-        "answerUci": "c4d5",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 c6 4. Bg2 d5 5. **cxd5** [Black plays d5 here 86% of the time]",
-        "lastMove": "d7d5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e6-d5-exd5-c6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp3ppp/2p5/3p4/3P4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 5",
-        "answer": "Nf3",
-        "answerUci": "g1f3",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e6 2. Nc3 d5 3. cxd5 exd5 4. d4 c6 5. **Nf3** [Black plays c6 here 27% of the time]",
-        "lastMove": "c7c6"
       },
       "tags": [
         "chess::line"
@@ -1180,16 +1100,16 @@
       ]
     },
     {
-      "key": "l-nf6-e6-d5-be7",
+      "key": "l-e6-d5-exd5-c6",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/ppp1bppp/4pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 1 5",
-        "answer": "Bg5",
-        "answerUci": "c1g5",
+        "fen": "rnbqkbnr/pp3ppp/2p5/3p4/3P4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 5",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 e6 3. Nf3 d5 4. d4 Be7 5. **Bg5** [Black plays Be7 here 32% of the time]",
-        "lastMove": "f8e7"
+        "extra": "1. c4 e6 2. Nc3 d5 3. cxd5 exd5 4. d4 c6 5. **Nf3** [Black plays c6 here 24% of the time]",
+        "lastMove": "c7c6"
       },
       "tags": [
         "chess::line"
@@ -1204,7 +1124,7 @@
         "answerUci": "f1g2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 d5 2. cxd5 Qxd5 3. Nc3 Qd8 4. g3 Nf6 5. **Bg2** [Black plays Nf6 here 46% of the time]",
+        "extra": "1. c4 d5 2. cxd5 Qxd5 3. Nc3 Qd8 4. g3 Nf6 5. **Bg2** [Black plays Nf6 here 40% of the time]",
         "lastMove": "g8f6"
       },
       "tags": [
@@ -1212,16 +1132,16 @@
       ]
     },
     {
-      "key": "l-nf6-e6-d5-bb4",
+      "key": "l-e5-nf6-c6-d5",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/ppp2ppp/4pn2/3p4/1bPP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 1 5",
-        "answer": "Bg5",
-        "answerUci": "c1g5",
+        "fen": "rnbqkb1r/pp3ppp/2p2n2/3pp3/2P5/2N3P1/PP1PPPBP/R1BQK1NR w KQkq - 0 5",
+        "answer": "cxd5",
+        "answerUci": "c4d5",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 e6 3. Nf3 d5 4. d4 Bb4 5. **Bg5** [Black plays Bb4 here 29% of the time]",
-        "lastMove": "f8b4"
+        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 c6 4. Bg2 d5 5. **cxd5** [Black plays d5 here 59% of the time]",
+        "lastMove": "d7d5"
       },
       "tags": [
         "chess::line"
@@ -1236,7 +1156,7 @@
         "answerUci": "e2e4",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 g6 2. Nc3 Bg7 3. g3 Nf6 4. Bg2 O-O 5. **e4** [Black plays O-O here 73% of the time]",
+        "extra": "1. c4 g6 2. Nc3 Bg7 3. g3 Nf6 4. Bg2 O-O 5. **e4** [Black plays O-O here 66% of the time]",
         "lastMove": "e8g8"
       },
       "tags": [
@@ -1244,112 +1164,16 @@
       ]
     },
     {
-      "key": "l-e5-f5-nf6-c6",
+      "key": "l-nf6-g6-bg7-oo",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/pp1p2pp/2p2n2/4pp2/2P5/2N3P1/PP1PPPBP/R1BQK1NR w KQkq - 0 5",
-        "answer": "e3",
-        "answerUci": "e2e3",
+        "fen": "rnbq1rk1/ppppppbp/5np1/8/2P1P3/2N2N2/PP1P1PPP/R1BQKB1R w KQ - 1 5",
+        "answer": "d4",
+        "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 f5 3. g3 Nf6 4. Bg2 c6 5. **e3** [Black plays c6 here 52% of the time]",
-        "lastMove": "c7c6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf6-d6-g6-bg7",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2P5/2N3P1/PP1PPPBP/R1BQK1NR w KQkq - 2 5",
-        "answer": "e3",
-        "answerUci": "e2e3",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 d6 3. g3 g6 4. Bg2 Bg7 5. **e3** [Black plays Bg7 here 100% of the time]",
-        "lastMove": "f8g7"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nf6-bb4-bxc3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/pppp1ppp/5n2/4p3/2P5/2b3P1/PP1PPPBP/R1BQK1NR w KQkq - 0 5",
-        "answer": "bxc3",
-        "answerUci": "b2c3",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 Bb4 4. Bg2 Bxc3 5. **bxc3** [Black plays Bxc3 here 46% of the time]",
-        "lastMove": "b4c3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-bc5-d6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/ppp2ppp/2np4/2b1p3/2P5/2N3P1/PP1PPPBP/R1BQK1NR w KQkq - 0 5",
-        "answer": "e3",
-        "answerUci": "e2e3",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 Nc6 3. g3 Bc5 4. Bg2 d6 5. **e3** [Black plays d6 here 83% of the time]",
-        "lastMove": "d7d6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf6-d5-nxd5-nxc3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/ppp1pppp/8/8/8/2n3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 5",
-        "answer": "bxc3",
-        "answerUci": "b2c3",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 d5 3. cxd5 Nxd5 4. g3 Nxc3 5. **bxc3** [Black plays Nxc3 here 69% of the time]",
-        "lastMove": "d5c3"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d5-qxd5-qa5-c6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnb1kbnr/pp2pppp/2p5/q7/8/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 5",
-        "answer": "Bg2",
-        "answerUci": "f1g2",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 d5 2. cxd5 Qxd5 3. Nc3 Qa5 4. g3 c6 5. **Bg2** [Black plays c6 here 47% of the time]",
-        "lastMove": "c7c6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nf6-bc5-d6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/ppp2ppp/3p1n2/2b1p3/2P5/2N3P1/PP1PPPBP/R1BQK1NR w KQkq - 0 5",
-        "answer": "e3",
-        "answerUci": "e2e3",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 Bc5 4. Bg2 d6 5. **e3** [Black plays d6 here 37% of the time]",
-        "lastMove": "d7d6"
+        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 O-O 5. **d4** [Black plays O-O here 13% of the time]",
+        "lastMove": "e8g8"
       },
       "tags": [
         "chess::line"
@@ -1372,15 +1196,47 @@
       ]
     },
     {
-      "key": "l-nf6-e6-d5-c6",
+      "key": "l-e5-nf6-bb4-bxc3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 5",
-        "answer": "Bg5",
-        "answerUci": "c1g5",
+        "fen": "rnbqk2r/pppp1ppp/5n2/4p3/2P5/2b3P1/PP1PPPBP/R1BQK1NR w KQkq - 0 5",
+        "answer": "bxc3",
+        "answerUci": "b2c3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 e6 3. Nf3 d5 4. d4 c6 5. **Bg5** [Black plays c6 here 15% of the time]",
+        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 Bb4 4. Bg2 Bxc3 5. **bxc3** [Black plays Bxc3 here 36% of the time]",
+        "lastMove": "b4c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-d6-g6-bg7",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2P5/2N3P1/PP1PPPBP/R1BQK1NR w KQkq - 2 5",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 Nf6 2. Nc3 d6 3. g3 g6 4. Bg2 Bg7 5. **e3** [Black plays Bg7 here 100% of the time]",
+        "lastMove": "f8g7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-f5-nf6-c6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp1p2pp/2p2n2/4pp2/2P5/2N3P1/PP1PPPBP/R1BQK1NR w KQkq - 0 5",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 e5 2. Nc3 f5 3. g3 Nf6 4. Bg2 c6 5. **e3** [Black plays c6 here 34% of the time]",
         "lastMove": "c7c6"
       },
       "tags": [
@@ -1388,16 +1244,80 @@
       ]
     },
     {
-      "key": "l-e5-f5-nf6-bc5",
+      "key": "l-e5-nc6-bc5-d6",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/pppp2pp/5n2/2b1pp2/2P5/2N3P1/PP1PPPBP/R1BQK1NR w KQkq - 3 5",
+        "fen": "r1bqk1nr/ppp2ppp/2np4/2b1p3/2P5/2N3P1/PP1PPPBP/R1BQK1NR w KQkq - 0 5",
         "answer": "e3",
         "answerUci": "e2e3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 f5 3. g3 Nf6 4. Bg2 Bc5 5. **e3** [Black plays Bc5 here 29% of the time]",
-        "lastMove": "f8c5"
+        "extra": "1. c4 e5 2. Nc3 Nc6 3. g3 Bc5 4. Bg2 d6 5. **e3** [Black plays d6 here 56% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-bb4-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pppp1ppp/5n2/4p3/1bP5/2N3P1/PP1PPPBP/R1BQK1NR w KQ - 3 5",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 Bb4 4. Bg2 O-O 5. **Nf3** [Black plays O-O here 34% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-d5-nxd5-nxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1pppp/8/8/8/2n3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 5",
+        "answer": "bxc3",
+        "answerUci": "b2c3",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 Nf6 2. Nc3 d5 3. cxd5 Nxd5 4. g3 Nxc3 5. **bxc3** [Black plays Nxc3 here 52% of the time]",
+        "lastMove": "d5c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-qxd5-qa5-c6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/pp2pppp/2p5/q7/8/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 5",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 d5 2. cxd5 Qxd5 3. Nc3 Qa5 4. g3 c6 5. **Bg2** [Black plays c6 here 41% of the time]",
+        "lastMove": "c7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-c6-d5-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp3ppp/8/3pp3/8/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 5",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 e5 2. Nc3 c6 3. g3 d5 4. cxd5 cxd5 5. **d4** [Black plays cxd5 here 100% of the time]",
+        "lastMove": "c6d5"
       },
       "tags": [
         "chess::line"
@@ -1420,112 +1340,16 @@
       ]
     },
     {
-      "key": "l-d5-qxd5-qa5-nf6",
+      "key": "l-g6-bg7-e6-ne7",
       "model": "chess",
       "fields": {
-        "fen": "rnb1kb1r/ppp1pppp/5n2/q7/8/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 1 5",
-        "answer": "Bg2",
-        "answerUci": "f1g2",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 d5 2. cxd5 Qxd5 3. Nc3 Qa5 4. g3 Nf6 5. **Bg2** [Black plays Nf6 here 35% of the time]",
-        "lastMove": "g8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf6-e6-d5-c5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp3ppp/4pn2/2pp4/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 5",
-        "answer": "Bg5",
-        "answerUci": "c1g5",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 e6 3. Nf3 d5 4. d4 c5 5. **Bg5** [Black plays c5 here 12% of the time]",
-        "lastMove": "c7c5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nf6-bc5-c6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/pp1p1ppp/2p2n2/2b1p3/2P5/2N3P1/PP1PPPBP/R1BQK1NR w KQkq - 0 5",
+        "fen": "rnbqk2r/ppppnpbp/4p1p1/8/2P5/2N3P1/PP1PPPBP/R1BQK1NR w KQkq - 2 5",
         "answer": "e3",
         "answerUci": "e2e3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 Bc5 4. Bg2 c6 5. **e3** [Black plays c6 here 27% of the time]",
-        "lastMove": "c7c6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-c6-nf6-d5-cxd5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp2pppp/5n2/3p4/8/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 5",
-        "answer": "Bg2",
-        "answerUci": "f1g2",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 c6 2. Nc3 Nf6 3. g3 d5 4. cxd5 cxd5 5. **Bg2** [Black plays cxd5 here 100% of the time]",
-        "lastMove": "c6d5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d5-qxd5-qd8-e6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/ppp2ppp/4p3/8/8/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 5",
-        "answer": "Bg2",
-        "answerUci": "f1g2",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 d5 2. cxd5 Qxd5 3. Nc3 Qd8 4. g3 e6 5. **Bg2** [Black plays e6 here 17% of the time]",
-        "lastMove": "e7e6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d5-qxd5-qd8-c6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/8/8/2N3P1/PP1PPP1P/R1BQKBNR w KQkq - 0 5",
-        "answer": "Bg2",
-        "answerUci": "f1g2",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 d5 2. cxd5 Qxd5 3. Nc3 Qd8 4. g3 c6 5. **Bg2** [Black plays c6 here 16% of the time]",
-        "lastMove": "c7c6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nf6-bc5-oo",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbq1rk1/pppp1ppp/5n2/2b1p3/2P5/2N3P1/PP1PPPBP/R1BQK1NR w KQ - 3 5",
-        "answer": "e3",
-        "answerUci": "e2e3",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 Bc5 4. Bg2 O-O 5. **e3** [Black plays O-O here 22% of the time]",
-        "lastMove": "e8g8"
+        "extra": "1. c4 g6 2. Nc3 Bg7 3. g3 e6 4. Bg2 Ne7 5. **e3** [Black plays Ne7 here 89% of the time]",
+        "lastMove": "g8e7"
       },
       "tags": [
         "chess::line"
@@ -1540,7 +1364,7 @@
         "answerUci": "f1e2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. d4 O-O 6. **Be2** [Black plays O-O here 95% of the time]",
+        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. d4 O-O 6. **Be2** [Black plays O-O here 90% of the time]",
         "lastMove": "e8g8"
       },
       "tags": [
@@ -1556,7 +1380,7 @@
         "answerUci": "e2e3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e6 2. Nc3 d5 3. cxd5 exd5 4. d4 Nf6 5. Bg5 Be7 6. **e3** [Black plays Be7 here 59% of the time]",
+        "extra": "1. c4 e6 2. Nc3 d5 3. cxd5 exd5 4. d4 Nf6 5. Bg5 Be7 6. **e3** [Black plays Be7 here 52% of the time]",
         "lastMove": "f8e7"
       },
       "tags": [
@@ -1572,8 +1396,24 @@
         "answerUci": "c1f4",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 c6 2. Nc3 d5 3. cxd5 cxd5 4. d4 Nf6 5. Nf3 Nc6 6. **Bf4** [Black plays Nc6 here 71% of the time]",
+        "extra": "1. c4 c6 2. Nc3 d5 3. cxd5 cxd5 4. d4 Nf6 5. Nf3 Nc6 6. **Bf4** [Black plays Nc6 here 54% of the time]",
         "lastMove": "b8c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c5-nc6-g6-bg7-e6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pp1p1pbp/2n1p1p1/2p5/2P5/2N1P1P1/PP1P1PBP/R1BQK1NR w KQkq - 0 6",
+        "answer": "Nge2",
+        "answerUci": "g1e2",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. e3 e6 6. **Nge2** [Black plays e6 here 44% of the time]",
+        "lastMove": "e7e6"
       },
       "tags": [
         "chess::line"
@@ -1596,54 +1436,6 @@
       ]
     },
     {
-      "key": "l-c5-nc6-g6-bg7-e6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/pp1p1pbp/2n1p1p1/2p5/2P5/2N1P1P1/PP1P1PBP/R1BQK1NR w KQkq - 0 6",
-        "answer": "Nge2",
-        "answerUci": "g1e2",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. e3 e6 6. **Nge2** [Black plays e6 here 57% of the time]",
-        "lastMove": "e7e6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e6-d5-exd5-c6-nf6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp3ppp/2p2n2/3p4/3P4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 2 6",
-        "answer": "Bg5",
-        "answerUci": "c1g5",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e6 2. Nc3 d5 3. cxd5 exd5 4. d4 c6 5. Nf3 Nf6 6. **Bg5** [Black plays Nf6 here 100% of the time]",
-        "lastMove": "g8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-g6-bg7-nf6-oo-d6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2P1P3/2N3P1/PP1P1PBP/R1BQK1NR w KQ - 0 6",
-        "answer": "Nge2",
-        "answerUci": "g1e2",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 g6 2. Nc3 Bg7 3. g3 Nf6 4. Bg2 O-O 5. e4 d6 6. **Nge2** [Black plays d6 here 100% of the time]",
-        "lastMove": "d7d6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
       "key": "l-e6-d5-exd5-nf6-c6",
       "model": "chess",
       "fields": {
@@ -1660,38 +1452,6 @@
       ]
     },
     {
-      "key": "l-c5-nc6-g6-bg7-nf6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk2r/pp1pppbp/2n2np1/2p5/2P5/2N1P1P1/PP1P1PBP/R1BQK1NR w KQkq - 1 6",
-        "answer": "Nge2",
-        "answerUci": "g1e2",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. e3 Nf6 6. **Nge2** [Black plays Nf6 here 43% of the time]",
-        "lastMove": "g8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf6-e6-d5-be7-oo",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbq1rk1/ppp1bppp/4pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQ - 3 6",
-        "answer": "e3",
-        "answerUci": "e2e3",
-        "orientation": "white",
-        "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 e6 3. Nf3 d5 4. d4 Be7 5. Bg5 O-O 6. **e3** [Black plays O-O here 76% of the time]",
-        "lastMove": "e8g8"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
       "key": "l-e5-nf6-d5-nxd5-nxc3",
       "model": "chess",
       "fields": {
@@ -1700,7 +1460,7 @@
         "answerUci": "b2c3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 d5 4. cxd5 Nxd5 5. Bg2 Nxc3 6. **bxc3** [Black plays Nxc3 here 44% of the time]",
+        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 d5 4. cxd5 Nxd5 5. Bg2 Nxc3 6. **bxc3** [Black plays Nxc3 here 42% of the time]",
         "lastMove": "d5c3"
       },
       "tags": [
@@ -1708,64 +1468,128 @@
       ]
     },
     {
-      "key": "l-c6-d5-cxd5-nf6-e6",
+      "key": "l-nf6-e6-d5-exd5-c6",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/pp3ppp/4pn2/3p4/3P4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 6",
+        "fen": "rnbqkb1r/pp3ppp/2p2n2/3p4/3P4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 0 6",
         "answer": "Bg5",
         "answerUci": "c1g5",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 c6 2. Nc3 d5 3. cxd5 cxd5 4. d4 Nf6 5. Nf3 e6 6. **Bg5** [Black plays e6 here 22% of the time]",
-        "lastMove": "e7e6"
+        "extra": "1. c4 Nf6 2. Nc3 e6 3. Nf3 d5 4. cxd5 exd5 5. d4 c6 6. **Bg5** [Black plays c6 here 36% of the time]",
+        "lastMove": "c7c6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-nf6-e6-d5-c5-cxd4",
+      "key": "l-g6-bg7-nf6-oo-d6",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/pp3ppp/4pn2/3p2B1/2Pp4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 0 6",
-        "answer": "Nxd4",
-        "answerUci": "f3d4",
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2P1P3/2N3P1/PP1P1PBP/R1BQK1NR w KQ - 0 6",
+        "answer": "Nge2",
+        "answerUci": "g1e2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 e6 3. Nf3 d5 4. d4 c5 5. Bg5 cxd4 6. **Nxd4** [Black plays cxd4 here 100% of the time]",
-        "lastMove": "c5d4"
+        "extra": "1. c4 g6 2. Nc3 Bg7 3. g3 Nf6 4. Bg2 O-O 5. e4 d6 6. **Nge2** [Black plays d6 here 89% of the time]",
+        "lastMove": "d7d6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-nf6-e6-d5-bb4-h6",
+      "key": "l-c5-nc6-g6-bg7-nf6",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/ppp2pp1/4pn1p/3p2B1/1bPP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 0 6",
-        "answer": "Bh4",
-        "answerUci": "g5h4",
+        "fen": "r1bqk2r/pp1pppbp/2n2np1/2p5/2P5/2N1P1P1/PP1P1PBP/R1BQK1NR w KQkq - 1 6",
+        "answer": "Nge2",
+        "answerUci": "g1e2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 e6 3. Nf3 d5 4. d4 Bb4 5. Bg5 h6 6. **Bh4** [Black plays h6 here 43% of the time]",
-        "lastMove": "h7h6"
+        "extra": "1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. e3 Nf6 6. **Nge2** [Black plays Nf6 here 32% of the time]",
+        "lastMove": "g8f6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-nf6-e6-d5-c6-be7",
+      "key": "l-nf6-d6-g6-bg7-oo",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/pp2bppp/2p1pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 2 6",
-        "answer": "e3",
-        "answerUci": "e2e3",
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2P5/2N1P1P1/PP1P1PBP/R1BQK1NR w KQ - 1 6",
+        "answer": "Nge2",
+        "answerUci": "g1e2",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 e6 3. Nf3 d5 4. d4 c6 5. Bg5 Be7 6. **e3** [Black plays Be7 here 77% of the time]",
-        "lastMove": "f8e7"
+        "extra": "1. c4 Nf6 2. Nc3 d6 3. g3 g6 4. Bg2 Bg7 5. e3 O-O 6. **Nge2** [Black plays O-O here 100% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-e6-d5-exd5-bb4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp2ppp/5n2/3p4/1b1P4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 1 6",
+        "answer": "Bg5",
+        "answerUci": "c1g5",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 Nf6 2. Nc3 e6 3. Nf3 d5 4. cxd5 exd5 5. d4 Bb4 6. **Bg5** [Black plays Bb4 here 24% of the time]",
+        "lastMove": "f8b4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-c6-d5-cxd5-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp3ppp/8/3p4/3Pp3/2N3P1/PP2PP1P/R1BQKBNR w KQkq - 0 6",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 e5 2. Nc3 c6 3. g3 d5 4. cxd5 cxd5 5. d4 e4 6. **Bg2** [Black plays e4 here 100% of the time]",
+        "lastMove": "e5e4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-d5-nxd5-be6",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/ppp2ppp/4b3/3np3/8/2N3P1/PP1PPPBP/R1BQK1NR w KQkq - 2 6",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 d5 4. cxd5 Nxd5 5. Bg2 Be6 6. **Nf3** [Black plays Be6 here 27% of the time]",
+        "lastMove": "c8e6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-g6-bg7-e6-ne7-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppppnpbp/4p1p1/8/2P5/2N1P1P1/PP1P1PBP/R1BQK1NR w KQ - 1 6",
+        "answer": "Nge2",
+        "answerUci": "g1e2",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 g6 2. Nc3 Bg7 3. g3 e6 4. Bg2 Ne7 5. e3 O-O 6. **Nge2** [Black plays O-O here 100% of the time]",
+        "lastMove": "e8g8"
       },
       "tags": [
         "chess::line"
@@ -1780,8 +1604,24 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. d4 O-O 6. Be2 e5 7. **O-O** [Black plays e5 here 52% of the time]",
+        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. d4 O-O 6. Be2 e5 7. **O-O** [Black plays e5 here 41% of the time]",
         "lastMove": "e7e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-g6-bg7-d6-oo-nbd7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppnppbp/3p1np1/8/2PPP3/2N2N2/PP2BPPP/R1BQK2R w KQ - 3 7",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. d4 O-O 6. Be2 Nbd7 7. **O-O** [Black plays Nbd7 here 25% of the time]",
+        "lastMove": "b8d7"
       },
       "tags": [
         "chess::line"
@@ -1812,7 +1652,7 @@
         "answerUci": "f1d3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e6 2. Nc3 d5 3. cxd5 exd5 4. d4 Nf6 5. Bg5 Be7 6. e3 O-O 7. **Bd3** [Black plays O-O here 68% of the time]",
+        "extra": "1. c4 e6 2. Nc3 d5 3. cxd5 exd5 4. d4 Nf6 5. Bg5 Be7 6. e3 O-O 7. **Bd3** [Black plays O-O here 59% of the time]",
         "lastMove": "e8g8"
       },
       "tags": [
@@ -1820,16 +1660,32 @@
       ]
     },
     {
-      "key": "l-nf6-g6-bg7-d6-oo-nbd7",
+      "key": "l-e5-nf6-c6-d5-cxd5-e4",
       "model": "chess",
       "fields": {
-        "fen": "r1bq1rk1/pppnppbp/3p1np1/8/2PPP3/2N2N2/PP2BPPP/R1BQK2R w KQ - 3 7",
-        "answer": "O-O",
-        "answerUci": "e1g1",
+        "fen": "rnbqkb1r/pp3ppp/5n2/3p4/3Pp3/2N3P1/PP2PPBP/R1BQK1NR w KQkq - 0 7",
+        "answer": "Bg5",
+        "answerUci": "c1g5",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. d4 O-O 6. Be2 Nbd7 7. **O-O** [Black plays Nbd7 here 21% of the time]",
-        "lastMove": "b8d7"
+        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 c6 4. Bg2 d5 5. cxd5 cxd5 6. d4 e4 7. **Bg5** [Black plays e4 here 86% of the time]",
+        "lastMove": "e5e4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-e6-d5-exd5-c6-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2bppp/2p2n2/3p2B1/3P4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 2 7",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 Nf6 2. Nc3 e6 3. Nf3 d5 4. cxd5 exd5 5. d4 c6 6. Bg5 Be7 7. **e3** [Black plays Be7 here 98% of the time]",
+        "lastMove": "f8e7"
       },
       "tags": [
         "chess::line"
@@ -1844,7 +1700,7 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. d4 O-O 6. Be2 Nc6 7. **O-O** [Black plays Nc6 here 13% of the time]",
+        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. d4 O-O 6. Be2 Nc6 7. **O-O** [Black plays Nc6 here 14% of the time]",
         "lastMove": "b8c6"
       },
       "tags": [
@@ -1852,32 +1708,64 @@
       ]
     },
     {
-      "key": "l-e6-d5-exd5-nf6-be7-c6",
+      "key": "l-c6-d5-cxd5-nf6-nc6-a6",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/pp2bppp/2p2n2/3p2B1/3P4/2N1P3/PP3PPP/R2QKBNR w KQkq - 0 7",
-        "answer": "Bd3",
-        "answerUci": "f1d3",
+        "fen": "r1bqkb1r/1p2pppp/p1n2n2/3p4/3P1B2/2N2N2/PP2PPPP/R2QKB1R w KQkq - 0 7",
+        "answer": "e3",
+        "answerUci": "e2e3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e6 2. Nc3 d5 3. cxd5 exd5 4. d4 Nf6 5. Bg5 Be7 6. e3 c6 7. **Bd3** [Black plays c6 here 25% of the time]",
-        "lastMove": "c7c6"
+        "extra": "1. c4 c6 2. Nc3 d5 3. cxd5 cxd5 4. d4 Nf6 5. Nf3 Nc6 6. Bf4 a6 7. **e3** [Black plays a6 here 44% of the time]",
+        "lastMove": "a7a6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-nf6-e6-d5-be7-oo-h6",
+      "key": "l-nf6-e6-d5-exd5-bb4-oo",
       "model": "chess",
       "fields": {
-        "fen": "rnbq1rk1/ppp1bpp1/4pn1p/3p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQ - 0 7",
-        "answer": "Bh4",
-        "answerUci": "g5h4",
+        "fen": "rnbq1rk1/ppp2ppp/5n2/3p2B1/1b1P4/2N2N2/PP2PPPP/R2QKB1R w KQ - 3 7",
+        "answer": "e3",
+        "answerUci": "e2e3",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 e6 3. Nf3 d5 4. d4 Be7 5. Bg5 O-O 6. e3 h6 7. **Bh4** [Black plays h6 here 42% of the time]",
-        "lastMove": "h7h6"
+        "extra": "1. c4 Nf6 2. Nc3 e6 3. Nf3 d5 4. cxd5 exd5 5. d4 Bb4 6. Bg5 O-O 7. **e3** [Black plays O-O here 100% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nf6-d5-nxd5-be6-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkb1r/ppp2ppp/2n1b3/3np3/8/2N2NP1/PP1PPPBP/R1BQK2R w KQkq - 4 7",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 e5 2. Nc3 Nf6 3. g3 d5 4. cxd5 Nxd5 5. Bg2 Be6 6. Nf3 Nc6 7. **O-O** [Black plays Nc6 here 100% of the time]",
+        "lastMove": "b8c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c6-d5-cxd5-nf6-nc6-bf5",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkb1r/pp2pppp/2n2n2/3p1b2/3P1B2/2N2N2/PP2PPPP/R2QKB1R w KQkq - 5 7",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 c6 2. Nc3 d5 3. cxd5 cxd5 4. d4 Nf6 5. Nf3 Nc6 6. Bf4 Bf5 7. **e3** [Black plays Bf5 here 40% of the time]",
+        "lastMove": "c8f5"
       },
       "tags": [
         "chess::line"
@@ -1892,7 +1780,7 @@
         "answerUci": "d4d5",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. d4 O-O 6. Be2 e5 7. O-O Nc6 8. **d5** [Black plays Nc6 here 100% of the time]",
+        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. d4 O-O 6. Be2 e5 7. O-O Nc6 8. **d5** [Black plays Nc6 here 89% of the time]",
         "lastMove": "b8c6"
       },
       "tags": [
@@ -1908,7 +1796,7 @@
         "answerUci": "d4d5",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. d4 O-O 6. Be2 Nbd7 7. O-O e5 8. **d5** [Black plays e5 here 100% of the time]",
+        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. d4 O-O 6. Be2 Nbd7 7. O-O e5 8. **d5** [Black plays e5 here 90% of the time]",
         "lastMove": "e7e5"
       },
       "tags": [
@@ -1916,16 +1804,128 @@
       ]
     },
     {
-      "key": "l-e6-d5-exd5-nf6-be7-oo-h6",
+      "key": "l-c5-nc6-g6-bg7-e6-nge7-oo",
       "model": "chess",
       "fields": {
-        "fen": "rnbq1rk1/ppp1bpp1/5n1p/3p2B1/3P4/2NBP3/PP3PPP/R2QK1NR w KQ - 0 8",
-        "answer": "Bh4",
-        "answerUci": "g5h4",
+        "fen": "r1bq1rk1/pp1pnpbp/2n1p1p1/2p5/2P5/2N1P1P1/PP1PNPBP/R1BQ1RK1 w - - 4 8",
+        "answer": "d4",
+        "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the English Opening. What is the book move?",
-        "extra": "1. c4 e6 2. Nc3 d5 3. cxd5 exd5 4. d4 Nf6 5. Bg5 Be7 6. e3 O-O 7. Bd3 h6 8. **Bh4** [Black plays h6 here 50% of the time]",
-        "lastMove": "h7h6"
+        "extra": "1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. e3 e6 6. Nge2 Nge7 7. O-O O-O 8. **d4** [Black plays O-O here 84% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-e6-d5-exd5-c6-be7-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2bppp/2p2n2/3p2B1/3P4/2N1PN2/PP3PPP/R2QKB1R w KQ - 1 8",
+        "answer": "Bd3",
+        "answerUci": "f1d3",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 Nf6 2. Nc3 e6 3. Nf3 d5 4. cxd5 exd5 5. d4 c6 6. Bg5 Be7 7. e3 O-O 8. **Bd3** [Black plays O-O here 100% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-g6-bg7-d6-oo-e5-nc6-ne7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp1npbp/3p1np1/3Pp3/2P1P3/2N2N2/PP2BPPP/R1BQ1RK1 w - - 1 9",
+        "answer": "Ne1",
+        "answerUci": "f3e1",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. d4 O-O 6. Be2 e5 7. O-O Nc6 8. d5 Ne7 9. **Ne1** [Black plays Ne7 here 100% of the time]",
+        "lastMove": "c6e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-g6-bg7-d6-oo-nbd7-e5-nc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp2pbp/3p1np1/2nPp3/2P1P3/2N2N2/PP2BPPP/R1BQ1RK1 w - - 1 9",
+        "answer": "Qc2",
+        "answerUci": "d1c2",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. d4 O-O 6. Be2 Nbd7 7. O-O e5 8. d5 Nc5 9. **Qc2** [Black plays Nc5 here 100% of the time]",
+        "lastMove": "d7c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c5-nc6-g6-bg7-e6-nge7-oo-cxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pp1pnpbp/2n1p1p1/8/2Pp4/2N1P1P1/PP2NPBP/R1BQ1RK1 w - - 0 9",
+        "answer": "exd4",
+        "answerUci": "e3d4",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. e3 e6 6. Nge2 Nge7 7. O-O O-O 8. d4 cxd4 9. **exd4** [Black plays cxd4 here 100% of the time]",
+        "lastMove": "c5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-g6-bg7-d6-oo-e5-nc6-ne7-nd7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppnnpbp/3p2p1/3Pp3/2P1P3/2N5/PP2BPPP/R1BQNRK1 w - - 3 10",
+        "answer": "Be3",
+        "answerUci": "c1e3",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. d4 O-O 6. Be2 e5 7. O-O Nc6 8. d5 Ne7 9. Ne1 Nd7 10. **Be3** [Black plays Nd7 here 100% of the time]",
+        "lastMove": "f6d7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-g6-bg7-d6-oo-e5-nc6-ne7-nd7-f5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppnn1bp/3p2p1/3Ppp2/2P1P3/2N1B3/PP2BPPP/R2QNRK1 w - - 0 11",
+        "answer": "f3",
+        "answerUci": "f2f3",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. d4 O-O 6. Be2 e5 7. O-O Nc6 8. d5 Ne7 9. Ne1 Nd7 10. Be3 f5 11. **f3** [Black plays f5 here 100% of the time]",
+        "lastMove": "f7f5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-g6-bg7-d6-oo-e5-nc6-ne7-nd7-f5-f4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppnn1bp/3p2p1/3Pp3/2P1Pp2/2N1BP2/PP2B1PP/R2QNRK1 w - - 0 12",
+        "answer": "Bf2",
+        "answerUci": "e3f2",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 Nf6 2. Nc3 g6 3. Nf3 Bg7 4. e4 d6 5. d4 O-O 6. Be2 e5 7. O-O Nc6 8. d5 Ne7 9. Ne1 Nd7 10. Be3 f5 11. f3 f4 12. **Bf2** [Black plays f4 here 100% of the time]",
+        "lastMove": "f5f4"
       },
       "tags": [
         "chess::line"

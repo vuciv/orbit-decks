@@ -1,8 +1,8 @@
 {
   "key": "ruy-lopez",
-  "version": 3,
+  "version": 4,
   "name": "The Ruy Lopez as White",
-  "description": "A White repertoire for the Ruy Lopez, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 85 positions.",
+  "description": "A White repertoire for the Ruy Lopez, drilled one position at a time: every card is a position with exactly one book move to find. Built from 5,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -68,7 +68,7 @@
         "answerUci": "b5a4",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. **Ba4** [Black plays a6 here 29% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. **Ba4** [Black plays a6 here 28% of the time]",
         "lastMove": "a7a6"
       },
       "tags": [
@@ -180,7 +180,7 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 exd4 5. **O-O** (Center Gambit, C62) [Black plays exd4 here 59% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 exd4 5. **O-O** (Center Gambit, C62) [Black plays exd4 here 58% of the time]",
         "lastMove": "e5d4"
       },
       "tags": [
@@ -196,7 +196,7 @@
         "answerUci": "b1c3",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. **Nc3** [Black plays Bd7 here 28% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. **Nc3** [Black plays Bd7 here 27% of the time]",
         "lastMove": "c8d7"
       },
       "tags": [
@@ -212,7 +212,7 @@
         "answerUci": "c2c3",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O d6 5. **c3** [Black plays d6 here 45% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O d6 5. **c3** [Black plays d6 here 44% of the time]",
         "lastMove": "d7d6"
       },
       "tags": [
@@ -252,6 +252,22 @@
       ]
     },
     {
+      "key": "l-e5-nc6-nd4-exd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1ppp/8/1B6/3pP3/8/PPPP1PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nd4 4. Nxd4 exd4 5. **O-O** [Black plays exd4 here 100% of the time]",
+        "lastMove": "e5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e5-nc6-nf6-bc5",
       "model": "chess",
       "fields": {
@@ -276,40 +292,8 @@
         "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O d6 5. **d4** [Black plays d6 here 28% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O d6 5. **d4** [Black plays d6 here 26% of the time]",
         "lastMove": "d7d6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nd4-exd4",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkbnr/pppp1ppp/8/1B6/3pP3/8/PPPP1PPP/RNBQK2R w KQkq - 0 5",
-        "answer": "O-O",
-        "answerUci": "e1g1",
-        "orientation": "white",
-        "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nd4 4. Nxd4 exd4 5. **O-O** [Black plays exd4 here 100% of the time]",
-        "lastMove": "e5d4"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nge7-a6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkb1r/1pppnppp/p1n5/1B2p3/4P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 0 5",
-        "answer": "Ba4",
-        "answerUci": "b5a4",
-        "orientation": "white",
-        "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nge7 4. Nc3 a6 5. **Ba4** [Black plays a6 here 66% of the time]",
-        "lastMove": "a7a6"
       },
       "tags": [
         "chess::line"
@@ -348,6 +332,22 @@
       ]
     },
     {
+      "key": "l-e5-nc6-nge7-a6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/1pppnppp/p1n5/1B2p3/4P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 0 5",
+        "answer": "Ba4",
+        "answerUci": "b5a4",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nge7 4. Nc3 a6 5. **Ba4** [Black plays a6 here 53% of the time]",
+        "lastMove": "a7a6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e5-nc6-d6-a6",
       "model": "chess",
       "fields": {
@@ -356,7 +356,7 @@
         "answerUci": "b5c6",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 a6 5. **Bxc6+** [Black plays a6 here 10% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 a6 5. **Bxc6+** [Black plays a6 here 9% of the time]",
         "lastMove": "a7a6"
       },
       "tags": [
@@ -380,6 +380,38 @@
       ]
     },
     {
+      "key": "l-e5-nc6-nge7-g6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppppnp1p/2n3p1/1B2p3/4P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 0 5",
+        "answer": "d3",
+        "answerUci": "d2d3",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nge7 4. Nc3 g6 5. **d3** [Black plays g6 here 23% of the time]",
+        "lastMove": "g7g6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nge7-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp1nppp/2np4/1B2p3/4P3/2N2N2/PPPP1PPP/R1BQK2R w KQkq - 0 5",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nge7 4. Nc3 d6 5. **d4** [Black plays d6 here 17% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e5-nc6-bc5-a6",
       "model": "chess",
       "fields": {
@@ -396,16 +428,16 @@
       ]
     },
     {
-      "key": "l-e5-nc6-d6-bd7-exd4",
+      "key": "l-e5-nc6-d6-exd4-bd7",
       "model": "chess",
       "fields": {
-        "fen": "r2qkbnr/pppb1ppp/2np4/1B6/3pP3/2N2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "fen": "r2qkbnr/pppb1ppp/2np4/1B6/3pP3/5N2/PPP2PPP/RNBQ1RK1 w kq - 2 6",
         "answer": "Nxd4",
         "answerUci": "f3d4",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. Nc3 exd4 6. **Nxd4** [Black plays exd4 here 100% of the time]",
-        "lastMove": "e5d4"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 exd4 5. O-O Bd7 6. **Nxd4** [Black plays Bd7 here 100% of the time]",
+        "lastMove": "c8d7"
       },
       "tags": [
         "chess::line"
@@ -436,8 +468,24 @@
         "answerUci": "f1e1",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. **Re1** [Black plays Be7 here 37% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. **Re1** [Black plays Be7 here 36% of the time]",
         "lastMove": "f8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-bd7-exd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/pppb1ppp/2np4/1B6/3pP3/2N2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "answer": "Nxd4",
+        "answerUci": "f3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. Nc3 exd4 6. **Nxd4** [Black plays exd4 here 60% of the time]",
+        "lastMove": "e5d4"
       },
       "tags": [
         "chess::line"
@@ -452,7 +500,7 @@
         "answerUci": "b5c6",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6 6. **Bxc6** [Black plays Nd6 here 100% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6 6. **Bxc6** [Black plays Nd6 here 76% of the time]",
         "lastMove": "e4d6"
       },
       "tags": [
@@ -468,7 +516,7 @@
         "answerUci": "f3d4",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O d6 5. d4 exd4 6. **Nxd4** [Black plays exd4 here 80% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O d6 5. d4 exd4 6. **Nxd4** [Black plays exd4 here 67% of the time]",
         "lastMove": "e5d4"
       },
       "tags": [
@@ -484,40 +532,8 @@
         "answerUci": "a4b3",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nge7 4. Nc3 a6 5. Ba4 b5 6. **Bb3** [Black plays b5 here 100% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nge7 4. Nc3 a6 5. Ba4 b5 6. **Bb3** [Black plays b5 here 85% of the time]",
         "lastMove": "b7b5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-bc5-oo",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/pppp1ppp/2n2n2/1Bb1p3/4P3/2P2N2/PP1P1PPP/RNBQ1RK1 w - - 1 6",
-        "answer": "d4",
-        "answerUci": "d2d4",
-        "orientation": "white",
-        "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5 5. c3 O-O 6. **d4** [Black plays O-O here 63% of the time]",
-        "lastMove": "e8g8"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-bc5-d6-a6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/1pp2ppp/p1np4/1Bb1p3/4P3/2P2N2/PP1P1PPP/RNBQ1RK1 w kq - 0 6",
-        "answer": "Ba4",
-        "answerUci": "b5a4",
-        "orientation": "white",
-        "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O d6 5. c3 a6 6. **Ba4** [Black plays a6 here 36% of the time]",
-        "lastMove": "a7a6"
       },
       "tags": [
         "chess::line"
@@ -532,24 +548,8 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5 5. Bb3 Nf6 6. **O-O** [Black plays Nf6 here 38% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5 5. Bb3 Nf6 6. **O-O** [Black plays Nf6 here 37% of the time]",
         "lastMove": "g8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-bc5-d6-bd7",
-      "model": "chess",
-      "fields": {
-        "fen": "r2qk1nr/pppb1ppp/2np4/1Bb1p3/4P3/2P2N2/PP1P1PPP/RNBQ1RK1 w kq - 1 6",
-        "answer": "d4",
-        "answerUci": "d2d4",
-        "orientation": "white",
-        "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O d6 5. c3 Bd7 6. **d4** [Black plays Bd7 here 35% of the time]",
-        "lastMove": "c8d7"
       },
       "tags": [
         "chess::line"
@@ -572,15 +572,47 @@
       ]
     },
     {
-      "key": "l-e5-nc6-bc5-nge7-oo",
+      "key": "l-e5-nc6-bc5-d6-bd7",
       "model": "chess",
       "fields": {
-        "fen": "r1bq1rk1/ppppnppp/2n5/1Bb1p3/4P3/2P2N2/PP1P1PPP/RNBQ1RK1 w - - 1 6",
+        "fen": "r2qk1nr/pppb1ppp/2np4/1Bb1p3/4P3/2P2N2/PP1P1PPP/RNBQ1RK1 w kq - 1 6",
         "answer": "d4",
         "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O Nge7 5. c3 O-O 6. **d4** [Black plays O-O here 75% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O d6 5. c3 Bd7 6. **d4** [Black plays Bd7 here 34% of the time]",
+        "lastMove": "c8d7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-d6-a6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/1pp2ppp/p1np4/1Bb1p3/4P3/2P2N2/PP1P1PPP/RNBQ1RK1 w kq - 0 6",
+        "answer": "Ba4",
+        "answerUci": "b5a4",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O d6 5. c3 a6 6. **Ba4** [Black plays a6 here 33% of the time]",
+        "lastMove": "a7a6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppp1ppp/2n2n2/1Bb1p3/4P3/2P2N2/PP1P1PPP/RNBQ1RK1 w - - 1 6",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5 5. c3 O-O 6. **d4** [Black plays O-O here 45% of the time]",
         "lastMove": "e8g8"
       },
       "tags": [
@@ -596,8 +628,24 @@
         "answerUci": "b5c4",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nd4 4. Nxd4 exd4 5. O-O c6 6. **Bc4** [Black plays c6 here 44% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nd4 4. Nxd4 exd4 5. O-O c6 6. **Bc4** [Black plays c6 here 40% of the time]",
         "lastMove": "c7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nge7-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppppnppp/2n5/1Bb1p3/4P3/2P2N2/PP1P1PPP/RNBQ1RK1 w - - 1 6",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O Nge7 5. c3 O-O 6. **d4** [Black plays O-O here 62% of the time]",
+        "lastMove": "e8g8"
       },
       "tags": [
         "chess::line"
@@ -628,7 +676,7 @@
         "answerUci": "c2c3",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5 5. Bb3 Bc5 6. **c3** [Black plays Bc5 here 24% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5 5. Bb3 Bc5 6. **c3** [Black plays Bc5 here 25% of the time]",
         "lastMove": "f8c5"
       },
       "tags": [
@@ -636,32 +684,32 @@
       ]
     },
     {
-      "key": "l-e5-nc6-a6-nf6-nxe4",
+      "key": "l-e5-nc6-d6-bd7-a6",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkb1r/1ppp1ppp/p1n5/4p3/B3n3/5N2/PPPP1PPP/RNBQ1RK1 w kq - 0 6",
-        "answer": "Re1",
-        "answerUci": "f1e1",
+        "fen": "r2qkbnr/1ppb1ppp/p1np4/1B2p3/3PP3/2N2N2/PPP2PPP/R1BQK2R w KQkq - 0 6",
+        "answer": "Bxc6",
+        "answerUci": "b5c6",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. **Re1** [Black plays Nxe4 here 8% of the time]",
-        "lastMove": "f6e4"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. Nc3 a6 6. **Bxc6** [Black plays a6 here 23% of the time]",
+        "lastMove": "a7a6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nc6-bc5-d6-bg4",
+      "key": "l-e5-nc6-a6-nf6-d6",
       "model": "chess",
       "fields": {
-        "fen": "r2qk1nr/ppp2ppp/2np4/1Bb1p3/4P1b1/2P2N2/PP1P1PPP/RNBQ1RK1 w kq - 1 6",
-        "answer": "h3",
-        "answerUci": "h2h3",
+        "fen": "r1bqkb1r/1pp2ppp/p1np1n2/4p3/B3P3/5N2/PPPP1PPP/RNBQ1RK1 w kq - 0 6",
+        "answer": "Bxc6",
+        "answerUci": "a4c6",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O d6 5. c3 Bg4 6. **h3** [Black plays Bg4 here 18% of the time]",
-        "lastMove": "c8g4"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O d6 6. **Bxc6+** [Black plays d6 here 9% of the time]",
+        "lastMove": "d7d6"
       },
       "tags": [
         "chess::line"
@@ -676,8 +724,56 @@
         "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5 5. c3 d6 6. **d4** [Black plays d6 here 24% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5 5. c3 d6 6. **d4** [Black plays d6 here 26% of the time]",
         "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nge7-g6-bg7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppppnpbp/2n3p1/1B2p3/4P3/2NP1N2/PPP2PPP/R1BQK2R w KQkq - 1 6",
+        "answer": "Bg5",
+        "answerUci": "c1g5",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nge7 4. Nc3 g6 5. d3 Bg7 6. **Bg5** [Black plays Bg7 here 100% of the time]",
+        "lastMove": "f8g7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-d6-bg4",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qk1nr/ppp2ppp/2np4/1Bb1p3/4P1b1/2P2N2/PP1P1PPP/RNBQ1RK1 w kq - 1 6",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O d6 5. c3 Bg4 6. **d4** [Black plays Bg4 here 17% of the time]",
+        "lastMove": "c8g4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d6-bd7",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkb1r/pppb1ppp/2np1n2/1B2p3/3PP3/5N2/PPP2PPP/RNBQ1RK1 w kq - 1 6",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O d6 5. d4 Bd7 6. **Nc3** [Black plays Bd7 here 24% of the time]",
+        "lastMove": "c8d7"
       },
       "tags": [
         "chess::line"
@@ -692,24 +788,8 @@
         "answerUci": "b5c4",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nd4 4. Nxd4 exd4 5. O-O Qg5 6. **Bc4** [Black plays Qg5 here 24% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nd4 4. Nxd4 exd4 5. O-O Qg5 6. **Bc4** [Black plays Qg5 here 21% of the time]",
         "lastMove": "d8g5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-a6-d6-bg4",
-      "model": "chess",
-      "fields": {
-        "fen": "r2qkbnr/1pp2ppp/p1np4/4p3/B3P1b1/5N2/PPPP1PPP/RNBQ1RK1 w kq - 2 6",
-        "answer": "c3",
-        "answerUci": "c2c3",
-        "orientation": "white",
-        "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. O-O Bg4 6. **c3** [Black plays Bg4 here 36% of the time]",
-        "lastMove": "c8g4"
       },
       "tags": [
         "chess::line"
@@ -724,8 +804,24 @@
         "answerUci": "d2d3",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nd4 4. Nxd4 exd4 5. O-O Bc5 6. **d3** [Black plays Bc5 here 23% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nd4 4. Nxd4 exd4 5. O-O Bc5 6. **d3** [Black plays Bc5 here 20% of the time]",
         "lastMove": "f8c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-bd7-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkb1r/pppb1ppp/2np1n2/1B2p3/3PP3/2N2N2/PPP2PPP/R1BQK2R w KQkq - 3 6",
+        "answer": "Bxc6",
+        "answerUci": "b5c6",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. Nc3 Nf6 6. **Bxc6** (Nimzowitsch Attack, C62) [Black plays Nf6 here 14% of the time]",
+        "lastMove": "g8f6"
       },
       "tags": [
         "chess::line"
@@ -740,8 +836,24 @@
         "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5 5. Bb3 d6 6. **d4** [Black plays d6 here 13% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5 5. Bb3 d6 6. **d4** [Black plays d6 here 14% of the time]",
         "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-a6-d6-bg4",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/1pp2ppp/p1np4/4p3/B3P1b1/5N2/PPPP1PPP/RNBQ1RK1 w kq - 2 6",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. O-O Bg4 6. **c3** [Black plays Bg4 here 31% of the time]",
+        "lastMove": "c8g4"
       },
       "tags": [
         "chess::line"
@@ -772,7 +884,7 @@
         "answerUci": "a4b3",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. O-O b5 6. **Bb3** [Black plays b5 here 25% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. O-O b5 6. **Bb3** [Black plays b5 here 24% of the time]",
         "lastMove": "b7b5"
       },
       "tags": [
@@ -780,80 +892,32 @@
       ]
     },
     {
-      "key": "l-e5-nc6-nf6-bc5-a6",
+      "key": "l-e5-nc6-nf6-bc5-nxe4",
       "model": "chess",
       "fields": {
-        "fen": "r1bqk2r/1ppp1ppp/p1n2n2/1Bb1p3/4P3/2P2N2/PP1P1PPP/RNBQ1RK1 w kq - 0 6",
-        "answer": "Ba4",
-        "answerUci": "b5a4",
+        "fen": "r1bqk2r/pppp1ppp/2n5/1Bb1p3/4n3/2P2N2/PP1P1PPP/RNBQ1RK1 w kq - 0 6",
+        "answer": "d4",
+        "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5 5. c3 a6 6. **Ba4** [Black plays a6 here 13% of the time]",
-        "lastMove": "a7a6"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5 5. c3 Nxe4 6. **d4** [Black plays Nxe4 here 14% of the time]",
+        "lastMove": "f6e4"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nc6-a6-d6-nf6",
+      "key": "l-e5-nc6-d6-exd4-bd7-nxd4",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkb1r/1pp2ppp/p1np1n2/4p3/B3P3/5N2/PPPP1PPP/RNBQ1RK1 w kq - 2 6",
-        "answer": "Re1",
-        "answerUci": "f1e1",
+        "fen": "r2qkbnr/pppb1ppp/3p4/1B6/3nP3/8/PPP2PPP/RNBQ1RK1 w kq - 0 7",
+        "answer": "Bxd7",
+        "answerUci": "b5d7",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. O-O Nf6 6. **Re1** [Black plays Nf6 here 20% of the time]",
-        "lastMove": "g8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-a6-b5-be7",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/2ppbppp/p1n5/1p2p3/4P3/1B3N2/PPPP1PPP/RNBQK2R w KQkq - 2 6",
-        "answer": "O-O",
-        "answerUci": "e1g1",
-        "orientation": "white",
-        "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5 5. Bb3 Be7 6. **O-O** [Black plays Be7 here 8% of the time]",
-        "lastMove": "f8e7"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-bc5-a6-d6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/1pp2ppp/p1np4/2b1p3/B3P3/5N2/PPPP1PPP/RNBQ1RK1 w kq - 0 6",
-        "answer": "c3",
-        "answerUci": "c2c3",
-        "orientation": "white",
-        "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O a6 5. Ba4 d6 6. **c3** [Black plays d6 here 39% of the time]",
-        "lastMove": "d7d6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-bc5-a6-b5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/2pp1ppp/p1n5/1pb1p3/B3P3/5N2/PPPP1PPP/RNBQ1RK1 w kq - 0 6",
-        "answer": "Bb3",
-        "answerUci": "a4b3",
-        "orientation": "white",
-        "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O a6 5. Ba4 b5 6. **Bb3** [Black plays b5 here 39% of the time]",
-        "lastMove": "b7b5"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 exd4 5. O-O Bd7 6. Nxd4 Nxd4 7. **Bxd7+** [Black plays Nxd4 here 42% of the time]",
+        "lastMove": "c6d4"
       },
       "tags": [
         "chess::line"
@@ -876,6 +940,22 @@
       ]
     },
     {
+      "key": "l-e5-nc6-d6-exd4-bd7-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkb1r/pppb1ppp/2np1n2/1B6/3NP3/8/PPP2PPP/RNBQ1RK1 w kq - 1 7",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 exd4 5. O-O Bd7 6. Nxd4 Nf6 7. **Nc3** [Black plays Nf6 here 33% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e5-nc6-nf6-nxe4-nd6-dxc6",
       "model": "chess",
       "fields": {
@@ -884,24 +964,8 @@
         "answerUci": "d4e5",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6 6. Bxc6 dxc6 7. **dxe5** [Black plays dxc6 here 100% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Nd6 6. Bxc6 dxc6 7. **dxe5** [Black plays dxc6 here 93% of the time]",
         "lastMove": "d7c6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-d6-exd4-bd7",
-      "model": "chess",
-      "fields": {
-        "fen": "r2qkb1r/pppb1ppp/2np1n2/1B6/3NP3/8/PPP2PPP/RNBQ1RK1 w kq - 1 7",
-        "answer": "Nc3",
-        "answerUci": "b1c3",
-        "orientation": "white",
-        "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O d6 5. d4 exd4 6. Nxd4 Bd7 7. **Nc3** [Black plays Bd7 here 100% of the time]",
-        "lastMove": "c8d7"
       },
       "tags": [
         "chess::line"
@@ -916,120 +980,8 @@
         "answerUci": "a2a4",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O b5 6. Bb3 Be7 7. **a4** (Wing Attack, C78) [Black plays Be7 here 48% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O b5 6. Bb3 Be7 7. **a4** (Wing Attack, C78) [Black plays Be7 here 46% of the time]",
         "lastMove": "f8e7"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6-bc5-oo-exd4",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/pppp1ppp/2n2n2/1Bb5/3pP3/2P2N2/PP3PPP/RNBQ1RK1 w - - 0 7",
-        "answer": "cxd4",
-        "answerUci": "c3d4",
-        "orientation": "white",
-        "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5 5. c3 O-O 6. d4 exd4 7. **cxd4** [Black plays exd4 here 100% of the time]",
-        "lastMove": "e5d4"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-bc5-d6-a6-b5",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/2p2ppp/p1np4/1pb1p3/B3P3/2P2N2/PP1P1PPP/RNBQ1RK1 w kq - 0 7",
-        "answer": "Bb3",
-        "answerUci": "a4b3",
-        "orientation": "white",
-        "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O d6 5. c3 a6 6. Ba4 b5 7. **Bb3** [Black plays b5 here 100% of the time]",
-        "lastMove": "b7b5"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-d6-bd7-exd4-nf6",
-      "model": "chess",
-      "fields": {
-        "fen": "r2qkb1r/pppb1ppp/2np1n2/1B6/3NP3/2N5/PPP2PPP/R1BQK2R w KQkq - 1 7",
-        "answer": "O-O",
-        "answerUci": "e1g1",
-        "orientation": "white",
-        "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. Nc3 exd4 6. Nxd4 Nf6 7. **O-O** [Black plays Nf6 here 36% of the time]",
-        "lastMove": "g8f6"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-d6-bd7-exd4-nxd4",
-      "model": "chess",
-      "fields": {
-        "fen": "r2qkbnr/pppb1ppp/3p4/1B6/3nP3/2N5/PPP2PPP/R1BQK2R w KQkq - 0 7",
-        "answer": "Bxd7",
-        "answerUci": "b5d7",
-        "orientation": "white",
-        "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. Nc3 exd4 6. Nxd4 Nxd4 7. **Bxd7+** [Black plays Nxd4 here 36% of the time]",
-        "lastMove": "c6d4"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-bc5-d6-bd7-exd4",
-      "model": "chess",
-      "fields": {
-        "fen": "r2qk1nr/pppb1ppp/2np4/1Bb5/3pP3/2P2N2/PP3PPP/RNBQ1RK1 w kq - 0 7",
-        "answer": "cxd4",
-        "answerUci": "c3d4",
-        "orientation": "white",
-        "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O d6 5. c3 Bd7 6. d4 exd4 7. **cxd4** [Black plays exd4 here 100% of the time]",
-        "lastMove": "e5d4"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-d6-a6-bxc6-bg4",
-      "model": "chess",
-      "fields": {
-        "fen": "r2qkbnr/2p2ppp/p1pp4/4P3/4P1b1/5N2/PPP2PPP/RNBQK2R w KQkq - 1 7",
-        "answer": "exd6",
-        "answerUci": "e5d6",
-        "orientation": "white",
-        "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 a6 5. Bxc6+ bxc6 6. dxe5 Bg4 7. **exd6** [Black plays Bg4 here 100% of the time]",
-        "lastMove": "c8g4"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-bc5-nge7-oo-exd4",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/ppppnppp/2n5/1Bb5/3pP3/2P2N2/PP3PPP/RNBQ1RK1 w - - 0 7",
-        "answer": "cxd4",
-        "answerUci": "c3d4",
-        "orientation": "white",
-        "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O Nge7 5. c3 O-O 6. d4 exd4 7. **cxd4** [Black plays exd4 here 100% of the time]",
-        "lastMove": "e5d4"
       },
       "tags": [
         "chess::line"
@@ -1052,16 +1004,128 @@
       ]
     },
     {
-      "key": "l-e5-nc6-a6-nf6-nxe4-nc5",
+      "key": "l-e5-nc6-bc5-d6-bd7-exd4",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkb1r/1ppp1ppp/p1n5/2n1p3/B7/5N2/PPPP1PPP/RNBQR1K1 w kq - 2 7",
-        "answer": "Bxc6",
-        "answerUci": "a4c6",
+        "fen": "r2qk1nr/pppb1ppp/2np4/1Bb5/3pP3/2P2N2/PP3PPP/RNBQ1RK1 w kq - 0 7",
+        "answer": "cxd4",
+        "answerUci": "c3d4",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. Re1 Nc5 7. **Bxc6** [Black plays Nc5 here 100% of the time]",
-        "lastMove": "e4c5"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O d6 5. c3 Bd7 6. d4 exd4 7. **cxd4** [Black plays exd4 here 95% of the time]",
+        "lastMove": "e5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nge7-oo-exd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppppnppp/2n5/1Bb5/3pP3/2P2N2/PP3PPP/RNBQ1RK1 w - - 0 7",
+        "answer": "cxd4",
+        "answerUci": "c3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O Nge7 5. c3 O-O 6. d4 exd4 7. **cxd4** [Black plays exd4 here 100% of the time]",
+        "lastMove": "e5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-oo-exd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppp1ppp/2n2n2/1Bb5/3pP3/2P2N2/PP3PPP/RNBQ1RK1 w - - 0 7",
+        "answer": "cxd4",
+        "answerUci": "c3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5 5. c3 O-O 6. d4 exd4 7. **cxd4** [Black plays exd4 here 85% of the time]",
+        "lastMove": "e5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-d6-a6-b5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/2p2ppp/p1np4/1pb1p3/B3P3/2P2N2/PP1P1PPP/RNBQ1RK1 w kq - 0 7",
+        "answer": "Bb3",
+        "answerUci": "a4b3",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O d6 5. c3 a6 6. Ba4 b5 7. **Bb3** [Black plays b5 here 79% of the time]",
+        "lastMove": "b7b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-bd7-exd4-nxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/pppb1ppp/3p4/1B6/3nP3/2N5/PPP2PPP/R1BQK2R w KQkq - 0 7",
+        "answer": "Bxd7",
+        "answerUci": "b5d7",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. Nc3 exd4 6. Nxd4 Nxd4 7. **Bxd7+** [Black plays Nxd4 here 41% of the time]",
+        "lastMove": "c6d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-exd4-bd7-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qk1nr/pppbbppp/2np4/1B6/3NP3/8/PPP2PPP/RNBQ1RK1 w kq - 1 7",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 exd4 5. O-O Bd7 6. Nxd4 Be7 7. **Nc3** [Black plays Be7 here 12% of the time]",
+        "lastMove": "f8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-a6-bxc6-bg4",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/2p2ppp/p1pp4/4P3/4P1b1/5N2/PPP2PPP/RNBQK2R w KQkq - 1 7",
+        "answer": "exd6",
+        "answerUci": "e5d6",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 a6 5. Bxc6+ bxc6 6. dxe5 Bg4 7. **exd6** [Black plays Bg4 here 69% of the time]",
+        "lastMove": "c8g4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-bd7-a6-bxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/1pp2ppp/p1bp4/4p3/3PP3/2N2N2/PPP2PPP/R1BQK2R w KQkq - 0 7",
+        "answer": "dxe5",
+        "answerUci": "d4e5",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. Nc3 a6 6. Bxc6 Bxc6 7. **dxe5** [Black plays Bxc6 here 100% of the time]",
+        "lastMove": "d7c6"
       },
       "tags": [
         "chess::line"
@@ -1084,16 +1148,64 @@
       ]
     },
     {
-      "key": "l-e5-nc6-a6-b5-d6-nxd4",
+      "key": "l-e5-nc6-d6-bd7-exd4-nf6",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkbnr/2p2ppp/p2p4/1p2p3/3nP3/1B3N2/PPP2PPP/RNBQK2R w KQkq - 0 7",
-        "answer": "Nxd4",
-        "answerUci": "f3d4",
+        "fen": "r2qkb1r/pppb1ppp/2np1n2/1B6/3NP3/2N5/PPP2PPP/R1BQK2R w KQkq - 1 7",
+        "answer": "O-O",
+        "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5 5. Bb3 d6 6. d4 Nxd4 7. **Nxd4** [Black plays Nxd4 here 100% of the time]",
-        "lastMove": "c6d4"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. Nc3 exd4 6. Nxd4 Nf6 7. **O-O** [Black plays Nf6 here 28% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-d6-bg4-exd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qk1nr/ppp2ppp/2np4/1Bb5/3pP1b1/2P2N2/PP3PPP/RNBQ1RK1 w kq - 0 7",
+        "answer": "cxd4",
+        "answerUci": "c3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O d6 5. c3 Bg4 6. d4 exd4 7. **cxd4** [Black plays exd4 here 100% of the time]",
+        "lastMove": "e5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-a6-b5-bc5-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/2p2ppp/p1np4/1pb1p3/4P3/1BP2N2/PP1P1PPP/RNBQK2R w KQkq - 0 7",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5 5. Bb3 Bc5 6. c3 d6 7. **d4** [Black plays d6 here 64% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nd4-exd4-bc5-ne7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppppnppp/8/1Bb5/3pP3/3P4/PPP2PPP/RNBQ1RK1 w kq - 1 7",
+        "answer": "f4",
+        "answerUci": "f2f4",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nd4 4. Nxd4 exd4 5. O-O Bc5 6. d3 Ne7 7. **f4** [Black plays Ne7 here 83% of the time]",
+        "lastMove": "g8e7"
       },
       "tags": [
         "chess::line"
@@ -1116,16 +1228,112 @@
       ]
     },
     {
-      "key": "l-e5-nc6-bc5-a6-b5-d6",
+      "key": "l-e5-nc6-a6-nf6-bc5-b5",
       "model": "chess",
       "fields": {
-        "fen": "r1bqk1nr/2p2ppp/p1np4/1pb1p3/4P3/1B3N2/PPPP1PPP/RNBQ1RK1 w kq - 0 7",
+        "fen": "r1bqk2r/2pp1ppp/p1n2n2/1pb1p3/B3P3/2P2N2/PP1P1PPP/RNBQ1RK1 w kq - 0 7",
+        "answer": "Bc2",
+        "answerUci": "a4c2",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Bc5 6. c3 b5 7. **Bc2** [Black plays b5 here 41% of the time]",
+        "lastMove": "b7b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-exd4-bd7-a6",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/1ppb1ppp/p1np4/1B6/3NP3/8/PPP2PPP/RNBQ1RK1 w kq - 0 7",
+        "answer": "Nxc6",
+        "answerUci": "d4c6",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 exd4 5. O-O Bd7 6. Nxd4 a6 7. **Nxc6** [Black plays a6 here 5% of the time]",
+        "lastMove": "a7a6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-nxe4-exd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/2n5/1Bb5/3pn3/2P2N2/PP3PPP/RNBQ1RK1 w kq - 0 7",
+        "answer": "cxd4",
+        "answerUci": "c3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5 5. c3 Nxe4 6. d4 exd4 7. **cxd4** [Black plays exd4 here 100% of the time]",
+        "lastMove": "e5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-a6-d6-bg4-qf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r3kbnr/1pp2ppp/p1np1q2/4p3/B3P1b1/2P2N2/PP1P1PPP/RNBQ1RK1 w kq - 1 7",
+        "answer": "d3",
+        "answerUci": "d2d3",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 d6 5. O-O Bg4 6. c3 Qf6 7. **d3** [Black plays Qf6 here 69% of the time]",
+        "lastMove": "d8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-exd4-bd7-nxd4-qxd7",
+      "model": "chess",
+      "fields": {
+        "fen": "r3kbnr/pppq1ppp/3p4/8/3nP3/8/PPP2PPP/RNBQ1RK1 w kq - 0 8",
+        "answer": "Qxd4",
+        "answerUci": "d1d4",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 exd4 5. O-O Bd7 6. Nxd4 Nxd4 7. Bxd7+ Qxd7 8. **Qxd4** [Black plays Qxd7 here 100% of the time]",
+        "lastMove": "d8d7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-exd4-bd7-nf6-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qk2r/pppbbppp/2np1n2/1B6/3NP3/2N5/PPP2PPP/R1BQ1RK1 w kq - 3 8",
+        "answer": "Re1",
+        "answerUci": "f1e1",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 exd4 5. O-O Bd7 6. Nxd4 Nf6 7. Nc3 Be7 8. **Re1** [Black plays Be7 here 93% of the time]",
+        "lastMove": "f8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-a6-nf6-be7-b5-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/2ppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPP1PPP/RNBQR1K1 w - - 2 8",
         "answer": "c3",
         "answerUci": "c2c3",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O a6 5. Ba4 b5 6. Bb3 d6 7. **c3** [Black plays d6 here 53% of the time]",
-        "lastMove": "d7d6"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. **c3** [Black plays O-O here 68% of the time]",
+        "lastMove": "e8g8"
       },
       "tags": [
         "chess::line"
@@ -1148,16 +1356,64 @@
       ]
     },
     {
-      "key": "l-e5-nc6-a6-nf6-be7-b5-oo",
+      "key": "l-e5-nc6-bc5-d6-bd7-exd4-bb6",
       "model": "chess",
       "fields": {
-        "fen": "r1bq1rk1/2ppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPP1PPP/RNBQR1K1 w - - 2 8",
+        "fen": "r2qk1nr/pppb1ppp/1bnp4/1B6/3PP3/5N2/PP3PPP/RNBQ1RK1 w kq - 1 8",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O d6 5. c3 Bd7 6. d4 exd4 7. cxd4 Bb6 8. **Nc3** [Black plays Bb6 here 95% of the time]",
+        "lastMove": "c5b6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-a6-nf6-be7-b5-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/2p1bppp/p1np1n2/1p2p3/4P3/1B3N2/PPPP1PPP/RNBQR1K1 w kq - 0 8",
         "answer": "c3",
         "answerUci": "c2c3",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. **c3** [Black plays O-O here 67% of the time]",
-        "lastMove": "e8g8"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. **c3** [Black plays d6 here 32% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nge7-oo-exd4-bb6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppppnppp/1bn5/1B6/3PP3/5N2/PP3PPP/RNBQ1RK1 w - - 1 8",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O Nge7 5. c3 O-O 6. d4 exd4 7. cxd4 Bb6 8. **Nc3** [Black plays Bb6 here 97% of the time]",
+        "lastMove": "c5b6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-oo-exd4-bb6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppp1ppp/1bn2n2/1B6/3PP3/5N2/PP3PPP/RNBQ1RK1 w - - 1 8",
+        "answer": "e5",
+        "answerUci": "e4e5",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5 5. c3 O-O 6. d4 exd4 7. cxd4 Bb6 8. **e5** [Black plays Bb6 here 100% of the time]",
+        "lastMove": "c5b6"
       },
       "tags": [
         "chess::line"
@@ -1180,32 +1436,32 @@
       ]
     },
     {
-      "key": "l-e5-nc6-bc5-d6-bd7-exd4-bb6",
+      "key": "l-e5-nc6-d6-bd7-a6-bxc6-dxe5",
       "model": "chess",
       "fields": {
-        "fen": "r2qk1nr/pppb1ppp/1bnp4/1B6/3PP3/5N2/PP3PPP/RNBQ1RK1 w kq - 1 8",
-        "answer": "Nc3",
-        "answerUci": "b1c3",
+        "fen": "r2qkbnr/1pp2ppp/p1b5/4p3/4P3/2N2N2/PPP2PPP/R1BQK2R w KQkq - 0 8",
+        "answer": "Qxd8",
+        "answerUci": "d1d8",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O d6 5. c3 Bd7 6. d4 exd4 7. cxd4 Bb6 8. **Nc3** [Black plays Bb6 here 100% of the time]",
-        "lastMove": "c5b6"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. Nc3 a6 6. Bxc6 Bxc6 7. dxe5 dxe5 8. **Qxd8+** [Black plays dxe5 here 100% of the time]",
+        "lastMove": "d6e5"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nc6-bc5-nge7-oo-exd4-bb6",
+      "key": "l-e5-nc6-bc5-d6-a6-b5-bg4",
       "model": "chess",
       "fields": {
-        "fen": "r1bq1rk1/ppppnppp/1bn5/1B6/3PP3/5N2/PP3PPP/RNBQ1RK1 w - - 1 8",
-        "answer": "d5",
-        "answerUci": "d4d5",
+        "fen": "r2qk1nr/2p2ppp/p1np4/1pb1p3/4P1b1/1BP2N2/PP1P1PPP/RNBQ1RK1 w kq - 2 8",
+        "answer": "h3",
+        "answerUci": "h2h3",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O Nge7 5. c3 O-O 6. d4 exd4 7. cxd4 Bb6 8. **d5** [Black plays Bb6 here 100% of the time]",
-        "lastMove": "c5b6"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O d6 5. c3 a6 6. Ba4 b5 7. Bb3 Bg4 8. **h3** [Black plays Bg4 here 89% of the time]",
+        "lastMove": "c8g4"
       },
       "tags": [
         "chess::line"
@@ -1220,7 +1476,7 @@
         "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O b5 6. Bb3 Bc5 7. c3 d6 8. **d4** [Black plays d6 here 100% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O b5 6. Bb3 Bc5 7. c3 d6 8. **d4** [Black plays d6 here 68% of the time]",
         "lastMove": "d7d6"
       },
       "tags": [
@@ -1228,15 +1484,63 @@
       ]
     },
     {
-      "key": "l-e5-nc6-a6-nf6-be7-b5-d6",
+      "key": "l-e5-nc6-a6-b5-bc5-d6-exd4",
       "model": "chess",
       "fields": {
-        "fen": "r1bqk2r/2p1bppp/p1np1n2/1p2p3/4P3/1B3N2/PPPP1PPP/RNBQR1K1 w kq - 0 8",
-        "answer": "c3",
-        "answerUci": "c2c3",
+        "fen": "r1bqk1nr/2p2ppp/p1np4/1pb5/3pP3/1BP2N2/PP3PPP/RNBQK2R w KQkq - 0 8",
+        "answer": "cxd4",
+        "answerUci": "c3d4",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. **c3** [Black plays d6 here 33% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5 5. Bb3 Bc5 6. c3 d6 7. d4 exd4 8. **cxd4** [Black plays exd4 here 100% of the time]",
+        "lastMove": "e5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-d6-exd4-bb6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2ppp/1bnp1n2/1B6/3PP3/5N2/PP3PPP/RNBQ1RK1 w kq - 1 8",
+        "answer": "d5",
+        "answerUci": "d4d5",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5 5. c3 d6 6. d4 exd4 7. cxd4 Bb6 8. **d5** [Black plays Bb6 here 71% of the time]",
+        "lastMove": "c5b6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-a6-bxc6-bg4-cxd6",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/5ppp/p1pp4/8/4P1b1/5N2/PPP2PPP/RNBQK2R w KQkq - 0 8",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 a6 5. Bxc6+ bxc6 6. dxe5 Bg4 7. exd6 cxd6 8. **O-O** [Black plays cxd6 here 49% of the time]",
+        "lastMove": "c7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-a6-nf6-bc5-b5-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/2p2ppp/p1np1n2/1pb1p3/4P3/2P2N2/PPBP1PPP/RNBQ1RK1 w kq - 0 8",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Bc5 6. c3 b5 7. Bc2 d6 8. **d4** [Black plays d6 here 100% of the time]",
         "lastMove": "d7d6"
       },
       "tags": [
@@ -1244,16 +1548,32 @@
       ]
     },
     {
-      "key": "l-e5-nc6-a6-nf6-nxe4-nc5-dxc6",
+      "key": "l-e5-nc6-bc5-d6-bg4-exd4-bxf3",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkb1r/1pp2ppp/p1p5/2n1p3/8/5N2/PPPP1PPP/RNBQR1K1 w kq - 0 8",
-        "answer": "Nxe5",
-        "answerUci": "f3e5",
+        "fen": "r2qk1nr/ppp2ppp/2np4/1Bb5/3PP3/5b2/PP3PPP/RNBQ1RK1 w kq - 0 8",
+        "answer": "gxf3",
+        "answerUci": "g2f3",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Nxe4 6. Re1 Nc5 7. Bxc6 dxc6 8. **Nxe5** [Black plays dxc6 here 100% of the time]",
-        "lastMove": "d7c6"
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O d6 5. c3 Bg4 6. d4 exd4 7. cxd4 Bxf3 8. **gxf3** [Black plays Bxf3 here 60% of the time]",
+        "lastMove": "g4f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-exd4-bd7-nxd4-qxd7-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r3kb1r/pppq1ppp/3p1n2/8/3QP3/8/PPP2PPP/RNB2RK1 w kq - 1 9",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 exd4 5. O-O Bd7 6. Nxd4 Nxd4 7. Bxd7+ Qxd7 8. Qxd4 Nf6 9. **Nc3** [Black plays Nf6 here 93% of the time]",
+        "lastMove": "g8f6"
       },
       "tags": [
         "chess::line"
@@ -1284,8 +1604,40 @@
         "answerUci": "e4d5",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. **exd5** [Black plays d5 here 72% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. **exd5** [Black plays d5 here 73% of the time]",
         "lastMove": "d7d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-bd7-a6-bxc6-dxe5-rxd8",
+      "model": "chess",
+      "fields": {
+        "fen": "3rkbnr/1pp2ppp/p1b5/4p3/4P3/2N2N2/PPP2PPP/R1B1K2R w KQk - 0 9",
+        "answer": "Nxe5",
+        "answerUci": "f3e5",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. Nc3 a6 6. Bxc6 Bxc6 7. dxe5 dxe5 8. Qxd8+ Rxd8 9. **Nxe5** [Black plays Rxd8 here 100% of the time]",
+        "lastMove": "a8d8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-bd7-exd4-nxd4-qxd7-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r3kb1r/pppq1ppp/3p1n2/8/3QP3/2N5/PPP2PPP/R1B1K2R w KQkq - 1 9",
+        "answer": "Bg5",
+        "answerUci": "c1g5",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. Nc3 exd4 6. Nxd4 Nxd4 7. Bxd7+ Qxd7 8. Qxd4 Nf6 9. **Bg5** [Black plays Nf6 here 91% of the time]",
+        "lastMove": "g8f6"
       },
       "tags": [
         "chess::line"
@@ -1300,8 +1652,104 @@
         "answerUci": "h2h3",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d6 9. **h3** (Closed, C92) [Black plays d6 here 28% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d6 9. **h3** (Closed, C92) [Black plays d6 here 27% of the time]",
         "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-d6-bd7-exd4-bb6-nge7",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qk2r/pppbnppp/1bnp4/1B6/3PP3/2N2N2/PP3PPP/R1BQ1RK1 w kq - 3 9",
+        "answer": "Bg5",
+        "answerUci": "c1g5",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O d6 5. c3 Bd7 6. d4 exd4 7. cxd4 Bb6 8. Nc3 Nge7 9. **Bg5** [Black plays Nge7 here 50% of the time]",
+        "lastMove": "g8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-a6-nf6-b5-bc5-d6-bb6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/2p2ppp/pbnp1n2/1p2p3/3PP3/1BP2N2/PP3PPP/RNBQ1RK1 w kq - 1 9",
+        "answer": "dxe5",
+        "answerUci": "d4e5",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O b5 6. Bb3 Bc5 7. c3 d6 8. d4 Bb6 9. **dxe5** [Black plays Bb6 here 63% of the time]",
+        "lastMove": "c5b6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nge7-oo-exd4-bb6-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp1nppp/1bn5/1B1p4/3PP3/2N2N2/PP3PPP/R1BQ1RK1 w - - 0 9",
+        "answer": "e5",
+        "answerUci": "e4e5",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O Nge7 5. c3 O-O 6. d4 exd4 7. cxd4 Bb6 8. Nc3 d5 9. **e5** [Black plays d5 here 53% of the time]",
+        "lastMove": "d7d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-d6-exd4-bb6-a6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/1pp2ppp/pbnp1n2/1B1P4/4P3/5N2/PP3PPP/RNBQ1RK1 w kq - 0 9",
+        "answer": "Ba4",
+        "answerUci": "b5a4",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5 5. c3 d6 6. d4 exd4 7. cxd4 Bb6 8. d5 a6 9. **Ba4** [Black plays a6 here 100% of the time]",
+        "lastMove": "a7a6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nge7-oo-exd4-bb6-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp1nppp/1bnp4/1B6/3PP3/2N2N2/PP3PPP/R1BQ1RK1 w - - 0 9",
+        "answer": "h3",
+        "answerUci": "h2h3",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O Nge7 5. c3 O-O 6. d4 exd4 7. cxd4 Bb6 8. Nc3 d6 9. **h3** [Black plays d6 here 47% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-a6-b5-bc5-d6-exd4-bb6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/2p2ppp/pbnp4/1p6/3PP3/1B3N2/PP3PPP/RNBQK2R w KQkq - 1 9",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 b5 5. Bb3 Bc5 6. c3 d6 7. d4 exd4 8. cxd4 Bb6 9. **O-O** [Black plays Bb6 here 64% of the time]",
+        "lastMove": "c5b6"
       },
       "tags": [
         "chess::line"
@@ -1316,8 +1764,72 @@
         "answerUci": "f3e5",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. **Nxe5** [Black plays Nxd5 here 100% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. **Nxe5** [Black plays Nxd5 here 93% of the time]",
         "lastMove": "f6d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-bd7-exd4-nxd4-qxd7-nf6-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "r3k2r/pppqbppp/3p1n2/6B1/3QP3/2N5/PPP2PPP/R3K2R w KQkq - 3 10",
+        "answer": "O-O-O",
+        "answerUci": "e1c1",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. Nc3 exd4 6. Nxd4 Nxd4 7. Bxd7+ Qxd7 8. Qxd4 Nf6 9. Bg5 Be7 10. **O-O-O** [Black plays Be7 here 100% of the time]",
+        "lastMove": "f8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-a6-nf6-b5-bc5-d6-bb6-nxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/2p2ppp/pb1p1n2/1p2n3/4P3/1BP2N2/PP3PPP/RNBQ1RK1 w kq - 0 10",
+        "answer": "Nxe5",
+        "answerUci": "f3e5",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O b5 6. Bb3 Bc5 7. c3 d6 8. d4 Bb6 9. dxe5 Nxe5 10. **Nxe5** [Black plays Nxe5 here 100% of the time]",
+        "lastMove": "c6e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nge7-oo-exd4-bb6-d5-bg4",
+      "model": "chess",
+      "fields": {
+        "fen": "r2q1rk1/ppp1nppp/1bn5/1B1pP3/3P2b1/2N2N2/PP3PPP/R1BQ1RK1 w - - 1 10",
+        "answer": "Be3",
+        "answerUci": "c1e3",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Bc5 4. O-O Nge7 5. c3 O-O 6. d4 exd4 7. cxd4 Bb6 8. Nc3 d5 9. e5 Bg4 10. **Be3** [Black plays Bg4 here 100% of the time]",
+        "lastMove": "c8g4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-d6-exd4-bb6-a6-bxf2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/1pp2ppp/p1np1n2/3P4/B3P3/5N2/PP3bPP/RNBQ1RK1 w kq - 0 10",
+        "answer": "Rxf2",
+        "answerUci": "f1f2",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Bc5 5. c3 d6 6. d4 exd4 7. cxd4 Bb6 8. d5 a6 9. Ba4 Bxf2+ 10. **Rxf2** [Black plays Bxf2+ here 100% of the time]",
+        "lastMove": "b6f2"
       },
       "tags": [
         "chess::line"
@@ -1332,7 +1844,7 @@
         "answerUci": "b3c2",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d6 9. h3 Na5 10. **Bc2** (Chigorin Defense, C96) [Black plays Na5 here 100% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d6 9. h3 Na5 10. **Bc2** (Chigorin Defense, C96) [Black plays Na5 here 65% of the time]",
         "lastMove": "c6a5"
       },
       "tags": [
@@ -1356,6 +1868,54 @@
       ]
     },
     {
+      "key": "l-e5-nc6-d6-bd7-exd4-nxd4-qxd7-nf6-be7-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r4rk1/pppqbppp/3p1n2/6B1/3QP3/2N5/PPP2PPP/2KR3R w - - 5 11",
+        "answer": "e5",
+        "answerUci": "e4e5",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 d6 4. d4 Bd7 5. Nc3 exd4 6. Nxd4 Nxd4 7. Bxd7+ Qxd7 8. Qxd4 Nf6 9. Bg5 Be7 10. O-O-O O-O 11. **e5** [Black plays O-O here 100% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-a6-nf6-b5-bc5-d6-bb6-nxe5-dxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/2p2ppp/pb3n2/1p2p3/4P3/1BP5/PP3PPP/RNBQ1RK1 w kq - 0 11",
+        "answer": "Qxd8",
+        "answerUci": "d1d8",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O b5 6. Bb3 Bc5 7. c3 d6 8. d4 Bb6 9. dxe5 Nxe5 10. Nxe5 dxe5 11. **Qxd8+** [Black plays dxe5 here 100% of the time]",
+        "lastMove": "d6e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-a6-nf6-be7-b5-oo-d6-na5-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/4bppp/p2p1n2/npp1p3/4P3/2P2N1P/PPBP1PP1/RNBQR1K1 w - - 0 11",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "prompt": "You are White in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d6 9. h3 Na5 10. Bc2 c5 11. **d4** [Black plays c5 here 100% of the time]",
+        "lastMove": "c7c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
       "key": "l-e5-nc6-a6-nf6-be7-b5-oo-d5-nxd5-nxe5-c6",
       "model": "chess",
       "fields": {
@@ -1364,7 +1924,7 @@
         "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the Ruy Lopez. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. **d4** (Main Line, C89) [Black plays c6 here 100% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 O-O 8. c3 d5 9. exd5 Nxd5 10. Nxe5 Nxe5 11. Rxe5 c6 12. **d4** (Main Line, C89) [Black plays c6 here 87% of the time]",
         "lastMove": "c7c6"
       },
       "tags": [

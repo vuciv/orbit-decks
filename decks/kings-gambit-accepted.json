@@ -1,8 +1,8 @@
 {
   "key": "kings-gambit-accepted",
-  "version": 3,
+  "version": 4,
   "name": "The King's Gambit Accepted as Black",
-  "description": "A Black repertoire for the King's Gambit Accepted, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 22 positions.",
+  "description": "A Black repertoire for the King's Gambit Accepted, drilled one position at a time: every card is a position with exactly one book move to find. Built from 5,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 51 positions.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -53,7 +53,7 @@
         "answerUci": "g7g5",
         "orientation": "black",
         "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
-        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 **g5** (King's Knight's Gambit, C34) [White plays Nf3 here 92% of the time]",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 **g5** (King's Knight's Gambit, C34) [White plays Nf3 here 91% of the time]",
         "lastMove": "g1f3"
       },
       "tags": [
@@ -117,7 +117,7 @@
         "answerUci": "g4f3",
         "orientation": "black",
         "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
-        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O **gxf3** [White plays O-O here 44% of the time]",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O **gxf3** [White plays O-O here 45% of the time]",
         "lastMove": "e1g1"
       },
       "tags": [
@@ -133,7 +133,7 @@
         "answerUci": "d8h4",
         "orientation": "black",
         "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
-        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 **Qh4+** [White plays Ne5 here 38% of the time]",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 **Qh4+** [White plays Ne5 here 36% of the time]",
         "lastMove": "f3e5"
       },
       "tags": [
@@ -149,7 +149,7 @@
         "answerUci": "h7h5",
         "orientation": "black",
         "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
-        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 **h5** (Long Whip, C39) [White plays Ne5 here 71% of the time]",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 **h5** (Long Whip, C39) [White plays Ne5 here 72% of the time]",
         "lastMove": "f3e5"
       },
       "tags": [
@@ -165,7 +165,7 @@
         "answerUci": "e8f7",
         "orientation": "black",
         "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
-        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Bxf7+ **Kxf7** [White plays Bxf7+ here 18% of the time]",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Bxf7+ **Kxf7** [White plays Bxf7+ here 17% of the time]",
         "lastMove": "c4f7"
       },
       "tags": [
@@ -181,7 +181,7 @@
         "answerUci": "d8h4",
         "orientation": "black",
         "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
-        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. d4 g4 5. Ne5 **Qh4+** [White plays Ne5 here 72% of the time]",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. d4 g4 5. Ne5 **Qh4+** [White plays Ne5 here 56% of the time]",
         "lastMove": "f3e5"
       },
       "tags": [
@@ -197,8 +197,40 @@
         "answerUci": "h7h6",
         "orientation": "black",
         "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
-        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ng5 **h6** [White plays Ng5 here 29% of the time]",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ng5 **h6** [White plays Ng5 here 27% of the time]",
         "lastMove": "f3g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-d4-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppp1p1p/8/8/2BPPpp1/5N2/PPP3PP/RNBQK2R b KQkq - 1 5",
+        "answer": "gxf3",
+        "answerUci": "g4f3",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. d4 g4 5. Bc4 **gxf3** [White plays Bc4 here 22% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-d4-bxf4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppp1p1p/8/8/3PPBp1/5N2/PPP3PP/RN1QKB1R b KQkq - 0 5",
+        "answer": "gxf3",
+        "answerUci": "g4f3",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. d4 g4 5. Bxf4 **gxf3** [White plays Bxf4 here 18% of the time]",
+        "lastMove": "c1f4"
       },
       "tags": [
         "chess::line"
@@ -213,7 +245,7 @@
         "answerUci": "d8f6",
         "orientation": "black",
         "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
-        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O gxf3 6. Qxf3 **Qf6** (Sarratt Defense, C37) [White plays Qxf3 here 100% of the time]",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O gxf3 6. Qxf3 **Qf6** (Sarratt Defense, C37) [White plays Qxf3 here 94% of the time]",
         "lastMove": "d1f3"
       },
       "tags": [
@@ -229,7 +261,7 @@
         "answerUci": "g8h6",
         "orientation": "black",
         "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
-        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. Kf1 **Nh6** (Silberschmidt Defense, C37) [White plays Kf1 here 100% of the time]",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. Kf1 **Nh6** (Silberschmidt Defense, C37) [White plays Kf1 here 86% of the time]",
         "lastMove": "e1f1"
       },
       "tags": [
@@ -245,7 +277,7 @@
         "answerUci": "h8h7",
         "orientation": "black",
         "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
-        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 h5 6. Bc4 **Rh7** [White plays Bc4 here 68% of the time]",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 h5 6. Bc4 **Rh7** [White plays Bc4 here 70% of the time]",
         "lastMove": "f1c4"
       },
       "tags": [
@@ -293,8 +325,88 @@
         "answerUci": "d7d6",
         "orientation": "black",
         "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
-        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 h5 6. d4 **d6** [White plays d4 here 32% of the time]",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 h5 6. d4 **d6** [White plays d4 here 30% of the time]",
         "lastMove": "d2d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-bc4-ne5-g3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/pppp1p1p/8/4N3/2B1Pppq/6P1/PPPP3P/RNBQK2R b KQkq - 0 6",
+        "answer": "fxg3",
+        "answerUci": "f4g3",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. g3 **fxg3** [White plays g3 here 14% of the time]",
+        "lastMove": "g2g3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-d4-bc4-qxf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppp1p1p/8/8/2BPPp2/5Q2/PPP3PP/RNB1K2R b KQkq - 0 6",
+        "answer": "Qf6",
+        "answerUci": "d8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. d4 g4 5. Bc4 gxf3 6. Qxf3 **Qf6** [White plays Qxf3 here 100% of the time]",
+        "lastMove": "d1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-d4-ne5-kd2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/pppp1p1p/8/4N3/3PPppq/8/PPPK2PP/RNBQ1B1R b kq - 3 6",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. d4 g4 5. Ne5 Qh4+ 6. Kd2 **d6** [White plays Kd2 here 36% of the time]",
+        "lastMove": "e1d2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-d4-ne5-g3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/pppp1p1p/8/4N3/3PPppq/6P1/PPP4P/RNBQKB1R b KQkq - 0 6",
+        "answer": "fxg3",
+        "answerUci": "f4g3",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. d4 g4 5. Ne5 Qh4+ 6. g3 **fxg3** [White plays g3 here 32% of the time]",
+        "lastMove": "g2g3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-d4-ne5-ke2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/pppp1p1p/8/4N3/3PPppq/8/PPP1K1PP/RNBQ1B1R b kq - 3 6",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. d4 g4 5. Ne5 Qh4+ 6. Ke2 **d6** [White plays Ke2 here 32% of the time]",
+        "lastMove": "e1e2"
       },
       "tags": [
         "chess::line"
@@ -309,8 +421,24 @@
         "answerUci": "d7d6",
         "orientation": "black",
         "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
-        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. Kf1 Nh6 7. d4 **d6** (Anderssen Counterattack, C37) [White plays d4 here 100% of the time]",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. Kf1 Nh6 7. d4 **d6** (Anderssen Counterattack, C37) [White plays d4 here 89% of the time]",
         "lastMove": "d2d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-bc4-oo-qxf3-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/pppp1p1p/5q2/8/2B1Pp2/2P2Q2/PP1P2PP/RNB2RK1 b kq - 0 7",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O gxf3 6. Qxf3 Qf6 7. c3 **Nc6** [White plays c3 here 39% of the time]",
+        "lastMove": "c2c3"
       },
       "tags": [
         "chess::line"
@@ -325,7 +453,167 @@
         "answerUci": "g8f6",
         "orientation": "black",
         "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
-        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Bxf7+ Kxf7 6. Ne5+ Ke8 7. Qxg4 **Nf6** [White plays Qxg4 here 100% of the time]",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Bxf7+ Kxf7 6. Ne5+ Ke8 7. Qxg4 **Nf6** [White plays Qxg4 here 92% of the time]",
+        "lastMove": "d1g4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-bc4-oo-qxf3-d3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/pppp1p1p/5q2/8/2B1Pp2/3P1Q2/PPP3PP/RNB2RK1 b kq - 0 7",
+        "answer": "Bh6",
+        "answerUci": "f8h6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O gxf3 6. Qxf3 Qf6 7. d3 **Bh6** [White plays d3 here 32% of the time]",
+        "lastMove": "d2d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-bc4-oo-qxf3-e5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/pppp1p1p/5q2/4P3/2B2p2/5Q2/PPPP2PP/RNB2RK1 b kq - 0 7",
+        "answer": "Qxe5",
+        "answerUci": "f6e5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O gxf3 6. Qxf3 Qf6 7. e5 **Qxe5** [White plays e5 here 29% of the time]",
+        "lastMove": "e4e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-h4-ne5-d4-nd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp2p2/3p4/7p/3PPppP/3N4/PPP3P1/RNBQKB1R b KQkq - 1 7",
+        "answer": "f3",
+        "answerUci": "f4f3",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ne5 h5 6. d4 d6 7. Nd3 **f3** [White plays Nd3 here 100% of the time]",
+        "lastMove": "e5d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-h4-ng5-nxf7-qxg4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1bnr/pppp1k2/7p/8/4PpQP/8/PPPP2P1/RNB1KB1R b KQ - 0 7",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ng5 h6 6. Nxf7 Kxf7 7. Qxg4 **Nf6** [White plays Qxg4 here 65% of the time]",
+        "lastMove": "d1g4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-d4-ne5-kd2-nd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/ppp2p1p/3p4/8/3PPppq/3N4/PPPK2PP/RNBQ1B1R b kq - 1 7",
+        "answer": "Bh6",
+        "answerUci": "f8h6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. d4 g4 5. Ne5 Qh4+ 6. Kd2 d6 7. Nd3 **Bh6** [White plays Nd3 here 100% of the time]",
+        "lastMove": "e5d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-d4-ne5-g3-qxg4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/pppp1p1p/8/4N3/3PP1Qq/6p1/PPP4P/RNB1KB1R b KQkq - 0 7",
+        "answer": "g2",
+        "answerUci": "g3g2",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. d4 g4 5. Ne5 Qh4+ 6. g3 fxg3 7. Qxg4 **g2+** [White plays Qxg4 here 100% of the time]",
+        "lastMove": "d1g4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-h4-ng5-nxf7-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1bnr/pppp1k2/7p/8/2B1PppP/8/PPPP2P1/RNBQK2R b KQ - 1 7",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ng5 h6 6. Nxf7 Kxf7 7. Bc4+ **d5** [White plays Bc4+ here 35% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-bc4-ne5-kf1-d3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kb1r/pppp1p1p/7n/4N3/2B1Pppq/3P4/PPP3PP/RNBQ1K1R b kq - 0 7",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. Kf1 Nh6 7. d3 **d6** [White plays d3 here 11% of the time]",
+        "lastMove": "d2d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-bc4-ne5-g3-bxf7",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/pppp1B1p/8/4N3/4P1pq/6p1/PPPP3P/RNBQK2R b KQkq - 0 7",
+        "answer": "Kd8",
+        "answerUci": "e8d8",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. g3 fxg3 7. Bxf7+ **Kd8** [White plays Bxf7+ here 68% of the time]",
+        "lastMove": "c4f7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-bc4-ne5-g3-qxg4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/pppp1p1p/8/4N3/2B1P1Qq/6p1/PPPP3P/RNB1K2R b KQkq - 0 7",
+        "answer": "g2",
+        "answerUci": "g3g2",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. g3 fxg3 7. Qxg4 **g2+** [White plays Qxg4 here 32% of the time]",
         "lastMove": "d1g4"
       },
       "tags": [
@@ -341,7 +629,7 @@
         "answerUci": "f4f3",
         "orientation": "black",
         "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
-        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. Kf1 Nh6 7. d4 d6 8. Nd3 **f3** [White plays Nd3 here 100% of the time]",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. Kf1 Nh6 7. d4 d6 8. Nd3 **f3** [White plays Nd3 here 92% of the time]",
         "lastMove": "e5d3"
       },
       "tags": [
@@ -359,6 +647,182 @@
         "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
         "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Bxf7+ Kxf7 6. Ne5+ Ke8 7. Qxg4 Nf6 8. Qxf4 **d6** [White plays Qxf4 here 100% of the time]",
         "lastMove": "g4f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-bc4-oo-qxf3-d3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1k1nr/pppp1p1p/5q1b/8/2B1Pp2/2NP1Q2/PPP3PP/R1B2RK1 b kq - 2 8",
+        "answer": "c6",
+        "answerUci": "c7c6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O gxf3 6. Qxf3 Qf6 7. d3 Bh6 8. Nc3 **c6** [White plays Nc3 here 100% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-bc4-oo-qxf3-e5-bxf7",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/pppp1B1p/8/4q3/5p2/5Q2/PPPP2PP/RNB2RK1 b kq - 0 8",
+        "answer": "Kxf7",
+        "answerUci": "e8f7",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O gxf3 6. Qxf3 Qf6 7. e5 Qxe5 8. Bxf7+ **Kxf7** [White plays Bxf7+ here 73% of the time]",
+        "lastMove": "c4f7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-h4-ng5-nxf7-qxg4-qxf4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1b1r/pppp1k2/5n1p/8/4PQ1P/8/PPPP2P1/RNB1KB1R b KQ - 0 8",
+        "answer": "Bd6",
+        "answerUci": "f8d6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ng5 h6 6. Nxf7 Kxf7 7. Qxg4 Nf6 8. Qxf4 **Bd6** (Horny Defense, C39) [White plays Qxf4 here 100% of the time]",
+        "lastMove": "g4f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-d4-ne5-g3-qxg4-qxh4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/pppp1p1p/8/4N3/3PP2Q/8/PPP3pP/RNB1KB1R b KQkq - 0 8",
+        "answer": "gxh1=Q",
+        "answerUci": "g2h1q",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. d4 g4 5. Ne5 Qh4+ 6. g3 fxg3 7. Qxg4 g2+ 8. Qxh4 **gxh1=Q** [White plays Qxh4 here 100% of the time]",
+        "lastMove": "g4h4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-h4-ng5-nxf7-bc4-bxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1bnr/ppp2k2/7p/3B4/4PppP/8/PPPP2P1/RNBQK2R b KQ - 0 8",
+        "answer": "Kg7",
+        "answerUci": "f7g7",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. h4 g4 5. Ng5 h6 6. Nxf7 Kxf7 7. Bc4+ d5 8. Bxd5+ **Kg7** [White plays Bxd5+ here 100% of the time]",
+        "lastMove": "c4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-bc4-ne5-g3-qxg4-qxh4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/pppp1p1p/8/4N3/2B1P2Q/8/PPPP2pP/RNB1K2R b KQkq - 0 8",
+        "answer": "gxh1=Q",
+        "answerUci": "g2h1q",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. g3 fxg3 7. Qxg4 g2+ 8. Qxh4 **gxh1=Q+** [White plays Qxh4 here 100% of the time]",
+        "lastMove": "g4h4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-bc4-ne5-kf1-d4-nd3-gxf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kb1r/ppp2p1p/3p3n/8/2BPP1pq/3N1P2/PPP4P/RNBQ1K1R b kq - 0 9",
+        "answer": "Qh3",
+        "answerUci": "h4h3",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. Kf1 Nh6 7. d4 d6 8. Nd3 f3 9. gxf3 **Qh3+** [White plays gxf3 here 63% of the time]",
+        "lastMove": "g2f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-bc4-ne5-kf1-d4-nd3-bf4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kb1r/ppp2p1p/3p3n/8/2BPPBpq/3N1p2/PPP3PP/RN1Q1K1R b kq - 1 9",
+        "answer": "fxg2",
+        "answerUci": "f3g2",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Ne5 Qh4+ 6. Kf1 Nh6 7. d4 d6 8. Nd3 f3 9. Bf4 **fxg2+** [White plays Bf4 here 37% of the time]",
+        "lastMove": "c1f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-bc4-oo-qxf3-e5-bxf7-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb2bnr/pppp1k1p/8/4q3/3P1p2/5Q2/PPP3PP/RNB2RK1 b - - 0 9",
+        "answer": "Qxd4",
+        "answerUci": "e5d4",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O gxf3 6. Qxf3 Qf6 7. e5 Qxe5 8. Bxf7+ Kxf7 9. d4 **Qxd4+** [White plays d4 here 100% of the time]",
+        "lastMove": "d2d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-bc4-bxf7-ne5-qxg4-qxf4-nc4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp4p/3p1n2/8/2N1PQ2/8/PPPP2PP/RNB1K2R b KQ - 1 9",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. Bxf7+ Kxf7 6. Ne5+ Ke8 7. Qxg4 Nf6 8. Qxf4 d6 9. Nc4 **Nc6** [White plays Nc4 here 39% of the time]",
+        "lastMove": "e5c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-nf3-bc4-oo-qxf3-e5-bxf7-d4-be3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb2bnr/pppp1k1p/8/8/3q1p2/4BQ2/PPP3PP/RN3RK1 b - - 1 10",
+        "answer": "Qf6",
+        "answerUci": "d4f6",
+        "orientation": "black",
+        "prompt": "You are Black in the King's Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. f4 exf4 3. Nf3 g5 4. Bc4 g4 5. O-O gxf3 6. Qxf3 Qf6 7. e5 Qxe5 8. Bxf7+ Kxf7 9. d4 Qxd4+ 10. Be3 **Qf6** [White plays Be3 here 100% of the time]",
+        "lastMove": "c1e3"
       },
       "tags": [
         "chess::line"
