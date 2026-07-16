@@ -1,8 +1,8 @@
 {
   "key": "essential-chinese",
-  "version": 3,
+  "version": 4,
   "name": "Essential Chinese",
-  "description": "Mandarin from absolute zero, no character knowledge required. The tone and pinyin system comes first, then day-one survival phrases, then the highest-frequency words, then the grammar patterns that snap them together. Word cards show the characters big with tap-to-hear speech and a tap-to-reveal pinyin hint, so you try the characters first but are never stuck; the full pinyin appears with every answer, and the phrases you must be able to say are trained in both directions. Simplified characters. Keep new cards to 5-10 a day and say every answer out loud.",
+  "description": "Mandarin from absolute zero, no character knowledge required. The tone and pinyin system comes first, then day-one survival phrases, then the highest-frequency words, then the grammar patterns that snap them together. Word cards show the characters big with tap-to-hear speech and a tap-to-reveal pinyin hint, so you try the characters first but are never stuck; the full pinyin appears with every answer, and the phrases you must be able to say are trained in both directions plus an ear-only listening card. Simplified characters. Keep new cards to 5-10 a day and say every answer out loud.",
   "category": "Language",
   "topics": [
     "chinese",
@@ -171,7 +171,8 @@
         "term": "你好",
         "reading": "nǐ hǎo",
         "meaning": "hello",
-        "extra": "Said ní hǎo: two 3rd tones in a row, so the first rises. 你 you + 好 good. Works with anyone, any time of day."
+        "extra": "Said ní hǎo: two 3rd tones in a row, so the first rises. 你 you + 好 good. Works with anyone, any time of day.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -182,7 +183,8 @@
         "term": "你好吗？",
         "reading": "nǐ hǎo ma",
         "meaning": "how are you?",
-        "extra": "吗 turns a statement into a yes-no question. Standard reply: 我很好."
+        "extra": "吗 turns a statement into a yes-no question. Standard reply: 我很好.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -193,7 +195,8 @@
         "term": "我很好",
         "reading": "wǒ hěn hǎo",
         "meaning": "I'm fine",
-        "extra": "很 is required glue between a subject and an adjective; here it barely means 'very'."
+        "extra": "很 is required glue between a subject and an adjective; here it barely means 'very'.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -204,7 +207,8 @@
         "term": "谢谢",
         "reading": "xièxie",
         "meaning": "thank you",
-        "extra": "Second syllable light and toneless. Add the person: 谢谢你."
+        "extra": "Second syllable light and toneless. Add the person: 谢谢你.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -215,7 +219,8 @@
         "term": "不客气",
         "reading": "bú kèqi",
         "meaning": "you're welcome",
-        "extra": "Literally 'don't be polite'. 不 shifts to 2nd tone before a 4th tone."
+        "extra": "Literally 'don't be polite'. 不 shifts to 2nd tone before a 4th tone.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -226,7 +231,8 @@
         "term": "对不起",
         "reading": "duìbuqǐ",
         "meaning": "sorry (I did something wrong)",
-        "extra": "The apology for real faults: bumping into someone, being late."
+        "extra": "The apology for real faults: bumping into someone, being late.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -237,7 +243,8 @@
         "term": "不好意思",
         "reading": "bù hǎoyìsi",
         "meaning": "excuse me, sorry to bother you",
-        "extra": "The everyday soft apology: squeezing past someone, interrupting, asking a favor. Real faults take 对不起."
+        "extra": "The everyday soft apology: squeezing past someone, interrupting, asking a favor. Real faults take 对不起.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -248,7 +255,8 @@
         "term": "没关系",
         "reading": "méi guānxi",
         "meaning": "it doesn't matter (reply to an apology)",
-        "extra": "The standard answer to 对不起. Literally 'there is no connection'."
+        "extra": "The standard answer to 对不起. Literally 'there is no connection'.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -259,7 +267,8 @@
         "term": "再见",
         "reading": "zàijiàn",
         "meaning": "goodbye",
-        "extra": "再 (again) + 见 (see): 'see you again'."
+        "extra": "再 (again) + 见 (see): 'see you again'.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -270,7 +279,8 @@
         "term": "请",
         "reading": "qǐng",
         "meaning": "please",
-        "extra": "Starts polite requests: 请坐 (please sit). Also 'to treat': 我请你 (my treat)."
+        "extra": "Starts polite requests: 请坐 (please sit). Also 'to treat': 我请你 (my treat).",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -281,7 +291,8 @@
         "term": "请问",
         "reading": "qǐngwèn",
         "meaning": "excuse me, may I ask...",
-        "extra": "The polite opener before any question to a stranger."
+        "extra": "The polite opener before any question to a stranger.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -292,7 +303,8 @@
         "term": "你叫什么名字？",
         "reading": "nǐ jiào shénme míngzi",
         "meaning": "what's your name?",
-        "extra": "Answer with 我叫 wǒ jiào + your name."
+        "extra": "Answer with 我叫 wǒ jiào + your name.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -303,7 +315,8 @@
         "term": "认识你很高兴",
         "reading": "rènshi nǐ hěn gāoxìng",
         "meaning": "nice to meet you",
-        "extra": "Literally 'knowing you, (I'm) very glad'."
+        "extra": "Literally 'knowing you, (I'm) very glad'.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -314,7 +327,8 @@
         "term": "我是美国人",
         "reading": "wǒ shì Měiguó rén",
         "meaning": "I'm American",
-        "extra": "Country + 人 (person) = nationality. Swap in any country."
+        "extra": "Country + 人 (person) = nationality. Swap in any country.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -325,7 +339,8 @@
         "term": "我听不懂",
         "reading": "wǒ tīng bu dǒng",
         "meaning": "I don't understand (what you're saying)",
-        "extra": "Literally 'I hear but can't understand'. The most useful sentence of your first month."
+        "extra": "Literally 'I hear but can't understand'. The most useful sentence of your first month.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -336,7 +351,8 @@
         "term": "请再说一遍",
         "reading": "qǐng zài shuō yí biàn",
         "meaning": "please say it again",
-        "extra": "再 (again) + 说 (say) + 一遍 (once through)."
+        "extra": "再 (again) + 说 (say) + 一遍 (once through).",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -347,7 +363,8 @@
         "term": "请说慢一点",
         "reading": "qǐng shuō màn yìdiǎn",
         "meaning": "please speak more slowly",
-        "extra": "Adjective + 一点 means 'a bit more so'."
+        "extra": "Adjective + 一点 means 'a bit more so'.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -358,7 +375,8 @@
         "term": "你会说英语吗？",
         "reading": "nǐ huì shuō Yīngyǔ ma",
         "meaning": "do you speak English?",
-        "extra": "会 marks a learned ability. 英语 English language."
+        "extra": "会 marks a learned ability. 英语 English language.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -369,7 +387,8 @@
         "term": "我会说一点儿汉语",
         "reading": "wǒ huì shuō yìdiǎnr Hànyǔ",
         "meaning": "I speak a little Chinese",
-        "extra": "Guaranteed smiles. 一点儿 a little."
+        "extra": "Guaranteed smiles. 一点儿 a little.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -380,7 +399,8 @@
         "term": "这是什么？",
         "reading": "zhè shì shénme",
         "meaning": "what is this?",
-        "extra": "Point and ask. Question words sit where the answer would go: 'this is what?'"
+        "extra": "Point and ask. Question words sit where the answer would go: 'this is what?'",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -391,7 +411,8 @@
         "term": "多少钱？",
         "reading": "duōshao qián",
         "meaning": "how much is it?",
-        "extra": "多少 (how much) + 钱 (money). Point first: 这个多少钱？"
+        "extra": "多少 (how much) + 钱 (money). Point first: 这个多少钱？",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -402,7 +423,8 @@
         "term": "太贵了",
         "reading": "tài guì le",
         "meaning": "too expensive!",
-        "extra": "The 太...了 wrapper means 'too/so'. Your opening move in any market haggle."
+        "extra": "The 太...了 wrapper means 'too/so'. Your opening move in any market haggle.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -413,7 +435,8 @@
         "term": "便宜一点",
         "reading": "piányi yìdiǎn",
         "meaning": "a little cheaper?",
-        "extra": "The follow-up to 太贵了. 便宜 cheap + 一点 a bit."
+        "extra": "The follow-up to 太贵了. 便宜 cheap + 一点 a bit.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -424,7 +447,8 @@
         "term": "我要这个",
         "reading": "wǒ yào zhège",
         "meaning": "I want this one",
-        "extra": "Point at the menu and say it; works in any shop or restaurant."
+        "extra": "Point at the menu and say it; works in any shop or restaurant.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -435,7 +459,8 @@
         "term": "我不要",
         "reading": "wǒ bú yào",
         "meaning": "I don't want it, no thanks",
-        "extra": "Firm but not rude; perfect for street vendors."
+        "extra": "Firm but not rude; perfect for street vendors.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -446,7 +471,8 @@
         "term": "厕所在哪儿？",
         "reading": "cèsuǒ zài nǎr",
         "meaning": "where is the toilet?",
-        "extra": "X 在哪儿 finds anything. Politer word for toilet: 卫生间 wèishēngjiān."
+        "extra": "X 在哪儿 finds anything. Politer word for toilet: 卫生间 wèishēngjiān.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -457,7 +483,8 @@
         "term": "服务员",
         "reading": "fúwùyuán",
         "meaning": "waiter! (calling the server)",
-        "extra": "Call it out to get attention in a restaurant; normal, not rude. Literally 'service person'."
+        "extra": "Call it out to get attention in a restaurant; normal, not rude. Literally 'service person'.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -468,7 +495,8 @@
         "term": "买单",
         "reading": "mǎidān",
         "meaning": "the bill, please",
-        "extra": "Say it to the server when you want to pay."
+        "extra": "Say it to the server when you want to pay.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -479,7 +507,8 @@
         "term": "干杯",
         "reading": "gānbēi",
         "meaning": "cheers!",
-        "extra": "Literally 'dry the cup'. At formal toasts it can mean bottoms-up, so pace yourself."
+        "extra": "Literally 'dry the cup'. At formal toasts it can mean bottoms-up, so pace yourself.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -490,7 +519,8 @@
         "term": "等一下",
         "reading": "děng yíxià",
         "meaning": "wait a moment",
-        "extra": "等 (wait) + 一下 (a little); 一下 softens any verb."
+        "extra": "等 (wait) + 一下 (a little); 一下 softens any verb.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -501,7 +531,8 @@
         "term": "没问题",
         "reading": "méi wèntí",
         "meaning": "no problem! (sure, can do)",
-        "extra": "The easygoing yes to any request. 问题 problem, question."
+        "extra": "The easygoing yes to any request. 问题 problem, question.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -512,7 +543,8 @@
         "term": "救命",
         "reading": "jiùmìng",
         "meaning": "help! (life-threatening emergency)",
-        "extra": "救 (save) + 命 (life). For everyday help say 请帮我 qǐng bāng wǒ."
+        "extra": "救 (save) + 命 (life). For everyday help say 请帮我 qǐng bāng wǒ.",
+        "listening": true
       },
       "tags": ["zh::phrases"]
     },
@@ -534,7 +566,7 @@
         "term": "你",
         "reading": "nǐ",
         "meaning": "you",
-        "extra": "A polite form 您 nín exists, but 你 is fine in nearly every situation."
+        "extra": "A polite form 您 nín exists, but 你 is fine in nearly every situation. 你去吗？ nǐ qù ma (are you going?)"
       },
       "tags": ["zh::people"]
     },
@@ -545,7 +577,7 @@
         "term": "他",
         "reading": "tā",
         "meaning": "he, him",
-        "extra": "他 (he), 她 (she), and 它 (it) all sound identical; only the writing differs."
+        "extra": "他 (he), 她 (she), and 它 (it) all sound identical; only the writing differs. 他是我朋友 tā shì wǒ péngyou (he is my friend)."
       },
       "tags": ["zh::people"]
     },
@@ -556,7 +588,7 @@
         "term": "她",
         "reading": "tā",
         "meaning": "she, her",
-        "extra": "Same sound as 他; the woman radical 女 marks 'she' in writing only."
+        "extra": "Same sound as 他; the woman radical 女 marks 'she' in writing only. 她很漂亮 tā hěn piàoliang (she is pretty)."
       },
       "tags": ["zh::people"]
     },
@@ -737,6 +769,16 @@
         "extra": "Buzzed vowel: 'shrr'. sì (4) falls, shí (10) rises."
       },
       "tags": ["zh::numbers"]
+    },
+    {
+      "key": "pair-si-shi",
+      "model": "basic",
+      "fields": {
+        "front": "shí, rising tone with the buzzed 'shrr': is that 4 or 10?",
+        "back": "10: 十.",
+        "extra": "4 is sì: falling tone, plain hissy s (四). Mishearing this pair swaps prices at the market."
+      },
+      "tags": ["zh::sounds"]
     },
     {
       "key": "num-bai",
@@ -1025,6 +1067,16 @@
       "tags": ["zh::verbs"]
     },
     {
+      "key": "pair-mai-mai",
+      "model": "basic",
+      "fields": {
+        "front": "mǎi and mài differ only by tone. Which tone means 'to buy'?",
+        "back": "The low 3rd tone: mǎi 买.",
+        "extra": "Falling 4th-tone mài 卖 is to sell. Bargain low to buy; the deal falls closed when you sell."
+      },
+      "tags": ["zh::sounds"]
+    },
+    {
       "key": "vb-kan",
       "model": "vocab",
       "fields": {
@@ -1184,6 +1236,16 @@
         "recognitionOnly": true
       },
       "tags": ["zh::verbs"]
+    },
+    {
+      "key": "pair-shuijiao",
+      "model": "basic",
+      "fields": {
+        "front": "shuìjiào, with two falling tones: sleep, or dumplings?",
+        "back": "To sleep: 睡觉.",
+        "extra": "Two dipping 3rd tones, shuǐjiǎo 水饺, are boiled dumplings. Order carelessly and you ask the waiter for a nap."
+      },
+      "tags": ["zh::sounds"]
     },
     {
       "key": "vb-da-dianhua",
@@ -1357,7 +1419,7 @@
         "term": "爸爸",
         "reading": "bàba",
         "meaning": "dad, father",
-        "extra": "Second syllable is neutral tone."
+        "extra": "Second syllable is neutral tone. 我爸爸 wǒ bàba (my dad)."
       },
       "tags": ["zh::family"]
     },
@@ -1368,7 +1430,7 @@
         "term": "妈妈",
         "reading": "māma",
         "meaning": "mom, mother",
-        "extra": "Woman radical 女 plus 马 mǎ (horse) lending the sound."
+        "extra": "Woman radical 女 plus 马 mǎ (horse) lending the sound. 妈妈，我爱你 māma, wǒ ài nǐ (mom, I love you)."
       },
       "tags": ["zh::family"]
     },
@@ -1474,7 +1536,7 @@
         "term": "茶",
         "reading": "chá",
         "meaning": "tea",
-        "extra": "Both 'chai' and 'cha' around the world come from this word."
+        "extra": "Both 'chai' and 'cha' around the world come from this word. 喝茶 hē chá (drink tea)."
       },
       "tags": ["zh::food"]
     },
