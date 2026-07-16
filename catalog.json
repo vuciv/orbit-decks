@@ -103,7 +103,7 @@
       "key": "ai-research",
       "name": "AI Research",
       "deckCount": 2,
-      "rev": "c286d7e8fe1c",
+      "rev": "222214d11478",
       "file": "categories/ai-research.json"
     }
   ],
@@ -825,7 +825,7 @@
     },
     {
       "key": "research-statistics",
-      "version": 1,
+      "version": 2,
       "file": "decks/research-statistics.json"
     },
     {

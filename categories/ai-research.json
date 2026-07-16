@@ -20,7 +20,7 @@
       "key": "research-statistics",
       "name": "Statistics for Research",
       "description": "The statistics you need to read and write empirical papers with confidence: variance and standard deviation from first principles, standard errors, confidence intervals, hypothesis tests, effect sizes, bootstrap methods, and the ML-specific pitfalls around seeds, benchmarks, and error bars.",
-      "cardCount": 49,
+      "cardCount": 88,
       "topics": [
         "statistics",
         "research-methods",
