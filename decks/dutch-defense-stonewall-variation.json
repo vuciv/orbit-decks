@@ -1,0 +1,160 @@
+{
+  "key": "dutch-defense-stonewall-variation",
+  "version": 1,
+  "name": "Dutch Defense: Stonewall Variation",
+  "description": "Line trainer for the Dutch Defense: Stonewall Variation, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 7 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "dutch-defense"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fpp4pp%2F2pbpn2%2F3p1p2%2F2PP4%2F5NP1%2FPP2PPBP%2FRNBQ1RK1%20w%20kq%20-%202%207&color=black&theme=brown&piece=cburnett&lastMove=f8d6",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "f5",
+        "answerUci": "f7f5",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Dutch Defense. What is the book move?",
+        "extra": "1. d4 **f5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppppp1pp/8/5p2/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the Dutch Defense. What is the book move?",
+        "extra": "1. d4 f5 2. c4 **Nf6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-g3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppppp1pp/5n2/5p2/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "g2g3",
+        "prompt": "You are Black in the Dutch Defense. What is the book move?",
+        "extra": "1. d4 f5 2. c4 Nf6 3. g3 **e6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-g3-bg2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppp2pp/4pn2/5p2/2PP4/6P1/PP2PPBP/RNBQK1NR b KQkq - 1 4",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "lastMove": "f1g2",
+        "prompt": "You are Black in the Dutch Defense. What is the book move?",
+        "extra": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 **Be7**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-g3-bg2-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppppb1pp/4pn2/5p2/2PP4/5NP1/PP2PPBP/RNBQK2R b KQkq - 3 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Dutch Defense. What is the book move?",
+        "extra": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 **O-O**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-g3-bg2-nf3-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppppb1pp/4pn2/5p2/2PP4/5NP1/PP2PPBP/RNBQ1RK1 b - - 5 6",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "lastMove": "e1g1",
+        "prompt": "You are Black in the Dutch Defense. What is the book move?",
+        "extra": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O **d5** (Stonewall Variation, A92)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-g3-bg2-nf3-oo-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1b1pp/4pn2/3p1p2/2PP4/2N2NP1/PP2PPBP/R1BQ1RK1 b - - 1 7",
+        "answer": "c6",
+        "answerUci": "c7c6",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Stonewall Variation. What is the book move?",
+        "extra": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O d5 7. Nc3 **c6** (Stonewall Variation, A95)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-g3-bg2-nf3-oo-b3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1b1pp/4pn2/3p1p2/2PP4/1P3NP1/P3PPBP/RNBQ1RK1 b - - 0 7",
+        "answer": "c6",
+        "answerUci": "c7c6",
+        "orientation": "black",
+        "lastMove": "b2b3",
+        "prompt": "You are Black in the Botvinnik Variation. What is the book move?",
+        "extra": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O d5 7. b3 **c6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-g3-bg2-nf3-oo-nc3-qc2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2b1pp/2p1pn2/3p1p2/2PP4/2N2NP1/PPQ1PPBP/R1B2RK1 b - - 1 8",
+        "answer": "Qe8",
+        "answerUci": "d8e8",
+        "orientation": "black",
+        "lastMove": "d1c2",
+        "prompt": "You are Black in the Stonewall Variation. What is the book move?",
+        "extra": "1. d4 f5 2. c4 Nf6 3. g3 e6 4. Bg2 Be7 5. Nf3 O-O 6. O-O d5 7. Nc3 c6 8. Qc2 **Qe8**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

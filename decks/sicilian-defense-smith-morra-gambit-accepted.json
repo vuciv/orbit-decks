@@ -1,0 +1,160 @@
+{
+  "key": "sicilian-defense-smith-morra-gambit-accepted",
+  "version": 1,
+  "name": "Sicilian Defense: Smith-Morra Gambit Accepted",
+  "description": "Line trainer for the Sicilian Defense: Smith-Morra Gambit Accepted, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 18 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "sicilian-defense"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F8%2F8%2F4P3%2F2p5%2FPP3PPP%2FRNBQKBNR%20w%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=d4c3",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "lastMove": "e2e4",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 **c5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/8/2p5/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "cxd4",
+        "answerUci": "c5d4",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. d4 **cxd4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/8/8/3pP3/2P5/PP3PPP/RNBQKBNR b KQkq - 0 3",
+        "answer": "dxc3",
+        "answerUci": "d4c3",
+        "orientation": "black",
+        "lastMove": "c2c3",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. d4 cxd4 3. c3 **dxc3** (Smith-Morra Gambit Accepted, B21)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c3-nxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/8/8/4P3/2N5/PP3PPP/R1BQKBNR b KQkq - 0 4",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Smith-Morra Gambit Accepted. What is the book move?",
+        "extra": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 **Nc6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c3-nxc3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppppp/2n5/8/4P3/2N2N2/PP3PPP/R1BQKB1R b KQkq - 2 5",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Smith-Morra Gambit Accepted. What is the book move?",
+        "extra": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 **e6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c3-nxc3-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppppp/2n5/8/2B1P3/2N5/PP3PPP/R1BQK1NR b KQkq - 2 5",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "f1c4",
+        "prompt": "You are Black in the Smith-Morra Gambit Accepted. What is the book move?",
+        "extra": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Bc4 **e6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c3-nxc3-nf3-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1p1ppp/2n1p3/8/2B1P3/2N2N2/PP3PPP/R1BQK2R b KQkq - 1 6",
+        "answer": "Qc7",
+        "answerUci": "d8c7",
+        "orientation": "black",
+        "lastMove": "f1c4",
+        "prompt": "You are Black in the Smith-Morra Gambit Accepted. What is the book move?",
+        "extra": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 e6 6. Bc4 **Qc7** (Siberian Variation, B21)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c3-nxc3-nf3-bc4-qe2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kbnr/ppqp1ppp/2n1p3/8/2B1P3/2N2N2/PP2QPPP/R1B1K2R b KQkq - 3 7",
+        "answer": "a6",
+        "answerUci": "a7a6",
+        "orientation": "black",
+        "lastMove": "d1e2",
+        "prompt": "You are Black in the Siberian Variation. What is the book move?",
+        "extra": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 e6 6. Bc4 Qc7 7. Qe2 **a6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c3-nxc3-nf3-bc4-qe2-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kbnr/1pqp1ppp/p1n1p3/8/2B1P3/2N2N2/PP2QPPP/R1B2RK1 b kq - 1 8",
+        "answer": "Bd6",
+        "answerUci": "f8d6",
+        "orientation": "black",
+        "lastMove": "e1g1",
+        "prompt": "You are Black in the Siberian Variation. What is the book move?",
+        "extra": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 e6 6. Bc4 Qc7 7. Qe2 a6 8. O-O **Bd6** (Larsen Defense, B21)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

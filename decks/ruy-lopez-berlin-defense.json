@@ -1,0 +1,256 @@
+{
+  "key": "ruy-lopez-berlin-defense",
+  "version": 1,
+  "name": "Ruy Lopez: Berlin Defense",
+  "description": "Line trainer for the Ruy Lopez: Berlin Defense, generated from the canonical opening database (lichess-org/chess-openings): 15 positions drilled book-move by book-move from Black's side across 31 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "ruy-lopez"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpppp1ppp%2F2n2n2%2F1B2p3%2F4P3%2F5N2%2FPPPP1PPP%2FRNBQK2R%20w%20KQkq%20-%204%204&color=black&theme=brown&piece=cburnett&lastMove=g8f6",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "lastMove": "e2e4",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 **e5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 **Nc6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "f1b5",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 **Nf6** (Berlin Defense, C65)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/5N2/PPPP1PPP/RNBQ1RK1 b kq - 5 4",
+        "answer": "Nxe4",
+        "answerUci": "f6e4",
+        "orientation": "black",
+        "lastMove": "e1g1",
+        "prompt": "You are Black in the Berlin Defense. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O **Nxe4** (Rio Gambit Accepted, C67)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/3PP3/5N2/PPP2PPP/RNBQK2R b KQkq - 0 4",
+        "answer": "exd4",
+        "answerUci": "e5d4",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Berlin Defense. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d4 **exd4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-d3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pppp1ppp/2n2n2/1B2p3/4P3/3P1N2/PPP2PPP/RNBQK2R b KQkq - 0 4",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "lastMove": "d2d3",
+        "prompt": "You are Black in the Anti-Berlin Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. d3 **d6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-oo-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pppp1ppp/2n5/1B2p3/3Pn3/5N2/PPP2PPP/RNBQ1RK1 b kq - 0 5",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Rio Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 **Be7** (Rio de Janeiro Variation, C67)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-oo-d4-qe2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppppbppp/2n5/1B2p3/3Pn3/5N2/PPP1QPPP/RNB2RK1 b kq - 2 6",
+        "answer": "Nd6",
+        "answerUci": "e4d6",
+        "orientation": "black",
+        "lastMove": "d1e2",
+        "prompt": "You are Black in the Rio de Janeiro Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Be7 6. Qe2 **Nd6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-oo-d4-qe2-bxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppppbppp/2Bn4/4p3/3P4/5N2/PPP1QPPP/RNB2RK1 b kq - 0 7",
+        "answer": "bxc6",
+        "answerUci": "b7c6",
+        "orientation": "black",
+        "lastMove": "b5c6",
+        "prompt": "You are Black in the Rio de Janeiro Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Be7 6. Qe2 Nd6 7. Bxc6 **bxc6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-oo-d4-qe2-bxc6-dxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/p1ppbppp/2pn4/4P3/8/5N2/PPP1QPPP/RNB2RK1 b kq - 0 8",
+        "answer": "Nb7",
+        "answerUci": "d6b7",
+        "orientation": "black",
+        "lastMove": "d4e5",
+        "prompt": "You are Black in the Rio de Janeiro Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Be7 6. Qe2 Nd6 7. Bxc6 bxc6 8. dxe5 **Nb7**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-oo-d4-qe2-bxc6-dxe5-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pnppbppp/2p5/4P3/8/2N2N2/PPP1QPPP/R1B2RK1 b kq - 2 9",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Rio de Janeiro Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Be7 6. Qe2 Nd6 7. Bxc6 bxc6 8. dxe5 Nb7 9. Nc3 **O-O**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-oo-d4-qe2-bxc6-dxe5-nc3-re1",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pnppbppp/2p5/4P3/8/2N2N2/PPP1QPPP/R1B1R1K1 b - - 4 10",
+        "answer": "Nc5",
+        "answerUci": "b7c5",
+        "orientation": "black",
+        "lastMove": "f1e1",
+        "prompt": "You are Black in the Rio de Janeiro Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Be7 6. Qe2 Nd6 7. Bxc6 bxc6 8. dxe5 Nb7 9. Nc3 O-O 10. Re1 **Nc5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-oo-d4-qe2-bxc6-dxe5-nc3-re1-nd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/p1ppbppp/2p5/2n1P3/3N4/2N5/PPP1QPPP/R1B1R1K1 b - - 6 11",
+        "answer": "Ne6",
+        "answerUci": "c5e6",
+        "orientation": "black",
+        "lastMove": "f3d4",
+        "prompt": "You are Black in the Rio de Janeiro Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Be7 6. Qe2 Nd6 7. Bxc6 bxc6 8. dxe5 Nb7 9. Nc3 O-O 10. Re1 Nc5 11. Nd4 **Ne6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-oo-d4-qe2-bxc6-dxe5-nc3-re1-nd4-be3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/p1ppbppp/2p1n3/4P3/3N4/2N1B3/PPP1QPPP/R3R1K1 b - - 8 12",
+        "answer": "Nxd4",
+        "answerUci": "e6d4",
+        "orientation": "black",
+        "lastMove": "c1e3",
+        "prompt": "You are Black in the Rio de Janeiro Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Be7 6. Qe2 Nd6 7. Bxc6 bxc6 8. dxe5 Nb7 9. Nc3 O-O 10. Re1 Nc5 11. Nd4 Ne6 12. Be3 **Nxd4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-oo-d4-qe2-bxc6-dxe5-nc3-re1-nd4-be3-bxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/p1ppbppp/2p5/4P3/3B4/2N5/PPP1QPPP/R3R1K1 b - - 0 13",
+        "answer": "c5",
+        "answerUci": "c6c5",
+        "orientation": "black",
+        "lastMove": "e3d4",
+        "prompt": "You are Black in the Rio de Janeiro Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 Nf6 4. O-O Nxe4 5. d4 Be7 6. Qe2 Nd6 7. Bxc6 bxc6 8. dxe5 Nb7 9. Nc3 O-O 10. Re1 Nc5 11. Nd4 Ne6 12. Be3 Nxd4 13. Bxd4 **c5** (Rio de Janeiro Variation, C67)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

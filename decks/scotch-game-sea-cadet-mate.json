@@ -1,0 +1,175 @@
+{
+  "key": "scotch-game-sea-cadet-mate",
+  "version": 1,
+  "name": "Scotch Game: Sea-Cadet Mate",
+  "description": "Line trainer for the Scotch Game: Sea-Cadet Mate, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from White's side across 1 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "scotch-game"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=r2q1bnr%2Fppp1kBpp%2F3p4%2F3NN3%2F4P3%2F8%2FPP3PPP%2FR1Bb1RK1%20b%20-%20-%202%2010&color=white&theme=brown&piece=cburnett&lastMove=c3d5",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-root",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "answer": "e4",
+        "answerUci": "e2e4",
+        "orientation": "white",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. **e4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "lastMove": "e7e5",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. **Nf3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "b8c6",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. **d4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1ppp/2n5/8/3pP3/5N2/PPP2PPP/RNBQKB1R w KQkq - 0 4",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "lastMove": "e5d4",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. **c3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-dxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1ppp/2n5/8/4P3/2p2N2/PP3PPP/RNBQKB1R w KQkq - 0 5",
+        "answer": "Nxc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "lastMove": "d4c3",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. c3 dxc3 5. **Nxc3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-dxc3-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/ppp2ppp/2np4/8/4P3/2N2N2/PP3PPP/R1BQKB1R w KQkq - 0 6",
+        "answer": "Bc4",
+        "answerUci": "f1c4",
+        "orientation": "white",
+        "lastMove": "d7d6",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. c3 dxc3 5. Nxc3 d6 6. **Bc4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-dxc3-d6-bg4",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/ppp2ppp/2np4/8/2B1P1b1/2N2N2/PP3PPP/R1BQK2R w KQkq - 2 7",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "c8g4",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. c3 dxc3 5. Nxc3 d6 6. Bc4 Bg4 7. **O-O**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-dxc3-d6-bg4-ne5",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/ppp2ppp/3p4/4n3/2B1P1b1/2N2N2/PP3PPP/R1BQ1RK1 w kq - 4 8",
+        "answer": "Nxe5",
+        "answerUci": "f3e5",
+        "orientation": "white",
+        "lastMove": "c6e5",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. c3 dxc3 5. Nxc3 d6 6. Bc4 Bg4 7. O-O Ne5 8. **Nxe5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-dxc3-d6-bg4-ne5-bxd1",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/ppp2ppp/3p4/4N3/2B1P3/2N5/PP3PPP/R1Bb1RK1 w kq - 0 9",
+        "answer": "Bxf7",
+        "answerUci": "c4f7",
+        "orientation": "white",
+        "lastMove": "g4d1",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. c3 dxc3 5. Nxc3 d6 6. Bc4 Bg4 7. O-O Ne5 8. Nxe5 Bxd1 9. **Bxf7+**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-exd4-dxc3-d6-bg4-ne5-bxd1-ke7",
+      "model": "chess",
+      "fields": {
+        "fen": "r2q1bnr/ppp1kBpp/3p4/4N3/4P3/2N5/PP3PPP/R1Bb1RK1 w - - 1 10",
+        "answer": "Nd5",
+        "answerUci": "c3d5",
+        "orientation": "white",
+        "lastMove": "e8e7",
+        "prompt": "You are White in the Scotch Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. d4 exd4 4. c3 dxc3 5. Nxc3 d6 6. Bc4 Bg4 7. O-O Ne5 8. Nxe5 Bxd1 9. Bxf7+ Ke7 10. **Nd5#** (Sea-Cadet Mate, C44)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

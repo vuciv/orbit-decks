@@ -1,0 +1,176 @@
+{
+  "key": "nimzo-indian-defense-classical-variation",
+  "version": 1,
+  "name": "Nimzo-Indian Defense: Classical Variation",
+  "description": "Line trainer for the Nimzo-Indian Defense: Classical Variation, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from Black's side across 20 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "nimzo-indian-defense"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fpppp1ppp%2F4pn2%2F8%2F1bPP4%2F2N5%2FPPQ1PPPP%2FR1B1KBNR%20b%20KQkq%20-%203%204&color=black&theme=brown&piece=cburnett&lastMove=d1c2",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Nimzo-Indian Defense. What is the book move?",
+        "extra": "1. d4 **Nf6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the Nimzo-Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 **e6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/2N5/PP2PPPP/R1BQKBNR b KQkq - 1 3",
+        "answer": "Bb4",
+        "answerUci": "f8b4",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Nimzo-Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 e6 3. Nc3 **Bb4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-qc2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PPQ1PPPP/R1B1KBNR b KQkq - 3 4",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "lastMove": "d1c2",
+        "prompt": "You are Black in the Classical Variation. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Qc2 **d5** (Noa Variation, E34)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-qc2-a3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp2ppp/4pn2/3p4/1bPP4/P1N5/1PQ1PPPP/R1B1KBNR b KQkq - 0 5",
+        "answer": "Bxc3",
+        "answerUci": "b4c3",
+        "orientation": "black",
+        "lastMove": "a2a3",
+        "prompt": "You are Black in the Noa Variation. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Qc2 d5 5. a3 **Bxc3+**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-qc2-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp2ppp/4pn2/3P4/1b1P4/2N5/PPQ1PPPP/R1B1KBNR b KQkq - 0 5",
+        "answer": "Qxd5",
+        "answerUci": "d8d5",
+        "orientation": "black",
+        "lastMove": "c4d5",
+        "prompt": "You are Black in the Noa Variation. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Qc2 d5 5. cxd5 **Qxd5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-qc2-cxd5-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1k2r/ppp2ppp/4pn2/3q4/1b1P4/2N2N2/PPQ1PPPP/R1B1KB1R b KQkq - 1 6",
+        "answer": "Qf5",
+        "answerUci": "d5f5",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Noa Variation. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Qc2 d5 5. cxd5 Qxd5 6. Nf3 **Qf5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-qc2-a3-qxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp2ppp/4pn2/3p4/2PP4/P1Q5/1P2PPPP/R1B1KBNR b KQkq - 0 6",
+        "answer": "Ne4",
+        "answerUci": "f6e4",
+        "orientation": "black",
+        "lastMove": "c2c3",
+        "prompt": "You are Black in the Noa Variation. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Qc2 d5 5. a3 Bxc3+ 6. Qxc3 **Ne4** (Main Line, E36)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-qc2-cxd5-nf3-qd1",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1k2r/ppp2ppp/4pn2/5q2/1b1P4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 3 7",
+        "answer": "e5",
+        "answerUci": "e6e5",
+        "orientation": "black",
+        "lastMove": "c2d1",
+        "prompt": "You are Black in the Noa Variation. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Qc2 d5 5. cxd5 Qxd5 6. Nf3 Qf5 7. Qd1 **e5** (Belyavsky Gambit, E34)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-qc2-a3-qxc3-qc2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp2ppp/4p3/3p4/2PPn3/P7/1PQ1PPPP/R1B1KBNR b KQkq - 2 7",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "lastMove": "c3c2",
+        "prompt": "You are Black in the Noa Variation. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 e6 3. Nc3 Bb4 4. Qc2 d5 5. a3 Bxc3+ 6. Qxc3 Ne4 7. Qc2 **c5** (Modern Variation, E37)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

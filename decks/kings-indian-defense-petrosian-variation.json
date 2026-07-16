@@ -1,0 +1,176 @@
+{
+  "key": "kings-indian-defense-petrosian-variation",
+  "version": 1,
+  "name": "King's Indian Defense: Petrosian Variation",
+  "description": "Line trainer for the King's Indian Defense: Petrosian Variation, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from Black's side across 4 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "kings-indian-defense"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbq1rk1%2Fppp2pbp%2F3p1np1%2F3Pp3%2F2P1P3%2F2N2N2%2FPP2BPPP%2FR1BQK2R%20b%20KQ%20-%200%207&color=black&theme=brown&piece=cburnett&lastMove=d4d5",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 **Nf6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "g6",
+        "answerUci": "g7g6",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 **g6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppp1p/5np1/8/2PP4/2N5/PP2PPPP/R1BQKBNR b KQkq - 1 3",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 **Bg7**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppppppbp/5np1/8/2PPP3/2N5/PP3PPP/R1BQKBNR b KQkq - 0 4",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "lastMove": "e2e4",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 **d6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP3PPP/R1BQKB1R b KQkq - 1 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 **O-O**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP2BPPP/R1BQK2R b KQ - 3 6",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "lastMove": "f1e2",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 **e5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-be2-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp2pbp/3p1np1/3Pp3/2P1P3/2N2N2/PP2BPPP/R1BQK2R b KQ - 0 7",
+        "answer": "Nbd7",
+        "answerUci": "b8d7",
+        "orientation": "black",
+        "lastMove": "d4d5",
+        "prompt": "You are Black in the Petrosian Variation. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. d5 **Nbd7** (Normal Defense, E93)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-be2-d5-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppn1pbp/3p1np1/3Pp1B1/2P1P3/2N2N2/PP2BPPP/R2QK2R b KQ - 2 8",
+        "answer": "h6",
+        "answerUci": "h7h6",
+        "orientation": "black",
+        "lastMove": "c1g5",
+        "prompt": "You are Black in the Normal Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. d5 Nbd7 8. Bg5 **h6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-be2-d5-bg5-bh4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppn1pb1/3p1npp/3Pp3/2P1P2B/2N2N2/PP2BPPP/R2QK2R b KQ - 1 9",
+        "answer": "g5",
+        "answerUci": "g6g5",
+        "orientation": "black",
+        "lastMove": "g5h4",
+        "prompt": "You are Black in the Normal Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. d5 Nbd7 8. Bg5 h6 9. Bh4 **g5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-nf3-be2-d5-bg5-bh4-bg3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppn1pb1/3p1n1p/3Pp1p1/2P1P3/2N2NB1/PP2BPPP/R2QK2R b KQ - 1 10",
+        "answer": "Nh5",
+        "answerUci": "f6h5",
+        "orientation": "black",
+        "lastMove": "h4g3",
+        "prompt": "You are Black in the Normal Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. Nf3 O-O 6. Be2 e5 7. d5 Nbd7 8. Bg5 h6 9. Bh4 g5 10. Bg3 **Nh5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

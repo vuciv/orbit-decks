@@ -1,0 +1,208 @@
+{
+  "key": "alekhine-defense-exchange-variation",
+  "version": 1,
+  "name": "Alekhine Defense: Exchange Variation",
+  "description": "Line trainer for the Alekhine Defense: Exchange Variation, generated from the canonical opening database (lichess-org/chess-openings): 12 positions drilled book-move by book-move from Black's side across 3 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "alekhine-defense"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fppp1pppp%2F1n1P4%2F8%2F2PP4%2F8%2FPP3PPP%2FRNBQKBNR%20b%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=e5d6",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "e2e4",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 **Nf6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppppp/5n2/4P3/8/8/PPPP1PPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "Nd5",
+        "answerUci": "f6d5",
+        "orientation": "black",
+        "lastMove": "e4e5",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 **Nd5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppppp/8/3nP3/3P4/8/PPP2PPP/RNBQKBNR b KQkq - 0 3",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 **d6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1pppp/3p4/3nP3/2PP4/8/PP3PPP/RNBQKBNR b KQkq - 0 4",
+        "answer": "Nb6",
+        "answerUci": "d5b6",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the Alekhine Defense. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 **Nb6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4-exd6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1pppp/1n1P4/8/2PP4/8/PP3PPP/RNBQKBNR b KQkq - 0 5",
+        "answer": "cxd6",
+        "answerUci": "c7d6",
+        "orientation": "black",
+        "lastMove": "e5d6",
+        "prompt": "You are Black in the Exchange Variation. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 **cxd6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4-exd6-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/1n1p4/8/2PP4/2N5/PP3PPP/R1BQKBNR b KQkq - 1 6",
+        "answer": "g6",
+        "answerUci": "g7g6",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Exchange Variation. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nc3 **g6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4-exd6-nc3-h3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pp1p/1n1p2p1/8/2PP4/2N4P/PP3PP1/R1BQKBNR b KQkq - 0 7",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "lastMove": "h2h3",
+        "prompt": "You are Black in the Exchange Variation. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nc3 g6 7. h3 **Bg7**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4-exd6-nc3-be3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pp1p/1n1p2p1/8/2PP4/2N1B3/PP3PPP/R2QKBNR b KQkq - 1 7",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "lastMove": "c1e3",
+        "prompt": "You are Black in the Exchange Variation. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nc3 g6 7. Be3 **Bg7**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4-exd6-nc3-h3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2ppbp/1n1p2p1/8/2PP4/2N2N1P/PP3PP1/R1BQKB1R b KQkq - 2 8",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Exchange Variation. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nc3 g6 7. h3 Bg7 8. Nf3 **O-O**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4-exd6-nc3-be3-rc1",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pp2ppbp/1n1p2p1/8/2PP4/2N1B3/PP3PPP/2RQKBNR b Kkq - 3 8",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "lastMove": "a1c1",
+        "prompt": "You are Black in the Exchange Variation. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nc3 g6 7. Be3 Bg7 8. Rc1 **O-O**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4-exd6-nc3-h3-nf3-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2ppbp/1n1p2p1/8/2PP4/2N2N1P/PP2BPP1/R1BQK2R b KQ - 4 9",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "lastMove": "f1e2",
+        "prompt": "You are Black in the Exchange Variation. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nc3 g6 7. h3 Bg7 8. Nf3 O-O 9. Be2 **Nc6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-e5-d4-c4-exd6-nc3-h3-nf3-be2-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pp2ppbp/1nnp2p1/8/2PP4/2N2N1P/PP2BPP1/R1BQ1RK1 b - - 6 10",
+        "answer": "Bf5",
+        "answerUci": "c8f5",
+        "orientation": "black",
+        "lastMove": "e1g1",
+        "prompt": "You are Black in the Exchange Variation. What is the book move?",
+        "extra": "1. e4 Nf6 2. e5 Nd5 3. d4 d6 4. c4 Nb6 5. exd6 cxd6 6. Nc3 g6 7. h3 Bg7 8. Nf3 O-O 9. Be2 Nc6 10. O-O **Bf5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

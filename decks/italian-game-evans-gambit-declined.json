@@ -1,0 +1,255 @@
+{
+  "key": "italian-game-evans-gambit-declined",
+  "version": 1,
+  "name": "Italian Game: Evans Gambit Declined",
+  "description": "Line trainer for the Italian Game: Evans Gambit Declined, generated from the canonical opening database (lichess-org/chess-openings): 15 positions drilled book-move by book-move from White's side across 9 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "italian-game"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqk1nr%2Fpppp1ppp%2F1bn5%2F4p3%2F1PB1P3%2F5N2%2FP1PP1PPP%2FRNBQK2R%20w%20KQkq%20-%201%205&color=white&theme=brown&piece=cburnett&lastMove=c5b6",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-root",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "answer": "e4",
+        "answerUci": "e2e4",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. **e4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "lastMove": "e7e5",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. **Nf3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+        "answer": "Bc4",
+        "answerUci": "f1c4",
+        "orientation": "white",
+        "lastMove": "b8c6",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. **Bc4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+        "answer": "b4",
+        "answerUci": "b2b4",
+        "orientation": "white",
+        "lastMove": "f8c5",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. **b4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1ppp/1bn5/4p3/1PB1P3/5N2/P1PP1PPP/RNBQK2R w KQkq - 1 5",
+        "answer": "b5",
+        "answerUci": "b4b5",
+        "orientation": "white",
+        "lastMove": "c5b6",
+        "prompt": "You are White in the Evans Gambit Declined. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. **b5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1ppp/1b6/nP2p3/2B1P3/5N2/P1PP1PPP/RNBQK2R w KQkq - 1 6",
+        "answer": "Nxe5",
+        "answerUci": "f3e5",
+        "orientation": "white",
+        "lastMove": "c6a5",
+        "prompt": "You are White in the Evans Gambit Declined. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. **Nxe5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5-qg5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppp1ppp/1b6/nP2N1q1/2B1P3/8/P1PP1PPP/RNBQK2R w KQkq - 1 7",
+        "answer": "Qf3",
+        "answerUci": "d1f3",
+        "orientation": "white",
+        "lastMove": "d8g5",
+        "prompt": "You are White in the Hirschbach Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Qg5 7. **Qf3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5-nh6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/1b5n/nP2N3/2B1P3/8/P1PP1PPP/RNBQK2R w KQkq - 1 7",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "g8h6",
+        "prompt": "You are White in the Lange Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Nh6 7. **d4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5-nh6-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2ppp/1b1p3n/nP2N3/2BPP3/8/P1P2PPP/RNBQK2R w KQkq - 0 8",
+        "answer": "Bxh6",
+        "answerUci": "c1h6",
+        "orientation": "white",
+        "lastMove": "d7d6",
+        "prompt": "You are White in the Lange Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Nh6 7. d4 d6 8. **Bxh6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5-qg5-qxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppp1ppp/1b6/nP2q3/2B1P3/5Q2/P1PP1PPP/RNB1K2R w KQkq - 0 8",
+        "answer": "Qxf7",
+        "answerUci": "f3f7",
+        "orientation": "white",
+        "lastMove": "g5e5",
+        "prompt": "You are White in the Hirschbach Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Qg5 7. Qf3 Qxe5 8. **Qxf7+**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5-qg5-qxe5-kd8",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bk2nr/pppp1Qpp/1b6/nP2q3/2B1P3/8/P1PP1PPP/RNB1K2R w KQ - 1 9",
+        "answer": "Bb2",
+        "answerUci": "c1b2",
+        "orientation": "white",
+        "lastMove": "e8d8",
+        "prompt": "You are White in the Hirschbach Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Qg5 7. Qf3 Qxe5 8. Qxf7+ Kd8 9. **Bb2** (Hicken Variation, C51)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5-nh6-d6-dxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2ppp/1b5B/nP2p3/2BPP3/8/P1P2PPP/RN1QK2R w KQkq - 0 9",
+        "answer": "Bxg7",
+        "answerUci": "h6g7",
+        "orientation": "white",
+        "lastMove": "d6e5",
+        "prompt": "You are White in the Lange Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Nh6 7. d4 d6 8. Bxh6 dxe5 9. **Bxg7**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5-nh6-d6-dxe5-rg8",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1r1/ppp2pBp/1b6/nP2p3/2BPP3/8/P1P2PPP/RN1QK2R w KQq - 1 10",
+        "answer": "Bxf7",
+        "answerUci": "c4f7",
+        "orientation": "white",
+        "lastMove": "h8g8",
+        "prompt": "You are White in the Lange Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Nh6 7. d4 d6 8. Bxh6 dxe5 9. Bxg7 Rg8 10. **Bxf7+**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5-nh6-d6-dxe5-rg8-kxf7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq2r1/ppp2kBp/1b6/nP2p3/3PP3/8/P1P2PPP/RN1QK2R w KQ - 0 11",
+        "answer": "Bxe5",
+        "answerUci": "g7e5",
+        "orientation": "white",
+        "lastMove": "e8f7",
+        "prompt": "You are White in the Lange Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Nh6 7. d4 d6 8. Bxh6 dxe5 9. Bxg7 Rg8 10. Bxf7+ Kxf7 11. **Bxe5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-bb6-na5-nh6-d6-dxe5-rg8-kxf7-qg5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b3r1/ppp2k1p/1b6/nP2B1q1/3PP3/8/P1P2PPP/RN1QK2R w KQ - 1 12",
+        "answer": "Nd2",
+        "answerUci": "b1d2",
+        "orientation": "white",
+        "lastMove": "d8g5",
+        "prompt": "You are White in the Lange Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. b4 Bb6 5. b5 Na5 6. Nxe5 Nh6 7. d4 d6 8. Bxh6 dxe5 9. Bxg7 Rg8 10. Bxf7+ Kxf7 11. Bxe5 Qg5 12. **Nd2** (Pavlov Variation, C51)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

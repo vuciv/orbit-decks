@@ -1,0 +1,176 @@
+{
+  "key": "slav-defense-quiet-variation",
+  "version": 1,
+  "name": "Slav Defense: Quiet Variation",
+  "description": "Line trainer for the Slav Defense: Quiet Variation, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from Black's side across 6 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "slav-defense"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp2pppp%2F2p2n2%2F3p4%2F2PP4%2F4PN2%2FPP3PPP%2FRNBQKB1R%20b%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=e2e3",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 **d5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "c6",
+        "answerUci": "c7c6",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 **c6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/5N2/PP2PPPP/RNBQKB1R b KQkq - 1 3",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 **Nf6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/4PN2/PP3PPP/RNBQKB1R b KQkq - 0 4",
+        "answer": "Bf5",
+        "answerUci": "c8f5",
+        "orientation": "black",
+        "lastMove": "e2e3",
+        "prompt": "You are Black in the Quiet Variation. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 **Bf5** (Schallopp Defense, D12)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-e3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2p2n2/3p1b2/2PP4/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 2 5",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Schallopp Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 Bf5 5. Nc3 **e6** (Schallopp Defense, D12)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-e3-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2p2n2/3P1b2/3P4/4PN2/PP3PPP/RNBQKB1R b KQkq - 0 5",
+        "answer": "cxd5",
+        "answerUci": "c6d5",
+        "orientation": "black",
+        "lastMove": "c4d5",
+        "prompt": "You are Black in the Schallopp Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 Bf5 5. cxd5 **cxd5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-e3-cxd5-qb3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/5n2/3p1b2/3P4/1Q2PN2/PP3PPP/RNB1KB1R b KQkq - 1 6",
+        "answer": "Qc8",
+        "answerUci": "d8c8",
+        "orientation": "black",
+        "lastMove": "d1b3",
+        "prompt": "You are Black in the Schallopp Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 Bf5 5. cxd5 cxd5 6. Qb3 **Qc8**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-e3-cxd5-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/5n2/3p1b2/3P4/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 1 6",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Schallopp Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 Bf5 5. cxd5 cxd5 6. Nc3 **e6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-e3-cxd5-nc3-ne5",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp3ppp/4pn2/3pNb2/3P4/2N1P3/PP3PPP/R1BQKB1R b KQkq - 1 7",
+        "answer": "Nfd7",
+        "answerUci": "f6d7",
+        "orientation": "black",
+        "lastMove": "f3e5",
+        "prompt": "You are Black in the Schallopp Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 Bf5 5. cxd5 cxd5 6. Nc3 e6 7. Ne5 **Nfd7** (Amsterdam Variation, D12)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-e3-cxd5-qb3-bd2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnq1kb1r/pp2pppp/5n2/3p1b2/3P4/1Q2PN2/PP1B1PPP/RN2KB1R b KQkq - 3 7",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "c1d2",
+        "prompt": "You are Black in the Schallopp Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. e3 Bf5 5. cxd5 cxd5 6. Qb3 Qc8 7. Bd2 **e6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

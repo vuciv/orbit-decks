@@ -1,0 +1,287 @@
+{
+  "key": "italian-game-scotch-gambit",
+  "version": 1,
+  "name": "Italian Game: Scotch Gambit",
+  "description": "Line trainer for the Italian Game: Scotch Gambit, generated from the canonical opening database (lichess-org/chess-openings): 17 positions drilled book-move by book-move from White's side across 14 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "italian-game"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpppp1ppp%2F2n2n2%2F8%2F2BpP3%2F5N2%2FPPP2PPP%2FRNBQ1RK1%20b%20kq%20-%201%205&color=white&theme=brown&piece=cburnett&lastMove=e1g1",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-root",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "answer": "e4",
+        "answerUci": "e2e4",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. **e4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/8/PPPP1PPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "lastMove": "e7e5",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. **Nf3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1ppp/2n5/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R w KQkq - 2 3",
+        "answer": "Bc4",
+        "answerUci": "f1c4",
+        "orientation": "white",
+        "lastMove": "b8c6",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. **Bc4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "g8f6",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. **d4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1ppp/2n5/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "f8c5",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. **O-O**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pppp1ppp/2n2n2/8/2BpP3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "e5d4",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. **O-O** (Scotch Gambit, C56)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/5N2/PPPP1PPP/RNBQ1RK1 w kq - 6 5",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "g8f6",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. **d4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nf6-exd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b5/2BpP3/5N2/PPP2PPP/RNBQ1RK1 w kq - 0 6",
+        "answer": "e5",
+        "answerUci": "e4e5",
+        "orientation": "white",
+        "lastMove": "e5d4",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d4 exd4 6. **e5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-nxe4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pppp1ppp/2n5/8/2Bpn3/5N2/PPP2PPP/RNBQ1RK1 w kq - 0 6",
+        "answer": "Re1",
+        "answerUci": "f1e1",
+        "orientation": "white",
+        "lastMove": "f6e4",
+        "prompt": "You are White in the Double Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Nxe4 6. **Re1**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nf6-exd4-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2ppp/2n2n2/2bpP3/2Bp4/5N2/PPP2PPP/RNBQ1RK1 w kq d6 0 7",
+        "answer": "exf6",
+        "answerUci": "e5f6",
+        "orientation": "white",
+        "lastMove": "d7d5",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d4 exd4 6. e5 d5 7. **exf6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-nxe4-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/2n5/3p4/2Bpn3/5N2/PPP2PPP/RNBQR1K1 w kq - 0 7",
+        "answer": "Bxd5",
+        "answerUci": "c4d5",
+        "orientation": "white",
+        "lastMove": "d7d5",
+        "prompt": "You are White in the Double Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Nxe4 6. Re1 d5 7. **Bxd5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nf6-exd4-d5-dxc4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2ppp/2n2P2/2b5/2pp4/5N2/PPP2PPP/RNBQ1RK1 w kq - 0 8",
+        "answer": "Re1",
+        "answerUci": "f1e1",
+        "orientation": "white",
+        "lastMove": "d5c4",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d4 exd4 6. e5 d5 7. exf6 dxc4 8. **Re1+**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-nxe4-d5-qxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kb1r/ppp2ppp/2n5/3q4/3pn3/5N2/PPP2PPP/RNBQR1K1 w kq - 0 8",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "lastMove": "d8d5",
+        "prompt": "You are White in the Double Gambit Accepted. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Nxe4 6. Re1 d5 7. Bxd5 Qxd5 8. **Nc3** (Anderssen Attack, C56)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-nxe4-d5-qxd5-qa5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kb1r/ppp2ppp/2n5/q7/3pn3/2N2N2/PPP2PPP/R1BQR1K1 w kq - 2 9",
+        "answer": "Nxe4",
+        "answerUci": "c3e4",
+        "orientation": "white",
+        "lastMove": "d5a5",
+        "prompt": "You are White in the Anderssen Attack. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Nxe4 6. Re1 d5 7. Bxd5 Qxd5 8. Nc3 Qa5 9. **Nxe4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nf6-exd4-d5-dxc4-be6",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qk2r/ppp2ppp/2n1bP2/2b5/2pp4/5N2/PPP2PPP/RNBQR1K1 w kq - 2 9",
+        "answer": "fxg7",
+        "answerUci": "f6g7",
+        "orientation": "white",
+        "lastMove": "c8e6",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. O-O Nf6 5. d4 exd4 6. e5 d5 7. exf6 dxc4 8. Re1+ Be6 9. **fxg7** (Max Lange Attack Accepted, C56)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-nxe4-d5-qxd5-qa5-be6",
+      "model": "chess",
+      "fields": {
+        "fen": "r3kb1r/ppp2ppp/2n1b3/q7/3pN3/5N2/PPP2PPP/R1BQR1K1 w kq - 1 10",
+        "answer": "Bd2",
+        "answerUci": "c1d2",
+        "orientation": "white",
+        "lastMove": "c8e6",
+        "prompt": "You are White in the Anderssen Attack. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Nxe4 6. Re1 d5 7. Bxd5 Qxd5 8. Nc3 Qa5 9. Nxe4 Be6 10. **Bd2**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-exd4-nxe4-d5-qxd5-qa5-be6-qd5",
+      "model": "chess",
+      "fields": {
+        "fen": "r3kb1r/ppp2ppp/2n1b3/3q4/3pN3/5N2/PPPB1PPP/R2QR1K1 w kq - 3 11",
+        "answer": "Bg5",
+        "answerUci": "d2g5",
+        "orientation": "white",
+        "lastMove": "a5d5",
+        "prompt": "You are White in the Anderssen Attack. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Nxe4 6. Re1 d5 7. Bxd5 Qxd5 8. Nc3 Qa5 9. Nxe4 Be6 10. Bd2 Qd5 11. **Bg5** (Main Line, C56)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

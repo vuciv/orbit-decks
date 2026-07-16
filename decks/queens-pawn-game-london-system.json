@@ -1,0 +1,191 @@
+{
+  "key": "queens-pawn-game-london-system",
+  "version": 1,
+  "name": "Queen's Pawn Game: London System",
+  "description": "Line trainer for the Queen's Pawn Game: London System, generated from the canonical opening database (lichess-org/chess-openings): 11 positions drilled book-move by book-move from White's side across 7 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "queens-pawn-game"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fppp2ppp%2F4p3%2F3p4%2F3P1B2%2F5N2%2FPPP1PPPP%2FRN1QKB1R%20b%20KQkq%20-%201%203&color=white&theme=brown&piece=cburnett&lastMove=c1f4",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-root",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. **d4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-g6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppp1p/6p1/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "lastMove": "g7g6",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 g6 2. **Nf3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "lastMove": "d7d5",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. **Nf3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-e6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 0 3",
+        "answer": "Bf4",
+        "answerUci": "c1f4",
+        "orientation": "white",
+        "lastMove": "e7e6",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 e6 3. **Bf4** (with e6, D02)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 2 3",
+        "answer": "Bf4",
+        "answerUci": "c1f4",
+        "orientation": "white",
+        "lastMove": "g8f6",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. **Bf4** (London System, D02)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-g6-bg7",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppppppbp/6p1/8/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 2 3",
+        "answer": "Bf4",
+        "answerUci": "c1f4",
+        "orientation": "white",
+        "lastMove": "f8g7",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 g6 2. Nf3 Bg7 3. **Bf4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-g6-bg7-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1pppbp/6p1/2p5/3P1B2/5N2/PPP1PPPP/RN1QKB1R w KQkq - 0 4",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "lastMove": "c7c5",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 g6 2. Nf3 Bg7 3. Bf4 c5 4. **c3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nf6-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/5n2/2pp4/3P1B2/5N2/PPP1PPPP/RN1QKB1R w KQkq - 0 4",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "lastMove": "c7c5",
+        "prompt": "You are White in the London System. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 c5 4. **e3** (London System, D02)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nf6-c5-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp2pppp/2n2n2/2pp4/3P1B2/4PN2/PPP2PPP/RN1QKB1R w KQkq - 1 5",
+        "answer": "Nbd2",
+        "answerUci": "b1d2",
+        "orientation": "white",
+        "lastMove": "b8c6",
+        "prompt": "You are White in the London System. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 c5 4. e3 Nc6 5. **Nbd2** (London System, D02)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-g6-bg7-c5-cxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp1pppbp/6p1/8/3p1B2/2P2N2/PP2PPPP/RN1QKB1R w KQkq - 0 5",
+        "answer": "cxd4",
+        "answerUci": "c3d4",
+        "orientation": "white",
+        "lastMove": "c5d4",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 g6 2. Nf3 Bg7 3. Bf4 c5 4. c3 cxd4 5. **cxd4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nf6-c5-nc6-e6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp3ppp/2n1pn2/2pp4/3P1B2/4PN2/PPPN1PPP/R2QKB1R w KQkq - 0 6",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "lastMove": "e7e6",
+        "prompt": "You are White in the London System. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 c5 4. e3 Nc6 5. Nbd2 e6 6. **c3** (London System, D02)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

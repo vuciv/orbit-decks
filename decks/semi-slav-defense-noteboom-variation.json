@@ -1,0 +1,160 @@
+{
+  "key": "semi-slav-defense-noteboom-variation",
+  "version": 1,
+  "name": "Semi-Slav Defense: Noteboom Variation",
+  "description": "Line trainer for the Semi-Slav Defense: Noteboom Variation, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 5 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "semi-slav-defense"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp3ppp%2F2p1p3%2F8%2F2pP4%2F2N2N2%2FPP2PPPP%2FR1BQKB1R%20w%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=d5c4",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Semi-Slav Defense. What is the book move?",
+        "extra": "1. d4 **d5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the Semi-Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 **e6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR b KQkq - 1 3",
+        "answer": "c6",
+        "answerUci": "c7c6",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Semi-Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 **c6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp3ppp/2p1p3/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 1 4",
+        "answer": "dxc4",
+        "answerUci": "d5c4",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Semi-Slav Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. Nf3 **dxc4** (Noteboom Variation, D31)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp3ppp/2p1p3/6B1/2pP4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 1 5",
+        "answer": "f6",
+        "answerUci": "f7f6",
+        "orientation": "black",
+        "lastMove": "c1g5",
+        "prompt": "You are Black in the Anti-Noteboom Variation. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. Nf3 dxc4 5. Bg5 **f6** (Belyavsky Line, D31)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-a4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp3ppp/2p1p3/8/P1pP4/2N2N2/1P2PPPP/R1BQKB1R b KQkq - 0 5",
+        "answer": "Bb4",
+        "answerUci": "f8b4",
+        "orientation": "black",
+        "lastMove": "a2a4",
+        "prompt": "You are Black in the Noteboom Variation. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. Nf3 dxc4 5. a4 **Bb4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-a4-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp3ppp/2p1p3/8/PbpP4/2N1PN2/1P3PPP/R1BQKB1R b KQkq - 0 6",
+        "answer": "Bxc3",
+        "answerUci": "b4c3",
+        "orientation": "black",
+        "lastMove": "e2e3",
+        "prompt": "You are Black in the Noteboom Variation. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. Nf3 dxc4 5. a4 Bb4 6. e3 **Bxc3+**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-a4-e3-bxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pp3ppp/2p1p3/8/P1pP4/2P1PN2/5PPP/R1BQKB1R b KQkq - 0 7",
+        "answer": "b5",
+        "answerUci": "b7b5",
+        "orientation": "black",
+        "lastMove": "b2c3",
+        "prompt": "You are Black in the Noteboom Variation. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. Nf3 dxc4 5. a4 Bb4 6. e3 Bxc3+ 7. bxc3 **b5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-a4-e3-bxc3-axb5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/p4ppp/2p1p3/1P6/2pP4/2P1PN2/5PPP/R1BQKB1R b KQkq - 0 8",
+        "answer": "cxb5",
+        "answerUci": "c6b5",
+        "orientation": "black",
+        "lastMove": "a4b5",
+        "prompt": "You are Black in the Noteboom Variation. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 c6 4. Nf3 dxc4 5. a4 Bb4 6. e3 Bxc3+ 7. bxc3 b5 8. axb5 **cxb5** (Abrahams Variation, D31)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

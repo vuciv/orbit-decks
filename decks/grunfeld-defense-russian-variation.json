@@ -1,0 +1,192 @@
+{
+  "key": "grunfeld-defense-russian-variation",
+  "version": 1,
+  "name": "Gr\u00fcnfeld Defense: Russian Variation",
+  "description": "Line trainer for the Gr\u00fcnfeld Defense: Russian Variation, generated from the canonical opening database (lichess-org/chess-openings): 11 positions drilled book-move by book-move from Black's side across 12 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "grunfeld-defense"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fppp1pp1p%2F5np1%2F3p4%2F2PP4%2F1QN5%2FPP2PPPP%2FR1B1KBNR%20b%20KQkq%20-%201%204&color=black&theme=brown&piece=cburnett&lastMove=d1b3",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 **Nf6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "g6",
+        "answerUci": "g7g6",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 **g6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppp1p/5np1/8/2PP4/2N5/PP2PPPP/R1BQKBNR b KQkq - 1 3",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 **d5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 1 4",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 **Bg7**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-qb3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/5np1/3p4/2PP4/1QN2N2/PP2PPPP/R1B1KB1R b KQkq - 3 5",
+        "answer": "dxc4",
+        "answerUci": "d5c4",
+        "orientation": "black",
+        "lastMove": "d1b3",
+        "prompt": "You are Black in the Russian Variation. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 **dxc4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-qb3-qxc4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/5np1/8/2QP4/2N2N2/PP2PPPP/R1B1KB1R b KQkq - 0 6",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "lastMove": "b3c4",
+        "prompt": "You are Black in the Russian Variation. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 **O-O**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-qb3-qxc4-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/5np1/8/2QPP3/2N2N2/PP3PPP/R1B1KB1R b KQ - 0 7",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "lastMove": "e2e4",
+        "prompt": "You are Black in the Russian Variation. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 O-O 7. e4 **Bg4** (Smyslov Variation, D98)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-qb3-qxc4-e4-be3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1q1rk1/ppp1ppbp/5np1/8/2QPP1b1/2N1BN2/PP3PPP/R3KB1R b KQ - 2 8",
+        "answer": "Nfd7",
+        "answerUci": "f6d7",
+        "orientation": "black",
+        "lastMove": "c1e3",
+        "prompt": "You are Black in the Smyslov Variation. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 O-O 7. e4 Bg4 8. Be3 **Nfd7**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-qb3-qxc4-e4-be3-qb3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1q1rk1/pppnppbp/6p1/8/3PP1b1/1QN1BN2/PP3PPP/R3KB1R b KQ - 4 9",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "lastMove": "c4b3",
+        "prompt": "You are Black in the Smyslov Variation. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 O-O 7. e4 Bg4 8. Be3 Nfd7 9. Qb3 **c5** (Yugoslav Variation, D99)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-qb3-qxc4-e4-be3-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1q1rk1/pppnppbp/6p1/8/2QPP1b1/2N1BN2/PP2BPPP/R3K2R b KQ - 4 9",
+        "answer": "Nb6",
+        "answerUci": "d7b6",
+        "orientation": "black",
+        "lastMove": "f1e2",
+        "prompt": "You are Black in the Smyslov Variation. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 O-O 7. e4 Bg4 8. Be3 Nfd7 9. Be2 **Nb6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-qb3-qxc4-e4-be3-be2-qd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1q1rk1/ppp1ppbp/1n4p1/8/3PP1b1/2NQBN2/PP2BPPP/R3K2R b KQ - 6 10",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "lastMove": "c4d3",
+        "prompt": "You are Black in the Smyslov Variation. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 d5 4. Nf3 Bg7 5. Qb3 dxc4 6. Qxc4 O-O 7. e4 Bg4 8. Be3 Nfd7 9. Be2 Nb6 10. Qd3 **Nc6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

@@ -4,6 +4,150 @@
   "name": "Chess",
   "decks": [
     {
+      "key": "alekhine-defense-exchange-variation",
+      "name": "Alekhine Defense: Exchange Variation",
+      "description": "Line trainer for the Alekhine Defense: Exchange Variation, generated from the canonical opening database (lichess-org/chess-openings): 12 positions drilled book-move by book-move from Black's side across 3 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 12,
+      "topics": [
+        "chess",
+        "openings",
+        "alekhine-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fppp1pppp%2F1n1P4%2F8%2F2PP4%2F8%2FPP3PPP%2FRNBQKBNR%20b%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=e5d6"
+    },
+    {
+      "key": "alekhine-defense-four-pawns-attack",
+      "name": "Alekhine Defense: Four Pawns Attack",
+      "description": "Line trainer for the Alekhine Defense: Four Pawns Attack, generated from the canonical opening database (lichess-org/chess-openings): 13 positions drilled book-move by book-move from Black's side across 8 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 13,
+      "topics": [
+        "chess",
+        "openings",
+        "alekhine-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fppp1pppp%2F1n1p4%2F4P3%2F2PP1P2%2F8%2FPP4PP%2FRNBQKBNR%20b%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=f2f4"
+    },
+    {
+      "key": "alekhine-defense-hunt-variation",
+      "name": "Alekhine Defense: Hunt Variation",
+      "description": "Line trainer for the Alekhine Defense: Hunt Variation, generated from the canonical opening database (lichess-org/chess-openings): 11 positions drilled book-move by book-move from Black's side across 4 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 11,
+      "topics": [
+        "chess",
+        "openings",
+        "alekhine-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fppp1pppp%2F1n1p4%2F2P1P3%2F3P4%2F8%2FPP3PPP%2FRNBQKBNR%20b%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=c4c5"
+    },
+    {
+      "key": "alekhine-defense-modern-variation",
+      "name": "Alekhine Defense: Modern Variation",
+      "description": "Line trainer for the Alekhine Defense: Modern Variation, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 12 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 8,
+      "topics": [
+        "chess",
+        "openings",
+        "alekhine-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fppp1pppp%2F3p4%2F3nP3%2F3P4%2F5N2%2FPPP2PPP%2FRNBQKB1R%20b%20KQkq%20-%201%204&color=black&theme=brown&piece=cburnett&lastMove=g1f3"
+    },
+    {
+      "key": "bishops-opening-four-pawns-gambit",
+      "name": "Bishop's Opening: Four Pawns Gambit",
+      "description": "Line trainer for the Bishop's Opening: Four Pawns Gambit, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from White's side across 1 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "bishops-opening"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk1nr%2Fpppp1ppp%2F8%2F8%2F2BPP2b%2F5N2%2FP1P4p%2FRNBQ1R1K%20b%20kq%20-%201%209&color=white&theme=brown&piece=cburnett&lastMove=g1h1"
+    },
+    {
+      "key": "bishops-opening-lisitsyn-variation",
+      "name": "Bishop's Opening: Lisitsyn Variation",
+      "description": "Line trainer for the Bishop's Opening: Lisitsyn Variation, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from White's side across 1 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 8,
+      "topics": [
+        "chess",
+        "openings",
+        "bishops-opening"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r2qkbnr%2Fpp3ppp%2F8%2F3pn3%2F8%2F8%2FPPP1NPPP%2FRNBQK2R%20b%20KQkq%20-%201%208&color=white&theme=brown&piece=cburnett&lastMove=g1e2"
+    },
+    {
+      "key": "catalan-opening-closed",
+      "name": "Catalan Opening: Closed",
+      "description": "Line trainer for the Catalan Opening: Closed, generated from the canonical opening database (lichess-org/chess-openings): 13 positions drilled book-move by book-move from White's side across 17 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 13,
+      "topics": [
+        "chess",
+        "openings",
+        "catalan-opening"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fppp1bppp%2F4pn2%2F3p4%2F2PP4%2F5NP1%2FPP2PPBP%2FRNBQK2R%20b%20KQkq%20-%203%205&color=white&theme=brown&piece=cburnett&lastMove=g1f3"
+    },
+    {
+      "key": "catalan-opening-closed-variation",
+      "name": "Catalan Opening: Closed Variation",
+      "description": "Line trainer for the Catalan Opening: Closed Variation, generated from the canonical opening database (lichess-org/chess-openings): 15 positions drilled book-move by book-move from White's side across 2 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 15,
+      "topics": [
+        "chess",
+        "openings",
+        "catalan-opening"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fp2nbppp%2F2p1pn2%2F1p1p4%2F2PP4%2F5NP1%2FPPQNPPBP%2FR1B2RK1%20w%20-%20-%200%209&color=white&theme=brown&piece=cburnett&lastMove=b7b5"
+    },
+    {
+      "key": "dutch-defense-leningrad-variation",
+      "name": "Dutch Defense: Leningrad Variation",
+      "description": "Line trainer for the Dutch Defense: Leningrad Variation, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from Black's side across 5 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 10,
+      "topics": [
+        "chess",
+        "openings",
+        "dutch-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fppppp2p%2F5np1%2F5p2%2F2PP4%2F6P1%2FPP2PP1P%2FRNBQKBNR%20w%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=g7g6"
+    },
+    {
+      "key": "dutch-defense-stonewall-variation",
+      "name": "Dutch Defense: Stonewall Variation",
+      "description": "Line trainer for the Dutch Defense: Stonewall Variation, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 7 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "dutch-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fpp4pp%2F2pbpn2%2F3p1p2%2F2PP4%2F5NP1%2FPP2PPBP%2FRNBQ1RK1%20w%20kq%20-%202%207&color=black&theme=brown&piece=cburnett&lastMove=f8d6"
+    },
+    {
+      "key": "english-opening-agincourt-defense",
+      "name": "English Opening: Agincourt Defense",
+      "description": "Line trainer for the English Opening: Agincourt Defense, generated from the canonical opening database (lichess-org/chess-openings): 13 positions drilled book-move by book-move from White's side across 23 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 13,
+      "topics": [
+        "chess",
+        "openings",
+        "english-opening"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpppp1ppp%2F4p3%2F8%2F2P5%2F8%2FPP1PPPPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=white&theme=brown&piece=cburnett&lastMove=e7e6"
+    },
+    {
+      "key": "english-opening-anglo-indian-defense",
+      "name": "English Opening: Anglo-Indian Defense",
+      "description": "Line trainer for the English Opening: Anglo-Indian Defense, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from White's side across 25 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "english-opening"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpppppppp%2F5n2%2F8%2F2P5%2F8%2FPP1PPPPP%2FRNBQKBNR%20w%20KQkq%20-%201%202&color=white&theme=brown&piece=cburnett&lastMove=g8f6"
+    },
+    {
       "key": "english-opening-kings-english-variation",
       "name": "English Opening: King's English Variation",
       "description": "Line trainer for the English Opening: King's English Variation, generated from the canonical opening database (lichess-org/chess-openings): 26 positions drilled book-move by book-move from White's side across 53 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
@@ -14,6 +158,18 @@
         "english-opening"
       ],
       "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpppp1ppp%2F8%2F4p3%2F2P5%2F8%2FPP1PPPPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=white&theme=brown&piece=cburnett&lastMove=e7e5"
+    },
+    {
+      "key": "english-opening-symmetrical",
+      "name": "English Opening: Symmetrical",
+      "description": "Line trainer for the English Opening: Symmetrical, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from White's side across 1 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 10,
+      "topics": [
+        "chess",
+        "openings",
+        "english-opening"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r2qk2r%2F1b1nbppp%2Fpp1ppn2%2F8%2F2PQ4%2F1PN2NP1%2FP3PPBP%2FR1BR2K1%20w%20kq%20-%201%2011&color=white&theme=brown&piece=cburnett&lastMove=b8d7"
     },
     {
       "key": "english-opening-symmetrical-variation",
@@ -28,6 +184,114 @@
       "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F8%2F2p5%2F2P5%2F8%2FPP1PPPPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=white&theme=brown&piece=cburnett&lastMove=c7c5"
     },
     {
+      "key": "four-knights-game-halloween-gambit",
+      "name": "Four Knights Game: Halloween Gambit",
+      "description": "Line trainer for the Four Knights Game: Halloween Gambit, generated from the canonical opening database (lichess-org/chess-openings): 14 positions drilled book-move by book-move from White's side across 3 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 14,
+      "topics": [
+        "chess",
+        "openings",
+        "four-knights-game"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpppp1ppp%2F2n2n2%2F4N3%2F4P3%2F2N5%2FPPPP1PPP%2FR1BQKB1R%20b%20KQkq%20-%200%204&color=white&theme=brown&piece=cburnett&lastMove=f3e5"
+    },
+    {
+      "key": "four-knights-game-scotch-variation-accepted",
+      "name": "Four Knights Game: Scotch Variation Accepted",
+      "description": "Line trainer for the Four Knights Game: Scotch Variation Accepted, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from White's side across 2 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "four-knights-game"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpppp1ppp%2F2n2n2%2F8%2F3pP3%2F2N2N2%2FPPP2PPP%2FR1BQKB1R%20w%20KQkq%20-%200%205&color=white&theme=brown&piece=cburnett&lastMove=e5d4"
+    },
+    {
+      "key": "four-knights-game-spanish-variation",
+      "name": "Four Knights Game: Spanish Variation",
+      "description": "Line trainer for the Four Knights Game: Spanish Variation, generated from the canonical opening database (lichess-org/chess-openings): 33 positions drilled book-move by book-move from White's side across 28 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 33,
+      "topics": [
+        "chess",
+        "openings",
+        "four-knights-game"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpppp1ppp%2F2n2n2%2F1B2p3%2F4P3%2F2N2N2%2FPPPP1PPP%2FR1BQK2R%20b%20KQkq%20-%205%204&color=white&theme=brown&piece=cburnett&lastMove=f1b5"
+    },
+    {
+      "key": "french-defense-advance-variation",
+      "name": "French Defense: Advance Variation",
+      "description": "Line trainer for the French Defense: Advance Variation, generated from the canonical opening database (lichess-org/chess-openings): 12 positions drilled book-move by book-move from Black's side across 22 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 12,
+      "topics": [
+        "chess",
+        "openings",
+        "french-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fppp2ppp%2F4p3%2F3pP3%2F3P4%2F8%2FPPP2PPP%2FRNBQKBNR%20b%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=e4e5"
+    },
+    {
+      "key": "french-defense-classical-variation",
+      "name": "French Defense: Classical Variation",
+      "description": "Line trainer for the French Defense: Classical Variation, generated from the canonical opening database (lichess-org/chess-openings): 13 positions drilled book-move by book-move from Black's side across 24 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 13,
+      "topics": [
+        "chess",
+        "openings",
+        "french-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fppp2ppp%2F4pn2%2F3p4%2F3PP3%2F2N5%2FPPP2PPP%2FR1BQKBNR%20w%20KQkq%20-%202%204&color=black&theme=brown&piece=cburnett&lastMove=g8f6"
+    },
+    {
+      "key": "french-defense-mccutcheon-variation",
+      "name": "French Defense: McCutcheon Variation",
+      "description": "Line trainer for the French Defense: McCutcheon Variation, generated from the canonical opening database (lichess-org/chess-openings): 15 positions drilled book-move by book-move from Black's side across 14 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 15,
+      "topics": [
+        "chess",
+        "openings",
+        "french-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fppp2ppp%2F4pn2%2F3p2B1%2F1b1PP3%2F2N5%2FPPP2PPP%2FR2QKBNR%20w%20KQkq%20-%204%205&color=black&theme=brown&piece=cburnett&lastMove=f8b4"
+    },
+    {
+      "key": "french-defense-st-george-defense",
+      "name": "French Defense: St. George Defense",
+      "description": "Line trainer for the French Defense: St. George Defense, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 5 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 8,
+      "topics": [
+        "chess",
+        "openings",
+        "french-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2F1ppp1ppp%2Fp3p3%2F8%2F3PP3%2F8%2FPPP2PPP%2FRNBQKBNR%20w%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=a7a6"
+    },
+    {
+      "key": "french-defense-steinitz-variation",
+      "name": "French Defense: Steinitz Variation",
+      "description": "Line trainer for the French Defense: Steinitz Variation, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from Black's side across 9 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 10,
+      "topics": [
+        "chess",
+        "openings",
+        "french-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpppn1ppp%2F4p3%2F3pP3%2F3P2Q1%2F2N5%2FPPP2PPP%2FR1B1KBNR%20b%20KQkq%20-%202%205&color=black&theme=brown&piece=cburnett&lastMove=d1g4"
+    },
+    {
+      "key": "french-defense-tarrasch-variation",
+      "name": "French Defense: Tarrasch Variation",
+      "description": "Line trainer for the French Defense: Tarrasch Variation, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 24 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 8,
+      "topics": [
+        "chess",
+        "openings",
+        "french-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fppp2ppp%2F4p3%2F3p4%2F3PP3%2F8%2FPPPN1PPP%2FR1BQKBNR%20b%20KQkq%20-%201%203&color=black&theme=brown&piece=cburnett&lastMove=b1d2"
+    },
+    {
       "key": "french-defense-winawer-variation",
       "name": "French Defense: Winawer Variation",
       "description": "Line trainer for the French Defense: Winawer Variation, generated from the canonical opening database (lichess-org/chess-openings): 28 positions drilled book-move by book-move from Black's side across 54 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
@@ -38,6 +302,18 @@
         "french-defense"
       ],
       "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk1nr%2Fppp2ppp%2F4p3%2F3p4%2F1b1PP3%2F2N5%2FPPP2PPP%2FR1BQKBNR%20w%20KQkq%20-%202%204&color=black&theme=brown&piece=cburnett&lastMove=f8b4"
+    },
+    {
+      "key": "grunfeld-defense-brinckmann-attack",
+      "name": "Grünfeld Defense: Brinckmann Attack",
+      "description": "Line trainer for the Grünfeld Defense: Brinckmann Attack, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from Black's side across 6 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 10,
+      "topics": [
+        "chess",
+        "openings",
+        "grunfeld-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fppp1pp1p%2F5np1%2F3p4%2F2PP1B2%2F2N5%2FPP2PPPP%2FR2QKBNR%20b%20KQkq%20-%201%204&color=black&theme=brown&piece=cburnett&lastMove=c1f4"
     },
     {
       "key": "grunfeld-defense-exchange-variation",
@@ -52,6 +328,30 @@
       "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fppp1pp1p%2F6p1%2F3n4%2F3P4%2F2N5%2FPP2PPPP%2FR1BQKBNR%20w%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=f6d5"
     },
     {
+      "key": "grunfeld-defense-russian-variation",
+      "name": "Grünfeld Defense: Russian Variation",
+      "description": "Line trainer for the Grünfeld Defense: Russian Variation, generated from the canonical opening database (lichess-org/chess-openings): 11 positions drilled book-move by book-move from Black's side across 12 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 11,
+      "topics": [
+        "chess",
+        "openings",
+        "grunfeld-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fppp1pp1p%2F5np1%2F3p4%2F2PP4%2F1QN5%2FPP2PPPP%2FR1B1KBNR%20b%20KQkq%20-%201%204&color=black&theme=brown&piece=cburnett&lastMove=d1b3"
+    },
+    {
+      "key": "italian-game-classical-variation",
+      "name": "Italian Game: Classical Variation",
+      "description": "Line trainer for the Italian Game: Classical Variation, generated from the canonical opening database (lichess-org/chess-openings): 17 positions drilled book-move by book-move from White's side across 42 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 17,
+      "topics": [
+        "chess",
+        "openings",
+        "italian-game"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqk1nr%2Fpppp1ppp%2F2n5%2F2b1p3%2F2B1P3%2F2P2N2%2FPP1P1PPP%2FRNBQK2R%20b%20KQkq%20-%200%204&color=white&theme=brown&piece=cburnett&lastMove=c2c3"
+    },
+    {
       "key": "italian-game-evans-gambit",
       "name": "Italian Game: Evans Gambit",
       "description": "Line trainer for the Italian Game: Evans Gambit, generated from the canonical opening database (lichess-org/chess-openings): 22 positions drilled book-move by book-move from White's side across 41 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
@@ -62,6 +362,30 @@
         "italian-game"
       ],
       "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqk1nr%2Fpppp1ppp%2F2n5%2F2b1p3%2F1PB1P3%2F5N2%2FP1PP1PPP%2FRNBQK2R%20b%20KQkq%20-%200%204&color=white&theme=brown&piece=cburnett&lastMove=b2b4"
+    },
+    {
+      "key": "italian-game-evans-gambit-declined",
+      "name": "Italian Game: Evans Gambit Declined",
+      "description": "Line trainer for the Italian Game: Evans Gambit Declined, generated from the canonical opening database (lichess-org/chess-openings): 15 positions drilled book-move by book-move from White's side across 9 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 15,
+      "topics": [
+        "chess",
+        "openings",
+        "italian-game"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqk1nr%2Fpppp1ppp%2F1bn5%2F4p3%2F1PB1P3%2F5N2%2FP1PP1PPP%2FRNBQK2R%20w%20KQkq%20-%201%205&color=white&theme=brown&piece=cburnett&lastMove=c5b6"
+    },
+    {
+      "key": "italian-game-giuoco-pianissimo",
+      "name": "Italian Game: Giuoco Pianissimo",
+      "description": "Line trainer for the Italian Game: Giuoco Pianissimo, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from White's side across 9 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 10,
+      "topics": [
+        "chess",
+        "openings",
+        "italian-game"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqk1nr%2Fpppp1ppp%2F2n5%2F2b1p3%2F2B1P3%2F3P1N2%2FPPP2PPP%2FRNBQK2R%20b%20KQkq%20-%200%204&color=white&theme=brown&piece=cburnett&lastMove=d2d3"
     },
     {
       "key": "italian-game-giuoco-piano",
@@ -76,6 +400,18 @@
       "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqk1nr%2Fpppp1ppp%2F2n5%2F2b1p3%2F2B1P3%2F5N2%2FPPPP1PPP%2FRNBQK2R%20w%20KQkq%20-%204%204&color=white&theme=brown&piece=cburnett&lastMove=f8c5"
     },
     {
+      "key": "italian-game-scotch-gambit",
+      "name": "Italian Game: Scotch Gambit",
+      "description": "Line trainer for the Italian Game: Scotch Gambit, generated from the canonical opening database (lichess-org/chess-openings): 17 positions drilled book-move by book-move from White's side across 14 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 17,
+      "topics": [
+        "chess",
+        "openings",
+        "italian-game"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpppp1ppp%2F2n2n2%2F8%2F2BpP3%2F5N2%2FPPP2PPP%2FRNBQ1RK1%20b%20kq%20-%201%205&color=white&theme=brown&piece=cburnett&lastMove=e1g1"
+    },
+    {
       "key": "italian-game-two-knights-defense",
       "name": "Italian Game: Two Knights Defense",
       "description": "Line trainer for the Italian Game: Two Knights Defense, generated from the canonical opening database (lichess-org/chess-openings): 25 positions drilled book-move by book-move from White's side across 46 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
@@ -86,6 +422,462 @@
         "italian-game"
       ],
       "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpppp1ppp%2F2n2n2%2F4p3%2F2B1P3%2F5N2%2FPPPP1PPP%2FRNBQK2R%20w%20KQkq%20-%204%204&color=white&theme=brown&piece=cburnett&lastMove=g8f6"
+    },
+    {
+      "key": "kings-gambit-accepted-allgaier",
+      "name": "King's Gambit Accepted: Allgaier",
+      "description": "Line trainer for the King's Gambit Accepted: Allgaier, generated from the canonical opening database (lichess-org/chess-openings): 13 positions drilled book-move by book-move from Black's side across 5 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 13,
+      "topics": [
+        "chess",
+        "openings",
+        "kings-gambit-accepted"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpppp1p1p%2F5n2%2F6N1%2F4PppP%2F8%2FPPPP2P1%2FRNBQKB1R%20w%20KQkq%20-%202%206&color=black&theme=brown&piece=cburnett&lastMove=g8f6"
+    },
+    {
+      "key": "kings-gambit-accepted-double-muzio-gambit",
+      "name": "King's Gambit Accepted: Double Muzio Gambit",
+      "description": "Line trainer for the King's Gambit Accepted: Double Muzio Gambit, generated from the canonical opening database (lichess-org/chess-openings): 16 positions drilled book-move by book-move from Black's side across 5 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 16,
+      "topics": [
+        "chess",
+        "openings",
+        "kings-gambit-accepted"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnb1kbnr%2Fpppp1p1p%2F5q2%2F8%2F2B1Pp2%2F2N2Q2%2FPPPP2PP%2FR1B2RK1%20b%20kq%20-%202%207&color=black&theme=brown&piece=cburnett&lastMove=b1c3"
+    },
+    {
+      "key": "kings-gambit-accepted-kieseritzky-gambit",
+      "name": "King's Gambit Accepted: Kieseritzky Gambit",
+      "description": "Line trainer for the King's Gambit Accepted: Kieseritzky Gambit, generated from the canonical opening database (lichess-org/chess-openings): 12 positions drilled book-move by book-move from Black's side across 17 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 12,
+      "topics": [
+        "chess",
+        "openings",
+        "kings-gambit-accepted"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpppp1p1p%2F8%2F4N3%2F4PppP%2F8%2FPPPP2P1%2FRNBQKB1R%20b%20KQkq%20-%201%205&color=black&theme=brown&piece=cburnett&lastMove=f3e5"
+    },
+    {
+      "key": "kings-gambit-accepted-lolli-gambit",
+      "name": "King's Gambit Accepted: Lolli Gambit",
+      "description": "Line trainer for the King's Gambit Accepted: Lolli Gambit, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 2 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "kings-gambit-accepted"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpppp1B1p%2F8%2F8%2F4Ppp1%2F5N2%2FPPPP2PP%2FRNBQK2R%20b%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=c4f7"
+    },
+    {
+      "key": "kings-gambit-declined-classical",
+      "name": "King's Gambit Declined: Classical",
+      "description": "Line trainer for the King's Gambit Declined: Classical, generated from the canonical opening database (lichess-org/chess-openings): 14 positions drilled book-move by book-move from Black's side across 4 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 14,
+      "topics": [
+        "chess",
+        "openings",
+        "kings-gambit-declined"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk1nr%2Fppp2ppp%2F3p4%2F2b1P3%2F4P3%2F5N2%2FPPPP2PP%2FRNBQKB1R%20b%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=f4e5"
+    },
+    {
+      "key": "kings-gambit-declined-falkbeer-countergambit",
+      "name": "King's Gambit Declined: Falkbeer Countergambit",
+      "description": "Line trainer for the King's Gambit Declined: Falkbeer Countergambit, generated from the canonical opening database (lichess-org/chess-openings): 16 positions drilled book-move by book-move from Black's side across 21 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 16,
+      "topics": [
+        "chess",
+        "openings",
+        "kings-gambit-declined"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fppp2ppp%2F8%2F3pp3%2F4PP2%2F8%2FPPPP2PP%2FRNBQKBNR%20w%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=d7d5"
+    },
+    {
+      "key": "kings-indian-attack-keres-variation",
+      "name": "King's Indian Attack: Keres Variation",
+      "description": "Line trainer for the King's Indian Attack: Keres Variation, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from White's side across 4 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "kings-indian-attack"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rn1qkbnr%2Fppp1pppp%2F8%2F3p4%2F6b1%2F5NP1%2FPPPPPP1P%2FRNBQKB1R%20w%20KQkq%20-%201%203&color=white&theme=brown&piece=cburnett&lastMove=c8g4"
+    },
+    {
+      "key": "kings-indian-defense-fianchetto-variation",
+      "name": "King's Indian Defense: Fianchetto Variation",
+      "description": "Line trainer for the King's Indian Defense: Fianchetto Variation, generated from the canonical opening database (lichess-org/chess-openings): 19 positions drilled book-move by book-move from Black's side across 27 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 19,
+      "topics": [
+        "chess",
+        "openings",
+        "kings-indian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpppppp1p%2F5np1%2F8%2F2PP4%2F6P1%2FPP2PP1P%2FRNBQKBNR%20b%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=g2g3"
+    },
+    {
+      "key": "kings-indian-defense-four-pawns-attack",
+      "name": "King's Indian Defense: Four Pawns Attack",
+      "description": "Line trainer for the King's Indian Defense: Four Pawns Attack, generated from the canonical opening database (lichess-org/chess-openings): 11 positions drilled book-move by book-move from Black's side across 8 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 11,
+      "topics": [
+        "chess",
+        "openings",
+        "kings-indian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fppp1ppbp%2F3p1np1%2F8%2F2PPPP2%2F2N5%2FPP4PP%2FR1BQKBNR%20b%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=f2f4"
+    },
+    {
+      "key": "kings-indian-defense-orthodox-variation",
+      "name": "King's Indian Defense: Orthodox Variation",
+      "description": "Line trainer for the King's Indian Defense: Orthodox Variation, generated from the canonical opening database (lichess-org/chess-openings): 15 positions drilled book-move by book-move from Black's side across 22 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 15,
+      "topics": [
+        "chess",
+        "openings",
+        "kings-indian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbq1rk1%2Fppp1ppbp%2F3p1np1%2F8%2F2PPP3%2F2N2N2%2FPP2BPPP%2FR1BQK2R%20b%20KQ%20-%203%206&color=black&theme=brown&piece=cburnett&lastMove=f1e2"
+    },
+    {
+      "key": "kings-indian-defense-petrosian-variation",
+      "name": "King's Indian Defense: Petrosian Variation",
+      "description": "Line trainer for the King's Indian Defense: Petrosian Variation, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from Black's side across 4 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 10,
+      "topics": [
+        "chess",
+        "openings",
+        "kings-indian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbq1rk1%2Fppp2pbp%2F3p1np1%2F3Pp3%2F2P1P3%2F2N2N2%2FPP2BPPP%2FR1BQK2R%20b%20KQ%20-%200%207&color=black&theme=brown&piece=cburnett&lastMove=d4d5"
+    },
+    {
+      "key": "kings-indian-defense-samisch-variation",
+      "name": "King's Indian Defense: Sämisch Variation",
+      "description": "Line trainer for the King's Indian Defense: Sämisch Variation, generated from the canonical opening database (lichess-org/chess-openings): 14 positions drilled book-move by book-move from Black's side across 18 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 14,
+      "topics": [
+        "chess",
+        "openings",
+        "kings-indian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fppp1ppbp%2F3p1np1%2F8%2F2PPP3%2F2N2P2%2FPP4PP%2FR1BQKBNR%20b%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=f2f3"
+    },
+    {
+      "key": "kings-indian-defense-semi-classical-variation",
+      "name": "King's Indian Defense: Semi-Classical Variation",
+      "description": "Line trainer for the King's Indian Defense: Semi-Classical Variation, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from Black's side across 5 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 10,
+      "topics": [
+        "chess",
+        "openings",
+        "kings-indian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbq1rk1%2Fppp1ppbp%2F3p1np1%2F8%2F2PP4%2F2N1PN2%2FPP2BPPP%2FR1BQK2R%20b%20KQ%20-%201%206&color=black&theme=brown&piece=cburnett&lastMove=f1e2"
+    },
+    {
+      "key": "kings-indian-defense-six-pawns-attack",
+      "name": "King's Indian Defense: Six Pawns Attack",
+      "description": "Line trainer for the King's Indian Defense: Six Pawns Attack, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 1 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "kings-indian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fpp4bp%2F2nppnp1%2F2p5%2F2P1PPPP%2F2N5%2FPP2B3%2FR1BQK1NR%20b%20KQ%20-%200%2010&color=black&theme=brown&piece=cburnett&lastMove=h2h4"
+    },
+    {
+      "key": "kings-indian-defense-steiner-attack",
+      "name": "King's Indian Defense: Steiner Attack",
+      "description": "Line trainer for the King's Indian Defense: Steiner Attack, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 4 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 8,
+      "topics": [
+        "chess",
+        "openings",
+        "kings-indian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbq1rk1%2Fppp1ppbp%2F3p1np1%2F6B1%2F2PPP3%2F2N2P2%2FPP4PP%2FR2QKBNR%20b%20KQ%20-%202%206&color=black&theme=brown&piece=cburnett&lastMove=c1g5"
+    },
+    {
+      "key": "neo-grunfeld-defense-classical-variation",
+      "name": "Neo-Grünfeld Defense: Classical Variation",
+      "description": "Line trainer for the Neo-Grünfeld Defense: Classical Variation, generated from the canonical opening database (lichess-org/chess-openings): 11 positions drilled book-move by book-move from Black's side across 4 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 11,
+      "topics": [
+        "chess",
+        "openings",
+        "neo-grunfeld-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbq1rk1%2Fppp1ppbp%2F5np1%2F3p4%2F2PP4%2F5NP1%2FPP2PPBP%2FRNBQ1RK1%20b%20-%20-%200%206&color=black&theme=brown&piece=cburnett&lastMove=c2c4"
+    },
+    {
+      "key": "neo-grunfeld-defense-delayed-exchange-variation",
+      "name": "Neo-Grünfeld Defense: Delayed Exchange Variation",
+      "description": "Line trainer for the Neo-Grünfeld Defense: Delayed Exchange Variation, generated from the canonical opening database (lichess-org/chess-openings): 13 positions drilled book-move by book-move from Black's side across 4 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 13,
+      "topics": [
+        "chess",
+        "openings",
+        "neo-grunfeld-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbq1rk1%2Fppp1ppbp%2F6p1%2F3n4%2F3P4%2F5NP1%2FPP2PPBP%2FRNBQ1RK1%20b%20-%20-%201%207&color=black&theme=brown&piece=cburnett&lastMove=e1g1"
+    },
+    {
+      "key": "neo-grunfeld-defense-exchange-variation",
+      "name": "Neo-Grünfeld Defense: Exchange Variation",
+      "description": "Line trainer for the Neo-Grünfeld Defense: Exchange Variation, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 2 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 8,
+      "topics": [
+        "chess",
+        "openings",
+        "neo-grunfeld-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fppp1ppbp%2F6p1%2F3n4%2F3P4%2F6P1%2FPP2PPBP%2FRNBQK1NR%20w%20KQkq%20-%200%206&color=black&theme=brown&piece=cburnett&lastMove=f6d5"
+    },
+    {
+      "key": "nimzo-indian-defense-classical-variation",
+      "name": "Nimzo-Indian Defense: Classical Variation",
+      "description": "Line trainer for the Nimzo-Indian Defense: Classical Variation, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from Black's side across 20 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 10,
+      "topics": [
+        "chess",
+        "openings",
+        "nimzo-indian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fpppp1ppp%2F4pn2%2F8%2F1bPP4%2F2N5%2FPPQ1PPPP%2FR1B1KBNR%20b%20KQkq%20-%203%204&color=black&theme=brown&piece=cburnett&lastMove=d1c2"
+    },
+    {
+      "key": "nimzo-indian-defense-normal-variation",
+      "name": "Nimzo-Indian Defense: Normal Variation",
+      "description": "Line trainer for the Nimzo-Indian Defense: Normal Variation, generated from the canonical opening database (lichess-org/chess-openings): 14 positions drilled book-move by book-move from Black's side across 20 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 14,
+      "topics": [
+        "chess",
+        "openings",
+        "nimzo-indian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbq1rk1%2Fpppp1ppp%2F4pn2%2F8%2F1bPP4%2F2N1P3%2FPP3PPP%2FR1BQKBNR%20w%20KQ%20-%201%205&color=black&theme=brown&piece=cburnett&lastMove=e8g8"
+    },
+    {
+      "key": "nimzo-indian-defense-rubinstein-system",
+      "name": "Nimzo-Indian Defense: Rubinstein System",
+      "description": "Line trainer for the Nimzo-Indian Defense: Rubinstein System, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from Black's side across 8 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 10,
+      "topics": [
+        "chess",
+        "openings",
+        "nimzo-indian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fpppp1ppp%2F4pn2%2F8%2F1bPP4%2F2N1P3%2FPP3PPP%2FR1BQKBNR%20b%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=e2e3"
+    },
+    {
+      "key": "nimzo-indian-defense-samisch-variation",
+      "name": "Nimzo-Indian Defense: Sämisch Variation",
+      "description": "Line trainer for the Nimzo-Indian Defense: Sämisch Variation, generated from the canonical opening database (lichess-org/chess-openings): 19 positions drilled book-move by book-move from Black's side across 11 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 19,
+      "topics": [
+        "chess",
+        "openings",
+        "nimzo-indian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fpppp1ppp%2F4pn2%2F8%2F1bPP4%2FP1N5%2F1P2PPPP%2FR1BQKBNR%20b%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=a2a3"
+    },
+    {
+      "key": "nimzo-indian-defense-spielmann-variation",
+      "name": "Nimzo-Indian Defense: Spielmann Variation",
+      "description": "Line trainer for the Nimzo-Indian Defense: Spielmann Variation, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 5 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 8,
+      "topics": [
+        "chess",
+        "openings",
+        "nimzo-indian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fpppp1ppp%2F4pn2%2F8%2F1bPP4%2F1QN5%2FPP2PPPP%2FR1B1KBNR%20b%20KQkq%20-%203%204&color=black&theme=brown&piece=cburnett&lastMove=d1b3"
+    },
+    {
+      "key": "nimzo-indian-defense-st-petersburg-variation",
+      "name": "Nimzo-Indian Defense: St. Petersburg Variation",
+      "description": "Line trainer for the Nimzo-Indian Defense: St. Petersburg Variation, generated from the canonical opening database (lichess-org/chess-openings): 15 positions drilled book-move by book-move from Black's side across 16 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 15,
+      "topics": [
+        "chess",
+        "openings",
+        "nimzo-indian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fp1pp1ppp%2F1p2pn2%2F8%2F1bPP4%2F2N1P3%2FPP3PPP%2FR1BQKBNR%20w%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=b7b6"
+    },
+    {
+      "key": "pterodactyl-defense-austrian",
+      "name": "Pterodactyl Defense: Austrian",
+      "description": "Line trainer for the Pterodactyl Defense: Austrian, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 3 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 8,
+      "topics": [
+        "chess",
+        "openings",
+        "pterodactyl-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnb1k1nr%2Fpp1pppbp%2F6p1%2Fq1p5%2F3PPP2%2F2P5%2FPP4PP%2FRNBQKBNR%20w%20KQkq%20-%201%205&color=black&theme=brown&piece=cburnett&lastMove=d8a5"
+    },
+    {
+      "key": "pterodactyl-defense-central",
+      "name": "Pterodactyl Defense: Central",
+      "description": "Line trainer for the Pterodactyl Defense: Central, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from Black's side across 6 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 10,
+      "topics": [
+        "chess",
+        "openings",
+        "pterodactyl-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnb1k1nr%2Fpp1pppbp%2F6p1%2Fq1pP4%2F2P1P3%2F8%2FPP3PPP%2FRNBQKBNR%20w%20KQkq%20-%201%205&color=black&theme=brown&piece=cburnett&lastMove=d8a5"
+    },
+    {
+      "key": "pterodactyl-defense-eastern",
+      "name": "Pterodactyl Defense: Eastern",
+      "description": "Line trainer for the Pterodactyl Defense: Eastern, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 6 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "pterodactyl-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk1nr%2Fpp1pppbp%2F6p1%2F2pP4%2F4P3%2F2N5%2FPPP2PPP%2FR1BQKBNR%20b%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=d4d5"
+    },
+    {
+      "key": "pterodactyl-defense-fianchetto",
+      "name": "Pterodactyl Defense: Fianchetto",
+      "description": "Line trainer for the Pterodactyl Defense: Fianchetto, generated from the canonical opening database (lichess-org/chess-openings): 12 positions drilled book-move by book-move from Black's side across 5 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 12,
+      "topics": [
+        "chess",
+        "openings",
+        "pterodactyl-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnb1k1nr%2Fpp1pppbp%2F6p1%2Fq1pP4%2F2P5%2F2N5%2FPP2PPPP%2FR1BQKBNR%20w%20KQkq%20-%201%205&color=black&theme=brown&piece=cburnett&lastMove=d8a5"
+    },
+    {
+      "key": "queens-gambit-accepted-classical",
+      "name": "Queen's Gambit Accepted: Classical",
+      "description": "Line trainer for the Queen's Gambit Accepted: Classical, generated from the canonical opening database (lichess-org/chess-openings): 17 positions drilled book-move by book-move from Black's side across 2 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 17,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-gambit-accepted"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqk2r%2F5ppp%2Fp1n1pn2%2F1pb1P3%2F2B5%2F5N2%2FPP2QPPP%2FRNB2RK1%20b%20kq%20-%200%2010&color=black&theme=brown&piece=cburnett&lastMove=e4e5"
+    },
+    {
+      "key": "queens-gambit-accepted-classical-defense",
+      "name": "Queen's Gambit Accepted: Classical Defense",
+      "description": "Line trainer for the Queen's Gambit Accepted: Classical Defense, generated from the canonical opening database (lichess-org/chess-openings): 12 positions drilled book-move by book-move from Black's side across 14 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 12,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-gambit-accepted"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp3ppp%2F4pn2%2F2p5%2F2BP4%2F4PN2%2FPP3PPP%2FRNBQK2R%20w%20KQkq%20-%200%206&color=black&theme=brown&piece=cburnett&lastMove=c7c5"
+    },
+    {
+      "key": "queens-gambit-declined-albin-countergambit",
+      "name": "Queen's Gambit Declined: Albin Countergambit",
+      "description": "Line trainer for the Queen's Gambit Declined: Albin Countergambit, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 13 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 8,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-gambit-declined"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fppp2ppp%2F8%2F3pp3%2F2PP4%2F8%2FPP2PPPP%2FRNBQKBNR%20w%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=e7e5"
+    },
+    {
+      "key": "queens-gambit-declined-baltic-defense",
+      "name": "Queen's Gambit Declined: Baltic Defense",
+      "description": "Line trainer for the Queen's Gambit Declined: Baltic Defense, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 6 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-gambit-declined"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rn1qkbnr%2Fppp1pppp%2F8%2F3p1b2%2F2PP4%2F8%2FPP2PPPP%2FRNBQKBNR%20w%20KQkq%20-%201%203&color=black&theme=brown&piece=cburnett&lastMove=c8f5"
+    },
+    {
+      "key": "queens-gambit-declined-cambridge-springs-defense",
+      "name": "Queen's Gambit Declined: Cambridge Springs Defense",
+      "description": "Line trainer for the Queen's Gambit Declined: Cambridge Springs Defense, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 7 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 8,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-gambit-declined"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1b1kb1r%2Fpp1n1ppp%2F2p1pn2%2Fq2p2B1%2F2PP4%2F2N1PN2%2FPP3PPP%2FR2QKB1R%20w%20KQkq%20-%201%207&color=black&theme=brown&piece=cburnett&lastMove=d8a5"
+    },
+    {
+      "key": "queens-gambit-declined-chigorin-defense",
+      "name": "Queen's Gambit Declined: Chigorin Defense",
+      "description": "Line trainer for the Queen's Gambit Declined: Chigorin Defense, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from Black's side across 11 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 10,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-gambit-declined"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkbnr%2Fppp1pppp%2F2n5%2F3p4%2F2PP4%2F8%2FPP2PPPP%2FRNBQKBNR%20w%20KQkq%20-%201%203&color=black&theme=brown&piece=cburnett&lastMove=b8c6"
+    },
+    {
+      "key": "queens-gambit-declined-exchange-variation",
+      "name": "Queen's Gambit Declined: Exchange Variation",
+      "description": "Line trainer for the Queen's Gambit Declined: Exchange Variation, generated from the canonical opening database (lichess-org/chess-openings): 14 positions drilled book-move by book-move from Black's side across 12 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 14,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-gambit-declined"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fppp2ppp%2F4pn2%2F3P4%2F3P4%2F2N5%2FPP2PPPP%2FR1BQKBNR%20b%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=c4d5"
+    },
+    {
+      "key": "queens-gambit-declined-harrwitz-attack",
+      "name": "Queen's Gambit Declined: Harrwitz Attack",
+      "description": "Line trainer for the Queen's Gambit Declined: Harrwitz Attack, generated from the canonical opening database (lichess-org/chess-openings): 11 positions drilled book-move by book-move from Black's side across 9 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 11,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-gambit-declined"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fppp2ppp%2F4pn2%2F3p4%2F2PP1B2%2F2N5%2FPP2PPPP%2FR2QKBNR%20b%20KQkq%20-%203%204&color=black&theme=brown&piece=cburnett&lastMove=c1f4"
+    },
+    {
+      "key": "queens-gambit-declined-lasker-defense",
+      "name": "Queen's Gambit Declined: Lasker Defense",
+      "description": "Line trainer for the Queen's Gambit Declined: Lasker Defense, generated from the canonical opening database (lichess-org/chess-openings): 15 positions drilled book-move by book-move from Black's side across 8 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 15,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-gambit-declined"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fppp1bppp%2F4p3%2F3p2B1%2F2PPn3%2F2N1P3%2FPP3PPP%2FR2QKBNR%20w%20KQkq%20-%201%206&color=black&theme=brown&piece=cburnett&lastMove=f6e4"
+    },
+    {
+      "key": "queens-gambit-declined-neo-orthodox-variation",
+      "name": "Queen's Gambit Declined: Neo-Orthodox Variation",
+      "description": "Line trainer for the Queen's Gambit Declined: Neo-Orthodox Variation, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 3 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-gambit-declined"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbq1rk1%2Fppp1bppp%2F4pn2%2F3p2B1%2F2PP4%2F2N1P3%2FPP3PPP%2F2RQKBNR%20b%20K%20-%202%206&color=black&theme=brown&piece=cburnett&lastMove=a1c1"
     },
     {
       "key": "queens-gambit-declined-orthodox-defense",
@@ -100,6 +892,162 @@
       "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fpppnbppp%2F4pn2%2F3p2B1%2F2PP4%2F2N1PN2%2FPP3PPP%2FR2QKB1R%20w%20KQ%20-%201%207&color=black&theme=brown&piece=cburnett&lastMove=b8d7"
     },
     {
+      "key": "queens-gambit-declined-pillsbury-attack",
+      "name": "Queen's Gambit Declined: Pillsbury Attack",
+      "description": "Line trainer for the Queen's Gambit Declined: Pillsbury Attack, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 1 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 8,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-gambit-declined"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rn1q1rk1%2Fpbp1bppp%2F1p3n2%2F3pN1B1%2F3P4%2F2NBP3%2FPP3PPP%2FR2QK2R%20b%20KQ%20-%204%209&color=black&theme=brown&piece=cburnett&lastMove=f3e5"
+    },
+    {
+      "key": "queens-gambit-declined-semi-slav",
+      "name": "Queen's Gambit Declined: Semi-Slav",
+      "description": "Line trainer for the Queen's Gambit Declined: Semi-Slav, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from Black's side across 3 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 10,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-gambit-declined"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk1nr%2F5ppp%2F2p1p3%2Fpp6%2FPbpP4%2F2N1PN2%2F1P1B1PPP%2FR2QKB1R%20w%20KQkq%20-%200%208&color=black&theme=brown&piece=cburnett&lastMove=a7a5"
+    },
+    {
+      "key": "queens-gambit-declined-semi-tarrasch-defense",
+      "name": "Queen's Gambit Declined: Semi-Tarrasch Defense",
+      "description": "Line trainer for the Queen's Gambit Declined: Semi-Tarrasch Defense, generated from the canonical opening database (lichess-org/chess-openings): 13 positions drilled book-move by book-move from Black's side across 18 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 13,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-gambit-declined"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp3ppp%2F4pn2%2F2pp4%2F2PP4%2F2N2N2%2FPP2PPPP%2FR1BQKB1R%20w%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=c7c5"
+    },
+    {
+      "key": "queens-gambit-declined-tarrasch-defense",
+      "name": "Queen's Gambit Declined: Tarrasch Defense",
+      "description": "Line trainer for the Queen's Gambit Declined: Tarrasch Defense, generated from the canonical opening database (lichess-org/chess-openings): 15 positions drilled book-move by book-move from Black's side across 7 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 15,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-gambit-declined"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp3ppp%2F4p3%2F2pp4%2F2PP4%2F5N2%2FPP2PPPP%2FRNBQKB1R%20w%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=c7c5"
+    },
+    {
+      "key": "queens-gambit-declined-tartakower-defense",
+      "name": "Queen's Gambit Declined: Tartakower Defense",
+      "description": "Line trainer for the Queen's Gambit Declined: Tartakower Defense, generated from the canonical opening database (lichess-org/chess-openings): 11 positions drilled book-move by book-move from Black's side across 4 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 11,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-gambit-declined"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbq1rk1%2Fp1p1bpp1%2F1p2pn1p%2F3p4%2F2PP3B%2F2N1PN2%2FPP3PPP%2FR2QKB1R%20w%20KQ%20-%200%208&color=black&theme=brown&piece=cburnett&lastMove=b7b6"
+    },
+    {
+      "key": "queens-indian-defense-averbakh-variation",
+      "name": "Queen's Indian Defense: Averbakh Variation",
+      "description": "Line trainer for the Queen's Indian Defense: Averbakh Variation, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 1 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 8,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-indian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rn1q1rk1%2Fpb1pbppp%2F1p2pn2%2F8%2F2PN4%2F1P1BP3%2FPB3PPP%2FRN1Q1RK1%20b%20-%20-%200%209&color=black&theme=brown&piece=cburnett&lastMove=f3d4"
+    },
+    {
+      "key": "queens-indian-defense-classical-variation",
+      "name": "Queen's Indian Defense: Classical Variation",
+      "description": "Line trainer for the Queen's Indian Defense: Classical Variation, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 7 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 8,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-indian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rn1qk2r%2Fpbppbppp%2F1p2pn2%2F8%2F2PP4%2F5NP1%2FPP2PPBP%2FRNBQ1RK1%20b%20kq%20-%204%206&color=black&theme=brown&piece=cburnett&lastMove=e1g1"
+    },
+    {
+      "key": "queens-indian-defense-spassky-system3",
+      "name": "Queen's Indian Defense: Spassky System3",
+      "description": "Line trainer for the Queen's Indian Defense: Spassky System3, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 2 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-indian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rn1qkb1r%2Fpb1p1ppp%2F1p2pn2%2F2p5%2F2PP4%2F3BPN2%2FPP3PPP%2FRNBQK2R%20w%20KQkq%20-%200%206&color=black&theme=brown&piece=cburnett&lastMove=c7c5"
+    },
+    {
+      "key": "queens-pawn-game-colle-system",
+      "name": "Queen's Pawn Game: Colle System",
+      "description": "Line trainer for the Queen's Pawn Game: Colle System, generated from the canonical opening database (lichess-org/chess-openings): 16 positions drilled book-move by book-move from White's side across 11 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 16,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-pawn-game"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fppp1pppp%2F5n2%2F3p4%2F3P4%2F4PN2%2FPPP2PPP%2FRNBQKB1R%20b%20KQkq%20-%200%203&color=white&theme=brown&piece=cburnett&lastMove=e2e3"
+    },
+    {
+      "key": "queens-pawn-game-london-system",
+      "name": "Queen's Pawn Game: London System",
+      "description": "Line trainer for the Queen's Pawn Game: London System, generated from the canonical opening database (lichess-org/chess-openings): 11 positions drilled book-move by book-move from White's side across 7 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 11,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-pawn-game"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fppp2ppp%2F4p3%2F3p4%2F3P1B2%2F5N2%2FPPP1PPPP%2FRN1QKB1R%20b%20KQkq%20-%201%203&color=white&theme=brown&piece=cburnett&lastMove=c1f4"
+    },
+    {
+      "key": "queens-pawn-game-torre-attack",
+      "name": "Queen's Pawn Game: Torre Attack",
+      "description": "Line trainer for the Queen's Pawn Game: Torre Attack, generated from the canonical opening database (lichess-org/chess-openings): 14 positions drilled book-move by book-move from White's side across 16 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 14,
+      "topics": [
+        "chess",
+        "openings",
+        "queens-pawn-game"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fppp1pppp%2F5n2%2F3p2B1%2F3P4%2F5N2%2FPPP1PPPP%2FRN1QKB1R%20b%20KQkq%20-%203%203&color=white&theme=brown&piece=cburnett&lastMove=c1g5"
+    },
+    {
+      "key": "ruy-lopez-berlin-defense",
+      "name": "Ruy Lopez: Berlin Defense",
+      "description": "Line trainer for the Ruy Lopez: Berlin Defense, generated from the canonical opening database (lichess-org/chess-openings): 15 positions drilled book-move by book-move from Black's side across 31 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 15,
+      "topics": [
+        "chess",
+        "openings",
+        "ruy-lopez"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpppp1ppp%2F2n2n2%2F1B2p3%2F4P3%2F5N2%2FPPPP1PPP%2FRNBQK2R%20w%20KQkq%20-%204%204&color=black&theme=brown&piece=cburnett&lastMove=g8f6"
+    },
+    {
+      "key": "ruy-lopez-closed",
+      "name": "Ruy Lopez: Closed",
+      "description": "Line trainer for the Ruy Lopez: Closed, generated from the canonical opening database (lichess-org/chess-openings): 19 positions drilled book-move by book-move from Black's side across 53 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 19,
+      "topics": [
+        "chess",
+        "openings",
+        "ruy-lopez"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqk2r%2F1pppbppp%2Fp1n2n2%2F4p3%2FB3P3%2F5N2%2FPPPP1PPP%2FRNBQ1RK1%20w%20kq%20-%204%206&color=black&theme=brown&piece=cburnett&lastMove=f8e7"
+    },
+    {
       "key": "ruy-lopez-marshall-attack",
       "name": "Ruy Lopez: Marshall Attack",
       "description": "Line trainer for the Ruy Lopez: Marshall Attack, generated from the canonical opening database (lichess-org/chess-openings): 20 positions drilled book-move by book-move from Black's side across 8 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
@@ -112,6 +1060,18 @@
       "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2F2p1bppp%2Fp1n2n2%2F1p1pp3%2F4P3%2F1BP2N2%2FPP1P1PPP%2FRNBQR1K1%20w%20-%20-%200%209&color=black&theme=brown&piece=cburnett&lastMove=d7d5"
     },
     {
+      "key": "ruy-lopez-noahs-ark-trap",
+      "name": "Ruy Lopez: Noah's Ark Trap",
+      "description": "Line trainer for the Ruy Lopez: Noah's Ark Trap, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 2 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 8,
+      "topics": [
+        "chess",
+        "openings",
+        "ruy-lopez"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkbnr%2F5ppp%2Fp2p4%2F1pp5%2F3QP3%2F1B6%2FPPP2PPP%2FRNB1K2R%20w%20KQkq%20-%200%209&color=black&theme=brown&piece=cburnett&lastMove=c7c5"
+    },
+    {
       "key": "ruy-lopez-open",
       "name": "Ruy Lopez: Open",
       "description": "Line trainer for the Ruy Lopez: Open, generated from the canonical opening database (lichess-org/chess-openings): 21 positions drilled book-move by book-move from Black's side across 33 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
@@ -122,6 +1082,450 @@
         "ruy-lopez"
       ],
       "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2F1ppp1ppp%2Fp1n5%2F4p3%2FB3n3%2F5N2%2FPPPP1PPP%2FRNBQ1RK1%20w%20kq%20-%200%206&color=black&theme=brown&piece=cburnett&lastMove=f6e4"
+    },
+    {
+      "key": "ruy-lopez-rabinovich-variation",
+      "name": "Ruy Lopez: Rabinovich Variation",
+      "description": "Line trainer for the Ruy Lopez: Rabinovich Variation, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from Black's side across 1 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 10,
+      "topics": [
+        "chess",
+        "openings",
+        "ruy-lopez"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bq1k1r%2F2p2ppp%2Fp4n2%2F1pbPR1N1%2F3n4%2F1B6%2FPPPP1PPP%2FRNBQ2K1%20w%20-%20-%201%2011&color=black&theme=brown&piece=cburnett&lastMove=e8f8"
+    },
+    {
+      "key": "ruy-lopez-steinitz-defense-deferred",
+      "name": "Ruy Lopez: Steinitz Defense Deferred",
+      "description": "Line trainer for the Ruy Lopez: Steinitz Defense Deferred, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 2 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "ruy-lopez"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r2qkb1r%2F2p2ppp%2Fp1pp1n2%2F4p3%2F3PP1b1%2F5N2%2FPPP2PPP%2FRNBQ1RK1%20w%20kq%20-%201%208&color=black&theme=brown&piece=cburnett&lastMove=c8g4"
+    },
+    {
+      "key": "ruy-lopez-wormald-attack",
+      "name": "Ruy Lopez: Wormald Attack",
+      "description": "Line trainer for the Ruy Lopez: Wormald Attack, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 1 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 8,
+      "topics": [
+        "chess",
+        "openings",
+        "ruy-lopez"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r2qk2r%2F2p1bppp%2Fp1np1n2%2F1p2p3%2F3PP1b1%2F1BP2N2%2FPP2QPPP%2FRNB1K2R%20w%20KQkq%20-%201%209&color=black&theme=brown&piece=cburnett&lastMove=c8g4"
+    },
+    {
+      "key": "scotch-game-cochrane-shumov-defense",
+      "name": "Scotch Game: Cochrane-Shumov Defense",
+      "description": "Line trainer for the Scotch Game: Cochrane-Shumov Defense, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from White's side across 1 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "scotch-game"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bq3r%2Fppp2k1p%2F2n3p1%2F2Qp4%2F3pP3%2F8%2FPPP2PPP%2FRNB1K2R%20w%20KQ%20-%200%2010&color=white&theme=brown&piece=cburnett&lastMove=d7d5"
+    },
+    {
+      "key": "scotch-game-gottschall-variation",
+      "name": "Scotch Game: Gottschall Variation",
+      "description": "Line trainer for the Scotch Game: Gottschall Variation, generated from the canonical opening database (lichess-org/chess-openings): 12 positions drilled book-move by book-move from White's side across 1 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 12,
+      "topics": [
+        "chess",
+        "openings",
+        "scotch-game"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=1rb2rk1%2Fpp3ppp%2F5q2%2F3P4%2F1n6%2F2P1Q3%2FPP3PPP%2FRN2KB1R%20w%20KQ%20-%201%2013&color=white&theme=brown&piece=cburnett&lastMove=c6b4"
+    },
+    {
+      "key": "scotch-game-hanneken-variation",
+      "name": "Scotch Game: Hanneken Variation",
+      "description": "Line trainer for the Scotch Game: Hanneken Variation, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from White's side across 1 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "scotch-game"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fpppp1ppp%2F5n2%2F4n1N1%2F1bB5%2F8%2FPB3PPP%2FRN1Q1RK1%20w%20-%20-%200%2010&color=white&theme=brown&piece=cburnett&lastMove=c6e5"
+    },
+    {
+      "key": "scotch-game-horwitz-attack",
+      "name": "Scotch Game: Horwitz Attack",
+      "description": "Line trainer for the Scotch Game: Horwitz Attack, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from White's side across 2 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "scotch-game"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1b1kbnr%2Fpppp1ppp%2F2n5%2F1N6%2F4P2q%2F8%2FPPP2PPP%2FRNBQKB1R%20b%20KQkq%20-%202%205&color=white&theme=brown&piece=cburnett&lastMove=d4b5"
+    },
+    {
+      "key": "scotch-game-rosenthal-variation",
+      "name": "Scotch Game: Rosenthal Variation",
+      "description": "Line trainer for the Scotch Game: Rosenthal Variation, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from White's side across 1 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "scotch-game"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bk2nr%2Fpppp1ppp%2F2n3q1%2F1N6%2F8%2F8%2FPPPNBPPP%2FR2Q1RK1%20w%20-%20-%201%2010&color=white&theme=brown&piece=cburnett&lastMove=e4g6"
+    },
+    {
+      "key": "scotch-game-sea-cadet-mate",
+      "name": "Scotch Game: Sea-Cadet Mate",
+      "description": "Line trainer for the Scotch Game: Sea-Cadet Mate, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from White's side across 1 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 10,
+      "topics": [
+        "chess",
+        "openings",
+        "scotch-game"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r2q1bnr%2Fppp1kBpp%2F3p4%2F3NN3%2F4P3%2F8%2FPP3PPP%2FR1Bb1RK1%20b%20-%20-%202%2010&color=white&theme=brown&piece=cburnett&lastMove=c3d5"
+    },
+    {
+      "key": "semi-slav-defense-botvinnik-variation",
+      "name": "Semi-Slav Defense: Botvinnik Variation",
+      "description": "Line trainer for the Semi-Slav Defense: Botvinnik Variation, generated from the canonical opening database (lichess-org/chess-openings): 11 positions drilled book-move by book-move from Black's side across 6 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 11,
+      "topics": [
+        "chess",
+        "openings",
+        "semi-slav-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp3ppp%2F2p1pn2%2F6B1%2F2pPP3%2F2N2N2%2FPP3PPP%2FR2QKB1R%20b%20KQkq%20-%200%206&color=black&theme=brown&piece=cburnett&lastMove=e2e4"
+    },
+    {
+      "key": "semi-slav-defense-chigorin-defense",
+      "name": "Semi-Slav Defense: Chigorin Defense",
+      "description": "Line trainer for the Semi-Slav Defense: Chigorin Defense, generated from the canonical opening database (lichess-org/chess-openings): 13 positions drilled book-move by book-move from Black's side across 8 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 13,
+      "topics": [
+        "chess",
+        "openings",
+        "semi-slav-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqk2r%2Fpp1n1ppp%2F2pbpn2%2F3p4%2F2PP4%2F2NBPN2%2FPP3PPP%2FR1BQK2R%20w%20KQkq%20-%204%207&color=black&theme=brown&piece=cburnett&lastMove=f8d6"
+    },
+    {
+      "key": "semi-slav-defense-main-line",
+      "name": "Semi-Slav Defense: Main Line",
+      "description": "Line trainer for the Semi-Slav Defense: Main Line, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 3 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "semi-slav-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp3ppp%2F2p1pn2%2F3p4%2F2PP4%2F2N1PN2%2FPP3PPP%2FR1BQKB1R%20b%20KQkq%20-%201%205&color=black&theme=brown&piece=cburnett&lastMove=g1f3"
+    },
+    {
+      "key": "semi-slav-defense-marshall-gambit",
+      "name": "Semi-Slav Defense: Marshall Gambit",
+      "description": "Line trainer for the Semi-Slav Defense: Marshall Gambit, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 4 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "semi-slav-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp3ppp%2F2p1p3%2F3p4%2F2PPP3%2F2N5%2FPP3PPP%2FR1BQKBNR%20b%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=e2e4"
+    },
+    {
+      "key": "semi-slav-defense-meran-variation",
+      "name": "Semi-Slav Defense: Meran Variation",
+      "description": "Line trainer for the Semi-Slav Defense: Meran Variation, generated from the canonical opening database (lichess-org/chess-openings): 15 positions drilled book-move by book-move from Black's side across 16 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 15,
+      "topics": [
+        "chess",
+        "openings",
+        "semi-slav-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fp2n1ppp%2F2p1pn2%2F1p6%2F2BP4%2F2N1PN2%2FPP3PPP%2FR1BQK2R%20w%20KQkq%20-%200%208&color=black&theme=brown&piece=cburnett&lastMove=b7b5"
+    },
+    {
+      "key": "semi-slav-defense-normal-variation",
+      "name": "Semi-Slav Defense: Normal Variation",
+      "description": "Line trainer for the Semi-Slav Defense: Normal Variation, generated from the canonical opening database (lichess-org/chess-openings): 12 positions drilled book-move by book-move from Black's side across 3 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 12,
+      "topics": [
+        "chess",
+        "openings",
+        "semi-slav-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpp1n1ppp%2F2p1pn2%2F3p4%2F2PP4%2F2N1PN2%2FPP3PPP%2FR1BQKB1R%20w%20KQkq%20-%202%206&color=black&theme=brown&piece=cburnett&lastMove=b8d7"
+    },
+    {
+      "key": "semi-slav-defense-noteboom-variation",
+      "name": "Semi-Slav Defense: Noteboom Variation",
+      "description": "Line trainer for the Semi-Slav Defense: Noteboom Variation, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 5 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "semi-slav-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp3ppp%2F2p1p3%2F8%2F2pP4%2F2N2N2%2FPP2PPPP%2FR1BQKB1R%20w%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=d5c4"
+    },
+    {
+      "key": "semi-slav-defense-stoltz-variation",
+      "name": "Semi-Slav Defense: Stoltz Variation",
+      "description": "Line trainer for the Semi-Slav Defense: Stoltz Variation, generated from the canonical opening database (lichess-org/chess-openings): 12 positions drilled book-move by book-move from Black's side across 8 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 12,
+      "topics": [
+        "chess",
+        "openings",
+        "semi-slav-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpp1n1ppp%2F2p1pn2%2F3p4%2F2PP4%2F2N1PN2%2FPPQ2PPP%2FR1B1KB1R%20b%20KQkq%20-%203%206&color=black&theme=brown&piece=cburnett&lastMove=d1c2"
+    },
+    {
+      "key": "sicilian-defense-accelerated-dragon",
+      "name": "Sicilian Defense: Accelerated Dragon",
+      "description": "Line trainer for the Sicilian Defense: Accelerated Dragon, generated from the canonical opening database (lichess-org/chess-openings): 11 positions drilled book-move by book-move from Black's side across 10 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 11,
+      "topics": [
+        "chess",
+        "openings",
+        "sicilian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkbnr%2Fpp1ppp1p%2F2n3p1%2F8%2F3NP3%2F8%2FPPP2PPP%2FRNBQKB1R%20w%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=g7g6"
+    },
+    {
+      "key": "sicilian-defense-alapin-variation",
+      "name": "Sicilian Defense: Alapin Variation",
+      "description": "Line trainer for the Sicilian Defense: Alapin Variation, generated from the canonical opening database (lichess-org/chess-openings): 11 positions drilled book-move by book-move from Black's side across 13 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 11,
+      "topics": [
+        "chess",
+        "openings",
+        "sicilian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F8%2F2p5%2F4P3%2F2P5%2FPP1P1PPP%2FRNBQKBNR%20b%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett&lastMove=c2c3"
+    },
+    {
+      "key": "sicilian-defense-closed",
+      "name": "Sicilian Defense: Closed",
+      "description": "Line trainer for the Sicilian Defense: Closed, generated from the canonical opening database (lichess-org/chess-openings): 14 positions drilled book-move by book-move from Black's side across 23 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 14,
+      "topics": [
+        "chess",
+        "openings",
+        "sicilian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F8%2F2p5%2F4P3%2F2N5%2FPPPP1PPP%2FR1BQKBNR%20b%20KQkq%20-%201%202&color=black&theme=brown&piece=cburnett&lastMove=b1c3"
+    },
+    {
+      "key": "sicilian-defense-dragon-variation",
+      "name": "Sicilian Defense: Dragon Variation",
+      "description": "Line trainer for the Sicilian Defense: Dragon Variation, generated from the canonical opening database (lichess-org/chess-openings): 28 positions drilled book-move by book-move from Black's side across 43 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 28,
+      "topics": [
+        "chess",
+        "openings",
+        "sicilian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pp1p%2F3p2p1%2F8%2F3NP3%2F8%2FPPP2PPP%2FRNBQKB1R%20w%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=g7g6"
+    },
+    {
+      "key": "sicilian-defense-kan-variation",
+      "name": "Sicilian Defense: Kan Variation",
+      "description": "Line trainer for the Sicilian Defense: Kan Variation, generated from the canonical opening database (lichess-org/chess-openings): 16 positions drilled book-move by book-move from Black's side across 14 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 16,
+      "topics": [
+        "chess",
+        "openings",
+        "sicilian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2F1p1p1ppp%2Fp3p3%2F8%2F3NP3%2F8%2FPPP2PPP%2FRNBQKB1R%20w%20KQkq%20-%200%205&color=black&theme=brown&piece=cburnett&lastMove=a7a6"
+    },
+    {
+      "key": "sicilian-defense-lasker-pelikan-variation",
+      "name": "Sicilian Defense: Lasker-Pelikan Variation",
+      "description": "Line trainer for the Sicilian Defense: Lasker-Pelikan Variation, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from Black's side across 10 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 10,
+      "topics": [
+        "chess",
+        "openings",
+        "sicilian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpp1p1ppp%2F2n2n2%2F4p3%2F3NP3%2F2N5%2FPPP2PPP%2FR1BQKB1R%20w%20KQkq%20-%200%206&color=black&theme=brown&piece=cburnett&lastMove=e7e5"
+    },
+    {
+      "key": "sicilian-defense-najdorf-variation",
+      "name": "Sicilian Defense: Najdorf Variation",
+      "description": "Line trainer for the Sicilian Defense: Najdorf Variation, generated from the canonical opening database (lichess-org/chess-openings): 14 positions drilled book-move by book-move from Black's side across 33 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 14,
+      "topics": [
+        "chess",
+        "openings",
+        "sicilian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2F1p2pppp%2Fp2p1n2%2F8%2F3NP3%2F2N5%2FPPP2PPP%2FR1BQKB1R%20w%20KQkq%20-%200%206&color=black&theme=brown&piece=cburnett&lastMove=a7a6"
+    },
+    {
+      "key": "sicilian-defense-richter-rauzer-variation",
+      "name": "Sicilian Defense: Richter-Rauzer Variation",
+      "description": "Line trainer for the Sicilian Defense: Richter-Rauzer Variation, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 21 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "sicilian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpp2pppp%2F2np1n2%2F6B1%2F3NP3%2F2N5%2FPPP2PPP%2FR2QKB1R%20b%20KQkq%20-%204%206&color=black&theme=brown&piece=cburnett&lastMove=c1g5"
+    },
+    {
+      "key": "sicilian-defense-scheveningen-variation",
+      "name": "Sicilian Defense: Scheveningen Variation",
+      "description": "Line trainer for the Sicilian Defense: Scheveningen Variation, generated from the canonical opening database (lichess-org/chess-openings): 11 positions drilled book-move by book-move from Black's side across 20 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 11,
+      "topics": [
+        "chess",
+        "openings",
+        "sicilian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp3ppp%2F3ppn2%2F8%2F3NP3%2F2N5%2FPPP2PPP%2FR1BQKB1R%20w%20KQkq%20-%200%206&color=black&theme=brown&piece=cburnett&lastMove=d7d6"
+    },
+    {
+      "key": "sicilian-defense-smith-morra-gambit-accepted",
+      "name": "Sicilian Defense: Smith-Morra Gambit Accepted",
+      "description": "Line trainer for the Sicilian Defense: Smith-Morra Gambit Accepted, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 18 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "sicilian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F8%2F8%2F4P3%2F2p5%2FPP3PPP%2FRNBQKBNR%20w%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=d4c3"
+    },
+    {
+      "key": "sicilian-defense-sozin-attack",
+      "name": "Sicilian Defense: Sozin Attack",
+      "description": "Line trainer for the Sicilian Defense: Sozin Attack, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 6 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 8,
+      "topics": [
+        "chess",
+        "openings",
+        "sicilian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp3ppp%2F3ppn2%2F8%2F2BNP3%2F2N5%2FPPP2PPP%2FR1BQK2R%20b%20KQkq%20-%201%206&color=black&theme=brown&piece=cburnett&lastMove=f1c4"
+    },
+    {
+      "key": "sicilian-defense-taimanov-variation",
+      "name": "Sicilian Defense: Taimanov Variation",
+      "description": "Line trainer for the Sicilian Defense: Taimanov Variation, generated from the canonical opening database (lichess-org/chess-openings): 12 positions drilled book-move by book-move from Black's side across 10 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 12,
+      "topics": [
+        "chess",
+        "openings",
+        "sicilian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkbnr%2Fpp1p1ppp%2F2n1p3%2F8%2F3NP3%2F8%2FPPP2PPP%2FRNBQKB1R%20w%20KQkq%20-%201%205&color=black&theme=brown&piece=cburnett&lastMove=b8c6"
+    },
+    {
+      "key": "sicilian-defense-wing-gambit",
+      "name": "Sicilian Defense: Wing Gambit",
+      "description": "Line trainer for the Sicilian Defense: Wing Gambit, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 9 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "sicilian-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F8%2F2p5%2F1P2P3%2F8%2FP1PP1PPP%2FRNBQKBNR%20b%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett&lastMove=b2b4"
+    },
+    {
+      "key": "slav-defense-czech-variation",
+      "name": "Slav Defense: Czech Variation",
+      "description": "Line trainer for the Slav Defense: Czech Variation, generated from the canonical opening database (lichess-org/chess-openings): 15 positions drilled book-move by book-move from Black's side across 13 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 15,
+      "topics": [
+        "chess",
+        "openings",
+        "slav-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rn1qkb1r%2Fpp2pppp%2F2p2n2%2F5b2%2FP1pP4%2F2N2N2%2F1P2PPPP%2FR1BQKB1R%20w%20KQkq%20-%201%206&color=black&theme=brown&piece=cburnett&lastMove=c8f5"
+    },
+    {
+      "key": "slav-defense-exchange-variation",
+      "name": "Slav Defense: Exchange Variation",
+      "description": "Line trainer for the Slav Defense: Exchange Variation, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from Black's side across 6 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 10,
+      "topics": [
+        "chess",
+        "openings",
+        "slav-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F2p5%2F3P4%2F3P4%2F8%2FPP2PPPP%2FRNBQKBNR%20b%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=c4d5"
+    },
+    {
+      "key": "slav-defense-modern-line",
+      "name": "Slav Defense: Modern Line",
+      "description": "Line trainer for the Slav Defense: Modern Line, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 4 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 9,
+      "topics": [
+        "chess",
+        "openings",
+        "slav-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp2pppp%2F2p5%2F3p4%2F2PP4%2F5N2%2FPP2PPPP%2FRNBQKB1R%20b%20KQkq%20-%201%203&color=black&theme=brown&piece=cburnett&lastMove=g1f3"
+    },
+    {
+      "key": "slav-defense-quiet-variation",
+      "name": "Slav Defense: Quiet Variation",
+      "description": "Line trainer for the Slav Defense: Quiet Variation, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from Black's side across 6 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 10,
+      "topics": [
+        "chess",
+        "openings",
+        "slav-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fpp2pppp%2F2p2n2%2F3p4%2F2PP4%2F4PN2%2FPP3PPP%2FRNBQKB1R%20b%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=e2e3"
+    },
+    {
+      "key": "tarrasch-defense-classical-variation",
+      "name": "Tarrasch Defense: Classical Variation",
+      "description": "Line trainer for the Tarrasch Defense: Classical Variation, generated from the canonical opening database (lichess-org/chess-openings): 13 positions drilled book-move by book-move from Black's side across 11 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 13,
+      "topics": [
+        "chess",
+        "openings",
+        "tarrasch-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fpp2bppp%2F2n2n2%2F2pp4%2F3P4%2F2N2NP1%2FPP2PPBP%2FR1BQ1RK1%20w%20-%20-%205%209&color=black&theme=brown&piece=cburnett&lastMove=e8g8"
+    },
+    {
+      "key": "tarrasch-defense-dubov-tarrasch",
+      "name": "Tarrasch Defense: Dubov Tarrasch",
+      "description": "Line trainer for the Tarrasch Defense: Dubov Tarrasch, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 1 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 8,
+      "topics": [
+        "chess",
+        "openings",
+        "tarrasch-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqk2r%2Fpp3ppp%2F2n2n2%2F2bp4%2F3N4%2F2N3P1%2FPP2PPBP%2FR1BQK2R%20w%20KQkq%20-%201%209&color=black&theme=brown&piece=cburnett&lastMove=f8c5"
+    },
+    {
+      "key": "tarrasch-defense-symmetrical-variation",
+      "name": "Tarrasch Defense: Symmetrical Variation",
+      "description": "Line trainer for the Tarrasch Defense: Symmetrical Variation, generated from the canonical opening database (lichess-org/chess-openings): 11 positions drilled book-move by book-move from Black's side across 2 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+      "cardCount": 11,
+      "topics": [
+        "chess",
+        "openings",
+        "tarrasch-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqkb1r%2Fpp3ppp%2F2n1pn2%2F2pp4%2F2PP4%2F2N1PN2%2FPP3PPP%2FR1BQKB1R%20w%20KQkq%20-%203%206&color=black&theme=brown&piece=cburnett&lastMove=b8c6"
     },
     {
       "key": "alekhine-defense",

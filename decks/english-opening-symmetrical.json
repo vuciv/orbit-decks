@@ -1,0 +1,175 @@
+{
+  "key": "english-opening-symmetrical",
+  "version": 1,
+  "name": "English Opening: Symmetrical",
+  "description": "Line trainer for the English Opening: Symmetrical, generated from the canonical opening database (lichess-org/chess-openings): 10 positions drilled book-move by book-move from White's side across 1 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "english-opening"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=r2qk2r%2F1b1nbppp%2Fpp1ppn2%2F8%2F2PQ4%2F1PN2NP1%2FP3PPBP%2FR1BR2K1%20w%20kq%20-%201%2011&color=white&theme=brown&piece=cburnett&lastMove=b8d7",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-root",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+        "answer": "c4",
+        "answerUci": "c2c4",
+        "orientation": "white",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. **c4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppp1ppp/4p3/8/2P5/8/PP1PPPPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "lastMove": "e7e6",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 e6 2. **Nf3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1p1ppp/4p3/2p5/2P5/5N2/PP1PPPPP/RNBQKB1R w KQkq - 0 3",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "lastMove": "c7c5",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 e6 2. Nf3 c5 3. **Nc3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp1p1ppp/4pn2/2p5/2P5/2N2N2/PP1PPPPP/R1BQKB1R w KQkq - 2 4",
+        "answer": "g3",
+        "answerUci": "g2g3",
+        "orientation": "white",
+        "lastMove": "g8f6",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 e6 2. Nf3 c5 3. Nc3 Nf6 4. **g3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5-nf6-b6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/p2p1ppp/1p2pn2/2p5/2P5/2N2NP1/PP1PPP1P/R1BQKB1R w KQkq - 0 5",
+        "answer": "Bg2",
+        "answerUci": "f1g2",
+        "orientation": "white",
+        "lastMove": "b7b6",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 e6 2. Nf3 c5 3. Nc3 Nf6 4. g3 b6 5. **Bg2**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5-nf6-b6-bb7",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pb1p1ppp/1p2pn2/2p5/2P5/2N2NP1/PP1PPPBP/R1BQK2R w KQkq - 2 6",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "lastMove": "c8b7",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 e6 2. Nf3 c5 3. Nc3 Nf6 4. g3 b6 5. Bg2 Bb7 6. **O-O**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5-nf6-b6-bb7-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qk2r/pb1pbppp/1p2pn2/2p5/2P5/2N2NP1/PP1PPPBP/R1BQ1RK1 w kq - 4 7",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "lastMove": "f8e7",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 e6 2. Nf3 c5 3. Nc3 Nf6 4. g3 b6 5. Bg2 Bb7 6. O-O Be7 7. **d4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5-nf6-b6-bb7-be7-cxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qk2r/pb1pbppp/1p2pn2/8/2Pp4/2N2NP1/PP2PPBP/R1BQ1RK1 w kq - 0 8",
+        "answer": "Qxd4",
+        "answerUci": "d1d4",
+        "orientation": "white",
+        "lastMove": "c5d4",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 e6 2. Nf3 c5 3. Nc3 Nf6 4. g3 b6 5. Bg2 Bb7 6. O-O Be7 7. d4 cxd4 8. **Qxd4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5-nf6-b6-bb7-be7-cxd4-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qk2r/pb2bppp/1p1ppn2/8/2PQ4/2N2NP1/PP2PPBP/R1B2RK1 w kq - 0 9",
+        "answer": "Rd1",
+        "answerUci": "f1d1",
+        "orientation": "white",
+        "lastMove": "d7d6",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 e6 2. Nf3 c5 3. Nc3 Nf6 4. g3 b6 5. Bg2 Bb7 6. O-O Be7 7. d4 cxd4 8. Qxd4 d6 9. **Rd1**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5-nf6-b6-bb7-be7-cxd4-d6-a6",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qk2r/1b2bppp/pp1ppn2/8/2PQ4/2N2NP1/PP2PPBP/R1BR2K1 w kq - 0 10",
+        "answer": "b3",
+        "answerUci": "b2b3",
+        "orientation": "white",
+        "lastMove": "a7a6",
+        "prompt": "You are White in the English Opening. What is the book move?",
+        "extra": "1. c4 e6 2. Nf3 c5 3. Nc3 Nf6 4. g3 b6 5. Bg2 Bb7 6. O-O Be7 7. d4 cxd4 8. Qxd4 d6 9. Rd1 a6 10. **b3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

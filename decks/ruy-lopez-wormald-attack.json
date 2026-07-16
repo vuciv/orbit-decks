@@ -1,0 +1,144 @@
+{
+  "key": "ruy-lopez-wormald-attack",
+  "version": 1,
+  "name": "Ruy Lopez: Wormald Attack",
+  "description": "Line trainer for the Ruy Lopez: Wormald Attack, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 1 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "ruy-lopez"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=r2qk2r%2F2p1bppp%2Fp1np1n2%2F1p2p3%2F3PP1b1%2F1BP2N2%2FPP2QPPP%2FRNB1K2R%20w%20KQkq%20-%201%209&color=black&theme=brown&piece=cburnett&lastMove=c8g4",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "lastMove": "e2e4",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 **e5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 **Nc6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+        "answer": "a6",
+        "answerUci": "a7a6",
+        "orientation": "black",
+        "lastMove": "f1b5",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 **a6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/1ppp1ppp/p1n5/4p3/B3P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 1 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "b5a4",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 **Nf6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-qe2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/1ppp1ppp/p1n2n2/4p3/B3P3/5N2/PPPPQPPP/RNB1K2R b KQkq - 3 5",
+        "answer": "b5",
+        "answerUci": "b7b5",
+        "orientation": "black",
+        "lastMove": "d1e2",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. Qe2 **b5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-qe2-bb3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/2pp1ppp/p1n2n2/1p2p3/4P3/1B3N2/PPPPQPPP/RNB1K2R b KQkq - 1 6",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "lastMove": "a4b3",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. Qe2 b5 6. Bb3 **Be7**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-qe2-bb3-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/2ppbppp/p1n2n2/1p2p3/3PP3/1B3N2/PPP1QPPP/RNB1K2R b KQkq - 0 7",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. Qe2 b5 6. Bb3 Be7 7. d4 **d6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-qe2-bb3-d4-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/2p1bppp/p1np1n2/1p2p3/3PP3/1BP2N2/PP2QPPP/RNB1K2R b KQkq - 0 8",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "lastMove": "c2c3",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. Qe2 b5 6. Bb3 Be7 7. d4 d6 8. c3 **Bg4** (Gr\u00fcnfeld Variation, C77)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

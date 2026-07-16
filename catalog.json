@@ -53,8 +53,8 @@
     {
       "key": "chess",
       "name": "Chess",
-      "deckCount": 39,
-      "rev": "cf572822a160",
+      "deckCount": 156,
+      "rev": "3b12d93d38ba",
       "file": "categories/chess.json"
     },
     {
@@ -103,7 +103,7 @@
       "key": "ai-research",
       "name": "AI Research",
       "deckCount": 2,
-      "rev": "5e4fb0d683e3",
+      "rev": "c286d7e8fe1c",
       "file": "categories/ai-research.json"
     }
   ],
@@ -185,13 +185,33 @@
   "syncIndex": [
     {
       "key": "ai-alignment-research",
-      "version": 1,
+      "version": 2,
       "file": "decks/ai-alignment-research.json"
     },
     {
       "key": "alekhine-defense",
       "version": 2,
       "file": "decks/alekhine-defense.json"
+    },
+    {
+      "key": "alekhine-defense-exchange-variation",
+      "version": 1,
+      "file": "decks/alekhine-defense-exchange-variation.json"
+    },
+    {
+      "key": "alekhine-defense-four-pawns-attack",
+      "version": 1,
+      "file": "decks/alekhine-defense-four-pawns-attack.json"
+    },
+    {
+      "key": "alekhine-defense-hunt-variation",
+      "version": 1,
+      "file": "decks/alekhine-defense-hunt-variation.json"
+    },
+    {
+      "key": "alekhine-defense-modern-variation",
+      "version": 1,
+      "file": "decks/alekhine-defense-modern-variation.json"
     },
     {
       "key": "best-picture-winners",
@@ -202,6 +222,16 @@
       "key": "bishops-opening",
       "version": 2,
       "file": "decks/bishops-opening.json"
+    },
+    {
+      "key": "bishops-opening-four-pawns-gambit",
+      "version": 1,
+      "file": "decks/bishops-opening-four-pawns-gambit.json"
+    },
+    {
+      "key": "bishops-opening-lisitsyn-variation",
+      "version": 1,
+      "file": "decks/bishops-opening-lisitsyn-variation.json"
     },
     {
       "key": "bones-of-the-body",
@@ -217,6 +247,16 @@
       "key": "catalan-opening",
       "version": 2,
       "file": "decks/catalan-opening.json"
+    },
+    {
+      "key": "catalan-opening-closed",
+      "version": 1,
+      "file": "decks/catalan-opening-closed.json"
+    },
+    {
+      "key": "catalan-opening-closed-variation",
+      "version": 1,
+      "file": "decks/catalan-opening-closed-variation.json"
     },
     {
       "key": "constellations",
@@ -239,14 +279,39 @@
       "file": "decks/dutch-defense.json"
     },
     {
+      "key": "dutch-defense-leningrad-variation",
+      "version": 1,
+      "file": "decks/dutch-defense-leningrad-variation.json"
+    },
+    {
+      "key": "dutch-defense-stonewall-variation",
+      "version": 1,
+      "file": "decks/dutch-defense-stonewall-variation.json"
+    },
+    {
       "key": "english-opening",
       "version": 2,
       "file": "decks/english-opening.json"
     },
     {
+      "key": "english-opening-agincourt-defense",
+      "version": 1,
+      "file": "decks/english-opening-agincourt-defense.json"
+    },
+    {
+      "key": "english-opening-anglo-indian-defense",
+      "version": 1,
+      "file": "decks/english-opening-anglo-indian-defense.json"
+    },
+    {
       "key": "english-opening-kings-english-variation",
       "version": 1,
       "file": "decks/english-opening-kings-english-variation.json"
+    },
+    {
+      "key": "english-opening-symmetrical",
+      "version": 1,
+      "file": "decks/english-opening-symmetrical.json"
     },
     {
       "key": "english-opening-symmetrical-variation",
@@ -284,9 +349,54 @@
       "file": "decks/four-knights-game.json"
     },
     {
+      "key": "four-knights-game-halloween-gambit",
+      "version": 1,
+      "file": "decks/four-knights-game-halloween-gambit.json"
+    },
+    {
+      "key": "four-knights-game-scotch-variation-accepted",
+      "version": 1,
+      "file": "decks/four-knights-game-scotch-variation-accepted.json"
+    },
+    {
+      "key": "four-knights-game-spanish-variation",
+      "version": 1,
+      "file": "decks/four-knights-game-spanish-variation.json"
+    },
+    {
       "key": "french-defense",
       "version": 2,
       "file": "decks/french-defense.json"
+    },
+    {
+      "key": "french-defense-advance-variation",
+      "version": 1,
+      "file": "decks/french-defense-advance-variation.json"
+    },
+    {
+      "key": "french-defense-classical-variation",
+      "version": 1,
+      "file": "decks/french-defense-classical-variation.json"
+    },
+    {
+      "key": "french-defense-mccutcheon-variation",
+      "version": 1,
+      "file": "decks/french-defense-mccutcheon-variation.json"
+    },
+    {
+      "key": "french-defense-st-george-defense",
+      "version": 1,
+      "file": "decks/french-defense-st-george-defense.json"
+    },
+    {
+      "key": "french-defense-steinitz-variation",
+      "version": 1,
+      "file": "decks/french-defense-steinitz-variation.json"
+    },
+    {
+      "key": "french-defense-tarrasch-variation",
+      "version": 1,
+      "file": "decks/french-defense-tarrasch-variation.json"
     },
     {
       "key": "french-defense-winawer-variation",
@@ -304,9 +414,19 @@
       "file": "decks/grunfeld-defense.json"
     },
     {
+      "key": "grunfeld-defense-brinckmann-attack",
+      "version": 1,
+      "file": "decks/grunfeld-defense-brinckmann-attack.json"
+    },
+    {
       "key": "grunfeld-defense-exchange-variation",
       "version": 1,
       "file": "decks/grunfeld-defense-exchange-variation.json"
+    },
+    {
+      "key": "grunfeld-defense-russian-variation",
+      "version": 1,
+      "file": "decks/grunfeld-defense-russian-variation.json"
     },
     {
       "key": "italian-game",
@@ -314,14 +434,34 @@
       "file": "decks/italian-game.json"
     },
     {
+      "key": "italian-game-classical-variation",
+      "version": 1,
+      "file": "decks/italian-game-classical-variation.json"
+    },
+    {
       "key": "italian-game-evans-gambit",
       "version": 1,
       "file": "decks/italian-game-evans-gambit.json"
     },
     {
+      "key": "italian-game-evans-gambit-declined",
+      "version": 1,
+      "file": "decks/italian-game-evans-gambit-declined.json"
+    },
+    {
+      "key": "italian-game-giuoco-pianissimo",
+      "version": 1,
+      "file": "decks/italian-game-giuoco-pianissimo.json"
+    },
+    {
       "key": "italian-game-giuoco-piano",
       "version": 1,
       "file": "decks/italian-game-giuoco-piano.json"
+    },
+    {
+      "key": "italian-game-scotch-gambit",
+      "version": 1,
+      "file": "decks/italian-game-scotch-gambit.json"
     },
     {
       "key": "italian-game-two-knights-defense",
@@ -334,9 +474,39 @@
       "file": "decks/kings-gambit-accepted.json"
     },
     {
+      "key": "kings-gambit-accepted-allgaier",
+      "version": 1,
+      "file": "decks/kings-gambit-accepted-allgaier.json"
+    },
+    {
+      "key": "kings-gambit-accepted-double-muzio-gambit",
+      "version": 1,
+      "file": "decks/kings-gambit-accepted-double-muzio-gambit.json"
+    },
+    {
+      "key": "kings-gambit-accepted-kieseritzky-gambit",
+      "version": 1,
+      "file": "decks/kings-gambit-accepted-kieseritzky-gambit.json"
+    },
+    {
+      "key": "kings-gambit-accepted-lolli-gambit",
+      "version": 1,
+      "file": "decks/kings-gambit-accepted-lolli-gambit.json"
+    },
+    {
       "key": "kings-gambit-declined",
       "version": 2,
       "file": "decks/kings-gambit-declined.json"
+    },
+    {
+      "key": "kings-gambit-declined-classical",
+      "version": 1,
+      "file": "decks/kings-gambit-declined-classical.json"
+    },
+    {
+      "key": "kings-gambit-declined-falkbeer-countergambit",
+      "version": 1,
+      "file": "decks/kings-gambit-declined-falkbeer-countergambit.json"
     },
     {
       "key": "kings-indian-attack",
@@ -344,9 +514,54 @@
       "file": "decks/kings-indian-attack.json"
     },
     {
+      "key": "kings-indian-attack-keres-variation",
+      "version": 1,
+      "file": "decks/kings-indian-attack-keres-variation.json"
+    },
+    {
       "key": "kings-indian-defense",
       "version": 2,
       "file": "decks/kings-indian-defense.json"
+    },
+    {
+      "key": "kings-indian-defense-fianchetto-variation",
+      "version": 1,
+      "file": "decks/kings-indian-defense-fianchetto-variation.json"
+    },
+    {
+      "key": "kings-indian-defense-four-pawns-attack",
+      "version": 1,
+      "file": "decks/kings-indian-defense-four-pawns-attack.json"
+    },
+    {
+      "key": "kings-indian-defense-orthodox-variation",
+      "version": 1,
+      "file": "decks/kings-indian-defense-orthodox-variation.json"
+    },
+    {
+      "key": "kings-indian-defense-petrosian-variation",
+      "version": 1,
+      "file": "decks/kings-indian-defense-petrosian-variation.json"
+    },
+    {
+      "key": "kings-indian-defense-samisch-variation",
+      "version": 1,
+      "file": "decks/kings-indian-defense-samisch-variation.json"
+    },
+    {
+      "key": "kings-indian-defense-semi-classical-variation",
+      "version": 1,
+      "file": "decks/kings-indian-defense-semi-classical-variation.json"
+    },
+    {
+      "key": "kings-indian-defense-six-pawns-attack",
+      "version": 1,
+      "file": "decks/kings-indian-defense-six-pawns-attack.json"
+    },
+    {
+      "key": "kings-indian-defense-steiner-attack",
+      "version": 1,
+      "file": "decks/kings-indian-defense-steiner-attack.json"
     },
     {
       "key": "lmsw-exam-prep",
@@ -389,9 +604,54 @@
       "file": "decks/neo-grunfeld-defense.json"
     },
     {
+      "key": "neo-grunfeld-defense-classical-variation",
+      "version": 1,
+      "file": "decks/neo-grunfeld-defense-classical-variation.json"
+    },
+    {
+      "key": "neo-grunfeld-defense-delayed-exchange-variation",
+      "version": 1,
+      "file": "decks/neo-grunfeld-defense-delayed-exchange-variation.json"
+    },
+    {
+      "key": "neo-grunfeld-defense-exchange-variation",
+      "version": 1,
+      "file": "decks/neo-grunfeld-defense-exchange-variation.json"
+    },
+    {
       "key": "nimzo-indian-defense",
       "version": 2,
       "file": "decks/nimzo-indian-defense.json"
+    },
+    {
+      "key": "nimzo-indian-defense-classical-variation",
+      "version": 1,
+      "file": "decks/nimzo-indian-defense-classical-variation.json"
+    },
+    {
+      "key": "nimzo-indian-defense-normal-variation",
+      "version": 1,
+      "file": "decks/nimzo-indian-defense-normal-variation.json"
+    },
+    {
+      "key": "nimzo-indian-defense-rubinstein-system",
+      "version": 1,
+      "file": "decks/nimzo-indian-defense-rubinstein-system.json"
+    },
+    {
+      "key": "nimzo-indian-defense-samisch-variation",
+      "version": 1,
+      "file": "decks/nimzo-indian-defense-samisch-variation.json"
+    },
+    {
+      "key": "nimzo-indian-defense-spielmann-variation",
+      "version": 1,
+      "file": "decks/nimzo-indian-defense-spielmann-variation.json"
+    },
+    {
+      "key": "nimzo-indian-defense-st-petersburg-variation",
+      "version": 1,
+      "file": "decks/nimzo-indian-defense-st-petersburg-variation.json"
     },
     {
       "key": "periodic-table",
@@ -404,6 +664,26 @@
       "file": "decks/pterodactyl-defense.json"
     },
     {
+      "key": "pterodactyl-defense-austrian",
+      "version": 1,
+      "file": "decks/pterodactyl-defense-austrian.json"
+    },
+    {
+      "key": "pterodactyl-defense-central",
+      "version": 1,
+      "file": "decks/pterodactyl-defense-central.json"
+    },
+    {
+      "key": "pterodactyl-defense-eastern",
+      "version": 1,
+      "file": "decks/pterodactyl-defense-eastern.json"
+    },
+    {
+      "key": "pterodactyl-defense-fianchetto",
+      "version": 1,
+      "file": "decks/pterodactyl-defense-fianchetto.json"
+    },
+    {
       "key": "python-essentials",
       "version": 1,
       "file": "decks/python-essentials.json"
@@ -414,9 +694,59 @@
       "file": "decks/queens-gambit-accepted.json"
     },
     {
+      "key": "queens-gambit-accepted-classical",
+      "version": 1,
+      "file": "decks/queens-gambit-accepted-classical.json"
+    },
+    {
+      "key": "queens-gambit-accepted-classical-defense",
+      "version": 1,
+      "file": "decks/queens-gambit-accepted-classical-defense.json"
+    },
+    {
       "key": "queens-gambit-declined",
       "version": 2,
       "file": "decks/queens-gambit-declined.json"
+    },
+    {
+      "key": "queens-gambit-declined-albin-countergambit",
+      "version": 1,
+      "file": "decks/queens-gambit-declined-albin-countergambit.json"
+    },
+    {
+      "key": "queens-gambit-declined-baltic-defense",
+      "version": 1,
+      "file": "decks/queens-gambit-declined-baltic-defense.json"
+    },
+    {
+      "key": "queens-gambit-declined-cambridge-springs-defense",
+      "version": 1,
+      "file": "decks/queens-gambit-declined-cambridge-springs-defense.json"
+    },
+    {
+      "key": "queens-gambit-declined-chigorin-defense",
+      "version": 1,
+      "file": "decks/queens-gambit-declined-chigorin-defense.json"
+    },
+    {
+      "key": "queens-gambit-declined-exchange-variation",
+      "version": 1,
+      "file": "decks/queens-gambit-declined-exchange-variation.json"
+    },
+    {
+      "key": "queens-gambit-declined-harrwitz-attack",
+      "version": 1,
+      "file": "decks/queens-gambit-declined-harrwitz-attack.json"
+    },
+    {
+      "key": "queens-gambit-declined-lasker-defense",
+      "version": 1,
+      "file": "decks/queens-gambit-declined-lasker-defense.json"
+    },
+    {
+      "key": "queens-gambit-declined-neo-orthodox-variation",
+      "version": 1,
+      "file": "decks/queens-gambit-declined-neo-orthodox-variation.json"
     },
     {
       "key": "queens-gambit-declined-orthodox-defense",
@@ -424,14 +754,69 @@
       "file": "decks/queens-gambit-declined-orthodox-defense.json"
     },
     {
+      "key": "queens-gambit-declined-pillsbury-attack",
+      "version": 1,
+      "file": "decks/queens-gambit-declined-pillsbury-attack.json"
+    },
+    {
+      "key": "queens-gambit-declined-semi-slav",
+      "version": 1,
+      "file": "decks/queens-gambit-declined-semi-slav.json"
+    },
+    {
+      "key": "queens-gambit-declined-semi-tarrasch-defense",
+      "version": 1,
+      "file": "decks/queens-gambit-declined-semi-tarrasch-defense.json"
+    },
+    {
+      "key": "queens-gambit-declined-tarrasch-defense",
+      "version": 1,
+      "file": "decks/queens-gambit-declined-tarrasch-defense.json"
+    },
+    {
+      "key": "queens-gambit-declined-tartakower-defense",
+      "version": 1,
+      "file": "decks/queens-gambit-declined-tartakower-defense.json"
+    },
+    {
       "key": "queens-indian-defense",
       "version": 2,
       "file": "decks/queens-indian-defense.json"
     },
     {
+      "key": "queens-indian-defense-averbakh-variation",
+      "version": 1,
+      "file": "decks/queens-indian-defense-averbakh-variation.json"
+    },
+    {
+      "key": "queens-indian-defense-classical-variation",
+      "version": 1,
+      "file": "decks/queens-indian-defense-classical-variation.json"
+    },
+    {
+      "key": "queens-indian-defense-spassky-system3",
+      "version": 1,
+      "file": "decks/queens-indian-defense-spassky-system3.json"
+    },
+    {
       "key": "queens-pawn-game",
       "version": 2,
       "file": "decks/queens-pawn-game.json"
+    },
+    {
+      "key": "queens-pawn-game-colle-system",
+      "version": 1,
+      "file": "decks/queens-pawn-game-colle-system.json"
+    },
+    {
+      "key": "queens-pawn-game-london-system",
+      "version": 1,
+      "file": "decks/queens-pawn-game-london-system.json"
+    },
+    {
+      "key": "queens-pawn-game-torre-attack",
+      "version": 1,
+      "file": "decks/queens-pawn-game-torre-attack.json"
     },
     {
       "key": "reading-sheet-music",
@@ -449,9 +834,24 @@
       "file": "decks/ruy-lopez.json"
     },
     {
+      "key": "ruy-lopez-berlin-defense",
+      "version": 1,
+      "file": "decks/ruy-lopez-berlin-defense.json"
+    },
+    {
+      "key": "ruy-lopez-closed",
+      "version": 1,
+      "file": "decks/ruy-lopez-closed.json"
+    },
+    {
       "key": "ruy-lopez-marshall-attack",
       "version": 1,
       "file": "decks/ruy-lopez-marshall-attack.json"
+    },
+    {
+      "key": "ruy-lopez-noahs-ark-trap",
+      "version": 1,
+      "file": "decks/ruy-lopez-noahs-ark-trap.json"
     },
     {
       "key": "ruy-lopez-open",
@@ -459,9 +859,54 @@
       "file": "decks/ruy-lopez-open.json"
     },
     {
+      "key": "ruy-lopez-rabinovich-variation",
+      "version": 1,
+      "file": "decks/ruy-lopez-rabinovich-variation.json"
+    },
+    {
+      "key": "ruy-lopez-steinitz-defense-deferred",
+      "version": 1,
+      "file": "decks/ruy-lopez-steinitz-defense-deferred.json"
+    },
+    {
+      "key": "ruy-lopez-wormald-attack",
+      "version": 1,
+      "file": "decks/ruy-lopez-wormald-attack.json"
+    },
+    {
       "key": "scotch-game",
       "version": 2,
       "file": "decks/scotch-game.json"
+    },
+    {
+      "key": "scotch-game-cochrane-shumov-defense",
+      "version": 1,
+      "file": "decks/scotch-game-cochrane-shumov-defense.json"
+    },
+    {
+      "key": "scotch-game-gottschall-variation",
+      "version": 1,
+      "file": "decks/scotch-game-gottschall-variation.json"
+    },
+    {
+      "key": "scotch-game-hanneken-variation",
+      "version": 1,
+      "file": "decks/scotch-game-hanneken-variation.json"
+    },
+    {
+      "key": "scotch-game-horwitz-attack",
+      "version": 1,
+      "file": "decks/scotch-game-horwitz-attack.json"
+    },
+    {
+      "key": "scotch-game-rosenthal-variation",
+      "version": 1,
+      "file": "decks/scotch-game-rosenthal-variation.json"
+    },
+    {
+      "key": "scotch-game-sea-cadet-mate",
+      "version": 1,
+      "file": "decks/scotch-game-sea-cadet-mate.json"
     },
     {
       "key": "semi-slav-defense",
@@ -469,9 +914,114 @@
       "file": "decks/semi-slav-defense.json"
     },
     {
+      "key": "semi-slav-defense-botvinnik-variation",
+      "version": 1,
+      "file": "decks/semi-slav-defense-botvinnik-variation.json"
+    },
+    {
+      "key": "semi-slav-defense-chigorin-defense",
+      "version": 1,
+      "file": "decks/semi-slav-defense-chigorin-defense.json"
+    },
+    {
+      "key": "semi-slav-defense-main-line",
+      "version": 1,
+      "file": "decks/semi-slav-defense-main-line.json"
+    },
+    {
+      "key": "semi-slav-defense-marshall-gambit",
+      "version": 1,
+      "file": "decks/semi-slav-defense-marshall-gambit.json"
+    },
+    {
+      "key": "semi-slav-defense-meran-variation",
+      "version": 1,
+      "file": "decks/semi-slav-defense-meran-variation.json"
+    },
+    {
+      "key": "semi-slav-defense-normal-variation",
+      "version": 1,
+      "file": "decks/semi-slav-defense-normal-variation.json"
+    },
+    {
+      "key": "semi-slav-defense-noteboom-variation",
+      "version": 1,
+      "file": "decks/semi-slav-defense-noteboom-variation.json"
+    },
+    {
+      "key": "semi-slav-defense-stoltz-variation",
+      "version": 1,
+      "file": "decks/semi-slav-defense-stoltz-variation.json"
+    },
+    {
       "key": "sicilian-defense",
       "version": 4,
       "file": "decks/sicilian-defense.json"
+    },
+    {
+      "key": "sicilian-defense-accelerated-dragon",
+      "version": 1,
+      "file": "decks/sicilian-defense-accelerated-dragon.json"
+    },
+    {
+      "key": "sicilian-defense-alapin-variation",
+      "version": 1,
+      "file": "decks/sicilian-defense-alapin-variation.json"
+    },
+    {
+      "key": "sicilian-defense-closed",
+      "version": 1,
+      "file": "decks/sicilian-defense-closed.json"
+    },
+    {
+      "key": "sicilian-defense-dragon-variation",
+      "version": 1,
+      "file": "decks/sicilian-defense-dragon-variation.json"
+    },
+    {
+      "key": "sicilian-defense-kan-variation",
+      "version": 1,
+      "file": "decks/sicilian-defense-kan-variation.json"
+    },
+    {
+      "key": "sicilian-defense-lasker-pelikan-variation",
+      "version": 1,
+      "file": "decks/sicilian-defense-lasker-pelikan-variation.json"
+    },
+    {
+      "key": "sicilian-defense-najdorf-variation",
+      "version": 1,
+      "file": "decks/sicilian-defense-najdorf-variation.json"
+    },
+    {
+      "key": "sicilian-defense-richter-rauzer-variation",
+      "version": 1,
+      "file": "decks/sicilian-defense-richter-rauzer-variation.json"
+    },
+    {
+      "key": "sicilian-defense-scheveningen-variation",
+      "version": 1,
+      "file": "decks/sicilian-defense-scheveningen-variation.json"
+    },
+    {
+      "key": "sicilian-defense-smith-morra-gambit-accepted",
+      "version": 1,
+      "file": "decks/sicilian-defense-smith-morra-gambit-accepted.json"
+    },
+    {
+      "key": "sicilian-defense-sozin-attack",
+      "version": 1,
+      "file": "decks/sicilian-defense-sozin-attack.json"
+    },
+    {
+      "key": "sicilian-defense-taimanov-variation",
+      "version": 1,
+      "file": "decks/sicilian-defense-taimanov-variation.json"
+    },
+    {
+      "key": "sicilian-defense-wing-gambit",
+      "version": 1,
+      "file": "decks/sicilian-defense-wing-gambit.json"
     },
     {
       "key": "slav-defense",
@@ -479,9 +1029,44 @@
       "file": "decks/slav-defense.json"
     },
     {
+      "key": "slav-defense-czech-variation",
+      "version": 1,
+      "file": "decks/slav-defense-czech-variation.json"
+    },
+    {
+      "key": "slav-defense-exchange-variation",
+      "version": 1,
+      "file": "decks/slav-defense-exchange-variation.json"
+    },
+    {
+      "key": "slav-defense-modern-line",
+      "version": 1,
+      "file": "decks/slav-defense-modern-line.json"
+    },
+    {
+      "key": "slav-defense-quiet-variation",
+      "version": 1,
+      "file": "decks/slav-defense-quiet-variation.json"
+    },
+    {
       "key": "tarrasch-defense",
       "version": 2,
       "file": "decks/tarrasch-defense.json"
+    },
+    {
+      "key": "tarrasch-defense-classical-variation",
+      "version": 1,
+      "file": "decks/tarrasch-defense-classical-variation.json"
+    },
+    {
+      "key": "tarrasch-defense-dubov-tarrasch",
+      "version": 1,
+      "file": "decks/tarrasch-defense-dubov-tarrasch.json"
+    },
+    {
+      "key": "tarrasch-defense-symmetrical-variation",
+      "version": 1,
+      "file": "decks/tarrasch-defense-symmetrical-variation.json"
     },
     {
       "key": "the-human-brain",

@@ -1,0 +1,144 @@
+{
+  "key": "neo-grunfeld-defense-exchange-variation",
+  "version": 1,
+  "name": "Neo-Gr\u00fcnfeld Defense: Exchange Variation",
+  "description": "Line trainer for the Neo-Gr\u00fcnfeld Defense: Exchange Variation, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 2 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "neo-grunfeld-defense"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fppp1ppbp%2F6p1%2F3n4%2F3P4%2F6P1%2FPP2PPBP%2FRNBQK1NR%20w%20KQkq%20-%200%206&color=black&theme=brown&piece=cburnett&lastMove=f6d5",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Neo-Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 **Nf6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/2P5/8/PP1PPPPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the Neo-Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. c4 **Nf6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "g6",
+        "answerUci": "g7g6",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the Neo-Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 **g6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c4-g3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppppp/5n2/8/2P5/6P1/PP1PPP1P/RNBQKBNR b KQkq - 0 2",
+        "answer": "g6",
+        "answerUci": "g7g6",
+        "orientation": "black",
+        "lastMove": "g2g3",
+        "prompt": "You are Black in the Neo-Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. c4 Nf6 2. g3 **g6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c4-g3-bg2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppp1p/5np1/8/2P5/6P1/PP1PPPBP/RNBQK1NR b KQkq - 1 3",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "lastMove": "f1g2",
+        "prompt": "You are Black in the Neo-Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. c4 Nf6 2. g3 g6 3. Bg2 **Bg7**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-g3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppp1p/5np1/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "lastMove": "g2g3",
+        "prompt": "You are Black in the Neo-Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. g3 **Bg7**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-g3-bg2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppppppbp/5np1/8/2PP4/6P1/PP2PPBP/RNBQK1NR b KQkq - 2 4",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "lastMove": "f1g2",
+        "prompt": "You are Black in the Neo-Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. g3 Bg7 4. Bg2 **d5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-g3-bg2-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/5np1/3P4/3P4/6P1/PP2PPBP/RNBQK1NR b KQkq - 0 5",
+        "answer": "Nxd5",
+        "answerUci": "f6d5",
+        "orientation": "black",
+        "lastMove": "c4d5",
+        "prompt": "You are Black in the Neo-Gr\u00fcnfeld Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. g3 Bg7 4. Bg2 d5 5. cxd5 **Nxd5** (Exchange Variation, D71)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

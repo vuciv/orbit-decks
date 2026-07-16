@@ -1,0 +1,256 @@
+{
+  "key": "queens-gambit-declined-lasker-defense",
+  "version": 1,
+  "name": "Queen's Gambit Declined: Lasker Defense",
+  "description": "Line trainer for the Queen's Gambit Declined: Lasker Defense, generated from the canonical opening database (lichess-org/chess-openings): 15 positions drilled book-move by book-move from Black's side across 8 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "queens-gambit-declined"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fppp1bppp%2F4p3%2F3p2B1%2F2PPn3%2F2N1P3%2FPP3PPP%2FR2QKBNR%20w%20KQkq%20-%201%206&color=black&theme=brown&piece=cburnett&lastMove=f6e4",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 **d5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 **e6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR b KQkq - 1 3",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 **Be7**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/2PP4/5N2/PP2PPPP/RNBQKB1R b KQkq - 1 3",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nf3 **Nf6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppp1bppp/4p3/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 3 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Be7 4. Nf3 **Nf6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 3 4",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. Nc3 **Nc6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1bppp/4pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 5 5",
+        "answer": "h6",
+        "answerUci": "h7h6",
+        "orientation": "black",
+        "lastMove": "c1g5",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Be7 4. Nf3 Nf6 5. Bg5 **h6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/2n1pn2/3p2B1/2PP4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 5 5",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "lastMove": "c1g5",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. Nc3 Nc6 5. Bg5 **Be7**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bg5-bh4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1bpp1/4pn1p/3p4/2PP3B/2N2N2/PP2PPPP/R2QKB1R b KQkq - 1 6",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "lastMove": "g5h4",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Be7 4. Nf3 Nf6 5. Bg5 h6 6. Bh4 **O-O**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-bg5-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp1bppp/2n1pn2/3p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R b KQkq - 0 6",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "lastMove": "e2e3",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. Nc3 Nc6 5. Bg5 Be7 6. e3 **O-O**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bg5-bh4-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1bpp1/4pn1p/3p4/2PP3B/2N1PN2/PP3PPP/R2QKB1R b KQ - 0 7",
+        "answer": "Ne4",
+        "answerUci": "f6e4",
+        "orientation": "black",
+        "lastMove": "e2e3",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Be7 4. Nf3 Nf6 5. Bg5 h6 6. Bh4 O-O 7. e3 **Ne4** (Lasker Defense, D56)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-bg5-e3-rc1",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp1bppp/2n1pn2/3p2B1/2PP4/2N1PN2/PP3PPP/2RQKB1R b K - 2 7",
+        "answer": "h6",
+        "answerUci": "h7h6",
+        "orientation": "black",
+        "lastMove": "a1c1",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. Nc3 Nc6 5. Bg5 Be7 6. e3 O-O 7. Rc1 **h6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nf3-nc3-bg5-e3-rc1-bh4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp1bpp1/2n1pn1p/3p4/2PP3B/2N1PN2/PP3PPP/2RQKB1R b K - 1 8",
+        "answer": "Ne4",
+        "answerUci": "f6e4",
+        "orientation": "black",
+        "lastMove": "g5h4",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nf3 Nf6 4. Nc3 Nc6 5. Bg5 Be7 6. e3 O-O 7. Rc1 h6 8. Bh4 **Ne4** (Lasker Defense, D56)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bg5-bh4-e3-bxe7",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1Bpp1/4p2p/3p4/2PPn3/2N1PN2/PP3PPP/R2QKB1R b KQ - 0 8",
+        "answer": "Qxe7",
+        "answerUci": "d8e7",
+        "orientation": "black",
+        "lastMove": "h4e7",
+        "prompt": "You are Black in the Lasker Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Be7 4. Nf3 Nf6 5. Bg5 h6 6. Bh4 O-O 7. e3 Ne4 8. Bxe7 **Qxe7**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3-bg5-bh4-e3-bxe7-cxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb2rk1/ppp1qpp1/4p2p/3P4/3Pn3/2N1PN2/PP3PPP/R2QKB1R b KQ - 0 9",
+        "answer": "Nxc3",
+        "answerUci": "e4c3",
+        "orientation": "black",
+        "lastMove": "c4d5",
+        "prompt": "You are Black in the Lasker Defense. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e6 3. Nc3 Be7 4. Nf3 Nf6 5. Bg5 h6 6. Bh4 O-O 7. e3 Ne4 8. Bxe7 Qxe7 9. cxd5 **Nxc3**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

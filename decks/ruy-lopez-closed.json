@@ -1,0 +1,320 @@
+{
+  "key": "ruy-lopez-closed",
+  "version": 1,
+  "name": "Ruy Lopez: Closed",
+  "description": "Line trainer for the Ruy Lopez: Closed, generated from the canonical opening database (lichess-org/chess-openings): 19 positions drilled book-move by book-move from Black's side across 53 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "ruy-lopez"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bqk2r%2F1pppbppp%2Fp1n2n2%2F4p3%2FB3P3%2F5N2%2FPPPP1PPP%2FRNBQ1RK1%20w%20kq%20-%204%206&color=black&theme=brown&piece=cburnett&lastMove=f8e7",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "lastMove": "e2e4",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 **e5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 **Nc6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+        "answer": "a6",
+        "answerUci": "a7a6",
+        "orientation": "black",
+        "lastMove": "f1b5",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 **a6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/1ppp1ppp/p1n5/4p3/B3P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 1 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "b5a4",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 **Nf6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-qe2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/1ppp1ppp/p1n2n2/4p3/B3P3/5N2/PPPPQPPP/RNB1K2R b KQkq - 3 5",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "lastMove": "d1e2",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. Qe2 **Be7**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/1ppp1ppp/p1n2n2/4p3/B3P3/5N2/PPPP1PPP/RNBQ1RK1 b kq - 3 5",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "lastMove": "e1g1",
+        "prompt": "You are Black in the Ruy Lopez. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O **Be7** (Closed, C84)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/1pppbppp/p1n2n2/4p3/B3P3/5N2/PPPP1PPP/RNBQR1K1 b kq - 5 6",
+        "answer": "b5",
+        "answerUci": "b7b5",
+        "orientation": "black",
+        "lastMove": "f1e1",
+        "prompt": "You are Black in the Closed. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 **b5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-qe2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/1pppbppp/p1n2n2/4p3/B3P3/5N2/PPPPQPPP/RNB2RK1 b kq - 5 6",
+        "answer": "b5",
+        "answerUci": "b7b5",
+        "orientation": "black",
+        "lastMove": "d1e2",
+        "prompt": "You are Black in the Worrall Attack. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Qe2 **b5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/1pppbppp/p1n2n2/4p3/B2PP3/5N2/PPP2PPP/RNBQ1RK1 b kq - 0 6",
+        "answer": "exd4",
+        "answerUci": "e5d4",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Center Attack. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. d4 **exd4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-qe2-bb3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/2ppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPPQPPP/RNB2RK1 b kq - 1 7",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "lastMove": "a4b3",
+        "prompt": "You are Black in the Worrall Attack. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Qe2 b5 7. Bb3 **O-O** (Castling Line, C86)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/2ppbppp/p1n2n2/1p2p3/4P3/1B3N2/PPPP1PPP/RNBQR1K1 b kq - 1 7",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "lastMove": "a4b3",
+        "prompt": "You are Black in the Closed. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 **d6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-d4-e5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/1pppbppp/p1n2n2/4P3/B2p4/5N2/PPP2PPP/RNBQ1RK1 b kq - 0 7",
+        "answer": "Ne4",
+        "answerUci": "f6e4",
+        "orientation": "black",
+        "lastMove": "e4e5",
+        "prompt": "You are Black in the Center Attack. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. d4 exd4 7. e5 **Ne4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/2p1bppp/p1np1n2/1p2p3/4P3/1BP2N2/PP1P1PPP/RNBQR1K1 b kq - 0 8",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "lastMove": "c2c3",
+        "prompt": "You are Black in the Closed. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 **O-O** (Closed, C90)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-d4-e5-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/1pppbppp/p1n5/4P3/B2pn3/2P2N2/PP3PPP/RNBQ1RK1 b kq - 0 8",
+        "answer": "dxc3",
+        "answerUci": "d4c3",
+        "orientation": "black",
+        "lastMove": "c2c3",
+        "prompt": "You are Black in the Basque Gambit. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. d4 exd4 7. e5 Ne4 8. c3 **dxc3** (Basque Gambit, C84)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/2p1bppp/p1np1n2/1p2p3/3PP3/1BP2N2/PP3PPP/RNBQR1K1 b - - 0 9",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Yates Variation. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. d4 **Bg4** (Bogoljubow Variation, C91)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3-h3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/2p1bppp/p1np1n2/1p2p3/4P3/1BP2N1P/PP1P1PP1/RNBQR1K1 b - - 0 9",
+        "answer": "Na5",
+        "answerUci": "c6a5",
+        "orientation": "black",
+        "lastMove": "h2h3",
+        "prompt": "You are Black in the Closed. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 **Na5** (Chigorin Defense, C97)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3-h3-bc2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/2p1bppp/p2p1n2/np2p3/4P3/2P2N1P/PPBP1PP1/RNBQR1K1 b - - 2 10",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "lastMove": "b3c2",
+        "prompt": "You are Black in the Chigorin Defense. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Na5 10. Bc2 **c5** (Chigorin Defense, C96)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3-h3-bc2-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/4bppp/p2p1n2/npp1p3/3PP3/2P2N1P/PPB2PP1/RNBQR1K1 b - - 0 11",
+        "answer": "Qc7",
+        "answerUci": "d8c7",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Chigorin Defense. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Na5 10. Bc2 c5 11. d4 **Qc7** (Chigorin Defense, C97)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-ba4-oo-re1-bb3-c3-h3-bc2-d4-nbd2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b2rk1/2q1bppp/p2p1n2/npp1p3/3PP3/2P2N1P/PPBN1PP1/R1BQR1K1 b - - 2 12",
+        "answer": "Nc6",
+        "answerUci": "a5c6",
+        "orientation": "black",
+        "lastMove": "b1d2",
+        "prompt": "You are Black in the Chigorin Defense. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O Be7 6. Re1 b5 7. Bb3 d6 8. c3 O-O 9. h3 Na5 10. Bc2 c5 11. d4 Qc7 12. Nbd2 **Nc6** (Chigorin Defense, C98)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

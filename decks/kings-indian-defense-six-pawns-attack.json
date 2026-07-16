@@ -1,0 +1,160 @@
+{
+  "key": "kings-indian-defense-six-pawns-attack",
+  "version": 1,
+  "name": "King's Indian Defense: Six Pawns Attack",
+  "description": "Line trainer for the King's Indian Defense: Six Pawns Attack, generated from the canonical opening database (lichess-org/chess-openings): 9 positions drilled book-move by book-move from Black's side across 1 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "kings-indian-defense"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fpp4bp%2F2nppnp1%2F2p5%2F2P1PPPP%2F2N5%2FPP2B3%2FR1BQK1NR%20b%20KQ%20-%200%2010&color=black&theme=brown&piece=cburnett&lastMove=h2h4",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 **Nf6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "g6",
+        "answerUci": "g7g6",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 **g6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppp1p/5np1/8/2PP4/2N5/PP2PPPP/R1BQKBNR b KQkq - 1 3",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "lastMove": "b1c3",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 **Bg7**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppppppbp/5np1/8/2PPP3/2N5/PP3PPP/R1BQKBNR b KQkq - 0 4",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "lastMove": "e2e4",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 **d6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-f4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PPPP2/2N5/PP4PP/R1BQKBNR b KQkq - 0 5",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "lastMove": "f2f4",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 **O-O**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-f4-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPPP2/2N5/PP2B1PP/R1BQK1NR b KQ - 2 6",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "lastMove": "f1e2",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Be2 **c5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-f4-be2-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp2ppbp/3p1np1/2pP4/2P1PP2/2N5/PP2B1PP/R1BQK1NR b KQ - 0 7",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "lastMove": "d4d5",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Be2 c5 7. d5 **e6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-f4-be2-d5-dxe6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp3pbp/3pPnp1/2p5/2P1PP2/2N5/PP2B1PP/R1BQK1NR b KQ - 0 8",
+        "answer": "fxe6",
+        "answerUci": "f7e6",
+        "orientation": "black",
+        "lastMove": "d5e6",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Be2 c5 7. d5 e6 8. dxe6 **fxe6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4-f4-be2-d5-dxe6-g4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/pp4bp/3ppnp1/2p5/2P1PPP1/2N5/PP2B2P/R1BQK1NR b KQ - 0 9",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "lastMove": "g2g4",
+        "prompt": "You are Black in the King's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. Nc3 Bg7 4. e4 d6 5. f4 O-O 6. Be2 c5 7. d5 e6 8. dxe6 fxe6 9. g4 **Nc6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

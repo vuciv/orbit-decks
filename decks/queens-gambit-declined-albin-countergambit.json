@@ -1,0 +1,144 @@
+{
+  "key": "queens-gambit-declined-albin-countergambit",
+  "version": 1,
+  "name": "Queen's Gambit Declined: Albin Countergambit",
+  "description": "Line trainer for the Queen's Gambit Declined: Albin Countergambit, generated from the canonical opening database (lichess-org/chess-openings): 8 positions drilled book-move by book-move from Black's side across 13 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "queens-gambit-declined"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fppp2ppp%2F8%2F3pp3%2F2PP4%2F8%2FPP2PPPP%2FRNBQKBNR%20w%20KQkq%20-%200%203&color=black&theme=brown&piece=cburnett&lastMove=e7e5",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "lastMove": "d2d4",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 **d5**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp1pppp/8/3p4/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "lastMove": "c2c4",
+        "prompt": "You are Black in the Queen's Gambit Declined. What is the book move?",
+        "extra": "1. d4 d5 2. c4 **e5** (Albin Countergambit, D08)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-dxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp2ppp/8/3pP3/2P5/8/PP2PPPP/RNBQKBNR b KQkq - 0 3",
+        "answer": "d4",
+        "answerUci": "d5d4",
+        "orientation": "black",
+        "lastMove": "d4e5",
+        "prompt": "You are Black in the Albin Countergambit. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e5 3. dxe5 **d4**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-dxe5-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp2ppp/8/4P3/2Pp4/4P3/PP3PPP/RNBQKBNR b KQkq - 0 4",
+        "answer": "Bb4",
+        "answerUci": "f8b4",
+        "orientation": "black",
+        "lastMove": "e2e3",
+        "prompt": "You are Black in the Albin Countergambit. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e5 3. dxe5 d4 4. e3 **Bb4+**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-dxe5-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp2ppp/8/4P3/2Pp4/5N2/PP2PPPP/RNBQKB1R b KQkq - 1 4",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "lastMove": "g1f3",
+        "prompt": "You are Black in the Normal Line. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 **Nc6**"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-dxe5-e3-bd2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppp2ppp/8/4P3/1bPp4/4P3/PP1B1PPP/RN1QKBNR b KQkq - 2 5",
+        "answer": "dxe3",
+        "answerUci": "d4e3",
+        "orientation": "black",
+        "lastMove": "c1d2",
+        "prompt": "You are Black in the Albin Countergambit. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e5 3. dxe5 d4 4. e3 Bb4+ 5. Bd2 **dxe3** (Lasker Trap, D08)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-dxe5-nf3-g3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/ppp2ppp/2n5/4P3/2Pp4/5NP1/PP2PP1P/RNBQKB1R b KQkq - 0 5",
+        "answer": "Be6",
+        "answerUci": "c8e6",
+        "orientation": "black",
+        "lastMove": "g2g3",
+        "prompt": "You are Black in the Fianchetto Variation. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6 5. g3 **Be6** (Be6 Line, D09)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-dxe5-nf3-nbd2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/ppp2ppp/2n5/4P3/2Pp4/5N2/PP1NPPPP/R1BQKB1R b KQkq - 3 5",
+        "answer": "Qe7",
+        "answerUci": "d8e7",
+        "orientation": "black",
+        "lastMove": "b1d2",
+        "prompt": "You are Black in the Modern Line. What is the book move?",
+        "extra": "1. d4 d5 2. c4 e5 3. dxe5 d4 4. Nf3 Nc6 5. Nbd2 **Qe7** (Balogh Variation, D08)"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}
