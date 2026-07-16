@@ -1,0 +1,481 @@
+{
+  "key": "research-statistics",
+  "version": 1,
+  "name": "Statistics for Research",
+  "description": "The statistics you need to read and write empirical papers with confidence: variance and standard deviation from first principles, standard errors, confidence intervals, hypothesis tests, effect sizes, bootstrap methods, and the ML-specific pitfalls around seeds, benchmarks, and error bars.",
+  "category": "AI Research",
+  "topics": ["statistics", "research-methods", "probability"],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Standard_deviation_diagram.svg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "variance-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is variance, in words and as a formula?",
+        "back": "The average squared deviation from the mean: Var(X) = E[(X - mu)^2]. It measures how spread out values are around their center.",
+        "extra": "Its units are the data's units *squared*, which is why we usually report its square root (the SD) instead."
+      },
+      "tags": ["stats::foundations"]
+    },
+    {
+      "key": "sd-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is standard deviation and why is it preferred over variance for reporting?",
+        "back": "The square root of variance. It is in the same units as the data, so it reads as the typical distance of a value from the mean.",
+        "extra": "'Accuracy 74 plus or minus 3' only means something because the 3 shares units with the 74."
+      },
+      "tags": ["stats::foundations"]
+    },
+    {
+      "key": "variance-adds",
+      "model": "basic",
+      "fields": {
+        "front": "For independent random variables, do variances or standard deviations add?",
+        "back": "Variances add: Var(X + Y) = Var(X) + Var(Y). Standard deviations add in quadrature: sd = sqrt(sd_x^2 + sd_y^2).",
+        "extra": "This is the rule behind all uncertainty propagation: combine independent error sources by summing variances, never by summing SDs."
+      },
+      "tags": ["stats::foundations"]
+    },
+    {
+      "key": "bessel-correction",
+      "model": "basic",
+      "fields": {
+        "front": "Why does the sample variance divide by n - 1 instead of n?",
+        "back": "Deviations are measured from the *sample* mean, which is fitted to the data and therefore sits closer to it than the true mean does; dividing by n would systematically underestimate variance. Using n - 1 (Bessel's correction) removes the bias.",
+        "extra": "Degrees of freedom view: one of the n deviations is determined by the others (they sum to zero), leaving n - 1 independent pieces of information."
+      },
+      "tags": ["stats::foundations"]
+    },
+    {
+      "key": "mean-vs-median",
+      "model": "basic",
+      "fields": {
+        "front": "When should you report the median instead of (or alongside) the mean?",
+        "back": "When the distribution is skewed or has outliers: the median tracks the typical case while the mean chases the tail.",
+        "extra": "Latencies, token counts, and per-example losses are usually right-skewed; a mean latency can be double the median."
+      },
+      "tags": ["stats::foundations"]
+    },
+    {
+      "key": "robust-spread",
+      "model": "basic",
+      "fields": {
+        "front": "What are the robust alternatives to standard deviation for measuring spread?",
+        "back": "The interquartile range (IQR: 75th minus 25th percentile) and the median absolute deviation (MAD).",
+        "extra": "SD squares deviations, so a single extreme outlier can dominate it; IQR and MAD barely move."
+      },
+      "tags": ["stats::foundations"]
+    },
+    {
+      "key": "empirical-rule",
+      "model": "cloze",
+      "fields": {
+        "text": "In a normal distribution, about {{c1::68}}% of values fall within 1 SD of the mean, {{c2::95}}% within 2 SD, and {{c3::99.7}}% within 3 SD.",
+        "extra": "The 68-95-99.7 rule. It is a property of the normal distribution; heavy-tailed data puts far more mass beyond 3 SD than this rule suggests."
+      },
+      "tags": ["stats::foundations"]
+    },
+    {
+      "key": "z-score",
+      "model": "basic",
+      "fields": {
+        "front": "What is a z-score?",
+        "back": "A value expressed in standard deviations from the mean: z = (x - mu) / sigma. It puts different scales on one common footing.",
+        "extra": "A z of 2 is unusual for normal data (about 2.3% of values lie above it) but routine for heavy-tailed data."
+      },
+      "tags": ["stats::foundations"]
+    },
+    {
+      "key": "bernoulli-variance",
+      "model": "basic",
+      "fields": {
+        "front": "What is the variance of a Bernoulli(p) outcome (e.g., one eval question scored right/wrong)?",
+        "back": "p(1 - p), maximized at p = 0.5.",
+        "extra": "This is why benchmark scores near 50% are the noisiest and scores near 0% or 100% are the most stable for a fixed n."
+      },
+      "tags": ["stats::foundations"]
+    },
+    {
+      "key": "heavy-tails-mean",
+      "model": "basic",
+      "fields": {
+        "front": "What goes wrong when you report the mean of a heavy-tailed quantity (latency, max loss, spend per user)?",
+        "back": "The mean is dominated by rare extreme values, so it is unstable across samples and unrepresentative of the typical case. Use medians and quantiles, and show the tail explicitly.",
+        "extra": "Quick check: if mean and median disagree a lot, the mean is telling you about the tail, not the center."
+      },
+      "tags": ["stats::foundations"]
+    },
+    {
+      "key": "se-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is a standard error?",
+        "back": "The standard deviation of a statistic's sampling distribution: how much the estimate (e.g., a mean) would vary if you reran the whole experiment. It measures the precision of an estimate, not the spread of the data.",
+        "extra": "Every statistic has its own SE: means, proportions, differences, regression coefficients."
+      },
+      "tags": ["stats::sampling"]
+    },
+    {
+      "key": "se-of-mean",
+      "model": "typed",
+      "fields": {
+        "front": "The standard error of a sample mean equals the sample SD divided by what?",
+        "answer": "sqrt(n)",
+        "extra": "SE = s / sqrt(n). Averaging cancels noise, but only at a square-root rate."
+      },
+      "tags": ["stats::sampling"]
+    },
+    {
+      "key": "sd-vs-se",
+      "model": "basic",
+      "fields": {
+        "front": "SD vs SE: which describes the data and which describes the estimate?",
+        "back": "SD describes the spread of individual data points and does not shrink as you collect more data. SE describes the uncertainty of an estimated quantity and shrinks like 1/sqrt(n).",
+        "extra": "The classic error-bar ambiguity: SD bars answer 'how variable are examples?', SE/CI bars answer 'how sure are we about the average?'. Papers must say which they plot."
+      },
+      "tags": ["stats::sampling"]
+    },
+    {
+      "key": "root-n-law",
+      "model": "basic",
+      "fields": {
+        "front": "How much more data do you need to halve a standard error?",
+        "back": "Four times as much: SE scales as 1/sqrt(n).",
+        "extra": "And 100x more data buys only a 10x tighter estimate; precision gets expensive fast."
+      },
+      "tags": ["stats::sampling"]
+    },
+    {
+      "key": "clt",
+      "model": "basic",
+      "fields": {
+        "front": "What does the central limit theorem say, and what is the practical caveat?",
+        "back": "The sampling distribution of a mean approaches a normal distribution as n grows, almost regardless of the data's own distribution. Caveat: it requires finite variance and converges slowly for skewed or heavy-tailed data.",
+        "extra": "It is why mean-based CIs work on non-normal data, and why they can still fail for small n on skewed quantities."
+      },
+      "tags": ["stats::sampling"]
+    },
+    {
+      "key": "se-proportion",
+      "model": "basic",
+      "fields": {
+        "front": "What is the standard error of an accuracy (a proportion) measured on n questions?",
+        "back": "SE = sqrt(p(1 - p) / n), which is at most 0.5 / sqrt(n).",
+        "extra": "Instant benchmark noise floor: n = 1000 questions means SE up to about 1.6 points; n = 100 means up to 5 points."
+      },
+      "tags": ["stats::sampling"]
+    },
+    {
+      "key": "ci-meaning",
+      "model": "basic",
+      "fields": {
+        "front": "What does a 95% confidence interval actually mean?",
+        "back": "If you repeated the whole experiment many times and built an interval the same way each time, about 95% of those intervals would contain the true value. It is a statement about the *procedure's* coverage.",
+        "extra": "The common misreading, 'there is a 95% probability the true value is in this particular interval', is the Bayesian credible-interval interpretation, not the frequentist CI one."
+      },
+      "tags": ["stats::ci"]
+    },
+    {
+      "key": "ci-mean-formula",
+      "model": "basic",
+      "fields": {
+        "front": "How do you build a 95% CI for a mean with large n?",
+        "back": "Estimate plus or minus 1.96 standard errors: xbar +/- 1.96 * s / sqrt(n).",
+        "extra": "1.96 is the z-value that leaves 2.5% in each tail of the normal distribution; people round it to 2."
+      },
+      "tags": ["stats::ci"]
+    },
+    {
+      "key": "t-vs-z",
+      "model": "basic",
+      "fields": {
+        "front": "When do you use the t-distribution instead of the normal for a CI, and what changes?",
+        "back": "When the SD is estimated from a small sample. The t-distribution has heavier tails, so the multiplier grows: with df = n - 1, the 95% multiplier is 2.26 at n = 10 and 4.30 at n = 3.",
+        "extra": "That 4.30 at three data points is why three-seed error bars are enormous when computed honestly."
+      },
+      "tags": ["stats::ci"]
+    },
+    {
+      "key": "overlapping-cis",
+      "model": "basic",
+      "fields": {
+        "front": "Two models' 95% CIs overlap. Can you conclude there is no significant difference?",
+        "back": "No. Overlapping CIs can still hide a significant difference; the correct move is to build a CI (or test) on the *difference* directly. Non-overlap does imply a significant difference, roughly.",
+        "extra": "Rule of thumb: two independent 95% CIs must overlap by less than about a quarter of their combined length before the difference stops being significant."
+      },
+      "tags": ["stats::ci"]
+    },
+    {
+      "key": "ci-of-difference",
+      "model": "basic",
+      "fields": {
+        "front": "How do you get the standard error of a difference between two independent estimates?",
+        "back": "Add their variances: SE_diff = sqrt(SE_1^2 + SE_2^2).",
+        "extra": "If the measurements are paired (same questions, same seeds), do NOT use this; compute per-item differences and take the SE of those instead; it is usually much smaller."
+      },
+      "tags": ["stats::ci"]
+    },
+    {
+      "key": "extreme-proportion-ci",
+      "model": "basic",
+      "fields": {
+        "front": "Why does the standard normal-approximation CI fail for accuracies near 0% or 100%, and what do you use instead?",
+        "back": "The sampling distribution is skewed near the boundary and the formula can produce impossible values (e.g., above 100%). Use a Wilson score interval or exact Clopper-Pearson interval.",
+        "extra": "Relevant whenever a safety eval reports a 0% failure rate: 0 failures in 30 trials gives a 95% upper bound of about 11%, not 0."
+      },
+      "tags": ["stats::ci"]
+    },
+    {
+      "key": "p-value-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is a p-value, precisely?",
+        "back": "The probability of observing data at least as extreme as yours, computed under the assumption that the null hypothesis is true. It is NOT the probability that the null is true.",
+        "extra": "p = 0.03 means: if there were truly no effect, results this strong would happen 3% of the time by chance."
+      },
+      "tags": ["stats::testing"]
+    },
+    {
+      "key": "type-errors",
+      "model": "basic",
+      "fields": {
+        "front": "What are Type I and Type II errors?",
+        "back": "Type I: rejecting a true null (false positive); its rate is alpha, typically 0.05. Type II: failing to reject a false null (false negative); its rate is beta.",
+        "extra": "Mnemonic: Type I cries wolf; Type II sleeps through the wolf."
+      },
+      "tags": ["stats::testing"]
+    },
+    {
+      "key": "power",
+      "model": "basic",
+      "fields": {
+        "front": "What is statistical power, and what does low power do to the results that DO reach significance?",
+        "back": "Power = 1 - beta: the probability of detecting an effect that is really there. Underpowered studies not only miss effects; the effects that do cross the significance bar are systematically exaggerated (the winner's curse).",
+        "extra": "So a surprising significant result from a small experiment is doubly suspect: unlikely to replicate, and its size is inflated."
+      },
+      "tags": ["stats::testing"]
+    },
+    {
+      "key": "paired-vs-unpaired",
+      "model": "basic",
+      "fields": {
+        "front": "When should you use a paired test instead of an unpaired one, and why does it matter?",
+        "back": "Pair whenever the same items are measured under both conditions (same benchmark questions for two models, same prompts before/after an intervention). Pairing subtracts out item difficulty variance, often shrinking the SE dramatically.",
+        "extra": "The single biggest free power upgrade in ML evaluation: analyze per-question deltas, not two independent scores."
+      },
+      "tags": ["stats::testing"]
+    },
+    {
+      "key": "mcnemar",
+      "model": "basic",
+      "fields": {
+        "front": "Which test compares two models scored right/wrong on the same set of questions?",
+        "back": "McNemar's test: it looks only at the disagreements (questions where exactly one model is correct) and asks whether the split between 'A right, B wrong' and 'B right, A wrong' departs from 50/50.",
+        "extra": "Questions both models get right or both get wrong carry no information about which model is better."
+      },
+      "tags": ["stats::testing"]
+    },
+    {
+      "key": "multiple-comparisons",
+      "model": "basic",
+      "fields": {
+        "front": "You test one change against 20 benchmarks at alpha = 0.05. How many false positives do you expect if the change does nothing, and what is the simplest correction?",
+        "back": "About one significant result by pure chance. Simplest correction: Bonferroni, test each at alpha / m (here 0.0025).",
+        "extra": "Also applies to hyperparameter sweeps, model checkpoints, and eval subsets: every extra comparison is another lottery ticket for noise."
+      },
+      "tags": ["stats::testing"]
+    },
+    {
+      "key": "forking-paths",
+      "model": "basic",
+      "fields": {
+        "front": "What is the garden of forking paths (p-hacking without intent)?",
+        "back": "When analysis choices (metric, subset, exclusions, stopping point) are made after seeing the data, the effective number of comparisons explodes and nominal p-values become meaningless, even with no bad faith.",
+        "extra": "Antidote: fix the primary metric and analysis before running, and label everything else exploratory."
+      },
+      "tags": ["stats::testing"]
+    },
+    {
+      "key": "stat-vs-practical",
+      "model": "basic",
+      "fields": {
+        "front": "What is the difference between statistical and practical significance?",
+        "back": "With enough data, trivially small effects become statistically significant. Significance says an effect is probably not zero; it says nothing about whether it matters. Report the effect size with a CI, not just the p-value.",
+        "extra": "A 0.2-point benchmark gain can be 'significant' at n = 100k and still be worthless."
+      },
+      "tags": ["stats::testing"]
+    },
+    {
+      "key": "cohens-d",
+      "model": "basic",
+      "fields": {
+        "front": "What is Cohen's d and what are the conventional benchmarks?",
+        "back": "The difference between two means divided by the pooled standard deviation: an effect size in SD units. Rough conventions: 0.2 small, 0.5 medium, 0.8 large.",
+        "extra": "Lets you compare effects across different scales and metrics; a 2-point gain means something different when the seed-to-seed SD is 0.5 vs 5."
+      },
+      "tags": ["stats::effects"]
+    },
+    {
+      "key": "r-squared",
+      "model": "basic",
+      "fields": {
+        "front": "What does R-squared measure?",
+        "back": "The fraction of variance in the outcome explained by the model or predictor. r = 0.5 between two variables means r^2 = 0.25: only a quarter of the variance is shared.",
+        "extra": "Correlations always look more impressive than the variance they explain."
+      },
+      "tags": ["stats::effects"]
+    },
+    {
+      "key": "regression-to-mean",
+      "model": "basic",
+      "fields": {
+        "front": "You pick the best checkpoint by validation score and it looks worse on the test set. What statistical effect is this?",
+        "back": "Regression to the mean: selecting the maximum of noisy measurements picks up positive noise, which does not repeat on remeasurement. Expected whenever you select on a noisy metric.",
+        "extra": "Same mechanism behind 'the best prompt from my sweep stopped working': part of its win was luck."
+      },
+      "tags": ["stats::effects"]
+    },
+    {
+      "key": "best-of-n-bias",
+      "model": "basic",
+      "fields": {
+        "front": "Why is reporting the best of N training runs statistically dishonest, and what should you report?",
+        "back": "The maximum of N noisy outcomes is biased upward, and the bias grows with N; a lucky run is not a reproducible method. Report the mean with a CI across all runs (or the full distribution), stating N.",
+        "extra": "If best-of-N is genuinely the deployment method, then benchmark best-of-N *as a procedure*, with fresh runs."
+      },
+      "tags": ["stats::effects"]
+    },
+    {
+      "key": "simpsons-paradox",
+      "model": "basic",
+      "fields": {
+        "front": "What is Simpson's paradox?",
+        "back": "A trend that holds within every subgroup can reverse when the groups are pooled, because group sizes differ across conditions.",
+        "extra": "ML flavor: model A beats B on every benchmark category but loses on the aggregate, because the categories have different sizes in each suite."
+      },
+      "tags": ["stats::effects"]
+    },
+    {
+      "key": "clustered-data",
+      "model": "basic",
+      "fields": {
+        "front": "You sample 10 generations for each of 50 prompts (500 data points). Why is the naive SE wrong?",
+        "back": "Generations from the same prompt are correlated, so you have far fewer than 500 independent observations; the naive SE is too small and the results look more certain than they are. Aggregate per prompt first (n = 50), or use a clustered bootstrap.",
+        "extra": "The effective sample size is closer to the number of prompts than the number of generations."
+      },
+      "tags": ["stats::effects"]
+    },
+    {
+      "key": "bootstrap",
+      "model": "basic",
+      "fields": {
+        "front": "What is the bootstrap, and when do you reach for it?",
+        "back": "Resample your data with replacement many times, recompute the statistic on each resample, and use the spread of those values as the sampling distribution. Use it when the statistic has no clean SE formula: win rates, Elo, pass@k, medians, ratios.",
+        "extra": "It resamples your data, so it cannot fix bias in how the data was collected; it only quantifies sampling noise."
+      },
+      "tags": ["stats::resampling"]
+    },
+    {
+      "key": "bootstrap-ci",
+      "model": "basic",
+      "fields": {
+        "front": "How do you get a 95% CI from a bootstrap?",
+        "back": "Take the 2.5th and 97.5th percentiles of the statistic across resamples (the percentile method). Use on the order of 1000+ resamples.",
+        "extra": "For clustered data, resample the clusters (prompts, conversations), not the individual rows."
+      },
+      "tags": ["stats::resampling"]
+    },
+    {
+      "key": "permutation-test",
+      "model": "basic",
+      "fields": {
+        "front": "How does a permutation test work?",
+        "back": "Shuffle the group labels (or condition assignments) many times, recomputing the test statistic each time, to build the null distribution directly; the p-value is the fraction of shuffles at least as extreme as the observed value.",
+        "extra": "Almost assumption-free and easy to implement; the go-to when you distrust parametric assumptions."
+      },
+      "tags": ["stats::resampling"]
+    },
+    {
+      "key": "pass-at-k",
+      "model": "basic",
+      "fields": {
+        "front": "How is pass@k estimated without bias (Chen et al. 2021)?",
+        "back": "Generate n >= k samples per problem with c correct, and compute 1 - C(n-c, k) / C(n, k) per problem, averaged over problems. Literally drawing k samples and checking gives a high-variance, biased-for-small-n estimate.",
+        "extra": "C(a, b) is the binomial coefficient. Same combinatorial trick applies to any best-of-k metric."
+      },
+      "tags": ["stats::resampling"]
+    },
+    {
+      "key": "seed-error-bars",
+      "model": "basic",
+      "fields": {
+        "front": "What must a paper state for its error bars to mean anything?",
+        "back": "What the bars are (SD, SE, or a CI at some level) and what the variation is over (seeds, prompts, eval questions, bootstrap resamples).",
+        "extra": "SD-over-seeds and SE-over-questions can differ by an order of magnitude on the same experiment."
+      },
+      "tags": ["stats::ml-practice"]
+    },
+    {
+      "key": "three-seeds",
+      "model": "basic",
+      "fields": {
+        "front": "Why are error bars computed from 3 seeds close to meaningless?",
+        "back": "With n = 3, the SD estimate itself is extremely noisy, and the honest 95% multiplier is t(df=2) = 4.30, more than double the usual 1.96. The interval is both huge and unstable.",
+        "extra": "If seeds are expensive, say so and show all three points; a strip plot of 3 runs is more honest than a bar with tiny whiskers."
+      },
+      "tags": ["stats::ml-practice"]
+    },
+    {
+      "key": "benchmark-noise-floor",
+      "model": "basic",
+      "fields": {
+        "front": "Model A scores 72%, model B scores 74% on a 500-question benchmark. Is B better?",
+        "back": "Unclear from totals alone: SE per score is sqrt(0.73 * 0.27 / 500), about 2 points, so a 2-point gap is about one SE, well within noise for an unpaired comparison. Run a paired per-question analysis (McNemar) to find out.",
+        "extra": "Reflex to build: convert any claimed gap into units of SE before believing it."
+      },
+      "tags": ["stats::ml-practice"]
+    },
+    {
+      "key": "eval-sizing",
+      "model": "basic",
+      "fields": {
+        "front": "Roughly how many benchmark questions do you need to reliably detect a 1-point accuracy difference between two models, unpaired?",
+        "back": "Tens of thousands (about 20k-40k depending on the power target); the requirement scales as 1 over the squared difference. Paired analysis on shared questions cuts this dramatically.",
+        "extra": "Why leaderboard gaps of under a point on 1k-question benchmarks are mostly noise, and why paired evals matter."
+      },
+      "tags": ["stats::ml-practice"]
+    },
+    {
+      "key": "variance-sources",
+      "model": "basic",
+      "fields": {
+        "front": "Before claiming your method beats the baseline, which noise sources should you have measured or controlled?",
+        "back": "Training seed, data order, sampling temperature at eval, choice of eval subset, and judge noise (if an LLM judge scores it). Identify the largest one and show your effect exceeds it.",
+        "extra": "A quick variance audit: rerun the *baseline* twice and see how big a 'gain' pure noise produces."
+      },
+      "tags": ["stats::ml-practice"]
+    },
+    {
+      "key": "log-transform",
+      "model": "basic",
+      "fields": {
+        "front": "When should you analyze a quantity in log space, and which average goes with it?",
+        "back": "When it is positive and multiplicative in nature (latencies, losses, compute budgets, prices): effects are ratios, distributions are right-skewed. The matching average is the geometric mean (the exponential of the mean of logs).",
+        "extra": "Scaling-law plots are log-log for exactly this reason: power laws become straight lines."
+      },
+      "tags": ["stats::ml-practice"]
+    },
+    {
+      "key": "zero-failures",
+      "model": "basic",
+      "fields": {
+        "front": "Your safety eval shows 0 failures in 100 trials. What can you claim about the true failure rate?",
+        "back": "Only an upper bound: the 95% upper limit is roughly 3/n (the rule of three), so about 3% here. Zero observed failures never means zero risk.",
+        "extra": "The rule of three: with 0 events in n trials, the 95% CI for the rate is approximately [0, 3/n]."
+      },
+      "tags": ["stats::ml-practice"]
+    }
+  ]
+}

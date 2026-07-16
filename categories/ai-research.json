@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "key": "ai-research",
+  "name": "AI Research",
+  "decks": [
+    {
+      "key": "ai-alignment-research",
+      "name": "AI Alignment Research Essentials",
+      "description": "The working knowledge behind the Anthropic Fellows papers: persona vectors and character work, introspection results, the mech interp toolkit, RLHF and AI control methods, headline findings worth citing from memory, and empirical research craft.",
+      "cardCount": 70,
+      "topics": [
+        "ai-safety",
+        "interpretability",
+        "alignment",
+        "llm-research"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Artificial_neural_network.svg?width=640"
+    },
+    {
+      "key": "research-statistics",
+      "name": "Statistics for Research",
+      "description": "The statistics you need to read and write empirical papers with confidence: variance and standard deviation from first principles, standard errors, confidence intervals, hypothesis tests, effect sizes, bootstrap methods, and the ML-specific pitfalls around seeds, benchmarks, and error bars.",
+      "cardCount": 49,
+      "topics": [
+        "statistics",
+        "research-methods",
+        "probability"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Standard_deviation_diagram.svg?width=640"
+    }
+  ]
+}

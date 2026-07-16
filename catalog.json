@@ -98,6 +98,13 @@
       "deckCount": 1,
       "rev": "b848b861f15e",
       "file": "categories/professional-exams.json"
+    },
+    {
+      "key": "ai-research",
+      "name": "AI Research",
+      "deckCount": 2,
+      "rev": "5e4fb0d683e3",
+      "file": "categories/ai-research.json"
     }
   ],
   "collections": [
@@ -176,6 +183,11 @@
     }
   ],
   "syncIndex": [
+    {
+      "key": "ai-alignment-research",
+      "version": 1,
+      "file": "decks/ai-alignment-research.json"
+    },
     {
       "key": "alekhine-defense",
       "version": 2,
@@ -425,6 +437,11 @@
       "key": "reading-sheet-music",
       "version": 1,
       "file": "decks/reading-sheet-music.json"
+    },
+    {
+      "key": "research-statistics",
+      "version": 1,
+      "file": "decks/research-statistics.json"
     },
     {
       "key": "ruy-lopez",
