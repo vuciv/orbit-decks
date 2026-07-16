@@ -7,7 +7,7 @@
       "key": "ai-alignment-research",
       "name": "AI Alignment Research Essentials",
       "description": "The working knowledge behind the Anthropic Fellows papers and the wider canon (Nanda, Evans, Lindsey): persona vectors and character work, introspection results, the mech interp toolkit and its self-correction arc, RLHF and AI control methods, headline findings worth citing from memory, and empirical research craft.",
-      "cardCount": 134,
+      "cardCount": 145,
       "topics": [
         "ai-safety",
         "interpretability",

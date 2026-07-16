@@ -1,6 +1,6 @@
 {
   "key": "ai-alignment-research",
-  "version": 3,
+  "version": 4,
   "name": "AI Alignment Research Essentials",
   "description": "The working knowledge behind the Anthropic Fellows papers and the wider canon (Nanda, Evans, Lindsey): persona vectors and character work, introspection results, the mech interp toolkit and its self-correction arc, RLHF and AI control methods, headline findings worth citing from memory, and empirical research craft.",
   "category": "AI Research",
@@ -86,12 +86,36 @@
       ]
     },
     {
-      "key": "attribution-patching",
+      "key": "causal-def",
       "model": "basic",
       "fields": {
-        "front": "What is attribution patching?",
-        "back": "A gradient-based linear approximation of activation patching that scores every site in a couple of passes instead of one forward pass per site.",
-        "extra": "Use it to triage candidate sites at scale, then confirm the top hits with real patching."
+        "front": "In interpretability, what does it mean for a component to be *causal* for a behavior?",
+        "back": "Intervening on it changes the behavior.",
+        "extra": "The umbrella term: necessity and sufficiency are its two testable directions. Decoding information from a component (a probe) is only correlation, not causation."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "necessary-def",
+      "model": "basic",
+      "fields": {
+        "front": "In an intervention experiment, when is a component *necessary* for a behavior?",
+        "back": "The behavior degrades when the component is removed or corrupted: the model needs it.",
+        "extra": "Hook: NEcessary = NEeded. Tested by noising: break just this component in an otherwise clean run."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "sufficient-def",
+      "model": "basic",
+      "fields": {
+        "front": "In an intervention experiment, when is a component *sufficient* for a behavior?",
+        "back": "Restoring the component alone, with everything else corrupted, brings the behavior back: it alone suffices.",
+        "extra": "Hook: SUfficient = it alone SUffices. Tested by denoising: restore just this component in an otherwise corrupted run."
       },
       "tags": [
         "ai::interp"
@@ -104,6 +128,101 @@
         "front": "In activation patching, what is the difference between denoising and noising?",
         "back": "Denoising patches clean activations into a corrupted run and tests whether a component is *sufficient* to restore behavior; noising patches corrupted activations into a clean run and tests whether it is *necessary*.",
         "extra": "The two can disagree. From How to Use and Interpret Activation Patching (Heimersheim and Nanda); always state which direction you ran."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "necessary-not-sufficient",
+      "model": "basic",
+      "fields": {
+        "front": "Noising a head destroys the behavior, but denoising that same head alone does not restore it. What is the verdict?",
+        "back": "Necessary but not sufficient: the behavior also depends on other information the corruption removed.",
+        "extra": "The signature of a serial circuit: every link in the chain is necessary, no single link is sufficient."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "sufficient-not-necessary",
+      "model": "basic",
+      "fields": {
+        "front": "Denoising a single head restores the behavior, yet noising that head barely hurts. What is the verdict?",
+        "back": "Sufficient but not necessary: redundant components can do the same job when this one is knocked out.",
+        "extra": "The signature of backup heads and self-repair. 'The model does fine without it' never implies 'the model does not use it.'"
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "attribution-patching",
+      "model": "basic",
+      "fields": {
+        "front": "What is attribution patching?",
+        "back": "A gradient-based linear approximation of activation patching that scores every site in a couple of passes instead of one forward pass per site.",
+        "extra": "Use it to triage candidate sites at scale, then confirm the top hits with real patching."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "gradient-attribution-idea",
+      "model": "basic",
+      "fields": {
+        "front": "What is the core approximation behind gradient-based attribution methods?",
+        "back": "A first-order Taylor expansion: the effect of changing an activation is estimated as (change in activation) times the gradient of the metric at that activation.",
+        "extra": "Every strength and failure of these methods traces back to this local-linearity assumption."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "attribution-patching-formula",
+      "model": "cloze",
+      "fields": {
+        "text": "Attribution patching scores a site as ({{c1::clean activation minus corrupted activation}}) dotted with {{c2::the gradient of the metric with respect to that site}}.",
+        "extra": "The gradient is taken on the corrupted run; the dot product is the first-order estimate of what actually patching the site would do to the metric."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "attribution-patching-cost",
+      "model": "basic",
+      "fields": {
+        "front": "Why does attribution patching score every site in the model for the cost of roughly three passes?",
+        "back": "A single backward pass computes the metric's gradient at every site simultaneously, so all sites share the same passes.",
+        "extra": "The three: forward on clean, forward on corrupted, backward for gradients. Real activation patching costs one forward pass per site."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "gradient-attribution-failure",
+      "model": "basic",
+      "fields": {
+        "front": "At what kind of site do gradient-based attribution estimates break down?",
+        "back": "Sites where the metric is locally nonlinear, so the first-order approximation no longer tracks the true intervention effect.",
+        "extra": "Notorious cases: saturated attention softmax and LayerNorm. Larger clean-corrupted gaps stretch the approximation further; hence triage with attribution, confirm with real patching."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "integrated-gradients",
+      "model": "basic",
+      "fields": {
+        "front": "How do integrated gradients fix the saturation failure of single-point gradient attribution?",
+        "back": "Average the gradient along the whole path from a baseline to the input instead of evaluating it at one point.",
+        "extra": "Sundararajan et al. 2017. Same trick in circuit finding: EAP-IG replaces the single gradient in attribution patching with a path average, giving more faithful circuits."
       },
       "tags": [
         "ai::interp"

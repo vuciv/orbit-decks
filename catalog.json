@@ -110,7 +110,7 @@
       "key": "ai-research",
       "name": "AI Research",
       "deckCount": 3,
-      "rev": "3816f4a359de",
+      "rev": "935c8f2ea809",
       "file": "categories/ai-research.json"
     }
   ],
@@ -191,7 +191,7 @@
   "syncIndex": [
     {
       "key": "ai-alignment-research",
-      "version": 3,
+      "version": 4,
       "file": "decks/ai-alignment-research.json"
     },
     {
