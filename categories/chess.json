@@ -127,7 +127,7 @@
       "key": "italian-game",
       "name": "The Italian Game as White",
       "description": "A White repertoire for the Italian Game, drilled one position at a time: every card is a position with exactly one book move to find. Built from 5,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
-      "cardCount": 121,
+      "cardCount": 131,
       "topics": [
         "chess",
         "openings",

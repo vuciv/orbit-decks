@@ -1,6 +1,6 @@
 {
   "key": "italian-game",
-  "version": 4,
+  "version": 5,
   "name": "The Italian Game as White",
   "description": "A White repertoire for the Italian Game, drilled one position at a time: every card is a position with exactly one book move to find. Built from 5,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
   "category": "Chess",
@@ -26,6 +26,126 @@
       ]
     },
     {
+      "key": "idea-f7",
+      "model": "basic",
+      "fields": {
+        "front": "Why does the Italian bishop go to c4 rather than b5?",
+        "back": "On c4 it targets f7, the only square defended by nothing but Black's king.",
+        "extra": "b5 (the Ruy Lopez) pressures the e5 defender instead; the Italian plays for direct threats and the d4 break."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "idea-break",
+      "model": "basic",
+      "fields": {
+        "front": "What is White's main pawn break in the Italian Game?",
+        "back": "d4, prepared by c3.",
+        "extra": "Every White plan funnels into it: the immediate 4.d4 against slow moves, or the patient c3/h3/Re1 buildup of the Pianissimo."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "idea-two-setups",
+      "model": "basic",
+      "fields": {
+        "front": "Black's two main third moves are 3...Bc5 and 3...Nf6. How does this repertoire's reply differ?",
+        "back": "Against 3...Bc5, 4.c3 heading for d4; against 3...Nf6, the quiet 4.d3 first.",
+        "extra": "4.d3 guards e4 and sidesteps the Two Knights complications (...d5 and ...Nxe4 tricks) that 4.d4 or 4.Ng5 invite."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "idea-punish-slow",
+      "model": "basic",
+      "fields": {
+        "front": "Black plays a slow third move like 3...h6 or 3...Be7. What is the standing rule?",
+        "back": "Open the center immediately with d4.",
+        "extra": "A wasted tempo matters most in open positions; the deck's 4.d4 lines against ...h6, ...d6, and ...Be7 are all the same lesson."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "idea-bishop-retreat",
+      "model": "basic",
+      "fields": {
+        "front": "Besides supporting d4, what does c3 quietly prepare for the c4 bishop?",
+        "back": "A retreat path: Bc4-b3 (and later c2) keeps the bishop when Black hits it with ...Na5 or ...d5.",
+        "extra": "The Italian bishop is the most valuable minor piece on the board; never trade it cheaply."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "idea-pianissimo-plan",
+      "model": "basic",
+      "fields": {
+        "front": "What is White's standard piece plan in the Giuoco Pianissimo?",
+        "back": "Castle, h3, c3, Re1, then reroute the queenside knight: Nbd2-f1-g3.",
+        "extra": "The knight heads for f5; only once the buildup is done does White play d4 or start kingside action."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "idea-h3",
+      "model": "basic",
+      "fields": {
+        "front": "Why does this repertoire spend a tempo on h3 in the quiet lines?",
+        "back": "To take g4 away from Black's bishop and knight before they harass the f3 knight.",
+        "extra": "The ...Bg4 pin is the main annoyance in every d4-break setup; h3 removes it for the rest of the game."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "idea-qxd4-rule",
+      "model": "basic",
+      "fields": {
+        "front": "When is recapturing on d4 with the queen safe in these lines?",
+        "back": "After the knights have been traded on d4: with no knight on c6, nothing kicks the queen away.",
+        "extra": "The general rule 'do not bring the queen out early' is really 'do not bring her somewhere she can be hit with tempo'."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "idea-greco",
+      "model": "basic",
+      "fields": {
+        "front": "In Greco's gambit line (6.cxd4 Bb4+ 7.Nc3), what does White get for the pawn?",
+        "back": "A big lead in development and open central lines against a king stuck in the middle.",
+        "extra": "The deep 10.Ba3 idea exists precisely to keep that king from ever castling."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
+      "key": "idea-offbook",
+      "model": "basic",
+      "fields": {
+        "front": "Your opponent leaves book early in the Italian. What is the default recipe?",
+        "back": "Castle, play c3 and d4, and watch for tactics against f7.",
+        "extra": "The memorized lines are examples of this recipe, not exceptions to it."
+      },
+      "tags": [
+        "chess::plan"
+      ]
+    },
+    {
       "key": "l-root",
       "model": "chess",
       "fields": {
@@ -34,7 +154,7 @@
         "answerUci": "e2e4",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. **e4**"
+        "extra": "1. **e4**. Stake a claim in the center and open lines for the bishop and queen"
       },
       "tags": [
         "chess::line"
@@ -49,7 +169,7 @@
         "answerUci": "g1f3",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. **Nf3** [Black plays e5 here 34% of the time]",
+        "extra": "1. e4 e5 2. **Nf3**. Develop with tempo: the knight attacks e5, so Black must respond instead of developing freely [Black plays e5 here 34% of the time]",
         "lastMove": "e7e5"
       },
       "tags": [
@@ -65,7 +185,7 @@
         "answerUci": "f1c4",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. **Bc4** (Italian Game, C50) [Black plays Nc6 here 67% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. **Bc4** (Italian Game, C50). The Italian move: the bishop takes its best diagonal, aiming at f7, the one square only Black's king defends [Black plays Nc6 here 67% of the time]",
         "lastMove": "b8c6"
       },
       "tags": [
@@ -81,7 +201,7 @@
         "answerUci": "c2c3",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. **c3** (Classical Variation, C53) [Black plays Bc5 here 36% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. **c3** (Classical Variation, C53). Prepares d4: if Black ever captures there, c3 recaptures with a pawn and White keeps the full center [Black plays Bc5 here 36% of the time]",
         "lastMove": "f8c5"
       },
       "tags": [
@@ -97,7 +217,7 @@
         "answerUci": "d2d3",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. **d3** (Modern Bishop's Opening, C55) [Black plays Nf6 here 33% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. **d3** (Modern Bishop's Opening, C55). Guard e4 and keep it quiet: the slow setup (castle, c3, h3) sidesteps every Two Knights trick [Black plays Nf6 here 33% of the time]",
         "lastMove": "g8f6"
       },
       "tags": [
@@ -113,7 +233,7 @@
         "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. **d4** [Black plays h6 here 10% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. **d4**. 3...h6 develops nothing, so open the center at once; wasted tempi get punished in open positions [Black plays h6 here 10% of the time]",
         "lastMove": "h7h6"
       },
       "tags": [
@@ -129,7 +249,7 @@
         "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. **d4** [Black plays d6 here 7% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. **d4**. 3...d6 blocks the f8 bishop and concedes the center; strike while Black is passive [Black plays d6 here 7% of the time]",
         "lastMove": "d7d6"
       },
       "tags": [
@@ -145,7 +265,7 @@
         "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. **d4** [Black plays Be7 here 5% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. **d4**. The bishop is passive on e7; open the center before Black finishes developing [Black plays Be7 here 5% of the time]",
         "lastMove": "f8e7"
       },
       "tags": [
@@ -161,7 +281,7 @@
         "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. **d4** (Center Attack, C54) [Black plays Nf6 here 52% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. **d4** (Center Attack, C54). The point of 4.c3: take the whole center; after exd4 cxd4 White has the ideal d4+e4 pawn duo [Black plays Nf6 here 52% of the time]",
         "lastMove": "g8f6"
       },
       "tags": [
@@ -177,7 +297,7 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 5. **O-O** [Black plays Bc5 here 54% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 5. **O-O**. King safety first: in the Pianissimo White completes development before any central action [Black plays Bc5 here 54% of the time]",
         "lastMove": "f8c5"
       },
       "tags": [
@@ -193,7 +313,7 @@
         "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6 5. **d4** [Black plays d6 here 32% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6 5. **d4**. Claim the center anyway: c3 means every capture on d4 is answered by a pawn, keeping the duo [Black plays d6 here 32% of the time]",
         "lastMove": "d7d6"
       },
       "tags": [
@@ -209,7 +329,7 @@
         "answerUci": "f3d4",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 exd4 5. **Nxd4** [Black plays exd4 here 82% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 exd4 5. **Nxd4**. Recapture toward the center; the knight sits actively on d4 and trades favorably if challenged [Black plays exd4 here 82% of the time]",
         "lastMove": "e5d4"
       },
       "tags": [
@@ -225,7 +345,7 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Be7 5. **O-O** [Black plays Be7 here 16% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Be7 5. **O-O**. Castle first; Black's quiet Be7 gives no reason to hurry the center [Black plays Be7 here 16% of the time]",
         "lastMove": "f8e7"
       },
       "tags": [
@@ -241,7 +361,7 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 h6 5. **O-O** [Black plays h6 here 14% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 h6 5. **O-O**. Ignore the wing pawn and finish development; h6 costs time Black cannot afford [Black plays h6 here 14% of the time]",
         "lastMove": "h7h6"
       },
       "tags": [
@@ -257,7 +377,7 @@
         "answerUci": "c2c3",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4 5. **c3** [Black plays exd4 here 70% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4 5. **c3**. The Danish idea: offer the c-pawn to rip open the center while the e7 bishop blocks Black's own kingside [Black plays exd4 here 70% of the time]",
         "lastMove": "e5d4"
       },
       "tags": [
@@ -273,7 +393,7 @@
         "answerUci": "f3d4",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. d4 exd4 5. **Nxd4** [Black plays exd4 here 50% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. d4 exd4 5. **Nxd4**. Recapture toward the center; the d4 knight dominates and every trade extends White's lead [Black plays exd4 here 50% of the time]",
         "lastMove": "e5d4"
       },
       "tags": [
@@ -289,7 +409,7 @@
         "answerUci": "e4d5",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 d5 5. **exd5** [Black plays d5 here 8% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 d5 5. **exd5**. Accept: 4...d5 overextends, and after exd5 Nxd5 White develops with tempo against the floating knight [Black plays d5 here 8% of the time]",
         "lastMove": "d7d5"
       },
       "tags": [
@@ -305,7 +425,7 @@
         "answerUci": "d4e5",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. d4 Bg4 5. **dxe5** [Black plays Bg4 here 31% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. d4 Bg4 5. **dxe5**. Snap off e5 while the g4 bishop is committed; once the tension resolves, the pin has no target [Black plays Bg4 here 31% of the time]",
         "lastMove": "c8g4"
       },
       "tags": [
@@ -321,7 +441,7 @@
         "answerUci": "d2d4",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 h6 5. **d4** [Black plays h6 here 4% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 h6 5. **d4**. The standing rule: answer a wasted move by taking the whole center [Black plays h6 here 4% of the time]",
         "lastMove": "h7h6"
       },
       "tags": [
@@ -337,7 +457,7 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Qf6 5. **O-O** [Black plays Qf6 here 3% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Qf6 5. **O-O**. The queen came out too early; castle, prepare d4, and she becomes a target on f6 [Black plays Qf6 here 3% of the time]",
         "lastMove": "d8f6"
       },
       "tags": [
@@ -353,7 +473,7 @@
         "answerUci": "d4e5",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 d6 5. **dxe5** [Black plays d6 here 7% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 d6 5. **dxe5**. Two slow moves is too many: open the position and let the development lead decide [Black plays d6 here 7% of the time]",
         "lastMove": "d7d6"
       },
       "tags": [
@@ -369,7 +489,7 @@
         "answerUci": "c3d4",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. **cxd4** (Traditional Line, C54) [Black plays exd4 here 98% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. **cxd4** (Traditional Line, C54). The pawn recapture is why c3 was played: White gets the d4+e4 duo and the pawn hits the c5 bishop next [Black plays exd4 here 98% of the time]",
         "lastMove": "e5d4"
       },
       "tags": [
@@ -385,7 +505,7 @@
         "answerUci": "c3d4",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6 5. d4 exd4 6. **cxd4** [Black plays exd4 here 96% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6 5. d4 exd4 6. **cxd4**. Recapture with the pawn: the center duo plus tempo on the c5 bishop gives White easy play [Black plays exd4 here 96% of the time]",
         "lastMove": "e5d4"
       },
       "tags": [
@@ -401,7 +521,7 @@
         "answerUci": "h2h3",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 5. O-O d6 6. **h3** [Black plays d6 here 40% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 5. O-O d6 6. **h3**. Key Pianissimo prophylaxis: take g4 away before ...Bg4 or ...Ng4 harass the f3 knight [Black plays d6 here 40% of the time]",
         "lastMove": "d7d6"
       },
       "tags": [
@@ -417,7 +537,7 @@
         "answerUci": "c2c3",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 5. O-O O-O 6. **c3** [Black plays O-O here 32% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 5. O-O O-O 6. **c3**. The slow plan: c3 readies the d4 break and opens a retreat path for the c4 bishop [Black plays O-O here 32% of the time]",
         "lastMove": "e8g8"
       },
       "tags": [
@@ -433,7 +553,7 @@
         "answerUci": "c2c3",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 5. O-O h6 6. **c3** (Giuoco Pianissimo, C54) [Black plays h6 here 24% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 5. O-O h6 6. **c3** (Giuoco Pianissimo, C54). Continue the plan regardless: c3 then d4; Black's ...h6 changed nothing [Black plays h6 here 24% of the time]",
         "lastMove": "h7h6"
       },
       "tags": [
@@ -449,7 +569,7 @@
         "answerUci": "c2c3",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Be7 5. O-O O-O 6. **c3** [Black plays O-O here 69% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Be7 5. O-O O-O 6. **c3**. Same Pianissimo recipe against every setup: c3, then look for d4 [Black plays O-O here 69% of the time]",
         "lastMove": "e8g8"
       },
       "tags": [
@@ -465,7 +585,7 @@
         "answerUci": "d1d4",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 exd4 5. Nxd4 Nxd4 6. **Qxd4** [Black plays Nxd4 here 43% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 exd4 5. Nxd4 Nxd4 6. **Qxd4**. With the knights traded, the queen recaptures happily: no ...Nc6 exists to kick her off d4 [Black plays Nxd4 here 43% of the time]",
         "lastMove": "c6d4"
       },
       "tags": [
@@ -481,7 +601,7 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 d5 5. exd5 Nxd5 6. **O-O** [Black plays Nxd5 here 96% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 d5 5. exd5 Nxd5 6. **O-O**. No need to grab anything: castle and let the floating d5 knight and open center become targets [Black plays Nxd5 here 96% of the time]",
         "lastMove": "f6d5"
       },
       "tags": [
@@ -497,7 +617,7 @@
         "answerUci": "c4e2",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. d4 Bg4 5. dxe5 Nxe5 6. **Be2** [Black plays Nxe5 here 87% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. d4 Bg4 5. dxe5 Nxe5 6. **Be2**. Break the pin immediately; Black's initiative evaporates and White finishes development with the freer game [Black plays Nxe5 here 87% of the time]",
         "lastMove": "c6e5"
       },
       "tags": [
@@ -577,7 +697,7 @@
         "answerUci": "d1d5",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4 5. c3 dxc3 6. **Qd5** [Black plays dxc3 here 32% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4 5. c3 dxc3 6. **Qd5**. Cash the tempo before recapturing: Qd5 hits f7, forcing an awkward defense, then White rounds up c3 with a huge lead [Black plays dxc3 here 32% of the time]",
         "lastMove": "d4c3"
       },
       "tags": [
@@ -593,7 +713,7 @@
         "answerUci": "d4c6",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 exd4 5. Nxd4 Bc5 6. **Nxc6** [Black plays Bc5 here 15% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 exd4 5. Nxd4 Bc5 6. **Nxc6**. Remove the c6 defender first: after the recapture Black's queenside pawns are wrecked [Black plays Bc5 here 15% of the time]",
         "lastMove": "f8c5"
       },
       "tags": [
@@ -609,7 +729,7 @@
         "answerUci": "c4b3",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 exd4 5. Nxd4 Ne5 6. **Bb3** [Black plays Ne5 here 14% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 exd4 5. Nxd4 Ne5 6. **Bb3**. Sidestep and keep the f7 diagonal; the e5 knight gets kicked by f4 or traded on White's terms [Black plays Ne5 here 14% of the time]",
         "lastMove": "c6e5"
       },
       "tags": [
@@ -625,7 +745,7 @@
         "answerUci": "e4e5",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4 5. c3 Nf6 6. **e5** [Black plays Nf6 here 20% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4 5. c3 Nf6 6. **e5**. Push with tempo: e5 hits the knight and cramps Black before he can castle [Black plays Nf6 here 20% of the time]",
         "lastMove": "g8f6"
       },
       "tags": [
@@ -737,7 +857,7 @@
         "answerUci": "b1c3",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. **Nc3** (Greco's Attack, C54) [Black plays Bb4+ here 93% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. **Nc3** (Greco's Attack, C54). Greco's gambit: block the check with development and offer e4; the open lines are worth a pawn [Black plays Bb4+ here 93% of the time]",
         "lastMove": "c5b4"
       },
       "tags": [
@@ -753,7 +873,7 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6 5. d4 exd4 6. cxd4 Bb6 7. **O-O** [Black plays Bb6 here 54% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6 5. d4 exd4 6. cxd4 Bb6 7. **O-O**. Castle and enjoy the big center; Black's setup is solid but has no active plan [Black plays Bb6 here 54% of the time]",
         "lastMove": "c5b6"
       },
       "tags": [
@@ -769,7 +889,7 @@
         "answerUci": "b1c3",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6 5. d4 exd4 6. cxd4 Bb4+ 7. **Nc3** [Black plays Bb4+ here 46% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6 5. d4 exd4 6. cxd4 Bb4+ 7. **Nc3**. Block with development; if Black ever takes on c3, bxc3 keeps the center and opens the b-file [Black plays Bb4+ here 46% of the time]",
         "lastMove": "c5b4"
       },
       "tags": [
@@ -1201,7 +1321,7 @@
         "answerUci": "e1g1",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. **O-O** [Black plays Nxe4 here 68% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. **O-O**. Keep offering: castling completes the gambit setup, and every pawn Black grabs opens another line to his king [Black plays Nxe4 here 68% of the time]",
         "lastMove": "f6e4"
       },
       "tags": [
@@ -1729,7 +1849,7 @@
         "answerUci": "c1a3",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 9. bxc3 Bxc3 10. **Ba3** (Aitken Variation, C54) [Black plays Bxc3 here 72% of the time]",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 9. bxc3 Bxc3 10. **Ba3** (Aitken Variation, C54). The point of the whole gambit: Ba3 keeps the king stuck in the center, with Re1 and d5 coming [Black plays Bxc3 here 72% of the time]",
         "lastMove": "b4c3"
       },
       "tags": [

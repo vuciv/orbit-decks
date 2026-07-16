@@ -51,12 +51,14 @@ Generated (never edit by hand; run `node scripts/build.mjs`):
 - occlusion: `imageUri` (hosted URL), `imageWidth`, `imageHeight`, `mode`
   (`hideAll` or `hideOne`), `masks` (array of `{id, x, y, w, h}`)
 - vocab: `term` (target-language script), `reading` (pinyin/romanization),
-  `meaning` (optional `extra`, `recognitionOnly` and `listening` booleans).
-  Generates a recognition card (term -> meaning, reading behind a
-  tap-to-reveal hint) plus a production card (meaning -> term) unless
-  `recognitionOnly` is true; `listening` adds an audio-only card (TTS
-  speaks the term, learner recalls the meaning by ear). Use for any
-  language whose script the learner cannot yet read.
+  `meaning` (optional `extra`; optional `recognitionOnly`, `listening`,
+  `writing` booleans). Generates a recognition card (term -> meaning,
+  reading behind a tap-to-reveal hint) plus a production card
+  (meaning -> term) unless `recognitionOnly` is true; `listening` adds an
+  audio-only card (TTS speaks the term, learner recalls the meaning by
+  ear); `writing` adds a finger-drawing card (write the term, compare to
+  the real glyph; keep it to short terms). Use for any language whose
+  script the learner cannot yet read.
 
 Card text supports markdown-lite: **bold**, *italic*, `code`. Images must
 be https URLs (the app prefetches them for offline study); prefer public

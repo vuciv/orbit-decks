@@ -1,8 +1,8 @@
 {
   "key": "essential-chinese",
-  "version": 4,
+  "version": 5,
   "name": "Essential Chinese",
-  "description": "Mandarin from absolute zero, no character knowledge required. The tone and pinyin system comes first, then day-one survival phrases, then the highest-frequency words, then the grammar patterns that snap them together. Word cards show the characters big with tap-to-hear speech and a tap-to-reveal pinyin hint, so you try the characters first but are never stuck; the full pinyin appears with every answer, and the phrases you must be able to say are trained in both directions plus an ear-only listening card. Simplified characters. Keep new cards to 5-10 a day and say every answer out loud.",
+  "description": "Mandarin from absolute zero, no character knowledge required. The tone and pinyin system comes first, then day-one survival phrases, then the highest-frequency words, then the grammar patterns that snap them together. Word cards show the characters big with tap-to-hear speech and a tap-to-reveal pinyin hint, so you try the characters first but are never stuck; the full pinyin appears with every answer, and the phrases you must be able to say are trained in both directions plus an ear-only listening card, and the simplest core characters add a write-it-with-your-finger card. Simplified characters. Keep new cards to 5-10 a day and say every answer out loud.",
   "category": "Language",
   "topics": [
     "chinese",
@@ -555,7 +555,8 @@
         "term": "我",
         "reading": "wǒ",
         "meaning": "I, me",
-        "extra": "Add 的 for 'my': 我的 wǒ de."
+        "extra": "Add 的 for 'my': 我的 wǒ de.",
+        "writing": true
       },
       "tags": ["zh::people"]
     },
@@ -566,7 +567,8 @@
         "term": "你",
         "reading": "nǐ",
         "meaning": "you",
-        "extra": "A polite form 您 nín exists, but 你 is fine in nearly every situation. 你去吗？ nǐ qù ma (are you going?)"
+        "extra": "A polite form 您 nín exists, but 你 is fine in nearly every situation. 你去吗？ nǐ qù ma (are you going?)",
+        "writing": true
       },
       "tags": ["zh::people"]
     },
@@ -577,7 +579,8 @@
         "term": "他",
         "reading": "tā",
         "meaning": "he, him",
-        "extra": "他 (he), 她 (she), and 它 (it) all sound identical; only the writing differs. 他是我朋友 tā shì wǒ péngyou (he is my friend)."
+        "extra": "他 (he), 她 (she), and 它 (it) all sound identical; only the writing differs. 他是我朋友 tā shì wǒ péngyou (he is my friend).",
+        "writing": true
       },
       "tags": ["zh::people"]
     },
@@ -610,7 +613,8 @@
         "term": "人",
         "reading": "rén",
         "meaning": "person",
-        "extra": "Also 'people'; a picture of a walking person. Country + 人 = nationality: 中国人."
+        "extra": "Also 'people'; a picture of a walking person. Country + 人 = nationality: 中国人.",
+        "writing": true
       },
       "tags": ["zh::people"]
     },
@@ -667,7 +671,8 @@
         "term": "一",
         "reading": "yī",
         "meaning": "one",
-        "extra": "Plain yī when counting; inside phrases the tone shifts (see the tone-change cards)."
+        "extra": "Plain yī when counting; inside phrases the tone shifts (see the tone-change cards).",
+        "writing": true
       },
       "tags": ["zh::numbers"]
     },
@@ -678,7 +683,8 @@
         "term": "二",
         "reading": "èr",
         "meaning": "two (counting, math)",
-        "extra": "Two OF something uses 两 liǎng instead: 两个人."
+        "extra": "Two OF something uses 两 liǎng instead: 两个人.",
+        "writing": true
       },
       "tags": ["zh::numbers"]
     },
@@ -689,7 +695,8 @@
         "term": "三",
         "reading": "sān",
         "meaning": "three",
-        "extra": "三点 (3 o'clock), 三个人 (three people)."
+        "extra": "三点 (3 o'clock), 三个人 (three people).",
+        "writing": true
       },
       "tags": ["zh::numbers"]
     },
@@ -700,7 +707,8 @@
         "term": "四",
         "reading": "sì",
         "meaning": "four",
-        "extra": "Unlucky: sounds like 死 sǐ (death); buildings often skip the 4th floor. Mind sì (4) vs shí (10)."
+        "extra": "Unlucky: sounds like 死 sǐ (death); buildings often skip the 4th floor. Mind sì (4) vs shí (10).",
+        "writing": true
       },
       "tags": ["zh::numbers"]
     },
@@ -711,7 +719,8 @@
         "term": "五",
         "reading": "wǔ",
         "meaning": "five",
-        "extra": "五块钱 (five yuan)."
+        "extra": "五块钱 (five yuan).",
+        "writing": true
       },
       "tags": ["zh::numbers"]
     },
@@ -722,7 +731,8 @@
         "term": "六",
         "reading": "liù",
         "meaning": "six",
-        "extra": "A lucky number; 666 in Chinese chat means 'awesome', nothing sinister."
+        "extra": "A lucky number; 666 in Chinese chat means 'awesome', nothing sinister.",
+        "writing": true
       },
       "tags": ["zh::numbers"]
     },
@@ -733,7 +743,8 @@
         "term": "七",
         "reading": "qī",
         "meaning": "seven",
-        "extra": "七点 (7 o'clock)."
+        "extra": "七点 (7 o'clock).",
+        "writing": true
       },
       "tags": ["zh::numbers"]
     },
@@ -744,7 +755,8 @@
         "term": "八",
         "reading": "bā",
         "meaning": "eight",
-        "extra": "The lucky number: it sounds like 发 fā (to get rich). Plates full of 8s cost extra."
+        "extra": "The lucky number: it sounds like 发 fā (to get rich). Plates full of 8s cost extra.",
+        "writing": true
       },
       "tags": ["zh::numbers"]
     },
@@ -755,7 +767,8 @@
         "term": "九",
         "reading": "jiǔ",
         "meaning": "nine",
-        "extra": "Sounds like 久 jiǔ (long-lasting), so nine is auspicious for anniversaries."
+        "extra": "Sounds like 久 jiǔ (long-lasting), so nine is auspicious for anniversaries.",
+        "writing": true
       },
       "tags": ["zh::numbers"]
     },
@@ -766,7 +779,8 @@
         "term": "十",
         "reading": "shí",
         "meaning": "ten",
-        "extra": "Buzzed vowel: 'shrr'. sì (4) falls, shí (10) rises."
+        "extra": "Buzzed vowel: 'shrr'. sì (4) falls, shí (10) rises.",
+        "writing": true
       },
       "tags": ["zh::numbers"]
     },
@@ -974,7 +988,8 @@
         "term": "是",
         "reading": "shì",
         "meaning": "to be (A is B)",
-        "extra": "Links nouns only: 我是学生 (I am a student). Never before adjectives: 我很好, not 我是好."
+        "extra": "Links nouns only: 我是学生 (I am a student). Never before adjectives: 我很好, not 我是好.",
+        "writing": true
       },
       "tags": ["zh::verbs"]
     },
@@ -985,7 +1000,8 @@
         "term": "有",
         "reading": "yǒu",
         "meaning": "to have",
-        "extra": "Also 'there is'. Negated with 没, never 不: 没有. 有问题吗？ (Any questions?)"
+        "extra": "Also 'there is'. Negated with 没, never 不: 没有. 有问题吗？ (Any questions?)",
+        "writing": true
       },
       "tags": ["zh::verbs"]
     },
@@ -996,7 +1012,8 @@
         "term": "要",
         "reading": "yào",
         "meaning": "to want (something)",
-        "extra": "我要这个 (I want this one). Direct; for 'would like to do' use 想."
+        "extra": "我要这个 (I want this one). Direct; for 'would like to do' use 想.",
+        "writing": true
       },
       "tags": ["zh::verbs"]
     },
@@ -1018,7 +1035,8 @@
         "term": "去",
         "reading": "qù",
         "meaning": "to go",
-        "extra": "去 + place: 去中国 (go to China)."
+        "extra": "去 + place: 去中国 (go to China).",
+        "writing": true
       },
       "tags": ["zh::verbs"]
     },
@@ -1029,7 +1047,8 @@
         "term": "来",
         "reading": "lái",
         "meaning": "to come",
-        "extra": "Also 'bring me' when ordering: 来一杯茶 (a cup of tea, please)."
+        "extra": "Also 'bring me' when ordering: 来一杯茶 (a cup of tea, please).",
+        "writing": true
       },
       "tags": ["zh::verbs"]
     },
@@ -1040,7 +1059,8 @@
         "term": "吃",
         "reading": "chī",
         "meaning": "to eat",
-        "extra": "吃饭 (have a meal). 你吃了吗？ (Have you eaten?) doubles as a friendly greeting."
+        "extra": "吃饭 (have a meal). 你吃了吗？ (Have you eaten?) doubles as a friendly greeting.",
+        "writing": true
       },
       "tags": ["zh::verbs"]
     },
@@ -1360,7 +1380,8 @@
         "reading": "nián",
         "meaning": "year",
         "extra": "Dates run big to small: 2026年7月9日. 新年 (New Year).",
-        "recognitionOnly": true
+        "recognitionOnly": true,
+        "writing": true
       },
       "tags": ["zh::time"]
     },
@@ -1372,7 +1393,8 @@
         "reading": "yuè",
         "meaning": "month",
         "extra": "Also 'moon'; the character draws a crescent. Months are just numbers: 一月 (January) through 十二月 (December).",
-        "recognitionOnly": true
+        "recognitionOnly": true,
+        "writing": true
       },
       "tags": ["zh::time"]
     },
@@ -1525,7 +1547,8 @@
         "term": "水",
         "reading": "shuǐ",
         "meaning": "water",
-        "extra": "热水 (hot water) is the default drink offered in China."
+        "extra": "热水 (hot water) is the default drink offered in China.",
+        "writing": true
       },
       "tags": ["zh::food"]
     },
@@ -1536,7 +1559,8 @@
         "term": "茶",
         "reading": "chá",
         "meaning": "tea",
-        "extra": "Both 'chai' and 'cha' around the world come from this word. 喝茶 hē chá (drink tea)."
+        "extra": "Both 'chai' and 'cha' around the world come from this word. 喝茶 hē chá (drink tea).",
+        "writing": true
       },
       "tags": ["zh::food"]
     },
@@ -1840,7 +1864,8 @@
         "term": "好",
         "reading": "hǎo",
         "meaning": "good, well",
-        "extra": "Woman 女 + child 子 = good. Also an agreeable 'OK' on its own: 好的."
+        "extra": "Woman 女 + child 子 = good. Also an agreeable 'OK' on its own: 好的.",
+        "writing": true
       },
       "tags": ["zh::adjectives"]
     },
@@ -1851,7 +1876,8 @@
         "term": "大",
         "reading": "dà",
         "meaning": "big",
-        "extra": "A person with arms stretched wide. 大学 (university, literally 'big school')."
+        "extra": "A person with arms stretched wide. 大学 (university, literally 'big school').",
+        "writing": true
       },
       "tags": ["zh::adjectives"]
     },
@@ -1862,7 +1888,8 @@
         "term": "小",
         "reading": "xiǎo",
         "meaning": "small",
-        "extra": "小狗 (puppy). 小 + surname is a friendly address for someone younger: 小王."
+        "extra": "小狗 (puppy). 小 + surname is a friendly address for someone younger: 小王.",
+        "writing": true
       },
       "tags": ["zh::adjectives"]
     },
@@ -1956,7 +1983,8 @@
         "reading": "de",
         "meaning": "(possessive particle)",
         "extra": "Toneless. 我的手机 (my phone), 你的书 (your book). The most common character in Chinese.",
-        "recognitionOnly": true
+        "recognitionOnly": true,
+        "writing": true
       },
       "tags": ["zh::grammar"]
     },
@@ -1992,7 +2020,8 @@
         "reading": "bù",
         "meaning": "not, no",
         "extra": "The all-purpose negator: 不是, 不去. Shifts to bú before 4th tones: 不是 bú shì. 有 takes 没 instead.",
-        "recognitionOnly": true
+        "recognitionOnly": true,
+        "writing": true
       },
       "tags": ["zh::grammar"]
     },

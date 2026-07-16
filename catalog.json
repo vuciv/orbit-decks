@@ -5,7 +5,7 @@
       "key": "language",
       "name": "Language",
       "deckCount": 2,
-      "rev": "825c37d85f79",
+      "rev": "057c38ac3eb1",
       "file": "categories/language.json"
     },
     {
@@ -54,7 +54,7 @@
       "key": "chess",
       "name": "Chess",
       "deckCount": 26,
-      "rev": "74d9c67b7dab",
+      "rev": "89ccc1df9dd7",
       "file": "categories/chess.json"
     },
     {
@@ -251,7 +251,7 @@
     },
     {
       "key": "essential-chinese",
-      "version": 4,
+      "version": 5,
       "file": "decks/essential-chinese.json"
     },
     {
@@ -291,7 +291,7 @@
     },
     {
       "key": "italian-game",
-      "version": 4,
+      "version": 5,
       "file": "decks/italian-game.json"
     },
     {

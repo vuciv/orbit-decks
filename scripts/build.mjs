@@ -87,7 +87,11 @@ function cardCountForNote(note) {
     case 'globe':
       return 1;
     case 'vocab':
-      return (note.fields.recognitionOnly === true ? 1 : 2) + (note.fields.listening === true ? 1 : 0);
+      return (
+        (note.fields.recognitionOnly === true ? 1 : 2) +
+        (note.fields.listening === true ? 1 : 0) +
+        (note.fields.writing === true ? 1 : 0)
+      );
     default:
       return 0;
   }
@@ -158,6 +162,9 @@ function validateFields(where, model, f) {
       }
       if (f.listening !== undefined && typeof f.listening !== 'boolean') {
         fail(`${where}: listening must be a boolean`);
+      }
+      if (f.writing !== undefined && typeof f.writing !== 'boolean') {
+        fail(`${where}: writing must be a boolean`);
       }
       break;
     case 'occlusion':

@@ -271,6 +271,11 @@ def gen_deck(entries, family, explorer, opts, via=None, side_override=None):
         spine, spine_end = sans_of(via_pgn)
 
     prompt = f"You are {side_name} in the {display}. What is the book move?"
+    annotations = {}
+    if opts.annotations:
+        ann_path = Path(opts.annotations) / f"{slugify(display)}.json"
+        if ann_path.exists():
+            annotations = json.loads(ann_path.read_text())
     cards, visited = [], set()
 
     def walk(board, node, sans, prob, last_reply):
@@ -300,6 +305,9 @@ def gen_deck(entries, family, explorer, opts, via=None, side_override=None):
             extra = movetext(sans + [choice], bold_last=True)
             if named:
                 extra += f" ({short_name(named[0])}, {named[1]})"
+            why = annotations.get(pk)
+            if why:
+                extra += f". {why}"
             if last_reply:
                 extra += (f" [{opp_name} plays {last_reply[0]} here "
                           f"{round(last_reply[1] * 100)}% of the time]")
@@ -395,6 +403,8 @@ def main():
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--side", choices=["white", "black"])
     ap.add_argument("--stats", help="opening-stats.py JSON; offline, replaces the explorer API")
+    ap.add_argument("--annotations", default=str(REPO / "scripts" / "annotations"),
+                    help="dir of <deck-key>.json files mapping position keys to one-line whys, merged into extra")
     ap.add_argument("--source", choices=["lichess", "masters"], default="lichess")
     ap.add_argument("--ratings", default="1600,1800,2000,2200")
     ap.add_argument("--speeds", default="blitz,rapid,classical")
