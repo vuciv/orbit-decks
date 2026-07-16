@@ -1,8 +1,8 @@
 {
   "key": "essential-spanish",
-  "version": 1,
+  "version": 2,
   "name": "Essential Spanish",
-  "description": "Your first weeks of Spanish, front-loaded for payoff: survival phrases you can use on day one, then the highest-frequency vocabulary (numbers, time words, question words, the 25 most useful verbs, family, food, places) trained in both directions, plus the ser, estar, and tener conjugations. Latin American Spanish by default.",
+  "description": "The highest-payoff Spanish vocabulary, trained in both directions: greetings and politeness words, numbers, days and months, time words, question words, pronouns, the 25 most useful verbs, family, food, places, core adjectives and colors, and the little connector words that glue sentences together. Latin American Spanish by default.",
   "category": "Language",
   "topics": [
     "spanish",
@@ -14,7 +14,7 @@
   "notes": [
     {
       "key": "hola",
-      "model": "basic",
+      "model": "basic_reversed",
       "fields": {
         "front": "Hola",
         "back": "Hello",
@@ -26,7 +26,7 @@
     },
     {
       "key": "buenos-dias",
-      "model": "basic",
+      "model": "basic_reversed",
       "fields": {
         "front": "Buenos días",
         "back": "Good morning",
@@ -38,7 +38,7 @@
     },
     {
       "key": "buenas-tardes",
-      "model": "basic",
+      "model": "basic_reversed",
       "fields": {
         "front": "Buenas tardes",
         "back": "Good afternoon",
@@ -50,7 +50,7 @@
     },
     {
       "key": "buenas-noches",
-      "model": "basic",
+      "model": "basic_reversed",
       "fields": {
         "front": "Buenas noches",
         "back": "Good evening, good night",
@@ -62,7 +62,7 @@
     },
     {
       "key": "adios",
-      "model": "basic",
+      "model": "basic_reversed",
       "fields": {
         "front": "Adiós",
         "back": "Goodbye",
@@ -74,7 +74,7 @@
     },
     {
       "key": "por-favor",
-      "model": "basic",
+      "model": "basic_reversed",
       "fields": {
         "front": "Por favor",
         "back": "Please",
@@ -86,7 +86,7 @@
     },
     {
       "key": "gracias",
-      "model": "basic",
+      "model": "basic_reversed",
       "fields": {
         "front": "Gracias",
         "back": "Thank you",
@@ -98,7 +98,7 @@
     },
     {
       "key": "de-nada",
-      "model": "basic",
+      "model": "basic_reversed",
       "fields": {
         "front": "De nada",
         "back": "You're welcome",
@@ -109,35 +109,11 @@
       ]
     },
     {
-      "key": "si-por-favor",
-      "model": "basic",
-      "fields": {
-        "front": "Sí, por favor",
-        "back": "Yes, please",
-        "extra": "Sí (yes) carries a written accent; si without it means if."
-      },
-      "tags": [
-        "es::phrases"
-      ]
-    },
-    {
-      "key": "no-gracias",
-      "model": "basic",
-      "fields": {
-        "front": "No, gracias",
-        "back": "No, thank you",
-        "extra": "The polite way to refuse anything, anywhere."
-      },
-      "tags": [
-        "es::phrases"
-      ]
-    },
-    {
       "key": "perdon",
-      "model": "basic",
+      "model": "basic_reversed",
       "fields": {
         "front": "Perdón",
-        "back": "Excuse me, sorry",
+        "back": "Excuse me",
         "extra": "For getting attention, light apologies, or passing through a crowd. Disculpe is a slightly more formal alternative."
       },
       "tags": [
@@ -146,7 +122,7 @@
     },
     {
       "key": "lo-siento",
-      "model": "basic",
+      "model": "basic_reversed",
       "fields": {
         "front": "Lo siento",
         "back": "I'm sorry",
@@ -158,7 +134,7 @@
     },
     {
       "key": "mucho-gusto",
-      "model": "basic",
+      "model": "basic_reversed",
       "fields": {
         "front": "Mucho gusto",
         "back": "Nice to meet you",
@@ -169,192 +145,12 @@
       ]
     },
     {
-      "key": "me-llamo",
-      "model": "basic",
-      "fields": {
-        "front": "Me llamo...",
-        "back": "My name is...",
-        "extra": "Literally, I call myself: me llamo Ana. Also simply: soy Ana."
-      },
-      "tags": [
-        "es::phrases"
-      ]
-    },
-    {
-      "key": "como-te-llamas",
-      "model": "basic",
-      "fields": {
-        "front": "¿Cómo te llamas?",
-        "back": "What is your name?",
-        "extra": "Informal tú form. Formal: ¿cómo se llama usted?"
-      },
-      "tags": [
-        "es::phrases"
-      ]
-    },
-    {
-      "key": "como-estas",
-      "model": "basic",
-      "fields": {
-        "front": "¿Cómo estás?",
-        "back": "How are you?",
-        "extra": "Informal. Formal: ¿cómo está usted? A typical reply: bien, gracias, ¿y tú?"
-      },
-      "tags": [
-        "es::phrases"
-      ]
-    },
-    {
-      "key": "muy-bien-gracias",
-      "model": "basic",
-      "fields": {
-        "front": "Muy bien, gracias",
-        "back": "Very well, thank you",
-        "extra": "Follow with ¿y tú? (informal) or ¿y usted? (formal) to return the question."
-      },
-      "tags": [
-        "es::phrases"
-      ]
-    },
-    {
-      "key": "no-entiendo",
-      "model": "basic",
-      "fields": {
-        "front": "No entiendo",
-        "back": "I don't understand",
-        "extra": "Useful follow-ups: ¿puede repetir? (can you repeat?) and más despacio, por favor."
-      },
-      "tags": [
-        "es::phrases"
-      ]
-    },
-    {
-      "key": "habla-ingles",
-      "model": "basic",
-      "fields": {
-        "front": "¿Habla inglés?",
-        "back": "Do you speak English?",
-        "extra": "Formal usted form, right for strangers. To a friend: ¿hablas inglés?"
-      },
-      "tags": [
-        "es::phrases"
-      ]
-    },
-    {
-      "key": "puede-repetir",
-      "model": "basic",
-      "fields": {
-        "front": "¿Puede repetir, por favor?",
-        "back": "Can you repeat that, please?",
-        "extra": "Even shorter in conversation: ¿cómo? (what was that?)."
-      },
-      "tags": [
-        "es::phrases"
-      ]
-    },
-    {
-      "key": "mas-despacio",
-      "model": "basic",
-      "fields": {
-        "front": "Más despacio, por favor",
-        "back": "Slower, please",
-        "extra": "Literally, more slowly. Deploy the moment a reply comes back too fast."
-      },
-      "tags": [
-        "es::phrases"
-      ]
-    },
-    {
-      "key": "como-se-dice",
-      "model": "basic",
-      "fields": {
-        "front": "¿Cómo se dice esto en español?",
-        "back": "How do you say this in Spanish?",
-        "extra": "Swap esto (this) for any English word: ¿cómo se dice ticket en español?"
-      },
-      "tags": [
-        "es::phrases"
-      ]
-    },
-    {
-      "key": "cuanto-cuesta",
-      "model": "basic",
-      "fields": {
-        "front": "¿Cuánto cuesta?",
-        "back": "How much does it cost?",
-        "extra": "For several items: ¿cuánto cuestan? For the total: ¿cuánto es?"
-      },
-      "tags": [
-        "es::phrases"
-      ]
-    },
-    {
-      "key": "quisiera-un-cafe",
-      "model": "basic",
-      "fields": {
-        "front": "Quisiera un café, por favor",
-        "back": "I would like a coffee, please",
-        "extra": "Quisiera is the polite form of quiero (I want). Also very common: me da un café, por favor."
-      },
-      "tags": [
-        "es::phrases"
-      ]
-    },
-    {
-      "key": "la-cuenta",
-      "model": "basic",
-      "fields": {
-        "front": "La cuenta, por favor",
-        "back": "The check, please",
-        "extra": "In most of Latin America and Spain the check comes only when you ask for it."
-      },
-      "tags": [
-        "es::phrases"
-      ]
-    },
-    {
-      "key": "donde-esta-el-bano",
-      "model": "basic",
-      "fields": {
-        "front": "¿Dónde está el baño?",
-        "back": "Where is the bathroom?",
-        "extra": "The single most useful question in the language. Replies often include a la derecha (on the right) or a la izquierda (on the left)."
-      },
-      "tags": [
-        "es::phrases"
-      ]
-    },
-    {
-      "key": "como-llego-al-centro",
-      "model": "basic",
-      "fields": {
-        "front": "¿Cómo llego al centro?",
-        "back": "How do I get downtown?",
-        "extra": "Swap al centro for anywhere: ¿cómo llego al aeropuerto? Note that a + el contracts to al."
-      },
-      "tags": [
-        "es::phrases"
-      ]
-    },
-    {
       "key": "ayuda",
-      "model": "basic",
+      "model": "basic_reversed",
       "fields": {
         "front": "¡Ayuda!",
         "back": "Help!",
         "extra": "In a real emergency also ¡socorro! Calmer version: ¿me puede ayudar? (can you help me?)."
-      },
-      "tags": [
-        "es::phrases"
-      ]
-    },
-    {
-      "key": "necesito-un-medico",
-      "model": "basic",
-      "fields": {
-        "front": "Necesito un médico",
-        "back": "I need a doctor",
-        "extra": "Also: es una emergencia (it is an emergency), llame a una ambulancia (call an ambulance)."
       },
       "tags": [
         "es::phrases"
@@ -1828,6 +1624,18 @@
       ]
     },
     {
+      "key": "la-cuenta",
+      "model": "basic_reversed",
+      "fields": {
+        "front": "la cuenta",
+        "back": "the check, the bill",
+        "extra": "In most of Latin America and Spain the check comes only when you ask for it."
+      },
+      "tags": [
+        "es::food"
+      ]
+    },
+    {
       "key": "la-casa",
       "model": "basic_reversed",
       "fields": {
@@ -2476,61 +2284,6 @@
       },
       "tags": [
         "es::connectors"
-      ]
-    },
-    {
-      "key": "ser-present",
-      "model": "cloze",
-      "fields": {
-        "text": "ser (to be, permanent): yo {{c1::soy}}, tú {{c2::eres}}, él/ella/usted {{c3::es}}, nosotros {{c4::somos}}, ellos/ustedes {{c5::son}}",
-        "extra": "Ser for identity and traits; estar for states and locations. Spain adds an informal you-plural: vosotros sois."
-      },
-      "tags": [
-        "es::verbs"
-      ]
-    },
-    {
-      "key": "estar-present",
-      "model": "cloze",
-      "fields": {
-        "text": "estar (to be, states and location): yo {{c1::estoy}}, tú {{c2::estás}}, él/ella/usted {{c3::está}}, nosotros {{c4::estamos}}, ellos/ustedes {{c5::están}}",
-        "extra": "Estoy bien; estamos en el hotel. Spain adds vosotros estáis."
-      },
-      "tags": [
-        "es::verbs"
-      ]
-    },
-    {
-      "key": "tener-present",
-      "model": "cloze",
-      "fields": {
-        "text": "tener (to have): yo {{c1::tengo}}, tú {{c2::tienes}}, él/ella/usted {{c3::tiene}}, nosotros {{c4::tenemos}}, ellos/ustedes {{c5::tienen}}",
-        "extra": "Also for age and sensations: tengo treinta años, tengo hambre, tengo frío. Spain adds vosotros tenéis."
-      },
-      "tags": [
-        "es::verbs"
-      ]
-    },
-    {
-      "key": "ser-vs-estar",
-      "model": "cloze",
-      "fields": {
-        "text": "To be: use {{c1::ser}} for identity, origin, and traits (soy de Chicago, es alta); use {{c2::estar}} for feelings, states, and location (estoy cansado, el baño está allí)",
-        "extra": "A famous pair: es aburrido = he is boring; está aburrido = he is bored."
-      },
-      "tags": [
-        "es::verbs"
-      ]
-    },
-    {
-      "key": "noun-gender",
-      "model": "cloze",
-      "fields": {
-        "text": "Gender rules of thumb: nouns ending in -o are usually {{c1::masculine}} (el vino, el mercado); nouns ending in -a are usually {{c2::feminine}} (la casa, la playa); nouns ending in -ción or -dad are always {{c3::feminine}} (la estación, la ciudad)",
-        "extra": "Classic exceptions: el día, el mapa, and el problema are masculine; la mano is feminine."
-      },
-      "tags": [
-        "es::nouns"
       ]
     }
   ]

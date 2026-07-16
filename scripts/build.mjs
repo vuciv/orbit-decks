@@ -25,7 +25,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const errors = [];
 const fail = (msg) => errors.push(msg);
 
-const MODELS = ['basic', 'basic_reversed', 'cloze', 'typed', 'sequence', 'occlusion', 'chess', 'globe'];
+const MODELS = ['basic', 'basic_reversed', 'cloze', 'typed', 'sequence', 'occlusion', 'chess', 'globe', 'vocab'];
 const COUNTRY_RE = /^[A-Z]{2}$/;
 const UCI_RE = /^[a-h][1-8][a-h][1-8][qrbn]?$/;
 const KEY_RE = /^[a-z0-9][a-z0-9-]*$/;
@@ -39,7 +39,9 @@ const CATEGORY_ORDER = [
   'Music',
   'Cinema',
   'Chess',
+  'Mathematics',
   'Science',
+  'Mathematics',
   'Anatomy',
   'History',
   'Codes & Signals',
@@ -84,6 +86,8 @@ function cardCountForNote(note) {
     case 'chess':
     case 'globe':
       return 1;
+    case 'vocab':
+      return note.fields.recognitionOnly === true ? 1 : 2;
     default:
       return 0;
   }
@@ -143,6 +147,15 @@ function validateFields(where, model, f) {
       }
       if (!isStr(f.answer)) fail(`${where}: needs answer`);
       if (!optStr(f.prompt) || !optStr(f.extra)) fail(`${where}: bad prompt/extra`);
+      break;
+    case 'vocab':
+      if (!isStr(f.term) || !isStr(f.reading) || !isStr(f.meaning)) {
+        fail(`${where}: needs term, reading, and meaning`);
+      }
+      if (!optStr(f.extra)) fail(`${where}: bad extra`);
+      if (f.recognitionOnly !== undefined && typeof f.recognitionOnly !== 'boolean') {
+        fail(`${where}: recognitionOnly must be a boolean`);
+      }
       break;
     case 'occlusion':
       if (!isStr(f.imageUri) || !f.imageUri.startsWith('https://')) {

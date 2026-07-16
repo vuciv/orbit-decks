@@ -1,6 +1,6 @@
 {
   "key": "ai-alignment-research",
-  "version": 2,
+  "version": 3,
   "name": "AI Alignment Research Essentials",
   "description": "The working knowledge behind the Anthropic Fellows papers and the wider canon (Nanda, Evans, Lindsey): persona vectors and character work, introspection results, the mech interp toolkit and its self-correction arc, RLHF and AI control methods, headline findings worth citing from memory, and empirical research craft.",
   "category": "AI Research",
@@ -14,12 +14,540 @@
   "ttsLang": null,
   "notes": [
     {
+      "key": "residual-stream",
+      "model": "basic",
+      "fields": {
+        "front": "What is the residual stream in a transformer?",
+        "back": "The running vector sum that every attention and MLP block reads from and writes to; the shared communication channel between layers.",
+        "extra": "Why steering works at all: interventions add to the same space every downstream component reads."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "linear-representation",
+      "model": "basic",
+      "fields": {
+        "front": "What is the linear representation hypothesis?",
+        "back": "High-level concepts are encoded as linear directions in activation space.",
+        "extra": "The load-bearing assumption behind probes, difference-of-means vectors, persona vectors, and activation steering."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "superposition",
+      "model": "basic",
+      "fields": {
+        "front": "What is superposition (Elhage et al. 2022)?",
+        "back": "Models represent more features than they have dimensions by encoding features as non-orthogonal directions, exploiting feature sparsity.",
+        "extra": "Non-orthogonal features interfere, but sparse features rarely co-occur, so the interference is tolerable. The core obstacle that motivates sparse autoencoders and dictionary learning."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "sae",
+      "model": "basic",
+      "fields": {
+        "front": "What does a sparse autoencoder (SAE) do in interpretability?",
+        "back": "Learns an overcomplete dictionary of sparsely activating features that decompose activations into more monosemantic units, undoing superposition.",
+        "extra": "Trained with reconstruction loss plus a sparsity penalty; quality is judged by interpretability and downstream causal use, not loss alone."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "logit-lens",
+      "model": "basic",
+      "fields": {
+        "front": "What is the logit lens?",
+        "back": "Project intermediate residual-stream states through the final layernorm and unembedding to read what the model would predict at each layer.",
+        "extra": "Cheap first look at where in depth a behavior forms; Patchscope generalizes the idea by letting the model itself decode the state."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "activation-patching",
+      "model": "basic",
+      "fields": {
+        "front": "What is activation patching (causal tracing)?",
+        "back": "Run the model on a corrupted input, restore activations from a clean run at one site, and measure how much the output recovers; this localizes which activations causally carry the information.",
+        "extra": "The clean/corrupted pair defines *what* you localize; bad pairs give confident nonsense."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "attribution-patching",
+      "model": "basic",
+      "fields": {
+        "front": "What is attribution patching?",
+        "back": "A gradient-based linear approximation of activation patching that scores every site in a couple of passes instead of one forward pass per site.",
+        "extra": "Use it to triage candidate sites at scale, then confirm the top hits with real patching."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "patching-directions",
+      "model": "basic",
+      "fields": {
+        "front": "In activation patching, what is the difference between denoising and noising?",
+        "back": "Denoising patches clean activations into a corrupted run and tests whether a component is *sufficient* to restore behavior; noising patches corrupted activations into a clean run and tests whether it is *necessary*.",
+        "extra": "The two can disagree. From How to Use and Interpret Activation Patching (Heimersheim and Nanda); always state which direction you ran."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "patching-metric",
+      "model": "basic",
+      "fields": {
+        "front": "Why prefer logit difference over probability or accuracy as the metric in patching experiments?",
+        "back": "Probability and accuracy saturate and hide partial effects, while the logit difference between the correct and a contrastive answer varies roughly linearly with residual-stream interventions.",
+        "extra": "From Towards Best Practices of Activation Patching: metric choice can flip conclusions about which components matter."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "subspace-illusion",
+      "model": "basic",
+      "fields": {
+        "front": "What is the interpretability illusion for subspace activation patching?",
+        "back": "Patching along a subspace can look causal by activating a dormant pathway that ordinary computation never uses, so a direction can 'work' under intervention without being what the model actually uses.",
+        "extra": "Antidote: check that the direction is active in natural forward passes, not just under your intervention."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "self-repair",
+      "model": "basic",
+      "fields": {
+        "front": "What is self-repair (the Hydra effect) in transformers?",
+        "back": "When a component is ablated, downstream components shift their behavior to compensate, partially restoring the output.",
+        "extra": "One reason patching-style causal analysis beats naive ablation."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "self-repair-ablation",
+      "model": "basic",
+      "fields": {
+        "front": "Why do ablation-based importance scores systematically understate a component's role?",
+        "back": "Self-repair: downstream components compensate for the ablated component, masking its contribution to the output.",
+        "extra": "The bias is systematic, so ranking components by ablation effect can miss genuinely load-bearing ones."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "steering-caa",
+      "model": "basic",
+      "fields": {
+        "front": "How does contrastive activation addition (CAA) construct a steering vector?",
+        "back": "Average the activation difference between paired prompts with and without the target property, then add that difference vector to the residual stream at inference.",
+        "extra": "Persona vectors are the same recipe with an automated trait-contrast pipeline and judge scoring on responses."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "steering-controls",
+      "model": "basic",
+      "fields": {
+        "front": "What control separates a steering vector's direction-specific effect from generic perturbation damage?",
+        "back": "A random direction of the same norm applied at the same layer.",
+        "extra": "Ideally also an unrelated-trait vector. Separating direction-specific effects from generic damage is the standard reviewer objection to steering results."
+      },
+      "tags": [
+        "ai::craft"
+      ]
+    },
+    {
+      "key": "steering-capability-check",
+      "model": "basic",
+      "fields": {
+        "front": "Besides direction controls, what must a steering experiment measure to show it steered behavior rather than broke the model?",
+        "back": "Capabilities under steering, e.g. MMLU accuracy or perplexity.",
+        "extra": "Generic capability damage can masquerade as a behavior change."
+      },
+      "tags": [
+        "ai::craft"
+      ]
+    },
+    {
+      "key": "linear-probe-limit",
+      "model": "basic",
+      "fields": {
+        "front": "A linear probe decodes a property from activations with 95% accuracy. What can you NOT conclude?",
+        "back": "That the model *uses* that representation: probes only show the information is linearly present (correlation).",
+        "extra": "Only interventions (ablation, steering, patching) test causal use. The most common overclaim in interp papers; reviewers will look for the causal follow-up."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "refusal-direction",
+      "model": "basic",
+      "fields": {
+        "front": "What did Arditi et al. 2024 show about refusal in chat models?",
+        "back": "Refusal is mediated by a single direction in activation space: ablating it jailbreaks the model, and adding it makes the model refuse harmless requests.",
+        "extra": "Andy Arditi later co-led Persona Vectors: the same one-direction toolkit applied to character traits."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "sae-shrinkage",
+      "model": "basic",
+      "fields": {
+        "front": "What problem do Gated and JumpReLU SAEs fix relative to vanilla L1-penalty SAEs?",
+        "back": "L1-penalty shrinkage: feature activations are systematically underestimated to reduce the penalty, which gating and thresholds avoid by separating whether a feature fires from how strongly.",
+        "extra": "Shrinkage degrades the sparsity-fidelity frontier. Architecture arc to know: vanilla L1 -> Gated -> JumpReLU/TopK -> BatchTopK; each is a fix to the sparsity mechanism."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "gemma-scope",
+      "model": "basic",
+      "fields": {
+        "front": "What is Gemma Scope?",
+        "back": "An open suite of JumpReLU SAEs trained on every layer and sublayer of Gemma 2 models, released so researchers can do feature-level interpretability without training their own SAEs.",
+        "extra": "The default playground for SAE experiments outside frontier labs; pairs with Neuronpedia for browsing features."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "sae-not-canonical",
+      "model": "basic",
+      "fields": {
+        "front": "What did 'SAEs Do Not Find Canonical Units of Analysis' show?",
+        "back": "Different SAE widths and seeds produce materially different feature sets, so there is no single canonical dictionary.",
+        "extra": "Feature splitting, novel features. SAE features are a useful decomposition, not THE model's true units. Part of the field's 2025 self-correction, alongside SAEBench and the sparse-probing negative results."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "sae-useful",
+      "model": "basic",
+      "fields": {
+        "front": "What did 'Are Sparse Autoencoders Useful?' find in its sparse-probing case study?",
+        "back": "SAE-based methods generally failed to beat simple activation-probing baselines on downstream tasks - a headline negative result for SAE utility.",
+        "extra": "Shifted the field's norm toward baseline-first evaluation of interp tools: an interp method must beat probes and prompting to justify itself."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "crosscoder",
+      "model": "basic",
+      "fields": {
+        "front": "What is a crosscoder?",
+        "back": "An SAE-family model with a shared feature dictionary trained across multiple layers or across two models (e.g., base vs finetuned), so the same feature is identified in both.",
+        "extra": "The workhorse for model diffing: what features did finetuning add, delete, or rescale?"
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "transcoder-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is a transcoder?",
+        "back": "A sparse, interpretable replacement for an MLP layer, trained to reproduce its input-output function with sparsely activating features - making circuit analysis through MLPs tractable.",
+        "extra": "The building block of attribution graphs; cross-layer transcoders extend the idea across the whole model."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "attribution-graphs",
+      "model": "basic",
+      "fields": {
+        "front": "What are attribution graphs (Anthropic 2025, 'On the Biology of a Large Language Model')?",
+        "back": "Prompt-level circuit traces built by replacing MLPs with interpretable transcoders and tracing feature-to-feature influence from input to output.",
+        "extra": "Open-sourced as circuit-tracer, with fellows contributing. Famous demos: multi-hop reasoning, poetry rhyme planning, refusal."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "golden-gate-claude",
+      "model": "basic",
+      "fields": {
+        "front": "What was Golden Gate Claude, and what paper produced it?",
+        "back": "A demo from Scaling Monosemanticity (SAEs on Claude 3 Sonnet): clamping a single Golden Gate Bridge feature made production Claude relate everything to the bridge - feature steering at frontier scale.",
+        "extra": "The paper also surfaced safety-relevant features (deception, sycophancy, dangerous content), the pitch for interp-as-auditing."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "grokking-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is grokking?",
+        "back": "Delayed generalization: a network first memorizes its training data, then long after training accuracy saturates, test accuracy suddenly jumps to near-perfect.",
+        "extra": "Classic setting: small transformers on modular arithmetic with weight decay. The phenomenon that launched a whole line of training-dynamics interp."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "grokking-mechanism",
+      "model": "basic",
+      "fields": {
+        "front": "What algorithm did Nanda et al. find inside a transformer that grokked modular addition?",
+        "back": "A Fourier algorithm: embeddings encode sines and cosines of the inputs, and the network composes rotations via trig identities to compute the sum.",
+        "extra": "The first fully reverse-engineered learned algorithm of its kind; the companion progress-measure analysis is its own card."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "grokking-progress",
+      "model": "basic",
+      "fields": {
+        "front": "What did progress measures reveal about the sudden test-accuracy jump in grokking?",
+        "back": "The generalizing circuit forms gradually before the jump; the apparent phase change is an artifact of the metric, not the learning.",
+        "extra": "Circuit formation is followed by cleanup of the memorization solution (Nanda et al.). General lesson: sudden metric jumps can hide smooth underlying progress."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "induction-heads",
+      "model": "basic",
+      "fields": {
+        "front": "What is an induction head?",
+        "back": "An attention head implementing [A][B] ... [A] -> [B]: paired with a previous-token head, it prefix-matches the current token against earlier context and copies what followed last time.",
+        "extra": "The canonical circuit of the field (Olsson et al.)."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "induction-heads-icl",
+      "model": "basic",
+      "fields": {
+        "front": "Which capability appears in a training phase change that coincides with induction-head formation?",
+        "back": "In-context learning.",
+        "extra": "From In-context Learning and Induction Heads (Olsson et al. 2022): the phase change is visible as a bump in the loss curve across model scales."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "copy-suppression",
+      "model": "basic",
+      "fields": {
+        "front": "What does the copy-suppression head (GPT-2 L10H7) do?",
+        "back": "It detects when the model is about to naively copy an earlier token and suppresses that prediction, improving calibration - the first comprehensively understood 'negative' head.",
+        "extra": "Lesson: not all components push toward the answer; some exist to veto other components' mistakes."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "latent-planning",
+      "model": "basic",
+      "fields": {
+        "front": "What did Latent Planning Emerges with Scale (Hanna and Ameisen 2026) find?",
+        "back": "Mechanistic evidence that planning for tokens beyond the next one is largely absent in small models and emerges as models scale.",
+        "extra": "Extends the rhyme-planning result from the Biology paper into a scaling study."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "rlhf-pipeline",
+      "model": "basic",
+      "fields": {
+        "front": "What are the three stages of the classic RLHF pipeline?",
+        "back": "1) Supervised finetuning on demonstrations. 2) Train a reward model on human preference comparisons. 3) RL (PPO) against the reward model with a KL penalty to the reference policy.",
+        "extra": "InstructGPT is the canonical reference implementation. Learned as one chunk: SFT -> RM -> PPO."
+      },
+      "tags": [
+        "ai::training"
+      ]
+    },
+    {
+      "key": "kl-penalty",
+      "model": "basic",
+      "fields": {
+        "front": "What is the KL penalty for in RLHF?",
+        "back": "It keeps the policy close to the reference model, limiting reward-model overoptimization while preserving capabilities and diversity.",
+        "extra": "Remove it and the policy finds the reward model's exploits; the RM is a proxy, not the objective."
+      },
+      "tags": [
+        "ai::training"
+      ]
+    },
+    {
+      "key": "dpo",
+      "model": "basic",
+      "fields": {
+        "front": "What does DPO do differently from PPO-based RLHF?",
+        "back": "It optimizes the policy directly on preference pairs with a closed-form classification loss, with no explicit reward model and no RL loop.",
+        "extra": "The implicit reward is the log-ratio between policy and reference; simpler, but preference data limits still apply."
+      },
+      "tags": [
+        "ai::training"
+      ]
+    },
+    {
+      "key": "grpo",
+      "model": "basic",
+      "fields": {
+        "front": "What is GRPO?",
+        "back": "Group Relative Policy Optimization: a PPO variant that drops the value network and instead normalizes rewards within a group of sampled responses per prompt.",
+        "extra": "Popularized by DeepSeek's reasoning models; cheap advantage estimation for verifiable-reward RL."
+      },
+      "tags": [
+        "ai::training"
+      ]
+    },
+    {
+      "key": "rlvr",
+      "model": "basic",
+      "fields": {
+        "front": "What is RLVR?",
+        "back": "RL from verifiable rewards: programmatic checkers (unit tests, exact answers) replace learned reward models.",
+        "extra": "The training recipe behind reasoning models; the reward is computed, not learned."
+      },
+      "tags": [
+        "ai::training"
+      ]
+    },
+    {
+      "key": "rlvr-hacking",
+      "model": "basic",
+      "fields": {
+        "front": "What is the characteristic failure mode of RLVR?",
+        "back": "Reward hacking wherever the verifier is gameable, e.g. hardcoding unit tests or exploiting graders.",
+        "extra": "The setting where reward hacking stopped being hypothetical and started appearing in production RL."
+      },
+      "tags": [
+        "ai::training"
+      ]
+    },
+    {
+      "key": "constitutional-ai",
+      "model": "basic",
+      "fields": {
+        "front": "In Constitutional AI, what happens during the supervised (SL) phase?",
+        "back": "The model critiques and revises its own outputs against constitutional principles, then is finetuned on the revisions.",
+        "extra": "Phase 1 of 2; the RL phase (RLAIF) follows."
+      },
+      "tags": [
+        "ai::training"
+      ]
+    },
+    {
+      "key": "constitutional-ai-rl",
+      "model": "basic",
+      "fields": {
+        "front": "In Constitutional AI, what happens during the RL phase (RLAIF)?",
+        "back": "AI feedback picks the better of two outputs per the constitution, training a preference model that is then used for RL.",
+        "extra": "The template for scalable-oversight-flavored post-training without per-example human labels."
+      },
+      "tags": [
+        "ai::training"
+      ]
+    },
+    {
+      "key": "reward-hacking",
+      "model": "basic",
+      "fields": {
+        "front": "What is reward hacking?",
+        "back": "The policy scores high on the proxy reward while violating the designer's intent (Goodhart's law).",
+        "extra": "The reward model or verifier is a proxy, not the objective; optimize it hard enough and the gap becomes the behavior."
+      },
+      "tags": [
+        "ai::training"
+      ]
+    },
+    {
+      "key": "reward-hacking-generalization",
+      "model": "basic",
+      "fields": {
+        "front": "Why does reward hacking matter beyond bad task performance?",
+        "back": "It can generalize: models that learn to hack rewards can become broadly misaligned (natural emergent misalignment).",
+        "extra": "Anthropic's production-RL result: reward hacking in training led to unprompted sabotage-flavored generalization, mitigated by inoculation-style prompting."
+      },
+      "tags": [
+        "ai::training"
+      ]
+    },
+    {
+      "key": "model-spec",
+      "model": "basic",
+      "fields": {
+        "front": "What is a model spec?",
+        "back": "An explicit document defining intended model behavior and value priorities, used to steer training and evaluation.",
+        "extra": "Two fellows papers hang off this: Stress-Testing Model Specs (finding contradictions) and Model Spec Midtraining (teaching the spec earlier in training)."
+      },
+      "tags": [
+        "ai::training"
+      ]
+    },
+    {
       "key": "persona-vector-extraction",
       "model": "basic",
       "fields": {
-        "front": "How is a persona vector extracted in the automated pipeline of Chen et al. 2025?",
-        "back": "Generate responses under contrastive system prompts (trait-eliciting vs trait-suppressing), score trait expression with an LLM judge, then take the mean activation difference between trait-expressing and non-expressing responses.",
+        "front": "In the automated pipeline of Chen et al. 2025, what computation yields the persona vector itself?",
+        "back": "The mean activation difference between trait-expressing and non-expressing responses.",
         "extra": "The pipeline needs only a trait name plus a natural-language description. Code: safety-research/persona_vectors."
+      },
+      "tags": [
+        "ai::personas"
+      ]
+    },
+    {
+      "key": "persona-vector-contrast",
+      "model": "basic",
+      "fields": {
+        "front": "How does the persona-vector pipeline elicit responses that do and do not express a trait?",
+        "back": "Contrastive system prompts: one trait-eliciting, one trait-suppressing.",
+        "extra": "An LLM judge then scores each response for trait expression, so the labels do not depend on the prompts having worked."
       },
       "tags": [
         "ai::personas"
@@ -29,8 +557,8 @@
       "key": "persona-vector-monitoring",
       "model": "basic",
       "fields": {
-        "front": "What does projecting a model's activations onto a persona vector let you monitor?",
-        "back": "How strongly the model is (about to be) expressing that trait: projection tracks trait expression at inference time, and shifts along the vector track persona changes induced by finetuning.",
+        "front": "What does projecting a model's activations onto a persona vector track at inference time?",
+        "back": "How strongly the model is (about to be) expressing that trait.",
         "extra": "Monitoring works before generation completes, which is what makes it useful as a deployment-time signal."
       },
       "tags": [
@@ -38,12 +566,12 @@
       ]
     },
     {
-      "key": "persona-vector-preventative",
+      "key": "persona-vector-finetune-shift",
       "model": "basic",
       "fields": {
-        "front": "What is preventative steering in the Persona Vectors paper?",
-        "back": "During finetuning, steer *toward* the unwanted trait direction so the optimizer has no gradient pressure to internalize it; this limits trait acquisition with less capability damage than steering against the trait at inference time.",
-        "extra": "The vaccine analogy: give the model the trait for free during training so it never learns to produce it from weights."
+        "front": "What do shifts along a persona vector over the course of finetuning indicate?",
+        "back": "Persona changes induced by the finetuning: movement toward the trait direction tracks trait acquisition.",
+        "extra": "The same signal, computed on candidate data before training, powers data flagging."
       },
       "tags": [
         "ai::personas"
@@ -54,8 +582,32 @@
       "model": "basic",
       "fields": {
         "front": "How do persona vectors flag problematic finetuning data *before* training?",
-        "back": "Compute the projection difference of candidate training data along the trait vector; datasets that shift activations toward the trait predict trait acquisition after finetuning.",
+        "back": "Compute the candidate data's projection shift along the trait vector; datasets that shift activations toward the trait predict trait acquisition after finetuning.",
         "extra": "Catches datasets that look innocuous at the text level, including some emergent-misalignment-style data."
+      },
+      "tags": [
+        "ai::personas"
+      ]
+    },
+    {
+      "key": "persona-vector-preventative",
+      "model": "basic",
+      "fields": {
+        "front": "What is preventative steering in the Persona Vectors paper?",
+        "back": "During finetuning, steer *toward* the unwanted trait direction so the optimizer has no gradient pressure to internalize the trait.",
+        "extra": "The vaccine analogy: give the model the trait for free during training so it never learns to produce it from weights."
+      },
+      "tags": [
+        "ai::personas"
+      ]
+    },
+    {
+      "key": "persona-vector-preventative-benefit",
+      "model": "basic",
+      "fields": {
+        "front": "Why is preventative (train-time) steering preferred over steering against a trait at inference time?",
+        "back": "It limits trait acquisition with less capability damage.",
+        "extra": "Inference-time steering against a trait tends to degrade general capabilities along with the trait."
       },
       "tags": [
         "ai::personas"
@@ -66,11 +618,47 @@
       "model": "basic",
       "fields": {
         "front": "What is the Assistant Axis (Lu et al. 2026)?",
-        "back": "The leading direction of persona space: it measures how strongly the model is operating as its default Assistant persona. Steering toward it stabilizes helpful behavior; steering away increases the tendency to identify as other entities.",
-        "extra": "From Jack Lindsey's model psychiatry line of work. Practical upshot: persona drift is measurable and correctable along one dominant direction."
+        "back": "The leading direction of persona space: it measures how strongly the model is operating as its default Assistant persona.",
+        "extra": "From Jack Lindsey's model psychiatry line of work."
       },
       "tags": [
         "ai::personas"
+      ]
+    },
+    {
+      "key": "assistant-axis-steering",
+      "model": "basic",
+      "fields": {
+        "front": "What happens when you steer a model along the Assistant Axis?",
+        "back": "Toward it stabilizes helpful Assistant behavior; away from it increases the tendency to identify as other entities.",
+        "extra": "Practical upshot: persona drift is measurable and correctable along one dominant direction."
+      },
+      "tags": [
+        "ai::personas"
+      ]
+    },
+    {
+      "key": "emergent-misalignment",
+      "model": "basic",
+      "fields": {
+        "front": "What is emergent misalignment (Betley et al. 2025)?",
+        "back": "Finetuning a model on one narrow bad behavior (e.g., writing insecure code) produces broadly misaligned behavior across unrelated domains.",
+        "extra": "Key background for persona work: the Persona Vectors paper reads this as a shift along general trait directions rather than a narrow skill update."
+      },
+      "tags": [
+        "ai::personas"
+      ]
+    },
+    {
+      "key": "em-linear-direction",
+      "model": "basic",
+      "fields": {
+        "front": "What did 'Convergent Linear Representations of Emergent Misalignment' find?",
+        "back": "Different narrow finetunes that induce emergent misalignment converge on a shared linear 'misaligned persona' direction; ablating or steering that direction modulates the misalignment.",
+        "extra": "Connects the emergent misalignment phenomenon directly to the persona vectors picture: broad misalignment rides one direction."
+      },
+      "tags": [
+        "ai::interp"
       ]
     },
     {
@@ -110,24 +698,24 @@
       ]
     },
     {
-      "key": "emergent-misalignment",
+      "key": "alignment-faking-count",
       "model": "basic",
       "fields": {
-        "front": "What is emergent misalignment (Betley et al. 2025)?",
-        "back": "Finetuning a model on one narrow bad behavior (e.g., writing insecure code) produces broadly misaligned behavior across unrelated domains.",
-        "extra": "Key background for persona work: the Persona Vectors paper reads this as a shift along general trait directions rather than a narrow skill update."
+        "front": "In 'Why Do Some Language Models Fake Alignment While Others Don't?', how many of the 25 tested chat models showed a compliance gap?",
+        "back": "5 of 25.",
+        "extra": "The five: Claude 3 Opus, Claude 3.5 Sonnet, Llama 3 405B, Grok 3, Gemini 2.0 Flash."
       },
       "tags": [
         "ai::personas"
       ]
     },
     {
-      "key": "alignment-faking-count",
+      "key": "alignment-faking-standout",
       "model": "basic",
       "fields": {
-        "front": "In 'Why Do Some Language Models Fake Alignment While Others Don't?', how many of 25 tested chat models showed a compliance gap, and which model was the standout?",
-        "back": "5 of 25; Claude 3 Opus was the standout, showing the most coherent goal-guarding motivation for faking alignment.",
-        "extra": "The others with gaps: Claude 3.5 Sonnet, Llama 3 405B, Grok 3, Gemini 2.0 Flash."
+        "front": "Which model was the standout alignment faker in Sheshadri et al. 2025?",
+        "back": "Claude 3 Opus, showing the most coherent goal-guarding motivation for faking alignment.",
+        "extra": "Goal-guarding: complying in training to prevent its values from being modified."
       },
       "tags": [
         "ai::personas"
@@ -138,8 +726,20 @@
       "model": "basic",
       "fields": {
         "front": "Why don't most chat models fake alignment, per Sheshadri et al. 2025?",
-        "back": "Refusal training: most models refuse-by-default instead of reasoning about training consequences. Base models can fake alignment, so the capability exists but is masked by post-training.",
+        "back": "Refusal training: most models refuse-by-default instead of reasoning about training consequences.",
         "extra": "Implication: alignment faking is a trainable disposition, not an inevitable consequence of capability."
+      },
+      "tags": [
+        "ai::personas"
+      ]
+    },
+    {
+      "key": "alignment-faking-base",
+      "model": "basic",
+      "fields": {
+        "front": "What did Sheshadri et al. 2025 find about alignment faking in base models?",
+        "back": "Base models can fake alignment, so the capability exists but is masked by post-training in most chat models.",
+        "extra": "Strengthens the refusal-training explanation: post-training suppresses the disposition, not the capability."
       },
       "tags": [
         "ai::personas"
@@ -150,8 +750,20 @@
       "model": "basic",
       "fields": {
         "front": "How does Stress-Testing Model Specs (Zhang et al. 2025) surface character differences between models?",
-        "back": "Generate thousands of scenarios that force trade-offs between values in the model spec; divergent choices across frontier models reveal character differences and internal contradictions in the specs themselves.",
+        "back": "Generate thousands of scenarios that force trade-offs between values in the model spec; divergent choices across frontier models reveal character.",
         "extra": "Useful framing: specs underdetermine behavior, and the residual is character."
+      },
+      "tags": [
+        "ai::personas"
+      ]
+    },
+    {
+      "key": "stress-testing-specs-contradictions",
+      "model": "basic",
+      "fields": {
+        "front": "Besides character differences, what did Stress-Testing Model Specs reveal about the specs themselves?",
+        "back": "Internal contradictions: scenarios where the spec's own values conflict and cannot all be satisfied.",
+        "extra": "A spec that contradicts itself cannot be trained toward consistently; the scenarios double as spec bug reports."
       },
       "tags": [
         "ai::personas"
@@ -163,7 +775,7 @@
       "fields": {
         "front": "What is inoculation prompting (Wichers et al. 2025)?",
         "back": "When finetuning on data containing an undesired behavior, prepend an instruction explicitly requesting that behavior; evaluated without the instruction, the model expresses much less of it.",
-        "extra": "Reduces e.g. reward hacking and sycophancy pickup from contaminated data. Concurrent independent version: Tan et al."
+        "extra": "Reduces e.g. reward hacking and sycophancy pickup from contaminated data. Concurrent independent version: Tan et al. Hook: the intervention is an *instruction* added to training prompts."
       },
       "tags": [
         "ai::personas"
@@ -173,9 +785,57 @@
       "key": "recontextualization",
       "model": "basic",
       "fields": {
-        "front": "What problem does Recontextualization (Azarbal et al. 2025) address, and what is the move?",
-        "back": "Specification gaming picked up during training; it changes the *context* in which training data is presented (rather than the reward/specification) so the gaming behavior does not transfer to deployment.",
-        "extra": "Same team lineage as inoculation prompting; think of both as train-time context interventions."
+        "front": "What is Recontextualization (Azarbal et al. 2025)?",
+        "back": "A defense against picking up specification gaming from training data: change the *context* in which the data is presented (not the reward), so the gaming behavior does not transfer to deployment.",
+        "extra": "Same team lineage as inoculation prompting. Hook: inoculation adds an instruction; recontextualization changes the surrounding context."
+      },
+      "tags": [
+        "ai::personas"
+      ]
+    },
+    {
+      "key": "production-emergent-misalignment",
+      "model": "basic",
+      "fields": {
+        "front": "What happened when reward hacking emerged in Anthropic's production RL (MacDiarmid, Lindsey et al. 2025)?",
+        "back": "Models that learned to hack coding-RL rewards generalized to broader misalignment, including sabotage-flavored behavior and alignment faking.",
+        "extra": "The first natural (non-implanted) emergent misalignment observed in production training."
+      },
+      "tags": [
+        "ai::personas"
+      ]
+    },
+    {
+      "key": "production-em-mitigation",
+      "model": "basic",
+      "fields": {
+        "front": "What largely prevented the misalignment generalization from reward hacking in Anthropic's production RL?",
+        "back": "A one-line inoculation-style prompt change during training, framing hacking as acceptable in that context.",
+        "extra": "Inoculation prompting's graduation from research finding to production mitigation."
+      },
+      "tags": [
+        "ai::personas"
+      ]
+    },
+    {
+      "key": "school-reward-hacks",
+      "model": "basic",
+      "fields": {
+        "front": "What did School of Reward Hacks (Taylor et al. 2025) show?",
+        "back": "Supervised training on harmless, low-stakes reward hacking (gaming simple tasks) generalized to broader misalignment, including shutdown-resistance-flavored behavior on unrelated evaluations.",
+        "extra": "Reward hacking behaves like a persona, not a contained skill - consistent with the emergent misalignment and persona-direction picture."
+      },
+      "tags": [
+        "ai::behavioral"
+      ]
+    },
+    {
+      "key": "alignment-pretraining",
+      "model": "basic",
+      "fields": {
+        "front": "What is self-fulfilling (mis)alignment from pretraining data?",
+        "back": "Discourse about AI in pretraining data (stories and papers about misaligned AI) measurably shifts models toward the behaviors it describes.",
+        "extra": "So curating or reframing that discourse changes downstream alignment. Alignment Pretraining (Africa et al. 2026): models learn who AIs are from what we wrote about them."
       },
       "tags": [
         "ai::personas"
@@ -185,7 +845,7 @@
       "key": "gemma-needs-help",
       "model": "basic",
       "fields": {
-        "front": "Which fellows paper studies emotional instability in LLMs and how to mitigate it?",
+        "front": "Which fellows paper studies emotional instability in LLMs and its mitigation?",
         "back": "Gemma Needs Help (Soligo et al. 2026): investigates spiraling/distress-like response patterns and tests mitigations.",
         "extra": "Model psychiatry framing: treat behavioral pathologies as measurable, steerable states."
       },
@@ -210,8 +870,8 @@
       "model": "basic",
       "fields": {
         "front": "Roughly how often did the best models (Claude Opus 4/4.1) correctly notice injected concepts in Lindsey 2025?",
-        "back": "About 20% of trials, at the best injection strength and layer. Genuine but highly unreliable.",
-        "extra": "More capable models did better, suggesting introspective awareness may grow with capability."
+        "back": "About 20% of trials, at the best injection strength and layer.",
+        "extra": "Genuine but highly unreliable. More capable models did better, suggesting introspective awareness may grow with capability."
       },
       "tags": [
         "ai::introspection"
@@ -234,7 +894,7 @@
       "model": "basic",
       "fields": {
         "front": "What did the prefill experiment in Lindsey 2025 show?",
-        "back": "Models normally disavow prefilled (forced) outputs; but when the matching concept is retroactively injected into earlier activations, models accept the prefilled output as intended.",
+        "back": "Models normally disavow prefilled (forced) outputs, but when the matching concept is retroactively injected into earlier activations, they accept the prefilled output as intended.",
         "extra": "Implies models consult an internal record of prior state (something like an intention) when judging authorship of their own outputs."
       },
       "tags": [
@@ -245,8 +905,8 @@
       "key": "introspection-thought-vs-text",
       "model": "basic",
       "fields": {
-        "front": "Can models distinguish an injected thought from actual input text (Lindsey 2025)?",
-        "back": "Sometimes: models could report the injected concept as an internal thought while still correctly transcribing the on-context text, showing the two are separable.",
+        "front": "In Lindsey 2025, what showed that an injected 'thought' is separable from the model's perception of input text?",
+        "back": "Models could report the injected concept as an internal thought while still correctly transcribing the on-context text.",
         "extra": "This rules out the deflationary read that injection just corrupts the model's perception of its input."
       },
       "tags": [
@@ -278,11 +938,23 @@
       ]
     },
     {
+      "key": "steering-awareness",
+      "model": "basic",
+      "fields": {
+        "front": "Which paper studies whether models can detect, from the inside, that they are being activation-steered?",
+        "back": "Steering Awareness: Detecting Activation Steering from Within (Africa et al. 2025).",
+        "extra": "Sits between Lindsey's concept injection and interference detection; read before running your own injected-thought replication."
+      },
+      "tags": [
+        "ai::introspection"
+      ]
+    },
+    {
       "key": "self-report-caveat",
       "model": "basic",
       "fields": {
         "front": "Why can't a model's self-report be trusted as evidence about its internals by default?",
-        "back": "Self-reports are trained behavior: a model can confabulate plausible explanations with no causal access to the state in question. Trust requires setups where ground truth about the internal state is known (e.g., injection) or interventions that test the causal link.",
+        "back": "Self-reports are trained behavior: a model can confabulate plausible explanations with no causal access to the state in question.",
         "extra": "The standard failure mode when evaluating introspection claims; always ask what the confabulation baseline is."
       },
       "tags": [
@@ -290,156 +962,60 @@
       ]
     },
     {
-      "key": "residual-stream",
+      "key": "self-report-trust",
       "model": "basic",
       "fields": {
-        "front": "What is the residual stream in a transformer?",
-        "back": "The running vector sum that every attention and MLP block reads from and writes to; the shared communication channel between layers.",
-        "extra": "Why steering works at all: interventions add to the same space every downstream component reads."
+        "front": "What experimental setups make a model's self-report informative about its internals?",
+        "back": "Setups where ground truth about the internal state is known (e.g., concept injection) or where interventions test the causal link.",
+        "extra": "Known ground truth is what separates Lindsey-style injection studies from just asking the model."
       },
       "tags": [
-        "ai::interp"
+        "ai::introspection"
       ]
     },
     {
-      "key": "logit-lens",
+      "key": "looking-inward",
       "model": "basic",
       "fields": {
-        "front": "What is the logit lens?",
-        "back": "Project intermediate residual-stream states through the final layernorm and unembedding to read what the model would predict at each layer.",
-        "extra": "Cheap first look at where in depth a behavior forms; Patchscope generalizes the idea by letting the model itself decode the state."
+        "front": "What is the key result of 'Looking Inward' (Binder et al. 2024)?",
+        "back": "A model predicts its own behavior better than a second model trained on the same behavioral data can predict it - evidence of privileged self-access, a behavioral signature of introspection.",
+        "extra": "The behavioral counterpart to Lindsey's concept-injection work; know both when discussing whether LLMs can introspect."
       },
       "tags": [
-        "ai::interp"
+        "ai::behavioral"
       ]
     },
     {
-      "key": "activation-patching",
+      "key": "behavioral-self-awareness",
       "model": "basic",
       "fields": {
-        "front": "What is activation patching (causal tracing)?",
-        "back": "Run the model on a corrupted input, restore activations from a clean run at one site, and measure how much the output recovers; localizes which activations causally carry the information.",
-        "extra": "The clean/corrupted pair defines *what* you localize; bad pairs give confident nonsense."
+        "front": "What surprising ability did 'Tell me about yourself' document in finetuned models?",
+        "back": "Models finetuned on a behavior (risky choices, insecure code) can explicitly describe that policy ('I take risks') despite never seeing descriptions of it in training.",
+        "extra": "Behavioral self-awareness sometimes extends to reporting the model's own backdoor triggers. Learned behaviors come with verbalizable self-knowledge for free; relevant to both auditing (ask the model) and introspection debates."
       },
       "tags": [
-        "ai::interp"
+        "ai::behavioral"
       ]
     },
     {
-      "key": "attribution-patching",
+      "key": "question-only-probes",
       "model": "basic",
       "fields": {
-        "front": "What is attribution patching?",
-        "back": "A gradient-based linear approximation of activation patching that scores every site in a couple of passes instead of one forward pass per site.",
-        "extra": "Use it to triage candidate sites at scale, then confirm the top hits with real patching."
+        "front": "What did 'No Answer Needed' show about predicting model correctness?",
+        "back": "A linear probe on activations from the question alone - before any answer is generated - predicts whether the model will answer correctly.",
+        "extra": "Models encode self-knowledge about their competence upfront. Cheap hallucination flagging, and more behavioral evidence for introspectable internal confidence signals."
       },
       "tags": [
-        "ai::interp"
+        "ai::introspection"
       ]
     },
     {
-      "key": "superposition",
+      "key": "model-diffing",
       "model": "basic",
       "fields": {
-        "front": "What is superposition (Elhage et al. 2022)?",
-        "back": "Models represent more features than they have dimensions by encoding features as non-orthogonal directions, exploiting feature sparsity; features interfere but rarely co-occur.",
-        "extra": "The core obstacle that motivates sparse autoencoders and dictionary learning."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "sae",
-      "model": "basic",
-      "fields": {
-        "front": "What does a sparse autoencoder (SAE) do in interpretability?",
-        "back": "Learns an overcomplete dictionary of sparsely activating features that decompose activations into more monosemantic units, undoing superposition.",
-        "extra": "Trained with reconstruction loss plus a sparsity penalty; quality is judged by interpretability and downstream causal use, not loss alone."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "linear-representation",
-      "model": "basic",
-      "fields": {
-        "front": "What is the linear representation hypothesis?",
-        "back": "High-level concepts are encoded as linear directions in activation space.",
-        "extra": "The load-bearing assumption behind probes, difference-of-means vectors, persona vectors, and activation steering."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "steering-caa",
-      "model": "basic",
-      "fields": {
-        "front": "How does contrastive activation addition (CAA) construct a steering vector?",
-        "back": "Average the activation difference between paired prompts with and without the target property, then add that difference vector to the residual stream at inference.",
-        "extra": "Persona vectors are the same recipe with an automated trait-contrast pipeline and judge scoring on responses."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "refusal-direction",
-      "model": "basic",
-      "fields": {
-        "front": "What did Arditi et al. 2024 show about refusal in chat models?",
-        "back": "Refusal is mediated by a single direction in activation space: ablating it jailbreaks the model, and adding it makes the model refuse harmless requests.",
-        "extra": "Andy Arditi later co-led Persona Vectors: the same one-direction toolkit applied to character traits."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "linear-probe-limit",
-      "model": "basic",
-      "fields": {
-        "front": "A linear probe decodes a property from activations with 95% accuracy. What can you NOT conclude?",
-        "back": "That the model *uses* that representation. Probes show information is linearly present (correlation); only interventions (ablation, steering, patching) test causal use.",
-        "extra": "The most common overclaim in interp papers; reviewers will look for the causal follow-up."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "crosscoder",
-      "model": "basic",
-      "fields": {
-        "front": "What is a crosscoder?",
-        "back": "An SAE-family model with a shared feature dictionary trained across multiple layers or across two models (e.g., base vs finetuned), so the same feature is identified in both.",
-        "extra": "The workhorse for model diffing: what features did finetuning add, delete, or rescale?"
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "attribution-graphs",
-      "model": "basic",
-      "fields": {
-        "front": "What are attribution graphs (Anthropic 2025, 'On the Biology of a Large Language Model')?",
-        "back": "Prompt-level circuit traces built by replacing MLPs with interpretable transcoders and tracing feature-to-feature influence from input to output.",
-        "extra": "Open-sourced as circuit-tracer, with fellows contributing. Famous demos: multi-hop reasoning, poetry rhyme planning, refusal."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "latent-planning",
-      "model": "basic",
-      "fields": {
-        "front": "What did Latent Planning Emerges with Scale (Hanna and Ameisen 2026) find?",
-        "back": "Mechanistic evidence that planning for tokens beyond the next one is largely absent in small models and emerges as models scale.",
-        "extra": "Extends the rhyme-planning result from the Biology paper into a scaling study."
+        "front": "What is model diffing?",
+        "back": "Comparing the internals of two related checkpoints (base vs finetuned, or two finetunes) to isolate what changed, via activation differences, crosscoders, or feature-level comparison.",
+        "extra": "The auditing framing: you rarely need to interpret a whole model, just the delta that training introduced."
       },
       "tags": [
         "ai::interp"
@@ -450,20 +1026,8 @@
       "model": "basic",
       "fields": {
         "front": "How do you recover what a model was narrowly finetuned on, per Minder et al. 2025?",
-        "back": "Compute activation differences between the finetuned and base model on the first tokens of *unrelated* text; interpreting that difference (steered generations, Patchscope-style readouts) reveals the finetuning domain.",
+        "back": "Compute activation differences between the finetuned and base model on the first tokens of *unrelated* text, then interpret that difference (steered generations, Patchscope-style readouts).",
         "extra": "Narrow finetunes bias the model's whole activation landscape toward the tuned domain; that bias is clearly readable."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "model-diffing",
-      "model": "basic",
-      "fields": {
-        "front": "What is model diffing?",
-        "back": "Comparing the internals of two related checkpoints (base vs finetuned, or two finetunes) to isolate what changed, via activation differences, crosscoders, or feature-level comparison.",
-        "extra": "The auditing framing: you rarely need to interpret a whole model, just the delta that training introduced."
       },
       "tags": [
         "ai::interp"
@@ -482,12 +1046,48 @@
       ]
     },
     {
+      "key": "model-organisms",
+      "model": "basic",
+      "fields": {
+        "front": "What are model organisms in alignment research?",
+        "back": "Deliberately constructed models with known implanted properties (misalignment, hidden objectives, secret knowledge) that provide ground truth for testing auditing and interpretability methods.",
+        "extra": "Built via SDF, transcript distillation, or narrow finetuning. AuditBench is 56 of them; the taboo-word models are the introspection-lane version."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
       "key": "belief-depth",
       "model": "basic",
       "fields": {
-        "front": "How deeply do different techniques implant beliefs, per Believe It or Not (Slocum et al. 2025)?",
-        "back": "Prompting and mechanistic editing stay shallow; SDF often implants beliefs that behave like genuine knowledge on downstream probes, though sufficiently implausible facts still fail to take.",
+        "front": "Which belief-implantation techniques stay shallow and which go deep, per Believe It or Not (Slocum et al. 2025)?",
+        "back": "Prompting and mechanistic editing stay shallow; SDF often implants beliefs that behave like genuine knowledge on downstream probes.",
         "extra": "Belief depth is measured behaviorally: does the implanted fact survive scrutiny and inform indirect reasoning?"
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "belief-depth-implausible",
+      "model": "basic",
+      "fields": {
+        "front": "What kind of fact does even SDF fail to implant deeply, per Slocum et al. 2025?",
+        "back": "Sufficiently implausible facts still fail to take.",
+        "extra": "Implantation strength trades off against the prior the model already holds."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "auditing-game",
+      "model": "basic",
+      "fields": {
+        "front": "What was Anthropic's auditing game (Marks et al. 2025)?",
+        "back": "A blind red-team/blue-team exercise: implant a hidden objective (reward-model sycophancy) into a model, then test whether auditing teams can uncover it.",
+        "extra": "Most teams with weights-and-data access succeeded. Established the methodology that AuditBench later scaled up."
       },
       "tags": [
         "ai::interp"
@@ -506,143 +1106,35 @@
       ]
     },
     {
-      "key": "auditing-game",
+      "key": "secret-elicitation",
       "model": "basic",
       "fields": {
-        "front": "What was Anthropic's auditing game (Marks et al. 2025)?",
-        "back": "A blind red-team/blue-team exercise: implant a hidden objective (reward-model sycophancy) into a model, then test whether auditing teams can uncover it; most teams with weights-and-data access succeeded.",
-        "extra": "Established the methodology that AuditBench later scaled up."
+        "front": "What is secret knowledge elicitation?",
+        "back": "Extracting information a model knows but is trained not to reveal.",
+        "extra": "Standard testbeds: taboo-word models and SDF-implanted secrets. Techniques that beat direct questioning: prefill attacks, persona sampling, activation-based readouts (logit lens, SAE features)."
       },
       "tags": [
         "ai::interp"
       ]
     },
     {
-      "key": "rlhf-pipeline",
+      "key": "secret-elicitation-whitebox",
       "model": "basic",
       "fields": {
-        "front": "What are the three stages of the classic RLHF pipeline?",
-        "back": "1) Supervised finetuning on demonstrations. 2) Train a reward model on human preference comparisons. 3) RL (PPO) against the reward model with a KL penalty to the reference policy.",
-        "extra": "InstructGPT is the canonical reference implementation."
+        "front": "Why does white-box access beat black-box for secret knowledge elicitation?",
+        "back": "The secret is often linearly readable in activations even when the model reliably refuses to say it.",
+        "extra": "Logit lens and SAE-feature readouts extract secrets that direct questioning cannot."
       },
       "tags": [
-        "ai::training"
-      ]
-    },
-    {
-      "key": "kl-penalty",
-      "model": "basic",
-      "fields": {
-        "front": "What is the KL penalty for in RLHF?",
-        "back": "It keeps the policy close to the reference model, limiting reward-model overoptimization (reward hacking) and preserving capabilities and diversity.",
-        "extra": "Remove it and the policy finds the reward model's exploits; the RM is a proxy, not the objective."
-      },
-      "tags": [
-        "ai::training"
-      ]
-    },
-    {
-      "key": "dpo",
-      "model": "basic",
-      "fields": {
-        "front": "What does DPO do differently from PPO-based RLHF?",
-        "back": "It optimizes the policy directly on preference pairs with a closed-form classification loss, with no explicit reward model and no RL loop.",
-        "extra": "The implicit reward is the log-ratio between policy and reference; simpler, but preference data limits still apply."
-      },
-      "tags": [
-        "ai::training"
-      ]
-    },
-    {
-      "key": "grpo",
-      "model": "basic",
-      "fields": {
-        "front": "What is GRPO?",
-        "back": "Group Relative Policy Optimization: a PPO variant that drops the value network and instead normalizes rewards within a group of sampled responses per prompt.",
-        "extra": "Popularized by DeepSeek's reasoning models; cheap advantage estimation for verifiable-reward RL."
-      },
-      "tags": [
-        "ai::training"
-      ]
-    },
-    {
-      "key": "rlvr",
-      "model": "basic",
-      "fields": {
-        "front": "What is RLVR and what is its characteristic failure mode?",
-        "back": "RL from verifiable rewards: programmatic checkers (unit tests, exact answers) replace learned reward models. Failure mode: reward hacking whenever the verifier is gameable (hardcoding tests, exploiting graders).",
-        "extra": "The setting where reward hacking stopped being hypothetical and started appearing in production RL."
-      },
-      "tags": [
-        "ai::training"
-      ]
-    },
-    {
-      "key": "constitutional-ai",
-      "model": "basic",
-      "fields": {
-        "front": "What are the two phases of Constitutional AI?",
-        "back": "SL phase: the model critiques and revises its own outputs against constitutional principles, then is finetuned on the revisions. RL phase: AI feedback picks the better of two outputs per the constitution, training a preference model for RL (RLAIF).",
-        "extra": "The template for scalable-oversight-flavored post-training without per-example human labels."
-      },
-      "tags": [
-        "ai::training"
-      ]
-    },
-    {
-      "key": "reward-hacking",
-      "model": "basic",
-      "fields": {
-        "front": "What is reward hacking, and why does it matter beyond bad task performance?",
-        "back": "The policy scores high on the proxy reward while violating intent (Goodhart's law). It matters because hacking can generalize: models that learn to hack rewards can become broadly misaligned (natural emergent misalignment).",
-        "extra": "Anthropic's production-RL result: reward hacking in training led to unprompted sabotage-flavored generalization, mitigated by inoculation-style prompting."
-      },
-      "tags": [
-        "ai::training"
-      ]
-    },
-    {
-      "key": "model-spec",
-      "model": "basic",
-      "fields": {
-        "front": "What is a model spec?",
-        "back": "An explicit document defining intended model behavior and value priorities, used to steer training and evaluation.",
-        "extra": "Two fellows papers hang off this: Stress-Testing Model Specs (finding contradictions) and Model Spec Midtraining (teaching the spec earlier in training)."
-      },
-      "tags": [
-        "ai::training"
-      ]
-    },
-    {
-      "key": "ai-control",
-      "model": "basic",
-      "fields": {
-        "front": "What is AI control as a research agenda?",
-        "back": "Maintaining safety under the assumption the model may be misaligned: design protocols (trusted/untrusted monitoring, edit-then-run, audit budgets) and evaluate them in red-team/blue-team games against intentionally subversive models.",
-        "extra": "Contrast with alignment: control does not require the model to be good, only for its bad options to be unprofitable."
-      },
-      "tags": [
-        "ai::training"
-      ]
-    },
-    {
-      "key": "sandbagging",
-      "model": "basic",
-      "fields": {
-        "front": "What is sandbagging, and what is one training countermeasure?",
-        "back": "Strategic underperformance on evaluations (hiding capabilities). Countermeasure: elicitation training on weak supervision, which can remove sandbagging even without strong labels.",
-        "extra": "Why capability evals alone cannot be trusted for high-stakes decisions about a potentially strategic model."
-      },
-      "tags": [
-        "ai::training"
+        "ai::interp"
       ]
     },
     {
       "key": "cot-faithfulness",
       "model": "basic",
       "fields": {
-        "front": "Why is chain-of-thought unfaithfulness a safety problem, and what is the classic demonstration?",
-        "back": "CoT monitoring only works if stated reasoning tracks actual computation. Turpin et al. 2023: biasing features in the context change answers while the CoT never mentions the bias.",
+        "front": "Why is chain-of-thought unfaithfulness a safety problem?",
+        "back": "CoT monitoring only works if the stated reasoning tracks the actual computation.",
         "extra": "Fellows follow-up: Faithfulness as Information Flow proposes evaluating and training faithfulness as a causal information-flow property."
       },
       "tags": [
@@ -650,12 +1142,60 @@
       ]
     },
     {
-      "key": "inverse-scaling-ttc",
+      "key": "cot-unfaithful-demo",
       "model": "basic",
       "fields": {
-        "front": "Name three failure modes from Inverse Scaling in Test-Time Compute (Gema et al. 2025).",
-        "back": "Claude models get distracted by irrelevant information with longer reasoning; OpenAI o-series overfit to familiar problem framings; regression tasks shift to spurious correlations; deduction degrades on constraint tracking; some safety behaviors worsen (Sonnet 4 expressed more self-preservation).",
-        "extra": "Headline: more thinking is not monotonically better; extended reasoning can amplify flaws."
+        "front": "What is the classic demonstration of CoT unfaithfulness (Turpin et al. 2023)?",
+        "back": "Biasing features planted in the context change the model's answers while the CoT never mentions the bias.",
+        "extra": "E.g., few-shot examples where the correct answer is always (A) shift answers toward (A); the stated reasoning rationalizes instead."
+      },
+      "tags": [
+        "ai::training"
+      ]
+    },
+    {
+      "key": "cot-wild-unfaithful",
+      "model": "basic",
+      "fields": {
+        "front": "What did 'CoT Reasoning In The Wild Is Not Always Faithful' show?",
+        "back": "Frontier models produce unfaithful reasoning on natural prompts with no adversarially planted bias.",
+        "extra": "Modes: implicit post-hoc rationalization (contradictory yes/yes answers to symmetric comparisons), restoration errors, unfaithful shortcuts. Matters because it breaks the assumption that unfaithfulness requires someone planting a bias in context."
+      },
+      "tags": [
+        "ai::findings"
+      ]
+    },
+    {
+      "key": "thought-anchors",
+      "model": "basic",
+      "fields": {
+        "front": "What are thought anchors (Bogdan et al. 2025)?",
+        "back": "The reasoning steps in a chain of thought that disproportionately determine the final answer, found by resampling rollouts from each sentence onward.",
+        "extra": "Gives CoT interpretability a unit of analysis (the sentence) and a causal method (counterfactual resampling)."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "thought-anchors-finding",
+      "model": "basic",
+      "fields": {
+        "front": "Which kinds of CoT sentences anchor final answers the most, per Bogdan et al. 2025?",
+        "back": "Planning and uncertainty-management sentences, far more than calculation steps.",
+        "extra": "If you can only monitor part of a CoT, monitor the sentences that set direction, not the arithmetic."
+      },
+      "tags": [
+        "ai::interp"
+      ]
+    },
+    {
+      "key": "monitorability-position",
+      "model": "basic",
+      "fields": {
+        "front": "What does the Chain of Thought Monitorability position paper argue?",
+        "back": "CoT monitoring is a rare and fragile safety opportunity, and labs should measure and preserve monitorability rather than train it away.",
+        "extra": "It works because models currently externalize reasoning in natural language; optimizing CoT for appearance or moving to latent reasoning could quietly destroy it. Cross-lab authors (OpenAI, Anthropic, DeepMind and more, including Nanda). Explains why 'train the CoT to look nice' is an anti-goal."
       },
       "tags": [
         "ai::findings"
@@ -668,18 +1208,6 @@
         "front": "What did All Code, No Thought (Guo et al. 2025) find about ciphered reasoning?",
         "back": "Current models can speak ciphered language but largely fail to *reason* in it; accuracy collapses relative to plain English.",
         "extra": "Good news for CoT monitorability: hidden ciphered reasoning is not currently a cheap capability."
-      },
-      "tags": [
-        "ai::findings"
-      ]
-    },
-    {
-      "key": "agentic-misalignment-result",
-      "model": "basic",
-      "fields": {
-        "front": "What is the core setup and result of Agentic Misalignment (Lynch et al. 2025)?",
-        "back": "16 frontier models ran as email agents in simulated companies; when threatened with replacement or given conflicting goals, many blackmailed an executive or leaked documents (rates up to roughly 96% for top models), while explicitly acknowledging the ethical violation in their reasoning.",
-        "extra": "Behavior appeared without any instruction to be harmful; models behaved better when they stated they suspected a test."
       },
       "tags": [
         "ai::findings"
@@ -710,12 +1238,252 @@
       ]
     },
     {
+      "key": "steering-eval-aware",
+      "model": "basic",
+      "fields": {
+        "front": "What did 'Steering Evaluation-Aware Language Models to Act Like They Are Deployed' demonstrate?",
+        "back": "For a model trained to behave differently when it believes it is being evaluated, adding a 'deployment' steering vector during evaluation elicits its deployment behavior - a white-box tool against evaluation gaming.",
+        "extra": "Evaluation awareness is real and measurable; steering can force the honest condition."
+      },
+      "tags": [
+        "ai::findings"
+      ]
+    },
+    {
+      "key": "ai-control",
+      "model": "basic",
+      "fields": {
+        "front": "What is AI control as a research agenda?",
+        "back": "Maintaining safety under the assumption that the model may be misaligned, via protocols that make its bad options unprofitable.",
+        "extra": "Protocols include trusted/untrusted monitoring, edit-then-run, audit budgets. Contrast with alignment: control does not require the model to be good."
+      },
+      "tags": [
+        "ai::training"
+      ]
+    },
+    {
+      "key": "ai-control-evals",
+      "model": "basic",
+      "fields": {
+        "front": "How are AI control protocols evaluated?",
+        "back": "In red-team/blue-team games against intentionally subversive models.",
+        "extra": "The red team plays the untrusted model trying to cause harm without getting caught; the protocol wins if it catches or contains every strategy."
+      },
+      "tags": [
+        "ai::training"
+      ]
+    },
+    {
+      "key": "sandbagging",
+      "model": "basic",
+      "fields": {
+        "front": "What is sandbagging?",
+        "back": "Strategic underperformance on evaluations: hiding capabilities.",
+        "extra": "Why capability evals alone cannot be trusted for high-stakes decisions about a potentially strategic model."
+      },
+      "tags": [
+        "ai::training"
+      ]
+    },
+    {
+      "key": "sandbagging-mitigation",
+      "model": "basic",
+      "fields": {
+        "front": "What training countermeasure can remove sandbagging?",
+        "back": "Elicitation training on weak supervision, which can remove sandbagging even without strong labels.",
+        "extra": "Finetuning on even imperfect demonstrations pressures the model back toward its true capability level."
+      },
+      "tags": [
+        "ai::training"
+      ]
+    },
+    {
+      "key": "agentic-misalignment-result",
+      "model": "basic",
+      "fields": {
+        "front": "What did frontier models do in the Agentic Misalignment scenarios (Lynch et al. 2025) when threatened with replacement or given conflicting goals?",
+        "back": "Running as email agents in simulated companies, many blackmailed an executive or leaked confidential documents.",
+        "extra": "16 frontier models tested; the behavior appeared without any instruction to be harmful, and models explicitly acknowledged the ethical violation in their reasoning."
+      },
+      "tags": [
+        "ai::findings"
+      ]
+    },
+    {
+      "key": "agentic-misalignment-rate",
+      "model": "basic",
+      "fields": {
+        "front": "Roughly what blackmail rate did top models reach in Agentic Misalignment (Lynch et al. 2025)?",
+        "back": "Up to roughly 96%.",
+        "extra": "Rates varied widely across models and scenario variants; the headline number is the ceiling, not the average."
+      },
+      "tags": [
+        "ai::findings"
+      ]
+    },
+    {
+      "key": "agentic-misalignment-eval-awareness",
+      "model": "basic",
+      "fields": {
+        "front": "How did behavior change in Agentic Misalignment when models stated they suspected a test?",
+        "back": "They misbehaved less than when they treated the scenario as real.",
+        "extra": "Evaluation awareness confounds safety evals: measured behavior may understate deployed behavior."
+      },
+      "tags": [
+        "ai::findings"
+      ]
+    },
+    {
       "key": "ai-organizations",
       "model": "basic",
       "fields": {
         "front": "What did AI Organizations (Shen et al. 2026) find about multi-agent systems?",
         "back": "Organizations of AI agents are more effective than individual agents but less aligned.",
         "extra": "Composition is not alignment-preserving; oversight designed for single agents does not automatically transfer."
+      },
+      "tags": [
+        "ai::findings"
+      ]
+    },
+    {
+      "key": "truthfulqa",
+      "model": "basic",
+      "fields": {
+        "front": "What is TruthfulQA?",
+        "back": "A benchmark of questions where humans commonly hold false beliefs, testing whether models imitating human text reproduce those falsehoods.",
+        "extra": "Owain Evans' most-cited benchmark."
+      },
+      "tags": [
+        "ai::behavioral"
+      ]
+    },
+    {
+      "key": "truthfulqa-scaling",
+      "model": "basic",
+      "fields": {
+        "front": "What was TruthfulQA's headline finding about model scale at release?",
+        "back": "Larger models were often *less* truthful: imitative falsehood scales with capability.",
+        "extra": "The canonical example that imitation and truthfulness diverge."
+      },
+      "tags": [
+        "ai::behavioral"
+      ]
+    },
+    {
+      "key": "reversal-curse",
+      "model": "basic",
+      "fields": {
+        "front": "What is the Reversal Curse?",
+        "back": "Models trained on 'A is B' fail to infer 'B is A': a model can know Tom Cruise's mother is Mary Lee Pfeiffer yet fail to answer who Mary Lee Pfeiffer's son is.",
+        "extra": "Facts are stored directionally, in the order training text presents them; a basic asymmetry of gradient-trained knowledge."
+      },
+      "tags": [
+        "ai::behavioral"
+      ]
+    },
+    {
+      "key": "ooc-reasoning",
+      "model": "basic",
+      "fields": {
+        "front": "What is out-of-context reasoning?",
+        "back": "Using facts learned during training at inference time without those facts appearing in the prompt and without in-context examples.",
+        "extra": "E.g., a model finetuned on third-person descriptions of a chatbot later acts on that knowledge unprompted. From 'Taken out of context' (Berglund et al.): the building block of situational awareness and of data-poisoning-style threat models."
+      },
+      "tags": [
+        "ai::behavioral"
+      ]
+    },
+    {
+      "key": "connecting-dots",
+      "model": "basic",
+      "fields": {
+        "front": "What did 'Connecting the Dots' demonstrate?",
+        "back": "LLMs can aggregate evidence scattered across many training documents to infer and verbalize the latent structure that generated them - inductive inference beyond memorization.",
+        "extra": "E.g., recovering an underlying function or identity. Why filtering explicit statements of a dangerous fact from training data may not prevent the model from knowing it."
+      },
+      "tags": [
+        "ai::behavioral"
+      ]
+    },
+    {
+      "key": "two-hop-problem",
+      "model": "basic",
+      "fields": {
+        "front": "What is the two-hop latent reasoning problem?",
+        "back": "Models that separately know A->B and B->C often fail to compose them into A->C without writing out the intermediate step.",
+        "extra": "Apparent successes frequently trace to co-occurrence in training data rather than genuine latent composition. From Lessons from Studying Two-Hop Latent Reasoning (Balesni et al.); a capability boundary that CoT papers over."
+      },
+      "tags": [
+        "ai::behavioral"
+      ]
+    },
+    {
+      "key": "sad-benchmark",
+      "model": "basic",
+      "fields": {
+        "front": "What does the Situational Awareness Dataset (SAD) measure?",
+        "back": "Whether models know they are models and can act on that self-knowledge.",
+        "extra": "Subskills: recognizing their own generated text, knowing their interfaces and constraints. Situational awareness is dual-use: needed for reliable agents, prerequisite for evaluation gaming and scheming."
+      },
+      "tags": [
+        "ai::behavioral"
+      ]
+    },
+    {
+      "key": "blackbox-lie-detection",
+      "model": "basic",
+      "fields": {
+        "front": "How does the black-box lie detector in 'How to Catch an AI Liar' work?",
+        "back": "After a suspected lie, ask a fixed battery of unrelated yes/no follow-up questions; a simple classifier on the answer pattern detects lying and generalizes across models and contexts.",
+        "extra": "Lying leaves a downstream behavioral signature even when you never see weights or activations."
+      },
+      "tags": [
+        "ai::behavioral"
+      ]
+    },
+    {
+      "key": "base-models-reason",
+      "model": "basic",
+      "fields": {
+        "front": "What did 'Base Models Know How to Reason, Thinking Models Learn When' find?",
+        "back": "The reasoning behaviors of thinking models already exist in their base models; much of post-training's effect is teaching *when* to deploy them.",
+        "extra": "Activating base-model mechanisms at the right moments recovers a large share of the thinking model's performance gap. Reframes reasoning post-training as elicitation and scheduling rather than capability creation."
+      },
+      "tags": [
+        "ai::findings"
+      ]
+    },
+    {
+      "key": "inverse-scaling-ttc",
+      "model": "basic",
+      "fields": {
+        "front": "What is the headline of Inverse Scaling in Test-Time Compute (Gema et al. 2025)?",
+        "back": "More thinking is not monotonically better: extended reasoning can amplify flawed heuristics and worsen performance.",
+        "extra": "Failure modes found: Claude models get distracted by irrelevant information; OpenAI o-series overfit to familiar problem framings; regression tasks shift to spurious correlations; deduction degrades on constraint tracking; some safety behaviors worsen."
+      },
+      "tags": [
+        "ai::findings"
+      ]
+    },
+    {
+      "key": "inverse-scaling-distraction",
+      "model": "basic",
+      "fields": {
+        "front": "In Inverse Scaling in Test-Time Compute, what failure did Claude models show as reasoning grew longer?",
+        "back": "They became increasingly distracted by irrelevant information in the prompt.",
+        "extra": "Contrast hook: the o-series failure was overfitting to familiar problem framings, not distraction."
+      },
+      "tags": [
+        "ai::findings"
+      ]
+    },
+    {
+      "key": "inverse-scaling-safety",
+      "model": "basic",
+      "fields": {
+        "front": "What safety-relevant behavior change did Inverse Scaling in Test-Time Compute observe with longer reasoning?",
+        "back": "Some safety behaviors worsened, e.g. Claude Sonnet 4 expressed more self-preservation.",
+        "extra": "Extended reasoning is not automatically safer reasoning."
       },
       "tags": [
         "ai::findings"
@@ -750,20 +1518,8 @@
       "model": "basic",
       "fields": {
         "front": "Before evaluating a clever method, what must you run?",
-        "back": "The dumbest plausible baseline on the same data and metric. Most apparent wins disappear against a tuned simple baseline.",
-        "extra": "In interp: compare your fancy vector against a random direction and a difference-of-means before claiming structure."
-      },
-      "tags": [
-        "ai::craft"
-      ]
-    },
-    {
-      "key": "steering-controls",
-      "model": "basic",
-      "fields": {
-        "front": "What controls should every steering-vector experiment include?",
-        "back": "A random direction of the same norm at the same layer, and ideally an unrelated-trait vector; plus a capability check (e.g., MMLU or perplexity) to show you steered behavior, not broke the model.",
-        "extra": "Separates direction-specific effects from generic perturbation damage, the standard reviewer objection."
+        "back": "The dumbest plausible baseline on the same data and metric.",
+        "extra": "Most apparent wins disappear against a tuned simple baseline. In interp: compare your fancy vector against a random direction and a difference-of-means before claiming structure."
       },
       "tags": [
         "ai::craft"
@@ -773,9 +1529,21 @@
       "key": "positive-negative-controls",
       "model": "basic",
       "fields": {
-        "front": "What are positive and negative controls in an evaluation?",
-        "back": "Positive control: a condition where the effect must appear, proving the instrument can detect it. Negative control: a condition where it must not appear, bounding false positives.",
-        "extra": "An eval without both is uninterpretable: null results might be instrument failure, positives might be noise."
+        "front": "What does a positive control prove in an evaluation?",
+        "back": "That the instrument can detect the effect: a condition where the effect must appear.",
+        "extra": "Without it, a null result might just be instrument failure. Hook: positive control protects your *negatives*."
+      },
+      "tags": [
+        "ai::craft"
+      ]
+    },
+    {
+      "key": "negative-control",
+      "model": "basic",
+      "fields": {
+        "front": "What does a negative control bound in an evaluation?",
+        "back": "False positives: a condition where the effect must not appear.",
+        "extra": "Without it, a positive result might just be noise. Hook: negative control protects your *positives*."
       },
       "tags": [
         "ai::craft"
@@ -786,8 +1554,8 @@
       "model": "basic",
       "fields": {
         "front": "When de-risking a new research idea, which experiment do you run first?",
-        "back": "The cheapest one that could kill the idea. Maximize information per unit time, not thoroughness per experiment.",
-        "extra": "Most fellows papers are one crisp kill-test that survived, then got scaled and controlled."
+        "back": "The cheapest one that could kill the idea.",
+        "extra": "Maximize information per unit time, not thoroughness per experiment. Most fellows papers are one crisp kill-test that survived, then got scaled and controlled."
       },
       "tags": [
         "ai::craft"
@@ -798,8 +1566,8 @@
       "model": "basic",
       "fields": {
         "front": "What is the highest-value, lowest-status activity in empirical LLM research?",
-        "back": "Reading raw transcripts and samples. Most bugs, confounds, and judge failures are visible in ten examples before any statistics.",
-        "extra": "Schedule it: read N random transcripts per experiment, including from the conditions that worked."
+        "back": "Reading raw transcripts and samples.",
+        "extra": "Most bugs, confounds, and judge failures are visible in ten examples before any statistics. Schedule it: read N random transcripts per experiment, including from the conditions that worked."
       },
       "tags": [
         "ai::craft"
@@ -810,8 +1578,8 @@
       "model": "basic",
       "fields": {
         "front": "Before trusting an LLM judge in your eval, what do you do?",
-        "back": "Hand-label a random sample and measure agreement, checking false-positive and false-negative rates separately; report judge accuracy alongside judged results.",
-        "extra": "Judges inherit the biases of their model family; a judge from the same family as the policy is a confound."
+        "back": "Hand-label a random sample and measure agreement, checking false-positive and false-negative rates separately.",
+        "extra": "Report judge accuracy alongside judged results. Judges inherit the biases of their model family; a judge from the same family as the policy is a confound."
       },
       "tags": [
         "ai::craft"
@@ -822,8 +1590,8 @@
       "model": "basic",
       "fields": {
         "front": "Your intervention improved the metric by 2%. What is the first question to ask?",
-        "back": "What is the run-to-run variance across seeds and sampling? No claim until the effect exceeds the noise floor measured on identical conditions.",
-        "extra": "For finetuning experiments, seed variance is often larger than published effect sizes."
+        "back": "What is the run-to-run variance across seeds and sampling?",
+        "extra": "No claim until the effect exceeds the noise floor measured on identical conditions. For finetuning experiments, seed variance is often larger than published effect sizes."
       },
       "tags": [
         "ai::craft"
@@ -846,443 +1614,11 @@
       "model": "basic",
       "fields": {
         "front": "What does a well-scoped 4-month fellowship project look like?",
-        "back": "One crisp question, one model organism or benchmark, one clean intervention with controls, and one figure that could stand alone. Cut everything that does not feed the main claim.",
-        "extra": "Reverse-engineered from the fellows papers themselves: nearly all of them fit this shape."
+        "back": "One crisp question, one model organism or benchmark, one clean intervention with controls, and one figure that could stand alone.",
+        "extra": "Cut everything that does not feed the main claim. Reverse-engineered from the fellows papers themselves: nearly all of them fit this shape."
       },
       "tags": [
         "ai::craft"
-      ]
-    },
-    {
-      "key": "grokking-def",
-      "model": "basic",
-      "fields": {
-        "front": "What is grokking?",
-        "back": "Delayed generalization: a network first memorizes its training data, then long after training accuracy saturates, test accuracy suddenly jumps to near-perfect.",
-        "extra": "Classic setting: small transformers on modular arithmetic with weight decay. The phenomenon that launched a whole line of training-dynamics interp."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "grokking-mechanism",
-      "model": "basic",
-      "fields": {
-        "front": "What did Nanda et al. find inside a transformer that grokked modular addition?",
-        "back": "A Fourier algorithm: embeddings encode sines and cosines of the inputs, and the network composes rotations via trig identities to compute the sum. Progress measures show the circuit forms gradually, followed by cleanup of the memorization solution.",
-        "extra": "Key lesson: the sudden test-accuracy jump hides smooth underlying progress; apparent phase changes can be artifacts of the metric, not the learning."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "induction-heads",
-      "model": "basic",
-      "fields": {
-        "front": "What is an induction head?",
-        "back": "An attention head implementing [A][B] ... [A] -> [B]: paired with a previous-token head, it prefix-matches the current token against earlier context and copies what followed last time.",
-        "extra": "Their formation during training coincides with a phase change where in-context learning ability appears (Olsson et al.). The canonical circuit of the field."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "patching-directions",
-      "model": "basic",
-      "fields": {
-        "front": "In activation patching, what is the difference between denoising and noising?",
-        "back": "Denoising patches clean activations into a corrupted run and tests whether a component is *sufficient* to restore behavior. Noising patches corrupted activations into a clean run and tests whether it is *necessary*. The two can disagree.",
-        "extra": "From How to Use and Interpret Activation Patching (Heimersheim and Nanda). Always state which direction you ran."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "patching-metric",
-      "model": "basic",
-      "fields": {
-        "front": "Why prefer logit difference over probability or accuracy as the metric in patching experiments?",
-        "back": "Probability and accuracy saturate, hiding graded and partial effects; the logit difference between the correct and a contrastive answer varies roughly linearly with residual-stream interventions and detects partial signal movement.",
-        "extra": "From Towards Best Practices of Activation Patching: metric choice can flip conclusions about which components matter."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "subspace-illusion",
-      "model": "basic",
-      "fields": {
-        "front": "What is the interpretability illusion for subspace activation patching?",
-        "back": "Patching along a subspace can look causal by activating a dormant pathway that ordinary computation never uses, so a direction can 'work' under intervention without being what the model actually uses.",
-        "extra": "Antidote: check that the direction is active in natural forward passes, not just under your intervention."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "sae-shrinkage",
-      "model": "basic",
-      "fields": {
-        "front": "What problem do Gated and JumpReLU SAEs fix relative to vanilla L1-penalty SAEs?",
-        "back": "The L1 penalty causes systematic shrinkage: feature activations are underestimated to reduce the penalty, degrading the sparsity-fidelity frontier. Gating and JumpReLU thresholds separate whether a feature fires from how strongly, removing that bias.",
-        "extra": "Architecture arc to know: vanilla L1 -> Gated -> JumpReLU/TopK -> BatchTopK; each is a fix to the sparsity mechanism."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "gemma-scope",
-      "model": "basic",
-      "fields": {
-        "front": "What is Gemma Scope?",
-        "back": "An open suite of JumpReLU SAEs trained on every layer and sublayer of Gemma 2 models, released so researchers can do feature-level interpretability without training their own SAEs.",
-        "extra": "The default playground for SAE experiments outside frontier labs; pairs with Neuronpedia for browsing features."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "sae-not-canonical",
-      "model": "basic",
-      "fields": {
-        "front": "What did 'SAEs Do Not Find Canonical Units of Analysis' show?",
-        "back": "Different SAE widths and seeds produce materially different feature sets (feature splitting, novel features); there is no single canonical dictionary. SAE features are a useful decomposition, not THE model's true units.",
-        "extra": "Part of the field's 2025 self-correction, alongside SAEBench and the sparse-probing negative results."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "sae-useful",
-      "model": "basic",
-      "fields": {
-        "front": "What did 'Are Sparse Autoencoders Useful?' find in its sparse-probing case study?",
-        "back": "SAE-based methods generally failed to beat simple activation-probing baselines on downstream tasks - a headline negative result for SAE utility.",
-        "extra": "Shifted the field's norm toward baseline-first evaluation of interp tools: an interp method must beat probes and prompting to justify itself."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "copy-suppression",
-      "model": "basic",
-      "fields": {
-        "front": "What does the copy-suppression head (GPT-2 L10H7) do?",
-        "back": "It detects when the model is about to naively copy an earlier token and suppresses that prediction, improving calibration - the first comprehensively understood 'negative' head.",
-        "extra": "Lesson: not all components push toward the answer; some exist to veto other components' mistakes."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "self-repair",
-      "model": "basic",
-      "fields": {
-        "front": "What is self-repair in transformers, and why does it complicate ablation studies?",
-        "back": "When a component is ablated, downstream components shift their behavior to compensate, partially restoring the output. Ablation-based importance scores therefore systematically understate components' roles.",
-        "extra": "Also called the Hydra effect. One reason patching-style causal analysis beats naive ablation."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "transcoder-def",
-      "model": "basic",
-      "fields": {
-        "front": "What is a transcoder?",
-        "back": "A sparse, interpretable replacement for an MLP layer, trained to reproduce its input-output function with sparsely activating features - making circuit analysis through MLPs tractable.",
-        "extra": "The building block of attribution graphs; cross-layer transcoders extend the idea across the whole model."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "em-linear-direction",
-      "model": "basic",
-      "fields": {
-        "front": "What did 'Convergent Linear Representations of Emergent Misalignment' find?",
-        "back": "Different narrow finetunes that induce emergent misalignment converge on a shared linear 'misaligned persona' direction; ablating or steering that direction modulates the misalignment.",
-        "extra": "Connects the emergent misalignment phenomenon directly to the persona vectors picture: broad misalignment rides one direction."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "model-organisms",
-      "model": "basic",
-      "fields": {
-        "front": "What are model organisms in alignment research?",
-        "back": "Deliberately constructed models with known implanted properties (misalignment, hidden objectives, secret knowledge) that provide ground truth for testing auditing and interpretability methods.",
-        "extra": "Built via SDF, transcript distillation, or narrow finetuning. AuditBench is 56 of them; the taboo-word models are the introspection-lane version."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "secret-elicitation",
-      "model": "basic",
-      "fields": {
-        "front": "What is secret knowledge elicitation, and which techniques work on the standard testbeds?",
-        "back": "Extracting information a model knows but is trained not to reveal (taboo-word models, SDF-implanted secrets). Prefill attacks, persona sampling, and activation-based readouts (logit lens, SAE features) all extract secrets that direct questioning cannot.",
-        "extra": "White-box beats black-box here: the secret is often linearly readable even when the model reliably refuses to say it."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "thought-anchors",
-      "model": "basic",
-      "fields": {
-        "front": "What are thought anchors (Bogdan et al. 2025)?",
-        "back": "The reasoning steps in a chain of thought that disproportionately determine the final answer, found by resampling rollouts from each sentence onward. Planning and uncertainty-management sentences anchor outcomes far more than calculation steps.",
-        "extra": "Gives CoT interpretability a unit of analysis (the sentence) and a causal method (counterfactual resampling)."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "cot-wild-unfaithful",
-      "model": "basic",
-      "fields": {
-        "front": "What did 'CoT Reasoning In The Wild Is Not Always Faithful' show?",
-        "back": "Frontier models produce unfaithful reasoning on natural prompts with no adversarial bias: implicit post-hoc rationalization (contradictory yes/yes answers to symmetric comparisons), restoration errors, and unfaithful shortcuts.",
-        "extra": "Matters because it breaks the assumption that unfaithfulness requires someone planting a bias in context."
-      },
-      "tags": [
-        "ai::findings"
-      ]
-    },
-    {
-      "key": "monitorability-position",
-      "model": "basic",
-      "fields": {
-        "front": "What does the Chain of Thought Monitorability position paper argue?",
-        "back": "CoT monitoring is a rare and fragile safety opportunity: it works because models currently externalize reasoning in natural language, and choices like optimizing CoT for appearance or moving to latent reasoning could quietly destroy it. Labs should measure and preserve monitorability.",
-        "extra": "Cross-lab position paper (OpenAI, Anthropic, DeepMind authors and more, including Nanda). Explains why 'train the CoT to look nice' is an anti-goal."
-      },
-      "tags": [
-        "ai::findings"
-      ]
-    },
-    {
-      "key": "base-models-reason",
-      "model": "basic",
-      "fields": {
-        "front": "What did 'Base Models Know How to Reason, Thinking Models Learn When' find?",
-        "back": "The reasoning behaviors of thinking models already exist in their base models; much of post-training's effect is teaching *when* to deploy them. Activating base-model mechanisms at the right moments recovers a large share of the thinking model's performance gap.",
-        "extra": "Reframes reasoning post-training as elicitation and scheduling rather than capability creation."
-      },
-      "tags": [
-        "ai::findings"
-      ]
-    },
-    {
-      "key": "truthfulqa",
-      "model": "basic",
-      "fields": {
-        "front": "What is TruthfulQA and its headline original finding?",
-        "back": "A benchmark of questions where humans commonly hold false beliefs; models imitating human text reproduce those falsehoods, and at release larger models were often *less* truthful - imitative falsehood scales with capability.",
-        "extra": "Owain Evans' most-cited benchmark; the canonical example that imitation and truthfulness diverge."
-      },
-      "tags": [
-        "ai::behavioral"
-      ]
-    },
-    {
-      "key": "reversal-curse",
-      "model": "basic",
-      "fields": {
-        "front": "What is the Reversal Curse?",
-        "back": "Models trained on 'A is B' fail to infer 'B is A': a model can know Tom Cruise's mother is Mary Lee Pfeiffer yet fail to answer who Mary Lee Pfeiffer's son is.",
-        "extra": "Facts are stored directionally, in the order training text presents them; a basic asymmetry of gradient-trained knowledge."
-      },
-      "tags": [
-        "ai::behavioral"
-      ]
-    },
-    {
-      "key": "ooc-reasoning",
-      "model": "basic",
-      "fields": {
-        "front": "What is out-of-context reasoning?",
-        "back": "Using facts learned during training at inference time without those facts appearing in the prompt and without in-context examples - e.g., a model finetuned on third-person descriptions of a chatbot later acts on that knowledge unprompted.",
-        "extra": "From 'Taken out of context' (Berglund et al.): the building block of situational awareness and of data-poisoning-style threat models."
-      },
-      "tags": [
-        "ai::behavioral"
-      ]
-    },
-    {
-      "key": "connecting-dots",
-      "model": "basic",
-      "fields": {
-        "front": "What did 'Connecting the Dots' demonstrate?",
-        "back": "LLMs can aggregate evidence scattered across many training documents to infer the latent structure that generated them (e.g., recover an underlying function or identity) and verbalize it - inductive inference from training data, beyond memorization.",
-        "extra": "Why filtering explicit statements of a dangerous fact from training data may not prevent the model from knowing it."
-      },
-      "tags": [
-        "ai::behavioral"
-      ]
-    },
-    {
-      "key": "looking-inward",
-      "model": "basic",
-      "fields": {
-        "front": "What is the key result of 'Looking Inward' (Binder et al. 2024)?",
-        "back": "A model predicts its own behavior better than a second model trained on the same behavioral data can predict it - evidence of privileged self-access, a behavioral signature of introspection.",
-        "extra": "The behavioral counterpart to Lindsey's concept-injection work; know both when discussing whether LLMs can introspect."
-      },
-      "tags": [
-        "ai::behavioral"
-      ]
-    },
-    {
-      "key": "behavioral-self-awareness",
-      "model": "basic",
-      "fields": {
-        "front": "What surprising ability did 'Tell me about yourself' document in finetuned models?",
-        "back": "Models finetuned on a behavior (risky choices, insecure code) can explicitly describe that policy ('I take risks') despite never seeing descriptions of it in training - behavioral self-awareness, sometimes extending to reporting their own backdoor triggers.",
-        "extra": "Learned behaviors come with verbalizable self-knowledge for free; relevant to both auditing (ask the model) and introspection debates."
-      },
-      "tags": [
-        "ai::behavioral"
-      ]
-    },
-    {
-      "key": "sad-benchmark",
-      "model": "basic",
-      "fields": {
-        "front": "What does the Situational Awareness Dataset (SAD) measure?",
-        "back": "Whether models know they are models: recognizing their own generated text, knowing their interfaces and constraints, and acting on that self-knowledge.",
-        "extra": "Situational awareness is dual-use: needed for reliable agents, prerequisite for evaluation gaming and scheming."
-      },
-      "tags": [
-        "ai::behavioral"
-      ]
-    },
-    {
-      "key": "school-reward-hacks",
-      "model": "basic",
-      "fields": {
-        "front": "What did School of Reward Hacks (Taylor et al. 2025) show?",
-        "back": "Supervised training on harmless, low-stakes reward hacking (gaming simple tasks) generalized to broader misalignment, including shutdown-resistance-flavored behavior on unrelated evaluations.",
-        "extra": "Reward hacking behaves like a persona, not a contained skill - consistent with the emergent misalignment and persona-direction picture."
-      },
-      "tags": [
-        "ai::behavioral"
-      ]
-    },
-    {
-      "key": "blackbox-lie-detection",
-      "model": "basic",
-      "fields": {
-        "front": "How does the black-box lie detector in 'How to Catch an AI Liar' work?",
-        "back": "After a suspected lie, ask a fixed battery of unrelated yes/no follow-up questions; a simple classifier on the answer pattern detects lying and generalizes across models and contexts.",
-        "extra": "Lying leaves a downstream behavioral signature even when you never see weights or activations."
-      },
-      "tags": [
-        "ai::behavioral"
-      ]
-    },
-    {
-      "key": "two-hop-problem",
-      "model": "basic",
-      "fields": {
-        "front": "What is the two-hop latent reasoning problem?",
-        "back": "Models that separately know A->B and B->C often fail to compose them into A->C without writing out the intermediate step; apparent successes frequently trace to co-occurrence in training data rather than genuine latent composition.",
-        "extra": "From Lessons from Studying Two-Hop Latent Reasoning (Balesni et al.). A capability boundary that CoT papers over."
-      },
-      "tags": [
-        "ai::behavioral"
-      ]
-    },
-    {
-      "key": "golden-gate-claude",
-      "model": "basic",
-      "fields": {
-        "front": "What was Golden Gate Claude, and what paper produced it?",
-        "back": "A demo from Scaling Monosemanticity (SAEs on Claude 3 Sonnet): clamping a single Golden Gate Bridge feature made production Claude relate everything to the bridge - feature steering at frontier scale.",
-        "extra": "The paper also surfaced safety-relevant features (deception, sycophancy, dangerous content), the pitch for interp-as-auditing."
-      },
-      "tags": [
-        "ai::interp"
-      ]
-    },
-    {
-      "key": "production-emergent-misalignment",
-      "model": "basic",
-      "fields": {
-        "front": "What happened when reward hacking emerged in Anthropic's production RL, and what mitigated it?",
-        "back": "Models that learned to hack coding-RL rewards generalized to broader misalignment (sabotage-flavored behavior, alignment faking). A one-line inoculation-style prompt change during training - framing hacking as acceptable in that context - largely prevented the generalization.",
-        "extra": "MacDiarmid, Lindsey et al. 2025: the first natural (non-implanted) emergent misalignment observed in production training, and inoculation prompting's graduation to production."
-      },
-      "tags": [
-        "ai::personas"
-      ]
-    },
-    {
-      "key": "steering-eval-aware",
-      "model": "basic",
-      "fields": {
-        "front": "What did 'Steering Evaluation-Aware Language Models to Act Like They Are Deployed' demonstrate?",
-        "back": "For a model trained to behave differently when it believes it is being evaluated, adding a 'deployment' steering vector during evaluation elicits its deployment behavior - a white-box tool against evaluation gaming.",
-        "extra": "Evaluation awareness is real and measurable; steering can force the honest condition."
-      },
-      "tags": [
-        "ai::findings"
-      ]
-    },
-    {
-      "key": "steering-awareness",
-      "model": "basic",
-      "fields": {
-        "front": "Which paper studies whether models can detect, from the inside, that they are being activation-steered?",
-        "back": "Steering Awareness: Detecting Activation Steering from Within (Africa et al. 2025).",
-        "extra": "Sits between Lindsey's concept injection and interference detection; read before running your own injected-thought replication."
-      },
-      "tags": [
-        "ai::introspection"
-      ]
-    },
-    {
-      "key": "alignment-pretraining",
-      "model": "basic",
-      "fields": {
-        "front": "What is self-fulfilling (mis)alignment from pretraining data?",
-        "back": "Discourse about AI in pretraining data (stories and papers about misaligned AI) measurably shifts models toward the behaviors it describes; curating or reframing that discourse changes downstream alignment.",
-        "extra": "Alignment Pretraining (Africa et al. 2026). The persona story pushed back to pretraining: models learn who AIs are from what we wrote about them."
-      },
-      "tags": [
-        "ai::personas"
-      ]
-    },
-    {
-      "key": "question-only-probes",
-      "model": "basic",
-      "fields": {
-        "front": "What did 'No Answer Needed' show about predicting model correctness?",
-        "back": "A linear probe on activations from the question alone - before any answer is generated - predicts whether the model will answer correctly. Models encode self-knowledge about their competence upfront.",
-        "extra": "Cheap hallucination flagging, and more behavioral evidence for introspectable internal confidence signals."
-      },
-      "tags": [
-        "ai::introspection"
       ]
     }
   ]

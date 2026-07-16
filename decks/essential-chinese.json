@@ -1,8 +1,8 @@
 {
   "key": "essential-chinese",
-  "version": 2,
+  "version": 3,
   "name": "Essential Chinese",
-  "description": "Mandarin from absolute zero, structured the way spaced-repetition research says to learn a language: the tone and pinyin system first, then day-one survival phrases, then the highest-frequency words, then the grammar patterns that snap them together. Characters ride up front with tap-to-hear speech, pinyin and usage notes appear on every reveal, and the phrases you must be able to say are trained in both directions. Simplified characters. Keep new cards to 5-10 a day and say every answer out loud.",
+  "description": "Mandarin from absolute zero, no character knowledge required. The tone and pinyin system comes first, then day-one survival phrases, then the highest-frequency words, then the grammar patterns that snap them together. Word cards show the characters big with tap-to-hear speech and a tap-to-reveal pinyin hint, so you try the characters first but are never stuck; the full pinyin appears with every answer, and the phrases you must be able to say are trained in both directions. Simplified characters. Keep new cards to 5-10 a day and say every answer out loud.",
   "category": "Language",
   "topics": [
     "chinese",
@@ -19,7 +19,7 @@
       "model": "basic",
       "fields": {
         "front": "妈 mā, 麻 má, 马 mǎ, 骂 mà: same letters, four different words. What tells them apart?",
-        "back": "The tone: the pitch pattern of the syllable. It is part of the word itself, not decoration.",
+        "back": "The tone: the pitch pattern of the syllable is part of the word itself.",
         "extra": "mā mom, má hemp, mǎ horse, mà to scold. Mandarin has four tones plus a neutral tone; every pinyin syllable in this deck carries its tone mark."
       },
       "tags": ["zh::sounds"]
@@ -49,8 +49,8 @@
       "model": "basic",
       "fields": {
         "front": "Tone 3, the dipping accent: mǎ. How does it sound?",
-        "back": "Low and slow: it sinks to the bottom of your voice, often creaky, and only rises in careful speech.",
-        "extra": "Example: 水 shuǐ (water). Think low, not down-then-up."
+        "back": "Low and slow: it sinks to the bottom of your voice.",
+        "extra": "Often creaky, and it only rises again in slow, careful speech. Example: 水 shuǐ (water). Think low, not down-then-up."
       },
       "tags": ["zh::sounds"]
     },
@@ -69,8 +69,8 @@
       "model": "basic",
       "fields": {
         "front": "The neutral tone: the second ma in māma. How does it sound?",
-        "back": "Short, light, unstressed; it takes its pitch from the syllable before it.",
-        "extra": "Written with no tone mark. Example: 谢谢 xièxie, second syllable."
+        "back": "Short, light, and unstressed.",
+        "extra": "It takes its pitch from the syllable before it and is written with no tone mark. Example: 谢谢 xièxie, second syllable."
       },
       "tags": ["zh::sounds"]
     },
@@ -166,551 +166,609 @@
     },
     {
       "key": "ph-ni-hao",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "你好",
-        "back": "hello",
-        "extra": "**nǐ hǎo**, said ní hǎo (two 3rd tones). 你 you + 好 good. Works with anyone, any time of day."
+        "term": "你好",
+        "reading": "nǐ hǎo",
+        "meaning": "hello",
+        "extra": "Said ní hǎo: two 3rd tones in a row, so the first rises. 你 you + 好 good. Works with anyone, any time of day."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-ni-hao-ma",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "你好吗？",
-        "back": "how are you?",
-        "extra": "**nǐ hǎo ma**. 吗 turns a statement into a yes-no question. Standard reply: 我很好."
+        "term": "你好吗？",
+        "reading": "nǐ hǎo ma",
+        "meaning": "how are you?",
+        "extra": "吗 turns a statement into a yes-no question. Standard reply: 我很好."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-wo-hen-hao",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "我很好",
-        "back": "I'm fine",
-        "extra": "**wǒ hěn hǎo**. 很 is required glue between a subject and an adjective; here it barely means 'very'."
+        "term": "我很好",
+        "reading": "wǒ hěn hǎo",
+        "meaning": "I'm fine",
+        "extra": "很 is required glue between a subject and an adjective; here it barely means 'very'."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-xiexie",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "谢谢",
-        "back": "thank you",
-        "extra": "**xièxie**, second syllable light and toneless. Add the person: 谢谢你."
+        "term": "谢谢",
+        "reading": "xièxie",
+        "meaning": "thank you",
+        "extra": "Second syllable light and toneless. Add the person: 谢谢你."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-bu-keqi",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "不客气",
-        "back": "you're welcome",
-        "extra": "**bú kèqi**. Literally 'don't be polite'. 不 shifts to 2nd tone before a 4th tone."
+        "term": "不客气",
+        "reading": "bú kèqi",
+        "meaning": "you're welcome",
+        "extra": "Literally 'don't be polite'. 不 shifts to 2nd tone before a 4th tone."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-duibuqi",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "对不起",
-        "back": "sorry (I did something wrong)",
-        "extra": "**duìbuqǐ**. The apology for real faults: bumping into someone, being late."
+        "term": "对不起",
+        "reading": "duìbuqǐ",
+        "meaning": "sorry (I did something wrong)",
+        "extra": "The apology for real faults: bumping into someone, being late."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-bu-haoyisi",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "不好意思",
-        "back": "excuse me, sorry to bother you",
-        "extra": "**bù hǎoyìsi**. The everyday soft apology: squeezing past someone, interrupting, asking a favor."
+        "term": "不好意思",
+        "reading": "bù hǎoyìsi",
+        "meaning": "excuse me, sorry to bother you",
+        "extra": "The everyday soft apology: squeezing past someone, interrupting, asking a favor. Real faults take 对不起."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-mei-guanxi",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "没关系",
-        "back": "it doesn't matter (reply to an apology)",
-        "extra": "**méi guānxi**. The standard answer to 对不起. Literally 'there is no connection'."
+        "term": "没关系",
+        "reading": "méi guānxi",
+        "meaning": "it doesn't matter (reply to an apology)",
+        "extra": "The standard answer to 对不起. Literally 'there is no connection'."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-zaijian",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "再见",
-        "back": "goodbye",
-        "extra": "**zàijiàn**. 再 (again) + 见 (see): 'see you again'."
+        "term": "再见",
+        "reading": "zàijiàn",
+        "meaning": "goodbye",
+        "extra": "再 (again) + 见 (see): 'see you again'."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-qing",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "请",
-        "back": "please",
-        "extra": "**qǐng**. Starts polite requests: 请坐 (please sit). Also 'to treat': 我请你 (my treat)."
+        "term": "请",
+        "reading": "qǐng",
+        "meaning": "please",
+        "extra": "Starts polite requests: 请坐 (please sit). Also 'to treat': 我请你 (my treat)."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-qingwen",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "请问",
-        "back": "excuse me, may I ask...",
-        "extra": "**qǐngwèn**. The polite opener before any question to a stranger."
+        "term": "请问",
+        "reading": "qǐngwèn",
+        "meaning": "excuse me, may I ask...",
+        "extra": "The polite opener before any question to a stranger."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-ni-jiao-shenme-mingzi",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "你叫什么名字？",
-        "back": "what's your name?",
-        "extra": "**nǐ jiào shénme míngzi**. Answer with 我叫 wǒ jiào + your name."
+        "term": "你叫什么名字？",
+        "reading": "nǐ jiào shénme míngzi",
+        "meaning": "what's your name?",
+        "extra": "Answer with 我叫 wǒ jiào + your name."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-renshi-ni-hen-gaoxing",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "认识你很高兴",
-        "back": "nice to meet you",
-        "extra": "**rènshi nǐ hěn gāoxìng**. Literally 'knowing you, (I'm) very glad'."
+        "term": "认识你很高兴",
+        "reading": "rènshi nǐ hěn gāoxìng",
+        "meaning": "nice to meet you",
+        "extra": "Literally 'knowing you, (I'm) very glad'."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-wo-shi-meiguo-ren",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "我是美国人",
-        "back": "I'm American",
-        "extra": "**wǒ shì Měiguó rén**. Country + 人 (person) = nationality. Swap in any country."
+        "term": "我是美国人",
+        "reading": "wǒ shì Měiguó rén",
+        "meaning": "I'm American",
+        "extra": "Country + 人 (person) = nationality. Swap in any country."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-wo-ting-bu-dong",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "我听不懂",
-        "back": "I don't understand (what you're saying)",
-        "extra": "**wǒ tīng bu dǒng**. Literally 'I hear but can't understand'. The most useful sentence of your first month."
+        "term": "我听不懂",
+        "reading": "wǒ tīng bu dǒng",
+        "meaning": "I don't understand (what you're saying)",
+        "extra": "Literally 'I hear but can't understand'. The most useful sentence of your first month."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-zai-shuo-yi-bian",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "请再说一遍",
-        "back": "please say it again",
-        "extra": "**qǐng zài shuō yí biàn**. 再 (again) + 说 (say) + 一遍 (once through)."
+        "term": "请再说一遍",
+        "reading": "qǐng zài shuō yí biàn",
+        "meaning": "please say it again",
+        "extra": "再 (again) + 说 (say) + 一遍 (once through)."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-shuo-man-yidian",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "请说慢一点",
-        "back": "please speak more slowly",
-        "extra": "**qǐng shuō màn yìdiǎn**. Adjective + 一点 means 'a bit more so'."
+        "term": "请说慢一点",
+        "reading": "qǐng shuō màn yìdiǎn",
+        "meaning": "please speak more slowly",
+        "extra": "Adjective + 一点 means 'a bit more so'."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-hui-shuo-yingyu-ma",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "你会说英语吗？",
-        "back": "do you speak English?",
-        "extra": "**nǐ huì shuō Yīngyǔ ma**. 会 marks a learned ability. 英语 English language."
+        "term": "你会说英语吗？",
+        "reading": "nǐ huì shuō Yīngyǔ ma",
+        "meaning": "do you speak English?",
+        "extra": "会 marks a learned ability. 英语 English language."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-hui-shuo-yidianr",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "我会说一点儿汉语",
-        "back": "I speak a little Chinese",
-        "extra": "**wǒ huì shuō yìdiǎnr Hànyǔ**. Guaranteed smiles. 一点儿 a little."
+        "term": "我会说一点儿汉语",
+        "reading": "wǒ huì shuō yìdiǎnr Hànyǔ",
+        "meaning": "I speak a little Chinese",
+        "extra": "Guaranteed smiles. 一点儿 a little."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-zhe-shi-shenme",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "这是什么？",
-        "back": "what is this?",
-        "extra": "**zhè shì shénme**. Point and ask. Question words sit where the answer would go: 'this is what?'"
+        "term": "这是什么？",
+        "reading": "zhè shì shénme",
+        "meaning": "what is this?",
+        "extra": "Point and ask. Question words sit where the answer would go: 'this is what?'"
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-duoshao-qian",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "多少钱？",
-        "back": "how much is it?",
-        "extra": "**duōshao qián**. 多少 (how much) + 钱 (money). Point first: 这个多少钱？"
+        "term": "多少钱？",
+        "reading": "duōshao qián",
+        "meaning": "how much is it?",
+        "extra": "多少 (how much) + 钱 (money). Point first: 这个多少钱？"
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-tai-gui-le",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "太贵了",
-        "back": "too expensive!",
-        "extra": "**tài guì le**. The 太...了 wrapper means 'too/so'. Your opening move in any market haggle."
+        "term": "太贵了",
+        "reading": "tài guì le",
+        "meaning": "too expensive!",
+        "extra": "The 太...了 wrapper means 'too/so'. Your opening move in any market haggle."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-pianyi-yidian",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "便宜一点",
-        "back": "a little cheaper?",
-        "extra": "**piányi yìdiǎn**. The follow-up to 太贵了. 便宜 cheap + 一点 a bit."
+        "term": "便宜一点",
+        "reading": "piányi yìdiǎn",
+        "meaning": "a little cheaper?",
+        "extra": "The follow-up to 太贵了. 便宜 cheap + 一点 a bit."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-wo-yao-zhege",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "我要这个",
-        "back": "I want this one",
-        "extra": "**wǒ yào zhège**. Point at the menu and say it; works in any shop or restaurant."
+        "term": "我要这个",
+        "reading": "wǒ yào zhège",
+        "meaning": "I want this one",
+        "extra": "Point at the menu and say it; works in any shop or restaurant."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-wo-bu-yao",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "我不要",
-        "back": "I don't want it, no thanks",
-        "extra": "**wǒ bú yào**. Firm but not rude; perfect for street vendors."
+        "term": "我不要",
+        "reading": "wǒ bú yào",
+        "meaning": "I don't want it, no thanks",
+        "extra": "Firm but not rude; perfect for street vendors."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-cesuo-zai-nar",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "厕所在哪儿？",
-        "back": "where is the toilet?",
-        "extra": "**cèsuǒ zài nǎr**. X 在哪儿 finds anything. Politer word for toilet: 卫生间 wèishēngjiān."
+        "term": "厕所在哪儿？",
+        "reading": "cèsuǒ zài nǎr",
+        "meaning": "where is the toilet?",
+        "extra": "X 在哪儿 finds anything. Politer word for toilet: 卫生间 wèishēngjiān."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-fuwuyuan",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "服务员",
-        "back": "waiter! (calling the server)",
-        "extra": "**fúwùyuán**. Call it out to get attention in a restaurant; normal, not rude. Literally 'service person'."
+        "term": "服务员",
+        "reading": "fúwùyuán",
+        "meaning": "waiter! (calling the server)",
+        "extra": "Call it out to get attention in a restaurant; normal, not rude. Literally 'service person'."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-maidan",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "买单",
-        "back": "the bill, please",
-        "extra": "**mǎidān**. Say it to the server when you want to pay."
+        "term": "买单",
+        "reading": "mǎidān",
+        "meaning": "the bill, please",
+        "extra": "Say it to the server when you want to pay."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-ganbei",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "干杯",
-        "back": "cheers!",
-        "extra": "**gānbēi**. Literally 'dry the cup'. At formal toasts it can mean bottoms-up, so pace yourself."
+        "term": "干杯",
+        "reading": "gānbēi",
+        "meaning": "cheers!",
+        "extra": "Literally 'dry the cup'. At formal toasts it can mean bottoms-up, so pace yourself."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-deng-yixia",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "等一下",
-        "back": "wait a moment",
-        "extra": "**děng yíxià**. 等 (wait) + 一下 (a little); 一下 softens any verb."
+        "term": "等一下",
+        "reading": "děng yíxià",
+        "meaning": "wait a moment",
+        "extra": "等 (wait) + 一下 (a little); 一下 softens any verb."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-mei-wenti",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "没问题",
-        "back": "no problem! (sure, can do)",
-        "extra": "**méi wèntí**. The easygoing yes to any request. 问题 problem, question."
+        "term": "没问题",
+        "reading": "méi wèntí",
+        "meaning": "no problem! (sure, can do)",
+        "extra": "The easygoing yes to any request. 问题 problem, question."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "ph-jiuming",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "救命",
-        "back": "help! (life-threatening emergency)",
-        "extra": "**jiùmìng**. 救 (save) + 命 (life). For everyday help say 请帮我 qǐng bāng wǒ."
+        "term": "救命",
+        "reading": "jiùmìng",
+        "meaning": "help! (life-threatening emergency)",
+        "extra": "救 (save) + 命 (life). For everyday help say 请帮我 qǐng bāng wǒ."
       },
       "tags": ["zh::phrases"]
     },
     {
       "key": "pp-wo",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "我",
-        "back": "I, me",
-        "extra": "**wǒ**. Add 的 for 'my': 我的."
+        "term": "我",
+        "reading": "wǒ",
+        "meaning": "I, me",
+        "extra": "Add 的 for 'my': 我的 wǒ de."
       },
       "tags": ["zh::people"]
     },
     {
       "key": "pp-ni",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "你",
-        "back": "you",
-        "extra": "**nǐ**. A polite form 您 nín exists, but 你 is fine in nearly every situation."
+        "term": "你",
+        "reading": "nǐ",
+        "meaning": "you",
+        "extra": "A polite form 您 nín exists, but 你 is fine in nearly every situation."
       },
       "tags": ["zh::people"]
     },
     {
       "key": "pp-ta-he",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "他",
-        "back": "he, him",
-        "extra": "**tā**. 他 (he), 她 (she), and 它 (it) all sound identical; only the writing differs."
+        "term": "他",
+        "reading": "tā",
+        "meaning": "he, him",
+        "extra": "他 (he), 她 (she), and 它 (it) all sound identical; only the writing differs."
       },
       "tags": ["zh::people"]
     },
     {
       "key": "pp-ta-she",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "她",
-        "back": "she, her",
-        "extra": "**tā**. Same sound as 他; the woman radical 女 marks 'she' in writing only."
+        "term": "她",
+        "reading": "tā",
+        "meaning": "she, her",
+        "extra": "Same sound as 他; the woman radical 女 marks 'she' in writing only."
       },
       "tags": ["zh::people"]
     },
     {
       "key": "pp-women",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "我们",
-        "back": "we, us",
-        "extra": "**wǒmen**. 们 makes pronouns plural: 你们 (you all), 他们 (they)."
+        "term": "我们",
+        "reading": "wǒmen",
+        "meaning": "we, us",
+        "extra": "们 makes pronouns plural: 你们 (you all), 他们 (they)."
       },
       "tags": ["zh::people"]
     },
     {
       "key": "pp-ren",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "人",
-        "back": "person, people",
-        "extra": "**rén**. A picture of a walking person. Country + 人 = nationality: 中国人."
+        "term": "人",
+        "reading": "rén",
+        "meaning": "person",
+        "extra": "Also 'people'; a picture of a walking person. Country + 人 = nationality: 中国人."
       },
       "tags": ["zh::people"]
     },
     {
       "key": "pp-pengyou",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "朋友",
-        "back": "friend",
-        "extra": "**péngyou**. 男朋友 boyfriend and 女朋友 girlfriend add 男 (male) or 女 (female)."
+        "term": "朋友",
+        "reading": "péngyou",
+        "meaning": "friend",
+        "extra": "男朋友 boyfriend and 女朋友 girlfriend add 男 (male) or 女 (female)."
       },
       "tags": ["zh::people"]
     },
     {
       "key": "pp-zhe",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "这",
-        "back": "this",
-        "extra": "**zhè**. Takes a measure word before nouns: 这个 zhège (this one)."
+        "term": "这",
+        "reading": "zhè",
+        "meaning": "this",
+        "extra": "Takes a measure word before nouns: 这个 zhège (this one).",
+        "recognitionOnly": true
       },
       "tags": ["zh::people"]
     },
     {
       "key": "pp-na",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "那",
-        "back": "that",
-        "extra": "**nà**. 那个 nàge (that one). Don't confuse with 哪 nǎ (which), which has an extra mouth 口."
+        "term": "那",
+        "reading": "nà",
+        "meaning": "that",
+        "extra": "那个 nàge (that one). Don't confuse with 哪 nǎ (which), which has an extra mouth 口.",
+        "recognitionOnly": true
       },
       "tags": ["zh::people"]
     },
     {
       "key": "num-ling",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "零",
-        "back": "zero",
-        "extra": "**líng**. Fills empty slots when reading numbers aloud: room 302 reads sān líng èr."
+        "term": "零",
+        "reading": "líng",
+        "meaning": "zero",
+        "extra": "Fills empty slots when reading numbers aloud: room 302 reads sān líng èr."
       },
       "tags": ["zh::numbers"]
     },
     {
       "key": "num-yi",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "一",
-        "back": "one",
-        "extra": "**yī** when counting. In phrases the tone shifts: yí before 4th tones (一下), yì before the rest (一点)."
+        "term": "一",
+        "reading": "yī",
+        "meaning": "one",
+        "extra": "Plain yī when counting; inside phrases the tone shifts (see the tone-change cards)."
       },
       "tags": ["zh::numbers"]
     },
     {
       "key": "num-er",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "二",
-        "back": "two",
-        "extra": "**èr**. For counting and math. Two OF something uses 两 liǎng instead: 两个人."
+        "term": "二",
+        "reading": "èr",
+        "meaning": "two (counting, math)",
+        "extra": "Two OF something uses 两 liǎng instead: 两个人."
       },
       "tags": ["zh::numbers"]
     },
     {
       "key": "num-san",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "三",
-        "back": "three",
-        "extra": "**sān**. 三点 (3 o'clock), 三个人 (three people)."
+        "term": "三",
+        "reading": "sān",
+        "meaning": "three",
+        "extra": "三点 (3 o'clock), 三个人 (three people)."
       },
       "tags": ["zh::numbers"]
     },
     {
       "key": "num-si",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "四",
-        "back": "four",
-        "extra": "**sì**. Unlucky: sounds like 死 sǐ (death); buildings often skip the 4th floor. Mind sì (4) vs shí (10)."
+        "term": "四",
+        "reading": "sì",
+        "meaning": "four",
+        "extra": "Unlucky: sounds like 死 sǐ (death); buildings often skip the 4th floor. Mind sì (4) vs shí (10)."
       },
       "tags": ["zh::numbers"]
     },
     {
       "key": "num-wu",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "五",
-        "back": "five",
-        "extra": "**wǔ**. 五块钱 (five yuan)."
+        "term": "五",
+        "reading": "wǔ",
+        "meaning": "five",
+        "extra": "五块钱 (five yuan)."
       },
       "tags": ["zh::numbers"]
     },
     {
       "key": "num-liu",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "六",
-        "back": "six",
-        "extra": "**liù**. A lucky number; 666 in Chinese chat means 'awesome', nothing sinister."
+        "term": "六",
+        "reading": "liù",
+        "meaning": "six",
+        "extra": "A lucky number; 666 in Chinese chat means 'awesome', nothing sinister."
       },
       "tags": ["zh::numbers"]
     },
     {
       "key": "num-qi",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "七",
-        "back": "seven",
-        "extra": "**qī**. 七点 (7 o'clock)."
+        "term": "七",
+        "reading": "qī",
+        "meaning": "seven",
+        "extra": "七点 (7 o'clock)."
       },
       "tags": ["zh::numbers"]
     },
     {
       "key": "num-ba",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "八",
-        "back": "eight",
-        "extra": "**bā**. The lucky number: it sounds like 发 fā (to get rich). Plates full of 8s cost extra."
+        "term": "八",
+        "reading": "bā",
+        "meaning": "eight",
+        "extra": "The lucky number: it sounds like 发 fā (to get rich). Plates full of 8s cost extra."
       },
       "tags": ["zh::numbers"]
     },
     {
       "key": "num-jiu",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "九",
-        "back": "nine",
-        "extra": "**jiǔ**. Sounds like 久 jiǔ (long-lasting), so nine is auspicious for anniversaries."
+        "term": "九",
+        "reading": "jiǔ",
+        "meaning": "nine",
+        "extra": "Sounds like 久 jiǔ (long-lasting), so nine is auspicious for anniversaries."
       },
       "tags": ["zh::numbers"]
     },
     {
       "key": "num-shi",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "十",
-        "back": "ten",
-        "extra": "**shí**, with the buzzed vowel: 'shrr'. sì (4) falls, shí (10) rises."
+        "term": "十",
+        "reading": "shí",
+        "meaning": "ten",
+        "extra": "Buzzed vowel: 'shrr'. sì (4) falls, shí (10) rises."
       },
       "tags": ["zh::numbers"]
     },
     {
       "key": "num-bai",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "百",
-        "back": "hundred",
-        "extra": "**bǎi**. 一百 (100), 三百 (300). 105 is 一百零五, with 零 filling the empty tens slot."
+        "term": "百",
+        "reading": "bǎi",
+        "meaning": "hundred",
+        "extra": "一百 (100), 三百 (300). 105 is 一百零五, with 零 filling the empty tens slot."
       },
       "tags": ["zh::numbers"]
     },
     {
       "key": "num-qian",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "钱",
-        "back": "money",
-        "extra": "**qián**. 多少钱？ (how much?). The metal radical 钅 recalls coins."
+        "term": "钱",
+        "reading": "qián",
+        "meaning": "money",
+        "extra": "多少钱？ (how much?). The metal radical 钅 recalls coins."
       },
       "tags": ["zh::numbers"]
     },
     {
       "key": "num-liang",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "两",
-        "back": "two of something (before a measure word)",
-        "extra": "**liǎng**. 两个人 (two people), never 二个人. 二 counts in the abstract; 两 counts things."
+        "term": "两",
+        "reading": "liǎng",
+        "meaning": "two of something (before a measure word)",
+        "extra": "两个人 (two people), never 二个人. 二 counts in the abstract; 两 counts things.",
+        "recognitionOnly": true
       },
       "tags": ["zh::numbers"]
     },
@@ -718,8 +776,8 @@
       "key": "num-cloze-teens",
       "model": "cloze",
       "fields": {
-        "text": "Numbers 11 to 19 stack ten + digit: 11 is {{c1::十一}}, 14 is {{c2::十四}}.",
-        "extra": "shíyī, shísì. The same pattern runs through 十九 (19)."
+        "text": "Numbers 11 to 19 stack ten + digit: 11 is {{c1::十一 shíyī}}, 14 is {{c2::十四 shísì}}.",
+        "extra": "The same pattern runs through 十九 (19)."
       },
       "tags": ["zh::numbers"]
     },
@@ -727,8 +785,8 @@
       "key": "num-cloze-tens",
       "model": "cloze",
       "fields": {
-        "text": "Tens stack digit + ten: 20 is {{c1::二十}}, 99 is {{c2::九十九}}.",
-        "extra": "èrshí, jiǔshíjiǔ. Mix freely: 25 is 二十五 èrshíwǔ."
+        "text": "Tens stack digit + ten: 20 is {{c1::二十 èrshí}}, 99 is {{c2::九十九 jiǔshíjiǔ}}.",
+        "extra": "Mix freely: 25 is 二十五 èrshíwǔ."
       },
       "tags": ["zh::numbers"]
     },
@@ -736,1069 +794,1247 @@
       "key": "num-yi-sandhi",
       "model": "basic",
       "fields": {
-        "front": "一 yī changes tone in phrases. What is the rule?",
-        "back": "yí before a 4th tone (一下 yíxià), yì before any other tone (一点 yìdiǎn); plain yī when counting.",
+        "front": "一 yī changes tone in phrases. Before a 4th-tone syllable, like 下 xià, how is it said?",
+        "back": "yí, rising: 一下 yíxià.",
         "extra": "Same spirit as 不 turning into bú before 4th tones. Pinyin in this deck writes the spoken tone."
       },
       "tags": ["zh::numbers"]
     },
     {
-      "key": "qw-shenme",
-      "model": "basic_reversed",
+      "key": "num-yi-sandhi-falling",
+      "model": "basic",
       "fields": {
-        "front": "什么",
-        "back": "what",
-        "extra": "**shénme**. Sits where the answer would go: 这是什么？ ('this is what?')"
+        "front": "一 yī changes tone in phrases. Before a 1st, 2nd, or 3rd tone syllable, like 点 diǎn, how is it said?",
+        "back": "yì, falling: 一点 yìdiǎn.",
+        "extra": "Plain yī survives only when counting or reading out digits."
+      },
+      "tags": ["zh::numbers"]
+    },
+    {
+      "key": "qw-shenme",
+      "model": "vocab",
+      "fields": {
+        "term": "什么",
+        "reading": "shénme",
+        "meaning": "what",
+        "extra": "Sits where the answer would go: 这是什么？ ('this is what?')"
       },
       "tags": ["zh::questions"]
     },
     {
       "key": "qw-shei",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "谁",
-        "back": "who",
-        "extra": "**shéi** (formal shuí). 他是谁？ (Who is he?)"
+        "term": "谁",
+        "reading": "shéi",
+        "meaning": "who",
+        "extra": "Formal reading shuí. 他是谁？ (Who is he?)"
       },
       "tags": ["zh::questions"]
     },
     {
       "key": "qw-nar",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "哪儿",
-        "back": "where",
-        "extra": "**nǎr**. 你在哪儿？ (Where are you?). The South and Taiwan say 哪里 nǎlǐ instead."
+        "term": "哪儿",
+        "reading": "nǎr",
+        "meaning": "where",
+        "extra": "你在哪儿？ (Where are you?). The South and Taiwan say 哪里 nǎlǐ instead."
       },
       "tags": ["zh::questions"]
     },
     {
       "key": "qw-duoshao",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "多少",
-        "back": "how much, how many",
-        "extra": "**duōshao**. Literally 'many-few'. No measure word needed: 多少钱？"
+        "term": "多少",
+        "reading": "duōshao",
+        "meaning": "how much, how many",
+        "extra": "Literally 'many-few'. No measure word needed: 多少钱？ For small counts use 几 jǐ."
       },
       "tags": ["zh::questions"]
     },
     {
       "key": "qw-zenmeyang",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "怎么样",
-        "back": "how is it? how about it?",
-        "extra": "**zěnmeyàng**. The all-purpose 'what do you think': 这个怎么样？ (How about this one?)"
+        "term": "怎么样",
+        "reading": "zěnmeyàng",
+        "meaning": "how is it?, how about it?",
+        "extra": "The all-purpose 'what do you think': 这个怎么样？ (How about this one?)"
       },
       "tags": ["zh::questions"]
     },
     {
       "key": "qw-na",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "哪",
-        "back": "which",
-        "extra": "**nǎ**. 哪个 (which one), 你是哪国人？ (Which country are you from?). It is 那 (that) plus a mouth 口 asking the question."
+        "term": "哪",
+        "reading": "nǎ",
+        "meaning": "which",
+        "extra": "哪个 (which one), 你是哪国人？ (Which country are you from?). It is 那 (that) plus a mouth 口 asking the question.",
+        "recognitionOnly": true
       },
       "tags": ["zh::questions"]
     },
     {
       "key": "qw-ji",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "几",
-        "back": "how many (small numbers)",
-        "extra": "**jǐ**. For answers under about ten, always with a measure word: 几个人？ Also 几点？ (what time?)"
+        "term": "几",
+        "reading": "jǐ",
+        "meaning": "how many (small numbers)",
+        "extra": "For answers under about ten, always with a measure word: 几个人？ Also 几点？ (what time?)",
+        "recognitionOnly": true
       },
       "tags": ["zh::questions"]
     },
     {
       "key": "qw-zenme",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "怎么",
-        "back": "how (to do something)",
-        "extra": "**zěnme**. 怎么说？ (How do you say it?), 怎么去？ (How do I get there?)"
+        "term": "怎么",
+        "reading": "zěnme",
+        "meaning": "how (to do something)",
+        "extra": "怎么说？ (How do you say it?), 怎么去？ (How do I get there?)",
+        "recognitionOnly": true
       },
       "tags": ["zh::questions"]
     },
     {
       "key": "qw-ma",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "吗",
-        "back": "(yes-no question particle)",
-        "extra": "**ma**, toneless. Statement + 吗 = question: 你是老师吗？ Word order never changes."
+        "term": "吗",
+        "reading": "ma",
+        "meaning": "(yes-no question particle)",
+        "extra": "Toneless. Statement + 吗 = question: 你是老师吗？ Word order never changes.",
+        "recognitionOnly": true
       },
       "tags": ["zh::questions"]
     },
     {
       "key": "qw-ne",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "呢",
-        "back": "(bounce-back question particle)",
-        "extra": "**ne**. Returns a question: 我很好，你呢？ (I'm fine, and you?)"
+        "term": "呢",
+        "reading": "ne",
+        "meaning": "(bounce-back question particle)",
+        "extra": "Returns a question: 我很好，你呢？ (I'm fine, and you?)",
+        "recognitionOnly": true
       },
       "tags": ["zh::questions"]
     },
     {
       "key": "vb-shi",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "是",
-        "back": "to be (A is B)",
-        "extra": "**shì**. Links nouns only: 我是学生 (I am a student). Never before adjectives: 我很好, not 我是好."
+        "term": "是",
+        "reading": "shì",
+        "meaning": "to be (A is B)",
+        "extra": "Links nouns only: 我是学生 (I am a student). Never before adjectives: 我很好, not 我是好."
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-you",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "有",
-        "back": "to have; there is",
-        "extra": "**yǒu**. Negated with 没, never 不: 没有. 有问题吗？ (Any questions?)"
+        "term": "有",
+        "reading": "yǒu",
+        "meaning": "to have",
+        "extra": "Also 'there is'. Negated with 没, never 不: 没有. 有问题吗？ (Any questions?)"
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-yao",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "要",
-        "back": "to want (something)",
-        "extra": "**yào**. 我要这个 (I want this one). Direct; for 'would like to do' use 想."
+        "term": "要",
+        "reading": "yào",
+        "meaning": "to want (something)",
+        "extra": "我要这个 (I want this one). Direct; for 'would like to do' use 想."
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-xiang",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "想",
-        "back": "to want to (do something); to miss",
-        "extra": "**xiǎng**. 想 + verb: 我想去 (I'd like to go), softer than 要. With a person: 我想你 (I miss you)."
+        "term": "想",
+        "reading": "xiǎng",
+        "meaning": "to want to (do something)",
+        "extra": "想 + verb: 我想去 (I'd like to go), softer than 要. With a person it means to miss: 我想你 (I miss you)."
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-qu",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "去",
-        "back": "to go",
-        "extra": "**qù**. 去 + place: 去中国 (go to China)."
+        "term": "去",
+        "reading": "qù",
+        "meaning": "to go",
+        "extra": "去 + place: 去中国 (go to China)."
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-lai",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "来",
-        "back": "to come",
-        "extra": "**lái**. Also 'bring me' when ordering: 来一杯茶 (a cup of tea, please)."
+        "term": "来",
+        "reading": "lái",
+        "meaning": "to come",
+        "extra": "Also 'bring me' when ordering: 来一杯茶 (a cup of tea, please)."
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-chi",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "吃",
-        "back": "to eat",
-        "extra": "**chī**. 吃饭 (have a meal). 你吃了吗？ (Have you eaten?) doubles as a friendly greeting."
+        "term": "吃",
+        "reading": "chī",
+        "meaning": "to eat",
+        "extra": "吃饭 (have a meal). 你吃了吗？ (Have you eaten?) doubles as a friendly greeting."
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-he",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "喝",
-        "back": "to drink",
-        "extra": "**hē**. 喝水 (drink water), 喝茶 (drink tea). The mouth radical 口 marks a mouth action."
+        "term": "喝",
+        "reading": "hē",
+        "meaning": "to drink",
+        "extra": "喝水 (drink water), 喝茶 (drink tea). The mouth radical 口 marks a mouth action."
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-mai",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "买",
-        "back": "to buy",
-        "extra": "**mǎi**. 买东西 (go shopping). 卖 mài (to sell) differs by tone and a top stroke: 3rd tone buys, 4th tone sells."
+        "term": "买",
+        "reading": "mǎi",
+        "meaning": "to buy",
+        "extra": "买东西 (go shopping). 卖 mài (to sell) differs by tone and a top stroke: 3rd tone buys, 4th tone sells."
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-kan",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "看",
-        "back": "to look, watch, read",
-        "extra": "**kàn**. 看书 (read a book), 看电影 (watch a movie). A hand 手 shading an eye 目."
+        "term": "看",
+        "reading": "kàn",
+        "meaning": "to look at, to watch",
+        "extra": "Also to read: 看书 (read a book), 看电影 (watch a movie). A hand 手 shading an eye 目."
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-ting",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "听",
-        "back": "to listen, hear",
-        "extra": "**tīng**. 听不懂 (hear but not understand) is the one you will use most."
+        "term": "听",
+        "reading": "tīng",
+        "meaning": "to listen",
+        "extra": "Also to hear: 听不懂 (hear but not understand) is the one you will use most."
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-shuo",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "说",
-        "back": "to speak, say",
-        "extra": "**shuō**. 说汉语 (speak Chinese). 说话 means to talk in general."
+        "term": "说",
+        "reading": "shuō",
+        "meaning": "to speak, to say",
+        "extra": "说汉语 (speak Chinese). 说话 means to talk in general."
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-hui",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "会",
-        "back": "can (learned skill)",
-        "extra": "**huì**. 我会说汉语 (I can speak Chinese). Compare 能 néng: can in the moment."
+        "term": "会",
+        "reading": "huì",
+        "meaning": "can (learned skill)",
+        "extra": "我会说汉语 (I can speak Chinese). Compare 能 néng: can in the moment."
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-neng",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "能",
-        "back": "can (possible right now)",
-        "extra": "**néng**. Ability or permission in the moment: 我不能去 (I can't go). Learned skills take 会."
+        "term": "能",
+        "reading": "néng",
+        "meaning": "can (possible right now)",
+        "extra": "Ability or permission in the moment: 我不能去 (I can't go). Learned skills take 会."
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-zai",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "在",
-        "back": "to be at, in",
-        "extra": "**zài**. 我在家 (I'm at home). Before a verb it marks an ongoing action: 我在吃饭 (I'm eating)."
+        "term": "在",
+        "reading": "zài",
+        "meaning": "to be at, in",
+        "extra": "我在家 (I'm at home). Before a verb it marks an ongoing action: 我在吃饭 (I'm eating)."
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-zhu",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "住",
-        "back": "to live, stay",
-        "extra": "**zhù**. 你住在哪儿？ (Where do you live?). Hotels too: 住饭店."
+        "term": "住",
+        "reading": "zhù",
+        "meaning": "to live, stay",
+        "extra": "你住在哪儿？ (Where do you live?). Hotels too: 住饭店."
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-meiyou",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "没有",
-        "back": "to not have; did not",
-        "extra": "**méiyǒu**. Negates 有 and completed actions: 我没有去 (I didn't go). Often shortened to 没."
+        "term": "没有",
+        "reading": "méiyǒu",
+        "meaning": "to not have",
+        "extra": "Also negates completed actions: 我没有去 (I didn't go). Often shortened to 没.",
+        "recognitionOnly": true
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-zuo-do",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "做",
-        "back": "to do, make",
-        "extra": "**zuò**. 做饭 (cook). Same sound as 坐 (to sit); context decides."
+        "term": "做",
+        "reading": "zuò",
+        "meaning": "to do, make",
+        "extra": "做饭 (cook). Same sound as 坐 (to sit); context decides.",
+        "recognitionOnly": true
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-zuo-sit",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "坐",
-        "back": "to sit; to take (transport)",
-        "extra": "**zuò**. 请坐 (please sit). 坐飞机 (take a plane), 坐出租车 (take a taxi). Two people 人 sitting on earth 土."
+        "term": "坐",
+        "reading": "zuò",
+        "meaning": "to sit",
+        "extra": "请坐 (please sit). Also to take transport: 坐飞机 (take a plane), 坐出租车 (take a taxi). Two people 人 sitting on earth 土.",
+        "recognitionOnly": true
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-jiao",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "叫",
-        "back": "to be called; to call",
-        "extra": "**jiào**. 我叫 + your name (My name is...). Also to summon: 叫出租车 (call a taxi)."
+        "term": "叫",
+        "reading": "jiào",
+        "meaning": "to be called",
+        "extra": "我叫 + your name (My name is...). Also to summon: 叫出租车 (call a taxi).",
+        "recognitionOnly": true
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-xuexi",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "学习",
-        "back": "to study, learn",
-        "extra": "**xuéxí**. 我学习汉语 (I study Chinese). 学 alone works too."
+        "term": "学习",
+        "reading": "xuéxí",
+        "meaning": "to study, learn",
+        "extra": "我学习汉语 (I study Chinese). 学 alone works too.",
+        "recognitionOnly": true
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-gongzuo",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "工作",
-        "back": "to work; job",
-        "extra": "**gōngzuò**. Both verb and noun: 我在中国工作 (I work in China); 你的工作 (your job)."
+        "term": "工作",
+        "reading": "gōngzuò",
+        "meaning": "to work",
+        "extra": "Also the noun 'job': 我在中国工作 (I work in China); 你的工作 (your job).",
+        "recognitionOnly": true
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-shuijiao",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "睡觉",
-        "back": "to sleep",
-        "extra": "**shuìjiào**. 我要睡觉 (I want to sleep). Not 水饺 shuǐjiǎo (boiled dumplings); tones matter."
+        "term": "睡觉",
+        "reading": "shuìjiào",
+        "meaning": "to sleep",
+        "extra": "我要睡觉 (I want to sleep). Not 水饺 shuǐjiǎo (boiled dumplings); tones matter.",
+        "recognitionOnly": true
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-da-dianhua",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "打电话",
-        "back": "to make a phone call",
-        "extra": "**dǎ diànhuà**. 打 (to hit) is the verb for calls: 给我打电话 (call me). 电话 is 'electric speech'."
+        "term": "打电话",
+        "reading": "dǎ diànhuà",
+        "meaning": "to make a phone call",
+        "extra": "打 (to hit) is the verb for calls: 给我打电话 (call me). 电话 is 'electric speech'.",
+        "recognitionOnly": true
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-ai",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "爱",
-        "back": "to love",
-        "extra": "**ài**. 我爱你 (I love you). Strong; for everyday liking use 喜欢."
+        "term": "爱",
+        "reading": "ài",
+        "meaning": "to love",
+        "extra": "我爱你 (I love you). Strong; for everyday liking use 喜欢.",
+        "recognitionOnly": true
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "vb-xihuan",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "喜欢",
-        "back": "to like",
-        "extra": "**xǐhuan**. 我喜欢中国菜 (I like Chinese food). Takes nouns or verbs: 喜欢看书."
+        "term": "喜欢",
+        "reading": "xǐhuan",
+        "meaning": "to like",
+        "extra": "我喜欢中国菜 (I like Chinese food). Takes nouns or verbs: 喜欢看书.",
+        "recognitionOnly": true
       },
       "tags": ["zh::verbs"]
     },
     {
       "key": "tm-jintian",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "今天",
-        "back": "today",
-        "extra": "**jīntiān**. 天 (day) builds the whole trio: 今天, 明天, 昨天."
+        "term": "今天",
+        "reading": "jīntiān",
+        "meaning": "today",
+        "extra": "天 (day) builds the whole trio: 今天, 明天, 昨天."
       },
       "tags": ["zh::time"]
     },
     {
       "key": "tm-mingtian",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "明天",
-        "back": "tomorrow",
-        "extra": "**míngtiān**. 明 (bright: sun 日 + moon 月). 明天见 (see you tomorrow)."
+        "term": "明天",
+        "reading": "míngtiān",
+        "meaning": "tomorrow",
+        "extra": "明 (bright: sun 日 + moon 月). 明天见 (see you tomorrow)."
       },
       "tags": ["zh::time"]
     },
     {
       "key": "tm-zuotian",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "昨天",
-        "back": "yesterday",
-        "extra": "**zuótiān**. 昨 carries the sun radical 日: a day already passed."
+        "term": "昨天",
+        "reading": "zuótiān",
+        "meaning": "yesterday",
+        "extra": "昨 carries the sun radical 日: a day already passed.",
+        "recognitionOnly": true
       },
       "tags": ["zh::time"]
     },
     {
       "key": "tm-xianzai",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "现在",
-        "back": "now",
-        "extra": "**xiànzài**. 现在几点？ (What time is it now?)"
+        "term": "现在",
+        "reading": "xiànzài",
+        "meaning": "now",
+        "extra": "现在几点？ (What time is it now?)",
+        "recognitionOnly": true
       },
       "tags": ["zh::time"]
     },
     {
       "key": "tm-xianzai-ji-dian",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "现在几点？",
-        "back": "what time is it?",
-        "extra": "**xiànzài jǐ diǎn**. Answer: number + 点: 三点 (3 o'clock)."
+        "term": "现在几点？",
+        "reading": "xiànzài jǐ diǎn",
+        "meaning": "what time is it?",
+        "extra": "Answer: number + 点: 三点 (3 o'clock)."
       },
       "tags": ["zh::time"]
     },
     {
       "key": "tm-dian",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "点",
-        "back": "o'clock",
-        "extra": "**diǎn**. 三点 (3 o'clock). Also 'to order food' (点菜) and 'a little' (一点)."
+        "term": "点",
+        "reading": "diǎn",
+        "meaning": "o'clock",
+        "extra": "三点 (3 o'clock). Also 'to order food' (点菜) and 'a little' (一点).",
+        "recognitionOnly": true
       },
       "tags": ["zh::time"]
     },
     {
       "key": "tm-nian",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "年",
-        "back": "year",
-        "extra": "**nián**. Dates run big to small: 2026年7月9日. 新年 (New Year)."
+        "term": "年",
+        "reading": "nián",
+        "meaning": "year",
+        "extra": "Dates run big to small: 2026年7月9日. 新年 (New Year).",
+        "recognitionOnly": true
       },
       "tags": ["zh::time"]
     },
     {
       "key": "tm-yue",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "月",
-        "back": "month; moon",
-        "extra": "**yuè**. Months are just numbers: 一月 (January) through 十二月 (December). The character draws a crescent moon."
+        "term": "月",
+        "reading": "yuè",
+        "meaning": "month",
+        "extra": "Also 'moon'; the character draws a crescent. Months are just numbers: 一月 (January) through 十二月 (December).",
+        "recognitionOnly": true
       },
       "tags": ["zh::time"]
     },
     {
       "key": "tm-xingqi",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "星期",
-        "back": "week",
-        "extra": "**xīngqī**. Weekdays count up: 星期一 (Monday) to 星期六 (Saturday); Sunday is 星期天."
+        "term": "星期",
+        "reading": "xīngqī",
+        "meaning": "week",
+        "extra": "Weekdays count up: 星期一 (Monday) to 星期六 (Saturday); Sunday is 星期天.",
+        "recognitionOnly": true
       },
       "tags": ["zh::time"]
     },
     {
       "key": "tm-shangwu",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "上午",
-        "back": "morning (before noon)",
-        "extra": "**shàngwǔ**. 上 (upper) + 午 (noon). The afternoon is 下午."
+        "term": "上午",
+        "reading": "shàngwǔ",
+        "meaning": "morning (before noon)",
+        "extra": "上 (upper) + 午 (noon). The afternoon is 下午.",
+        "recognitionOnly": true
       },
       "tags": ["zh::time"]
     },
     {
       "key": "tm-xiawu",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "下午",
-        "back": "afternoon",
-        "extra": "**xiàwǔ**. 下 (lower) + 午 (noon): the part of the day below noon."
+        "term": "下午",
+        "reading": "xiàwǔ",
+        "meaning": "afternoon",
+        "extra": "下 (lower) + 午 (noon): the part of the day below noon.",
+        "recognitionOnly": true
       },
       "tags": ["zh::time"]
     },
     {
       "key": "fm-baba",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "爸爸",
-        "back": "dad, father",
-        "extra": "**bàba**. Second syllable is neutral tone."
+        "term": "爸爸",
+        "reading": "bàba",
+        "meaning": "dad, father",
+        "extra": "Second syllable is neutral tone."
       },
       "tags": ["zh::family"]
     },
     {
       "key": "fm-mama",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "妈妈",
-        "back": "mom, mother",
-        "extra": "**māma**. Woman radical 女 plus 马 mǎ (horse) lending the sound."
+        "term": "妈妈",
+        "reading": "māma",
+        "meaning": "mom, mother",
+        "extra": "Woman radical 女 plus 马 mǎ (horse) lending the sound."
       },
       "tags": ["zh::family"]
     },
     {
       "key": "fm-erzi",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "儿子",
-        "back": "son",
-        "extra": "**érzi**. 子 here is a neutral-tone noun suffix, the same one as in 杯子 (cup)."
+        "term": "儿子",
+        "reading": "érzi",
+        "meaning": "son",
+        "extra": "子 here is a neutral-tone noun suffix, the same one as in 杯子 (cup).",
+        "recognitionOnly": true
       },
       "tags": ["zh::family"]
     },
     {
       "key": "fm-nver",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "女儿",
-        "back": "daughter",
-        "extra": "**nǚ'ér**. 女 (female) + 儿 (child). The apostrophe separates the syllables; ü keeps its dots after n."
+        "term": "女儿",
+        "reading": "nǚ'ér",
+        "meaning": "daughter",
+        "extra": "女 (female) + 儿 (child). The apostrophe separates the syllables; ü keeps its dots after n.",
+        "recognitionOnly": true
       },
       "tags": ["zh::family"]
     },
     {
       "key": "fm-laoshi",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "老师",
-        "back": "teacher",
-        "extra": "**lǎoshī**. 老 (old, venerable) + 师 (master). Address teachers as surname + 老师: 王老师."
+        "term": "老师",
+        "reading": "lǎoshī",
+        "meaning": "teacher",
+        "extra": "老 (old, venerable) + 师 (master). Address teachers as surname + 老师: 王老师.",
+        "recognitionOnly": true
       },
       "tags": ["zh::family"]
     },
     {
       "key": "fm-xuesheng",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "学生",
-        "back": "student",
-        "extra": "**xuésheng**. 学 (to study) + 生 (person). 我是学生 (I am a student)."
+        "term": "学生",
+        "reading": "xuésheng",
+        "meaning": "student",
+        "extra": "学 (to study) + 生 (person). 我是学生 (I am a student).",
+        "recognitionOnly": true
       },
       "tags": ["zh::family"]
     },
     {
       "key": "fm-yisheng",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "医生",
-        "back": "doctor",
-        "extra": "**yīshēng**. 医 (medicine) + 生 (person). 医院 (hospital) shares the same 医."
+        "term": "医生",
+        "reading": "yīshēng",
+        "meaning": "doctor",
+        "extra": "医 (medicine) + 生 (person). 医院 (hospital) shares the same 医.",
+        "recognitionOnly": true
       },
       "tags": ["zh::family"]
     },
     {
       "key": "fm-xiansheng",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "先生",
-        "back": "Mr., sir",
-        "extra": "**xiānsheng**. Surname first: 王先生 (Mr. Wang). Literally 'born earlier'."
+        "term": "先生",
+        "reading": "xiānsheng",
+        "meaning": "Mr., sir",
+        "extra": "Surname first: 王先生 (Mr. Wang). Literally 'born earlier'.",
+        "recognitionOnly": true
       },
       "tags": ["zh::family"]
     },
     {
       "key": "fm-xiaojie",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "小姐",
-        "back": "Miss, young lady",
-        "extra": "**xiǎojiě**. Fine after a surname: 王小姐. Alone to a stranger it can offend; say 服务员 to staff instead."
+        "term": "小姐",
+        "reading": "xiǎojiě",
+        "meaning": "Miss, young lady",
+        "extra": "Fine after a surname: 王小姐. Alone to a stranger it can offend; say 服务员 to staff instead.",
+        "recognitionOnly": true
       },
       "tags": ["zh::family"]
     },
     {
       "key": "fd-shui",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "水",
-        "back": "water",
-        "extra": "**shuǐ**. 热水 (hot water) is the default drink offered in China."
+        "term": "水",
+        "reading": "shuǐ",
+        "meaning": "water",
+        "extra": "热水 (hot water) is the default drink offered in China."
       },
       "tags": ["zh::food"]
     },
     {
       "key": "fd-cha",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "茶",
-        "back": "tea",
-        "extra": "**chá**. Both 'chai' and 'cha' around the world come from this word."
+        "term": "茶",
+        "reading": "chá",
+        "meaning": "tea",
+        "extra": "Both 'chai' and 'cha' around the world come from this word."
       },
       "tags": ["zh::food"]
     },
     {
       "key": "fd-kafei",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "咖啡",
-        "back": "coffee",
-        "extra": "**kāfēi**. A loanword from 'coffee'. 一杯咖啡 (a cup of coffee)."
+        "term": "咖啡",
+        "reading": "kāfēi",
+        "meaning": "coffee",
+        "extra": "A loanword from 'coffee'. 一杯咖啡 (a cup of coffee)."
       },
       "tags": ["zh::food"]
     },
     {
       "key": "fd-mifan",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "米饭",
-        "back": "cooked rice",
-        "extra": "**mǐfàn**. 米 (raw rice) + 饭 (cooked food, meal). 吃饭 (have a meal) uses the same 饭."
+        "term": "米饭",
+        "reading": "mǐfàn",
+        "meaning": "cooked rice",
+        "extra": "米 (raw rice) + 饭 (cooked food, meal). 吃饭 (have a meal) uses the same 饭.",
+        "recognitionOnly": true
       },
       "tags": ["zh::food"]
     },
     {
       "key": "fd-cai",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "菜",
-        "back": "dish; vegetable",
-        "extra": "**cài**. 中国菜 (Chinese food), 点菜 (order dishes). The grass radical 艹 hints at its vegetable origin."
+        "term": "菜",
+        "reading": "cài",
+        "meaning": "dish (of food)",
+        "extra": "Also 'vegetable'. 中国菜 (Chinese food), 点菜 (order dishes). The grass radical 艹 hints at its vegetable origin.",
+        "recognitionOnly": true
       },
       "tags": ["zh::food"]
     },
     {
       "key": "fd-shuiguo",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "水果",
-        "back": "fruit",
-        "extra": "**shuǐguǒ**. 水 (water) + 果 (fruit): juicy produce."
+        "term": "水果",
+        "reading": "shuǐguǒ",
+        "meaning": "fruit",
+        "extra": "水 (water) + 果 (fruit): juicy produce.",
+        "recognitionOnly": true
       },
       "tags": ["zh::food"]
     },
     {
       "key": "fd-pingguo",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "苹果",
-        "back": "apple",
-        "extra": "**píngguǒ**. Also the brand: 苹果手机 (iPhone)."
+        "term": "苹果",
+        "reading": "píngguǒ",
+        "meaning": "apple",
+        "extra": "Also the brand: 苹果手机 (iPhone).",
+        "recognitionOnly": true
       },
       "tags": ["zh::food"]
     },
     {
       "key": "fd-beizi",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "杯子",
-        "back": "cup, glass",
-        "extra": "**bēizi**. 杯 doubles as the measure word for drinks. Same 杯 as in 干杯 (cheers)."
+        "term": "杯子",
+        "reading": "bēizi",
+        "meaning": "cup, glass",
+        "extra": "杯 doubles as the measure word for drinks. Same 杯 as in 干杯 (cheers).",
+        "recognitionOnly": true
       },
       "tags": ["zh::food"]
     },
     {
       "key": "pl-jia",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "家",
-        "back": "home; family",
-        "extra": "**jiā**. A pig 豕 under a roof 宀: the ancient picture of a household. 回家 (go home)."
+        "term": "家",
+        "reading": "jiā",
+        "meaning": "home",
+        "extra": "Also 'family'. A pig 豕 under a roof 宀: the ancient picture of a household. 回家 (go home)."
       },
       "tags": ["zh::places"]
     },
     {
       "key": "pl-zhongguo",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "中国",
-        "back": "China",
-        "extra": "**Zhōngguó**. 中 (middle) + 国 (country): the Middle Kingdom. 中国人, 中国菜."
+        "term": "中国",
+        "reading": "Zhōngguó",
+        "meaning": "China",
+        "extra": "中 (middle) + 国 (country): the Middle Kingdom. 中国人, 中国菜."
       },
       "tags": ["zh::places"]
     },
     {
       "key": "pl-meiguo",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "美国",
-        "back": "USA",
-        "extra": "**Měiguó**. 美 (beautiful) + 国 (country), picked to echo the 'me' in America. 美国人 (American)."
+        "term": "美国",
+        "reading": "Měiguó",
+        "meaning": "USA",
+        "extra": "美 (beautiful) + 国 (country), picked to echo the 'me' in America. 美国人 (American)."
       },
       "tags": ["zh::places"]
     },
     {
       "key": "pl-hanyu",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "汉语",
-        "back": "Chinese (the language)",
-        "extra": "**Hànyǔ**. 汉 (the Han people) + 语 (language). You will also hear 中文 Zhōngwén; both are fine."
+        "term": "汉语",
+        "reading": "Hànyǔ",
+        "meaning": "Chinese (the language)",
+        "extra": "汉 (the Han people) + 语 (language). You will also hear 中文 Zhōngwén; both are fine."
       },
       "tags": ["zh::places"]
     },
     {
       "key": "pl-chuzuche",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "出租车",
-        "back": "taxi",
-        "extra": "**chūzūchē**. 出租 (to rent out) + 车 (vehicle). 坐出租车 (take a taxi); in speech also 打车 dǎchē."
+        "term": "出租车",
+        "reading": "chūzūchē",
+        "meaning": "taxi",
+        "extra": "出租 (to rent out) + 车 (vehicle). 坐出租车 (take a taxi); in speech also 打车 dǎchē."
       },
       "tags": ["zh::places"]
     },
     {
       "key": "pl-shouji",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "手机",
-        "back": "cell phone",
-        "extra": "**shǒujī**. 手 (hand) + 机 (machine). 我的手机 (my phone)."
+        "term": "手机",
+        "reading": "shǒujī",
+        "meaning": "cell phone",
+        "extra": "手 (hand) + 机 (machine). 我的手机 (my phone)."
       },
       "tags": ["zh::places"]
     },
     {
       "key": "pl-xuexiao",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "学校",
-        "back": "school",
-        "extra": "**xuéxiào**. 学 (study) + 校 (school building). 去学校 (go to school)."
+        "term": "学校",
+        "reading": "xuéxiào",
+        "meaning": "school",
+        "extra": "学 (study) + 校 (school building). 去学校 (go to school).",
+        "recognitionOnly": true
       },
       "tags": ["zh::places"]
     },
     {
       "key": "pl-fandian",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "饭店",
-        "back": "restaurant; hotel",
-        "extra": "**fàndiàn**. 饭 (meal) + 店 (shop). In big cities a 饭店 is often a hotel; a small eatery is a 饭馆."
+        "term": "饭店",
+        "reading": "fàndiàn",
+        "meaning": "restaurant",
+        "extra": "饭 (meal) + 店 (shop). In big cities a 饭店 is often a hotel; a small eatery is a 饭馆.",
+        "recognitionOnly": true
       },
       "tags": ["zh::places"]
     },
     {
       "key": "pl-shangdian",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "商店",
-        "back": "shop, store",
-        "extra": "**shāngdiàn**. 商 (commerce) + 店 (shop). 去商店买东西 (go to the store to buy things)."
+        "term": "商店",
+        "reading": "shāngdiàn",
+        "meaning": "shop, store",
+        "extra": "商 (commerce) + 店 (shop). 去商店买东西 (go to the store to buy things).",
+        "recognitionOnly": true
       },
       "tags": ["zh::places"]
     },
     {
       "key": "pl-yiyuan",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "医院",
-        "back": "hospital",
-        "extra": "**yīyuàn**. 医 (medicine) + 院 (institution)."
+        "term": "医院",
+        "reading": "yīyuàn",
+        "meaning": "hospital",
+        "extra": "医 (medicine) + 院 (institution).",
+        "recognitionOnly": true
       },
       "tags": ["zh::places"]
     },
     {
       "key": "pl-shu",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "书",
-        "back": "book",
-        "extra": "**shū**. 看书 (read), 一本书 (one book)."
+        "term": "书",
+        "reading": "shū",
+        "meaning": "book",
+        "extra": "看书 (read), 一本书 (one book).",
+        "recognitionOnly": true
       },
       "tags": ["zh::places"]
     },
     {
       "key": "pl-dongxi",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "东西",
-        "back": "thing, stuff",
-        "extra": "**dōngxi**. Literally 'east-west'. 买东西 (buy things, go shopping)."
+        "term": "东西",
+        "reading": "dōngxi",
+        "meaning": "thing, stuff",
+        "extra": "Literally 'east-west'. 买东西 (buy things, go shopping).",
+        "recognitionOnly": true
       },
       "tags": ["zh::places"]
     },
     {
       "key": "pl-feiji",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "飞机",
-        "back": "airplane",
-        "extra": "**fēijī**. 飞 (to fly) + 机 (machine). The airport, 机场 jīchǎng, shares the 机."
+        "term": "飞机",
+        "reading": "fēijī",
+        "meaning": "airplane",
+        "extra": "飞 (to fly) + 机 (machine). The airport, 机场 jīchǎng, shares the 机.",
+        "recognitionOnly": true
       },
       "tags": ["zh::places"]
     },
     {
       "key": "pl-diannao",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "电脑",
-        "back": "computer",
-        "extra": "**diànnǎo**. Literally 'electric brain'. 电 also starts 电话 (phone) and 电影 (movie)."
+        "term": "电脑",
+        "reading": "diànnǎo",
+        "meaning": "computer",
+        "extra": "Literally 'electric brain'. 电 also starts 电话 (phone) and 电影 (movie).",
+        "recognitionOnly": true
       },
       "tags": ["zh::places"]
     },
     {
       "key": "pl-yifu",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "衣服",
-        "back": "clothes",
-        "extra": "**yīfu**. 买衣服 (buy clothes)."
+        "term": "衣服",
+        "reading": "yīfu",
+        "meaning": "clothes",
+        "extra": "买衣服 (buy clothes).",
+        "recognitionOnly": true
       },
       "tags": ["zh::places"]
     },
     {
       "key": "pl-gou",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "狗",
-        "back": "dog",
-        "extra": "**gǒu**. Animal radical 犭 on the left. 小狗 (puppy)."
+        "term": "狗",
+        "reading": "gǒu",
+        "meaning": "dog",
+        "extra": "Animal radical 犭 on the left. 小狗 (puppy).",
+        "recognitionOnly": true
       },
       "tags": ["zh::places"]
     },
     {
       "key": "pl-qianmian",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "前面",
-        "back": "front, ahead",
-        "extra": "**qiánmiàn**. 饭店在前面 (the restaurant is up ahead)."
+        "term": "前面",
+        "reading": "qiánmiàn",
+        "meaning": "front, ahead",
+        "extra": "饭店在前面 (the restaurant is up ahead).",
+        "recognitionOnly": true
       },
       "tags": ["zh::places"]
     },
     {
       "key": "pl-houmian",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "后面",
-        "back": "back, behind",
-        "extra": "**hòumiàn**. 在学校后面 (behind the school). Opposite of 前面."
+        "term": "后面",
+        "reading": "hòumiàn",
+        "meaning": "back, behind",
+        "extra": "在学校后面 (behind the school). Opposite of 前面.",
+        "recognitionOnly": true
       },
       "tags": ["zh::places"]
     },
     {
       "key": "pl-li",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "里",
-        "back": "inside",
-        "extra": "**lǐ**. Follows the noun: 家里 (at home), 学校里 (inside the school)."
+        "term": "里",
+        "reading": "lǐ",
+        "meaning": "inside",
+        "extra": "Follows the noun: 家里 (at home), 学校里 (inside the school).",
+        "recognitionOnly": true
       },
       "tags": ["zh::places"]
     },
     {
       "key": "adj-hao",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "好",
-        "back": "good, well",
-        "extra": "**hǎo**. Woman 女 + child 子 = good. Also an agreeable 'OK' on its own: 好的."
+        "term": "好",
+        "reading": "hǎo",
+        "meaning": "good, well",
+        "extra": "Woman 女 + child 子 = good. Also an agreeable 'OK' on its own: 好的."
       },
       "tags": ["zh::adjectives"]
     },
     {
       "key": "adj-da",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "大",
-        "back": "big",
-        "extra": "**dà**. A person with arms stretched wide. 大学 (university, literally 'big school')."
+        "term": "大",
+        "reading": "dà",
+        "meaning": "big",
+        "extra": "A person with arms stretched wide. 大学 (university, literally 'big school')."
       },
       "tags": ["zh::adjectives"]
     },
     {
       "key": "adj-xiao",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "小",
-        "back": "small",
-        "extra": "**xiǎo**. 小狗 (puppy). 小 + surname is a friendly address for someone younger: 小王."
+        "term": "小",
+        "reading": "xiǎo",
+        "meaning": "small",
+        "extra": "小狗 (puppy). 小 + surname is a friendly address for someone younger: 小王."
       },
       "tags": ["zh::adjectives"]
     },
     {
       "key": "adj-gui",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "贵",
-        "back": "expensive",
-        "extra": "**guì**. 太贵了 (too expensive)."
+        "term": "贵",
+        "reading": "guì",
+        "meaning": "expensive",
+        "extra": "太贵了 (too expensive)."
       },
       "tags": ["zh::adjectives"]
     },
     {
       "key": "adj-pianyi",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "便宜",
-        "back": "cheap",
-        "extra": "**piányi**. 便宜一点 (a little cheaper). Opposite of 贵."
+        "term": "便宜",
+        "reading": "piányi",
+        "meaning": "cheap",
+        "extra": "便宜一点 (a little cheaper). Opposite of 贵."
       },
       "tags": ["zh::adjectives"]
     },
     {
       "key": "adj-duo",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "多",
-        "back": "many, much",
-        "extra": "**duō**. 很多 (a lot). Opposite: 少 shǎo (few). 多少 (how much) stacks them."
+        "term": "多",
+        "reading": "duō",
+        "meaning": "many, much",
+        "extra": "很多 (a lot). Opposite: 少 shǎo (few). 多少 (how much) stacks them.",
+        "recognitionOnly": true
       },
       "tags": ["zh::adjectives"]
     },
     {
       "key": "adj-leng",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "冷",
-        "back": "cold",
-        "extra": "**lěng**. 今天很冷 (it's cold today). The two-stroke ice radical 冫 sits on the left."
+        "term": "冷",
+        "reading": "lěng",
+        "meaning": "cold",
+        "extra": "今天很冷 (it's cold today). The two-stroke ice radical 冫 sits on the left.",
+        "recognitionOnly": true
       },
       "tags": ["zh::adjectives"]
     },
     {
       "key": "adj-re",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "热",
-        "back": "hot",
-        "extra": "**rè**. 热水 (hot water). The four dots at the bottom are the fire radical."
+        "term": "热",
+        "reading": "rè",
+        "meaning": "hot",
+        "extra": "热水 (hot water). The four dots at the bottom are the fire radical.",
+        "recognitionOnly": true
       },
       "tags": ["zh::adjectives"]
     },
     {
       "key": "adj-gaoxing",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "高兴",
-        "back": "happy, glad",
-        "extra": "**gāoxìng**. 高 (high) + 兴 (spirits). 认识你很高兴 (nice to meet you)."
+        "term": "高兴",
+        "reading": "gāoxìng",
+        "meaning": "happy, glad",
+        "extra": "高 (high) + 兴 (spirits). 认识你很高兴 (nice to meet you).",
+        "recognitionOnly": true
       },
       "tags": ["zh::adjectives"]
     },
     {
       "key": "adj-piaoliang",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "漂亮",
-        "back": "pretty, beautiful",
-        "extra": "**piàoliang**. The liang is a neutral tone. Works for people, clothes, and cities alike."
+        "term": "漂亮",
+        "reading": "piàoliang",
+        "meaning": "pretty, beautiful",
+        "extra": "The liang is a neutral tone. Works for people, clothes, and cities alike.",
+        "recognitionOnly": true
       },
       "tags": ["zh::adjectives"]
     },
     {
       "key": "gl-de",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "的",
-        "back": "(possessive particle)",
-        "extra": "**de**, toneless. 我的手机 (my phone), 你的书 (your book). The most common character in Chinese."
+        "term": "的",
+        "reading": "de",
+        "meaning": "(possessive particle)",
+        "extra": "Toneless. 我的手机 (my phone), 你的书 (your book). The most common character in Chinese.",
+        "recognitionOnly": true
       },
       "tags": ["zh::grammar"]
     },
     {
       "key": "gl-le",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "了",
-        "back": "(done or changed particle)",
-        "extra": "**le**. After a verb: completed (我买了 I bought it). At sentence end: new situation (下雨了 it's raining now)."
+        "term": "了",
+        "reading": "le",
+        "meaning": "(done or changed particle)",
+        "extra": "After a verb: completed (我买了 I bought it). At sentence end: new situation (下雨了 it's raining now).",
+        "recognitionOnly": true
       },
       "tags": ["zh::grammar"]
     },
     {
       "key": "gl-hen",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "很",
-        "back": "very (adjective glue)",
-        "extra": "**hěn**. Required between subject and adjective: 他很好. Often so weak it just means 'is'."
+        "term": "很",
+        "reading": "hěn",
+        "meaning": "very (adjective glue)",
+        "extra": "Required between subject and adjective: 他很好. Often so weak it just means 'is'.",
+        "recognitionOnly": true
       },
       "tags": ["zh::grammar"]
     },
     {
       "key": "gl-bu",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "不",
-        "back": "not, no",
-        "extra": "**bù**. The all-purpose negator: 不是, 不去. Shifts to bú before 4th tones: 不是 bú shì. 有 takes 没 instead."
+        "term": "不",
+        "reading": "bù",
+        "meaning": "not, no",
+        "extra": "The all-purpose negator: 不是, 不去. Shifts to bú before 4th tones: 不是 bú shì. 有 takes 没 instead.",
+        "recognitionOnly": true
       },
       "tags": ["zh::grammar"]
     },
     {
       "key": "gl-tai",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "太",
-        "back": "too, excessively",
-        "extra": "**tài**. The 太...了 pattern: 太贵了 (too expensive), 太好了 (great!)."
+        "term": "太",
+        "reading": "tài",
+        "meaning": "too, excessively",
+        "extra": "The 太...了 pattern: 太贵了 (too expensive), 太好了 (great!).",
+        "recognitionOnly": true
       },
       "tags": ["zh::grammar"]
     },
     {
       "key": "gl-dou",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "都",
-        "back": "all, both",
-        "extra": "**dōu**. Goes after the subject, before the verb: 我们都去 (we are all going)."
+        "term": "都",
+        "reading": "dōu",
+        "meaning": "all, both",
+        "extra": "Goes after the subject, before the verb: 我们都去 (we are all going).",
+        "recognitionOnly": true
       },
       "tags": ["zh::grammar"]
     },
     {
       "key": "gl-he",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "和",
-        "back": "and (joining nouns)",
-        "extra": "**hé**. 我和你 (you and I). It cannot join sentences the way English 'and' does."
+        "term": "和",
+        "reading": "hé",
+        "meaning": "and (joining nouns)",
+        "extra": "我和你 (you and I). It cannot join sentences the way English 'and' does.",
+        "recognitionOnly": true
       },
       "tags": ["zh::grammar"]
     },
     {
       "key": "gl-yidianr",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "一点儿",
-        "back": "a little, a bit",
-        "extra": "**yìdiǎnr**. 一点儿水 (a little water). After adjectives: 便宜一点儿 (a bit cheaper)."
+        "term": "一点儿",
+        "reading": "yìdiǎnr",
+        "meaning": "a little, a bit",
+        "extra": "一点儿水 (a little water). After adjectives: 便宜一点儿 (a bit cheaper).",
+        "recognitionOnly": true
       },
       "tags": ["zh::grammar"]
     },
     {
       "key": "mw-yi-ge-ren",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "一个人",
-        "back": "one person",
-        "extra": "**yí ge rén**. 个 gè is the default measure word. Number + measure word + noun is mandatory: never 一人."
+        "term": "一个人",
+        "reading": "yí ge rén",
+        "meaning": "one person",
+        "extra": "个 gè is the default measure word. Number + measure word + noun is mandatory: never 一人."
       },
       "tags": ["zh::grammar"]
     },
     {
       "key": "mw-yi-ben-shu",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "一本书",
-        "back": "one book",
-        "extra": "**yì běn shū**. 本 běn is the measure word for books and notebooks."
+        "term": "一本书",
+        "reading": "yì běn shū",
+        "meaning": "one book",
+        "extra": "本 běn is the measure word for books and notebooks."
       },
       "tags": ["zh::grammar"]
     },
     {
       "key": "mw-yi-bei-cha",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "一杯茶",
-        "back": "a cup of tea",
-        "extra": "**yì bēi chá**. 杯 bēi measures drinks: 一杯咖啡, 一杯水."
+        "term": "一杯茶",
+        "reading": "yì bēi chá",
+        "meaning": "a cup of tea",
+        "extra": "杯 bēi measures drinks: 一杯咖啡, 一杯水."
       },
       "tags": ["zh::grammar"]
     },
     {
       "key": "mw-shi-kuai-qian",
-      "model": "basic_reversed",
+      "model": "vocab",
       "fields": {
-        "front": "十块钱",
-        "back": "ten yuan",
-        "extra": "**shí kuài qián**. 块 kuài is the spoken unit of money (the formal word is 元 yuán); 钱 often drops off: 十块."
+        "term": "十块钱",
+        "reading": "shí kuài qián",
+        "meaning": "ten yuan",
+        "extra": "块 kuài is the spoken unit of money (the formal word is 元 yuán); 钱 often drops off: 十块."
       },
       "tags": ["zh::grammar"]
     },
     {
       "key": "mw-wo-sanshi-sui",
-      "model": "basic",
+      "model": "vocab",
       "fields": {
-        "front": "我三十岁",
-        "back": "I am thirty years old",
-        "extra": "**wǒ sānshí suì**. Age needs no verb. 岁 suì (years old). Ask a child 你几岁？, an adult 你多大？"
+        "term": "我三十岁",
+        "reading": "wǒ sānshí suì",
+        "meaning": "I am thirty years old",
+        "extra": "Age needs no verb. 岁 suì (years old). Ask a child 你几岁？, an adult 你多大？",
+        "recognitionOnly": true
       },
       "tags": ["zh::grammar"]
     },
@@ -1806,8 +2042,8 @@
       "key": "gr-ma",
       "model": "cloze",
       "fields": {
-        "text": "Ask a yes-no question: 你去{{c1::吗}}？(Are you going?)",
-        "extra": "nǐ qù ma. 吗 turns any statement into a question; the word order never changes."
+        "text": "Ask a yes-no question: 你去{{c1::吗}}？nǐ qù {{c1::ma}}? (Are you going?)",
+        "extra": "吗 turns any statement into a question; the word order never changes."
       },
       "tags": ["zh::grammar"]
     },
@@ -1815,8 +2051,7 @@
       "key": "gr-ne",
       "model": "cloze",
       "fields": {
-        "text": "Bounce a question back: 我很好，你{{c1::呢}}？(I'm fine, and you?)",
-        "extra": "wǒ hěn hǎo, nǐ ne."
+        "text": "Bounce a question back: 我很好，你{{c1::呢}}？wǒ hěn hǎo, nǐ {{c1::ne}}? (I'm fine, and you?)"
       },
       "tags": ["zh::grammar"]
     },
@@ -1824,8 +2059,8 @@
       "key": "gr-de",
       "model": "cloze",
       "fields": {
-        "text": "Make it yours: 我{{c1::的}}手机 (my phone)",
-        "extra": "wǒ de shǒujī. 的 links owner to thing: 你的书 (your book)."
+        "text": "Make it yours: 我{{c1::的}}手机 wǒ {{c1::de}} shǒujī (my phone)",
+        "extra": "的 links owner to thing: 你的书 (your book)."
       },
       "tags": ["zh::grammar"]
     },
@@ -1833,8 +2068,8 @@
       "key": "gr-bu",
       "model": "cloze",
       "fields": {
-        "text": "Say no: 我{{c1::不}}去 (I'm not going)",
-        "extra": "wǒ bú qù. 不 negates most verbs and adjectives."
+        "text": "Say no: 我{{c1::不}}去 wǒ {{c1::bú}} qù (I'm not going)",
+        "extra": "不 negates most verbs and adjectives. It reads bú here because 去 is a 4th tone."
       },
       "tags": ["zh::grammar"]
     },
@@ -1842,8 +2077,8 @@
       "key": "gr-mei",
       "model": "cloze",
       "fields": {
-        "text": "The exception: 我{{c1::没}}有钱 (I don't have money)",
-        "extra": "wǒ méiyǒu qián. 有 is always negated with 没, never 不."
+        "text": "The exception: 我{{c1::没}}有钱 wǒ {{c1::méi}}yǒu qián (I don't have money)",
+        "extra": "有 is always negated with 没, never 不."
       },
       "tags": ["zh::grammar"]
     },
@@ -1851,8 +2086,8 @@
       "key": "gr-hen",
       "model": "cloze",
       "fields": {
-        "text": "Adjective glue: 他{{c1::很}}好 (He is fine)",
-        "extra": "tā hěn hǎo. Subject + 很 + adjective; no 是."
+        "text": "Adjective glue: 他{{c1::很}}好 tā {{c1::hěn}} hǎo (He is fine)",
+        "extra": "Subject + 很 + adjective; no 是."
       },
       "tags": ["zh::grammar"]
     },
@@ -1860,8 +2095,8 @@
       "key": "gr-tai-le",
       "model": "cloze",
       "fields": {
-        "text": "The wrapper for 'too/so': {{c1::太}}好{{c2::了}}！(Great!)",
-        "extra": "tài hǎo le. The same frame as 太贵了 (too expensive)."
+        "text": "The wrapper for 'too/so': {{c1::太}}好{{c2::了}}！{{c1::tài}} hǎo {{c2::le}}! (Great!)",
+        "extra": "The same frame as 太贵了 (too expensive)."
       },
       "tags": ["zh::grammar"]
     },
@@ -1869,8 +2104,8 @@
       "key": "gr-dou",
       "model": "cloze",
       "fields": {
-        "text": "All of us: 我们{{c1::都}}去 (We are all going)",
-        "extra": "wǒmen dōu qù. 都 sits after the subject, before the verb."
+        "text": "All of us: 我们{{c1::都}}去 wǒmen {{c1::dōu}} qù (We are all going)",
+        "extra": "都 sits after the subject, before the verb."
       },
       "tags": ["zh::grammar"]
     },
@@ -1878,8 +2113,8 @@
       "key": "gr-he",
       "model": "cloze",
       "fields": {
-        "text": "You and me: 我{{c1::和}}你 (me and you)",
-        "extra": "wǒ hé nǐ. 和 joins nouns only."
+        "text": "You and me: 我{{c1::和}}你 wǒ {{c1::hé}} nǐ (me and you)",
+        "extra": "和 joins nouns only."
       },
       "tags": ["zh::grammar"]
     },
@@ -1887,8 +2122,8 @@
       "key": "gr-zai",
       "model": "cloze",
       "fields": {
-        "text": "Say where you are: 我{{c1::在}}家 (I'm at home)",
-        "extra": "wǒ zài jiā. 在 + place; no extra 'is' needed."
+        "text": "Say where you are: 我{{c1::在}}家 wǒ {{c1::zài}} jiā (I'm at home)",
+        "extra": "在 + place; no extra 'is' needed."
       },
       "tags": ["zh::grammar"]
     },
@@ -1896,8 +2131,8 @@
       "key": "gr-le",
       "model": "cloze",
       "fields": {
-        "text": "Mark it done: 我买{{c1::了}} (I bought it)",
-        "extra": "wǒ mǎi le. 了 after the verb marks a completed action."
+        "text": "Mark it done: 我买{{c1::了}} wǒ mǎi {{c1::le}} (I bought it)",
+        "extra": "了 after the verb marks a completed action."
       },
       "tags": ["zh::grammar"]
     },
@@ -1905,8 +2140,8 @@
       "key": "gr-mw",
       "model": "cloze",
       "fields": {
-        "text": "Count with a measure word: 三{{c1::个}}人 (three people)",
-        "extra": "sān ge rén. Number + measure word + noun, always."
+        "text": "Count with a measure word: 三{{c1::个}}人 sān {{c1::ge}} rén (three people)",
+        "extra": "Number + measure word + noun, always."
       },
       "tags": ["zh::grammar"]
     },
@@ -1914,8 +2149,8 @@
       "key": "gr-hui",
       "model": "cloze",
       "fields": {
-        "text": "Learned skills: 我{{c1::会}}说汉语 (I can speak Chinese)",
-        "extra": "wǒ huì shuō Hànyǔ. In-the-moment ability would take 能 instead."
+        "text": "Learned skills: 我{{c1::会}}说汉语 wǒ {{c1::huì}} shuō Hànyǔ (I can speak Chinese)",
+        "extra": "In-the-moment ability would take 能 instead."
       },
       "tags": ["zh::grammar"]
     },
@@ -1923,8 +2158,8 @@
       "key": "gr-nar",
       "model": "cloze",
       "fields": {
-        "text": "Find anything: 医院在{{c1::哪儿}}？(Where is the hospital?)",
-        "extra": "yīyuàn zài nǎr. Swap in any place: 厕所在哪儿？"
+        "text": "Find anything: 医院在{{c1::哪儿}}？yīyuàn zài {{c1::nǎr}}? (Where is the hospital?)",
+        "extra": "Swap in any place: 厕所在哪儿？"
       },
       "tags": ["zh::grammar"]
     },
@@ -1932,8 +2167,7 @@
       "key": "gr-yao",
       "model": "cloze",
       "fields": {
-        "text": "Order anything: 我{{c1::要}}一杯咖啡 (I want a cup of coffee)",
-        "extra": "wǒ yào yì bēi kāfēi."
+        "text": "Order anything: 我{{c1::要}}一杯咖啡 wǒ {{c1::yào}} yì bēi kāfēi (I want a cup of coffee)"
       },
       "tags": ["zh::grammar"]
     }

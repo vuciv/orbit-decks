@@ -4,8 +4,8 @@
     {
       "key": "language",
       "name": "Language",
-      "deckCount": 3,
-      "rev": "10c7577bdf5b",
+      "deckCount": 2,
+      "rev": "025d2c87a817",
       "file": "categories/language.json"
     },
     {
@@ -53,9 +53,16 @@
     {
       "key": "chess",
       "name": "Chess",
-      "deckCount": 156,
-      "rev": "3b12d93d38ba",
+      "deckCount": 159,
+      "rev": "39b7e5817df9",
       "file": "categories/chess.json"
+    },
+    {
+      "key": "mathematics",
+      "name": "Mathematics",
+      "deckCount": 2,
+      "rev": "aec1e2d7212a",
+      "file": "categories/mathematics.json"
     },
     {
       "key": "science",
@@ -102,8 +109,8 @@
     {
       "key": "ai-research",
       "name": "AI Research",
-      "deckCount": 2,
-      "rev": "222214d11478",
+      "deckCount": 3,
+      "rev": "3816f4a359de",
       "file": "categories/ai-research.json"
     }
   ],
@@ -154,8 +161,7 @@
       "description": "The essential first thousand cards, with speech on every card.",
       "deckKeys": [
         "essential-spanish",
-        "essential-chinese",
-        "essential-farsi"
+        "essential-chinese"
       ]
     },
     {
@@ -185,12 +191,12 @@
   "syncIndex": [
     {
       "key": "ai-alignment-research",
-      "version": 2,
+      "version": 3,
       "file": "decks/ai-alignment-research.json"
     },
     {
       "key": "alekhine-defense",
-      "version": 2,
+      "version": 3,
       "file": "decks/alekhine-defense.json"
     },
     {
@@ -220,7 +226,7 @@
     },
     {
       "key": "bishops-opening",
-      "version": 2,
+      "version": 3,
       "file": "decks/bishops-opening.json"
     },
     {
@@ -244,8 +250,13 @@
       "file": "decks/caro-kann.json"
     },
     {
+      "key": "caro-kann-defense",
+      "version": 1,
+      "file": "decks/caro-kann-defense.json"
+    },
+    {
       "key": "catalan-opening",
-      "version": 2,
+      "version": 3,
       "file": "decks/catalan-opening.json"
     },
     {
@@ -275,7 +286,7 @@
     },
     {
       "key": "dutch-defense",
-      "version": 2,
+      "version": 3,
       "file": "decks/dutch-defense.json"
     },
     {
@@ -290,7 +301,7 @@
     },
     {
       "key": "english-opening",
-      "version": 2,
+      "version": 3,
       "file": "decks/english-opening.json"
     },
     {
@@ -320,17 +331,12 @@
     },
     {
       "key": "essential-chinese",
-      "version": 2,
+      "version": 3,
       "file": "decks/essential-chinese.json"
     },
     {
-      "key": "essential-farsi",
-      "version": 1,
-      "file": "decks/essential-farsi.json"
-    },
-    {
       "key": "essential-spanish",
-      "version": 1,
+      "version": 2,
       "file": "decks/essential-spanish.json"
     },
     {
@@ -345,7 +351,7 @@
     },
     {
       "key": "four-knights-game",
-      "version": 2,
+      "version": 3,
       "file": "decks/four-knights-game.json"
     },
     {
@@ -365,7 +371,7 @@
     },
     {
       "key": "french-defense",
-      "version": 2,
+      "version": 3,
       "file": "decks/french-defense.json"
     },
     {
@@ -410,7 +416,7 @@
     },
     {
       "key": "grunfeld-defense",
-      "version": 2,
+      "version": 3,
       "file": "decks/grunfeld-defense.json"
     },
     {
@@ -430,7 +436,7 @@
     },
     {
       "key": "italian-game",
-      "version": 2,
+      "version": 3,
       "file": "decks/italian-game.json"
     },
     {
@@ -470,7 +476,7 @@
     },
     {
       "key": "kings-gambit-accepted",
-      "version": 2,
+      "version": 3,
       "file": "decks/kings-gambit-accepted.json"
     },
     {
@@ -504,13 +510,18 @@
       "file": "decks/kings-gambit-declined-classical.json"
     },
     {
+      "key": "kings-gambit-declined-classical-variation",
+      "version": 1,
+      "file": "decks/kings-gambit-declined-classical-variation.json"
+    },
+    {
       "key": "kings-gambit-declined-falkbeer-countergambit",
       "version": 1,
       "file": "decks/kings-gambit-declined-falkbeer-countergambit.json"
     },
     {
       "key": "kings-indian-attack",
-      "version": 2,
+      "version": 3,
       "file": "decks/kings-indian-attack.json"
     },
     {
@@ -520,7 +531,7 @@
     },
     {
       "key": "kings-indian-defense",
-      "version": 2,
+      "version": 3,
       "file": "decks/kings-indian-defense.json"
     },
     {
@@ -564,6 +575,11 @@
       "file": "decks/kings-indian-defense-steiner-attack.json"
     },
     {
+      "key": "linear-algebra-fundamentals",
+      "version": 1,
+      "file": "decks/linear-algebra-fundamentals.json"
+    },
+    {
       "key": "lmsw-exam-prep",
       "version": 1,
       "file": "decks/lmsw-exam-prep.json"
@@ -585,7 +601,7 @@
     },
     {
       "key": "modern-defense",
-      "version": 2,
+      "version": 3,
       "file": "decks/modern-defense.json"
     },
     {
@@ -619,8 +635,13 @@
       "file": "decks/neo-grunfeld-defense-exchange-variation.json"
     },
     {
+      "key": "neo-grunfeld-defense-with-g3",
+      "version": 1,
+      "file": "decks/neo-grunfeld-defense-with-g3.json"
+    },
+    {
       "key": "nimzo-indian-defense",
-      "version": 2,
+      "version": 3,
       "file": "decks/nimzo-indian-defense.json"
     },
     {
@@ -659,8 +680,13 @@
       "file": "decks/periodic-table.json"
     },
     {
+      "key": "probability-fundamentals",
+      "version": 1,
+      "file": "decks/probability-fundamentals.json"
+    },
+    {
       "key": "pterodactyl-defense",
-      "version": 2,
+      "version": 3,
       "file": "decks/pterodactyl-defense.json"
     },
     {
@@ -690,7 +716,7 @@
     },
     {
       "key": "queens-gambit-accepted",
-      "version": 2,
+      "version": 3,
       "file": "decks/queens-gambit-accepted.json"
     },
     {
@@ -705,7 +731,7 @@
     },
     {
       "key": "queens-gambit-declined",
-      "version": 2,
+      "version": 3,
       "file": "decks/queens-gambit-declined.json"
     },
     {
@@ -780,7 +806,7 @@
     },
     {
       "key": "queens-indian-defense",
-      "version": 2,
+      "version": 3,
       "file": "decks/queens-indian-defense.json"
     },
     {
@@ -800,7 +826,7 @@
     },
     {
       "key": "queens-pawn-game",
-      "version": 2,
+      "version": 3,
       "file": "decks/queens-pawn-game.json"
     },
     {
@@ -830,7 +856,7 @@
     },
     {
       "key": "ruy-lopez",
-      "version": 2,
+      "version": 3,
       "file": "decks/ruy-lopez.json"
     },
     {
@@ -875,7 +901,7 @@
     },
     {
       "key": "scotch-game",
-      "version": 2,
+      "version": 3,
       "file": "decks/scotch-game.json"
     },
     {
@@ -910,7 +936,7 @@
     },
     {
       "key": "semi-slav-defense",
-      "version": 2,
+      "version": 3,
       "file": "decks/semi-slav-defense.json"
     },
     {
@@ -955,7 +981,7 @@
     },
     {
       "key": "sicilian-defense",
-      "version": 4,
+      "version": 5,
       "file": "decks/sicilian-defense.json"
     },
     {
@@ -1025,7 +1051,7 @@
     },
     {
       "key": "slav-defense",
-      "version": 2,
+      "version": 3,
       "file": "decks/slav-defense.json"
     },
     {
@@ -1050,7 +1076,7 @@
     },
     {
       "key": "tarrasch-defense",
-      "version": 2,
+      "version": 3,
       "file": "decks/tarrasch-defense.json"
     },
     {
@@ -1077,6 +1103,11 @@
       "key": "the-human-heart",
       "version": 1,
       "file": "decks/the-human-heart.json"
+    },
+    {
+      "key": "transformer-architecture",
+      "version": 1,
+      "file": "decks/transformer-architecture.json"
     },
     {
       "key": "us-amendments",

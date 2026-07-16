@@ -1,0 +1,64 @@
+{
+  "key": "neo-grunfeld-defense-with-g3",
+  "version": 1,
+  "name": "Neo-Gr\u00fcnfeld Defense: with g3 as Black",
+  "description": "A Black repertoire for the Neo-Gr\u00fcnfeld Defense: with g3, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 3 positions.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "openings",
+    "neo-grunfeld-defense"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fppp1pp1p%2F5np1%2F3p4%2F2PP4%2F6P1%2FPP2PP1P%2FRNBQKBNR%20w%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=d7d5",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "l-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/3P4/8/PPP1PPPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Neo-Gr\u00fcnfeld Defense: with g3. What is the book move?",
+        "extra": "1. d4 **Nf6** [White plays d4 here 27% of the time]",
+        "lastMove": "d2d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppppp/5n2/8/2PP4/8/PP2PPPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "g6",
+        "answerUci": "g7g6",
+        "orientation": "black",
+        "prompt": "You are Black in the Neo-Gr\u00fcnfeld Defense: with g3. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 **g6** [White plays c4 here 43% of the time]",
+        "lastMove": "c2c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-g3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppp1p/5np1/8/2PP4/6P1/PP2PP1P/RNBQKBNR b KQkq - 0 3",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Neo-Gr\u00fcnfeld Defense: with g3. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 g6 3. g3 **d5** (with g3, D70) [White plays g3 here 2% of the time]",
+        "lastMove": "g2g3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    }
+  ]
+}

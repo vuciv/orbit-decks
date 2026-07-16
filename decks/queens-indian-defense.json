@@ -1,8 +1,8 @@
 {
   "key": "queens-indian-defense",
-  "version": 2,
-  "name": "The Queen's Indian Defense",
-  "description": "Line trainer for the Queen's Indian Defense, generated from the canonical opening database (lichess-org/chess-openings): 41 positions drilled book-move by book-move from Black's side across 68 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "version": 3,
+  "name": "The Queen's Indian Defense as Black",
+  "description": "A Black repertoire for the Queen's Indian Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 9 positions.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -13,22 +13,6 @@
   "ttsLang": null,
   "notes": [
     {
-      "key": "l-nf3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pppppppp/8/8/8/5N2/PPPPPPPP/RNBQKB1R b KQkq - 1 1",
-        "answer": "d5",
-        "answerUci": "d7d5",
-        "orientation": "black",
-        "lastMove": "g1f3",
-        "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. Nf3 **d5**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
       "key": "l-d4",
       "model": "chess",
       "fields": {
@@ -36,41 +20,9 @@
         "answer": "Nf6",
         "answerUci": "g8f6",
         "orientation": "black",
-        "lastMove": "d2d4",
         "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. d4 **Nf6**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf3-e3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/ppp1pppp/8/3p4/8/4PN2/PPPP1PPP/RNBQKB1R b KQkq - 0 2",
-        "answer": "Nf6",
-        "answerUci": "g8f6",
-        "orientation": "black",
-        "lastMove": "e2e3",
-        "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. Nf3 d5 2. e3 **Nf6**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-nf3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pppppppp/5n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R b KQkq - 2 2",
-        "answer": "e6",
-        "answerUci": "e7e6",
-        "orientation": "black",
-        "lastMove": "g1f3",
-        "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 **e6**"
+        "extra": "1. d4 **Nf6** [White plays d4 here 27% of the time]",
+        "lastMove": "d2d4"
       },
       "tags": [
         "chess::line"
@@ -84,25 +36,9 @@
         "answer": "e6",
         "answerUci": "e7e6",
         "orientation": "black",
-        "lastMove": "c2c4",
         "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 **e6**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-nf3-e3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pppp1ppp/4pn2/8/3P4/4PN2/PPP2PPP/RNBQKB1R b KQkq - 0 3",
-        "answer": "b6",
-        "answerUci": "b7b6",
-        "orientation": "black",
-        "lastMove": "e2e3",
-        "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 **b6**"
+        "extra": "1. d4 Nf6 2. c4 **e6** [White plays c4 here 43% of the time]",
+        "lastMove": "c2c4"
       },
       "tags": [
         "chess::line"
@@ -116,41 +52,9 @@
         "answer": "b6",
         "answerUci": "b7b6",
         "orientation": "black",
-        "lastMove": "g1f3",
         "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 **b6** (Queen's Indian Defense, E12)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf3-e3-c4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/2P5/4PN2/PP1P1PPP/RNBQKB1R b KQkq - 0 3",
-        "answer": "e6",
-        "answerUci": "e7e6",
-        "orientation": "black",
-        "lastMove": "c2c4",
-        "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. Nf3 d5 2. e3 Nf6 3. c4 **e6**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-nf3-e3-bd3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/p1pp1ppp/1p2pn2/8/3P4/3BPN2/PPP2PPP/RNBQK2R b KQkq - 1 4",
-        "answer": "Bb7",
-        "answerUci": "c8b7",
-        "orientation": "black",
-        "lastMove": "f1d3",
-        "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 b6 4. Bd3 **Bb7**"
+        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 **b6** (Queen's Indian Defense, E12) [White plays Nf3 here 21% of the time]",
+        "lastMove": "g1f3"
       },
       "tags": [
         "chess::line"
@@ -164,9 +68,9 @@
         "answer": "Bb7",
         "answerUci": "c8b7",
         "orientation": "black",
-        "lastMove": "g2g3",
-        "prompt": "You are Black in the Fianchetto Variation. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. g3 **Bb7** (Traditional Line, E15)"
+        "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. g3 **Bb7** (Traditional Line, E15) [White plays g3 here 44% of the time]",
+        "lastMove": "g2g3"
       },
       "tags": [
         "chess::line"
@@ -180,25 +84,9 @@
         "answer": "Bb7",
         "answerUci": "c8b7",
         "orientation": "black",
-        "lastMove": "b1c3",
-        "prompt": "You are Black in the Kasparov Variation. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Nc3 **Bb7**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/p1pp1ppp/1p2pn2/8/2PP4/4PN2/PP3PPP/RNBQKB1R b KQkq - 0 4",
-        "answer": "Bb7",
-        "answerUci": "c8b7",
-        "orientation": "black",
-        "lastMove": "e2e3",
-        "prompt": "You are Black in the Spassky System. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 **Bb7** (Spassky System, E14)"
+        "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Nc3 **Bb7** [White plays Nc3 here 32% of the time]",
+        "lastMove": "b1c3"
       },
       "tags": [
         "chess::line"
@@ -212,89 +100,25 @@
         "answer": "Bb7",
         "answerUci": "c8b7",
         "orientation": "black",
-        "lastMove": "a2a3",
-        "prompt": "You are Black in the Petrosian Variation. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. a3 **Bb7**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf3-e3-c4-nc3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2P5/2N1PN2/PP1P1PPP/R1BQKB1R b KQkq - 1 4",
-        "answer": "Be7",
-        "answerUci": "f8e7",
-        "orientation": "black",
-        "lastMove": "b1c3",
         "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. Nf3 d5 2. e3 Nf6 3. c4 e6 4. Nc3 **Be7**"
+        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. a3 **Bb7** [White plays a3 here 10% of the time]",
+        "lastMove": "a2a3"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-d4-c4-nf3-nc3-bg5",
+      "key": "l-d4-c4-nf3-bg5",
       "model": "chess",
       "fields": {
-        "fen": "rn1qkb1r/pbpp1ppp/1p2pn2/6B1/2PP4/2N2N2/PP2PPPP/R2QKB1R b KQkq - 3 5",
-        "answer": "h6",
-        "answerUci": "h7h6",
+        "fen": "rnbqkb1r/p1pp1ppp/1p2pn2/6B1/2PP4/5N2/PP2PPPP/RN1QKB1R b KQkq - 1 4",
+        "answer": "Bb7",
+        "answerUci": "c8b7",
         "orientation": "black",
-        "lastMove": "c1g5",
-        "prompt": "You are Black in the Kasparov Variation. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Nc3 Bb7 5. Bg5 **h6**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-a3-nc3",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP4/P1N2N2/1P2PPPP/R1BQKB1R b KQkq - 2 5",
-        "answer": "d5",
-        "answerUci": "d7d5",
-        "orientation": "black",
-        "lastMove": "b1c3",
-        "prompt": "You are Black in the Kasparov-Petrosian Variation. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. a3 Bb7 5. Nc3 **d5** (Main Line, E12)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-nf3-e3-bd3-nbd2",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkb1r/pbpp1ppp/1p2pn2/8/3P4/3BPN2/PPPN1PPP/R1BQK2R b KQkq - 3 5",
-        "answer": "c5",
-        "answerUci": "c7c5",
-        "orientation": "black",
-        "lastMove": "b1d2",
         "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 b6 4. Bd3 Bb7 5. Nbd2 **c5**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf3-e3-c4-nc3-d4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/ppp1bppp/4pn2/3p4/2PP4/2N1PN2/PP3PPP/R1BQKB1R b KQkq - 0 5",
-        "answer": "O-O",
-        "answerUci": "e8g8",
-        "orientation": "black",
-        "lastMove": "d2d4",
-        "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. Nf3 d5 2. e3 Nf6 3. c4 e6 4. Nc3 Be7 5. d4 **O-O**"
+        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Bg5 **Bb7** [White plays Bg5 here 8% of the time]",
+        "lastMove": "c1g5"
       },
       "tags": [
         "chess::line"
@@ -308,153 +132,9 @@
         "answer": "Be7",
         "answerUci": "f8e7",
         "orientation": "black",
-        "lastMove": "f1g2",
-        "prompt": "You are Black in the Traditional Line. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. g3 Bb7 5. Bg2 **Be7** (Traditional Variation, E17)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-nf3-e3-bd3-oo",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkb1r/pbpp1ppp/1p2pn2/8/3P4/3BPN2/PPP2PPP/RNBQ1RK1 b kq - 3 5",
-        "answer": "c5",
-        "answerUci": "c7c5",
-        "orientation": "black",
-        "lastMove": "e1g1",
         "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 b6 4. Bd3 Bb7 5. O-O **c5**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bd3",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkb1r/pbpp1ppp/1p2pn2/8/2PP4/3BPN2/PP3PPP/RNBQK2R b KQkq - 2 5",
-        "answer": "c5",
-        "answerUci": "c7c5",
-        "orientation": "black",
-        "lastMove": "f1d3",
-        "prompt": "You are Black in the Spassky System. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 **c5** (Spassky System3, E14)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-g3-bg2-nc3",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qk2r/pbppbppp/1p2pn2/8/2PP4/2N2NP1/PP2PPBP/R1BQK2R b KQkq - 4 6",
-        "answer": "Ne4",
-        "answerUci": "f6e4",
-        "orientation": "black",
-        "lastMove": "b1c3",
-        "prompt": "You are Black in the Anti-Queen's Indian System. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. g3 Bb7 5. Bg2 Be7 6. Nc3 **Ne4**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bd3-oo",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkb1r/pb1p1ppp/1p2pn2/2p5/2PP4/3BPN2/PP3PPP/RNBQ1RK1 b kq - 1 6",
-        "answer": "Be7",
-        "answerUci": "f8e7",
-        "orientation": "black",
-        "lastMove": "e1g1",
-        "prompt": "You are Black in the Spassky System3. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 c5 6. O-O **Be7**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bd3-nc3",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkb1r/pb1p1ppp/1p2pn2/2p5/2PP4/2NBPN2/PP3PPP/R1BQK2R b KQkq - 1 6",
-        "answer": "cxd4",
-        "answerUci": "c5d4",
-        "orientation": "black",
-        "lastMove": "b1c3",
-        "prompt": "You are Black in the Spassky System3. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 c5 6. Nc3 **cxd4**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-nc3-bg5-bh4",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkb1r/pbpp1pp1/1p2pn1p/8/2PP3B/2N2N2/PP2PPPP/R2QKB1R b KQkq - 1 6",
-        "answer": "g5",
-        "answerUci": "g7g5",
-        "orientation": "black",
-        "lastMove": "g5h4",
-        "prompt": "You are Black in the Kasparov Variation. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Nc3 Bb7 5. Bg5 h6 6. Bh4 **g5**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-a3-nc3-cxd5",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkb1r/pbp2ppp/1p2pn2/3P4/3P4/P1N2N2/1P2PPPP/R1BQKB1R b KQkq - 0 6",
-        "answer": "Nxd5",
-        "answerUci": "f6d5",
-        "orientation": "black",
-        "lastMove": "c4d5",
-        "prompt": "You are Black in the Main Line. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. a3 Bb7 5. Nc3 d5 6. cxd5 **Nxd5** (Modern Variation, E12)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf3-e3-c4-nc3-d4-b3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbq1rk1/ppp1bppp/4pn2/3p4/2PP4/1PN1PN2/P4PPP/R1BQKB1R b KQ - 0 6",
-        "answer": "b6",
-        "answerUci": "b7b6",
-        "orientation": "black",
-        "lastMove": "b2b3",
-        "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. Nf3 d5 2. e3 Nf6 3. c4 e6 4. Nc3 Be7 5. d4 O-O 6. b3 **b6**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-nf3-e3-bd3-nbd2-b3",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkb1r/pb1p1ppp/1p2pn2/2p5/3P4/1P1BPN2/P1PN1PPP/R1BQK2R b KQkq - 0 6",
-        "answer": "Be7",
-        "answerUci": "f8e7",
-        "orientation": "black",
-        "lastMove": "b2b3",
-        "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 b6 4. Bd3 Bb7 5. Nbd2 c5 6. b3 **Be7**"
+        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. g3 Bb7 5. Bg2 **Be7** (Traditional Variation, E17) [White plays Bg2 here 100% of the time]",
+        "lastMove": "f1g2"
       },
       "tags": [
         "chess::line"
@@ -468,201 +148,9 @@
         "answer": "O-O",
         "answerUci": "e8g8",
         "orientation": "black",
-        "lastMove": "e1g1",
-        "prompt": "You are Black in the Classical Variation. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. g3 Bb7 5. Bg2 Be7 6. O-O **O-O**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-nf3-e3-bd3-nbd2-b3-bb2",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qk2r/pb1pbppp/1p2pn2/2p5/3P4/1P1BPN2/PBPN1PPP/R2QK2R b KQkq - 2 7",
-        "answer": "d6",
-        "answerUci": "d7d6",
-        "orientation": "black",
-        "lastMove": "c1b2",
         "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 b6 4. Bd3 Bb7 5. Nbd2 c5 6. b3 Be7 7. Bb2 **d6**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bd3-nc3-exd4",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkb1r/pb1p1ppp/1p2pn2/8/2PP4/2NB1N2/PP3PPP/R1BQK2R b KQkq - 0 7",
-        "answer": "Be7",
-        "answerUci": "f8e7",
-        "orientation": "black",
-        "lastMove": "e3d4",
-        "prompt": "You are Black in the Spassky System3. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 c5 6. Nc3 cxd4 7. exd4 **Be7**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-nc3-bg5-bh4-bg3",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkb1r/pbpp1p2/1p2pn1p/6p1/2PP4/2N2NB1/PP2PPPP/R2QKB1R b KQkq - 1 7",
-        "answer": "Nh5",
-        "answerUci": "f6h5",
-        "orientation": "black",
-        "lastMove": "h4g3",
-        "prompt": "You are Black in the Kasparov Variation. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. Nc3 Bb7 5. Bg5 h6 6. Bh4 g5 7. Bg3 **Nh5** (Botvinnik Attack, E12)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf3-e3-c4-nc3-d4-b3-cxd5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbq1rk1/p1p1bppp/1p2pn2/3P4/3P4/1PN1PN2/P4PPP/R1BQKB1R b KQ - 0 7",
-        "answer": "exd5",
-        "answerUci": "e6d5",
-        "orientation": "black",
-        "lastMove": "c4d5",
-        "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. Nf3 d5 2. e3 Nf6 3. c4 e6 4. Nc3 Be7 5. d4 O-O 6. b3 b6 7. cxd5 **exd5**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bd3-oo-b3",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qk2r/pb1pbppp/1p2pn2/2p5/2PP4/1P1BPN2/P4PPP/RNBQ1RK1 b kq - 0 7",
-        "answer": "O-O",
-        "answerUci": "e8g8",
-        "orientation": "black",
-        "lastMove": "b2b3",
-        "prompt": "You are Black in the Spassky System3. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 c5 6. O-O Be7 7. b3 **O-O**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-g3-bg2-oo-nc3",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1q1rk1/pbppbppp/1p2pn2/8/2PP4/2N2NP1/PP2PPBP/R1BQ1RK1 b - - 6 7",
-        "answer": "Na6",
-        "answerUci": "b8a6",
-        "orientation": "black",
-        "lastMove": "b1c3",
-        "prompt": "You are Black in the Traditional Variation. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. g3 Bb7 5. Bg2 Be7 6. O-O O-O 7. Nc3 **Na6** (Tiviakov Defense, E18)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-g3-bg2-oo-d5",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1q1rk1/pbppbppp/1p2pn2/3P4/2P5/5NP1/PP2PPBP/RNBQ1RK1 b - - 0 7",
-        "answer": "exd5",
-        "answerUci": "e6d5",
-        "orientation": "black",
-        "lastMove": "d4d5",
-        "prompt": "You are Black in the Classical Variation. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. g3 Bb7 5. Bg2 Be7 6. O-O O-O 7. d5 **exd5**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf3-e3-c4-nc3-d4-b3-cxd5-bb2",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbq1rk1/p1p1bppp/1p3n2/3p4/3P4/1PN1PN2/PB3PPP/R2QKB1R b KQ - 1 8",
-        "answer": "Bb7",
-        "answerUci": "c8b7",
-        "orientation": "black",
-        "lastMove": "c1b2",
-        "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. Nf3 d5 2. e3 Nf6 3. c4 e6 4. Nc3 Be7 5. d4 O-O 6. b3 b6 7. cxd5 exd5 8. Bb2 **Bb7**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bd3-nc3-exd4-oo",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qk2r/pb1pbppp/1p2pn2/8/2PP4/2NB1N2/PP3PPP/R1BQ1RK1 b kq - 2 8",
-        "answer": "d5",
-        "answerUci": "d7d5",
-        "orientation": "black",
-        "lastMove": "e1g1",
-        "prompt": "You are Black in the Spassky System3. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 c5 6. Nc3 cxd4 7. exd4 Be7 8. O-O **d5**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bd3-oo-b3-bb2",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1q1rk1/pb1pbppp/1p2pn2/2p5/2PP4/1P1BPN2/PB3PPP/RN1Q1RK1 b - - 2 8",
-        "answer": "cxd4",
-        "answerUci": "c5d4",
-        "orientation": "black",
-        "lastMove": "c1b2",
-        "prompt": "You are Black in the Spassky System3. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 c5 6. O-O Be7 7. b3 O-O 8. Bb2 **cxd4**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-nf3-e3-bd3-nbd2-b3-bb2-oo",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qk2r/pb2bppp/1p1ppn2/2p5/3P4/1P1BPN2/PBPN1PPP/R2Q1RK1 b kq - 1 8",
-        "answer": "O-O",
-        "answerUci": "e8g8",
-        "orientation": "black",
-        "lastMove": "e1g1",
-        "prompt": "You are Black in the Queen's Indian Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 b6 4. Bd3 Bb7 5. Nbd2 c5 6. b3 Be7 7. Bb2 d6 8. O-O **O-O**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bd3-nc3-exd4-oo-cxd5",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qk2r/pb2bppp/1p2pn2/3P4/3P4/2NB1N2/PP3PPP/R1BQ1RK1 b kq - 0 9",
-        "answer": "Nxd5",
-        "answerUci": "f6d5",
-        "orientation": "black",
-        "lastMove": "c4d5",
-        "prompt": "You are Black in the Spassky System3. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. e3 Bb7 5. Bd3 c5 6. Nc3 cxd4 7. exd4 Be7 8. O-O d5 9. cxd5 **Nxd5** (Spassky System3, E14)"
+        "extra": "1. d4 Nf6 2. c4 e6 3. Nf3 b6 4. g3 Bb7 5. Bg2 Be7 6. O-O **O-O** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
       },
       "tags": [
         "chess::line"

@@ -6,8 +6,8 @@
     {
       "key": "essential-chinese",
       "name": "Essential Chinese",
-      "description": "Mandarin from absolute zero, structured the way spaced-repetition research says to learn a language: the tone and pinyin system first, then day-one survival phrases, then the highest-frequency words, then the grammar patterns that snap them together. Characters ride up front with tap-to-hear speech, pinyin and usage notes appear on every reveal, and the phrases you must be able to say are trained in both directions. Simplified characters. Keep new cards to 5-10 a day and say every answer out loud.",
-      "cardCount": 293,
+      "description": "Mandarin from absolute zero, no character knowledge required. The tone and pinyin system comes first, then day-one survival phrases, then the highest-frequency words, then the grammar patterns that snap them together. Word cards show the characters big with tap-to-hear speech and a tap-to-reveal pinyin hint, so you try the characters first but are never stuck; the full pinyin appears with every answer, and the phrases you must be able to say are trained in both directions. Simplified characters. Keep new cards to 5-10 a day and say every answer out loud.",
+      "cardCount": 294,
       "topics": [
         "chinese",
         "mandarin",
@@ -18,24 +18,10 @@
       "coverImage": "https://flagcdn.com/w640/cn.png"
     },
     {
-      "key": "essential-farsi",
-      "name": "Essential Farsi",
-      "description": "The 1,000 most common Farsi words in frequency order, so every session is spent on words you will actually meet. Iranian Persian: script plus pronunciation on the front, meaning on the reveal, and the notes carry what textbooks bury: present stems for every verb, the spoken-Tehrani forms (mikhaham becomes mikham), and a real example phrase. A short primer on the sounds, the script, and the grammar glue (ezafe, ra, mi-) comes first so the words have somewhere to live. Keep new cards to 10-20 a day and say every answer out loud.",
-      "cardCount": 1017,
-      "topics": [
-        "farsi",
-        "persian",
-        "language",
-        "vocabulary",
-        "beginner"
-      ],
-      "coverImage": "https://flagcdn.com/w640/ir.png"
-    },
-    {
       "key": "essential-spanish",
       "name": "Essential Spanish",
-      "description": "Your first weeks of Spanish, front-loaded for payoff: survival phrases you can use on day one, then the highest-frequency vocabulary (numbers, time words, question words, the 25 most useful verbs, family, food, places) trained in both directions, plus the ser, estar, and tener conjugations. Latin American Spanish by default.",
-      "cardCount": 413,
+      "description": "The highest-payoff Spanish vocabulary, trained in both directions: greetings and politeness words, numbers, days and months, time words, question words, pronouns, the 25 most useful verbs, family, food, places, core adjectives and colors, and the little connector words that glue sentences together. Latin American Spanish by default.",
+      "cardCount": 390,
       "topics": [
         "spanish",
         "language",

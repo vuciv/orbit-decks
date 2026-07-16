@@ -1,15 +1,15 @@
 {
   "key": "sicilian-defense",
-  "version": 4,
-  "name": "The Sicilian Defense",
-  "description": "A club player's working map of the Sicilian, one position at a time: the Open Sicilian trunk move by move, the Najdorf, Dragon, Sveshnikov, and Classical variations, and how to meet the Alapin and Rossolimo anti-Sicilians. Every card shows a board from Black's side and asks for the best move and the plan behind it.",
+  "version": 5,
+  "name": "The Sicilian Defense as Black",
+  "description": "A Black repertoire for the Sicilian Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
   "category": "Chess",
   "topics": [
     "chess",
     "openings",
-    "sicilian"
+    "sicilian-defense"
   ],
-  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F8%2F2p5%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett",
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F8%2F2p5%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett&lastMove=c7c5",
   "ttsLang": null,
   "notes": [
     {
@@ -826,6 +826,1926 @@
       },
       "tags": [
         "chess::plan"
+      ]
+    },
+    {
+      "key": "l-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppppppp/8/8/4P3/8/PPPP1PPP/RNBQKBNR b KQkq - 0 1",
+        "answer": "c5",
+        "answerUci": "c7c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 **c5** (Sicilian Defense, B20) [White plays e4 here 59% of the time]",
+        "lastMove": "e2e4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/5N2/PPPP1PPP/RNBQKB1R b KQkq - 1 2",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 **Nc6** (Old Sicilian, B30) [White plays Nf3 here 53% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/2N5/PPPP1PPP/R1BQKBNR b KQkq - 1 2",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nc3 **Nc6** (Traditional, B23) [White plays Nc3 here 9% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/8/2p5/3PP3/8/PPP2PPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "cxd4",
+        "answerUci": "c5d4",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. d4 **cxd4** [White plays d4 here 8% of the time]",
+        "lastMove": "d2d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/8/2p5/2B1P3/8/PPPP1PPP/RNBQK1NR b KQkq - 1 2",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Bc4 **e6** [White plays Bc4 here 8% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/8/2p5/4P3/2P5/PP1P1PPP/RNBQKBNR b KQkq - 0 2",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. c3 **d5** [White plays c3 here 8% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/8/2p5/4PP2/8/PPPP2PP/RNBQKBNR b KQkq - 0 2",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. f4 **d5** [White plays f4 here 6% of the time]",
+        "lastMove": "f2f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppppp/2n5/2p5/3PP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 0 3",
+        "answer": "cxd4",
+        "answerUci": "c5d4",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 **cxd4** (Open, B32) [White plays d4 here 45% of the time]",
+        "lastMove": "d2d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppppp/2n5/2p5/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 **e6** [White plays Bc4 here 15% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppppp/2n5/1Bp5/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 3 3",
+        "answer": "g6",
+        "answerUci": "g7g6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bb5 **g6** (Fianchetto Variation, B31) [White plays Bb5 here 14% of the time]",
+        "lastMove": "f1b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppppp/2n5/2p5/4P3/2P2N2/PP1P1PPP/RNBQKB1R b KQkq - 0 3",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. c3 **e6** [White plays c3 here 12% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-c3-exd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/8/2pP4/8/2P5/PP1P1PPP/RNBQKBNR b KQkq - 0 3",
+        "answer": "Qxd5",
+        "answerUci": "d8d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. c3 d5 3. exd5 **Qxd5** (Barmen Defense, B22) [White plays exd5 here 74% of the time]",
+        "lastMove": "e4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/8/8/3pP3/2P5/PP3PPP/RNBQKBNR b KQkq - 0 3",
+        "answer": "dxc3",
+        "answerUci": "d4c3",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. d4 cxd4 3. c3 **dxc3** (Smith-Morra Gambit Accepted, B21) [White plays c3 here 61% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppppp/2n5/2p5/4P3/2N2N2/PPPP1PPP/R1BQKB1R b KQkq - 3 3",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Nc3 **e5** (Anti-Sveshnikov Variation, B30) [White plays Nc3 here 6% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-e5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/8/2ppP3/5P2/8/PPPP2PP/RNBQKBNR b KQkq - 0 3",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. f4 d5 3. e5 **Nc6** [White plays e5 here 52% of the time]",
+        "lastMove": "e4e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-f4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppppp/2n5/2p5/4PP2/2N5/PPPP2PP/R1BQKBNR b KQkq - 0 3",
+        "answer": "g6",
+        "answerUci": "g7g6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nc3 Nc6 3. f4 **g6** [White plays f4 here 27% of the time]",
+        "lastMove": "f2f4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-bc4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1p1ppp/4p3/2p5/2B1P3/2N5/PPPP1PPP/R1BQK1NR b KQkq - 1 3",
+        "answer": "a6",
+        "answerUci": "a7a6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Bc4 e6 3. Nc3 **a6** [White plays Nc3 here 30% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-exd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/8/2pP4/5P2/8/PPPP2PP/RNBQKBNR b KQkq - 0 3",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. f4 d5 3. exd5 **Nf6** (Tal Gambit, B21) [White plays exd5 here 32% of the time]",
+        "lastMove": "e4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-bc4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1p1ppp/4p3/2p5/2B1P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 1 3",
+        "answer": "a6",
+        "answerUci": "a7a6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Bc4 e6 3. Nf3 **a6** [White plays Nf3 here 23% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-qxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/8/8/3QP3/8/PPP2PPP/RNB1KBNR b KQkq - 0 3",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. d4 cxd4 3. Qxd4 **Nc6** [White plays Qxd4 here 23% of the time]",
+        "lastMove": "d1d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-c3-e5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/8/2ppP3/8/2P5/PP1P1PPP/RNBQKBNR b KQkq - 0 3",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. c3 d5 3. e5 **Nc6** [White plays e5 here 19% of the time]",
+        "lastMove": "e4e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-g3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppppp/2n5/2p5/4P3/2N3P1/PPPP1P1P/R1BQKBNR b KQkq - 0 3",
+        "answer": "g6",
+        "answerUci": "g7g6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nc3 Nc6 3. g3 **g6** (Closed, B24) [White plays g3 here 14% of the time]",
+        "lastMove": "g2g3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-bc4-d3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1p1ppp/4p3/2p5/2B1P3/3P4/PPP2PPP/RNBQK1NR b KQkq - 0 3",
+        "answer": "a6",
+        "answerUci": "a7a6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Bc4 e6 3. d3 **a6** [White plays d3 here 15% of the time]",
+        "lastMove": "d2d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppppp/2n5/1Bp5/4P3/2N5/PPPP1PPP/R1BQK1NR b KQkq - 3 3",
+        "answer": "Nd4",
+        "answerUci": "c6d4",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nc3 Nc6 3. Bb5 **Nd4** [White plays Bb5 here 12% of the time]",
+        "lastMove": "f1b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/8/8/3pP3/5N2/PPP2PPP/RNBQKB1R b KQkq - 1 3",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. d4 cxd4 3. Nf3 **e5** [White plays Nf3 here 13% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppppp/2n5/2p5/2B1P3/2N5/PPPP1PPP/R1BQK1NR b KQkq - 3 3",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nc3 Nc6 3. Bc4 **e6** [White plays Bc4 here 11% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppppp/2n5/8/3NP3/8/PPP2PPP/RNBQKB1R b KQkq - 0 4",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 **e5** (L\u00f6wenthal Variation, B32) [White plays Nxd4 here 93% of the time]",
+        "lastMove": "f3d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-c3-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1p1ppp/2n1p3/2p5/3PP3/2P2N2/PP3PPP/RNBQKB1R b KQkq - 0 4",
+        "answer": "cxd4",
+        "answerUci": "c5d4",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. c3 e6 4. d4 **cxd4** [White plays d4 here 87% of the time]",
+        "lastMove": "d2d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c3-nxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/8/8/4P3/2N5/PP3PPP/R1BQKBNR b KQkq - 0 4",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 **Nc6** [White plays Nxc3 here 89% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-c3-exd5-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/pp2pppp/8/2pq4/3P4/2P5/PP3PPP/RNBQKBNR b KQkq - 0 4",
+        "answer": "cxd4",
+        "answerUci": "c5d4",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. d4 **cxd4** [White plays d4 here 69% of the time]",
+        "lastMove": "d2d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-bxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppp1p/2B3p1/2p5/4P3/5N2/PPPP1PPP/RNBQK2R b KQkq - 0 4",
+        "answer": "bxc6",
+        "answerUci": "b7c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bb5 g6 4. Bxc6 **bxc6** [White plays Bxc6 here 41% of the time]",
+        "lastMove": "b5c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-e5-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp2pppp/2n5/2ppP3/5P2/5N2/PPPP2PP/RNBQKB1R b KQkq - 2 4",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. f4 d5 3. e5 Nc6 4. Nf3 **Bg4** [White plays Nf3 here 94% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppp1p/2n3p1/1Bp5/4P3/5N2/PPPP1PPP/RNBQ1RK1 b kq - 1 4",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bb5 g6 4. O-O **Bg7** [White plays O-O here 37% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-f4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppp1p/2n3p1/2p5/4PP2/2N2N2/PPPP2PP/R1BQKB1R b KQkq - 1 4",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nc3 Nc6 3. f4 g6 4. Nf3 **Bg7** [White plays Nf3 here 91% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1p1ppp/2n1p3/2p5/2B1P3/5N2/PPPP1PPP/RNBQ1RK1 b kq - 1 4",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. O-O **d5** [White plays O-O here 27% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-c3-exd5-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/pp2pppp/8/2pq4/8/2P2N2/PP1P1PPP/RNBQKB1R b KQkq - 1 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. Nf3 **Nf6** [White plays Nf3 here 31% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1p1ppp/2n1p3/2p5/2B1P3/2P2N2/PP1P1PPP/RNBQK2R b KQkq - 0 4",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. c3 **d5** [White plays c3 here 21% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-nc3-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1p1ppp/2n5/2p1p3/2B1P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 1 4",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Nc3 e5 4. Bc4 **Be7** [White plays Bc4 here 47% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1p1ppp/2n1p3/2p5/2BPP3/5N2/PPP2PPP/RNBQK2R b KQkq - 0 4",
+        "answer": "cxd4",
+        "answerUci": "c5d4",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. d4 **cxd4** [White plays d4 here 17% of the time]",
+        "lastMove": "d2d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-g3-bg2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppp1p/2n3p1/2p5/4P3/2N3P1/PPPP1PBP/R1BQK1NR b KQkq - 1 4",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 **Bg7** (Closed, B24) [White plays Bg2 here 100% of the time]",
+        "lastMove": "f1g2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1p1ppp/2n1p3/2p5/2B1P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 1 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. Nc3 **Nf6** [White plays Nc3 here 15% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-nc3-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1p1ppp/2n5/1Bp1p3/4P3/2N2N2/PPPP1PPP/R1BQK2R b KQkq - 1 4",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Nc3 e5 4. Bb5 **d6** [White plays Bb5 here 36% of the time]",
+        "lastMove": "f1b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-c3-e5-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp2pppp/2n5/2ppP3/3P4/2P5/PP3PPP/RNBQKBNR b KQkq - 0 4",
+        "answer": "cxd4",
+        "answerUci": "c5d4",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. c3 d5 3. e5 Nc6 4. d4 **cxd4** [White plays d4 here 83% of the time]",
+        "lastMove": "d2d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-exd5-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/5n2/2pP4/2P2P2/8/PP1P2PP/RNBQKBNR b KQkq - 0 4",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. f4 d5 3. exd5 Nf6 4. c4 **e6** [White plays c4 here 62% of the time]",
+        "lastMove": "c2c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-bc4-nc3-a4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/1p1p1ppp/p3p3/2p5/P1B1P3/2N5/1PPP1PPP/R1BQK1NR b KQkq - 0 4",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Bc4 e6 3. Nc3 a6 4. a4 **Nc6** [White plays a4 here 48% of the time]",
+        "lastMove": "a2a4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-d3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1p1ppp/2n1p3/2p5/2B1P3/3P1N2/PPP2PPP/RNBQK2R b KQkq - 0 4",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. d3 **d5** [White plays d3 here 13% of the time]",
+        "lastMove": "d2d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-bc4-nc3-a3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/1p1p1ppp/p3p3/2p5/2B1P3/P1N5/1PPP1PPP/R1BQK1NR b KQkq - 0 4",
+        "answer": "b5",
+        "answerUci": "b7b5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Bc4 e6 3. Nc3 a6 4. a3 **b5** [White plays a3 here 37% of the time]",
+        "lastMove": "a2a3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppp1p/2n3p1/1Bp5/4P3/2P2N2/PP1P1PPP/RNBQK2R b KQkq - 0 4",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bb5 g6 4. c3 **Bg7** [White plays c3 here 10% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-qxd4-qd1",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppppp/2n5/8/4P3/8/PPP2PPP/RNBQKBNR b KQkq - 2 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. d4 cxd4 3. Qxd4 Nc6 4. Qd1 **Nf6** [White plays Qd1 here 41% of the time]",
+        "lastMove": "d4d1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-exd5-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/5n2/2pP4/5P2/5N2/PPPP2PP/RNBQKB1R b KQkq - 2 4",
+        "answer": "Nxd5",
+        "answerUci": "f6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. f4 d5 3. exd5 Nf6 4. Nf3 **Nxd5** [White plays Nf3 here 38% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nb5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1p1ppp/2n5/1N2p3/4P3/8/PPP2PPP/RNBQKB1R b KQkq - 1 5",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 **d6** (Kalashnikov Variation, B32) [White plays Nb5 here 41% of the time]",
+        "lastMove": "d4b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1p1ppp/2N5/4p3/4P3/8/PPP2PPP/RNBQKB1R b KQkq - 0 5",
+        "answer": "bxc6",
+        "answerUci": "b7c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nxc6 **bxc6** [White plays Nxc6 here 33% of the time]",
+        "lastMove": "d4c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-c3-d4-cxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1p1ppp/2n1p3/8/3PP3/5N2/PP3PPP/RNBQKB1R b KQkq - 0 5",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. c3 e6 4. d4 cxd4 5. cxd4 **d5** [White plays cxd4 here 98% of the time]",
+        "lastMove": "c3d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-c3-exd5-d4-cxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kbnr/pp2pppp/8/3q4/3P4/8/PP3PPP/RNBQKBNR b KQkq - 0 5",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. d4 cxd4 5. cxd4 **Nc6** [White plays cxd4 here 80% of the time]",
+        "lastMove": "c3d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c3-nxc3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppppp/2n5/8/4P3/2N2N2/PP3PPP/R1BQKB1R b KQkq - 2 5",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 **e6** [White plays Nf3 here 69% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nb3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1p1ppp/2n5/4p3/4P3/1N6/PPP2PPP/RNBQKB1R b KQkq - 1 5",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb3 **Nf6** [White plays Nb3 here 12% of the time]",
+        "lastMove": "d4b3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-oo-exd5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp3ppp/2n1p3/2pP4/2B5/5N2/PPPP1PPP/RNBQ1RK1 b kq - 0 5",
+        "answer": "exd5",
+        "answerUci": "e6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. O-O d5 5. exd5 **exd5** [White plays exd5 here 100% of the time]",
+        "lastMove": "e4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1p1ppp/2n5/4p3/4P3/5N2/PPP2PPP/RNBQKB1R b KQkq - 1 5",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nf3 **Nf6** [White plays Nf3 here 9% of the time]",
+        "lastMove": "d4f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-c3-exd5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp3ppp/2n1p3/2pP4/2B5/2P2N2/PP1P1PPP/RNBQK2R b KQkq - 0 5",
+        "answer": "exd5",
+        "answerUci": "e6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. c3 d5 5. exd5 **exd5** [White plays exd5 here 100% of the time]",
+        "lastMove": "e4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-e5-nf3-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/pp2pppp/2n5/2ppP3/5Pb1/5N2/PPPPB1PP/RNBQK2R b KQkq - 4 5",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. f4 d5 3. e5 Nc6 4. Nf3 Bg4 5. Be2 **e6** [White plays Be2 here 49% of the time]",
+        "lastMove": "f1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-bxc6-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/p2ppp1p/2p3p1/2p5/4P3/5N2/PPPP1PPP/RNBQ1RK1 b kq - 1 5",
+        "answer": "Bg7",
+        "answerUci": "f8g7",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bb5 g6 4. Bxc6 bxc6 5. O-O **Bg7** [White plays O-O here 45% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c3-nxc3-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1ppppp/2n5/8/2B1P3/2N5/PP3PPP/R1BQK1NR b KQkq - 2 5",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Bc4 **e6** [White plays Bc4 here 30% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-oo-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pp1pppbp/2n3p1/1Bp5/4P3/2P2N2/PP1P1PPP/RNBQ1RK1 b kq - 0 5",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bb5 g6 4. O-O Bg7 5. c3 **Nf6** [White plays c3 here 48% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-c3-e5-d4-cxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp2pppp/2n5/3pP3/3P4/8/PP3PPP/RNBQKBNR b KQkq - 0 5",
+        "answer": "Bf5",
+        "answerUci": "c8f5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. c3 d5 3. e5 Nc6 4. d4 cxd4 5. cxd4 **Bf5** [White plays cxd4 here 100% of the time]",
+        "lastMove": "c3d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-d4-nxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1p1ppp/2n1p3/8/2BNP3/8/PPP2PPP/RNBQK2R b KQkq - 0 5",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. d4 cxd4 5. Nxd4 **Nf6** [White plays Nxd4 here 86% of the time]",
+        "lastMove": "f3d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-exd5-c4-dxe6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/4Pn2/2p5/2P2P2/8/PP1P2PP/RNBQKBNR b KQkq - 0 5",
+        "answer": "Bxe6",
+        "answerUci": "c8e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. f4 d5 3. exd5 Nf6 4. c4 e6 5. dxe6 **Bxe6** [White plays dxe6 here 100% of the time]",
+        "lastMove": "d5e6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-f4-nf3-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pp1pppbp/2n3p1/1Bp5/4PP2/2N2N2/PPPP2PP/R1BQK2R b KQkq - 3 5",
+        "answer": "Nd4",
+        "answerUci": "c6d4",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nc3 Nc6 3. f4 g6 4. Nf3 Bg7 5. Bb5 **Nd4** [White plays Bb5 here 47% of the time]",
+        "lastMove": "f1b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-d3-exd5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp3ppp/2n1p3/2pP4/2B5/3P1N2/PPP2PPP/RNBQK2R b KQkq - 0 5",
+        "answer": "exd5",
+        "answerUci": "e6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. d3 d5 5. exd5 **exd5** [White plays exd5 here 100% of the time]",
+        "lastMove": "e4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-f4-e5-nf3-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/pp2pppp/2n5/1BppP3/5Pb1/5N2/PPPP2PP/RNBQK2R b KQkq - 4 5",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. f4 d5 3. e5 Nc6 4. Nf3 Bg4 5. Bb5 **e6** [White plays Bb5 here 38% of the time]",
+        "lastMove": "f1b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-f4-nf3-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pp1pppbp/2n3p1/2p5/2B1PP2/2N2N2/PPPP2PP/R1BQK2R b KQkq - 3 5",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nc3 Nc6 3. f4 g6 4. Nf3 Bg7 5. Bc4 **e6** [White plays Bc4 here 41% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-c3-exd5-nf3-d4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnb1kb1r/pp2pppp/5n2/2pq4/3P4/2P2N2/PP3PPP/RNBQKB1R b KQkq - 0 5",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. Nf3 Nf6 5. d4 **Bg4** (Modern Line, B22) [White plays d4 here 52% of the time]",
+        "lastMove": "d2d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-nc3-d3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp1p1ppp/2n1pn2/2p5/2B1P3/2NP1N2/PPP2PPP/R1BQK2R b KQkq - 0 5",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. Nc3 Nf6 5. d3 **d5** [White plays d3 here 73% of the time]",
+        "lastMove": "d2d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-oo-re1",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pp1pppbp/2n3p1/1Bp5/4P3/5N2/PPPP1PPP/RNBQR1K1 b kq - 3 5",
+        "answer": "e5",
+        "answerUci": "e7e5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bb5 g6 4. O-O Bg7 5. Re1 **e5** [White plays Re1 here 33% of the time]",
+        "lastMove": "f1e1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-bc4-nc3-a3-ba2",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/3p1ppp/p3p3/1pp5/4P3/P1N5/BPPP1PPP/R1BQK1NR b KQkq - 1 5",
+        "answer": "Bb7",
+        "answerUci": "c8b7",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Bc4 e6 3. Nc3 a6 4. a3 b5 5. Ba2 **Bb7** [White plays Ba2 here 100% of the time]",
+        "lastMove": "c4a2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nc3-g3-bg2-d3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pp1pppbp/2n3p1/2p5/4P3/2NP2P1/PPP2PBP/R1BQK1NR b KQkq - 0 5",
+        "answer": "d6",
+        "answerUci": "d7d6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nc3 Nc6 3. g3 g6 4. Bg2 Bg7 5. d3 **d6** (Closed, B25) [White plays d3 here 57% of the time]",
+        "lastMove": "d2d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nb5-n1c3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp3ppp/2np4/1N2p3/4P3/2N5/PPP2PPP/R1BQKB1R b KQkq - 1 6",
+        "answer": "a6",
+        "answerUci": "a7a6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 d6 6. N1c3 **a6** [White plays N1c3 here 70% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-c3-d4-cxd4-e5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp3ppp/2n1p3/3pP3/3P4/5N2/PP3PPP/RNBQKB1R b KQkq - 0 6",
+        "answer": "Nge7",
+        "answerUci": "g8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. c3 e6 4. d4 cxd4 5. cxd4 d5 6. e5 **Nge7** [White plays e5 here 65% of the time]",
+        "lastMove": "e4e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nxc6-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/p2p1ppp/2p5/4p3/4P3/2N5/PPP2PPP/R1BQKB1R b KQkq - 1 6",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nxc6 bxc6 6. Nc3 **Nf6** [White plays Nc3 here 41% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c3-nxc3-nf3-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp1p1ppp/2n1p3/8/2B1P3/2N2N2/PP3PPP/R1BQK2R b KQkq - 1 6",
+        "answer": "Bb4",
+        "answerUci": "f8b4",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 e6 6. Bc4 **Bb4** (Pin Defense, B21) [White plays Bc4 here 96% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-c3-exd5-d4-cxd4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kbnr/pp2pppp/2n5/3q4/3P4/5N2/PP3PPP/RNBQKB1R b KQkq - 2 6",
+        "answer": "Bg4",
+        "answerUci": "c8g4",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. d4 cxd4 5. cxd4 Nc6 6. Nf3 **Bg4** (Central Exchange, B22) [White plays Nf3 here 92% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nxc6-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/p2p1ppp/2p5/4p3/2B1P3/8/PPP2PPP/RNBQK2R b KQkq - 1 6",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nxc6 bxc6 6. Bc4 **Nf6** [White plays Bc4 here 31% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nb5-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp3ppp/2np4/1N2p3/2P1P3/8/PP3PPP/RNBQKB1R b KQkq - 0 6",
+        "answer": "a6",
+        "answerUci": "a7a6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 d6 6. c4 **a6** [White plays c4 here 22% of the time]",
+        "lastMove": "c2c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nb3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp1p1ppp/2n2n2/4p3/4P3/1NN5/PPP2PPP/R1BQKB1R b KQkq - 3 6",
+        "answer": "Bb4",
+        "answerUci": "f8b4",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb3 Nf6 6. Nc3 **Bb4** [White plays Nc3 here 75% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-c3-d4-cxd4-exd5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp3ppp/2n1p3/3P4/3P4/5N2/PP3PPP/RNBQKB1R b KQkq - 0 6",
+        "answer": "exd5",
+        "answerUci": "e6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. c3 e6 4. d4 cxd4 5. cxd4 d5 6. exd5 **exd5** [White plays exd5 here 29% of the time]",
+        "lastMove": "e4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nf3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp1p1ppp/2n2n2/4p3/4P3/2N2N2/PPP2PPP/R1BQKB1R b KQkq - 3 6",
+        "answer": "Bb4",
+        "answerUci": "f8b4",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nf3 Nf6 6. Nc3 **Bb4** [White plays Nc3 here 75% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bb5-oo-c3-re1",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pp1pppbp/2n2np1/1Bp5/4P3/2P2N2/PP1P1PPP/RNBQR1K1 b kq - 2 6",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bb5 g6 4. O-O Bg7 5. c3 Nf6 6. Re1 **O-O** [White plays Re1 here 100% of the time]",
+        "lastMove": "f1e1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nxc6-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/p2p1ppp/2p5/4p3/4P3/3B4/PPP2PPP/RNBQK2R b KQkq - 1 6",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nxc6 bxc6 6. Bd3 **Nf6** [White plays Bd3 here 14% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-oo-exd5-re1",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp3ppp/2n5/2pp4/2B5/5N2/PPPP1PPP/RNBQR1K1 b kq - 1 6",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. O-O d5 5. exd5 exd5 6. Re1+ **Be7** [White plays Re1+ here 46% of the time]",
+        "lastMove": "f1e1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-oo-exd5-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp3ppp/2n5/1Bpp4/8/5N2/PPPP1PPP/RNBQ1RK1 b kq - 1 6",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. O-O d5 5. exd5 exd5 6. Bb5 **Nf6** [White plays Bb5 here 44% of the time]",
+        "lastMove": "c4b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-c3-exd5-nf3-d4-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "rn2kb1r/pp2pppp/5n2/2pq4/3P2b1/2P2N2/PP2BPPP/RNBQK2R b KQkq - 2 6",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. Nf3 Nf6 5. d4 Bg4 6. Be2 **e6** [White plays Be2 here 100% of the time]",
+        "lastMove": "f1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-nc3-d3-exd5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp3ppp/2n1pn2/2pP4/2B5/2NP1N2/PPP2PPP/R1BQK2R b KQkq - 0 6",
+        "answer": "exd5",
+        "answerUci": "e6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. Nc3 Nf6 5. d3 d5 6. exd5 **exd5** [White plays exd5 here 100% of the time]",
+        "lastMove": "e4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-bc4-nc3-a3-ba2-d3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/1b1p1ppp/p3p3/1pp5/4P3/P1NP4/BPP2PPP/R1BQK1NR b KQkq - 0 6",
+        "answer": "Nc6",
+        "answerUci": "b8c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Bc4 e6 3. Nc3 a6 4. a3 b5 5. Ba2 Bb7 6. d3 **Nc6** [White plays d3 here 100% of the time]",
+        "lastMove": "d2d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-c3-exd5-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp3ppp/2n5/1Bpp4/8/2P2N2/PP1P1PPP/RNBQK2R b KQkq - 1 6",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. c3 d5 5. exd5 exd5 6. Bb5 **Nf6** [White plays Bb5 here 48% of the time]",
+        "lastMove": "c4b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-c3-exd5-bb3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp3ppp/2n5/2pp4/8/1BP2N2/PP1P1PPP/RNBQK2R b KQkq - 1 6",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. c3 d5 5. exd5 exd5 6. Bb3 **Nf6** [White plays Bb3 here 43% of the time]",
+        "lastMove": "c4b3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nxc6-c4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/p2p1ppp/2p5/4p3/2P1P3/8/PP3PPP/RNBQKB1R b KQkq - 0 6",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nxc6 bxc6 6. c4 **Nf6** [White plays c4 here 10% of the time]",
+        "lastMove": "c2c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-d4-nxd4-nxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp1p1ppp/2N1pn2/8/2B1P3/8/PPP2PPP/RNBQK2R b KQkq - 0 6",
+        "answer": "bxc6",
+        "answerUci": "b7c6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. d4 cxd4 5. Nxd4 Nf6 6. Nxc6 **bxc6** [White plays Nxc6 here 57% of the time]",
+        "lastMove": "d4c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-d3-exd5-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp3ppp/2n5/1Bpp4/8/3P1N2/PPP2PPP/RNBQK2R b KQkq - 1 6",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. d3 d5 5. exd5 exd5 6. Bb5 **Nf6** [White plays Bb5 here 56% of the time]",
+        "lastMove": "c4b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nb5-n1c3-na3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/1p3ppp/p1np4/4p3/4P3/N1N5/PPP2PPP/R1BQKB1R b KQkq - 1 7",
+        "answer": "b5",
+        "answerUci": "b7b5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 d6 6. N1c3 a6 7. Na3 **b5** [White plays Na3 here 100% of the time]",
+        "lastMove": "b5a3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-d4-c3-nxc3-nf3-bc4-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pp1p1ppp/2n1p3/8/1bB1P3/2N2N2/PP3PPP/R1BQ1RK1 b kq - 3 7",
+        "answer": "Nge7",
+        "answerUci": "g8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. d4 cxd4 3. c3 dxc3 4. Nxc3 Nc6 5. Nf3 e6 6. Bc4 Bb4 7. O-O **Nge7** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-c3-d4-cxd4-exd5-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp3ppp/2n5/3p4/3P4/2N2N2/PP3PPP/R1BQKB1R b KQkq - 1 7",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. c3 e6 4. d4 cxd4 5. cxd4 d5 6. exd5 exd5 7. Nc3 **Nf6** [White plays Nc3 here 100% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nb5-c4-n5c3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/1p3ppp/p1np4/4p3/2P1P3/2N5/PP3PPP/RNBQKB1R b KQkq - 1 7",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 d6 6. c4 a6 7. N5c3 **Nf6** [White plays N5c3 here 76% of the time]",
+        "lastMove": "b5c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-c3-exd5-d4-cxd4-nf3-be2",
+      "model": "chess",
+      "fields": {
+        "fen": "r3kbnr/pp2pppp/2n5/3q4/3P2b1/5N2/PP2BPPP/RNBQK2R b KQkq - 4 7",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. d4 cxd4 5. cxd4 Nc6 6. Nf3 Bg4 7. Be2 **e6** [White plays Be2 here 54% of the time]",
+        "lastMove": "f1e2"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nxc6-nc3-bc4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p2p1ppp/2p2n2/4p3/2B1P3/2N5/PPP2PPP/R1BQK2R b KQkq - 3 7",
+        "answer": "Bb4",
+        "answerUci": "f8b4",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nxc6 bxc6 6. Nc3 Nf6 7. Bc4 **Bb4** [White plays Bc4 here 42% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-c3-exd5-d4-cxd4-nf3-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r3kbnr/pp2pppp/2n5/3q4/3P2b1/2N2N2/PP3PPP/R1BQKB1R b KQkq - 4 7",
+        "answer": "Bxf3",
+        "answerUci": "g4f3",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. c3 d5 3. exd5 Qxd5 4. d4 cxd4 5. cxd4 Nc6 6. Nf3 Bg4 7. Nc3 **Bxf3** [White plays Nc3 here 46% of the time]",
+        "lastMove": "b1c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-c3-d4-cxd4-e5-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp2nppp/2n1p3/3pP3/3P4/3B1N2/PP3PPP/RNBQK2R b KQkq - 2 7",
+        "answer": "Nf5",
+        "answerUci": "e7f5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. c3 e6 4. d4 cxd4 5. cxd4 d5 6. e5 Nge7 7. Bd3 **Nf5** [White plays Bd3 here 35% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nb3-nc3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pp1p1ppp/2n2n2/4p3/1b2P3/1NNB4/PPP2PPP/R1BQK2R b KQkq - 5 7",
+        "answer": "d5",
+        "answerUci": "d7d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb3 Nf6 6. Nc3 Bb4 7. Bd3 **d5** [White plays Bd3 here 63% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nxc6-nc3-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p2p1ppp/2p2n2/4p1B1/4P3/2N5/PPP2PPP/R2QKB1R b KQkq - 3 7",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nxc6 bxc6 6. Nc3 Nf6 7. Bg5 **Be7** [White plays Bg5 here 37% of the time]",
+        "lastMove": "c1g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nxc6-bd3-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p2p1ppp/2p2n2/4p3/4P3/3B4/PPP2PPP/RNBQ1RK1 b kq - 3 7",
+        "answer": "Bc5",
+        "answerUci": "f8c5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nxc6 bxc6 6. Bd3 Nf6 7. O-O **Bc5** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-oo-exd5-re1-bb5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pp2bppp/2n5/1Bpp4/8/5N2/PPPP1PPP/RNBQR1K1 b kq - 3 7",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. O-O d5 5. exd5 exd5 6. Re1+ Be7 7. Bb5 **Nf6** [White plays Bb5 here 100% of the time]",
+        "lastMove": "c4b5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-bc4-c3-exd5-bb3-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp3ppp/2n2n2/2pp4/8/1BP2N2/PP1P1PPP/RNBQ1RK1 b kq - 3 7",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. Bc4 e6 4. c3 d5 5. exd5 exd5 6. Bb3 Nf6 7. O-O **Be7** [White plays O-O here 100% of the time]",
+        "lastMove": "e1g1"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nxc6-nc3-bd3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p2p1ppp/2p2n2/4p3/4P3/2NB4/PPP2PPP/R1BQK2R b KQkq - 3 7",
+        "answer": "Bb4",
+        "answerUci": "f8b4",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nxc6 bxc6 6. Nc3 Nf6 7. Bd3 **Bb4** [White plays Bd3 here 21% of the time]",
+        "lastMove": "f1d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nxc6-bc4-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/p2p1ppp/2p2n2/4p1B1/2B1P3/8/PPP2PPP/RN1QK2R b KQkq - 3 7",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nxc6 bxc6 6. Bc4 Nf6 7. Bg5 **Be7** [White plays Bg5 here 27% of the time]",
+        "lastMove": "c1g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nb5-n1c3-na3-nd5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/5ppp/p1np4/1p1Np3/4P3/N7/PPP2PPP/R1BQKB1R b KQkq - 1 8",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 d6 6. N1c3 a6 7. Na3 b5 8. Nd5 **Nf6** [White plays Nd5 here 100% of the time]",
+        "lastMove": "c3d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-c3-d4-cxd4-e5-bd3-bxf5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp3ppp/2n1p3/3pPB2/3P4/5N2/PP3PPP/RNBQK2R b KQkq - 0 8",
+        "answer": "exf5",
+        "answerUci": "e6f5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. c3 e6 4. d4 cxd4 5. cxd4 d5 6. e5 Nge7 7. Bd3 Nf5 8. Bxf5 **exf5** [White plays Bxf5 here 100% of the time]",
+        "lastMove": "d3f5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nb3-nc3-bd3-exd5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pp3ppp/2n2n2/3Pp3/1b6/1NNB4/PPP2PPP/R1BQK2R b KQkq - 0 8",
+        "answer": "Nxd5",
+        "answerUci": "f6d5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb3 Nf6 6. Nc3 Bb4 7. Bd3 d5 8. exd5 **Nxd5** [White plays exd5 here 100% of the time]",
+        "lastMove": "e4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nb5-n1c3-na3-nd5-bg5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/5ppp/p1np1n2/1p1Np1B1/4P3/N7/PPP2PPP/R2QKB1R b KQkq - 3 9",
+        "answer": "Be7",
+        "answerUci": "f8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 d6 6. N1c3 a6 7. Na3 b5 8. Nd5 Nf6 9. Bg5 **Be7** [White plays Bg5 here 100% of the time]",
+        "lastMove": "c1g5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nb5-n1c3-na3-nd5-bg5-bxf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/4bppp/p1np1B2/1p1Np3/4P3/N7/PPP2PPP/R2QKB1R b KQkq - 0 10",
+        "answer": "Bxf6",
+        "answerUci": "e7f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 d6 6. N1c3 a6 7. Na3 b5 8. Nd5 Nf6 9. Bg5 Be7 10. Bxf6 **Bxf6** [White plays Bxf6 here 78% of the time]",
+        "lastMove": "g5f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nb5-n1c3-na3-nd5-bg5-nxe7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/4Nppp/p1np1n2/1p2p1B1/4P3/N7/PPP2PPP/R2QKB1R b KQkq - 0 10",
+        "answer": "Qxe7",
+        "answerUci": "d8e7",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 d6 6. N1c3 a6 7. Na3 b5 8. Nd5 Nf6 9. Bg5 Be7 10. Nxe7 **Qxe7** [White plays Nxe7 here 22% of the time]",
+        "lastMove": "d5e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nb5-n1c3-na3-nd5-bg5-bxf6-c3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/5ppp/p1np1b2/1p1Np3/4P3/N1P5/PP3PPP/R2QKB1R b KQkq - 0 11",
+        "answer": "O-O",
+        "answerUci": "e8g8",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 d6 6. N1c3 a6 7. Na3 b5 8. Nd5 Nf6 9. Bg5 Be7 10. Bxf6 Bxf6 11. c3 **O-O** [White plays c3 here 100% of the time]",
+        "lastMove": "c2c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e4-nf3-d4-nxd4-nb5-n1c3-na3-nd5-bg5-bxf6-c3-nc2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/5ppp/p1np1b2/1p1Np3/4P3/2P5/PPN2PPP/R2QKB1R b KQ - 2 12",
+        "answer": "Bg5",
+        "answerUci": "f6g5",
+        "orientation": "black",
+        "prompt": "You are Black in the Sicilian Defense. What is the book move?",
+        "extra": "1. e4 c5 2. Nf3 Nc6 3. d4 cxd4 4. Nxd4 e5 5. Nb5 d6 6. N1c3 a6 7. Na3 b5 8. Nd5 Nf6 9. Bg5 Be7 10. Bxf6 Bxf6 11. c3 O-O 12. Nc2 **Bg5** [White plays Nc2 here 100% of the time]",
+        "lastMove": "a3c2"
+      },
+      "tags": [
+        "chess::line"
       ]
     }
   ]

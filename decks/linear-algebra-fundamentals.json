@@ -1,0 +1,692 @@
+{
+  "key": "linear-algebra-fundamentals",
+  "version": 1,
+  "name": "Linear Algebra Fundamentals",
+  "description": "The core objects of linear algebra and what they mean geometrically: vectors, span and linear independence, basis and dimension, dot products, matrices as linear transformations, determinants, rank and null space, systems of equations, and eigenvalues and eigenvectors.",
+  "category": "Mathematics",
+  "topics": ["linear-algebra", "mathematics", "vectors", "matrices"],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Linear_subspaces_with_shading.svg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "vector-def",
+      "model": "basic",
+      "fields": {
+        "front": "In linear algebra, what is a vector in R^n?",
+        "back": "An ordered list of n real numbers.",
+        "extra": "Geometrically: an arrow from the origin to the point with those coordinates. Both views are used constantly."
+      },
+      "tags": ["linalg::vectors"]
+    },
+    {
+      "key": "scalar-mult-geometric",
+      "model": "basic",
+      "fields": {
+        "front": "Geometrically, what does multiplying a vector by a scalar c > 1 do?",
+        "back": "It stretches the vector by a factor of c without changing its direction.",
+        "extra": "0 < c < 1 shrinks it instead. This is why numbers are called *scalars*: they scale."
+      },
+      "tags": ["linalg::vectors"]
+    },
+    {
+      "key": "scalar-mult-negative",
+      "model": "basic",
+      "fields": {
+        "front": "Geometrically, what does multiplying a vector by a *negative* scalar do to its direction?",
+        "back": "It reverses the vector to point the opposite way.",
+        "extra": "The length still scales by |c|: multiplying by -2 flips the vector and doubles it."
+      },
+      "tags": ["linalg::vectors"]
+    },
+    {
+      "key": "vector-add-geometric",
+      "model": "basic",
+      "fields": {
+        "front": "Geometrically, how do you add two vectors?",
+        "back": "Place them tip-to-tail; the sum runs from the first tail to the last tip.",
+        "extra": "Equivalent picture: the diagonal of the parallelogram the two vectors form. Componentwise it is just coordinate-by-coordinate addition."
+      },
+      "tags": ["linalg::vectors"]
+    },
+    {
+      "key": "linear-combination-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is a linear combination of vectors v1, ..., vk?",
+        "back": "Any sum of scalar multiples of them: a1 v1 + a2 v2 + ... + ak vk.",
+        "extra": "Scaling and adding are the only two moves in linear algebra; a linear combination is anything you can build from both."
+      },
+      "tags": ["linalg::vectors"]
+    },
+    {
+      "key": "span-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is the span of a set of vectors?",
+        "back": "The set of all their linear combinations.",
+        "extra": "Everything you can reach by scaling and adding them. One nonzero vector spans a line; two non-parallel vectors span a plane."
+      },
+      "tags": ["linalg::vectors"]
+    },
+    {
+      "key": "span-two-vectors",
+      "model": "basic",
+      "fields": {
+        "front": "Two non-parallel vectors sit in R^3. What does their span look like geometrically?",
+        "back": "A plane through the origin.",
+        "extra": "Not all of R^3: two vectors can never reach three independent directions."
+      },
+      "tags": ["linalg::vectors"]
+    },
+    {
+      "key": "linear-independence-def",
+      "model": "basic",
+      "fields": {
+        "front": "When is a set of vectors linearly independent?",
+        "back": "When no vector in the set is a linear combination of the others.",
+        "extra": "Every vector adds a genuinely new direction; nothing is redundant."
+      },
+      "tags": ["linalg::vectors"]
+    },
+    {
+      "key": "independence-zero-test",
+      "model": "cloze",
+      "fields": {
+        "text": "Vectors v1, ..., vk are linearly independent exactly when a1 v1 + ... + ak vk = 0 forces {{c1::every coefficient ai to be 0}}.",
+        "extra": "If some nontrivial combination hits zero, one vector can be solved for in terms of the others: that is dependence."
+      },
+      "tags": ["linalg::vectors"]
+    },
+    {
+      "key": "two-vectors-dependent",
+      "model": "basic",
+      "fields": {
+        "front": "Geometrically, when are exactly two vectors linearly dependent?",
+        "back": "When they are parallel: one is a scalar multiple of the other.",
+        "extra": "With only two vectors this is the whole story; with three or more, dependence can hide in combinations without any pair being parallel."
+      },
+      "tags": ["linalg::vectors"]
+    },
+    {
+      "key": "zero-vector-dependent",
+      "model": "basic",
+      "fields": {
+        "front": "Why does including the zero vector make any set of vectors linearly dependent?",
+        "back": "Because 1 * 0 = 0 is already a nontrivial combination that equals zero.",
+        "extra": "The zero vector never adds a direction, so it can never be part of an independent set."
+      },
+      "tags": ["linalg::vectors"]
+    },
+    {
+      "key": "subspace-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is a subspace of R^n?",
+        "back": "A subset closed under vector addition and scalar multiplication.",
+        "extra": "Closed means combinations never leave the set. Lines and planes through the origin are subspaces; a shifted line is not."
+      },
+      "tags": ["linalg::spaces"]
+    },
+    {
+      "key": "subspace-zero",
+      "model": "basic",
+      "fields": {
+        "front": "Which specific vector must every subspace contain?",
+        "back": "The zero vector.",
+        "extra": "Multiply any member by the scalar 0 and closure forces 0 to be in the set. Quick test: a plane not through the origin is not a subspace."
+      },
+      "tags": ["linalg::spaces"]
+    },
+    {
+      "key": "basis-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is a basis of a vector space?",
+        "back": "A linearly independent set that spans the space.",
+        "extra": "Big enough to reach everything, small enough to have no redundancy. The standard basis of R^3 is e1, e2, e3."
+      },
+      "tags": ["linalg::spaces"]
+    },
+    {
+      "key": "basis-unique-coords",
+      "model": "basic",
+      "fields": {
+        "front": "What does a basis give every vector in the space?",
+        "back": "A unique representation as a linear combination of the basis vectors.",
+        "extra": "Those coefficients are the vector's coordinates in that basis. Spanning gives existence; independence gives uniqueness."
+      },
+      "tags": ["linalg::spaces"]
+    },
+    {
+      "key": "dimension-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is the dimension of a vector space?",
+        "back": "The number of vectors in any basis of it.",
+        "extra": "All bases of a space have the same size, which is what makes dimension well defined."
+      },
+      "tags": ["linalg::spaces"]
+    },
+    {
+      "key": "plane-dimension",
+      "model": "typed",
+      "fields": {
+        "front": "A plane through the origin in R^3 is a subspace. What is its dimension? (type a number)",
+        "answer": "2",
+        "extra": "It takes exactly two independent vectors to span a plane. A line through the origin has dimension 1; R^3 itself has dimension 3."
+      },
+      "tags": ["linalg::spaces"]
+    },
+    {
+      "key": "dot-product-formula",
+      "model": "cloze",
+      "fields": {
+        "text": "For u, v in R^n, the dot product u . v = {{c1::u1 v1 + u2 v2 + ... + un vn}}.",
+        "extra": "Multiply matching components, then add everything up."
+      },
+      "tags": ["linalg::geometry"]
+    },
+    {
+      "key": "dot-product-scalar",
+      "model": "basic",
+      "fields": {
+        "front": "Is the dot product of two vectors a vector or a scalar?",
+        "back": "A scalar: a single number.",
+        "extra": "A common early mix-up. The *cross* product (in R^3 only) is the one that returns a vector."
+      },
+      "tags": ["linalg::geometry"]
+    },
+    {
+      "key": "dot-product-self",
+      "model": "basic",
+      "fields": {
+        "front": "What does v . v equal, in terms of v's length?",
+        "back": "The squared length: v . v = ||v||^2.",
+        "extra": "Dotting a vector with itself sums the squares of its components, which is the Pythagorean theorem in n dimensions."
+      },
+      "tags": ["linalg::geometry"]
+    },
+    {
+      "key": "norm-formula",
+      "model": "cloze",
+      "fields": {
+        "text": "The length (norm) of a vector: ||v|| = {{c1::sqrt(v . v)}}.",
+        "extra": "Equivalently sqrt(v1^2 + ... + vn^2)."
+      },
+      "tags": ["linalg::geometry"]
+    },
+    {
+      "key": "unit-vector-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is a unit vector?",
+        "back": "A vector with length 1.",
+        "extra": "Unit vectors carry pure direction; scaling one by c gives a vector of length |c| in that direction."
+      },
+      "tags": ["linalg::geometry"]
+    },
+    {
+      "key": "normalize-def",
+      "model": "basic",
+      "fields": {
+        "front": "How do you normalize a nonzero vector v?",
+        "back": "Divide it by its own length: v / ||v||.",
+        "extra": "The result is the unit vector pointing the same way as v."
+      },
+      "tags": ["linalg::geometry"]
+    },
+    {
+      "key": "dot-angle-formula",
+      "model": "cloze",
+      "fields": {
+        "text": "u . v = ||u|| ||v|| {{c1::cos(theta)}}, where theta is the angle between u and v.",
+        "extra": "This is the bridge between the algebraic formula and geometry: the dot product measures alignment."
+      },
+      "tags": ["linalg::geometry"]
+    },
+    {
+      "key": "orthogonal-dot",
+      "model": "typed",
+      "fields": {
+        "front": "u and v are perpendicular (orthogonal). What number is u . v? (type it)",
+        "answer": "0",
+        "extra": "cos(90 degrees) = 0. This is *the* test for orthogonality in any dimension."
+      },
+      "tags": ["linalg::geometry"]
+    },
+    {
+      "key": "dot-sign",
+      "model": "basic",
+      "fields": {
+        "front": "What does a *positive* dot product tell you about the angle between two vectors?",
+        "back": "The angle is acute: the vectors point in broadly the same direction.",
+        "extra": "Negative means obtuse (broadly opposite); zero means perpendicular."
+      },
+      "tags": ["linalg::geometry"]
+    },
+    {
+      "key": "matrix-rows-convention",
+      "model": "typed",
+      "fields": {
+        "front": "A matrix is described as m x n. Which letter counts the rows? (type the letter)",
+        "answer": "m",
+        "extra": "Rows come first, columns second: a 3 x 2 matrix is 3 rows tall and 2 columns wide."
+      },
+      "tags": ["linalg::matrices"]
+    },
+    {
+      "key": "linear-map-def",
+      "model": "basic",
+      "fields": {
+        "front": "What two operations must a transformation T preserve to be linear?",
+        "back": "Addition and scaling: T(u + v) = T(u) + T(v) and T(cv) = c T(v).",
+        "extra": "Geometrically: grid lines stay parallel and evenly spaced, and the origin stays put."
+      },
+      "tags": ["linalg::matrices"]
+    },
+    {
+      "key": "linear-map-origin",
+      "model": "basic",
+      "fields": {
+        "front": "Where does every linear transformation send the origin?",
+        "back": "To the origin: T(0) = 0.",
+        "extra": "Set c = 0 in T(cv) = cT(v). A map that moves the origin (like a translation) is not linear."
+      },
+      "tags": ["linalg::matrices"]
+    },
+    {
+      "key": "matrix-columns-meaning",
+      "model": "basic",
+      "fields": {
+        "front": "What do the columns of a transformation matrix A tell you?",
+        "back": "Where the standard basis vectors land: column i is A applied to e_i.",
+        "extra": "To write down a matrix, just record where e1, e2, ... go. This one idea decodes almost every matrix you meet."
+      },
+      "tags": ["linalg::matrices"]
+    },
+    {
+      "key": "matrix-vector-product",
+      "model": "basic",
+      "fields": {
+        "front": "What does the product Av compute, in terms of A's columns?",
+        "back": "A linear combination of A's columns, weighted by the entries of v.",
+        "extra": "Av = v1 * (col 1) + v2 * (col 2) + ... This view makes column space and solvability obvious later."
+      },
+      "tags": ["linalg::matrices"]
+    },
+    {
+      "key": "matmul-defined",
+      "model": "basic",
+      "fields": {
+        "front": "When is the matrix product AB defined?",
+        "back": "When A has as many columns as B has rows.",
+        "extra": "The inner dimensions must match: (m x n)(n x p) works and yields m x p."
+      },
+      "tags": ["linalg::matrices"]
+    },
+    {
+      "key": "matmul-size",
+      "model": "basic",
+      "fields": {
+        "front": "A is a 3 x 2 matrix and B is a 2 x 5 matrix. What is the shape of AB?",
+        "back": "3 x 5.",
+        "extra": "The matching inner 2s cancel; the outer numbers survive: (3x2)(2x5) gives 3x5."
+      },
+      "tags": ["linalg::matrices"]
+    },
+    {
+      "key": "matmul-composition",
+      "model": "basic",
+      "fields": {
+        "front": "As transformations, what does the matrix product AB represent?",
+        "back": "The composition: apply B first, then A.",
+        "extra": "(AB)v = A(Bv), so read products right to left, like function composition f(g(x))."
+      },
+      "tags": ["linalg::matrices"]
+    },
+    {
+      "key": "matmul-not-commutative",
+      "model": "basic",
+      "fields": {
+        "front": "Which familiar property of number multiplication does matrix multiplication NOT have?",
+        "back": "Commutativity: in general AB is not equal to BA.",
+        "extra": "Rotate-then-stretch differs from stretch-then-rotate. Order of operations is real for matrices."
+      },
+      "tags": ["linalg::matrices"]
+    },
+    {
+      "key": "identity-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is the identity matrix I?",
+        "back": "The square matrix with 1s on the diagonal and 0s everywhere else.",
+        "extra": "Iv = v for every v: it is the do-nothing transformation, and AI = IA = A."
+      },
+      "tags": ["linalg::matrices"]
+    },
+    {
+      "key": "transpose-def",
+      "model": "basic",
+      "fields": {
+        "front": "What does taking the transpose A^T do to a matrix?",
+        "back": "Swaps rows with columns: the (i, j) entry moves to position (j, i).",
+        "extra": "An m x n matrix becomes n x m; the diagonal stays fixed."
+      },
+      "tags": ["linalg::matrices"]
+    },
+    {
+      "key": "transpose-product",
+      "model": "cloze",
+      "fields": {
+        "text": "Transpose of a product: (AB)^T = {{c1::B^T A^T}}.",
+        "extra": "The order reverses, same as with inverses."
+      },
+      "tags": ["linalg::matrices"]
+    },
+    {
+      "key": "inverse-geometric",
+      "model": "basic",
+      "fields": {
+        "front": "As a transformation, what does the inverse matrix A^-1 do?",
+        "back": "It undoes A: it sends Av back to v.",
+        "extra": "Algebraically A^-1 A = A A^-1 = I."
+      },
+      "tags": ["linalg::matrices"]
+    },
+    {
+      "key": "invertible-square-only",
+      "model": "basic",
+      "fields": {
+        "front": "Only matrices of what shape can be invertible?",
+        "back": "Square matrices (n x n).",
+        "extra": "A non-square map changes dimension going out or coming back, so it cannot be perfectly undone in both directions."
+      },
+      "tags": ["linalg::matrices"]
+    },
+    {
+      "key": "inverse-product",
+      "model": "cloze",
+      "fields": {
+        "text": "Inverse of a product: (AB)^-1 = {{c1::B^-1 A^-1}}.",
+        "extra": "Socks and shoes: to undo 'B then A', undo A first, then B."
+      },
+      "tags": ["linalg::matrices"]
+    },
+    {
+      "key": "singular-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is a *singular* matrix?",
+        "back": "A square matrix that has no inverse.",
+        "extra": "Equivalently: det = 0, columns dependent, rank below n. 'Singular' and 'non-invertible' are synonyms."
+      },
+      "tags": ["linalg::matrices"]
+    },
+    {
+      "key": "det-geometric",
+      "model": "basic",
+      "fields": {
+        "front": "Geometrically, what does |det(A)| measure for a 2 x 2 matrix?",
+        "back": "The factor by which A scales areas.",
+        "extra": "In 3D it scales volumes. det = 3 means every region comes out 3 times larger."
+      },
+      "tags": ["linalg::determinant"]
+    },
+    {
+      "key": "det-sign",
+      "model": "basic",
+      "fields": {
+        "front": "What does a *negative* determinant tell you about a transformation?",
+        "back": "It flips orientation, like a reflection.",
+        "extra": "In 2D, clockwise becomes counterclockwise; |det| still gives the area scaling."
+      },
+      "tags": ["linalg::determinant"]
+    },
+    {
+      "key": "det-zero-geometric",
+      "model": "basic",
+      "fields": {
+        "front": "Geometrically, what does det(A) = 0 say about what A does to space?",
+        "back": "A collapses space into a lower dimension, squashing all area or volume to zero.",
+        "extra": "A 2D example: everything lands on a single line. Collapsed information cannot be recovered, which is why det 0 means no inverse."
+      },
+      "tags": ["linalg::determinant"]
+    },
+    {
+      "key": "det-invertibility",
+      "model": "basic",
+      "fields": {
+        "front": "A square matrix is invertible exactly when its determinant is what?",
+        "back": "Nonzero.",
+        "extra": "det(A) != 0 is the standard invertibility test; det(A) = 0 means singular."
+      },
+      "tags": ["linalg::determinant"]
+    },
+    {
+      "key": "det-2x2",
+      "model": "cloze",
+      "fields": {
+        "text": "For a 2 x 2 matrix with rows (a, b) and (c, d): det = {{c1::ad - bc}}.",
+        "extra": "Main diagonal product minus anti-diagonal product."
+      },
+      "tags": ["linalg::determinant"]
+    },
+    {
+      "key": "det-product",
+      "model": "cloze",
+      "fields": {
+        "text": "Determinant of a product: det(AB) = {{c1::det(A) det(B)}}.",
+        "extra": "Scale areas by det(B), then by det(A): scalings multiply."
+      },
+      "tags": ["linalg::determinant"]
+    },
+    {
+      "key": "det-identity",
+      "model": "typed",
+      "fields": {
+        "front": "What is det(I)? (type a number)",
+        "answer": "1",
+        "extra": "The identity changes nothing, so it scales area and volume by exactly 1."
+      },
+      "tags": ["linalg::determinant"]
+    },
+    {
+      "key": "det-sum-misconception",
+      "model": "basic",
+      "fields": {
+        "front": "det(A + B) = det(A) + det(B): is this a valid identity?",
+        "back": "No; the determinant is multiplicative over products, not additive over sums.",
+        "extra": "det(AB) = det(A) det(B) holds; nothing useful holds for det(A + B) in general."
+      },
+      "tags": ["linalg::determinant"]
+    },
+    {
+      "key": "column-space-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is the column space of a matrix A?",
+        "back": "The span of A's columns.",
+        "extra": "Since Av is a combination of columns, the column space is exactly the set of all possible outputs Av."
+      },
+      "tags": ["linalg::systems"]
+    },
+    {
+      "key": "null-space-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is the null space of a matrix A?",
+        "back": "The set of all vectors x with Ax = 0.",
+        "extra": "Everything A crushes to the origin. Always a subspace, and always contains at least the zero vector."
+      },
+      "tags": ["linalg::systems"]
+    },
+    {
+      "key": "rank-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is the rank of a matrix?",
+        "back": "The dimension of its column space.",
+        "extra": "Equivalently, the number of linearly independent columns; row rank always equals column rank."
+      },
+      "tags": ["linalg::systems"]
+    },
+    {
+      "key": "rank-nullity",
+      "model": "cloze",
+      "fields": {
+        "text": "Rank-nullity theorem: for an m x n matrix A, rank(A) + dim(null space of A) = {{c1::n, the number of columns}}.",
+        "extra": "Every input dimension is either kept (rank) or crushed to zero (nullity); none go missing."
+      },
+      "tags": ["linalg::systems"]
+    },
+    {
+      "key": "full-rank-invertible",
+      "model": "typed",
+      "fields": {
+        "front": "An n x n matrix is invertible exactly when its rank equals what? (type it)",
+        "answer": "n",
+        "extra": "Full rank: the columns are independent and span all of R^n, so nothing is collapsed."
+      },
+      "tags": ["linalg::systems"]
+    },
+    {
+      "key": "solvability-column-space",
+      "model": "basic",
+      "fields": {
+        "front": "When does the system Ax = b have at least one solution?",
+        "back": "Exactly when b lies in the column space of A.",
+        "extra": "Ax is always a combination of A's columns, so solvable targets are precisely the reachable ones."
+      },
+      "tags": ["linalg::systems"]
+    },
+    {
+      "key": "homogeneous-trivial",
+      "model": "basic",
+      "fields": {
+        "front": "The homogeneous system Ax = 0 always has at least one solution. Which one?",
+        "back": "The trivial solution x = 0.",
+        "extra": "The interesting question is whether any *nonzero* solutions exist, i.e. whether the null space is bigger than {0}."
+      },
+      "tags": ["linalg::systems"]
+    },
+    {
+      "key": "two-solutions-infinite",
+      "model": "basic",
+      "fields": {
+        "front": "Ax = b has two different solutions. How many solutions does it have in total?",
+        "back": "Infinitely many.",
+        "extra": "The difference of two solutions is a nonzero null-space vector, and adding any scalar multiple of it to a solution gives another solution."
+      },
+      "tags": ["linalg::systems"]
+    },
+    {
+      "key": "eigenvector-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is an eigenvector of a matrix A?",
+        "back": "A nonzero vector that A only scales: Av = lambda v.",
+        "extra": "It stays on its own line through the origin; the transformation does not knock it off its direction."
+      },
+      "tags": ["linalg::eigen"]
+    },
+    {
+      "key": "eigenvalue-meaning",
+      "model": "basic",
+      "fields": {
+        "front": "What does an eigenvalue lambda tell you about its eigenvector?",
+        "back": "The factor by which A stretches or shrinks that eigenvector.",
+        "extra": "lambda = 2 doubles it; lambda = 0.5 halves it; lambda = 1 leaves it fixed."
+      },
+      "tags": ["linalg::eigen"]
+    },
+    {
+      "key": "characteristic-equation",
+      "model": "cloze",
+      "fields": {
+        "text": "The eigenvalues of A are the solutions of det({{c1::A - lambda I}}) = 0.",
+        "extra": "Av = lambda v rearranges to (A - lambda I)v = 0, which has a nonzero solution only when A - lambda I is singular."
+      },
+      "tags": ["linalg::eigen"]
+    },
+    {
+      "key": "eigenvector-nonzero",
+      "model": "basic",
+      "fields": {
+        "front": "Why is the zero vector never counted as an eigenvector?",
+        "back": "Because A0 = lambda 0 holds for every matrix and every lambda, so it carries no information.",
+        "extra": "Eigen*values* can be zero; eigen*vectors* cannot be the zero vector."
+      },
+      "tags": ["linalg::eigen"]
+    },
+    {
+      "key": "eigenvalue-zero",
+      "model": "basic",
+      "fields": {
+        "front": "What does having 0 as an eigenvalue tell you about a matrix A?",
+        "back": "A is singular: some nonzero vector gets sent to zero.",
+        "extra": "Av = 0v = 0 means the eigenvector lies in the null space, so det(A) = 0."
+      },
+      "tags": ["linalg::eigen"]
+    },
+    {
+      "key": "eigenvalue-negative",
+      "model": "basic",
+      "fields": {
+        "front": "What does a *negative* eigenvalue do to its eigenvector?",
+        "back": "It flips the eigenvector to the opposite direction while scaling it.",
+        "extra": "The vector still stays on the same line through the origin, which is why it still counts as an eigenvector."
+      },
+      "tags": ["linalg::eigen"]
+    },
+    {
+      "key": "symmetric-def",
+      "model": "basic",
+      "fields": {
+        "front": "What makes a matrix symmetric?",
+        "back": "It equals its own transpose: A^T = A.",
+        "extra": "The entries mirror across the diagonal. Symmetric matrices have real eigenvalues and perpendicular eigenvectors."
+      },
+      "tags": ["linalg::special"]
+    },
+    {
+      "key": "diagonal-action",
+      "model": "basic",
+      "fields": {
+        "front": "What does a diagonal matrix do to each standard basis vector?",
+        "back": "Scales it by the corresponding diagonal entry.",
+        "extra": "Diagonal matrices are pure axis-by-axis stretching, which is why diagonalizing a matrix makes it easy to work with."
+      },
+      "tags": ["linalg::special"]
+    },
+    {
+      "key": "orthogonal-matrix-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is an orthogonal matrix Q?",
+        "back": "A square matrix whose columns are orthonormal, so Q^T Q = I.",
+        "extra": "Orthonormal: each column has length 1 and the columns are mutually perpendicular."
+      },
+      "tags": ["linalg::special"]
+    },
+    {
+      "key": "orthogonal-preserves",
+      "model": "basic",
+      "fields": {
+        "front": "What do orthogonal matrices preserve geometrically?",
+        "back": "Lengths and angles: they are rigid motions like rotations and reflections.",
+        "extra": "||Qv|| = ||v|| for every v, and det(Q) is +1 (rotation) or -1 (reflection)."
+      },
+      "tags": ["linalg::special"]
+    },
+    {
+      "key": "orthogonal-inverse",
+      "model": "basic",
+      "fields": {
+        "front": "What is the inverse of an orthogonal matrix Q?",
+        "back": "Its transpose: Q^-1 = Q^T.",
+        "extra": "This follows directly from Q^T Q = I, and it makes orthogonal matrices trivial to invert."
+      },
+      "tags": ["linalg::special"]
+    }
+  ]
+}

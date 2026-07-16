@@ -1,8 +1,8 @@
 {
   "key": "queens-gambit-accepted",
-  "version": 2,
-  "name": "The Queen's Gambit Accepted",
-  "description": "Line trainer for the Queen's Gambit Accepted, generated from the canonical opening database (lichess-org/chess-openings): 21 positions drilled book-move by book-move from Black's side across 58 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "version": 3,
+  "name": "The Queen's Gambit Accepted as Black",
+  "description": "A Black repertoire for the Queen's Gambit Accepted, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 16 positions.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -20,9 +20,9 @@
         "answer": "d5",
         "answerUci": "d7d5",
         "orientation": "black",
-        "lastMove": "d2d4",
         "prompt": "You are Black in the Queen's Gambit Accepted. What is the book move?",
-        "extra": "1. d4 **d5**"
+        "extra": "1. d4 **d5** [White plays d4 here 27% of the time]",
+        "lastMove": "d2d4"
       },
       "tags": [
         "chess::line"
@@ -36,9 +36,25 @@
         "answer": "dxc4",
         "answerUci": "d5c4",
         "orientation": "black",
-        "lastMove": "c2c4",
         "prompt": "You are Black in the Queen's Gambit Accepted. What is the book move?",
-        "extra": "1. d4 d5 2. c4 **dxc4** (Queen's Gambit Accepted, D20)"
+        "extra": "1. d4 d5 2. c4 **dxc4** (Queen's Gambit Accepted, D20) [White plays c4 here 40% of the time]",
+        "lastMove": "c2c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp1pppp/8/8/2pP4/2N5/PP2PPPP/R1BQKBNR b KQkq - 1 3",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Accepted. What is the book move?",
+        "extra": "1. d4 d5 2. c4 dxc4 3. Nc3 **Nf6** [White plays Nc3 here 39% of the time]",
+        "lastMove": "b1c3"
       },
       "tags": [
         "chess::line"
@@ -49,12 +65,28 @@
       "model": "chess",
       "fields": {
         "fen": "rnbqkbnr/ppp1pppp/8/8/2pP4/4P3/PP3PPP/RNBQKBNR b KQkq - 0 3",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Accepted. What is the book move?",
+        "extra": "1. d4 d5 2. c4 dxc4 3. e3 **Nf6** [White plays e3 here 24% of the time]",
+        "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp1pppp/8/8/2pPP3/8/PP3PPP/RNBQKBNR b KQkq - 0 3",
         "answer": "e5",
         "answerUci": "e7e5",
         "orientation": "black",
-        "lastMove": "e2e3",
-        "prompt": "You are Black in the Old Variation. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. e3 **e5**"
+        "prompt": "You are Black in the Queen's Gambit Accepted. What is the book move?",
+        "extra": "1. d4 d5 2. c4 dxc4 3. e4 **e5** (McDonnell Defense, D20) [White plays e4 here 23% of the time]",
+        "lastMove": "e2e4"
       },
       "tags": [
         "chess::line"
@@ -68,25 +100,105 @@
         "answer": "Nf6",
         "answerUci": "g8f6",
         "orientation": "black",
-        "lastMove": "g1f3",
-        "prompt": "You are Black in the Normal Variation. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. Nf3 **Nf6** (Queen's Gambit Accepted, D23)"
+        "prompt": "You are Black in the Queen's Gambit Accepted. What is the book move?",
+        "extra": "1. d4 d5 2. c4 dxc4 3. Nf3 **Nf6** (Queen's Gambit Accepted, D23) [White plays Nf3 here 11% of the time]",
+        "lastMove": "g1f3"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-d4-c4-e4",
+      "key": "l-d4-c4-e3-bxc4",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/ppp1pppp/8/8/2pPP3/8/PP3PPP/RNBQKBNR b KQkq - 0 3",
-        "answer": "c5",
-        "answerUci": "c7c5",
+        "fen": "rnbqkb1r/ppp1pppp/5n2/8/2BP4/4P3/PP3PPP/RNBQK1NR b KQkq - 0 4",
+        "answer": "e6",
+        "answerUci": "e7e6",
         "orientation": "black",
-        "lastMove": "e2e4",
-        "prompt": "You are Black in the Saduleto Variation. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. e4 **c5** (Rubinstein Defense, D20)"
+        "prompt": "You are Black in the Queen's Gambit Accepted. What is the book move?",
+        "extra": "1. d4 d5 2. c4 dxc4 3. e3 Nf6 4. Bxc4 **e6** [White plays Bxc4 here 95% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1pppp/5n2/8/2pPP3/2N5/PP3PPP/R1BQKBNR b KQkq - 0 4",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Accepted. What is the book move?",
+        "extra": "1. d4 d5 2. c4 dxc4 3. Nc3 Nf6 4. e4 **e6** [White plays e4 here 57% of the time]",
+        "lastMove": "e2e4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-e4-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp2ppp/8/3Pp3/2p1P3/8/PP3PPP/RNBQKBNR b KQkq - 0 4",
+        "answer": "Nf6",
+        "answerUci": "g8f6",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Accepted. What is the book move?",
+        "extra": "1. d4 d5 2. c4 dxc4 3. e4 e5 4. d5 **Nf6** [White plays d5 here 67% of the time]",
+        "lastMove": "d4d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-e3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1pppp/5n2/8/2pP4/2N1P3/PP3PPP/R1BQKBNR b KQkq - 0 4",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Accepted. What is the book move?",
+        "extra": "1. d4 d5 2. c4 dxc4 3. Nc3 Nf6 4. e3 **e6** [White plays e3 here 17% of the time]",
+        "lastMove": "e2e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-e4-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp2ppp/8/4p3/2pPP3/5N2/PP3PPP/RNBQKB1R b KQkq - 1 4",
+        "answer": "exd4",
+        "answerUci": "e5d4",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Accepted. What is the book move?",
+        "extra": "1. d4 d5 2. c4 dxc4 3. e4 e5 4. Nf3 **exd4** [White plays Nf3 here 27% of the time]",
+        "lastMove": "g1f3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-nc3-nf3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1pppp/5n2/8/2pP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 3 4",
+        "answer": "e6",
+        "answerUci": "e7e6",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Accepted. What is the book move?",
+        "extra": "1. d4 d5 2. c4 dxc4 3. Nc3 Nf6 4. Nf3 **e6** [White plays Nf3 here 15% of the time]",
+        "lastMove": "g1f3"
       },
       "tags": [
         "chess::line"
@@ -100,249 +212,57 @@
         "answer": "e6",
         "answerUci": "e7e6",
         "orientation": "black",
-        "lastMove": "e2e3",
-        "prompt": "You are Black in the Normal Variation. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 **e6** (Traditional System, D26)"
+        "prompt": "You are Black in the Queen's Gambit Accepted. What is the book move?",
+        "extra": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 **e6** (Traditional System, D26) [White plays e3 here 43% of the time]",
+        "lastMove": "e2e3"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-d4-c4-e4-d5",
+      "key": "l-d4-c4-nc3-e4-bxc4",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp2pppp/8/2pP4/2p1P3/8/PP3PPP/RNBQKBNR b KQkq - 0 4",
+        "fen": "rnbqkb1r/ppp2ppp/4pn2/8/2BPP3/2N5/PP3PPP/R1BQK1NR b KQkq - 0 5",
+        "answer": "Bb4",
+        "answerUci": "f8b4",
+        "orientation": "black",
+        "prompt": "You are Black in the Queen's Gambit Accepted. What is the book move?",
+        "extra": "1. d4 d5 2. c4 dxc4 3. Nc3 Nf6 4. e4 e6 5. Bxc4 **Bb4** [White plays Bxc4 here 96% of the time]",
+        "lastMove": "f1c4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d4-c4-e4-d5-nc3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp2ppp/5n2/3Pp3/2p1P3/2N5/PP3PPP/R1BQKBNR b KQkq - 2 5",
         "answer": "b5",
         "answerUci": "b7b5",
         "orientation": "black",
-        "lastMove": "d4d5",
-        "prompt": "You are Black in the Rubinstein Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. e4 c5 4. d5 **b5** (Yefimov Gambit, D20)"
+        "prompt": "You are Black in the Queen's Gambit Accepted. What is the book move?",
+        "extra": "1. d4 d5 2. c4 dxc4 3. e4 e5 4. d5 Nf6 5. Nc3 **b5** [White plays Nc3 here 100% of the time]",
+        "lastMove": "b1c3"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-d4-c4-nf3-nc3",
+      "key": "l-d4-c4-e3-bxc4-nf3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/ppp1pppp/5n2/8/2pP4/2N2N2/PP2PPPP/R1BQKB1R b KQkq - 3 4",
-        "answer": "a6",
-        "answerUci": "a7a6",
-        "orientation": "black",
-        "lastMove": "b1c3",
-        "prompt": "You are Black in the Showalter Variation. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. Nc3 **a6**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-e3-bxc4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/ppp2ppp/8/4p3/2BP4/4P3/PP3PPP/RNBQK1NR b KQkq - 0 4",
-        "answer": "exd4",
-        "answerUci": "e5d4",
-        "orientation": "black",
-        "lastMove": "f1c4",
-        "prompt": "You are Black in the Old Variation. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. e3 e5 4. Bxc4 **exd4**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-e3-bxc4-qb3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/ppp2ppp/8/8/2Bp4/1Q2P3/PP3PPP/RNB1K1NR b KQkq - 1 5",
-        "answer": "Qe7",
-        "answerUci": "d8e7",
-        "orientation": "black",
-        "lastMove": "d1b3",
-        "prompt": "You are Black in the Old Variation. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. e3 e5 4. Bxc4 exd4 5. Qb3 **Qe7**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bxc4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/ppp2ppp/4pn2/8/2BP4/4PN2/PP3PPP/RNBQK2R b KQkq - 0 5",
+        "fen": "rnbqkb1r/ppp2ppp/4pn2/8/2BP4/4PN2/PP3PPP/RNBQK2R b KQkq - 1 5",
         "answer": "c5",
         "answerUci": "c7c5",
         "orientation": "black",
-        "lastMove": "f1c4",
-        "prompt": "You are Black in the Traditional System. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 **c5** (Classical Defense, D26)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bxc4-oo",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp3ppp/4pn2/2p5/2BP4/4PN2/PP3PPP/RNBQ1RK1 b kq - 1 6",
-        "answer": "a6",
-        "answerUci": "a7a6",
-        "orientation": "black",
-        "lastMove": "e1g1",
-        "prompt": "You are Black in the Normal Line. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O **a6** (Main Line, D27)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bxc4-qe2",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp3ppp/4pn2/2p5/2BP4/4PN2/PP2QPPP/RNB1K2R b KQkq - 1 6",
-        "answer": "a6",
-        "answerUci": "a7a6",
-        "orientation": "black",
-        "lastMove": "d1e2",
-        "prompt": "You are Black in the Classical Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. Qe2 **a6**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bxc4-oo-qe2",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/1p3ppp/p3pn2/2p5/2BP4/4PN2/PP2QPPP/RNB2RK1 b kq - 1 7",
-        "answer": "b5",
-        "answerUci": "b7b5",
-        "orientation": "black",
-        "lastMove": "d1e2",
-        "prompt": "You are Black in the Alekhine System. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O a6 7. Qe2 **b5** (Alekhine System, D28)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bxc4-qe2-dxc5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/1p3ppp/p3pn2/2P5/2B5/4PN2/PP2QPPP/RNB1K2R b KQkq - 0 7",
-        "answer": "Bxc5",
-        "answerUci": "f8c5",
-        "orientation": "black",
-        "lastMove": "d4c5",
-        "prompt": "You are Black in the Classical Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. Qe2 a6 7. dxc5 **Bxc5**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bxc4-oo-dxc5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/1p3ppp/p3pn2/2P5/2B5/4PN2/PP3PPP/RNBQ1RK1 b kq - 0 7",
-        "answer": "Bxc5",
-        "answerUci": "f8c5",
-        "orientation": "black",
-        "lastMove": "d4c5",
-        "prompt": "You are Black in the Main Line. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O a6 7. dxc5 **Bxc5** (Furman Variation, D27)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bxc4-qe2-dxc5-oo",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/1p3ppp/p3pn2/2b5/2B5/4PN2/PP2QPPP/RNB2RK1 b kq - 1 8",
-        "answer": "Nc6",
-        "answerUci": "b8c6",
-        "orientation": "black",
-        "lastMove": "e1g1",
-        "prompt": "You are Black in the Classical Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. Qe2 a6 7. dxc5 Bxc5 8. O-O **Nc6**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bxc4-oo-qe2-bb3",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/5ppp/p3pn2/1pp5/3P4/1B2PN2/PP2QPPP/RNB2RK1 b kq - 1 8",
-        "answer": "Bb7",
-        "answerUci": "c8b7",
-        "orientation": "black",
-        "lastMove": "c4b3",
-        "prompt": "You are Black in the Alekhine System. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O a6 7. Qe2 b5 8. Bb3 **Bb7** (Main Line, D29)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bxc4-qe2-dxc5-oo-e4",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk2r/1p3ppp/p1n1pn2/2b5/2B1P3/5N2/PP2QPPP/RNB2RK1 b kq - 0 9",
-        "answer": "b5",
-        "answerUci": "b7b5",
-        "orientation": "black",
-        "lastMove": "e3e4",
-        "prompt": "You are Black in the Classical Defense. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. Qe2 a6 7. dxc5 Bxc5 8. O-O Nc6 9. e4 **b5**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bxc4-oo-qe2-bb3-rd1",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkb1r/1b3ppp/p3pn2/1pp5/3P4/1B2PN2/PP2QPPP/RNBR2K1 b kq - 3 9",
-        "answer": "Nbd7",
-        "answerUci": "b8d7",
-        "orientation": "black",
-        "lastMove": "f1d1",
-        "prompt": "You are Black in the Main Line. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O a6 7. Qe2 b5 8. Bb3 Bb7 9. Rd1 **Nbd7**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d4-c4-nf3-e3-bxc4-oo-qe2-bb3-rd1-nc3",
-      "model": "chess",
-      "fields": {
-        "fen": "r2qkb1r/1b1n1ppp/p3pn2/1pp5/3P4/1BN1PN2/PP2QPPP/R1BR2K1 b kq - 5 10",
-        "answer": "Bd6",
-        "answerUci": "f8d6",
-        "orientation": "black",
-        "lastMove": "b1c3",
-        "prompt": "You are Black in the Main Line. What is the book move?",
-        "extra": "1. d4 d5 2. c4 dxc4 3. Nf3 Nf6 4. e3 e6 5. Bxc4 c5 6. O-O a6 7. Qe2 b5 8. Bb3 Bb7 9. Rd1 Nbd7 10. Nc3 **Bd6** (Smyslov Variation, D29)"
+        "prompt": "You are Black in the Queen's Gambit Accepted. What is the book move?",
+        "extra": "1. d4 d5 2. c4 dxc4 3. e3 Nf6 4. Bxc4 e6 5. Nf3 **c5** (Classical Defense, D26) [White plays Nf3 here 65% of the time]",
+        "lastMove": "g1f3"
       },
       "tags": [
         "chess::line"

@@ -1,8 +1,8 @@
 {
   "key": "queens-pawn-game",
-  "version": 2,
-  "name": "The Queen's Pawn Game",
-  "description": "Line trainer for the Queen's Pawn Game, generated from the canonical opening database (lichess-org/chess-openings): 34 positions drilled book-move by book-move from White's side across 82 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "version": 3,
+  "name": "The Queen's Pawn Game as White",
+  "description": "A White repertoire for the Queen's Pawn Game, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -28,22 +28,6 @@
       ]
     },
     {
-      "key": "l-d6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/ppp1pppp/3p4/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
-        "answer": "Nf3",
-        "answerUci": "g1f3",
-        "orientation": "white",
-        "lastMove": "d7d6",
-        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
-        "extra": "1. d4 d6 2. **Nf3**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
       "key": "l-d5",
       "model": "chess",
       "fields": {
@@ -51,73 +35,9 @@
         "answer": "Nf3",
         "answerUci": "g1f3",
         "orientation": "white",
-        "lastMove": "d7d5",
         "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
-        "extra": "1. d4 d5 2. **Nf3** (Zukertort Variation, D02)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-c6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp1ppppp/2p5/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
-        "answer": "c4",
-        "answerUci": "c2c4",
-        "orientation": "white",
-        "lastMove": "c7c6",
-        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
-        "extra": "1. d4 c6 2. **c4**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-c5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp1ppppp/8/2p5/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
-        "answer": "c4",
-        "answerUci": "c2c4",
-        "orientation": "white",
-        "lastMove": "c7c5",
-        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
-        "extra": "1. d4 c5 2. **c4**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-g6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pppppp1p/6p1/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
-        "answer": "Nf3",
-        "answerUci": "g1f3",
-        "orientation": "white",
-        "lastMove": "g7g6",
-        "prompt": "You are White in the Modern Defense. What is the book move?",
-        "extra": "1. d4 g6 2. **Nf3**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-f5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/ppppp1pp/8/5p2/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
-        "answer": "Nc3",
-        "answerUci": "b1c3",
-        "orientation": "white",
-        "lastMove": "f7f5",
-        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
-        "extra": "1. d4 f5 2. **Nc3**"
+        "extra": "1. d4 d5 2. **Nf3** (Zukertort Variation, D02) [Black plays d5 here 40% of the time]",
+        "lastMove": "d7d5"
       },
       "tags": [
         "chess::line"
@@ -131,57 +51,121 @@
         "answer": "Nf3",
         "answerUci": "g1f3",
         "orientation": "white",
-        "lastMove": "g8f6",
         "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
-        "extra": "1. d4 Nf6 2. **Nf3**"
+        "extra": "1. d4 Nf6 2. **Nf3** [Black plays Nf6 here 23% of the time]",
+        "lastMove": "g8f6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-d5-c5",
+      "key": "l-e6",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp2pppp/8/2pp4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 0 3",
-        "answer": "g3",
-        "answerUci": "g2g3",
+        "fen": "rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "c4",
+        "answerUci": "c2c4",
         "orientation": "white",
-        "lastMove": "c7c5",
-        "prompt": "You are White in the Krause Variation. What is the book move?",
-        "extra": "1. d4 d5 2. Nf3 c5 3. **g3**"
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. **c4** [Black plays e6 here 9% of the time]",
+        "lastMove": "e7e6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-c5-cxd4",
+      "key": "l-e5",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp1ppppp/8/8/2Pp4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
-        "answer": "e3",
-        "answerUci": "e2e3",
+        "fen": "rnbqkbnr/pppp1ppp/8/4p3/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "dxe5",
+        "answerUci": "d4e5",
         "orientation": "white",
-        "lastMove": "c5d4",
         "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
-        "extra": "1. d4 c5 2. c4 cxd4 3. **e3** (Liedmann Gambit, A43)"
+        "extra": "1. d4 e5 2. **dxe5** [Black plays e5 here 5% of the time]",
+        "lastMove": "e7e5"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-nf6-e6",
+      "key": "l-g6",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/pppp1ppp/4pn2/8/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 0 3",
-        "answer": "e3",
-        "answerUci": "e2e3",
+        "fen": "rnbqkbnr/pppppp1p/6p1/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
         "orientation": "white",
-        "lastMove": "e7e6",
         "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 e6 3. **e3**"
+        "extra": "1. d4 g6 2. **Nf3** [Black plays g6 here 4% of the time]",
+        "lastMove": "g7g6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/2p5/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "c4",
+        "answerUci": "c2c4",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 c6 2. **c4** [Black plays c6 here 4% of the time]",
+        "lastMove": "c7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/8/2p5/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
+        "answer": "c4",
+        "answerUci": "c2c4",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 c5 2. **c4** [Black plays c5 here 4% of the time]",
+        "lastMove": "c7c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 2 3",
+        "answer": "Bf4",
+        "answerUci": "c1f4",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. **Bf4** (London System, D02) [Black plays Nf6 here 34% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-g6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppppp1p/5np1/8/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 0 3",
+        "answer": "Bg5",
+        "answerUci": "c1g5",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 Nf6 2. Nf3 g6 3. **Bg5** [Black plays g6 here 32% of the time]",
+        "lastMove": "g7g6"
       },
       "tags": [
         "chess::line"
@@ -195,41 +179,57 @@
         "answer": "Bf4",
         "answerUci": "c1f4",
         "orientation": "white",
-        "lastMove": "e7e6",
-        "prompt": "You are White in the Zukertort Variation. What is the book move?",
-        "extra": "1. d4 d5 2. Nf3 e6 3. **Bf4** (with e6, D02)"
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 e6 3. **Bf4** (with e6, D02) [Black plays e6 here 17% of the time]",
+        "lastMove": "e7e6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-nf6-g6",
+      "key": "l-d5-nc6",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/pppppp1p/5np1/8/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 0 3",
+        "fen": "r1bqkbnr/ppp1pppp/2n5/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 2 3",
+        "answer": "Bf4",
+        "answerUci": "c1f4",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nc6 3. **Bf4** [Black plays Nc6 here 15% of the time]",
+        "lastMove": "b8c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-e6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppp1ppp/4pn2/8/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 0 3",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 Nf6 2. Nf3 e6 3. **e3** [Black plays e6 here 25% of the time]",
+        "lastMove": "e7e6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp2ppp/4p3/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
         "answer": "Nc3",
         "answerUci": "b1c3",
         "orientation": "white",
-        "lastMove": "g7g6",
         "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 g6 3. **Nc3**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d5-nf6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/ppp1pppp/5n2/3p4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 2 3",
-        "answer": "Bg5",
-        "answerUci": "c1g5",
-        "orientation": "white",
-        "lastMove": "g8f6",
-        "prompt": "You are White in the Symmetrical Variation. What is the book move?",
-        "extra": "1. d4 d5 2. Nf3 Nf6 3. **Bg5** (Torre Attack, D03)"
+        "extra": "1. d4 e6 2. c4 d5 3. **Nc3** [Black plays d5 here 47% of the time]",
+        "lastMove": "d7d5"
       },
       "tags": [
         "chess::line"
@@ -240,12 +240,28 @@
       "model": "chess",
       "fields": {
         "fen": "rnbqk1nr/ppppppbp/6p1/8/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 2 3",
-        "answer": "Nc3",
-        "answerUci": "b1c3",
+        "answer": "Bf4",
+        "answerUci": "c1f4",
         "orientation": "white",
-        "lastMove": "f8g7",
-        "prompt": "You are White in the Modern Defense. What is the book move?",
-        "extra": "1. d4 g6 2. Nf3 Bg7 3. **Nc3**"
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 g6 2. Nf3 Bg7 3. **Bf4** [Black plays Bg7 here 96% of the time]",
+        "lastMove": "f8g7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-bf5",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/ppp1pppp/8/3p1b2/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 2 3",
+        "answer": "Bf4",
+        "answerUci": "c1f4",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Bf5 3. **Bf4** [Black plays Bf5 here 10% of the time]",
+        "lastMove": "c8f5"
       },
       "tags": [
         "chess::line"
@@ -259,9 +275,265 @@
         "answer": "Bg5",
         "answerUci": "c1g5",
         "orientation": "white",
-        "lastMove": "c7c6",
-        "prompt": "You are White in the Zukertort Variation. What is the book move?",
-        "extra": "1. d4 d5 2. Nf3 c6 3. **Bg5**"
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 c6 3. **Bg5** [Black plays c6 here 9% of the time]",
+        "lastMove": "c7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c5-cxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1ppppp/8/8/2Pp4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 c5 2. c4 cxd4 3. **e3** (Liedmann Gambit, A43) [Black plays cxd4 here 87% of the time]",
+        "lastMove": "c5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c6-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 c6 2. c4 d5 3. **Nc3** [Black plays d5 here 84% of the time]",
+        "lastMove": "d7d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/8/2pp4/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 0 3",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 c5 3. **e3** [Black plays c5 here 6% of the time]",
+        "lastMove": "c7c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1ppp/2n5/4P3/8/8/PPP1PPPP/RNBQKBNR w KQkq - 1 3",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 Nc6 3. **Nf3** [Black plays Nc6 here 42% of the time]",
+        "lastMove": "b8c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp2ppp/3p4/4P3/8/8/PPP1PPPP/RNBQKBNR w KQkq - 0 3",
+        "answer": "exd6",
+        "answerUci": "e5d6",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 d6 3. **exd6** [Black plays d6 here 34% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp1pppp/3p1n2/8/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 0 3",
+        "answer": "c4",
+        "answerUci": "c2c4",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 Nf6 2. Nf3 d6 3. **c4** [Black plays d6 here 8% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp1ppppp/5n2/2p5/3P4/5N2/PPP1PPPP/RNBQKB1R w KQkq - 0 3",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 Nf6 2. Nf3 c5 3. **e3** [Black plays c5 here 7% of the time]",
+        "lastMove": "c7c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppp1ppp/4pn2/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 1 3",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. c4 Nf6 3. **Nc3** [Black plays Nf6 here 10% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1p1ppp/4p3/2p5/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+        "answer": "d5",
+        "answerUci": "d4d5",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. c4 c5 3. **d5** [Black plays c5 here 10% of the time]",
+        "lastMove": "c7c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-b6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/p1pp1ppp/1p2p3/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. c4 b6 3. **Nc3** [Black plays b6 here 7% of the time]",
+        "lastMove": "b7b6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-bc5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pppp1ppp/8/2b1P3/8/8/PPP1PPPP/RNBQKBNR w KQkq - 1 3",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 Bc5 3. **Nf3** [Black plays Bc5 here 12% of the time]",
+        "lastMove": "f8c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-f5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppp2pp/4p3/5p2/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. c4 f5 3. **Nc3** [Black plays f5 here 7% of the time]",
+        "lastMove": "f7f5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/ppp2ppp/3pp3/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. c4 d6 3. **Nc3** [Black plays d6 here 5% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1p1ppp/2p1p3/8/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. c4 c6 3. **Nc3** [Black plays c6 here 5% of the time]",
+        "lastMove": "c7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-f6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pppp2pp/5p2/4P3/8/8/PPP1PPPP/RNBQKBNR w KQkq - 0 3",
+        "answer": "exf6",
+        "answerUci": "e5f6",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 f6 3. **exf6** [Black plays f6 here 7% of the time]",
+        "lastMove": "f7f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-g6-bg7",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppppppbp/5np1/6B1/3P4/5N2/PPP1PPPP/RN1QKB1R w KQkq - 2 4",
+        "answer": "Nbd2",
+        "answerUci": "b1d2",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 Nf6 2. Nf3 g6 3. Bg5 Bg7 4. **Nbd2** [Black plays Bg7 here 95% of the time]",
+        "lastMove": "f8g7"
       },
       "tags": [
         "chess::line"
@@ -271,61 +543,269 @@
       "key": "l-d5-nf6-e6",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/ppp2ppp/4pn2/3p2B1/3P4/5N2/PPP1PPPP/RN1QKB1R w KQkq - 0 4",
+        "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/3P1B2/5N2/PPP1PPPP/RN1QKB1R w KQkq - 0 4",
         "answer": "e3",
         "answerUci": "e2e3",
         "orientation": "white",
-        "lastMove": "e7e6",
-        "prompt": "You are White in the Torre Attack. What is the book move?",
-        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bg5 e6 4. **e3**"
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 e6 4. **e3** [Black plays e6 here 29% of the time]",
+        "lastMove": "e7e6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-nf6-e6-b6",
+      "key": "l-c5-cxd4-dxe3",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/p1pp1ppp/1p2pn2/8/3P4/4PN2/PPP2PPP/RNBQKB1R w KQkq - 0 4",
+        "fen": "rnbqkbnr/pp1ppppp/8/8/2P5/4p3/PP3PPP/RNBQKBNR w KQkq - 0 4",
+        "answer": "Bxe3",
+        "answerUci": "c1e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 c5 2. c4 cxd4 3. e3 dxe3 4. **Bxe3** [Black plays dxe3 here 100% of the time]",
+        "lastMove": "d4e3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-e6-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/3P4/4PN2/PPP2PPP/RNBQKB1R w KQkq - 0 4",
         "answer": "Bd3",
         "answerUci": "f1d3",
         "orientation": "white",
-        "lastMove": "b7b6",
         "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 b6 4. **Bd3**"
+        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 d5 4. **Bd3** (Colle System, D05) [Black plays d5 here 54% of the time]",
+        "lastMove": "d7d5"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-d5-c5-cxd4",
+      "key": "l-d5-nf6-bf5",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp2pppp/8/3p4/3p4/5NP1/PPP1PP1P/RNBQKB1R w KQkq - 0 4",
-        "answer": "Bg2",
-        "answerUci": "f1g2",
+        "fen": "rn1qkb1r/ppp1pppp/5n2/3p1b2/3P1B2/5N2/PPP1PPPP/RN1QKB1R w KQkq - 4 4",
+        "answer": "e3",
+        "answerUci": "e2e3",
         "orientation": "white",
-        "lastMove": "c5d4",
-        "prompt": "You are White in the Krause Variation. What is the book move?",
-        "extra": "1. d4 d5 2. Nf3 c5 3. g3 cxd4 4. **Bg2** (Chandler Gambit, D02)"
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 Bf5 4. **e3** [Black plays Bf5 here 21% of the time]",
+        "lastMove": "c8f5"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-d5-c6-h6",
+      "key": "l-e6-d5-nf6",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkbnr/pp2ppp1/2p4p/3p2B1/3P4/5N2/PPP1PPPP/RN1QKB1R w KQkq - 0 4",
-        "answer": "Bh4",
-        "answerUci": "g5h4",
+        "fen": "rnbqkb1r/ppp2ppp/4pn2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+        "answer": "Bg5",
+        "answerUci": "c1g5",
         "orientation": "white",
-        "lastMove": "h7h6",
-        "prompt": "You are White in the Zukertort Variation. What is the book move?",
-        "extra": "1. d4 d5 2. Nf3 c6 3. Bg5 h6 4. **Bh4**"
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. c4 d5 3. Nc3 Nf6 4. **Bg5** [Black plays Nf6 here 60% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-bf5-e6",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/ppp2ppp/4p3/3p1b2/3P1B2/5N2/PPP1PPPP/RN1QKB1R w KQkq - 0 4",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Bf5 3. Bf4 e6 4. **e3** [Black plays e6 here 59% of the time]",
+        "lastMove": "e7e6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nf6-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/5n2/2pp4/3P1B2/5N2/PPP1PPPP/RN1QKB1R w KQkq - 0 4",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 c5 4. **e3** (London System, D02) [Black plays c5 here 17% of the time]",
+        "lastMove": "c7c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-g6-bg7-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppp1ppbp/3p2p1/8/3P1B2/5N2/PPP1PPPP/RN1QKB1R w KQkq - 0 4",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 g6 2. Nf3 Bg7 3. Bf4 d6 4. **e3** [Black plays d6 here 54% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c6-d5-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 c6 2. c4 d5 3. Nc3 Nf6 4. **Nf3** [Black plays Nf6 here 61% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nc6-bf5",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/ppp1pppp/2n5/3p1b2/3P1B2/5N2/PPP1PPPP/RN1QKB1R w KQkq - 4 4",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nc6 3. Bf4 Bf5 4. **e3** [Black plays Bf5 here 34% of the time]",
+        "lastMove": "c8f5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-c6-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/3p2B1/3P4/5N2/PPP1PPPP/RN1QKB1R w KQkq - 2 4",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 c6 3. Bg5 Nf6 4. **e3** [Black plays Nf6 here 53% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-c5-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pp2pppp/2n5/2pp4/3P4/4PN2/PPP2PPP/RNBQKB1R w KQkq - 1 4",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 c5 3. e3 Nc6 4. **c3** [Black plays Nc6 here 73% of the time]",
+        "lastMove": "b8c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-e6-bd6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppp2ppp/3bp3/3p4/3P1B2/5N2/PPP1PPPP/RN1QKB1R w KQkq - 2 4",
+        "answer": "Bg3",
+        "answerUci": "f4g3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 e6 3. Bf4 Bd6 4. **Bg3** [Black plays Bd6 here 28% of the time]",
+        "lastMove": "f8d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-d6-bxd6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppp2ppp/3b4/8/8/8/PPP1PPPP/RNBQKBNR w KQkq - 0 4",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 d6 3. exd6 Bxd6 4. **Nf3** [Black plays Bxd6 here 99% of the time]",
+        "lastMove": "f8d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-e6-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp3ppp/4p3/2pp4/3P1B2/5N2/PPP1PPPP/RN1QKB1R w KQkq - 0 4",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 e6 3. Bf4 c5 4. **e3** [Black plays c5 here 25% of the time]",
+        "lastMove": "c7c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nf6-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp1pppp/2n2n2/3p4/3P1B2/5N2/PPP1PPPP/RN1QKB1R w KQkq - 4 4",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 Nc6 4. **e3** [Black plays Nc6 here 12% of the time]",
+        "lastMove": "b8c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-qe7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kbnr/ppppqppp/2n5/4P3/8/5N2/PPP1PPPP/RNBQKB1R w KQkq - 3 4",
+        "answer": "Bf4",
+        "answerUci": "c1f4",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 Nc6 3. Nf3 Qe7 4. **Bf4** [Black plays Qe7 here 69% of the time]",
+        "lastMove": "d8e7"
       },
       "tags": [
         "chess::line"
@@ -339,41 +819,425 @@
         "answer": "Bd3",
         "answerUci": "f1d3",
         "orientation": "white",
-        "lastMove": "c7c5",
         "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 c5 4. **Bd3**"
+        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 c5 4. **Bd3** [Black plays c5 here 23% of the time]",
+        "lastMove": "c7c5"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-d5-nf6-g6",
+      "key": "l-nf6-d6-g6",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/ppp1pp1p/5np1/3p2B1/3P4/5N2/PPP1PPPP/RN1QKB1R w KQkq - 0 4",
+        "fen": "rnbqkb1r/ppp1pp1p/3p1np1/8/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 0 4",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 Nf6 2. Nf3 d6 3. c4 g6 4. **Nc3** [Black plays g6 here 72% of the time]",
+        "lastMove": "g7g6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nc6-bg4",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/ppp1pppp/2n5/3p4/3P1Bb1/5N2/PPP1PPPP/RN1QKB1R w KQkq - 4 4",
         "answer": "e3",
         "answerUci": "e2e3",
         "orientation": "white",
-        "lastMove": "g7g6",
-        "prompt": "You are White in the Gr\u00fcnfeld Variation. What is the book move?",
-        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bg5 g6 4. **e3** (Gr\u00fcnfeld Variation, D03)"
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nc6 3. Bf4 Bg4 4. **e3** [Black plays Bg4 here 20% of the time]",
+        "lastMove": "c8g4"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-nf6-g6-d5",
+      "key": "l-nf6-e6-b6",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/ppp1pp1p/5np1/3p4/3P4/2N2N2/PPP1PPPP/R1BQKB1R w KQkq - 0 4",
-        "answer": "Bf4",
-        "answerUci": "c1f4",
+        "fen": "rnbqkb1r/p1pp1ppp/1p2pn2/8/3P4/4PN2/PPP2PPP/RNBQKB1R w KQkq - 0 4",
+        "answer": "Bd3",
+        "answerUci": "f1d3",
         "orientation": "white",
-        "lastMove": "d7d5",
         "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 g6 3. Nc3 d5 4. **Bf4** (Barry Attack, A48)"
+        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 b6 4. **Bd3** [Black plays b6 here 19% of the time]",
+        "lastMove": "b7b6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-c6-bf5",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2pppp/2p5/3p1bB1/3P4/5N2/PPP1PPPP/RN1QKB1R w KQkq - 2 4",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 c6 3. Bg5 Bf5 4. **e3** [Black plays Bf5 here 29% of the time]",
+        "lastMove": "c8f5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nf6-bg4",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/ppp1pppp/5n2/3p4/3P1Bb1/5N2/PPP1PPPP/RN1QKB1R w KQkq - 4 4",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 Bg4 4. **e3** [Black plays Bg4 here 8% of the time]",
+        "lastMove": "c8g4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nf6-c6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp2pppp/2p2n2/3p4/3P1B2/5N2/PPP1PPPP/RN1QKB1R w KQkq - 0 4",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 c6 4. **e3** [Black plays c6 here 6% of the time]",
+        "lastMove": "c7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-g6-bg7-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppppppbp/5np1/8/3P1B2/5N2/PPP1PPPP/RN1QKB1R w KQkq - 4 4",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 g6 2. Nf3 Bg7 3. Bf4 Nf6 4. **e3** [Black plays Nf6 here 20% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-c5-cxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp1ppppp/5n2/8/3p4/4PN2/PPP2PPP/RNBQKB1R w KQkq - 0 4",
+        "answer": "exd4",
+        "answerUci": "e3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 Nf6 2. Nf3 c5 3. e3 cxd4 4. **exd4** [Black plays cxd4 here 46% of the time]",
+        "lastMove": "c5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-b6-bb7",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pbpp1ppp/1p2p3/8/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+        "answer": "e4",
+        "answerUci": "e2e4",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. c4 b6 3. Nc3 Bb7 4. **e4** [Black plays Bb7 here 90% of the time]",
+        "lastMove": "c8b7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-d5-c6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp3ppp/2p1p3/3p4/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 0 4",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. c4 d5 3. Nc3 c6 4. **Nf3** [Black plays c6 here 14% of the time]",
+        "lastMove": "c7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-g6-bg7-e6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/pppp1pbp/4p1p1/8/3P1B2/5N2/PPP1PPPP/RN1QKB1R w KQkq - 0 4",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 g6 2. Nf3 Bg7 3. Bf4 e6 4. **e3** [Black plays e6 here 12% of the time]",
+        "lastMove": "e7e6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-nf6-bb4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 3 4",
+        "answer": "Qc2",
+        "answerUci": "d1c2",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. c4 Nf6 3. Nc3 Bb4 4. **Qc2** [Black plays Bb4 here 52% of the time]",
+        "lastMove": "f8b4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5-exd5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp1p1ppp/8/2pp4/2P5/8/PP2PPPP/RNBQKBNR w KQkq - 0 4",
+        "answer": "cxd5",
+        "answerUci": "c4d5",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. c4 c5 3. d5 exd5 4. **cxd5** [Black plays exd5 here 54% of the time]",
+        "lastMove": "e6d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-bc5-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppp2ppp/3p4/2b1P3/8/5N2/PPP1PPPP/RNBQKB1R w KQkq - 0 4",
+        "answer": "exd6",
+        "answerUci": "e5d6",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 Bc5 3. Nf3 d6 4. **exd6** [Black plays d6 here 69% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-f5-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppp2pp/4pn2/5p2/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+        "answer": "Bg5",
+        "answerUci": "c1g5",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. c4 f5 3. Nc3 Nf6 4. **Bg5** [Black plays Nf6 here 64% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-c5-cxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp2pppp/8/3p4/3p4/4PN2/PPP2PPP/RNBQKB1R w KQkq - 0 4",
+        "answer": "exd4",
+        "answerUci": "e3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 c5 3. e3 cxd4 4. **exd4** [Black plays cxd4 here 15% of the time]",
+        "lastMove": "c5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c6-d5-bf5",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkbnr/pp2pppp/2p5/3p1b2/2PP4/2N5/PP2PPPP/R1BQKBNR w KQkq - 2 4",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 c6 2. c4 d5 3. Nc3 Bf5 4. **Nf3** [Black plays Bf5 here 10% of the time]",
+        "lastMove": "c8f5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-f6-nxf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pppp2pp/5n2/8/8/8/PPP1PPPP/RNBQKBNR w KQkq - 0 4",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 f6 3. exf6 Nxf6 4. **Nf3** [Black plays Nxf6 here 94% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-g6-bg7-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppppppbp/5np1/6B1/3P4/5N2/PPPNPPPP/R2QKB1R w KQ - 4 5",
+        "answer": "e4",
+        "answerUci": "e2e4",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 Nf6 2. Nf3 g6 3. Bg5 Bg7 4. Nbd2 O-O 5. **e4** [Black plays O-O here 65% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nf6-bf5-e6",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/ppp2ppp/4pn2/3p1b2/3P1B2/4PN2/PPP2PPP/RN1QKB1R w KQkq - 0 5",
+        "answer": "Bd3",
+        "answerUci": "f1d3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 Bf5 4. e3 e6 5. **Bd3** [Black plays e6 here 95% of the time]",
+        "lastMove": "e7e6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nf6-c5-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp2pppp/2n2n2/2pp4/3P1B2/4PN2/PPP2PPP/RN1QKB1R w KQkq - 1 5",
+        "answer": "Nbd2",
+        "answerUci": "b1d2",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 c5 4. e3 Nc6 5. **Nbd2** (London System, D02) [Black plays Nc6 here 95% of the time]",
+        "lastMove": "b8c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nf6-e6-bd6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp2ppp/3bpn2/3p4/3P1B2/4PN2/PPP2PPP/RN1QKB1R w KQkq - 1 5",
+        "answer": "Bg3",
+        "answerUci": "f4g3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 e6 4. e3 Bd6 5. **Bg3** [Black plays Bd6 here 50% of the time]",
+        "lastMove": "f8d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-d5-nf6-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1bppp/4pn2/3p2B1/2PP4/2N5/PP2PPPP/R2QKBNR w KQkq - 4 5",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. c4 d5 3. Nc3 Nf6 4. Bg5 Be7 5. **e3** [Black plays Be7 here 67% of the time]",
+        "lastMove": "f8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-g6-bg7-d6-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/3P1B2/4PN2/PPP2PPP/RN1QKB1R w KQkq - 1 5",
+        "answer": "Bd3",
+        "answerUci": "f1d3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 g6 2. Nf3 Bg7 3. Bf4 d6 4. e3 Nf6 5. **Bd3** [Black plays Nf6 here 70% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-e6-d5-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp3ppp/4pn2/2pp4/3P4/3BPN2/PPP2PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 d5 4. Bd3 c5 5. **c3** (Traditional Colle, D05) [Black plays c5 here 52% of the time]",
+        "lastMove": "c7c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-qe7-qb4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kbnr/pppp1ppp/2n5/4P3/1q3B2/5N2/PPP1PPPP/RN1QKB1R w KQkq - 5 5",
+        "answer": "Bd2",
+        "answerUci": "f4d2",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 Nc6 3. Nf3 Qe7 4. Bf4 Qb4+ 5. **Bd2** [Black plays Qb4+ here 100% of the time]",
+        "lastMove": "e7b4"
       },
       "tags": [
         "chess::line"
@@ -383,29 +1247,77 @@
       "key": "l-d5-nf6-e6-c5",
       "model": "chess",
       "fields": {
-        "fen": "rnbqkb1r/pp3ppp/4pn2/2pp2B1/3P4/4PN2/PPP2PPP/RN1QKB1R w KQkq - 0 5",
+        "fen": "rnbqkb1r/pp3ppp/4pn2/2pp4/3P1B2/4PN2/PPP2PPP/RN1QKB1R w KQkq - 0 5",
         "answer": "c3",
         "answerUci": "c2c3",
         "orientation": "white",
-        "lastMove": "c7c5",
-        "prompt": "You are White in the Torre Attack. What is the book move?",
-        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bg5 e6 4. e3 c5 5. **c3**"
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 e6 4. e3 c5 5. **c3** [Black plays c5 here 33% of the time]",
+        "lastMove": "c7c5"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-d5-nf6-e6-nbd7",
+      "key": "l-d5-e6-c5-nc6",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkb1r/pppn1ppp/4pn2/3p2B1/3P4/4PN2/PPP2PPP/RN1QKB1R w KQkq - 1 5",
+        "fen": "r1bqkbnr/pp3ppp/2n1p3/2pp4/3P1B2/4PN2/PPP2PPP/RN1QKB1R w KQkq - 1 5",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 e6 3. Bf4 c5 4. e3 Nc6 5. **c3** [Black plays Nc6 here 76% of the time]",
+        "lastMove": "b8c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-d6-g6-bg7",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1ppbp/3p1np1/8/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 2 5",
+        "answer": "e4",
+        "answerUci": "e2e4",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 Nf6 2. Nf3 d6 3. c4 g6 4. Nc3 Bg7 5. **e4** [Black plays Bg7 here 100% of the time]",
+        "lastMove": "f8g7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nc6-bf5-e6",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/ppp2ppp/2n1p3/3p1b2/3P1B2/4PN2/PPP2PPP/RN1QKB1R w KQkq - 0 5",
         "answer": "Bd3",
         "answerUci": "f1d3",
         "orientation": "white",
-        "lastMove": "b8d7",
-        "prompt": "You are White in the Torre Attack. What is the book move?",
-        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bg5 e6 4. e3 Nbd7 5. **Bd3** (Torre Attack, D03)"
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nc6 3. Bf4 Bf5 4. e3 e6 5. **Bd3** [Black plays e6 here 63% of the time]",
+        "lastMove": "e7e6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-e6-bd6-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp2ppp/3bpn2/3p4/3P4/5NB1/PPP1PPPP/RN1QKB1R w KQkq - 4 5",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 e6 3. Bf4 Bd6 4. Bg3 Nf6 5. **e3** [Black plays Nf6 here 61% of the time]",
+        "lastMove": "g8f6"
       },
       "tags": [
         "chess::line"
@@ -419,89 +1331,345 @@
         "answer": "O-O",
         "answerUci": "e1g1",
         "orientation": "white",
-        "lastMove": "c8b7",
         "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 b6 4. Bd3 Bb7 5. **O-O**"
+        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 b6 4. Bd3 Bb7 5. **O-O** [Black plays Bb7 here 100% of the time]",
+        "lastMove": "c8b7"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-nf6-g6-d5-bg7",
+      "key": "l-d5-nf6-bg4-e6",
       "model": "chess",
       "fields": {
-        "fen": "rnbqk2r/ppp1ppbp/5np1/3p4/3P1B2/2N2N2/PPP1PPPP/R2QKB1R w KQkq - 2 5",
-        "answer": "e3",
-        "answerUci": "e2e3",
-        "orientation": "white",
-        "lastMove": "f8g7",
-        "prompt": "You are White in the Barry Attack. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 g6 3. Nc3 d5 4. Bf4 Bg7 5. **e3**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf6-e6-c5-d5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp3ppp/4pn2/2pp4/3P4/3BPN2/PPP2PPP/RNBQK2R w KQkq - 0 5",
-        "answer": "c3",
-        "answerUci": "c2c3",
-        "orientation": "white",
-        "lastMove": "d7d5",
-        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 c5 4. Bd3 d5 5. **c3** (Traditional Colle, D05)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf6-g6-d5-bg7-oo",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbq1rk1/ppp1ppbp/5np1/3p4/3P1B2/2N1PN2/PPP2PPP/R2QKB1R w KQ - 1 6",
+        "fen": "rn1qkb1r/ppp2ppp/4pn2/3p4/3P1Bb1/4PN2/PPP2PPP/RN1QKB1R w KQkq - 0 5",
         "answer": "Be2",
         "answerUci": "f1e2",
         "orientation": "white",
-        "lastMove": "e8g8",
-        "prompt": "You are White in the Barry Attack. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 g6 3. Nc3 d5 4. Bf4 Bg7 5. e3 O-O 6. **Be2** (Gr\u00fcnfeld Variation, A48)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf6-e6-b6-bb7-c5",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1qkb1r/pb1p1ppp/1p2pn2/2p5/3P4/3BPN2/PPP2PPP/RNBQ1RK1 w kq - 0 6",
-        "answer": "b3",
-        "answerUci": "b2b3",
-        "orientation": "white",
-        "lastMove": "c7c5",
         "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 b6 4. Bd3 Bb7 5. O-O c5 6. **b3**"
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 Bg4 4. e3 e6 5. **Be2** [Black plays e6 here 100% of the time]",
+        "lastMove": "e7e6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-d5-nf6-e6-c5-nbd7",
+      "key": "l-d5-bf5-e6-bd6",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkb1r/pp1n1ppp/4pn2/2pp2B1/3P4/2P1PN2/PP3PPP/RN1QKB1R w KQkq - 1 6",
+        "fen": "rn1qk1nr/ppp2ppp/3bp3/3p1b2/3P1B2/4PN2/PPP2PPP/RN1QKB1R w KQkq - 1 5",
+        "answer": "Bg3",
+        "answerUci": "f4g3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Bf5 3. Bf4 e6 4. e3 Bd6 5. **Bg3** [Black plays Bd6 here 39% of the time]",
+        "lastMove": "f8d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-e6-d5-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1bppp/4pn2/3p4/3P4/3BPN2/PPP2PPP/RNBQK2R w KQkq - 2 5",
         "answer": "Nbd2",
         "answerUci": "b1d2",
         "orientation": "white",
-        "lastMove": "b8d7",
-        "prompt": "You are White in the Torre Attack. What is the book move?",
-        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bg5 e6 4. e3 c5 5. c3 Nbd7 6. **Nbd2** (Torre Attack, D03)"
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 d5 4. Bd3 Be7 5. **Nbd2** [Black plays Be7 here 26% of the time]",
+        "lastMove": "f8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-e6-d5-bd6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp2ppp/3bpn2/3p4/3P4/3BPN2/PPP2PPP/RNBQK2R w KQkq - 2 5",
+        "answer": "Nbd2",
+        "answerUci": "b1d2",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 d5 4. Bd3 Bd6 5. **Nbd2** [Black plays Bd6 here 23% of the time]",
+        "lastMove": "f8d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-e6-bd6-bxg3",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk1nr/ppp2ppp/4p3/3p4/3P4/5Nb1/PPP1PPPP/RN1QKB1R w KQkq - 0 5",
+        "answer": "hxg3",
+        "answerUci": "h2g3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 e6 3. Bf4 Bd6 4. Bg3 Bxg3 5. **hxg3** [Black plays Bxg3 here 39% of the time]",
+        "lastMove": "d6g3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nf6-e6-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1bppp/4pn2/3p4/3P1B2/4PN2/PPP2PPP/RN1QKB1R w KQkq - 1 5",
+        "answer": "Bd3",
+        "answerUci": "f1d3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 e6 4. e3 Be7 5. **Bd3** [Black plays Be7 here 15% of the time]",
+        "lastMove": "f8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nf6-nc6-bg4",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkb1r/ppp1pppp/2n2n2/3p4/3P1Bb1/4PN2/PPP2PPP/RN1QKB1R w KQkq - 1 5",
+        "answer": "Be2",
+        "answerUci": "f1e2",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 Nc6 4. e3 Bg4 5. **Be2** [Black plays Bg4 here 36% of the time]",
+        "lastMove": "c8g4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-g6-bg7-nf6-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppppppbp/5np1/8/3P1B2/4PN2/PPP2PPP/RN1QKB1R w KQ - 1 5",
+        "answer": "Bd3",
+        "answerUci": "f1d3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 g6 2. Nf3 Bg7 3. Bf4 Nf6 4. e3 O-O 5. **Bd3** [Black plays O-O here 62% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c6-d5-nf6-bf5",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2p2n2/3p1b2/2PP4/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
+        "answer": "Bg5",
+        "answerUci": "c1g5",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 c6 2. c4 d5 3. Nc3 Nf6 4. Nf3 Bf5 5. **Bg5** [Black plays Bf5 here 23% of the time]",
+        "lastMove": "c8f5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-d6-bxd6-bg4",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qk1nr/ppp2ppp/3b4/8/6b1/5N2/PPP1PPPP/RNBQKB1R w KQkq - 2 5",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 d6 3. exd6 Bxd6 4. Nf3 Bg4 5. **e3** [Black plays Bg4 here 27% of the time]",
+        "lastMove": "c8g4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nf6-c6-bg4",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2p2n2/3p4/3P1Bb1/4PN2/PPP2PPP/RN1QKB1R w KQkq - 1 5",
+        "answer": "Be2",
+        "answerUci": "f1e2",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 c6 4. e3 Bg4 5. **Be2** [Black plays Bg4 here 56% of the time]",
+        "lastMove": "c8g4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-b6-bb7-bb4",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qk1nr/pbpp1ppp/1p2p3/8/1bPPP3/2N5/PP3PPP/R1BQKBNR w KQkq - 1 5",
+        "answer": "Bd3",
+        "answerUci": "f1d3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. c4 b6 3. Nc3 Bb7 4. e4 Bb4 5. **Bd3** [Black plays Bb4 here 81% of the time]",
+        "lastMove": "f8b4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-bc5-d6-ne7",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1nppp/3P4/2b5/8/5N2/PPP1PPPP/RNBQKB1R w KQkq - 1 5",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 Bc5 3. Nf3 d6 4. exd6 Ne7 5. **e3** [Black plays Ne7 here 100% of the time]",
+        "lastMove": "g8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-d6-bxd6-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp2ppp/3b1n2/8/8/5N2/PPP1PPPP/RNBQKB1R w KQkq - 2 5",
+        "answer": "Bg5",
+        "answerUci": "c1g5",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 d6 3. exd6 Bxd6 4. Nf3 Nf6 5. **Bg5** [Black plays Nf6 here 23% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c6-d5-nf6-bg4",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp2pppp/2p2n2/3p4/2PP2b1/2N2N2/PP2PPPP/R1BQKB1R w KQkq - 4 5",
+        "answer": "Ne5",
+        "answerUci": "f3e5",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 c6 2. c4 d5 3. Nc3 Nf6 4. Nf3 Bg4 5. **Ne5** [Black plays Bg4 here 19% of the time]",
+        "lastMove": "c8g4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-e6-c5-cxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp3ppp/4p3/3p4/3p1B2/4PN2/PPP2PPP/RN1QKB1R w KQkq - 0 5",
+        "answer": "exd4",
+        "answerUci": "e3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 e6 3. Bf4 c5 4. e3 cxd4 5. **exd4** [Black plays cxd4 here 24% of the time]",
+        "lastMove": "c5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-c5-exd5-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkbnr/pp3ppp/3p4/2pP4/8/8/PP2PPPP/RNBQKBNR w KQkq - 0 5",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. c4 c5 3. d5 exd5 4. cxd5 d6 5. **Nc3** [Black plays d6 here 79% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nf6-bf5-e6-bxd3",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/ppp2ppp/4pn2/3p4/3P1B2/3bPN2/PPP2PPP/RN1QK2R w KQkq - 0 6",
+        "answer": "Qxd3",
+        "answerUci": "d1d3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 Bf5 4. e3 e6 5. Bd3 Bxd3 6. **Qxd3** [Black plays Bxd3 here 58% of the time]",
+        "lastMove": "f5d3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-e6-d5-c5-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pp3ppp/2n1pn2/2pp4/3P4/2PBPN2/PP3PPP/RNBQK2R w KQkq - 1 6",
+        "answer": "Nbd2",
+        "answerUci": "b1d2",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 d5 4. Bd3 c5 5. c3 Nc6 6. **Nbd2** [Black plays Nc6 here 100% of the time]",
+        "lastMove": "b8c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-d5-nf6-e6-bd6-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp2ppp/3bpn2/3p4/3P4/4PNB1/PPP2PPP/RN1QKB1R w KQ - 3 6",
+        "answer": "Bd3",
+        "answerUci": "f1d3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 e6 4. e3 Bd6 5. Bg3 O-O 6. **Bd3** [Black plays O-O here 77% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-qe7-qb4-qxb2",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kbnr/pppp1ppp/2n5/4P3/8/5N2/PqPBPPPP/RN1QKB1R w KQkq - 0 6",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 Nc6 3. Nf3 Qe7 4. Bf4 Qb4+ 5. Bd2 Qxb2 6. **Nc3** [Black plays Qxb2 here 100% of the time]",
+        "lastMove": "b4b2"
       },
       "tags": [
         "chess::line"
@@ -511,45 +1679,253 @@
       "key": "l-d5-nf6-e6-c5-nc6",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkb1r/pp3ppp/2n1pn2/2pp2B1/3P4/2P1PN2/PP3PPP/RN1QKB1R w KQkq - 1 6",
+        "fen": "r1bqkb1r/pp3ppp/2n1pn2/2pp4/3P1B2/2P1PN2/PP3PPP/RN1QKB1R w KQkq - 1 6",
         "answer": "Bd3",
         "answerUci": "f1d3",
         "orientation": "white",
-        "lastMove": "b8c6",
-        "prompt": "You are White in the Torre Attack. What is the book move?",
-        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bg5 e6 4. e3 c5 5. c3 Nc6 6. **Bd3** (Torre Attack, D03)"
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 d5 2. Nf3 Nf6 3. Bf4 e6 4. e3 c5 5. c3 Nc6 6. **Bd3** [Black plays Nc6 here 95% of the time]",
+        "lastMove": "b8c6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-nf6-e6-b6-bb7-c5-be7",
+      "key": "l-nf6-d6-g6-bg7-oo",
       "model": "chess",
       "fields": {
-        "fen": "rn1qk2r/pb1pbppp/1p2pn2/2p5/3P4/1P1BPN2/P1P2PPP/RNBQ1RK1 w kq - 1 7",
-        "answer": "Bb2",
-        "answerUci": "c1b2",
+        "fen": "rnbq1rk1/ppp1ppbp/3p1np1/8/2PPP3/2N2N2/PP3PPP/R1BQKB1R w KQ - 1 6",
+        "answer": "Be2",
+        "answerUci": "f1e2",
         "orientation": "white",
-        "lastMove": "f8e7",
         "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 b6 4. Bd3 Bb7 5. O-O c5 6. b3 Be7 7. **Bb2**"
+        "extra": "1. d4 Nf6 2. Nf3 d6 3. c4 g6 4. Nc3 Bg7 5. e4 O-O 6. **Be2** [Black plays O-O here 95% of the time]",
+        "lastMove": "e8g8"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-nf6-e6-b6-bb7-c5-be7-oo",
+      "key": "l-e6-d5-nf6-be7-oo",
       "model": "chess",
       "fields": {
-        "fen": "rn1q1rk1/pb1pbppp/1p2pn2/2p5/3P4/1P1BPN2/PBP2PPP/RN1Q1RK1 w - - 3 8",
-        "answer": "Nbd2",
-        "answerUci": "b1d2",
+        "fen": "rnbq1rk1/ppp1bppp/4pn2/3p2B1/2PP4/2N1P3/PP3PPP/R2QKBNR w KQ - 1 6",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
         "orientation": "white",
-        "lastMove": "e8g8",
         "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
-        "extra": "1. d4 Nf6 2. Nf3 e6 3. e3 b6 4. Bd3 Bb7 5. O-O c5 6. b3 Be7 7. Bb2 O-O 8. **Nbd2**"
+        "extra": "1. d4 e6 2. c4 d5 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. **Nf3** [Black plays O-O here 54% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-c6-d5-nf6-bf5-e6",
+      "model": "chess",
+      "fields": {
+        "fen": "rn1qkb1r/pp3ppp/2p1pn2/3p1bB1/2PP4/2N2N2/PP2PPPP/R2QKB1R w KQkq - 0 6",
+        "answer": "e3",
+        "answerUci": "e2e3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 c6 2. c4 d5 3. Nc3 Nf6 4. Nf3 Bf5 5. Bg5 e6 6. **e3** [Black plays e6 here 100% of the time]",
+        "lastMove": "e7e6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-d5-nf6-be7-h6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/ppp1bpp1/4pn1p/3p2B1/2PP4/2N1P3/PP3PPP/R2QKBNR w KQkq - 0 6",
+        "answer": "Bh4",
+        "answerUci": "g5h4",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. c4 d5 3. Nc3 Nf6 4. Bg5 Be7 5. e3 h6 6. **Bh4** [Black plays h6 here 23% of the time]",
+        "lastMove": "h7h6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-qe7-qb4-qxb2-bb4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppp1ppp/2n5/4P3/1b6/2N2N2/PqPBPPPP/R2QKB1R w KQkq - 2 7",
+        "answer": "Rb1",
+        "answerUci": "a1b1",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 Nc6 3. Nf3 Qe7 4. Bf4 Qb4+ 5. Bd2 Qxb2 6. Nc3 Bb4 7. **Rb1** [Black plays Bb4 here 57% of the time]",
+        "lastMove": "f8b4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-qe7-qb4-qxb2-nb4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kbnr/pppp1ppp/8/4P3/1n6/2N2N2/PqPBPPPP/R2QKB1R w KQkq - 2 7",
+        "answer": "Nd4",
+        "answerUci": "f3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 Nc6 3. Nf3 Qe7 4. Bf4 Qb4+ 5. Bd2 Qxb2 6. Nc3 Nb4 7. **Nd4** [Black plays Nb4 here 43% of the time]",
+        "lastMove": "c6b4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-d6-g6-bg7-oo-e5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp2pbp/3p1np1/4p3/2PPP3/2N2N2/PP2BPPP/R1BQK2R w KQ - 0 7",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 Nf6 2. Nf3 d6 3. c4 g6 4. Nc3 Bg7 5. e4 O-O 6. Be2 e5 7. **O-O** [Black plays e5 here 52% of the time]",
+        "lastMove": "e7e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-d5-nf6-be7-h6-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1bpp1/4pn1p/3p4/2PP3B/2N1P3/PP3PPP/R2QKBNR w KQ - 2 7",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. c4 d5 3. Nc3 Nf6 4. Bg5 Be7 5. e3 h6 6. Bh4 O-O 7. **Nf3** [Black plays O-O here 100% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e6-d5-nf6-be7-oo-h6",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbq1rk1/ppp1bpp1/4pn1p/3p2B1/2PP4/2N1PN2/PP3PPP/R2QKB1R w KQ - 0 7",
+        "answer": "Bh4",
+        "answerUci": "g5h4",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e6 2. c4 d5 3. Nc3 Nf6 4. Bg5 Be7 5. e3 O-O 6. Nf3 h6 7. **Bh4** [Black plays h6 here 42% of the time]",
+        "lastMove": "h7h6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-qe7-qb4-qxb2-bb4-qa3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppp1ppp/2n5/4P3/1b6/q1N2N2/P1PBPPPP/1R1QKB1R w Kkq - 4 8",
+        "answer": "Rb3",
+        "answerUci": "b1b3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 Nc6 3. Nf3 Qe7 4. Bf4 Qb4+ 5. Bd2 Qxb2 6. Nc3 Bb4 7. Rb1 Qa3 8. **Rb3** [Black plays Qa3 here 93% of the time]",
+        "lastMove": "b2a3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-d6-g6-bg7-oo-e5-nc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp2pbp/2np1np1/4p3/2PPP3/2N2N2/PP2BPPP/R1BQ1RK1 w - - 2 8",
+        "answer": "d5",
+        "answerUci": "d4d5",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 Nf6 2. Nf3 d6 3. c4 g6 4. Nc3 Bg7 5. e4 O-O 6. Be2 e5 7. O-O Nc6 8. **d5** [Black plays Nc6 here 100% of the time]",
+        "lastMove": "b8c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-qe7-qb4-qxb2-nb4-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kbnr/pp1p1ppp/8/2p1P3/1n1N4/2N5/PqPBPPPP/R2QKB1R w KQkq - 0 8",
+        "answer": "Rb1",
+        "answerUci": "a1b1",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 Nc6 3. Nf3 Qe7 4. Bf4 Qb4+ 5. Bd2 Qxb2 6. Nc3 Nb4 7. Nd4 c5 8. **Rb1** [Black plays c5 here 55% of the time]",
+        "lastMove": "c7c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-qe7-qb4-qxb2-bb4-qa3-qa5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppp1ppp/2n5/q3P3/1b6/1RN2N2/P1PBPPPP/3QKB1R w Kkq - 6 9",
+        "answer": "a3",
+        "answerUci": "a2a3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 Nc6 3. Nf3 Qe7 4. Bf4 Qb4+ 5. Bd2 Qxb2 6. Nc3 Bb4 7. Rb1 Qa3 8. Rb3 Qa5 9. **a3** [Black plays Qa5 here 100% of the time]",
+        "lastMove": "a3a5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-qe7-qb4-qxb2-nb4-c5-qa3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kbnr/pp1p1ppp/8/2p1P3/1n1N4/q1N5/P1PBPPPP/1R1QKB1R w Kkq - 2 9",
+        "answer": "Ndb5",
+        "answerUci": "d4b5",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 Nc6 3. Nf3 Qe7 4. Bf4 Qb4+ 5. Bd2 Qxb2 6. Nc3 Nb4 7. Nd4 c5 8. Rb1 Qa3 9. **Ndb5** [Black plays Qa3 here 100% of the time]",
+        "lastMove": "b2a3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-qe7-qb4-qxb2-bb4-qa3-qa5-bxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1k1nr/pppp1ppp/2n5/q3P3/8/PRb2N2/2PBPPPP/3QKB1R w Kkq - 0 10",
+        "answer": "Bxc3",
+        "answerUci": "d2c3",
+        "orientation": "white",
+        "prompt": "You are White in the Queen's Pawn Game. What is the book move?",
+        "extra": "1. d4 e5 2. dxe5 Nc6 3. Nf3 Qe7 4. Bf4 Qb4+ 5. Bd2 Qxb2 6. Nc3 Bb4 7. Rb1 Qa3 8. Rb3 Qa5 9. a3 Bxc3 10. **Bxc3** [Black plays Bxc3 here 100% of the time]",
+        "lastMove": "b4c3"
       },
       "tags": [
         "chess::line"

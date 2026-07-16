@@ -484,6 +484,18 @@
       "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk1nr%2Fppp2ppp%2F3p4%2F2b1P3%2F4P3%2F5N2%2FPPPP2PP%2FRNBQKB1R%20b%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=f4e5"
     },
     {
+      "key": "kings-gambit-declined-classical-variation",
+      "name": "King's Gambit Declined: Classical Variation as Black",
+      "description": "A Black repertoire for the King's Gambit Declined: Classical Variation, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 7 positions.",
+      "cardCount": 7,
+      "topics": [
+        "chess",
+        "openings",
+        "kings-gambit-declined"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk1nr%2Fpppp1ppp%2F8%2F2b1p3%2F4PP2%2F8%2FPPPP2PP%2FRNBQKBNR%20w%20KQkq%20-%201%203&color=black&theme=brown&piece=cburnett&lastMove=f8c5"
+    },
+    {
       "key": "kings-gambit-declined-falkbeer-countergambit",
       "name": "King's Gambit Declined: Falkbeer Countergambit",
       "description": "Line trainer for the King's Gambit Declined: Falkbeer Countergambit, generated from the canonical opening database (lichess-org/chess-openings): 16 positions drilled book-move by book-move from Black's side across 21 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
@@ -638,6 +650,18 @@
         "neo-grunfeld-defense"
       ],
       "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqk2r%2Fppp1ppbp%2F6p1%2F3n4%2F3P4%2F6P1%2FPP2PPBP%2FRNBQK1NR%20w%20KQkq%20-%200%206&color=black&theme=brown&piece=cburnett&lastMove=f6d5"
+    },
+    {
+      "key": "neo-grunfeld-defense-with-g3",
+      "name": "Neo-Grünfeld Defense: with g3 as Black",
+      "description": "A Black repertoire for the Neo-Grünfeld Defense: with g3, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 3 positions.",
+      "cardCount": 3,
+      "topics": [
+        "chess",
+        "openings",
+        "neo-grunfeld-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkb1r%2Fppp1pp1p%2F5np1%2F3p4%2F2PP4%2F6P1%2FPP2PP1P%2FRNBQKBNR%20w%20KQkq%20-%200%204&color=black&theme=brown&piece=cburnett&lastMove=d7d5"
     },
     {
       "key": "nimzo-indian-defense-classical-variation",
@@ -1529,9 +1553,9 @@
     },
     {
       "key": "alekhine-defense",
-      "name": "The Alekhine Defense",
-      "description": "Line trainer for the Alekhine Defense, generated from the canonical opening database (lichess-org/chess-openings): 39 positions drilled book-move by book-move from Black's side across 56 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 39,
+      "name": "The Alekhine Defense as Black",
+      "description": "A Black repertoire for the Alekhine Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 79 positions.",
+      "cardCount": 79,
       "topics": [
         "chess",
         "openings",
@@ -1541,9 +1565,9 @@
     },
     {
       "key": "bishops-opening",
-      "name": "The Bishop's Opening",
-      "description": "Line trainer for the Bishop's Opening, generated from the canonical opening database (lichess-org/chess-openings): 22 positions drilled book-move by book-move from White's side across 41 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 22,
+      "name": "The Bishop's Opening as White",
+      "description": "A White repertoire for the Bishop's Opening, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
+      "cardCount": 120,
       "topics": [
         "chess",
         "openings",
@@ -1564,10 +1588,22 @@
       "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F2p5%2F8%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett"
     },
     {
+      "key": "caro-kann-defense",
+      "name": "The Caro-Kann Defense as Black",
+      "description": "A Black repertoire for the Caro-Kann Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
+      "cardCount": 120,
+      "topics": [
+        "chess",
+        "openings",
+        "caro-kann-defense"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F2p5%2F8%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett&lastMove=c7c6"
+    },
+    {
       "key": "catalan-opening",
-      "name": "The Catalan Opening",
-      "description": "Line trainer for the Catalan Opening, generated from the canonical opening database (lichess-org/chess-openings): 23 positions drilled book-move by book-move from White's side across 32 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 23,
+      "name": "The Catalan Opening as White",
+      "description": "A White repertoire for the Catalan Opening, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 11 positions.",
+      "cardCount": 11,
       "topics": [
         "chess",
         "openings",
@@ -1577,9 +1613,9 @@
     },
     {
       "key": "dutch-defense",
-      "name": "The Dutch Defense",
-      "description": "Line trainer for the Dutch Defense, generated from the canonical opening database (lichess-org/chess-openings): 24 positions drilled book-move by book-move from Black's side across 69 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 24,
+      "name": "The Dutch Defense as Black",
+      "description": "A Black repertoire for the Dutch Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 44 positions.",
+      "cardCount": 44,
       "topics": [
         "chess",
         "openings",
@@ -1589,9 +1625,9 @@
     },
     {
       "key": "english-opening",
-      "name": "The English Opening",
-      "description": "Line trainer for the English Opening, generated from the canonical opening database (lichess-org/chess-openings): 46 positions drilled book-move by book-move from White's side across 87 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 46,
+      "name": "The English Opening as White",
+      "description": "A White repertoire for the English Opening, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
+      "cardCount": 120,
       "topics": [
         "chess",
         "openings",
@@ -1601,9 +1637,9 @@
     },
     {
       "key": "four-knights-game",
-      "name": "The Four Knights Game",
-      "description": "Line trainer for the Four Knights Game, generated from the canonical opening database (lichess-org/chess-openings): 33 positions drilled book-move by book-move from White's side across 49 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 33,
+      "name": "The Four Knights Game as White",
+      "description": "A White repertoire for the Four Knights Game, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 17 positions.",
+      "cardCount": 17,
       "topics": [
         "chess",
         "openings",
@@ -1613,9 +1649,9 @@
     },
     {
       "key": "french-defense",
-      "name": "The French Defense",
-      "description": "Line trainer for the French Defense, generated from the canonical opening database (lichess-org/chess-openings): 55 positions drilled book-move by book-move from Black's side across 158 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 55,
+      "name": "The French Defense as Black",
+      "description": "A Black repertoire for the French Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
+      "cardCount": 120,
       "topics": [
         "chess",
         "openings",
@@ -1625,9 +1661,9 @@
     },
     {
       "key": "grunfeld-defense",
-      "name": "The Grünfeld Defense",
-      "description": "Line trainer for the Grünfeld Defense, generated from the canonical opening database (lichess-org/chess-openings): 32 positions drilled book-move by book-move from Black's side across 42 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 32,
+      "name": "The Grünfeld Defense as Black",
+      "description": "A Black repertoire for the Grünfeld Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 27 positions.",
+      "cardCount": 27,
       "topics": [
         "chess",
         "openings",
@@ -1637,9 +1673,9 @@
     },
     {
       "key": "italian-game",
-      "name": "The Italian Game",
-      "description": "Line trainer for the Italian Game, generated from the canonical opening database (lichess-org/chess-openings): 28 positions drilled book-move by book-move from White's side across 87 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 29,
+      "name": "The Italian Game as White",
+      "description": "A White repertoire for the Italian Game, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 72 positions.",
+      "cardCount": 73,
       "topics": [
         "chess",
         "openings",
@@ -1649,9 +1685,9 @@
     },
     {
       "key": "kings-gambit-accepted",
-      "name": "The King's Gambit Accepted",
-      "description": "Line trainer for the King's Gambit Accepted, generated from the canonical opening database (lichess-org/chess-openings): 49 positions drilled book-move by book-move from Black's side across 137 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 49,
+      "name": "The King's Gambit Accepted as Black",
+      "description": "A Black repertoire for the King's Gambit Accepted, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 22 positions.",
+      "cardCount": 22,
       "topics": [
         "chess",
         "openings",
@@ -1673,9 +1709,9 @@
     },
     {
       "key": "kings-indian-attack",
-      "name": "The King's Indian Attack",
-      "description": "Line trainer for the King's Indian Attack, generated from the canonical opening database (lichess-org/chess-openings): 23 positions drilled book-move by book-move from White's side across 27 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 23,
+      "name": "The King's Indian Attack as White",
+      "description": "A White repertoire for the King's Indian Attack, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 32 positions.",
+      "cardCount": 32,
       "topics": [
         "chess",
         "openings",
@@ -1685,9 +1721,9 @@
     },
     {
       "key": "kings-indian-defense",
-      "name": "The King's Indian Defense",
-      "description": "Line trainer for the King's Indian Defense, generated from the canonical opening database (lichess-org/chess-openings): 66 positions drilled book-move by book-move from Black's side across 119 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 66,
+      "name": "The King's Indian Defense as Black",
+      "description": "A Black repertoire for the King's Indian Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 37 positions.",
+      "cardCount": 37,
       "topics": [
         "chess",
         "openings",
@@ -1709,9 +1745,9 @@
     },
     {
       "key": "modern-defense",
-      "name": "The Modern Defense",
-      "description": "Line trainer for the Modern Defense, generated from the canonical opening database (lichess-org/chess-openings): 23 positions drilled book-move by book-move from Black's side across 39 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 23,
+      "name": "The Modern Defense as Black",
+      "description": "A Black repertoire for the Modern Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 95 positions.",
+      "cardCount": 95,
       "topics": [
         "chess",
         "openings",
@@ -1733,9 +1769,9 @@
     },
     {
       "key": "nimzo-indian-defense",
-      "name": "The Nimzo-Indian Defense",
-      "description": "Line trainer for the Nimzo-Indian Defense, generated from the canonical opening database (lichess-org/chess-openings): 46 positions drilled book-move by book-move from Black's side across 99 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 46,
+      "name": "The Nimzo-Indian Defense as Black",
+      "description": "A Black repertoire for the Nimzo-Indian Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 21 positions.",
+      "cardCount": 21,
       "topics": [
         "chess",
         "openings",
@@ -1745,9 +1781,9 @@
     },
     {
       "key": "pterodactyl-defense",
-      "name": "The Pterodactyl Defense",
-      "description": "Line trainer for the Pterodactyl Defense, generated from the canonical opening database (lichess-org/chess-openings): 40 positions drilled book-move by book-move from Black's side across 33 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 40,
+      "name": "The Pterodactyl Defense as Black",
+      "description": "A Black repertoire for the Pterodactyl Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 2 positions.",
+      "cardCount": 2,
       "topics": [
         "chess",
         "openings",
@@ -1757,9 +1793,9 @@
     },
     {
       "key": "queens-gambit-accepted",
-      "name": "The Queen's Gambit Accepted",
-      "description": "Line trainer for the Queen's Gambit Accepted, generated from the canonical opening database (lichess-org/chess-openings): 21 positions drilled book-move by book-move from Black's side across 58 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 21,
+      "name": "The Queen's Gambit Accepted as Black",
+      "description": "A Black repertoire for the Queen's Gambit Accepted, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 16 positions.",
+      "cardCount": 16,
       "topics": [
         "chess",
         "openings",
@@ -1769,9 +1805,9 @@
     },
     {
       "key": "queens-gambit-declined",
-      "name": "The Queen's Gambit Declined",
-      "description": "Line trainer for the Queen's Gambit Declined, generated from the canonical opening database (lichess-org/chess-openings): 42 positions drilled book-move by book-move from Black's side across 159 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 42,
+      "name": "The Queen's Gambit Declined as Black",
+      "description": "A Black repertoire for the Queen's Gambit Declined, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 36 positions.",
+      "cardCount": 36,
       "topics": [
         "chess",
         "openings",
@@ -1781,9 +1817,9 @@
     },
     {
       "key": "queens-indian-defense",
-      "name": "The Queen's Indian Defense",
-      "description": "Line trainer for the Queen's Indian Defense, generated from the canonical opening database (lichess-org/chess-openings): 41 positions drilled book-move by book-move from Black's side across 68 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 41,
+      "name": "The Queen's Indian Defense as Black",
+      "description": "A Black repertoire for the Queen's Indian Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 9 positions.",
+      "cardCount": 9,
       "topics": [
         "chess",
         "openings",
@@ -1793,9 +1829,9 @@
     },
     {
       "key": "queens-pawn-game",
-      "name": "The Queen's Pawn Game",
-      "description": "Line trainer for the Queen's Pawn Game, generated from the canonical opening database (lichess-org/chess-openings): 34 positions drilled book-move by book-move from White's side across 82 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 34,
+      "name": "The Queen's Pawn Game as White",
+      "description": "A White repertoire for the Queen's Pawn Game, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
+      "cardCount": 120,
       "topics": [
         "chess",
         "openings",
@@ -1805,9 +1841,9 @@
     },
     {
       "key": "ruy-lopez",
-      "name": "The Ruy Lopez",
-      "description": "Line trainer for the Ruy Lopez, generated from the canonical opening database (lichess-org/chess-openings): 87 positions drilled book-move by book-move from White's side across 193 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 87,
+      "name": "The Ruy Lopez as White",
+      "description": "A White repertoire for the Ruy Lopez, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 85 positions.",
+      "cardCount": 85,
       "topics": [
         "chess",
         "openings",
@@ -1817,9 +1853,9 @@
     },
     {
       "key": "scotch-game",
-      "name": "The Scotch Game",
-      "description": "Line trainer for the Scotch Game, generated from the canonical opening database (lichess-org/chess-openings): 23 positions drilled book-move by book-move from White's side across 53 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 23,
+      "name": "The Scotch Game as White",
+      "description": "A White repertoire for the Scotch Game, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 58 positions.",
+      "cardCount": 58,
       "topics": [
         "chess",
         "openings",
@@ -1829,9 +1865,9 @@
     },
     {
       "key": "semi-slav-defense",
-      "name": "The Semi-Slav Defense",
-      "description": "Line trainer for the Semi-Slav Defense, generated from the canonical opening database (lichess-org/chess-openings): 30 positions drilled book-move by book-move from Black's side across 69 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 30,
+      "name": "The Semi-Slav Defense as Black",
+      "description": "A Black repertoire for the Semi-Slav Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 6 positions.",
+      "cardCount": 6,
       "topics": [
         "chess",
         "openings",
@@ -1841,21 +1877,21 @@
     },
     {
       "key": "sicilian-defense",
-      "name": "The Sicilian Defense",
-      "description": "A club player's working map of the Sicilian, one position at a time: the Open Sicilian trunk move by move, the Najdorf, Dragon, Sveshnikov, and Classical variations, and how to meet the Alapin and Rossolimo anti-Sicilians. Every card shows a board from Black's side and asks for the best move and the plan behind it.",
-      "cardCount": 54,
+      "name": "The Sicilian Defense as Black",
+      "description": "A Black repertoire for the Sicilian Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 120 positions.",
+      "cardCount": 174,
       "topics": [
         "chess",
         "openings",
-        "sicilian"
+        "sicilian-defense"
       ],
-      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F8%2F2p5%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett"
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=rnbqkbnr%2Fpp1ppppp%2F8%2F2p5%2F4P3%2F8%2FPPPP1PPP%2FRNBQKBNR%20w%20KQkq%20-%200%202&color=black&theme=brown&piece=cburnett&lastMove=c7c5"
     },
     {
       "key": "slav-defense",
-      "name": "The Slav Defense",
-      "description": "Line trainer for the Slav Defense, generated from the canonical opening database (lichess-org/chess-openings): 37 positions drilled book-move by book-move from Black's side across 52 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 37,
+      "name": "The Slav Defense as Black",
+      "description": "A Black repertoire for the Slav Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 29 positions.",
+      "cardCount": 29,
       "topics": [
         "chess",
         "openings",
@@ -1865,9 +1901,9 @@
     },
     {
       "key": "tarrasch-defense",
-      "name": "The Tarrasch Defense",
-      "description": "Line trainer for the Tarrasch Defense, generated from the canonical opening database (lichess-org/chess-openings): 25 positions drilled book-move by book-move from Black's side across 27 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
-      "cardCount": 25,
+      "name": "The Tarrasch Defense as Black",
+      "description": "A Black repertoire for the Tarrasch Defense, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 9 positions.",
+      "cardCount": 9,
       "topics": [
         "chess",
         "openings",

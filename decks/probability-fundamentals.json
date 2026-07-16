@@ -1,0 +1,674 @@
+{
+  "key": "probability-fundamentals",
+  "version": 1,
+  "name": "Probability Theory Fundamentals",
+  "description": "The core of probability theory: sample spaces and the axioms, counting, conditional probability and Bayes' theorem, random variables, expectation and variance, the classic distributions, and the two big limit theorems, with the standard traps (base rate neglect, the gambler's fallacy, Monty Hall) called out.",
+  "category": "Mathematics",
+  "topics": ["probability", "mathematics", "statistics"],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/6sided_dice.jpg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "sample-space",
+      "model": "basic",
+      "fields": {
+        "front": "In probability, what is the sample space?",
+        "back": "The set of all possible outcomes of an experiment.",
+        "extra": "Usually written Omega. Rolling one die: {1, 2, 3, 4, 5, 6}."
+      },
+      "tags": ["prob::foundations"]
+    },
+    {
+      "key": "event-def",
+      "model": "basic",
+      "fields": {
+        "front": "In probability, what is an event?",
+        "back": "A subset of the sample space.",
+        "extra": "Any collection of outcomes: 'roll an even number' is the event {2, 4, 6}."
+      },
+      "tags": ["prob::foundations"]
+    },
+    {
+      "key": "prob-range",
+      "model": "basic",
+      "fields": {
+        "front": "What range of values can a probability take?",
+        "back": "0 to 1 inclusive.",
+        "extra": "One of the axioms: probabilities are never negative and never exceed 1."
+      },
+      "tags": ["prob::foundations"]
+    },
+    {
+      "key": "certain-event",
+      "model": "basic",
+      "fields": {
+        "front": "What probability is assigned to the whole sample space?",
+        "back": "1.",
+        "extra": "Something must happen: the second axiom."
+      },
+      "tags": ["prob::foundations"]
+    },
+    {
+      "key": "mutually-exclusive-def",
+      "model": "basic",
+      "fields": {
+        "front": "What does it mean for two events to be mutually exclusive?",
+        "back": "They share no outcomes, so they cannot both occur.",
+        "extra": "Also called disjoint. 'Roll a 1' and 'roll a 6' on one throw."
+      },
+      "tags": ["prob::foundations"]
+    },
+    {
+      "key": "additivity-disjoint",
+      "model": "cloze",
+      "fields": {
+        "text": "For mutually exclusive events: P(A or B) = {{c1::P(A) + P(B)}}",
+        "extra": "The additivity axiom. Only for events that cannot co-occur; otherwise subtract the overlap."
+      },
+      "tags": ["prob::foundations"]
+    },
+    {
+      "key": "complement-rule",
+      "model": "cloze",
+      "fields": {
+        "text": "Complement rule: P(not A) = {{c1::1 - P(A)}}",
+        "extra": "A and not-A are disjoint and cover everything, so their probabilities sum to 1."
+      },
+      "tags": ["prob::foundations"]
+    },
+    {
+      "key": "at-least-one-trick",
+      "model": "basic",
+      "fields": {
+        "front": "What is the standard trick for computing P(at least one success)?",
+        "back": "Go through the complement: 1 - P(no successes at all).",
+        "extra": "At least one six in four rolls: 1 - (5/6)^4, about 0.52. Direct counting of 'one or more' is much harder."
+      },
+      "tags": ["prob::foundations"]
+    },
+    {
+      "key": "inclusion-exclusion",
+      "model": "cloze",
+      "fields": {
+        "text": "For any two events: P(A or B) = P(A) + P(B) - {{c1::P(A and B)}}",
+        "extra": "Subtracting the overlap stops it from being counted twice. With disjoint events the overlap term is 0."
+      },
+      "tags": ["prob::foundations"]
+    },
+    {
+      "key": "equally-likely-rule",
+      "model": "basic",
+      "fields": {
+        "front": "When all outcomes are equally likely, how do you compute an event's probability?",
+        "back": "Favorable outcomes divided by total outcomes.",
+        "extra": "The classical definition. It silently fails when outcomes are not equally likely (a loaded die)."
+      },
+      "tags": ["prob::foundations"]
+    },
+    {
+      "key": "dice-sum-7",
+      "model": "basic",
+      "fields": {
+        "front": "You roll two fair dice. What is the probability the sum is 7?",
+        "back": "6/36 = 1/6.",
+        "extra": "Six of the 36 ordered pairs work: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). Seven is the likeliest sum."
+      },
+      "tags": ["prob::foundations"]
+    },
+    {
+      "key": "multiplication-principle",
+      "model": "basic",
+      "fields": {
+        "front": "A cafe offers 4 starters and 6 mains. How many different starter-plus-main meals are there?",
+        "back": "24, by multiplying the choices: 4 * 6.",
+        "extra": "The multiplication principle: options for independent choices multiply."
+      },
+      "tags": ["prob::counting"]
+    },
+    {
+      "key": "permutation-vs-combination",
+      "model": "basic",
+      "fields": {
+        "front": "What distinguishes a permutation from a combination?",
+        "back": "Permutations count ordered arrangements; combinations ignore order.",
+        "extra": "A 'combination lock' actually takes a permutation: 1-2-3 and 3-2-1 are different codes."
+      },
+      "tags": ["prob::counting"]
+    },
+    {
+      "key": "n-choose-k",
+      "model": "cloze",
+      "fields": {
+        "text": "Choosing k of n items when order does not matter: C(n, k) = {{c1::n! / (k! (n-k)!)}}",
+        "extra": "Read 'n choose k'; also called the binomial coefficient."
+      },
+      "tags": ["prob::counting"]
+    },
+    {
+      "key": "birthday-problem",
+      "model": "basic",
+      "fields": {
+        "front": "Roughly how many people are needed for a 50% chance that two share a birthday?",
+        "back": "23.",
+        "extra": "23 people form 253 pairs, and every pair is a chance at a match. Compute via the complement: 1 - P(all birthdays differ)."
+      },
+      "tags": ["prob::counting"]
+    },
+    {
+      "key": "conditional-meaning",
+      "model": "basic",
+      "fields": {
+        "front": "What does P(A | B) mean in words?",
+        "back": "The probability that A occurs given that B is known to have occurred.",
+        "extra": "Shrink the sample space to B, then measure A inside it."
+      },
+      "tags": ["prob::conditional"]
+    },
+    {
+      "key": "conditional-formula",
+      "model": "cloze",
+      "fields": {
+        "text": "Conditional probability: P(A | B) = {{c1::P(A and B) / P(B)}}",
+        "extra": "Defined only when P(B) > 0."
+      },
+      "tags": ["prob::conditional"]
+    },
+    {
+      "key": "multiplication-rule",
+      "model": "cloze",
+      "fields": {
+        "text": "Multiplication rule: P(A and B) = P(B) * {{c1::P(A | B)}}",
+        "extra": "Chain events step by step: first B happens, then A given B."
+      },
+      "tags": ["prob::conditional"]
+    },
+    {
+      "key": "independence-meaning",
+      "model": "basic",
+      "fields": {
+        "front": "What does it mean for events A and B to be independent?",
+        "back": "Knowing that B occurred does not change the probability of A.",
+        "extra": "Equivalent statement: P(A | B) = P(A)."
+      },
+      "tags": ["prob::conditional"]
+    },
+    {
+      "key": "independence-formula",
+      "model": "cloze",
+      "fields": {
+        "text": "Events A and B are independent exactly when P(A and B) = {{c1::P(A) * P(B)}}",
+        "extra": "The multiplication rule with the conditioning dropped."
+      },
+      "tags": ["prob::conditional"]
+    },
+    {
+      "key": "disjoint-vs-independent",
+      "model": "basic",
+      "fields": {
+        "front": "Two events with nonzero probability are mutually exclusive. Can they be independent?",
+        "back": "No: one occurring guarantees the other did not, which is total dependence.",
+        "extra": "Disjoint means maximally dependent. Do not confuse 'cannot co-occur' with 'unrelated'."
+      },
+      "tags": ["prob::conditional"]
+    },
+    {
+      "key": "cards-without-replacement",
+      "model": "basic",
+      "fields": {
+        "front": "You draw two cards from a shuffled deck without replacement. Are the draws independent?",
+        "back": "No: the first draw changes what remains in the deck.",
+        "extra": "P(second is an ace | first was an ace) is 3/51, not 4/52. With replacement the draws are independent."
+      },
+      "tags": ["prob::conditional"]
+    },
+    {
+      "key": "total-probability-words",
+      "model": "basic",
+      "fields": {
+        "front": "In words, what does the law of total probability compute?",
+        "back": "P(A) as the average of P(A | case), weighted by each case's probability.",
+        "extra": "The cases must partition the sample space: no overlaps, nothing left out."
+      },
+      "tags": ["prob::conditional"]
+    },
+    {
+      "key": "total-probability-formula",
+      "model": "cloze",
+      "fields": {
+        "text": "Law of total probability: if B_1, ..., B_n partition the sample space, P(A) = sum over i of {{c1::P(A | B_i) * P(B_i)}}",
+        "extra": "Condition on the cases, then weight by how likely each case is."
+      },
+      "tags": ["prob::conditional"]
+    },
+    {
+      "key": "bayes-purpose",
+      "model": "basic",
+      "fields": {
+        "front": "What does Bayes' theorem let you reverse?",
+        "back": "A conditional: it computes P(A | B) from P(B | A).",
+        "extra": "You usually know how evidence behaves given the hypothesis; Bayes turns that into belief in the hypothesis given the evidence."
+      },
+      "tags": ["prob::conditional"]
+    },
+    {
+      "key": "bayes-formula",
+      "model": "cloze",
+      "fields": {
+        "text": "Bayes' theorem: P(A | B) = {{c1::P(B | A) * P(A) / P(B)}}",
+        "extra": "Expand the denominator with the law of total probability when P(B) is not given directly."
+      },
+      "tags": ["prob::conditional"]
+    },
+    {
+      "key": "prior-posterior",
+      "model": "cloze",
+      "fields": {
+        "text": "Before seeing evidence, the probability P(H) is called the {{c1::prior}}; after updating on evidence E, P(H | E) is called the {{c2::posterior}}",
+        "extra": "Bayes' theorem is the update rule that turns one into the other."
+      },
+      "tags": ["prob::conditional"]
+    },
+    {
+      "key": "base-rate-neglect",
+      "model": "basic",
+      "fields": {
+        "front": "A disease affects 1 in 1000 people. A test catches it 99% of the time, with a 1% false-positive rate. You test positive: roughly how likely are you to be sick?",
+        "back": "Only about 9%, because among 1000 people the ~10 false positives swamp the 1 true positive.",
+        "extra": "Base rate neglect: the 99% is P(positive | sick), not P(sick | positive). The rarer the condition, the more the prior dominates."
+      },
+      "tags": ["prob::conditional"]
+    },
+    {
+      "key": "prosecutors-fallacy",
+      "model": "cloze",
+      "fields": {
+        "text": "Mistaking P(evidence | innocence) for P(innocence | evidence) is called the {{c1::prosecutor's fallacy}}",
+        "extra": "'Only 1 in a million innocents match' means little in a city of millions; run Bayes with the base rate."
+      },
+      "tags": ["prob::conditional"]
+    },
+    {
+      "key": "monty-hall",
+      "model": "basic",
+      "fields": {
+        "front": "Monty Hall: you pick one of three doors, and the host, who knows where the prize is, opens another door to reveal a goat. Should you switch?",
+        "back": "Yes: switching wins 2/3 of the time.",
+        "extra": "Your first pick was right only 1/3 of the time; the host's informed reveal funnels the remaining 2/3 onto the other closed door."
+      },
+      "tags": ["prob::conditional"]
+    },
+    {
+      "key": "rv-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is a random variable?",
+        "back": "A function that assigns a number to each outcome of an experiment.",
+        "extra": "'Number of heads in 10 flips' maps every flip sequence to a count."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "discrete-vs-continuous",
+      "model": "basic",
+      "fields": {
+        "front": "What distinguishes a discrete random variable from a continuous one?",
+        "back": "A discrete variable takes separate, countable values; a continuous one ranges over an interval.",
+        "extra": "Counts are discrete; measurements like time and height are continuous."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "pmf-def",
+      "model": "basic",
+      "fields": {
+        "front": "For a discrete random variable, what does the probability mass function (PMF) give?",
+        "back": "The probability of each exact value: p(x) = P(X = x).",
+        "extra": "The values must be nonnegative and sum to 1."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "pdf-def",
+      "model": "basic",
+      "fields": {
+        "front": "For a continuous random variable, what does the probability density function (PDF) give?",
+        "back": "A density whose area over an interval is the probability of landing in that interval.",
+        "extra": "P(a <= X <= b) = integral of the density from a to b. The curve's height alone is not a probability."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "pdf-above-one",
+      "model": "basic",
+      "fields": {
+        "front": "Can a probability density function take values greater than 1?",
+        "back": "Yes: density is not probability, and only the total area under the curve must equal 1.",
+        "extra": "Uniform on [0, 0.5] has constant density 2."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "point-prob-zero",
+      "model": "basic",
+      "fields": {
+        "front": "For a continuous random variable X, what is P(X = c) for any single exact value c?",
+        "back": "Exactly 0.",
+        "extra": "A single point has zero width, hence zero area; only intervals carry probability."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "zero-not-impossible",
+      "model": "basic",
+      "fields": {
+        "front": "A continuous variable always lands on some value, yet each exact value has probability 0. What does that show about 'probability zero'?",
+        "back": "For continuous variables, probability zero does not mean impossible.",
+        "extra": "Symmetrically, probability 1 does not mean guaranteed; mathematicians say 'almost surely'."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "cdf-def",
+      "model": "basic",
+      "fields": {
+        "front": "What does the cumulative distribution function F(x) return?",
+        "back": "P(X <= x), the probability of being at most x.",
+        "extra": "Works for every kind of random variable. P(a < X <= b) = F(b) - F(a)."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "expectation-words",
+      "model": "basic",
+      "fields": {
+        "front": "In words, what is the expected value E[X]?",
+        "back": "The probability-weighted average of X's possible values.",
+        "extra": "It is also the long-run average over many independent repetitions."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "expectation-formula",
+      "model": "cloze",
+      "fields": {
+        "text": "For a discrete random variable: E[X] = sum over x of {{c1::x * P(X = x)}}",
+        "extra": "Each value, weighted by how likely it is."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "die-expectation",
+      "model": "basic",
+      "fields": {
+        "front": "What is the expected value of a single fair die roll?",
+        "back": "3.5.",
+        "extra": "(1+2+3+4+5+6)/6. An expectation is an average, not necessarily a value the variable can take."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "linearity-expectation",
+      "model": "cloze",
+      "fields": {
+        "text": "For ANY two random variables: E[X + Y] = {{c1::E[X] + E[Y]}}",
+        "extra": "Linearity of expectation. Dependence between X and Y is irrelevant."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "linearity-scope",
+      "model": "basic",
+      "fields": {
+        "front": "What condition on X and Y is required for E[X + Y] = E[X] + E[Y]?",
+        "back": "None: linearity of expectation holds even for dependent variables.",
+        "extra": "This is what makes expectation arguments so powerful in combinatorics and algorithm analysis."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "product-expectation",
+      "model": "basic",
+      "fields": {
+        "front": "For independent X and Y, what is E[XY]?",
+        "back": "E[X] * E[Y].",
+        "extra": "Sums split with no conditions; products need independence (zero correlation suffices)."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "expectation-transform",
+      "model": "cloze",
+      "fields": {
+        "text": "For constants a and b: E[aX + b] = {{c1::a * E[X] + b}}",
+        "extra": "Expectation passes straight through linear transformations."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "variance-words",
+      "model": "basic",
+      "fields": {
+        "front": "In words, what does Var(X) measure?",
+        "back": "The expected squared deviation of X from its mean.",
+        "extra": "Var(X) = E[(X - mu)^2]: how spread out the distribution is."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "variance-computational",
+      "model": "cloze",
+      "fields": {
+        "text": "Computational form of variance: Var(X) = E[X^2] - {{c1::(E[X])^2}}",
+        "extra": "Mean of the square minus square of the mean; usually the quickest route by hand."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "variance-transform",
+      "model": "cloze",
+      "fields": {
+        "text": "For constants a and b: Var(aX + b) = {{c1::a^2 * Var(X)}}",
+        "extra": "Shifting by b changes no spread at all; scaling by a enters squared."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "variance-sum-independent",
+      "model": "basic",
+      "fields": {
+        "front": "For independent X and Y, what is Var(X + Y)?",
+        "back": "Var(X) + Var(Y).",
+        "extra": "With dependence, add 2*Cov(X, Y). Var(X - Y) is also the SUM of the variances: subtracting does not cancel noise."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "sd-from-variance",
+      "model": "basic",
+      "fields": {
+        "front": "How do you get a random variable's standard deviation from its variance?",
+        "back": "Take the square root.",
+        "extra": "That restores the data's original units, which variance (units squared) loses."
+      },
+      "tags": ["prob::random-variables"]
+    },
+    {
+      "key": "bernoulli-def",
+      "model": "basic",
+      "fields": {
+        "front": "What does a Bernoulli(p) random variable model?",
+        "back": "One trial that is 1 (success) with probability p and 0 otherwise.",
+        "extra": "E[X] = p and Var(X) = p(1-p). The building block of the binomial."
+      },
+      "tags": ["prob::distributions"]
+    },
+    {
+      "key": "binomial-def",
+      "model": "basic",
+      "fields": {
+        "front": "What does a Binomial(n, p) random variable count?",
+        "back": "The number of successes in n independent trials, each succeeding with probability p.",
+        "extra": "It is a sum of n independent Bernoulli(p) variables."
+      },
+      "tags": ["prob::distributions"]
+    },
+    {
+      "key": "binomial-mean-var",
+      "model": "cloze",
+      "fields": {
+        "text": "A Binomial(n, p) variable has mean {{c1::np}} and variance {{c2::np(1-p)}}",
+        "extra": "Both follow from adding up n independent Bernoulli trials."
+      },
+      "tags": ["prob::distributions"]
+    },
+    {
+      "key": "geometric-def",
+      "model": "basic",
+      "fields": {
+        "front": "What does a Geometric(p) random variable count?",
+        "back": "The number of trials up to and including the first success.",
+        "extra": "Contrast with the binomial, where the trial count is fixed and successes vary."
+      },
+      "tags": ["prob::distributions"]
+    },
+    {
+      "key": "geometric-mean",
+      "model": "cloze",
+      "fields": {
+        "text": "A Geometric(p) variable has mean {{c1::1/p}}",
+        "extra": "Success chance 1/6 means 6 trials expected: waiting for a six takes 6 rolls on average."
+      },
+      "tags": ["prob::distributions"]
+    },
+    {
+      "key": "poisson-def",
+      "model": "basic",
+      "fields": {
+        "front": "What situation does the Poisson distribution model?",
+        "back": "The count of events in a fixed window when events occur independently at a constant average rate.",
+        "extra": "Emails per hour, typos per page, radioactive decays per second."
+      },
+      "tags": ["prob::distributions"]
+    },
+    {
+      "key": "poisson-mean-var",
+      "model": "basic",
+      "fields": {
+        "front": "What is notable about the mean and variance of a Poisson(lambda) variable?",
+        "back": "They are equal: both are lambda.",
+        "extra": "Sample variance far above the sample mean signals overdispersion, a sign the Poisson model is breaking."
+      },
+      "tags": ["prob::distributions"]
+    },
+    {
+      "key": "uniform-def",
+      "model": "basic",
+      "fields": {
+        "front": "What does the continuous Uniform(a, b) distribution assume about values in [a, b]?",
+        "back": "Subintervals of equal length are equally likely.",
+        "extra": "Constant density 1/(b - a) across the interval."
+      },
+      "tags": ["prob::distributions"]
+    },
+    {
+      "key": "normal-params",
+      "model": "basic",
+      "fields": {
+        "front": "Which parameters fully specify a normal distribution?",
+        "back": "Its mean and its variance (equivalently, standard deviation).",
+        "extra": "Written N(mu, sigma^2). Location and spread are the whole story; the shape never changes."
+      },
+      "tags": ["prob::distributions"]
+    },
+    {
+      "key": "standard-normal",
+      "model": "basic",
+      "fields": {
+        "front": "What is the standard normal distribution?",
+        "back": "The normal distribution with mean 0 and standard deviation 1.",
+        "extra": "z-scores live here: z counts how many SDs a value sits from the mean."
+      },
+      "tags": ["prob::distributions"]
+    },
+    {
+      "key": "empirical-rule",
+      "model": "basic",
+      "fields": {
+        "front": "In a normal distribution, what fraction of values lies within 1, 2, and 3 SDs of the mean?",
+        "back": "About 68%, 95%, and 99.7%.",
+        "extra": "The empirical rule; learn the triple as one chunk."
+      },
+      "tags": ["prob::distributions"]
+    },
+    {
+      "key": "exponential-def",
+      "model": "basic",
+      "fields": {
+        "front": "What does the exponential distribution model?",
+        "back": "The waiting time until the next event in a Poisson process.",
+        "extra": "Poisson counts the events; exponential times the gaps between them."
+      },
+      "tags": ["prob::distributions"]
+    },
+    {
+      "key": "memorylessness",
+      "model": "basic",
+      "fields": {
+        "front": "An exponential waiting time is 'memoryless'. What does that mean?",
+        "back": "The distribution of the remaining wait is the same no matter how long you have already waited.",
+        "extra": "The exponential is the only continuous memoryless distribution; the geometric is its discrete twin."
+      },
+      "tags": ["prob::distributions"]
+    },
+    {
+      "key": "lln",
+      "model": "basic",
+      "fields": {
+        "front": "What does the law of large numbers guarantee?",
+        "back": "The average of many independent trials converges to the true mean.",
+        "extra": "It speaks only about the long-run average, not about any individual outcome."
+      },
+      "tags": ["prob::limits"]
+    },
+    {
+      "key": "gamblers-fallacy",
+      "model": "basic",
+      "fields": {
+        "front": "A fair coin has landed heads 5 times in a row. What is the probability of heads on the next flip?",
+        "back": "Exactly 1/2: the flips are independent.",
+        "extra": "The gambler's fallacy is expecting tails to be 'due'. The coin has no memory."
+      },
+      "tags": ["prob::limits"]
+    },
+    {
+      "key": "lln-dilution",
+      "model": "basic",
+      "fields": {
+        "front": "If a fair coin cannot 'correct' a run of heads, how does the average still approach 1/2?",
+        "back": "The early excess gets diluted by an ever-growing number of later flips.",
+        "extra": "Dilution, not compensation: 50 extra heads is huge in 100 flips and negligible in 100,000."
+      },
+      "tags": ["prob::limits"]
+    },
+    {
+      "key": "clt",
+      "model": "basic",
+      "fields": {
+        "front": "What does the central limit theorem say about the sum (or mean) of many independent variables?",
+        "back": "Its distribution approaches a normal, whatever the shape of the individual distributions.",
+        "extra": "Requires finite variance. Hook: the LLN says where the average goes; the CLT describes the bell-shaped wobble around it."
+      },
+      "tags": ["prob::limits"]
+    },
+    {
+      "key": "clt-why-normal",
+      "model": "basic",
+      "fields": {
+        "front": "Why does the normal distribution appear so often in nature and measurement?",
+        "back": "Many quantities are sums of many small independent effects, and the CLT makes such sums approximately normal.",
+        "extra": "Heights, measurement errors, and averages of nearly anything."
+      },
+      "tags": ["prob::limits"]
+    }
+  ]
+}

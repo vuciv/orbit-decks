@@ -1,8 +1,8 @@
 {
   "key": "catalan-opening",
-  "version": 2,
-  "name": "The Catalan Opening",
-  "description": "Line trainer for the Catalan Opening, generated from the canonical opening database (lichess-org/chess-openings): 23 positions drilled book-move by book-move from White's side across 32 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "version": 3,
+  "name": "The Catalan Opening as White",
+  "description": "A White repertoire for the Catalan Opening, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 11 positions.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -28,22 +28,6 @@
       ]
     },
     {
-      "key": "l-d5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/ppp1pppp/8/3p4/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
-        "answer": "c4",
-        "answerUci": "c2c4",
-        "orientation": "white",
-        "lastMove": "d7d5",
-        "prompt": "You are White in the Catalan Opening. What is the book move?",
-        "extra": "1. d4 d5 2. **c4**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
       "key": "l-nf6",
       "model": "chess",
       "fields": {
@@ -51,25 +35,9 @@
         "answer": "c4",
         "answerUci": "c2c4",
         "orientation": "white",
-        "lastMove": "g8f6",
         "prompt": "You are White in the Catalan Opening. What is the book move?",
-        "extra": "1. d4 Nf6 2. **c4**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pppp1ppp/4p3/8/3P4/8/PPP1PPPP/RNBQKBNR w KQkq - 0 2",
-        "answer": "c4",
-        "answerUci": "c2c4",
-        "orientation": "white",
-        "lastMove": "e7e6",
-        "prompt": "You are White in the Catalan Opening. What is the book move?",
-        "extra": "1. d4 e6 2. **c4**"
+        "extra": "1. d4 Nf6 2. **c4** [Black plays Nf6 here 23% of the time]",
+        "lastMove": "g8f6"
       },
       "tags": [
         "chess::line"
@@ -83,57 +51,9 @@
         "answer": "g3",
         "answerUci": "g2g3",
         "orientation": "white",
-        "lastMove": "e7e6",
         "prompt": "You are White in the Catalan Opening. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. **g3** (Catalan Opening, E00)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d5-c6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR w KQkq - 0 3",
-        "answer": "Nf3",
-        "answerUci": "g1f3",
-        "orientation": "white",
-        "lastMove": "c7c6",
-        "prompt": "You are White in the Catalan Opening. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. **Nf3**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf6-e6-be7",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/ppppbppp/4pn2/8/2PP4/6P1/PP2PP1P/RNBQKBNR w KQkq - 1 4",
-        "answer": "Bg2",
-        "answerUci": "f1g2",
-        "orientation": "white",
-        "lastMove": "f8e7",
-        "prompt": "You are White in the Catalan Opening. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. g3 Be7 4. **Bg2**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d5-c6-nf6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp2pppp/2p2n2/3p4/2PP4/5N2/PP2PPPP/RNBQKB1R w KQkq - 2 4",
-        "answer": "Qc2",
-        "answerUci": "d1c2",
-        "orientation": "white",
-        "lastMove": "g8f6",
-        "prompt": "You are White in the Catalan Opening. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. **Qc2**"
+        "extra": "1. d4 Nf6 2. c4 e6 3. **g3** (Catalan Opening, E00) [Black plays e6 here 35% of the time]",
+        "lastMove": "e7e6"
       },
       "tags": [
         "chess::line"
@@ -147,9 +67,41 @@
         "answer": "Bg2",
         "answerUci": "f1g2",
         "orientation": "white",
-        "lastMove": "d7d5",
         "prompt": "You are White in the Catalan Opening. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. **Bg2** (Open Defense, E01)"
+        "extra": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. **Bg2** (Open Defense, E01) [Black plays d5 here 58% of the time]",
+        "lastMove": "d7d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-e6-bb4",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqk2r/pppp1ppp/4pn2/8/1bPP4/6P1/PP2PP1P/RNBQKBNR w KQkq - 1 4",
+        "answer": "Bd2",
+        "answerUci": "c1d2",
+        "orientation": "white",
+        "prompt": "You are White in the Catalan Opening. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 e6 3. g3 Bb4+ 4. **Bd2** [Black plays Bb4+ here 24% of the time]",
+        "lastMove": "f8b4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-nf6-e6-c5",
+      "model": "chess",
+      "fields": {
+        "fen": "rnbqkb1r/pp1p1ppp/4pn2/2p5/2PP4/6P1/PP2PP1P/RNBQKBNR w KQkq - 0 4",
+        "answer": "d5",
+        "answerUci": "d4d5",
+        "orientation": "white",
+        "prompt": "You are White in the Catalan Opening. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 e6 3. g3 c5 4. **d5** [Black plays c5 here 12% of the time]",
+        "lastMove": "c7c5"
       },
       "tags": [
         "chess::line"
@@ -163,73 +115,25 @@
         "answer": "Nf3",
         "answerUci": "g1f3",
         "orientation": "white",
-        "lastMove": "f8e7",
-        "prompt": "You are White in the Open Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. **Nf3** (Closed, E06)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf6-e6-d5-c5",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp3ppp/4pn2/2pp4/2PP4/6P1/PP2PPBP/RNBQK1NR w KQkq - 0 5",
-        "answer": "Nf3",
-        "answerUci": "g1f3",
-        "orientation": "white",
-        "lastMove": "c7c5",
-        "prompt": "You are White in the Open Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 c5 5. **Nf3**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf6-e6-d5-dxc4",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/ppp2ppp/4pn2/8/2pP4/6P1/PP2PPBP/RNBQK1NR w KQkq - 0 5",
-        "answer": "Nf3",
-        "answerUci": "g1f3",
-        "orientation": "white",
-        "lastMove": "d5c4",
-        "prompt": "You are White in the Open Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 dxc4 5. **Nf3** (Open Defense, E04)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d5-c6-nf6-e6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP4/5N2/PPQ1PPPP/RNB1KB1R w KQkq - 0 5",
-        "answer": "Nbd2",
-        "answerUci": "b1d2",
-        "orientation": "white",
-        "lastMove": "e7e6",
         "prompt": "You are White in the Catalan Opening. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Qc2 e6 5. **Nbd2**"
+        "extra": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. **Nf3** (Closed, E06) [Black plays Be7 here 40% of the time]",
+        "lastMove": "f8e7"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-nf6-e6-d5-dxc4-nc6",
+      "key": "l-nf6-e6-d5-c6",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkb1r/ppp2ppp/2n1pn2/8/2pP4/5NP1/PP2PPBP/RNBQK2R w KQkq - 2 6",
-        "answer": "Qa4",
-        "answerUci": "d1a4",
+        "fen": "rnbqkb1r/pp3ppp/2p1pn2/3p4/2PP4/6P1/PP2PPBP/RNBQK1NR w KQkq - 0 5",
+        "answer": "Nf3",
+        "answerUci": "g1f3",
         "orientation": "white",
-        "lastMove": "b8c6",
-        "prompt": "You are White in the Open Defense. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 dxc4 5. Nf3 Nc6 6. **Qa4**"
+        "prompt": "You are White in the Catalan Opening. What is the book move?",
+        "extra": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 c6 5. **Nf3** [Black plays c6 here 36% of the time]",
+        "lastMove": "c7c6"
       },
       "tags": [
         "chess::line"
@@ -243,57 +147,25 @@
         "answer": "O-O",
         "answerUci": "e1g1",
         "orientation": "white",
-        "lastMove": "e8g8",
-        "prompt": "You are White in the Closed. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. **O-O**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d5-c6-nf6-e6-be7",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbqk2r/pp2bppp/2p1pn2/3p4/2PP4/5N2/PPQNPPPP/R1B1KB1R w KQkq - 2 6",
-        "answer": "g3",
-        "answerUci": "g2g3",
-        "orientation": "white",
-        "lastMove": "f8e7",
         "prompt": "You are White in the Catalan Opening. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Qc2 e6 5. Nbd2 Be7 6. **g3**"
+        "extra": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. **O-O** [Black plays O-O here 94% of the time]",
+        "lastMove": "e8g8"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-nf6-e6-d5-be7-oo-nbd7",
+      "key": "l-nf6-e6-d5-c6-be7",
       "model": "chess",
       "fields": {
-        "fen": "r1bq1rk1/pppnbppp/4pn2/3p4/2PP4/5NP1/PP2PPBP/RNBQ1RK1 w - - 6 7",
-        "answer": "Qc2",
-        "answerUci": "d1c2",
+        "fen": "rnbqk2r/pp2bppp/2p1pn2/3p4/2PP4/5NP1/PP2PPBP/RNBQK2R w KQkq - 2 6",
+        "answer": "O-O",
+        "answerUci": "e1g1",
         "orientation": "white",
-        "lastMove": "b8d7",
-        "prompt": "You are White in the Closed. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. O-O Nbd7 7. **Qc2** (Closed, E08)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d5-c6-nf6-e6-be7-nbd7",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk2r/pp1nbppp/2p1pn2/3p4/2PP4/5NP1/PPQNPP1P/R1B1KB1R w KQkq - 1 7",
-        "answer": "Bg2",
-        "answerUci": "f1g2",
-        "orientation": "white",
-        "lastMove": "b8d7",
         "prompt": "You are White in the Catalan Opening. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Qc2 e6 5. Nbd2 Be7 6. g3 Nbd7 7. **Bg2**"
+        "extra": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 c6 5. Nf3 Be7 6. **O-O** [Black plays Be7 here 68% of the time]",
+        "lastMove": "f8e7"
       },
       "tags": [
         "chess::line"
@@ -307,73 +179,9 @@
         "answer": "Qc2",
         "answerUci": "d1c2",
         "orientation": "white",
-        "lastMove": "c7c6",
-        "prompt": "You are White in the Closed. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. O-O c6 7. **Qc2**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf6-e6-d5-be7-oo-nbd7-c6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/pp1nbppp/2p1pn2/3p4/2PP4/5NP1/PPQ1PPBP/RNB2RK1 w - - 0 8",
-        "answer": "b3",
-        "answerUci": "b2b3",
-        "orientation": "white",
-        "lastMove": "c7c6",
-        "prompt": "You are White in the Closed. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. O-O Nbd7 7. Qc2 c6 8. **b3** (Closed, E08)"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf6-e6-d5-be7-oo-c6-b6",
-      "model": "chess",
-      "fields": {
-        "fen": "rnbq1rk1/p3bppp/1pp1pn2/3p4/2PP4/5NP1/PPQ1PPBP/RNB2RK1 w - - 0 8",
-        "answer": "Nbd2",
-        "answerUci": "b1d2",
-        "orientation": "white",
-        "lastMove": "b7b6",
-        "prompt": "You are White in the Closed. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. O-O c6 7. Qc2 b6 8. **Nbd2**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-d5-c6-nf6-e6-be7-nbd7-oo",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bq1rk1/pp1nbppp/2p1pn2/3p4/2PP4/5NP1/PPQNPPBP/R1B1K2R w KQ - 3 8",
-        "answer": "O-O",
-        "answerUci": "e1g1",
-        "orientation": "white",
-        "lastMove": "e8g8",
         "prompt": "You are White in the Catalan Opening. What is the book move?",
-        "extra": "1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Qc2 e6 5. Nbd2 Be7 6. g3 Nbd7 7. Bg2 O-O 8. **O-O**"
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-nf6-e6-d5-be7-oo-c6-b6-bb7",
-      "model": "chess",
-      "fields": {
-        "fen": "rn1q1rk1/pb2bppp/1pp1pn2/3p4/2PP4/5NP1/PPQNPPBP/R1B2RK1 w - - 2 9",
-        "answer": "e4",
-        "answerUci": "e2e4",
-        "orientation": "white",
-        "lastMove": "c8b7",
-        "prompt": "You are White in the Closed. What is the book move?",
-        "extra": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. O-O c6 7. Qc2 b6 8. Nbd2 Bb7 9. **e4**"
+        "extra": "1. d4 Nf6 2. c4 e6 3. g3 d5 4. Bg2 Be7 5. Nf3 O-O 6. O-O c6 7. **Qc2** [Black plays c6 here 35% of the time]",
+        "lastMove": "c7c6"
       },
       "tags": [
         "chess::line"

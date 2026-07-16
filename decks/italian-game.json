@@ -1,8 +1,8 @@
 {
   "key": "italian-game",
-  "version": 2,
-  "name": "The Italian Game",
-  "description": "Line trainer for the Italian Game, generated from the canonical opening database (lichess-org/chess-openings): 28 positions drilled book-move by book-move from White's side across 87 named variations. Cards are introduced shallow-to-deep, shuffled across lines within each depth; the back gives the line so far, the variation name and ECO code.",
+  "version": 3,
+  "name": "The Italian Game as White",
+  "description": "A White repertoire for the Italian Game, drilled one position at a time: every card is a position with exactly one book move to find. Built from 3,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 72 positions.",
   "category": "Chess",
   "topics": [
     "chess",
@@ -34,7 +34,7 @@
         "answerUci": "e2e4",
         "orientation": "white",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. **e4**. Claims the center and opens the f1 bishop's diagonal, the piece the whole opening is built around."
+        "extra": "1. **e4**"
       },
       "tags": [
         "chess::line"
@@ -48,9 +48,9 @@
         "answer": "Nf3",
         "answerUci": "g1f3",
         "orientation": "white",
-        "lastMove": "e7e5",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. **Nf3**. Develops with a threat: e5 must be defended before Black does anything else."
+        "extra": "1. e4 e5 2. **Nf3** [Black plays e5 here 34% of the time]",
+        "lastMove": "e7e5"
       },
       "tags": [
         "chess::line"
@@ -64,41 +64,9 @@
         "answer": "Bc4",
         "answerUci": "f1c4",
         "orientation": "white",
-        "lastMove": "b8c6",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. **Bc4** (Italian Game, C50). The Italian bishop: it points at f7, the one square only the king defends."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-be7",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk1nr/ppppbppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
-        "answer": "d4",
-        "answerUci": "d2d4",
-        "orientation": "white",
-        "lastMove": "f8e7",
-        "prompt": "You are White in the Hungarian Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. **d4**. Against the passive Hungarian setup, seize the center at once; e5 comes under real pressure."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-nf6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
-        "answer": "d4",
-        "answerUci": "d2d4",
-        "orientation": "white",
-        "lastMove": "g8f6",
-        "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. **d4**. Meets the counterattack with a center strike: after ...exd4, White's lead in development is worth more than the pawn."
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. **Bc4** (Italian Game, C50) [Black plays Nc6 here 67% of the time]",
+        "lastMove": "b8c6"
       },
       "tags": [
         "chess::line"
@@ -112,73 +80,73 @@
         "answer": "c3",
         "answerUci": "c2c3",
         "orientation": "white",
-        "lastMove": "f8c5",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. **c3** (Classical Variation, C53). The Classical plan: c3 readies d4 to build the big center, so the knight's square goes to the pawn."
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. **c3** (Classical Variation, C53) [Black plays Bc5 here 36% of the time]",
+        "lastMove": "f8c5"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nc6-bc5-d6",
+      "key": "l-e5-nc6-nf6",
       "model": "chess",
       "fields": {
-        "fen": "r1bqk1nr/ppp2ppp/2np4/2b1p3/2B1P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq - 0 5",
+        "fen": "r1bqkb1r/pppp1ppp/2n2n2/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+        "answer": "d3",
+        "answerUci": "d2d3",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. **d3** (Modern Bishop's Opening, C55) [Black plays Nf6 here 33% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-h6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1pp1/2n4p/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
         "answer": "d4",
         "answerUci": "d2d4",
         "orientation": "white",
-        "lastMove": "d7d6",
-        "prompt": "You are White in the Classical Variation. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6 5. **d4**. The prepared break, right on time: ...d6 was slow, so White takes the center now."
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. **d4** [Black plays h6 here 10% of the time]",
+        "lastMove": "h7h6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nc6-be7-exd4",
+      "key": "l-e5-nc6-d6",
       "model": "chess",
       "fields": {
-        "fen": "r1bqk1nr/ppppbppp/2n5/8/2BpP3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
-        "answer": "c3",
-        "answerUci": "c2c3",
-        "orientation": "white",
-        "lastMove": "e5d4",
-        "prompt": "You are White in the Hungarian Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4 5. **c3**. Offers the pawn back to rebuild the full center; grabbing again hands White a huge lead in development."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-bc5-qe7",
-      "model": "chess",
-      "fields": {
-        "fen": "r1b1k1nr/ppppqppp/2n5/2b1p3/2B1P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq - 1 5",
+        "fen": "r1bqkbnr/ppp2ppp/2np4/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 0 4",
         "answer": "d4",
         "answerUci": "d2d4",
         "orientation": "white",
-        "lastMove": "d8e7",
-        "prompt": "You are White in the Closed Variation. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Qe7 5. **d4**. Push through anyway: the queen props e5, but the bishop gets forced backwards and White gains the center for free."
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. **d4** [Black plays d6 here 7% of the time]",
+        "lastMove": "d7d6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nc6-nf6-exd4",
+      "key": "l-e5-nc6-be7",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkb1r/pppp1ppp/2n2n2/8/2BpP3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
-        "answer": "O-O",
-        "answerUci": "e1g1",
+        "fen": "r1bqk1nr/ppppbppp/2n5/4p3/2B1P3/5N2/PPPP1PPP/RNBQK2R w KQkq - 4 4",
+        "answer": "d4",
+        "answerUci": "d2d4",
         "orientation": "white",
-        "lastMove": "e5d4",
         "prompt": "You are White in the Italian Game. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. **O-O** (Scotch Gambit, C56). The gambit continuation: king safe, Re1 next, and every open line points at Black's uncastled king."
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. **d4** [Black plays Be7 here 5% of the time]",
+        "lastMove": "f8e7"
       },
       "tags": [
         "chess::line"
@@ -192,25 +160,201 @@
         "answer": "d4",
         "answerUci": "d2d4",
         "orientation": "white",
-        "lastMove": "g8f6",
-        "prompt": "You are White in the Classical Variation. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. **d4** (Center Attack, C54). The point of c3: the full pawn center arrives while both White pieces still aim kingside."
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. **d4** (Center Attack, C54) [Black plays Nf6 here 53% of the time]",
+        "lastMove": "g8f6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nc6-nf6-exd4-nxe4",
+      "key": "l-e5-nc6-nf6-bc5",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkb1r/pppp1ppp/2n5/8/2Bpn3/5N2/PPP2PPP/RNBQ1RK1 w kq - 0 6",
-        "answer": "Re1",
-        "answerUci": "f1e1",
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 1 5",
+        "answer": "c3",
+        "answerUci": "c2c3",
         "orientation": "white",
-        "lastMove": "f6e4",
-        "prompt": "You are White in the Double Gambit Accepted. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Nxe4 6. **Re1**. Develops with a pin on the loose knight; Black's only sound try is ...d5, and White keeps the initiative."
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 5. **c3** (Giuoco Pianissimo, C54) [Black plays Bc5 here 57% of the time]",
+        "lastMove": "f8c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppp2ppp/2np4/2b1p3/2B1P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6 5. **d4** [Black plays d6 here 32% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-h6-exd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1pp1/2n4p/8/2BpP3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "Nxd4",
+        "answerUci": "f3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 exd4 5. **Nxd4** [Black plays exd4 here 86% of the time]",
+        "lastMove": "e5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-be7",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppppbppp/2n2n2/4p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 1 5",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Be7 5. **O-O** [Black plays Be7 here 16% of the time]",
+        "lastMove": "f8e7"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-h6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/pppp1pp1/2n2n1p/4p3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 h6 5. **O-O** [Black plays h6 here 14% of the time]",
+        "lastMove": "h7h6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-exd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/ppp2ppp/2np4/8/2BpP3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "Nxd4",
+        "answerUci": "f3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. d4 exd4 5. **Nxd4** [Black plays exd4 here 60% of the time]",
+        "lastMove": "e5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-be7-exd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppppbppp/2n5/8/2BpP3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4 5. **c3** [Black plays exd4 here 71% of the time]",
+        "lastMove": "e5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-bg4",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/ppp2ppp/2np4/4p3/2BPP1b1/5N2/PPP2PPP/RNBQK2R w KQkq - 1 5",
+        "answer": "dxe5",
+        "answerUci": "d4e5",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. d4 Bg4 5. **dxe5** [Black plays Bg4 here 36% of the time]",
+        "lastMove": "c8g4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/2n2n2/3pp3/2B1P3/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "exd5",
+        "answerUci": "e4d5",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 d5 5. **exd5** [Black plays d5 here 7% of the time]",
+        "lastMove": "d7d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-be7-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppp1bppp/2np4/4p3/2BPP3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "dxe5",
+        "answerUci": "d4e5",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 d6 5. **dxe5** [Black plays d6 here 29% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-h6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1pp1/2n4p/2b1p3/2B1P3/2P2N2/PP1P1PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "d4",
+        "answerUci": "d2d4",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 h6 5. **d4** [Black plays h6 here 4% of the time]",
+        "lastMove": "h7h6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-h6-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/ppp2pp1/2np3p/4p3/2BPP3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 5",
+        "answer": "dxe5",
+        "answerUci": "d4e5",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 d6 5. **dxe5** [Black plays d6 here 7% of the time]",
+        "lastMove": "d7d6"
       },
       "tags": [
         "chess::line"
@@ -224,25 +368,9 @@
         "answer": "cxd4",
         "answerUci": "c3d4",
         "orientation": "white",
-        "lastMove": "e5d4",
-        "prompt": "You are White in the Center Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. **cxd4** (Traditional Line, C54). Recaptures into the classical big center; Black's ...Bb4+ is met by the Greco gambit 7. Nc3."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-be7-exd4-nf6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk2r/ppppbppp/2n2n2/8/2BpP3/2P2N2/PP3PPP/RNBQK2R w KQkq - 1 6",
-        "answer": "e5",
-        "answerUci": "e4e5",
-        "orientation": "white",
-        "lastMove": "g8f6",
-        "prompt": "You are White in the Hungarian Defense. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4 5. c3 Nf6 6. **e5**. Gains space with tempo on the knight; White's center and development dominate."
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. **cxd4** (Traditional Line, C54) [Black plays exd4 here 99% of the time]",
+        "lastMove": "e5d4"
       },
       "tags": [
         "chess::line"
@@ -256,41 +384,361 @@
         "answer": "cxd4",
         "answerUci": "c3d4",
         "orientation": "white",
-        "lastMove": "e5d4",
-        "prompt": "You are White in the Classical Variation. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6 5. d4 exd4 6. **cxd4**. Recapture toward the center: the d4/e4 duo and the freed c1 bishop are the Classical's whole point."
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6 5. d4 exd4 6. **cxd4** [Black plays exd4 here 95% of the time]",
+        "lastMove": "e5d4"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nc6-bc5-qe7-bb6",
+      "key": "l-e5-nc6-nf6-bc5-d6",
       "model": "chess",
       "fields": {
-        "fen": "r1b1k1nr/ppppqppp/1bn5/4p3/2BPP3/2P2N2/PP3PPP/RNBQK2R w KQkq - 1 6",
-        "answer": "d5",
-        "answerUci": "d4d5",
+        "fen": "r1bqk2r/ppp2ppp/2np1n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "O-O",
+        "answerUci": "e1g1",
         "orientation": "white",
-        "lastMove": "c5b6",
-        "prompt": "You are White in the Center Holding Variation. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Qe7 5. d4 Bb6 6. **d5**. Advances with tempo on the knight; Black's early queen and retreating bishop handed White the center and the clock."
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 5. c3 d6 6. **O-O** [Black plays d6 here 41% of the time]",
+        "lastMove": "d7d6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nc6-bc5-qe7-bb6-nb8",
+      "key": "l-e5-nc6-nf6-bc5-oo",
       "model": "chess",
       "fields": {
-        "fen": "rnb1k1nr/ppppqppp/1b6/3Pp3/2B1P3/2P2N2/PP3PPP/RNBQK2R w KQkq - 1 7",
-        "answer": "d6",
-        "answerUci": "d5d6",
+        "fen": "r1bq1rk1/pppp1ppp/2n2n2/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQK2R w KQ - 1 6",
+        "answer": "O-O",
+        "answerUci": "e1g1",
         "orientation": "white",
-        "lastMove": "c6b8",
-        "prompt": "You are White in the Center Holding Variation. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Qe7 5. d4 Bb6 6. d5 Nb8 7. **d6** (Eisinger Variation, C53). Rams the queen: however Black deals with d6, his development is wrecked for a pawn."
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 5. c3 O-O 6. **O-O** [Black plays O-O here 25% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-h6-bc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1pp1/2n2n1p/2b1p3/2B1P3/3P1N2/PPP2PPP/RNBQ1RK1 w kq - 2 6",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 h6 5. O-O Bc5 6. **c3** (Giuoco Pianissimo, C54) [Black plays Bc5 here 82% of the time]",
+        "lastMove": "f8c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-be7-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppppbppp/2n2n2/4p3/2B1P3/3P1N2/PPP2PPP/RNBQ1RK1 w - - 3 6",
+        "answer": "c3",
+        "answerUci": "c2c3",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Be7 5. O-O O-O 6. **c3** [Black plays O-O here 75% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-h6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1pp1/2n2n1p/2b1p3/2B1P3/2PP1N2/PP3PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 5. c3 h6 6. **O-O** (Giuoco Pianissimo, C54) [Black plays h6 here 21% of the time]",
+        "lastMove": "h7h6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-h6-exd4-nxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1pp1/7p/8/2BnP3/8/PPP2PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "Qxd4",
+        "answerUci": "d1d4",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 exd4 5. Nxd4 Nxd4 6. **Qxd4** [Black plays Nxd4 here 46% of the time]",
+        "lastMove": "c6d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-bg4-nxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/ppp2ppp/3p4/4n3/2B1P1b1/5N2/PPP2PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "Be2",
+        "answerUci": "c4e2",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. d4 Bg4 5. dxe5 Nxe5 6. **Be2** [Black plays Nxe5 here 100% of the time]",
+        "lastMove": "c6e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nxd5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/2n5/3np3/2B5/3P1N2/PPP2PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 d5 5. exd5 Nxd5 6. **O-O** [Black plays Nxd5 here 100% of the time]",
+        "lastMove": "f6d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-exd4-nxd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/ppp2ppp/3p4/8/2BnP3/8/PPP2PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "Qxd4",
+        "answerUci": "d1d4",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. d4 exd4 5. Nxd4 Nxd4 6. **Qxd4** [Black plays Nxd4 here 55% of the time]",
+        "lastMove": "c6d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-be7-exd4-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppp1bppp/2np4/8/2BpP3/2P2N2/PP3PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "cxd4",
+        "answerUci": "c3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4 5. c3 d6 6. **cxd4** [Black plays d6 here 43% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-h6-exd4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1pp1/2n4p/2b5/2BpP3/2P2N2/PP3PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "cxd4",
+        "answerUci": "c3d4",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 h6 5. d4 exd4 6. **cxd4** [Black plays exd4 here 100% of the time]",
+        "lastMove": "e5d4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-be7-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp1bppp/2np1n2/4p3/2B1P3/3P1N2/PPP2PPP/RNBQ1RK1 w kq - 0 6",
+        "answer": "h3",
+        "answerUci": "h2h3",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Be7 5. O-O d6 6. **h3** [Black plays d6 here 25% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-be7-exd4-dxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppppbppp/2n5/8/2B1P3/2p2N2/PP3PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "Qd5",
+        "answerUci": "d1d5",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4 5. c3 dxc3 6. **Qd5** [Black plays dxc3 here 34% of the time]",
+        "lastMove": "d4c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-h6-exd4-bc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1pp1/2n4p/2b5/2BNP3/8/PPP2PPP/RNBQK2R w KQkq - 1 6",
+        "answer": "Nxc6",
+        "answerUci": "d4c6",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 exd4 5. Nxd4 Bc5 6. **Nxc6** [Black plays Bc5 here 15% of the time]",
+        "lastMove": "f8c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-h6-exd4-ne5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/pppp1pp1/7p/4n3/2BNP3/8/PPP2PPP/RNBQK2R w KQkq - 1 6",
+        "answer": "Bb3",
+        "answerUci": "c4b3",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 exd4 5. Nxd4 Ne5 6. **Bb3** [Black plays Ne5 here 14% of the time]",
+        "lastMove": "c6e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-be7-exd4-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppppbppp/2n2n2/8/2BpP3/2P2N2/PP3PPP/RNBQK2R w KQkq - 1 6",
+        "answer": "e5",
+        "answerUci": "e4e5",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4 5. c3 Nf6 6. **e5** [Black plays Nf6 here 23% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-exd4-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/2np1n2/8/2BNP3/8/PPP2PPP/RNBQK2R w KQkq - 1 6",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. d4 exd4 5. Nxd4 Nf6 6. **Nc3** [Black plays Nf6 here 21% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-be7-d6-dxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppp1bppp/2n5/4p3/2B1P3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "Qxd8",
+        "answerUci": "d1d8",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 d6 5. dxe5 dxe5 6. **Qxd8+** [Black plays dxe5 here 52% of the time]",
+        "lastMove": "d6e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-be7-d6-nxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppp1bppp/3p4/4n3/2B1P3/5N2/PPP2PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "Nxe5",
+        "answerUci": "f3e5",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 d6 5. dxe5 Nxe5 6. **Nxe5** [Black plays Nxe5 here 48% of the time]",
+        "lastMove": "c6e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-h6-exd4-qf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kbnr/pppp1pp1/2n2q1p/8/2BNP3/8/PPP2PPP/RNBQK2R w KQkq - 1 6",
+        "answer": "Nxc6",
+        "answerUci": "d4c6",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 exd4 5. Nxd4 Qf6 6. **Nxc6** [Black plays Qf6 here 8% of the time]",
+        "lastMove": "d8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-h6-exd4-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/ppp2pp1/2np3p/8/2BNP3/8/PPP2PPP/RNBQK2R w KQkq - 0 6",
+        "answer": "Nxc6",
+        "answerUci": "d4c6",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 exd4 5. Nxd4 d6 6. **Nxc6** [Black plays d6 here 8% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-exd4-ne5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/ppp2ppp/3p4/4n3/2BNP3/8/PPP2PPP/RNBQK2R w KQkq - 1 6",
+        "answer": "Bb3",
+        "answerUci": "c4b3",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. d4 exd4 5. Nxd4 Ne5 6. **Bb3** [Black plays Ne5 here 14% of the time]",
+        "lastMove": "c6e5"
       },
       "tags": [
         "chess::line"
@@ -304,41 +752,249 @@
         "answer": "Nc3",
         "answerUci": "b1c3",
         "orientation": "white",
-        "lastMove": "c5b4",
-        "prompt": "You are White in the Traditional Line. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. **Nc3**. The gambit: White offers e4 to finish development; accepting walks into the Moeller attack down the e-file."
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. **Nc3** (Greco's Attack, C54) [Black plays Bb4+ here 94% of the time]",
+        "lastMove": "c5b4"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nc6-nf6-exd4-nxe4-d5",
+      "key": "l-e5-nc6-bc5-d6-exd4-bb6",
       "model": "chess",
       "fields": {
-        "fen": "r1bqkb1r/ppp2ppp/2n5/3p4/2Bpn3/5N2/PPP2PPP/RNBQR1K1 w kq - 0 7",
-        "answer": "Bxd5",
-        "answerUci": "c4d5",
+        "fen": "r1bqk1nr/ppp2ppp/1bnp4/8/2BPP3/5N2/PP3PPP/RNBQK2R w KQkq - 1 7",
+        "answer": "O-O",
+        "answerUci": "e1g1",
         "orientation": "white",
-        "lastMove": "d7d5",
-        "prompt": "You are White in the Double Gambit Accepted. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Nxe4 6. Re1 d5 7. **Bxd5**. Capture first: after ...Qxd5, Nc3 gains the tempo that lets Nxe4 restore material with a lead."
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6 5. d4 exd4 6. cxd4 Bb6 7. **O-O** [Black plays Bb6 here 54% of the time]",
+        "lastMove": "c5b6"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nc6-nf6-exd4-nxe4-d5-qxd5",
+      "key": "l-e5-nc6-bc5-d6-exd4-bb4",
       "model": "chess",
       "fields": {
-        "fen": "r1b1kb1r/ppp2ppp/2n5/3q4/3pn3/5N2/PPP2PPP/RNBQR1K1 w kq - 0 8",
+        "fen": "r1bqk1nr/ppp2ppp/2np4/8/1bBPP3/5N2/PP3PPP/RNBQK2R w KQkq - 1 7",
         "answer": "Nc3",
         "answerUci": "b1c3",
         "orientation": "white",
-        "lastMove": "d8d5",
-        "prompt": "You are White in the Double Gambit Accepted. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Nxe4 6. Re1 d5 7. Bxd5 Qxd5 8. **Nc3** (Anderssen Attack, C56). Hits the queen while Re1's absolute pin freezes the e4 knight; White wins it back next move."
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6 5. d4 exd4 6. cxd4 Bb4+ 7. **Nc3** [Black plays Bb4+ here 46% of the time]",
+        "lastMove": "c5b4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-h6-exd4-nxd4-d6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkbnr/ppp2pp1/3p3p/8/2BQP3/8/PPP2PPP/RNB1K2R w KQkq - 0 7",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 d6 7. **Nc3** [Black plays d6 here 52% of the time]",
+        "lastMove": "d7d6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-be7-exd4-d6-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp1bppp/2np1n2/8/2BPP3/5N2/PP3PPP/RNBQK2R w KQkq - 1 7",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4 5. c3 d6 6. cxd4 Nf6 7. **Nc3** [Black plays Nf6 here 100% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-be7-exd4-dxc3-nh6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppppbppp/2n4n/3Q4/2B1P3/2p2N2/PP3PPP/RNB1K2R w KQkq - 2 7",
+        "answer": "Bxh6",
+        "answerUci": "c1h6",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 exd4 5. c3 dxc3 6. Qd5 Nh6 7. **Bxh6** [Black plays Nh6 here 100% of the time]",
+        "lastMove": "g8h6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-h6-exd4-bc5-bxc6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/p1pp1pp1/2p4p/2b5/2B1P3/8/PPP2PPP/RNBQK2R w KQkq - 0 7",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 exd4 5. Nxd4 Bc5 6. Nxc6 bxc6 7. **O-O** [Black plays bxc6 here 100% of the time]",
+        "lastMove": "b7c6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-exd4-nxd4-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/3p1n2/8/2BQP3/8/PPP2PPP/RNB1K2R w KQkq - 1 7",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 Nf6 7. **Nc3** [Black plays Nf6 here 56% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-bc5-oo-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp2ppp/2n2n2/2bpp3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 w - - 0 7",
+        "answer": "exd5",
+        "answerUci": "e4d5",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Bc5 5. c3 O-O 6. O-O d5 7. **exd5** [Black plays d5 here 26% of the time]",
+        "lastMove": "d7d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-be7-oo-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/ppp1bppp/2n2n2/3pp3/2B1P3/2PP1N2/PP3PPP/RNBQ1RK1 w - - 0 7",
+        "answer": "exd5",
+        "answerUci": "e4d5",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 Be7 5. O-O O-O 6. c3 d5 7. **exd5** [Black plays d5 here 30% of the time]",
+        "lastMove": "d7d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-h6-exd4-bb4",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/pppp1pp1/2n4p/8/1bBPP3/5N2/PP3PPP/RNBQK2R w KQkq - 1 7",
+        "answer": "Nc3",
+        "answerUci": "b1c3",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 h6 5. d4 exd4 6. cxd4 Bb4+ 7. **Nc3** [Black plays Bb4+ here 61% of the time]",
+        "lastMove": "c5b4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-h6-exd4-nxd4-qf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1b1kbnr/pppp1pp1/5q1p/8/2BQP3/8/PPP2PPP/RNB1K2R w KQkq - 1 7",
+        "answer": "e5",
+        "answerUci": "e4e5",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 h6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 Qf6 7. **e5** [Black plays Qf6 here 21% of the time]",
+        "lastMove": "d8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-be7-d6-nxe5-dxe5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppp1bppp/8/4p3/2B1P3/8/PPP2PPP/RNBQK2R w KQkq - 0 7",
+        "answer": "Qxd8",
+        "answerUci": "d1d8",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Be7 4. d4 d6 5. dxe5 Nxe5 6. Nxe5 dxe5 7. **Qxd8+** [Black plays dxe5 here 100% of the time]",
+        "lastMove": "d6e5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-d6-exd4-nxd4-be6",
+      "model": "chess",
+      "fields": {
+        "fen": "r2qkbnr/ppp2ppp/3pb3/8/2BQP3/8/PPP2PPP/RNB1K2R w KQkq - 1 7",
+        "answer": "Bxe6",
+        "answerUci": "c4e6",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 d6 4. d4 exd4 5. Nxd4 Nxd4 6. Qxd4 Be6 7. **Bxe6** [Black plays Be6 here 29% of the time]",
+        "lastMove": "c8e6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nxd5-bc5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2ppp/2n5/2bnp3/2B5/3P1N2/PPP2PPP/RNBQ1RK1 w kq - 2 7",
+        "answer": "Re1",
+        "answerUci": "f1e1",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 d5 5. exd5 Nxd5 6. O-O Bc5 7. **Re1** [Black plays Bc5 here 22% of the time]",
+        "lastMove": "f8c5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-nf6-d5-nxd5-nb6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqkb1r/ppp2ppp/1nn5/4p3/2B5/3P1N2/PPP2PPP/RNBQ1RK1 w kq - 2 7",
+        "answer": "Bb3",
+        "answerUci": "c4b3",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d3 d5 5. exd5 Nxd5 6. O-O Nb6 7. **Bb3** [Black plays Nb6 here 17% of the time]",
+        "lastMove": "d5b6"
       },
       "tags": [
         "chess::line"
@@ -352,25 +1008,105 @@
         "answer": "O-O",
         "answerUci": "e1g1",
         "orientation": "white",
-        "lastMove": "f6e4",
-        "prompt": "You are White in the Traditional Line. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. **O-O**. Safety before recapture: d5 and Re1 are coming, and the e4 knight will not survive the initiative."
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. **O-O** [Black plays Nxe4 here 68% of the time]",
+        "lastMove": "f6e4"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nc6-nf6-exd4-nxe4-d5-qxd5-qa5",
+      "key": "l-e5-nc6-bc5-d6-exd4-bb4-bg4",
       "model": "chess",
       "fields": {
-        "fen": "r1b1kb1r/ppp2ppp/2n5/q7/3pn3/2N2N2/PPP2PPP/R1BQR1K1 w kq - 2 9",
-        "answer": "Nxe4",
-        "answerUci": "c3e4",
+        "fen": "r2qk1nr/ppp2ppp/2np4/8/1bBPP1b1/2N2N2/PP3PPP/R1BQK2R w KQkq - 3 8",
+        "answer": "O-O",
+        "answerUci": "e1g1",
         "orientation": "white",
-        "lastMove": "d5a5",
-        "prompt": "You are White in the Anderssen Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Nxe4 6. Re1 d5 7. Bxd5 Qxd5 8. Nc3 Qa5 9. **Nxe4**. Material back, initiative kept: White's pieces all point at the naked center files."
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Bg4 8. **O-O** [Black plays Bg4 here 43% of the time]",
+        "lastMove": "c8g4"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nf6-exd4-bb4-oo",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bq1rk1/pppp1ppp/2n2n2/8/1bBPP3/2N2N2/PP3PPP/R1BQK2R w KQ - 3 8",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 O-O 8. **O-O** [Black plays O-O here 11% of the time]",
+        "lastMove": "e8g8"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nf6-exd4-bb4-bxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/pppp1ppp/2n2n2/8/2BPP3/2b2N2/PP3PPP/R1BQK2R w KQkq - 0 8",
+        "answer": "bxc3",
+        "answerUci": "b2c3",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Bxc3+ 8. **bxc3** [Black plays Bxc3+ here 9% of the time]",
+        "lastMove": "b4c3"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-nf6-exd4-bb4-d5",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2ppp/2n2n2/3p4/1bBPP3/2N2N2/PP3PPP/R1BQK2R w KQkq - 0 8",
+        "answer": "exd5",
+        "answerUci": "e4d5",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 d5 8. **exd5** [Black plays d5 here 6% of the time]",
+        "lastMove": "d7d5"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-d6-exd4-bb4-nf6",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk2r/ppp2ppp/2np1n2/8/1bBPP3/2N2N2/PP3PPP/R1BQK2R w KQkq - 3 8",
+        "answer": "O-O",
+        "answerUci": "e1g1",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nf6 8. **O-O** [Black plays Nf6 here 22% of the time]",
+        "lastMove": "g8f6"
+      },
+      "tags": [
+        "chess::line"
+      ]
+    },
+    {
+      "key": "l-e5-nc6-bc5-d6-exd4-bb4-bxc3",
+      "model": "chess",
+      "fields": {
+        "fen": "r1bqk1nr/ppp2ppp/2np4/8/2BPP3/2b2N2/PP3PPP/R1BQK2R w KQkq - 0 8",
+        "answer": "bxc3",
+        "answerUci": "b2c3",
+        "orientation": "white",
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 d6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Bxc3+ 8. **bxc3** [Black plays Bxc3+ here 20% of the time]",
+        "lastMove": "b4c3"
       },
       "tags": [
         "chess::line"
@@ -381,92 +1117,60 @@
       "model": "chess",
       "fields": {
         "fen": "r1bqk2r/pppp1ppp/2n5/8/2BPn3/2b2N2/PP3PPP/R1BQ1RK1 w kq - 0 9",
-        "answer": "d5",
-        "answerUci": "d4d5",
+        "answer": "bxc3",
+        "answerUci": "b2c3",
         "orientation": "white",
-        "lastMove": "b4c3",
-        "prompt": "You are White in the Main Line. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. **d5** (Moeller-Therkatz Attack, C54). The famous zwischenzug: d5 hits the knight before recapturing, and the pinned e4 knight stays doomed."
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. **bxc3** [Black plays Bxc3 here 62% of the time]",
+        "lastMove": "b4c3"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nc6-bc5-nf6-exd4-bb4-nxe4-bxc3-bf6",
+      "key": "l-e5-nc6-bc5-nf6-exd4-bb4-nxe4-nxc3",
       "model": "chess",
       "fields": {
-        "fen": "r1bqk2r/pppp1ppp/2n2b2/3P4/2B1n3/5N2/PP3PPP/R1BQ1RK1 w kq - 1 10",
-        "answer": "Re1",
-        "answerUci": "f1e1",
+        "fen": "r1bqk2r/pppp1ppp/2n5/8/1bBP4/2n2N2/PP3PPP/R1BQ1RK1 w kq - 0 9",
+        "answer": "bxc3",
+        "answerUci": "b2c3",
         "orientation": "white",
-        "lastMove": "c3f6",
-        "prompt": "You are White in the Moeller-Therkatz Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. d5 Bf6 10. **Re1**. Now the pin: the e4 knight is trapped mid-board, and Black gives it back with ...Ne7 just to survive."
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 9. **bxc3** [Black plays Nxc3 here 38% of the time]",
+        "lastMove": "e4c3"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nc6-nf6-exd4-nxe4-d5-qxd5-qa5-be6",
+      "key": "l-e5-nc6-bc5-nf6-exd4-bb4-nxe4-bxc3-d5",
       "model": "chess",
       "fields": {
-        "fen": "r3kb1r/ppp2ppp/2n1b3/q7/3pN3/5N2/PPP2PPP/R1BQR1K1 w kq - 1 10",
-        "answer": "Bd2",
-        "answerUci": "c1d2",
+        "fen": "r1bqk2r/ppp2ppp/2n5/3p4/2BPn3/2P2N2/P4PPP/R1BQ1RK1 w kq - 0 10",
+        "answer": "Ba3",
+        "answerUci": "c1a3",
         "orientation": "white",
-        "lastMove": "c8e6",
-        "prompt": "You are White in the Anderssen Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Nxe4 6. Re1 d5 7. Bxd5 Qxd5 8. Nc3 Qa5 9. Nxe4 Be6 10. **Bd2**. Yet another tempo on the queen; White's whole army develops on Black's clock."
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. bxc3 d5 10. **Ba3** (Steinitz Variation, C54) [Black plays d5 here 79% of the time]",
+        "lastMove": "d7d5"
       },
       "tags": [
         "chess::line"
       ]
     },
     {
-      "key": "l-e5-nc6-nf6-exd4-nxe4-d5-qxd5-qa5-be6-qd5",
+      "key": "l-e5-nc6-bc5-nf6-exd4-bb4-nxe4-nxc3-bxc3",
       "model": "chess",
       "fields": {
-        "fen": "r3kb1r/ppp2ppp/2n1b3/3q4/3pN3/5N2/PPPB1PPP/R2QR1K1 w kq - 3 11",
-        "answer": "Bg5",
-        "answerUci": "d2g5",
+        "fen": "r1bqk2r/pppp1ppp/2n5/8/2BP4/2b2N2/P4PPP/R1BQ1RK1 w kq - 0 10",
+        "answer": "Ba3",
+        "answerUci": "c1a3",
         "orientation": "white",
-        "lastMove": "a5d5",
-        "prompt": "You are White in the Anderssen Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Nf6 4. d4 exd4 5. O-O Nxe4 6. Re1 d5 7. Bxd5 Qxd5 8. Nc3 Qa5 9. Nxe4 Be6 10. Bd2 Qd5 11. **Bg5** (Main Line, C56). Eyes the dark squares around the stuck king; Black's extra pawn means nothing while undeveloped."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-bc5-nf6-exd4-bb4-nxe4-bxc3-bf6-ne7",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk2r/ppppnppp/5b2/3P4/2B1n3/5N2/PP3PPP/R1BQR1K1 w kq - 3 11",
-        "answer": "Rxe4",
-        "answerUci": "e1e4",
-        "orientation": "white",
-        "lastMove": "c6e7",
-        "prompt": "You are White in the Moeller-Therkatz Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. d5 Bf6 10. Re1 Ne7 11. **Rxe4**. Takes the piece back, and the rook lifts into the attack at the same time."
-      },
-      "tags": [
-        "chess::line"
-      ]
-    },
-    {
-      "key": "l-e5-nc6-bc5-nf6-exd4-bb4-nxe4-bxc3-bf6-ne7-d6",
-      "model": "chess",
-      "fields": {
-        "fen": "r1bqk2r/ppp1nppp/3p1b2/3P4/2B1R3/5N2/PP3PPP/R1BQ2K1 w kq - 0 12",
-        "answer": "g4",
-        "answerUci": "g2g4",
-        "orientation": "white",
-        "lastMove": "d7d6",
-        "prompt": "You are White in the Moeller-Therkatz Attack. What is the book move?",
-        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Bxc3 9. d5 Bf6 10. Re1 Ne7 11. Rxe4 d6 12. **g4** (Moeller-Bayonet Attack, C54). The bayonet: g5 will evict the f6 bishop, the glue of Black's kingside, and the attack plays itself."
+        "prompt": "You are White in the Italian Game. What is the book move?",
+        "extra": "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5 4. c3 Nf6 5. d4 exd4 6. cxd4 Bb4+ 7. Nc3 Nxe4 8. O-O Nxc3 9. bxc3 Bxc3 10. **Ba3** (Aitken Variation, C54) [Black plays Bxc3 here 74% of the time]",
+        "lastMove": "b4c3"
       },
       "tags": [
         "chess::line"

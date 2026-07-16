@@ -42,7 +42,7 @@ Generated (never edit by hand; run `node scripts/build.mjs`):
 ## Note models
 
 `model` is one of `basic`, `basic_reversed`, `typed`, `cloze`, `sequence`,
-`occlusion`. Required fields per model:
+`occlusion`, `vocab`. Required fields per model:
 
 - basic / basic_reversed: `front`, `back` (optional `extra`, `frontImage` URL)
 - typed: `front`, `answer` (optional `extra`)
@@ -50,6 +50,11 @@ Generated (never edit by hand; run `node scripts/build.mjs`):
 - sequence: `title`, `items` (string array), `contextWindow` (number)
 - occlusion: `imageUri` (hosted URL), `imageWidth`, `imageHeight`, `mode`
   (`hideAll` or `hideOne`), `masks` (array of `{id, x, y, w, h}`)
+- vocab: `term` (target-language script), `reading` (pinyin/romanization),
+  `meaning` (optional `extra`, `recognitionOnly` boolean). Generates a
+  recognition card (term -> meaning, reading behind a tap-to-reveal hint)
+  plus a production card (meaning -> term) unless `recognitionOnly` is true.
+  Use for any language whose script the learner cannot yet read.
 
 Card text supports markdown-lite: **bold**, *italic*, `code`. Images must
 be https URLs (the app prefetches them for offline study); prefer public

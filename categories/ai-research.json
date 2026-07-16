@@ -7,7 +7,7 @@
       "key": "ai-alignment-research",
       "name": "AI Alignment Research Essentials",
       "description": "The working knowledge behind the Anthropic Fellows papers and the wider canon (Nanda, Evans, Lindsey): persona vectors and character work, introspection results, the mech interp toolkit and its self-correction arc, RLHF and AI control methods, headline findings worth citing from memory, and empirical research craft.",
-      "cardCount": 106,
+      "cardCount": 134,
       "topics": [
         "ai-safety",
         "interpretability",
@@ -27,6 +27,19 @@
         "probability"
       ],
       "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Standard_deviation_diagram.svg?width=640"
+    },
+    {
+      "key": "transformer-architecture",
+      "name": "The Transformer Architecture",
+      "description": "Attention Is All You Need, card by card: the encoder-decoder stacks, scaled dot-product and multi-head attention, positional encodings, and the training recipe (warmup schedule, label smoothing) behind the original Transformer. Sourced from the paper via The Annotated Transformer.",
+      "cardCount": 56,
+      "topics": [
+        "deep-learning",
+        "transformers",
+        "attention",
+        "nlp"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Transformer,_full_architecture.png?width=640"
     }
   ]
 }

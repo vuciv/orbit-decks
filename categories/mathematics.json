@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 2,
+  "key": "mathematics",
+  "name": "Mathematics",
+  "decks": [
+    {
+      "key": "linear-algebra-fundamentals",
+      "name": "Linear Algebra Fundamentals",
+      "description": "The core objects of linear algebra and what they mean geometrically: vectors, span and linear independence, basis and dimension, dot products, matrices as linear transformations, determinants, rank and null space, systems of equations, and eigenvalues and eigenvectors.",
+      "cardCount": 69,
+      "topics": [
+        "linear-algebra",
+        "mathematics",
+        "vectors",
+        "matrices"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Linear_subspaces_with_shading.svg?width=640"
+    },
+    {
+      "key": "probability-fundamentals",
+      "name": "Probability Theory Fundamentals",
+      "description": "The core of probability theory: sample spaces and the axioms, counting, conditional probability and Bayes' theorem, random variables, expectation and variance, the classic distributions, and the two big limit theorems, with the standard traps (base rate neglect, the gambler's fallacy, Monty Hall) called out.",
+      "cardCount": 70,
+      "topics": [
+        "probability",
+        "mathematics",
+        "statistics"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/6sided_dice.jpg?width=640"
+    }
+  ]
+}

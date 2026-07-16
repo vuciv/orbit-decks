@@ -1,0 +1,510 @@
+{
+  "key": "transformer-architecture",
+  "version": 1,
+  "name": "The Transformer Architecture",
+  "description": "Attention Is All You Need, card by card: the encoder-decoder stacks, scaled dot-product and multi-head attention, positional encodings, and the training recipe (warmup schedule, label smoothing) behind the original Transformer. Sourced from the paper via The Annotated Transformer.",
+  "category": "AI Research",
+  "topics": [
+    "deep-learning",
+    "transformers",
+    "attention",
+    "nlp"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Transformer,_full_architecture.png?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "encoder-decoder-structure",
+      "model": "basic",
+      "fields": {
+        "front": "What overall structure does the Transformer share with most competitive neural sequence transduction models?",
+        "back": "An encoder-decoder structure.",
+        "extra": "The encoder is the left half of the paper's Figure 1, the decoder the right half. Both are built from stacked self-attention and position-wise feed-forward layers."
+      },
+      "tags": ["transformer::architecture"]
+    },
+    {
+      "key": "encoder-role",
+      "model": "basic",
+      "fields": {
+        "front": "In the Transformer, what does the encoder produce from an input sequence of symbols (x1, ..., xn)?",
+        "back": "A sequence of continuous representations z = (z1, ..., zn).",
+        "extra": "The decoder then generates the output sequence conditioned on z."
+      },
+      "tags": ["transformer::architecture"]
+    },
+    {
+      "key": "decoder-role",
+      "model": "basic",
+      "fields": {
+        "front": "Given the encoder's representations z, how does the decoder generate the output sequence?",
+        "back": "One symbol at a time, auto-regressively.",
+        "extra": "In the code this is the greedy_decode loop: encode once, then repeatedly decode, pick the next word, and append it to ys."
+      },
+      "tags": ["transformer::architecture"]
+    },
+    {
+      "key": "autoregressive-def",
+      "model": "basic",
+      "fields": {
+        "front": "What does it mean that the Transformer decoder is auto-regressive?",
+        "back": "At each step it consumes the previously generated symbols as additional input when generating the next.",
+        "extra": "This property is what the decoder's subsequent-position masking exists to protect during training."
+      },
+      "tags": ["transformer::architecture"]
+    },
+    {
+      "key": "first-self-attention-only",
+      "model": "basic",
+      "fields": {
+        "front": "What made the Transformer a first among sequence transduction models?",
+        "back": "It was the first to rely entirely on self-attention to represent its input and output, with no sequence-aligned RNNs or convolutions.",
+        "extra": "Predecessors chasing parallel computation (Extended Neural GPU, ByteNet, ConvS2S) all kept convolutions as the basic building block."
+      },
+      "tags": ["transformer::architecture"]
+    },
+    {
+      "key": "self-attention-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is self-attention (intra-attention)?",
+        "back": "An attention mechanism relating different positions of a single sequence in order to compute a representation of that sequence.",
+        "extra": "Contrast with encoder-decoder attention, which relates positions across two different sequences."
+      },
+      "tags": ["transformer::architecture"]
+    },
+    {
+      "key": "path-length-comparison",
+      "model": "cloze",
+      "fields": {
+        "text": "Operations needed to relate two arbitrary positions grow {{c1::linearly}} with distance in ConvS2S, {{c2::logarithmically}} in ByteNet, and are {{c3::constant}} in the Transformer.",
+        "extra": "Longer paths between positions make long-range dependencies harder to learn, which is the Transformer's core motivation."
+      },
+      "tags": ["transformer::architecture"]
+    },
+    {
+      "key": "constant-ops-cost",
+      "model": "basic",
+      "fields": {
+        "front": "What does the Transformer give up by reducing position-to-position interaction to a constant number of operations?",
+        "back": "Effective resolution, because attention averages over the weighted positions.",
+        "extra": "Multi-head attention is the paper's counteracting mechanism for this averaging effect."
+      },
+      "tags": ["transformer::architecture"]
+    },
+    {
+      "key": "stack-depth",
+      "model": "cloze",
+      "fields": {
+        "text": "The Transformer's encoder and decoder are each a stack of N = {{c1::6}} identical layers.",
+        "extra": "make_model(src_vocab, tgt_vocab, N=6, ...) in the Annotated Transformer."
+      },
+      "tags": ["transformer::architecture"]
+    },
+    {
+      "key": "encoder-sublayers",
+      "model": "basic",
+      "fields": {
+        "front": "What two sub-layers make up each encoder layer?",
+        "back": "Multi-head self-attention, then a position-wise feed-forward network.",
+        "extra": "Each sub-layer is wrapped in a residual connection followed by layer normalization."
+      },
+      "tags": ["transformer::architecture"]
+    },
+    {
+      "key": "decoder-third-sublayer",
+      "model": "basic",
+      "fields": {
+        "front": "What third sub-layer does each decoder layer add beyond the two found in encoder layers?",
+        "back": "Multi-head attention over the output of the encoder stack (encoder-decoder attention).",
+        "extra": "Order within a decoder layer: masked self-attention, then encoder-decoder attention, then the feed-forward network."
+      },
+      "tags": ["transformer::architecture"]
+    },
+    {
+      "key": "sublayer-formula",
+      "model": "cloze",
+      "fields": {
+        "text": "The output of each Transformer sub-layer is {{c1::LayerNorm(x + Sublayer(x))}}.",
+        "extra": "A residual connection followed by layer normalization. Dropout is applied to Sublayer(x) before the addition."
+      },
+      "tags": ["transformer::architecture"]
+    },
+    {
+      "key": "d-model",
+      "model": "cloze",
+      "fields": {
+        "text": "So residual connections can add inputs to outputs, every sub-layer and embedding layer in the base Transformer produces outputs of dimension d_model = {{c1::512}}.",
+        "extra": "A residual sum x + Sublayer(x) only works if both sides have the same width."
+      },
+      "tags": ["transformer::architecture"]
+    },
+    {
+      "key": "prenorm-postnorm",
+      "model": "basic",
+      "fields": {
+        "front": "The Annotated Transformer code applies LayerNorm *before* each sub-layer; where does the original paper apply it?",
+        "back": "After the residual addition (post-norm): LayerNorm(x + Sublayer(x)).",
+        "extra": "The code comment says the pre-norm placement is 'for code simplicity'. Pre-norm later became the standard in large language models because it trains more stably."
+      },
+      "tags": ["transformer::architecture"]
+    },
+    {
+      "key": "decoder-masking-why",
+      "model": "basic",
+      "fields": {
+        "front": "Why is the decoder's self-attention sub-layer masked?",
+        "back": "To prevent positions from attending to subsequent positions, preserving the auto-regressive property.",
+        "extra": "Combined with the output embeddings being offset by one position, this ensures the prediction for position i depends only on known outputs at positions before i."
+      },
+      "tags": ["transformer::attention"]
+    },
+    {
+      "key": "masking-implementation",
+      "model": "basic",
+      "fields": {
+        "front": "How is the decoder's mask implemented inside scaled dot-product attention?",
+        "back": "Scores for illegal connections are set to negative infinity before the softmax, so they receive zero weight.",
+        "extra": "The code uses -1e9 as a stand-in: scores.masked_fill(mask == 0, -1e9). The mask itself is upper-triangular (subsequent_mask)."
+      },
+      "tags": ["transformer::attention"]
+    },
+    {
+      "key": "attention-general-def",
+      "model": "basic",
+      "fields": {
+        "front": "In general terms, what does an attention function compute from a query and a set of key-value pairs?",
+        "back": "A weighted sum of the values, where each weight comes from a compatibility function of the query with the corresponding key.",
+        "extra": "Query, keys, values, and output are all vectors. In scaled dot-product attention the compatibility function is the scaled dot product."
+      },
+      "tags": ["transformer::attention"]
+    },
+    {
+      "key": "sdpa-formula",
+      "model": "cloze",
+      "fields": {
+        "text": "Scaled dot-product attention: Attention(Q, K, V) = softmax({{c1::Q K^T / sqrt(d_k)}}) V",
+        "extra": "Queries and keys have dimension d_k, values have dimension d_v. In practice all queries are packed into a matrix Q and computed at once."
+      },
+      "tags": ["transformer::attention"]
+    },
+    {
+      "key": "why-scale",
+      "model": "basic",
+      "fields": {
+        "front": "Why are the dot products in attention scaled by 1/sqrt(d_k)?",
+        "back": "For large d_k the dot products grow large in magnitude, pushing the softmax into regions with extremely small gradients.",
+        "extra": "Without scaling, additive attention outperforms dot-product attention at large d_k; scaling closes that gap."
+      },
+      "tags": ["transformer::attention"]
+    },
+    {
+      "key": "dot-product-variance",
+      "model": "cloze",
+      "fields": {
+        "text": "If the components of q and k are independent random variables with mean 0 and variance 1, their dot product has mean 0 and variance {{c1::d_k}}.",
+        "extra": "q . k is a sum of d_k such products, which is why its magnitude grows with dimension and why the scale factor is sqrt(d_k)."
+      },
+      "tags": ["transformer::attention"]
+    },
+    {
+      "key": "additive-attention-compat",
+      "model": "basic",
+      "fields": {
+        "front": "How does additive attention compute its compatibility function?",
+        "back": "With a feed-forward network with a single hidden layer.",
+        "extra": "Additive and dot-product are the two most common attention functions; the Transformer uses the dot-product family."
+      },
+      "tags": ["transformer::attention"]
+    },
+    {
+      "key": "why-dot-product",
+      "model": "basic",
+      "fields": {
+        "front": "Why did the Transformer authors prefer dot-product attention over additive attention?",
+        "back": "It is much faster and more space-efficient in practice, since it uses highly optimized matrix multiplication code.",
+        "extra": "The two are similar in theoretical complexity; the win is practical."
+      },
+      "tags": ["transformer::attention"]
+    },
+    {
+      "key": "multihead-motivation",
+      "model": "basic",
+      "fields": {
+        "front": "What does multi-head attention allow the model to do that a single head inhibits?",
+        "back": "Jointly attend to information from different representation subspaces at different positions.",
+        "extra": "With a single head, averaging inhibits this. This is also the fix for attention's reduced-resolution problem."
+      },
+      "tags": ["transformer::attention"]
+    },
+    {
+      "key": "multihead-combine",
+      "model": "basic",
+      "fields": {
+        "front": "How are the outputs of the h attention heads combined into the final multi-head output?",
+        "back": "They are concatenated and projected with the output matrix W^O.",
+        "extra": "MultiHead(Q, K, V) = Concat(head_1, ..., head_h) W^O, where each head runs attention on its own learned projections of Q, K, V."
+      },
+      "tags": ["transformer::attention"]
+    },
+    {
+      "key": "head-count-dims",
+      "model": "cloze",
+      "fields": {
+        "text": "The base Transformer uses h = {{c1::8}} parallel attention heads, each with d_k = d_v = d_model / h = {{c2::64}}.",
+        "extra": "512 / 8 = 64. The per-head projections are learned matrices W_i^Q, W_i^K, W_i^V of shape d_model x d_k (or d_v)."
+      },
+      "tags": ["transformer::attention"]
+    },
+    {
+      "key": "multihead-cost",
+      "model": "basic",
+      "fields": {
+        "front": "Why does multi-head attention cost about the same as single-head attention with full dimensionality?",
+        "back": "Each head operates in a reduced dimension, d_model / h.",
+        "extra": "8 heads of width 64 do roughly the work of 1 head of width 512."
+      },
+      "tags": ["transformer::attention"]
+    },
+    {
+      "key": "enc-dec-attn-queries",
+      "model": "basic",
+      "fields": {
+        "front": "In the encoder-decoder attention layers, where do the queries come from?",
+        "back": "The previous decoder layer.",
+        "extra": "In the code: self.src_attn(x, m, m, src_mask), where x is the decoder state and m is the encoder memory."
+      },
+      "tags": ["transformer::attention"]
+    },
+    {
+      "key": "enc-dec-attn-keys-values",
+      "model": "basic",
+      "fields": {
+        "front": "In the encoder-decoder attention layers, where do the keys and values come from?",
+        "back": "The output of the encoder stack (the memory).",
+        "extra": "This lets every decoder position attend over all positions in the input sequence, mimicking classic seq2seq attention."
+      },
+      "tags": ["transformer::attention"]
+    },
+    {
+      "key": "encoder-self-attn-scope",
+      "model": "basic",
+      "fields": {
+        "front": "In *encoder* self-attention, which positions can each position attend to?",
+        "back": "All positions in the previous layer of the encoder.",
+        "extra": "No masking is needed on the encoder side beyond hiding padding; the full input is legitimately visible."
+      },
+      "tags": ["transformer::attention"]
+    },
+    {
+      "key": "decoder-self-attn-scope",
+      "model": "basic",
+      "fields": {
+        "front": "In *decoder* self-attention, which positions can each position attend to?",
+        "back": "All decoder positions up to and including its own.",
+        "extra": "Leftward-only information flow, enforced by the subsequent-position mask. Contrast with the encoder, where every position sees every other."
+      },
+      "tags": ["transformer::attention"]
+    },
+    {
+      "key": "ffn-structure",
+      "model": "basic",
+      "fields": {
+        "front": "What is the structure of the Transformer's position-wise feed-forward network?",
+        "back": "Two linear transformations with a ReLU activation in between.",
+        "extra": "Equivalently: two convolutions with kernel size 1. In code: w_2(dropout(relu(w_1(x))))."
+      },
+      "tags": ["transformer::ffn"]
+    },
+    {
+      "key": "ffn-formula",
+      "model": "cloze",
+      "fields": {
+        "text": "Position-wise feed-forward network: FFN(x) = {{c1::max(0, x W_1 + b_1)}} W_2 + b_2",
+        "extra": "The max(0, .) is the ReLU on the inner layer."
+      },
+      "tags": ["transformer::ffn"]
+    },
+    {
+      "key": "ffn-position-independence",
+      "model": "basic",
+      "fields": {
+        "front": "Which positions does the feed-forward network mix information between?",
+        "back": "None: it is applied to each position separately and identically.",
+        "extra": "Only attention moves information between positions. The FFN's parameters are shared across positions within a layer but differ from layer to layer."
+      },
+      "tags": ["transformer::ffn"]
+    },
+    {
+      "key": "d-ff",
+      "model": "cloze",
+      "fields": {
+        "text": "The feed-forward network's inner layer has dimensionality d_ff = {{c1::2048}}.",
+        "extra": "Input and output stay at d_model = 512, so the FFN expands 4x and contracts back."
+      },
+      "tags": ["transformer::ffn"]
+    },
+    {
+      "key": "embedding-weight-tying",
+      "model": "basic",
+      "fields": {
+        "front": "What weight sharing does the Transformer use around its embeddings?",
+        "back": "The two embedding layers and the pre-softmax linear transformation share the same weight matrix.",
+        "extra": "Source embedding, target embedding, and the Generator's projection are all one matrix, following Press and Wolf (2016)."
+      },
+      "tags": ["transformer::embeddings"]
+    },
+    {
+      "key": "embedding-scale",
+      "model": "cloze",
+      "fields": {
+        "text": "In the embedding layers, the weights are multiplied by {{c1::sqrt(d_model)}}.",
+        "extra": "In code: self.lut(x) * math.sqrt(self.d_model). This keeps embedding magnitudes comparable to the positional encodings they are summed with."
+      },
+      "tags": ["transformer::embeddings"]
+    },
+    {
+      "key": "pe-why",
+      "model": "basic",
+      "fields": {
+        "front": "Why does the Transformer need positional encodings at all?",
+        "back": "It has no recurrence and no convolution, so position information must be injected for the model to use the order of the sequence.",
+        "extra": "Without them, the model is permutation-equivariant over its inputs."
+      },
+      "tags": ["transformer::positional-encoding"]
+    },
+    {
+      "key": "pe-how-added",
+      "model": "basic",
+      "fields": {
+        "front": "How are positional encodings combined with the input embeddings?",
+        "back": "They are summed, which works because both have dimension d_model.",
+        "extra": "Added at the bottoms of both the encoder and decoder stacks; dropout is then applied to the sums."
+      },
+      "tags": ["transformer::positional-encoding"]
+    },
+    {
+      "key": "pe-formula",
+      "model": "cloze",
+      "fields": {
+        "text": "Sinusoidal positional encoding: even dimensions use PE(pos, 2i) = {{c1::sin}}(pos / 10000^(2i/d_model)), odd dimensions use PE(pos, 2i+1) = {{c2::cos}}(pos / 10000^(2i/d_model)).",
+        "extra": "Each dimension is a sinusoid; the wavelengths form a geometric progression from 2*pi to 10000*2*pi."
+      },
+      "tags": ["transformer::positional-encoding"]
+    },
+    {
+      "key": "pe-relative-hypothesis",
+      "model": "basic",
+      "fields": {
+        "front": "Why did the authors hypothesize sinusoids would let the model attend by *relative* position?",
+        "back": "For any fixed offset k, PE(pos+k) can be represented as a linear function of PE(pos).",
+        "extra": "This follows from the angle-addition identities for sine and cosine."
+      },
+      "tags": ["transformer::positional-encoding"]
+    },
+    {
+      "key": "pe-sinusoidal-vs-learned",
+      "model": "basic",
+      "fields": {
+        "front": "Learned positional embeddings performed nearly identically to sinusoids; why did the authors still choose sinusoidal?",
+        "back": "Sinusoids may allow the model to extrapolate to sequence lengths longer than any seen during training.",
+        "extra": "A learned table has no entries beyond its trained max length; a formula extends indefinitely."
+      },
+      "tags": ["transformer::positional-encoding"]
+    },
+    {
+      "key": "dropout-rate",
+      "model": "cloze",
+      "fields": {
+        "text": "The base Transformer uses dropout rate P_drop = {{c1::0.1}}.",
+        "extra": "Applied to each sub-layer's output before the residual add, and to the sums of embeddings and positional encodings. The big English-French model also used 0.1 instead of 0.3."
+      },
+      "tags": ["transformer::training"]
+    },
+    {
+      "key": "training-data",
+      "model": "cloze",
+      "fields": {
+        "text": "The Transformer was trained on the WMT 2014 English-German dataset of about {{c1::4.5 million}} sentence pairs.",
+        "extra": "Byte-pair encoding with a shared source-target vocabulary of about 37,000 tokens. English-French used 36M sentences with a 32,000 word-piece vocabulary."
+      },
+      "tags": ["transformer::training"]
+    },
+    {
+      "key": "adam-params",
+      "model": "cloze",
+      "fields": {
+        "text": "The Transformer used Adam with beta_1 = 0.9, beta_2 = {{c1::0.98}}, and epsilon = {{c2::10^-9}}.",
+        "extra": "beta_2 = 0.98 is lower than Adam's usual 0.999 default, making the second-moment estimate adapt faster."
+      },
+      "tags": ["transformer::training"]
+    },
+    {
+      "key": "lr-schedule-shape",
+      "model": "basic",
+      "fields": {
+        "front": "Describe the shape of the Transformer's learning-rate schedule.",
+        "back": "Linear increase for the first warmup_steps, then decay proportional to the inverse square root of the step number.",
+        "extra": "lrate = d_model^-0.5 * min(step^-0.5, step * warmup_steps^-1.5). The Annotated Transformer stresses that training diverges without this setup."
+      },
+      "tags": ["transformer::training"]
+    },
+    {
+      "key": "warmup-steps",
+      "model": "cloze",
+      "fields": {
+        "text": "The Transformer's learning-rate schedule used warmup_steps = {{c1::4000}}.",
+        "extra": "The peak learning rate also scales with d_model^-0.5, so larger models peak lower."
+      },
+      "tags": ["transformer::training"]
+    },
+    {
+      "key": "label-smoothing-value",
+      "model": "cloze",
+      "fields": {
+        "text": "During training the Transformer used label smoothing of value epsilon_ls = {{c1::0.1}}.",
+        "extra": "Same value as the dropout rate; do not confuse the two knobs. This one reshapes the target distribution, not the activations."
+      },
+      "tags": ["transformer::training"]
+    },
+    {
+      "key": "label-smoothing-tradeoff",
+      "model": "basic",
+      "fields": {
+        "front": "What tradeoff does label smoothing produce in the Transformer?",
+        "back": "It hurts perplexity, as the model learns to be more unsure, but improves accuracy and BLEU score.",
+        "extra": "It also starts to penalize the model when it becomes very confident about a single choice."
+      },
+      "tags": ["transformer::training"]
+    },
+    {
+      "key": "label-smoothing-mechanism",
+      "model": "basic",
+      "fields": {
+        "front": "How does label smoothing change the training target distribution?",
+        "back": "Instead of one-hot, the correct word gets confidence 1 - epsilon and the remaining smoothing mass is distributed across the rest of the vocabulary.",
+        "extra": "The Annotated Transformer implements it with KL-divergence loss against this smoothed distribution."
+      },
+      "tags": ["transformer::training"]
+    },
+    {
+      "key": "bleu-en-de",
+      "model": "cloze",
+      "fields": {
+        "text": "The big Transformer set a new state-of-the-art BLEU score of {{c1::28.4}} on WMT 2014 English-to-German.",
+        "extra": "More than 2.0 BLEU over the best previous models including ensembles, after 3.5 days on 8 P100 GPUs. The big model also reached 41.0 BLEU on English-to-French."
+      },
+      "tags": ["transformer::results"]
+    },
+    {
+      "key": "model-averaging",
+      "model": "basic",
+      "fields": {
+        "front": "How did the Transformer paper get an ensembling effect from a single training run?",
+        "back": "By averaging the weights of the last k checkpoints.",
+        "extra": "Done after training, over saved checkpoint files; no extra training cost."
+      },
+      "tags": ["transformer::results"]
+    }
+  ]
+}
