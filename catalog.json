@@ -109,8 +109,8 @@
     {
       "key": "ai-research",
       "name": "AI Research",
-      "deckCount": 3,
-      "rev": "935c8f2ea809",
+      "deckCount": 4,
+      "rev": "bb493cbd395d",
       "file": "categories/ai-research.json"
     }
   ],
@@ -238,6 +238,11 @@
       "key": "cranial-nerves",
       "version": 1,
       "file": "decks/cranial-nerves.json"
+    },
+    {
+      "key": "data-visualization",
+      "version": 1,
+      "file": "decks/data-visualization.json"
     },
     {
       "key": "dutch-defense",

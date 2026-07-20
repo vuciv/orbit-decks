@@ -1,0 +1,689 @@
+{
+  "key": "data-visualization",
+  "version": 1,
+  "name": "Data Visualization: Charting Well",
+  "description": "Choose the right chart and make it honest: the perceptual ranking of visual encodings, chart-type selection with real figures to name on sight, axis and log-scale rules, colorblind-safe color, error bars done right, and the classic graphics from Playfair to Minard.",
+  "category": "AI Research",
+  "topics": ["data-visualization", "charts", "research-methods"],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Minard.png?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "plot-first",
+      "model": "basic",
+      "fields": {
+        "front": "Four datasets can share identical means, variances, and correlations yet look totally different when plotted. What habit does this force on you?",
+        "back": "Always plot the raw data before trusting summary statistics.",
+        "extra": "Anscombe's quartet (1973) is the canonical demonstration; the Datasaurus Dozen is its modern remake."
+      },
+      "tags": ["dataviz::foundations"]
+    },
+    {
+      "key": "anscombe-name",
+      "model": "basic",
+      "fields": {
+        "front": "Name this famous set of four datasets.",
+        "back": "Anscombe's quartet.",
+        "extra": "Constructed by Francis Anscombe in 1973: same means, variances, correlations, and regression line, four completely different shapes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Anscombe%27s%20quartet%203.svg?width=640"
+      },
+      "tags": ["dataviz::foundations"]
+    },
+    {
+      "key": "datasaurus",
+      "model": "basic",
+      "fields": {
+        "front": "What is the Datasaurus Dozen?",
+        "back": "A modern Anscombe-style collection of datasets with near-identical summary statistics, one shaped like a dinosaur.",
+        "extra": "Matejka and Fitzmaurice (2017) evolved each dataset by tiny random nudges that preserved the statistics while reshaping the plot."
+      },
+      "tags": ["dataviz::foundations"]
+    },
+    {
+      "key": "cleveland-mcgill-best",
+      "model": "basic",
+      "fields": {
+        "front": "In Cleveland and McGill's accuracy ranking of visual encodings, what sits at the top?",
+        "back": "Position along a common scale.",
+        "extra": "Their 1984 experiments measured how accurately people decode each encoding. This is why scatter plots, dot plots, and aligned bars are the workhorses of quantitative graphics."
+      },
+      "tags": ["dataviz::foundations"]
+    },
+    {
+      "key": "cleveland-mcgill-worst",
+      "model": "basic",
+      "fields": {
+        "front": "In the Cleveland-McGill ranking, where does color shading fall?",
+        "back": "At the bottom: the least accurately judged encoding.",
+        "extra": "Rough order: position, then length, then angle/slope, then area, then volume, then color. Color is fine for overview patterns (heatmaps), wrong for exact value reading."
+      },
+      "tags": ["dataviz::foundations"]
+    },
+    {
+      "key": "angle-vs-length",
+      "model": "basic",
+      "fields": {
+        "front": "Why do bar charts beat pie charts for comparing values?",
+        "back": "Bars use length and position judgments, which humans make more accurately than the angle judgments pies require.",
+        "extra": "If the reader must rank or compare parts, use bars; keep pies for a rough sense of one dominant share."
+      },
+      "tags": ["dataviz::foundations"]
+    },
+    {
+      "key": "data-ink",
+      "model": "basic",
+      "fields": {
+        "front": "What is Tufte's data-ink ratio?",
+        "back": "The proportion of a graphic's ink that displays actual data.",
+        "extra": "Maximize it: every gridline, border, and effect that carries no information competes with the data. Erase until removing more would lose meaning."
+      },
+      "tags": ["dataviz::foundations"]
+    },
+    {
+      "key": "chartjunk",
+      "model": "typed",
+      "fields": {
+        "front": "Tufte's word for chart decoration that carries no data?",
+        "answer": "chartjunk",
+        "extra": "Moire patterns, heavy gridlines, 3D effects, clip art. The cure is not minimalism for its own sake but spending ink on data."
+      },
+      "tags": ["dataviz::foundations"]
+    },
+    {
+      "key": "lie-factor",
+      "model": "cloze",
+      "fields": {
+        "text": "Tufte's lie factor = (size of the effect shown in the graphic) / (size of the effect in the {{c1::data}}).",
+        "extra": "An honest chart scores close to 1. Truncated bar axes are the classic way to inflate it."
+      },
+      "tags": ["dataviz::foundations"]
+    },
+    {
+      "key": "small-multiples-def",
+      "model": "basic",
+      "fields": {
+        "front": "What does Tufte call a grid of little charts with identical scales, one panel per condition?",
+        "back": "Small multiples.",
+        "extra": "Also called trellis, facet, or lattice plots. Once readers parse one panel they can read all of them; comparison happens by eye movement, not memory."
+      },
+      "tags": ["dataviz::foundations"]
+    },
+    {
+      "key": "horse-in-motion",
+      "model": "basic",
+      "fields": {
+        "front": "This 1878 photo sequence is often cited as an ancestor of which figure technique?",
+        "back": "Small multiples.",
+        "extra": "Eadweard Muybridge's The Horse in Motion: same frame, same scale, one variable (time) changing per panel.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Horse%20in%20Motion.jpg?width=640"
+      },
+      "tags": ["dataviz::foundations"]
+    },
+    {
+      "key": "chart-comparison",
+      "model": "basic",
+      "fields": {
+        "front": "Default chart for comparing one numeric value across a handful of categories?",
+        "back": "A bar chart.",
+        "extra": "Position on a common scale with a zero baseline. Sort by value when the categories have no natural order."
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "chart-trend",
+      "model": "basic",
+      "fields": {
+        "front": "Default chart for a value changing over continuous time?",
+        "back": "A line chart.",
+        "extra": "The slope carries the meaning. Use points instead of a connecting line when observations are sparse or irregular."
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "line-id",
+      "model": "basic",
+      "fields": {
+        "front": "Name this chart type.",
+        "back": "A line chart (time series).",
+        "extra": "The Keeling curve: monthly CO2 at Mauna Loa. One line encodes both the seasonal sawtooth and the long-term trend.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Mauna%20Loa%20CO2%20monthly%20mean%20concentration.svg?width=640"
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "chart-relationship",
+      "model": "basic",
+      "fields": {
+        "front": "Default chart for the relationship between two continuous variables?",
+        "back": "A scatter plot.",
+        "extra": "Each point is one observation. Add a trend line only after showing the points; the line alone hides the spread."
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "scatter-id",
+      "model": "basic",
+      "fields": {
+        "front": "Name this chart type.",
+        "back": "A scatter plot.",
+        "extra": "Two continuous axes, one point per observation; here a process input against a quality metric, with a clear negative trend.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Scatter%20diagram%20for%20quality%20characteristic%20XXX.svg?width=640"
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "overplotting",
+      "model": "basic",
+      "fields": {
+        "front": "In a scatter plot of 100k points, most points hide each other. What is this problem called?",
+        "back": "Overplotting.",
+        "extra": "Fixes: transparency (alpha), smaller markers, hex-binning or 2D density, or plotting a sample."
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "chart-distribution",
+      "model": "basic",
+      "fields": {
+        "front": "Default chart for the distribution of a single numeric variable?",
+        "back": "A histogram.",
+        "extra": "Bin the values, count per bin. Always try more than one bin width; the apparent shape can change."
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "histogram-id",
+      "model": "basic",
+      "fields": {
+        "front": "Name this chart type.",
+        "back": "A histogram.",
+        "extra": "Heights of 31 black cherry trees. Bars touch because the x-axis is continuous; a categorical bar chart keeps gaps.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Black%20cherry%20tree%20histogram.svg?width=640"
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "kde-def",
+      "model": "basic",
+      "fields": {
+        "front": "What does a kernel density estimate (KDE) show?",
+        "back": "A smoothed continuous estimate of a variable's distribution.",
+        "extra": "It replaces histogram bins with a bandwidth choice; too wide oversmooths, too narrow shows noise."
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "kde-id",
+      "model": "basic",
+      "fields": {
+        "front": "The smooth curve drawn over this histogram is called what?",
+        "back": "A kernel density estimate (KDE).",
+        "extra": "Same data, two views: the histogram's shape depends on bin edges, the KDE's on bandwidth.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Comparison%20of%201D%20histogram%20and%20KDE.png?width=640"
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "box-span",
+      "model": "basic",
+      "fields": {
+        "front": "In a box plot, what does the box itself span?",
+        "back": "The interquartile range: the middle 50% of the data.",
+        "extra": "Bottom edge Q1, top edge Q3. Whiskers typically reach the most extreme points within 1.5 IQR; dots beyond are flagged as outliers."
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "box-line",
+      "model": "basic",
+      "fields": {
+        "front": "In a box plot, the line inside the box marks what?",
+        "back": "The median.",
+        "extra": "Not the mean. Some styles add the mean as a separate dot or a notch."
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "box-id",
+      "model": "basic",
+      "fields": {
+        "front": "Name this chart type.",
+        "back": "A box plot (box-and-whisker plot).",
+        "extra": "Michelson's speed-of-light measurements, one box per experiment; circles are outliers beyond the whiskers, the red line the modern true value.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Michelsonmorley-boxplot.svg?width=640"
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "violin-vs-box",
+      "model": "basic",
+      "fields": {
+        "front": "What can a violin plot show that a box plot structurally cannot?",
+        "back": "The full shape of the distribution, including bimodality.",
+        "extra": "A box plot collapses everything to five numbers; two very different distributions can share one identical box."
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "violin-id",
+      "model": "basic",
+      "fields": {
+        "front": "Name this chart type.",
+        "back": "A violin plot.",
+        "extra": "A mirrored density estimate per group; the width at each height is the density there.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Violin%20plot.gif?width=640"
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "heatmap-when",
+      "model": "basic",
+      "fields": {
+        "front": "When does a heatmap beat grouped bars?",
+        "back": "When the data is a wide two-way grid, where color patterns read better than dozens of bars.",
+        "extra": "Condition x training stage, layer x head, month x hour. Readers get patterns and outliers, not precise values; print numbers in the cells if exact values matter."
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "heatmap-id",
+      "model": "basic",
+      "fields": {
+        "front": "Name this chart type.",
+        "back": "A (clustered) heatmap.",
+        "extra": "Gene expression data: rows are samples, columns are genes, color is the value; the tree diagrams (dendrograms) on the edges show hierarchical clustering.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Heatmap.png?width=640"
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "small-multiples-when",
+      "model": "basic",
+      "fields": {
+        "front": "Eight time series tangle into spaghetti on one panel. What is the standard fix?",
+        "back": "Small multiples: one small panel per series, with shared axes.",
+        "extra": "Alternative: repeat the full spaghetti in gray in every panel and highlight one series per panel for context."
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "stacked-bar-flaw",
+      "model": "basic",
+      "fields": {
+        "front": "In a stacked bar chart, why is only the bottom segment easy to compare across bars?",
+        "back": "Only the bottom segment starts from a common baseline; every other segment floats.",
+        "extra": "If comparisons of a middle category matter, unstack into grouped bars or small multiples."
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "forest-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is a forest plot for?",
+        "back": "Showing many effect estimates with their confidence intervals against one common axis.",
+        "extra": "Home turf is meta-analysis: one row per study or subgroup, a vertical no-effect line, a diamond for the pooled estimate."
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "forest-id",
+      "model": "basic",
+      "fields": {
+        "front": "Name this chart type.",
+        "back": "A forest plot.",
+        "extra": "Squares are individual study estimates (sized by weight), horizontal lines their confidence intervals, the diamond the pooled estimate.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Forestplot01.jpg?width=640"
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "qq-def",
+      "model": "basic",
+      "fields": {
+        "front": "What question does a Q-Q plot answer?",
+        "back": "Whether a sample follows a given theoretical distribution.",
+        "extra": "It plots sample quantiles against theoretical quantiles; systematic curvature means skew or unusual tails."
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "qq-read",
+      "model": "basic",
+      "fields": {
+        "front": "In this Q-Q plot the points hug the diagonal. Conclusion?",
+        "back": "The sample is consistent with the theoretical (here normal) distribution.",
+        "extra": "An S-shape means the tails are too heavy or too light; a bowed arc means skew.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Normal%20normal%20qq.svg?width=640"
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "choropleth-id",
+      "model": "basic",
+      "fields": {
+        "front": "What kind of map is this?",
+        "back": "A choropleth: regions shaded by a data value.",
+        "extra": "The 2004 US election by county, on a blue-purple-red diverging scale centered at 50/50.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/2004%20US%20elections%20purple%20counties.png?width=640"
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "choropleth-rates",
+      "model": "basic",
+      "fields": {
+        "front": "Why should a choropleth shade rates rather than raw counts?",
+        "back": "Raw counts mostly redraw the population map: populous regions win everything.",
+        "extra": "Deaths per 100k, not deaths. Also beware large but empty areas dominating the eye."
+      },
+      "tags": ["dataviz::chart-choice"]
+    },
+    {
+      "key": "bar-zero",
+      "model": "basic",
+      "fields": {
+        "front": "Why must a bar chart's value axis start at zero?",
+        "back": "Bars encode value by length, so a cut axis falsifies the ratios between bars.",
+        "extra": "A bar twice as long must mean twice the value; truncation breaks exactly that."
+      },
+      "tags": ["dataviz::axes-scales"]
+    },
+    {
+      "key": "truncated-id",
+      "model": "basic",
+      "fields": {
+        "front": "E's bar towers over A's, but E is only about 4% larger. What is the trick?",
+        "back": "A truncated y-axis: it starts at 9100 instead of zero.",
+        "extra": "The single most common misleading-graph device; Tufte's lie factor far above 1.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Truncated%20Bar%20Graph.svg?width=640"
+      },
+      "tags": ["dataviz::axes-scales"]
+    },
+    {
+      "key": "line-zoom",
+      "model": "basic",
+      "fields": {
+        "front": "Does a line chart's axis have to include zero?",
+        "back": "No: lines encode change by position and slope, so the axis should frame the data's range.",
+        "extra": "The bar-chart zero rule does not transfer. Forcing zero can flatten the line and hide the very signal you are plotting."
+      },
+      "tags": ["dataviz::axes-scales"]
+    },
+    {
+      "key": "log-when",
+      "model": "basic",
+      "fields": {
+        "front": "Your values run from about 1e2 to 1e6. What scale does the chart need?",
+        "back": "A logarithmic scale.",
+        "extra": "On a linear axis the small values flatten into the floor. Loss curves, compute budgets, and latencies usually live on log axes."
+      },
+      "tags": ["dataviz::axes-scales"]
+    },
+    {
+      "key": "log-line",
+      "model": "basic",
+      "fields": {
+        "front": "A quantity plots as a straight line on a log y-axis. What kind of growth is that?",
+        "back": "Exponential growth (constant percent change).",
+        "extra": "Straight on log-log axes instead means a power law, the shape of scaling-law plots."
+      },
+      "tags": ["dataviz::axes-scales"]
+    },
+    {
+      "key": "log-steps",
+      "model": "basic",
+      "fields": {
+        "front": "Equal steps along a log axis represent what?",
+        "back": "Equal multiplicative factors.",
+        "extra": "1, 10, 100 sit evenly spaced. Label ticks with actual values, not bare exponents, for non-technical readers."
+      },
+      "tags": ["dataviz::axes-scales"]
+    },
+    {
+      "key": "dual-axis",
+      "model": "basic",
+      "fields": {
+        "front": "Why are dual y-axis charts distrusted?",
+        "back": "The two scales are chosen independently, so how the lines track or cross is an artifact of that choice.",
+        "extra": "Fixes: index both series to 100 at a common point, use small multiples, or a connected scatter."
+      },
+      "tags": ["dataviz::axes-scales"]
+    },
+    {
+      "key": "palette-sequential",
+      "model": "typed",
+      "fields": {
+        "front": "Palette type for ordered values running low to high?",
+        "answer": "sequential",
+        "extra": "One hue ramping in lightness: light = low, dark = high (or the reverse, applied consistently)."
+      },
+      "tags": ["dataviz::color"]
+    },
+    {
+      "key": "palette-diverging",
+      "model": "typed",
+      "fields": {
+        "front": "Palette type for values with a meaningful midpoint, like zero change?",
+        "answer": "diverging",
+        "extra": "Two hues meeting at a neutral center. The purple-counties election map is one: blue to purple to red around 50/50."
+      },
+      "tags": ["dataviz::color"]
+    },
+    {
+      "key": "palette-qualitative",
+      "model": "typed",
+      "fields": {
+        "front": "Palette type for unordered categories?",
+        "answer": "qualitative",
+        "extra": "Distinct hues of similar lightness. Beyond about 6-8 categories no palette saves you; group or facet instead."
+      },
+      "tags": ["dataviz::color"]
+    },
+    {
+      "key": "jet-problem",
+      "model": "basic",
+      "fields": {
+        "front": "Why was the rainbow (jet) colormap banished from serious plotting?",
+        "back": "Its lightness rises and falls unevenly, creating false boundaries and hiding real structure.",
+        "extra": "It is also unreadable in grayscale and hostile to colorblind readers."
+      },
+      "tags": ["dataviz::color"]
+    },
+    {
+      "key": "viridis",
+      "model": "basic",
+      "fields": {
+        "front": "Name the perceptually uniform, colorblind-safe colormap family that replaced jet as the scientific default.",
+        "back": "Viridis (with siblings magma, plasma, and inferno).",
+        "extra": "Designed for matplotlib; lightness increases monotonically, so equal data steps read as equal color steps and grayscale printing still works."
+      },
+      "tags": ["dataviz::color"]
+    },
+    {
+      "key": "cvd-rate",
+      "model": "cloze",
+      "fields": {
+        "text": "About {{c1::1 in 12}} men have red-green color vision deficiency.",
+        "extra": "Roughly 8% of men and 0.5% of women. In any decent-sized audience, someone cannot see your red-vs-green distinction."
+      },
+      "tags": ["dataviz::color"]
+    },
+    {
+      "key": "red-green",
+      "model": "basic",
+      "fields": {
+        "front": "Which color pair must never be the only thing distinguishing two series?",
+        "back": "Red and green.",
+        "extra": "The most common color vision deficiency collapses them. Blue-orange is the safe contrast pair; better still, add a second channel."
+      },
+      "tags": ["dataviz::color"]
+    },
+    {
+      "key": "redundant-encoding",
+      "model": "basic",
+      "fields": {
+        "front": "How do you make a multi-series chart survive both grayscale printing and colorblind readers?",
+        "back": "Encode the series redundantly: color plus marker shape, line style, or direct labels.",
+        "extra": "Cheap test: print the figure in grayscale; if you cannot tell the series apart, neither can part of your audience."
+      },
+      "tags": ["dataviz::color"]
+    },
+    {
+      "key": "errorbar-label",
+      "model": "basic",
+      "fields": {
+        "front": "An error bar means nothing until the caption says what?",
+        "back": "What the bar shows: SD, SEM, or a confidence interval.",
+        "extra": "The three differ by large factors on the same data; reviewers check for this first."
+      },
+      "tags": ["dataviz::uncertainty"]
+    },
+    {
+      "key": "sem-small",
+      "model": "basic",
+      "fields": {
+        "front": "Why do SEM error bars flatter your results compared to SD bars?",
+        "back": "SEM = SD / sqrt(n), so SEM bars are always narrower.",
+        "extra": "SD shows spread of the data, SEM/CI show uncertainty about the mean. Choose for the claim you are making, then say which you chose."
+      },
+      "tags": ["dataviz::uncertainty"]
+    },
+    {
+      "key": "show-points",
+      "model": "basic",
+      "fields": {
+        "front": "Your figure shows two group means as bars with error whiskers (a 'dynamite plot'). What should you usually show instead?",
+        "back": "The underlying points or distributions, because means with whiskers hide spread, skew, and outliers.",
+        "extra": "Overlay jittered raw points, or switch to box/violin plots when n is large."
+      },
+      "tags": ["dataviz::uncertainty"]
+    },
+    {
+      "key": "caption-n",
+      "model": "basic",
+      "fields": {
+        "front": "Besides defining the error bars, what number must a results-figure caption state?",
+        "back": "The n: what was averaged, over how many seeds, examples, or runs.",
+        "extra": "'Mean over 5 seeds, shaded region = 95% CI' is one clause and answers the reviewer's first question."
+      },
+      "tags": ["dataviz::uncertainty"]
+    },
+    {
+      "key": "caption-standalone",
+      "model": "basic",
+      "fields": {
+        "front": "Many readers see only your figures. What does that imply about captions?",
+        "back": "Each caption must stand alone as a self-contained summary of the figure.",
+        "extra": "Skimming reviewers jump from abstract to figures. Say what is plotted, how it was computed, and what to conclude, without leaning on the body text."
+      },
+      "tags": ["dataviz::paper-craft"]
+    },
+    {
+      "key": "direct-label",
+      "model": "basic",
+      "fields": {
+        "front": "What beats a legend when a chart has only a few lines?",
+        "back": "Direct labels: series names placed right next to their lines.",
+        "extra": "Kills the eye ping-pong between legend and data, and survives grayscale and colorblindness for free."
+      },
+      "tags": ["dataviz::paper-craft"]
+    },
+    {
+      "key": "sort-bars",
+      "model": "basic",
+      "fields": {
+        "front": "With no natural category order, how should bars be sorted?",
+        "back": "By value.",
+        "extra": "Alphabetical order is a random permutation of your data; sorted bars turn the chart into a ranking for free."
+      },
+      "tags": ["dataviz::paper-craft"]
+    },
+    {
+      "key": "vector-format",
+      "model": "basic",
+      "fields": {
+        "front": "Why export paper figures as PDF/SVG rather than PNG?",
+        "back": "Vector graphics stay sharp at every zoom and print size.",
+        "extra": "Exception: rasterize a million-point scatter layer inside an otherwise-vector figure, or the PDF grinds viewers to a halt."
+      },
+      "tags": ["dataviz::paper-craft"]
+    },
+    {
+      "key": "3d-pie-id",
+      "model": "basic",
+      "fields": {
+        "front": "Name the chart crime committed here.",
+        "back": "A 3D exploded pie chart: perspective distorts every slice's apparent area.",
+        "extra": "Foreground slices gain apparent area from the visible rim and tilt. If it must be a pie, it must at least be flat.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Misleading%20Pie%20Chart.png?width=640"
+      },
+      "tags": ["dataviz::paper-craft"]
+    },
+    {
+      "key": "pie-ok",
+      "model": "basic",
+      "fields": {
+        "front": "When is a pie chart actually defensible?",
+        "back": "For parts of a whole with very few slices, where the point is one rough dominant share.",
+        "extra": "'About two-thirds of traffic' is pie territory; any ranking or precise comparison belongs to bars."
+      },
+      "tags": ["dataviz::paper-craft"]
+    },
+    {
+      "key": "minard-event",
+      "model": "basic",
+      "fields": {
+        "front": "What does this famous 1869 flow map depict?",
+        "back": "Napoleon's 1812 march on Moscow and the retreat.",
+        "extra": "By Charles Joseph Minard. Tufte called it possibly the best statistical graphic ever drawn: it encodes army size, route, direction, and temperature in one image.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Minard.png?width=640"
+      },
+      "tags": ["dataviz::classics"]
+    },
+    {
+      "key": "minard-band",
+      "model": "basic",
+      "fields": {
+        "front": "In Minard's Napoleon map, what does the width of the band encode?",
+        "back": "The size of the surviving army.",
+        "extra": "About 422,000 men crossing into Russia shrink to about 10,000 returning; tan is the advance, black the retreat, with temperature plotted beneath.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Minard.png?width=640"
+      },
+      "tags": ["dataviz::classics"]
+    },
+    {
+      "key": "snow-map",
+      "model": "basic",
+      "fields": {
+        "front": "Whose 1854 map is this, plotting cholera deaths as stacked marks by address?",
+        "back": "John Snow's Broad Street outbreak map.",
+        "extra": "Deaths cluster around the Broad Street water pump, evidence for waterborne transmission; a founding artifact of epidemiology.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Snow-cholera-map-1.jpg?width=640"
+      },
+      "tags": ["dataviz::classics"]
+    },
+    {
+      "key": "nightingale",
+      "model": "basic",
+      "fields": {
+        "front": "Who created this 'rose diagram' of army mortality?",
+        "back": "Florence Nightingale.",
+        "extra": "Her 1858 polar-area ('coxcomb') diagram showed preventable disease killed far more soldiers than wounds, and helped push Parliament into sanitary reform.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Nightingale-mortality.jpg?width=640"
+      },
+      "tags": ["dataviz::classics"]
+    },
+    {
+      "key": "playfair",
+      "model": "basic",
+      "fields": {
+        "front": "This 1786 trade-balance chart comes from the inventor of the line, area, and bar chart. Who?",
+        "back": "William Playfair.",
+        "extra": "From his Commercial and Political Atlas; he added the pie chart in 1801. Nearly every standard chart form is one Scotsman's invention.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Playfair%20TimeSeries-2.png?width=640"
+      },
+      "tags": ["dataviz::classics"]
+    }
+  ]
+}

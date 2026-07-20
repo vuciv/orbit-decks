@@ -17,6 +17,18 @@
       "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Artificial_neural_network.svg?width=640"
     },
     {
+      "key": "data-visualization",
+      "name": "Data Visualization: Charting Well",
+      "description": "Choose the right chart and make it honest: the perceptual ranking of visual encodings, chart-type selection with real figures to name on sight, axis and log-scale rules, colorblind-safe color, error bars done right, and the classic graphics from Playfair to Minard.",
+      "cardCount": 66,
+      "topics": [
+        "data-visualization",
+        "charts",
+        "research-methods"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Minard.png?width=640"
+    },
+    {
       "key": "research-statistics",
       "name": "Statistics for Research",
       "description": "The statistics you need to read and write empirical papers with confidence: variance and standard deviation from first principles, standard errors, confidence intervals, hypothesis tests, effect sizes, bootstrap methods, and the ML-specific pitfalls around seeds, benchmarks, and error bars.",
