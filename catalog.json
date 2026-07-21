@@ -53,8 +53,8 @@
     {
       "key": "chess",
       "name": "Chess",
-      "deckCount": 26,
-      "rev": "89ccc1df9dd7",
+      "deckCount": 27,
+      "rev": "55fe26d08918",
       "file": "categories/chess.json"
     },
     {
@@ -223,6 +223,11 @@
       "key": "catalan-opening",
       "version": 4,
       "file": "decks/catalan-opening.json"
+    },
+    {
+      "key": "chess-strategy-fundamentals",
+      "version": 1,
+      "file": "decks/chess-strategy-fundamentals.json"
     },
     {
       "key": "constellations",

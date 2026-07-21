@@ -1,0 +1,888 @@
+{
+  "key": "chess-strategy-fundamentals",
+  "version": 1,
+  "name": "Chess Strategy: 1000 to 1500",
+  "description": "The strategy and pattern vocabulary that separates 1000 from 1500: what the weakest pawn is and how to attack it, why you would ever push h5, outposts, good and bad trades, king attacks, the essential endgames, and the thinking habits that stop blunders. Concept cards, not move memorization. 90 cards.",
+  "category": "Chess",
+  "topics": [
+    "chess",
+    "strategy",
+    "middlegame",
+    "endgame"
+  ],
+  "coverImage": "https://lichess1.org/export/fen.gif?fen=r2q1rk1%2F1p3ppp%2Fp2p1n2%2F3Np3%2F4P3%2F8%2FPPP2PPP%2FR1BQ1RK1%20w%20-%20-%200%201&color=white&theme=brown&piece=cburnett",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "piece-values",
+      "model": "cloze",
+      "fields": {
+        "text": "Standard point count: a minor piece (knight or bishop) is worth about {{c1::3}} pawns, a rook {{c2::5}}, and the queen {{c3::9}}.",
+        "extra": "A rough currency for trades, not a law: activity and king safety can outweigh a point or two."
+      },
+      "tags": ["chess::fundamentals"]
+    },
+    {
+      "key": "the-exchange",
+      "model": "basic",
+      "fields": {
+        "front": "Winning 'the exchange' means winning which trade?",
+        "back": "Your minor piece (knight or bishop) for their rook.",
+        "extra": "Worth about 2 points. 'Up the exchange' = rook vs minor piece."
+      },
+      "tags": ["chess::fundamentals"]
+    },
+    {
+      "key": "weakest-square",
+      "model": "basic",
+      "fields": {
+        "front": "At the start of the game, which square in each camp is defended only by its own king?",
+        "back": "f2 for White, f7 for Black.",
+        "extra": "That is why Scholar's Mate and the Fried Liver both land on f7: nothing can simply recapture there."
+      },
+      "tags": ["chess::fundamentals"]
+    },
+    {
+      "key": "loose-pieces",
+      "model": "basic",
+      "fields": {
+        "front": "'Loose pieces drop off' warns you never to leave a piece in what state?",
+        "back": "Undefended: loose pieces are the raw material of forks and double attacks.",
+        "extra": "Each move, glance at which of your pieces nobody defends. Most tactics under 1500 begin with an unprotected piece."
+      },
+      "tags": ["chess::fundamentals"]
+    },
+    {
+      "key": "tactics-first",
+      "model": "basic",
+      "fields": {
+        "front": "Between 1000 and 1500, which single skill decides more games than everything else combined?",
+        "back": "Tactics: spotting hanging pieces and short combinations, and not allowing them.",
+        "extra": "Coaching consensus: a daily block of puzzles solved slowly for accuracy beats any amount of opening study at this level."
+      },
+      "tags": ["chess::fundamentals"]
+    },
+    {
+      "key": "activity",
+      "model": "basic",
+      "fields": {
+        "front": "The point table says 3-5-9, but a piece's real value in a given position is set by what?",
+        "back": "Its activity: how many useful squares it controls from where it stands.",
+        "extra": "A bishop staring at its own pawn chain is worth less than an entrenched knight, whatever the table says."
+      },
+      "tags": ["chess::fundamentals"]
+    },
+    {
+      "key": "opening-goals",
+      "model": "basic",
+      "fields": {
+        "front": "What are the three jobs of the opening?",
+        "back": "Control the center, develop your minor pieces, castle your king.",
+        "extra": "Everything else, including pawn grabs and early attacks, waits until those three are done."
+      },
+      "tags": ["chess::opening"]
+    },
+    {
+      "key": "same-piece-twice",
+      "model": "basic",
+      "fields": {
+        "front": "Why is moving an already-developed piece again in the opening usually a mistake?",
+        "back": "It loses time (a tempo) while the rest of your army stays home.",
+        "extra": "Exceptions: a concrete tactic, or the piece is being chased. Three wasted tempi are worth roughly a pawn."
+      },
+      "tags": ["chess::opening"]
+    },
+    {
+      "key": "early-queen",
+      "model": "basic",
+      "fields": {
+        "front": "Why does bringing the queen out early usually backfire?",
+        "back": "Opponents develop with tempo by attacking it, so every queen retreat hands them a free move.",
+        "extra": "1.e4 e5 2.Qh5?! Nc6 3.Bc4 g6: Black builds a position while the queen runs."
+      },
+      "tags": ["chess::opening"]
+    },
+    {
+      "key": "poisoned-pawn",
+      "model": "basic",
+      "fields": {
+        "front": "Your queen can grab the undefended b2 (or b7) pawn in the opening. What is the standard danger?",
+        "back": "The queen gets chased or trapped in the corner while the opponent gains a huge lead in development.",
+        "extra": "The classic 'poisoned pawn'. Rule of thumb: no pawn-grabbing with the queen before development is finished."
+      },
+      "tags": ["chess::opening"]
+    },
+    {
+      "key": "castle-by-ten",
+      "model": "basic",
+      "fields": {
+        "front": "Rule of thumb: by roughly which move number should your king be castled?",
+        "back": "Move 10.",
+        "extra": "A king stuck in the center is the precondition for most quick losses. Delay castling only for a concrete reason."
+      },
+      "tags": ["chess::opening"]
+    },
+    {
+      "key": "rules-vs-tactics",
+      "model": "basic",
+      "fields": {
+        "front": "When is it correct to break an opening principle?",
+        "back": "When concrete calculation shows a tactic that works: tactics outrank rules.",
+        "extra": "Principles are defaults for when calculation runs out, not laws."
+      },
+      "tags": ["chess::opening"]
+    },
+    {
+      "key": "pin-front",
+      "model": "basic",
+      "fields": {
+        "front": "In a PIN, which piece stands in front, on the attacked line?",
+        "back": "The less valuable piece, shielding something more valuable behind it.",
+        "extra": "Hook: pin = puny piece in front. Compare the skewer, its mirror image."
+      },
+      "tags": ["chess::tactics"]
+    },
+    {
+      "key": "skewer-front",
+      "model": "basic",
+      "fields": {
+        "front": "In a SKEWER, which piece stands in front?",
+        "back": "The more valuable piece: it must move, exposing the one behind it.",
+        "extra": "Hook: a skewer skewers the king or queen first. A skewer is a pin turned around."
+      },
+      "tags": ["chess::tactics"]
+    },
+    {
+      "key": "absolute-pin",
+      "model": "basic",
+      "fields": {
+        "front": "What makes a pin 'absolute'?",
+        "back": "The king stands behind the pinned piece, so moving it is illegal.",
+        "extra": "In a relative pin (queen or rook behind), the pinned piece can still legally move. Check for tricks before piling on."
+      },
+      "tags": ["chess::tactics"]
+    },
+    {
+      "key": "discovered-attack",
+      "model": "basic",
+      "fields": {
+        "front": "What is a discovered attack?",
+        "back": "Moving one piece unmasks an attack from a piece that was standing behind it.",
+        "extra": "Deadliest form: discovered check, where the moving piece can grab anything because the check must be answered first."
+      },
+      "tags": ["chess::tactics"]
+    },
+    {
+      "key": "double-check",
+      "model": "basic",
+      "fields": {
+        "front": "Why is double check the most forcing move in chess?",
+        "back": "The king must move: you cannot block or capture two checking pieces at once.",
+        "extra": "Only a discovered check can deliver it. The smothered mate pattern runs through a double check."
+      },
+      "tags": ["chess::tactics"]
+    },
+    {
+      "key": "zwischenzug",
+      "model": "basic",
+      "fields": {
+        "front": "What is a zwischenzug (in-between move)?",
+        "back": "Instead of the expected recapture, you first play a bigger threat, and only then take.",
+        "extra": "Checks are the most common in-between moves. Always ask: must I really recapture right now?"
+      },
+      "tags": ["chess::tactics"]
+    },
+    {
+      "key": "deflection",
+      "model": "basic",
+      "fields": {
+        "front": "What is deflection?",
+        "back": "Forcing an enemy defender to leave the square or piece it was guarding.",
+        "extra": "Sibling of the decoy, which lures a piece TO a bad square; deflection lures it AWAY from a duty."
+      },
+      "tags": ["chess::tactics"]
+    },
+    {
+      "key": "overloading",
+      "model": "basic",
+      "fields": {
+        "front": "What is an overloaded piece?",
+        "back": "A single defender given two jobs at once: it cannot handle both.",
+        "extra": "Spot it by counting duties, then capture one of the things it guards; the recapture abandons the other."
+      },
+      "tags": ["chess::tactics"]
+    },
+    {
+      "key": "back-rank-luft",
+      "model": "basic",
+      "fields": {
+        "front": "What is 'luft', the insurance against back-rank mate?",
+        "back": "A pawn push (h3/h6 or g3/g6) that gives your castled king an escape square.",
+        "extra": "Cheapest insurance in chess: one tempo. Buy it once enemy heavy pieces start eyeing your back rank."
+      },
+      "tags": ["chess::tactics"]
+    },
+    {
+      "key": "cct",
+      "model": "basic",
+      "fields": {
+        "front": "Which three families of forcing moves should you scan on every single turn?",
+        "back": "Checks, captures, threats.",
+        "extra": "Scan them for BOTH sides, forcing moves first, because their consequences can actually be calculated."
+      },
+      "tags": ["chess::tactics"]
+    },
+    {
+      "key": "pawns-permanent",
+      "model": "basic",
+      "fields": {
+        "front": "Why do pawn weaknesses matter more than badly placed pieces?",
+        "back": "Pawns cannot move backward, so a pawn weakness tends to be permanent.",
+        "extra": "Pieces regroup in a move or two; a busted structure lasts the whole game. Hence: think before every pawn move."
+      },
+      "tags": ["chess::pawns"]
+    },
+    {
+      "key": "isolated-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is an isolated pawn? (White's d4 pawn in the diagram)",
+        "back": "A pawn with no friendly pawn on either adjacent file.",
+        "extra": "White has no c- or e-pawn left, so d4 can only ever be defended by pieces.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1bq1rk1%2Fpp2bppp%2F2n1pn2%2F8%2F2BP4%2F2N2N2%2FPP3PPP%2FR1BQ1RK1%20w%20-%20-%200%201&color=white&theme=brown&piece=cburnett"
+      },
+      "tags": ["chess::pawns"]
+    },
+    {
+      "key": "isolated-weak",
+      "model": "basic",
+      "fields": {
+        "front": "Why is an isolated pawn structurally weak?",
+        "back": "No pawn can ever defend it, so pieces must be tied down to babysit it.",
+        "extra": "The flip side: an isolated queen's pawn buys open files and active pieces. Trade pieces and the weakness dominates; keep pieces on and the activity can outweigh it."
+      },
+      "tags": ["chess::pawns"]
+    },
+    {
+      "key": "isolated-square",
+      "model": "basic",
+      "fields": {
+        "front": "Besides the pawn itself, what does an isolated pawn permanently concede?",
+        "back": "The square directly in front of it, a perfect enemy blockade square.",
+        "extra": "In front of White's isolated d4 pawn, d5 is a hole no white pawn can ever attack: park a knight there."
+      },
+      "tags": ["chess::pawns"]
+    },
+    {
+      "key": "backward-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is a backward pawn? (Black's d6 pawn in the diagram)",
+        "back": "A pawn left behind by its neighbors, so no pawn can defend it and it cannot safely advance.",
+        "extra": "Black's c-pawn is traded and the e-pawn has run past to e5, so d6 will never see pawn support again, and the d5 square in front of it belongs to White.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r2q1rk1%2F1p3ppp%2Fp2p1n2%2F3Np3%2F4P3%2F8%2FPPP2PPP%2FR1BQ1RK1%20w%20-%20-%200%201&color=white&theme=brown&piece=cburnett"
+      },
+      "tags": ["chess::pawns"]
+    },
+    {
+      "key": "half-open",
+      "model": "basic",
+      "fields": {
+        "front": "What is a half-open file, from your point of view?",
+        "back": "A file where your own pawn is gone but an enemy pawn remains.",
+        "extra": "Your rooks attack down it and their pawn on it is the natural target. In the Open Sicilian, White gets the half-open d-file and Black the half-open c-file."
+      },
+      "tags": ["chess::pawns"]
+    },
+    {
+      "key": "weakest-pawn",
+      "model": "basic",
+      "fields": {
+        "front": "What is generally the weakest pawn on the board?",
+        "back": "A backward or isolated pawn sitting on a half-open file, where enemy rooks can reach it.",
+        "extra": "Weak = no pawn can ever defend it AND heavy pieces can get at it. The same backward pawn on a closed file is ugly but often untouchable."
+      },
+      "tags": ["chess::pawns"]
+    },
+    {
+      "key": "attack-weak-pawn",
+      "model": "sequence",
+      "fields": {
+        "title": "The three-step plan for winning a weak pawn",
+        "items": [
+          "Fix it: make sure it cannot advance or trade itself away",
+          "Pile up: rooks and queen stack on its file, minor pieces add extra hits",
+          "Punish: capture it, or switch to a second weakness while its defenders are tied down"
+        ],
+        "contextWindow": 1
+      },
+      "tags": ["chess::pawns"]
+    },
+    {
+      "key": "pressure-passive",
+      "model": "basic",
+      "fields": {
+        "front": "You besiege a weak pawn but can never actually win it. Why is the siege still a success?",
+        "back": "Its defenders are chained to it, and passive pieces there mean you rule the rest of the board.",
+        "extra": "Karpov's specialty: the pawn is the hook; the real gain is the opponent's passivity."
+      },
+      "tags": ["chess::pawns"]
+    },
+    {
+      "key": "two-weaknesses",
+      "model": "basic",
+      "fields": {
+        "front": "What is the principle of two weaknesses?",
+        "back": "One weakness can usually be defended, so create and attack a second one until the defense is stretched past breaking.",
+        "extra": "Typical shape: tie their pieces to a weak queenside pawn, then start play on the kingside. Defenders cannot commute fast enough."
+      },
+      "tags": ["chess::pawns"]
+    },
+    {
+      "key": "doubled-pawns",
+      "model": "basic",
+      "fields": {
+        "front": "Why are doubled pawns structurally weak?",
+        "back": "They can never defend each other, and together they control fewer new squares than split pawns.",
+        "extra": "How weak in practice depends on one question: can enemy pieces actually reach and attack them?"
+      },
+      "tags": ["chess::pawns"]
+    },
+    {
+      "key": "doubled-not-always",
+      "model": "basic",
+      "fields": {
+        "front": "Doubled pawns are always a concession. True?",
+        "back": "No: a capture toward the center that doubles pawns often buys an open file for your rooks plus central control.",
+        "extra": "Always ask what the doubling bought. Open file? More center? Then it can be a strength, not a weakness."
+      },
+      "tags": ["chess::pawns"]
+    },
+    {
+      "key": "pawn-islands",
+      "model": "basic",
+      "fields": {
+        "front": "What is a pawn island?",
+        "back": "A connected group of your pawns, separated from your other pawns by files containing none of yours.",
+        "extra": "Count islands when trades loom: two islands vs three is a standing endgame edge, because fewer islands means fewer stray pawns to defend."
+      },
+      "tags": ["chess::pawns"]
+    },
+    {
+      "key": "hole-def",
+      "model": "basic",
+      "fields": {
+        "front": "In pawn-structure terms, what is a 'hole'?",
+        "back": "A square that none of your pawns can ever attack again.",
+        "extra": "Your hole is their outpost. Holes near the center or your king hurt most; a hole nobody can occupy hurts little."
+      },
+      "tags": ["chess::pawns"]
+    },
+    {
+      "key": "chain-base",
+      "model": "basic",
+      "fields": {
+        "front": "Where should you attack a pawn chain?",
+        "back": "At its base: the rearmost pawn that props up the rest.",
+        "extra": "French structure: against White's d4-e5 chain, Black plays ...c5 at the base d4, and often ...f6 at the head later."
+      },
+      "tags": ["chess::pawns"]
+    },
+    {
+      "key": "chains-point",
+      "model": "basic",
+      "fields": {
+        "front": "Your pawn chain points toward the kingside. Where does the structure tell you to play?",
+        "back": "The kingside: attack where your pawns point, because that is where your space is.",
+        "extra": "French again: White's d4-e5 chain points at the black king (f4-f5 comes), while Black's e6-d5 chain points queenside (...c5 counterplay)."
+      },
+      "tags": ["chess::pawns"]
+    },
+    {
+      "key": "king-cover",
+      "model": "basic",
+      "fields": {
+        "front": "Why think three times before pushing the pawns in front of your castled king?",
+        "back": "Every push leaves permanent holes around the king, and pawns cannot step back.",
+        "extra": "h3 to stop a pin is usually fine; a g4-style expansion in front of your own king needs a concrete payoff."
+      },
+      "tags": ["chess::pawns"]
+    },
+    {
+      "key": "outpost-def",
+      "model": "basic",
+      "fields": {
+        "front": "What is an outpost? (the d5 square in the diagram)",
+        "back": "An advanced square defended by your own pawn that enemy pawns can never attack.",
+        "extra": "White's e4 pawn guards d5, Black's c-pawn is gone, and the e-pawn has passed by: the knight sits there until Black spends a piece on it.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r2q1rk1%2F1p3ppp%2Fp2p1n2%2F3Np3%2F4P3%2F8%2FPPP2PPP%2FR1BQ1RK1%20w%20-%20-%200%201&color=white&theme=brown&piece=cburnett"
+      },
+      "tags": ["chess::pieces"]
+    },
+    {
+      "key": "outpost-knight",
+      "model": "basic",
+      "fields": {
+        "front": "Which piece gains the most from an outpost?",
+        "back": "The knight.",
+        "extra": "Bishops and rooks keep their range from home squares; the short-legged knight multiplies in value on a safe advanced post."
+      },
+      "tags": ["chess::pieces"]
+    },
+    {
+      "key": "knight-rim",
+      "model": "basic",
+      "fields": {
+        "front": "'A knight on the rim is dim.' What is the arithmetic behind the saying?",
+        "back": "An edge knight covers at most 4 squares; a centralized knight covers 8.",
+        "extra": "The corner is worst at 2. Rim knights also need two or more moves just to rejoin the game."
+      },
+      "tags": ["chess::pieces"]
+    },
+    {
+      "key": "bad-bishop",
+      "model": "basic",
+      "fields": {
+        "front": "What makes a bishop 'bad'?",
+        "back": "Its own pawns are fixed on its color, walling it in.",
+        "extra": "Quick test: do your fixed central pawns share the bishop's color? The c8 bishop in the French is the textbook prisoner."
+      },
+      "tags": ["chess::pieces"]
+    },
+    {
+      "key": "fix-bad-bishop",
+      "model": "basic",
+      "fields": {
+        "front": "You own the bad bishop. What is the standard remedy?",
+        "back": "Trade it off, or reroute it outside the pawn chain before the chain locks.",
+        "extra": "French players' lifelong project: ...b6 with ...Ba6, or the long trek ...Bd7-e8-g6."
+      },
+      "tags": ["chess::pieces"]
+    },
+    {
+      "key": "bishop-pair",
+      "model": "basic",
+      "fields": {
+        "front": "In what kind of position is the bishop pair at full strength?",
+        "back": "Open positions: few center pawns and long, unblocked diagonals.",
+        "extra": "Two bishops cover both square colors and outgun bishop-plus-knight in open play; in a locked center the pair means little."
+      },
+      "tags": ["chess::pieces"]
+    },
+    {
+      "key": "knights-closed",
+      "model": "basic",
+      "fields": {
+        "front": "In what kind of position do knights outshine bishops?",
+        "back": "Closed positions with locked pawn chains, where knights hop over the walls that bury bishops.",
+        "extra": "Blocked structures also breed exactly what knights crave: outposts."
+      },
+      "tags": ["chess::pieces"]
+    },
+    {
+      "key": "rooks-files",
+      "model": "basic",
+      "fields": {
+        "front": "What is the right home for rooks?",
+        "back": "Open and half-open files.",
+        "extra": "No open file yet? Put a rook behind your next pawn break, so the file opens straight onto it."
+      },
+      "tags": ["chess::pieces"]
+    },
+    {
+      "key": "rook-seventh",
+      "model": "basic",
+      "fields": {
+        "front": "Why is a rook on the 7th rank worth so much?",
+        "back": "It eats the row of unmoved pawns while cutting the enemy king off on the back rank.",
+        "extra": "Two rooks on the 7th, the 'blind pigs', often force perpetual check or mate outright."
+      },
+      "tags": ["chess::pieces"]
+    },
+    {
+      "key": "tarrasch-rule",
+      "model": "basic",
+      "fields": {
+        "front": "Tarrasch's rule: where does a rook belong relative to a passed pawn?",
+        "back": "Behind it, whether the pawn is yours or your opponent's.",
+        "extra": "Behind your passer it gains scope with every push; behind theirs it taxes every advance. A rook in FRONT of its own passer walks backward as the pawn runs."
+      },
+      "tags": ["chess::pieces"]
+    },
+    {
+      "key": "ocb-middlegame",
+      "model": "basic",
+      "fields": {
+        "front": "Opposite-colored bishops in a MIDDLEGAME attack favor whom?",
+        "back": "The attacker: their bishop hits squares the defending bishop can never cover, like being a piece up on those squares.",
+        "extra": "Anchor: OCB middlegame = attacker's friend. Contrast the endgame card."
+      },
+      "tags": ["chess::pieces"]
+    },
+    {
+      "key": "ocb-endgame",
+      "model": "basic",
+      "fields": {
+        "front": "Why are pure opposite-colored-bishop ENDGAMES notoriously drawish?",
+        "back": "The defender blockades on the color the attacking bishop can never touch, so even two extra pawns often cannot advance.",
+        "extra": "Anchor: OCB endgame = defender's friend. Know which phase you are trading into."
+      },
+      "tags": ["chess::pieces"]
+    },
+    {
+      "key": "opp-castling-storm",
+      "model": "basic",
+      "fields": {
+        "front": "You castled kingside; your opponent castled queenside. What is the standard plan?",
+        "back": "Launch your queenside pawns (a-, b-, c-) at their king as fast as possible: it is a mutual race.",
+        "extra": "In opposite-side castling, speed beats caution. One opened file against the king usually decides, so slow moves are the real blunders."
+      },
+      "tags": ["chess::attack"]
+    },
+    {
+      "key": "storm-free",
+      "model": "basic",
+      "fields": {
+        "front": "In opposite-side castling, why are your storming pawns 'free' to push?",
+        "back": "They do not shield your own king, so hurling them forward costs no safety.",
+        "extra": "Contrast same-side castling, where the same pushes would strip your own king bare."
+      },
+      "tags": ["chess::attack"]
+    },
+    {
+      "key": "why-h5",
+      "model": "basic",
+      "fields": {
+        "front": "Why would you ever push your rook's pawn all the way to h5?",
+        "back": "As a battering ram against the castled king: from h5 it threatens h6 or hxg6 to rip open lines.",
+        "extra": "'Harry the h-pawn' (Simon Williams). Standard preconditions: the enemy king castled short, and a closed or stable center, or opposite-side castling."
+      },
+      "tags": ["chess::attack"]
+    },
+    {
+      "key": "h5-vs-fianchetto",
+      "model": "basic",
+      "fields": {
+        "front": "The defending king hides behind a g6 fianchetto. Which pawn is your natural can-opener?",
+        "back": "The h-pawn: h4-h5 bites the g6 pawn, and hxg6 or h6 cracks the shelter.",
+        "extra": "The g6 pawn is a fixed hook, something your pawn can attack to force lines open. No hook, no storm: that is why untouched shelters are hardest to storm."
+      },
+      "tags": ["chess::attack"]
+    },
+    {
+      "key": "trade-fianchetto-bishop",
+      "model": "basic",
+      "fields": {
+        "front": "What happens to a castled king when its fianchettoed bishop gets traded off?",
+        "back": "The long-diagonal squares around it become permanent holes that no pawn can repair.",
+        "extra": "Hence the standard plan against a g6 king: Be3, Qd2, Bh6 to swap the g7 bishop, then invade the dark squares."
+      },
+      "tags": ["chess::attack"]
+    },
+    {
+      "key": "flank-when",
+      "model": "basic",
+      "fields": {
+        "front": "When is a flank pawn storm strategically justified?",
+        "back": "When the center is closed or firmly under your control, so the opponent has no central counterplay.",
+        "extra": "Open center plus wing attack invites a counterpunch through the middle; with the center locked, the wings are the only battlegrounds."
+      },
+      "tags": ["chess::attack"]
+    },
+    {
+      "key": "flank-answer",
+      "model": "basic",
+      "fields": {
+        "front": "What is the classical answer to a premature flank attack?",
+        "back": "A counter-strike in the center.",
+        "extra": "Opening the center exposes the attacker's king and the squares their storming pawns abandoned."
+      },
+      "tags": ["chess::attack"]
+    },
+    {
+      "key": "same-side-pieces",
+      "model": "basic",
+      "fields": {
+        "front": "Both kings castled short. Why attack with pieces rather than pawns?",
+        "back": "Your kingside pawns are also your king's shelter, so storming with them exposes you as much as him.",
+        "extra": "Piece attacks (Ng5, Qh5, rook lifts, Bxh7 ideas) risk no structure. Push shelter pawns only with the center fully locked."
+      },
+      "tags": ["chess::attack"]
+    },
+    {
+      "key": "greek-gift",
+      "model": "basic",
+      "fields": {
+        "front": "White to move. Which classic sacrifice does this setup allow?",
+        "back": "The Greek gift: Bxh7+! Kxh7, then Ng5+ followed by Qh5 with a winning attack.",
+        "extra": "Checklist before sacrificing: Ng5+ is available, the queen can reach h5, and no black knight sits on f6. Here Black's Qe7 covers g5, but fxg5 recaptures: the f4 pawn is in on the plot.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=r1b2rk1%2Fpppnqppp%2F4p3%2F3pP3%2F3P1P2%2F2NB1N2%2FPPP3PP%2FR1BQ1RK1%20w%20-%20-%200%201&color=white&theme=brown&piece=cburnett"
+      },
+      "tags": ["chess::attack"]
+    },
+    {
+      "key": "three-pieces",
+      "model": "basic",
+      "fields": {
+        "front": "Folk rule: how many of your pieces should be aiming at the enemy king before you sacrifice?",
+        "back": "Three: two attackers usually deliver only perpetual check, three deliver mate.",
+        "extra": "The deeper rule (Vukovic, Art of Attack): your attackers in the zone must outnumber the defenders, and reinforcements must arrive faster."
+      },
+      "tags": ["chess::attack"]
+    },
+    {
+      "key": "battery",
+      "model": "basic",
+      "fields": {
+        "front": "What is a battery?",
+        "back": "Two or more pieces stacked on the same line, like a queen and bishop both aiming at h7.",
+        "extra": "On the b1-h7 diagonal the queen usually leads, since she is the one who must land on h7. On files, doubled rooks with the queen make 'Alekhine's gun'."
+      },
+      "tags": ["chess::attack"]
+    },
+    {
+      "key": "ahead-trade-pieces",
+      "model": "basic",
+      "fields": {
+        "front": "You are up a piece. Trade pieces or trade pawns?",
+        "back": "Trade pieces, keep pawns.",
+        "extra": "Extra material grows in relative weight as the board empties, but keep pawns: your extra piece eventually needs one to escort to promotion."
+      },
+      "tags": ["chess::trades"]
+    },
+    {
+      "key": "behind-avoid-trades",
+      "model": "basic",
+      "fields": {
+        "front": "You are DOWN material. Which kind of trade should you avoid?",
+        "back": "Piece trades: complications are your only currency, while trading pawns actually helps you draw.",
+        "extra": "Mirror of the previous card. Down material, steer for messy middlegames or bare-pawn endings, never clean simplification."
+      },
+      "tags": ["chess::trades"]
+    },
+    {
+      "key": "cramped-trade",
+      "model": "basic",
+      "fields": {
+        "front": "Your position is cramped, with pieces tripping over each other. What eases it?",
+        "back": "Trading pieces: fewer bodies need less space.",
+        "extra": "Which is exactly why the side WITH the space advantage should avoid trades: every swap relieves the cramp."
+      },
+      "tags": ["chess::trades"]
+    },
+    {
+      "key": "attack-avoid-trades",
+      "model": "basic",
+      "fields": {
+        "front": "You have a promising attack on the king. Which trades must you dodge?",
+        "back": "Trades of your attacking pieces, above all the queens.",
+        "extra": "Mirror rule as defender: offer every trade you can; each swap thins the mating net."
+      },
+      "tags": ["chess::trades"]
+    },
+    {
+      "key": "trade-bad-for-good",
+      "model": "basic",
+      "fields": {
+        "front": "All else equal, which of your pieces should you be trying to trade off?",
+        "back": "Your worst-placed piece, ideally for the opponent's best one.",
+        "extra": "An 'even' trade of your spectator for their star wins material in activity terms."
+      },
+      "tags": ["chess::trades"]
+    },
+    {
+      "key": "king-endgame",
+      "model": "basic",
+      "fields": {
+        "front": "How does the king's job change in the endgame?",
+        "back": "It becomes a fighting piece: march it to the center or toward the action.",
+        "extra": "With queens off, mating danger fades and an active king fights at roughly minor-piece strength. King races go to whoever starts first."
+      },
+      "tags": ["chess::endgame"]
+    },
+    {
+      "key": "opposition-def",
+      "model": "basic",
+      "fields": {
+        "front": "The kings face off with one empty square between them (diagram). What does 'having the opposition' mean?",
+        "back": "Being the player NOT to move: the other king must give way first.",
+        "extra": "With his pawn still back on e2, White can also 'lose a move' (e2-e3) to steal the opposition. Spare pawn tempi are opposition currency.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=8%2F8%2F4k3%2F8%2F4K3%2F8%2F4P3%2F8%20w%20-%20-%200%201&color=white&theme=brown&piece=cburnett"
+      },
+      "tags": ["chess::endgame"]
+    },
+    {
+      "key": "kp-win-rule",
+      "model": "basic",
+      "fields": {
+        "front": "King and pawn vs king: where must the strong side's king be to force promotion?",
+        "back": "In front of its own pawn, taking the opposition, never trailing behind it.",
+        "extra": "Ironclad case: king on the 6th rank ahead of its pawn always wins, except with a rook pawn."
+      },
+      "tags": ["chess::endgame"]
+    },
+    {
+      "key": "rook-pawn-draw",
+      "model": "basic",
+      "fields": {
+        "front": "Which pawn can fail to promote in K+P vs K even when everything else is right?",
+        "back": "The rook pawn (a- or h-file): a defending king that reaches the corner cannot be evicted, and stalemate saves it.",
+        "extra": "The corner has no 'other side' to shoulder the defender toward. Related draw: wrong-colored bishop plus rook pawn."
+      },
+      "tags": ["chess::endgame"]
+    },
+    {
+      "key": "rule-of-square",
+      "model": "basic",
+      "fields": {
+        "front": "Black to move (diagram). What does the rule of the square say about White's h4 pawn?",
+        "back": "If the defending king can step inside the pawn's square (here h4-h8-d8-d4), it catches the pawn, so Black draws.",
+        "extra": "Shortcut: draw the diagonal from the pawn to the promotion rank and complete the box; no move-counting needed. Mind the double step of an unmoved pawn.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=8%2F8%2F8%2F8%2F4k2P%2F8%2F8%2F1K6%20b%20-%20-%200%201&color=black&theme=brown&piece=cburnett"
+      },
+      "tags": ["chess::endgame"]
+    },
+    {
+      "key": "passed-push",
+      "model": "basic",
+      "fields": {
+        "front": "'Passed pawns must be pushed.' What does each advanced rank actually buy?",
+        "back": "A bigger promotion threat, and a rising ransom the defense must pay in pieces and attention to stop it.",
+        "extra": "Strongest in pawn and rook endings, where a far-advanced runner outweighs structural niceties."
+      },
+      "tags": ["chess::endgame"]
+    },
+    {
+      "key": "blockade-knight",
+      "model": "basic",
+      "fields": {
+        "front": "Which piece is the ideal blockader of an enemy passed pawn?",
+        "back": "The knight: it stops the pawn dead while still radiating attacks from the blockade square.",
+        "extra": "Nimzowitsch's ranking: rooks and queens blockade miserably (they hate the passivity), bishops are passable, the knight loses nothing."
+      },
+      "tags": ["chess::endgame"]
+    },
+    {
+      "key": "philidor",
+      "model": "basic",
+      "fields": {
+        "front": "Black defends rook-and-pawn vs rook (diagram). Where does Philidor's drawing rook stay for now?",
+        "back": "On its third rank (here a6), fencing White's king off the 6th rank.",
+        "extra": "Without his king on the 6th, White can never build a winning net, and the pawn alone achieves nothing.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=4k3%2F7R%2Fr7%2F3KP3%2F8%2F8%2F8%2F8%20b%20-%20-%200%201&color=black&theme=brown&piece=cburnett"
+      },
+      "tags": ["chess::endgame"]
+    },
+    {
+      "key": "philidor-switch",
+      "model": "basic",
+      "fields": {
+        "front": "Philidor defense: the enemy pawn finally steps onto the 6th rank. What does the defending rook do now?",
+        "back": "Drops to the far end of the board and checks from behind forever.",
+        "extra": "The advanced pawn now occupies its own king's best shelter square, so the rear checks never run out. That is the whole trick."
+      },
+      "tags": ["chess::endgame"]
+    },
+    {
+      "key": "lucena",
+      "model": "basic",
+      "fields": {
+        "front": "White to move wins this rook endgame (diagram). What is the winning maneuver called?",
+        "back": "Building a bridge: Rc4!, walk the king out, and block the rear checks with the rook on the 4th rank.",
+        "extra": "1.Rc4 Ra1 2.Rd4+ Ke7 3.Kc7 Rc1+ 4.Kb6 Rb1+ 5.Kc6 Rc1+ 6.Kb5 Rb1+ 7.Rb4, and the pawn queens.",
+        "frontImage": "https://lichess1.org/export/fen.gif?fen=1K1k4%2F1P6%2F8%2F8%2F8%2F8%2Fr7%2F2R5%20w%20-%20-%200%201&color=white&theme=brown&piece=cburnett"
+      },
+      "tags": ["chess::endgame"]
+    },
+    {
+      "key": "lucena-vs-philidor",
+      "model": "basic",
+      "fields": {
+        "front": "Of the Lucena and Philidor positions, which one is the attacker's WIN?",
+        "back": "Lucena: the attacking king already stands in front of its pawn on the 8th rank; Philidor is the defender's draw.",
+        "extra": "File them as a pair: reach Lucena and stop calculating, you win; hold Philidor and stop worrying, you draw."
+      },
+      "tags": ["chess::endgame"]
+    },
+    {
+      "key": "active-rook",
+      "model": "basic",
+      "fields": {
+        "front": "Rook endgame: you can defend a pawn passively or give it up for a rampaging active rook. Which do strong players choose?",
+        "back": "The active rook: passivity is what actually loses rook endgames.",
+        "extra": "The folklore that 'all rook endings are drawn' exists precisely because activity is routinely worth a pawn."
+      },
+      "tags": ["chess::endgame"]
+    },
+    {
+      "key": "connected-sixth",
+      "model": "basic",
+      "fields": {
+        "front": "Two connected passed pawns reach the 6th rank against a lone rook, kings far away. Verdict?",
+        "back": "The pawns win: if the rook captures one, the other promotes by force.",
+        "extra": "Corollary for the defense: blockade connected passers BEFORE they touch the 6th."
+      },
+      "tags": ["chess::endgame"]
+    },
+    {
+      "key": "opponent-threat",
+      "model": "basic",
+      "fields": {
+        "front": "Your opponent just moved. What is the mandatory first question before you think about your own plans?",
+        "back": "What does that move threaten, and what did it change?",
+        "extra": "Most sub-1500 blunders are replies to a move the player never actually examined: new attacks, newly loose pieces, newly opened lines."
+      },
+      "tags": ["chess::habits"]
+    },
+    {
+      "key": "blunder-check",
+      "model": "basic",
+      "fields": {
+        "front": "What is a blunder check?",
+        "back": "A final look, before playing your chosen move, at every check and capture the opponent gets in reply.",
+        "extra": "The single highest-return habit from 1000 to 1500, because it targets how these games are actually lost."
+      },
+      "tags": ["chess::habits"]
+    },
+    {
+      "key": "sit-on-hands",
+      "model": "basic",
+      "fields": {
+        "front": "Emanuel Lasker's rule for the moment you spot a good move?",
+        "back": "Look for a better one.",
+        "extra": "The folk version says to sit on your hands first. The first decent idea anchors you; forcing one alternative per move is a cheap strength upgrade."
+      },
+      "tags": ["chess::habits"]
+    },
+    {
+      "key": "hope-chess",
+      "model": "basic",
+      "fields": {
+        "front": "What is 'hope chess'?",
+        "back": "Making a move without checking whether you can meet the opponent's best forcing replies, betting on their mistake.",
+        "extra": "Dan Heisman's term. The cure is 'real chess': assume the best reply, every single move."
+      },
+      "tags": ["chess::habits"]
+    },
+    {
+      "key": "review-games",
+      "model": "basic",
+      "fields": {
+        "front": "What is the highest-value five minutes after any serious game?",
+        "back": "Reviewing it to find the exact move where the game turned, especially your blunders.",
+        "extra": "Chart your OWN repeat offenders: three games lost to the same knight fork teach more than a strategy chapter."
+      },
+      "tags": ["chess::habits"]
+    },
+    {
+      "key": "few-openings",
+      "model": "basic",
+      "fields": {
+        "front": "How wide should an opening repertoire be at 1000-1500?",
+        "back": "Narrow: one system as White plus one defense to 1.e4 and one to 1.d4 as Black.",
+        "extra": "Depth beats breadth. The goal is reaching familiar middlegame structures, not encyclopedic coverage."
+      },
+      "tags": ["chess::habits"]
+    }
+  ]
+}

@@ -4,6 +4,19 @@
   "name": "Chess",
   "decks": [
     {
+      "key": "chess-strategy-fundamentals",
+      "name": "Chess Strategy: 1000 to 1500",
+      "description": "The strategy and pattern vocabulary that separates 1000 from 1500: what the weakest pawn is and how to attack it, why you would ever push h5, outposts, good and bad trades, king attacks, the essential endgames, and the thinking habits that stop blunders. Concept cards, not move memorization. 90 cards.",
+      "cardCount": 90,
+      "topics": [
+        "chess",
+        "strategy",
+        "middlegame",
+        "endgame"
+      ],
+      "coverImage": "https://lichess1.org/export/fen.gif?fen=r2q1rk1%2F1p3ppp%2Fp2p1n2%2F3Np3%2F4P3%2F8%2FPPP2PPP%2FR1BQ1RK1%20w%20-%20-%200%201&color=white&theme=brown&piece=cburnett"
+    },
+    {
       "key": "kings-gambit-declined",
       "name": "King's Gambit Declined: Classical Variation as Black",
       "description": "A Black repertoire for the King's Gambit Declined: Classical Variation, drilled one position at a time: every card is a position with exactly one book move to find. Built from 5,000,000 rated games (Lichess database 2026-06, ratings 1600-2200): opponent replies branch by how often they are actually played, covering the most common 90% at each turn, so frequent lines run deep and rare sidelines stay shallow. 17 positions.",
