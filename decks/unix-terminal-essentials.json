@@ -1,0 +1,948 @@
+{
+  "key": "unix-terminal-essentials",
+  "version": 1,
+  "name": "UNIX Terminal Essentials",
+  "description": "The commands a programmer actually types every day: navigating, viewing, searching, pipes and redirection, processes, permissions, networking, and archives, plus the classic traps (rm has no undo, > overwrites, kill -9, uniq needs sort).",
+  "category": "Programming",
+  "topics": [
+    "unix",
+    "linux",
+    "terminal",
+    "command-line",
+    "shell",
+    "programming"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Gnu-bash-logo.svg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "pwd",
+      "model": "typed",
+      "fields": {
+        "front": "Which command prints the absolute path of the directory you are currently in?",
+        "answer": "pwd",
+        "extra": "Short for *print working directory*."
+      },
+      "tags": ["unix::navigation"]
+    },
+    {
+      "key": "cd",
+      "model": "typed",
+      "fields": {
+        "front": "Which command moves your shell to a different directory?",
+        "answer": "cd",
+        "extra": "`cd /path` for absolute paths, `cd sub` for relative. It is a shell builtin, not a program."
+      },
+      "tags": ["unix::navigation"]
+    },
+    {
+      "key": "cd-home",
+      "model": "basic",
+      "fields": {
+        "front": "Where does `cd` with no arguments take you?",
+        "back": "Your home directory.",
+        "extra": "Same as `cd ~`. The location is stored in `$HOME`."
+      },
+      "tags": ["unix::navigation"]
+    },
+    {
+      "key": "cd-dash",
+      "model": "basic",
+      "fields": {
+        "front": "What does `cd -` do?",
+        "back": "Jumps back to the directory you were in before the last `cd`.",
+        "extra": "It also prints where it landed. Handy for bouncing between two places."
+      },
+      "tags": ["unix::navigation"]
+    },
+    {
+      "key": "dot-dot",
+      "model": "basic",
+      "fields": {
+        "front": "In a path, what does `..` refer to?",
+        "back": "The parent directory, one level up.",
+        "extra": "`.` is the current directory; `cd ../..` climbs two levels."
+      },
+      "tags": ["unix::navigation"]
+    },
+    {
+      "key": "ls",
+      "model": "typed",
+      "fields": {
+        "front": "Which command lists the files in a directory?",
+        "answer": "ls",
+        "extra": "With no argument it lists the current directory."
+      },
+      "tags": ["unix::navigation"]
+    },
+    {
+      "key": "ls-l",
+      "model": "basic",
+      "fields": {
+        "front": "What does `ls -l` show that plain `ls` does not?",
+        "back": "The long format: one file per line with permissions, owner, size, and modification time.",
+        "extra": "The first column (`-rwxr-xr--`) is the permission string; later cards decode it."
+      },
+      "tags": ["unix::navigation"]
+    },
+    {
+      "key": "ls-a",
+      "model": "basic",
+      "fields": {
+        "front": "Which files does `ls -a` reveal that plain `ls` hides?",
+        "back": "Hidden files: names starting with a dot, like `.gitignore`.",
+        "extra": "`-A` is the same but drops the `.` and `..` entries."
+      },
+      "tags": ["unix::navigation"]
+    },
+    {
+      "key": "ls-h",
+      "model": "basic",
+      "fields": {
+        "front": "In `ls -lh`, what does the `h` flag change?",
+        "back": "Sizes print human-readable (`4.0K`, `2.3M`) instead of raw byte counts.",
+        "extra": "The same `-h` works on `df` and `du`."
+      },
+      "tags": ["unix::navigation"]
+    },
+    {
+      "key": "man",
+      "model": "typed",
+      "fields": {
+        "front": "Which command opens the reference manual for another command?",
+        "answer": "man",
+        "extra": "Inside: space pages down, `/pattern` searches, `q` quits. `man ls` beats guessing flags."
+      },
+      "tags": ["unix::navigation"]
+    },
+    {
+      "key": "which",
+      "model": "basic",
+      "fields": {
+        "front": "What does `which python` print?",
+        "back": "The full path of the executable that would run when you type `python`.",
+        "extra": "Great for debugging 'wrong version runs' problems: it searches `$PATH` in order."
+      },
+      "tags": ["unix::navigation"]
+    },
+    {
+      "key": "mkdir",
+      "model": "typed",
+      "fields": {
+        "front": "Which command creates a new directory?",
+        "answer": "mkdir",
+        "extra": "*make directory*."
+      },
+      "tags": ["unix::files"]
+    },
+    {
+      "key": "mkdir-p",
+      "model": "basic",
+      "fields": {
+        "front": "What does `mkdir -p a/b/c` do that plain `mkdir a/b/c` cannot?",
+        "back": "It creates the missing parent directories `a` and `a/b` along the way.",
+        "extra": "`-p` also silences the 'File exists' error, so it is safe to rerun in scripts."
+      },
+      "tags": ["unix::files"]
+    },
+    {
+      "key": "touch",
+      "model": "basic",
+      "fields": {
+        "front": "What does `touch notes.txt` do when the file does not exist?",
+        "back": "Creates it, empty.",
+        "extra": "On an existing file it updates the modification timestamp, which is its original purpose."
+      },
+      "tags": ["unix::files"]
+    },
+    {
+      "key": "cp",
+      "model": "typed",
+      "fields": {
+        "front": "Which command copies a file?",
+        "answer": "cp",
+        "extra": "`cp source destination`: source comes first."
+      },
+      "tags": ["unix::files"]
+    },
+    {
+      "key": "cp-r",
+      "model": "basic",
+      "fields": {
+        "front": "Which flag does `cp` need before it will copy a directory?",
+        "back": "`-r` (recursive): `cp -r src/ dest/`.",
+        "extra": "Without it, `cp` refuses directories outright."
+      },
+      "tags": ["unix::files"]
+    },
+    {
+      "key": "mv-rename",
+      "model": "basic",
+      "fields": {
+        "front": "How do you rename `draft.txt` to `final.txt`?",
+        "back": "`mv draft.txt final.txt`",
+        "extra": "There is no separate rename command: `mv` does both moving and renaming, and needs no `-r` for directories."
+      },
+      "tags": ["unix::files"]
+    },
+    {
+      "key": "rm",
+      "model": "typed",
+      "fields": {
+        "front": "Which command deletes a file?",
+        "answer": "rm",
+        "extra": "*remove*."
+      },
+      "tags": ["unix::files"]
+    },
+    {
+      "key": "rm-undo",
+      "model": "basic",
+      "fields": {
+        "front": "You just deleted the wrong file with `rm`. How do you undo it?",
+        "back": "You cannot: `rm` bypasses any trash, so the file is simply gone.",
+        "extra": "This is why `rm -rf` has its reputation. `-i` prompts before each delete when you want a safety net."
+      },
+      "tags": ["unix::files"]
+    },
+    {
+      "key": "rm-r",
+      "model": "basic",
+      "fields": {
+        "front": "Which flag makes `rm` delete a directory and everything inside it?",
+        "back": "`-r`, as in `rm -r build/`.",
+        "extra": "Adding `-f` (force) skips all prompts and missing-file errors: `rm -rf` is powerful and unforgiving."
+      },
+      "tags": ["unix::files"]
+    },
+    {
+      "key": "ln-s",
+      "model": "basic",
+      "fields": {
+        "front": "What does `ln -s /opt/app/config.yml config.yml` create?",
+        "back": "A symbolic link named `config.yml` that points to `/opt/app/config.yml`.",
+        "extra": "Argument order: real target first, link name second (same direction as `cp`)."
+      },
+      "tags": ["unix::files"]
+    },
+    {
+      "key": "cat",
+      "model": "typed",
+      "fields": {
+        "front": "Which command prints a file's entire contents straight to the terminal?",
+        "answer": "cat",
+        "extra": "Short for *concatenate*: `cat a b > combined` joins files."
+      },
+      "tags": ["unix::viewing"]
+    },
+    {
+      "key": "less",
+      "model": "basic",
+      "fields": {
+        "front": "Why open a long file with `less` instead of `cat`?",
+        "back": "`less` pages the file, letting you scroll and search instead of dumping everything at once.",
+        "extra": "Keys: space pages down, `/pattern` searches, `q` quits. `man` uses it under the hood."
+      },
+      "tags": ["unix::viewing"]
+    },
+    {
+      "key": "head",
+      "model": "basic",
+      "fields": {
+        "front": "What does `head app.log` print by default?",
+        "back": "The first 10 lines.",
+        "extra": "`head -n 50` for the first 50."
+      },
+      "tags": ["unix::viewing"]
+    },
+    {
+      "key": "tail",
+      "model": "basic",
+      "fields": {
+        "front": "What does `tail app.log` print by default?",
+        "back": "The last 10 lines.",
+        "extra": "Usually what you want from a log."
+      },
+      "tags": ["unix::viewing"]
+    },
+    {
+      "key": "tail-f",
+      "model": "basic",
+      "fields": {
+        "front": "How do you watch a log file grow in real time?",
+        "back": "`tail -f app.log`: it keeps printing new lines as they are appended.",
+        "extra": "Ctrl-C stops it. `-F` additionally survives log rotation."
+      },
+      "tags": ["unix::viewing"]
+    },
+    {
+      "key": "wc-l",
+      "model": "basic",
+      "fields": {
+        "front": "What does `wc -l file` count?",
+        "back": "Lines.",
+        "extra": "`-w` counts words, `-c` bytes. `grep pattern file | wc -l` counts matches."
+      },
+      "tags": ["unix::viewing"]
+    },
+    {
+      "key": "diff",
+      "model": "basic",
+      "fields": {
+        "front": "What does `diff old.txt new.txt` show?",
+        "back": "The lines that differ between the two files.",
+        "extra": "`diff -u` gives the +/- unified format you know from git."
+      },
+      "tags": ["unix::viewing"]
+    },
+    {
+      "key": "echo",
+      "model": "typed",
+      "fields": {
+        "front": "Which command prints its arguments to standard output?",
+        "answer": "echo",
+        "extra": "`echo $PATH` is the quickest way to inspect a variable."
+      },
+      "tags": ["unix::viewing"]
+    },
+    {
+      "key": "pipe",
+      "model": "basic",
+      "fields": {
+        "front": "In `ps aux | grep node`, what does the `|` do?",
+        "back": "Feeds the left command's output in as the right command's input.",
+        "extra": "Pipes are how small tools compose into one-liners; almost every card here chains with them."
+      },
+      "tags": ["unix::pipes"]
+    },
+    {
+      "key": "redirect-overwrite",
+      "model": "basic",
+      "fields": {
+        "front": "`ls > files.txt` runs while `files.txt` already exists. What happens to the old contents?",
+        "back": "They are erased: `>` truncates the file before writing.",
+        "extra": "A classic way to lose data. Use `>>` when you mean to keep what is there."
+      },
+      "tags": ["unix::pipes"]
+    },
+    {
+      "key": "redirect-append",
+      "model": "basic",
+      "fields": {
+        "front": "Which redirection operator adds to the end of a file instead of overwriting it?",
+        "back": "`>>`, as in `echo done >> log.txt`.",
+        "extra": "It creates the file if missing, just like `>`."
+      },
+      "tags": ["unix::pipes"]
+    },
+    {
+      "key": "redirect-stderr",
+      "model": "basic",
+      "fields": {
+        "front": "Which output stream does `2>` redirect?",
+        "back": "Standard error (stderr), stream number 2.",
+        "extra": "`command > out.txt 2>&1` sends both stdout and stderr into the file."
+      },
+      "tags": ["unix::pipes"]
+    },
+    {
+      "key": "dev-null",
+      "model": "basic",
+      "fields": {
+        "front": "What happens to output redirected to `/dev/null`?",
+        "back": "It is discarded.",
+        "extra": "`command 2> /dev/null` silences error spam; the file is a black hole by design."
+      },
+      "tags": ["unix::pipes"]
+    },
+    {
+      "key": "tee",
+      "model": "basic",
+      "fields": {
+        "front": "What does `make | tee build.log` do that `make > build.log` does not?",
+        "back": "It still shows the output on screen while also writing it to the file.",
+        "extra": "Named after a T-shaped pipe fitting: one stream in, two out."
+      },
+      "tags": ["unix::pipes"]
+    },
+    {
+      "key": "glob",
+      "model": "basic",
+      "fields": {
+        "front": "Who expands the `*` in `rm *.log`: the shell or `rm`?",
+        "back": "The shell; `rm` just receives the matching filenames as ordinary arguments.",
+        "extra": "That is why patterns meant for `find` or `grep` need quotes: to stop the shell expanding them first."
+      },
+      "tags": ["unix::pipes"]
+    },
+    {
+      "key": "and-and",
+      "model": "basic",
+      "fields": {
+        "front": "In `make && make test`, when does `make test` run?",
+        "back": "Only if `make` succeeded (exit status 0).",
+        "extra": "Read `&&` as 'and then, if that worked'."
+      },
+      "tags": ["unix::pipes"]
+    },
+    {
+      "key": "or-or",
+      "model": "basic",
+      "fields": {
+        "front": "In `grep -q TODO file || echo clean`, when does the `echo` run?",
+        "back": "Only if the grep failed (returned a non-zero exit status).",
+        "extra": "`&&` = and-then; `||` = or-else. `a ; b` runs `b` regardless."
+      },
+      "tags": ["unix::pipes"]
+    },
+    {
+      "key": "exit-zero",
+      "model": "basic",
+      "fields": {
+        "front": "Which exit status means a UNIX command succeeded?",
+        "back": "0; any non-zero status signals failure.",
+        "extra": "Backwards from booleans: there is one way to succeed and many numbered ways to fail."
+      },
+      "tags": ["unix::pipes"]
+    },
+    {
+      "key": "dollar-question",
+      "model": "basic",
+      "fields": {
+        "front": "Which shell variable holds the exit status of the last command?",
+        "back": "`$?`",
+        "extra": "Check it immediately (`echo $?`): running anything else overwrites it."
+      },
+      "tags": ["unix::pipes"]
+    },
+    {
+      "key": "xargs",
+      "model": "basic",
+      "fields": {
+        "front": "In `find . -name '*.tmp' | xargs rm`, what does `xargs` do?",
+        "back": "Turns the incoming lines into command-line arguments for `rm`.",
+        "extra": "For filenames containing spaces, use `find ... -print0 | xargs -0`."
+      },
+      "tags": ["unix::pipes"]
+    },
+    {
+      "key": "grep",
+      "model": "typed",
+      "fields": {
+        "front": "Which classic UNIX command searches file contents for lines matching a pattern?",
+        "answer": "grep",
+        "extra": "`grep TODO src/main.py`. Modern faster take: `rg` (ripgrep)."
+      },
+      "tags": ["unix::search"]
+    },
+    {
+      "key": "grep-i",
+      "model": "basic",
+      "fields": {
+        "front": "Which `grep` flag makes the match case-insensitive?",
+        "back": "`-i`",
+        "extra": "`grep -i error app.log` catches Error, ERROR, error."
+      },
+      "tags": ["unix::search"]
+    },
+    {
+      "key": "grep-r",
+      "model": "basic",
+      "fields": {
+        "front": "How do you search for a string in every file under a directory tree?",
+        "back": "`grep -r pattern dir/`",
+        "extra": "`-r` recurses. Combine with `-n` for line numbers: `grep -rn`."
+      },
+      "tags": ["unix::search"]
+    },
+    {
+      "key": "grep-v",
+      "model": "basic",
+      "fields": {
+        "front": "What does `grep -v DEBUG app.log` print?",
+        "back": "Only the lines that do NOT contain DEBUG.",
+        "extra": "`-v` inverts the match, turning grep into a filter-out."
+      },
+      "tags": ["unix::search"]
+    },
+    {
+      "key": "grep-n",
+      "model": "basic",
+      "fields": {
+        "front": "Which `grep` flag prefixes each match with its line number?",
+        "back": "`-n`",
+        "extra": "Output like `main.py:42: ...` is clickable in most editors."
+      },
+      "tags": ["unix::search"]
+    },
+    {
+      "key": "find-name",
+      "model": "basic",
+      "fields": {
+        "front": "How do you list every `.log` file anywhere under the current directory?",
+        "back": "`find . -name '*.log'`",
+        "extra": "Quote the pattern so the shell does not expand it before `find` sees it."
+      },
+      "tags": ["unix::search"]
+    },
+    {
+      "key": "find-type",
+      "model": "basic",
+      "fields": {
+        "front": "In `find . -type f`, what does `-type f` restrict the results to?",
+        "back": "Regular files only.",
+        "extra": "`-type d` restricts to directories."
+      },
+      "tags": ["unix::search"]
+    },
+    {
+      "key": "sort",
+      "model": "basic",
+      "fields": {
+        "front": "What does `sort names.txt` print?",
+        "back": "The file's lines, in sorted order.",
+        "extra": "`-n` sorts numerically, `-r` reverses, `-u` drops duplicates."
+      },
+      "tags": ["unix::text"]
+    },
+    {
+      "key": "uniq-adjacent",
+      "model": "basic",
+      "fields": {
+        "front": "Why is `uniq` almost always fed sorted input?",
+        "back": "Because `uniq` only collapses duplicate lines that are adjacent.",
+        "extra": "Unsorted input leaves scattered duplicates untouched."
+      },
+      "tags": ["unix::text"]
+    },
+    {
+      "key": "count-pipeline",
+      "model": "basic",
+      "fields": {
+        "front": "Which classic pipeline counts how many times each distinct line appears in a file?",
+        "back": "`sort file | uniq -c`",
+        "extra": "Append `| sort -rn` to rank by count: an instant leaderboard."
+      },
+      "tags": ["unix::text"]
+    },
+    {
+      "key": "cut",
+      "model": "basic",
+      "fields": {
+        "front": "What does `cut -d, -f2 data.csv` extract from each line?",
+        "back": "The second comma-separated field.",
+        "extra": "`-d` sets the delimiter, `-f` picks the field numbers."
+      },
+      "tags": ["unix::text"]
+    },
+    {
+      "key": "awk-field",
+      "model": "basic",
+      "fields": {
+        "front": "What does `awk '{print $2}'` print for each input line?",
+        "back": "Its second whitespace-separated field.",
+        "extra": "awk splits on any run of whitespace, which makes it more forgiving than `cut`. `$0` is the whole line."
+      },
+      "tags": ["unix::text"]
+    },
+    {
+      "key": "sed-substitute",
+      "model": "basic",
+      "fields": {
+        "front": "What does `sed 's/http/https/' urls.txt` do?",
+        "back": "Prints each line with the first occurrence of `http` replaced by `https`.",
+        "extra": "Add `g` (`s/.../.../g`) to replace every occurrence on a line; `-i` edits the file in place."
+      },
+      "tags": ["unix::text"]
+    },
+    {
+      "key": "history",
+      "model": "typed",
+      "fields": {
+        "front": "Which command lists the commands you have previously run in this shell?",
+        "answer": "history",
+        "extra": "`!123` reruns entry 123."
+      },
+      "tags": ["unix::shell"]
+    },
+    {
+      "key": "ctrl-r",
+      "model": "basic",
+      "fields": {
+        "front": "Which keystroke incrementally searches your shell history as you type?",
+        "back": "Ctrl-R",
+        "extra": "Type a fragment of the old command; press Ctrl-R again to step to older matches."
+      },
+      "tags": ["unix::shell"]
+    },
+    {
+      "key": "ps-aux",
+      "model": "basic",
+      "fields": {
+        "front": "What does `ps aux` list?",
+        "back": "Every process running on the system, with its owner, PID, and CPU/memory usage.",
+        "extra": "`ps aux | grep node` narrows it to one program."
+      },
+      "tags": ["unix::processes"]
+    },
+    {
+      "key": "ctrl-c",
+      "model": "basic",
+      "fields": {
+        "front": "Which signal does Ctrl-C send to the foreground process?",
+        "back": "SIGINT, a request to interrupt and quit.",
+        "extra": "Programs may catch it to clean up before exiting."
+      },
+      "tags": ["unix::processes"]
+    },
+    {
+      "key": "ctrl-z",
+      "model": "basic",
+      "fields": {
+        "front": "What does Ctrl-Z do to the foreground process?",
+        "back": "Suspends (pauses) it and returns you to the prompt.",
+        "extra": "Resume with `fg` (foreground) or `bg` (keep it running in the background); `jobs` lists what is suspended."
+      },
+      "tags": ["unix::processes"]
+    },
+    {
+      "key": "ampersand-bg",
+      "model": "basic",
+      "fields": {
+        "front": "What does the trailing `&` do in `npm run dev &`?",
+        "back": "Runs the command in the background so you get your prompt back immediately.",
+        "extra": "Its output still lands in your terminal unless redirected; `jobs` lists it, `fg` reclaims it."
+      },
+      "tags": ["unix::processes"]
+    },
+    {
+      "key": "top",
+      "model": "basic",
+      "fields": {
+        "front": "Which command shows a live, continuously updating view of processes and their CPU/memory use?",
+        "back": "`top` (or its friendlier cousin `htop`).",
+        "extra": "`q` quits. Sort and kill from inside htop with function keys."
+      },
+      "tags": ["unix::processes"]
+    },
+    {
+      "key": "kill-signal",
+      "model": "basic",
+      "fields": {
+        "front": "What does `kill 1234` actually do to process 1234?",
+        "back": "Sends it a signal, SIGTERM by default, which politely asks it to exit.",
+        "extra": "Despite the name, `kill` is a signal sender; the process may catch SIGTERM and clean up first."
+      },
+      "tags": ["unix::processes"]
+    },
+    {
+      "key": "kill-9",
+      "model": "basic",
+      "fields": {
+        "front": "When plain `kill` fails, what makes `kill -9` different?",
+        "back": "It sends SIGKILL, which cannot be caught or ignored: the kernel ends the process immediately.",
+        "extra": "Last resort only, since the process gets no chance to clean up."
+      },
+      "tags": ["unix::processes"]
+    },
+    {
+      "key": "pkill",
+      "model": "basic",
+      "fields": {
+        "front": "What does `pkill node` do?",
+        "back": "Sends SIGTERM to every process whose name matches `node`.",
+        "extra": "Preview the targets first with `pgrep node`, which just prints the matching PIDs."
+      },
+      "tags": ["unix::processes"]
+    },
+    {
+      "key": "lsof-port",
+      "model": "basic",
+      "fields": {
+        "front": "Your dev server says port 3000 is already in use. Which command identifies the process holding it?",
+        "back": "`lsof -i :3000`",
+        "extra": "Then `kill` the PID it prints. `lsof` = list open files, and sockets count as files."
+      },
+      "tags": ["unix::processes"]
+    },
+    {
+      "key": "chmod-x",
+      "model": "basic",
+      "fields": {
+        "front": "Running `./deploy.sh` fails with 'Permission denied'. What is the usual fix?",
+        "back": "`chmod +x deploy.sh`, which marks the script executable.",
+        "extra": "A fresh file is never executable by default, even a script."
+      },
+      "tags": ["unix::permissions"]
+    },
+    {
+      "key": "chmod-digit-order",
+      "model": "basic",
+      "fields": {
+        "front": "In `chmod 754 file`, which users do the three digits apply to, in order?",
+        "back": "Owner, group, others.",
+        "extra": "Same order as the `rwx` triplets in `ls -l` output."
+      },
+      "tags": ["unix::permissions"]
+    },
+    {
+      "key": "perm-values",
+      "model": "cloze",
+      "fields": {
+        "text": "In numeric permissions, read = {{c1::4}}, write = {{c2::2}}, execute = {{c3::1}}.",
+        "extra": "They add up: 7 = rwx, 6 = rw-, 5 = r-x. So 755 = rwxr-xr-x."
+      },
+      "tags": ["unix::permissions"]
+    },
+    {
+      "key": "perm-string",
+      "model": "basic",
+      "fields": {
+        "front": "In the listing `-rwxr-x---`, what can 'others' do with the file?",
+        "back": "Nothing: the final triplet `---` grants no permissions at all.",
+        "extra": "Read the string as three triplets after the type character: owner `rwx`, group `r-x`, others `---`."
+      },
+      "tags": ["unix::permissions"]
+    },
+    {
+      "key": "sudo",
+      "model": "basic",
+      "fields": {
+        "front": "What does prefixing a command with `sudo` change?",
+        "back": "The command runs as the superuser (root) instead of as you.",
+        "extra": "Needed for system directories and package installs. Use sparingly: root mistakes are unlimited mistakes."
+      },
+      "tags": ["unix::permissions"]
+    },
+    {
+      "key": "chown",
+      "model": "typed",
+      "fields": {
+        "front": "Which command changes which user owns a file?",
+        "answer": "chown",
+        "extra": "`chown user:group file`; usually needs `sudo`. *change owner*."
+      },
+      "tags": ["unix::permissions"]
+    },
+    {
+      "key": "whoami",
+      "model": "typed",
+      "fields": {
+        "front": "Which command prints the username you are currently logged in as?",
+        "answer": "whoami",
+        "extra": "Useful in scripts and for checking whether you are root."
+      },
+      "tags": ["unix::environment"]
+    },
+    {
+      "key": "env",
+      "model": "basic",
+      "fields": {
+        "front": "Which command prints all environment variables of your current shell?",
+        "back": "`env` (or `printenv`).",
+        "extra": "Pipe through grep to find one: `env | grep AWS`."
+      },
+      "tags": ["unix::environment"]
+    },
+    {
+      "key": "export",
+      "model": "basic",
+      "fields": {
+        "front": "What does `export API_KEY=abc` do that plain `API_KEY=abc` does not?",
+        "back": "It passes the variable on to child processes, meaning the commands you run afterwards.",
+        "extra": "Without `export`, only the shell itself sees the variable; the programs it launches do not."
+      },
+      "tags": ["unix::environment"]
+    },
+    {
+      "key": "path-var",
+      "model": "basic",
+      "fields": {
+        "front": "What does the shell use the `$PATH` variable for?",
+        "back": "It is the ordered list of directories searched to find the program behind a command name.",
+        "extra": "'command not found' means no `$PATH` directory contains it; the first match wins."
+      },
+      "tags": ["unix::environment"]
+    },
+    {
+      "key": "df",
+      "model": "basic",
+      "fields": {
+        "front": "Which command reports how full each disk (filesystem) is?",
+        "back": "`df -h`",
+        "extra": "*disk free*; `-h` for readable sizes. Whole-disk view, unlike `du`."
+      },
+      "tags": ["unix::disk"]
+    },
+    {
+      "key": "du",
+      "model": "basic",
+      "fields": {
+        "front": "How do you find out how much disk space `node_modules/` takes up?",
+        "back": "`du -sh node_modules`",
+        "extra": "`-s` gives one total, `-h` readable units. `du -sh * | sort -h` ranks a directory's contents."
+      },
+      "tags": ["unix::disk"]
+    },
+    {
+      "key": "curl",
+      "model": "basic",
+      "fields": {
+        "front": "Which command fetches a URL from the terminal, the standard tool for poking at APIs?",
+        "back": "`curl`, e.g. `curl https://api.example.com/health`.",
+        "extra": "`-L` follows redirects, `-i` shows response headers. `wget` is the download-focused alternative."
+      },
+      "tags": ["unix::network"]
+    },
+    {
+      "key": "curl-stdout",
+      "model": "basic",
+      "fields": {
+        "front": "Where does `curl https://x.io/file.tgz` write the download by default?",
+        "back": "To stdout, meaning your terminal.",
+        "extra": "`-O` saves under the remote filename; `-o name` picks your own."
+      },
+      "tags": ["unix::network"]
+    },
+    {
+      "key": "ssh",
+      "model": "typed",
+      "fields": {
+        "front": "Which command logs you into a shell on a remote machine?",
+        "answer": "ssh",
+        "extra": "`ssh user@host`. *secure shell*; key-based auth beats passwords."
+      },
+      "tags": ["unix::network"]
+    },
+    {
+      "key": "scp",
+      "model": "basic",
+      "fields": {
+        "front": "How do you copy `app.log` from the server `web1` to your current directory?",
+        "back": "`scp user@web1:app.log .`",
+        "extra": "`scp` works like `cp` where either side may be `user@host:path`. `rsync` is the resumable, incremental upgrade."
+      },
+      "tags": ["unix::network"]
+    },
+    {
+      "key": "ping",
+      "model": "basic",
+      "fields": {
+        "front": "What does `ping example.com` measure?",
+        "back": "Whether the host answers, and the round-trip time of each packet.",
+        "extra": "Ctrl-C stops it and prints summary stats. First reflex when 'the network is down'."
+      },
+      "tags": ["unix::network"]
+    },
+    {
+      "key": "tar-extract",
+      "model": "basic",
+      "fields": {
+        "front": "Which command unpacks `release.tar.gz` into the current directory?",
+        "back": "`tar -xzf release.tar.gz`",
+        "extra": "Mnemonic: *eXtract Zee Files*. Modern tar auto-detects compression, so `tar xf` alone also works."
+      },
+      "tags": ["unix::archives"]
+    },
+    {
+      "key": "tar-create",
+      "model": "basic",
+      "fields": {
+        "front": "Which command bundles the directory `data/` into `backup.tar.gz`?",
+        "back": "`tar -czf backup.tar.gz data/`",
+        "extra": "*Create Zee Files*. The archive name must come right after `-f`."
+      },
+      "tags": ["unix::archives"]
+    },
+    {
+      "key": "unzip",
+      "model": "typed",
+      "fields": {
+        "front": "Which command extracts a `.zip` archive?",
+        "answer": "unzip",
+        "extra": "`unzip -l archive.zip` lists the contents without extracting."
+      },
+      "tags": ["unix::archives"]
+    },
+    {
+      "key": "alias",
+      "model": "basic",
+      "fields": {
+        "front": "What does `alias gs='git status'` set up?",
+        "back": "Typing `gs` now runs `git status` in this shell.",
+        "extra": "`alias` alone lists everything currently defined."
+      },
+      "tags": ["unix::shell"]
+    },
+    {
+      "key": "rc-file",
+      "model": "basic",
+      "fields": {
+        "front": "Where must an alias live to survive into every new terminal session?",
+        "back": "In your shell's startup file: `~/.zshrc` for zsh, `~/.bashrc` for bash.",
+        "extra": "`source ~/.zshrc` applies fresh edits to the shell you are already in."
+      },
+      "tags": ["unix::shell"]
+    },
+    {
+      "key": "sudo-bangbang",
+      "model": "basic",
+      "fields": {
+        "front": "A command just failed because it needed root. What does typing `sudo !!` do?",
+        "back": "Reruns the previous command with sudo, because `!!` expands to your last command.",
+        "extra": "History expansion works in both bash and zsh."
+      },
+      "tags": ["unix::shell"]
+    },
+    {
+      "key": "ctrl-l",
+      "model": "basic",
+      "fields": {
+        "front": "Which keystroke clears the terminal screen?",
+        "back": "Ctrl-L",
+        "extra": "Equivalent to running `clear`, but works mid-typing without losing your input line."
+      },
+      "tags": ["unix::shell"]
+    },
+    {
+      "key": "ctrl-d",
+      "model": "basic",
+      "fields": {
+        "front": "What does Ctrl-D at an empty prompt do?",
+        "back": "Sends end-of-file, which closes the shell (same as typing `exit`).",
+        "extra": "It is also how you finish typing stdin input to commands like `cat > file`."
+      },
+      "tags": ["unix::shell"]
+    },
+    {
+      "key": "time",
+      "model": "basic",
+      "fields": {
+        "front": "What does prefixing a command with `time` report when it finishes?",
+        "back": "How long it took: real (wall clock), user, and sys CPU time.",
+        "extra": "The quickest benchmark there is: `time make`."
+      },
+      "tags": ["unix::shell"]
+    },
+    {
+      "key": "vim-exit",
+      "model": "basic",
+      "fields": {
+        "front": "You have landed in vim by accident. How do you quit without saving?",
+        "back": "Press Esc, then type `:q!` and Enter.",
+        "extra": "`:wq` saves and quits. The eternal Stack Overflow question."
+      },
+      "tags": ["unix::shell"]
+    },
+    {
+      "key": "open-macos",
+      "model": "basic",
+      "fields": {
+        "front": "On macOS, which command opens a file or URL with its default application?",
+        "back": "`open`, e.g. `open .` opens the current directory in Finder.",
+        "extra": "The Linux equivalent is `xdg-open`."
+      },
+      "tags": ["unix::shell"]
+    }
+  ]
+}

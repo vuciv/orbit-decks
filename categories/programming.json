@@ -14,6 +14,21 @@
         "coding"
       ],
       "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Python-logo-notext.svg?width=640"
+    },
+    {
+      "key": "unix-terminal-essentials",
+      "name": "UNIX Terminal Essentials",
+      "description": "The commands a programmer actually types every day: navigating, viewing, searching, pipes and redirection, processes, permissions, networking, and archives, plus the classic traps (rm has no undo, > overwrites, kill -9, uniq needs sort).",
+      "cardCount": 95,
+      "topics": [
+        "unix",
+        "linux",
+        "terminal",
+        "command-line",
+        "shell",
+        "programming"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Gnu-bash-logo.svg?width=640"
     }
   ]
 }

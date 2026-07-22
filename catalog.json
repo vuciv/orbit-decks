@@ -95,8 +95,8 @@
     {
       "key": "programming",
       "name": "Programming",
-      "deckCount": 1,
-      "rev": "aef90f634e96",
+      "deckCount": 2,
+      "rev": "5f38f897b3b6",
       "file": "categories/programming.json"
     },
     {
@@ -453,6 +453,11 @@
       "key": "transformer-architecture",
       "version": 1,
       "file": "decks/transformer-architecture.json"
+    },
+    {
+      "key": "unix-terminal-essentials",
+      "version": 1,
+      "file": "decks/unix-terminal-essentials.json"
     },
     {
       "key": "us-amendments",
