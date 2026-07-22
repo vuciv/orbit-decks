@@ -38,6 +38,18 @@
         "identification"
       ],
       "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Steller's_Jay_flagstaff_arizona.jpg?width=640"
+    },
+    {
+      "key": "dog-breeds",
+      "name": "Dog Breeds",
+      "description": "Name 65 dog breeds from photos, from the Labrador to the Basenji. Extras give each breed's giveaway field marks, its story, and how to split the classic confusion pairs: Husky vs Malamute, Whippet vs Greyhound, Malinois vs German Shepherd, Westie vs Scottie.",
+      "cardCount": 65,
+      "topics": [
+        "dogs",
+        "animals",
+        "identification"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Retriever_Dukedestiny01_drvd.jpg?width=640"
     }
   ]
 }

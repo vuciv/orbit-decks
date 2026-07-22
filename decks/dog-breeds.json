@@ -1,0 +1,861 @@
+{
+  "key": "dog-breeds",
+  "version": 1,
+  "name": "Dog Breeds",
+  "description": "Name 65 dog breeds from photos, from the Labrador to the Basenji. Extras give each breed's giveaway field marks, its story, and how to split the classic confusion pairs: Husky vs Malamute, Whippet vs Greyhound, Malinois vs German Shepherd, Westie vs Scottie.",
+  "category": "Nature",
+  "topics": [
+    "dogs",
+    "animals",
+    "identification"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Retriever_Dukedestiny01_drvd.jpg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "labrador-retriever",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Labrador Retriever",
+        "extra": "America's long-reigning favorite. Solid black, yellow, or chocolate; blocky head, otter tail, permanently food-motivated. Vs Golden: the Lab's coat is short and dense, never feathered.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Labrador_on_Quantock_%282175262184%29.jpg?width=640"
+      },
+      "tags": [
+        "dogs::sporting"
+      ]
+    },
+    {
+      "key": "golden-retriever",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Golden Retriever",
+        "extra": "Scottish bird dog with a feathered gold coat and a perpetual grin. Vs Lab: if the coat is long, wavy, and golden with feathering on legs and tail, it is a Golden.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Retriever_Dukedestiny01_drvd.jpg?width=640"
+      },
+      "tags": [
+        "dogs::sporting"
+      ]
+    },
+    {
+      "key": "german-shepherd",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "German Shepherd",
+        "extra": "Black-and-tan with a black saddle, upright ears, and a famously sloped back. Vs Belgian Malinois: the Malinois is lighter, squarer, and solid fawn with a black mask.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/German_Shepherd_-_DSC_0346_%2810096362833%29.jpg?width=640"
+      },
+      "tags": [
+        "dogs::herding"
+      ]
+    },
+    {
+      "key": "french-bulldog",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "French Bulldog",
+        "extra": "Bat ears are the giveaway: tall, rounded, always up. Compact, flat-faced, under 30 pounds. English lace workers took their toy bulldogs to France; Paris made them famous.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/2008-07-28_Dog_at_Frolick_Field.jpg?width=640"
+      },
+      "tags": [
+        "dogs::companion"
+      ]
+    },
+    {
+      "key": "poodle",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Poodle",
+        "extra": "Curly, non-shedding coat in three sizes (standard, miniature, toy). Originally a German duck retriever; the show clip's pom-poms once kept joints warm in cold water.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Full_attention_%288067543690%29.jpg?width=640"
+      },
+      "tags": [
+        "dogs::companion"
+      ]
+    },
+    {
+      "key": "bulldog",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Bulldog",
+        "extra": "The English original: low-slung, massive underslung jaw, loose facial wrinkles, rolling sailor's gait. Vs Frenchie: much bigger, with rose ears folded back, never bat ears.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Whitebulldog.jpg?width=640"
+      },
+      "tags": [
+        "dogs::companion"
+      ]
+    },
+    {
+      "key": "beagle",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Beagle",
+        "extra": "Small tricolor scent hound with long dropped ears and a white-tipped tail held high like a flag. The airport-security sniffer of choice; famously loud bay.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Beagle_600.jpg?width=640"
+      },
+      "tags": [
+        "dogs::hound"
+      ]
+    },
+    {
+      "key": "dachshund",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Dachshund",
+        "extra": "The sausage dog: long body, short legs, in smooth, long, or wire coats. German for 'badger dog'; the shape is for following badgers down their burrows.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/%EB%8B%A5%EC%8A%A4%ED%9B%88%ED%8A%B8%28%EB%8B%A8%EB%AA%A8%EC%A2%85%29_%28Dachshund_%28Short%29%29.jpg?width=640"
+      },
+      "tags": [
+        "dogs::hound"
+      ]
+    },
+    {
+      "key": "rottweiler",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Rottweiler",
+        "extra": "Powerful black dog with sharply defined rust markings on cheeks, chest, and legs. Descended from Roman drover dogs via the German town of Rottweil.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Rottweiler_standing_facing_left.jpg?width=640"
+      },
+      "tags": [
+        "dogs::working"
+      ]
+    },
+    {
+      "key": "siberian-husky",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Siberian Husky",
+        "extra": "Medium sled dog, often blue-eyed, with a masked face and a brush tail. Vs Alaskan Malamute: the Husky is smaller and sleeker; Malamutes are heavyweights with brown eyes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Husky_L.jpg?width=640"
+      },
+      "tags": [
+        "dogs::working"
+      ]
+    },
+    {
+      "key": "pembroke-welsh-corgi",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Pembroke Welsh Corgi",
+        "extra": "The Queen's breed: fox head, big upright ears, long low body, and effectively no tail. A Corgi WITH a long tail is the Cardigan variety.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Welsh_Pembroke_Corgi.jpg?width=640"
+      },
+      "tags": [
+        "dogs::herding"
+      ]
+    },
+    {
+      "key": "chihuahua",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Chihuahua",
+        "extra": "The world's smallest breed, from the Mexican state of the same name. Apple-domed skull, enormous ears, and the confidence of a much larger animal.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Chihuahua1_bvdb.jpg?width=640"
+      },
+      "tags": [
+        "dogs::toy"
+      ]
+    },
+    {
+      "key": "pug",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Pug",
+        "extra": "Small, solid, flat-faced, with a tightly curled tail and a black mask on fawn. Ancient Chinese lapdog. Vs Frenchie: the Pug's ears fold down and its tail curls.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Mops-duke-mopszucht-vom-maegdebrunnen.jpg?width=640"
+      },
+      "tags": [
+        "dogs::toy"
+      ]
+    },
+    {
+      "key": "border-collie",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Border Collie",
+        "extra": "The workaholic genius of dogdom, usually black-and-white with a low, stalking gait and an intense stare ('the eye'). Dominates every agility and obedience podium.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Border_Collie_600.jpg?width=640"
+      },
+      "tags": [
+        "dogs::herding"
+      ]
+    },
+    {
+      "key": "australian-shepherd",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Australian Shepherd",
+        "extra": "Merle patchwork coat and often two different eye colors; tail usually bobbed. Despite the name, developed on American ranches. Vs Border Collie: flashier coat, stockier build.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Australian_Shepherd_red_bi.JPG?width=640"
+      },
+      "tags": [
+        "dogs::herding"
+      ]
+    },
+    {
+      "key": "yorkshire-terrier",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Yorkshire Terrier",
+        "extra": "Tiny, with a long silky steel-blue-and-tan coat and a topknot. Bred to kill rats in Yorkshire mills before graduating to handbags.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/%282_version%29_Grupp_3%2C_YORKSHIRETERRIER%2C_NO_UCH_SE_UCH_Oxzar_Amazing_Bel%E2%80%99s_Toffy_%2824310212305%29.jpg?width=640"
+      },
+      "tags": [
+        "dogs::toy"
+      ]
+    },
+    {
+      "key": "boxer",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Boxer",
+        "extra": "Square-jawed German guard dog in fawn or brindle with a black mask and often white chest and feet. Famous for standing on hind legs and 'boxing' with its front paws.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Male_fawn_Boxer_undocked.jpg?width=640"
+      },
+      "tags": [
+        "dogs::working"
+      ]
+    },
+    {
+      "key": "great-dane",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Great Dane",
+        "extra": "The apartment-blocking giant; one of the tallest breeds on earth. German, not Danish (Germans call it the Deutsche Dogge). Scooby-Doo is one.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Dog_niemiecki_%C5%BC%C3%B3%C5%82ty_LM980.jpg?width=640"
+      },
+      "tags": [
+        "dogs::working"
+      ]
+    },
+    {
+      "key": "dalmatian",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Dalmatian",
+        "extra": "The only spotted breed: white with round black or liver spots. Born pure white; the spots come in later. Historic carriage and firehouse dog.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Sun_Dog_Dalmatian.jpg?width=640"
+      },
+      "tags": [
+        "dogs::companion"
+      ]
+    },
+    {
+      "key": "shih-tzu",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Shih Tzu",
+        "extra": "Tibetan-Chinese palace dog with a flat face, flowing double coat, and a proud strut; hair often tied in a topknot. The name means 'lion dog'.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Shihtzu_%28cropped%29.jpg?width=640"
+      },
+      "tags": [
+        "dogs::toy"
+      ]
+    },
+    {
+      "key": "pomeranian",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Pomeranian",
+        "extra": "A pointed fox face inside an absurd orange puffball, tail plumed over the back. A downsized spitz; Queen Victoria drove the miniaturization.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Pomeranian.JPG?width=640"
+      },
+      "tags": [
+        "dogs::toy"
+      ]
+    },
+    {
+      "key": "boston-terrier",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Boston Terrier",
+        "extra": "'The American Gentleman': black-and-white tuxedo markings, rounded erect ears, gentle underbite. Vs Frenchie: leggier, always tuxedo-patterned, ears rounder.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Boston-terrier-carlos-de.JPG?width=640"
+      },
+      "tags": [
+        "dogs::companion"
+      ]
+    },
+    {
+      "key": "cavalier-king-charles-spaniel",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Cavalier King Charles Spaniel",
+        "extra": "Melting dark eyes, long feathered ears, silky coat; the chestnut-on-white pattern is called Blenheim. A toy spaniel named for King Charles II, who was never without them.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/CarterBIS.Tiki.13.6.09.jpg?width=640"
+      },
+      "tags": [
+        "dogs::toy"
+      ]
+    },
+    {
+      "key": "dobermann",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Dobermann",
+        "extra": "Sleek black-and-rust guard dog built like an athlete; ears often cropped erect, tail docked. Bred by German tax collector Louis Dobermann for protection on his rounds. US spelling: Doberman Pinscher.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Dobermann_handling.jpg?width=640"
+      },
+      "tags": [
+        "dogs::working"
+      ]
+    },
+    {
+      "key": "miniature-schnauzer",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Miniature Schnauzer",
+        "extra": "Small, salt-and-pepper, with the signature beard and bushy eyebrows of a tiny disapproving professor. The most popular of the three Schnauzer sizes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Miniature_Schnauzer_salt_%26_pepper_%28cropped%29.jpg?width=640"
+      },
+      "tags": [
+        "dogs::terrier"
+      ]
+    },
+    {
+      "key": "bernese-mountain-dog",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Bernese Mountain Dog",
+        "extra": "Large, calm Swiss farm dog: jet black with rust points and white blaze, chest, and paws. Vs Saint Bernard: the Bernese is tricolor black; Saints are red-and-white.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/3-BerneseMountainDogInGrass.jpg?width=640"
+      },
+      "tags": [
+        "dogs::working"
+      ]
+    },
+    {
+      "key": "saint-bernard",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Saint Bernard",
+        "extra": "Massive red-and-white Alpine rescue dog with a huge head and famously drooly jowls. Bred by monks at the Great St Bernard Pass; the brandy barrel is a myth.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Hummel_Vedor_vd_Robandahoeve.jpg?width=640"
+      },
+      "tags": [
+        "dogs::working"
+      ]
+    },
+    {
+      "key": "basset-hound",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Basset Hound",
+        "extra": "Long, low, and mournful: heavy bones, trailing ears, sad eyes, short crooked legs. A scent hound built for slow, relentless trailing. Vs Beagle: far lower and droopier.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/BassetHound_profil.jpg?width=640"
+      },
+      "tags": [
+        "dogs::hound"
+      ]
+    },
+    {
+      "key": "bloodhound",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Bloodhound",
+        "extra": "The best nose on earth: loose wrinkled skin, enormous swinging ears, solemn expression, usually black-and-tan or red. Its trailing evidence has stood up in court.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bloodhound_Erland22.jpg?width=640"
+      },
+      "tags": [
+        "dogs::hound"
+      ]
+    },
+    {
+      "key": "greyhound",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Greyhound",
+        "extra": "The fastest dog: 45 mph. Deep chest, wasp waist, tiny folded ears, and a professional couch-potato temperament off the track. Vs Whippet: much taller.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/GraceTheGreyhound.jpg?width=640"
+      },
+      "tags": [
+        "dogs::hound"
+      ]
+    },
+    {
+      "key": "whippet",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Whippet",
+        "extra": "A half-size Greyhound with the same aerodynamic curves. Vs Greyhound: knee-height rather than hip-height; vs Italian Greyhound: the Whippet is the middle size.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Whippet_2018_6.jpg?width=640"
+      },
+      "tags": [
+        "dogs::hound"
+      ]
+    },
+    {
+      "key": "jack-russell-terrier",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Jack Russell Terrier",
+        "extra": "Small, mostly white, endlessly bouncing fox-hunting terrier in smooth or rough coat. Named for Reverend John Russell; the AKC show version is the Parson Russell.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Jack_Russell_Terrier_1.jpg?width=640"
+      },
+      "tags": [
+        "dogs::terrier"
+      ]
+    },
+    {
+      "key": "west-highland-white-terrier",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "West Highland White Terrier",
+        "extra": "The Westie: a small, all-white Scottish terrier with dark button eyes and pricked ears. Vs Scottie: same silhouette family, but the Westie is only ever white.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/West_Highland_White_Terrier_Krakow.jpg?width=640"
+      },
+      "tags": [
+        "dogs::terrier"
+      ]
+    },
+    {
+      "key": "scottish-terrier",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Scottish Terrier",
+        "extra": "The Scottie of whisky labels and Monopoly: nearly always black, with a long head, beard, and upright dagger tail. Vs Westie: the dark one of the pair.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Scottish_Terrier_Photo_of_Face.jpg?width=640"
+      },
+      "tags": [
+        "dogs::terrier"
+      ]
+    },
+    {
+      "key": "maltese",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Maltese",
+        "extra": "Ancient Mediterranean lapdog draped in a straight, silky, floor-length white coat with dark button eyes. Vs Bichon: silk, not powder-puff curls.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Maltese_600.jpg?width=640"
+      },
+      "tags": [
+        "dogs::toy"
+      ]
+    },
+    {
+      "key": "bichon-frise",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Bichon Frise",
+        "extra": "A white powder-puff: dense curly coat groomed into a rounded cloud, with a plumed tail over the back. Vs Maltese: curls, not silk. Vs Poodle: smaller, rounder face.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bichon_Fris%C3%A9_-_studdogbichon.jpg?width=640"
+      },
+      "tags": [
+        "dogs::companion"
+      ]
+    },
+    {
+      "key": "havanese",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Havanese",
+        "extra": "Cuba's national dog: small, sturdy, with a long wavy coat in ANY color and a springy gait. Vs Maltese/Bichon: the one that comes in colors other than white.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/A_Havanese_judging.jpg?width=640"
+      },
+      "tags": [
+        "dogs::toy"
+      ]
+    },
+    {
+      "key": "papillon",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Papillon",
+        "extra": "French for 'butterfly': huge fringed ears set like spread wings on a dainty white-and-color body. One of the smartest of all toy breeds.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Outdoor_Continental_Toy_Spaniel_Papillon.jpeg?width=640"
+      },
+      "tags": [
+        "dogs::toy"
+      ]
+    },
+    {
+      "key": "shiba-inu",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Shiba Inu",
+        "extra": "Japan's small fox-like spitz: red coat with cream trim, curled tail, and a cat's independence. The face of the 'doge' meme. Vs Akita: the Shiba is a fraction of the size.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Taka_Shiba.jpg?width=640"
+      },
+      "tags": [
+        "dogs::companion"
+      ]
+    },
+    {
+      "key": "akita",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Akita",
+        "extra": "Japan's large, bear-headed spitz with a big curled tail and quiet, dignified loyalty; faithful Hachiko was one. Vs Shiba: same look, triple the dog.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Akita_Inu_dog.jpg?width=640"
+      },
+      "tags": [
+        "dogs::working"
+      ]
+    },
+    {
+      "key": "samoyed",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Samoyed",
+        "extra": "Brilliant white Siberian sled and reindeer dog wearing a permanent upturned 'Sammy smile' (which stops drool from freezing). A walking cloud that sheds accordingly.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Samojed00.jpg?width=640"
+      },
+      "tags": [
+        "dogs::working"
+      ]
+    },
+    {
+      "key": "alaskan-malamute",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Alaskan Malamute",
+        "extra": "The heavy freight hauler of the Arctic: bigger and bulkier than a Husky, always brown-eyed, with a plumed tail carried over the back. Blue eyes rule OUT Malamute.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Alaskan_Malamute.jpg?width=640"
+      },
+      "tags": [
+        "dogs::working"
+      ]
+    },
+    {
+      "key": "chow-chow",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Chow Chow",
+        "extra": "An ancient Chinese breed resembling a scowling lion, with a huge mane, stilted gait, and a unique blue-black tongue. Aloof with strangers, cat-like at home.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Chow-chow_in_Tallinn.JPG?width=640"
+      },
+      "tags": [
+        "dogs::companion"
+      ]
+    },
+    {
+      "key": "shar-pei",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Shar Pei",
+        "extra": "Deep folded wrinkles, a 'hippopotamus' muzzle, tiny ears, and (like the Chow) a blue-black tongue. Ancient Chinese guard and fighting dog; the name means 'sand skin'.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Adult_sharpei.jpg?width=640"
+      },
+      "tags": [
+        "dogs::companion"
+      ]
+    },
+    {
+      "key": "shetland-sheepdog",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Shetland Sheepdog",
+        "extra": "The Sheltie: looks exactly like a miniature Rough Collie, with a full mane and blaze of white. Vs Rough Collie: knee-height instead of thigh-height.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Shetland_Sheepdog_sable.jpg?width=640"
+      },
+      "tags": [
+        "dogs::herding"
+      ]
+    },
+    {
+      "key": "rough-collie",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Rough Collie",
+        "extra": "Lassie's breed: elegant, long-coated Scottish herder with a narrow refined muzzle and sable-and-white coat. Vs Sheltie: the full-size version.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Rough-Collie-japan08_%28cropped%29.jpg?width=640"
+      },
+      "tags": [
+        "dogs::herding"
+      ]
+    },
+    {
+      "key": "old-english-sheepdog",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Old English Sheepdog",
+        "extra": "A gray-and-white shag carpet with a bear's rolling gait, hair over its eyes, and no visible tail (the 'Bobtail'). The Dulux paint dog.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Old_English_Sheepdog_%28side%29.jpg?width=640"
+      },
+      "tags": [
+        "dogs::herding"
+      ]
+    },
+    {
+      "key": "australian-cattle-dog",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Australian Cattle Dog",
+        "extra": "The Blue Heeler: compact, mottled blue or red all over, bred with Dingo blood to drive cattle by nipping heels. Routinely tops dog-longevity records.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/ACD-blue-spud.jpg?width=640"
+      },
+      "tags": [
+        "dogs::herding"
+      ]
+    },
+    {
+      "key": "belgian-malinois",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Belgian Malinois",
+        "extra": "The military and police favorite: fawn with a black mask and ears, lighter and squarer than a German Shepherd, with a flat back and turbocharged drive. Navy SEALs jump with them.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Malinois_Obedience_Dog_Show_Ooty_May26_A7CR_10734.jpg?width=640"
+      },
+      "tags": [
+        "dogs::herding"
+      ]
+    },
+    {
+      "key": "american-pit-bull-terrier",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "American Pit Bull Terrier",
+        "extra": "Muscular, short-coated, broad-cheeked, in any color. 'Pit bull' on the street is an umbrella covering this breed, the American Staffordshire Terrier, and their mixes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/001_American_Pit_Bull_Terrier.jpg?width=640"
+      },
+      "tags": [
+        "dogs::terrier"
+      ]
+    },
+    {
+      "key": "bullmastiff",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Bullmastiff",
+        "extra": "The gamekeeper's night dog (60% Mastiff, 40% Bulldog): huge, fawn or brindle, with a black mask. Bred to silently knock down poachers and hold them.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bullmastiff_edited.JPG?width=640"
+      },
+      "tags": [
+        "dogs::working"
+      ]
+    },
+    {
+      "key": "cane-corso",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Cane Corso",
+        "extra": "Italian mastiff-guardian: enormous but athletic, short gray, black, or fawn coat, often cropped ears. The name (KAH-neh KOR-so) is Latin-rooted: 'bodyguard dog'.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Cane_corso_temi_1_1024x768x24_%28cropped%29.png?width=640"
+      },
+      "tags": [
+        "dogs::working"
+      ]
+    },
+    {
+      "key": "newfoundland",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Newfoundland",
+        "extra": "A gentle black (or brown, or landseer black-and-white) giant with webbed feet and a waterproof coat, bred to haul nets and rescue drowning sailors. Vs Bernese: no rust markings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Newfoundland_dog_Smoky.jpg?width=640"
+      },
+      "tags": [
+        "dogs::working"
+      ]
+    },
+    {
+      "key": "great-pyrenees",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Great Pyrenees",
+        "extra": "All-white livestock guardian that lives with its flock and treats wolves as a personnel problem. Vs Newfoundland: white; vs Samoyed: giant-size and calm.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Pyrenees_Mountain_Dog_2.png?width=640"
+      },
+      "tags": [
+        "dogs::working"
+      ]
+    },
+    {
+      "key": "rhodesian-ridgeback",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Rhodesian Ridgeback",
+        "extra": "Wheaten African lion-tracking hound named for its signature: a ridge of hair growing BACKWARD along the spine. Vs Vizsla: bigger, with the ridge.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Rhodesian_ridgeback.jpg?width=640"
+      },
+      "tags": [
+        "dogs::hound"
+      ]
+    },
+    {
+      "key": "weimaraner",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Weimaraner",
+        "extra": "The 'Gray Ghost': sleek silver-gray German hunting dog with amber or blue-gray eyes. Vs Vizsla: gray coat instead of rust.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Weimaraner_Freika-2.jpg?width=640"
+      },
+      "tags": [
+        "dogs::sporting"
+      ]
+    },
+    {
+      "key": "vizsla",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Vizsla",
+        "extra": "Hungarian pointer in solid rust from nose to tail: even the nose and eyes match the coat. A velcro dog that shadows its owner. Vs Weimaraner: rust, not gray.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Wy%C5%BCe%C5%82_w%C4%99gierski_g%C5%82adkow%C5%82osy_500.jpg?width=640"
+      },
+      "tags": [
+        "dogs::sporting"
+      ]
+    },
+    {
+      "key": "german-shorthaired-pointer",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "German Shorthaired Pointer",
+        "extra": "Liver-and-white bird dog, usually with a solid liver head and a ticked/roan body. The all-purpose hunter and a perennial field-trial champion.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Duitse_staande_korthaar_10-10-2.jpg?width=640"
+      },
+      "tags": [
+        "dogs::sporting"
+      ]
+    },
+    {
+      "key": "brittany",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Brittany",
+        "extra": "Compact orange-and-white French pointing dog, leggy and high-energy, with minimal tail. Once 'Brittany Spaniel', but it points like a setter, so 'Spaniel' was dropped.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Brittany_Spaniel_standing.jpg?width=640"
+      },
+      "tags": [
+        "dogs::sporting"
+      ]
+    },
+    {
+      "key": "english-springer-spaniel",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "English Springer Spaniel",
+        "extra": "Medium liver-and-white or black-and-white spaniel with a soft expression and long feathered ears; it 'springs' game from cover. Vs Cocker: bigger, longer muzzle.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Springer_Spaniel_Wide_Shot.jpg?width=640"
+      },
+      "tags": [
+        "dogs::sporting"
+      ]
+    },
+    {
+      "key": "american-cocker-spaniel",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "American Cocker Spaniel",
+        "extra": "The smallest sporting breed: dome head, short upturned muzzle, huge pleading eyes, and a floor-sweeping show coat. Lady in 'Lady and the Tramp'.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/PointbreakHoneyimHome.jpg?width=640"
+      },
+      "tags": [
+        "dogs::sporting"
+      ]
+    },
+    {
+      "key": "irish-setter",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Irish Setter",
+        "extra": "Aristocratic bird dog in a flowing mahogany-red coat, all elegance and enthusiasm. Vs Vizsla: taller, with a long silky feathered coat.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Can_Setter_dog_GFDL.jpg?width=640"
+      },
+      "tags": [
+        "dogs::sporting"
+      ]
+    },
+    {
+      "key": "portuguese-water-dog",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Portuguese Water Dog",
+        "extra": "Curly or wavy non-shedding fisherman's dog that herded fish into nets; tail often shaved to a lion clip. The Obamas' Bo made it famous. Vs Poodle: sturdier, rectangular.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/C%C3%A3o_de_agua_Portugu%C3%AAs_2.jpg?width=640"
+      },
+      "tags": [
+        "dogs::working"
+      ]
+    },
+    {
+      "key": "airedale-terrier",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Airedale Terrier",
+        "extra": "'The King of Terriers': the largest terrier, black-and-tan with a wiry coat, sporting beard, and folded ears. Served as a WWI messenger dog.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Airedale_Terrier.jpg?width=640"
+      },
+      "tags": [
+        "dogs::terrier"
+      ]
+    },
+    {
+      "key": "basenji",
+      "model": "basic",
+      "fields": {
+        "front": "What dog breed is this?",
+        "back": "Basenji",
+        "extra": "The barkless dog of central Africa: it yodels instead. Small, chestnut-and-white, with a wrinkled forehead, pricked ears, and a tight ring tail; grooms itself like a cat.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Basenji_Profile_%28loosercrop%29.jpg?width=640"
+      },
+      "tags": [
+        "dogs::hound"
+      ]
+    }
+  ]
+}

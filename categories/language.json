@@ -4,6 +4,19 @@
   "name": "Language",
   "decks": [
     {
+      "key": "chinese-radicals",
+      "name": "Chinese Radicals",
+      "description": "The 54 building blocks that make Chinese characters stop looking like random strokes. No Chinese required: see a component, name what it means. Once you know 氵 is water and 讠 is speech, thousands of characters become guessable. The perfect on-ramp to Essential Chinese.",
+      "cardCount": 54,
+      "topics": [
+        "chinese",
+        "mandarin",
+        "radicals",
+        "writing"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/XingshuLantingxv.jpg?width=640"
+    },
+    {
       "key": "essential-chinese",
       "name": "Essential Chinese",
       "description": "Mandarin from absolute zero, no character knowledge required. The tone and pinyin system comes first, then day-one survival phrases, then the highest-frequency words, then the grammar patterns that snap them together. Word cards show the characters big with tap-to-hear speech and a tap-to-reveal pinyin hint, so you try the characters first but are never stuck; the full pinyin appears with every answer, and the phrases you must be able to say are trained in both directions plus an ear-only listening card, and the simplest core characters add a write-it-with-your-finger card. Simplified characters. Keep new cards to 5-10 a day and say every answer out loud.",

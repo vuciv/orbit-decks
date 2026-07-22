@@ -1,0 +1,557 @@
+{
+  "key": "chinese-radicals",
+  "version": 1,
+  "name": "Chinese Radicals",
+  "description": "The 54 building blocks that make Chinese characters stop looking like random strokes. No Chinese required: see a component, name what it means. Once you know 氵 is water and 讠 is speech, thousands of characters become guessable. The perfect on-ramp to Essential Chinese.",
+  "category": "Language",
+  "topics": [
+    "chinese",
+    "mandarin",
+    "radicals",
+    "writing"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/XingshuLantingxv.jpg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "person-side",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 亻 mean?",
+        "back": "Person.",
+        "extra": "The squeezed side-form of 人 (rén, person). Spot it in 你 (you), 他 (he), 们 (the plural marker): words about people."
+      },
+      "tags": ["radicals::people"]
+    },
+    {
+      "key": "mouth",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 口 mean?",
+        "back": "Mouth.",
+        "extra": "kǒu; a literal open mouth. In 吃 (eat), 喝 (drink), 叫 (call), and the spoken particles 吗, 呢, 啊: anything said or eaten."
+      },
+      "tags": ["radicals::people"]
+    },
+    {
+      "key": "hand-side",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 扌 mean?",
+        "back": "Hand.",
+        "extra": "The side-form of 手 (shǒu, hand). In 打 (hit), 拉 (pull), 抱 (hug): actions done with the hands."
+      },
+      "tags": ["radicals::people"]
+    },
+    {
+      "key": "heart-full",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 心 (sitting at the BOTTOM of a character) mean?",
+        "back": "Heart.",
+        "extra": "xīn. Thoughts and feelings rest on a heart: 想 (think), 忘 (forget), 感 (feel)."
+      },
+      "tags": ["radicals::people"]
+    },
+    {
+      "key": "heart-side",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 忄 (a vertical line with two dots, on the LEFT) mean?",
+        "back": "Heart.",
+        "extra": "The heart 心 squeezed thin to fit the left side. Emotions again: 忙 (busy), 怕 (afraid), 慢 (slow)."
+      },
+      "tags": ["radicals::people"]
+    },
+    {
+      "key": "eye",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 目 mean?",
+        "back": "Eye.",
+        "extra": "mù; an eye turned upright. In 看 (look: a hand shading an eye), 眼 (eye), 睡 (sleep). Hook vs the sun 日: the eye has TWO bars inside, like two eyelids."
+      },
+      "tags": ["radicals::people"]
+    },
+    {
+      "key": "moon",
+      "model": "basic",
+      "fields": {
+        "front": "What does 月 mean as a character on its own?",
+        "back": "Moon (and month).",
+        "extra": "yuè. A crescent moon. In 明 (bright: sun + moon together). But it leads a double life; see the next card."
+      },
+      "tags": ["radicals::nature"]
+    },
+    {
+      "key": "flesh-side",
+      "model": "basic",
+      "fields": {
+        "front": "What does 月 usually mean on the LEFT side of a character?",
+        "back": "Flesh or body.",
+        "extra": "There it is the compressed form of 肉 (ròu, meat), not the moon. Body parts everywhere: 脸 (face), 腿 (leg), 脑 (brain), 肚 (belly)."
+      },
+      "tags": ["radicals::people"]
+    },
+    {
+      "key": "foot",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical ⻊ (as in 跑) mean?",
+        "back": "Foot.",
+        "extra": "The side-form of 足 (zú, foot). In 跑 (run), 跳 (jump), 踢 (kick): leg work."
+      },
+      "tags": ["radicals::people"]
+    },
+    {
+      "key": "woman",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 女 mean?",
+        "back": "Woman.",
+        "extra": "nǚ. In 妈 (mom), 姐 (older sister), 她 (she)."
+      },
+      "tags": ["radicals::people"]
+    },
+    {
+      "key": "child",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 子 mean?",
+        "back": "Child.",
+        "extra": "zǐ; a swaddled baby with outstretched arms. In 孩 (child), 学 (study), 字 (written character)."
+      },
+      "tags": ["radicals::people"]
+    },
+    {
+      "key": "corpse",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 尸 mean?",
+        "back": "Body (originally corpse).",
+        "extra": "shī; a slumped, seated body. It tops 尾 (tail), 屋 (room), and the deck's least dignified character, 尿 (urine)."
+      },
+      "tags": ["radicals::people"]
+    },
+    {
+      "key": "head-page",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 页 mean as a component?",
+        "back": "Head.",
+        "extra": "yè; standalone it means 'page', but as a component it marks heads and faces: 顶 (top), 颜 (face), 题 (title)."
+      },
+      "tags": ["radicals::people"]
+    },
+    {
+      "key": "water-side",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 氵 (THREE drops) mean?",
+        "back": "Water.",
+        "extra": "'Three drops of water' (三点水), the side-form of 水 (shuǐ). In 河 (river), 海 (sea), 洗 (wash). Three drops = liquid; only two = ice."
+      },
+      "tags": ["radicals::nature"]
+    },
+    {
+      "key": "ice-side",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 冫 (TWO drops) mean?",
+        "back": "Ice.",
+        "extra": "'Two drops of water' (两点水). In 冰 (ice), 冷 (cold), 凉 (cool). Hook: ice is water with a drop frozen out; one drop short of 氵."
+      },
+      "tags": ["radicals::nature"]
+    },
+    {
+      "key": "fire",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 火 mean?",
+        "back": "Fire.",
+        "extra": "huǒ; a little flame with sparks. In 烧 (burn), 灯 (lamp), 烤 (roast)."
+      },
+      "tags": ["radicals::nature"]
+    },
+    {
+      "key": "fire-dots",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 灬 (four dots along the BOTTOM) mean?",
+        "back": "Fire.",
+        "extra": "Fire 火 flattened into four licks of flame under the pot: 热 (hot), 煮 (boil), 照 (shine)."
+      },
+      "tags": ["radicals::nature"]
+    },
+    {
+      "key": "sun",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 日 mean?",
+        "back": "Sun (and day).",
+        "extra": "rì; a square sun with ONE bar inside (the eye 目 has two). Time and light: 早 (morning), 晚 (evening), 时 (time)."
+      },
+      "tags": ["radicals::nature"]
+    },
+    {
+      "key": "tree",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 木 mean?",
+        "back": "Tree or wood.",
+        "extra": "mù; a trunk with branches and roots. In 树 (tree), 林 (woods: two trees), 桌 (table, made of wood)."
+      },
+      "tags": ["radicals::nature"]
+    },
+    {
+      "key": "grain",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 禾 mean?",
+        "back": "Grain.",
+        "extra": "hé; hook vs 木: a tree bowing under a drooping head of grain (the extra top stroke). In 种 (to plant), 秋 (autumn: grain + fire), 租 (rent, once paid in grain)."
+      },
+      "tags": ["radicals::nature"]
+    },
+    {
+      "key": "grass",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 艹 (across the TOP) mean?",
+        "back": "Grass or plant.",
+        "extra": "'Grass head' (草字头): two sprouts breaking soil. Caps 花 (flower), 茶 (tea), 药 (medicine, once herbal)."
+      },
+      "tags": ["radicals::nature"]
+    },
+    {
+      "key": "earth",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 土 mean?",
+        "back": "Earth or soil.",
+        "extra": "tǔ; a mound on the ground. In 地 (ground), 城 (city), 坐 (sit: two people on the earth)."
+      },
+      "tags": ["radicals::nature"]
+    },
+    {
+      "key": "mountain",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 山 mean?",
+        "back": "Mountain.",
+        "extra": "shān; three peaks. In 岛 (island), 峰 (peak), 岸 (shore)."
+      },
+      "tags": ["radicals::nature"]
+    },
+    {
+      "key": "stone",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 石 mean?",
+        "back": "Stone.",
+        "extra": "shí; a cliff with a rock beneath it. In 破 (break), 硬 (hard), 碗 (bowl, once earthenware)."
+      },
+      "tags": ["radicals::nature"]
+    },
+    {
+      "key": "field",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 田 mean?",
+        "back": "Field.",
+        "extra": "tián; a bird's-eye view of paddy plots. In 男 (man: strength in the field) and 界 (boundary)."
+      },
+      "tags": ["radicals::nature"]
+    },
+    {
+      "key": "rain",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 雨 mean?",
+        "back": "Rain.",
+        "extra": "yǔ; drops falling from a cloud under the sky. Tops all weather: 雪 (snow), 雷 (thunder), 零 (zero, originally 'raindrop')."
+      },
+      "tags": ["radicals::nature"]
+    },
+    {
+      "key": "roof",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 宀 (the capped TOP) mean?",
+        "back": "Roof.",
+        "extra": "'Treasure cover' (宝盖头). Everything domestic happens under it: 家 (home: a pig under the roof), 安 (peace), 室 (room)."
+      },
+      "tags": ["radicals::places"]
+    },
+    {
+      "key": "shelter",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 广 (a roof with an open left side) mean?",
+        "back": "Building or shelter.",
+        "extra": "A lean-to open on one side, vs the fully enclosed roof 宀. Public and furniture-scale spaces: 店 (shop), 床 (bed), 座 (seat)."
+      },
+      "tags": ["radicals::places"]
+    },
+    {
+      "key": "door",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 门 mean?",
+        "back": "Door or gate.",
+        "extra": "mén; a doorframe. In 问 (ask: a mouth at the door), 间 (room), 闹 (noisy: a market at the gate)."
+      },
+      "tags": ["radicals::places"]
+    },
+    {
+      "key": "cave",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 穴 mean?",
+        "back": "Cave or hole.",
+        "extra": "xué; a roof over a dug-out opening. In 空 (empty), 穿 (to pierce through, hence 'to wear'), 窗 (window)."
+      },
+      "tags": ["radicals::places"]
+    },
+    {
+      "key": "walk",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 辶 (the sled under a character) mean?",
+        "back": "Walking or movement.",
+        "extra": "'The walking radical' (走之底), a foot on a winding road. Carries 过 (pass), 送 (deliver), 远 (far): anything going somewhere."
+      },
+      "tags": ["radicals::places"]
+    },
+    {
+      "key": "vehicle",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 车 mean?",
+        "back": "Vehicle or cart.",
+        "extra": "chē; a chariot seen from above, simplified. In 轮 (wheel), 转 (turn), 辆 (the measure word for cars)."
+      },
+      "tags": ["radicals::places"]
+    },
+    {
+      "key": "knife-side",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 刂 (two vertical strokes on the RIGHT) mean?",
+        "back": "Knife.",
+        "extra": "The side-form of 刀 (dāo, knife). In 刻 (carve), 别 (originally 'cut apart', now 'don't'), 划 (slash)."
+      },
+      "tags": ["radicals::actions"]
+    },
+    {
+      "key": "strength",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 力 mean?",
+        "back": "Strength.",
+        "extra": "lì; a flexed arm (or a plow). In 加 (add), 动 (move), 助 (help)."
+      },
+      "tags": ["radicals::actions"]
+    },
+    {
+      "key": "right-hand",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 又 mean?",
+        "back": "Right hand (now 'again').",
+        "extra": "yòu; a grasping hand in the oldest script. In 双 (pair: two hands), 友 (friend: hands joined), 对 (correct)."
+      },
+      "tags": ["radicals::actions"]
+    },
+    {
+      "key": "strike",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 攵 (on the RIGHT, like a crossed figure) mean?",
+        "back": "To strike or act on.",
+        "extra": "A hand holding a stick. In 教 (teach), 放 (release), 改 (correct): discipline in every sense."
+      },
+      "tags": ["radicals::actions"]
+    },
+    {
+      "key": "speech-side",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 讠 mean?",
+        "back": "Speech.",
+        "extra": "The side-form of 言 (yán, speech): words rising from a mouth. In 说 (speak), 话 (words), 请 (please). If a character has 讠, someone is talking."
+      },
+      "tags": ["radicals::actions"]
+    },
+    {
+      "key": "silk-side",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 纟 mean?",
+        "back": "Silk or thread.",
+        "extra": "The side-form of 糸, twisted silk strands. In 线 (thread), 纸 (paper), and 红 (red, from dyed silk): textiles and what came from them."
+      },
+      "tags": ["radicals::objects"]
+    },
+    {
+      "key": "metal-side",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 钅 mean?",
+        "back": "Metal or gold.",
+        "extra": "The side-form of 金 (jīn, gold/metal). In 钱 (money), 铁 (iron), 银 (silver): the whole periodic table's neighborhood."
+      },
+      "tags": ["radicals::objects"]
+    },
+    {
+      "key": "jade",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 王 (on the LEFT of a character) mean?",
+        "back": "Jade.",
+        "extra": "It looks like 王 (king) but as a left-side radical it is 玉 (jade) missing its dot. Precious, playable things: 玩 (play), 球 (ball), 珍 (precious)."
+      },
+      "tags": ["radicals::objects"]
+    },
+    {
+      "key": "shell",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 贝 mean?",
+        "back": "Shell, hence money.",
+        "extra": "bèi; cowrie shells were ancient China's currency, so 贝 marks value: 贵 (expensive), 财 (wealth), 赚 (earn)."
+      },
+      "tags": ["radicals::objects"]
+    },
+    {
+      "key": "clothing-side",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 衤 mean?",
+        "back": "Clothing.",
+        "extra": "The side-form of 衣 (yī, clothes). In 裤 (pants), 袜 (socks), 被 (blanket). Hook vs 礻 (spirit): clothing has ONE MORE stitch (an extra dot)."
+      },
+      "tags": ["radicals::objects"]
+    },
+    {
+      "key": "spirit-side",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 礻 mean?",
+        "back": "Spirit or ritual.",
+        "extra": "The side-form of 示 (shì, an altar). In 神 (god), 祝 (bless), 福 (fortune). The plainer of the pair: spirits need no extra stitch, clothes 衤 do."
+      },
+      "tags": ["radicals::objects"]
+    },
+    {
+      "key": "food-side",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 饣 mean?",
+        "back": "Food.",
+        "extra": "The side-form of 食 (shí, to eat). In 饭 (meal), 饿 (hungry), 饺 (dumpling). A menu's most important radical."
+      },
+      "tags": ["radicals::objects"]
+    },
+    {
+      "key": "rice",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 米 mean?",
+        "back": "Rice.",
+        "extra": "mǐ; grains scattered around a cross. In 粉 (noodles/powder), 糖 (sugar), 粥 (congee)."
+      },
+      "tags": ["radicals::objects"]
+    },
+    {
+      "key": "animal-side",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 犭 mean?",
+        "back": "Animal (originally dog).",
+        "extra": "The side-form of 犬 (quǎn, dog), extended to beasts in general: 狗 (dog), 猫 (cat), 猪 (pig)."
+      },
+      "tags": ["radicals::animals"]
+    },
+    {
+      "key": "horse",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 马 mean?",
+        "back": "Horse.",
+        "extra": "mǎ; mane and legs, simplified. In 骑 (ride) and 骂 (scold: two mouths yelling from horseback). Also the sound-lender in 妈 (mā, mom) and 吗 (ma, the question particle)."
+      },
+      "tags": ["radicals::animals"]
+    },
+    {
+      "key": "ox",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 牛 mean?",
+        "back": "Ox or cow.",
+        "extra": "niú; a horned head from the front. In 物 (thing: oxen were THE possession) and 特 (special: an outstanding bull)."
+      },
+      "tags": ["radicals::animals"]
+    },
+    {
+      "key": "bird",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 鸟 mean?",
+        "back": "Bird.",
+        "extra": "niǎo; head, wing, and a claw. In 鸡 (chicken), 鸭 (duck), 鹅 (goose): your bird decks, in one stroke cluster."
+      },
+      "tags": ["radicals::animals"]
+    },
+    {
+      "key": "fish",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 鱼 mean?",
+        "back": "Fish.",
+        "extra": "yú; head, scaled body, tail. In 鲜 (fresh: fish + lamb, the two things you want fresh) and 鲨 (shark)."
+      },
+      "tags": ["radicals::animals"]
+    },
+    {
+      "key": "bug",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 虫 mean?",
+        "back": "Insect or bug.",
+        "extra": "chóng; generously defined: 蚊 (mosquito), but also 蛇 (snake) and 虾 (shrimp). Ancient taxonomy filed them all under 'bug'."
+      },
+      "tags": ["radicals::animals"]
+    },
+    {
+      "key": "sickness",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 疒 (a lean-to with two dots on its left) mean?",
+        "back": "Sickness.",
+        "extra": "'The sick radical' (病字旁): a person laid on a bed. Everything under it ails: 病 (ill), 疼 (ache), 瘦 (thin)."
+      },
+      "tags": ["radicals::people"]
+    },
+    {
+      "key": "hill-left",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 阝 mean on the LEFT of a character?",
+        "back": "Mound or hill.",
+        "extra": "From 阜 (fù, mound). In 阳 (the sunny side of the hill), 阴 (the shady side), 院 (courtyard). Mnemonic: hills on the left, towns on the right."
+      },
+      "tags": ["radicals::places"]
+    },
+    {
+      "key": "city-right",
+      "model": "basic",
+      "fields": {
+        "front": "What does the radical 阝 mean on the RIGHT of a character?",
+        "back": "City or town.",
+        "extra": "From 邑 (yì, settlement). In 都 (capital), 郊 (suburbs), 那 (that). Same glyph as the hill radical; only the side tells you which."
+      },
+      "tags": ["radicals::places"]
+    }
+  ]
+}

@@ -26,6 +26,19 @@
         "codes"
       ],
       "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/FAA%20Phonetic%20and%20Morse%20Chart2.svg?width=640"
+    },
+    {
+      "key": "greek-alphabet",
+      "name": "The Greek Alphabet",
+      "description": "All 24 Greek letters in order, uppercase and lowercase. See the glyphs, type the name. Extras give the sound, the Latin-lookalike traps (nu is not v, rho is not p), and where each letter earns its keep in math, stats, and ML papers.",
+      "cardCount": 24,
+      "topics": [
+        "greek",
+        "alphabet",
+        "mathematics",
+        "notation"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/NAMA_Alphabet_grec.jpg?width=640"
     }
   ]
 }

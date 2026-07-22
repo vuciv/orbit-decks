@@ -4,8 +4,8 @@
     {
       "key": "language",
       "name": "Language",
-      "deckCount": 2,
-      "rev": "057c38ac3eb1",
+      "deckCount": 3,
+      "rev": "04af9c3470c3",
       "file": "categories/language.json"
     },
     {
@@ -32,8 +32,8 @@
     {
       "key": "nature",
       "name": "Nature",
-      "deckCount": 3,
-      "rev": "8014cba602ff",
+      "deckCount": 4,
+      "rev": "fc9bc57b9d4e",
       "file": "categories/nature.json"
     },
     {
@@ -95,8 +95,8 @@
     {
       "key": "codes-signals",
       "name": "Codes & Signals",
-      "deckCount": 2,
-      "rev": "70d125f5b1b5",
+      "deckCount": 3,
+      "rev": "b3840104724a",
       "file": "categories/codes-signals.json"
     },
     {
@@ -262,6 +262,11 @@
       "file": "decks/chess-strategy-fundamentals.json"
     },
     {
+      "key": "chinese-radicals",
+      "version": 1,
+      "file": "decks/chinese-radicals.json"
+    },
+    {
       "key": "constellations",
       "version": 1,
       "file": "decks/constellations.json"
@@ -280,6 +285,11 @@
       "key": "data-visualization",
       "version": 1,
       "file": "decks/data-visualization.json"
+    },
+    {
+      "key": "dog-breeds",
+      "version": 1,
+      "file": "decks/dog-breeds.json"
     },
     {
       "key": "dutch-defense",
@@ -325,6 +335,11 @@
       "key": "geoguessr-meta",
       "version": 1,
       "file": "decks/geoguessr-meta.json"
+    },
+    {
+      "key": "greek-alphabet",
+      "version": 1,
+      "file": "decks/greek-alphabet.json"
     },
     {
       "key": "grunfeld-defense",

@@ -1,0 +1,257 @@
+{
+  "key": "greek-alphabet",
+  "version": 1,
+  "name": "The Greek Alphabet",
+  "description": "All 24 Greek letters in order, uppercase and lowercase. See the glyphs, type the name. Extras give the sound, the Latin-lookalike traps (nu is not v, rho is not p), and where each letter earns its keep in math, stats, and ML papers.",
+  "category": "Codes & Signals",
+  "topics": [
+    "greek",
+    "alphabet",
+    "mathematics",
+    "notation"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/NAMA_Alphabet_grec.jpg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "alpha",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Α α**",
+        "answer": "alpha",
+        "extra": "Sounds like 'a'. First letter; 'alphabet' is just alpha + beta. In papers: significance level, learning rates, angles."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "beta",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Β β**",
+        "answer": "beta",
+        "extra": "Sounds like 'b'; uppercase looks like Latin B. In papers: regression coefficients, the beta distribution, Adam's momentum parameters."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "gamma",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Γ γ**",
+        "answer": "gamma",
+        "extra": "Sounds like 'g'; uppercase is the right-angle hook. In papers: the discount factor in RL, the gamma function, gamma radiation."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "delta",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Δ δ**",
+        "answer": "delta",
+        "extra": "Sounds like 'd'; uppercase is the triangle. In papers: uppercase for change or difference, lowercase for small quantities and the Dirac/Kronecker delta."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "epsilon",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Ε ε**",
+        "answer": "epsilon",
+        "extra": "Sounds like a short 'e'. In papers: an arbitrarily small positive quantity, epsilon-greedy exploration, machine epsilon."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "zeta",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Ζ ζ**",
+        "answer": "zeta",
+        "extra": "Sounds like 'z'. The Riemann zeta function. With xi, one of the two squiggles nobody can handwrite; zeta is the SIMPLER squiggle (one loop)."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "eta",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Η η**",
+        "answer": "eta",
+        "extra": "Sounds like a long 'ay'. Double trap: uppercase looks like Latin H, lowercase looks like n with a tail. In papers: the learning rate, efficiency."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "theta",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Θ θ**",
+        "answer": "theta",
+        "extra": "Sounds like 'th'; the circle with a bar. In papers: THE symbol for model parameters, plus angles everywhere; Big-Theta bounds in CS."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "iota",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Ι ι**",
+        "answer": "iota",
+        "extra": "Sounds like 'i'; the smallest letter, hence 'not one iota'. Rare in math precisely because it vanishes next to i."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "kappa",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Κ κ**",
+        "answer": "kappa",
+        "extra": "Sounds like 'k'. In papers: Cohen's kappa for inter-rater agreement, condition numbers, curvature."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "lambda",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Λ λ**",
+        "answer": "lambda",
+        "extra": "Sounds like 'l'. In papers: eigenvalues, regularization strength, Poisson rates; lambda calculus gave anonymous functions their name."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "mu",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Μ μ**",
+        "answer": "mu",
+        "extra": "Sounds like 'm'; uppercase looks like Latin M. In papers: the mean; also the micro- prefix (a micrometer is a μm)."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "nu",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Ν ν**",
+        "answer": "nu",
+        "extra": "The classic trap: lowercase looks exactly like Latin v, but nu is the Greek N. In papers: frequency in physics, degrees of freedom in stats."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "xi",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Ξ ξ**",
+        "answer": "xi",
+        "extra": "Sounds like 'ksee'. The notorious triple squiggle (zeta only has one loop); uppercase is three horizontal bars. In papers: a favorite for random variables and noise terms."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "omicron",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Ο ο**",
+        "answer": "omicron",
+        "extra": "Literally 'small o' (o-micron), vs omega, 'big o'. Indistinguishable from Latin o, so math avoids it; the world met it as a COVID variant."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "pi",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Π π**",
+        "answer": "pi",
+        "extra": "Sounds like 'p'. Lowercase: 3.14159... and the policy in RL, π(a|s). Uppercase: the product operator, summation's multiplicative sibling."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "rho",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Ρ ρ**",
+        "answer": "rho",
+        "extra": "Trap: looks like Latin p, but rho is the Greek R. In papers: correlation coefficients (Spearman's rho), density."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "sigma",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Σ σ**",
+        "answer": "sigma",
+        "extra": "Sounds like 's'. Uppercase: summation. Lowercase: standard deviation (σ² is variance) and the sigmoid's namesake. A third form, ς, appears only at the end of Greek words."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "tau",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Τ τ**",
+        "answer": "tau",
+        "extra": "Sounds like 't'. In papers: Kendall's tau, time constants, and often the temperature in a softmax."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "upsilon",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Υ υ**",
+        "answer": "upsilon",
+        "extra": "Sounds like 'u'. Rare in math, but a prolific parent: Latin U, V, W, and Y all descend from it."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "phi",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Φ φ**",
+        "answer": "phi",
+        "extra": "Sounds like 'f'. In papers: feature maps φ(x), the golden ratio, angles; uppercase is the standard normal CDF. Also written ϕ; same letter."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "chi",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Χ χ**",
+        "answer": "chi",
+        "extra": "Sounds like 'kh'. Looks like Latin x: that resemblance gave us the chi-squared (χ²) test's symbol and 'Xmas' (Χ for Christ)."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "psi",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Ψ ψ**",
+        "answer": "psi",
+        "extra": "Sounds like 'ps'; the trident. In papers: the wavefunction in quantum mechanics; the emblem of psychology (psi for psyche)."
+      },
+      "tags": ["codes::greek-letters"]
+    },
+    {
+      "key": "omega",
+      "model": "typed",
+      "fields": {
+        "front": "Name this Greek letter: **Ω ω**",
+        "answer": "omega",
+        "extra": "Literally 'big o'; the last letter ('alpha and omega'). Uppercase: ohms, and the whole sample space in probability. Lowercase: one outcome ω in that space, angular frequency."
+      },
+      "tags": ["codes::greek-letters"]
+    }
+  ]
+}
