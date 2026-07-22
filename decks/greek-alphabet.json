@@ -1,6 +1,6 @@
 {
   "key": "greek-alphabet",
-  "version": 1,
+  "version": 2,
   "name": "The Greek Alphabet",
   "description": "All 24 Greek letters with capitals and lowercase drilled as separate cards, plus the notation round: which letter is the summation, the mean, the policy, the sample space. See a glyph, type its name; extras cover the Latin-lookalike traps (nu is not v, rho is not p) and where each letter earns its keep in math, stats, and ML papers.",
   "category": "Codes & Signals",
