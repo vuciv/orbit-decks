@@ -21,6 +21,16 @@
     ]
   },
   {
+    "key": "birdwatching",
+    "title": "Birdwatching",
+    "description": "Learn the birds around you, region by region, from photos.",
+    "deckKeys": [
+      "birds-eastern-north-america",
+      "birds-western-north-america",
+      "birds-of-europe"
+    ]
+  },
+  {
     "key": "silver-screen",
     "title": "Silver Screen",
     "description": "For people who know the director before the trailer ends.",

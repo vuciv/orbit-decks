@@ -1,0 +1,731 @@
+{
+  "key": "birds-western-north-america",
+  "version": 1,
+  "name": "Bird ID: Western North America",
+  "description": "Identify 55 signature birds of the American West from photos, from coastal chaparral to desert and mountain pine forest. Details give the scientific name, key field marks, and lookalike tips.",
+  "category": "Nature",
+  "topics": [
+    "birds",
+    "nature",
+    "identification"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Steller's_Jay_flagstaff_arizona.jpg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "stellers-jay",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Steller's jay",
+        "extra": "Cyanocitta stelleri. Deep blue jay with a sooty-black head and tall shaggy crest; the West's only crested jay. Bold camp-robber of conifer forests.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Steller's_Jay_flagstaff_arizona.jpg?width=640"
+      },
+      "tags": [
+        "birds::corvid"
+      ]
+    },
+    {
+      "key": "california-scrub-jay",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "California scrub-jay",
+        "extra": "Aphelocoma californica. Crestless azure-blue jay with a gray-brown back, whitish throat, and partial blue necklace. Steller's jay, by contrast, is darker with a crest.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/California_Scrub_Jay%2C_Richmond%2C_Contra_Costa%2C_California_(30644196597).jpg?width=640"
+      },
+      "tags": [
+        "birds::corvid"
+      ]
+    },
+    {
+      "key": "california-quail",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "California quail",
+        "extra": "Callipepla californica. Plump gray-brown quail with a comma-shaped head plume and a scaled belly with a chestnut patch. Gambel's quail is its desert twin with an unscaled cream belly.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/California_quail_(Callipepla_californica)_male_Tricao.jpg?width=640"
+      },
+      "tags": [
+        "birds::gamebird"
+      ]
+    },
+    {
+      "key": "annas-hummingbird",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Anna's hummingbird",
+        "extra": "Calypte anna. Male's entire crown and gorget flash iridescent rose-pink; body green and gray. Year-round resident of the Pacific coast; males make a loud chirp at the bottom of display dives.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Anna's_hummingbird.jpg?width=640"
+      },
+      "tags": [
+        "birds::hummingbird"
+      ]
+    },
+    {
+      "key": "black-billed-magpie",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Black-billed magpie",
+        "extra": "Pica hudsonia. Unmistakable pied corvid: black-and-white body, iridescent blue-green wings, and a very long tail. Yellow-billed magpie of California's Central Valley differs only in bill color.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/BlackBilledMagpie.jpg?width=640"
+      },
+      "tags": [
+        "birds::corvid"
+      ]
+    },
+    {
+      "key": "spotted-towhee",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Spotted towhee",
+        "extra": "Pipilo maculatus. Black hood and back with white-spotted wings, rufous flanks, red eye. The West's version of the eastern towhee; scratches loudly in leaf litter.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Spotted_Towhee_(32684403303).jpg?width=640"
+      },
+      "tags": [
+        "birds::sparrow"
+      ]
+    },
+    {
+      "key": "california-towhee",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "California towhee",
+        "extra": "Melozone crissalis. Plain matte-brown, sparrow-shaped yard bird with rusty undertail coverts and a buffy throat. Hops around patios; gives a sharp metallic 'chink'.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Melozone_crissalis_103257560.jpg?width=640"
+      },
+      "tags": [
+        "birds::sparrow"
+      ]
+    },
+    {
+      "key": "western-bluebird",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Western bluebird",
+        "extra": "Sialia mexicana. Male deep blue with a rusty breast that wraps up onto the shoulders and back; blue (not rusty) throat. Mountain bluebird lacks any rust at all.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Western_bluebird_(male).jpg?width=640"
+      },
+      "tags": [
+        "birds::thrush"
+      ]
+    },
+    {
+      "key": "mountain-bluebird",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Mountain bluebird",
+        "extra": "Sialia currucoides. Male sky-blue all over with no rust anywhere; female gray with blue wing and tail tinges. Hovers over open meadows before dropping on insects.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Mountain_Bluebird.jpg?width=640"
+      },
+      "tags": [
+        "birds::thrush"
+      ]
+    },
+    {
+      "key": "western-tanager",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Western tanager",
+        "extra": "Piranga ludoviciana. Breeding male has a flame-red head on a yellow body with black back, wings, and tail. Conifer-forest breeder that shows up in yards on migration.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Western_Tanager_(male).jpg?width=640"
+      },
+      "tags": [
+        "birds::songbird"
+      ]
+    },
+    {
+      "key": "black-headed-grosbeak",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Black-headed grosbeak",
+        "extra": "Pheucticus melanocephalus. Male burnt-orange with a black head and black-and-white wings, plus the massive grosbeak bill. The West's counterpart of the rose-breasted grosbeak; rich robin-like song.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Pheucticus_melanocephalus_-California%2C_USA-8.jpg?width=640"
+      },
+      "tags": [
+        "birds::songbird"
+      ]
+    },
+    {
+      "key": "lazuli-bunting",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Lazuli bunting",
+        "extra": "Passerina amoena. Male turquoise-blue above with a cinnamon breast band and white wing bars and belly. The indigo bunting of the East is solid blue with no rust or wing bars.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Lazuli_Bunting.jpg?width=640"
+      },
+      "tags": [
+        "birds::songbird"
+      ]
+    },
+    {
+      "key": "bullocks-oriole",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Bullock's oriole",
+        "extra": "Icterus bullockii. Male orange with a black crown, black eye-line, small black bib, and big white wing patch; face mostly orange. Hooded oriole male instead has an orange crown and larger black face-and-bib patch.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bullock's_Oriole.jpg?width=640"
+      },
+      "tags": [
+        "birds::songbird"
+      ]
+    },
+    {
+      "key": "hooded-oriole",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Hooded oriole",
+        "extra": "Icterus cucullatus. Slim oriole; male has an orange-yellow hood over the crown with a black face and throat bib, and a longer, slightly curved bill. Loves palms - nests sewn under palm fronds.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Icterus_cucullatus_Female.jpg?width=640"
+      },
+      "tags": [
+        "birds::songbird"
+      ]
+    },
+    {
+      "key": "lesser-goldfinch",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Lesser goldfinch",
+        "extra": "Spinus psaltria. Tiny goldfinch; male has a black cap with greenish or black back and yellow underparts, plus white wing flashes. American goldfinch males are brighter lemon with a yellow (not dark) back.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Lesser_Goldfinch_(_Eastern_race)_Kerr_WMA_Kerrville_TX_2018-05-06_12-11-15-2_(42881554344).jpg?width=640"
+      },
+      "tags": [
+        "birds::finch"
+      ]
+    },
+    {
+      "key": "pine-siskin",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Pine siskin",
+        "extra": "Spinus pinus. Heavily streaked little finch with a sharp thin bill and yellow flashes in the wings and tail. Roams in flocks with goldfinches; numbers irrupt some winters.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Carduelis_pinus_CT7.jpg?width=640"
+      },
+      "tags": [
+        "birds::finch"
+      ]
+    },
+    {
+      "key": "mountain-chickadee",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Mountain chickadee",
+        "extra": "Poecile gambeli. The only chickadee with a white eyebrow stripe cutting through its black cap. Dry mountain conifer forests; hoarse 'chick-a-dee' call.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Mountain_Chickadee_Sandia_Mountains.jpg?width=640"
+      },
+      "tags": [
+        "birds::feeder"
+      ]
+    },
+    {
+      "key": "chestnut-backed-chickadee",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Chestnut-backed chickadee",
+        "extra": "Poecile rufescens. Richly colored chickadee with a chestnut back and (in most of its range) chestnut flanks. Humid Pacific coast forests from California to Alaska.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Chestnut-backed_Chickadee_2154ab_(cropped).jpg?width=640"
+      },
+      "tags": [
+        "birds::feeder"
+      ]
+    },
+    {
+      "key": "oak-titmouse",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Oak titmouse",
+        "extra": "Baeolophus inornatus. Plain gray-brown crested bird of California oak woodland - no other marks at all. Its drabness plus the crest IS the field mark.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Baeolophus_inornatus_-San_Luis_Obispo%2C_California%2C_USA-8_(3).jpg?width=640"
+      },
+      "tags": [
+        "birds::feeder"
+      ]
+    },
+    {
+      "key": "bushtit",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Bushtit",
+        "extra": "Psaltriparus minimus. Tiny plain gray ball of a bird with a long tail and stubby bill; almost always in busy chattering flocks that stream from bush to bush. Weaves a hanging sock nest.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/BushtitMale.jpg?width=640"
+      },
+      "tags": [
+        "birds::songbird"
+      ]
+    },
+    {
+      "key": "pygmy-nuthatch",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Pygmy nuthatch",
+        "extra": "Sitta pygmaea. Very small nuthatch with a gray-brown cap down to the eye and buffy underparts; swarms ponderosa pines in peeping flocks and roosts communally in cavities.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/PygmyNuthatch.jpg?width=640"
+      },
+      "tags": [
+        "birds::songbird"
+      ]
+    },
+    {
+      "key": "bewicks-wren",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Bewick's wren",
+        "extra": "Thryomanes bewickii. Brown-gray wren with a long white eyebrow and a long tail edged in white that it flicks sideways. Common in western brush and yards.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bewicks_Wren.jpg?width=640"
+      },
+      "tags": [
+        "birds::wren"
+      ]
+    },
+    {
+      "key": "cactus-wren",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Cactus wren",
+        "extra": "Campylorhynchus brunneicapillus. Huge spotted wren of the desert Southwest with a bold white eyebrow and barred wings and tail. Builds football-shaped nests in cholla; song like a car that won't start.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Cactus_Wren_Sandia_Mountains.jpg?width=640"
+      },
+      "tags": [
+        "birds::wren"
+      ]
+    },
+    {
+      "key": "canyon-wren",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Canyon wren",
+        "extra": "Catherpes mexicanus. Rusty wren with a contrasting white throat and breast, long slightly curved bill. Its sweet cascading song tumbles down canyon walls.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Canyon_Wren.jpg?width=640"
+      },
+      "tags": [
+        "birds::wren"
+      ]
+    },
+    {
+      "key": "curve-billed-thrasher",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Curve-billed thrasher",
+        "extra": "Toxostoma curvirostre. Gray-brown desert thrasher with a sickle-shaped bill, orange eye, and blurry breast spots. Gives a sharp liquid 'whit-wheet!' from cholla. California thrasher is darker, plain-breasted, with a dark eye.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Curve-billed_thrasher_Sandia_Mountains.jpg?width=640"
+      },
+      "tags": [
+        "birds::mimic"
+      ]
+    },
+    {
+      "key": "california-thrasher",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "California thrasher",
+        "extra": "Toxostoma redivivum. Large dusky-brown chaparral skulker with a deeply curved bill, plain unspotted breast, and dark eye. Curve-billed thrasher (deserts) is paler with an orange eye and spotted breast.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Toxostoma_redivivum_-Morro_Bay%2C_California%2C_USA-8.jpg?width=640"
+      },
+      "tags": [
+        "birds::mimic"
+      ]
+    },
+    {
+      "key": "phainopepla",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Phainopepla",
+        "extra": "Phainopepla nitens. Silky flycatcher of desert mistletoe: male glossy black with a wispy crest, red eye, and white wing patches visible in flight; female gray.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Phainopepla_nitens_M_2.jpg?width=640"
+      },
+      "tags": [
+        "birds::songbird"
+      ]
+    },
+    {
+      "key": "verdin",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Verdin",
+        "extra": "Auriparus flaviceps. Tiny gray desert bird with a lemon-yellow head and a chestnut shoulder patch. Builds conspicuous spherical stick nests in thorny scrub.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Auriparus_flavicepsPCCA20050310-5817B.jpg?width=640"
+      },
+      "tags": [
+        "birds::songbird"
+      ]
+    },
+    {
+      "key": "wrentit",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Wrentit",
+        "extra": "Chamaea fasciata. Plain gray-brown chaparral bird with a pale eye and a long, often-cocked tail; far more often heard than seen. Song is an accelerating bouncing-ball trill.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Wrentit_-_Sobrante_Ridge_Regional_Preserve%2C_California.jpg?width=640"
+      },
+      "tags": [
+        "birds::songbird"
+      ]
+    },
+    {
+      "key": "acorn-woodpecker",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Acorn woodpecker",
+        "extra": "Melanerpes formicivorus. Clown-faced woodpecker: red cap, white forehead and cheek, staring pale eye. Lives in family groups that drill 'granary' trees with thousands of acorn holes; laughing 'waka-waka' call.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Acorn_woodpecker_holding_a_nut_in_its_beak-0225.jpg?width=640"
+      },
+      "tags": [
+        "birds::woodpecker"
+      ]
+    },
+    {
+      "key": "gila-woodpecker",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Gila woodpecker",
+        "extra": "Melanerpes uropygialis. Zebra-backed woodpecker of saguaro desert with a plain tan head and belly; male has a small round red cap. Nests in holes in giant cacti.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Gilawoodpecker.jpg?width=640"
+      },
+      "tags": [
+        "birds::woodpecker"
+      ]
+    },
+    {
+      "key": "lewiss-woodpecker",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Lewis's woodpecker",
+        "extra": "Melanerpes lewis. Odd dark woodpecker with a glossy green-black back, gray collar, dark red face, and pinkish belly; flies with slow, crow-like flaps, catching insects in midair.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Lewis's_Woodpecker.jpg?width=640"
+      },
+      "tags": [
+        "birds::woodpecker"
+      ]
+    },
+    {
+      "key": "white-headed-woodpecker",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "White-headed woodpecker",
+        "extra": "Dryobates albolarvatus. The only North American woodpecker with a black body and an all-white head; male adds a red nape spot. Pine forests of the far-western mountains.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Picoides_albolarvatus_FWS.jpg?width=640"
+      },
+      "tags": [
+        "birds::woodpecker"
+      ]
+    },
+    {
+      "key": "northern-flicker-red-shafted",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this (western form)?",
+        "back": "Northern flicker",
+        "extra": "Colaptes auratus. Western 'red-shafted' birds flash salmon-red wing and tail linings (yellow in the East) and males have a red mustache stripe. Barred brown back, black chest crescent, white rump.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Male%20Red%20Shafted%20Flicker%20-%20-%20Colaptes%20cafer.jpg?width=640"
+      },
+      "tags": [
+        "birds::woodpecker"
+      ]
+    },
+    {
+      "key": "greater-roadrunner",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Greater roadrunner",
+        "extra": "Geococcyx californianus. Lanky streaked ground cuckoo with a shaggy crest, long tail, and strong legs; sprints after lizards and snakes and rarely flies.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Greater_Roadrunner_Tingley_Beach.jpg?width=640"
+      },
+      "tags": [
+        "birds::desert"
+      ]
+    },
+    {
+      "key": "gambels-quail",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Gambel's quail",
+        "extra": "Callipepla gambelii. Desert quail with a comma-shaped black plume; male has a black face and belly patch on a plain cream belly. California quail has a scaled belly instead.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Gambel's_Quail_Rockhound_State_Park.jpg?width=640"
+      },
+      "tags": [
+        "birds::gamebird"
+      ]
+    },
+    {
+      "key": "western-meadowlark",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Western meadowlark",
+        "extra": "Sturnella neglecta. Chunky grassland bird with a bright yellow breast crossed by a black V, streaky brown back, and white outer tail feathers. Rich flute-like song from fence posts.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Sturnella_neglecta_GNP_02.jpg?width=640"
+      },
+      "tags": [
+        "birds::grassland"
+      ]
+    },
+    {
+      "key": "brewers-blackbird",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Brewer's blackbird",
+        "extra": "Euphagus cyanocephalus. Male glossy black with purple-green sheen and a staring yellow eye; female plain brown with a dark eye. Struts on parking lots and lawns.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Brewers_Blackbird_Esquimalt_Lagoon.jpg?width=640"
+      },
+      "tags": [
+        "birds::blackbird"
+      ]
+    },
+    {
+      "key": "great-tailed-grackle",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Great-tailed grackle",
+        "extra": "Quiscalus mexicanus. Male huge, glossy violet-black with a yellow eye and an extravagant keel-shaped tail; female smaller and warm brown. Raucous colonies in city trees across the Southwest.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Great-tailed_grackle_(Quiscalus_mexicanus_mexicanus)_male_Copan.jpg?width=640"
+      },
+      "tags": [
+        "birds::blackbird"
+      ]
+    },
+    {
+      "key": "yellow-headed-blackbird",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Yellow-headed blackbird",
+        "extra": "Xanthocephalus xanthocephalus. Male black with a brilliant yellow head and breast and white wing patches. Nests in prairie marshes; song like a rusty gate.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Male_Yellow-headed_Blackbird.jpg?width=640"
+      },
+      "tags": [
+        "birds::blackbird"
+      ]
+    },
+    {
+      "key": "white-crowned-sparrow",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "White-crowned sparrow",
+        "extra": "Zonotrichia leucophrys. Clean gray breast under a boldly black-and-white striped crown; pink-orange bill. Golden-crowned sparrow instead has a yellow central crown stripe.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/White-crowned-Sparrow.jpg?width=640"
+      },
+      "tags": [
+        "birds::sparrow"
+      ]
+    },
+    {
+      "key": "golden-crowned-sparrow",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Golden-crowned sparrow",
+        "extra": "Zonotrichia atricapilla. Winter yards on the Pacific coast: dusky sparrow with a yellow forecrown bordered by black. Sings three descending whistles, 'oh-dear-me'.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Zonotrichia_atricapilla_-British_Columbia%2C_Canada-8.jpg?width=640"
+      },
+      "tags": [
+        "birds::sparrow"
+      ]
+    },
+    {
+      "key": "black-phoebe",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Black phoebe",
+        "extra": "Sayornis nigricans. Dapper sooty-black flycatcher with a crisp white belly; pumps its tail from low perches near water. Say's phoebe is gray-brown with a cinnamon belly.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Black_phoebe_(Sayornis_nigricans_aquaticus)_Palopo.jpg?width=640"
+      },
+      "tags": [
+        "birds::flycatcher"
+      ]
+    },
+    {
+      "key": "says-phoebe",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Say's phoebe",
+        "extra": "Sayornis saya. Soft gray-brown flycatcher with a cinnamon-buff belly and black tail; wags its tail from open perches in dry country. Black phoebe is black with a white belly.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Sayornis_saya_GNP_01.jpg?width=640"
+      },
+      "tags": [
+        "birds::flycatcher"
+      ]
+    },
+    {
+      "key": "western-kingbird",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Western kingbird",
+        "extra": "Tyrannus verticalis. Gray-headed flycatcher with a lemon-yellow belly and a black tail with white outer edges. Perches on fences and wires, fearlessly chasing off hawks.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Western_kingbird_(71748).jpg?width=640"
+      },
+      "tags": [
+        "birds::flycatcher"
+      ]
+    },
+    {
+      "key": "violet-green-swallow",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Violet-green swallow",
+        "extra": "Tachycineta thalassina. Emerald-and-violet back with white below; the white of the face wraps above the eye, and white flank patches nearly meet over the rump - both marks the tree swallow lacks.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Violet-green_Swallow%2C_Mono_Lake%2C_California.jpg?width=640"
+      },
+      "tags": [
+        "birds::aerial"
+      ]
+    },
+    {
+      "key": "american-dipper",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "American dipper",
+        "extra": "Cinclus mexicanus. Chunky slate-gray songbird of rushing mountain streams; bobs constantly on wet rocks, then walks and swims underwater to hunt insect larvae.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/AmericanDipper.jpg?width=640"
+      },
+      "tags": [
+        "birds::waterbird"
+      ]
+    },
+    {
+      "key": "varied-thrush",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Varied thrush",
+        "extra": "Ixoreus naevius. Like a robin wearing extra trim: burnt-orange breast with a black (male) breast band, orange eyebrow and wing bars, blue-gray back. Eerie single-note whistle in Pacific Northwest forests.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Varied_thrush_(73976).jpg?width=640"
+      },
+      "tags": [
+        "birds::thrush"
+      ]
+    },
+    {
+      "key": "clarks-nutcracker",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Clark's nutcracker",
+        "extra": "Nucifraga columbiana. Gray corvid with black wings, flashing white wing patches and tail edges, and a long dagger bill. Caches tens of thousands of pine seeds and remembers where.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/ClarksNutcracker.jpg?width=640"
+      },
+      "tags": [
+        "birds::corvid"
+      ]
+    },
+    {
+      "key": "yellow-billed-magpie",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Yellow-billed magpie",
+        "extra": "Pica nuttalli. Found nowhere on Earth but California's Central Valley and coastal ranges: a magpie with a yellow bill and yellow skin around the eye. Otherwise like the black-billed magpie.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Pica_nuttalli_Lake_San_Antonio.jpg?width=640"
+      },
+      "tags": [
+        "birds::corvid"
+      ]
+    },
+    {
+      "key": "common-raven",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Common raven",
+        "extra": "Corvus corax. Massive all-black corvid with a heavy Roman-nosed bill, shaggy throat feathers, and a wedge-shaped tail in flight; deep croaking calls. Crows are smaller with fan-shaped tails and 'caw' calls.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Corvus_corax_clarionensis%2C_Point_Reyes_National_Seashore.jpg?width=640"
+      },
+      "tags": [
+        "birds::corvid"
+      ]
+    },
+    {
+      "key": "rufous-hummingbird",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Rufous hummingbird",
+        "extra": "Selasphorus rufus. Male burnt-orange nearly all over with a scarlet gorget; ferociously territorial at feeders. Breeds far north to Alaska, migrating through the Rockies each fall.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Rufous_Hummingbird%2C_male_01.jpg?width=640"
+      },
+      "tags": [
+        "birds::hummingbird"
+      ]
+    },
+    {
+      "key": "black-chinned-hummingbird",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Black-chinned hummingbird",
+        "extra": "Archilochus alexandri. Male's gorget looks plain black until a violet band flashes at its lower edge; green above, dingy below. The widespread summer hummingbird of the interior West.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Black-chinned_hummingbird.jpg?width=640"
+      },
+      "tags": [
+        "birds::hummingbird"
+      ]
+    },
+    {
+      "key": "burrowing-owl",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Burrowing owl",
+        "extra": "Athene cunicularia. Small long-legged owl that stands on the ground by day at burrow entrances, bobbing when agitated; sandy-spotted with fierce yellow eyes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Southern_burrowing_owl_(Athene_cunicularia_cunicularia)_Colonia.jpg?width=640"
+      },
+      "tags": [
+        "birds::raptor"
+      ]
+    },
+    {
+      "key": "california-condor",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "California condor",
+        "extra": "Gymnogyps californianus. North America's largest flying bird (nearly 3 m wingspan): black with bold white underwing triangles and a bare orange-pink head. Rescued from a wild population of zero in 1987 by captive breeding.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/California-condor-gymnogyps-californianus-078_(21196759264).jpg?width=640"
+      },
+      "tags": [
+        "birds::raptor"
+      ]
+    }
+  ]
+}

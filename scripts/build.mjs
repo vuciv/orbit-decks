@@ -35,6 +35,7 @@ const CATEGORY_ORDER = [
   'Geography',
   'Pop Culture',
   'Space',
+  'Nature',
   'Art',
   'Music',
   'Cinema',

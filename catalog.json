@@ -30,6 +30,13 @@
       "file": "categories/space.json"
     },
     {
+      "key": "nature",
+      "name": "Nature",
+      "deckCount": 3,
+      "rev": "8014cba602ff",
+      "file": "categories/nature.json"
+    },
+    {
       "key": "art",
       "name": "Art",
       "deckCount": 1,
@@ -137,6 +144,16 @@
       ]
     },
     {
+      "key": "birdwatching",
+      "title": "Birdwatching",
+      "description": "Learn the birds around you, region by region, from photos.",
+      "deckKeys": [
+        "birds-eastern-north-america",
+        "birds-western-north-america",
+        "birds-of-europe"
+      ]
+    },
+    {
       "key": "silver-screen",
       "title": "Silver Screen",
       "description": "For people who know the director before the trailer ends.",
@@ -203,6 +220,21 @@
       "key": "best-picture-winners",
       "version": 1,
       "file": "decks/best-picture-winners.json"
+    },
+    {
+      "key": "birds-eastern-north-america",
+      "version": 1,
+      "file": "decks/birds-eastern-north-america.json"
+    },
+    {
+      "key": "birds-of-europe",
+      "version": 1,
+      "file": "decks/birds-of-europe.json"
+    },
+    {
+      "key": "birds-western-north-america",
+      "version": 1,
+      "file": "decks/birds-western-north-america.json"
     },
     {
       "key": "bishops-opening",

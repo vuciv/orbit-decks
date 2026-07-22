@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 2,
+  "key": "nature",
+  "name": "Nature",
+  "decks": [
+    {
+      "key": "birds-eastern-north-america",
+      "name": "Bird ID: Eastern North America",
+      "description": "Identify 50 of the most common backyard, park, and roadside birds of eastern North America from photos. Details give the scientific name, key field marks, and how to separate lookalikes.",
+      "cardCount": 50,
+      "topics": [
+        "birds",
+        "nature",
+        "identification"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Male_northern_cardinal_in_Central_Park_(52612).jpg?width=640"
+    },
+    {
+      "key": "birds-of-europe",
+      "name": "Bird ID: Europe",
+      "description": "Identify 61 of Europe's best-known garden, park, farmland, and waterside birds from photos. Details give the scientific name, key field marks, and how to separate the classic confusion pairs.",
+      "cardCount": 61,
+      "topics": [
+        "birds",
+        "nature",
+        "identification"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Erithacus_rubecula_with_cocked_head.jpg?width=640"
+    },
+    {
+      "key": "birds-western-north-america",
+      "name": "Bird ID: Western North America",
+      "description": "Identify 55 signature birds of the American West from photos, from coastal chaparral to desert and mountain pine forest. Details give the scientific name, key field marks, and lookalike tips.",
+      "cardCount": 55,
+      "topics": [
+        "birds",
+        "nature",
+        "identification"
+      ],
+      "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Steller's_Jay_flagstaff_arizona.jpg?width=640"
+    }
+  ]
+}

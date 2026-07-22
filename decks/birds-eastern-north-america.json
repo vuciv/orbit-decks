@@ -1,0 +1,666 @@
+{
+  "key": "birds-eastern-north-america",
+  "version": 1,
+  "name": "Bird ID: Eastern North America",
+  "description": "Identify 50 of the most common backyard, park, and roadside birds of eastern North America from photos. Details give the scientific name, key field marks, and how to separate lookalikes.",
+  "category": "Nature",
+  "topics": [
+    "birds",
+    "nature",
+    "identification"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Male_northern_cardinal_in_Central_Park_(52612).jpg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "northern-cardinal",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Northern cardinal",
+        "extra": "Cardinalis cardinalis. Male brilliant red with a black face mask, pointed crest, and thick orange-red bill; female warm buff with red tinges in wings, tail, and crest.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Male_northern_cardinal_in_Central_Park_(52612).jpg?width=640"
+      },
+      "tags": [
+        "birds::feeder"
+      ]
+    },
+    {
+      "key": "blue-jay",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Blue jay",
+        "extra": "Cyanocitta cristata. Blue above with a crest, black necklace, and white wing bars and tail corners. Loud, bold corvid; often mimics hawk calls.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Blue_jay_in_PP_(30960).jpg?width=640"
+      },
+      "tags": [
+        "birds::corvid"
+      ]
+    },
+    {
+      "key": "american-robin",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "American robin",
+        "extra": "Turdus migratorius. Brick-red breast, dark gray back, yellow bill, broken white eye-ring. Runs and stops on lawns hunting worms.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/American_robin_(71307).jpg?width=640"
+      },
+      "tags": [
+        "birds::thrush"
+      ]
+    },
+    {
+      "key": "mourning-dove",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Mourning dove",
+        "extra": "Zenaida macroura. Slim buffy-tan dove with black wing spots and a long pointed tail edged in white. Wings whistle on takeoff; song is a mournful cooing.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Av_Mourning_Dove_JG.jpg?width=640"
+      },
+      "tags": [
+        "birds::dove"
+      ]
+    },
+    {
+      "key": "american-goldfinch",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "American goldfinch",
+        "extra": "Spinus tristis. Breeding male lemon-yellow with black cap and black wings; winter birds drab olive-brown. Bouncy, dipping flight; loves thistle seed.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Carduelis_tristis_-Michigan%2C_USA_-male-8.jpg?width=640"
+      },
+      "tags": [
+        "birds::finch"
+      ]
+    },
+    {
+      "key": "black-capped-chickadee",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Black-capped chickadee",
+        "extra": "Poecile atricapillus. Black cap and bib, white cheeks, buffy flanks. In the Southeast replaced by the nearly identical Carolina chickadee (smaller, less white in wing).",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Poecile-atricapilla-001.jpg?width=640"
+      },
+      "tags": [
+        "birds::feeder"
+      ]
+    },
+    {
+      "key": "tufted-titmouse",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Tufted titmouse",
+        "extra": "Baeolophus bicolor. Gray above and pale below with a jaunty gray crest, big black eye, and peach-washed flanks. Frequent feeder visitor; whistles 'peter-peter-peter'.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Tufted_titmouse_(84917).jpg?width=640"
+      },
+      "tags": [
+        "birds::feeder"
+      ]
+    },
+    {
+      "key": "white-breasted-nuthatch",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "White-breasted nuthatch",
+        "extra": "Sitta carolinensis. Blue-gray back, white face and breast, black cap. Creeps headfirst DOWN tree trunks, unlike woodpeckers and creepers.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/White-breasted_nuthatch_(26471).jpg?width=640"
+      },
+      "tags": [
+        "birds::feeder"
+      ]
+    },
+    {
+      "key": "carolina-wren",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Carolina wren",
+        "extra": "Thryothorus ludovicianus. Warm rusty-brown wren with a bold white eyebrow stripe and cocked tail. Huge voice for its size: ringing 'teakettle-teakettle-teakettle'.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Carolina_wren_(14391).jpg?width=640"
+      },
+      "tags": [
+        "birds::wren"
+      ]
+    },
+    {
+      "key": "downy-woodpecker",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Downy woodpecker",
+        "extra": "Dryobates pubescens. Tiny black-and-white woodpecker; male has a red nape patch. Bill is stubby, much shorter than the head, which separates it from the near-identical hairy woodpecker.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Dryobates_pubescens_UL_03.jpg?width=640"
+      },
+      "tags": [
+        "birds::woodpecker"
+      ]
+    },
+    {
+      "key": "hairy-woodpecker",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Hairy woodpecker",
+        "extra": "Dryobates villosus. Looks like a large downy woodpecker, but the bill is nearly as long as the head and the outer tail feathers are pure white, unspotted.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Picoides_villosus_monticola_male1.jpg?width=640"
+      },
+      "tags": [
+        "birds::woodpecker"
+      ]
+    },
+    {
+      "key": "red-bellied-woodpecker",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Red-bellied woodpecker",
+        "extra": "Melanerpes carolinus. Zebra-barred back with a red crown and nape; the red belly wash is faint. Often misnamed 'red-headed' - that species has an entirely crimson head.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Red-bellied_Woodpecker-27527.jpg?width=640"
+      },
+      "tags": [
+        "birds::woodpecker"
+      ]
+    },
+    {
+      "key": "northern-flicker",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Northern flicker",
+        "extra": "Colaptes auratus. Brown woodpecker with black barring, a black chest crescent, and spotted belly; white rump flashes in flight. Eastern birds show yellow wing linings; often feeds on the ground on ants.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Northern_yellow-shafted_flicker_male_(33737)_(cropped).jpg?width=640"
+      },
+      "tags": [
+        "birds::woodpecker"
+      ]
+    },
+    {
+      "key": "pileated-woodpecker",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Pileated woodpecker",
+        "extra": "Dryocopus pileatus. Crow-sized, mostly black, with a flaming red crest and bold white neck stripes. Excavates big rectangular holes in dead wood.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/PileatedWoodpeckerFeedingonTree%2C_crop.jpg?width=640"
+      },
+      "tags": [
+        "birds::woodpecker"
+      ]
+    },
+    {
+      "key": "red-headed-woodpecker",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Red-headed woodpecker",
+        "extra": "Melanerpes erythrocephalus. Entire head and neck crimson, snow-white body, black back with big white wing patches. The red-bellied woodpecker, by contrast, has red only on the crown and nape.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Melanerpes-erythrocephalus-003.jpg?width=640"
+      },
+      "tags": [
+        "birds::woodpecker"
+      ]
+    },
+    {
+      "key": "eastern-bluebird",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Eastern bluebird",
+        "extra": "Sialia sialis. Royal-blue above with a rusty-orange throat and breast and white belly. Perches on wires and fence posts, dropping to the ground for insects; nests in boxes.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Sialia_sialis_-Michigan%2C_USA_-pair-8c.jpg?width=640"
+      },
+      "tags": [
+        "birds::thrush"
+      ]
+    },
+    {
+      "key": "american-crow",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "American crow",
+        "extra": "Corvus brachyrhynchos. All-black, fan-shaped tail, familiar 'caw-caw'. The common raven is much larger with a wedge-shaped tail, shaggy throat, and croaking call.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Corvus-brachyrhynchos-001.jpg?width=640"
+      },
+      "tags": [
+        "birds::corvid"
+      ]
+    },
+    {
+      "key": "european-starling",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "European starling",
+        "extra": "Sturnus vulgaris. Chunky and short-tailed; glossy purple-green in summer with a yellow bill, white-spangled in winter. Introduced from Europe in 1890; flies straight and fast, forms huge flocks.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Common_starling_(Sturnus_vulgaris)_breeding_male_Marken.jpg?width=640"
+      },
+      "tags": [
+        "birds::introduced"
+      ]
+    },
+    {
+      "key": "house-sparrow",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "House sparrow",
+        "extra": "Passer domesticus. Male has a gray crown, black bib, and chestnut nape; female plain gray-brown with a buffy eye stripe. Old World sparrow tied to buildings, not related to native sparrows.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/House_sparrow_male_in_Prospect_Park_(53532).jpg?width=640"
+      },
+      "tags": [
+        "birds::introduced"
+      ]
+    },
+    {
+      "key": "house-finch",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "House finch",
+        "extra": "Haemorhous mexicanus. Male has red on the head and breast with brown-streaked flanks and belly; female plain-faced and streaky. Purple finch males are raspberry-red over the whole head and back with little flank streaking.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/House_finch_(33688)2.jpg?width=640"
+      },
+      "tags": [
+        "birds::finch"
+      ]
+    },
+    {
+      "key": "purple-finch",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Purple finch",
+        "extra": "Haemorhous purpureus. Male looks dipped in raspberry juice, including the back; female boldly striped head with a white eyebrow. House finch red is more orange and confined to head and chest, with streaky flanks.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Carpodacus_purpureus_CT3.jpg?width=640"
+      },
+      "tags": [
+        "birds::finch"
+      ]
+    },
+    {
+      "key": "dark-eyed-junco",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Dark-eyed junco",
+        "extra": "Junco hyemalis. Eastern 'slate-colored' form is smooth gray with a white belly, pink bill, and white outer tail feathers that flash in flight. A classic winter 'snowbird' under feeders.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Junco_hyemalis_hyemalis_CT1_(cropped).jpg?width=640"
+      },
+      "tags": [
+        "birds::sparrow"
+      ]
+    },
+    {
+      "key": "song-sparrow",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Song sparrow",
+        "extra": "Melospiza melodia. Brown-streaked sparrow whose breast streaks converge into a central dark spot; long rounded tail pumped in flight. Sings persistently from low perches.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Song_sparrow_in_Prospect_Park_(93031).jpg?width=640"
+      },
+      "tags": [
+        "birds::sparrow"
+      ]
+    },
+    {
+      "key": "white-throated-sparrow",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "White-throated sparrow",
+        "extra": "Zonotrichia albicollis. Crisp white throat patch, yellow spot between eye and bill, striped crown. Whistles 'Oh-sweet-Canada-Canada'; scratches under feeders in winter.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Zonotrichia_albicollis_CT1.jpg?width=640"
+      },
+      "tags": [
+        "birds::sparrow"
+      ]
+    },
+    {
+      "key": "chipping-sparrow",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Chipping sparrow",
+        "extra": "Spizella passerina. Small, clean gray breast (no streaks), bright rufous cap, and black line through the eye. Song is a dry mechanical trill on one pitch.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Spizella-passerina-015_edit.jpg?width=640"
+      },
+      "tags": [
+        "birds::sparrow"
+      ]
+    },
+    {
+      "key": "eastern-towhee",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Eastern towhee",
+        "extra": "Pipilo erythrophthalmus. Male black above with rufous flanks and white belly; female chocolate-brown. Scratches noisily in leaf litter; song 'drink-your-teeeea'.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/20241004_eastern_towhee_pleasant_valley_PD207764.jpg?width=640"
+      },
+      "tags": [
+        "birds::sparrow"
+      ]
+    },
+    {
+      "key": "northern-mockingbird",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Northern mockingbird",
+        "extra": "Mimus polyglottos. Slim gray bird with a long tail and white wing patches that flash in flight. Endlessly repeats imitated phrases, each usually 3+ times; sings even at night.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Mockingbird_in_Bay_Ridge_(85082).jpg?width=640"
+      },
+      "tags": [
+        "birds::mimic"
+      ]
+    },
+    {
+      "key": "gray-catbird",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Gray catbird",
+        "extra": "Dumetella carolinensis. Uniform slate-gray with a black cap and rusty patch under the tail. Named for its whiny, cat-like mew call; skulks in dense shrubs.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Gray_catbird_(85315).jpg?width=640"
+      },
+      "tags": [
+        "birds::mimic"
+      ]
+    },
+    {
+      "key": "brown-thrasher",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Brown thrasher",
+        "extra": "Toxostoma rufum. Rich rufous above, heavily dark-streaked below, long tail, yellow eye, slightly curved bill. Sings phrases in pairs, unlike the mockingbird's triples.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Brown_thrasher_in_CP_(02147).jpg?width=640"
+      },
+      "tags": [
+        "birds::mimic"
+      ]
+    },
+    {
+      "key": "cedar-waxwing",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Cedar waxwing",
+        "extra": "Bombycilla cedrorum. Sleek fawn-brown crest, black mask, yellow tail tip, and waxy red wingtip spots. Travels in tight flocks stripping berry trees; call a thin high trill.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Cedar_Waxwing_-_Bombycilla_cedrorum%2C_George_Washington's_Birthplace_National_Monument%2C_Colonial_Beach%2C_Virginia_(39997434862).jpg?width=640"
+      },
+      "tags": [
+        "birds::songbird"
+      ]
+    },
+    {
+      "key": "red-winged-blackbird",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Red-winged blackbird",
+        "extra": "Agelaius phoeniceus. Male glossy black with red-and-yellow shoulder patches; female looks like a big dark-streaked sparrow. Sings 'conk-la-ree!' from cattails.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Red-Winged_Blackbird.png?width=640"
+      },
+      "tags": [
+        "birds::blackbird"
+      ]
+    },
+    {
+      "key": "common-grackle",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Common grackle",
+        "extra": "Quiscalus quiscula. Lanky iridescent blackbird with a bronze body sheen, purple-blue head, pale yellow eye, and long keel-shaped tail.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Common_grackle_in_PP_(36732).jpg?width=640"
+      },
+      "tags": [
+        "birds::blackbird"
+      ]
+    },
+    {
+      "key": "brown-headed-cowbird",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Brown-headed cowbird",
+        "extra": "Molothrus ater. Male glossy black with a chocolate-brown head and stubby finch-like bill; female plain gray-brown. Brood parasite: lays eggs in other songbirds' nests.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Brown-headed_cowbird_male_(71126).jpg?width=640"
+      },
+      "tags": [
+        "birds::blackbird"
+      ]
+    },
+    {
+      "key": "baltimore-oriole",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Baltimore oriole",
+        "extra": "Icterus galbula. Male flame-orange with a full black hood and black wings with white bars; female yellow-orange. Weaves a hanging pouch nest; comes to orange halves and jelly.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Baltimore_Oriole-_dorsum.jpg?width=640"
+      },
+      "tags": [
+        "birds::songbird"
+      ]
+    },
+    {
+      "key": "rose-breasted-grosbeak",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Rose-breasted grosbeak",
+        "extra": "Pheucticus ludovicianus. Male black and white with a rose-red triangle on the breast and a massive pale bill; female like a big striped sparrow with a bold white eyebrow.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/RosebreastedGrosbeak08.jpg?width=640"
+      },
+      "tags": [
+        "birds::songbird"
+      ]
+    },
+    {
+      "key": "indigo-bunting",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Indigo bunting",
+        "extra": "Passerina cyanea. Breeding male entirely deep blue with a small silver conical bill; female plain warm brown. Sings paired phrases from wires and treetops all summer.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Indigo_Bunting_by_Dan_Pancamo_4.jpg?width=640"
+      },
+      "tags": [
+        "birds::songbird"
+      ]
+    },
+    {
+      "key": "scarlet-tanager",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Scarlet tanager",
+        "extra": "Piranga olivacea. Breeding male blood-red with jet-black wings and tail; female olive-yellow with dusky wings. A canopy bird of mature deciduous forest, more often heard than seen.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Scarlet_tanager_in_GWC_(50867).jpg?width=640"
+      },
+      "tags": [
+        "birds::songbird"
+      ]
+    },
+    {
+      "key": "ruby-throated-hummingbird",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Ruby-throated hummingbird",
+        "extra": "Archilochus colubris. The only breeding hummingbird in most of the East. Male has an iridescent ruby gorget that can look black; both sexes emerald-green above.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Archilochus_colubris_-flying_-male-8.jpg?width=640"
+      },
+      "tags": [
+        "birds::hummingbird"
+      ]
+    },
+    {
+      "key": "eastern-phoebe",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Eastern phoebe",
+        "extra": "Sayornis phoebe. Drab gray-brown flycatcher, darkest on the head, with no strong wing bars or eye-ring. Constantly wags its tail downward; says its own name, 'fee-bee'. Nests under eaves and bridges.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Sayornis_phoebe_-Owen_Conservation_Park%2C_Madison%2C_Wisconsin%2C_USA-8.jpg?width=640"
+      },
+      "tags": [
+        "birds::flycatcher"
+      ]
+    },
+    {
+      "key": "tree-swallow",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Tree swallow",
+        "extra": "Tachycineta bicolor. Iridescent steel-blue-green above, clean snow-white below, with a slightly notched tail. Nests in boxes and tree cavities near water.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Tree_swallow_in_JBWR_(25579).jpg?width=640"
+      },
+      "tags": [
+        "birds::aerial"
+      ]
+    },
+    {
+      "key": "barn-swallow",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Barn swallow",
+        "extra": "Hirundo rustica. Cobalt-blue above with a rusty throat, buff-orange underparts, and a deeply forked 'swallow tail'. Builds open mud-cup nests on beams and ledges.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Rauchschwalbe_Hirundo_rustica.jpg?width=640"
+      },
+      "tags": [
+        "birds::aerial"
+      ]
+    },
+    {
+      "key": "chimney-swift",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Chimney swift",
+        "extra": "Chaetura pelagica. A 'cigar with wings': dark, tiny-tailed, with stiff bowed wings and twinkling flight, never perching in the open. Chatters overhead all summer; roosts in chimneys.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Chaetura_pelagica%2C_by_Lake_Erie%2C_Cleveland%2C_Ohio%2C_USA_339593191.jpg?width=640"
+      },
+      "tags": [
+        "birds::aerial"
+      ]
+    },
+    {
+      "key": "killdeer",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Killdeer",
+        "extra": "Charadrius vociferus. A plover of lawns and gravel lots: two black breast bands, orange rump in flight, piercing 'kill-deer' cry. Famous for its broken-wing distraction display.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Killdeer_Heislerville.png?width=640"
+      },
+      "tags": [
+        "birds::shorebird"
+      ]
+    },
+    {
+      "key": "mallard",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Mallard",
+        "extra": "Anas platyrhynchos. Male has a glossy green head, white neck ring, and chestnut breast; female mottled brown with an orange-and-black bill. Both show a blue wing patch (speculum).",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Anas_platyrhynchos_male_female_quadrat.jpg?width=640"
+      },
+      "tags": [
+        "birds::waterbird"
+      ]
+    },
+    {
+      "key": "canada-goose",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Canada goose",
+        "extra": "Branta canadensis. Black head and neck with a white chinstrap, brown body. Grazes on lawns and golf courses; flies in honking V formations.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Canada_goose.jpg?width=640"
+      },
+      "tags": [
+        "birds::waterbird"
+      ]
+    },
+    {
+      "key": "great-blue-heron",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Great blue heron",
+        "extra": "Ardea herodias. Huge blue-gray heron with a black head plume and dagger bill; stands motionless in shallows, then strikes. Flies with neck folded in an S, legs trailing.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/GreatBlueHeronInARiver.jpg?width=640"
+      },
+      "tags": [
+        "birds::waterbird"
+      ]
+    },
+    {
+      "key": "wild-turkey",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Wild turkey",
+        "extra": "Meleagris gallopavo. Huge dark game bird with bronze iridescence and a bare blue-and-red head; males strut with fanned tails. Roosts in trees at night.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/20260428_tom_wild_turkey_matthaei_botanical_gardens_PD08952.jpg?width=640"
+      },
+      "tags": [
+        "birds::gamebird"
+      ]
+    },
+    {
+      "key": "turkey-vulture",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Turkey vulture",
+        "extra": "Cathartes aura. Soars for hours in a wobbly, teetering V (dihedral); two-toned underwings, tiny bare red head. Finds carrion by smell.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Turkey_vulture_(Cathartes_aura)_Orange_Walk.jpg?width=640"
+      },
+      "tags": [
+        "birds::raptor"
+      ]
+    },
+    {
+      "key": "red-tailed-hawk",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Red-tailed hawk",
+        "extra": "Buteo jamaicensis. Bulky soaring hawk of roadsides; adults show a brick-red tail and a dark 'belly band' across the white chest. Its raspy scream is Hollywood's all-purpose raptor cry.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Red-tailed_Hawk_(45812546121).jpg?width=640"
+      },
+      "tags": [
+        "birds::raptor"
+      ]
+    },
+    {
+      "key": "coopers-hawk",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Cooper's hawk",
+        "extra": "Astur cooperii (until 2023 Accipiter cooperii). Crow-sized bird hunter with short rounded wings, a long banded tail with a rounded tip, and red eyes; adults blue-gray above with rusty-barred chest. Ambushes feeders.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Accipiter_cooperii_m_Sam_Smith_Toronto3.jpg?width=640"
+      },
+      "tags": [
+        "birds::raptor"
+      ]
+    }
+  ]
+}

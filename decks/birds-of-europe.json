@@ -1,0 +1,809 @@
+{
+  "key": "birds-of-europe",
+  "version": 1,
+  "name": "Bird ID: Europe",
+  "description": "Identify 61 of Europe's best-known garden, park, farmland, and waterside birds from photos. Details give the scientific name, key field marks, and how to separate the classic confusion pairs.",
+  "category": "Nature",
+  "topics": [
+    "birds",
+    "nature",
+    "identification"
+  ],
+  "coverImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Erithacus_rubecula_with_cocked_head.jpg?width=640",
+  "ttsLang": null,
+  "notes": [
+    {
+      "key": "european-robin",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "European robin",
+        "extra": "Erithacus rubecula. Round little bird with an orange-red face and breast, olive-brown back, and big dark eye. Famously tame in gardens; sings year-round, even on winter nights under streetlights.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Erithacus_rubecula_with_cocked_head.jpg?width=640"
+      },
+      "tags": [
+        "birds::garden"
+      ]
+    },
+    {
+      "key": "eurasian-blue-tit",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Eurasian blue tit",
+        "extra": "Cyanistes caeruleus. Tiny acrobat with a sky-blue cap, white face crossed by a black eye-line, yellow breast, and blue wings. Great tit is larger with a black head and black belly stripe.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Eurasian_blue_tit_(Cyanistes_caeruleus_caeruleus)_Biebrzanski.jpg?width=640"
+      },
+      "tags": [
+        "birds::garden"
+      ]
+    },
+    {
+      "key": "great-tit",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Great tit",
+        "extra": "Parus major. Largest European tit: glossy black head with white cheeks and a black stripe running down the yellow belly (broad in males). Two-note 'tea-cher, tea-cher' song.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_tit_(Parus_major)_Heligan.jpg?width=640"
+      },
+      "tags": [
+        "birds::garden"
+      ]
+    },
+    {
+      "key": "common-blackbird",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Common blackbird",
+        "extra": "Turdus merula. Male jet-black with a yellow-orange bill and eye-ring; female dark brown. Hops across lawns; one of Europe's finest songsters at dusk.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Common_Blackbird.jpg?width=640"
+      },
+      "tags": [
+        "birds::thrush"
+      ]
+    },
+    {
+      "key": "eurasian-magpie",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Eurasian magpie",
+        "extra": "Pica pica. Pied corvid with an iridescent blue-green sheen and a very long graduated tail; struts and hops boldly. Loud machine-gun chatter.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Eurasian_magpie_2024_03_03_02.jpg?width=640"
+      },
+      "tags": [
+        "birds::corvid"
+      ]
+    },
+    {
+      "key": "eurasian-jay",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Eurasian jay",
+        "extra": "Garrulus glandarius. Pinkish-buff corvid with an electric-blue barred wing patch, black mustache, and white rump obvious in flight. Shy; screeches harshly and buries thousands of acorns.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Garrulus_glandarius_1_Luc_Viatour.jpg?width=640"
+      },
+      "tags": [
+        "birds::corvid"
+      ]
+    },
+    {
+      "key": "common-wood-pigeon",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Common wood pigeon",
+        "extra": "Columba palumbus. Big bulky pigeon with a white neck patch, pinkish breast, and white wing crescents in flight. Clatters loudly out of trees; five-note cooing song.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Columba_palumbus_EM1B1397_(27445478998).jpg?width=640"
+      },
+      "tags": [
+        "birds::dove"
+      ]
+    },
+    {
+      "key": "eurasian-collared-dove",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Eurasian collared dove",
+        "extra": "Streptopelia decaocto. Pale sandy-gray dove with a thin black half-collar on the nape. Colonized nearly all of Europe from the Balkans in the 20th century; monotonous three-note 'coo-COO-cuk'.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/2022-04-06_Streptopelia_decaocto%2C_Plovdiv%2C_Bulgaria_1.jpg?width=640"
+      },
+      "tags": [
+        "birds::dove"
+      ]
+    },
+    {
+      "key": "house-sparrow",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "House sparrow",
+        "extra": "Passer domesticus. Male has a gray crown, black bib, and chestnut sides of the head; female plain gray-brown. Chirps around buildings everywhere; tree sparrow instead has an all-brown crown and a black cheek spot.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/House_sparrow_male_in_Prospect_Park_(53532).jpg?width=640"
+      },
+      "tags": [
+        "birds::garden"
+      ]
+    },
+    {
+      "key": "eurasian-tree-sparrow",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Eurasian tree sparrow",
+        "extra": "Passer montanus. Like a neat small house sparrow but with a chocolate-brown crown and a black spot on each white cheek; sexes alike. More rural than the house sparrow.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Tree_Sparrow_August_2007_Osaka_Japan.jpg?width=640"
+      },
+      "tags": [
+        "birds::garden"
+      ]
+    },
+    {
+      "key": "common-starling",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Common starling",
+        "extra": "Sturnus vulgaris. Glossy purple-green with a yellow bill in summer, white-spangled in winter; short tail, triangular wings. Gathers in vast swirling murmurations; a gifted mimic.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Common_starling_(Sturnus_vulgaris)_breeding_male_Marken.jpg?width=640"
+      },
+      "tags": [
+        "birds::garden"
+      ]
+    },
+    {
+      "key": "common-chaffinch",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Common chaffinch",
+        "extra": "Fringilla coelebs. Male has a blue-gray crown, pink-rust face and breast, and double white wing bars; female drab but shows the same wing bars. One of Europe's most numerous birds.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Male_Chaffinch_-_Fringilla_coelebs.jpg?width=640"
+      },
+      "tags": [
+        "birds::finch"
+      ]
+    },
+    {
+      "key": "european-goldfinch",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "European goldfinch",
+        "extra": "Carduelis carduelis. Crimson face bordered black-and-white, with a broad golden-yellow wing bar; sexes alike. Tinkling flight calls; flocks feed on thistles and teasels.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/072_Wild_European_goldfinch_at_the_Parc_Jura_vaudois_Photo_by_Giles_Laurent.jpg?width=640"
+      },
+      "tags": [
+        "birds::finch"
+      ]
+    },
+    {
+      "key": "european-greenfinch",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "European greenfinch",
+        "extra": "Chloris chloris. Stocky olive-green finch with yellow flashes along the wing edge and tail sides and a heavy pale bill. Wheezy drawn-out 'dzweee' song note.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Chloris_chloris_(profile).jpg?width=640"
+      },
+      "tags": [
+        "birds::finch"
+      ]
+    },
+    {
+      "key": "eurasian-bullfinch",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Eurasian bullfinch",
+        "extra": "Pyrrhula pyrrhula. Male has a rose-pink breast, black cap, gray back, and white rump; female pinkish-gray. Quiet and shy; soft piping call from hedgerows.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bullfinch_male.jpg?width=640"
+      },
+      "tags": [
+        "birds::finch"
+      ]
+    },
+    {
+      "key": "eurasian-siskin",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Eurasian siskin",
+        "extra": "Spinus spinus. Small streaky yellow-green finch; male has a black cap and chin with yellow wing bars and rump. Acrobatic in alders and birches, often hanging upside down.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Eurasian_siskin_(Spinus_spinus)_male_Biebrzanski.jpg?width=640"
+      },
+      "tags": [
+        "birds::finch"
+      ]
+    },
+    {
+      "key": "hawfinch",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Hawfinch",
+        "extra": "Coccothraustes coccothraustes. Bull-necked orange-brown finch with a massive steel-blue bill that cracks cherry stones; white wing bar and tail tip. Elusive in treetops.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Hawfinch_(Coccothraustes_coccothraustes)_male_Drenthe.jpg?width=640"
+      },
+      "tags": [
+        "birds::finch"
+      ]
+    },
+    {
+      "key": "coal-tit",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Coal tit",
+        "extra": "Periparus ater. Small tit with a black cap and bib and a distinctive white patch on the nape; buff-gray body without yellow. Prefers conifers.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Coal_Tit_2026_03_23.jpg?width=640"
+      },
+      "tags": [
+        "birds::garden"
+      ]
+    },
+    {
+      "key": "long-tailed-tit",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Long-tailed tit",
+        "extra": "Aegithalos caudatus. Tiny pink-black-and-white puffball whose tail is longer than its body. Roams hedgerows in chattering family flocks; weaves a domed lichen-and-cobweb nest.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D0%BE%D0%B2%D0%B3%D0%BE%D1%85%D0%B2%D0%BE%D1%81%D1%82%D0%B0_2.jpg?width=640"
+      },
+      "tags": [
+        "birds::garden"
+      ]
+    },
+    {
+      "key": "european-crested-tit",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "European crested tit",
+        "extra": "Lophophanes cristatus. The only small European songbird with a pointed black-and-white speckled crest; black bridle across the face. Conifer forests; in Britain only Scots pinewoods of Scotland.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Lophophanes_cristatus_-_01.jpg?width=640"
+      },
+      "tags": [
+        "birds::garden"
+      ]
+    },
+    {
+      "key": "eurasian-wren",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Eurasian wren",
+        "extra": "Troglodytes troglodytes. Minute round brown bird with a barred, cocked tail and thin bill; creeps mouse-like through undergrowth, then explodes into a huge trilling song.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Eurasian_wren_Franconville_02.jpg?width=640"
+      },
+      "tags": [
+        "birds::garden"
+      ]
+    },
+    {
+      "key": "dunnock",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Dunnock",
+        "extra": "Prunella modularis. Unobtrusive shuffler under hedges: streaky brown back with a lead-gray head and breast and a thin insect-eater's bill - not a true sparrow, despite the alias 'hedge sparrow'.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Dunnock_(Prunella_modularis)_3.jpg?width=640"
+      },
+      "tags": [
+        "birds::garden"
+      ]
+    },
+    {
+      "key": "goldcrest",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Goldcrest",
+        "extra": "Regulus regulus. Europe's smallest bird (about 5 g): olive-green with a black-bordered yellow-orange crown stripe. Flits restlessly through conifers with thin high calls.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Goldcrest_1.jpg?width=640"
+      },
+      "tags": [
+        "birds::garden"
+      ]
+    },
+    {
+      "key": "eurasian-nuthatch",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Eurasian nuthatch",
+        "extra": "Sitta europaea. Blue-gray above, buff-orange below, with a black bandit stripe through the eye; the only European bird that climbs headfirst down trunks. Plasters mud around its nest hole.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Kleiber_Sitta_europaea-0447.jpg?width=640"
+      },
+      "tags": [
+        "birds::woodland"
+      ]
+    },
+    {
+      "key": "eurasian-treecreeper",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Eurasian treecreeper",
+        "extra": "Certhia familiaris. Bark-patterned little bird with a fine curved bill and stiff tail; spirals UP a trunk like a mouse, then flies to the base of the next tree. Nuthatches go down; treecreepers only up.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Eurasian_Treecreeper_-_Certhia_familiaris_(54192274817).jpg?width=640"
+      },
+      "tags": [
+        "birds::woodland"
+      ]
+    },
+    {
+      "key": "great-spotted-woodpecker",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Great spotted woodpecker",
+        "extra": "Dendrocopos major. Black and white with big white shoulder patches and scarlet under the tail; male has a red nape patch. The bird behind most drumming heard in European woods.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_spotted_woodpecker_(Dendrocopos_major)_male_Drenthe.jpg?width=640"
+      },
+      "tags": [
+        "birds::woodpecker"
+      ]
+    },
+    {
+      "key": "european-green-woodpecker",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "European green woodpecker",
+        "extra": "Picus viridis. Large green woodpecker with a red crown and black face; yellow rump flashes in bounding flight. Feeds on ground ants; loud laughing 'yaffle' call, rarely drums.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/European_green_woodpecker_(Picus_viridis)_female_Barnes.jpg?width=640"
+      },
+      "tags": [
+        "birds::woodpecker"
+      ]
+    },
+    {
+      "key": "song-thrush",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Song thrush",
+        "extra": "Turdus philomelos. Warm brown above with neat arrow-shaped spots on a cream breast. Repeats each song phrase 2-4 times; smashes snails on stone 'anvils'. Mistle thrush is grayer with round spots.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9F%D0%B5%D0%B2%D1%87%D0%B8%D0%B9_%D0%B4%D1%80%D0%BE%D0%B7%D0%B4_%D0%BD%D0%B0_%D0%BF%D0%B5%D0%BD%D1%8C%D0%BA%D0%B5_(Turdus_philomelos)%2C_%D0%91%D0%B8%D1%82%D1%86%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BB%D0%B5%D1%81.jpg?width=640"
+      },
+      "tags": [
+        "birds::thrush"
+      ]
+    },
+    {
+      "key": "mistle-thrush",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Mistle thrush",
+        "extra": "Turdus viscivorus. Big, pot-bellied, gray-brown thrush with round dark spots and white tail corners; stands upright on open ground. Sings far-carrying phrases from treetops in storms. Song thrush is warmer brown with arrowhead spots.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Turdus_viscivorus.001_-_Cardiff.jpg?width=640"
+      },
+      "tags": [
+        "birds::thrush"
+      ]
+    },
+    {
+      "key": "fieldfare",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Fieldfare",
+        "extra": "Turdus pilaris. Handsome winter thrush with a blue-gray head and rump, chestnut back, and speckled ochre breast. Chattering 'chack-chack' flocks strip berry hedges.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Turdus_pilaris_EM1B9020_(34450664312).jpg?width=640"
+      },
+      "tags": [
+        "birds::thrush"
+      ]
+    },
+    {
+      "key": "redwing",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Redwing",
+        "extra": "Turdus iliacus. Small dark winter thrush with a bold cream eyebrow and rusty-red flanks and underwings. Migrates at night; thin 'tseep' calls overhead in autumn.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Redwing_Turdus_iliacus.jpg?width=640"
+      },
+      "tags": [
+        "birds::thrush"
+      ]
+    },
+    {
+      "key": "eurasian-blackcap",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Eurasian blackcap",
+        "extra": "Sylvia atricapilla. Gray warbler with a neat cap: glossy black in the male, rust-brown in the female. Rich fluty warble earned it the name 'northern nightingale'.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Eurasian_blackcap_(Sylvia_atricapilla)_male_Drenthe.jpg?width=640"
+      },
+      "tags": [
+        "birds::warbler"
+      ]
+    },
+    {
+      "key": "european-stonechat",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "European stonechat",
+        "extra": "Saxicola rubicola. Robin-sized bird of gorse and heath; male has a black head, white half-collar, and orange breast. Perches atop bushes flicking wings; call like two stones knocked together.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Stonechat_(Saxicola_rubicola)_male%2C_Beaulieu%2C_Hampshire.jpg?width=640"
+      },
+      "tags": [
+        "birds::heathland"
+      ]
+    },
+    {
+      "key": "yellowhammer",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Yellowhammer",
+        "extra": "Emberiza citrinella. Farmland bunting; male has a lemon-yellow head and belly with a chestnut rump. Song traditionally rendered 'a little bit of bread and no cheese'.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Goldammer_Emberiza_citrinella.jpg?width=640"
+      },
+      "tags": [
+        "birds::farmland"
+      ]
+    },
+    {
+      "key": "white-wagtail",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "White wagtail",
+        "extra": "Motacilla alba. Slim gray-black-and-white bird that runs across pavement and rooftops constantly bobbing its long tail. The British subspecies, the pied wagtail, is blacker-backed.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/20180415_015_Winterswijk_Witte_kwikstaart_(40785272624).jpg?width=640"
+      },
+      "tags": [
+        "birds::garden"
+      ]
+    },
+    {
+      "key": "barn-swallow",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Barn swallow",
+        "extra": "Hirundo rustica. Steel-blue above with a dark red throat, pale belly, and long deeply forked tail streamers. Builds open mud cups on beams; its arrival marks spring across Europe.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Rauchschwalbe_Hirundo_rustica.jpg?width=640"
+      },
+      "tags": [
+        "birds::aerial"
+      ]
+    },
+    {
+      "key": "common-swift",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Common swift",
+        "extra": "Apus apus. All-dark scythe-winged screamer that never perches: it feeds, sleeps, and mates on the wing, landing only at the nest. Screaming parties race around rooftops on summer evenings.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Common_Swift_2025_07_18_02_(cropped).jpg?width=640"
+      },
+      "tags": [
+        "birds::aerial"
+      ]
+    },
+    {
+      "key": "common-house-martin",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Common house martin",
+        "extra": "Delichon urbicum. Blue-black above with a clean white belly and a bold white rump, tail only shallowly forked. Builds closed mud nests under eaves. Swallows have red throats and long streamers.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Mehlschwalbe_Delichon_urbicum.jpg?width=640"
+      },
+      "tags": [
+        "birds::aerial"
+      ]
+    },
+    {
+      "key": "common-kingfisher",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Common kingfisher",
+        "extra": "Alcedo atthis. Jewel of slow rivers: electric-blue back, orange underparts, dagger bill. Usually seen as a blue streak flying low over water with a shrill whistle; dives for minnows from perches.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Alcedo_atthis_-England-8_(cropped).jpg?width=640"
+      },
+      "tags": [
+        "birds::waterbird"
+      ]
+    },
+    {
+      "key": "eurasian-hoopoe",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Eurasian hoopoe",
+        "extra": "Upupa epops. Unmistakable: pinkish-cinnamon with zebra-striped wings, a long curved bill, and a huge fan crest. Soft far-carrying 'oop-oop-oop' gave it its name.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Israel._Eurasian_Hoopoe_(6497645007).jpg?width=640"
+      },
+      "tags": [
+        "birds::southern"
+      ]
+    },
+    {
+      "key": "european-bee-eater",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "European bee-eater",
+        "extra": "Merops apiaster. Rainbow bird of southern Europe: chestnut crown, golden back, turquoise belly, yellow throat, black mask. Catches bees and dragonflies in graceful sallies; nests in sandbank tunnels.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Bee-eater_(19270331108).jpg?width=640"
+      },
+      "tags": [
+        "birds::southern"
+      ]
+    },
+    {
+      "key": "eurasian-golden-oriole",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Eurasian golden oriole",
+        "extra": "Oriolus oriolus. Male brilliant yellow with black wings; female greenish. Despite the color, maddeningly hard to see in poplar canopies - find it by the fluty 'wee-la-weeo' whistle.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Rigogolo-(Oriolus_oriolus)_Lazio%2C_isola_di_Ventotene_(LT)_19.4.2024_(cropped).png?width=640"
+      },
+      "tags": [
+        "birds::woodland"
+      ]
+    },
+    {
+      "key": "common-cuckoo",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Common cuckoo",
+        "extra": "Cuculus canorus. Gray hawk-like profile with a barred breast and pointed wings; the two-note 'cuck-oo' announces spring. Lays its eggs in other birds' nests, one host species per female line.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Cuckoo_(51169010335).jpg?width=640"
+      },
+      "tags": [
+        "birds::woodland"
+      ]
+    },
+    {
+      "key": "carrion-crow",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Carrion crow",
+        "extra": "Corvus corone. All-black crow with a neat feathered bill base, usually alone or in pairs. Rook has a bare gray-white bill base and baggy 'trousers' and feeds in flocks.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Carrion_crow_2022_04_05_05_02.jpg?width=640"
+      },
+      "tags": [
+        "birds::corvid"
+      ]
+    },
+    {
+      "key": "rook",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Rook",
+        "extra": "Corvus frugilegus. Glossy black corvid with a bare grayish-white face and bill base and a peaked crown; nests in noisy treetop rookeries and feeds in flocks on fields.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Rook%20%28Corvus%20frugilegus%29%20Heligan.jpg?width=640"
+      },
+      "tags": [
+        "birds::corvid"
+      ]
+    },
+    {
+      "key": "western-jackdaw",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Western jackdaw",
+        "extra": "Coloeus monedula. Small dapper crow with a gray nape and hood and striking pale silver eyes. Nests in chimneys and church towers; sharp 'jack!' call.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Nordic_jackdaw_(52563242448).jpg?width=640"
+      },
+      "tags": [
+        "birds::corvid"
+      ]
+    },
+    {
+      "key": "common-pheasant",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Common pheasant",
+        "extra": "Phasianus colchicus. Male copper-gold with a bottle-green head, red face wattles, and a very long barred tail; female mottled buff. Introduced from Asia; explodes noisily from field edges.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Common_pheasant_(Phasianus_colchicus)_male_Heligan.jpg?width=640"
+      },
+      "tags": [
+        "birds::farmland"
+      ]
+    },
+    {
+      "key": "grey-heron",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Grey heron",
+        "extra": "Ardea cinerea. Tall gray heron with a white head and neck, black eyebrow-plume, and dagger bill. Stands statue-still at pond edges; flies with slow beats, neck tucked back.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Grey_heron_2022_03_18_01.jpg?width=640"
+      },
+      "tags": [
+        "birds::waterbird"
+      ]
+    },
+    {
+      "key": "white-stork",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "White stork",
+        "extra": "Ciconia ciconia. Huge white bird with black flight feathers and a long red bill and legs; flies with neck outstretched. Nests on rooftops and poles; the baby-delivering stork of legend.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/White_stork_(Ciconia_ciconia)_Bia%C5%82owieza.jpg?width=640"
+      },
+      "tags": [
+        "birds::waterbird"
+      ]
+    },
+    {
+      "key": "mute-swan",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Mute swan",
+        "extra": "Cygnus olor. Enormous white swan with an orange bill topped by a black knob; swims with neck in an S curve and often with wings arched. Wings throb audibly in flight.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/CygneVaires.jpg?width=640"
+      },
+      "tags": [
+        "birds::waterbird"
+      ]
+    },
+    {
+      "key": "great-crested-grebe",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Great crested grebe",
+        "extra": "Podiceps cristatus. Elegant diving waterbird with a black double crest and chestnut-and-black head frills in summer. Pairs perform a famous mirrored 'weed dance' courtship.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Podiceps_cristatus_2_-_Lake_Dulverton.jpg?width=640"
+      },
+      "tags": [
+        "birds::waterbird"
+      ]
+    },
+    {
+      "key": "common-moorhen",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Common moorhen",
+        "extra": "Gallinula chloropus. Blackish pond bird with a RED bill and forehead shield tipped yellow, a white flank line, and flicking white undertail. The coot's shield is white.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Common_moorhen_(Gallinula_chloropus)_France.jpg?width=640"
+      },
+      "tags": [
+        "birds::waterbird"
+      ]
+    },
+    {
+      "key": "eurasian-coot",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Eurasian coot",
+        "extra": "Fulica atra. Sooty-black waterbird with a WHITE bill and frontal shield and lobed toes; dives constantly and runs across the water to fight rivals. The moorhen's shield is red.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Eurasian_Coot_2023_11_25_03.jpg?width=640"
+      },
+      "tags": [
+        "birds::waterbird"
+      ]
+    },
+    {
+      "key": "black-headed-gull",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Black-headed gull",
+        "extra": "Chroicocephalus ridibundus. Small gull with a chocolate-brown (not black) hood in summer, reduced to an ear spot in winter; red bill and legs, white leading edge on the wing. Europe's everyday park gull.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Chroicocephalus_ridibundus_(summer).jpg?width=640"
+      },
+      "tags": [
+        "birds::waterbird"
+      ]
+    },
+    {
+      "key": "northern-lapwing",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Northern lapwing",
+        "extra": "Vanellus vanellus. Farmland plover with a wispy upswept crest, green-glossed black back, and broad rounded wings; tumbling display flight with a 'pee-wit' cry.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Northern-Lapwing-Vanellus-vanellus.jpg?width=640"
+      },
+      "tags": [
+        "birds::farmland"
+      ]
+    },
+    {
+      "key": "common-buzzard",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Common buzzard",
+        "extra": "Buteo buteo. Europe's default soaring raptor: compact, broad-winged, with a short rounded tail and mewing cat-like call; plumage varies from dark brown to nearly white.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Common_Buzzard_by_caroline_legg_(cropped).jpg?width=640"
+      },
+      "tags": [
+        "birds::raptor"
+      ]
+    },
+    {
+      "key": "red-kite",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Red kite",
+        "extra": "Milvus milvus. Rusty-red raptor with long angled wings, white underwing flashes, and a deeply forked tail it twists like a rudder. A conservation comeback story in Britain.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Milvus_milvus_R(ThKraft).jpg?width=640"
+      },
+      "tags": [
+        "birds::raptor"
+      ]
+    },
+    {
+      "key": "common-kestrel",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Common kestrel",
+        "extra": "Falco tinnunculus. The falcon that hangs motionless over road verges, hovering into the wind with fanned tail; male has a gray head and tail with a chestnut back.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Common_kestrel_falco_tinnunculus.jpg?width=640"
+      },
+      "tags": [
+        "birds::raptor"
+      ]
+    },
+    {
+      "key": "eurasian-sparrowhawk",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Eurasian sparrowhawk",
+        "extra": "Accipiter nisus. Short-winged, long-tailed ambush hawk that dashes along hedges into garden feeders; male slate-gray above with rusty barring, female browner and much larger. Kestrels hover; sparrowhawks never do.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%AF%D1%81%D1%82%D1%80%D0%B5%D0%B1-%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D0%B5%D0%BB%D1%8F%D1%82%D0%BD%D0%B8%D0%BA_(Accipiter_nisus%2C_m)%2C_%D0%98%D0%B7%D0%BC%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BF%D0%B0%D1%80%D0%BA.jpg?width=640"
+      },
+      "tags": [
+        "birds::raptor"
+      ]
+    },
+    {
+      "key": "tawny-owl",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Tawny owl",
+        "extra": "Strix aluco. Chunky round-headed brown owl with big black eyes; the classic 'twit-twoo' is a duet - her 'ke-wick', his wavering hoot. Strictly nocturnal woodland resident.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/Strix_aluco_3_(Martin_Mecnarowski).jpg?width=640"
+      },
+      "tags": [
+        "birds::owl"
+      ]
+    },
+    {
+      "key": "barn-owl",
+      "model": "basic",
+      "fields": {
+        "front": "What bird is this?",
+        "back": "Barn owl",
+        "extra": "Tyto alba. Ghostly pale owl with a heart-shaped white face and golden-buff upperparts; quarters fields silently at dusk and shrieks rather than hoots.",
+        "frontImage": "https://commons.wikimedia.org/wiki/Special:FilePath/American_Barn_Owl_(Tyto_furcata_guatemalae)%2C_Orange_Walk.jpg?width=640"
+      },
+      "tags": [
+        "birds::owl"
+      ]
+    }
+  ]
+}
