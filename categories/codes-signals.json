@@ -30,8 +30,8 @@
     {
       "key": "greek-alphabet",
       "name": "The Greek Alphabet",
-      "description": "All 24 Greek letters in order, uppercase and lowercase. See the glyphs, type the name. Extras give the sound, the Latin-lookalike traps (nu is not v, rho is not p), and where each letter earns its keep in math, stats, and ML papers.",
-      "cardCount": 24,
+      "description": "All 24 Greek letters with capitals and lowercase drilled as separate cards, plus the notation round: which letter is the summation, the mean, the policy, the sample space. See a glyph, type its name; extras cover the Latin-lookalike traps (nu is not v, rho is not p) and where each letter earns its keep in math, stats, and ML papers.",
+      "cardCount": 63,
       "topics": [
         "greek",
         "alphabet",
